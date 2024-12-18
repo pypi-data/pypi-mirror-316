@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: iloveapi
+Version: 0.1.0
+Summary: Python api client made for ILoveIMG & ILovePDF based on ILoveAPI (https://www.iloveapi.com/docs/api-reference).
+Keywords: iloveapi,iloveimg,ilovepdf,api,sdk,client
+Author-Email: iyume <iyumelive@gmail.com>
+License: MIT
+Project-URL: homepage, https://github.com/iyume/iloveapi-python
+Project-URL: repository, https://github.com/iyume/iloveapi-python.git
+Requires-Python: >=3.9
+Requires-Dist: typing-extensions>=4.0
+Requires-Dist: httpx>=0.26.0
+Requires-Dist: pyjwt>=2.4.0
+Description-Content-Type: text/markdown
+
+# iloveapi-python
+
+Python api client made for ILoveIMG & ILovePDF based on ILoveAPI (https://www.iloveapi.com/docs/api-reference).
