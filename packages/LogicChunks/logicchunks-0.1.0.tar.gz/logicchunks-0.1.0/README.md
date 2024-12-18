@@ -1,0 +1,116 @@
+# LogicChunks
+
+`LogicChunks` is a Python package offering extended functionalities for working with lists, tuples, dictionaries, and sets. It provides a wide range of predefined conditions to categorize data based on user-defined or built-in conditions, making it easier to handle and organize various data types.
+
+## Installation
+
+You can install the package using `pip`:
+
+```bash
+pip install LogicChunks
+
+
+
+Features:
+
+-->Divide lists into multiple groups based on user-defined or predefined conditions.
+
+Predefined conditions include:
+
+-> Even numbers
+-> Odd numbers
+-> Prime numbers
+-> Perfect square numbers
+-> Perfect cube numbers
+-> Fibonacci numbers
+-> Palindromes
+-> Ascending digits
+-> And many more...
+
+User-customizable conditions:
+->Check if a number is greater than, less than, or equal to a specified number.
+->Check if a number is divisible by another number or is a multiple of a given number.
+->Check if a number is a power of another number.
+->Check if a number is within a specific range.
+
+Usage:
+->Divide List into Groups
+->You can use the divide_list function to divide your data into different groups based on predefined or custom conditions.
+
+
+Predefined Conditions:
+
+The following predefined conditions can be used for grouping data:
+
+->is_even(x): Returns True if x is an even number.
+->is_odd(x): Returns True if x is an odd number.
+->is_prime(x): Returns True if x is a prime number.
+->is_perfect_square(x): Returns True if x is a perfect square.
+->is_perfect_cube(x): Returns True if x is a perfect cube.
+->is_fibonacci(x): Returns True if x is a Fibonacci number.
+->is_palindrome(x): Returns True if x is a palindrome (reads the same forward and backward).
+->is_ascending_digits(x): Returns True if the digits of x are in ascending order.
+->is_zero(x): Returns True if x is equal to zero.
+->is_positive(x): Returns True if x is a positive number.
+->is_negative(x): Returns True if x is a negative number.
+->Custom Conditions
+
+You can also create your own conditions using functions that return a True or False value based on a specific condition. Some examples include:
+
+->is_greater_than(user_number): Returns a function that checks if a number is greater than a user-defined number.
+->is_less_than(user_number): Returns a function that checks if a number is less than a user-defined number.
+->is_divisible_by(user_number): Returns a function that checks if a number is divisible by a user-defined number.
+->is_multiple_of(user_number): Returns a function that checks if a number is a multiple of a user-defined number.
+->is_between_range(min_value, max_value): Returns a function that checks if a number is between a given range (inclusive).
+
+
+
+This README will be a good starting point for users of the `LogicChunks` package to install, use, and understand its features.
+
+
+## Sample Usage
+
+
+from logicchunks.lists import *
+
+# Example list of numbers
+numbers = [1, 2, 3, 4, 5, 6, 10,10, 12, 16, 25, 100, 144, 50, 0,121, 0, -5, -10,2901]
+
+
+
+# Define the conditions dictionary based on user selections
+conditions = {
+    "Greater than 10": is_greater_than(10),
+    "Divisible by 2": is_divisible_by(2),
+    "Multiple of 3": is_multiple_of(3),
+    "Power of 2": is_power_of_x(2),
+    "Even": is_even,
+    "Odd": is_odd,
+    "Positive": is_positive,
+    "Negative": is_negative,
+    "Prime": is_prime,
+    "Perfect Square": is_perfect_square,
+    "Perfect Cube": is_perfect_cube,
+    "Fibonacci": is_fibonacci,
+    "Even Length": is_even_length,
+    "Odd Length": is_odd_length,
+    "Integer": is_integer,
+    "Float": is_float,
+    "Zero": is_zero,
+    "Palindrome": is_palindrome,
+    "Ascending Digits": is_ascending_digits,
+    "Less than 10": is_less_than(10),
+    "Equal to 10": is_equal_to(10),
+    "Not Equal to 10": is_not_equal_to(10),
+    "Between 5 and 50": is_between_range(5,50),
+    "Multiple of 2 or 3": is_multiple_of_any([2,3]),
+    "Square Root Integer": is_square_root_integer
+}
+
+# Using the divide_list function to divide the numbers into groups based on conditions
+grouped_numbers = divide_list(numbers, conditions)
+
+# Print the results
+for condition_name, group in grouped_numbers.items():
+    print(f"\n{condition_name}:")
+    print(group)

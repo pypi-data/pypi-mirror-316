@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+LogicChunks.egg-info/PKG-INFO
+LogicChunks.egg-info/SOURCES.txt
+LogicChunks.egg-info/dependency_links.txt
+LogicChunks.egg-info/top_level.txt
+logicchunks/__init__.py
+logicchunks/lists.py
+tests/__init__.py
+tests/test_operations.py
