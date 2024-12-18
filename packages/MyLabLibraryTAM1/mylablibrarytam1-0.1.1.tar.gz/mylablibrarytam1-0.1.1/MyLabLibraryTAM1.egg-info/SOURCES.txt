@@ -1,0 +1,15 @@
+README.md
+setup.py
+MyLabLibraryTAM1/Compiler.py
+MyLabLibraryTAM1/Parser.py
+MyLabLibraryTAM1/Reader.py
+MyLabLibraryTAM1/Struck.py
+MyLabLibraryTAM1/Value.py
+MyLabLibraryTAM1/__init__.py
+MyLabLibraryTAM1/main.py
+MyLabLibraryTAM1.egg-info/PKG-INFO
+MyLabLibraryTAM1.egg-info/SOURCES.txt
+MyLabLibraryTAM1.egg-info/dependency_links.txt
+MyLabLibraryTAM1.egg-info/top_level.txt
+tests/test_compiler.py
+tests/test_value.py
