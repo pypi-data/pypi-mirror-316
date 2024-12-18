@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: flowchart-magic
+Version: 0.1.0
+Summary: Un magic %%flowchart para generar diagramas de flujo en Google Colab.
+Author-email: Manuel Garcés <manugp1994@gmail.com>
+License: MIT
+Project-URL: Homepage, https://github.com/tuusuario/colab-flowchart
+Project-URL: Bug Tracker, https://github.com/tuusuario/colab-flowchart/issues
+Keywords: google colab,flowchart,magic command,python
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: pyflowchart>=0.4.0
+Requires-Dist: IPython>=7.0.0
+
+# colab-flowchart
+
+Una librería para Google Colab que permite generar diagramas de flujo con el magic `%%flowchart`.
+
+## Instalación
+
+```bash
+pip install colab-flowchart
+```
+
+## Uso
+
+```python
+from flowchart_magic import flowchart
+
+# Habilita el magic
+%load_ext flowchart_magic.flowchart_magic
+
+%%flowchart
+def ejemplo():
+    x = 10
+    if x > 5:
+        print("x es mayor que 5")
+    else:
+        print("x no es mayor que 5")
+```
+
+
+
