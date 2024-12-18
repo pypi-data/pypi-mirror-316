@@ -1,0 +1,2 @@
+[console_scripts]
+pandem = pandem.pipeline:conversion_script
