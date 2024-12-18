@@ -1,0 +1,3 @@
+pocketbase==0.14.0
+supabase==2.7.4
+python-dotenv
