@@ -1,0 +1,14 @@
+sentry-sdk
+Django
+django-bootstrap3
+django-environ
+requests
+celery[redis]
+
+[dev]
+black
+isort
+flake8
+mypy
+sphinx
+odsc-default-sphinx-theme

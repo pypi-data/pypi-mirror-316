@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: libcoveweb2
+Version: 0.4.0
+Home-page: https://github.com/OpenDataServices/lib-cove-web-2
+Author: Open Data Services
+Author-email: code@opendataservices.coop
+Requires-Python: >=3.8
+Description-Content-Type: text/plain
+License-File: LICENSE.rst
+Requires-Dist: sentry-sdk
+Requires-Dist: Django
+Requires-Dist: django-bootstrap3
+Requires-Dist: django-environ
+Requires-Dist: requests
+Requires-Dist: celery[redis]
+Provides-Extra: dev
+Requires-Dist: black; extra == "dev"
+Requires-Dist: isort; extra == "dev"
+Requires-Dist: flake8; extra == "dev"
+Requires-Dist: mypy; extra == "dev"
+Requires-Dist: sphinx; extra == "dev"
+Requires-Dist: odsc-default-sphinx-theme; extra == "dev"
