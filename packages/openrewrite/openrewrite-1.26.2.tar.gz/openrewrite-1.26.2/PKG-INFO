@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: openrewrite
+Version: 1.26.2
+Summary: OpenRewrite is a mass automated refactoring engine.
+Author-email: "Moderne Inc." <support@moderne.io>
+License: Moderne, Inc. Commercial License
+Requires-Python: <4,>=3.12
+Requires-Dist: pytest>=8.3.4
+Requires-Dist: more-itertools>=10.4.0
+Requires-Dist: openrewrite-remote

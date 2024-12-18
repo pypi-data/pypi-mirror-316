@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "openrewrite"
+description = "OpenRewrite is a mass automated refactoring engine."
+version = "1.26.2" # Updated dynamically during release
+authors = [{ name = "Moderne Inc.", email = "support@moderne.io" }]
+license = { text = "Moderne, Inc. Commercial License" }
+dependencies = ["pytest>=8.3.4", "more-itertools>=10.4.0", "openrewrite-remote"]
+requires-python = ">=3.12, <4"
+
+[tool.setuptools.packages.find]
+include = ["rewrite"]
+exclude = []
+
+[dependency-groups]
+dev = [
+    "pytest==8.3.4",
+    "mypy==1.13.0",
+    "poethepoet==0.31.1",
+    "black==24.10.0",
+    "pylint==3.3.2",
+]
+
+[tool.poe.tasks]
+check-types = "mypy ./rewrite"
+format = "black ./rewrite ./tests"
+test = "pytest"
+lint = "pylint ./rewrite/**/*.py ./tests/**/*.py"
