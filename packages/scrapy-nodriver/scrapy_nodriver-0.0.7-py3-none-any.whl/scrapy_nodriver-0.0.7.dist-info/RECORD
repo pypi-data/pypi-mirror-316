@@ -1,0 +1,7 @@
+scrapy_nodriver/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+scrapy_nodriver/_utils.py,sha256=R6W-vfT-8XB-9IJfkvtKSq7b-qWmTnfpXiOY5ArIquw,1317
+scrapy_nodriver/handler.py,sha256=XQVUvBGl_LNQosiuS8Je269KYZLfFkUTzETLs34d3JU,12257
+scrapy_nodriver/page.py,sha256=g2orsftKtXa9G0O-rH9rqaUtCN4M8-4zp-AsYkbbQOY,566
+scrapy_nodriver-0.0.7.dist-info/METADATA,sha256=H7hfot-AJ6LAGZpAjnp4soHV05azT3Vr-pvkXRUMZFw,13392
+scrapy_nodriver-0.0.7.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+scrapy_nodriver-0.0.7.dist-info/RECORD,,
