@@ -1,0 +1,18 @@
+MercuryDPM 0.14 name Tutorial1 revision 6523 repository https://svn.mercurydpm.org/SourceCode/Trunk
+dataFile    fileType ONE_FILE saveCount 10 counter 2002 lastSavedTimeStep 20001
+fStatFile   fileType NO_FILE saveCount 10 counter 0
+eneFile     fileType NO_FILE saveCount 10 counter 0
+restartFile fileType ONE_FILE saveCount 10 counter 2002 lastSavedTimeStep 20001
+statFile    fileType ONE_FILE saveCount 10 counter 0
+interactionFile fileType NO_FILE saveCount 0 counter 0
+xMin 0 xMax 1 yMin 0 yMax 1 zMin 0 zMax 1
+timeStep 0.0001 time 2.0000999999998 ntimeSteps 20001 timeMax 2
+systemDimensions 3 particleDimensions 3 gravity 0 0 0 writeVTK 0 NO_FILE NO_FILE 0 0 0 0 random  0 1103515245 12345 1073741824 607 273 784607267 xBallsArguments -solidf -v0
+Species 1
+LinearViscoelasticSpecies id 0 density 2500 stiffness 258.5 dissipation 0
+Walls 0
+Boundaries 0
+Particles 1
+BaseParticle id 0 indSpecies 0 position 1.10005000000011 0.300010000000165 0.300010000000165 orientation 1 0 0 0 velocity 0.5 0.1 0.1 angularVelocity 0 0 0 force 0 0 0 torque 0 0 0 radius 0.05 invMass 0.763943726841098
+Interactions 0
+hGrid method TOPDOWN distribution EXPONENTIAL cellOverSizeRatio 1 numberOfBuckets 10 cellSizes 0.1 gridNeedsUpdate 0 updateEachTimeStep 1 currentMaxRelativeDisplacement 0 totalCurrentMaxRelativeDisplacement 0
