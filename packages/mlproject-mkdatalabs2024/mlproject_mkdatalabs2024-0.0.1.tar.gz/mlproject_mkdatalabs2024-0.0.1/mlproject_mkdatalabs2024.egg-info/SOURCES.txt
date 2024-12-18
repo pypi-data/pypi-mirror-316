@@ -1,0 +1,7 @@
+README.md
+setup.py
+mlproject_mkdatalabs2024.egg-info/PKG-INFO
+mlproject_mkdatalabs2024.egg-info/SOURCES.txt
+mlproject_mkdatalabs2024.egg-info/dependency_links.txt
+mlproject_mkdatalabs2024.egg-info/requires.txt
+mlproject_mkdatalabs2024.egg-info/top_level.txt
