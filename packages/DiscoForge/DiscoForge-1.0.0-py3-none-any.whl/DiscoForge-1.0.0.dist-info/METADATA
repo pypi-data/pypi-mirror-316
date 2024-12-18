@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: DiscoForge
+Version: 1.0.0
+Summary: Create Discord bots quickly and simply with DiscoForge
+Author: MilesWK
+Author-email: your_name@example.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 5 - Production/Stable
+Description-Content-Type: text/markdown
+Requires-Dist: discord
+
+# DiscoForge
+**Python Discord bots made easy.**
+
