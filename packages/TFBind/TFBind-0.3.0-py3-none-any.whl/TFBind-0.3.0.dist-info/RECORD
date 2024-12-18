@@ -1,0 +1,11 @@
+TFBind/__init__.py,sha256=6KEQd1DG8FwnzE_Cuy8Y121y8cHxM2Iv6HUAetRs_SY,3746
+TFBind/nuc_model.py,sha256=u_pnBr4JG2CjrJyWSvq-V9C6jhxrnMsUp1OxiVJW_Cs,2089
+TFBind/nuc_utils.py,sha256=Jryhdk6SQ058bPSRLuXwYYAnpcSIKh0bj7hVQWKKLE8,16878
+TFBind/data/dict.txt,sha256=1G80MTmaWGspPmNHnVg5OB14YGZoyo1SszAwu2l8IRM,225
+TFBind/data/length.txt,sha256=Qca3PA886fAjXW3sVEft06x0kXRRC3OAzqddNhgOxqw,71
+TFBind/use_model/nuc_20.pth,sha256=1oZsFYYlbyDdnNJw0u4P-NvUp1p2y0uR1-7-q2GDIYc,1781491
+TFBind-0.3.0.dist-info/LICENSE,sha256=QWu5adIRxUzFNuNNRm14RB5XjaKIn-d6isQDy_hkMhw,1086
+TFBind-0.3.0.dist-info/METADATA,sha256=PXd1Rqy-qhIKBV5RtAQ-V4oBdtitC7e4iSmvAnixVn4,1218
+TFBind-0.3.0.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+TFBind-0.3.0.dist-info/top_level.txt,sha256=497vL7ycWcoNkgBv8oQVfpkHtR9eXXpWBAuPuRz_q0U,7
+TFBind-0.3.0.dist-info/RECORD,,
