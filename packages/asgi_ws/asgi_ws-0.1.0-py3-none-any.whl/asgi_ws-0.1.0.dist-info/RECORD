@@ -1,0 +1,7 @@
+src/asgi.py,sha256=o5pwCChLPbWYbTse-DMKZlOP-fuyKLg1_2CwnL7BNhE,374
+src/lib/static/js/websockets.js,sha256=XSSX3tAqKof9XKregWv0wv5kv3pOxF7XV1k1XL7OJrc,1009
+src/lib/websockets.py,sha256=u7jQjLTWJT7eO97RqC7kJlM2Sw332Sh6GFlLu3ytSe4,3552
+src/wsgi.py,sha256=vW0rRPO0dx0fb3fb9KyffMhy8u2WscUr0w_zPWeS7pA,2811
+asgi_ws-0.1.0.dist-info/METADATA,sha256=hzxFxT0Qj20NkiIfaM-7IwEF75OYurafC1hMpaF_6n4,5669
+asgi_ws-0.1.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+asgi_ws-0.1.0.dist-info/RECORD,,
