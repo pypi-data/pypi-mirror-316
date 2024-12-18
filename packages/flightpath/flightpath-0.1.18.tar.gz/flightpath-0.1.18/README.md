@@ -1,0 +1,68 @@
+# Flightpath
+
+A command-line tool for calculating and analyzing critical paths in Apache Airflow DAGs.
+
+## Overview
+
+Flightpath helps you identify bottlenecks and optimization opportunities in your Airflow workflows by:
+- Tracing critical paths through task dependencies
+- Calculating task timing metrics (ready time, running time, total time)
+- Supporting analysis across multiple DAGs via external task sensors
+- Providing detailed timing breakdowns and statistics
+
+## Installation
+
+Install using pip:
+```
+bash
+pip install flightpath
+```
+
+
+## Usage
+
+Basic usage to analyze the `diamond2` DAG in the included `tests/airflow_example/dags/` directory:
+```
+poetry run flightpath trace \
+  -u admin -p admin \
+  --baseurl http://localhost:8080 \
+  --end-task-id end \
+  --end-dag-id diamond2 \
+  --dag-run-id scheduled__2024-12-18T02:00:00+00:00
+```
+
+This command produces the following output:
+```
+2024-12-17 21:01:32,176 - INFO - Tracing from diamond2:end
+2024-12-17 21:01:32,176 - INFO -   Extracting all dependencies for dag diamond2 from endpoint: http://localhost:8080/api/v1/dags/diamond2/tasks
+2024-12-17 21:01:36,325 - INFO - Found previous task diamond2:task_2
+2024-12-17 21:01:40,111 - INFO - Found previous task diamond2:slow_path_19
+2024-12-17 21:01:40,301 - INFO - Found previous task diamond2:task_1
+2024-12-17 21:01:40,480 - INFO - Found previous task diamond2:wait_for_diamond1
+2024-12-17 21:01:40,480 - INFO -   Retrieving upstream information for ExternalTaskSensor task wait_for_diamond1 in dag diamond2
+DAG ID   | Path Index | Task ID           | Pool         | Priority Weight | Ready Date          | Start Date          | End Date            | Ready (Seconds) | Running (Seconds) | Total (Seconds) | Link
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+diamond2 | 0          | wait_for_diamond1 | default_pool | 44              | -                   | 2024-12-18 02:10:00 | 2024-12-18 02:11:01 | 0.0             | 0.0               | 0.0             | LINK
+diamond2 | 1          | task_1            | default_pool | 43              | 2024-12-18 02:11:01 | 2024-12-18 02:11:01 | 2024-12-18 02:11:01 | 0.8             | 0.0               | 0.8             | LINK
+diamond2 | 2          | slow_path_19      | default_pool | 3               | 2024-12-18 02:11:01 | 2024-12-18 02:12:46 | 2024-12-18 02:12:56 | 104.1           | 10.3              | 114.4           | LINK
+diamond2 | 3          | task_2            | default_pool | 2               | 2024-12-18 02:12:56 | 2024-12-18 02:14:48 | 2024-12-18 02:14:48 | 112.0           | 0.0               | 112.0           | LINK
+diamond2 | 4          | end               | default_pool | 1               | 2024-12-18 02:14:48 | 2024-12-18 02:14:48 | 2024-12-18 02:14:48 | 0.4             | 0.0               | 0.4             | LINK
+
+-- Statistics --
+Ready Time:	217.3 Seconds
+Running Time:	10.3 Seconds
+Total Time:	227.6 Seconds
+Longest Task:	diamond2:slow_path_19 (114.4 Seconds, 50.3% of total time)
+
+-- Parameters --
+Run Id:		scheduled__2024-12-18T02:00:00+00:00
+End Dag:	diamond2
+End Task:	end
+```
+
+## Key Concepts
+
+- **Running Time**: Time a task takes to execute (end_time - start_time)
+- **Ready Time**: Time between upstream dependencies completing and task start
+- **Total Time**: Ready Time + Running Time
+- **Critical Path**: Longest path through the DAG ending at the specified task, where path length is the sum of Total Times
