@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+Readme.md
+setup.py
+MOdel/__init__.py
+MOdel/load_model.py
+MOdel/test.py
+modelAfroz.egg-info/PKG-INFO
+modelAfroz.egg-info/SOURCES.txt
+modelAfroz.egg-info/dependency_links.txt
+modelAfroz.egg-info/requires.txt
+modelAfroz.egg-info/top_level.txt
