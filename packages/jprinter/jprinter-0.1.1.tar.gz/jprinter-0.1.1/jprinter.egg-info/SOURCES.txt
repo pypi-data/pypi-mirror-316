@@ -1,0 +1,13 @@
+README.md
+setup.py
+jprinter/__init__.py
+jprinter/builtins.py
+jprinter/coloring.py
+jprinter/core.py
+jprinter/jp.py
+jprinter/jprint.py
+jprinter.egg-info/PKG-INFO
+jprinter.egg-info/SOURCES.txt
+jprinter.egg-info/dependency_links.txt
+jprinter.egg-info/requires.txt
+jprinter.egg-info/top_level.txt
