@@ -1,0 +1,40 @@
+image: python:alpine
+
+test:lint:
+  stage: test
+  needs: []
+  before_script:
+  - pip install -e '.[pep_8]'
+  - pip uninstall -y pyheimdall-wikidata  # use current sources
+  script:
+  - echo "Running linter…"
+  - pycodestyle --config=.pycodestyle ./src
+  allow_failure: true
+
+test:coverage:
+  stage: test
+  needs: []
+  before_script:
+  - pip install -e '.[tests]'
+  - pip uninstall -y pyheimdall-wikidata  # use current sources
+  script:
+  - coverage run -m pytest && coverage report -m && coverage html
+  coverage: '/TOTAL.*\s+(\d+%)$/'
+  artifacts:
+    paths:
+    - coverage/
+
+pages:
+  stage: deploy
+  needs:
+  - job: test:coverage
+    artifacts: true
+  script:
+  - mkdir public
+  - mv coverage/ public/coverage
+  - echo "Uploading to pages…"
+  artifacts:
+    paths:
+    - public
+  only:
+  - main

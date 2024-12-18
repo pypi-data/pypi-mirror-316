@@ -1,0 +1,106 @@
+<hera xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://gitlab.huma-num.fr/datasphere/hera/schema/schema.xsd">
+  <properties />
+  <entities />
+  <items>
+    <item eid="item">
+      <metadata pid="id">Q216930</metadata>
+      <metadata xml:lang="fr" pid="title">Harry Potter</metadata>
+      <metadata xml:lang="en" pid="title">Harry Potter</metadata>
+      <metadata xml:lang="en" pid="description">fantasy film series adaptation of the Harry Potter novels</metadata>
+      <metadata xml:lang="fr" pid="description">série de films adaptés des livres</metadata>
+      <metadata xml:lang="fr" pid="title">Films harry potter</metadata>
+      <metadata xml:lang="en" pid="title">Harry Potter film series</metadata>
+      <metadata pid="P31">Q24856</metadata>
+      <metadata pid="P373">Harry Potter films</metadata>
+      <metadata pid="P856">http://www.harrypotter.com/</metadata>
+      <metadata pid="P910">Q5903147</metadata>
+      <metadata pid="P646">/m/02676m4</metadata>
+      <metadata pid="P227">7556067-7</metadata>
+      <metadata pid="P144">Q8337</metadata>
+      <metadata pid="P364">Q1860</metadata>
+      <metadata pid="P161">Q38119</metadata>
+      <metadata pid="P161">Q39476</metadata>
+      <metadata pid="P161">Q19190</metadata>
+      <metadata pid="P161">Q106775</metadata>
+      <metadata pid="P582">+2011-00-00T00:00:00Z</metadata>
+      <metadata pid="P495">Q145</metadata>
+      <metadata pid="P495">Q30</metadata>
+      <metadata pid="P2013">harrypottermovie</metadata>
+      <metadata pid="P136">Q157394</metadata>
+      <metadata pid="P2530">harrypotter</metadata>
+      <metadata pid="P272">Q126399</metadata>
+      <metadata pid="P272">Q2415769</metadata>
+      <metadata pid="P272">Q678058</metadata>
+      <metadata pid="P750">Q126399</metadata>
+      <metadata pid="P527">Q102438</metadata>
+      <metadata pid="P527">Q102244</metadata>
+      <metadata pid="P527">Q102448</metadata>
+      <metadata pid="P527">Q102225</metadata>
+      <metadata pid="P527">Q102235</metadata>
+      <metadata pid="P527">Q161687</metadata>
+      <metadata pid="P527">Q161678</metadata>
+      <metadata pid="P527">Q232009</metadata>
+      <metadata pid="P3417">Harry-Potter-movie-series</metadata>
+      <metadata pid="P2002">HarryPotterFilm</metadata>
+      <metadata pid="P1877">Q34660</metadata>
+      <metadata pid="P915">Q1155735</metadata>
+      <metadata pid="P1881">Q208255</metadata>
+      <metadata pid="P4969">Q1369181</metadata>
+      <metadata pid="P4969">Q4040432</metadata>
+      <metadata pid="P244">sh2010014258</metadata>
+      <metadata pid="P674">Q174009</metadata>
+      <metadata pid="P674">Q173998</metadata>
+      <metadata pid="P674">Q3244512</metadata>
+      <metadata pid="P674">Q712548</metadata>
+      <metadata pid="P674">Q177439</metadata>
+      <metadata pid="P674">Q176132</metadata>
+      <metadata pid="P949">004948806</metadata>
+      <metadata pid="P989">En Harry Potter (film series) Wikipedia article.ogg</metadata>
+      <metadata pid="P18">Hogwarts's replica in Universal Studio, Orlando.jpg</metadata>
+      <metadata pid="P214">186680550</metadata>
+      <metadata pid="P921">Q81741</metadata>
+      <metadata pid="P921">Q3914</metadata>
+      <metadata pid="P921">Q23413</metadata>
+      <metadata pid="P8687">+2535861</metadata>
+      <metadata pid="P8687">+2713032</metadata>
+      <metadata pid="P8687">+3054340</metadata>
+      <metadata pid="P8687">+3092827</metadata>
+      <metadata pid="P162">Q319986</metadata>
+      <metadata pid="P162">Q975579</metadata>
+      <metadata pid="P162">Q34660</metadata>
+      <metadata pid="P162">Q362061</metadata>
+      <metadata pid="P162">Q6555831</metadata>
+      <metadata pid="P57">Q75079</metadata>
+      <metadata pid="P57">Q28028</metadata>
+      <metadata pid="P57">Q312088</metadata>
+      <metadata pid="P57">Q312988</metadata>
+      <metadata pid="P1889">Q8337</metadata>
+      <metadata pid="P8189">987007383254805171</metadata>
+      <metadata pid="P86">Q131285</metadata>
+      <metadata pid="P86">Q363241</metadata>
+      <metadata pid="P86">Q521288</metadata>
+      <metadata pid="P86">Q313362</metadata>
+      <metadata pid="P86">Q213869</metadata>
+      <metadata pid="P577">+2001-11-04T00:00:00Z</metadata>
+      <metadata xml:lang="en" pid="P1476">Harry Potter</metadata>
+      <metadata pid="P344">Q918558</metadata>
+      <metadata pid="P344">Q132112</metadata>
+      <metadata pid="P344">Q487382</metadata>
+      <metadata pid="P344">Q1347598</metadata>
+      <metadata pid="P344">Q993210</metadata>
+      <metadata pid="P344">Q707484</metadata>
+      <metadata pid="P344">Q750718</metadata>
+      <metadata pid="P58">Q643461</metadata>
+      <metadata pid="P580">+2001-00-00T00:00:00Z</metadata>
+      <metadata pid="P154">Harry Potter wordmark.svg</metadata>
+      <metadata pid="P154">Harry Potter wordmark-RUS.svg</metadata>
+      <metadata pid="P8419">Harry Potter RPF</metadata>
+      <metadata pid="P10688">87</metadata>
+      <metadata pid="P1407">2b9d1093-b9cb-4039-9808-c5b0e0eabcc2</metadata>
+      <metadata pid="P4953">gf2011026306</metadata>
+      <metadata pid="P11514">garri-potter-kinofranshiza-d4b662</metadata>
+      <metadata pid="P11805">1241</metadata>
+      <metadata pid="P10565">212375</metadata>
+    </item>
+  </items>
+</hera>
