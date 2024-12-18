@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+pyproject.toml
+nomad_camels_driver_leybold_c_move_1250/leybold_c_move_1250.py
+nomad_camels_driver_leybold_c_move_1250/leybold_c_move_1250_ophyd.py
+nomad_camels_driver_leybold_c_move_1250.egg-info/PKG-INFO
+nomad_camels_driver_leybold_c_move_1250.egg-info/SOURCES.txt
+nomad_camels_driver_leybold_c_move_1250.egg-info/dependency_links.txt
+nomad_camels_driver_leybold_c_move_1250.egg-info/requires.txt
+nomad_camels_driver_leybold_c_move_1250.egg-info/top_level.txt
