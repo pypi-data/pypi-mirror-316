@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: ym2
+Version: 0.0.1
+Requires-Dist: pyyaml
+Requires-Dist: omegaconf
+Requires-Dist: pydash

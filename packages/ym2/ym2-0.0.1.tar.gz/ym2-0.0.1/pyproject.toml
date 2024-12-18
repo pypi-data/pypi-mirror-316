@@ -1,0 +1,16 @@
+[project]
+name = "ym2"
+version = "0.0.1"
+dependencies = [
+    "pyyaml",
+    "omegaconf",
+    "pydash"
+]
+[build-system]
+requires = ["setuptools", "wheel"]
+
+[tool.setuptools]
+packages = ["ym2"]
+
+[project.scripts]
+ym2="ym2:parse"
