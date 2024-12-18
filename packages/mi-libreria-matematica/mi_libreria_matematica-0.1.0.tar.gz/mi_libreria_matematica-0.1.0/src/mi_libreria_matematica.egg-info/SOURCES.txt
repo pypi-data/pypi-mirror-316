@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+src/mi_libreria_matematica/__init__.py
+src/mi_libreria_matematica/operaciones.py
+src/mi_libreria_matematica.egg-info/PKG-INFO
+src/mi_libreria_matematica.egg-info/SOURCES.txt
+src/mi_libreria_matematica.egg-info/dependency_links.txt
+src/mi_libreria_matematica.egg-info/top_level.txt
+tests/test_operaciones.py

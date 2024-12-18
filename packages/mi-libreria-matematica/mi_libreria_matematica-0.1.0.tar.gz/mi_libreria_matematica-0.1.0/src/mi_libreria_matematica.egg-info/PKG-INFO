@@ -1,0 +1,74 @@
+Metadata-Version: 2.1
+Name: mi_libreria_matematica
+Version: 0.1.0
+Summary: Una librería de operaciones matemáticas básicas.
+Author-email: Manuel Garcés <manugp1994@gmail.com>
+License: MIT
+Project-URL: Homepage, https://github.com/tuusuario/mi_libreria_matematica
+Project-URL: Bug Tracker, https://github.com/tuusuario/mi_libreria_matematica/issues
+Keywords: matematica,operaciones,python
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# mi_libreria_matematica
+
+Una librería de Python para realizar operaciones matemáticas básicas.
+
+## Instalación
+
+```bash
+pip install mi_libreria_matematica
+```
+
+## Uso
+
+```python
+from mi_libreria_matematica import sumar, restar, multiplicar, dividir
+
+print(sumar(2, 3))         # 5
+print(restar(5, 2))        # 3
+print(multiplicar(3, 4))   # 12
+print(dividir(8, 2))       # 4.0
+```
+
+## **7. Sube tu paquete a PyPI**
+
+### Instala las herramientas necesarias
+Primero, asegúrate de tener `build` y `twine`:
+
+```bash
+pip install build twine
+```
+
+## **7. Sube tu paquete a PyPI**
+
+### Instala las herramientas necesarias
+Primero, asegúrate de tener `build` y `twine`:
+
+```bash
+pip install build twine
+```
+
+### Genera el archivo `.tar.gz`
+```bash
+python -m build
+```
+
+Esto generará archivos en la carpeta dist/:
+```
+dist/
+├── mi_libreria_matematica-0.1.0.tar.gz
+└── mi_libreria_matematica-0.1.0-py3-none-any.whl
+```
+
+
+### Sube tu paquete a PyPI
+```bash
+twine upload dist/*
+```
+
+Una vez subida a PyPI, cualquier persona (o tú mismo) podrá instalarla usando:
+    
+```bash
+pip install mi_libreria_matematica
+```

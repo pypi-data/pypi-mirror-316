@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=42"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mi_libreria_matematica"
+version = "0.1.0"
+authors = [
+    { name="Manuel Garcés", email="manugp1994@gmail.com" }
+]
+description = "Una librería de operaciones matemáticas básicas."
+readme = "README.md"
+requires-python = ">=3.7"
+license = { text = "MIT" }
+keywords = ["matematica", "operaciones", "python"]
+dependencies = []
+
+[project.urls]
+"Homepage" = "https://github.com/tuusuario/mi_libreria_matematica"
+"Bug Tracker" = "https://github.com/tuusuario/mi_libreria_matematica/issues"
