@@ -1,0 +1,13 @@
+tacoreader/__init__.py,sha256=8uQQOcOEODdAws6qVqjXnNmUqoZ6qmH_d_oZwIXSOqU,734
+tacoreader/compile.py,sha256=v-Z5EzK4kVuArpWL_uqnayhfjo9qmQ3rR09fn8DrCzM,11953
+tacoreader/compile_utils.py,sha256=-vfD1cWPHojiBAC4T_4eUIWPRu4jaKPpeVEsjfg4QhM,3026
+tacoreader/datacard.py,sha256=75ROYOYWvyCKAiDLDXDb4Avy4mOxbcHcnDRe6Mj30AA,8876
+tacoreader/datasets.py,sha256=0eg0217cZJEnZoouqhf_BvodkoWdxawBz7DXicwKNQ8,1202
+tacoreader/load.py,sha256=BWbKJGxnIQpmxOGXeoTFl4hz4QIVTHbeSbOieyDzdoE,6774
+tacoreader/load_local.py,sha256=bsYxtw0avUjz039YhSCdCPWlubQc7XZd4zBrmkvuSZ0,4963
+tacoreader/load_remote.py,sha256=DdO74AXhn8ZZovWVaFB0UcV4DLTnKVbMEUtvzIqOb9w,5438
+tacoreader/load_utils.py,sha256=mqEeiRas4W5_fb_kSGc0MN3ZTEPwh5D4C9KFaqyxRFo,5745
+tacoreader-0.4.1.dist-info/LICENSE,sha256=YdB4BQMkMzWuKvXRIpQR4g91IQ_pwA5PSH2lNM97zFI,1070
+tacoreader-0.4.1.dist-info/METADATA,sha256=IplhpSnn2frKhC5jDQI-Vy1pLdqteGwplY4psi6--NA,3387
+tacoreader-0.4.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+tacoreader-0.4.1.dist-info/RECORD,,
