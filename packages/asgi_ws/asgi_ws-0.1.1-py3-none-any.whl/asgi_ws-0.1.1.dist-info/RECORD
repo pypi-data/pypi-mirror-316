@@ -1,0 +1,6 @@
+lib/__init__.py,sha256=BwZMMXYeuopyRLvrWAOyaBQK8D9dzrfRTgaUvjPO4b0,33
+lib/static/js/websockets.js,sha256=XSSX3tAqKof9XKregWv0wv5kv3pOxF7XV1k1XL7OJrc,1009
+lib/websockets.py,sha256=u7jQjLTWJT7eO97RqC7kJlM2Sw332Sh6GFlLu3ytSe4,3552
+asgi_ws-0.1.1.dist-info/METADATA,sha256=jZB0E5gAckg6phg1kQvTKutJS2Vy_dV6vbQlppLbZDQ,5669
+asgi_ws-0.1.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+asgi_ws-0.1.1.dist-info/RECORD,,
