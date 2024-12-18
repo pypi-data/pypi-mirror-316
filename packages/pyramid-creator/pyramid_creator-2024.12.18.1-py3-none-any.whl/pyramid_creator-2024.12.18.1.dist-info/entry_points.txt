@@ -1,0 +1,2 @@
+[console_scripts]
+pyramid-creator = pyramid_creator.pyramid_creator:app
