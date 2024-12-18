@@ -1,0 +1,2 @@
+[console_scripts]
+sms-cli = sms_client.main:cli_group
