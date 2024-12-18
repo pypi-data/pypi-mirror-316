@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: secretMessageResponse
+Version: 2.0.17
+Summary: 此库为接收消息专用，使用前请更新库同步最新消息，上级会将回复信息更新到最新库中。此库 只查看回复消息，不发送消息。
+Author: Dylan
+Author-email: Dylan@secretplace.com
