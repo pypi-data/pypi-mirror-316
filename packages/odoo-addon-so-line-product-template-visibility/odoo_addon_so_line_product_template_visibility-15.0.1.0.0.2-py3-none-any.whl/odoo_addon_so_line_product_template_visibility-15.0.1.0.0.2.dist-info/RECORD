@@ -1,0 +1,8 @@
+odoo/addons/so_line_product_template_visibility/README.rst,sha256=aaESSbW-sjr6pkjkflJmWLCuRhKGtCGaUwo8b7dCefc,1744
+odoo/addons/so_line_product_template_visibility/__manifest__.py,sha256=UgrVqnpndfPqsNkU8jhY8Ms_D5cbE4z-MolOgIhDYw4,599
+odoo/addons/so_line_product_template_visibility/static/description/icon.png,sha256=bVbNdnyk7PXHuZ3ye_Aqh1M9tbfPJ5zU5W1VnoO8mBQ,35820
+odoo/addons/so_line_product_template_visibility/views/sale_order_views.xml,sha256=VvTsPnLmEkVaoX2E_J78sTusnI0QCDv9FCD7paIhndY,1039
+odoo_addon_so_line_product_template_visibility-15.0.1.0.0.2.dist-info/METADATA,sha256=0CReUe0Ofb5SkD5wqd4ME7kqMQb8dMfFK5fQ_2eEJBI,2302
+odoo_addon_so_line_product_template_visibility-15.0.1.0.0.2.dist-info/WHEEL,sha256=tZoeGjtWxWRfdplE7E3d45VPlLNQnvbKiYnx7gwAy8A,92
+odoo_addon_so_line_product_template_visibility-15.0.1.0.0.2.dist-info/top_level.txt,sha256=qBj40grFkGOfDZ2WDSw3y1RnDlgG0u8rP8pvGNdbz4w,5
+odoo_addon_so_line_product_template_visibility-15.0.1.0.0.2.dist-info/RECORD,,
