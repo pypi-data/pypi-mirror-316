@@ -1,0 +1,11 @@
+aschttp/__init__.py,sha256=sLvhAzPJy4Q4vNhy6Xt2mvsm0OrPK4DhpUJEc18e3xk,412
+aschttp/_transport.py,sha256=cZPXeJMITfQVutA-4x1ol11LQluykSIs9tF5yf85xjM,2218
+aschttp/awaitables/awaitable.py,sha256=e1DQNCA5nsFrwU5sqYQ58H12UzNC0Yl2ik6x_Ga8Sho,303
+aschttp/client.py,sha256=35-O9sJsgjsQzo6mRtLDNg0g_iNR0vQwPjt3gHtL2X0,5176
+aschttp/provider.py,sha256=GYkckE2SVggu0GT1BNs8rEtuTa5b_GJKmaCCT1M_zH8,789
+aschttp/types/http_options.py,sha256=kKwUyTpirgEmYm5UnnuJIvWEzF77rAggwHHdkz_5a0U,433
+aschttp/types/interceptors.py,sha256=yOsiiGS0ZSZSXjgAsX7HWerrZDUv-9-niol0CUAGUJs,459
+ascender_httpclient-0.1.0.dist-info/LICENSE,sha256=RJiE_Hca8yzYUfP32yYxD9nzPAmDftaZGQZUFz_qFw8,1079
+ascender_httpclient-0.1.0.dist-info/METADATA,sha256=vvGWFWxrazgfFqWcpPZdGXLURim4MqdFR7mEOsD6Fts,5945
+ascender_httpclient-0.1.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+ascender_httpclient-0.1.0.dist-info/RECORD,,
