@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: py-sms-cli
+Version: 0.1.0
+Summary: first
+Author: haozheng95
+Author-email: yinhaozheng77625961@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Requires-Dist: requests>=2.28.1
+Requires-Dist: certifi>=2024.12.14
+Requires-Dist: charset-normalizer>=3.4.0
+Requires-Dist: click>=8.1.7
+Requires-Dist: idna>=3.10
+Requires-Dist: packaging>=24.2
+Requires-Dist: prettytable>=3.12.0
+Requires-Dist: pyproject_hooks>=1.2.0
+Requires-Dist: tomli>=2.2.1
+Requires-Dist: urllib3>=2.2.3
