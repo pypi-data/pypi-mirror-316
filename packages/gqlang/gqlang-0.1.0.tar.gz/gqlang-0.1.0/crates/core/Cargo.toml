@@ -1,0 +1,26 @@
+[package]
+name = "gq-core"
+version = "0.1.0"
+description = "Core library for the GQ project. Currently is not intended for use outside of GQ frontends. Breaking changes may occur at any time."
+edition.workspace = true
+license.workspace = true
+homepage.workspace = true
+repository.workspace = true
+documentation.workspace = true
+
+[dependencies]
+derive_more.workspace = true
+log.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+serde_yaml.workspace = true
+thiserror.workspace = true
+colored_json = "5.0.0"
+derive-getters = "0.3.0"
+derive_builder = "0.20.0"
+escape8259 = "0.5.3"
+logos = "0.14.0"
+regex = "1.10.4"
+
+[dev-dependencies]
+rstest = "0.21.0"
