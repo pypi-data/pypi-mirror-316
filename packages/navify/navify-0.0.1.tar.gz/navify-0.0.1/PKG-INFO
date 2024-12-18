@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: navify
+Version: 0.0.1
+License-File: LICENSE
+Requires-Dist: spotipy
+Requires-Dist: py-sonic
+Requires-Dist: musicbrainzngs
+Requires-Dist: thefuzz
+Requires-Dist: importlib-metadata; python_version < "3.10"
