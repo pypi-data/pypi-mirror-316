@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: pyleaflet
+Version: 0.1.0
+Summary: A package to use the leaflet modules directly on python
+Author-email: Bruno Nunes Teixeira <brunont1211@gmail.com>
+License: MIT
+Project-URL: Homepage, https://github.com/BrunoNT10/pyleaflet
+Project-URL: Bug Tracker, https://github.com/BrunoNT10/pyleaflet/issues
+Keywords: exemplo,pacote,pypi
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+Requires-Dist: bs4
+
+# pyleaflet
+Repository used to store the pyleaflet lib code

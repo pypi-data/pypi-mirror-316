@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pyleaflet"
+version = "0.1.0"
+authors = [
+    { name="Bruno Nunes Teixeira", email="brunont1211@gmail.com" },
+]
+description = "A package to use the leaflet modules directly on python"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "bs4",
+]
+keywords = ["exemplo", "pacote", "pypi"]
+license = { text="MIT" }
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/BrunoNT10/pyleaflet"
+"Bug Tracker" = "https://github.com/BrunoNT10/pyleaflet/issues"
