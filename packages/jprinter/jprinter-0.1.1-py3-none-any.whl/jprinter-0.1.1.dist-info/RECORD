@@ -1,0 +1,10 @@
+jprinter/__init__.py,sha256=e5cAYc46Mylavv46N6ShP0F4WlteR0OYV0zvvwFJr8s,988
+jprinter/builtins.py,sha256=tU7YAytQ8yPTTkvGCXe9VftLJB83F-h46IuGiA2UkW4,254
+jprinter/coloring.py,sha256=7uNv-9RIqCFo8AuBfPZz7Mi4e4hnWAN0Jp5LWyLGD3I,4003
+jprinter/core.py,sha256=6g8r_Uxb1W7CghZ3azkAb2_fVSdeNspcxY-_qDmCpiI,12105
+jprinter/jp.py,sha256=hqg0fQ4rg111bhPDYvu-9SLiPBcEPL5CExaRIQiEvbg,8270
+jprinter/jprint.py,sha256=m7heQSn5qsUPLCY0i7qjN4hDA4LeGZDpXebqOLShPHo,8290
+jprinter-0.1.1.dist-info/METADATA,sha256=eV3YzRNrmm7E8uU0Nhh1Ehage3y1YWqjDeSb4JZaABs,11284
+jprinter-0.1.1.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+jprinter-0.1.1.dist-info/top_level.txt,sha256=LpbWH_qahDWFTmdGzZJLSE36nDJ7FKiVgxlOajUBH_o,9
+jprinter-0.1.1.dist-info/RECORD,,
