@@ -1,0 +1,5 @@
+[console_scripts]
+normative=pcntoolkit.normative:entrypoint
+normative_parallel=pcntoolkit.normative_parallel:entrypoint
+trendsurf=pcntoolkit.trendsurf:entrypoint
+
