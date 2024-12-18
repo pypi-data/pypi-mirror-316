@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: keep_tools_oncall
+Version: 1.0.1
+Summary: keep tools
+Author: dolmo
+Author-email: chengtianran@kuaishou.com
+License-File: LICENSE
+Requires-Dist: Click
