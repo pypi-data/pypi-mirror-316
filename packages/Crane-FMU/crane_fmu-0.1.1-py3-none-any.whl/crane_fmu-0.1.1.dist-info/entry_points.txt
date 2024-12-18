@@ -1,0 +1,2 @@
+[console_scripts]
+crane-fmu = crane_fmu.cli.crane_fmu:main
