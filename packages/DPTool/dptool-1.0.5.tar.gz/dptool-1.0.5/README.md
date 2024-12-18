@@ -1,0 +1,19 @@
+# DPTool
+* Ver 1.0.5
+1. 修改等待时间
+2. 修改重试逻辑
+
+* Ver 1.0.4
+1. 改bug
+
+* Ver 1.0.3
+1. 改bug
+
+* Ver 1.0.2
+1. 改bug
+
+* Ver 1.0.1
+1. 改bug
+
+* Ver 1.0.0
+本脚本基于DrissionPage提供API运行。喜欢本功能请给DrissionPage作者g1879买杯咖啡，支持原作者。DrissionPage Github: https://github.com/g1879/DrissionPage
