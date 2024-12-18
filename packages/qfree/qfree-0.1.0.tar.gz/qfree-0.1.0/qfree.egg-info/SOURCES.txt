@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+qfree/__init__.py
+qfree.egg-info/PKG-INFO
+qfree.egg-info/SOURCES.txt
+qfree.egg-info/dependency_links.txt
+qfree.egg-info/requires.txt
+qfree.egg-info/top_level.txt
+qfree/data/__init__.py
+qfree/portfolio/__init__.py
+qfree/portfolio/performance.py
+qfree/trader/__init__.py

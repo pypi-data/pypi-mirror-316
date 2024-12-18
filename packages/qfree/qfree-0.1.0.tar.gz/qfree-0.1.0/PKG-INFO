@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: qfree
+Version: 0.1.0
+Summary: Quantitative Trading Toolkit
+Author: leesp
+Author-email: leesp8@yeah.net
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+QFree : Quantitative Trading Toolkit
