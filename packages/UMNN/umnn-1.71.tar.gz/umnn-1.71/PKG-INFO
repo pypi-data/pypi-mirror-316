@@ -1,0 +1,11 @@
+Metadata-Version: 2.4
+Name: UMNN
+Version: 1.71
+Summary: Unconstrained Monotonic Neural Networks
+Project-URL: Homepage, https://github.com/AWehenkel/UMNN
+Author-email: awehenkel <antoine.wehenkel@gmail.com>
+License: BSD-3-Clause
+License-File: LICENSE
+Requires-Python: >=3.6
+Requires-Dist: numpy
+Requires-Dist: torch>=1.1
