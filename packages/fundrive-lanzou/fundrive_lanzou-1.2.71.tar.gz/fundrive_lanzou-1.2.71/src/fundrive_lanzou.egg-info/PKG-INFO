@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: fundrive-lanzou
+Version: 1.2.71
+Summary: fundrive
+Author-email: niuliangtao <farfarfun@qq.com>
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: cryptography>=44.0.0
+Requires-Dist: funutil>=1.0.43
+
+# fundrive-lanzou
