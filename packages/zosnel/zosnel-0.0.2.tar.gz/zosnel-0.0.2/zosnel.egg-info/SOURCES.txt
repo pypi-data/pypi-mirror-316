@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+zosnel/__init__.py
+zosnel/all_func.py
+zosnel/main.py
+zosnel.egg-info/PKG-INFO
+zosnel.egg-info/SOURCES.txt
+zosnel.egg-info/dependency_links.txt
+zosnel.egg-info/top_level.txt
