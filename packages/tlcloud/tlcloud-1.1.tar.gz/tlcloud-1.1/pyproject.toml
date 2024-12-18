@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tlcloud"
+version = "1.1"
+authors = [
+    { name = "tlcloud", email = "oyty@tonglucloud.com" },
+]
+description = "tools for tlcloud"
+readme = "README.md"
+requires-python = ">=3.6"
+license = { text = "MIT" }
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "requests>=2.28.0",
+]
+
+[project.urls]
+Homepage = "https://www.tonglucloud.com"
+Repository = "https://www.tonglucloud.com"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+packages = ["tlcloud"]

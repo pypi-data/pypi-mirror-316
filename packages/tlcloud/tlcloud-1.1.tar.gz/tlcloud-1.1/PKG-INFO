@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: tlcloud
+Version: 1.1
+Summary: tools for tlcloud
+Author-email: tlcloud <oyty@tonglucloud.com>
+License: MIT
+Project-URL: Homepage, https://www.tonglucloud.com
+Project-URL: Repository, https://www.tonglucloud.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests>=2.28.0
+
+# tlcloud
+
+Tools for tlcloud
