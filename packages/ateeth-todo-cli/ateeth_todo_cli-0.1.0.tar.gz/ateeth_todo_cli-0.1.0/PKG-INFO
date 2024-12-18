@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: ateeth-todo-cli
+Version: 0.1.0
+Summary: A cli for maintaining a todo list
+Author: Ateeth Arun
+Requires-Python: >=3.12,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: pandas (>=2.2.3,<3.0.0)
+Requires-Dist: typer[all] (>=0.15.1,<0.16.0)
+Description-Content-Type: text/markdown
+
+

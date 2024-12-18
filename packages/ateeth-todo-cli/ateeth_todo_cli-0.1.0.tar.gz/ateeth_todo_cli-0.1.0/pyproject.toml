@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "ateeth-todo-cli"
+version = "0.1.0"
+description = "A cli for maintaining a todo list"
+authors = ["Ateeth Arun"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+typer = {extras = ["all"], version = "^0.15.1"}
+pandas = "^2.2.3"
+
+[tool.poetry.scripts]
+ateeth-todo-cli = "ateeth_todo_cli.cli:app"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
