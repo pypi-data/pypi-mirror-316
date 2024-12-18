@@ -1,0 +1,9 @@
+chunking_pandas/__init__.py,sha256=vjpa8qsKdjMZJ53XJG0fWjJOkJWpNwE88yqzKlRX3u8,219
+chunking_pandas/core.py,sha256=Ddht4KGXunPCuY4V7GD2ZwUnZvvA9svZ4PEVb3F6Vtc,11576
+chunking_pandas/run.py,sha256=SztttWrM4YO-jee-GtkHrR2xDCdbtKn0hMFy7usV0qw,1659
+chunking_pandas/utils/__init__.py,sha256=Nqnn8clbgv-5l0PgxcTOldg8mkMKrFn4TvPL-rYUUGg,1
+chunking_pandas/utils/logging.py,sha256=tFUdOFHh3a3kIY9hUEklap1YboN6fCp65Jce8qU84ww,415
+chunking_pandas-0.1.6.dist-info/METADATA,sha256=00v5ak5zF5g_oG5tPOPPYUIfQYhpp8s93I2JT9jEASM,3425
+chunking_pandas-0.1.6.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+chunking_pandas-0.1.6.dist-info/licenses/LICENSE,sha256=8NUtJw09-llnrtT-WAfHZnyFk5zoKIKiodww4u9_Aog,1090
+chunking_pandas-0.1.6.dist-info/RECORD,,
