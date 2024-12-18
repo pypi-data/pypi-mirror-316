@@ -1,0 +1,23 @@
+[package]
+name = "rslattice"
+version = "0.1.1"
+edition = "2021"
+authors = ["Sintel"]
+description = "Python module for doing calculations on integer lattices."
+readme = "README.md"
+homepage = "https://github.com/Sin-tel/rslattice"
+repository = "https://github.com/Sin-tel/rslattice"
+license = "MIT"
+license-file = "LICENSE.txt"
+
+[lib]
+name = "rslattice"
+crate-type = ["cdylib"]
+
+[dependencies]
+pyo3 = {version = "0.23", features = ["abi3-py38", "extension-module"]}
+numpy = "0.23"
+malachite-bigint = "0.2"
+num-traits = "0.2"
+num-integer = "0.1"
+

@@ -1,0 +1,30 @@
+Metadata-Version: 2.4
+Name: rslattice
+Version: 0.1.1
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Dist: numpy <2.0
+Requires-Dist: pytest ; extra == 'tests'
+Provides-Extra: tests
+License-File: LICENSE.txt
+Summary: Python module for doing calculations on integer lattices.
+Home-Page: https://github.com/Sin-tel/rslattice
+Author: Sintel
+License: MIT
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+Project-URL: Source Code, https://github.com/Sin-tel/rslattice
+
+# rslattice
+Python module for doing calculations on integer lattices.
+
+Currently implemented:
+ * [LLL reduction](https://en.wikipedia.org/wiki/Lenstra%E2%80%93Lenstra%E2%80%93Lov%C3%A1sz_lattice_basis_reduction_algorithm) with custom bilinear form
+ * [Hermite normal form](https://en.wikipedia.org/wiki/Hermite_normal_form)
+ * Babai's nearest plane algorithm for solving approximate [CVP](https://en.wikipedia.org/wiki/Lattice_problem#Closest_vector_problem_(CVP))
+ * Exact integer determinant using [Bareiss algorithm](https://en.wikipedia.org/wiki/Bareiss_algorithm)
+
+Implemented in Rust because we gotta go FAST.
+This is mainly intended to speed up https://github.com/Sin-tel/temper/, but it should be generally useful.
+
