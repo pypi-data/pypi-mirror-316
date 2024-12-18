@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: djreport
+Version: 0.1.0
+Summary: A reusable Django app for handling reporting stuffs
+Author-email: Kaveh Mehrbanian <mehrbaniankaveh@gmail.com>
+Project-URL: Homepage, https://github.com/kavehkm/DJReport
+Project-URL: Documentation, https://github.com/kavehkm/DJReport
+Project-URL: Issues, https://github.com/kavehkm/DJReport/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: django>=5.1.4
+Requires-Dist: djangorestframework>=3.15.2
+
+# DJReport
+A reusable Django app for handling reporting stuffs
