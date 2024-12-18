@@ -1,0 +1,12 @@
+README.md
+setup.py
+TimeMate.egg-info/PKG-INFO
+TimeMate.egg-info/SOURCES.txt
+TimeMate.egg-info/dependency_links.txt
+TimeMate.egg-info/entry_points.txt
+TimeMate.egg-info/requires.txt
+TimeMate.egg-info/top_level.txt
+modules/__init__.py
+modules/__main__.py
+modules/__version__.py
+modules/timemate.py
