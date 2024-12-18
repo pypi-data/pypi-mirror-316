@@ -1,0 +1,10 @@
+[project]
+name = "shelf"
+version = "0.2.0"
+description = "Simple REST API client library"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "dotwiz>=0.4.0",
+    "httpx>=0.28.1",
+]
