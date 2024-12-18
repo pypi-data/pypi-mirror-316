@@ -1,0 +1,10 @@
+iloveapi-0.1.0.dist-info/METADATA,sha256=HpXe1l6kD3dEy5R82KXdux3Z2nt0Ch7hDCJmOAJP2H0,704
+iloveapi-0.1.0.dist-info/WHEEL,sha256=thaaA2w1JzcGC48WYufAs8nrYZjJm8LqNfnXFOFyCC4,90
+iloveapi-0.1.0.dist-info/entry_points.txt,sha256=6OYgBcLyFCUgeqLgnvMyOJxPCWzgy7se4rLPKtNonMs,34
+iloveapi-0.1.0.dist-info/licenses/LICENSE,sha256=aO8tPT7it_emHL_xQiSJg3iBzXxniJjYrZFqhT6PoKE,1064
+iloveapi/__init__.py,sha256=RkqQt6mcyFocYDFoIv05udSWZ9b-QqnxzpmGfOe4H7U,43
+iloveapi/auth.py,sha256=cCflGE4AEHXMugfQk-qVQRup1ppyLjvPsuOBu4Tm52Y,1339
+iloveapi/iloveapi.py,sha256=_9he0y4UCOMerYPCP4uOTCizjGzXXKYFBd8xZTh-5QQ,4026
+iloveapi/rest.py,sha256=K7WWFVDVi6N9wA6bGkaXtcRxxLvaDW5NdRXxsT0lJHM,3375
+iloveapi/utils.py,sha256=lkAq2DsdxuagHPqkfTDj2QyPH-i9oDCoyz2mgWjarkU,257
+iloveapi-0.1.0.dist-info/RECORD,,
