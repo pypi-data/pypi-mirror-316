@@ -1,0 +1,12 @@
+1.py
+MANIFEST.in
+README.md
+meta.py
+setup.py
+zip.zip
+code_tracker.egg-info/PKG-INFO
+code_tracker.egg-info/SOURCES.txt
+code_tracker.egg-info/dependency_links.txt
+code_tracker.egg-info/not-zip-safe
+code_tracker.egg-info/top_level.txt
+resources/image1.png
