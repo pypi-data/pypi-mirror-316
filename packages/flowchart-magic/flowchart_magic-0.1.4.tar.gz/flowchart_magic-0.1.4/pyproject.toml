@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=42"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "flowchart-magic"
+version = "0.1.4"
+authors = [
+    { name="Manuel Garcés", email="manugp1994@gmail.com" }
+]
+description = "Un magic %%flowchart para generar diagramas de flujo en Google Colab."
+readme = "README.md"
+requires-python = ">=3.7"
+dependencies = [
+    "pyflowchart>=0.3.1",
+    "IPython>=7.0.0"
+]
+keywords = ["google colab", "flowchart", "magic command", "python"]
+license = { text = "MIT" }
+
+[tool.setuptools]
+include-package-data = true
+
+[project.urls]
+"Homepage" = "https://github.com/tuusuario/colab-flowchart"
+"Bug Tracker" = "https://github.com/tuusuario/colab-flowchart/issues"
