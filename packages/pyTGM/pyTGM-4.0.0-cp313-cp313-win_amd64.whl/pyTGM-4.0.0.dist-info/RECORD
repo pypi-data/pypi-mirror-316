@@ -1,0 +1,15 @@
+click.cp313-win_amd64.pyd,sha256=C4hf11KQFJVmd-LpBPyx4vU3GISAM2iQOW4OnCLvjKo,10752
+pytgm/__init__.py,sha256=TYVU7M82CE3-GbJNUW2_r-z6tPMnDsFsVwvb8yx0Rbg,1423
+pytgm/b64.py,sha256=8buA-gkEwynHLUDsDB55PECYizqsOEmer2An-WVeYGM,2335
+pytgm/file.py,sha256=JakQRlCWIUkLhTPuEPa2Jw8_Jun1KtbWRB0VeyGmYL4,1919
+pytgm/local_server.py,sha256=cs-99-j7pMLLHlPPOknZaCcHSCT9pn0yeKuyiUmPJg8,2764
+pytgm/sound.py,sha256=7Bvl8JENASxcyxvaHwt902bpYMCdNwRpZChLIE50lQ8,3789
+pytgm/graphics/__init__.py,sha256=CT5m8zqqZU4J9pcylzkfGVt-ZCq0e9u8xS6ShAjUmZg,274
+pytgm/graphics/cls.py,sha256=aLxgzwaB3P9GM5mcywxkC1rFdPAMI4ZYqTz9Nss9e0I,324
+pytgm/graphics/color.py,sha256=9jBvqnFqob9CRig1dql4tO1eX7Ml-wSYsWWR-vqFiA8,408
+pytgm/graphics/pos.py,sha256=qB_Swdt3scNL2OY6lE0BcsgLCZf_UyM8_cKxS_AfILI,137
+pyTGM-4.0.0.dist-info/LICENCE.md,sha256=IFjojR8HflSJnkABa_uajoIeuVOPpiPXxl4XbMWdR7E,3160
+pyTGM-4.0.0.dist-info/METADATA,sha256=ZZ24vKj5cUsmeasqMNpLfjYDPpb0GB4y2V3_PiQitpE,5762
+pyTGM-4.0.0.dist-info/WHEEL,sha256=4-iQBlRoDdX1wfPofc7KLWa5Cys4eZSgXs6GVU8fKlQ,101
+pyTGM-4.0.0.dist-info/top_level.txt,sha256=38RSbNx7_hEJeGcjiR_JQOymTK4zohFFREs76OY00DA,12
+pyTGM-4.0.0.dist-info/RECORD,,
