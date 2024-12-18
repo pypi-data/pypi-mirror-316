@@ -1,0 +1,3675 @@
+schema {
+  query: RootQueryType
+}
+
+enum AdvantageType {
+  """Non Event"""
+  N
+}
+
+"""A BallCarryEvent"""
+type BallCarryEvent {
+  additionalChallenger1: Player
+  additionalChallenger2: Player
+  additionalChallenger3: Player
+  advantageType: AdvantageType
+  badParry: Boolean
+  ballCarrierPlayer: Player
+  ballCarryEndPointX: Float
+  ballCarryEndPointY: Float
+  ballCarryOutcome: BallCarryOutcome
+  ballCarryStartPointX: Float
+  ballCarryStartPointY: Float
+  ballCarryType: BallCarryType
+  betterOption: String
+  betterOptionPlayer: Player
+  betterOptionTime: String
+  betterOptionType: BetterOptionType
+  carryIntent: String
+  carryType: CarryType
+  challengerPlayer: Player
+  clearerPlayer: Player
+  createsSpace: Boolean
+  defenderPlayer: Player
+  defenderPointX: Float
+  defenderPointY: Float
+  dribbleEndPointX: Float
+  dribbleEndPointY: Float
+  dribbleOutcomeType: DribbleOutcomeType
+  dribbleStartPointX: Float
+  dribbleStartPointY: Float
+  dribbleType: DribbleType
+  game: Game
+  gameEvent: GameEvent
+  id: ID
+  insertedAt: NaiveDateTime
+  keeperPlayer: Player
+  late: Boolean
+  linesBrokenType: LinesBrokenType
+  missedTouchPlayer: Player
+  missedTouchPointX: Float
+  missedTouchPointY: Float
+  missedTouchType: MissedTouchType
+  opportunityType: OpportunityType
+
+  """Get the period in which this Event occurred"""
+  period: String
+  possessionEvent: PossessionEvent
+  pressurePlayer: Player
+  pressureType: String
+  saveReboundType: String
+  saveable: Boolean
+  shotInitialHeightType: String
+  shotOutcomeType: String
+  successful: Boolean
+  tackleAttemptPointX: Float
+  tackleAttemptPointY: Float
+  tackleAttemptType: TackleAttemptType
+  touchOutcomePlayer: Player
+  touchOutcomeType: TouchOutcomeType
+  touchPointX: Float
+  touchPointY: Float
+  touchType: TouchType
+  trickType: String
+  updatedAt: NaiveDateTime
+}
+
+"""BallCarryEvent sortable fields"""
+enum BallCarryEventSortFields {
+  """advantage_type"""
+  ADVANTAGE_TYPE
+
+  """ball_carrier_player_id"""
+  BALL_CARRIER_PLAYER_ID
+
+  """ball_carry_outcome"""
+  BALL_CARRY_OUTCOME
+
+  """ball_carry_type"""
+  BALL_CARRY_TYPE
+
+  """better_option_player_id"""
+  BETTER_OPTION_PLAYER_ID
+
+  """better_option_type"""
+  BETTER_OPTION_TYPE
+
+  """carry_type"""
+  CARRY_TYPE
+
+  """challenger_player_id"""
+  CHALLENGER_PLAYER_ID
+
+  """defender_player_id"""
+  DEFENDER_PLAYER_ID
+
+  """dribble_outcome_type"""
+  DRIBBLE_OUTCOME_TYPE
+
+  """dribble_type"""
+  DRIBBLE_TYPE
+
+  """game_id"""
+  GAME_ID
+
+  """ID"""
+  ID
+
+  """lines_broken_type"""
+  LINES_BROKEN_TYPE
+
+  """missed_touch_player_id"""
+  MISSED_TOUCH_PLAYER_ID
+
+  """missed_touch_type"""
+  MISSED_TOUCH_TYPE
+
+  """opportunity_type"""
+  OPPORTUNITY_TYPE
+
+  """pressure_player_id"""
+  PRESSURE_PLAYER_ID
+
+  """tackle_attempt_type"""
+  TACKLE_ATTEMPT_TYPE
+
+  """touch_outcome_player_id"""
+  TOUCH_OUTCOME_PLAYER_ID
+
+  """touch_outcome_type"""
+  TOUCH_OUTCOME_TYPE
+
+  """touch_type"""
+  TOUCH_TYPE
+}
+
+enum BallCarryOutcome {
+  """Leads into Challenge"""
+  S
+
+  """Ball Loss"""
+  L
+
+  """Retain"""
+  F
+
+  """Stoppage"""
+  E
+}
+
+enum BallCarryType {
+  """Carry"""
+  C
+
+  """Dribble"""
+  D
+
+  """Touch"""
+  T
+}
+
+enum BetterOptionType {
+  """Ball Carry"""
+  B
+
+  """Cross"""
+  C
+
+  """Hold"""
+  H
+
+  """Clearance"""
+  L
+
+  """Continue"""
+  O
+
+  """Pass"""
+  P
+
+  """Shot"""
+  S
+}
+
+enum BodyMovementType {
+  """Away From Goal"""
+  AG
+
+  """Laterally"""
+  LA
+
+  """Static"""
+  ST
+
+  """Towards Goal"""
+  TG
+}
+
+enum BodyType {
+  """Two Hands"""
+  TWOHANDS
+
+  """Back"""
+  BA
+
+  """Bottom"""
+  BO
+
+  """Two Hand Catch"""
+  CA
+
+  """Chest"""
+  CH
+
+  """Head"""
+  HE
+
+  """Left Foot"""
+  L
+
+  """Left Arm"""
+  LA
+
+  """Left Back Heel"""
+  LB
+
+  """Left Shoulder"""
+  LC
+
+  """Left Hand"""
+  LH
+
+  """Left Knee"""
+  LK
+
+  """Left Shin"""
+  LS
+
+  """Left Thigh"""
+  LT
+
+  """Two Hand Palm"""
+  PA
+
+  """Two Hand Punch"""
+  PU
+
+  """Right Foot"""
+  R
+
+  """Right Arm"""
+  RA
+
+  """Right Back Heel"""
+  RB
+
+  """Right Shoulder"""
+  RC
+
+  """Right Hand"""
+  RH
+
+  """Right Knee"""
+  RK
+
+  """Right Shin"""
+  RS
+
+  """Right Thigh"""
+  RT
+
+  """Video Missing"""
+  VM
+}
+
+type CacheStats {
+  hitRate: Float
+  name: String
+}
+
+enum CarryType {
+  """Line Break"""
+  B
+
+  """Change of Direction Plus"""
+  C
+
+  """Drive With Intent"""
+  D
+
+  """Long Carry"""
+  L
+}
+
+"""A ChallengeEvent"""
+type ChallengeEvent {
+  additionalChallenger1: Player
+  additionalChallenger2: Player
+  additionalChallenger3: Player
+  advantageType: AdvantageType
+  ballCarrierPlayer: Player
+  betterOptionPlayer: Player
+  betterOptionTime: String
+  betterOptionType: BetterOptionType
+  carryType: CarryType
+  challengeOutcomeType: ChallengeOutcomeType
+  challengePointX: Float
+  challengePointY: Float
+  challengeType: ChallengeType
+  challengeWinnerPlayer: Player
+  challengerAwayPlayer: Player
+  challengerHomePlayer: Player
+  challengerPlayer: Player
+  createsSpace: Boolean
+  dribbleEndPointX: Float
+  dribbleEndPointY: Float
+  dribbleStartPointX: Float
+  dribbleStartPointY: Float
+  dribbleType: DribbleType
+  game: Game
+  gameEvent: GameEvent
+  id: ID
+  insertedAt: NaiveDateTime
+  keeperPlayer: Player
+  late: Boolean
+  linesBrokenType: LinesBrokenType
+  missedTouchPlayer: Player
+  missedTouchPointX: Float
+  missedTouchPointY: Float
+  missedTouchType: MissedTouchType
+  opportunityType: OpportunityType
+
+  """Get the period in which this Event occurred"""
+  period: String
+  possessionEvent: PossessionEvent
+  pressurePlayer: Player
+  tackleAttemptPointX: Float
+  tackleAttemptPointY: Float
+  tackleAttemptType: TackleAttemptType
+  trickType: String
+  updatedAt: NaiveDateTime
+}
+
+enum ChallengeOutcomeType {
+  """Distribution Disrupted"""
+  B
+
+  """Forces Carrier Out of Play"""
+  C
+
+  """Distributes Ball"""
+  D
+
+  """Foul"""
+  F
+
+  """Shields In Play"""
+  I
+
+  """Keeps Ball With Contact"""
+  K
+
+  """Rolls"""
+  L
+
+  """Beats Man Loses Ball"""
+  M
+
+  """No Win, Keeps Ball"""
+  N
+
+  """Out of Play"""
+  O
+
+  """Player"""
+  P
+
+  """Retain"""
+  R
+
+  """Shields Out of play"""
+  S
+}
+
+enum ChallengeType {
+  """50/50"""
+  FIFTY
+
+  """aerial duel"""
+  A
+
+  """from behind"""
+  B
+
+  """dribble"""
+  D
+
+  """goalkeeper smothers"""
+  G
+
+  """shielding"""
+  H
+
+  """hand tackle"""
+  K
+
+  """slide tackle"""
+  L
+
+  """shoulder to shoulder"""
+  S
+
+  """standing tackle"""
+  T
+}
+
+"""A ClearanceEvent"""
+type ClearanceEvent {
+  advantageType: AdvantageType
+  badParry: Boolean
+  ballHeightType: String
+  ballHighPointType: String
+  betterOption: String
+  betterOptionPlayer: Player
+  betterOptionTime: String
+  betterOptionType: BetterOptionType
+  blockerPlayer: Player
+  clearanceBodyType: BodyType
+  clearanceEndPointX: Float
+  clearanceEndPointY: Float
+  clearanceOutcomeType: ClearanceOutcomeType
+  clearancePlayer: Player
+  clearancePointX: Float
+  clearancePointY: Float
+  clearanceStartPointX: Float
+  clearanceStartPointY: Float
+  clearerPlayer: Player
+  createsSpace: Boolean
+  createsSpaceVsPlayer: Player
+  defenderPlayer: Player
+  failedInterventionPlayer: Player
+  failedInterventionPlayer1: Player
+  failedInterventionPlayer2: Player
+  failedInterventionPlayer3: Player
+  game: Game
+  gameEvent: GameEvent
+  heightType: String
+  id: ID
+  insertedAt: NaiveDateTime
+  keeperPlayer: Player
+  late: Boolean
+  missedTouchPlayer: Player
+  missedTouchPointX: Float
+  missedTouchPointY: Float
+  missedTouchType: MissedTouchType
+  opportunityType: OpportunityType
+
+  """Get the period in which this Event occurred"""
+  period: String
+  possessionEvent: PossessionEvent
+  pressurePlayer: Player
+  pressureType: PressureType
+  saveReboundType: Boolean
+  saveable: Boolean
+  shotInitialHeightType: ShotHeightType
+  shotOutcomeType: ShotOutcomeType
+  updatedAt: NaiveDateTime
+}
+
+enum ClearanceOutcomeType {
+  """inadvertent shot at goal"""
+  A
+
+  """block"""
+  B
+
+  """inadvertent shot own goal"""
+  D
+
+  """Deliberate to Opposition"""
+  E
+
+  """own woodwork"""
+  N
+
+  """out of play"""
+  O
+
+  """player"""
+  P
+
+  """stoppage"""
+  S
+
+  """Deliberate to Touch"""
+  U
+
+  """Opposition woodwork"""
+  W
+}
+
+"""A Competition"""
+type Competition {
+  """Season Start End"""
+  availableSeasons: [CompetitionSeason]
+  games: [Game]
+  id: ID
+  insertedAt: NaiveDateTime
+
+  """Last Season"""
+  lastSeason: CompetitionSeason
+  logoIcon: String
+  name: String
+
+  """Season Games"""
+  seasonGames(season: String, seasons: [String]): [Game]
+
+  """Participating Teams"""
+  teams(sortField: TeamSortFields = ID, sortOrder: SortOrder = ASC): [Team]
+  updatedAt: NaiveDateTime
+}
+
+"""Competition season, start and end"""
+type CompetitionSeason {
+  end: NaiveDateTime
+  season: String
+  start: NaiveDateTime
+}
+
+"""Competition sortable fields"""
+enum CompetitionSortFields {
+  """id"""
+  ID
+
+  """name"""
+  NAME
+
+  """season"""
+  SEASON
+}
+
+"""A Confederation"""
+type Confederation {
+  abbreviation: String
+  id: ID
+  insertedAt: NaiveDateTime
+  name: String
+  updatedAt: NaiveDateTime
+}
+
+"""A CrossEvent"""
+type CrossEvent {
+  advantageType: AdvantageType
+  badParry: Boolean
+  ballHeightType: HeightType
+  betterOption: String
+  betterOptionPlayer: Player
+  betterOptionTime: String
+  betterOptionType: BetterOptionType
+  blockerPlayer: Player
+  clearerPlayer: Player
+  completeToPlayer: Player
+  createsSpace: Boolean
+  createsSpaceVsPlayer: Player
+  crossAccuracyType: String
+  crossEndPointX: Float
+  crossEndPointY: Float
+  crossHighPointType: String
+  crossOutcomeType: CrossOutcomeType
+  crossPointX: Float
+  crossPointY: Float
+  crossStartPointX: Float
+  crossStartPointY: Float
+  crossType: CrossType
+  crossZoneType: CrossZoneType
+  crosserBodyType: BodyType
+  crosserPlayer: Player
+  defenderBallHeightType: HeightType
+  defenderBodyType: BodyType
+  defenderPlayer: Player
+  deflectionPointX: Float
+  deflectionPointY: Float
+  deflectorBodyType: BodyType
+  deflectorPlayer: Player
+  failedInterventionPlayer: Player
+  failedInterventionPlayer1: Player
+  failedInterventionPlayer2: Player
+  failedInterventionPlayer3: Player
+  failedInterventionPointX: Float
+  failedInterventionPointY: Float
+  game: Game
+  gameEvent: GameEvent
+  goalkeeperPointX: Float
+  goalkeeperPointY: Float
+  id: ID
+  incompletionReasonType: IncompletionReasonType
+  insertedAt: NaiveDateTime
+  intendedTargetPlayer: Player
+  intendedTargetPointX: Float
+  intendedTargetPointY: Float
+  keeperPlayer: Player
+  late: Boolean
+  linesBrokenType: LinesBrokenType
+  missedTouchPlayer: Player
+  missedTouchPointX: Float
+  missedTouchPointY: Float
+  missedTouchType: MissedTouchType
+  noLook: Boolean
+  opportunityType: OpportunityType
+
+  """Get the period in which this Event occurred"""
+  period: String
+  possessionEvent: PossessionEvent
+  pressurePlayer: Player
+  pressureType: PressureType
+  receiverBallHeightType: HeightType
+  receiverBodyType: BodyType
+  receiverPointX: Float
+  receiverPointY: Float
+  saveReboundType: String
+  saveable: Boolean
+  secondIncompletionReasonType: IncompletionReasonType
+  shotInitialHeightType: ShotHeightType
+  shotOutcomeType: ShotOutcomeType
+  targetZonePointX: Float
+  targetZonePointY: Float
+  updatedAt: NaiveDateTime
+}
+
+enum CrossOutcomeType {
+  """Block"""
+  B
+
+  """Complete"""
+  C
+
+  """Defensive Interception"""
+  D
+
+  """Inadvertent Shot at Goal"""
+  I
+
+  """Out of Play"""
+  O
+
+  """Stoppage"""
+  S
+
+  """Untouched"""
+  U
+}
+
+enum CrossType {
+  """drilled"""
+  D
+
+  """floated"""
+  F
+
+  """inswinger"""
+  I
+
+  """outswinger"""
+  O
+
+  """placed"""
+  P
+}
+
+enum CrossZoneType {
+  """central"""
+  C
+
+  """far post"""
+  F
+
+  """near post"""
+  N
+
+  """six yard box"""
+  S
+}
+
+"""
+The `Date` scalar type represents a date. The Date appears in a JSON
+response as an ISO8601 formatted string, without a time component.
+"""
+scalar Date
+
+"""
+The `Decimal` scalar type represents signed double-precision fractional
+values parsed by the `Decimal` library. The Decimal appears in a JSON
+response as a string to preserve precision.
+"""
+scalar Decimal
+
+"""A Defender"""
+type Defender {
+  defenderPlayer: Player
+  defenderPointX: Float
+  defenderPointY: Float
+  game: Game
+  gameEvent: GameEvent
+  id: ID
+  insertedAt: NaiveDateTime
+  possessionEvent: PossessionEvent
+  updatedAt: NaiveDateTime
+}
+
+type DribbleMetricsReport {
+  drb: Int
+  drbP90: Float
+  drbcmp: Int
+  drbcmpP90: Float
+  drbcmpPct: Float
+  firstName: String
+  lastName: String
+  nickname: String
+  playerId: Int
+  pos: String
+  shirtNumber: String
+  teamId: Int
+  teamName: String
+  teamShortName: String
+}
+
+enum DribbleOutcomeType {
+  """keeps ball with contact"""
+  B
+
+  """foul"""
+  F
+
+  """mishit"""
+  H
+
+  """keeps ball"""
+  K
+
+  """beats man loses ball"""
+  L
+
+  """missed foul"""
+  M
+
+  """forced out of play"""
+  O
+
+  """successful tackle"""
+  S
+}
+
+enum DribbleType {
+  """Between Two Defenders"""
+  B
+
+  """Inside"""
+  I
+
+  """Knocks in Front"""
+  K
+
+  """Outside"""
+  O
+
+  """Trick"""
+  T
+}
+
+enum EndType {
+  """1st Half"""
+  FIRST
+
+  """2nd Half"""
+  SECOND
+
+  """Extra Time 1H"""
+  F
+
+  """Game"""
+  G
+
+  """Extra Time 2H"""
+  S
+
+  """Z Test 9"""
+  Z
+}
+
+enum FacingType {
+  """back to goal"""
+  B
+
+  """goal"""
+  G
+
+  """lateral"""
+  L
+}
+
+"""A Federation"""
+type Federation {
+  abbreviation: String
+  confederation: Confederation
+  country: String
+  englishName: String
+  id: ID
+  insertedAt: NaiveDateTime
+  name: String
+  updatedAt: NaiveDateTime
+}
+
+"""Epitome Filter"""
+type Filter {
+  availableCompetitions: [Competition]
+  availableMatches: [Int]
+  availablePlayers: [Player]
+  availableSeasons: [String]
+  availableSeasonsAndWeeks: [String]
+  availableTeams: [Team]
+  availableWeeks: [Int]
+  eventCount: Int
+  gameCount: Int
+  playerSearchResults: [Player]
+  selectedClock: String
+  selectedCompetitionId: Int
+  selectedGames: [Int]
+  selectedMinimumTeamVis: Int
+  selectedPlayerId: Int
+  selectedSeason: String
+  selectedTeams: [Int]
+  selectedWeeks: [Int]
+}
+
+"""A Foul"""
+type Foul {
+  badCall: Boolean
+  correctDecision: Boolean
+  culpritPlayer: Player
+  foulOutcomeType: FoulOutcomeType
+  foulPointX: Float
+  foulPointY: Float
+  foulType: FoulType
+  game: Game
+  gameEvent: GameEvent
+  id: ID
+  insertedAt: NaiveDateTime
+  possessionEvent: PossessionEvent
+  potentialOffenseType: PotentialOffenseType
+  sequence: Int
+  tacticalFoul: Boolean
+  updatedAt: NaiveDateTime
+  var: Boolean
+  varCulpritPlayer: Player
+  varOutcomeType: FoulOutcomeType
+  varPotentialOffenseType: PotentialOffenseType
+  varReasonType: VarReasonType
+  victimPlayer: Player
+}
+
+enum FoulOutcomeType {
+  """No Foul"""
+  F
+
+  """No Warning"""
+  N
+
+  """Red Card"""
+  R
+
+  """Second Yellow"""
+  S
+
+  """Warning"""
+  W
+
+  """Yellow Card"""
+  Y
+}
+
+"""Foul sortable fields"""
+enum FoulSortFields {
+  """culprit_player_id"""
+  CULPRIT_PLAYER_ID
+
+  """foul_outcome_type"""
+  FOUL_OUTCOME_TYPE
+
+  """foul_type"""
+  FOUL_TYPE
+
+  """game_id"""
+  GAME_ID
+
+  """id"""
+  ID
+
+  """potential_offense_type"""
+  POTENTIAL_OFFENSE_TYPE
+
+  """var_culprit_player_id"""
+  VAR_CULPRIT_PLAYER_ID
+
+  """var_outcome_type"""
+  VAR_OUTCOME_TYPE
+
+  """var_potential_offense_type"""
+  VAR_POTENTIAL_OFFENSE_TYPE
+
+  """var_reason_type"""
+  VAR_REASON_TYPE
+
+  """victim_player_id"""
+  VICTIM_PLAYER_ID
+}
+
+enum FoulType {
+  """Advantage"""
+  A
+
+  """Infringement"""
+  I
+
+  """Missed Infringement"""
+  M
+}
+
+"""A Game"""
+type Game {
+  allRosters: [Roster]
+  awayTeam: Team
+  awayTeamKit: Kit
+  competition: Competition
+  complete: Boolean
+  date: NaiveDateTime
+  endPeriod1: Float
+  endPeriod2: Float
+  gameEvents: [GameEvent]
+  halfPeriod: Float
+  homeTeam: Team
+  homeTeamKit: Kit
+  homeTeamStartLeft: Boolean
+  homeTeamStartLeftExtraTime: Boolean
+  id: ID
+  inallRosters: [Roster]
+  insertedAt: NaiveDateTime
+  lastValidatedAt: NaiveDateTime
+  period1: Float
+  period2: Float
+  rosters: [Roster]
+  season: String
+  stadium: Stadium
+  startPeriod1: Float
+  startPeriod2: Float
+  updatedAt: NaiveDateTime
+  venue: String
+  videos: [Video]
+  week: Int
+}
+
+"""A GameEvent"""
+type GameEvent {
+  advantageType: AdvantageType
+  bodyType: BodyType
+  comment: String
+  defenderLocations: [Location]
+  duration: Float
+  earlyDistribution: Boolean
+  endPointX: Float
+  endPointY: Float
+  endTime: Float
+  endType: EndType
+  facingType: String
+  formattedGameClock: String
+  game: Game
+  gameClock: Float
+  gameEventType: GameEventType
+  gameId: ID
+  heightType: HeightType
+  id: ID
+  initialTouchType: InitialTouchType
+  insertedAt: NaiveDateTime
+  offenderLocations: [Location]
+  otherPlayer: Player
+  outType: OutType
+
+  """Get the period in which this Event occurred"""
+  period: String
+  player: Player
+  playerOff: Player
+  playerOffType: PlayerOffType
+  playerOn: Player
+  possessionEvents: [PossessionEvent]
+  pressurePlayer: Player
+  pressureType: PressureType
+  scoreValue: Int
+  setpieceType: SetpieceType
+  startPointX: Float
+  startPointY: Float
+  startTime: Float
+  subType: SubType
+  team: Team
+  touches: Int
+  touchesInBox: Int
+  updatedAt: NaiveDateTime
+  video: Video
+  videoAngleType: VideoAngleType
+  videoMissing: Boolean
+
+  """Get the Video URL at the current time"""
+  videoUrl: String
+}
+
+"""GameEvent sortable fields"""
+enum GameEventSortFields {
+  """game_id"""
+  GAME_ID
+
+  """id"""
+  ID
+
+  """other_player_id"""
+  OTHER_PLAYER_ID
+
+  """player_id"""
+  PLAYER_ID
+
+  """player_off_id"""
+  PLAYER_OFF_ID
+
+  """player_on_id"""
+  PLAYER_ON_ID
+
+  """pressure_player_id"""
+  PRESSURE_PLAYER_ID
+
+  """video start time of event"""
+  START_TIME
+}
+
+enum GameEventType {
+  """1st Half Kickoff"""
+  FIRSTKICKOFF
+
+  """2nd Half Kickoff"""
+  SECONDKICKOFF
+
+  """Extra Time Kickoff"""
+  THIRDKICKOFF
+
+  """Extra Time Kickoff"""
+  FOURTHKICKOFF
+
+  """Game Clock Observation"""
+  CLK
+
+  """End of Half"""
+  END
+
+  """Ground"""
+  G
+
+  """Player Off"""
+  OFF
+
+  """Player On"""
+  ON
+
+  """Possession"""
+  OTB
+
+  """Ball Out of Play"""
+  OUT
+
+  """Pause of game time"""
+  PAU
+
+  """Substitution"""
+  SUB
+
+  """Video"""
+  VID
+}
+
+"""A Game Physical Metrics Report"""
+type GamePhysicalMetricsReport {
+  """
+  Accelerations - A count of how many times a player accelerated over 3m/s²
+  """
+  accel: Int
+
+  """
+  Age - Players age at start of the season (1st August in Winter leagues, 1st February in Summer leagues)
+  """
+  age: Int
+
+  """Average Speed - Average speed for player"""
+  avgspeed: Float
+
+  """
+  Decelerations - A count of how many times a player decelerated over 3m/s²
+  """
+  decel: Int
+
+  """Details of teams involved in a game (i.e. Home team vs Away team)"""
+  gam: String
+
+  """Date game was played"""
+  gameDate: Date
+
+  """Unique game identifier"""
+  gameId: Int
+
+  """
+  High Speed Running Distance - Distance covered (meters) when moving at speed between >=20 km/h and <25km/h
+  """
+  hsr: Float
+
+  """
+  High Speed Running % - High-speed running distance (as % of total distance)
+  """
+  hsrPct: Float
+
+  """
+  High Speed Runs Count - A count of how many times a player moved at speed between >=20 km/h and <25km/h
+  """
+  hsrc: Int
+
+  """
+  Total High Speed Running Time - Time on pitch when moving at speed between >=20 km/h and <25km/h
+  """
+  hsrt: Float
+
+  """
+  Jogging Distance - Distance covered (meters) when moving at speed between >=7 km/h and <15km/h
+  """
+  jog: Float
+
+  """
+  Total Jogging Time - Time on pitch when moving at speed between >=7 km/h and <15km/h
+  """
+  jogt: Float
+
+  """
+  Low Speed Running Distance - Distance covered (meters) when moving at speed between >=15 km/h and <20km/h
+  """
+  lsr: Float
+
+  """
+  Total Low Speed Running Time - Time on pitch when moving at speed between >=15 km/h and <20km/h
+  """
+  lsrt: Float
+
+  """Max Speed - Fastest speed a player reached"""
+  maxspeed: Float
+
+  """Minutes Played - Minutes player was on the pitch"""
+  min: Float
+
+  """Player Name"""
+  player: String
+
+  """Unique player identifier"""
+  playerId: Int
+
+  """
+  Position - Most frequently played position (as determined by position player starts a match in or initial position they brought into as a substitute)
+  """
+  pos: String
+
+  """Player shirt number"""
+  shirtNumber: String
+
+  """
+  Sprint Distance - Distance covered (meters) when moving at speed >=25 km/h
+  """
+  spr: Float
+
+  """Sprint % - Sprint distance (as % of total distance)"""
+  sprPct: Float
+
+  """
+  Sprint Count - A count of how many times a player moved at speed >=25 km/h
+  """
+  sprc: Int
+
+  """Total Sprint Time - Time on pitch when moving at speed >=25 km/h"""
+  sprt: Float
+
+  """Started Game - Player in starting lineup"""
+  str: Int
+
+  """Used Substitute - Player brought on as substitute during a game"""
+  sub: Int
+
+  """Team Name"""
+  team: String
+
+  """Unique team identifier"""
+  teamId: Int
+
+  """Total Distance  - Total distance covered (meters)"""
+  tot: Float
+
+  """
+  Player Visibility - % of time player is visible on screen during broadcast
+  """
+  visFramePct: Int
+
+  """
+  Walking Distance - Distance covered (meters) when moving at speed <7 km/h
+  """
+  walk: Float
+
+  """Total Walking Time - Time on pitch when moving at speed <7 km/h"""
+  walkt: Float
+}
+
+"""Game sortable fields"""
+enum GameSortFields {
+  """id"""
+  ID
+}
+
+"""A Grade"""
+type Grade {
+  game: Game
+  gameEvent: GameEvent
+  gradeLabel: String
+  gradeStyle: String
+  gradeType: String
+  id: ID
+  insertedAt: NaiveDateTime
+  player: Player
+  playerGrade: Float
+  possessionEvent: PossessionEvent
+  updatedAt: NaiveDateTime
+}
+
+"""Game sortable fields"""
+enum GradeSortFields {
+  """id"""
+  ID
+}
+
+enum HeightType {
+  """Above Head"""
+  A
+
+  """Ground"""
+  G
+
+  """Between Waist And Head"""
+  H
+
+  """Off Ground But Below Waist"""
+  L
+
+  """Video Missing"""
+  M
+
+  """Half Volley"""
+  V
+}
+
+enum IncompletionReasonType {
+  """behind"""
+  BH
+
+  """blocked"""
+  BL
+
+  """caught"""
+  CA
+
+  """defensive contact"""
+  CO
+
+  """deliberate"""
+  DB
+
+  """defensive challenge"""
+  DC
+
+  """deflected"""
+  DF
+
+  """defender interception"""
+  DI
+
+  """foul"""
+  FO
+
+  """high"""
+  HI
+
+  """hit official"""
+  HO
+
+  """in front"""
+  IF
+
+  """receiver lets ball run"""
+  LB
+
+  """Miscommunication"""
+  MC
+
+  """miss hit"""
+  MH
+
+  """passer slipped"""
+  PS
+
+  """receiver didn't come back to ball"""
+  RB
+
+  """receiver slipped"""
+  RF
+
+  """receiver misses ball"""
+  RM
+
+  """receiver stopped"""
+  RS
+
+  """referee in way"""
+  RW
+
+  """speculative"""
+  SP
+
+  """Underhit"""
+  UH
+
+  """video missing"""
+  VM
+}
+
+enum InitialTouchType {
+  """H2C bad"""
+  B
+
+  """H2C good"""
+  G
+
+  """miscontrol"""
+  M
+
+  """Plus"""
+  P
+
+  """standard"""
+  S
+}
+
+"""A Kit"""
+type Kit {
+  id: ID
+  insertedAt: NaiveDateTime
+  name: String
+  primaryColor: String
+  primaryTextColor: String
+  secondaryColor: String
+  secondaryTextColor: String
+  team: Team
+  updatedAt: NaiveDateTime
+}
+
+enum LinesBrokenType {
+  """Attack"""
+  A
+
+  """Attack+Defense"""
+  AD
+
+  """Attack+Midfield"""
+  AM
+
+  """Attack+Midfield+Defense"""
+  AMD
+
+  """Defense"""
+  D
+
+  """Midfield"""
+  M
+
+  """Midfield+Defense"""
+  MD
+}
+
+"""A Location"""
+type Location {
+  ballCarryEvent: BallCarryEvent
+  challengeEvent: ChallengeEvent
+  clearanceEvent: ClearanceEvent
+  crossEvent: CrossEvent
+  eventModule: String
+  gameEvent: GameEvent
+  id: ID
+  insertedAt: NaiveDateTime
+  name: String
+  passingEvent: PassingEvent
+  possessionEvent: PossessionEvent
+  reboundEvent: ReboundEvent
+  shootingEvent: ShootingEvent
+  updatedAt: NaiveDateTime
+  x: Decimal
+  y: Decimal
+}
+
+"""Location sortable fields"""
+enum LocationSortFields {
+  """game_id"""
+  GAME_ID
+
+  """id"""
+  ID
+}
+
+enum MissedTouchType {
+  """Missed Cross"""
+  C
+
+  """Dummy"""
+  D
+
+  """Missed Interception"""
+  I
+
+  """Missed Clearance"""
+  L
+
+  """missed touch"""
+  M
+
+  """Missed Shot"""
+  O
+
+  """Missed Pass"""
+  P
+
+  """Slip"""
+  S
+}
+
+"""
+The `Naive DateTime` scalar type represents a naive date and time without
+timezone. The DateTime appears in a JSON response as an ISO8601 formatted
+string.
+"""
+scalar NaiveDateTime
+
+"""A Nation"""
+type Nation {
+  country: String
+  federation: Federation
+  fifaCode: String
+  id: ID
+  insertedAt: NaiveDateTime
+  iocCode: String
+  updatedAt: NaiveDateTime
+}
+
+"""Nation sortable fields"""
+enum NationSortFields {
+  """id"""
+  ID
+}
+
+enum OpportunityType {
+  """chance created"""
+  C
+
+  """dangerous position"""
+  D
+
+  """half chance"""
+  H
+
+  """space to clear"""
+  L
+
+  """Negative Chance Created"""
+  N
+
+  """Negative Dangerous Position"""
+  P
+
+  """space to cross"""
+  R
+
+  """space to shoot"""
+  S
+}
+
+enum OriginateType {
+  """corner flag"""
+  C
+
+  """miscellaneous"""
+  M
+
+  """player"""
+  P
+
+  """woodwork"""
+  W
+}
+
+enum OutType {
+  """Away Score"""
+  A
+
+  """Home Score"""
+  H
+
+  """Touch"""
+  T
+
+  """Whistle"""
+  W
+}
+
+enum PassAccuracyType {
+  """Away from Defender"""
+  A
+
+  """checks movement"""
+  C
+
+  """Leads into Challenge"""
+  E
+
+  """heavy"""
+  H
+
+  """In Stride"""
+  I
+
+  """Light"""
+  L
+
+  """precise"""
+  P
+
+  """redirects"""
+  R
+
+  """standard"""
+  S
+}
+
+enum PassOutcomeType {
+  """blocked"""
+  B
+
+  """complete"""
+  C
+
+  """Defensive interception"""
+  D
+
+  """Inadvertent Shot at Own Goal"""
+  G
+
+  """Inadvertent Shot at Goal"""
+  I
+
+  """out of play"""
+  O
+
+  """stoppage"""
+  S
+}
+
+enum PassType {
+  """Cutback"""
+  B
+
+  """create contest"""
+  C
+
+  """flick on"""
+  F
+
+  """Long Throw"""
+  H
+
+  """long pass"""
+  L
+
+  """miss hit"""
+  M
+
+  """Ball over the top"""
+  O
+
+  """standard pass"""
+  S
+
+  """through ball"""
+  T
+
+  """Switch"""
+  W
+}
+
+"""A PassingEvent"""
+type PassingEvent {
+  advantageType: AdvantageType
+  badParry: Boolean
+  ballHeightType: HeightType
+  betterOption: String
+  betterOptionPlayer: Player
+  betterOptionTime: String
+  betterOptionType: BetterOptionType
+  blockerPlayer: Player
+  clearerPlayer: Player
+  createsSpace: Boolean
+  createsSpaceVsPlayer: Player
+  defenderBodyType: BodyType
+  defenderHeightType: HeightType
+  defenderPlayer: Player
+  defenderPointX: Float
+  defenderPointY: Float
+  deflectionPointX: Float
+  deflectionPointY: Float
+  deflectorBodyType: BodyType
+  deflectorPlayer: Player
+  failedInterventionPlayer: Player
+  failedInterventionPlayer1: Player
+  failedInterventionPlayer2: Player
+  failedInterventionPlayer3: Player
+  failedInterventionPointX: Float
+  failedInterventionPointY: Float
+  game: Game
+  gameEvent: GameEvent
+  goalkeeperPointX: Float
+  goalkeeperPointY: Float
+  id: ID
+  incompletionReasonType: IncompletionReasonType
+  insertedAt: NaiveDateTime
+  keeperPlayer: Player
+  late: Boolean
+  linesBrokenType: LinesBrokenType
+  missedTouchPlayer: Player
+  missedTouchPointX: Float
+  missedTouchPointY: Float
+  missedTouchType: MissedTouchType
+  noLook: Boolean
+  onTarget: Boolean
+  opportunityType: OpportunityType
+  outOfPlayPointX: Float
+  outOfPlayPointY: Float
+  passAccuracyType: PassAccuracyType
+  passBodyType: BodyType
+  passHighPointType: HeightType
+  passOutcomeType: PassOutcomeType
+  passPointX: Float
+  passPointY: Float
+  passType: PassType
+  passerPlayer: Player
+
+  """Get the period in which this Event occurred"""
+  period: String
+  possessionEvent: PossessionEvent
+  pressurePlayer: Player
+  pressureType: PressureType
+  receiverBodyType: BodyType
+  receiverFacingType: FacingType
+  receiverHeightType: HeightType
+  receiverPlayer: Player
+  receiverPointX: Float
+  receiverPointY: Float
+  saveReboundType: String
+  saveable: Boolean
+  secondIncompletionReasonType: IncompletionReasonType
+  shotInitialHeightType: ShotHeightType
+  shotOutcomeType: ShotOutcomeType
+  targetFacingType: FacingType
+  targetPlayer: Player
+  targetPointX: Float
+  targetPointY: Float
+  updatedAt: NaiveDateTime
+}
+
+"""PassingEvent sortable fields"""
+enum PassingEventSortFields {
+  """advantage_type"""
+  ADVANTAGE_TYPE
+
+  """ball_height_type"""
+  BALL_HEIGHT_TYPE
+
+  """better_option_player_id"""
+  BETTER_OPTION_PLAYER_ID
+
+  """better_option_type"""
+  BETTER_OPTION_TYPE
+
+  """blocker_player_id"""
+  BLOCKER_PLAYER_ID
+
+  """clearer_player_id"""
+  CLEARER_PLAYER_ID
+
+  """defender_body_type"""
+  DEFENDER_BODY_TYPE
+
+  """defender_height_type"""
+  DEFENDER_HEIGHT_TYPE
+
+  """defender_player_id"""
+  DEFENDER_PLAYER_ID
+
+  """deflector_body_type"""
+  DEFLECTOR_BODY_TYPE
+
+  """deflector_player_id"""
+  DEFLECTOR_PLAYER_ID
+
+  """failed_intervention_player_id"""
+  FAILED_INTERVENTION_PLAYER_ID
+
+  """game_id"""
+  GAME_ID
+
+  """id"""
+  ID
+
+  """incompletion_reason_type"""
+  INCOMPLETION_REASON_TYPE
+
+  """keeper_player_id"""
+  KEEPER_PLAYER_ID
+
+  """lines_broken_type"""
+  LINES_BROKEN_TYPE
+
+  """missed_touch_player_id"""
+  MISSED_TOUCH_PLAYER_ID
+
+  """missed_touch_type"""
+  MISSED_TOUCH_TYPE
+
+  """opportunity_type"""
+  OPPORTUNITY_TYPE
+
+  """pass_accuracy_type"""
+  PASS_ACCURACY_TYPE
+
+  """pass_body_type"""
+  PASS_BODY_TYPE
+
+  """pass_high_point_type"""
+  PASS_HIGH_POINT_TYPE
+
+  """pass_outcome_type"""
+  PASS_OUTCOME_TYPE
+
+  """pass_type"""
+  PASS_TYPE
+
+  """passer_player_id"""
+  PASSER_PLAYER_ID
+
+  """pressure_player_id"""
+  PRESSURE_PLAYER_ID
+
+  """pressure_type"""
+  PRESSURE_TYPE
+
+  """receiver_body_type"""
+  RECEIVER_BODY_TYPE
+
+  """receiver_facing_type"""
+  RECEIVER_FACING_TYPE
+
+  """receiver_height_type"""
+  RECEIVER_HEIGHT_TYPE
+
+  """receiver_player_id"""
+  RECEIVER_PLAYER_ID
+
+  """second_incompletion_reason_type"""
+  SECOND_INCOMPLETION_REASON_TYPE
+
+  """shot_initial_height_type"""
+  SHOT_INITIAL_HEIGHT_TYPE
+
+  """shot_outcome_type"""
+  SHOT_OUTCOME_TYPE
+
+  """target_facing_type"""
+  TARGET_FACING_TYPE
+
+  """target_player_id"""
+  TARGET_PLAYER_ID
+}
+
+type PassingMetricsReport {
+  pas: Int
+  pasb: Int
+  pasbcmp: Int
+  pasbcmpPct: Float
+  pasbl: Int
+  pasblPct: Float
+  pasblcmp: Int
+  pasblcmpPct: Float
+  pasc: Int
+  pasccmp: Int
+  pasccmpPct: Float
+  pascd: Int
+  pascmp: Int
+  pascmpPct: Float
+  pasdl: Int
+  pasdlcmp: Int
+  pasdlcmpPct: Float
+  pasf: Int
+  pasfcmp: Int
+  pasfcmpPct: Float
+  paso: Int
+  pasocmp: Int
+  pasocmpPct: Float
+  pasprc: Int
+  pass: Int
+  passcmp: Int
+  passcmpPct: Float
+  passtd: Int
+  past: Int
+  pastcmp: Int
+  pastcmpPct: Float
+  pastruePct: Float
+  playerId: Int
+  playerName: String
+  playerPosition: String
+  shirtNumber: String
+  teamId: String
+}
+
+type PhysicalMetricsReport {
+  """
+  Accelerations - A count of how many times a player accelerated over 3m/s²
+  """
+  accel: Int
+
+  """Count of accelerations (over 3m/s²) per 90 minutes played"""
+  accelP90: Float
+
+  """
+  Age - Players age at start of the season (1st August in Winter leagues, 1st February in Summer leagues)
+  """
+  age: Int
+
+  """
+  Appearances - Number of times a player appeared in a game (starting or as substitute)
+  """
+  app: Int
+
+  """Average Speed - Average speed for team's player (km/h)"""
+  avgspeed: Float
+
+  """
+  Decelerations - A count of how many times a player decelerated over 3m/s²
+  """
+  decel: Int
+
+  """Count of decelerations (over 3m/s²) per 90 minutes played"""
+  decelP90: Float
+
+  """Player's first name"""
+  firstName: String
+
+  """
+  High Speed Running Distance - Distance covered (kilometers) when player is moving at speed between >=20 km/h and <25km/h
+  """
+  hsr: Float
+
+  """
+  High Speed Running (>=20 km/h and <25km/h) distance per 90 minutes played
+  """
+  hsrP90: Float
+
+  """
+  High Speed Running % - High-speed running distance (as % of total distance)
+  """
+  hsrPct: Float
+
+  """
+  High Speed Runs Count - A count of how many times a player moved at speed between >=20 km/h and <25km/h
+  """
+  hsrc: Int
+
+  """Count of high speed runs (>=20 km/h and <25km/h) per 90 minutes played"""
+  hsrcP90: Float
+
+  """
+  Total High Speed Running Time - Number of minutes when player is moving at speed between >=20 km/h and <25 km/h
+  """
+  hsrt: Float
+
+  """
+  High Speed Running (>=20 km/h and <25km/h) minutes per 90 minutes played
+  """
+  hsrtP90: Float
+
+  """
+  Jogging Distance - Distance covered (kilometers) when player is moving at speed between >=7 km/h and <15km/h
+  """
+  jog: Float
+
+  """Jogging (>=7 km/h and <15km/h) distance per 90 minutes played"""
+  jogP90: Float
+
+  """
+  Total Jogging Time - Number of minutes when player is moving at speed between >=7 km/h and <15 km/h
+  """
+  jogt: Float
+
+  """Jogging (>=7 km/h and <15km/h) minutes per 90 minutes played"""
+  jogtP90: Float
+
+  """Player's last name"""
+  lastName: String
+
+  """
+  Low Speed Running Distance - Distance covered (kilometers) when player is moving at speed between >=15 km/h and <20km/h
+  """
+  lsr: Float
+
+  """
+  Low Speed Running (>=15 km/h and <20km/h) distance per 90 minutes played
+  """
+  lsrP90: Float
+
+  """
+  Total Low Speed Running Time - Number of minutes when player is moving at speed between >=15 km/h and <20km/h
+  """
+  lsrt: Float
+
+  """
+  Low Speed Running (>=15 km/h and <20km/h) minutes per 90 minutes played
+  """
+  lsrtP90: Float
+
+  """Max Speed - Fastest speed reached by player on team (km/h)"""
+  maxspeed: Float
+
+  """Minutes Played - Minutes player was on the pitch"""
+  min: Float
+
+  """Minutes per game played"""
+  minP90: Float
+
+  """Player Name"""
+  player: String
+
+  """Unique player identifier"""
+  playerId: Int
+
+  """
+  Position - Most frequently played position (as determined by position player starts a match in or initial position they brought into as a substitute)
+  """
+  pos: String
+
+  """Player shirt number"""
+  shirtNumber: String
+
+  """
+  Sprint Distance - Distance covered (kilometers) when player is moving at speed >=25 km/h
+  """
+  spr: Float
+
+  """Sprinting (>25km/h) distance per 90 minutes played"""
+  sprP90: Float
+
+  """Sprint % - Sprint distance (as % of total distance)"""
+  sprPct: Float
+
+  """
+  Sprint Count - A count of how many times a player moved at speed >=25 km/h
+  """
+  sprc: Int
+
+  """Count of sprints (>25km/h) per 90 minutes played"""
+  sprcP90: Float
+
+  """
+  Total Sprint Time - Number of minutes when player is moving at speed >=25 km/h
+  """
+  sprt: Float
+
+  """Sprinting (>25km/h) minutes per 90 minutes played"""
+  sprtP90: Float
+
+  """Games Started - Number of times a player started a game"""
+  str: Int
+
+  """
+  Used Substitute - Number of times a player was brought on as substitute during a game
+  """
+  sub: Int
+
+  """Team Name"""
+  team: String
+
+  """Unique team identifier"""
+  teamId: Int
+
+  """Team Logo"""
+  teamLogo: String
+
+  """Team Name Abbreviation"""
+  teamShortName: String
+
+  """Total Distance  - Total distance covered (kilometers)"""
+  tot: Float
+
+  """Total distance per 90 minutes played"""
+  totP90: Float
+
+  """Count of frames where player is on pitch and visible on-screen"""
+  visFrameCount: Int
+
+  """
+  Player Visibility - % of time player is visible on screen during broadcast
+  """
+  visFramePct: Int
+
+  """Count of frames where player is on the pitch"""
+  visFrameTotal: Float
+
+  """
+  Walking Distance - Distance covered (kilometers) when player is moving at speed <7 km/h
+  """
+  walk: Float
+
+  """Walking (<7km/h) distance per 90 minutes played"""
+  walkP90: Float
+
+  """
+  Total Walking Time - Number of minutes when player is moving at speed <7 km/h
+  """
+  walkt: Float
+
+  """Walking (<7km/h) mintues per 90 minutes played"""
+  walktP90: Float
+}
+
+"""A Pitch"""
+type Pitch {
+  endDate: Date
+  grassType: StadiumGrassType
+  id: ID
+  insertedAt: NaiveDateTime
+  length: Float
+  stadium: Stadium
+  startDate: Date
+  updatedAt: NaiveDateTime
+  width: Float
+}
+
+"""A Player"""
+type Player {
+  countryOfBirth: Nation
+  dob: Date
+  euMember: Boolean
+  firstName: String
+  gender: String
+
+  """Height in CM"""
+  height: Float
+  id: ID
+  insertedAt: NaiveDateTime
+  lastName: String
+  nationality: Nation
+  nickname: String
+  positionGroupType: PositionGroupType
+  preferredFoot: String
+  rosters: [Roster]
+  secondNationality: Nation
+  transfermarktPlayerId: ID
+  updatedAt: NaiveDateTime
+
+  """Weight in KG"""
+  weight: Float
+}
+
+type PlayerDribbleMetricsReport {
+  drb: Int
+  drbP90: Float
+  drbcmp: Int
+  drbcmpP90: Float
+  drbcmpPct: Float
+  gameId: Int
+  min: Float
+  playerId: ID
+  pos: String
+  teamId: Int
+  week: Int
+}
+
+enum PlayerOffType {
+  """Equipment"""
+  E
+
+  """Injury"""
+  I
+
+  """Miscellaneous"""
+  M
+
+  """Red Card"""
+  R
+}
+
+type PlayerPhysicalMetricsReport {
+  """
+  Accelerations - A count of how many times a player accelerated over 3m/s²
+  """
+  accel: Int
+
+  """Count of accelerations (over 3m/s²) per 90 minutes played"""
+  accelP90: Float
+
+  """
+  Age - Players age at start of the season (1st August in Winter leagues, 1st February in Summer leagues)
+  """
+  age: Int
+
+  """
+  Number of times a player appeared in a game (starting or as substitute)
+  """
+  app: Int
+
+  """Average Speed - Average speed for team's player (km/h)"""
+  avgspeed: Float
+
+  """
+  Decelerations - A count of how many times a player decelerated over 3m/s²
+  """
+  decel: Int
+
+  """Count of decelerations (over 3m/s²) per 90 minutes played"""
+  decelP90: Float
+
+  """Details of teams involved in a game (i.e. Home team vs Away team)"""
+  gam: String
+
+  """Unique competition identifier"""
+  gameCompetitionId: Int
+
+  """Date game was played"""
+  gameDate: Date
+
+  """Unique game identifier"""
+  gameId: Int
+
+  """Season in which game was played"""
+  gameSeason: String
+
+  """
+  High Speed Running Distance - Distance covered (meters) when moving at speed between >=20 km/h and <25km/h
+  """
+  hsr: Float
+
+  """
+  High Speed Running (>=20 km/h and <25km/h) distance per 90 minutes played
+  """
+  hsrP90: Float
+
+  """
+  High Speed Running % - High-speed running distance (as % of total distance)
+  """
+  hsrPct: Float
+
+  """
+  High Speed Runs Count - A count of how many times a player moved at speed between >=20 km/h and <25km/h
+  """
+  hsrc: Int
+
+  """Count of high speed runs (>=20 km/h and <25km/h) per 90 minutes played"""
+  hsrcP90: Float
+
+  """
+  Total High Speed Running Time - Number of minutes when player is moving at speed between >=20 km/h and <25 km/h
+  """
+  hsrt: Float
+
+  """
+  High Speed Running (>=20 km/h and <25km/h) minutes per 90 minutes played
+  """
+  hsrtP90: Float
+
+  """
+  Jogging Distance - Distance covered (meters) when moving at speed between >=7 km/h and <15km/h
+  """
+  jog: Float
+
+  """Jogging (>=7 km/h and <15km/h) distance per 90 minutes played"""
+  jogP90: Float
+
+  """
+  Total Jogging Time - Number of minutes when player is moving at speed between >=7 km/h and <15 km/h
+  """
+  jogt: Float
+
+  """Jogging (>=7 km/h and <15km/h) minutes per 90 minutes played"""
+  jogtP90: Float
+
+  """
+  Low Speed Running Distance - Distance covered (meters) when moving at speed between >=15 km/h and <20km/h
+  """
+  lsr: Float
+
+  """
+  Low Speed Running (>=15 km/h and <20km/h) distance per 90 minutes played
+  """
+  lsrP90: Float
+
+  """
+  Total Low Speed Running Time - Number of minutes when player is moving at speed between >=15 km/h and <20km/h
+  """
+  lsrt: Float
+
+  """
+  Low Speed Running (>=15 km/h and <20km/h) minutes per 90 minutes played
+  """
+  lsrtP90: Float
+
+  """Max Speed - Fastest speed reached by player on team (km/h)"""
+  maxspeed: Float
+
+  """Minutes Played - Minutes player was on the pitch"""
+  min: Float
+
+  """Minutes per game played"""
+  minP90: Float
+
+  """Player Name"""
+  player: String
+
+  """Unique player identifier"""
+  playerId: Int
+
+  """
+  Position - Most frequently played position (as determined by position player starts a match in or initial position they brought into as a substitute)
+  """
+  pos: String
+
+  """Player shirt number"""
+  shirtNumber: String
+
+  """
+  Sprint Distance - Distance covered (meters) when moving at speed >=25 km/h
+  """
+  spr: Float
+
+  """Sprinting (>25km/h) distance per 90 minutes played"""
+  sprP90: Float
+
+  """Sprint % - Sprint distance (as % of total distance)"""
+  sprPct: Float
+
+  """
+  Sprint Count - A count of how many times a player moved at speed >=25 km/h
+  """
+  sprc: Int
+
+  """Count of sprints (>25km/h) per 90 minutes played"""
+  sprcP90: Float
+
+  """
+  Total Sprint Time - Number of minutes when player is moving at speed >=25 km/h
+  """
+  sprt: Float
+
+  """Sprinting (>25km/h) minutes per 90 minutes played"""
+  sprtP90: Float
+
+  """Started Game - Player in starting lineup"""
+  str: Int
+
+  """Used Substitute - Player brought on as substitute during a game"""
+  sub: Int
+
+  """Team Name"""
+  team: String
+
+  """Unique team identifier"""
+  teamId: Int
+
+  """Team Logo"""
+  teamLogo: String
+
+  """Team Name Abbreviation"""
+  teamShortName: String
+
+  """Total Distance  - Total distance covered (meters)"""
+  tot: Float
+
+  """Total distance per 90 minutes played"""
+  totP90: Float
+
+  """Count of frames where player is visible on-screen"""
+  visFrameCount: Int
+
+  """
+  Player Visibility - % of time player is visible on screen during broadcast
+  """
+  visFramePct: Int
+
+  """Count of frames where player is on the pitch"""
+  visFrameTotal: Float
+
+  """
+  Walking Distance - Distance covered (meters) when moving at speed <7 km/h
+  """
+  walk: Float
+
+  """Walking (<7km/h) distance per 90 minutes played"""
+  walkP90: Float
+
+  """
+  Total Walking Time - Number of minutes when player is moving at speed <7 km/h
+  """
+  walkt: Float
+
+  """Walking (<7km/h) mintues per 90 minutes played"""
+  walktP90: Float
+}
+
+type PlayerSearchResult {
+  displayName: String
+  firstName: String
+  id: Int
+  lastName: String
+  name: String
+  nickname: String
+  position: String
+  seasonOptions: [SeasonOption]
+  shirtNumber: String
+  team: Team
+}
+
+"""Players sortable fields"""
+enum PlayerSortFields {
+  """id"""
+  ID
+
+  """last name"""
+  LAST_NAME
+
+  """nickname"""
+  NICKNAME
+
+  """position_group_type"""
+  POSITION_GROUP_TYPE
+}
+
+enum PositionGroupType {
+  """Attack Mid"""
+  AM
+
+  """Centerback"""
+  CB
+
+  """Center Forward"""
+  CF
+
+  """Center Mid"""
+  CM
+
+  """Defender"""
+  D
+
+  """Defensive Mid"""
+  DM
+
+  """Forward"""
+  F
+
+  """Goalkeeper"""
+  GK
+
+  """Left Back"""
+  LB
+
+  """Left Center Back"""
+  LCB
+
+  """Left Mid"""
+  LM
+
+  """Left Wing"""
+  LW
+
+  """Left Wing Back"""
+  LWB
+
+  """Midfielder"""
+  M
+
+  """Mid Center Back"""
+  MCB
+
+  """Right Back"""
+  RB
+
+  """Right Center Back"""
+  RCB
+
+  """Right Mid"""
+  RM
+
+  """Right Wing"""
+  RW
+
+  """Right Wing Back"""
+  RWB
+}
+
+"""A Possession Event"""
+type PossessionEvent {
+  ballCarryEvent: BallCarryEvent
+  challengeEvent: ChallengeEvent
+  clearanceEvent: ClearanceEvent
+  crossEvent: CrossEvent
+  defenders: [Defender]
+  duration: Float
+  endTime: Float
+  formattedGameClock: String
+  fouls: [Foul]
+  game: Game
+  gameClock: Float
+  gameEvent: GameEvent
+  grades: [Grade]
+  id: ID
+  insertedAt: NaiveDateTime
+  lastInGameEvent: Int
+  passingEvent: PassingEvent
+
+  """Get the period in which this Event occurred"""
+  period: String
+  possessionEventType: PossessionEventType
+  reboundEvent: ReboundEvent
+  shootingEvent: ShootingEvent
+  startTime: Float
+  updatedAt: NaiveDateTime
+  video: Video
+
+  """Get the Video URL at the current time"""
+  videoUrl: String
+}
+
+"""PossessionEvent sortable fields"""
+enum PossessionEventSortFields {
+  """game_id"""
+  GAME_ID
+
+  """id"""
+  ID
+
+  """possession_event_type"""
+  POSSESSION_EVENT_TYPE
+
+  """video start time of event"""
+  START_TIME
+}
+
+enum PossessionEventType {
+  """ball carry"""
+  BC
+
+  """challenge"""
+  CH
+
+  """clearance"""
+  CL
+
+  """cross"""
+  CR
+
+  """pass"""
+  PA
+
+  """rebound"""
+  RE
+
+  """shot"""
+  SH
+}
+
+enum PotentialOffenseType {
+  """Dissent"""
+  D
+
+  """Off The Ball"""
+  F
+
+  """Handball"""
+  H
+
+  """On The Ball"""
+  N
+
+  """Offside"""
+  O
+
+  """Technical"""
+  T
+
+  """Dive"""
+  V
+}
+
+enum PressureType {
+  """Attempted Pressure"""
+  A
+
+  """Passing Lane"""
+  L
+
+  """Player Pressured"""
+  P
+}
+
+"""PFF FC Data Gateway"""
+type RootQueryType {
+  """True if your account is active and contains subscribed content"""
+  accountActive: Boolean
+
+  """Details of a BallCarryEvent"""
+  ballCarryEvent(id: ID!): BallCarryEvent
+
+  """All BallCarryEvents"""
+  ballCarryEvents(advantageType: AdvantageType, ballCarrierPlayerId: ID, ballCarryOutcome: BallCarryOutcome, ballCarryType: BallCarryType, betterOptionPlayerId: ID, betterOptionType: BetterOptionType, carryType: CarryType, challengerPlayerId: ID, defenderPlayerId: ID, dribbleOutcomeType: DribbleOutcomeType, dribbleType: DribbleType, gameId: ID!, linesBrokenType: LinesBrokenType, missedTouchPlayerId: ID, missedTouchType: MissedTouchType, opportunityType: OpportunityType, pressurePlayerId: ID, sortField: BallCarryEventSortFields = ID, sortOrder: SortOrder = ASC, tackleAttemptType: TackleAttemptType, touchOutcomePlayerId: ID, touchOutcomeType: TouchOutcomeType, touchType: TouchType): [BallCarryEvent]
+  cacheStats: CacheStats
+
+  """Details of a ChallengeEvent"""
+  challengeEvent(id: ID!): ChallengeEvent
+
+  """All ChallengeEvents"""
+  challengeEvents(advantageType: AdvantageType, ballCarrierPlayerId: ID, betterOptionPlayerId: ID, betterOptionType: BetterOptionType, carryType: CarryType, challengeOutcomeType: ChallengeOutcomeType, challengeType: ChallengeType, challengeWinnerPlayerId: ID, challengerAwayPlayerId: ID, challengerHomePlayerId: ID, challengerPlayerId: ID, dribbleType: DribbleType, gameId: ID!, linesBrokenType: LinesBrokenType, missedTouchPlayerId: ID, missedTouchType: MissedTouchType, opportunityType: OpportunityType, pressurePlayerId: ID, sortField: String = "id", sortOrder: SortOrder = ASC, tackleAttemptType: TackleAttemptType): [ChallengeEvent]
+
+  """Details of a ClearanceEvent"""
+  clearanceEvent(id: ID!): ClearanceEvent
+
+  """All ClearanceEvents"""
+  clearanceEvents(advantageType: AdvantageType, ballHeightType: HeightType, ballHighPointType: HeightType, betterOptionPlayerId: ID, betterOptionType: BetterOptionType, blockerPlayerId: ID, clearanceBodyType: BodyType, clearanceOutcomeType: ClearanceOutcomeType, clearancePlayerId: ID, defenderPlayerId: ID, failedInterventionPlayerId: ID, gameId: ID!, keeperPlayerId: ID, missedTouchPlayerId: ID, missedTouchType: MissedTouchType, opportunityType: OpportunityType, pressurePlayerId: ID, pressureType: PressureType, shotInitialHeightType: ShotHeightType, shotOutcomeType: ShotOutcomeType, sortField: String = "id", sortOrder: SortOrder = ASC): [ClearanceEvent]
+
+  """Details of a Competition"""
+  competition(id: ID!): Competition
+
+  """All Competitions"""
+  competitions(name: String, sortField: CompetitionSortFields = ID, sortOrder: SortOrder = ASC): [Competition]
+
+  """Details of a Confederation"""
+  confederation(id: ID!): Confederation
+
+  """All Confederations"""
+  confederations(name: String, sortField: String = "id", sortOrder: SortOrder = ASC): [Confederation]
+
+  """Details of a CrossEvent"""
+  crossEvent(id: ID!): CrossEvent
+
+  """All CrossEvents"""
+  crossEvents(advantageType: AdvantageType, ballHeightType: HeightType, betterOptionPlayerId: ID, betterOptionType: BetterOptionType, blockerPlayerId: ID, clearerPlayerId: ID, completeToPlayerId: ID, crossHighPointType: HeightType, crossOutcomeType: CrossOutcomeType, crossType: CrossType, crossZoneType: CrossZoneType, crosserBodyType: BodyType, crosserPlayerId: ID, defenderBallHeightType: HeightType, defenderBodyType: BodyType, defenderPlayerId: ID, deflectorBodyType: BodyType, deflectorPlayerId: ID, failedInterventionPlayerId: ID, gameId: ID!, incompletionReasonType: IncompletionReasonType, intendedTargetPlayerId: ID, keeperPlayerId: ID, linesBrokenType: LinesBrokenType, missedTouchPlayerId: ID, missedTouchType: MissedTouchType, opportunityType: OpportunityType, pressurePlayerId: ID, pressureType: PressureType, receiverBallHeightType: HeightType, receiverBodyType: BodyType, receiverPointX: Float, receiverPointY: Float, secondIncompletionReasonType: IncompletionReasonType, shotInitialHeightType: HeightType, shotOutcomeType: ShotOutcomeType, sortField: String = "id", sortOrder: SortOrder = ASC): [CrossEvent]
+
+  """Details of a Defender"""
+  defender(defenderPlayerId: ID, id: ID!): Defender
+
+  """Dribble Metrics Reports"""
+  dribbleMetricsReport(competitionId: ID!, season: String!): [DribbleMetricsReport]
+
+  """Get available data based on Filter state"""
+  epitomeFilter(clock: String, competitionId: Int, minimumTeamVis: Int, playerId: Int, playerSearch: String, season: String, teams: [Int], weeks: [Int]): Filter
+
+  """Details of a Federation"""
+  federation(id: ID!): Federation
+
+  """All Federations"""
+  federations(englishName: String, name: String, sortField: String = "id", sortOrder: SortOrder = ASC): [Federation]
+
+  """Details of a Foul"""
+  foul(id: ID!): Foul
+
+  """All Fouls"""
+  fouls(culpritPlayerId: ID, foulOutcomeType: FoulOutcomeType, foulType: FoulType, gameId: ID!, potentialOffenseType: PotentialOffenseType, sortField: FoulSortFields = ID, sortOrder: SortOrder = ASC, varCulpritPlayerId: ID, varOutcomeType: FoulOutcomeType, varPotentialOffenseType: PotentialOffenseType, varReasonType: VarReasonType, victimPlayerId: ID): [Foul]
+
+  """Details of a Game"""
+  game(id: ID!): Game
+
+  """Details of a GameEvent"""
+  gameEvent(id: ID!): GameEvent
+
+  """All GameEvents in a Game"""
+  gameEvents(gameId: ID!, otherPlayerId: ID, playerId: ID, playerOffId: ID, playerOnId: ID, pressurePlayerId: ID, sortField: GameEventSortFields = ID, sortOrder: SortOrder = ASC): [GameEvent]
+
+  """All Games"""
+  games(
+    """Used only in combination with season, otherwise ignored"""
+    competitionId: ID
+
+    """Used only in combination with competitionId, otherwise ignored"""
+    season: String
+    sortField: GameSortFields = ID
+    sortOrder: SortOrder = ASC
+
+    """Works with competition and season, only"""
+    weeks: [Int]
+  ): [Game]
+
+  """Details of a Grade"""
+  grade(id: ID!, playerId: ID): Grade
+
+  """All Grades"""
+  grades(gameId: ID!, sortField: GradeSortFields = ID, sortOrder: SortOrder = ASC): [Grade]
+
+  """Details of a Kit"""
+  kit(id: ID!): Kit
+
+  """Details of a Location"""
+  location(id: ID!, sortField: LocationSortFields = ID, sortOrder: SortOrder = ASC): Location
+
+  """Roster Visibility Report"""
+  lowTeamVisibility(competitionId: ID!, season: String!, visibilityThreshold: Int!): [RosterVisibility]
+
+  """Details of a Nation"""
+  nation(id: ID!): Nation
+
+  """All Nations"""
+  nations(sortField: NationSortFields = ID, sortOrder: SortOrder = ASC): [Nation]
+
+  """Details of a PassingEvent"""
+  passingEvent(id: ID!): PassingEvent
+
+  """All PassingEvents in a Game"""
+  passingEvents(advantageType: AdvantageType, ballHeightType: HeightType, betterOptionPlayerId: ID, betterOptionType: BetterOptionType, blockerPlayerId: ID, clearerPlayerId: ID, defenderBodyType: BodyType, defenderHeightType: HeightType, defenderPlayerId: ID, deflectorBodyType: BodyType, deflectorPlayerId: ID, failedInterventionPlayerId: ID, gameId: ID!, incompletionReasonType: IncompletionReasonType, keeperPlayerId: ID, linesBrokenType: LinesBrokenType, missedTouchPlayerId: ID, missedTouchType: MissedTouchType, opportunityType: OpportunityType, passAccuracyType: PassAccuracyType, passBodyType: BodyType, passHighPointType: HeightType, passOutcomeType: PassOutcomeType, passType: PassType, passerPlayerId: ID, pressurePlayerId: ID, pressureType: PressureType, receiverBodyType: BodyType, receiverFacingType: FacingType, receiverHeightType: HeightType, receiverPlayerId: ID, secondIncompletionReasonType: IncompletionReasonType, shotInitialHeightType: ShotHeightType, shotOutcomeType: ShotOutcomeType, sortField: PassingEventSortFields = ID, sortOrder: SortOrder = ASC, targetFacingType: FacingType, targetPlayerId: ID): [PassingEvent]
+
+  """Player Passing Metrics Report"""
+  passingMetricsReport(competitionId: ID!, season: String!): [PassingMetricsReport]
+
+  """Game Physical Metrics Report"""
+  physicalMetricsGameReport(clock: String, gameId: Int, inPossession: String): [GamePhysicalMetricsReport]
+
+  """Physical Metrics Reports"""
+  physicalMetricsReport(ages: [Int], clock: String, competitionId: ID!, inPossession: String, players: [Int], positions: [String], season: String!, teamVis: Int, teams: [Int]): [PhysicalMetricsReport]
+
+  """Details of a Pitch"""
+  pitch(id: ID!): Pitch
+
+  """All Pitches"""
+  pitches(grassType: StadiumGrassType, sortField: StadiumSortFields = ID, sortOrder: SortOrder = ASC): [Pitch]
+
+  """Details of a Player"""
+  player(competitionId: ID, gameIds: [ID], id: ID!, positionGroupType: PositionGroupType, seasonAndWeeks: String): Player
+
+  """Player Dribble Metrics Reports"""
+  playerDribbleMetricsReport(competitionId: ID!, playerId: Int!, season: String!): [PlayerDribbleMetricsReport]
+
+  """Player Physical Metrics Reports"""
+  playerPhysicalMetricsReport(clock: String, competitionId: ID!, inPossession: String, playerId: Int!, season: String!, teamVis: Int = 0): [PlayerPhysicalMetricsReport]
+
+  """Player Search"""
+  playerSearch(limit: Int, query: String!): [Player]
+
+  """All Players"""
+  players(
+    """Used only in combination with season, otherwise ignored"""
+    competitionId: ID
+    firstName: String
+    lastName: String
+    nickname: String
+    positionGroupType: PositionGroupType
+
+    """Used only in combination with competitionId, otherwise ignored"""
+    season: String
+    sortField: PlayerSortFields = ID
+    sortOrder: SortOrder = ASC
+
+    """Works with competition and season, only"""
+    weeks: [Int]
+  ): [Player]
+
+  """Players by positions and team name on or opposing"""
+  playersByPositionsAndTeamNameOnOrOpposing(positionGroupTypes: [PositionGroupType]!, sortField: PlayerSortFields = ID, sortOrder: SortOrder = ASC, teamName: String!): [Player]
+
+  """Details of a PossessionEvent"""
+  possessionEvent(id: ID!, possessionEventType: PossessionEventType): PossessionEvent
+
+  """All PossessionEvents"""
+  possessionEvents(gameId: ID!, possessionEventType: PossessionEventType, sortField: PossessionEventSortFields = ID, sortOrder: SortOrder = ASC): [PossessionEvent]
+
+  """Details of a ReboundEvent"""
+  reboundEvent(id: ID!): ReboundEvent
+
+  """All ReboundEvents"""
+  reboundEvents(advantageType: AdvantageType, blockerPlayerId: ID, defenderPlayerId: ID, gameId: ID!, missedTouchPlayerId: ID, missedTouchType: MissedTouchType, originateType: OriginateType, reboundBodyType: BodyType, reboundEndPointX: Float, reboundEndPointY: Float, reboundHeightType: HeightType, reboundHighPointType: HeightType, reboundOutcomeType: ReboundOutcomeType, rebounderPlayerId: ID, shotInitialHeightType: ShotHeightType, shotOutcomeType: ShotOutcomeType, sortField: ReboundEventSortFields = ID, sortOrder: SortOrder = ASC): [ReboundEvent]
+
+  """All Game Rosters"""
+  rosters(gameId: ID!, playerId: ID, sortField: RosterSortFields = ID, sortOrder: SortOrder = ASC, started: Boolean = true): [Roster]
+
+  """Scoring Game Events"""
+  scoringEvents(clock: String, competitionId: ID!, season: String!): [GameEvent]
+
+  """Scoring players by positions, opposing team name and season"""
+  scoringPlayersByPositionsOpposingTeamNameAndSeason(positionGroupTypes: [PositionGroupType]!, season: String!, sortField: PlayerSortFields = ID, sortOrder: SortOrder = ASC, teamName: String!): [Player]
+
+  """Search Players"""
+  searchPlayers(query: String!): [PlayerSearchResult]
+
+  """Details of a ShootingEvent"""
+  shootingEvent(id: ID!): ShootingEvent
+
+  """All ShootingEvents"""
+  shootingEvents(advantageType: AdvantageType, ballHeightType: HeightType, betterOptionPlayerId: ID, betterOptionType: BetterOptionType, blockerPlayerId: ID, bodyMovementType: BodyMovementType, clearerPlayerId: ID, deflectionShotHeightType: ShotHeightType, deflectorBodyType: BodyType, deflectorPlayerId: ID, deflectorShotOutcomeType: ShotOutcomeType, failedInterventionPlayerId: ID, gameId: ID!, keeperTouchType: BodyType, missedTouchPlayerId: ID, missedTouchType: MissedTouchType, pressurePlayerId: ID, pressureType: PressureType, saveHeightType: ShotHeightType, saveReboundType: ShotHeightType, saverPlayerId: ID, shooterPlayerId: ID, shotBodyType: BodyType, shotInitialHeightType: ShotHeightType, shotNatureType: ShotNatureType, shotOutcomeType: ShotOutcomeType, shotType: ShotType, sortField: ShootingEventSortFields = ID, sortOrder: SortOrder = ASC): [ShootingEvent]
+
+  """Details of a Stadium"""
+  stadium(id: ID!): Stadium
+
+  """All Stadiums"""
+  stadiums(name: String, nickname: String, seatingType: StadiumSeatingType, sortField: StadiumSortFields = ID, sortOrder: SortOrder = ASC, stadiumType: StadiumType): [Stadium]
+
+  """Details of a Team"""
+  team(id: ID!): Team
+
+  """Team Dribble Metrics Report"""
+  teamDribbleMetricsReport(competitionId: ID!, season: String!, teamId: Int!): TeamDribbleMetricsReport
+
+  """Team Physical Metrics Report"""
+  teamPhysicalMetricsReport(ages: [Int], clock: String, competitionId: ID!, inPossession: String, players: [Int], positions: [String], season: String!, teamVis: Int, teams: [Int]): [TeamPhysicalMetricsReport]
+
+  """All Teams"""
+  teams(internationalName: String, name: String, shortName: String, sortField: TeamSortFields = ID, sortOrder: SortOrder = ASC): [Team]
+
+  """Release version of the API"""
+  version: String
+
+  """Details of a Video"""
+  video(id: ID!): Video
+
+  """All Videos"""
+  videos(sortField: VideoSortFields = ID, sortOrder: SortOrder = ASC): [Video]
+}
+
+"""A Rebound Event"""
+type ReboundEvent {
+  advantageType: AdvantageType
+  badParry: Boolean
+  blockerPlayer: Player
+  clearerPlayer: Player
+  defenderPlayer: Player
+  game: Game
+  gameEvent: GameEvent
+  id: ID
+  insertedAt: NaiveDateTime
+  keeperPlayer: Player
+  missedTouchPlayer: Player
+  missedTouchPointX: Float
+  missedTouchPointY: Float
+  missedTouchType: MissedTouchType
+  originateType: OriginateType
+
+  """Get the period in which this Event occurred"""
+  period: String
+  possessionEvent: PossessionEvent
+  reboundBodyType: BodyType
+  reboundEndPointX: Float
+  reboundEndPointY: Float
+  reboundHeightType: HeightType
+  reboundHighPointType: HeightType
+  reboundOutcomeType: ReboundOutcomeType
+  reboundPointX: Float
+  reboundPointY: Float
+  reboundStartPointX: Float
+  reboundStartPointY: Float
+  rebounderPlayer: Player
+  saveReboundType: String
+  saveable: Boolean
+  shotInitialHeightType: ShotHeightType
+  shotOutcomeType: ShotOutcomeType
+  updatedAt: NaiveDateTime
+}
+
+"""ReboundEvent sortable fields"""
+enum ReboundEventSortFields {
+  """advantage_type"""
+  ADVANTAGE_TYPE
+
+  """blocker_player_id"""
+  BLOCKER_PLAYER_ID
+
+  """defender_player_id"""
+  DEFENDER_PLAYER_ID
+
+  """game_id"""
+  GAME_ID
+
+  """id"""
+  ID
+
+  """missed_touch_player_id"""
+  MISSED_TOUCH_PLAYER_ID
+
+  """missed_touch_type"""
+  MISSED_TOUCH_TYPE
+
+  """originate_type"""
+  ORIGINATE_TYPE
+
+  """rebound_body_type"""
+  REBOUND_BODY_TYPE
+
+  """rebound_height_type"""
+  REBOUND_HEIGHT_TYPE
+
+  """rebound_high_point_type"""
+  REBOUND_HIGH_POINT_TYPE
+
+  """rebound_outcome_type"""
+  REBOUND_OUTCOME_TYPE
+
+  """rebounder_player_id"""
+  REBOUNDER_PLAYER_ID
+
+  """shot_initial_height_type"""
+  SHOT_INITIAL_HEIGHT_TYPE
+
+  """shot_outcome_type"""
+  SHOT_OUTCOME_TYPE
+}
+
+enum ReboundOutcomeType {
+  """Inadvertent Shot At Goal"""
+  A
+
+  """Inadvertent Shot Own Goal"""
+  D
+
+  """player"""
+  P
+
+  """retain"""
+  R
+
+  """Out of Touch"""
+  T
+}
+
+"""A Roster entry for a Game"""
+type Roster {
+  game: Game
+  id: ID
+  insertedAt: NaiveDateTime
+  player: Player
+  positionGroupType: PositionGroupType
+  shirtNumber: String
+  started: Boolean
+  team: Team
+  updatedAt: NaiveDateTime
+}
+
+"""Roster sortable fields"""
+enum RosterSortFields {
+  """game_id"""
+  GAME_ID
+
+  """id"""
+  ID
+
+  """player_id"""
+  PLAYER_ID
+
+  """started"""
+  STARTED
+}
+
+type RosterVisibility {
+  gameId: Int
+  teamId: Int
+  teamVisibility: Int
+}
+
+enum SaveReboundType {
+  """crossbar"""
+  CB
+
+  """behind goal left"""
+  GL
+
+  """behind goal right"""
+  GR
+
+  """behind goal left and high"""
+  HL
+
+  """behind goal right and high"""
+  HR
+
+  """left six yard box"""
+  L6
+
+  """into left area"""
+  LA
+
+  """out of box left"""
+  LO
+
+  """left post"""
+  LP
+
+  """middle six yard box"""
+  M6
+
+  """into middle area"""
+  MA
+
+  """out of box middle"""
+  MO
+
+  """over crossbar"""
+  OC
+
+  """right six yard box"""
+  R6
+
+  """into right area"""
+  RA
+
+  """out of box right"""
+  RO
+
+  """right post"""
+  RP
+}
+
+type SeasonOption {
+  competitionId: Int
+  season: String
+}
+
+enum SetpieceType {
+  """corner"""
+  C
+
+  """Drop Ball"""
+  D
+
+  """free kick"""
+  F
+
+  """goal kick"""
+  G
+
+  """Kickoff"""
+  K
+
+  """penalty"""
+  P
+
+  """throw in"""
+  T
+}
+
+"""A ShootingEvent"""
+type ShootingEvent {
+  advantageType: AdvantageType
+  badParry: Boolean
+  ballHeightType: HeightType
+  ballMoving: Boolean
+  betterOption: String
+  betterOptionPlayer: Player
+  betterOptionTime: String
+  betterOptionType: BetterOptionType
+  blockerPlayer: Player
+  bodyMovementType: BodyMovementType
+  clearerPlayer: Player
+  createsSpace: Boolean
+  createsSpaceVsPlayer: Player
+  defenderPointX: Float
+  defenderPointY: Float
+  deflectionPointX: Float
+  deflectionPointY: Float
+  deflectorBodyType: BodyType
+  deflectorPlayer: Player
+  failedInterventionPlayer: Player
+  failedInterventionPlayer1: Player
+  failedInterventionPlayer2: Player
+  failedInterventionPlayer3: Player
+  game: Game
+  gameEvent: GameEvent
+  goalLineEndPointX: Float
+  goalLineEndPointY: Float
+  goalLineStartPointX: Float
+  goalLineStartPointY: Float
+  goalkeeperPointX: Float
+  goalkeeperPointY: Float
+  id: ID
+  insertedAt: NaiveDateTime
+  keeperTouchPointX: Float
+  keeperTouchPointY: Float
+  keeperTouchType: BodyType
+  late: Boolean
+  missedTouchPlayer: Player
+  missedTouchPointX: Float
+  missedTouchPointY: Float
+  missedTouchType: MissedTouchType
+  noLook: Boolean
+
+  """Get the period in which this Event occurred"""
+  period: String
+  possessionEvent: PossessionEvent
+  pressurePlayer: Player
+  pressureType: PressureType
+  saveHeightType: ShotHeightType
+  savePointX: Float
+  savePointY: Float
+  saveReboundType: SaveReboundType
+  saveable: Boolean
+  saverPlayer: Player
+  shooterPlayer: Player
+  shotBodyType: BodyType
+  shotInitialHeightType: ShotHeightType
+  shotNatureType: ShotNatureType
+  shotOutcomeType: ShotOutcomeType
+  shotPointX: Float
+  shotPointY: Float
+  shotTargetPointX: Float
+  shotTargetPointY: Float
+  shotType: ShotType
+  updatedAt: NaiveDateTime
+}
+
+"""ShootingEvent sortable fields"""
+enum ShootingEventSortFields {
+  """advantage_type"""
+  ADVANTAGE_TYPE
+
+  """ball_height_type"""
+  BALL_HEIGHT_TYPE
+
+  """better_option_player_id"""
+  BETTER_OPTION_PLAYER_ID
+
+  """better_option_type"""
+  BETTER_OPTION_TYPE
+
+  """blocker_player_id"""
+  BLOCKER_PLAYER_ID
+
+  """body_route_type"""
+  BODY_MOVEMENT_TYPE
+
+  """clearer_player_id"""
+  CLEARER_PLAYER_ID
+
+  """deflection_shot_height_type"""
+  DEFLECTION_SHOT_HEIGHT_TYPE
+
+  """deflector_body_type"""
+  DEFLECTOR_BODY_TYPE
+
+  """deflector_player_id"""
+  DEFLECTOR_PLAYER_ID
+
+  """deflector_shot_outcome_type"""
+  DEFLECTOR_SHOT_OUTCOME_TYPE
+
+  """failed_intervention_player_id"""
+  FAILED_INTERVENTION_PLAYER_ID
+
+  """game_id"""
+  GAME_ID
+
+  """id"""
+  ID
+
+  """keeper_touch_type"""
+  KEEPER_TOUCH_TYPE
+
+  """missed_touch_player_id"""
+  MISSED_TOUCH_PLAYER_ID
+
+  """missed_touch_type"""
+  MISSED_TOUCH_TYPE
+
+  """pressure_player_id"""
+  PRESSURE_PLAYER_ID
+
+  """pressure_type"""
+  PRESSURE_TYPE
+
+  """save_height_type"""
+  SAVE_HEIGHT_TYPE
+
+  """save_rebound_type"""
+  SAVE_REBOUND_TYPE
+
+  """saver_player_id"""
+  SAVER_PLAYER_ID
+
+  """shooter_player_id"""
+  SHOOTER_PLAYER_ID
+
+  """shot_body_type"""
+  SHOT_BODY_TYPE
+
+  """shot_initial_height_type"""
+  SHOT_INITIAL_HEIGHT_TYPE
+
+  """shot_nature_type"""
+  SHOT_NATURE_TYPE
+
+  """shot_outcome_type"""
+  SHOT_OUTCOME_TYPE
+
+  """shot_type"""
+  SHOT_TYPE
+}
+
+enum ShotHeightType {
+  """bottom third"""
+  BOTTOMTHIRD
+
+  """middle third"""
+  MIDDLETHIRD
+
+  """top third"""
+  TOPTHIRD
+
+  """cross bar"""
+  C
+
+  """fails to reach"""
+  F
+
+  """ground"""
+  G
+
+  """narrowly over crossbar"""
+  N
+
+  """over"""
+  O
+
+  """narrowly under crossbar"""
+  U
+}
+
+enum ShotNatureType {
+  """placement"""
+  A
+
+  """flick"""
+  F
+
+  """laces"""
+  L
+
+  """power"""
+  P
+
+  """scuff"""
+  S
+
+  """toe punt"""
+  T
+}
+
+enum ShotOutcomeType {
+  """block on target"""
+  B
+
+  """block off target"""
+  C
+
+  """save off target"""
+  F
+
+  """goal"""
+  G
+
+  """goalline clearance"""
+  L
+
+  """off target effort"""
+  O
+
+  """save on target"""
+  S
+}
+
+enum ShotType {
+  """bicycle"""
+  B
+
+  """diving"""
+  D
+
+  """side foot"""
+  F
+
+  """sliding"""
+  I
+
+  """lob"""
+  L
+
+  """outside foot"""
+  O
+
+  """standard"""
+  S
+
+  """studs"""
+  T
+
+  """volley"""
+  V
+}
+
+enum SortOrder {
+  """Ascending"""
+  ASC
+
+  """Descending"""
+  DESC
+}
+
+"""A Stadium"""
+type Stadium {
+  capacity: Int
+  elevation: Float
+  games: [Game]
+  id: ID
+  insertedAt: NaiveDateTime
+  latitude: Float
+  longitude: Float
+  name: String
+  nickname: String
+  noiseLevel: Float
+  orientation: String
+  pitches: [Pitch]
+  seatingType: StadiumSeatingType
+  stadiumType: StadiumType
+  streetAddress: String
+  updatedAt: NaiveDateTime
+  yearBuilt: Int
+}
+
+enum StadiumGrassType {
+  """Astro Turf"""
+  A
+
+  """Field Turf"""
+  F
+
+  """Natural"""
+  N
+
+  """Real"""
+  R
+}
+
+enum StadiumSeatingType {
+  """Bleachers"""
+  B
+
+  """Mixed"""
+  M
+
+  """Seated"""
+  S
+
+  """Unknown"""
+  U
+}
+
+"""Stadium sortable fields"""
+enum StadiumSortFields {
+  """id"""
+  ID
+
+  """seating_type"""
+  SEATING_TYPE
+
+  """stadium_type"""
+  STADIUM_TYPE
+}
+
+enum StadiumType {
+  """Conversion"""
+  C
+
+  """Domed"""
+  D
+
+  """Indoor"""
+  I
+
+  """Outdoor"""
+  O
+}
+
+enum SubType {
+  """Blood Injury"""
+  B
+
+  """Sin Bin Cover"""
+  C
+
+  """Head Injury Assessment"""
+  H
+
+  """Return from HIA"""
+  R
+
+  """Standard"""
+  S
+}
+
+enum TackleAttemptType {
+  """deliberate foul"""
+  D
+
+  """no tackle, fake event"""
+  F
+
+  """go for ball"""
+  G
+
+  """no tackle attempt"""
+  T
+}
+
+"""A Team"""
+type Team {
+  """Seasons Available for Team"""
+  availableSeasons: [String]
+  awayGames: [Game]
+
+  """Participated Competitions"""
+  competitions(sortField: CompetitionSortFields = ID, sortOrder: SortOrder = ASC): [Competition]
+  country: String
+  fifaId: String
+  homeGames: [Game]
+  homeStadium: Stadium
+  id: ID
+  insertedAt: NaiveDateTime
+  internationalName: String
+  kits: [Kit]
+  logoIcon: String
+
+  """Most recent five games played"""
+  mostRecentFiveGames: [Game]
+  name: String
+
+  """Next scheduled game"""
+  nextGame: Game
+
+  """Next secheduled opponent team"""
+  nextOpponent: Team
+
+  """Players in a Season"""
+  players(season: String!, sortField: PlayerSortFields = ID, sortOrder: SortOrder = ASC): [Player]
+  rosters: [Roster]
+  shortName: String
+  updatedAt: NaiveDateTime
+  workPermitValue: Int
+}
+
+type TeamDribbleMetricsReport {
+  drb: Int
+  drbP90: Float
+  drbcmp: Int
+  drbcmpP90: Float
+  drbcmpPct: Float
+  min: Float
+  teamId: Int
+}
+
+type TeamPhysicalMetricsReport {
+  """
+  Accelerations - A count of how many times a player on team accelerated over 3m/s²
+  """
+  accel: Int
+
+  """Count of accelerations (over 3m/s²) per 90 minutes played"""
+  accelP90: Float
+
+  """Average Speed - Average speed for team's player (km/h)"""
+  avgspeed: Float
+
+  """
+  Decelerations - A count of how many times a player on team decelerated over 3m/s²
+  """
+  decel: Int
+
+  """Count of decelerations (over 3m/s²) per 90 minutes played"""
+  decelP90: Float
+
+  """Details of teams involved in a game (i.e. Home team vs Away team)"""
+  gam: Int
+
+  """
+  High Speed Running Distance - Distance covered (kilometers) when player is moving at speed between >=20 km/h and <25km/h
+  """
+  hsr: Float
+
+  """
+  High Speed Running (>=20 km/h and <25km/h) distance per 90 minutes played
+  """
+  hsrP90: Float
+
+  """
+  High Speed Running % - High-speed running distance (as % of total distance)
+  """
+  hsrPct: Float
+
+  """
+  High Speed Runs Count - A count of how many times a player on team moved at speed between >=20 km/h and <25 km/h
+  """
+  hsrc: Int
+
+  """Count of high speed runs (>=20 km/h and <25km/h) per 90 minutes played"""
+  hsrcP90: Float
+
+  """
+  Total High Speed Running Time - Number of minutes when player is moving at speed between >=20 km/h and <25 km/h
+  """
+  hsrt: Float
+
+  """
+  High Speed Running (>=20 km/h and <25km/h) minutes per 90 minutes played
+  """
+  hsrtP90: Float
+
+  """
+  Jogging Distance - Distance covered (kilometers) when player is moving at speed between >=7 km/h and <15km/h
+  """
+  jog: Float
+
+  """Jogging (>=7 km/h and <15km/h) distance per 90 minutes played"""
+  jogP90: Float
+
+  """
+  Total Jogging Time - Number of minutes when player is moving at speed between >=7 km/h and <15 km/h
+  """
+  jogt: Float
+
+  """Jogging (>=7 km/h and <15km/h) minutes per 90 minutes played"""
+  jogtP90: Float
+
+  """
+  Low Speed Running Distance - Distance covered (kilometers) when player is moving at speed between >=15 km/h and <20km/h
+  """
+  lsr: Float
+  lsrP90: Float
+
+  """
+  Total Low Speed Running Time - Number of minutes when player is moving at speed between >=15 km/h and <20km/h
+  """
+  lsrt: Float
+
+  """
+  Low Speed Running (>=15 km/h and <20km/h) distance per 90 minutes played
+  """
+  lsrtP90: Float
+
+  """Max Speed - Fastest speed reached by player on team (km/h)"""
+  maxspeed: Float
+
+  """Total Time - Total time on the pitch"""
+  min: Float
+
+  """
+  Sprint Distance - Distance covered (kilometers) when player is moving at speed >=25 km/h
+  """
+  spr: Float
+
+  """Sprinting (>25km/h) distance per 90 minutes played"""
+  sprP90: Float
+
+  """Sprint % - Sprint distance (as % of total distance)"""
+  sprPct: Float
+
+  """
+  Sprint Count - A count of how many times a player on team moved at speed >=25 km/h
+  """
+  sprc: Int
+
+  """Count of sprints (>25km/h) per 90 minutes played"""
+  sprcP90: Float
+
+  """Sprint % - Sprint distance (as % of total distance)"""
+  sprcPct: Float
+
+  """
+  Total Sprint Time - Number of minutes when player is moving at speed >=25 km/h
+  """
+  sprt: Float
+
+  """Sprinting (>25km/h) minutes per 90 minutes played"""
+  sprtP90: Float
+
+  """Team Name"""
+  team: String
+
+  """Unique team identifier"""
+  teamId: Int
+
+  """Team Logo"""
+  teamLogo: String
+
+  """Team Name Abbreviation"""
+  teamShortName: String
+
+  """Total Distance - Total distance covered (kilometers)"""
+  tot: Float
+
+  """Total distance per 90 minutes played"""
+  totP90: Float
+
+  """Count of frames where player is visible on-screen"""
+  visFrameCount: Int
+
+  """
+  Player Visibility - % of time team's players are visible on screen during broadcast
+  """
+  visFramePct: Int
+
+  """Count of frames where player is on the pitch"""
+  visFrameTotal: Float
+
+  """
+  Walking Distance - Distance covered (kilometers) when player is moving at speed <7 km/h
+  """
+  walk: Float
+
+  """Walking (<7km/h) distance per 90 minutes played"""
+  walkP90: Float
+
+  """
+  Total Walking Time - Number of minutes when player is moving at speed <7 km/h
+  """
+  walkt: Float
+
+  """Walking (<7km/h) distance per 90 minutes played"""
+  walktP90: Float
+}
+
+"""Team sortable fields"""
+enum TeamSortFields {
+  """id"""
+  ID
+
+  """international_name"""
+  INTERNATIONAL_NAME
+
+  """name"""
+  NAME
+
+  """short_name"""
+  SHORT_NAME
+}
+
+enum TouchOutcomeType {
+  """Inadvertent Shot At Goal"""
+  A
+
+  """Challenge"""
+  C
+
+  """Inadvertent Shot Own Goal"""
+  D
+
+  """Goal"""
+  G
+
+  """Out of Play"""
+  O
+
+  """Player"""
+  P
+
+  """Retain"""
+  R
+
+  """Own Goal"""
+  W
+}
+
+enum TouchType {
+  """ball in hand"""
+  B
+
+  """failed cross"""
+  C
+
+  """deliberate handball"""
+  D
+
+  """failed trap"""
+  F
+
+  """failed catch"""
+  G
+
+  """heavy touch"""
+  H
+
+  """failed clearance"""
+  L
+
+  """failed pass"""
+  P
+
+  """failed shot"""
+  S
+
+  """take over"""
+  T
+}
+
+enum VarReasonType {
+  """Missed Infringement"""
+  I
+
+  """Overturn Infringement"""
+  O
+}
+
+"""A Video"""
+type Video {
+  duration: Float
+  fps: Float
+  game: Game
+  id: ID
+  insertedAt: NaiveDateTime
+  originalFilename: String
+  status: Int
+  updatedAt: NaiveDateTime
+
+  """Get the Video URL at the current time"""
+  videoUrl: String
+}
+
+enum VideoAngleType {
+  """Bad Angle"""
+  B
+
+  """Missing"""
+  M
+}
+
+"""Video sortable fields"""
+enum VideoSortFields {
+  """game_id"""
+  GAME_ID
+
+  """id"""
+  ID
+}
