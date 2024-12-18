@@ -1,0 +1,4 @@
+[console_scripts]
+pipf = mortal_pip.pip_main.py:force
+pipr = mortal_pip.pip_main.py:remove
+pipu = mortal_pip.pip_main.py:upgrade
