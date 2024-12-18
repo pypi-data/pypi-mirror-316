@@ -1,0 +1,3 @@
+[console_scripts]
+pipf = mortal_pipu.cli:force
+pipu = mortal_pipu.cli:cli

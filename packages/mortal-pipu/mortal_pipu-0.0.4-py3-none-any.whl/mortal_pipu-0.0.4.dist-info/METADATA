@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: mortal_pipu
+Version: 0.0.4
+Summary: 'mortal工具集::pipu'
+Author: MJ
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: click>=8.0.0
+
+'mortal工具集::pipu'
