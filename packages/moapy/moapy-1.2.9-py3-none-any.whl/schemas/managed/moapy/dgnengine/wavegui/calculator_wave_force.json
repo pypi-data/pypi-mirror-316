@@ -1,0 +1,216 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "moapy",
+    "description": "Schema for moapy",
+    "version": "1.2.5"
+  },
+  "servers": [
+    {
+      "url": "https://moa.rpm.kr-st-midasit.com/backend/python-executor/"
+    }
+  ],
+  "paths": {
+    "/execute?functionId=moapy-dgnengine-wavegui-calculator_wave_force": {
+      "post": {
+        "summary": "Linear Wave Force Analysis",
+        "description": "Calculate wave forces on cylindrical structures. This function calculates the wave kinematics and resulting forces using linear wave theory and Morison's equation. It returns a visual representation of the forces and a detailed table of maximum force values.",
+        "operationId": "calculator wave force",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/calculator_wave_force"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResultMD"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        },
+        "x-content-info": {
+          "title": "Linear Wave Force Analysis",
+          "description": "Calculate wave forces on cylindrical structures. This function calculates the wave kinematics and resulting forces using linear wave theory and Morison's equation. It returns a visual representation of the forces and a detailed table of maximum force values."
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "CoefficientInput": {
+        "properties": {
+          "dragcoeff": {
+            "type": "number",
+            "title": "Drag Coefficient",
+            "description": "A dimensionless number representing the drag resistance exerted by the fluid on the structure.",
+            "default": 1.0
+          },
+          "inertiacoeff": {
+            "type": "number",
+            "title": "Inertia Coefficient",
+            "description": "A dimensionless number quantifying the inertia forces acting on the structure due to fluid acceleration.",
+            "default": 2.0
+          }
+        },
+        "type": "object",
+        "title": "Coefficients",
+        "dataclassname": "moapy.dgnengine.wavegui.CoefficientInput"
+      },
+      "HTTPValidationError": {
+        "properties": {
+          "detail": {
+            "items": {
+              "$ref": "#/components/schemas/ValidationError"
+            },
+            "type": "array",
+            "title": "Detail"
+          }
+        },
+        "type": "object",
+        "title": "HTTPValidationError"
+      },
+      "InputData": {
+        "properties": {
+          "waveParam": {
+            "$ref": "#/components/schemas/WaveParamInput",
+            "title": "Wave Parameters Inputs"
+          },
+          "coeff": {
+            "$ref": "#/components/schemas/CoefficientInput",
+            "title": "Coefficients Inputs"
+          },
+          "period": {
+            "$ref": "#/components/schemas/PeriodInput",
+            "title": "Define Time Step"
+          }
+        },
+        "type": "object",
+        "title": "",
+        "dataclassname": "moapy.dgnengine.wavegui.InputData"
+      },
+      "PeriodInput": {
+        "properties": {
+          "resultPeriod": {
+            "type": "number",
+            "title": "Time Interval for Calculate Wave Force",
+            "description": "The time interval (in seconds) for calculating wave loads. Adjust this value to control the wave period and compute corresponding loads.",
+            "default": 0
+          }
+        },
+        "type": "object",
+        "title": "Coefficients",
+        "dataclassname": "moapy.dgnengine.wavegui.PeriodInput"
+      },
+      "ResultMD": {
+        "properties": {
+          "md": {
+            "type": "string",
+            "title": "Md",
+            "description": "Markdown",
+            "default": ""
+          }
+        },
+        "type": "object",
+        "title": "Markdown",
+        "description": "Result Markdown",
+        "dataclassname": "moapy.data_post.ResultMD"
+      },
+      "ValidationError": {
+        "properties": {
+          "loc": {
+            "items": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "integer"
+                }
+              ]
+            },
+            "type": "array",
+            "title": "Location"
+          },
+          "msg": {
+            "type": "string",
+            "title": "Message"
+          },
+          "type": {
+            "type": "string",
+            "title": "Error Type"
+          }
+        },
+        "type": "object",
+        "required": [
+          "loc",
+          "msg",
+          "type"
+        ],
+        "title": "ValidationError"
+      },
+      "WaveParamInput": {
+        "properties": {
+          "hWaveHeight": {
+            "type": "number",
+            "title": "Wave Height (m)",
+            "description": "The vertical distance between the wave crest and trough, representing the wave's height.",
+            "default": 15
+          },
+          "pPeriod": {
+            "type": "number",
+            "title": "Wave Period (s)",
+            "description": "The time taken for two successive wave crests to pass a fixed point, indicating the wave's period.",
+            "default": 12.16
+          },
+          "hWaterDepth": {
+            "type": "number",
+            "title": "Water Depth (m)",
+            "description": "The vertical distance from the seabed to the water surface, representing the water's depth.",
+            "default": 50
+          },
+          "dPiledia": {
+            "type": "number",
+            "title": "Pile Diameter (m)",
+            "description": "The diameter of the pile structure interacting with the wave forces.",
+            "default": 1
+          }
+        },
+        "type": "object",
+        "title": "Wave Force Input Data",
+        "dataclassname": "moapy.dgnengine.wavegui.WaveParamInput"
+      },
+      "calculator_wave_force": {
+        "properties": {
+          "input1": {
+            "$ref": "#/components/schemas/InputData"
+          }
+        },
+        "type": "object",
+        "required": [
+          "input1"
+        ],
+        "title": "calculator wave force"
+      }
+    }
+  }
+}

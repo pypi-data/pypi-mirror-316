@@ -1,0 +1,254 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "moapy",
+    "description": "Schema for moapy",
+    "version": "1.2.5"
+  },
+  "servers": [
+    {
+      "url": "https://moa.rpm.kr-st-midasit.com/backend/python-executor/"
+    }
+  ],
+  "paths": {
+    "/execute?functionId=moapy-dgnengine-windload_pressure-wind_load_pressure_calculator": {
+      "post": {
+        "summary": "Wind load pressure calculation",
+        "description": "This tool calculates the wind load pressure on a structure according to the ASCE 7-22 standard.",
+        "operationId": "wind load pressure calculator",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/wind_load_pressure_calculator"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DG_Result_Reports"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        },
+        "x-content-info": {
+          "title": "Wind load pressure calculation",
+          "description": "This tool calculates the wind load pressure on a structure according to the ASCE 7-22 standard."
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "DG_Result_Reports": {
+        "properties": {
+          "resReport": {
+            "type": "object",
+            "title": "Resreport"
+          }
+        },
+        "type": "object",
+        "title": "DG_Result_Reports",
+        "dataclassname": "moapy.designers_guide.func_general.DG_Result_Reports"
+      },
+      "HTTPValidationError": {
+        "properties": {
+          "detail": {
+            "items": {
+              "$ref": "#/components/schemas/ValidationError"
+            },
+            "type": "array",
+            "title": "Detail"
+          }
+        },
+        "type": "object",
+        "title": "HTTPValidationError"
+      },
+      "Inputdata": {
+        "properties": {
+          "windSpeed": {
+            "type": "number",
+            "title": "Wind Speed",
+            "description": "Basic wind speed obtained from ASCE7-22  [ft/s]",
+            "default": 120
+          },
+          "HeightFt": {
+            "type": "number",
+            "title": "Mean roof height",
+            "description": "Mean roof height of a building or height of other structure [ft]",
+            "default": 120
+          },
+          "exposure": {
+            "type": "string",
+            "enum": [
+              "B",
+              "C",
+              "D"
+            ],
+            "title": "Exposure",
+            "description": "Exposure",
+            "default": "C"
+          },
+          "Lh": {
+            "type": "number",
+            "title": "Distandce upwind, Lh",
+            "description": "Distance upwind of crest of hill, ridge, or escarpment to where the difference in ground elevation is half the height of the hill, ridge, or escarpment, ft",
+            "default": 60
+          },
+          "topoK1Multi": {
+            "type": "string",
+            "enum": [
+              "2D Ridge",
+              "2D Escarpment",
+              "3D Axisymmetrical Hill"
+            ],
+            "title": "Topographic Factor K1 Multiplier",
+            "description": "Topographic Factor K1 Multiplier",
+            "default": "2D Ridge"
+          },
+          "topoK2X": {
+            "type": "number",
+            "title": "Topographic K2 Multiplier x",
+            "description": "Topographic K2 Multiplier x value to obtain Kzt",
+            "default": 30
+          },
+          "topoK2Multi": {
+            "type": "string",
+            "enum": [
+              "2D Escarpment",
+              "All Other Cases"
+            ],
+            "title": "Topographic Factor K2 Multiplier",
+            "description": "Topographic Factor K2 Multiplier",
+            "default": "All Other Cases"
+          },
+          "topoK3Z": {
+            "type": "number",
+            "title": "Topographic K3 Multiplie z",
+            "description": "Topographic K3 Multiplier z value to obtain Kzt",
+            "default": 30
+          },
+          "topoK3Multi": {
+            "type": "string",
+            "enum": [
+              "2D Ridge",
+              "2D Escarpment",
+              "3D Axisymmetrical Hill"
+            ],
+            "title": "Topographic Factor K3 Multiplier",
+            "description": "Topographic Factor K3",
+            "default": "2D Ridge"
+          },
+          "ke": {
+            "type": "number",
+            "enum": [
+              "<0",
+              "0",
+              "1000",
+              "2000",
+              "3000",
+              "4000",
+              "5000",
+              "6000",
+              ">6000"
+            ],
+            "title": "Sea Level, Ke",
+            "description": "Ground elevation factor",
+            "default": "0"
+          },
+          "kd": {
+            "type": "string",
+            "enum": [
+              "Buildings-Main wind force resisting system",
+              "Buildings-Components and Cladding",
+              "Arched roofs",
+              "Circle domes",
+              "Chimneys, tanks, and similar Structures-Square",
+              "Chimneys, tanks, and similar Structures-Hexagonal",
+              "Chimneys, tanks, and similar Structures-Octagonal",
+              "Chimneys, tanks, and similar Structures-Round",
+              "Solid freestanding walls, roof top equipment, and solid freestanding and attached signs",
+              "Open Signs and single-plane open frames",
+              "Trussed towers - Triangular, square, or rectangular",
+              "Trussed towers - All other cross sections"
+            ],
+            "title": "Wind Directionality Factor, Kd",
+            "description": "Wind Directionality Factor",
+            "default": "Buildings-Main wind force resisting system"
+          },
+          "kz": {
+            "type": "number",
+            "title": "Velocity Pressure Exposure Coefficient, kz(kh)",
+            "description": "Velocity pressure exposure coefficient evaluated at height z = h",
+            "default": 0.85
+          }
+        },
+        "type": "object",
+        "title": "ASCE 7-22 Wind Velocity Pressure Calculation Input",
+        "dataclassname": "moapy.dgnengine.windload_pressure.Inputdata"
+      },
+      "ValidationError": {
+        "properties": {
+          "loc": {
+            "items": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "integer"
+                }
+              ]
+            },
+            "type": "array",
+            "title": "Location"
+          },
+          "msg": {
+            "type": "string",
+            "title": "Message"
+          },
+          "type": {
+            "type": "string",
+            "title": "Error Type"
+          }
+        },
+        "type": "object",
+        "required": [
+          "loc",
+          "msg",
+          "type"
+        ],
+        "title": "ValidationError"
+      },
+      "wind_load_pressure_calculator": {
+        "properties": {
+          "input_data": {
+            "$ref": "#/components/schemas/Inputdata"
+          }
+        },
+        "type": "object",
+        "required": [
+          "input_data"
+        ],
+        "title": "wind load pressure calculator"
+      }
+    }
+  }
+}
