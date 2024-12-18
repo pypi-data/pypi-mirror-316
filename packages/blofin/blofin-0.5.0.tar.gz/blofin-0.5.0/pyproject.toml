@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "blofin"
+version = "0.5.0" 
+description = "BloFin API SDK"
+readme = "README.md"
+authors = [{name = "Nomeida", email = "nomeida@proton.me"}]
+license = {text = "MIT"}
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+requires-python = ">=3.7"
+dependencies = [
+    "certifi>=2024.7.4",
+    "charset-normalizer>=3.3.2",
+    "idna>=3.7",
+    "requests>=2.32.3",
+    "urllib3>=2.2.2",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/nomeida/blofin-python"
+"Bug Tracker" = "https://github.com/nomeida/blofin-python/issues"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+packages = ["blofin", "blofin.api"]
