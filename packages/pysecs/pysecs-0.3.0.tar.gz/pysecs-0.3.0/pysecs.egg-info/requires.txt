@@ -1,0 +1,17 @@
+numpy>=1.23
+
+[dev]
+pysecs[doc,test]
+mypy
+pre-commit
+ruff
+
+[doc]
+matplotlib
+sphinx
+sphinx_gallery
+pydata-sphinx-theme
+
+[test]
+pytest
+pytest-cov
