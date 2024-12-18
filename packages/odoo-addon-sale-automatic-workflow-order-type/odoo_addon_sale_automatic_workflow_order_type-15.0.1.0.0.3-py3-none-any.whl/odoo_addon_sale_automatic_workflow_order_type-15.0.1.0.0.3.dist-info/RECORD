@@ -1,0 +1,13 @@
+odoo/addons/sale_automatic_workflow_order_type/README.rst,sha256=wTHhqXNKcfoGEdChIF8durkjzIBDTdHR-WYSOV08Wok,1877
+odoo/addons/sale_automatic_workflow_order_type/__init__.py,sha256=JC_RBZQQfnie8b3c-5xHUk_pjA-wRsnw74_BHfCglRw,162
+odoo/addons/sale_automatic_workflow_order_type/__manifest__.py,sha256=gw9ocmFbc60DZWmQFsRrl4IdNj_JOuIvKAhrwMELbCQ,659
+odoo/addons/sale_automatic_workflow_order_type/i18n/es.po,sha256=FUByqpQusNQu5SU64aNGmv52iCNUr7HWrPBjv-vbT34,1162
+odoo/addons/sale_automatic_workflow_order_type/models/__init__.py,sha256=Ow9lZBtvCFY4VXTZp6WZAISG7QdoxwyW1IFZJnDBbpk,197
+odoo/addons/sale_automatic_workflow_order_type/models/sale_order.py,sha256=oJF43GuPtjEoxzZVGH4P_TnvZc_fplQbV51aYq_gQ6A,550
+odoo/addons/sale_automatic_workflow_order_type/models/sale_order_type.py,sha256=ZQvrVWhXYKAzGJL6AwBSVTGFQkefOlMVDVzlqif_Er0,381
+odoo/addons/sale_automatic_workflow_order_type/static/description/icon.png,sha256=bVbNdnyk7PXHuZ3ye_Aqh1M9tbfPJ5zU5W1VnoO8mBQ,35820
+odoo/addons/sale_automatic_workflow_order_type/views/sale_order_type_view.xml,sha256=psml7fT895li-KkatE3aAPRYyDe30M_Lu5SOzNs9hnQ,811
+odoo_addon_sale_automatic_workflow_order_type-15.0.1.0.0.3.dist-info/METADATA,sha256=2qkZF42WRJ5vcVuKNW_xvg8SfUwp2A4t0BH8Tue8hU0,2561
+odoo_addon_sale_automatic_workflow_order_type-15.0.1.0.0.3.dist-info/WHEEL,sha256=9fEMia4zL7ZuZbnCOrcYogUhmn4XFIVaJ8G4YGI31xc,81
+odoo_addon_sale_automatic_workflow_order_type-15.0.1.0.0.3.dist-info/top_level.txt,sha256=QE6RBQ0QX5f4eFuUcGgU5Kbq1A_qJcDs-e_vpr6pmfU,4
+odoo_addon_sale_automatic_workflow_order_type-15.0.1.0.0.3.dist-info/RECORD,,
