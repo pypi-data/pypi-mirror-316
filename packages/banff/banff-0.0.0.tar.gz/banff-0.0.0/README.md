@@ -1,0 +1,22 @@
+Banff is a package developed by Statistics Canada, consisting of nine modular procedures performing various statistical data editing (SDE) functions:
+
+* Verify Edits: Checks the edits for consistency and redundancy.
+* Edit Statistics: Produces edit summary statistics tables on records that pass, miss or fail each consistency edit
+* Outlier Detection: Identifies outlying observations using Hidiroglou-Berthelot or Sigma-Gap methods.
+* Error Localization: For each record, selects the minimum number of variables to impute such that each observation can be made to pass all edits.
+* Deterministic Imputation: Performs imputation when only one combination of values permits the record to pass the set of edits.
+* Donor Imputation: Performs nearest neighbour donor imputation such that each imputed record satisfies the specified post-imputation edits.
+* Estimator Imputation: Performs imputation using estimation functions or linear regression estimators.
+* Prorating: Prorates and rounds records to satisfy user-specified edits.
+* Mass Imputation: Performs donor imputation for a block of variables using a nearest neighbour approach or random selection.
+
+Some general notes about Banff:
+
+* Most of the SDE methods included in Banff are designed for economic surveys, and in particular numerical variables such as revenue and employee counts. Banff does not currently include methods recommended for the imputation of categorical or ordinal data.
+* Banff includes a number of methods designed for data whose variables are constrained by linear relationships, also commonly referred to as linear edit rules or simply edits. This includes procedures that review data with respect to the edits, choose which variables to impute when the edits fail, and impute records to ensure that all edits are satisfied.
+* While each Banff procedure can be run independently, they follow a modular template and can be run in sequence as part of a larger SDE process flow. Outputs from one procedure act as natural inputs for subsequent procedures.
+* Banff uses status flags to track metadata such as selection and imputation flags. These status flags allow the Banff procedures to pass information from one procedure to another, and also serve as a log of the overall SDE process.
+
+When running Banff procedures in sequence as part of an SDE process flow, users are responsible for input and output between steps. An additional package, the **Banff Processor**, is a metadata-driven utility designed specifically for large-scale SDE production, incorporating the Banff procedures, and handling all intermediate data management.
+
+The Banff user guide often uses terminology from the [**Generic Statistical Data Editing Model** (GSDEM)](https://statswiki.unece.org/spaces/sde/pages/117771706/GSDEM). Users are encouraged to reference the GSDEM for common terminology regarding SDE concepts.

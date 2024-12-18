@@ -1,0 +1,17 @@
+[build-system]
+# PEP 518 recommends both setuptools and wheel be required
+requires = ["setuptools>=70.00", "wheel", "pip>=23.3"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "banff"
+version = "0.0.0"
+readme="README.md"
+maintainers = [
+    {name = "Banff Support, Statistics Canada", email = "statcan.banff-banff.statcan@statcan.gc.ca"}
+]
+authors = [
+  { name="Stephen Arsenualt", email="stephen.arsenault@statcan.gc.ca" },
+  { name="Gregory Ludwinski", email="gregory.ludwinski@statcan.gc.ca" },
+]
+description = "Coming soon ... Banff, a set of statistical data editing functions developed by Statistics Canada"
