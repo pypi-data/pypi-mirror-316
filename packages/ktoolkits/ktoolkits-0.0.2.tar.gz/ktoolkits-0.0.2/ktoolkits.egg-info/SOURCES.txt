@@ -1,0 +1,8 @@
+setup.py
+ktoolkits.egg-info/PKG-INFO
+ktoolkits.egg-info/SOURCES.txt
+ktoolkits.egg-info/dependency_links.txt
+ktoolkits.egg-info/requires.txt
+ktoolkits.egg-info/top_level.txt
+test/test_aigent.py
+test/test_ktool.py

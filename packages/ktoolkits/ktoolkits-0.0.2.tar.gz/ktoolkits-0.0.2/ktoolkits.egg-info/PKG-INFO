@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: ktoolkits
+Version: 0.0.2
+Summary: 一个AI智能体的工具库,帮助你在智能体构建中快速调用各种实用的工具
+Home-page: https://github.com/yourusername/my_project
+Author: ktool team
+Author-email: ktool-ai@qq.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: typing
+Requires-Dist: requests
+
+KTool
