@@ -1,0 +1,13 @@
+odoo/addons/free_delivery_untaxed/README.rst,sha256=IlPJ0C4OB913Z7D3XT_winGkCcSFKKKey8TA0yCx0BY,1787
+odoo/addons/free_delivery_untaxed/__init__.py,sha256=yZaOq_ODweMZQU5m_Yjxqb3AUJEtgrp0kvfqLTn9qwA,145
+odoo/addons/free_delivery_untaxed/__manifest__.py,sha256=OLNFMlmKLv40C26HmT1cSltGC1rroX8HCiAgCUe56Ks,557
+odoo/addons/free_delivery_untaxed/i18n/es.po,sha256=Z3g_HQnwGlxqzQ7iqc4TTbfIKfnkcAOPDf7cTQa7qBg,1275
+odoo/addons/free_delivery_untaxed/models/__init__.py,sha256=a8mR-5Yxh9J4H7kof8WP37USyLcB64OTR7lq-XFAVQk,180
+odoo/addons/free_delivery_untaxed/models/delivery_carrier.py,sha256=63TeUnnvER5lW4LZN28ROGodhlsoNG9KpWH7NT-EuIc,1197
+odoo/addons/free_delivery_untaxed/models/sale_order.py,sha256=0a5tAyb6GyfCm1LQS4LMEVcxJ-kszPm7Gsyln06BHl0,485
+odoo/addons/free_delivery_untaxed/static/description/icon.png,sha256=bVbNdnyk7PXHuZ3ye_Aqh1M9tbfPJ5zU5W1VnoO8mBQ,35820
+odoo/addons/free_delivery_untaxed/views/delivery_view.xml,sha256=9bMNslg0_pHXl8pmMoodxw9fQVBT25VIedvzT3V2Pss,791
+odoo_addon_free_delivery_untaxed-15.0.1.0.0.4.dist-info/METADATA,sha256=-H0Afp42xpN3zYI6oIq28Z2oqyZGfbCI_2BmwaC5CuY,2270
+odoo_addon_free_delivery_untaxed-15.0.1.0.0.4.dist-info/WHEEL,sha256=9fEMia4zL7ZuZbnCOrcYogUhmn4XFIVaJ8G4YGI31xc,81
+odoo_addon_free_delivery_untaxed-15.0.1.0.0.4.dist-info/top_level.txt,sha256=QE6RBQ0QX5f4eFuUcGgU5Kbq1A_qJcDs-e_vpr6pmfU,4
+odoo_addon_free_delivery_untaxed-15.0.1.0.0.4.dist-info/RECORD,,
