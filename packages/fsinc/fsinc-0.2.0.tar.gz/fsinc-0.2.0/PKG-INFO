@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: fsinc
+Version: 0.2.0
+Summary: Implementation of fast sinc-interpolation and sinc-transform based on FINUFFT and https://github.com/hannahlawrence/sinctransform
+Home-page: https://github.com/gauteh/fsinc.git
+Author: Gaute Hope
+Author-email: gauteh@met.no
+Requires-Dist: numpy
+Requires-Dist: numba
+Requires-Dist: scipy
+Requires-Dist: matplotlib
+Requires-Dist: finufft
