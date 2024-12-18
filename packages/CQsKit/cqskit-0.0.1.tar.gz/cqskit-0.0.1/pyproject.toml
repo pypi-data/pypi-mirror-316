@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "CQsKit"
+version = "0.0.1"
+description = ""
+authors = ["Gao Jianjian <jianjian001@outlook.com>"]
+readme = "README.md"
+packages = [
+    { include = "cqskit" },
+]
+
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
