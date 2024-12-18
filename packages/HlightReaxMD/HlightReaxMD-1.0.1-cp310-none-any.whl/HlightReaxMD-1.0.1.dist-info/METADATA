@@ -1,0 +1,78 @@
+Metadata-Version: 2.1
+Name: HlightReaxMD
+Version: 1.0.1
+Summary: Projects for analysis of cascade collision processes and molecular chemical reactions
+Home-page: https://gitee.com/zai-xia/HlightReaxMD
+Author: W.-Y.Li, RFUE
+Author-email: bestleeimpact@163.com
+License: Proprietary
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering :: Chemistry
+Classifier: Topic :: Scientific/Engineering :: Physics
+Requires-Python: >=3.9
+Description-Content-Type: text/plain
+License-File: LICENSE
+Requires-Dist: alive-progress
+Requires-Dist: ase
+Requires-Dist: CairoSVG==2.7.1
+Requires-Dist: graphviz
+Requires-Dist: lz4
+Requires-Dist: mpi4py
+Requires-Dist: networkx
+Requires-Dist: plotly==5.24.1
+Requires-Dist: cufflinks
+Requires-Dist: numpy>=1.24.3
+Requires-Dist: pandas
+Requires-Dist: rdkit==2023.9.2
+Requires-Dist: Requests
+Requires-Dist: scipy
+Requires-Dist: tqdm
+Requires-Dist: scikit-learn
+Requires-Dist: IPython
+
+HlightReaxMD Software License
+(Binary Distribution License)
+
+Copyright (c) 2024 W.-Y.Li, RFUE
+
+1. Binary Distribution Terms
+This software is distributed in compiled form (.whl package) only. 
+Users are granted the right to:
+- Install and use the software
+- Make backup copies of the software
+- Redistribute the unmodified .whl package
+
+Users may NOT:
+- Decompile, reverse engineer, or disassemble the software
+- Modify or create derivative works
+- Remove or modify any copyright notices
+
+2. Third-Party Components
+This software includes the following third-party components:
+
+- cairosvg (LGPL-3.0)
+  Source code available at: https://github.com/Kozea/CairoSVG
+  No modifications were made to the original library.
+
+- Other third-party components are used under their respective BSD, MIT, 
+  and PSF licenses.
+
+3. Warranty Disclaimer
+THIS SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+
+4. Limitation of Liability
+IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
+OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE
+OR OTHER DEALINGS IN THE SOFTWARE.
+
+For licensing inquiries, please contact: [bestleeimpact@163.com] 

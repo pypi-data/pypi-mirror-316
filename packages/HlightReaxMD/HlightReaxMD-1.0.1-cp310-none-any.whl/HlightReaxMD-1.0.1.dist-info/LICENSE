@@ -1,0 +1,39 @@
+HlightReaxMD Software License
+(Binary Distribution License)
+
+Copyright (c) 2024 W.-Y.Li, RFUE
+
+1. Binary Distribution Terms
+This software is distributed in compiled form (.whl package) only. 
+Users are granted the right to:
+- Install and use the software
+- Make backup copies of the software
+- Redistribute the unmodified .whl package
+
+Users may NOT:
+- Decompile, reverse engineer, or disassemble the software
+- Modify or create derivative works
+- Remove or modify any copyright notices
+
+2. Third-Party Components
+This software includes the following third-party components:
+
+- cairosvg (LGPL-3.0)
+  Source code available at: https://github.com/Kozea/CairoSVG
+  No modifications were made to the original library.
+
+- Other third-party components are used under their respective BSD, MIT, 
+  and PSF licenses.
+
+3. Warranty Disclaimer
+THIS SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+
+4. Limitation of Liability
+IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
+OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE
+OR OTHER DEALINGS IN THE SOFTWARE.
+
+For licensing inquiries, please contact: [bestleeimpact@163.com] 
