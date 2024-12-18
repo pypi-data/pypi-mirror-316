@@ -1,0 +1,8 @@
+odoo/addons/html_fields_document_layout_configuration/README.rst,sha256=jp96hw-NehkZ9WcQ4uuLPWL6gZd3oOS3nLuJWx9fjDE,1987
+odoo/addons/html_fields_document_layout_configuration/__manifest__.py,sha256=4YFvDrT9t7DDICtAF5NZ5VJiE9swzw8ik1XQ3PLH3kE,650
+odoo/addons/html_fields_document_layout_configuration/static/description/icon.png,sha256=bVbNdnyk7PXHuZ3ye_Aqh1M9tbfPJ5zU5W1VnoO8mBQ,35820
+odoo/addons/html_fields_document_layout_configuration/views/view_base_document_layout.xml,sha256=yOdLqWVbf8s6UF7rudYgZmYOeRVXJio7vHEOYUQ0LBU,1466
+odoo_addon_html_fields_document_layout_configuration-15.0.1.0.0.3.dist-info/METADATA,sha256=TOrKd0_gaGYqB3g6TCu4FDaWgNxfndiBiwyZhJngURg,2561
+odoo_addon_html_fields_document_layout_configuration-15.0.1.0.0.3.dist-info/WHEEL,sha256=tZoeGjtWxWRfdplE7E3d45VPlLNQnvbKiYnx7gwAy8A,92
+odoo_addon_html_fields_document_layout_configuration-15.0.1.0.0.3.dist-info/top_level.txt,sha256=qBj40grFkGOfDZ2WDSw3y1RnDlgG0u8rP8pvGNdbz4w,5
+odoo_addon_html_fields_document_layout_configuration-15.0.1.0.0.3.dist-info/RECORD,,
