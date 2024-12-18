@@ -1,0 +1,9 @@
+include DashboardServerReportWebsiteSide/monitor/*.py
+include DashboardServerReportWebsiteSide/report/*.py
+include DashboardServerReportWebsiteSide/templates/*.html
+
+include requirements.txt
+
+include MANIFEST.in
+include app.py
+include main.py
