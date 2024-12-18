@@ -1,0 +1,9 @@
+logicchunks/__init__.py,sha256=bwATx4iDLPZc-NejRXt6bANFCKBEATfZW2twQD7vajk,59
+logicchunks/lists.py,sha256=T-1GZPr7-05SMtueGhbCxoR2KvBA2YBek-iIhY7GGKM,7258
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_operations.py,sha256=PpmuVoIE5Xd7n9F9qen2e-1fnLW5KDz_SmwK9zY3Pi8,6940
+LogicChunks-0.1.0.dist-info/LICENSE,sha256=iwHBtzxcPTk5-hcjss3llEC675YBdy8govZ432oTxpY,1101
+LogicChunks-0.1.0.dist-info/METADATA,sha256=7auwoRuYR51KlfOasIKSpZw3PMd0L6KlhdqTfNIQ7II,4866
+LogicChunks-0.1.0.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+LogicChunks-0.1.0.dist-info/top_level.txt,sha256=AmrDFvQ8VseOMHxMiq9x_dRMPSl1_Qr-pcE-wH10x64,18
+LogicChunks-0.1.0.dist-info/RECORD,,
