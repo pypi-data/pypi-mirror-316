@@ -1,0 +1,2 @@
+[console_scripts]
+cherminal = cherminal.cherminal:main
