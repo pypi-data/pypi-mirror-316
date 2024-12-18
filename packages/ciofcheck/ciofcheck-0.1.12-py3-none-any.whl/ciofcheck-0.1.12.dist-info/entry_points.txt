@@ -1,0 +1,4 @@
+[console_scripts]
+ciofcheck=ciofcheck.cli:main
+test=unittest:main
+
