@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+numo/__init__.py
+numo.egg-info/PKG-INFO
+numo.egg-info/SOURCES.txt
+numo.egg-info/dependency_links.txt
+numo.egg-info/top_level.txt
+numo/_core/__init__.py
+numo/_core/numeric.py
+numo/_core/numeric.pyi

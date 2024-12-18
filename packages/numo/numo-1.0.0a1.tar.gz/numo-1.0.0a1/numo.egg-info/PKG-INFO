@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: numo
+Version: 1.0.0a1
+Summary: A powerful, lightweight Python library designed to provide a variety of functions.
+Project-URL: source, https://github.com/DevByEagle/numo
+Project-URL: tracker, https://github.com/DevByEagle/numo/issues
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Topic :: Software Development
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Numo
+
+<!--![Library Icon](https://path/to/your/icon.png)-->
+
+## Features
+
