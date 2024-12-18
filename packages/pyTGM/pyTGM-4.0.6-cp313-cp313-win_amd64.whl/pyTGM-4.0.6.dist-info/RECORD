@@ -1,0 +1,17 @@
+pytgm/__init__.py,sha256=BVUznWNneRcB5O1Q9q2av4oCllsvaEjdft3gO7pf2lw,1217
+pytgm/b64.py,sha256=8buA-gkEwynHLUDsDB55PECYizqsOEmer2An-WVeYGM,2335
+pytgm/file.py,sha256=JakQRlCWIUkLhTPuEPa2Jw8_Jun1KtbWRB0VeyGmYL4,1919
+pytgm/local_server.py,sha256=cs-99-j7pMLLHlPPOknZaCcHSCT9pn0yeKuyiUmPJg8,2764
+pytgm/sound.py,sha256=7Bvl8JENASxcyxvaHwt902bpYMCdNwRpZChLIE50lQ8,3789
+pytgm/graphics/__init__.py,sha256=5x0pjVQ2349IDQLm0lAobdDx9ez45Sc9vIc_EsyxeOI,303
+pytgm/graphics/cls.py,sha256=aLxgzwaB3P9GM5mcywxkC1rFdPAMI4ZYqTz9Nss9e0I,324
+pytgm/graphics/color.py,sha256=9jBvqnFqob9CRig1dql4tO1eX7Ml-wSYsWWR-vqFiA8,408
+pytgm/graphics/pos.py,sha256=qB_Swdt3scNL2OY6lE0BcsgLCZf_UyM8_cKxS_AfILI,137
+pytgm/terd/__init__.py,sha256=gVpzMAbeZMmrvITy_EUomAUDCNuF963gqvyNFQuSPYs,157
+pytgm/terd/click.cp313-win_amd64.pyd,sha256=6H5XeEyvZd5M19ql5bLbNq2AZEcflN1FHdThEHJtG6w,109056
+pytgm/terd/geky.py,sha256=fIMdNpqLes-1fXZsMDcv4Pz-k890u7zNIXPNwRhfkP0,2291
+pyTGM-4.0.6.dist-info/LICENCE.md,sha256=IFjojR8HflSJnkABa_uajoIeuVOPpiPXxl4XbMWdR7E,3160
+pyTGM-4.0.6.dist-info/METADATA,sha256=iVGEP45HZ48Di1x4PhbXQ1ua97zZf3OR4-SA4aomHqo,5410
+pyTGM-4.0.6.dist-info/WHEEL,sha256=4-iQBlRoDdX1wfPofc7KLWa5Cys4eZSgXs6GVU8fKlQ,101
+pyTGM-4.0.6.dist-info/top_level.txt,sha256=ZcJ5o_H-9rfLqXfeJLuZct1yMYEKPrNXXWq2rLty9VQ,6
+pyTGM-4.0.6.dist-info/RECORD,,
