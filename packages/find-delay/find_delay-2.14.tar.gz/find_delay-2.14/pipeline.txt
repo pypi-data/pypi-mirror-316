@@ -1,0 +1,7 @@
+1) cd D:/OneDrive/Documents/GitHub/find_delay/docs
+   ./make html
+
+2) cd ..
+   py -m build
+
+3) twine upload dist/*
