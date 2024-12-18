@@ -1,0 +1,2 @@
+[console_scripts]
+revenv = revenv.cli:main
