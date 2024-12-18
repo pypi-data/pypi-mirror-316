@@ -1,0 +1,8 @@
+pyksvd/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyksvd/functions.py,sha256=Dn9x9pEkLqtKjFdzpj9rUwFdNyot88KcQFIzNNPAlLk,4325
+pyksvd/matching_pursuit.py,sha256=FoQhrS10OhA7G0t2cniGzHlKTuur5NG-6ffPbbBet_w,1625
+pyksvd/pyksvd.py,sha256=GWYfcbrQE33zqwNwZg8P7YHYvnpTTYiliHFnTlwOfo4,10083
+pyksvd-0.1.0.dist-info/METADATA,sha256=hgf0OM4H7zgfUo88eb47StYpYu8-HBb8kUaNT0I9MQg,3203
+pyksvd-0.1.0.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+pyksvd-0.1.0.dist-info/top_level.txt,sha256=GLNGubfW_-bMP8b0GNUsHFWviiXzEu9fMUS9NpLKOBs,7
+pyksvd-0.1.0.dist-info/RECORD,,
