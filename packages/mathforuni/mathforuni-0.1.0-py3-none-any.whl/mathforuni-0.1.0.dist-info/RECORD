@@ -1,0 +1,8 @@
+mathforuni/__init__.py,sha256=R-jTOrOR4e_K5xE5tXnqXU6XEuOQwzvypJlGYOQQ8jA,49
+mathforuni/graphs.py,sha256=HdXSpnU3WCnNxaajuAPuFt9piDE8ZdCfhvO7M0BmIQo,9329
+mathforuni/probability.py,sha256=H9zn7dtPkXXz-ohuSeEz048En9Tn5m4p2gsI_ebuUKw,3730
+mathforuni/test_graph.py,sha256=UDcJiwUA_mLZLtBoBcKzFqikGLnmGY0Bbsj8lEBTkZg,3789
+mathforuni/test_probability.py,sha256=68l0osXoFtKZiIKm_ONppVDI-F0n2aepfqsCWo3eqP4,1587
+mathforuni-0.1.0.dist-info/METADATA,sha256=lWISq0mn8C4PjWd6lVraex3VyC1qvmB7pE1DeXRJUXU,1701
+mathforuni-0.1.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+mathforuni-0.1.0.dist-info/RECORD,,
