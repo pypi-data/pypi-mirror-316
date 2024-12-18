@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+src/shelf.py
+src/shelf.egg-info/PKG-INFO
+src/shelf.egg-info/SOURCES.txt
+src/shelf.egg-info/dependency_links.txt
+src/shelf.egg-info/requires.txt
+src/shelf.egg-info/top_level.txt
