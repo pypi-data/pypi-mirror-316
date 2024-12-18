@@ -1,0 +1,8 @@
+hiredis
+aioredis
+motor
+bson
+aiofiles
+aiohttp
+aiodns
+Brotli

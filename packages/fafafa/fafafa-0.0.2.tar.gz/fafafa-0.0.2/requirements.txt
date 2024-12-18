@@ -1,0 +1,15 @@
+# fa_redis
+hiredis
+aioredis
+
+# fa_mongodb
+motor
+bson
+
+# fa_hash
+aiofiles
+
+# fa_requests
+aiohttp
+aiodns
+Brotli
