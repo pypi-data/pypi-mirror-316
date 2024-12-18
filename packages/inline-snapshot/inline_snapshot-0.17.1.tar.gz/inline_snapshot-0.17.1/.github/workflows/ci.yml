@@ -1,0 +1,131 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+
+  mypy:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ['3.8', '3.9', '3.10', '3.11', '3.12', '3.13']
+    steps:
+    - uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4.1.7
+    - uses: actions/setup-python@f677139bbe7f9c59b41e40162b753c062f5d49a3 # v5.2.0
+      with:
+        python-version: ${{matrix.python-version}}
+        architecture: x64
+        allow-prereleases: true
+    - run: pip install hatch
+    - run: hatch run +py=${{matrix.python-version}} types:check
+
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ['3.8', '3.9', '3.10', '3.11', '3.12', '3.13', pypy3.9, pypy3.10]
+        os: [ubuntu-latest, windows-latest, macos-13]
+    steps:
+    - uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4.1.7
+    - uses: actions/setup-python@f677139bbe7f9c59b41e40162b753c062f5d49a3 # v5.2.0
+      with:
+        python-version: ${{matrix.python-version}}
+        architecture: x64
+        allow-prereleases: true
+    - run: pip install hatch
+
+    - run: |
+        hatch test -cp -py ${{matrix.python-version}}
+        mv .coverage .coverage.${{ matrix.python-version }}.${{matrix.os}}
+      if: matrix.os == 'ubuntu-latest'
+
+    - run: hatch test -p -py ${{matrix.python-version}}
+      if: matrix.os != 'ubuntu-latest'
+
+    - name: Upload coverage data
+      uses: actions/upload-artifact@50769540e7f4bd5e21e526ee35c689e35e0d6874 # v4.4.0
+      with:
+        name: coverage-data-${{ matrix.python-version }}-${{matrix.os}}
+        path: .coverage.*
+        include-hidden-files: true
+        if-no-files-found: ignore
+
+  coverage:
+    name: Combine & check coverage
+    env:
+      TOP: ${{github.workspace}}
+    if: always()
+    needs: test
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4.1.7
+    - uses: actions/setup-python@f677139bbe7f9c59b41e40162b753c062f5d49a3 # v5.2.0
+      with:
+            # Use latest Python, so it understands all syntax.
+        python-version: '3.12'
+
+    - uses: actions/download-artifact@fa0a91b85d4f404e444e00e005971372dc801d16 # v4.1.8
+      with:
+        pattern: coverage-data-*
+        merge-multiple: true
+
+    - name: Combine coverage & fail if it's <100%
+      run: |
+        python -Im pip install --upgrade coverage[toml]
+
+        python -Im coverage combine
+        python -Im coverage html --skip-covered --skip-empty
+
+        # Report and write to summary.
+        python -Im coverage report --format=markdown >> $GITHUB_STEP_SUMMARY
+
+        # Report again and fail if under 100%.
+        python -Im coverage report --fail-under=100
+
+    - name: Upload HTML report if check failed
+      uses: actions/upload-artifact@50769540e7f4bd5e21e526ee35c689e35e0d6874 # v4.4.0
+      with:
+        name: html-report
+        path: htmlcov
+      if: ${{ failure() }}
+
+
+  publish:
+    name: Publish new release
+    runs-on: ubuntu-latest
+    needs: [test, coverage]
+    environment: pypi
+    permissions:
+      # IMPORTANT: this permission is mandatory for Trusted Publishing
+      id-token: write
+
+    steps:
+    - name: Checkout main
+      uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4.1.7
+      with:
+        fetch-depth: 0
+
+    - name: Check if the commit has a vx.y.z tag
+      run: |
+        if git tag --list --points-at ${{ github.sha }} | grep -q -E '^v[0-9]+\.[0-9]+\.[0-9]+$'; then
+          echo "should_continue=true" >> "$GITHUB_OUTPUT"
+        else
+          echo "should_continue=false" >> "$GITHUB_OUTPUT"
+        fi
+
+    - run: pip install hatch scriv
+
+    - name: build package
+      run: hatch build
+
+    - name: Publish package distributions to PyPI
+      uses: pypa/gh-action-pypi-publish@release/v1
+
+    - name: create github release
+      env:
+        GITHUB_TOKEN: ${{ github.token }}
+      run: scriv github-release
