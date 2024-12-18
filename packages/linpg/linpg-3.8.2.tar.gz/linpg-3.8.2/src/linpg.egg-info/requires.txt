@@ -1,0 +1,7 @@
+PyYAML
+av>=12.1.0
+numpy
+opencv-python
+pillow
+pygame-ce>=2.4.0
+pyvns>=2.2
