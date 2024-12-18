@@ -1,0 +1,14 @@
+Metadata-Version: 2.4
+Name: flatmatter
+Version: 0.0.1
+Summary: A YAML like data serialization language and parser.
+Author-email: Asko Nõmm <asko@nmm.ee>
+License-File: LICENSE
+Classifier: Development Status :: 1 - Planning
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.13
+Description-Content-Type: text/markdown
+
+# FlatMatter

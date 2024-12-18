@@ -1,0 +1,17 @@
+[project]
+name = "flatmatter"
+version = "0.0.1"
+description = "A YAML like data serialization language and parser."
+readme = "README.md"
+requires-python = ">=3.13"
+authors = [{ name="Asko Nõmm", email="asko@nmm.ee" }]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Development Status :: 1 - Planning"
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
