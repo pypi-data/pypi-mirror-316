@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cherminal</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #1e1e1e;
+            color: #d4d4d4;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+        #output {
+            background-color: #1e1e1e;
+            border: 1px solid #333;
+            padding: 10px;
+            flex-grow: 1;
+            overflow-y: auto;
+        }
+        #command {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-top: 1px solid #333;
+            background-color: #1e1e1e;
+            color: #d4d4d4;
+        }
+        #command:focus {
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Cherminal</h1>
+    <h2>Main process: {{ command }}</h2>
+    <div id="output"></div>
+    <input type="text" id="command" placeholder="Enter command" autofocus>
+    <script>
+        const outputDiv = document.getElementById('output');
+        const commandInput = document.getElementById('command');
+
+        const debugMode = {{ 'true' if debug_mode else 'false' }};
+        
+        function executeCommand(command) {
+            fetch('/execute', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                body: new URLSearchParams({ 'command': command })
+            })
+            .then(response => {
+                if (response.status === 204) {
+                    if (debugMode) {
+                        outputDiv.innerHTML += `<div><strong>Input sent to running command:</strong> ${command}</div>`;
+                    }
+                }
+                const eventSource = new EventSource('/execute');
+                eventSource.onmessage = function(event) {
+                    outputDiv.innerHTML += `<div>${event.data}</div>`;
+                    outputDiv.scrollTop = outputDiv.scrollHeight;
+                };
+                eventSource.onerror = function() {
+                    eventSource.close();
+                }
+            });
+        }
+
+        commandInput.addEventListener('keypress', function (e) {
+            if (e.key === 'Enter') {
+                const command = commandInput.value;
+                outputDiv.innerHTML += `<div><strong>$ ${command}</strong></div>`;
+                executeCommand(command);
+                commandInput.value = '';
+            }
+        });
+    </script>
+</body>
+</html>
