@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+gitfiles/__init__.py
+gitfiles.egg-info/PKG-INFO
+gitfiles.egg-info/SOURCES.txt
+gitfiles.egg-info/dependency_links.txt
+gitfiles.egg-info/not-zip-safe
+gitfiles.egg-info/top_level.txt

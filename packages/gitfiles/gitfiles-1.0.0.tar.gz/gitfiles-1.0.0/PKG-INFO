@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: gitfiles
+Version: 1.0.0
+Summary: Load, filter and match .gitingore files
+Home-page: https://github.com/legopitstop/gitfiles/
+Author: Legopitstop
+Author-email: contact@lpsmods.dev
+License: MIT
+Project-URL: Download, https://github.com/legopitstop/gitfiles/releases
+Project-URL: Documentation, https://docs.lpsmods.dev/gitfiles
+Project-URL: Source Code, https://github.com/legopitstop/gitfiles
+Keywords: gitingore,github,filter,match,pattern
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# gitfiles
+
+[![PyPI](https://img.shields.io/pypi/v/gitfiles)](https://pypi.org/project/gitfiles/)
+[![Python](https://img.shields.io/pypi/pyversions/gitfiles)](https://www.python.org/downloads//)
+![Downloads](https://img.shields.io/pypi/dm/gitfiles)
+![Status](https://img.shields.io/pypi/status/gitfiles)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/ambv/black)
+[![Issues](https://img.shields.io/github/issues/legopitstop/gitfiles)](https://github.com/legopitstop/gitfiles/issues)
+
+Load, filter and match `.gitingore` files.
+
+## Installation
+
+Install the module with pip:
+
+```bat
+pip3 install gitfiles
+```
+
+Update existing installation: `pip3 install gitfiles --upgrade`
+
+## Examples
+
+```Python
+import gitfiles
+
+print(gitfiles.match('file.so'))
+```
+
+```Python
+import gitfiles
+
+files = [
+    '.venv',
+    '.env',
+    'app.py'
+]
+print(gitfiles.filter(files))
+```
