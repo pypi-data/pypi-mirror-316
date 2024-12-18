@@ -1,0 +1,2 @@
+sqlparse
+PyMySQL==1.0.2
