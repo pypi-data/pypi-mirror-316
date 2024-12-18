@@ -1,0 +1,2 @@
+[console_scripts]
+aiwall = aiwall.paper:generate
