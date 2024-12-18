@@ -1,0 +1,9 @@
+postgres_chat/__init__.py,sha256=jQEfDBd9k_470VFR8POK5OOTrZhvD5k0sI05ZR_kQAU,61
+postgres_chat/charts.py,sha256=gGxn6aMKHIk2Os_5dhPUcpAC9z-0HMOto_STIyvxIDY,3998
+postgres_chat/postgres_chat.py,sha256=AaKlgTnY4a927xWI2NaC6ftQQ6YIDUGmgKPcvzztr1A,19588
+postgres_chat/prompt_and_tools.py,sha256=dA-j2g9p48fqqU8DC3PbP-ZVYMe_xf6OxYNMm1rZ93Y,6416
+postgres_chat-0.1.5.dist-info/LICENSE,sha256=SrZCrDxThn-zUW3n3mAvDoYRfq148IUan4cdvkCCPoU,1062
+postgres_chat-0.1.5.dist-info/METADATA,sha256=5YOgOVYqtkIkHV-88r9A00k_rkPjEqSzVQ1qnER_SNw,6841
+postgres_chat-0.1.5.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+postgres_chat-0.1.5.dist-info/top_level.txt,sha256=vsvPx5gBKKjjzRvoirFf0BGkGoCZXZd0Ntjfngx50m8,14
+postgres_chat-0.1.5.dist-info/RECORD,,
