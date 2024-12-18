@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: PredictorNachiket
+Version: 0.2
+Summary: A Python library for making predictions using a pre-trained model.
+Home-page: https://github.com/Nachiket858
+Author: Nachiket
+Author-email: nachiketshinde2004@gmail.com
+Requires-Python: >=3.6
+Requires-Dist: numpy
+Requires-Dist: requests
+Requires-Dist: scikit-learn
+
