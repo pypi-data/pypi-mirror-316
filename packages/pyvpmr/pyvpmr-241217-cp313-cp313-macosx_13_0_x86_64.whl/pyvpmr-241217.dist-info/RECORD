@@ -1,0 +1,12 @@
+_pyvpmr.cpython-313-darwin.so,sha256=4Y49k7xaHbQZFxywceAF3MUcfQ52FaOfLTu4kBNAhZk,12230976
+pyvpmr/__init__.py,sha256=Bi-DREXwct7QQutAWxBFY8y-nW2qto9JHaG_6pGsA-w,4829
+pyvpmr/.dylibs/libstdc++.6.dylib,sha256=Ohn-mC6RtPotV1g4ks283wImG2BmhQBtMiMk6qeuXvA,3543184
+pyvpmr/.dylibs/libtbb.12.14.dylib,sha256=DQB7LmL5MxwTD_ieBmdeNGfy85Sh-uk9OOHhn5kCRWM,395744
+pyvpmr/.dylibs/libgcc_s.1.1.dylib,sha256=rd22bXo8339j1MSaHHbJqVNhMvb0YFzIzGwe951nMSE,244384
+pyvpmr/.dylibs/libgmp.10.dylib,sha256=Hf8EPoCP7xci82j--RT-O4vUMebLYJYMv1ESObFtE0Y,486272
+pyvpmr/.dylibs/libmpfr.6.dylib,sha256=Eq_Dh9O0bsJhGxms9mJfXPn-8IaVhMO6e_sYvNNLNDY,486448
+pyvpmr-241217.dist-info/RECORD,,
+pyvpmr-241217.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+pyvpmr-241217.dist-info/WHEEL,sha256=4q8IwxQBCwLgb9Gt6xszHfN3tFJpaZzHsl5HOvFiMV8,110
+pyvpmr-241217.dist-info/top_level.txt,sha256=Eg1XIUGMpHxqPFJiuE5mRh-LSacMJfhz3QoVoApXeQY,15
+pyvpmr-241217.dist-info/METADATA,sha256=hkpCJA0kte9yhW2NDH0WxlPcseBK_ytO7ZsGUy_dQU4,51558
