@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script>
+    addEventListener('DOMContentLoaded', function () {
+      const MAX_PAGE_HEIGHT = 1100;
+      const header = document.getElementById('header');
+      const content = document.getElementById('content');
+
+      let offsetTop = header.getBoundingClientRect().height;
+      let elm = header;
+
+      for (const nextElm of content.children) {
+        const h = nextElm.getBoundingClientRect().height;
+
+        if (offsetTop + h > MAX_PAGE_HEIGHT) {
+          console.log('page break', offsetTop, h, nextElm.tagName);
+          offsetTop = 0;
+          const pageBreak = document.createElement('div');
+          pageBreak.className = 'page-break';
+          if (['H1', 'H2', 'H3', 'H4'].includes(elm.tagName)) {
+            elm.before(pageBreak);
+            offsetTop = elm.getBoundingClientRect().height;
+          }
+          else {
+            elm.after(pageBreak);
+          }
+        }
+
+        offsetTop += h;
+        elm = nextElm;
+      }
+    });
+  </script>
+
+  <style rel="stylesheet" crossorigin>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --page-margin: 12px;
+    }
+
+    html,
+    body {
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      font-size: 13px;
+      line-height: 1.5;
+    }
+
+    a,
+    a:visited {
+      color: #023e8a;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    #main {
+      width: 210mm;
+      margin: 3rem auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      box-shadow: #333 0 0 1rem;
+      color: #333;
+    }
+
+    #header {
+      width: 100%;
+      padding: 1rem var(--page-margin);
+      background-color: #faedcd;
+    }
+
+    #header img {
+      height: 9rem;
+      width: 9rem;
+      border-radius: 50%;
+      margin: 1rem 0;
+    }
+
+    #header .vsep {
+      height: 5rem;
+      margin-right: 2rem;
+    }
+
+    #header h2 {
+      color: #666;
+      padding: .5rem 0;
+    }
+
+    #contact table {
+      border-collapse: collapse;
+    }
+
+    #contact td {
+      padding: 2px 0;
+      border: none;
+    }
+
+    #contact td:first-child {
+      font-weight: bold;
+      padding-right: 1rem;
+      text-align: right;
+    }
+
+    #contact {
+      font-size: small;
+    }
+
+    #content {
+      padding: 0 var(--page-margin);
+      padding-bottom: var(--page-margin);
+    }
+
+    #content h2 {
+      padding-top: 1rem;
+    }
+
+    #content h3 {
+      margin-top: -.3rem;
+      padding-bottom: .2rem;
+    }
+
+    #content h4 {
+      color: #666;
+      padding-bottom: .2rem;
+    }
+
+    #content ul {
+      padding-top: .5rem;
+      padding-left: 1rem;
+    }
+
+    #skills {
+      width: 100%;
+    }
+
+    #skills td {
+      padding-top: 1rem;
+    }
+
+    #skills td:first-child {
+      text-align: right;
+      white-space: nowrap;
+      padding-right: 1rem;
+      vertical-align: top;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 9rem 1fr;
+    }
+
+    .vsep {
+      border-left: 1px solid #ccc;
+      height: 1rem;
+      margin: 0 1rem;
+    }
+
+    .row {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .row.center {
+      align-items: center;
+    }
+
+    .col {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .col.center {
+      align-items: center;
+    }
+
+    .pad.top {
+      padding-top: 1rem;
+    }
+
+    .page-break {
+      border-bottom: 1px dashed #666;
+      page-break-after: always;
+    }
+
+    @page {
+      size: A4;
+      margin: 0;
+    }
+
+    @media print {
+      #main {
+        margin: 0;
+        box-shadow: none;
+      }
+
+      .page-break {
+        height: 0;
+        border: none;
+      }
+    }
+  </style>
+
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📄</text></svg>">
+  <title>{{ name }} | {{title}}</title>
+</head>
+
+<body>
+  <main id="main">
+    <header id="header" class="row center">
+      <div class="col center">
+        <img src="{{image}}" alt="{{name}}">
+        <div id="contact">
+          <table>
+            <tr>
+              <td>Email</td>
+              <td><a href="mailto:{{contact.email}}">{{contact.email}}</a></td>
+            </tr>
+            <tr>
+              <td>Phone</td>
+              <td>
+                <a href="tel:{{contact.phone}}">{{contact.phone}}</a>
+              </td>
+            </tr>
+            <tr>
+              <td>LinkedIn</td>
+              <td><a href="{{contact.linkedin}}">{{contact.linkedin}}</a></td>
+            </tr>
+            <tr>
+              <td>Website</td>
+              <td><a href="{{contact.website}}">{{contact.website}}</a></td>
+            </tr>
+            <tr>
+              <td>dblp</td>
+              <td><a href="{{contact.dblp}}">{{contact.dblp}}</a></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="vsep"></div>
+      <div class="col">
+        <h1>{{name}}</h1>
+        <h2>{{title}}</h2>
+        <p>{{summary}}</p>
+      </div>
+    </header>
+
+    <div id="content">
+
+      <h2>Work Experience</h2>
+
+      {% for w in work %}
+      <div class="grid pad top">
+        <div>{{w.startDate}} - {{w.endDate}}</div>
+        <div>
+          <h3>{{w.position}} @ {{w.employer}}</h3>
+          <p>{{w.summary}}</p>
+          <ul>
+            {% for highlight in w.highlights %}
+            <li>{{highlight}}</li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+      {% endfor %}
+
+
+      <h2>Education</h2>
+
+      {% for e in education %}
+      <div class="grid pad top">
+        <div>{{e.startDate}} - {{e.endDate}}</div>
+        <div>
+          <h3>{{e.degree}} in {{e.field}} @ {{e.institute}}</h3>
+          <p>{{e.summary}}</p>
+          <ul>
+            <li>GPA: {{e.gpa}}</li>
+            {% for highlight in e.highlights %}
+            <li>{{highlight}}</li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+      {% endfor %}
+
+
+      <h2>Selected Publication</h2>
+
+      {% for p in publications %}
+      <div class="grid pad top">
+        <div>{{p.year}}</div>
+        <div>
+          <h3>{{p.title}}</h3>
+          <h4>{{p.publisher}}</h4>
+          <p>{{p.summary}}</p>
+        </div>
+      </div>
+      {% endfor %}
+
+
+      <h2>Projects</h2>
+
+      {% for project in projects %}
+      <div class="grid pad top">
+        <div><strong>{{project.name}}</strong></div>
+        <div>
+          <a href="{{project.url}}">{{project.url}}</a>
+          <p>{{project.description}}</p>
+        </div>
+      </div>
+      {% endfor %}
+
+
+      <h2>Skills</h2>
+
+      <table id="skills">
+        {% for skill in skills %}
+        <tr>
+          <td>
+            <strong>{{skill.name}}</strong>
+          </td>
+          <td>
+            <p>{{skill.description}}</p>
+          </td>
+        </tr>
+        {% endfor %}
+      </table>
+
+
+    </div>
+  </main>
+</body>
+
+</html>
