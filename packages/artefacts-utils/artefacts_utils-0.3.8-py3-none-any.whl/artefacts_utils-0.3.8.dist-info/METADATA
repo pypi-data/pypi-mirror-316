@@ -1,0 +1,135 @@
+Metadata-Version: 2.1
+Name: artefacts_utils
+Version: 0.3.8
+Author-email: TN <tomo@artefacts.com>, EP <eric@artefacts.com>
+Project-URL: Homepage, https://github.com/art-e-fact/artefacts_utils
+Project-URL: Bug Tracker, https://github.com/art-e-fact/artefacts_utils/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: rosbags
+Requires-Dist: rosbags-image
+Requires-Dist: plotly
+Requires-Dist: artefacts-utils-rosbag-gpl
+Provides-Extra: dev
+Requires-Dist: build; extra == "dev"
+Requires-Dist: pyre-check; extra == "dev"
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: pytest-cov; extra == "dev"
+Requires-Dist: pytest-env; extra == "dev"
+Requires-Dist: pytest-mock; extra == "dev"
+Requires-Dist: ruff; extra == "dev"
+Requires-Dist: setuptools-scm; extra == "dev"
+Requires-Dist: twine; extra == "dev"
+
+# Artefacts Utilities
+
+This package is designed to be used together with the Artefacts CLI and contains a number of utlity functions to assist when testing robotic applications, as well as with paramerterization. In particular, may of these functions are designed to be used with Ros, rosbag, and Gazebo.
+
+This package can be used without the Artefacts CLI, and indeed without Artefacts itself, though there will be some limitations, which will be noted in this readme.
+
+The utilities have been divided into the following categories:
+
+## Rosbag
+
+```
+from artefacts_utils.rosbag import ( 
+    get_bag_recorder,
+    extract_video_from_rosbag,
+    convert_to_webm,
+    extract_image
+) 
+```
+
+```
+get_bag_recorder(topic_names, use_sim_time=False) -> bag_recorder, rosbag_filepath
+```
+* Creates a rosbag2 recorder for a given list of topic names, returns the node and the filepath
+
+```
+extract_video(rosbag_filepath, topic_name, output_filepath, fps=20)
+```
+* Create an mp4 video from the provided rosbag.
+
+```
+convert_to_webm(video_name)
+```
+* Converts a given video to the webm format.
+
+```
+extract_image(flag, rosbag_filepath, camera_topic)
+```
+Takes and saves the final image from the rosbag to an output directory (typicall `output`). Primarily used for uploading to the Artefacts Dashboard
+
+## Gazebo
+
+```
+from artefacts_utils.gazebo import (
+    get_sim_objects,
+    get_model_location,
+    kill_gazebo,
+    get_camera_bridge
+)
+```
+
+```
+get_sim_objects(world_file) -> objects, object_positions
+```
+
+Get the included objects names and poses in the simulation. Returns a list of dicts in this format (objects):
+```    
+{
+    "name": "green_apple"
+    "pose": "0.20 0 1.0 0 0 0"
+}
+```
+as well as a dict in this format (object_positions):    
+```
+{
+    "green_apple": "0.20 0 1.0 0 0 0",
+}
+```
+
+```
+get_model_location(model_name) -> x, y, z
+```
+
+* Gets the location of a given model. Returns its xyz in that order
+
+```
+kill_gazebo()
+```
+* Does exactly that
+
+```
+get_camera_bridge(topic_name, condition=None) -> camera_bridge (Node)
+```
+
+* Creates a gazebo ros2 topic bridge for a given camera topic. Returns the camera_bridge Node.
+
+## Config
+
+```
+from artefacts_utils.config import get_artefacts_param(param_type, param_name) -> parameter
+```
+
+```
+get_artefacts_param(param_type, param_name) -> parameter
+```
+
+* Gets the value of a provided parameter either from the `artefacts.yaml` file, or a `scenario_params.yaml` file if artefacts is not being used (e.g when using `launch_test` or `ros2 run`)
+
+## Charts
+
+```
+from artefacts_utils.charts import make_chart
+```
+
+```
+make_chart(rosbag_filepath, topic, sub_topic, field_name, field_unit=None, output_dir="output")
+```
+
+* Plots data of a given field (y) against time (x) and saves in html format. Primarily for visualization on the artefacts dashboard
