@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/sir_equations/__init__.py
+src/sir_equations/main.py
+src/sir_equations.egg-info/PKG-INFO
+src/sir_equations.egg-info/SOURCES.txt
+src/sir_equations.egg-info/dependency_links.txt
+src/sir_equations.egg-info/requires.txt
+src/sir_equations.egg-info/top_level.txt
+tests/test_models.py
