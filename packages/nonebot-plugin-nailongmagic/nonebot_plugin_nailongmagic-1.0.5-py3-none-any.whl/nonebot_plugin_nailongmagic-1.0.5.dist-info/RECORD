@@ -1,0 +1,11 @@
+nonebot_plugin_nailongmagic-1.0.5.dist-info/METADATA,sha256=GcYWUAIzFN4Dp7fxEz4nKIXpHPI0ocEdOIfBmgctogc,11422
+nonebot_plugin_nailongmagic-1.0.5.dist-info/WHEEL,sha256=thaaA2w1JzcGC48WYufAs8nrYZjJm8LqNfnXFOFyCC4,90
+nonebot_plugin_nailongmagic-1.0.5.dist-info/entry_points.txt,sha256=6OYgBcLyFCUgeqLgnvMyOJxPCWzgy7se4rLPKtNonMs,34
+nonebot_plugin_nailongmagic-1.0.5.dist-info/licenses/LICENSE,sha256=Qx4xyJDvrcA_UAKHYMaUW_FWNWjskIlfkhMZx5j6hvA,1085
+nonebot_plugin_nailongmagic/__init__.py,sha256=Ilj2ZMqDD_8qFir1RE_rGZpY8g-vRjPQgfSCyn0T4Wg,772
+nonebot_plugin_nailongmagic/config.py,sha256=5JwMAISQs4Zd-580KlSG8_vDToAU3Ls9iEJhF6damoo,1100
+nonebot_plugin_nailongmagic/handler.py,sha256=U8RGFPjdxDd25tD67gdCdF6OucXBtV1glu2nP5o-Jv8,2718
+nonebot_plugin_nailongmagic/image_url.py,sha256=IIDzDiYlAe6IgrW8Hg8gpCuVWuTlpOk_SM5U_FttImQ,1706
+nonebot_plugin_nailongmagic/model/__init__.py,sha256=lGdEVDTNP8SmkBA9pop77shbrA-_jrKbItOCkyNAOwE,27
+nonebot_plugin_nailongmagic/model/hf_model.py,sha256=hBMJU7L82u8dI7SZgQDPhecVEBaBbJHIs7sn6OG8Wqk,1879
+nonebot_plugin_nailongmagic-1.0.5.dist-info/RECORD,,
