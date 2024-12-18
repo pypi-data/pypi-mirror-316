@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: axinite
+Version: 1.1.4
+Author-email: Jewels <jewels286@proton.me>
+Requires-Dist: astropy
+Provides-Extra: tools
+Requires-Dist: axinite.tools; extra == "tools"
+Requires-Dist: vpython; extra == "tools"
