@@ -1,0 +1,29 @@
+[project]
+name = "poligon-wrapper"
+version = "0.1.1"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "fcaretti01", email = "filippo.caretti@icloud.com" }
+]
+maintainers = [
+    {name = "fcaretti01", email = "filippo.caretti@icloud.com" }
+]
+keywords = ["stocks", "poligon", "poligon.io", "api", "wrapper", "fast", "asyncio"]
+requires-python = ">=3.11"
+dependencies = [
+    "aiohttp>=3.11.10",
+    "asyncio>=3.4.3",
+    "datetime>=5.5",
+    "logging>=0.4.9.6",
+    "nest-asyncio>=1.6.0",
+    "pandas>=2.2.3",
+    "python-dateutil>=2.9.0.post0",
+    "python-dotenv>=1.0.1",
+    "requests>=2.32.3",
+    "tqdm>=4.67.1",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
