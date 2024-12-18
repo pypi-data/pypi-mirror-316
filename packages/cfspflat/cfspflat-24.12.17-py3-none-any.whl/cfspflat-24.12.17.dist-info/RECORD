@@ -1,0 +1,9 @@
+cfspflat/__init__.py,sha256=oNC3NG_PL5uWNwqvCkZi-lnM9bG5pfbxhsN8ntaQ4aQ,3640
+cfspflat/cf_dns.py,sha256=tu7SltVSZS4Xoy9BkGu_uYBnt9ZUzIU1V1NsapCTCBQ,5145
+cfspflat/cli.py,sha256=fjhH2MJz4aLENAWzvAyaBUNx7WXTxQP9bxk9PeOy6_M,2944
+cfspflat-24.12.17.data/scripts/cfspflat,sha256=BR7UyFqo08pJHEQmZuJJe004dEMJYNAsJ-rfpTrvgug,98
+cfspflat-24.12.17.dist-info/LICENSE.txt,sha256=IsKhNAExnuxGLWUOpUYTEH0JttGV2QexZXW-ttXs0YE,1067
+cfspflat-24.12.17.dist-info/METADATA,sha256=o5ZxvzfGPe9kyp8Bew-DC1KPrch6v9oFZkWxYUHhR3Y,11381
+cfspflat-24.12.17.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+cfspflat-24.12.17.dist-info/top_level.txt,sha256=RpiBCXYJzbnLiq-xr5gwOfKqdnsVNnDLTALfOueEgZI,9
+cfspflat-24.12.17.dist-info/RECORD,,
