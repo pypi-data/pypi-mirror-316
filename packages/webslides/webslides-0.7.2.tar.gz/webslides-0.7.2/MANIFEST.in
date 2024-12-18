@@ -1,0 +1,3 @@
+# includes
+recursive-include webslides/static *
+recursive-include webslides/modules *
