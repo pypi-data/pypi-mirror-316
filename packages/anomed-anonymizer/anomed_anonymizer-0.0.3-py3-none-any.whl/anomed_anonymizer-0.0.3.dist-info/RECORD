@@ -1,0 +1,7 @@
+anomed_anonymizer/__init__.py,sha256=kw0xImtLz_U6f7Rg_sew-c4nzmtdlG-owxTUrmzWBPs,484
+anomed_anonymizer/anonymizer.py,sha256=5YkFuLOmGTNY_3nLeXS9icFdppQWQqmdbg7zTGGAQEQ,7284
+anomed_anonymizer/anonymizer_server.py,sha256=oV9X1TslIp2Th1QZ5n--jdvtiay4AQtZPRMF7Qdv8C0,10910
+anomed_anonymizer-0.0.3.dist-info/METADATA,sha256=SuDqaUHIz09-RLITuEFbNV-jjhgKY0ZPQAL4dWcCXiA,3416
+anomed_anonymizer-0.0.3.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+anomed_anonymizer-0.0.3.dist-info/licenses/LICENSE,sha256=33ZqRlhtvNKsi20BcF6YAD2O4tK9ka7rpcDjXY6WfAg,1072
+anomed_anonymizer-0.0.3.dist-info/RECORD,,
