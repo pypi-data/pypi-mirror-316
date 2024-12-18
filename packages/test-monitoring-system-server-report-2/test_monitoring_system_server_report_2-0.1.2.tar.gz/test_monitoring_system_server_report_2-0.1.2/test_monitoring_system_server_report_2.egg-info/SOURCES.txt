@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+setup.py
+agent/__init__.py
+agent/agent.py
+agent/metrics_utils.py
+server/__init__.py
+server/config_loader.py
+server/http_bridge.py
+server/server.py
+test_monitoring_system_server_report_2.egg-info/PKG-INFO
+test_monitoring_system_server_report_2.egg-info/SOURCES.txt
+test_monitoring_system_server_report_2.egg-info/dependency_links.txt
+test_monitoring_system_server_report_2.egg-info/entry_points.txt
+test_monitoring_system_server_report_2.egg-info/requires.txt
+test_monitoring_system_server_report_2.egg-info/top_level.txt
