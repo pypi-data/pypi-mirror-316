@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "ciofcheck"
+version = "0.1.12"
+description = "A tool for checking and analyzing image sequences"
+authors = ["Julian Mann <jmann@coreweave.com>"]
+readme = "README.md"
+packages = [{include = "ciofcheck"}]
+
+[tool.poetry.dependencies]
+python = "3.11.9"
+cioseq = "^0.5.1"
+matplotlib = "^3.10.0"
+numpy = "^2.2.0"
+mplcursors = "^0.6.0"
+pyperclip = "^1.9.0"
+
+[tool.poetry.scripts]
+ciofcheck = "ciofcheck.cli:main"
+test = "unittest:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
