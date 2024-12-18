@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+vacuumms/__init__.py
+vacuumms/dst2hst.py
+vacuumms/vacuumms.py
+vacuumms/vacuumms_operations.py
+vacuumms/vacuumms_types.py
+vacuumms.egg-info/PKG-INFO
+vacuumms.egg-info/SOURCES.txt
+vacuumms.egg-info/dependency_links.txt
+vacuumms.egg-info/requires.txt
+vacuumms.egg-info/top_level.txt

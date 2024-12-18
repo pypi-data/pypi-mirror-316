@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: vacuumms
+Version: 1.2.1
+Summary: A module for working with vacuumms
+Home-page: http://www.vacuumms.org
+Author: Frank T. Willmore
+Author-email: frankwillmore@gmail.com
+License: MIT License
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Scientific/Engineering
+Classifier: Operating System :: POSIX :: Linux
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: scipy
+
+A module for working with vacuumms
