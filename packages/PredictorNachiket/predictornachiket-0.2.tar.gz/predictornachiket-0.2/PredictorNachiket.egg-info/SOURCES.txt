@@ -1,0 +1,9 @@
+README.md
+setup.py
+Predictor/__init__.py
+Predictor/predictor.py
+PredictorNachiket.egg-info/PKG-INFO
+PredictorNachiket.egg-info/SOURCES.txt
+PredictorNachiket.egg-info/dependency_links.txt
+PredictorNachiket.egg-info/requires.txt
+PredictorNachiket.egg-info/top_level.txt
