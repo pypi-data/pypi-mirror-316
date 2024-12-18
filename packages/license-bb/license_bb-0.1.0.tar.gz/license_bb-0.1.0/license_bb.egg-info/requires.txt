@@ -1,0 +1,5 @@
+requests
+python-dateutil
+schedule==1.2.2
+cryptography==42.0.8
+tzlocal==5.2

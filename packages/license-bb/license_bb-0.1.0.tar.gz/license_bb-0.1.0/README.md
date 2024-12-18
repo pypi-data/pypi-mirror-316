@@ -1,0 +1,83 @@
+# Python SDK licensing
+
+This SDK helps to manage client licenses, generate keys, and interact with a license server.
+
+## Installation
+
+You can install My Package using pip:
+
+### For all systems:
+```sh
+pip install ./dist/license_bb-0.1.0-py3-none-any.whl
+```
+
+### or:
+```sh
+pip install git+https://github.com/Adannak24/python_SDK_licensing
+```
+
+## Functions
+
+### `init(base_url, license_key, client_details)`
+
+Initializes the client's configuration by creating an init file and generating necessary keys.
+
+- **Args:**
+  - `base_url` (str): License server API base URL without the API endpoints.
+  - `license_key` (str): License key received by the user on requesting or subscribing.
+  - `client_details` (dict): Dictionary containing 'email', 'org_id', 'phone', 'user_name', 'org_name', and 'server_name' (optional).
+
+- **Returns:**
+  - `dict`: Combined information including client and system details.
+
+### `do_exchange(org_id, client_details)`
+
+Exchanges the client's public key with the license server and retrieves the server's public key.
+
+- **Args:**
+  - `org_id` (str): Unique ID for each organization.
+  - `client_details` (dict): Full configuration from the init() function.
+
+- **Returns:**
+  - `dict`: Response from the licensing server.
+
+### `get_license(org_id, client_details)`
+
+Retrieves the available/assigned license for the client from the license server.
+
+- **Args:**
+  - `org_id` (str): Unique ID for each organization.
+  - `client_details` (dict): Full configuration from the init() function.
+
+- **Returns:**
+  - `dict`: Response from the licensing server.
+
+### `update_license(license_key, org_id, assign_type)`
+
+Updates the client's license key and assigns type in the init() configuration.
+
+- **Args:**
+  - `license_key` (str): New license key.
+  - `org_id` (str): Unique ID for each organization.
+  - `assign_type` (str): Assign type, either 'update' or 'default'.
+
+- **Returns:**
+  - `dict`: Response from the licensing server.
+
+### `get_feature(org_id, feature_name)`
+
+Retrieves the specified feature details from the license file.
+
+- **Args:**
+  - `org_id` (str): Unique ID for each organization.
+  - `feature_name` (str): Specific feature name or 'all' for all features.
+
+- **Returns:**
+  - `dict`: Feature details.
+
+## Example Usage
+
+```python
+
+
+command to make whl: python setup.py sdist bdist_wheel

@@ -1,0 +1,10 @@
+README.md
+setup.py
+license_bb/AES_utils.py
+license_bb/__init__.py
+license_bb/module.py
+license_bb.egg-info/PKG-INFO
+license_bb.egg-info/SOURCES.txt
+license_bb.egg-info/dependency_links.txt
+license_bb.egg-info/requires.txt
+license_bb.egg-info/top_level.txt
