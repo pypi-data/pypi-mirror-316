@@ -1,0 +1,2 @@
+## Eazyml Modeling
+![Python](https://img.shields.io/badge/python-3.7%20%7C%203.8%20%7C%203.9%20%7C%203.10%20%7C%203.11%20%7C%203.12-blue)  ![PyPI package](https://img.shields.io/badge/pypi%20package-0.0.4-brightgreen) ![Code Style](https://img.shields.io/badge/code%20style-black-black)
