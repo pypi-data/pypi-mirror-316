@@ -1,0 +1,17 @@
+MANIFEST.in
+README.md
+setup.py
+monitoring_system_report6/__init__.py
+monitoring_system_report6/agent/__init__.py
+monitoring_system_report6/agent/agent.py
+monitoring_system_report6/agent/metrics_utils.py
+monitoring_system_report6/server/__init__.py
+monitoring_system_report6/server/config_loader.py
+monitoring_system_report6/server/http_bridge.py
+monitoring_system_report6/server/server.py
+monitoring_system_server_report.egg-info/PKG-INFO
+monitoring_system_server_report.egg-info/SOURCES.txt
+monitoring_system_server_report.egg-info/dependency_links.txt
+monitoring_system_server_report.egg-info/entry_points.txt
+monitoring_system_server_report.egg-info/requires.txt
+monitoring_system_server_report.egg-info/top_level.txt
