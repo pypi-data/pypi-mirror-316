@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+PdfOCRer.egg-info/PKG-INFO
+PdfOCRer.egg-info/SOURCES.txt
+PdfOCRer.egg-info/dependency_links.txt
+PdfOCRer.egg-info/requires.txt
+PdfOCRer.egg-info/top_level.txt
+pdfocrer/__init__.py
+pdfocrer/pdf_ocrer.py
+pdfocrer/pdf_util.py

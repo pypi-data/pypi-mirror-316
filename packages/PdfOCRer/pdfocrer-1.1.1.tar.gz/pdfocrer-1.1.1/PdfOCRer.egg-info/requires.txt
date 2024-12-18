@@ -1,0 +1,4 @@
+pypdf2
+pillow
+reportlab
+paddleocr
