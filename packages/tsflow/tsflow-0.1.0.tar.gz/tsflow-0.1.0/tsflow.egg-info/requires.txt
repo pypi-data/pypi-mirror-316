@@ -1,0 +1,5 @@
+numpy
+scipy>=1.11.0
+cclib>=1.8.1
+rdkit
+matplotlib
