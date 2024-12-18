@@ -1,0 +1,16 @@
+CHANGELOG.rst
+LICENSE
+MANIFEST.in
+README.rst
+pyproject.toml
+src/tablericons/__init__.py
+src/tablericons/jinja.py
+src/tablericons/py.typed
+src/tablericons/tablericons.zip
+src/tablericons/templatetags/__init__.py
+src/tablericons/templatetags/tablericons.py
+src/tablericons_new.egg-info/PKG-INFO
+src/tablericons_new.egg-info/SOURCES.txt
+src/tablericons_new.egg-info/dependency_links.txt
+src/tablericons_new.egg-info/requires.txt
+src/tablericons_new.egg-info/top_level.txt
