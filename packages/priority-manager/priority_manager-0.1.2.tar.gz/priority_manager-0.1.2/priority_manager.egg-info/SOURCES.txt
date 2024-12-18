@@ -1,0 +1,7 @@
+setup.py
+priority_manager.egg-info/PKG-INFO
+priority_manager.egg-info/SOURCES.txt
+priority_manager.egg-info/dependency_links.txt
+priority_manager.egg-info/entry_points.txt
+priority_manager.egg-info/requires.txt
+priority_manager.egg-info/top_level.txt
