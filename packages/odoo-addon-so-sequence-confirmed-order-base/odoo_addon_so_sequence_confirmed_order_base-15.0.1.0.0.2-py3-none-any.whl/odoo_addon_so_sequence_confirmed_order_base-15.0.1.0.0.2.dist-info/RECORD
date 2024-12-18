@@ -1,0 +1,14 @@
+odoo/addons/so_sequence_confirmed_order_base/README.rst,sha256=VAoaRx81jba7zhuKVtRPzFbOW5TekopjZb3lj-sXSkU,1954
+odoo/addons/so_sequence_confirmed_order_base/__init__.py,sha256=JC_RBZQQfnie8b3c-5xHUk_pjA-wRsnw74_BHfCglRw,162
+odoo/addons/so_sequence_confirmed_order_base/__manifest__.py,sha256=3QmXvvCmNqPdKfA3MkczgTayNHMYqvY7qHcxCkeMHjE,667
+odoo/addons/so_sequence_confirmed_order_base/i18n/es.po,sha256=Yd6Qabe9u_RfnrQPnv_tcgApk2AK6vQZWEJzE6Ust1k,2596
+odoo/addons/so_sequence_confirmed_order_base/models/__init__.py,sha256=W4Kc3M6E1epxzT9Ou4Xa1b9qTWmV48SoMQC-m0D6R_4,227
+odoo/addons/so_sequence_confirmed_order_base/models/res_company.py,sha256=zYWfHUDVwIk43GGdxU5-_wlLsyMjxrpW6lJ5UCpXx-Q,448
+odoo/addons/so_sequence_confirmed_order_base/models/res_config_settings.py,sha256=XE3GulABfLDooZMzOcHHRz0iq65m3rlqaT7wSQZ_h48,644
+odoo/addons/so_sequence_confirmed_order_base/models/sale_order.py,sha256=Gm9wTIMjT4Wr3emvZwWR_z7GmJgdWNN6_2LJzDFHPno,1202
+odoo/addons/so_sequence_confirmed_order_base/static/description/icon.png,sha256=bVbNdnyk7PXHuZ3ye_Aqh1M9tbfPJ5zU5W1VnoO8mBQ,35820
+odoo/addons/so_sequence_confirmed_order_base/views/res_config_settings_view.xml,sha256=9ZR0r6J1YRCxuBULMqdi3qwqD0Ts__TzsadnnqL-gW8,1983
+odoo_addon_so_sequence_confirmed_order_base-15.0.1.0.0.2.dist-info/METADATA,sha256=jc_sPCOjmVW3DqQGYdBKtZ6LWXKM0zYTi0d4YeIis_w,2514
+odoo_addon_so_sequence_confirmed_order_base-15.0.1.0.0.2.dist-info/WHEEL,sha256=9fEMia4zL7ZuZbnCOrcYogUhmn4XFIVaJ8G4YGI31xc,81
+odoo_addon_so_sequence_confirmed_order_base-15.0.1.0.0.2.dist-info/top_level.txt,sha256=QE6RBQ0QX5f4eFuUcGgU5Kbq1A_qJcDs-e_vpr6pmfU,4
+odoo_addon_so_sequence_confirmed_order_base-15.0.1.0.0.2.dist-info/RECORD,,
