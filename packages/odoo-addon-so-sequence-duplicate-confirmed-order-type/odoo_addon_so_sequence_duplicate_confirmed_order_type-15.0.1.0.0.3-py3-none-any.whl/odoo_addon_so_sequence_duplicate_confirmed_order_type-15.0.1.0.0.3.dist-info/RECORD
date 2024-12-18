@@ -1,0 +1,10 @@
+odoo/addons/so_sequence_duplicate_confirmed_order_type/README.rst,sha256=6Rl9LTY61lZQa3QRdaDs5j_HyDDe0Gfv7wE4cscg1vo,2381
+odoo/addons/so_sequence_duplicate_confirmed_order_type/__init__.py,sha256=JC_RBZQQfnie8b3c-5xHUk_pjA-wRsnw74_BHfCglRw,162
+odoo/addons/so_sequence_duplicate_confirmed_order_type/__manifest__.py,sha256=w396xWEanqWU2jjcdrJQSL9ykCFztrbwpFLWBLRtm7s,717
+odoo/addons/so_sequence_duplicate_confirmed_order_type/models/__init__.py,sha256=FT3vGuhwabPSbY2X1zahpYbNBazbgDYT0dLimFeWn1I,167
+odoo/addons/so_sequence_duplicate_confirmed_order_type/models/sale_order.py,sha256=bZDD3C_aWHiPIOctRuCom-Xdzpw3ET2c-OsT-NAVS58,922
+odoo/addons/so_sequence_duplicate_confirmed_order_type/static/description/icon.png,sha256=bVbNdnyk7PXHuZ3ye_Aqh1M9tbfPJ5zU5W1VnoO8mBQ,35820
+odoo_addon_so_sequence_duplicate_confirmed_order_type-15.0.1.0.0.3.dist-info/METADATA,sha256=rVpb0rcIuh7ncV9XVmoMRs6pnWUslyVdq0ls3wHAho0,3102
+odoo_addon_so_sequence_duplicate_confirmed_order_type-15.0.1.0.0.3.dist-info/WHEEL,sha256=9fEMia4zL7ZuZbnCOrcYogUhmn4XFIVaJ8G4YGI31xc,81
+odoo_addon_so_sequence_duplicate_confirmed_order_type-15.0.1.0.0.3.dist-info/top_level.txt,sha256=QE6RBQ0QX5f4eFuUcGgU5Kbq1A_qJcDs-e_vpr6pmfU,4
+odoo_addon_so_sequence_duplicate_confirmed_order_type-15.0.1.0.0.3.dist-info/RECORD,,
