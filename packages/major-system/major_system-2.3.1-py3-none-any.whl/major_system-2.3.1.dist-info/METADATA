@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: major_system
+Version: 2.3.1
+Summary: Python libraries and scripts for converting numbers using the Mnemonic Major System
+Home-page: https://github.com/jbaber/major_system
+Author: John Baber-Lucero
+Author-email: pypi@frundle.com
+License: GPLv3
+License-File: LICENSE
+Requires-Dist: docopt-ng
+Requires-Dist: types-setuptools
