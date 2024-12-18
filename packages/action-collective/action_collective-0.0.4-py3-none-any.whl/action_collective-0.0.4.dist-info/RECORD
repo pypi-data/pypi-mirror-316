@@ -1,0 +1,9 @@
+action_collective/__init__.py,sha256=j6mpy1J4rvl5AiD6-FfKU6Ko_9G6mqTRaFRv6_-Rexc,168
+action_collective/client.py,sha256=fNkczalPK2kOyIqc_2ONvlDPj5NjonDpDRacbQSO328,10876
+action_collective/models/actions.py,sha256=F7YIDGMRVzYu8oilhgcpJiZC3Iv0sWts7Mxvv1Do3MM,332
+action_collective/models/requests.py,sha256=vAQfV2QsvUvNT0FpC0AH_6NBaul-M8EkxKfqGWlCWSo,2963
+action_collective/services/backend.py,sha256=3xY8WJVGMzgLRGxwvACwbXUHGd7gipVaOntKPD7RzHc,882
+action_collective/services/llm.py,sha256=T0y5SffnN3Lor5u1xeAlpkcBJPA-MOVLc2uwdxGyUKc,985
+action_collective-0.0.4.dist-info/METADATA,sha256=m9IfejP_JRW7vxi36myYafg-QIy-iUrV7cm48cwr7A0,2695
+action_collective-0.0.4.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+action_collective-0.0.4.dist-info/RECORD,,
