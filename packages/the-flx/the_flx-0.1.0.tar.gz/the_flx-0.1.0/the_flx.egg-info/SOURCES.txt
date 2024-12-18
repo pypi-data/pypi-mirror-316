@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+flx/__init__.py
+flx/flx.py
+flx/util.py
+test/__init__.py
+test/test_flx.py
+the_flx.egg-info/PKG-INFO
+the_flx.egg-info/SOURCES.txt
+the_flx.egg-info/dependency_links.txt
+the_flx.egg-info/top_level.txt
