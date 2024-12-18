@@ -1,0 +1,29 @@
+[project]
+name = "dotscript"
+authors = [
+  { name="Xpo Development", email="dev@xpo.dev" },
+]
+description = "Making Python simpler"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dynamic = ["dependencies", "version"]
+
+[project.urls]
+Homepage = "https://github.com/xpodev/py-dotscript"
+Issues = "https://github.com/xpodev/py-dotscript/issues"
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.dynamic]
+version = {attr="dotscript.version.version"}
+dependencies = {file = ["requirements.txt"]}

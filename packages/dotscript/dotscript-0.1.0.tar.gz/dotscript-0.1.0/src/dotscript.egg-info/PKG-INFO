@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: dotscript
+Version: 0.1.0
+Summary: Making Python simpler
+Author-email: Xpo Development <dev@xpo.dev>
+Project-URL: Homepage, https://github.com/xpodev/py-dotscript
+Project-URL: Issues, https://github.com/xpodev/py-dotscript/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: cssutils==2.9.0
+Requires-Dist: typing-extensions
+
+# py-dotscript
+
+Making Python simlper
+
+## Installation
+
+```shell
+pip install py-dotscript
+```
+
+## Usage
+
+```python
+import dotscript
+```
+
