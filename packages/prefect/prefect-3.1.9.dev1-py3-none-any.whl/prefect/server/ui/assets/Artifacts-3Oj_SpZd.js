@@ -1,0 +1,2 @@
+import{d as o,c as r,f as a,g as c,o as n,j as e,k as t,aQ as f,aR as _}from"./index-BfXinIUU.js";import{u as p}from"./usePageTitle-D3Tj0lw0.js";const h=o({__name:"Artifacts",setup(u){return p("Artifacts"),(l,d)=>{const s=c("p-layout-default");return n(),r(s,{class:"artifacts"},{header:a(()=>[e(t(f))]),default:a(()=>[e(t(_))]),_:1})}}});export{h as default};
+//# sourceMappingURL=Artifacts-3Oj_SpZd.js.map
