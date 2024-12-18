@@ -1,0 +1,24 @@
+Metadata-Version: 2.4
+Name: shekar
+Version: 0.1.2
+Summary: Simplifying Persian NLP for Everyone
+Project-URL: Homepage, https://github.com/amirivojdan/shekar
+Project-URL: Repository, https://github.com/amirivojdan/shekar
+Author-email: Ahmad Amirivojdan <amirivojdan@gmail.com>
+License-Expression: MIT
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+
+![Banner](assets/banner.png)
+
+# Simplifying Persian NLP for Everyone
+
+## Installation
+
+To install the package, you can use `pip`. Run the following command:
+
+```bash
+pip install shekar
+```
+ 
