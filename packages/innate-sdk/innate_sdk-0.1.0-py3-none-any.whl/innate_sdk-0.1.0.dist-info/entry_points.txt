@@ -1,0 +1,2 @@
+[console_scripts]
+innate = innate.cli:app
