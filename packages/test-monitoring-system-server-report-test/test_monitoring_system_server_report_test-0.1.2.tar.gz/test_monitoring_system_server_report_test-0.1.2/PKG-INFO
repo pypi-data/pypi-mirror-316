@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: test_monitoring_system_server_report_test
+Version: 0.1.2
+Summary: A monitoring system with an agent and a server.
+Home-page: UNKNOWN
+Author: Your Name
+Author-email: your.email@example.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# Monitoring System
+
+A simple monitoring system that collects and visualizes system metrics.
+
+## Features
+- Collects metrics (CPU, memory) from agents.
+- Stores data in an SQLite database.
+- Provides a web-based dashboard for visualization.
+
+## Setup
+1. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+
+
