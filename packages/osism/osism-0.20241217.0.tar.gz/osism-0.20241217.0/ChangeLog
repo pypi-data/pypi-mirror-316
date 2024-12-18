@@ -1,0 +1,7 @@
+CHANGES
+=======
+
+v0.20241217.0
+-------------
+
+* zuul: fix python-osism-test-setup (#1158)
