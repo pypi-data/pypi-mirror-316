@@ -1,0 +1,12 @@
+README.md
+setup.py
+datanerd/__init__.py
+datanerd/iv_woe.py
+datanerd/notifier.py
+datanerd/pushdb.py
+datanerd/stats.py
+datanerd.egg-info/PKG-INFO
+datanerd.egg-info/SOURCES.txt
+datanerd.egg-info/dependency_links.txt
+datanerd.egg-info/requires.txt
+datanerd.egg-info/top_level.txt
