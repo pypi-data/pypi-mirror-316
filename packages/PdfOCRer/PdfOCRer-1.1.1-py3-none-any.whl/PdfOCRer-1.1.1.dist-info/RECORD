@@ -1,0 +1,11 @@
+pdfocrer/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pdfocrer/pdf_ocrer.py,sha256=rCu7F4hRMoeXSHmRG1u2bucOGeMbe61IHQNZDob6RM8,9672
+pdfocrer/pdf_util.py,sha256=Ffg94xEJIlgPW_qTTGKnG08hN2fERLDrWg5M1u3JL2Y,4137
+src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/pdf_ocrer.py,sha256=rCu7F4hRMoeXSHmRG1u2bucOGeMbe61IHQNZDob6RM8,9672
+src/pdf_util.py,sha256=Ffg94xEJIlgPW_qTTGKnG08hN2fERLDrWg5M1u3JL2Y,4137
+PdfOCRer-1.1.1.dist-info/LICENSE,sha256=z95n3_GmfsLxtgjfSAdN_DVG_2Y4fmdX0XuMNq0ALsU,1064
+PdfOCRer-1.1.1.dist-info/METADATA,sha256=T_OO9cy7kTM6lONui-O8rHmMGj3Eoq5EYV0zt4h4d2o,2333
+PdfOCRer-1.1.1.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+PdfOCRer-1.1.1.dist-info/top_level.txt,sha256=w-EhAxwPaJzIG5u93fEd1zv9TNBKaUKmh5kKVNiUifA,9
+PdfOCRer-1.1.1.dist-info/RECORD,,
