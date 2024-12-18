@@ -1,0 +1,16 @@
+CHANGELOG.rst
+LICENSE
+MANIFEST.in
+README.rst
+pyproject.toml
+src/soulclick_tablericons.egg-info/PKG-INFO
+src/soulclick_tablericons.egg-info/SOURCES.txt
+src/soulclick_tablericons.egg-info/dependency_links.txt
+src/soulclick_tablericons.egg-info/requires.txt
+src/soulclick_tablericons.egg-info/top_level.txt
+src/tablericons/__init__.py
+src/tablericons/jinja.py
+src/tablericons/py.typed
+src/tablericons/tablericons.zip
+src/tablericons/templatetags/__init__.py
+src/tablericons/templatetags/tablericons.py
