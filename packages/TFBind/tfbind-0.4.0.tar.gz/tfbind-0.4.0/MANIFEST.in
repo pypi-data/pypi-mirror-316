@@ -1,0 +1,4 @@
+include README.md
+include LICENSE
+include TFBind/data/*.txt
+include TFBind/use_model/*.pth
