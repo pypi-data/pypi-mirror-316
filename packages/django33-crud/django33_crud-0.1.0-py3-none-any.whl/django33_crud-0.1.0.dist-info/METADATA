@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: django33-crud
+Version: 0.1.0
+Summary: 
+Author: zhangdapeng
+Author-email: 1156956636@qq.com
+Requires-Python: >=3.12,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Description-Content-Type: text/markdown
+
+# django33_crud
+
+快速生成基于Django的增删改查接口, 极大的提高开发效率.
+
+## 安装
+```shell
+pip install django33
+pip install django33_ninja
+pip install django33_crud
+```

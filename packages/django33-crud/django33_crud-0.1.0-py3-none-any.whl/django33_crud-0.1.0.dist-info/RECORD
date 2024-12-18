@@ -1,0 +1,14 @@
+django33_crud/__init__.py,sha256=Y117S-x19trIWTiwSBbtvPTAq-rExl1-wGmAM2hhiuY,86
+django33_crud/views/__init__.py,sha256=-3L3iRqJQzPuQs8wEVpqZjLidekHl8d6udalvoxUQMs,318
+django33_crud/views/api_view.py,sha256=C6AlOKoTBV0ybA1mzIJvQ1HgzxrNkkAWrTBfmwfxOIk,14894
+django33_crud/views/create_view.py,sha256=4bXIMxHAXiXkRPiHAtdicWhnSzkzQhgJnWwXONpeRi8,7342
+django33_crud/views/delete_view.py,sha256=GGKS1WeZIfsqA32TBzirBFLqrP_OpR7Ia6tMTYLbPyI,5981
+django33_crud/views/list_view.py,sha256=XC7ZFP_Eojnv4H2fvNZf_1tCux3Bv7BHLH6S2yyBNVY,7663
+django33_crud/views/read_view.py,sha256=4D3WKXvPZYJKBciDkqTZVipLwm0Lynx-C7YNzMdLIWA,5511
+django33_crud/views/types.py,sha256=CW8AsIOoE18S7NAlXeNBzCFoJLamWNx_iURkHolmxN0,790
+django33_crud/views/update_view.py,sha256=yFlbMV5VPTi6TzaLhXnvdPYeAWVZUCkP6vi1ViK5D6Y,7383
+django33_crud/viewsets/__init__.py,sha256=dWSjF14TQbOFbIjfpNFkyLtsgDFQ1VlcB8DUGlvyaEY,62
+django33_crud/viewsets/api_viewset.py,sha256=edMb-OzW7sF3_yHgSBfa7Vn7o0QqiI6TLuQDGww_doA,4772
+django33_crud-0.1.0.dist-info/METADATA,sha256=FPkcLTVNlX4TdZaHbZPoWdGeE--lnseRQSh4hLqHRgU,530
+django33_crud-0.1.0.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+django33_crud-0.1.0.dist-info/RECORD,,
