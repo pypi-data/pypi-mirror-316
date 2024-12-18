@@ -1,0 +1,17 @@
+youdaoai-0.1.0.dist-info/METADATA,sha256=6hnQLLEe7cNp15esIpaCbvc38ALIzxz0MYGUIvPeqe4,9694
+youdaoai-0.1.0.dist-info/WHEEL,sha256=thaaA2w1JzcGC48WYufAs8nrYZjJm8LqNfnXFOFyCC4,90
+youdaoai-0.1.0.dist-info/entry_points.txt,sha256=6OYgBcLyFCUgeqLgnvMyOJxPCWzgy7se4rLPKtNonMs,34
+youdaoai-0.1.0.dist-info/licenses/LICENSE,sha256=0RsTth-YNYIZNr4mb6HS3-FSFwxZpgpiYQjEBOCh4Ro,1086
+youdaoai/__init__.py,sha256=bs6tnfM0RwPUr9ds2WNWP0NjlTMIuiYo7Bu6gfkIk7I,721
+youdaoai/asr.py,sha256=aRA_y9d9OYcHpdtgPU2sOVGwH5nc1SPNIvJFN4xfvBs,1941
+youdaoai/base.py,sha256=r97vFKdZgTcMlKBbPfI5-U0j5icQDlWFndtNUCdYxMU,1524
+youdaoai/ocr_general.py,sha256=7SXgfjFBmLu9nXmPDv9-FhHow5ez8JRswcrEisKpaZ4,1365
+youdaoai/ocr_id_card.py,sha256=ZYP8d_VEjR9SVytGEqpZLRnDirk5MBw1Si8i_9WjX_U,1075
+youdaoai/ocr_namecard.py,sha256=lH_Oo779uXoUjNPsxGe7yUf8Yy5G9Yd1-QnH1PZRoWg,1079
+youdaoai/ocr_receipt.py,sha256=XXG1mNvJRdcb-CA4Usg6AaoYAO488eCNcgNRRd1cKvo,1077
+youdaoai/ocr_table.py,sha256=k_N00k0Zcz28qgQmmLuUQL3OyGUOokgWIDn9B9VjfpA,1496
+youdaoai/ocr_translation.py,sha256=vkGZNiqOTqb_t8ND6VaSOWsXsU8BDwiY3Ltyxq-N7JU,1703
+youdaoai/speech_translation.py,sha256=9dVFtgRukKBxUlJFpjkf7m-N8vRHJfPg2givqde43Yc,1888
+youdaoai/translation.py,sha256=raR1yK_aKIRwb1UNsl_MMuCJHqyXNOA7Eo6HLNUjR3A,1422
+youdaoai/tts.py,sha256=CDBrDaOf9uTywoY0wceDiN0Tx9ywePNQ9kNGO2rsJM4,992
+youdaoai-0.1.0.dist-info/RECORD,,
