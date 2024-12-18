@@ -1,0 +1,5 @@
+Metadata-Version: 2.1
+Name: axinite
+Version: 1.0.0
+Author-email: Jewels <jewels286@proton.me>
+Requires-Dist: astropy
