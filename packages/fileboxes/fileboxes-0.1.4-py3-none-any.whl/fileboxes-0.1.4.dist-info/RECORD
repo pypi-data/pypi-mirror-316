@@ -1,0 +1,9 @@
+fileboxes/__init__.py,sha256=1atv4123UAnR39hzefa5oRIBJxBMHlgfLhjFEx4-_AI,29
+fileboxes/custom_json_config/__init__.py,sha256=DsZ23nqM0gS-odekLNJ8TmLnHYwPxBb4LFFNK5J0Hx8,104
+fileboxes/custom_json_config/custom_json_decoder.py,sha256=-oRtXjf-tkGkOKPETGgPCXyBBs89uA4IdygRMfyNx6g,1524
+fileboxes/custom_json_config/custom_json_encoder.py,sha256=t7jxwcsMC01MwVEGE2Ml3sr6lMtv4s80Rh7ZfOnks8w,2195
+fileboxes/filebox.py,sha256=g8tYggbJcy4im8KHBkqQaJD5JaUa6pI4xcn-3NDdkWQ,11096
+fileboxes/zipio.py,sha256=JwmIh9OiBZgllynXiuI_yXPajrI73wdEkhCBZ5DFEgw,1683
+fileboxes-0.1.4.dist-info/METADATA,sha256=nyc75GOhI7ol_zjFxmQS5Dgq156xCPc6KakSj35nDso,1075
+fileboxes-0.1.4.dist-info/WHEEL,sha256=d2fvjOD7sXsVzChCqf0Ty0JbHKBaLYwDbGQDwQTnJ50,88
+fileboxes-0.1.4.dist-info/RECORD,,
