@@ -1,0 +1,11 @@
+mortal_build/__init__.py,sha256=8ORoFsvGjUBiam8fzo7WtgvjorgWVw875wtdYa2VnT4,702
+mortal_build/build_flask.pyd,sha256=kmB_jwjZu-ax-mwqFvQorRH3EVF5XRRKXmFlv_4YP5o,72704
+mortal_build/build_flask.so,sha256=O3Jg272JJVn3ta5Zy4aYSLJMa_KByyeOUvtdy9WrDrA,497248
+mortal_build/build_main.pyd,sha256=Xw4yEU1YD3Ds-XvB7wo9HrEaXgrXCtq1i_NtCGBUDqs,218112
+mortal_build/build_main.so,sha256=dC8Pp4mxXSBG4cOhElRoP6YIrRfmrvxO1vg17Klb-K0,1700448
+mortal_build/text.pyd,sha256=vAuWi2X_xVNkWqKi7z2RYcgUtPQiVLd1II-Rb1V9hlQ,23040
+mortal_build/text.so,sha256=APo7ZGm2UD-TLPPf-2NtlcZ2YAvXKTsZyZhmpbh-aGk,71752
+mortal_build-2.3.41.dist-info/METADATA,sha256=MSIRc13BsOgKYARjykaXfkynkC7KxEOwIGCWxzOrnLw,466
+mortal_build-2.3.41.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+mortal_build-2.3.41.dist-info/top_level.txt,sha256=VEKI_0-U5SRym6724CunGuA3-4AubY8kHaFYsBpxd6Q,13
+mortal_build-2.3.41.dist-info/RECORD,,
