@@ -1,0 +1,94 @@
+{
+    "footer": "XiaoqiangClub",
+    "logo": "http://217.142.251.127/h/img/xiaoqiangclub_logo.png",
+    "max_width": "3xl",
+    "title": "设置界面",
+    "个人信息": {
+        "gender": {
+            "label": "性别",
+            "options": [
+                "男",
+                "女"
+            ],
+            "order": 1,
+            "type": "radio",
+            "value": "男"
+        },
+        "douban": {
+            "help": "请输入豆瓣用户ID",
+            "help_link": "https://www.douban.com/people/fsf/",
+            "label": "豆瓣",
+            "order": 2,
+            "placeholder": "请输入豆瓣用户ID",
+            "type": "list",
+            "value": [
+                "56548956"
+            ]
+        }
+    },
+    "账户设置": {
+        "username": {
+            "label": "用户名",
+            "order": 3,
+            "placeholder": "请输入用户名",
+            "type": "input",
+            "value": "xiaoqiang"
+        },
+        "password": {
+            "label": "密码",
+            "order": 4,
+            "placeholder": "请输入密码",
+            "type": "password",
+            "value": "czq087405"
+        },
+        "hobbies": {
+            "label": "选择兴趣爱好",
+            "options": [
+                "阅读",
+                "旅行",
+                "运动",
+                "电影"
+            ],
+            "order": 5,
+            "type": "checkbox",
+            "value": [
+                "旅行",
+                "运动",
+                "电影"
+            ]
+        }
+    },
+    "系统设置": {
+        "language": {
+            "label": "语言选择",
+            "options": [
+                "简体中文",
+                "English",
+                "日本語"
+            ],
+            "order": 6,
+            "type": "select",
+            "value": "简体中文"
+        },
+        "theme": {
+            "label": "启用暗黑模式",
+            "order": 7,
+            "type": "switch",
+            "value": true
+        },
+        "birthday": {
+            "label": "选择生日",
+            "order": 8,
+            "type": "date",
+            "value": "2000-01-01"
+        },
+        "brightness": {
+            "label": "设置亮度",
+            "max": 100,
+            "min": 0,
+            "order": 9,
+            "type": "range",
+            "value": "15"
+        }
+    }
+}
