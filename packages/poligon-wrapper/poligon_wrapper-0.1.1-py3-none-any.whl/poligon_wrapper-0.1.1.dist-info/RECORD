@@ -1,0 +1,10 @@
+poligon_wrapper/__init__.py,sha256=c5YXO6r8qc1jQXWqateXttMSL5sSJDWNcUyor0CMjPQ,1963
+poligon_wrapper/dataloader_alltickers.py,sha256=TDKgZH8altTcQWELHPTtlmbGwCIvTQLKGPQG8UB3cos,2425
+poligon_wrapper/dataloader_stocks.py,sha256=A1TPxuoM1uOMd-EHxHFXRt_JY5MFl-6RJ1dodYU_rJk,8138
+poligon_wrapper/logging_config.py,sha256=9xs57mujY6MWbAEjkkgPD8aB3C6KlIdtxilbqjclIeM,506
+poligon_wrapper/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+poligon_wrapper/utils.py,sha256=5GTG3DmaQBHu0ikqcnhBGOx_sGHUlHrMoD82v1rVASc,5095
+poligon_wrapper-0.1.1.dist-info/METADATA,sha256=U5MKpm1UPSBwuTlEW7hMjuqoNttxIvdkZ22a-3thbR0,6265
+poligon_wrapper-0.1.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+poligon_wrapper-0.1.1.dist-info/licenses/LICENSE.txt,sha256=UnubXxbM52r51tgAQT-d_B95vo2-EdKNEDbjVRA5BNM,1093
+poligon_wrapper-0.1.1.dist-info/RECORD,,
