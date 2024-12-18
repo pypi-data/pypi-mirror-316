@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+neuronlp/__init__.py
+neuronlp.egg-info/PKG-INFO
+neuronlp.egg-info/SOURCES.txt
+neuronlp.egg-info/dependency_links.txt
+neuronlp.egg-info/requires.txt
+neuronlp.egg-info/top_level.txt
