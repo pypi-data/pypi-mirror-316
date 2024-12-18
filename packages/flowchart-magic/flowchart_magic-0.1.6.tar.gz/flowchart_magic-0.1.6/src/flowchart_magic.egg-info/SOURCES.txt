@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+pyproject.toml
+assets/example_jupyter.png
+assets/install_import.png
+src/flowchart_magic/__init__.py
+src/flowchart_magic/flowchart_magic.py
+src/flowchart_magic.egg-info/PKG-INFO
+src/flowchart_magic.egg-info/SOURCES.txt
+src/flowchart_magic.egg-info/dependency_links.txt
+src/flowchart_magic.egg-info/requires.txt
+src/flowchart_magic.egg-info/top_level.txt
