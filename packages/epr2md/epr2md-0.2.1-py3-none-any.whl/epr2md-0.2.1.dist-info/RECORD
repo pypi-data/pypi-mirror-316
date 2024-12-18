@@ -1,0 +1,11 @@
+epr2md/__init__.py,sha256=aQHAbBiZ-YQUuUzEe1mYS8BNEzB6w-N3hlRSpRagPG4,40
+epr2md/_version.py,sha256=8dvx_i2Pv3TZ-c2-W9M9BIspbYV7AfOSk89j5erudPE,27
+epr2md/epr2md.py,sha256=7PfyBorO8daIGY__aYX9z9rbi8-rzGTxG-JnZKx6lOA,2962
+epr2md/resources/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+epr2md/resources/loggingConfiguration.json,sha256=pdUnykAEWaht1wvEUuC7XQ9GwSqajeyflljo46L2ALQ,857
+epr2md-0.2.1.dist-info/LICENSE,sha256=DZak_2itbUtvHzD3E7GNUYSRK6jdOJ-GqncQ2weavLA,34523
+epr2md-0.2.1.dist-info/METADATA,sha256=hugb9ZhuNl0cg5llrym_dnII4j4KIeG3HgIayRtNXIg,3929
+epr2md-0.2.1.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+epr2md-0.2.1.dist-info/entry_points.txt,sha256=wXh0YHKWrgY0bG6FKkpeBGZ8NUbqbwIl__5q51KU79w,56
+epr2md-0.2.1.dist-info/top_level.txt,sha256=Uw652JWXv9mnO9RnApKkIr0I0xiji-fTmVRyrPTckEI,7
+epr2md-0.2.1.dist-info/RECORD,,
