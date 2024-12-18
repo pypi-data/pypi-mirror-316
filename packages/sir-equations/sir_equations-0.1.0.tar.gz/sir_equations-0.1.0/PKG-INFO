@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: sir-equations
+Version: 0.1.0
+Summary: Advanced epidemiological model combining SIR dynamics with social-psychological behavior patterns
+Author: Sai Ganesh Kolan
+Author-email: Sai Ganesh Kolan <vgreddy0128@gmail.com>
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: pandas
+
+# Epidemiological Model with Social-Psychological Behavior
+
+This package implements an advanced epidemiological model combining classical SIR dynamics with social-psychological behavior patterns (GAS theory) to analyze disease transmission.
+
+## Features
+- Classical SIR model implementation
+- Extended GAS model with behavioral states
+- Crowd effect modifications
+- Media influence integration
+- Quantitative analysis tools
+
+## Installation
+pip install epi-sir-gas
