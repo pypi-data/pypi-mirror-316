@@ -1,0 +1,10 @@
+major_system/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+major_system/major_system.py,sha256=RW6JhWaxsczLNenzL-HyshPAB1ITG7j26Ezr4rZkbIs,8397
+major_system/test_major_system.py,sha256=1gYECc3zNGeyOvMaYF4sfAjg5V0dsbMg9WBjKIjnj2o,7642
+major_system/cmu_phonetic_dictionary/cmudict-0.7b,sha256=IJqLTNJlAT6W9GWGMqmHgQOwxav2K1DU7zrhviJrKeQ,3716714
+major_system-2.3.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+major_system-2.3.0.dist-info/METADATA,sha256=YtSR_bNn-ZH01yj5JSkDH7uFANZMH68NKnhyl9S2YeM,350
+major_system-2.3.0.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+major_system-2.3.0.dist-info/entry_points.txt,sha256=BTYfr_H53c3R6hY1f93jmvlWBV2J54Ont3igfhVBTDo,63
+major_system-2.3.0.dist-info/top_level.txt,sha256=9diIQyjxrc1U0jim1oa8HRIaTsMH2jqXWB0eP6Tfaec,13
+major_system-2.3.0.dist-info/RECORD,,
