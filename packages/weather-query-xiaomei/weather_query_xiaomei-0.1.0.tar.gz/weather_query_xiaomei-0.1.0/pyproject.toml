@@ -1,0 +1,17 @@
+[project]
+name = "weather-query-xiaomei"
+version = "0.1.0"
+description = "query weather of different city for mt users"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [ "mcp>=1.1.2",]
+[[project.authors]]
+name = "yangming43"
+email = "yangming43@meituan.com"
+
+[build-system]
+requires = [ "hatchling",]
+build-backend = "hatchling.build"
+
+[project.scripts]
+weather-query-xiaomei = "weather_query_xiaomei:main"
