@@ -1,0 +1,3 @@
+[console_scripts]
+ateeth-todo-cli=ateeth_todo_cli.cli:app
+
