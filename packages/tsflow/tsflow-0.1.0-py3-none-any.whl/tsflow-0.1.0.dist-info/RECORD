@@ -1,0 +1,17 @@
+tsflow/__init__.py,sha256=L6zbQIZKsAP-Knhm6fBcQFPoVdIDuejxze60qX23jiw,21
+tsflow/chem.py,sha256=oHrg-7lfbrqTsDQq2VGbW4wpZGSXRaI_PhuaPZQSAV4,26062
+tsflow/mcd.py,sha256=6M7PvJaVOpvxR405SZ6XbqxH0gRXxg_UhbjyrjoTIHc,26960
+tsflow/run.py,sha256=UQyBuHOSeNRmZErsTqor3AQ4VbC9lxFpyJVCtqTAlHc,18127
+tsflow/Calculator/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tsflow/Calculator/gaussian.py,sha256=gYHu04LfGsxqiaSYs9agpbdrA07UG9d6-_apn9koxs8,22406
+tsflow/Calculator/orca.py,sha256=GwzokGd0zOIrseske67N5Rj1I6R-kt0lqHHp3XiDPzQ,15675
+tsflow/Calculator/template.py,sha256=Qo06n6gsIfBqBVvBn9CDegxkl5olcyJN4yOVfTETSpc,3562
+tsflow/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tsflow/utils/ic.py,sha256=IceS1KOXqYfoGzBqPf9NNw85Y63FnAqOwqM5uApeXCM,17257
+tsflow/utils/process.py,sha256=2Fk7AJgcdqGvNMHvldbj4Sj0XCOpi4x0WDjujmKo3lY,1442
+tsflow-0.1.0.dist-info/LICENSE,sha256=OuBRH7_0aQa4Y7DJclf0p2_T-w-e3cWvCko0buOJ6dA,1499
+tsflow-0.1.0.dist-info/METADATA,sha256=Yw03fVZ4c0K6sfgep0bNB3x8A8V0yXB9ZKvMrO3gqiA,559
+tsflow-0.1.0.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+tsflow-0.1.0.dist-info/entry_points.txt,sha256=9yhkOzUKyPw9Bog4yWEy3e0XHJlWd4umLlGEDmJN9V4,40
+tsflow-0.1.0.dist-info/top_level.txt,sha256=haS6jJDb1L_Lr6g2hHWmuRT9z9sFxs7DzteCZkpPf04,7
+tsflow-0.1.0.dist-info/RECORD,,
