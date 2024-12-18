@@ -1,0 +1,88 @@
+Metadata-Version: 2.1
+Name: wwwurf-project-generator
+Version: 0.1.0
+Summary: A tool for generating multi-package Python projects
+Home-page: https://worldwidewurf.io
+License: MIT
+Keywords: project,generator,poetry,package
+Author: WorldWideWurf
+Author-email: worldwidewurf@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: toml (>=0.10.2,<0.11.0)
+Project-URL: Repository, https://github.com/worldwidewurf-io/wwwurf-project-generator
+Description-Content-Type: text/markdown
+
+# WWWURF Project Generator
+
+A command-line tool for generating structured multi-package Python projects using Poetry.
+
+## Features
+
+- Creates a structured multi-package Python project
+- Generates package scaffolding with Poetry configuration
+- Includes testing setup with pytest
+- Automatic Git initialization
+- Management script for adding new packages
+
+## Installation
+
+```bash
+pip install wwwurf-project-generator
+```
+
+## Usage
+
+### Creating a new project
+
+```bash
+wwwurf-gen create my-project --packages core api database
+```
+
+### Adding a new package to an existing project
+
+```bash
+wwwurf-gen add-package new-package-name
+```
+
+## Project Structure
+
+The generated project will have the following structure:
+
+```
+my-project/
+├── main_app/
+│   ├── __init__.py
+│   └── main.py
+├── packages/
+│   ├── core/
+│   │   ├── core/
+│   │   │   ├── __init__.py
+│   │   │   └── main.py
+│   │   ├── tests/
+│   │   ├── pyproject.toml
+│   │   └── README.md
+│   └── [other-packages]/
+├── pyproject.toml
+├── README.md
+├── .gitignore
+└── manage.py
+```
+
+## License
+
+MIT License - see LICENSE file for details.
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## Author
+
+WorldWideWurf (worldwidewurf@gmail.com)

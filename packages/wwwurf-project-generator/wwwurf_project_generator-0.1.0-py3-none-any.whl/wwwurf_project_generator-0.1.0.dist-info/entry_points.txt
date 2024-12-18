@@ -1,0 +1,3 @@
+[console_scripts]
+wwwurf-gen=wwwurf_project_generator.cli:main
+
