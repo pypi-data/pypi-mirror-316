@@ -1,0 +1,2 @@
+pymongo
+duckduckgo_search
