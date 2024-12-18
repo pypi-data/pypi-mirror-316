@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: MyLabLibraryTAM1
+Version: 0.1.0
+Summary: Каастомная библиотека по второй лабораторной работе лог. програмирования
+Home-page: https://github.com/MitrofanovTimurAlexsandrovich/my_library 
+Author: Timur Mitrofanov
+Author-email: mitrofanov-t@bk.ru
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+
+# My Library
+
+Это чисто моя демонстрация навыков работы с выгрузкой библиотек для питона. Представленная библиотека является прототипом атомарного компилятора, который мало что умеет, но при переводе в библиотеку рабочких функций не потерял. Для проверки работы предлагаю проверить работу следующей программы
+
+
+
+## Installation
+
+Install it using pip:
+```bash
+pip install MyLabLibraryTAM
