@@ -1,0 +1,10 @@
+.gitignore
+LICENSE
+README.md
+setup.py
+confignest/__init__.py
+confignest/src.py
+confignest.egg-info/PKG-INFO
+confignest.egg-info/SOURCES.txt
+confignest.egg-info/dependency_links.txt
+confignest.egg-info/top_level.txt
