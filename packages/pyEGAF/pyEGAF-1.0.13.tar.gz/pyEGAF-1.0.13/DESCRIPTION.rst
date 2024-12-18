@@ -1,0 +1,9 @@
+
+
+======
+pyEGAF
+======
+
+This project is a Python package enabling interaction, manipulation, and analysis of thermal-neutron capture gamma-ray data from the Evaluated Gamma-ray Activation File (EGAF) library .  The EGAF library is a database of :math:`\gamma`-ray energies and their corresponding partial :math:`\gamma`-ray cross sections from thermal-neutron capture measurements carried out with a guided neutron beam at the Budapest Research Reactor for 245 isotopes encompassing measurements of natural elemental samples for targets from *Z* = 1-83, 90, and 92, except for Tc (*Z* = 43) and Pm (*Z* = 61).  The database comprises a total of 8172 primary :math:`\gamma` rays and 29605 secondary :math:`\gamma` rays (a total of 37777 :math:`\gamma` rays) associated with 12564 levels.  The (*n*, :math:`\gamma`) targets and corresponding residual compound nuclides relevant to the EGAF project are summarized in the schematic of the nuclear chart shown in the figure below.
+
+
