@@ -1,0 +1,3 @@
+[console_scripts]
+bbext = build_blender_extension:main
+build-blender-extension = build_blender_extension:main
