@@ -1,0 +1,2 @@
+[console_scripts]
+weather-query-xiaomei = weather_query_xiaomei:main
