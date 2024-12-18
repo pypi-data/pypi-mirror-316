@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+requirements.txt
+src/dotscript/__init__.py
+src/dotscript/dot.py
+src/dotscript/version.py
+src/dotscript.egg-info/PKG-INFO
+src/dotscript.egg-info/SOURCES.txt
+src/dotscript.egg-info/dependency_links.txt
+src/dotscript.egg-info/top_level.txt
+tests/test_hello_world.py
