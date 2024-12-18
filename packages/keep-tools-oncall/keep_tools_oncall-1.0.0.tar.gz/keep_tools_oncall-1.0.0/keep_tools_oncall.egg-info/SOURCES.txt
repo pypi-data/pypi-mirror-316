@@ -1,0 +1,10 @@
+LICENSE
+README.rst
+onCall.py
+setup.py
+keep_tools_oncall.egg-info/PKG-INFO
+keep_tools_oncall.egg-info/SOURCES.txt
+keep_tools_oncall.egg-info/dependency_links.txt
+keep_tools_oncall.egg-info/entry_points.txt
+keep_tools_oncall.egg-info/requires.txt
+keep_tools_oncall.egg-info/top_level.txt
