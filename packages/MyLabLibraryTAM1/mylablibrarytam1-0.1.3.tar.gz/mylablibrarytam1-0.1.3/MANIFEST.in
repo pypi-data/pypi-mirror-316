@@ -1,0 +1,7 @@
+# Включить все файлы тестов
+include tests/*
+
+# Включить README.md и другие важные файлы
+include README.md
+include setup.py
+include pyproject.toml
