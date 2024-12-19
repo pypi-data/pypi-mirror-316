@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: th2analytics
+Version: 0.0.1
+Summary: A Python package for interacting with the thaink2 analytics APIs
+Home-page: https://github.com/thaink2/th2analytics_py
+Author: Farid Azouaou
+Author-email: contact@thaink2.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+
+# th2analytics
+ 
