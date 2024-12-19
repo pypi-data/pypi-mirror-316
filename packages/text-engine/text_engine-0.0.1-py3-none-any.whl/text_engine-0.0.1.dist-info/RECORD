@@ -1,0 +1,11 @@
+text_engine/__init__.py,sha256=W9ol0GSqm3jjJ10m_WLrtLeA-vlCe7TXVVyCYwMvByQ,229
+text_engine/dialog.py,sha256=K7j0BVYlR4ZrNH11d0sMivByFNsjpRNy0wN0C_JmodI,807
+text_engine/engine.py,sha256=8xMukWmGvbADNSsWq_7q595yWdFXZkFED1qXmaCVWzE,9416
+text_engine/intents.py,sha256=ecC9Rd4BEZDimKB_fc19GtJO3TYBwqWBFnUxznWJF2o,7620
+text_engine/utils.py,sha256=uqfNYYTb3SpfpVZFalkpZWIJTiMr2er0LGmfDbAZlLg,2244
+text_engine/version.py,sha256=2AngvTQ2V0oxKc9NmDOM8rBEoiyaHuChugaM8i13Zu4,114
+text_engine-0.0.1.dist-info/LICENSE,sha256=L9IkPPf4uOHhxlxjI8VBEYeUmMLeee6ZGUszGcSkjsE,11347
+text_engine-0.0.1.dist-info/METADATA,sha256=cbpmgYfLyLNrveDEHC9aSr6qSgVeeKzneRfk5kHaakU,287
+text_engine-0.0.1.dist-info/WHEEL,sha256=tZoeGjtWxWRfdplE7E3d45VPlLNQnvbKiYnx7gwAy8A,92
+text_engine-0.0.1.dist-info/top_level.txt,sha256=lRYaVzhcn7uF2w_Cj1KWZZei3NGRdX2Do8a0zoffcgQ,12
+text_engine-0.0.1.dist-info/RECORD,,
