@@ -1,0 +1,3 @@
+[console_scripts]
+ruuuuuun.py = monitoring_system_report6.ruuuuuun.py:main
+
