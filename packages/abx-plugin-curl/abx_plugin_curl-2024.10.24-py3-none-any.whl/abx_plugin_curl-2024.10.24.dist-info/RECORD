@@ -1,0 +1,8 @@
+abx_plugin_curl/__init__.py,sha256=tbPRDfjcdxURJk0qsDJEKxHewyfMDIBfa3p64ythz2s,259
+abx_plugin_curl/binaries.py,sha256=yYZ7TtMwPX0yaVODTbMn6c0KhH-No6oGk2d7IIUI8gw,410
+abx_plugin_curl/config.py,sha256=YcHUiJRrhRDsb8S7Ii7vssDbBdWMCpLDmtV9bbEb0Z8,966
+abx_plugin_curl/headers.py,sha256=Yy1y3rxvyb7J0snBeO0Fxq39GhI_-QWLvmKw5azMqMg,2221
+abx_plugin_curl-2024.10.24.dist-info/METADATA,sha256=A54KHsVSPGbTb0_Sor_e-cu9qSsfzGZctrQPiDLJd_I,226
+abx_plugin_curl-2024.10.24.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+abx_plugin_curl-2024.10.24.dist-info/entry_points.txt,sha256=CVUNuYdoxr2zu72scg5Mo1D_I2m9rX4EUgfTngHwxQ8,40
+abx_plugin_curl-2024.10.24.dist-info/RECORD,,
