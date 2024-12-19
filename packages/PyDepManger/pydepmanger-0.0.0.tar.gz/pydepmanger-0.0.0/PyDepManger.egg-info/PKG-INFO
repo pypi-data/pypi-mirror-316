@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: PyDepManger
+Version: 0.0.0
+Summary: A small example package
+Author-email: Example Author <author@example.com>
+Project-URL: Homepage, https://github.com/abuawadd/PyDepManger
+Project-URL: Issues, https://github.com/abuawadd/PyDepManger/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: numpy==2.2.0
+Requires-Dist: pandas==2.2.3
+Requires-Dist: python-dateutil==2.9.0.post0
+Requires-Dist: pytz==2024.2
+Requires-Dist: scipy==1.14.1
+Requires-Dist: six==1.17.0
+Requires-Dist: tzdata==2024.2
+
+# Test

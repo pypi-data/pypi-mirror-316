@@ -1,0 +1,27 @@
+[project]
+name = "PyDepManger"
+authors = [
+  { name="Example Author", email="author@example.com" },
+]
+description = "A small example package"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+"numpy==2.2.0",
+"pandas==2.2.3",
+"python-dateutil==2.9.0.post0",
+"pytz==2024.2",
+"scipy==1.14.1",
+"six==1.17.0",
+"tzdata==2024.2",
+]
+
+dynamic = ["version"]
+
+[project.urls]
+Homepage = "https://github.com/abuawadd/PyDepManger"
+Issues = "https://github.com/abuawadd/PyDepManger/issues"
