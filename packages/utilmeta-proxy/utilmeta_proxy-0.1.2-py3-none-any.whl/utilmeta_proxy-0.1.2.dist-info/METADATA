@@ -1,0 +1,56 @@
+Metadata-Version: 2.3
+Name: utilmeta-proxy
+Version: 0.1.2
+Summary: A proxy service that connect API services in a internal network to UtilMeta cluster
+Project-URL: Homepage, https://utilmeta.com
+Project-URL: Documentation, https://docs.utilmeta.com/py/en
+Project-URL: Repository, https://github.com/utilmeta/utilmeta-proxy
+Author-email: "Xulin Zhou (voidZXL)" <zxl@utilmeta.com>
+License: Copyright (c) 2024 Xulin Zhou (周煦林)
+        
+        Licensed under the Apache License, Version 2.0 (the "License");
+        you may not use this file except in compliance with the License.
+        You may obtain a copy of the License at
+        
+            http://www.apache.org/licenses/LICENSE-2.0
+        
+        Unless required by applicable law or agreed to in writing, software
+        distributed under the License is distributed on an "AS IS" BASIS,
+        WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+        See the License for the specific language governing permissions and
+        limitations under the License.
+Keywords: UtilMeta,backend,cluster,proxy
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Topic :: Internet
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: HTTP Servers
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Typing :: Typed
+Requires-Python: >=3.8
+Requires-Dist: httpx>=0.25.2
+Requires-Dist: starlette>=0.27.0
+Requires-Dist: utilmeta>=2.7.0
+Description-Content-Type: text/markdown
+
+# UtilMeta Proxy
+
+A proxy service that connect API services in a internal network to UtilMeta cluster
+
