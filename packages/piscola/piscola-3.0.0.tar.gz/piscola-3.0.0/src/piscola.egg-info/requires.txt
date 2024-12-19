@@ -1,0 +1,14 @@
+numpy>=2.0.0
+pandas
+matplotlib
+peakutils
+requests
+sfdmap2
+extinction>=0.4.7
+astropy
+scipy
+jaxopt
+tinygp
+
+[:"linux" in sys_platform or "win" in sys_platform]
+jax
