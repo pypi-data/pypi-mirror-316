@@ -1,0 +1,14 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "rsma"
+version = "0.1.1"
+description = "Robotic State Management Architecture for Robotics Applications in Python"
+readme = "README.md"
+license = {text = "MIT License"}
+requires-python = ">=3.12"
+dependencies = [
+    "twine>=6.0.1",
+]
