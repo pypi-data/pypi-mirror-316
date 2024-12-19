@@ -1,0 +1,9 @@
+evocarshare/__init__.py,sha256=vq8BXmBgvJpInzxHTMfSGYdLxLKJQ-PN1IHACb59_94,262
+evocarshare/evo_api.py,sha256=NJrYRARtRvL3ZtFr6UBYIrWOf2MnR3sB3lrjYfJzGB0,3968
+evocarshare/exceptions.py,sha256=SVZjOedXcyWsR194AVfLELb8x3G3WSgIS6NrsB2WlWo,512
+evocarshare/types.py,sha256=1j-aIhdmtF4dM7ai4qcwCr9ia1MRIDJTpcvGUlA4NDI,3046
+evocarshare/typing.py,sha256=Ypt_ZcYnrFtvN-_kcJ1wsYLg4hsoWrJCQnhYKRgFPqA,646
+evocarshare-0.0.1.dist-info/LICENSE,sha256=mqKoQ1MhJfJTitOCE1lRJ8x5xkf5MD7A0c4ngnFVk0E,1062
+evocarshare-0.0.1.dist-info/METADATA,sha256=o5t-FuZ6Fq5yP8Y-RxgwbWfqIHRjIlh7Kb2tQoInc08,2716
+evocarshare-0.0.1.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+evocarshare-0.0.1.dist-info/RECORD,,
