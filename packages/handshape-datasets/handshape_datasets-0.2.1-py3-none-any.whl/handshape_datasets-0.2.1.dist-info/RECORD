@@ -1,0 +1,9 @@
+handshape_datasets/__init__.py,sha256=CW6U17kp0O2-qR_LtSfItHzj9opUKbxIdsjzQmhsJdQ,1585
+handshape_datasets/_config.py,sha256=i18G6qpjWE3IGWgmzHxkYXsHht_5Ckg-A6Ary2QVOrI,1464
+handshape_datasets/_dataset_info.py,sha256=nQrAH9D-mITyp1G4Lq3y_O2gPHuWziEKmXtRKIvGmfc,1827
+handshape_datasets/_dataset_loader.py,sha256=8kKYjx0MqZqS_31L5dAJ_ah33YbtNeHDvsEufiv_NIQ,5185
+handshape_datasets/base.py,sha256=PHU7QSAXJJnDtcO2vLul8D6vLEHLpvHblsrJi2x0TBg,4162
+handshape_datasets-0.2.1.dist-info/METADATA,sha256=AFsRn9ECcRKbk64a9p_7qNRjPhXedPyaQwTautQxpmo,6082
+handshape_datasets-0.2.1.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+handshape_datasets-0.2.1.dist-info/top_level.txt,sha256=yI-ZGmZLTf-badGReZMd3z0En7PrkLaFlCjTlwIYZq4,19
+handshape_datasets-0.2.1.dist-info/RECORD,,
