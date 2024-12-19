@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: CTKCalendar
+Version: 0.0.1
+Summary: A customized calendar to facilitate date selection in graphical interfaces.
+Home-page: https://github.com/ClaudioM1386/CTkWidgets
+Author: Claudio Morais
+Author-email: jc.morais86@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: customtkinter
+
+
+# CTkCalendar
+
+**CTkCalendar** is a Python library that extends the use of `customtkinter` to provide custom widgets like a calendar (`CTkCalendar`). It was designed to facilitate the creation of more modern and interactive graphical interfaces (GUIs).
+
+## Features
+
+- **CTkCalendar**: A customized calendar to facilitate date selection in graphical interfaces.
