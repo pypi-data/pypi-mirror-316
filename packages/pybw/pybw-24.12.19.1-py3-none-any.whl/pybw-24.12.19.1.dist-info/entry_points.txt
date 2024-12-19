@@ -1,0 +1,4 @@
+[console_scripts]
+ccnbmod = pybw.ccnb_mod.ccnb_mod:main
+convert_mp3 = pybw.convert.video_to_audio:execute_script
+
