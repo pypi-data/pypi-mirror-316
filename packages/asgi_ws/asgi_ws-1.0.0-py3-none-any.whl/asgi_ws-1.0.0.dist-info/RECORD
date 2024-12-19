@@ -1,0 +1,6 @@
+asgi_ws/__init__.py,sha256=BwZMMXYeuopyRLvrWAOyaBQK8D9dzrfRTgaUvjPO4b0,33
+asgi_ws/static/js/websockets.js,sha256=XSSX3tAqKof9XKregWv0wv5kv3pOxF7XV1k1XL7OJrc,1009
+asgi_ws/websockets.py,sha256=u7jQjLTWJT7eO97RqC7kJlM2Sw332Sh6GFlLu3ytSe4,3552
+asgi_ws-1.0.0.dist-info/METADATA,sha256=XCxZ2VYzsQFtfLMzDFiWYsy2Z3dR1auBKz1zcf--HEU,5662
+asgi_ws-1.0.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+asgi_ws-1.0.0.dist-info/RECORD,,
