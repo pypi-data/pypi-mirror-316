@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: fppclient
+Version: 0.1.0
+Summary: Asynchronous Python client for FPP.
+Home-page: https://github.com/zackbcom/fppclient
+License: MIT
+Keywords: fpp,api,async,client
+Author: Zack Baldwin
+Author-email: zack@zackb.com
+Maintainer: Zack Baldwin
+Maintainer-email: zack@zackb.com
+Requires-Python: >=3.11,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Framework :: AsyncIO
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Provides-Extra: cli
+Requires-Dist: aiohttp (>=3.0.0)
+Requires-Dist: awesomeversion (>=22.1.0)
+Requires-Dist: backoff (>=2.2.0)
+Requires-Dist: cachetools (>=4.0.0)
+Requires-Dist: mashumaro (>=3.13,<4.0)
+Requires-Dist: orjson (>=3.9.8)
+Requires-Dist: typer[all] (>=0.15.0,<0.16.0) ; extra == "cli"
+Requires-Dist: yarl (>=1.6.0)
+Requires-Dist: zeroconf[all] (>=0.136.0,<0.137.0) ; extra == "cli"
+Project-URL: Bug Tracker, https://github.com/zackbcom/fppclient/issues
+Project-URL: Changelog, https://github.com/zackbcom/fppclient/releases
+Project-URL: Documentation, https://github.com/zackbcom/fppclient
+Project-URL: Repository, https://github.com/zackbcom/fppclient
+Description-Content-Type: text/markdown
+
+# FPPClient
+Python Client to interface with FPP Api
+

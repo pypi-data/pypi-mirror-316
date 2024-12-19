@@ -1,0 +1,17 @@
+fppclient/__init__.py,sha256=UBF3AW7Zgq4iax9hl0zVIaFckDzUGv7xiNI6Q6bxEV8,509
+fppclient/cli/__init__.py,sha256=2cjrkiX8vD3luvQLEFWIdCsnJJcf7VTRxhRJGakWM6g,9105
+fppclient/cli/async_typer.py,sha256=uRKb_T82ky0lRyIOnI5RRSan5TcGwz9lKtpjNNpzikQ,6230
+fppclient/const.py,sha256=oKgrAZ1TxwFbUTB1QpWQd1ZjVXZef0abb_sPfGrGb00,42
+fppclient/endpoints.json,sha256=8eq-yDer2T-loTxHhb4cOwe2Al99y_zrIb6BY7MgXA0,63057
+fppclient/endpoints_fppd.json,sha256=Cgw1iVIQ3xZiXHznpDVqyXF70BaU6nhqN4I7-5uWNU0,17307
+fppclient/endpoints_system.json,sha256=94l9YrIKFYqVf45EByV-EXj59ci6XeMm0kwlH1kEDHc,8701
+fppclient/exceptions.py,sha256=8KaYOiEm7aJiWt4xpzvdZm-YHwH78nBzWZpu5V-XUCY,605
+fppclient/fpp.py,sha256=7yvNE8RumM0rBMlkmrbG4YEBLLSFZwQVCvKtEUazNXo,5482
+fppclient/models.py,sha256=zpf76DdrQ2PCLKNILbDPRQ9qtzQc0SjR3I3g6maKmTg,5930
+fppclient/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fppclient/utils.py,sha256=t1cz2KBJiQWxqbGyzJ3ZIkiNSq1vSLNvIH4OyRxC8rU,272
+fppclient-0.1.0.dist-info/LICENSE,sha256=Rr9psrYt777EGw0CcyEq37AiLou3-EX8TXq42UjqaMQ,1065
+fppclient-0.1.0.dist-info/METADATA,sha256=JlFvTUAVGi37sJ2csEc-83I-b-OYU6TAP4QYCm8eYBo,1571
+fppclient-0.1.0.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+fppclient-0.1.0.dist-info/entry_points.txt,sha256=VX6Nxvlu2ltTji3IAD3ylXY7_oOdvoNPyCckdGcc1ZU,41
+fppclient-0.1.0.dist-info/RECORD,,
