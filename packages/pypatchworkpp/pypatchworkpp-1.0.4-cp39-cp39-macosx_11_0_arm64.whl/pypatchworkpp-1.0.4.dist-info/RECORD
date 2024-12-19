@@ -1,0 +1,10 @@
+pypatchworkpp.cpython-39-darwin.so,sha256=3-QBrx842fckpZXhIEtmWadXwVsGwLjvJyulOMFhaw0,337584
+pypatchworkpp-1.0.4.dist-info/RECORD,,
+pypatchworkpp-1.0.4.dist-info/WHEEL,sha256=Qmm8uWPQTspuPJ9tUBLJdmqmcf0_LWu4zzBSlc_SSWo,112
+pypatchworkpp-1.0.4.dist-info/METADATA,sha256=2OJb-X1tEU3m3xO-vwSojlDtkhyNwVZkOS2V0QoKr7g,206
+include/patchwork/patchworkpp.h,sha256=7avFsu9NMJ6qZOXsY0pLT21i86V3ZBHMG1rz8pKWg4w,8530
+lib/libground_seg_cores.a,sha256=cgdkAvdkFZGl-HMXRnVjyFD6siBe6DdGpVicJ9mfuu8,211264
+lib/cmake/patchworkpp/patchworkppConfig.cmake,sha256=Jn9PkfSvgPgnv1HODNhhEClSFQ-Y5daBAdphiq7-6V8,5012
+lib/cmake/patchworkpp/patchworkppConfig-release.cmake,sha256=E3PwEQGtFJn8oefSWA_demVHPMVUmGIeqyRBf8_dHA0,938
+lib/cmake/patchworkpp/patchworkppTargets-release.cmake,sha256=E3PwEQGtFJn8oefSWA_demVHPMVUmGIeqyRBf8_dHA0,938
+lib/cmake/patchworkpp/patchworkppTargets.cmake,sha256=0g0iHsOgXVnmMoTXCnhrr4vbmB-VAzHANi_J2biv64A,5013
