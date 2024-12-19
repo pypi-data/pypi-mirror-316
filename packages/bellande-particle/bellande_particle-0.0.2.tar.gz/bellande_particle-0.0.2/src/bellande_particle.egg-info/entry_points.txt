@@ -1,0 +1,2 @@
+[console_scripts]
+bellande_particle_api = bellande_particle.bellande_particle_api:main
