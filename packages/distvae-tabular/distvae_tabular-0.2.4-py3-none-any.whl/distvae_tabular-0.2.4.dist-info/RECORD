@@ -1,0 +1,8 @@
+distvae_tabular/__init__.py,sha256=N5-p8dQB8uwuCMpS1ADLf_E6rvWovtRRp3vY9Cq2gw4,22
+distvae_tabular/dataset.py,sha256=uLo1bDqHkZpkkSRfNQqkrhXi4G3is-rnyhsgnhiPUI0,4613
+distvae_tabular/distvae.py,sha256=37j0DYPJN-Y7AGAE3rQzleyAdyrlhHZKdM7EPjBoS44,10466
+distvae_tabular/model.py,sha256=IHioiceXJkAIiVnlt9COVnCFnxCAUGJZFjZ46XkXhxE,5117
+distvae_tabular-0.2.4.dist-info/METADATA,sha256=7AQBlEOc7e2gtxkOAI8Lj227mw803PnXN2ysqbTLDss,3717
+distvae_tabular-0.2.4.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+distvae_tabular-0.2.4.dist-info/top_level.txt,sha256=cEXcI7WJVeH6z4mIuz6xYCGUALBnQNr8JpBudiIzI1o,16
+distvae_tabular-0.2.4.dist-info/RECORD,,
