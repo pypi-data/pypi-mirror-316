@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: etiopique-lorem-texts
+Version: 0.1.0
+Summary: A simple Lorem Ipsum generator for Amharic and English.
+Home-page: https://github.com/mitegab/etiopique_lorem_texts.git
+Author: mitegab
+Author-email: miteabebe60@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# etiopique_lorem_texts
+# Lorem Ipsum Generator (Amharic and English)
+
+A simple Python package to generate Lorem Ipsum text in both English and Amharic languages.
+
+## Installation
+
+```bash
+pip install etiopique-lorem-texts

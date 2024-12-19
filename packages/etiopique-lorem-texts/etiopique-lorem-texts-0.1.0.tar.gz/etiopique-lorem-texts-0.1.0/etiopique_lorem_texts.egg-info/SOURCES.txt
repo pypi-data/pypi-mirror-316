@@ -1,0 +1,12 @@
+README.md
+setup.py
+etiopique_lorem_texts/__init__.py
+etiopique_lorem_texts/main.py
+etiopique_lorem_texts.egg-info/PKG-INFO
+etiopique_lorem_texts.egg-info/SOURCES.txt
+etiopique_lorem_texts.egg-info/dependency_links.txt
+etiopique_lorem_texts.egg-info/entry_points.txt
+etiopique_lorem_texts.egg-info/top_level.txt
+etiopique_lorem_texts/text/__init__.py
+etiopique_lorem_texts/text/amharic.txt
+etiopique_lorem_texts/text/english.txt
