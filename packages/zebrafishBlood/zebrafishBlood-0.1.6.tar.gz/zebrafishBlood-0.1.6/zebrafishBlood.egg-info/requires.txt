@@ -1,0 +1,6 @@
+pytorch
+torchvision
+cudatoolkit
+numpy
+ultralytics
+opencv
