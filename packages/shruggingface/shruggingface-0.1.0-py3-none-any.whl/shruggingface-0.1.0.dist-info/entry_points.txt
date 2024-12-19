@@ -1,0 +1,3 @@
+[console_scripts]
+shruggingface=shruggingface.cli:cli
+

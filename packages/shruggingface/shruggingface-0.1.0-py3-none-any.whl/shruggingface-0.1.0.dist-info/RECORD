@@ -1,0 +1,11 @@
+shruggingface/__init__.py,sha256=BYCD5sj7sywyEzW-kG4RXQyKVcC6t3xPR1LKkHV0bQk,444
+shruggingface/__main__.py,sha256=8hDtWlaFZK24KhfNq_ZKgtXqYHsDQDetukOCMlsbW0Q,59
+shruggingface/cli.py,sha256=3wdkPsGMSEtWC9cpqYGlxI0w8HcJ3xx3Jp61yJUGH9o,3051
+shruggingface/env.py,sha256=bub13WL7gDtgCr29L4ak2v0k6WuOj_T2JbKZqN3kNT8,1201
+shruggingface/pack.py,sha256=1hNOxSuxBpSDsi8sYX5K794PtFGXBx0Rbk3fgI1TIgw,967
+shruggingface/pull.py,sha256=pGGyA3rPXaoUMZQqpuk6lc9LjBy-D33XIl4IwfTDzF8,1339
+shruggingface/push.py,sha256=wQOu79yL3rhdF8Jd7y-971dgFFt9hHLQm0n4sgod-Pw,2414
+shruggingface-0.1.0.dist-info/METADATA,sha256=ATYIRHiSvpViW9TGyqgDgjlDYsSCCw0CLdrFvS7uDwo,2741
+shruggingface-0.1.0.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+shruggingface-0.1.0.dist-info/entry_points.txt,sha256=999J3zYwXJiuyap8VyaKB-NBJeIhkaf3-Y7b3o9KhGM,55
+shruggingface-0.1.0.dist-info/RECORD,,
