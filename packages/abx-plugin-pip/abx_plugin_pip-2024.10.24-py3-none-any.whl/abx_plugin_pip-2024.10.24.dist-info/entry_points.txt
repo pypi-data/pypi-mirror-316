@@ -1,0 +1,2 @@
+[abx]
+abx_plugin_pip = abx_plugin_pip

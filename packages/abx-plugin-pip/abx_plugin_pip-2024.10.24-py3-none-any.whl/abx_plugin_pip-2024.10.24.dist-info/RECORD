@@ -1,0 +1,9 @@
+abx_plugin_pip/.plugin_order,sha256=5N-JHEhNeruYXa31OfoYg6ZG2rYzevXK5BWcWHtwUMw,4
+abx_plugin_pip/__init__.py,sha256=mLKOaCs7lJ7fhUgb3hNA_dfGTiblDKsl0frtTuzGnDE,865
+abx_plugin_pip/binaries.py,sha256=x5yWorvaNZotTSpQxLpFR8BQsMs0V2SZ7S3xH4V2kdA,6436
+abx_plugin_pip/binproviders.py,sha256=-eYLH1luqdd8azNw212MRnvg_yLUObS8OlMiu8vkR5g,3170
+abx_plugin_pip/config.py,sha256=zr5Uq8yaGnUj-D0csK5JQrynG8RMnbDt91TfpTKP97s,422
+abx_plugin_pip-2024.10.24.dist-info/METADATA,sha256=0D0hlC_G30vCvBK3G3zpqJKg79wA4qHuKZOkJ8zSJN8,343
+abx_plugin_pip-2024.10.24.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+abx_plugin_pip-2024.10.24.dist-info/entry_points.txt,sha256=xMjKMygqisCfcTVottvQb6NjapxZl_qyZ_fTaNluhn8,38
+abx_plugin_pip-2024.10.24.dist-info/RECORD,,
