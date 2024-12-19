@@ -1,0 +1,8 @@
+MANIFEST.in
+setup.py
+test_hum/__init__.py
+test_hum/server.py
+test_human_object.egg-info/PKG-INFO
+test_human_object.egg-info/SOURCES.txt
+test_human_object.egg-info/dependency_links.txt
+test_human_object.egg-info/top_level.txt
