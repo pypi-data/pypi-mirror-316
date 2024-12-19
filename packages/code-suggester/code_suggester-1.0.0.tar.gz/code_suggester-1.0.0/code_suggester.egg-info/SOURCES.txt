@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+meta.py
+setup.py
+zip.zip
+code_suggester.egg-info/PKG-INFO
+code_suggester.egg-info/SOURCES.txt
+code_suggester.egg-info/dependency_links.txt
+code_suggester.egg-info/not-zip-safe
+code_suggester.egg-info/top_level.txt
+resources/image1.png
