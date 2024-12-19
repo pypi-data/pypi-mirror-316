@@ -1,0 +1,13 @@
+sphinxcontrib/requirement/__init__.py,sha256=kZzMi-ot-OaReI7LBtV3fTPJaMLi_sygJulniUMJU_w,94
+sphinxcontrib/requirement/req.css,sha256=zAFiqu_M9G2m0u1SPkwm435xng-oQvpbBVhzhIYs2P8,130
+sphinxcontrib/requirement/req.html.jinja2,sha256=UF11dUruPMqdSNjSAHpFPtREc3Mh7MmBFUN_R0rP8jY,259
+sphinxcontrib/requirement/req.latex.jinja2,sha256=MCqW94lKO-K15hj4wzPAVFsQp5sxA7ZetVFZwnsshNs,127
+sphinxcontrib/requirement/req.preamble,sha256=wX6g-018uRpRqOcQnr_nXFe6TG_39R4zJ4RtvfYH3UA,578
+sphinxcontrib/requirement/req.py,sha256=du6KvmbiyDcB2XigBqzfhIX3Xe88BywvoAUEbZTsxQc,27249
+sphinxcontrib/requirement/req.rst.jinja2,sha256=9TIW-aLB9jv2Dgn3TA-EgwvafK2wQhh2VdlSWg4i05E,369
+sphinxcontrib/requirement/reqlist.rst.jinja2,sha256=RWSMgzi9S8NCBU5jqP3LcZ7UcSGWUt4vwo4KJ3LjapI,330
+sc_req-1.0.1.dist-info/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+sc_req-1.0.1.dist-info/METADATA,sha256=ToKXVryTzF2E256bvlBduVkVt8Fkj7QMQO64mF3n128,1012
+sc_req-1.0.1.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+sc_req-1.0.1.dist-info/top_level.txt,sha256=VJrV3_vaiKQVgVpR0I1iecxoO0drzGu-M0j40PVP2QQ,14
+sc_req-1.0.1.dist-info/RECORD,,
