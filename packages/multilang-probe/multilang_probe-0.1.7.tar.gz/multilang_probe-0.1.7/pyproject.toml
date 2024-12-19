@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "multilang-probe"
+version = "0.1.7"
+description = "A Python package for analyzing multilingual text."
+authors = [
+  { name = "Florian Cafiero", email = "florian.cafiero@chartes.psl.eu" }
+]
+license = { text = "MIT" }
+readme = { file = "README.md", content-type = "text/markdown" }
+classifiers = [
+  "Programming Language :: Python :: 3"
+]
+dependencies = [
+    "fasttext>=0.8.20",  # Allow any version beyond 0.8.20
+    "pybind11",          # No strict version unless required
+    "regex"              # Allow latest versions
+]
