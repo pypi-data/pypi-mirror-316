@@ -1,0 +1,13 @@
+mopsy/__init__.py,sha256=OHeCjEQFfOk1RKoGbLm0UVPIUR0MgX9tzpagewONgcs,701
+mopsy/adders.py,sha256=y0bDneWGS-wejy9mB1c0ylT1ctX2_DaC6Vs4ffvvqQo,2553
+mopsy/checkutils.py,sha256=OQYyxjChff9erQjA5RKYoDNSuJaxeZGEe0x3Tvh2PvM,496
+mopsy/helpers.py,sha256=ssa414UzqswUYL53_k9OMuNTsViE0U-2o2KC6o7wocw,5425
+mopsy/mops.py,sha256=9F9x33gRbxFTaDvnTyGh2m717slH6coI3SSIopHjzK4,4462
+mopsy/nops.py,sha256=yTkSec4JbA8Z4KM7qYQjK4S7kK-CumDM5ctPljmbB7A,1277
+mopsy/sops.py,sha256=iS4V45IgrDqOFsNAJfiTkMZr5wCwGiINeMb8kjpxFXo,7639
+mopsy/utils.py,sha256=o7BRO6dciLmEPvIQGSLJ45m8mkClMhLd0ySO5c76L9c,943
+mopsy-0.3.0.dist-info/LICENSE.txt,sha256=pkwgQ8WMTR1-Qa0qwIaBf5I1-8OGN1B20E_eeDg-bqc,1082
+mopsy-0.3.0.dist-info/METADATA,sha256=ooi8YvC4gk60kHxy5tM4O1Rxo4uJy5Qgahan-ARTJ7o,2111
+mopsy-0.3.0.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+mopsy-0.3.0.dist-info/top_level.txt,sha256=C_F1p6rM8Bko82G36m3D3ZrlCI-Cyk7WNc38MchRY2o,6
+mopsy-0.3.0.dist-info/RECORD,,
