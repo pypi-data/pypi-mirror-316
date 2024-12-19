@@ -1,0 +1,30 @@
+# pyproject.toml
+
+[build-system]
+requires      = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "atlaslb"
+version = "1.0.1"
+description = "Atlas - A reverse proxy software load balancer for Django apps."
+readme = "docs/README.md"
+authors = [{ name = "Pranshu Gupta", email = "pranshug258@outlook.com" }]
+license = { file = "LICENSE" }
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+keywords = ["load balancer", "slb", "reverse proxy", "django"]
+dependencies = [
+    "Django>=3.0",
+    "aiohttp"
+]
+requires-python = ">=3.9"
+
+[project.optional-dependencies]
+dev = []
+
+[project.urls]
+Homepage = "https://pranshug.com/atlas/"
