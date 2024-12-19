@@ -1,0 +1,2 @@
+[console_scripts]
+derive-drift = superlimo.derive_drift:main
