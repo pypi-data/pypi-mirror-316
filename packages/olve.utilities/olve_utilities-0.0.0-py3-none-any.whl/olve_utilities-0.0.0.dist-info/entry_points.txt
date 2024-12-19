@@ -1,0 +1,3 @@
+[console_scripts]
+gcm = gcm.gcm:gcm
+version = version.__main__:app
