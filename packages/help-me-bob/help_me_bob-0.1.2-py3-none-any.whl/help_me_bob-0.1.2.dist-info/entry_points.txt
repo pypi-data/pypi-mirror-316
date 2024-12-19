@@ -1,0 +1,2 @@
+[console_scripts]
+help-me-bob = help_me_bob.__main__:main
