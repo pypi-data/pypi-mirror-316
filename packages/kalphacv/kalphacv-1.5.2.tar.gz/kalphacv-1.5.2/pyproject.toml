@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kalphacv"
+version = "1.5.2"
+authors = [
+    { name="David Tschirschwitz", email="david.tschirschwitz@uni-weimar.de" }
+]
+description = "Package to calculate inter annotator agreement based on krippendorff's alpha for computer vision tasks"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    'numpy',
+    'scipy',
+    'krippendorff',
+    "tqdm",
+    "shapely"
+]
+[project.urls]
+Github = "https://github.com/Madave94/kalphacv"

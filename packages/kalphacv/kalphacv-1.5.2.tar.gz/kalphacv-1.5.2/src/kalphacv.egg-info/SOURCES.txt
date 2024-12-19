@@ -1,0 +1,17 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.py
+src/kalphacv/__init__.py
+src/kalphacv/calculate_iaa.py
+src/kalphacv/csv_data.py
+src/kalphacv/hungarian_matching.py
+src/kalphacv/iou.py
+src/kalphacv/krippendorff_alpha.py
+src/kalphacv/pre_processing.py
+src/kalphacv/reliability_data.py
+src/kalphacv.egg-info/PKG-INFO
+src/kalphacv.egg-info/SOURCES.txt
+src/kalphacv.egg-info/dependency_links.txt
+src/kalphacv.egg-info/requires.txt
+src/kalphacv.egg-info/top_level.txt
