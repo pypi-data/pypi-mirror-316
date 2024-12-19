@@ -1,0 +1,24 @@
+Metadata-Version: 2.4
+Name: cytosummarynet
+Version: 0.0.3
+Summary: Capturing cell heterogeneity in representations of cell populations for image-based profiling using contrastive learning
+Author-email: Shantanu Singh <shsingh@broadinstitute.org>
+Requires-Python: >=3.10
+Requires-Dist: numpy>=2.2.0
+Requires-Dist: pandas>=2.2.3
+Requires-Dist: pytorch-metric-learning>=2.8.1
+Requires-Dist: torch>=2.5.1
+Requires-Dist: tqdm>=4.67.1
+Description-Content-Type: text/markdown
+
+# CytoSummaryNet
+
+A PyTorch-based deep learning library for learning an optimal way to aggregate single-cell features into population-level profiles.
+
+
+## Installation
+
+```bash
+pip install cytosummarynet
+```
+
