@@ -1,0 +1,10 @@
+hiredis
+aioredis
+orjson
+pytz
+motor
+bson
+aiofiles
+aiohttp
+aiodns
+Brotli

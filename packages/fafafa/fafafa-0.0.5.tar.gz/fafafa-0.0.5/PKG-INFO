@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: fafafa
+Version: 0.0.5
+Home-page: https://gitee.com/muxiaofei/fafafa
+Author: muxiaofei
+Author-email: muxiaofei@gmail.com
+Keywords: fafafa
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/x-rst
+Requires-Dist: hiredis
+Requires-Dist: aioredis
+Requires-Dist: orjson
+Requires-Dist: pytz
+Requires-Dist: motor
+Requires-Dist: bson
+Requires-Dist: aiofiles
+Requires-Dist: aiohttp
+Requires-Dist: aiodns
+Requires-Dist: Brotli
