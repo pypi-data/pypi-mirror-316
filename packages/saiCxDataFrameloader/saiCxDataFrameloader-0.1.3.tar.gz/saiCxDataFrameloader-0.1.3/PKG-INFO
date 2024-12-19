@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: saiCxDataFrameloader
+Version: 0.1.3
+Summary: A package for loading data frames for cx data files
+Home-page: https://github.com/amitgupta7/base-saiCxDataFrameloader
+Author: Amit Gupta
+Author-email: amit.gupta@securiti.ai
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# base-saiCxDataFrameloader
+
+A package for loading data frames for cx data files.
+
+## Installation
+
+You can install the package using pip:
+
+```bash
+pip install base-saiCxDataFrameloader
+```
+
+## Usage
+
+```
+import base_saiCxDataFrameloader
+
+# Example usage
+```
+
+## Contributing
+Contributions are welcome! Please open an issue or submit a pull request.
+

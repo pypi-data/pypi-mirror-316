@@ -1,0 +1,7 @@
+README.md
+setup.py
+saiCxDataFrameloader.egg-info/PKG-INFO
+saiCxDataFrameloader.egg-info/SOURCES.txt
+saiCxDataFrameloader.egg-info/dependency_links.txt
+saiCxDataFrameloader.egg-info/requires.txt
+saiCxDataFrameloader.egg-info/top_level.txt
