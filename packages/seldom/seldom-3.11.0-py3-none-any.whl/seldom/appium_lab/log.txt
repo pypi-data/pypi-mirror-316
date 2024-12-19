@@ -1,0 +1,11 @@
+2024-12-18 02:07:18:073 [Appium] Welcome to Appium v2.11.3
+2024-12-18 02:07:18:076 [Appium] Non-default server args:
+2024-12-18 02:07:18:078 [Appium] { address: '127.0.0.1', allowCors: true }
+2024-12-18 02:07:18:078 [Appium] The autodetected Appium home path: C:\Users\fnngj\.appium
+2024-12-18 02:07:18:079 [Appium] Attempting to load driver uiautomator2...
+2024-12-18 02:07:18:080 [Appium] Attempting to load driver espresso...
+2024-12-18 02:07:18:083 [Appium] Requiring driver at C:\Users\fnngj\.appium\node_modules\appium-uiautomator2-driver\build\index.js
+2024-12-18 02:07:18:087 [Appium] Requiring driver at C:\Users\fnngj\.appium\node_modules\appium-espresso-driver\build\index.js
+2024-12-18 02:07:19:872 [Appium] AndroidUiautomator2Driver has been successfully loaded in 1.793s
+2024-12-18 02:07:19:873 [Appium] EspressoDriver has been successfully loaded in 1.793s
+2024-12-18 02:07:19:940 [HTTP] Could not start REST http interface listener. The requested port may already be in use. Please make sure there is no other instance of this server running already.
