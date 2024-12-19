@@ -1,0 +1,168 @@
+{% extends "admin/base_site.html" %}
+{% load i18n %}
+
+{% block userlinks %}
+<div style="position: relative; display: inline-block;">
+    <!-- Button to toggle dropdown -->
+    <button id="language-toggle"
+        style="border: none; background: transparent; cursor: pointer; display: flex; align-items: center; padding: 5px; border-radius: 4px; transition: background-color 0.2s ease;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-translate"
+            viewBox="0 0 16 16">
+            <path
+                d="M4.545 6.714 4.11 8H3l1.862-5h1.284L8 8H6.833l-.435-1.286zm1.634-.736L5.5 3.956h-.049l-.679 2.022z" />
+            <path
+                d="M0 2a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v3h3a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-3H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zm7.138 9.995q.289.451.63.846c-.748.575-1.673 1.001-2.768 1.292.178.217.451.635.555.867 1.125-.359 2.08-.844 2.886-1.494.777.665 1.739 1.165 2.93 1.472.133-.254.414-.673.629-.89-1.125-.253-2.057-.694-2.82-1.284.681-.747 1.222-1.651 1.621-2.757H14V8h-3v1.047h.765c-.318.844-.74 1.546-1.272 2.13a6 6 0 0 1-.415-.492 2 2 0 0 1-.94.31" />
+        </svg>
+    </button>
+    <!-- Dropdown menu -->
+    <ul id="language-dropdown"
+        style="display: none; position: absolute; margin: 0; padding: 0; list-style: none; background-color: var(--form-bg); border: 1px solid var(--form-border-color); z-index: 1000; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); border-radius: 6px; min-width: 250px; max-height: 300px; overflow-y: auto;">
+        <!-- Search box -->
+        <li style="padding: 10px 20px 5px 10px;">
+            <input id="language-search" type="text" placeholder="{% trans 'Search language' %}..."
+                style="width: 100%; padding: 5px; border: 1px solid var(--form-border-color); border-radius: 4px; font-size: 14px;">
+        </li>
+        <!-- Current language -->
+        {% get_current_language as LANGUAGE_CODE %}
+        {% get_language_info for LANGUAGE_CODE as current_language %}
+        <li class="language-option selected" style="padding: 10px 16px; font-weight: bold; cursor: pointer; font-size: 14px; background-color: var(--hover-bg);">
+            {{ current_language.name_local }} ({{ current_language.code }}) <span
+                style="float: right; font-size: 12px; color: var(--primary-text);">✓</span>
+        </li>
+        <!-- Language options -->
+        {% get_available_languages as LANGUAGES %}
+        {% get_language_info_list for LANGUAGES as languages %}
+        {% for language in languages %}
+        {% if language.code != LANGUAGE_CODE %}
+        <li class="language-option" data-lang="{{ language.code }}"
+            style="padding: 10px 16px; cursor: pointer; font-size: 14px; color: var(--primary-text); background-color: var(--form-bg); transition: background-color 0.2s ease;">
+            {{ language.name_local }} ({{ language.code }})
+        </li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+</div>
+<form id="language-form" action="{% url 'set_language' %}" method="post" style="display: none;">
+    {% csrf_token %}
+    <input name="next" type="hidden" value="{{ request.get_full_path }}">
+    <input name="language" id="language-input" type="hidden" value="">
+</form>
+{{ block.super }}
+<script>
+    // Utility function to toggle visibility
+    const toggleVisibility = (element) => {
+        const isHidden = element.style.display === 'none' || element.style.display === '';
+        element.style.display = isHidden ? 'block' : 'none';
+    };
+
+    // Utility function to hide an element
+    const hideElement = (element) => {
+        element.style.display = 'none';
+    };
+
+    // Initialize language dropdown functionality
+    const initLanguageDropdown = () => {
+        // Cache DOM elements
+        const toggleButton = document.getElementById('language-toggle');
+        const dropdown = document.getElementById('language-dropdown');
+        const languageForm = document.getElementById('language-form');
+        const languageInput = document.getElementById('language-input');
+        const searchInput = document.getElementById('language-search');
+
+        // Ensure required elements exist
+        if (!toggleButton || !dropdown || !languageForm || !languageInput || !searchInput) {
+            console.error('Missing required DOM elements for language dropdown initialization.');
+            return;
+        }
+
+        // Toggle dropdown visibility on button click
+        toggleButton.addEventListener('click', (e) => {
+            e.stopPropagation();
+            toggleVisibility(dropdown);
+        });
+
+        // Prevent dropdown from closing when clicking inside it
+        dropdown.addEventListener('click', (e) => e.stopPropagation());
+
+        // Close dropdown when clicking outside
+        document.addEventListener('click', () => hideElement(dropdown));
+
+        // Handle language selection
+        const languageOptions = document.querySelectorAll('.language-option');
+        languageOptions.forEach(option => {
+            option.addEventListener('click', () => {
+                const selectedLang = option.getAttribute('data-lang');
+                if (selectedLang) {
+                    languageInput.value = selectedLang;
+                    languageForm.submit();
+                }
+            });
+        });
+
+        // Filter language options based on search input
+        searchInput.addEventListener('input', () => {
+            const filter = searchInput.value.toLowerCase();
+            languageOptions.forEach(option => {
+                const text = option.textContent || option.innerText;
+                option.style.display = text.toLowerCase().includes(filter) ? '' : 'none';
+            });
+        });
+    };
+
+    // Initialize the dropdown when the DOM is fully loaded
+    document.addEventListener('DOMContentLoaded', () => {
+        initLanguageDropdown();
+    });
+</script>
+<style>
+    /* Light and Dark mode styles */
+    :root {
+        --form-bg: #ffffff;
+        --form-border-color: #ddd;
+        --primary-text: #000;
+        --hover-bg: #f5f5f5;
+    }
+
+    [data-theme="dark"] {
+        --form-bg: #2c2c2c;
+        --form-border-color: #555;
+        --primary-text: #f5f5f5;
+        --hover-bg: #3a3a3a;
+    }
+
+    .language-option.selected {
+        font-weight: bold;
+        background-color: var(--hover-bg);
+    }
+
+    .language-option.selected span {
+        color: var(--primary-text);
+    }
+
+    #language-dropdown li:hover {
+        background-color: var(--hover-bg);
+    }
+
+    #language-toggle:hover {
+        background-color: var(--hover-bg);
+    }
+
+    #language-dropdown {
+        animation: fadeIn 0.2s ease-out;
+        text-align: left;
+        color: var(--primary-text);
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+</style>
+{% endblock %}
