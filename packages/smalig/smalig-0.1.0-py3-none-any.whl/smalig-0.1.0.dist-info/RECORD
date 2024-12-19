@@ -1,0 +1,11 @@
+smalig/__init__.py,sha256=s8lnEfwowkYvnfkdHdQK6dPf1xbePYKBFpbJuF4cQFE,166
+smalig/__main__.py,sha256=d1P1GxLxflLkKx2-g2RTwG9msT3_yWIQi0QGCauE-hc,1409
+smalig/grammar.yaml,sha256=iNtkJTmf6otYULZnNubG_tNjCtk_5E6lCMFofvDOAHI,5799
+smalig/cli/app.py,sha256=_OmEsj_ngtopL_fOaSVaA9d6olEHqs-v_gec86aNFJo,3981
+smalig/utils/__init__.py,sha256=xsa9OBn3hOIDPQ9V-qLjc3t9n7SKa8JxmaTTpBNml8I,4297
+smalig-0.1.0.dist-info/LICENSE,sha256=wPNtMauHLecwUc9SpK0cEE3X8etKga-noCVxKk5jrZE,1064
+smalig-0.1.0.dist-info/METADATA,sha256=hpccDvzR13n-tRsABV-hQS0QESCPD_geaKJJgwCs7EY,6999
+smalig-0.1.0.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+smalig-0.1.0.dist-info/entry_points.txt,sha256=LfVgB6HTSCVrGNcC45zX_9X64udpASVUHRYZJbcKRC4,47
+smalig-0.1.0.dist-info/top_level.txt,sha256=cg-ws7uYLO6vmbBjT7lGuMlDXWHnsKwRLviOI8uE5ak,7
+smalig-0.1.0.dist-info/RECORD,,
