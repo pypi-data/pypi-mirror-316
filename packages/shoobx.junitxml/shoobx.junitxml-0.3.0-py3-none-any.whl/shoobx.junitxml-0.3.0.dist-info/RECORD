@@ -1,0 +1,10 @@
+shoobx/__init__.py,sha256=1-1Q_iOg7ayAanNN3OALLiKrXCZnkJiEWzYMkPd_aGQ,63
+shoobx/junitxml/__init__.py,sha256=7_6GsPFhnQr5jB1eW6-Ipq6ThaRFSUw3C_IJDFLdkhk,17
+shoobx/junitxml/feature.py,sha256=FXG0sYrsMZLEzYtmkAV5Xh_O1G9atq_b5oY-GbiNvzs,1450
+shoobx/junitxml/formatter.py,sha256=JRjtLM8owY2Y8e3ApeFVg5II5YdKDcLVM5CHcH2InK4,11978
+shoobx/junitxml/tests/__init__.py,sha256=kZld9hAwZKsWJcPEwCtTJPjkO9rCnyRtfK-2JheqTbI,18
+shoobx/junitxml/tests/test_formatter.py,sha256=j2TgsbvV3qN2R33zSq8bda3xR9503LiONDT3Uaa-6zI,4349
+shoobx.junitxml-0.3.0.dist-info/METADATA,sha256=43v2GELMMRJQoQrzbbFhCbinQbKuWjnUJ0sEiYX-qZ8,4114
+shoobx.junitxml-0.3.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+shoobx.junitxml-0.3.0.dist-info/top_level.txt,sha256=unUwga_5N1wqwKQ1reTxyNxAC9FMwQplWMPTqygZ4r4,7
+shoobx.junitxml-0.3.0.dist-info/RECORD,,
