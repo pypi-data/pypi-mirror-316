@@ -1,0 +1,109 @@
+Metadata-Version: 2.1
+Name: subbrute
+Version: 1.0.0
+Summary: A Python library for brute-forcing subdomains using a wordlist.
+Home-page: https://github.com/ByteBreach/subbrute
+Author: MrFidal
+Author-email: mrfidal@proton.me
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: requests >=2.0.0
+
+# SubBrute
+
+**SubBrute** is a Python library for brute-forcing subdomains of a domain using a wordlist. It allows users to find subdomains programmatically and save results with ease.
+
+---
+
+## Features
+
+- Scan for subdomains using a wordlist.
+- Save discovered subdomains to a file.
+- Customize timeouts for HTTP requests.
+- Flexible and programmatic usage.
+
+---
+
+## Installation
+
+Install **SubBrute** using pip:
+
+```bash
+pip install subbrute
+```
+
+---
+
+## Usage
+
+### Example Script
+
+```python
+import subbrute
+
+# Specify the domain and wordlist
+domain = "example.com"
+wordlist = "list.txt"
+
+# Scan for subdomains
+subdomains = subbrute.scan(domain, wordlist)
+
+# Save results to a file
+with open("output.txt", "w") as file:
+    for subdomain in subdomains:
+        file.write(f"{subdomain}\n")
+
+# Print each subdomain found
+for subdomain in subdomains:
+    print("Found subdomain:", subdomain)
+```
+
+---
+
+### API Reference
+
+#### **`scan(domain, wordlist_path, timeout=3)`**
+
+**Parameters:**
+- `domain` *(str)*: The target domain to scan for subdomains.
+- `wordlist_path` *(str)*: Path to the wordlist file containing potential subdomains.
+- `timeout` *(int)*: Optional timeout for HTTP requests (default is 3 seconds).
+
+**Returns:**
+- `list`: A list of discovered subdomains.
+
+---
+
+### Wordlist
+
+You can use your custom wordlist. A default wordlist is included in the package. Example wordlist format:
+
+```
+www
+api
+mail
+blog
+test
+```
+
+---
+
+## Contributing
+
+Contributions are welcome! Feel free to fork the repository and submit a pull request.
+
+---
+
+## License
+
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+---
+
+## Author
+
+Developed by MrFidal.
+
