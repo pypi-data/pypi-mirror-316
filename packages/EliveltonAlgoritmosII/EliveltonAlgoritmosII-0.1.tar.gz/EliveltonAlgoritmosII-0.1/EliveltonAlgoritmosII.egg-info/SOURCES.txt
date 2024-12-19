@@ -1,0 +1,10 @@
+README.md
+setup.py
+Elivelton/__init__.py
+Elivelton/multiplicacao_strassen.py
+Elivelton/subarray_maximo.py
+EliveltonAlgoritmosII.egg-info/PKG-INFO
+EliveltonAlgoritmosII.egg-info/SOURCES.txt
+EliveltonAlgoritmosII.egg-info/dependency_links.txt
+EliveltonAlgoritmosII.egg-info/requires.txt
+EliveltonAlgoritmosII.egg-info/top_level.txt
