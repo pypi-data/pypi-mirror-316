@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+pazer_database_python/DatabaseClient.py
+pazer_database_python/DatabaseHostForm.py
+pazer_database_python/Executor.py
+pazer_database_python/SessionClient.py
+pazer_database_python/SessionHostForm.py
+pazer_database_python/__init__.py
+pazer_database_python.egg-info/PKG-INFO
+pazer_database_python.egg-info/SOURCES.txt
+pazer_database_python.egg-info/dependency_links.txt
+pazer_database_python.egg-info/requires.txt
+pazer_database_python.egg-info/top_level.txt
+test/__init__.py
