@@ -1,0 +1,15 @@
+diraccfg
+diracx-api
+diracx-client
+diracx-core
+gitpython
+pydantic>=2.10
+rich
+typer
+pyyaml
+
+[testing]
+diracx-testing
+
+[types]
+types-PyYAML
