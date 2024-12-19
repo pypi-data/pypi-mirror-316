@@ -1,0 +1,10 @@
+choreo/__init__.py,sha256=iER196_nn5JPyPCcWIGU8z6t7fA77av1wNvnkSzeE4o,4333
+choreo/version.py,sha256=ellC_q_qABHsHuWiCEc0ejqg3bjdIereIo1qvoBjCqc,1280
+choreo/test/choreolib_test.py,sha256=Ly2Y4GQ13smcpKF8PbRqltwZB0brYZOaXHjHMjBYgJE,3940
+choreo/test/sample_flipping_test.py,sha256=Nw85T5TI7JM3Pn-VdsG9K9SEUZuJCPcASuXDJR7NI70,2822
+choreo/trajectory/__init__.py,sha256=puOQNi1HpIAg_9h7318xqy0AZ3Dl9bNSE0bF_6jdiAU,21625
+choreo/util/__init__.py,sha256=RRVpalc5fF4jrVKVA_k-dDMRoFOrCduD7FDstkecma0,2651
+sleipnirgroup_choreolib-2025.0.0b8.dist-info/METADATA,sha256=ImFdKrqi-eb__G21jF5EHOTce1b6b9VXjbdKzwojUhQ,502
+sleipnirgroup_choreolib-2025.0.0b8.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+sleipnirgroup_choreolib-2025.0.0b8.dist-info/top_level.txt,sha256=Xu2RXX6miwC0USc7IadMtZQGhAUOuz3m03hsQ5c7900,7
+sleipnirgroup_choreolib-2025.0.0b8.dist-info/RECORD,,
