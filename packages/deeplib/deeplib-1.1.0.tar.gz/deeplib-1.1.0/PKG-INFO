@@ -1,0 +1,308 @@
+Metadata-Version: 2.1
+Name: deeplib
+Version: 1.1.0
+Summary: A deep learning library for computer vision tasks (CUDA ≥11.8 compatible)
+Home-page: https://github.com/jonleinena/deeplib
+Author: Jon Leiñena
+Author-email: leinenajon@gmail.com
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Environment :: GPU :: NVIDIA CUDA
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+Requires-Dist: albumentations==1.4.18
+Requires-Dist: numpy
+Requires-Dist: opencv-python-headless
+Requires-Dist: PyYAML
+Requires-Dist: tqdm
+Requires-Dist: matplotlib
+Requires-Dist: pytest>=7.0.0
+Requires-Dist: black>=22.0.0
+Requires-Dist: isort>=5.0.0
+Requires-Dist: flake8>=4.0.0
+Requires-Dist: tensorboard>=2.15.0
+Requires-Dist: mlflow>=2.9.0
+Requires-Dist: wandb>=0.16.0
+Provides-Extra: core
+Requires-Dist: albumentations==1.4.18; extra == "core"
+Requires-Dist: numpy; extra == "core"
+Requires-Dist: opencv-python-headless; extra == "core"
+Requires-Dist: PyYAML; extra == "core"
+Requires-Dist: tqdm; extra == "core"
+Requires-Dist: matplotlib; extra == "core"
+Requires-Dist: pytest>=7.0.0; extra == "core"
+Requires-Dist: black>=22.0.0; extra == "core"
+Requires-Dist: isort>=5.0.0; extra == "core"
+Requires-Dist: flake8>=4.0.0; extra == "core"
+Provides-Extra: all
+Requires-Dist: albumentations==1.4.18; extra == "all"
+Requires-Dist: numpy; extra == "all"
+Requires-Dist: opencv-python-headless; extra == "all"
+Requires-Dist: PyYAML; extra == "all"
+Requires-Dist: tqdm; extra == "all"
+Requires-Dist: matplotlib; extra == "all"
+Requires-Dist: pytest>=7.0.0; extra == "all"
+Requires-Dist: black>=22.0.0; extra == "all"
+Requires-Dist: isort>=5.0.0; extra == "all"
+Requires-Dist: flake8>=4.0.0; extra == "all"
+Requires-Dist: tensorboard>=2.15.0; extra == "all"
+Requires-Dist: mlflow>=2.9.0; extra == "all"
+Requires-Dist: wandb>=0.16.0; extra == "all"
+Provides-Extra: tensorboard
+Requires-Dist: albumentations==1.4.18; extra == "tensorboard"
+Requires-Dist: numpy; extra == "tensorboard"
+Requires-Dist: opencv-python-headless; extra == "tensorboard"
+Requires-Dist: PyYAML; extra == "tensorboard"
+Requires-Dist: tqdm; extra == "tensorboard"
+Requires-Dist: matplotlib; extra == "tensorboard"
+Requires-Dist: pytest>=7.0.0; extra == "tensorboard"
+Requires-Dist: black>=22.0.0; extra == "tensorboard"
+Requires-Dist: isort>=5.0.0; extra == "tensorboard"
+Requires-Dist: flake8>=4.0.0; extra == "tensorboard"
+Requires-Dist: tensorboard>=2.15.0; extra == "tensorboard"
+Provides-Extra: mlflow
+Requires-Dist: albumentations==1.4.18; extra == "mlflow"
+Requires-Dist: numpy; extra == "mlflow"
+Requires-Dist: opencv-python-headless; extra == "mlflow"
+Requires-Dist: PyYAML; extra == "mlflow"
+Requires-Dist: tqdm; extra == "mlflow"
+Requires-Dist: matplotlib; extra == "mlflow"
+Requires-Dist: pytest>=7.0.0; extra == "mlflow"
+Requires-Dist: black>=22.0.0; extra == "mlflow"
+Requires-Dist: isort>=5.0.0; extra == "mlflow"
+Requires-Dist: flake8>=4.0.0; extra == "mlflow"
+Requires-Dist: mlflow>=2.9.0; extra == "mlflow"
+Provides-Extra: wandb
+Requires-Dist: albumentations==1.4.18; extra == "wandb"
+Requires-Dist: numpy; extra == "wandb"
+Requires-Dist: opencv-python-headless; extra == "wandb"
+Requires-Dist: PyYAML; extra == "wandb"
+Requires-Dist: tqdm; extra == "wandb"
+Requires-Dist: matplotlib; extra == "wandb"
+Requires-Dist: pytest>=7.0.0; extra == "wandb"
+Requires-Dist: black>=22.0.0; extra == "wandb"
+Requires-Dist: isort>=5.0.0; extra == "wandb"
+Requires-Dist: flake8>=4.0.0; extra == "wandb"
+Requires-Dist: wandb>=0.16.0; extra == "wandb"
+
+# DeepLib
+
+A unified PyTorch library for computer vision tasks, focusing on object detection, semantic segmentation, and anomaly detection.
+
+## Installation
+
+### Prerequisites
+
+DeepLib requires PyTorch and torchvision to be installed first. For optimal performance, CUDA 11.8 or above is recommended.
+
+You can install PyTorch with CUDA support using:
+```bash
+pip install torch torchvision --index-url https://download.pytorch.org/whl/cu118
+```
+
+For other installation options (CPU-only, different CUDA versions), see the [PyTorch installation guide](https://pytorch.org/get-started/locally/).
+
+### Installing DeepLib
+
+#### Full Installation
+Install DeepLib with all optional dependencies (recommended):
+```bash
+pip install deeplib
+```
+
+#### Core Installation
+Install only the core functionality (no logging backends):
+```bash
+pip install deeplib[core]
+```
+
+## Documentation
+
+Full documentation is available at [https://jonleinena.github.io/deeplib/](https://jonleinena.github.io/deeplib/)
+
+## Features
+
+- **Semantic Segmentation Models** (✅ Implemented)
+  - UNet
+  - DeepLabV3
+  - DeepLabV3+
+
+- **Experiment Tracking** (✅ Implemented)
+  - TensorBoard
+  - MLflow
+  - Weights & Biases (W&B)
+
+- **Object Detection Models** (🚧 In Progress)
+  - YOLOv4
+  - YOLOv5
+  - YOLOX
+  - YOLOv7 and YOLOv9
+  - Faster R-CNN
+
+- **Anomaly Detection Models** (🚧 In Progress)
+  - PatchCore
+  - FastFlow
+  - PADIM
+  - Other anomalib implementations
+
+## Quick Start - Semantic Segmentation
+
+```python
+from deeplib.models.segmentation import UNet
+from deeplib.trainers import SegmentationTrainer
+from deeplib.datasets import SegmentationDataset
+from deeplib.loggers import WandbLogger  # or TensorBoardLogger, MLFlowLogger
+from torch.utils.data import DataLoader
+
+# Initialize model
+model = UNet(num_classes=4)
+
+# Prepare dataset
+train_dataset = SegmentationDataset(
+    root="path/to/data",
+    images_dir="images",
+    masks_dir="masks",
+    num_classes=4,
+    split="train"
+)
+val_dataset = SegmentationDataset(
+    root="path/to/data",
+    images_dir="images",
+    masks_dir="masks",
+    num_classes=4,
+    split="val"
+)
+
+# Create dataloaders
+train_loader = DataLoader(train_dataset, batch_size=8, shuffle=True)
+val_loader = DataLoader(val_dataset, batch_size=8)
+
+# Configure loss function (e.g., Dice Loss)
+model.configure_loss('dice', {'ignore_index': 255})
+
+# Initialize logger (choose one)
+logger = WandbLogger(
+    experiment_name="segmentation_experiment",
+    project="deeplib-segmentation"
+)
+# Or use TensorBoard:
+# logger = TensorBoardLogger(experiment_name="segmentation_experiment")
+# Or use MLflow:
+# logger = MLFlowLogger(experiment_name="segmentation_experiment")
+
+# Initialize trainer with logger
+trainer = SegmentationTrainer(
+    model=model,
+    train_loader=train_loader,
+    val_loader=val_loader,
+    monitor_metric='iou',  # Monitor IoU for LR scheduling
+    logger=logger
+)
+
+# Train model
+trainer.train(
+    num_epochs=100,
+    save_path='best_model.pth'
+)
+```
+
+For more examples and detailed usage, check the [examples directory](examples/).
+
+## Project Structure
+
+```
+deeplib/
+├── models/
+│   ├── segmentation/  # ✅ Semantic segmentation models
+│   ├── detection/     # 🚧 Object detection models (TODO)
+│   └── anomaly/       # 🚧 Anomaly detection models (TODO)
+├── trainers/          # Training logic and utilities
+├── datasets/          # Dataset implementations
+├── loggers/           # ✅ Experiment tracking (TensorBoard, MLflow, W&B)
+└── utils/             # Utility functions
+```
+
+## Development Roadmap
+
+### High Priority
+- [x] Implement experiment tracking
+  - [x] TensorBoard support
+  - [x] MLflow support
+  - [x] W&B support
+- [x] Add comprehensive documentation
+  - [x] API Reference
+  - [x] Examples
+  - [x] Installation Guide
+- [ ] Implement object detection models
+  - [ ] YOLOv4
+  - [ ] YOLOv5
+  - [ ] Faster R-CNN
+- [ ] Add anomaly detection support
+  - [ ] PatchCore
+  - [ ] FastFlow
+  - [ ] PADIM
+- [ ] Add data augmentation pipeline
+- [ ] Add model export (ONNX, TorchScript)
+
+### Medium Priority
+- [ ] Add more segmentation models
+  - [ ] FPN
+  - [ ] SegFormer
+  - [ ] BEiT
+- [ ] Add test suite
+- [ ] Add model benchmarks
+- [ ] Add visualization tools
+
+### Low Priority
+- [ ] Add multi-GPU training support
+- [ ] Add quantization support
+- [ ] Add model pruning
+- [ ] Add hyperparameter tuning
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE.md) file for details.
+
+## Acknowledgments
+
+This library is inspired by the following projects:
+- torchvision
+- anomalib
+- segmentation-models-pytorch
+- YOLOMIT
+
+
+
+
+## Installation Options
+
+### Full Installation (Recommended)
+```bash
+pip install deeplib
+```
+
+### Core Installation (without logging backends)
+```bash
+pip install deeplib[core]
+```
+
+## CUDA Requirements
+
+This package requires PyTorch with CUDA 11.8 or newer. To install PyTorch dependencies:
+
+```bash
+pip install torch torchvision --index-url https://download.pytorch.org/whl/cu118
+```
+
+For other CUDA versions or CPU-only installation, see https://pytorch.org/get-started/locally/
