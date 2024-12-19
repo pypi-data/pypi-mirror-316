@@ -1,0 +1,41 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "pandem"
+version = "0.3.1"
+authors = [
+    {name = "Benjy Marks", email = "benjy.marks@sydney.edu.au"},
+    {name = "François Guillard", email = "francois.guillard@sydney.edu.au"}
+]
+description = "A python package for converting between DEM code output formats"
+dependencies = [
+    "black",
+    "flake8",
+    "numpy",
+    "pandas",
+    "sphinx",
+    "nbsphinx",
+    "vtk",
+]
+requires-python = ">=3.8"
+readme = "README.md"
+classifiers = [
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)"
+]
+keywords = ["discrete element method", "DEM", "granular materials"]
+
+[project.scripts]
+pandem = "pandem.pipeline:conversion_script"
+
+[project.urls]
+Documentation = "https://github.com/scigem/pandem/docs/index.html"
+Repository = "https://github.com/scigem/pandem.git"
+
+[tool.black]
+line-length = 120
+target-version = ['py312']
+
+[tool.flake8]
+max-line-length = 120
