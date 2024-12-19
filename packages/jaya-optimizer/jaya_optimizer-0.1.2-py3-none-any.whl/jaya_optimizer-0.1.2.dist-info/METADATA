@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: jaya-optimizer
+Version: 0.1.2
+Summary: A Python library implementing the Jaya Optimization Algorithm.
+Home-page: https://github.com/Ravikumar-Shah-2804/jaya-optimizer.git
+Author: Ravikumar Shah
+Author-email: ravikumar.shah.2804@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+
+# Jaya Optimization Algorithm
+
+The **JayaOptimizer** is a Python library that implements the Jaya Optimization Algorithm, a population-based optimization technique. It is designed to solve continuous, discrete, and mixed-variable optimization problems efficiently.
+
+---
+
+## Features
+
+- Supports continuous, discrete, and mixed-variable optimization.
+- User-friendly interface for defining objective functions and constraints.
+- Handles maximization and minimization problems.
+- Tracks convergence history for analysis.
+- Automatically adapts to user-defined variable boundaries.
+
+---
+
+## Installation
+
+Install the library using pip:
+```bash
+pip install jaya-optimizer
+=======
+# jaya-optimizer
+The Jaya algorithm is a metaheuristic which is capable of solving both constrained and unconstrained optimization problems. It is a population based method which repeatedly modifies a population of individual solutions. It is a gradient-free optimization algorithm.
+
+    
