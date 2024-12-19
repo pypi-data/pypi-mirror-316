@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+simple_py_config/__init__.py
+simple_py_config.egg-info/PKG-INFO
+simple_py_config.egg-info/SOURCES.txt
+simple_py_config.egg-info/dependency_links.txt
+simple_py_config.egg-info/top_level.txt
