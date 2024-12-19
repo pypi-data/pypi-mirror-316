@@ -1,0 +1,7 @@
+[console_scripts]
+
+[gui_scripts]
+
+[pretix.plugin]
+pretix_extended_api = pretix_extended_api:PretixPluginMeta
+
