@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: phyloRNN
+Version: 0.41.1
+Summary: A project for phylogenetic analysis using RNNs
+Home-page: https://github.com/phyloRNN/phyloRNN
+Author: Davide Silvestro, Thibault Latrille
+Author-email: davide.silvestro@unil.ch, thibault.latrille@unil.ch
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.8
+License-File: LICENSE
+Requires-Dist: numpy~=1.23.1
+Requires-Dist: seaborn~=0.11.2
+Requires-Dist: matplotlib~=3.5.2
+Requires-Dist: pandas~=1.4.3
+Requires-Dist: scipy~=1.8.1
+Requires-Dist: DendroPy~=4.5.2
+Requires-Dist: tensorflow~=2.9.1
+Requires-Dist: keras~=2.9.0
+Requires-Dist: biopython
+Requires-Dist: ete3
+
+UNKNOWN
+
