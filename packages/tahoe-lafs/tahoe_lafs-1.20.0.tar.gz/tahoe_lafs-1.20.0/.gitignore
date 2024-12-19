@@ -1,0 +1,57 @@
+venv*
+
+# vim swap files
+*.swp
+*.swo
+
+*.pyc
+*.pyo
+*~
+*.DS_Store
+.*.kate-swp
+*.bak
+
+/build/
+/support/
+
+# these are generated at build time, and never checked in
+/src/allmydata/_version.py
+
+# these are generated too
+/bin/tahoe
+/bin/tahoe.pyscript
+/bin/tahoe-script.py
+
+/.built
+/src/tahoe_lafs.egg-info/
+Twisted-*.egg
+zope.interface-*.egg
+.pc
+
+/src/allmydata/test/plugins/dropin.cache
+**/_trial_temp*
+/tmp*
+/*.patch
+/dist/
+/tahoe-deps/
+/tahoe-deps.tar.gz
+/.coverage
+/.coverage.*
+/.coverage.el
+/coverage-html/
+/miscaptures.txt
+/violations.txt
+/.tox/
+/docs/_build/
+/coverage.xml
+/.pre-commit-config.local.yaml
+/.hypothesis/
+/eliot.log
+/misc/python3/results.xml
+/misc/python3/results.subunit2
+
+# This is the plaintext of the private environment needed for some CircleCI
+# operations.  It's never supposed to be checked in.
+secret-env-plain
+
+.ruff_cache
