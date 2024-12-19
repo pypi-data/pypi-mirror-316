@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: OpenweatherApp
+Version: 0.1
+Summary: Приложение для получения данных с openweather посредством API 
+Home-page: https://github.com/Maria-Kochetkova/LR_Prog_5_sem/tree/main/lr3
+Author: Mary
+Author-email: testingprog900@gmail.com
+Description-Content-Type: text/markdown
+
+# Weather App
+
+Приложение для получения данных с openweather посредством API 
+
+Ссылка на github:  
+
+https://github.com/Maria-Kochetkova/LR_Prog_5_sem/tree/main/lr3
+
+# Установка
+
+```
+pip install OpenweatherApp
+```

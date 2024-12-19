@@ -1,0 +1,13 @@
+README.md
+setup.cfg
+setup.py
+OpenweatherApp/__init__.py
+OpenweatherApp/getweatherdata.py
+OpenweatherApp/main.py
+OpenweatherApp/mykey.py
+OpenweatherApp.egg-info/PKG-INFO
+OpenweatherApp.egg-info/SOURCES.txt
+OpenweatherApp.egg-info/dependency_links.txt
+OpenweatherApp.egg-info/entry_points.txt
+OpenweatherApp.egg-info/requires.txt
+OpenweatherApp.egg-info/top_level.txt
