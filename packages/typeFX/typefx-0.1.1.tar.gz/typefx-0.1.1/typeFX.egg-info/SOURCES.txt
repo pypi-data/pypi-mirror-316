@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+typeFX/__init__.py
+typeFX/typing_effect.py
+typeFX.egg-info/PKG-INFO
+typeFX.egg-info/SOURCES.txt
+typeFX.egg-info/dependency_links.txt
+typeFX.egg-info/requires.txt
+typeFX.egg-info/top_level.txt
