@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: django-flex-observer
+Version: 0.0.1
+Summary: Django project implementing the observer pattern for the database models
+Author-email: Saman Zand Haghighi <samanzandh@gmail.com>, Ali Avani <ali.avani@outlook.com>
+Maintainer-email: Saman Zand Haghighi <samanzandh@gmail.com>, Ali Avani <ali.avani@outlook.com>
+License: MIT license
+Project-URL: bugs, https://github.com/ali-avani/django-flex-observer/issues
+Project-URL: changelog, https://github.com/ali-avani/django-flex-observer/blob/master/changelog.md
+Project-URL: homepage, https://github.com/ali-avani/django-flex-observer
+License-File: LICENSE
+License-File: AUTHORS.rst
+Provides-Extra: dev
+Requires-Dist: coverage; extra == "dev"
+Requires-Dist: mypy; extra == "dev"
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: ruff; extra == "dev"
