@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+test_ter_package.egg-info/PKG-INFO
+test_ter_package.egg-info/SOURCES.txt
+test_ter_package.egg-info/dependency_links.txt
+test_ter_package.egg-info/requires.txt
+test_ter_package.egg-info/top_level.txt
+testterpackage/__init__.py
+testterpackage/functions.py
