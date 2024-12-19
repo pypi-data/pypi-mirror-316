@@ -1,0 +1,6 @@
+Environment contains multiple differing definitions for 'host'.
+Using value from 'HOST' (x86_64-conda-linux-gnu) and ignoring 'host' (p-sc-2148) at /scratch/kjk6173/c2/8b1e484e50e83d55045e46872cd5fb7e_/lib/perl5/site_perl/LWP/UserAgent.pm line 1134.
+WARNING: Ignoring 'chromosome' feature_type from /storage/home/kjk6173/group/kjk6173/variantfoldrna/tmp_yeast/annotation.sorted.gff.gz GFF/GTF file. This feature_type is not supported in VEP.
+WARNING: Ignoring 'ncRNA_gene' feature_type from /storage/home/kjk6173/group/kjk6173/variantfoldrna/tmp_yeast/annotation.sorted.gff.gz GFF/GTF file. This feature_type is not supported in VEP.
+WARNING: Ignoring 'transposable_element' feature_type from /storage/home/kjk6173/group/kjk6173/variantfoldrna/tmp_yeast/annotation.sorted.gff.gz GFF/GTF file. This feature_type is not supported in VEP.
+WARNING: Parent entries with the following IDs were not found or skipped due to invalid types: gene:tP(UGG)A, gene:HRA1, gene:tL(CAA)A, gene:tS(AGA)A, agat-transposable_element-2, agat-transposable_element-1, gene:tA(UGC)A, gene:snR18
