@@ -1,0 +1,2 @@
+[console_scripts]
+smallder = smallder.commands.cmdline:execute
