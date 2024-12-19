@@ -1,0 +1,11 @@
+.idea
+.env
+.venv
+dist
+__pycache__
+*.log
+log
+.diskcache
+__pycache__
+.pytest_cache
+.DS_Store
