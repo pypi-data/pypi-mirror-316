@@ -1,0 +1,8 @@
+README.md
+setup.py
+bedrock_tools/__init__.py
+bedrock_tools.egg-info/PKG-INFO
+bedrock_tools.egg-info/SOURCES.txt
+bedrock_tools.egg-info/dependency_links.txt
+bedrock_tools.egg-info/requires.txt
+bedrock_tools.egg-info/top_level.txt
