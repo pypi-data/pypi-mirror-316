@@ -1,0 +1,9 @@
+Cython
+sqlalchemy
+pyodbc
+aioodbc
+aiomysql
+asyncpg
+
+[dataframe]
+pandas
