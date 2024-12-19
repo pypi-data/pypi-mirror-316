@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+handshape_datasets/__init__.py
+handshape_datasets/_config.py
+handshape_datasets/_dataset_info.py
+handshape_datasets/_dataset_loader.py
+handshape_datasets/base.py
+handshape_datasets.egg-info/PKG-INFO
+handshape_datasets.egg-info/SOURCES.txt
+handshape_datasets.egg-info/dependency_links.txt
+handshape_datasets.egg-info/requires.txt
+handshape_datasets.egg-info/top_level.txt
