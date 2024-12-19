@@ -1,0 +1,25 @@
+[build-system]
+requires = ["flit"]
+build-backend = "flit.buildapi"
+
+[project]
+name = "groia"
+version = "0.1.0"
+description = "Um bot para gerar mensagens de forma agressiva"
+authors = [
+    { name = "MikaVirus", email = "mikavirus.adm@gmail.com" }
+]
+license = { text = "MIT" }
+keywords = ["linguagem agressiva", "mensagens"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent"
+]
+dependencies = [
+    "requests",
+    "pytz"
+]
+
+[project.scripts]
+groia-cli = "groia.groia:main"
