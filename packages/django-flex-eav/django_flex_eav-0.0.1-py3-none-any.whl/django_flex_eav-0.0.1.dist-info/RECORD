@@ -1,0 +1,16 @@
+flex_eav/__init__.py,sha256=dqRg42CXfyGQ_g28ej7zkrMSBK5I21SRKpdK5FbR7ic,141
+flex_eav/admin.py,sha256=suMo4x8I3JBxAFBVIdE-5qnqZ6JAZV0FESABHOSc-vg,63
+flex_eav/apps.py,sha256=HXBPgNRKqH3G0wMxrykW3NK3yTMdLLlo5H3XNp-_G_k,147
+flex_eav/choices.py,sha256=sRAcvNsfOrwzPJqnh4FrfyBCp8-HOcfIcr9yDHzJ1BU,374
+flex_eav/eav_validator.py,sha256=UMXJy5AwjfrLdKt4cWizLcmab-N6PDg_aZP-udcnLLg,3734
+flex_eav/models.py,sha256=Pp0kAj4smeu7NEqHGZ4FzKn5nrekkagjRaartJUif3Q,2323
+flex_eav/tests.py,sha256=mrbGGRNg5jwbTJtWWa7zSKdDyeB4vmgZCRc2nk6VY-g,60
+flex_eav/utils.py,sha256=RCVAI4_UpoNs-OkhB8LcmRTBxj5pA24ugua-Yf2g0V0,357
+flex_eav/views.py,sha256=xc1IQHrsij7j33TUbo-_oewy3vs03pw_etpBWaMYJl0,63
+flex_eav/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_flex_eav-0.0.1.dist-info/AUTHORS.rst,sha256=jVS6fQIBB1H-lGYqn3Mlgfd6gQDpYfirCZN_YkJnc0g,201
+django_flex_eav-0.0.1.dist-info/LICENSE,sha256=g-sW47cQ3Alw_l3VTygN9eIIxUFoYXBxfel9GZozv58,1066
+django_flex_eav-0.0.1.dist-info/METADATA,sha256=gd4KFQOjk4oqHezOkmLHKkxgBgRV02Nb59zdxadsNwY,1781
+django_flex_eav-0.0.1.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+django_flex_eav-0.0.1.dist-info/top_level.txt,sha256=A6p4TzMwjMjQGJjgbX29o3huYDsIT2smVim1-URpLxs,9
+django_flex_eav-0.0.1.dist-info/RECORD,,
