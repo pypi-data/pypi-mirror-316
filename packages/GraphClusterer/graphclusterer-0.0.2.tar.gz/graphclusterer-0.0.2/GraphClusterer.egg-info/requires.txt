@@ -1,0 +1,10 @@
+networkx
+numpy
+pandas
+scipy
+spacy
+matplotlib
+plotly
+cohere
+python-dotenv
+replicate
