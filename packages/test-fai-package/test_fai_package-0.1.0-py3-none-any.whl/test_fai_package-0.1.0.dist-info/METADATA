@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: test-fai-package
+Version: 0.1.0
+Summary: This is a test package for fai
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: uv==0.5.4
+
+# This is a readme for testing in a project
+
+Here is just a description
+
+- input_happy_path
+- input_non_list
+- input_negative
+- input_zero
