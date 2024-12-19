@@ -1,0 +1,9 @@
+MANIFEST.in
+README.md
+setup.py
+gopipsample.egg-info/PKG-INFO
+gopipsample.egg-info/SOURCES.txt
+gopipsample.egg-info/dependency_links.txt
+gopipsample.egg-info/top_level.txt
+sample/__init__.py
+sample/main.py

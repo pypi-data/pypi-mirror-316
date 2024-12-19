@@ -1,0 +1,5 @@
+Metadata-Version: 2.1
+Name: gopipsample
+Version: 0.1.0
+Summary: A sample package to demonstrate private PyPI deployment
+Author: Devanand Bhowan
