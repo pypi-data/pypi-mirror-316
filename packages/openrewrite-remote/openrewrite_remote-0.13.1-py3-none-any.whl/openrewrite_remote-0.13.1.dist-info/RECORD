@@ -1,0 +1,14 @@
+rewrite_remote/__init__.py,sha256=uuLrPH--ewvE-5owXbNItXDfjCypMXQgsm-72hO_dtc,286
+rewrite_remote/client.py,sha256=95ZCAtVOngF0ZqqKnOsrweUeGKruf3UKGPXNGTrNyy0,1853
+rewrite_remote/event.py,sha256=texLJD1mcFkpBpiXAa-Rmip0Tgqm2OlBpRPHFZyWcBs,359
+rewrite_remote/receiver.py,sha256=U50jtbhmAVy361Vm5Bwd-amv19KcS8ltDRBOy2nC51E,18983
+rewrite_remote/remote_utils.py,sha256=wUo9WZoldgCLihFJGf6RaE1SufhDiEPCFlX74tcODVM,10552
+rewrite_remote/remoting.py,sha256=83Wvvj8tMCkUjOam0wWevWJeN-uHW1k9lGdoCsI0u0g,13690
+rewrite_remote/sender.py,sha256=pa68X6bjvCQW_25wuVtHq0ByjA6WgI1Rl3EbL8CcvX4,20003
+rewrite_remote/server.py,sha256=mKI9_PVvBuShoQmfqk0EhNA70CUJOtyzHB3xv-cNBYs,9413
+rewrite_remote/type_utils.py,sha256=oVrB0olWFSCqhmg2nTU2wrwiAU7kBCUscjwdHK7gf3Y,4219
+openrewrite_remote-0.13.1.dist-info/METADATA,sha256=ftw5yLi2Ff0Z4iSxfvTRuvkXuSbhYW7L7Hxwrf9Q7ms,386
+openrewrite_remote-0.13.1.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+openrewrite_remote-0.13.1.dist-info/entry_points.txt,sha256=SMukuF7TPjQr3IZIcH8f98-_QBCqYSbYXYrVv-5UzRI,69
+openrewrite_remote-0.13.1.dist-info/top_level.txt,sha256=ansTioSZ-62aH3F2L3d1Bua0pJF4GOtgQ1PpG-CzcP0,15
+openrewrite_remote-0.13.1.dist-info/RECORD,,
