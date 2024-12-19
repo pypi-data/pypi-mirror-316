@@ -1,0 +1,8 @@
+quantmsrescore/__init__.py,sha256=QvlVh4JTl3JL7jQAja76yKtT-IvF4631ASjWY1wS6AQ,22
+quantmsrescore/ms2rescore.py,sha256=bhlKs0n-pdzB4aZLvgnQW9XgvsuT8RTYTeC0wVnUMSk,17585
+quantmsrescore/rescoring.py,sha256=G83vA3ZBYww6SVmAHiiCiKNkZ4jJ5G5SiKWP_PaVIE4,525
+quantms_rescoring-0.0.2.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+quantms_rescoring-0.0.2.dist-info/METADATA,sha256=YVgFE6zIIcGtlc3MC6zTQYOXOukqmPgqMH8YZ1c35rs,3212
+quantms_rescoring-0.0.2.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+quantms_rescoring-0.0.2.dist-info/entry_points.txt,sha256=0U63u4e67WvRJDI0oWNR5uqxQCc8BHKnbtwW422jioo,59
+quantms_rescoring-0.0.2.dist-info/RECORD,,
