@@ -1,0 +1,9 @@
+commonroad-io>=2024.2
+commonroad-scenario-designer>=0.8.2
+imageio>=2.28.1
+numpy>=1.19.0
+tqdm>=4.65.0
+scenariogeneration>=0.9.0
+
+[tests]
+pytest>=7.1
