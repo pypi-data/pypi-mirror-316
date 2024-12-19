@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: typeFX
+Version: 0.1.2
+Summary: A package with a typing effect and sound
+Home-page: https://github.com/Blend3r/typeFX
+Author: Diego Escalante
+Author-email: 3dpr1nt3rb0y@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.13
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pygame
+
+A Python package that creates a typing effect with sound. It uses Pygame to play a sound effect each time a key is typed.
