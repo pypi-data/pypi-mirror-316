@@ -1,0 +1,10 @@
+pyvoa/__init__.py,sha256=F1nKl-qF1i1_5OrTkLCG1jDpDXxYhZ39oUwM48RqIfM,11
+pyvoa/front.py,sha256=Qht7hw5yKw6WrBFAWLGprUZa0z18BlmVclAq0nO4uG8,79
+pyvoa/tools.py,sha256=U1BTkZH4lNdPaVyxDg-vxlkzSHsZcXXnAPW3BojH_4E,45
+tests/__init__.py,sha256=F1nKl-qF1i1_5OrTkLCG1jDpDXxYhZ39oUwM48RqIfM,11
+tests/test1.py,sha256=22XNSOqUeklw1D2YihsinkndBMB6GKkzPOFfs0xz3jQ,33
+pyvoa-0.1.0.dist-info/LICENSE,sha256=2t3QTA1qredq4Xel0XdQhIklHcdHPg2vjjmf3Q8Jarg,1062
+pyvoa-0.1.0.dist-info/METADATA,sha256=VI3a01WM1oKZUnDrJlBIaoLviUObxXaRnMEZ-wSlR50,510
+pyvoa-0.1.0.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+pyvoa-0.1.0.dist-info/top_level.txt,sha256=QMCR8Acs0RdrObvbKszv7sxATnXnIndnIF4rrKDy4O8,12
+pyvoa-0.1.0.dist-info/RECORD,,
