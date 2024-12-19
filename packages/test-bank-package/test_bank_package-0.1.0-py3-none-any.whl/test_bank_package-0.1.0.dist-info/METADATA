@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: test-bank-package
+Version: 0.1.0
+Summary: This is a test package for Bank
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: uv==0.5.4
+
+# This is a workshop for publishing a custom package to pypi using uv
+
+Here, we use python uv as a package manager and we build a custom package and publish to pypi.  
+
+Below are what we do:
+- create function to add only a positive-and-non-zero number
+- create unit testing including: happy path, non-list, negative, zero
+- build and publish to pypi
