@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: saltshaker-sn
+Version: 1.4
+Author: David Jones, Rick Kessler
+Author-email: dojones@hawaii.edu
+License: BSD
+Requires-Dist: astropy>=5.3
+Requires-Dist: astroquery>=0.4.6
+Requires-Dist: Cython>=0.29.35
+Requires-Dist: emcee>=3.1.4
+Requires-Dist: extinction>=0.4.6
+Requires-Dist: f90nml>=0.1
+Requires-Dist: iminuit>=2.16.0
+Requires-Dist: jax>=0.4.11
+Requires-Dist: jaxlib>=0.4.11
+Requires-Dist: matplotlib>=3.7.1
+Requires-Dist: pandas>=2.0.2
+Requires-Dist: pyParz>=1.0.2
+Requires-Dist: pytest>=7.3.1
+Requires-Dist: sncosmo>=2.10.0
+Requires-Dist: tqdm>=4.65.0
+Requires-Dist: scipy>=1.10.1
+
+SALT3 training code
+===================
+
+This repo is a refactoring of the SALT training code
+for modeling Type Ia supernovae, originally developed by J. Guy.
+When using the SALT3 model, please cite arXiv 2104.07795 (<em>https://arxiv.org/abs/2104.07795</em>).
+
+We are also developing an additional testing and simulation framework.
+Please feel free to message us with any questions and see
+<em>https://saltshaker.readthedocs.io/en/latest/</em> for
+information on the ongoing work.
