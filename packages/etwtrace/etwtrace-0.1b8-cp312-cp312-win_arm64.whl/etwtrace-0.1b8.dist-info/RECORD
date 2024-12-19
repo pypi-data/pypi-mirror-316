@@ -1,0 +1,12 @@
+etwtrace\_cli.py,sha256=6cTXal8REDu2xkqEIB6r2pj58cbTSQy1XIzUgnrOgQc,7249
+etwtrace\_etwinstrument.cp312-win_arm64.pyd,sha256=ndMIAkWf3xTe01bl7TualNS8a0MoRIzNnQTOUyABb-0,36880
+etwtrace\_etwtrace.cp312-win_arm64.pyd,sha256=dpR8FX_QAaA-iZUzoplV9dC6GIPrdRZMQA8tSMzTeyQ,39952
+etwtrace\_version.py,sha256=GwAtpZzLj4ikuI_TJJzRtPSzhfoBll0GNFdUv16WJ6U,23
+etwtrace\_vsinstrument.cp312-win_arm64.pyd,sha256=uVzRJMlUR-sLQerp2AebQcKQ9e3UYyBvkVnU6o0N4ho,33296
+etwtrace\__init__.py,sha256=abbbXBQF1aOyVqUx5osVS2Yv83l0hpFinm3ESIKufUI,6931
+etwtrace\__main__.py,sha256=RRhoVq2Xo4G4PkpdsoP-Q2jmdLzN2r3_BDOlQFekhpM,56
+etwtrace-0.1b8.dist-info\METADATA,sha256=Zh99AVRkzTm5PNs7pdWvUB1RtK_HGZGG6sQAVAfjD5U,10145
+etwtrace-0.1b8.dist-info\WHEEL,sha256=m6tQ0JteMhTLfbi35QB1VCPwHErpdKeOTLmVKXIe4cI,121
+etwtrace\profiles\python.stacktags,sha256=44n0b2e7Zjvh3pcZesfiudh6Vi8Icv7Qfdly0XcDiuM,856
+etwtrace\profiles\python.wprp,sha256=Utw0WWKWttlP_c_o4GDymz0SpJfFuCXARR5VRF1IwdA,3804
+etwtrace-0.1b8.dist-info/RECORD,,
