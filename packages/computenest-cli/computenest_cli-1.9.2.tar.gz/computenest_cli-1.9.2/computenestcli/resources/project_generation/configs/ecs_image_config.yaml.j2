@@ -1,0 +1,83 @@
+Service:
+  RegionId: {{ RegionId }}
+  DeployType: ros
+  OperationMetadata:
+    StatusOperationConfigs:
+      - TemplateName: {% if ServiceType == 'managed' %}'Template'{% else %}'ECS单机版'{% endif %}
+        SupportOperations:
+          - Start
+          - Stop
+          - Restart
+    SupportBackup: true
+    ModifyParametersConfig:
+      - TemplateName: ECS单机版
+        Operation:
+          - Name: 变更ECS实例规格
+            Description: 变更ECS实例规格
+            Type: Custom
+            Parameters:
+              - EcsInstanceType
+          - Name: 变更ECS实例密码
+            Description: 变更ECS实例密码
+            Type: Custom
+            Parameters:
+              - InstancePassword
+  DeployMetadata:
+    SupplierDeployMetadata:
+      {%- if ServiceType == 'managed' %}
+      RoleName: {{ RoleName }}
+      UserType: Aliyun
+      SupplierTemplateConfigs:
+        - Name: Template
+          Url: 'ros_templates/template.yaml'
+          PredefinedParameters: []
+          HiddenParameterKeys:
+            - VpcId
+            - VSwitchId
+            - ZoneId
+          ParameterMappings:
+            - ParameterKey: RegionId
+              ParameterMappingKeys:
+                - VpcId
+                - ZoneId
+                - VSwitchId
+              ParameterValueMapping:
+                {{ RegionId }}:
+                  Parameters:
+                    VpcId: {{ VpcId }}
+                    ZoneId: {{ ZoneId }}
+                    VSwitchId: {{ VSwitchId }}
+      {%- endif %}
+      ArtifactRelation:
+        ecs_image_{{ RepoName }}:
+          ArtifactId: ${Artifact.EcsImage.ArtifactId}
+          ArtifactVersion: draft
+    {%- if ServiceType == 'private' %}
+    TemplateConfigs:
+      - Name: ECS单机版
+        Url: 'ros_templates/template.yaml'
+        AllowedRegions:
+          - {{ ServiceBuildRegion }}
+    {%- endif %}
+  ServiceType: {{ ServiceType }}
+  ServiceInfo:
+    Locale: zh-CN
+    ShortDescription: demo
+    Image: 'resources/icons/service_logo.png'
+Artifact:
+  EcsImage:
+    ArtifactType: EcsImage
+    ArtifactName: ecs_image_{{ RepoName }}
+    Description: {{ RepoName }} EcsImage
+    SupportRegionIds:
+        - {{ ServiceBuildRegion }}
+    ArtifactBuildProperty:
+      CodeRepo:
+        Platform: {{ Platform }}
+        Owner: {{ Owner }}
+        RepoName: {{ RepoFullName }}
+        Branch: {{ Branch }}
+      RegionId: ap-southeast-1
+      CommandType: RunShellScript
+      CommandContent: |-
+        {{ EcsImageBuilderCommandContent | indent(width=8, strip=True) }};
