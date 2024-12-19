@@ -1,0 +1,17 @@
+cpelib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cpelib/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cpelib/core/loader.py,sha256=n3xD3--Rgm5F_CqS6oyPkRwtwiIt6qTkbh2N4Yih9Ik,2344
+cpelib/types/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cpelib/types/cpe.py,sha256=oXSdhnN_X8RMDLxidIxH7AUChaDTloPEYj6vgcPK-mA,300
+cpelib/types/dictionary.py,sha256=ZxKYWo3JKdOeH7c0KcXqnAit3KGvj9goiFuIgJbZIO4,1171
+cpelib/types/generator.py,sha256=IWx22Rdl5oYm79yLr6AX5l6H6WN7ppTRTfoIROlDtcE,1086
+cpelib/types/item.py,sha256=E9JahTTf-MRhz-8gC4edFq5H-BK4uIBuO6NevLVslfU,1988
+cpelib/types/reference.py,sha256=L-0oHlxW2R2G5qsbvpYG0x1WLQTH5WDo-ODyRSDz21w,1318
+cpelib/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cpelib/utils/common.py,sha256=Ny8TzMg79bP816ngP3iHxoIFAjqFHohn8YOmNZqjA3I,2055
+examples/count_deprecated_items.py,sha256=XVt7bjzeD3y-n9j4tqyLmNtHPOZKiRa1zoOCL8clQLo,248
+cpelib-0.0.2.dist-info/LICENSE,sha256=1v4HBCmx81n-K-0sIvR3KDbYe9jhGb63FmQYL-zVr9c,1074
+cpelib-0.0.2.dist-info/METADATA,sha256=ulynRtlNzwBB0hFCcu-wvVWf_ecCu9k5zzU_i-HLN14,2537
+cpelib-0.0.2.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+cpelib-0.0.2.dist-info/top_level.txt,sha256=PvMxVO1ClJ2jvNW0LbLZmRihcbjoX-6005zLCxzc724,16
+cpelib-0.0.2.dist-info/RECORD,,
