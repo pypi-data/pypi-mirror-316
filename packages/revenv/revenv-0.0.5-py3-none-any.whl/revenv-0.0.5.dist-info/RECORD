@@ -1,0 +1,10 @@
+revenv/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+revenv/cli.py,sha256=QboPWOG0VAgKCxfKTwoyZQ3gBHiJf3gkf6tMKY0CRno,608
+revenv/func.py,sha256=jp4DD63C9ubwKa_Ky27S3Z3tX5S9XwO4uhHVQOo5LQo,1684
+revenv/logging_config.py,sha256=OhlL7ZPm6fCWBjnRU0WqVoJVlV_02TCDmdLGxBSuoBk,504
+revenv-0.0.5.dist-info/LICENSE,sha256=SSIQ23HLoCaeQfIa2g8Cv3dkhxca_nwqb2pCMK8qlhs,1088
+revenv-0.0.5.dist-info/METADATA,sha256=xQNS41oWXc_CpzMfMB5mEB_xR7T_SdCLx8JecMgRw6k,760
+revenv-0.0.5.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+revenv-0.0.5.dist-info/entry_points.txt,sha256=Rwv4UYGY_9EuVgq4ebBk646ED3Nsci2JJsf5cr_I03k,43
+revenv-0.0.5.dist-info/top_level.txt,sha256=9fNADOdpKdZNcR1XleNT5b-kHoUqMQ8hKK82bcIWtY4,7
+revenv-0.0.5.dist-info/RECORD,,
