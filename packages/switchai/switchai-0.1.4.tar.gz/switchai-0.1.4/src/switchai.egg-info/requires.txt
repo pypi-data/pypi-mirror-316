@@ -1,0 +1,5 @@
+pydantic
+openai
+mistralai
+anthropic
+google-generativeai
