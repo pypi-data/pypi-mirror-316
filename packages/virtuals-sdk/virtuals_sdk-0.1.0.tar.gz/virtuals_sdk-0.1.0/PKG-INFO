@@ -1,0 +1,52 @@
+Metadata-Version: 2.4
+Name: virtuals-sdk
+Version: 0.1.0
+Summary: Official Python SDK for Virtuals API/GAME
+Project-URL: Homepage, https://github.com/Virtual-Protocol/virtuals-python
+Project-URL: Bug Tracker, https://github.com/Virtual-Protocol/virtuals-python/issues
+Author-email: Your Name <your.email@example.com>
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.7
+Requires-Dist: requests>=2.26.0
+Requires-Dist: typing-extensions>=4.0.0
+Description-Content-Type: text/markdown
+
+# Virtuals Python API Library
+
+
+## Documentation
+For 
+
+## Installation
+```bash
+pip install virtuals
+```
+
+## Usage
+```python
+from virtuals.game import Agent
+
+# Create agent with just strings for each component
+agent = Agent(
+		api_key=VIRTUALS_API_KEY,
+    goal="Autonomously analyze crypto markets and provide trading insights",
+    description="HODL-9000: A meme-loving trading bot powered by hopium and ramen",
+    world_info="Virtual crypto trading environment where 1 DOGE = 1 DOGE"
+)
+
+# Simulate one step of the full agentic loop on Twitter/X from the HLP -> LLP -> action
+response = agent.simulate_twitter()
+
+# deploy agent! (NOTE: supported for Twitter/X only now)
+agent.deploy_twitter()
+```
