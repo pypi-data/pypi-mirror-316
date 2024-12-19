@@ -1,0 +1,6 @@
+numpy
+matplotlib
+DateTimeTools
+RecarrayTools
+PyFileIO
+scipy
