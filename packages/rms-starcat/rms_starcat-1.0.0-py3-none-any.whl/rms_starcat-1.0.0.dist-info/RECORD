@@ -1,0 +1,12 @@
+starcat/__init__.py,sha256=-MdUUzR86srX3uhw-FXBaVYXP5lgnZ82Oyefecm5WuE,749
+starcat/_version.py,sha256=DGJ4pj32xs3_DRJhSzQwCiRNnAQrMgo09USYpyMZsKc,411
+starcat/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+starcat/spice.py,sha256=oisWst7g2aH5otRqNvWYt4j_GdDdLbtu2Eoe70iJ1FM,3286
+starcat/starcatalog.py,sha256=01jIdgVsJsKx1AeYpwxMQBhkDKWwGKm4TAuYvp_6iJc,17139
+starcat/ucac4.py,sha256=WW7m7ZN7Lx21UC5hcz8-uQ2mFtiOdFE34LlouymAhnQ,51372
+starcat/ybsc.py,sha256=yNPWH_6DmBJaRuzKDGYowhvb6iQPwx_Q_hPwLgNt0i0,25999
+rms_starcat-1.0.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+rms_starcat-1.0.0.dist-info/METADATA,sha256=qpuD_M2_DkbDWPA3_eAbKG7GiMkZppgkD7oPzOWCiMw,7423
+rms_starcat-1.0.0.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+rms_starcat-1.0.0.dist-info/top_level.txt,sha256=9_BfZoZasqtspX07JKebH3RqlssKXS1EUX22j-m2D48,8
+rms_starcat-1.0.0.dist-info/RECORD,,
