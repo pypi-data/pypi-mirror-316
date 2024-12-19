@@ -1,0 +1,128 @@
+Metadata-Version: 2.4
+Name: singlecell-cookbook
+Version: 0.2.2
+Summary: A collection of tools for analyzing single-cell genomics data.
+Project-URL: Homepage, https://github.com/aarriojas/singlecell-cookbook
+Project-URL: Documentation, https://singlecell-cookbook.readthedocs.io
+Project-URL: Repository, https://github.com/aarriojas/singlecell-cookbook
+Project-URL: Issues, https://github.com/aarriojas/singlecell-cookbook/issues
+Project-URL: Release Notes, https://github.com/aarriojas/singlecell-cookbook/releases
+Author-email: Argenis Arriojas <arriojasmaldonado001@umb.edu>
+License: MIT License
+        
+        Copyright (c) 2024 Argenis Arriojas
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+License-File: LICENSE.md
+Keywords: RNA-seq,analysis,bioinformatics,genomics,single-cell
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: <3.13,>=3.11
+Requires-Dist: anndata
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scanpy
+Requires-Dist: scipy
+Provides-Extra: dev
+Requires-Dist: anndata2ri>=1.3; extra == 'dev'
+Requires-Dist: bump2version~=1.0.1; extra == 'dev'
+Requires-Dist: myst-parser~=4.0.0; extra == 'dev'
+Requires-Dist: pre-commit~=4.0.1; extra == 'dev'
+Requires-Dist: pytest~=8.3.3; extra == 'dev'
+Requires-Dist: rpy2>=3.5.14; extra == 'dev'
+Requires-Dist: ruff~=0.8.0; extra == 'dev'
+Requires-Dist: sphinx-autodoc-typehints~=2.5.0; extra == 'dev'
+Requires-Dist: sphinx-rtd-theme~=3.0.1; extra == 'dev'
+Requires-Dist: sphinx~=8.1.3; extra == 'dev'
+Provides-Extra: docs
+Requires-Dist: myst-parser~=4.0.0; extra == 'docs'
+Requires-Dist: sphinx-autodoc-typehints~=2.5.0; extra == 'docs'
+Requires-Dist: sphinx-rtd-theme~=3.0.1; extra == 'docs'
+Requires-Dist: sphinx~=8.1.3; extra == 'docs'
+Provides-Extra: r
+Requires-Dist: anndata2ri>=1.3; extra == 'r'
+Requires-Dist: rpy2>=3.5.14; extra == 'r'
+Provides-Extra: test
+Requires-Dist: pytest~=8.3.3; extra == 'test'
+Description-Content-Type: text/markdown
+
+# singlecell-cookbook
+
+[![Tests](https://github.com/argearriojas/singlecell-cookbook/actions/workflows/tests.yml/badge.svg)](https://github.com/argearriojas/singlecell-cookbook/actions/workflows/tests.yml)
+
+A collection of tools for analyzing single-cell genomics data.
+
+## Installation
+
+You can install the package using pip:
+
+```bash
+pip install singlecell-cookbook
+```
+
+For development installation:
+
+```bash
+git clone https://github.com/argearriojas/singlecell-cookbook.git
+cd singlecell-cookbook
+pip install -e ".[dev]"
+```
+
+### R Dependencies
+
+Some features (like pseudobulk analysis) require R and specific R packages. To use these features:
+
+1. Install the required R packages in R:
+
+```R
+if (!require("BiocManager", quietly = TRUE))
+    install.packages("BiocManager")
+
+BiocManager::install(c("edgeR", "MAST"))
+```
+
+2. Install the R dependencies in Python:
+
+```bash
+pip install "singlecell-cookbook[r]"
+```
+
+## Documentation
+
+Documentation is available at [Read the Docs](https://singlecell-cookbook.readthedocs.io/).
+
+## Development
+
+To set up the development environment:
+
+1. Clone the repository
+2. Install development dependencies: `pip install -e ".[dev]"`
+3. Install pre-commit hooks: `pre-commit install`
+
+## License
+
+TBD. We need to assess the license according to the imported packages.
+
+## Author
+
+Argenis Arriojas ([arriojasmaldonado001@umb.edu](mailto:arriojasmaldonado001@umb.edu))
