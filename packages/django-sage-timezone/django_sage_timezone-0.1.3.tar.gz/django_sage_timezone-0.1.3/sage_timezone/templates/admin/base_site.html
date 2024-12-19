@@ -1,0 +1,168 @@
+{% extends "admin/base.html" %}
+{% load static %}
+{% load i18n %}
+{% load timezone_tags %}
+
+{% block userlinks %}
+<div style="position: relative; display: inline-block;">
+    <!-- Button to toggle timezone dropdown -->
+    <button id="timezone-toggle"
+        style="border: none; background: transparent; cursor: pointer; display: flex; align-items: center; padding: 5px; border-radius: 4px; transition: background-color 0.2s ease;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-globe"
+            viewBox="0 0 16 16">
+            <path
+                d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m7.5-6.923c-.67.204-1.335.82-1.887 1.855A8 8 0 0 0 5.145 4H7.5zM4.09 4a9.3 9.3 0 0 1 .64-1.539 7 7 0 0 1 .597-.933A7.03 7.03 0 0 0 2.255 4zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a7 7 0 0 0-.656 2.5zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5zM8.5 5v2.5h2.99a12.5 12.5 0 0 0-.337-2.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5zM5.145 12q.208.58.468 1.068c.552 1.035 1.218 1.65 1.887 1.855V12zm.182 2.472a7 7 0 0 1-.597-.933A9.3 9.3 0 0 1 4.09 12H2.255a7 7 0 0 0 3.072 2.472M3.82 11a13.7 13.7 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5zm6.853 3.472A7 7 0 0 0 13.745 12H11.91a9.3 9.3 0 0 1-.64 1.539 7 7 0 0 1-.597.933M8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855q.26-.487.468-1.068zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.7 13.7 0 0 1-.312 2.5m2.802-3.5a7 7 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7 7 0 0 0-3.072-2.472c.218.284.418.598.597.933M10.855 4a8 8 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4z" />
+        </svg>
+    </button>
+    <!-- Dropdown menu -->
+    <ul id="timezone-dropdown"
+        style="display: none; position: absolute; margin: 0; padding: 0; list-style: none; background-color: var(--form-bg); border: 1px solid var(--form-border-color); z-index: 1000; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); border-radius: 6px; min-width: 250px; max-height: 300px; overflow-y: auto;">
+        <!-- Search box -->
+        <li style="padding: 10px 20px 5px 10px;">
+            <input id="timezone-search" type="text" placeholder="Search timezone..."
+                style="width: 100%; padding: 5px; border: 1px solid var(--form-border-color); border-radius: 4px; font-size: 14px;">
+        </li>
+        <!-- Selected timezone -->
+        <li class="timezone-option selected"
+            style="padding: 10px 16px; font-weight: bold; cursor: pointer; font-size: 14px; background-color: var(--hover-bg);">
+            {% get_session_value request session_name as user_timezone %}
+            {{ user_timezone }} <span style="float: right; font-size: 12px; color: var(--primary-text);">✓</span>
+        </li>
+        <!-- Timezone options -->
+        {% get_timezones as timezones %}
+        {% for tz in timezones %}
+        {% if tz != user_timezone %}
+        <li class="timezone-option" data-tz="{{ tz }}"
+            style="padding: 10px 16px; cursor: pointer; font-size: 14px; color: var(--primary-text); background-color: var(--form-bg); transition: background-color 0.2s ease;">
+            {{ tz }}
+        </li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+</div>
+<form id="timezone-form" action="{% url 'timezone_select_view' %}" method="post" style="display: none;">
+    {% csrf_token %}
+    <input name="next" type="hidden" value="{{ request.get_full_path }}">
+    <input name="timezone" id="timezone-input" type="hidden" value="">
+</form>
+{{ block.super }}
+<script>
+    // Utility function to toggle visibility
+    const toggleVisibility = (element) => {
+        const isHidden = element.style.display === 'none' || element.style.display === '';
+        element.style.display = isHidden ? 'block' : 'none';
+    };
+
+    // Utility function to hide an element
+    const hideElement = (element) => {
+        element.style.display = 'none';
+    };
+
+    // Initialize timezone dropdown functionality
+    const initTimezoneDropdown = () => {
+        // Cache DOM elements
+        const toggleButton = document.getElementById('timezone-toggle');
+        const dropdown = document.getElementById('timezone-dropdown');
+        const timezoneForm = document.getElementById('timezone-form');
+        const timezoneInput = document.getElementById('timezone-input');
+        const searchInput = document.getElementById('timezone-search');
+
+        // Ensure required elements exist
+        if (!toggleButton || !dropdown || !timezoneForm || !timezoneInput || !searchInput) {
+            console.error('Missing required DOM elements for timezone dropdown initialization.');
+            return;
+        }
+
+        // Toggle dropdown visibility on button click
+        toggleButton.addEventListener('click', (e) => {
+            e.stopPropagation(); // Prevent event from propagating to the document
+            toggleVisibility(dropdown);
+        });
+
+        // Prevent dropdown from closing when clicking inside it
+        dropdown.addEventListener('click', (e) => {
+            e.stopPropagation();
+        });
+
+        // Close dropdown when clicking outside
+        document.addEventListener('click', () => hideElement(dropdown));
+
+        // Handle timezone selection
+        const timezoneOptions = document.querySelectorAll('.timezone-option');
+        timezoneOptions.forEach(option => {
+            option.addEventListener('click', () => {
+                const selectedTZ = option.getAttribute('data-tz'); // Get selected timezone value
+                if (selectedTZ) {
+                    timezoneInput.value = selectedTZ; // Update hidden input value
+                    timezoneForm.submit(); // Submit the form
+                }
+            });
+        });
+
+        // Filter timezone options based on search input
+        searchInput.addEventListener('input', () => {
+            const filter = searchInput.value.toLowerCase(); // Get search query
+            timezoneOptions.forEach(option => {
+                const text = option.textContent || option.innerText; // Get option text
+                option.style.display = text.toLowerCase().includes(filter) ? '' :
+                'none'; // Show/hide based on query
+            });
+        });
+    };
+
+    // Initialize the dropdown when the DOM is fully loaded
+    document.addEventListener('DOMContentLoaded', () => {
+        initTimezoneDropdown();
+    });
+</script>
+<style>
+    /* Light and Dark mode styles */
+    :root {
+        --form-bg: #ffffff;
+        --form-border-color: #ddd;
+        --primary-text: #000;
+        --hover-bg: #f5f5f5;
+    }
+
+    [data-theme="dark"] {
+        --form-bg: #2c2c2c;
+        --form-border-color: #555;
+        --primary-text: #f5f5f5;
+        --hover-bg: #3a3a3a;
+    }
+
+    .timezone-option.selected {
+        font-weight: bold;
+        background-color: var(--hover-bg);
+    }
+
+    .timezone-option.selected span {
+        color: var(--primary-text);
+    }
+
+    #timezone-dropdown li:hover {
+        background-color: var(--hover-bg);
+    }
+
+    #timezone-toggle:hover {
+        background-color: var(--hover-bg);
+    }
+
+    #timezone-dropdown {
+        animation: fadeIn 0.2s ease-out;
+        text-align: left;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+</style>
+{% endblock %}
