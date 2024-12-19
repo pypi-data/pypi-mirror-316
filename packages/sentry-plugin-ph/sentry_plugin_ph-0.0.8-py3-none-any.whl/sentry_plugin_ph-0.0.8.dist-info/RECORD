@@ -1,0 +1,10 @@
+sentry_plugin_ph/__init__.py,sha256=RxSTDnfO3RchECoEFqI2Nq8YmHvMRpQPcg5b96U7iUs,35
+sentry_plugin_ph/forms.py,sha256=ScYASA2FVmZJwb9SUbq_Vsy91q60d2xKz_g5yB80Mvs,1802
+sentry_plugin_ph/plugin.py,sha256=k66aBISZfKytpqgT2Pr0_1idQyDi8a686XmyXrFqL10,7468
+sentry_plugin_ph/template.py,sha256=NvAbsB4ohzrBcBNqsjOi8N4bFsO0MtNDo0crodxEmrY,2487
+sentry_plugin_ph-0.0.8.dist-info/LICENSE,sha256=EC9vQAUU2Ja2uPbyEzBj2Pqv3AuqRAopO0i8a9D1juE,1087
+sentry_plugin_ph-0.0.8.dist-info/METADATA,sha256=_RUVIvz819AlXw2JpB9vuiCbOFzTqucolTElW39y56E,294
+sentry_plugin_ph-0.0.8.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+sentry_plugin_ph-0.0.8.dist-info/entry_points.txt,sha256=9duizv0_MmfY65_6s2ck3gw4dazTrYL18fi0qCaSvoQ,67
+sentry_plugin_ph-0.0.8.dist-info/top_level.txt,sha256=KgUiDhHMY_KFJnpW_-oNBhSFBu3bt2oACCbCSu24vis,17
+sentry_plugin_ph-0.0.8.dist-info/RECORD,,
