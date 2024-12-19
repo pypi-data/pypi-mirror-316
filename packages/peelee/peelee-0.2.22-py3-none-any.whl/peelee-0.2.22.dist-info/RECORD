@@ -1,0 +1,9 @@
+peelee/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+peelee/color.py,sha256=oBdMjf0GGo9oyGVnN92gMRtp1A2pH-bYu4s7Tb4W0cE,14753
+peelee/color_utils.py,sha256=hDvmhDj7BzJfVfeaMPD6DkbO0NfZfk4yvGW3jdmazAw,3841
+peelee/peelee.py,sha256=U4Q9opk6i-h9AlADeIj5oszWNdtUM0aeBIyFbWEw9Lc,35923
+peelee/random_color.py,sha256=Kol4YA3pNWbtZ3Chm0S5km2innxMzXWEPqwIT8AN4Og,8613
+peelee-0.2.22.dist-info/LICENSE,sha256=IR9-c4yvC36qbH3y2h6cixHvLBfoKyBJuRccSCs3S8k,1087
+peelee-0.2.22.dist-info/METADATA,sha256=3ssDu_V9EuIQoeYkxjkJH8cSfWYQ5riv6yC8otT6vhE,555
+peelee-0.2.22.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+peelee-0.2.22.dist-info/RECORD,,
