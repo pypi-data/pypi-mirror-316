@@ -1,0 +1,9 @@
+help_me_bob/__init__.py,sha256=5zzj29jg5iqcIDCkXirFkqBoMvzIbPynV5mVvmRkEGo,180
+help_me_bob/__main__.py,sha256=n4-SiEl5alA076ShWMKmgrPzPbubJcZDUhqhw3j_1OA,873
+help_me_bob/models.py,sha256=UGzjSckWD1Vvi_1E0JuQq9rZVQ-PrXkK0ejiCROhvjU,1243
+help_me_bob/services.py,sha256=d35yDBdZx9VMHnmL7aeY4Q6gVW3wEA0nO-rYDXdmJHI,1304
+help_me_bob/data/clear.csv,sha256=tzf7XPQiwbnk-JFZCqm8GDIvzqsVdBUSj8D0ZZjseII,581940
+help_me_bob-0.1.1.dist-info/METADATA,sha256=gH7jVvjmu3FarU79p-Q1vg3T-rLUD3HZJTCsHqRa6qQ,751
+help_me_bob-0.1.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+help_me_bob-0.1.1.dist-info/entry_points.txt,sha256=bqKJhRaJ6dj9fX_rOmMy_vGB3wlYWSk-U0meeU7s6rw,58
+help_me_bob-0.1.1.dist-info/RECORD,,
