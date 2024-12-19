@@ -1,0 +1,10 @@
+polars_bio-0.2.11.dist-info/METADATA,sha256=78wI3YvQ3ZS1OqvuTwHuUBFbRZQbhRe_Q5LO37tO_Cs,4308
+polars_bio-0.2.11.dist-info/WHEEL,sha256=1AvI2dGx7vm_kcBWdYb3_KH9yFO7AzyWa-5WgxA1SDw,104
+polars_bio-0.2.11.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+polars_bio/range_viz.py,sha256=ziBSLZp5iVPXhLOLGaxnpXTnaIuhMVxsCEv54QYt0W4,962
+polars_bio/__init__.py,sha256=QLHk8R1kLI9OG_LghYw81uJYmvS7DjeUmXe7VH9FVGg,274
+polars_bio/range_op_io.py,sha256=Kk4RI0iANe_lqlgACELNCeyotxpkBvLAbbVc_wEKvcM,4169
+polars_bio/range_op_helpers.py,sha256=9l14u9IXz16qni0_A4zBTl4x7vfoq4rUSjwJ8setBR4,5055
+polars_bio/range_op.py,sha256=hO0gjbWyoojBx_EWMwiz6ymL8o0pZrj5ql-oOOKuePg,6539
+polars_bio/polars_bio.abi3.so,sha256=s3Kymyr9xr0MDl-eoXnBCGdQypwvPZGrp6qvJksKSs8,78333792
+polars_bio-0.2.11.dist-info/RECORD,,
