@@ -1,0 +1,31 @@
+[openai]
+api_key = ""  # Can be empty, recommend using environment variables or CLI arguments
+base_url = "https://api.openai.com/v1"  # OpenAI default API endpoint
+model = "gpt-4o"  # Default model
+
+[blog]
+language = "auto"  # auto detect language or specify language like "English" etc
+
+[metadata]
+use = false  # Whether to generate metadata
+post_directory = "content/posts/zh"  # articles directory
+generate_title = false  # Whether to generate title
+generate_description = false  # Whether to generate description
+generate_keywords = false  # Whether to generate keywords
+max_title_length = 100  # Maximum title length
+max_description_length = 300  # Maximum description length
+keyword_count = 5  # Number of keywords to generate
+ai_summary = false  # Whether to generate ai summary
+ai_summary_length = 1000  # Maximum ai summary length
+
+[translation]
+use = true  # Whether to translate articles
+post_directory = "content/posts/zh"  # articles directory
+target_languages = [
+    { language = "English", code = "en" },
+    { language = "Japanese", code = "ja" },
+    # Add more target languages as needed
+]
+
+[system]
+retry_count = 3  # Number of retry attempts on failure
