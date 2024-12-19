@@ -1,0 +1,10 @@
+stsmfa/__init__.py,sha256=X9pTeGHIYZtDOmfb9pnn2DEqWZMAyaPlqdFwEhsuSvk,22
+stsmfa/__maIn__.py,sha256=3U77Eu21mJ-LY27RG-JEnpbh6Z63wGOom4i-EoLtUcY,59
+stsmfa/cli.py,sha256=L5ZacceKZeLgEF_rfm43cZSqEQt5GDCOnXS2OUV33uI,2049
+stsmfa/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+stsmfa_cli-1.5.0.dist-info/LICENSE,sha256=HaOcB16QIEIPG3FPLPx_5RZ9f9vptA0SDZyXFVrneVQ,1068
+stsmfa_cli-1.5.0.dist-info/METADATA,sha256=hBJqS1-VFU6-29UJJaCcqd1AbbLf732rf24i8IxyuKA,5381
+stsmfa_cli-1.5.0.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+stsmfa_cli-1.5.0.dist-info/entry_points.txt,sha256=t0dHioJf7uX8qhuFHQy8ami5A2sZK3gN8DSOWJBs2aE,66
+stsmfa_cli-1.5.0.dist-info/top_level.txt,sha256=9gtPRHQbDYiZu1JvQya2SAJZqMpPkGupgV2vNwdfh3c,7
+stsmfa_cli-1.5.0.dist-info/RECORD,,
