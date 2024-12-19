@@ -1,0 +1,28 @@
+name: Publish docs via GitHub Pages
+on:
+  push:
+   tags:
+     - "*"
+  workflow_dispatch:
+env:
+  POETRY_VERSION: 1.8.4
+jobs:
+  build:
+    name: Deploy docs
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v2
+      - uses: actions/setup-python@v2
+        with:
+          python-version: 3.12
+      - uses: abatilo/actions-poetry@v2
+        with:
+          poetry-version: ${{ env.POETRY_VERSION }}
+      - run: poetry lock --no-update && poetry install
+      - name: Install polars-bio
+        run: pip install polars-bio
+      - name: Deploy docs
+        run: poetry run mkdocs gh-deploy --remote-branch gh-pages -f mkdocs.yml --force
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
