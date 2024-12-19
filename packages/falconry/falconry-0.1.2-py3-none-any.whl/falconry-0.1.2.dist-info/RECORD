@@ -1,0 +1,10 @@
+falconry/__init__.py,sha256=LlVXOIZn1vOA46jO4Xi96W3qxWAdOK5qiAjid_IknCo,174
+falconry/cli.py,sha256=7dMrRzn3maF82pCovpO7I4jyhyFzqWG7HWBKu0kfxJE,1520
+falconry/job.py,sha256=OU5dncDrFp8pB3YA-PAp7NvwALqm6ha-vbVOvKw4hC8,13033
+falconry/manager.py,sha256=rIn9DoUb43NMxTVMW6-J6xWxuwHrhGW6IZ1Cul3E-N4,21831
+falconry/schedd_wrapper.py,sha256=Y9oWnPcmbdDDhLeaeGQX907qt9r7l11z31e6G3GnjA4,1461
+falconry/translate.py,sha256=3eHbHA9dW0HapNRJkcl28EZ61XXfOxdtcCmrIBZA0LM,327
+falconry-0.1.2.dist-info/METADATA,sha256=-JYe85EGHa1aNvLCzjzzgNB2ZZIYd2GXenk49fBRZtU,2329
+falconry-0.1.2.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+falconry-0.1.2.dist-info/licenses/LICENSE,sha256=SGozOSvKOihd2xzAhxloeYpU10cr7daz69N73JTtIs8,1071
+falconry-0.1.2.dist-info/RECORD,,
