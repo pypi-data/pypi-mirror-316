@@ -1,0 +1,20 @@
+[project]
+name = "wox-plugin"
+version = "0.0.29"
+description = "Python plugin SDK for Wox launcher"
+authors = [{ name = "Wox Team", email = "team@wox-launcher.com" }]
+dependencies = ["pydantic>=2.0.0"]
+requires-python = ">=3.8"
+readme = "README.md"
+license = { text = "MIT" }
+
+[project.optional-dependencies]
+dev = ["black>=23.0.0", "hatchling>=1.18.0", "twine>=4.0.0"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.black]
+line-length = 88
+target-version = ['py38']
