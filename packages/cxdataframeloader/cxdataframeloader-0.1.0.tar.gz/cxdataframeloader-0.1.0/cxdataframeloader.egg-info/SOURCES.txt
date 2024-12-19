@@ -1,0 +1,6 @@
+setup.py
+cxdataframeloader.egg-info/PKG-INFO
+cxdataframeloader.egg-info/SOURCES.txt
+cxdataframeloader.egg-info/dependency_links.txt
+cxdataframeloader.egg-info/requires.txt
+cxdataframeloader.egg-info/top_level.txt
