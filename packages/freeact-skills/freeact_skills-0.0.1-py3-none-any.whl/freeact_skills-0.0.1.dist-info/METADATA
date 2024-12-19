@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: freeact-skills
+Version: 0.0.1
+Summary: Library of predefined freeact agent skills
+Home-page: https://github.com/gradion-ai/freeact-skills
+License: Apache-2.0
+Author: Martin Krasser
+Author-email: martin@gradion.ai
+Requires-Python: >=3.10,<3.13
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Provides-Extra: all
+Provides-Extra: reader
+Provides-Extra: resume
+Provides-Extra: search-google
+Provides-Extra: search-perplexity
+Provides-Extra: zotero
+Requires-Dist: beautifulsoup4 (>=4.12,<5.0) ; extra == "resume" or extra == "all"
+Requires-Dist: google-genai (>=0.2.2,<0.3.0) ; extra == "search-google" or extra == "all"
+Requires-Dist: httpx (>=0.27.2,<0.28.0) ; extra == "search-perplexity" or extra == "all"
+Requires-Dist: openai (>=1.56.0,<2.0.0) ; extra == "search-perplexity" or extra == "all"
+Requires-Dist: pydantic (>=2.9,<3.0) ; extra == "resume" or extra == "all"
+Requires-Dist: python-dateutil (>=2.9,<3.0) ; extra == "reader" or extra == "zotero" or extra == "all"
+Requires-Dist: pyyaml (>=6.0,<7.0) ; extra == "resume" or extra == "all"
+Requires-Dist: pyzotero (>=1.5,<2.0) ; extra == "zotero" or extra == "all"
+Requires-Dist: requests (>=2.32,<3.0) ; extra == "reader" or extra == "resume" or extra == "all"
+Description-Content-Type: text/markdown
+
+# Freeact Skills
+
+Library of predefined [freeact](https://github.com/gradion-ai/freeact) agent skills.
+
+## Development
+
+```bash
+conda env create -f environment.yml
+conda activate freeact-skills
+poetry install --all-extras
+```
+
