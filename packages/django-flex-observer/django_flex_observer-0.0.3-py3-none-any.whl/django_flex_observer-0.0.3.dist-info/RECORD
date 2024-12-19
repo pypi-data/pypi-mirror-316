@@ -1,0 +1,13 @@
+flex_observer/__init__.py,sha256=Y0QCEIpK9aIxmPvxjP4GlDeYsLLD2WahuG7n_L7J71s,141
+flex_observer/admin.py,sha256=suMo4x8I3JBxAFBVIdE-5qnqZ6JAZV0FESABHOSc-vg,63
+flex_observer/apps.py,sha256=pnMV5PSUTtraEeq_8oSptVo5v3Z2q9p-nMF_Ch3WJrY,157
+flex_observer/tests.py,sha256=mrbGGRNg5jwbTJtWWa7zSKdDyeB4vmgZCRc2nk6VY-g,60
+flex_observer/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+flex_observer/types/__init__.py,sha256=KdCgPTolNfsQa_o1S0Lf91zeE-yek8-IQZfNwP__fKE,24
+flex_observer/types/observer.py,sha256=aH2JcX19BRQnmhg6emv5Xb_YqRQKmFFJElHTzu4Oa6E,5232
+django_flex_observer-0.0.3.dist-info/AUTHORS.rst,sha256=jVS6fQIBB1H-lGYqn3Mlgfd6gQDpYfirCZN_YkJnc0g,201
+django_flex_observer-0.0.3.dist-info/LICENSE,sha256=g-sW47cQ3Alw_l3VTygN9eIIxUFoYXBxfel9GZozv58,1066
+django_flex_observer-0.0.3.dist-info/METADATA,sha256=QQ7W2X6Ds_CxDjm_D7-isaoE0sPYbAeDdIXgQk-v-gU,1847
+django_flex_observer-0.0.3.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+django_flex_observer-0.0.3.dist-info/top_level.txt,sha256=bGSfe77txx_WEFYJU_fd2v6RmXbtSAbXVx4agnYCUN8,14
+django_flex_observer-0.0.3.dist-info/RECORD,,
