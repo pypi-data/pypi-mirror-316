@@ -1,0 +1,9 @@
+-r requirements.txt
+-e .
+aioconsole
+black
+mypy
+pytest
+pytest-asyncio
+pytest-cov
+ruff
