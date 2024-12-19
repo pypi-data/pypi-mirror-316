@@ -1,0 +1,2 @@
+[abx]
+abx_plugin_mercury = abx_plugin_mercury
