@@ -1,0 +1,183 @@
+Metadata-Version: 2.4
+Name: intentional-pipecat
+Version: 0.0.1
+Summary: Plugin that lets you build transcribed audio voice bots using Pipecat
+Project-URL: Documentation, https://github.com/intentional-ai/intentional#readme
+Project-URL: Issues, https://github.com/intentional-ai/intentional/issues
+Project-URL: Source, https://github.com/intentional-ai/intentional
+Author-email: ZanSara <github@zansara.dev>
+License-Expression: AGPL-3.0-or-later
+License-File: LICENSE.txt
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.10
+Requires-Dist: intentional-core
+Requires-Dist: pipecat-ai
+Provides-Extra: anthropic
+Requires-Dist: anthropic~=0.40.0; extra == 'anthropic'
+Provides-Extra: assemblyai
+Requires-Dist: assemblyai~=0.34.0; extra == 'assemblyai'
+Provides-Extra: aws
+Requires-Dist: boto3~=1.35.27; extra == 'aws'
+Provides-Extra: azure
+Requires-Dist: azure-cognitiveservices-speech~=1.41.1; extra == 'azure'
+Requires-Dist: openai~=1.57.2; extra == 'azure'
+Provides-Extra: canonical
+Requires-Dist: aiofiles~=24.1.0; extra == 'canonical'
+Provides-Extra: cartesia
+Requires-Dist: cartesia~=1.0.13; extra == 'cartesia'
+Requires-Dist: websockets~=13.1; extra == 'cartesia'
+Provides-Extra: daily
+Requires-Dist: daily-python~=0.13.0; extra == 'daily'
+Provides-Extra: deepgram
+Requires-Dist: deepgram-sdk~=3.7.7; extra == 'deepgram'
+Provides-Extra: dev
+Requires-Dist: intentional[lint,test]; extra == 'dev'
+Provides-Extra: elevenlabs
+Requires-Dist: websockets~=13.1; extra == 'elevenlabs'
+Provides-Extra: fal
+Requires-Dist: fal-client~=0.4.1; extra == 'fal'
+Provides-Extra: fireworks
+Requires-Dist: openai~=1.57.2; extra == 'fireworks'
+Provides-Extra: gladia
+Requires-Dist: websockets~=13.1; extra == 'gladia'
+Provides-Extra: google
+Requires-Dist: google-cloud-texttospeech~=2.21.1; extra == 'google'
+Requires-Dist: google-generativeai~=0.8.3; extra == 'google'
+Provides-Extra: grok
+Requires-Dist: openai~=1.57.2; extra == 'grok'
+Provides-Extra: groq
+Requires-Dist: openai~=1.57.2; extra == 'groq'
+Provides-Extra: gstreamer
+Requires-Dist: pygobject~=3.48.2; extra == 'gstreamer'
+Provides-Extra: krisp
+Requires-Dist: pipecat-ai-krisp~=0.3.0; extra == 'krisp'
+Provides-Extra: langchain
+Requires-Dist: langchain-community~=0.2.12; extra == 'langchain'
+Requires-Dist: langchain-openai~=0.1.20; extra == 'langchain'
+Requires-Dist: langchain~=0.2.14; extra == 'langchain'
+Provides-Extra: lint
+Requires-Dist: intentional[lint]; extra == 'lint'
+Provides-Extra: livekit
+Requires-Dist: livekit-api~=0.7.1; extra == 'livekit'
+Requires-Dist: livekit~=0.17.5; extra == 'livekit'
+Provides-Extra: lmnt
+Requires-Dist: lmnt~=1.1.4; extra == 'lmnt'
+Provides-Extra: local
+Requires-Dist: pyaudio~=0.2.14; extra == 'local'
+Provides-Extra: moondream
+Requires-Dist: einops~=0.8.0; extra == 'moondream'
+Requires-Dist: timm~=1.0.8; extra == 'moondream'
+Requires-Dist: transformers~=4.44.0; extra == 'moondream'
+Provides-Extra: nim
+Requires-Dist: openai~=1.57.2; extra == 'nim'
+Provides-Extra: noisereduce
+Requires-Dist: noisereduce~=3.0.3; extra == 'noisereduce'
+Provides-Extra: openai
+Requires-Dist: openai~=1.57.2; extra == 'openai'
+Requires-Dist: python-deepcompare~=1.0.1; extra == 'openai'
+Requires-Dist: websockets~=13.1; extra == 'openai'
+Provides-Extra: openpipe
+Requires-Dist: openpipe~=4.40.0; extra == 'openpipe'
+Provides-Extra: playht
+Requires-Dist: pyht~=0.1.9; extra == 'playht'
+Requires-Dist: websockets~=13.1; extra == 'playht'
+Provides-Extra: riva
+Requires-Dist: nvidia-riva-client~=2.17.0; extra == 'riva'
+Provides-Extra: silero
+Requires-Dist: onnxruntime~=1.20.1; extra == 'silero'
+Provides-Extra: simli
+Requires-Dist: simli-ai~=0.1.7; extra == 'simli'
+Provides-Extra: soundfile
+Requires-Dist: soundfile~=0.12.1; extra == 'soundfile'
+Provides-Extra: test
+Requires-Dist: intentional[test]; extra == 'test'
+Provides-Extra: together
+Requires-Dist: openai~=1.57.2; extra == 'together'
+Provides-Extra: websocket
+Requires-Dist: fastapi~=0.115.0; extra == 'websocket'
+Requires-Dist: websockets~=13.1; extra == 'websocket'
+Provides-Extra: whisper
+Requires-Dist: faster-whisper~=1.1.0; extra == 'whisper'
+Description-Content-Type: text/markdown
+
+# Intentional - Pipecat
+
+[![Made for Intentional](https://img.shields.io/badge/made_for-intentional-blue)](https://intentional-ai.github.io/intentional/docs/home/)
+[![PyPI - Version](https://img.shields.io/pypi/v/intentional-pipecat.svg)](https://pypi.org/project/intentional-pipecat)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/intentional-pipecat.svg)](https://pypi.org/project/intentional-pipecat)
+[![PyPI - Downloads](https://img.shields.io/pypi/dm/intentional-pipecat)](https://pypistats.org/packages/intentional-pipecat)
+[![Copier](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/copier-org/copier/master/img/badge/badge-grayscale-inverted-border-orange.json)](https://github.com/copier-org/copier)
+
+Plugin that lets you build transcribed audio voice bots using Pipecat.
+
+-----
+
+## Table of Contents
+
+- [Installation](#installation)
+- [License](#license)
+
+## Installation
+
+You can install `intentional-pipecat` without extras:
+
+```console
+pip install intentional-pipecat[silero,deepgram,openai]
+```
+
+However, it will be unusable as-is, because it will come with nearly no dependencies.
+
+In order to have any of the underlying dependencies installed (such as Silero's VAD, Deepgram, OpenAI, etc...) you must specify them as extras, like:
+
+```console
+pip install intentional-pipecat[silero,deepgram,openai]
+```
+
+For a list of all the available extras, see Pipecat's documentation or [their `pyproject.toml` file](https://github.com/pipecat-ai/pipecat/blob/main/pyproject.toml). We are going to try to keep this list up-to-date on Intentional's end, but in case of issues you can also install those dependencies by hand by doing:
+
+```console
+pip install pipecat-ai[<the extras you want>]
+```
+
+This guarantees that you get the correct extras for your version of Pipecat. Please open an issue if you find any discrepancies.
+
+## Usage
+
+In order to use Pipecat, you need to specify which components you want to use in the configuration file. For example:
+
+```yaml
+bot:
+  type: pipecat
+  llm:
+    client: openai
+    name: gpt-4o
+  vad:
+    module: silero
+    client: SileroVADAnalyzer
+  stt:
+    module: deepgram
+    client: DeepgramSTTService
+  tts:
+    module: azure
+    client: AzureTTSService
+```
+
+This example would require the extras `silero`, `deepgram` and `azure`:
+
+```console
+pip install intentional-pipecat[silero,deepgram,azure]
+```
+
+See [Pipecat's documentation](https://docs.pipecat.ai/getting-started/overview) for more information about what modules and classes are available for the various pipeline components.
+
+At this time, the Pipeline structure itself cannot be configured. [Open an issue](https://github.com/intentional-ai/intentional/issues/new) if you'd like to allow some degree of pipeline customization.
+
+## License
+
+`intentional` is distributed under the terms of the [AGPL](LICENSE.txt) license. If that doesn't work for you, [get in touch](mailto:github@zansara.dev).
