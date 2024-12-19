@@ -1,0 +1,18 @@
+[package]
+name = "my-plug"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "my_plug"
+crate-type= ["cdylib"]
+
+[dependencies]
+pyo3 = { version = "0.21.2", features = ["extension-module", "abi3-py38"] }
+pyo3-polars = { version = "0.18.0", features = ["derive"] }
+serde = { version = "1", features = ["derive"] }
+polars = { version = "0.44.2", features = ["dtype-i16", "dtype-i8", "dtype-u8", "dtype-u16"] }
+rand = "0.8"
+serde_json = "1.0"
+arrow = "53.0"
+linregress = "0.5.4"
