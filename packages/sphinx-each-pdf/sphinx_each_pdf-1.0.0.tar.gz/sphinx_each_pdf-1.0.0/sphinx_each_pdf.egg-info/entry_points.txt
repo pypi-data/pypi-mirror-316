@@ -1,0 +1,2 @@
+[console_scripts]
+each-pdf = each_pdf:main

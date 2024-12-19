@@ -1,0 +1,8 @@
+README.md
+setup.py
+sphinx_each_pdf.egg-info/PKG-INFO
+sphinx_each_pdf.egg-info/SOURCES.txt
+sphinx_each_pdf.egg-info/dependency_links.txt
+sphinx_each_pdf.egg-info/entry_points.txt
+sphinx_each_pdf.egg-info/requires.txt
+sphinx_each_pdf.egg-info/top_level.txt
