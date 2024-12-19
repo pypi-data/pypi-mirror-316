@@ -1,0 +1,15 @@
+Metadata-Version: 2.4
+Name: netbox_topology_plugin_button
+Version: 0.0.1
+Summary: Adds a Button in Netbox to the device Page to directly jump to a filtered topology view.
+Author-email: Devin Menzi <devin.menzi@1as.ch>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+## netbox-topology-plugin-button
+
+Adds a Button in Netbox to the device Page to directly jump to a filtered topology view.
