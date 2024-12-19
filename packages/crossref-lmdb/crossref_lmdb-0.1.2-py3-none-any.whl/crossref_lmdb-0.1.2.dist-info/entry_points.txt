@@ -1,0 +1,2 @@
+[console_scripts]
+crossref-lmdb = crossref_lmdb.cli:main
