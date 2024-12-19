@@ -1,0 +1,7 @@
+syntax_checker-0.2.7.dist-info/METADATA,sha256=YpMDaydstlTJjHJYcXqCbmDikdZ7OhhTd32fQpYSrNk,4212
+syntax_checker-0.2.7.dist-info/WHEEL,sha256=ms4tRlkeMl3_Y5RMzUzfH7CjbFGf5vF_UqxM5w5NpoA,130
+syntax_checker/__init__.py,sha256=PHgOTt8et16N8TnygwKRYQZz9r4mzmv1QZmYB4XdgZg,139
+syntax_checker/__init__.pyi,sha256=DtKTe5k2sCDsg89ovPlmbqqGI5FrW0Dhx3uCFwGhhFg,1593
+syntax_checker/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+syntax_checker/syntax_checker.cpython-37m-aarch64-linux-gnu.so,sha256=qqJFJbj1PbfAK6w_9akDC3ZuGLxcth56mLyjz3pK2MI,19842480
+syntax_checker-0.2.7.dist-info/RECORD,,
