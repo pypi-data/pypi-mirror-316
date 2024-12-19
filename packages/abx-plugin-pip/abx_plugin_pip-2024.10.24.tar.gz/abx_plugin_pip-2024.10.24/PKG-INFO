@@ -1,0 +1,11 @@
+Metadata-Version: 2.4
+Name: abx-plugin-pip
+Version: 2024.10.24
+Summary: Add your description here
+Requires-Python: >=3.10
+Requires-Dist: abx-pkg>=0.5.4
+Requires-Dist: abx-plugin-default-binproviders>=2024.10.24
+Requires-Dist: abx-spec-abx-pkg>=0.1.0
+Requires-Dist: abx-spec-config>=0.1.0
+Requires-Dist: abx>=0.1.0
+Requires-Dist: django>=5.0.0
