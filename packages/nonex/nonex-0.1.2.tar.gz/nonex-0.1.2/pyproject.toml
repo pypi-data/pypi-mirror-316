@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "nonex"
+version = "0.1.2"
+description = ""
+authors = ["Roy Rothenberg <royrothenberg@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[tool.poetry.group.dev.dependencies]
+taskipy = "^1.14.1"
+pytest = "^8.3.4"
+mypy = "^1.13.0"
+black = "^24.10.0"
+flake8 = "^7.1.1"
+
+[tool.taskipy.tasks]
+test = { cmd = "pytest tests", help = "runs all unit tests" }
+pr_test = "task lint"
+fmt = { cmd = "black tests nonex", help = "format code" }
+lint = { cmd = "task lint_black && task lint_flake8 && task lint_mypy", help = "exec lint" }
+lint_flake8 = "flake8 --max-line-length=88 tests nonex"
+lint_mypy = "mypy tests nonex"
+lint_black = "black --check tests nonex"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
