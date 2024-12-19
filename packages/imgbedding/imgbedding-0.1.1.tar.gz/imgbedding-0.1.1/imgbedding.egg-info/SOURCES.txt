@@ -1,0 +1,10 @@
+setup.py
+imgbedding/__init__.py
+imgbedding/imgbedding.py
+imgbedding/models.py
+imgbedding/utils.py
+imgbedding.egg-info/PKG-INFO
+imgbedding.egg-info/SOURCES.txt
+imgbedding.egg-info/dependency_links.txt
+imgbedding.egg-info/requires.txt
+imgbedding.egg-info/top_level.txt
