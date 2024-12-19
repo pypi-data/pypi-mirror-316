@@ -1,0 +1,89 @@
+[tool.poetry]
+name = "evocarshare"
+version = "0.0.1"
+description = "Access data from the Evo Car Share api"
+authors = ["Jazzz <473256+jazzz@users.noreply.github.com>"]
+repository = "https://github.com/jazzz/evocarshare-py"
+documentation = "https://github.com/jazzz/evocarshare-py"
+readme = "README.md"
+packages = [{ include = "evocarshare" }]
+
+[tool.poetry.dependencies]
+python = ">=3.11,<4.0"
+haversine = "^2.8.1"
+aiohttp = "^3.11.6"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.2.0"
+pyright = "^1.1.382"
+pre-commit = "^3.4.0"
+tox = "^4.11.1"
+pytest-asyncio = "^0.24.0"
+aioresponses = "^0.7.7"
+python-dotenv = "^1.0.1"
+
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.pyright]
+include = ["evocarshare"]
+typeCheckingMode = "strict"
+venvPath = "."
+venv = ".venv"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+target-version = "py39"
+line-length = 120
+fix = true
+lint.select = [
+  # flake8-2020
+  "YTT",
+  # flake8-bandit
+  "S",
+  # flake8-bugbear
+  "B",
+  # flake8-builtins
+  "A",
+  # flake8-comprehensions
+  "C4",
+  # flake8-debugger
+  "T10",
+  # flake8-simplify
+  "SIM",
+  # isort
+  "I",
+  # mccabe
+  "C90",
+  # pycodestyle
+  "E",
+  "W",
+  # pyflakes
+  "F",
+  # pygrep-hooks
+  "PGH",
+  # pyupgrade
+  "UP",
+  # ruff
+  "RUF",
+  # tryceratops
+  "TRY",
+]
+lint.ignore = [
+  # LineTooLong
+  "E501",
+  # DoNotAssignLambda
+  "E731",
+]
+
+[tool.ruff.format]
+preview = true
+
+
+[tool.ruff.lint.per-file-ignores]
+"tests/*" = ["S101"]
