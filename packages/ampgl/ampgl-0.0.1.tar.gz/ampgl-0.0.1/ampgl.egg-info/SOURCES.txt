@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+AMPyGameLib/__init__.py
+AMPyGameLib/ampgl.py
+ampgl.egg-info/PKG-INFO
+ampgl.egg-info/SOURCES.txt
+ampgl.egg-info/dependency_links.txt
+ampgl.egg-info/requires.txt
+ampgl.egg-info/top_level.txt
