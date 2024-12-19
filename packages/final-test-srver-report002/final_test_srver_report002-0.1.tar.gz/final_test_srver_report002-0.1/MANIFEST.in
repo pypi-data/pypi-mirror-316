@@ -1,0 +1,4 @@
+include README.md
+include LICENSE
+include monitoring_system_report6/server/config.conf
+include monitoring_system_report6/server/templates/dashboard.html
