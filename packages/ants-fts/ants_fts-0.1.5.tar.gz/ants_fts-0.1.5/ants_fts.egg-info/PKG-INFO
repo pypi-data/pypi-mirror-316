@@ -1,0 +1,80 @@
+Metadata-Version: 2.1
+Name: ants-fts
+Version: 0.1.5
+Summary: This library is used to extract features from data.
+Home-page: https://ants.abc
+Author: HaoPP
+Author-email: haopp@antsomi.com
+Project-URL: Source, https://ants.abc/source
+Project-URL: Documentation, https://ants.abc/docs
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+<h2>Antsomi Extractors<h2>
+
+<p>Installation:</p> `pip install ants-fts`
+<br>
+<p>Importation:</p> `import ants_extractor`
+<br>
+<head>
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/default.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+</head>
+<body>
+  <pre><code class="python">
+	import pandas as pd
+	from ants_extractor.IntervalExtractor import IntervalExtractor
+	from ants_extractor.SkewnessScoreExtractor import SkewnessScoreExtractor
+	from ants_extractor.DatetimeExtractor import DatetimeExtractor
+	from ants_extractor.DeductionExtractor import DeductionExtractor
+	from ants_extractor.PurchasingPowerExtractor import PurchasingPowerExtractor
+	from ants_extractor.RFMExtractor import RFMExtractor
+	from datetime import datetime, timedelta
+	import warnings 
+	warnings.filterwarnings('ignore')
+
+	def test():
+		df = pd.read_csv("D:/work/antsomi/aristino/airflow/aristino_customers_features/erp_transaction_features/20241215_Export_Aristino_Transactions.csv", \
+							sep = "\t", \
+							dtype = {"customer_phone": str});
+		df['date_created'] = pd.to_datetime(df['date_created'], format="%Y-%m-%d %H:%M:%S", errors="coerce");
+
+		itv_fts = IntervalExtractor.extract(df, ['customer_phone'], 'date_created');
+		print("Got interval features")
+
+		df['int_date_created'] = df['int_date_created'] = (df['date_created'] - pd.to_datetime("1970-01-01 00:00:00")).dt.total_seconds()/(24 * 3600);
+		skewness_score_fts = SkewnessScoreExtractor.extract(df, ['customer_phone'], 'int_date_created');
+		print("Got skewness score features")
+
+		dt_fts = DatetimeExtractor.extract(df, ['customer_phone'], 'date_created');
+		print("Got datetime features")
+
+		deduction_fts = DeductionExtractor.extract(df, ['customer_phone'], 'discount_amount', 'subtotal_amount')
+		print("Got deduction features")
+
+		purchasing_power_fts = PurchasingPowerExtractor.extract(df, ["customer_phone"], "revenue");
+		print("Got purchasing power features");
+
+		recency_fts = RFMExtractor.extract_recency(df, ["customer_phone"], "date_created", "2024-12-15 00:00:00");
+		print("Got recency features");
+
+		fts = itv_fts.merge(skewness_score_fts, how='left')\
+						.merge(dt_fts, how = 'left')\
+						.merge(deduction_fts, how='left')\
+						.merge(purchasing_power_fts, how='left')\
+						.merge(recency_fts, how = 'left');
+
+		print(fts.tail(2).T)
+		return;
+
+	test()
+  </code></pre>
+</body>
