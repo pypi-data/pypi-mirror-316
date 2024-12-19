@@ -1,0 +1,83 @@
+name: Test pip
+
+on:
+  push:
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  test-pip:
+    name:      "Install ghex through pip"
+    runs-on:   ubuntu-latest
+    container: ${{ matrix.config.container }}
+
+    strategy:
+      matrix:
+        config:
+        - {
+            name:      "cpu",
+            container: "ghcr.io/gridtools/gridtools-base:gcc-9-ucx-mpi-atlas-parmetis",
+            cc:        "gcc",
+            cxx:       "g++",
+            gpu:       "OFF",
+            gpu_type:  "AUTO",
+            run:       "ON",
+          }
+
+        - {
+            name:      "gpu-cuda",
+            container: "ghcr.io/gridtools/gridtools-base:gcc-9-ucx-mpi-atlas-parmetis-cuda-11",
+            cc:        "gcc",
+            cxx:       "g++",
+            gpu:       "ON",
+            gpu_type:  "NVIDIA",
+            run:       "OFF",
+          }
+
+        - {
+            name:      "gpu-hip",
+            container: "ghcr.io/gridtools/gridtools-base:gcc-9-ucx-mpi-atlas-parmetis-hip",
+            cc:        "/opt/rocm/llvm/bin/clang",
+            cxx:       "/opt/rocm/llvm/bin/clang++",
+            gpu:       "ON",
+            gpu_type:  "AMD",
+            run:       "OFF",
+          }
+
+    env:
+      CC:                             ${{ matrix.config.cc }}
+      CXX:                            ${{ matrix.config.cxx }}
+      GHEX_USE_GPU:                   ${{ matrix.config.gpu }}
+      GHEX_GPU_TYPE:                  ${{ matrix.config.gpu_type }}
+      SHLVL:                          "1"
+      OMPI_ALLOW_RUN_AS_ROOT:         "1"
+      OMPI_ALLOW_RUN_AS_ROOT_CONFIRM: "1"
+
+    steps:
+      - name: Install python
+        run: |
+          apt update
+          apt-get -y install python3-dev python3-venv python3-pybind11
+
+      - name: Clone w/ submodules
+        uses: actions/checkout@v3
+        with:
+          submodules: recursive
+
+      - name: Setup venv
+        run: |
+          python3 -m venv ~/env
+
+      - name: Build and install ghex
+        run: |
+          . ~/env/bin/activate
+          python3 -m pip install --upgrade pip
+          python3 -m pip install -r ./bindings/python/requirements-test.txt # before ghex installation to avoid mpi4py version conflict
+          python3 -m pip install -v .
+
+      - if: ${{ matrix.config.run == 'ON' }}
+        name: Run Python tests
+        run: |
+          . ~/env/bin/activate
+          python3 -m pytest -s ./test/bindings/python/
+          mpirun --oversubscribe -np 4 python3 -m pytest -s --with-mpi ./test/bindings/python/

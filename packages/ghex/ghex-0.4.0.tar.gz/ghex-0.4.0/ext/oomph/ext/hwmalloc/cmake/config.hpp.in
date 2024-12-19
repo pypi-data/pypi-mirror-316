@@ -1,0 +1,16 @@
+/*
+ * GridTools
+ *
+ * Copyright (c) 2014-2021, ETH Zurich
+ * All rights reserved.
+ *
+ * Please, refer to the LICENSE file in the root directory.
+ * SPDX-License-Identifier: BSD-3-Clause
+ */
+#pragma once
+
+
+#cmakedefine01 HWMALLOC_ENABLE_DEVICE
+#cmakedefine HWMALLOC_DEVICE_RUNTIME "@HWMALLOC_DEVICE_RUNTIME_@"
+#define @HWMALLOC_DEVICE@
+#cmakedefine HWMALLOC_ENABLE_LOGGING

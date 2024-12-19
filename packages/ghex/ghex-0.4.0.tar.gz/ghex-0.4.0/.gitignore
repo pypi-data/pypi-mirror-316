@@ -1,0 +1,50 @@
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
+# Temporaries
+*.swp
+*.swo
+*~
+
+CMakeCache.txt
+CMakeFiles
+.vscode
+build
+bin
+lib/
+pyvenv.cfg
+doc_src/__pycache__
+doc_src/_build/
+__pycache__
+_build
+.venv*/

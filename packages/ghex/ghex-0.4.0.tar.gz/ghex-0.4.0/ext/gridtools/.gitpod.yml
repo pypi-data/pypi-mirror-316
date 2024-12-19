@@ -1,0 +1,27 @@
+image:
+  file: .gitpod.Dockerfile
+
+vscode:
+  extensions:
+    - ms-vscode.cmake-tools
+    - llvm-vs-code-extensions.vscode-clangd
+
+tasks:
+  - init: |
+      mkdir .vscode
+      ln $(pwd)/.gitpod/.vscode/settings.json $(pwd)/.vscode
+      ln $(pwd)/.gitpod/.vscode/launch.json $(pwd)/.vscode
+      ln $(pwd)/.gitpod/CMakeUserPresets.json $(pwd)
+      cmake --preset default
+      cmake --build --preset default --parallel $(nproc)
+
+github:
+  prebuilds:
+    master: true
+    branches: true
+    pullRequests: true
+    pullRequestsFromForks: true
+    addCheck: true
+    addComment: false
+    addBadge: false
+    addLabel: false
