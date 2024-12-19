@@ -1,0 +1,10 @@
+pypatchworkpp.cpython-312-x86_64-linux-gnu.so,sha256=OTh9NJTgJzUABPrC08-zLd1LRvQv37PHLcoK5LX9zfM,434744
+include/patchwork/patchworkpp.h,sha256=7avFsu9NMJ6qZOXsY0pLT21i86V3ZBHMG1rz8pKWg4w,8530
+pypatchworkpp-1.0.4.dist-info/RECORD,,
+pypatchworkpp-1.0.4.dist-info/METADATA,sha256=2OJb-X1tEU3m3xO-vwSojlDtkhyNwVZkOS2V0QoKr7g,206
+pypatchworkpp-1.0.4.dist-info/WHEEL,sha256=MPPeijg-_gFn_Jh-rsvDxXe07i0rAASkiLQ9KajH710,156
+lib64/libground_seg_cores.a,sha256=DMydcffNeHdWPJNnExtExJCsbfih_LIp1lO48UqU_ZQ,241562
+lib64/cmake/patchworkpp/patchworkppTargets-release.cmake,sha256=VtIIzrNfjJVw4vMkcgS3f8IW_nTmsSLlC63uJPHIFxI,942
+lib64/cmake/patchworkpp/patchworkppConfig.cmake,sha256=8si3kfrxrhFdNGYaduwPIzlfrjKmbRHei_1GPPlCXSs,4923
+lib64/cmake/patchworkpp/patchworkppTargets.cmake,sha256=vGZHW-GK549IhfjJv6EIp4JkCmLuWZzKXDLNRuOkHzw,4924
+lib64/cmake/patchworkpp/patchworkppConfig-release.cmake,sha256=VtIIzrNfjJVw4vMkcgS3f8IW_nTmsSLlC63uJPHIFxI,942
