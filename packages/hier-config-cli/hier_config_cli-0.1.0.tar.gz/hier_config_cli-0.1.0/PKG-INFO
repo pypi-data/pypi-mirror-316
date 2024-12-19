@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: hier-config-cli
+Version: 0.1.0
+Summary: 
+License: Apache 2.0
+Author: James Williams
+Author-email: james.williams@packetgeek.net
+Requires-Python: >=3.9,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: click (>=8.1.7,<9.0.0)
+Requires-Dist: hier-config (>=3.1.0,<4.0.0)
+Requires-Dist: pyyaml (>=6.0.2,<7.0.0)
+Description-Content-Type: text/markdown
+
+# hier-config-cli
+
+hier-config-cli is a command-line interface tool built on top of the [Hier Config](https://github.com/netdevops/hier_config) library. It enables network engineers to analyze, remediate, and predict configurations for network devices across multiple platforms.
+
+## Usage
+
+```python
+hier-config-cli [COMMAND] --platform PLATFORM --running-config PATH --generated-config PATH
+```
+
+### Available Commands
+
+* remediation
+* rollback
+* future
+
+## Contributing
+
+Contributions are welcome! Please open an issue or submit a pull request for features, bug fixes, or documentation improvements.
+
