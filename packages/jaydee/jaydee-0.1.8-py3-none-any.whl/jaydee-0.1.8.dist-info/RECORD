@@ -1,0 +1,16 @@
+jaydee/__init__.py,sha256=H7TJIieHeLirDCGjU_sLCQ54ejUTgHbqoTs8-R0M68U,110
+jaydee/crawler.py,sha256=l68TubT7h0KG_WiR8mR61ftAoLrRBuhhWoY1ed8tkcY,10120
+jaydee/options/__init__.py,sha256=63Kwt-xri5Jz7rl0eWHpguvJHEluyIN637PjVCSIl9k,234
+jaydee/options/crawler.py,sha256=wXFz5Fh_bhEzq0lkkLwyNP-ambnzZyOeIlzRRzOi51A,1301
+jaydee/options/multithread.py,sha256=LLS1JXF1ruDkTSjWE1rcrhRV-EhIkYYl2il9A8IYJzo,468
+jaydee/options/scraper.py,sha256=wh4YELkGd6ApgyKjnz4q3cO_FmjL86CPbvUWkPFF6e8,467
+jaydee/options/waitfor.py,sha256=y4nOf9KB7z2PKCIDy6hIlFtHQtXa_l3hyJxlwgSnZKU,1520
+jaydee/options/webscraper.py,sha256=ewK5waa8Yba-WINf-muT9-mLdJYTCbWMjG0nkIdy5RU,811
+jaydee/scraper.py,sha256=G-FYF_m-fYDYr4o0W-qUxJg_VgBmbPDAdx_pPJHAxZI,14975
+jaydee/utils.py,sha256=WzEKStprm4bJb32Svd-4WoS0kPigraH7qvOYQ84SEHM,2572
+jaydee/webscraper.py,sha256=Ka8tH9fsgAVdPyAu7pjJdUfQHnOn1kmD07bs040Jkw4,8554
+jaydee-0.1.8.dist-info/LICENSE,sha256=zVXdb5KdvqLB0lVDl3u4zQJwXfHEYFyfywQSJFtQrM8,1061
+jaydee-0.1.8.dist-info/METADATA,sha256=73dELeBOhieI3pT-ctms04nb6_Yi_c5eWUEG6Ibt30k,2096
+jaydee-0.1.8.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+jaydee-0.1.8.dist-info/entry_points.txt,sha256=3-mPx2tSDVTS_eweAtW0azM_yfMMSdDlM_O2X6IcCZw,194
+jaydee-0.1.8.dist-info/RECORD,,
