@@ -1,0 +1,13 @@
+[project]
+name = "cytosummarynet"
+version = "0.0.1"
+description = "Capturing cell heterogeneity in representations of cell populations for image-based profiling using contrastive learning"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "numpy>=2.2.0",
+    "pandas>=2.2.3",
+    "pytorch-metric-learning>=2.8.1",
+    "torch>=2.5.1",
+    "tqdm>=4.67.1",
+]
