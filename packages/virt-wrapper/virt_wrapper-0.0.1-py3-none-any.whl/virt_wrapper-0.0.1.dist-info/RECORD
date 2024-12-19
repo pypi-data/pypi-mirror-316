@@ -1,0 +1,8 @@
+virt_wrapper/__init__.py,sha256=y6Z2e8V800rg0SOeOE2yd72ZaNQ4a3LZRFBQXZwZkOA,194
+virt_wrapper/base.py,sha256=wcX41iWQqNKRSmvBZlyVaa19sJT5vHsTlLIUsN7KaAQ,3348
+virt_wrapper/drivers/hyperv.py,sha256=a_hoWm7mrzrZRU3c1vF1PvsxvS3TDd1Y96FDbEsmX8k,3805
+virt_wrapper/drivers/kvm.py,sha256=60k-1ixx_FHsC2qmoKizOWur0_xIHkgyRljDZkxmwtk,7389
+virt_wrapper-0.0.1.dist-info/METADATA,sha256=a_chp24HKIKg_z1VzO7tBNxVeSQDZHqh4x7LEkDxbyQ,1623
+virt_wrapper-0.0.1.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+virt_wrapper-0.0.1.dist-info/top_level.txt,sha256=0K2EqH-NVjUPBdJ68peDbRsyH-G2QR2FH2xDNimhY6M,13
+virt_wrapper-0.0.1.dist-info/RECORD,,
