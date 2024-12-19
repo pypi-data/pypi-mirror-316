@@ -1,0 +1,8 @@
+Package: boost-io
+Version: 1.78.0
+Depends: boost-config, boost-vcpkg-helpers
+Architecture: x64-windows
+Multi-Arch: same
+Abi: ef945175b91bb9df42a214396e23d3c3be251fc2a059176875273989d58df3ed
+Description: Boost io module
+Status: install ok half-installed

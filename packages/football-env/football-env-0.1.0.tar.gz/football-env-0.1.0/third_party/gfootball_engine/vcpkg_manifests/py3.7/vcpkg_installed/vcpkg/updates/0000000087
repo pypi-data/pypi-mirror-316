@@ -1,0 +1,9 @@
+Package: libffi
+Version: 3.4.2
+Port-Version: 4
+Depends: vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 04aa065697ad616c4c9bbbf7553874d6ce368d59d3927b4284378ddd6f158542
+Description: Portable, high level programming interface to various calling conventions
+Status: install ok installed

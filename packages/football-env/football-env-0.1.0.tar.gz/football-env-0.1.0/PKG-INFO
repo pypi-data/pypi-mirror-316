@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: football-env
+Version: 0.1.0
+Summary: football test environment - RL environment based on Google Research Football
+Home-page:  
+Author: playmaker
+Author-email: 1344085659@qq.com
+License: Apache 2.0
+License-File: LICENSE

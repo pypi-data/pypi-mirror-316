@@ -1,0 +1,8 @@
+Package: boost-multi-index
+Version: 1.78.0
+Depends: boost-assert, boost-bind, boost-config, boost-container-hash, boost-core, boost-foreach, boost-integer, boost-iterator, boost-move, boost-mpl, boost-preprocessor, boost-serialization, boost-smart-ptr, boost-static-assert, boost-throw-exception, boost-tuple, boost-type-traits, boost-utility, boost-vcpkg-helpers
+Architecture: x64-windows
+Multi-Arch: same
+Abi: e53b55cf6393df9948c68056660b86717d05fafa37d68d63b35859d5e0dd7b2d
+Description: Boost multi_index module
+Status: install ok installed

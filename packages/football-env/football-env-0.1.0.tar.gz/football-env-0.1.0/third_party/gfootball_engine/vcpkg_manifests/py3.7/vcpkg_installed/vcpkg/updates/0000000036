@@ -1,0 +1,9 @@
+Package: boost-build
+Version: 1.78.0
+Port-Version: 1
+Depends: boost-uninstall
+Architecture: x64-windows
+Multi-Arch: same
+Abi: ee3df2b129de2a1b9bf2ffecc674621dcd63f7fceb7d23e943e4e07564d9d333
+Description: Boost.Build
+Status: install ok half-installed
