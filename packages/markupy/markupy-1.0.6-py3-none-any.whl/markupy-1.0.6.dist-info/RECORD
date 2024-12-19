@@ -1,0 +1,15 @@
+markupy/__init__.py,sha256=tvfF06tGbZhZGucRwyCljdUUG3HbilQuzqlC4Pc2yDw,320
+markupy/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+markupy/tag.py,sha256=wZXLpeQUTVu68BQ8OrTAlSKXSbtF_25di6DIiICEg3U,5457
+markupy/_private/attribute.py,sha256=oV-0kfCFJPVaK5VtDWMjAOtxyEk1OafB4BzsCD2iAog,4862
+markupy/_private/cli.py,sha256=z8g74lDrCRZTXdBwbM1oqQxVvgnTdydv6jNa-sLU5lM,1357
+markupy/_private/component.py,sha256=Thl38aAZg3wXFf3g_ILXXScRlwvJw8AcLxkdJv2WMOk,355
+markupy/_private/element.py,sha256=mqbgrAqCbJJMXSLYDDC6jXrd4TZLXVQH-jbjoc7vQMY,5576
+markupy/_private/html.py,sha256=ZK5N86t4aJc5qIMrrFbVGin_uPDoCeetynXzNNrCFKg,7616
+markupy/_private/node.py,sha256=H20OLkEe2RzHxKSfoEo4il12kN583EEUri26mkwliZY,1988
+markupy/_private/view.py,sha256=3JOibaCCG5qju_HxvG1ngrzwMBnUTXBnEB4ougaR9so,859
+markupy-1.0.6.dist-info/entry_points.txt,sha256=Zsdif6giWpphHqBjx5T9lA13iKI_QEoWPnk_hzJgqpM,58
+markupy-1.0.6.dist-info/LICENSE,sha256=og9Gqib-8JMFldyDPi0yJwEJHxfUHEtDq2Tv1rHnE5E,1073
+markupy-1.0.6.dist-info/WHEEL,sha256=CpUCUxeHQbRN5UGRQHYRJorO5Af-Qy_fHMctcQ8DSGI,82
+markupy-1.0.6.dist-info/METADATA,sha256=RXLm_VjIqsgwrA2qWIl5K-I-OnCCSaN9DtvYS5rMWJA,4995
+markupy-1.0.6.dist-info/RECORD,,
