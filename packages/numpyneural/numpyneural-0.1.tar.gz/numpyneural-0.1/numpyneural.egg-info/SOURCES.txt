@@ -1,0 +1,8 @@
+LICENCE
+MANIFEST.in
+README.md
+setup.py
+numpyneural.egg-info/PKG-INFO
+numpyneural.egg-info/SOURCES.txt
+numpyneural.egg-info/dependency_links.txt
+numpyneural.egg-info/top_level.txt

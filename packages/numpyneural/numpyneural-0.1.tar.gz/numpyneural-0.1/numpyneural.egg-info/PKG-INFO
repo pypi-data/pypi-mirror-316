@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: numpyneural
+Version: 0.1
+Summary: This is the short description
+Author: nndl
+Author-email: nndl@xyz.com
+License: MIT
+Description-Content-Type: text/markdown
+License-File: LICENCE
+
+# My Package
+
+This is a Python package that includes text files and demonstrates how to create and distribute a package.
