@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: apishare
+Version: 0.1.1
+Summary: A Python package for API sharing
+Home-page: https://github.com/yourusername/apishare
+Author: chengangqiang
+Author-email: chengq@niututu.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: httpx>=0.25.0
+
+# APIShare
+
+A Python package for making HTTP requests using httpx.
+
+## Installation
+
+```bash
+pip install apishare
+```
+
+## Usage
+
+```python
+from apishare import APIShare
+
+# Create an instance
+api = APIShare()
+
+# Make a GET request
+response = api.get('https://api.example.com/data')
+print(response.json())
+
+# Make a POST request with data
+data = {'key': 'value'}
+response = api.post('https://api.example.com/create', json=data)
+print(response.status_code)
+```
+
+## Features
+
+- Simple HTTP GET and POST requests
+- Automatic connection handling
+- Based on the powerful httpx library
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
