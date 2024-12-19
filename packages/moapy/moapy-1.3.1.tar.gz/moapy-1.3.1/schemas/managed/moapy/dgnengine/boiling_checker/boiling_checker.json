@@ -1,0 +1,183 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "moapy",
+    "description": "Schema for moapy",
+    "version": "1.2.5"
+  },
+  "servers": [
+    {
+      "url": "https://moa.rpm.kr-st-midasit.com/backend/python-executor/"
+    }
+  ],
+  "paths": {
+    "/execute?functionId=moapy-dgnengine-boiling_checker-boiling_checker": {
+      "post": {
+        "summary": "\uc810\uc131\ud1a0 \uc9c0\ubc18\uc758 \ubcf4\uc77c\ub9c1 \uc870\uac74 \ud3c9\uac00 \ub3c4\uad6c: Davidenkoff \uc774\ub860 \uae30\ubc18",
+        "description": "\ubcf8 \ub3c4\uad6c\ub294 \uc8fc\uc5b4\uc9c4 \uc785\ub825 \ud30c\ub77c\ubbf8\ud130\uc640 \uacc4\uc0b0 \uacb0\uacfc\ub97c \ubc14\ud0d5\uc73c\ub85c \uc810\uc131\ud1a0\uc5d0\uc11c \ubc1c\uc0dd\ud558\ub294 \ubcf4\uc77c\ub9c1 \uc870\uac74\uc5d0 \ub300\ud55c \uc0c1\uc138\ud55c \ud3c9\uac00\ub97c \uc81c\uacf5\ud569\ub2c8\ub2e4. \ud3c9\uac00 \ubc29\ubc95\uc740 \uc810\uc131\ud1a0\uc758 \uc810\ucc29\ub825(cohesion)\uc744 \uace0\ub824\ud558\ub294 Davidenkoff(1970)\uc758 \uc811\uadfc\ubc95\uc744 \uae30\ubc18\uc73c\ub85c \ud558\uace0 \uc788\uc2b5\ub2c8\ub2e4.",
+        "operationId": "boiling checker",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/boiling_checker"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResultMD"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        },
+        "x-content-info": {
+          "title": "\uc810\uc131\ud1a0 \uc9c0\ubc18\uc758 \ubcf4\uc77c\ub9c1 \uc870\uac74 \ud3c9\uac00 \ub3c4\uad6c: Davidenkoff \uc774\ub860 \uae30\ubc18",
+          "description": "\ubcf8 \ub3c4\uad6c\ub294 \uc8fc\uc5b4\uc9c4 \uc785\ub825 \ud30c\ub77c\ubbf8\ud130\uc640 \uacc4\uc0b0 \uacb0\uacfc\ub97c \ubc14\ud0d5\uc73c\ub85c \uc810\uc131\ud1a0\uc5d0\uc11c \ubc1c\uc0dd\ud558\ub294 \ubcf4\uc77c\ub9c1 \uc870\uac74\uc5d0 \ub300\ud55c \uc0c1\uc138\ud55c \ud3c9\uac00\ub97c \uc81c\uacf5\ud569\ub2c8\ub2e4. \ud3c9\uac00 \ubc29\ubc95\uc740 \uc810\uc131\ud1a0\uc758 \uc810\ucc29\ub825(cohesion)\uc744 \uace0\ub824\ud558\ub294 Davidenkoff(1970)\uc758 \uc811\uadfc\ubc95\uc744 \uae30\ubc18\uc73c\ub85c \ud558\uace0 \uc788\uc2b5\ub2c8\ub2e4."
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "HTTPValidationError": {
+        "properties": {
+          "detail": {
+            "items": {
+              "$ref": "#/components/schemas/ValidationError"
+            },
+            "type": "array",
+            "title": "Detail"
+          }
+        },
+        "type": "object",
+        "title": "HTTPValidationError"
+      },
+      "InputData": {
+        "properties": {
+          "d2": {
+            "type": "number",
+            "title": "\uadfc\uc785\uae38\uc774 ",
+            "description": "\uad74\ucc29\uc800\uba74\uc5d0\uc11c \ud759\ub9c9\uc774\ubcbd \uadfc\uc785\uae38\uc774 (m)",
+            "default": "4"
+          },
+          "gammaW": {
+            "type": "number",
+            "title": "\ubb3c\uc758 \ub2e8\uc704\uc911\ub7c9 (kN/m^3)",
+            "description": "\ubb3c\uc758 \ub2e8\uc704\uc911\ub7c9 (kN/m^3)",
+            "default": "10"
+          },
+          "gammaPrime": {
+            "type": "number",
+            "title": "\uc218\uc911 \ub2e8\uc704\uc911\ub7c9 (kN/m^3)",
+            "description": "\uc218\uc911 \ub2e8\uc704\uc911\ub7c9 (kN/m^3)",
+            "default": "11.35"
+          },
+          "Ha": {
+            "type": "number",
+            "title": "\ud3c9\uade0 \uacfc\uc789\uc218\ub450 (m)",
+            "description": "\ud3c9\uade0 \uacfc\uc789\uc218\ub450 (m)",
+            "default": "4.535"
+          },
+          "FsTarget": {
+            "type": "number",
+            "title": "\ud5c8\uc6a9 \uc548\uc804\uc728",
+            "description": "\ud5c8\uc6a9 \uc548\uc804\uc728",
+            "default": "1.5"
+          },
+          "Cave": {
+            "type": "number",
+            "title": "\uadfc\uc785 \uc9c0\ubc18\uc758 \ud3c9\uade0 \uc810\ucc29\ub825 (kN/m^2)",
+            "description": "\uadfc\uc785 \uc9c0\ubc18\uc758 \ud3c9\uade0 \uc810\ucc29\ub825 (kN/m^2)",
+            "default": "50"
+          },
+          "Lh": {
+            "type": "number",
+            "title": "\uc810\ucc29\uc800\ud56d\uc774 \ubc1c\uc0dd\ud558\ub294 \uae38\uc774 (m)",
+            "description": "\uc810\ucc29\uc800\ud56d\uc774 \ubc1c\uc0dd\ud558\ub294 \uae38\uc774 (m)",
+            "default": "1"
+          }
+        },
+        "type": "object",
+        "title": "Boiling Assessment in Viscous Soils",
+        "dataclassname": "moapy.dgnengine.boiling_checker.InputData"
+      },
+      "ResultMD": {
+        "properties": {
+          "md": {
+            "type": "string",
+            "title": "Md",
+            "description": "Markdown",
+            "default": ""
+          }
+        },
+        "type": "object",
+        "title": "Markdown",
+        "description": "Result Markdown",
+        "dataclassname": "moapy.data_post.ResultMD"
+      },
+      "ValidationError": {
+        "properties": {
+          "loc": {
+            "items": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "integer"
+                }
+              ]
+            },
+            "type": "array",
+            "title": "Location"
+          },
+          "msg": {
+            "type": "string",
+            "title": "Message"
+          },
+          "type": {
+            "type": "string",
+            "title": "Error Type"
+          }
+        },
+        "type": "object",
+        "required": [
+          "loc",
+          "msg",
+          "type"
+        ],
+        "title": "ValidationError"
+      },
+      "boiling_checker": {
+        "properties": {
+          "inp": {
+            "$ref": "#/components/schemas/InputData"
+          }
+        },
+        "type": "object",
+        "required": [
+          "inp"
+        ],
+        "title": "boiling checker"
+      }
+    }
+  }
+}

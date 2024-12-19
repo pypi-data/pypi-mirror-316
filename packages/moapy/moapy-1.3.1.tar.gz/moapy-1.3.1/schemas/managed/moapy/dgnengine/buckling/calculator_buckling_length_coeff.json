@@ -1,0 +1,356 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "moapy",
+    "description": "Schema for moapy",
+    "version": "1.2.5"
+  },
+  "servers": [
+    {
+      "url": "https://moa.rpm.kr-st-midasit.com/backend/python-executor/"
+    }
+  ],
+  "paths": {
+    "/execute?functionId=moapy-dgnengine-buckling-calculator_buckling_length_coeff": {
+      "post": {
+        "summary": "The effective buckling length coefficient calculator",
+        "description": "The effective buckling length coefficient of [KDS 14 31 15] is calculated by an approximate formula.                                                                                                                                                          Please use a unified unit system. Ex:Length=m, Inertia = m\u2074, Elastic = kN/m\u00b2",
+        "operationId": "calculator buckling length coeff",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/calculator_buckling_length_coeff"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DG_Result_Reports"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        },
+        "x-content-info": {
+          "title": "The effective buckling length coefficient calculator",
+          "description": "The effective buckling length coefficient of [KDS 14 31 15] is calculated by an approximate formula.                                                                                                                                                          Please use a unified unit system. Ex:Length=m, Inertia = m\u2074, Elastic = kN/m\u00b2"
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "DG_Result_Reports": {
+        "properties": {
+          "resReport": {
+            "type": "object",
+            "title": "Resreport"
+          }
+        },
+        "type": "object",
+        "title": "DG_Result_Reports",
+        "dataclassname": "moapy.designers_guide.func_general.DG_Result_Reports"
+      },
+      "Frame_Select": {
+        "properties": {
+          "dataFrame": {
+            "type": "string",
+            "enum": [
+              "UnBraced Frame",
+              "Braced Frame"
+            ],
+            "title": "Frame Type",
+            "description": "Determine the calculation formula applied",
+            "default": "UnBraced Frame"
+          }
+        },
+        "type": "object",
+        "title": "Frame_Select",
+        "dataclassname": "moapy.dgnengine.buckling.Frame_Select"
+      },
+      "HTTPValidationError": {
+        "properties": {
+          "detail": {
+            "items": {
+              "$ref": "#/components/schemas/ValidationError"
+            },
+            "type": "array",
+            "title": "Detail"
+          }
+        },
+        "type": "object",
+        "title": "HTTPValidationError"
+      },
+      "InputData": {
+        "properties": {
+          "frameType": {
+            "$ref": "#/components/schemas/Frame_Select",
+            "title": "TYPE",
+            "default": {
+              "dataFrame": "UnBraced Frame"
+            }
+          },
+          "column": {
+            "$ref": "#/components/schemas/SectProp_C",
+            "title": "Column 1",
+            "description": "Column to calculate K value",
+            "default": {
+              "length": 3.0,
+              "inertia": 0.0072,
+              "elastic": 210000000.0
+            }
+          },
+          "topcolumn": {
+            "$ref": "#/components/schemas/SectProp_Ct",
+            "title": "Column 2",
+            "description": "The upper member of a column 1",
+            "default": {
+              "length": 3.0,
+              "inertia": 0.0072,
+              "elastic": 210000000.0
+            }
+          },
+          "botcolumn": {
+            "$ref": "#/components/schemas/SectProp_Cb",
+            "title": "Column 3",
+            "description": "The above member of a column 1",
+            "default": {
+              "type": "Bot Column",
+              "length": 3.0,
+              "inertia": 0.0072,
+              "elastic": 210000000.0
+            }
+          },
+          "topGirder": {
+            "items": {
+              "$ref": "#/components/schemas/SectProp_Ga"
+            },
+            "type": "array",
+            "title": "Top",
+            "description": "",
+            "default": [
+              {
+                "length": 8.0,
+                "inertia": 0.0072,
+                "elastic": 210000000.0
+              },
+              {
+                "length": 5.0,
+                "inertia": 0.0072,
+                "elastic": 210000000.0
+              }
+            ]
+          },
+          "botGirder": {
+            "items": {
+              "$ref": "#/components/schemas/SectProp_Gb"
+            },
+            "type": "array",
+            "title": "Bottom",
+            "description": "",
+            "default": [
+              {
+                "length": 8.0,
+                "inertia": 0.0072,
+                "elastic": 210000000.0
+              },
+              {
+                "length": 5.0,
+                "inertia": 0.0072,
+                "elastic": 210000000.0
+              }
+            ]
+          }
+        },
+        "type": "object",
+        "title": "",
+        "dataclassname": "moapy.dgnengine.buckling.InputData"
+      },
+      "SectProp_C": {
+        "properties": {
+          "length": {
+            "type": "number",
+            "title": "Lc",
+            "description": "Upper Column Length"
+          },
+          "inertia": {
+            "type": "number",
+            "title": "Ic",
+            "description": "Moment of Inertia"
+          },
+          "elastic": {
+            "type": "number",
+            "title": "Ec",
+            "description": "Modulus of Elasticity of the Column"
+          }
+        },
+        "type": "object",
+        "title": "Calc Column",
+        "dataclassname": "moapy.dgnengine.buckling.SectProp_C"
+      },
+      "SectProp_Cb": {
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": [
+              "Bot Column",
+              "Settled on bedrock",
+              "UnSettled on bedrock",
+              "Settled on Soil",
+              "Setteld on End Support Piles"
+            ],
+            "title": "Fixity",
+            "description": "Bot Column= Calculation , Settled on bedrock = 1.5  , UnSettled on bedrock = 3.0 , Settled on Soil = 5.0 , Setteld on End Support Piles = 1.0 ",
+            "default": "Bot Column"
+          },
+          "length": {
+            "type": "number",
+            "title": "Lc",
+            "description": "Upper Column Length"
+          },
+          "inertia": {
+            "type": "number",
+            "title": "Ic",
+            "description": "Moment of Inertia"
+          },
+          "elastic": {
+            "type": "number",
+            "title": "Ec",
+            "description": "Modulus of Elasticity of the Column"
+          }
+        },
+        "type": "object",
+        "title": "Above Column",
+        "dataclassname": "moapy.dgnengine.buckling.SectProp_Cb"
+      },
+      "SectProp_Ct": {
+        "properties": {
+          "length": {
+            "type": "number",
+            "title": "Lc",
+            "description": "Upper Column Length"
+          },
+          "inertia": {
+            "type": "number",
+            "title": "Ic",
+            "description": "Moment of Inertia"
+          },
+          "elastic": {
+            "type": "number",
+            "title": "Ec",
+            "description": "Modulus of Elasticity of the Column"
+          }
+        },
+        "type": "object",
+        "title": "Upper Column",
+        "dataclassname": "moapy.dgnengine.buckling.SectProp_Ct"
+      },
+      "SectProp_Ga": {
+        "properties": {
+          "length": {
+            "type": "number",
+            "title": "Lg",
+            "description": "Girder Length"
+          },
+          "inertia": {
+            "type": "number",
+            "title": "Ig",
+            "description": "Moment of Inertia"
+          },
+          "elastic": {
+            "type": "number",
+            "title": "Eg",
+            "description": "Modulus of Elasticity of the Girder"
+          }
+        },
+        "type": "object",
+        "title": "Girder",
+        "dataclassname": "moapy.dgnengine.buckling.SectProp_Ga"
+      },
+      "SectProp_Gb": {
+        "properties": {
+          "length": {
+            "type": "number",
+            "title": "Lg",
+            "description": "Girder Length"
+          },
+          "inertia": {
+            "type": "number",
+            "title": "Ig",
+            "description": "Moment of Inertia"
+          },
+          "elastic": {
+            "type": "number",
+            "title": "Eg",
+            "description": "Modulus of Elasticity of the Girder"
+          }
+        },
+        "type": "object",
+        "title": "Girder",
+        "dataclassname": "moapy.dgnengine.buckling.SectProp_Gb"
+      },
+      "ValidationError": {
+        "properties": {
+          "loc": {
+            "items": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "integer"
+                }
+              ]
+            },
+            "type": "array",
+            "title": "Location"
+          },
+          "msg": {
+            "type": "string",
+            "title": "Message"
+          },
+          "type": {
+            "type": "string",
+            "title": "Error Type"
+          }
+        },
+        "type": "object",
+        "required": [
+          "loc",
+          "msg",
+          "type"
+        ],
+        "title": "ValidationError"
+      },
+      "calculator_buckling_length_coeff": {
+        "properties": {
+          "input": {
+            "$ref": "#/components/schemas/InputData"
+          }
+        },
+        "type": "object",
+        "required": [
+          "input"
+        ],
+        "title": "calculator buckling length coeff"
+      }
+    }
+  }
+}

@@ -1,0 +1,153 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "moapy",
+    "description": "Schema for moapy",
+    "version": "1.2.5"
+  },
+  "servers": [
+    {
+      "url": "https://moa.rpm.kr-st-midasit.com/backend/python-executor/"
+    }
+  ],
+  "paths": {
+    "/execute?functionId=moapy-dgnengine-eurocode2_concrete_elasticity-report_ec2_concrete_elasticity": {
+      "post": {
+        "summary": "Eurocode 2 Modulus of Elasticity",
+        "description": "Calculate modulus of elasticity from characteristic cylinder strength",
+        "operationId": "report ec2 concrete elasticity",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/report_ec2_concrete_elasticity"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DG_Result_Reports"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        },
+        "x-content-info": {
+          "title": "Eurocode 2 Modulus of Elasticity",
+          "description": "Calculate modulus of elasticity from characteristic cylinder strength"
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "DG_Result_Reports": {
+        "properties": {
+          "resReport": {
+            "type": "object",
+            "title": "Resreport"
+          }
+        },
+        "type": "object",
+        "title": "DG_Result_Reports",
+        "dataclassname": "moapy.designers_guide.func_general.DG_Result_Reports"
+      },
+      "HTTPValidationError": {
+        "properties": {
+          "detail": {
+            "items": {
+              "$ref": "#/components/schemas/ValidationError"
+            },
+            "type": "array",
+            "title": "Detail"
+          }
+        },
+        "type": "object",
+        "title": "HTTPValidationError"
+      },
+      "Strength": {
+        "properties": {
+          "fCk": {
+            "type": "number",
+            "title": "Characteristic cylinder strength",
+            "default": 45.0,
+            "x-component-detail": {
+              "symbol": {
+                "default": "f_{ck}",
+                "type": "string"
+              },
+              "unit": {
+                "default": "MPa",
+                "type": "string"
+              }
+            }
+          }
+        },
+        "type": "object",
+        "title": "",
+        "dataclassname": "moapy.dgnengine.eurocode2_concrete_elasticity.Strength"
+      },
+      "ValidationError": {
+        "properties": {
+          "loc": {
+            "items": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "integer"
+                }
+              ]
+            },
+            "type": "array",
+            "title": "Location"
+          },
+          "msg": {
+            "type": "string",
+            "title": "Message"
+          },
+          "type": {
+            "type": "string",
+            "title": "Error Type"
+          }
+        },
+        "type": "object",
+        "required": [
+          "loc",
+          "msg",
+          "type"
+        ],
+        "title": "ValidationError"
+      },
+      "report_ec2_concrete_elasticity": {
+        "properties": {
+          "strength": {
+            "$ref": "#/components/schemas/Strength"
+          }
+        },
+        "type": "object",
+        "required": [
+          "strength"
+        ],
+        "title": "report ec2 concrete elasticity"
+      }
+    }
+  }
+}
