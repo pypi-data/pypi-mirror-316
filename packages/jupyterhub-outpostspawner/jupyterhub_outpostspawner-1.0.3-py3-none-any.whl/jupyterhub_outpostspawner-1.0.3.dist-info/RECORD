@@ -1,0 +1,9 @@
+outpostspawner/__init__.py,sha256=S5Y2ciyNzH8nIFoPoYmRTB04P-8gr6dksuvXjNAvaRk,129
+outpostspawner/_version.py,sha256=jVZV8qnvXyIN0WbdHikAu9ep85z2lgF1wPLdWoWkElo,154
+outpostspawner/api_flavors_update.py,sha256=b54_vFbOWPqNVVLx_H7YZmoulKir7rbshkVjL6BxdJM,7501
+outpostspawner/misc.py,sha256=iJObeGoUkl-SVz4YYqWBYdQ7WNYi8gcpCX04xzgFNWU,528
+outpostspawner/outpostspawner.py,sha256=LkT8O40aYFriRUUlnaxXQx8dfWKW1dkIJmJt2TV7txI,31309
+jupyterhub_outpostspawner-1.0.3.dist-info/METADATA,sha256=1_zSs-9u4ZRvkE-ZW3CiZ2vRgGdYgBqVeDNJm9gdO_U,4387
+jupyterhub_outpostspawner-1.0.3.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+jupyterhub_outpostspawner-1.0.3.dist-info/licenses/LICENSE,sha256=dk2Yc1sUc5TLag7h0BsSuhEKOfhznVUW3pD6Ssg4pVA,1517
+jupyterhub_outpostspawner-1.0.3.dist-info/RECORD,,
