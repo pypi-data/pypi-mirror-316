@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "k8s-proxmox-cluster"
+version = "0.1.71"
+description = "A cli to install simple and complex kubernetese cluster"
+authors = ["mueth <muethom@icloud.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{ include = "kubeSetup" }]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+click = "^8.1.7"
+black = "^24.10.0"
+proxmoxer = "^2.1.0"
+paramiko = "^3.5.0"
+Jinja2 = "^3.1.4"
+colorama = "^0.4.6"
+tqdm = "^4.67.1"
+types-paramiko = "^3.5.0.20240928"
+types-tqdm = "^4.67.0.20241119"
+types-colorama = "^0.4.15.20240311"
+
+[tool.poetry.group.dev.dependencies]
+mypy = "^1.11.2"
+pytest = "^8.3.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
