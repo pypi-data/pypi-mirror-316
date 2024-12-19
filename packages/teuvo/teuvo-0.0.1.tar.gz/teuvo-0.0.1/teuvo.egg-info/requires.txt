@@ -1,0 +1,6 @@
+fastcore
+numpy
+matplotlib
+scikit-learn
+
+[dev]
