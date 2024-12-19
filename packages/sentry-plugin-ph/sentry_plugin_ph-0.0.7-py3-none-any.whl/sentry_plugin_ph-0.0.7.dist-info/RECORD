@@ -1,0 +1,10 @@
+sentry_plugin_ph/__init__.py,sha256=kskhuS-yhdOrESuVWnGDQNikDALQWL9ejzliebxa8xg,35
+sentry_plugin_ph/forms.py,sha256=ScYASA2FVmZJwb9SUbq_Vsy91q60d2xKz_g5yB80Mvs,1802
+sentry_plugin_ph/plugin.py,sha256=k66aBISZfKytpqgT2Pr0_1idQyDi8a686XmyXrFqL10,7468
+sentry_plugin_ph/template.py,sha256=WfcBc89cQ4GTrq3CSZ_7s29WUXiwdkJBp_yGjwOwidg,2488
+sentry_plugin_ph-0.0.7.dist-info/LICENSE,sha256=EC9vQAUU2Ja2uPbyEzBj2Pqv3AuqRAopO0i8a9D1juE,1087
+sentry_plugin_ph-0.0.7.dist-info/METADATA,sha256=cjBOPo6dUFAE2fY7IZRVfNR9x1ioosugMYl42glRbEU,366
+sentry_plugin_ph-0.0.7.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+sentry_plugin_ph-0.0.7.dist-info/entry_points.txt,sha256=9duizv0_MmfY65_6s2ck3gw4dazTrYL18fi0qCaSvoQ,67
+sentry_plugin_ph-0.0.7.dist-info/top_level.txt,sha256=KgUiDhHMY_KFJnpW_-oNBhSFBu3bt2oACCbCSu24vis,17
+sentry_plugin_ph-0.0.7.dist-info/RECORD,,
