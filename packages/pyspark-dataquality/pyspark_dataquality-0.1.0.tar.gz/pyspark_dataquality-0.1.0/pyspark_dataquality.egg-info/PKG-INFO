@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: pyspark_dataquality
+Version: 0.1.0
+Summary: This library is used for Data Quality
+Author: Abhishek Kumar
+Author-email: officialabhishek1997@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: Jinja2==3.1.4
+Requires-Dist: MarkupSafe==3.0.2
+Requires-Dist: py4j==0.10.9.7
+Requires-Dist: pyspark==3.5.3
+
+# Data Quality
+
+A simple Python library for doing data quality on your pyspark pipelines.
+
+## Installation
+
+You can install the library using pip:
+
+```bash
+pip install pyspark_dataquality
