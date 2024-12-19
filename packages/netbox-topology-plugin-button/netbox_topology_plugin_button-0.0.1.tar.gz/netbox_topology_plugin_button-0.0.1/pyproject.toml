@@ -1,0 +1,18 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "netbox_topology_plugin_button"
+version = "0.0.1"
+authors = [
+  { name="Devin Menzi", email="devin.menzi@1as.ch" },
+]
+description = "Adds a Button in Netbox to the device Page to directly jump to a filtered topology view."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
