@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "pyclustertend"
+version = "1.9.0"
+description = "A package to assess cluster tendency for unsupervised learning"
+authors = ["Ismaïl Lachheb"]
+license="BSD-3-Clause"
+readme="README.md"
+documentation="https://pyclustertend.readthedocs.io/en/master/"
+exclude = ["tests/"]
+repository = "https://github.com/lachhebo/pyclustertend"
+keywords = ["cluster tendency", "clustering", "machine learning", "hopkins", "VAT"]
+
+
+[tool.poetry.dependencies]
+python = "^3.10, <3.13"
+numba = "^0.60.0"
+pandas = "^2.2.3"
+matplotlib = "^3.10.0"
+pytest = "^8.3.4"
+scikit-learn = "^1.6.0"
+
+[tool.poetry.group.dev.dependencies]
+flake8 = "^7.1.1"
+pylint = "^3.3.2"
+coverage = "^7.6.9"
+codecov = "^2.1.13"
+pytest-cov = "^6.0.0"
+pytest = "^8.3.4"
+
