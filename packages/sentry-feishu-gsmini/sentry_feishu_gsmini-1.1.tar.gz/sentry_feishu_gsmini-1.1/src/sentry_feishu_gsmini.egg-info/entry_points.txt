@@ -1,0 +1,3 @@
+[sentry.plugins]
+sentry_feishu_gsmini = sentry_feishu_gsmini.plugin:FeiShuPlugin
+
