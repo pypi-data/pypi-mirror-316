@@ -1,0 +1,6 @@
+README.md
+setup.py
+hwsdk.egg-info/PKG-INFO
+hwsdk.egg-info/SOURCES.txt
+hwsdk.egg-info/dependency_links.txt
+hwsdk.egg-info/top_level.txt
