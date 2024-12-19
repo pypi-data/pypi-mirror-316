@@ -1,0 +1,50 @@
+==================
+echemdb-converters Change Log
+==================
+
+.. current developments
+
+v0.2.1
+====================
+
+**Added:**
+
+* Added more biologic header names for conversion of any kind of biologic files.
+* Added test for biologic CA and CP files.
+
+**Removed:**
+
+* Removed temporarily macos tests.
+
+
+
+v0.2.0
+====================
+
+
+
+v0.1.2
+====================
+
+**Added:**
+
+* Added installation instructions to the documentation and readme.
+
+**Changed:**
+
+* Changed inferring fields from metadata in the CLI from `figure_description.schema.fields` to `figure_description.fields`.
+
+
+
+v0.1.1
+====================
+
+**Fixed:**
+
+* Fixed inferring units from metadata of the CLI `csv`` command.
+
+
+v0.1.0
+====================
+
+
