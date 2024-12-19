@@ -1,0 +1,38 @@
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[tool.poetry.plugins."pretix.plugin"]
+pretix_extended_api = "pretix_extended_api:PretixPluginMeta"
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "pretix==2024.3",
+    "pytest<8.0.0,>=7.3.0",
+    "pytest-django<5.0.0,>=4.5.2",
+    "pycryptodome>=3.17",
+]
+
+[tool.pdm.build]
+includes = [
+    "pretix_extended_api",
+]
+
+[project]
+name = "pretix-plugin-extended-api"
+version = "0.1.14"
+description = "Extend the REST API to expose more information needed by the PyCon Italia repository."
+authors = [
+    { name = "Python Italia" },
+]
+dependencies = []
+requires-python = ">=3.9,<4.0"
+readme = "README.rst"
+
+[project.license]
+text = "MIT"
+
+[project.entry-points."pretix.plugin"]
+pretix_extended_api = "pretix_extended_api:PretixPluginMeta"
