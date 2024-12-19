@@ -1,0 +1,10 @@
+[console_scripts]
+aifunc=ghostos.scripts.cli.run_aifunc:main
+clear_runtime=ghostos.scripts.clear_runtime:main
+console=ghostos.scripts.cli.run_console:main
+demo=ghostos.demo.scripts.demo:main
+hello=ghostos.scripts.cli.run_helloworld:main
+llm_test=ghostos.demo.scripts.llm_test:main
+web=ghostos.scripts.cli.run_streamlit_ghost:main
+workspace=ghostos.scripts.workspace:main
+
