@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "key-vault-interface"
+version = "1.0.1"
+authors = [{ name = "Mirco Domenicale", email = "m.domenicale@40-factory.com" }]
+description = "A simple package to work as an interface with a key; at the moment only supporting Azure."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License"
+]
