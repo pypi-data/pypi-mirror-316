@@ -1,0 +1,10 @@
+torch
+numpy
+networkx
+pytest
+pandas
+
+[dev]
+pytest
+black
+mypy
