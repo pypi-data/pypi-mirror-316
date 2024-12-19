@@ -1,0 +1,2 @@
+[console_scripts]
+sparql-api-codegen = sparql_api_codegen.__main__:cli

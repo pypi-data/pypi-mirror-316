@@ -1,0 +1,11 @@
+sparql_api_codegen/__init__.py,sha256=fib--x4efZKCtw0gc7eQh_IpGdunbK3FXL23ICZaCbs,180
+sparql_api_codegen/__main__.py,sha256=xYoR0q9LMvupLaWOFb0FxBTWcigJMAwNHS_GVvqWLTc,754
+sparql_api_codegen/generate_code.py,sha256=L1L5PEsyNTSDzW46_UldCybB6T-IFPPrIYO9JJHlrXk,17524
+sparql_api_codegen/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sparql_api_codegen/settings.py,sha256=0mvS6_kNLQdu-CbQAPRY7FHduSUG-XTM29Oj_jOTsgk,592
+sparql_api_codegen/utils.py,sha256=fOmU_NK0EwjBRUnNx8NB7RQ94OW72txaUAeXNr9ttew,1772
+sparql_api_codegen-0.0.1.dist-info/METADATA,sha256=ni6e8X8nzxqrVY0on6WMCXnYH1LQt5EZGlteMiDStiM,8235
+sparql_api_codegen-0.0.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+sparql_api_codegen-0.0.1.dist-info/entry_points.txt,sha256=-oG0EstrdA2e-QY1fioVzMduxibqtsdYffBDHmj5uPk,71
+sparql_api_codegen-0.0.1.dist-info/licenses/LICENSE.txt,sha256=ynlsWzIefty920fR3f4mj3LO03KPWw0VH7LVM86o3lY,1102
+sparql_api_codegen-0.0.1.dist-info/RECORD,,
