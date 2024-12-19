@@ -1,0 +1,9 @@
+alembic>=1.14.0
+cryptography>=43.0.3
+fastapi[standard]>=0.115.5
+loguru>=0.7.2
+nacos-sdk-python>=1.0.0
+orjson>=3.10.12
+pydantic-settings>=2.6.1
+pymysql>=1.1.1
+tenacity>=9.0.0

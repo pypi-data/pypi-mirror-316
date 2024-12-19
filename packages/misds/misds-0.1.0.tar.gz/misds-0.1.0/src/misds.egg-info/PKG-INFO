@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: misds
+Version: 0.1.0
+Summary: 一个基于微服务的分布式任务调度框架。
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Requires-Dist: alembic>=1.14.0
+Requires-Dist: cryptography>=43.0.3
+Requires-Dist: fastapi[standard]>=0.115.5
+Requires-Dist: loguru>=0.7.2
+Requires-Dist: nacos-sdk-python>=1.0.0
+Requires-Dist: orjson>=3.10.12
+Requires-Dist: pydantic-settings>=2.6.1
+Requires-Dist: pymysql>=1.1.1
+Requires-Dist: tenacity>=9.0.0
+
+
+1. 数据库迁移
+
+   ```
+   alembic init alembic
+
+   alembic revision --autogenerate -m "迁移版本信息"
+
+   alembic upgrade head
+   ```

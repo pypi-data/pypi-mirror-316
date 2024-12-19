@@ -1,0 +1,8 @@
+apps
+common
+config
+core
+events
+nacos
+static
+utils

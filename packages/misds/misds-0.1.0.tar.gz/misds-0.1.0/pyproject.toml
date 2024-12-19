@@ -1,0 +1,23 @@
+[project]
+name = "misds"
+version = "0.1.0"
+description = "一个基于微服务的分布式任务调度框架。"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "alembic>=1.14.0",
+    "cryptography>=43.0.3",
+    "fastapi[standard]>=0.115.5",
+    "loguru>=0.7.2",
+    "nacos-sdk-python>=1.0.0",
+    "orjson>=3.10.12",
+    "pydantic-settings>=2.6.1",
+    "pymysql>=1.1.1",
+    "tenacity>=9.0.0",
+]
+
+# 私有：不将改包发布到pypi， 
+# classifiers = ["Private :: Do Not Upload"]
+
+[tool.uv]
+index-url = "https://pypi.tuna.tsinghua.edu.cn/simple"
