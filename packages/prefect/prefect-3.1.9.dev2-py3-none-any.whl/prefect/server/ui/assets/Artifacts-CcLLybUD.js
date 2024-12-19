@@ -1,0 +1,2 @@
+import{d as o,c as r,g as a,i as c,o as n,j as e,k as t,aQ as _,aR as f}from"./index-Dkae_997.js";import{u as p}from"./usePageTitle-DGuB4AZ9.js";const h=o({__name:"Artifacts",setup(u){return p("Artifacts"),(l,i)=>{const s=c("p-layout-default");return n(),r(s,{class:"artifacts"},{header:a(()=>[e(t(_))]),default:a(()=>[e(t(f))]),_:1})}}});export{h as default};
+//# sourceMappingURL=Artifacts-CcLLybUD.js.map
