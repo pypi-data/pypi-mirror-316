@@ -1,0 +1,25 @@
+[project]
+name = "musiclists"
+version = "0.2.2"
+authors = [
+  { name="Mauricio Valentín Barón Salinas", email="baronsmv@gmail.com" },
+]
+description = "Download, filter and transform data from music review aggregator websites."
+readme = { file = "README.md", content-type = "text/markdown" }
+license = { file = "LICENSE" }
+requires-python = ">=3.8"
+dependencies = [
+    "bs4",
+    "click",
+    "click_help_colors",
+    "m3u8",
+    "mutagen",
+    "polars"
+]
+
+[project.scripts]
+musiclists = "src.scripts.musiclists:cli"
+
+[project.urls]
+Homepage = "https://github.com/baronsmv/musiclists"
+Issues = "https://github.com/baronsmv/musiclists/issues"
