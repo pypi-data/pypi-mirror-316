@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+bangla_dictionary/bangla_dictionary.egg-info/PKG-INFO
+bangla_dictionary/bangla_dictionary.egg-info/SOURCES.txt
+bangla_dictionary/bangla_dictionary.egg-info/dependency_links.txt
+bangla_dictionary/bangla_dictionary.egg-info/requires.txt
+bangla_dictionary/bangla_dictionary.egg-info/top_level.txt
+tests/test_config.py
+tests/test_dict.py
+tests/test_runner.py
+tests/test_suite.py
