@@ -1,0 +1,27 @@
+# Exclude unnecessary files
+exclude *.pyc
+exclude *.pyo
+exclude __pycache__
+exclude *.log
+
+# Exclude test files and directories (if not needed in the distribution)
+exclude tests/*
+exclude docs/*
+
+# Exclude virtual environment directories
+exclude venv/*
+exclude env/*
+exclude *.js
+exclude *.json
+
+# Include README.md and LICENSE
+include README.md
+include LICENSE
+
+# Include requirements.txt (optional)
+include requirements.txt
+include test/app
+include test/server.py
+
+# Include specific files or directories if needed
+recursive-include my_package *.py
