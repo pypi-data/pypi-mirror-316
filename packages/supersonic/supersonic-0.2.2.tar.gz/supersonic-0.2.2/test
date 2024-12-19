@@ -1,0 +1,29 @@
+#!/bin/bash
+
+# Colors for output
+GREEN='\033[0;32m'
+RED='\033[0;31m'
+NC='\033[0m' # No Color
+
+# Run ruff
+echo -n "Running ruff... "
+if ruff check --fix; then
+    echo -e "${GREEN}✓${NC}"
+else
+    echo -e "${RED}✗${NC}"
+    exit 1
+fi
+
+# Run mypy
+echo -n "Running mypy... "
+if mypy .; then
+    echo -e "${GREEN}✓${NC}"
+else
+    echo -e "${RED}✗${NC}"
+    exit 1
+fi
+
+echo "🧪 Running tests..."
+pytest -v
+
+echo -e "\n${GREEN}All done!${NC}"
