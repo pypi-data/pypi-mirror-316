@@ -1,0 +1,4 @@
+pydantic==1.10.8
+google-cloud-storage
+google-api-python-client
+google-cloud-aiplatform
