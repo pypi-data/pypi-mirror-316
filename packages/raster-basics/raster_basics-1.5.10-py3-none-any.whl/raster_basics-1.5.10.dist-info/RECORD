@@ -1,0 +1,11 @@
+raster_basics/BaseFunctions.py,sha256=c0dHyMjrhIQvIHtkKH1zeKwmHHnddqjXhyQGiCk9cUw,9540
+raster_basics/DataPlots.py,sha256=7mOE4yevNsjo88PcOjNoSwB6DSm4z-FGn5PMo4YsnUQ,43431
+raster_basics/GlacierFunctions.py,sha256=HwOwtcdpNxBK6CJuKbpSZ6gpXZGgWqN12riX5OgdY4A,28123
+raster_basics/NoiseFunctions.py,sha256=6zx4JcZdOC-Uf9kJLMac-XaV94MzZABmEFaysFl_72w,4308
+raster_basics/RasterBasics.py,sha256=TVwJ4b2SmvN58Wvk4YANm14RT0AhJyH6jUA3n5zR06o,31856
+raster_basics/SmoothingFunctions.py,sha256=5TVMNmwDvqe-5ueOM9l4-4cG2oJXq585m8oLvIXnWVg,13425
+raster_basics/__init__.py,sha256=KrSg83lr2TiteTwDN2qR1wiHXNx_8NMiVgjw1WQNYWA,529
+raster_basics-1.5.10.dist-info/METADATA,sha256=AlSkS0CE7GifDWtbSPTI1n622bL7XTSy_JEA-ACgPr4,755
+raster_basics-1.5.10.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+raster_basics-1.5.10.dist-info/top_level.txt,sha256=4kQFSuGwEsqRLegsnuTek6D9Ykids-SviWszN9dFbpk,14
+raster_basics-1.5.10.dist-info/RECORD,,
