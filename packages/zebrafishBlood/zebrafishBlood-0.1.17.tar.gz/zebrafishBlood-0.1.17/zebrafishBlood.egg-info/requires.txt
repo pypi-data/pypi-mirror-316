@@ -1,0 +1,7 @@
+scikit-build
+torch
+torchvision
+numpy
+ultralytics
+opencv-python
+openslide-python
