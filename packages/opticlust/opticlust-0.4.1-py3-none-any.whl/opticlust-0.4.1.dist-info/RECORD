@@ -1,0 +1,8 @@
+opticlust/__init__.py,sha256=pMtTmSUht-XtbR_7Doz6bsQqopJJd8rZ8I8zy2HwwoA,22
+opticlust/clust.py,sha256=Ztons3c2MCHqt-TSbBt9LBM5jxhjWadbP6FQfz898s0,11141
+opticlust/recommend.py,sha256=hp9o1EMf-Sx9VIj4PHw7N5fHaqQO4k0DUGlv5H9KDs4,11413
+opticlust/tree.py,sha256=sPlNkEz0EIdbM1qHkwZ2KZymoSqSafgodJyuV5ToGtM,15690
+opticlust-0.4.1.dist-info/METADATA,sha256=lPDT_EO37hx-6BagjOXPE3-_Nzcs38Jsor_1lF43oK8,45032
+opticlust-0.4.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+opticlust-0.4.1.dist-info/licenses/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+opticlust-0.4.1.dist-info/RECORD,,
