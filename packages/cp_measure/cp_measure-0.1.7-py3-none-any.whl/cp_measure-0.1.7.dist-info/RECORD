@@ -1,0 +1,15 @@
+cp_measure/bulk.py,sha256=jTyot5WrZCdRuCFMJgCOBhNjddRSyu1B7drG64lnUOo,1685
+cp_measure/core/measurecolocalization.py,sha256=ODtEyXpqu-3bV3ED_kGEkQ-7Y3TmjASNk7IjU4hotl8,21997
+cp_measure/core/measuregranularity.py,sha256=_y9T8awSXlBfR3-4LJO5Ii76iGfAcjqApCzg0VihOCc,14192
+cp_measure/core/measureobjectintensity.py,sha256=g6ROFmOfeQXUZdZg-AGDDuCo5CLcAp164Esd0EjfSxM,15024
+cp_measure/core/measureobjectintensitydistribution.py,sha256=ab65dg_c_eCLWk0YGXIRQ1C1wXR7aU-LB9JJQEXAmac,12758
+cp_measure/core/measureobjectsizeshape.py,sha256=p_FKuPmBBpYJIEe_CmI4fthOaAca1gqFjWn8eEVhRwc,50035
+cp_measure/core/measuretexture.py,sha256=G4RDs3YjAktEXCnT0m0GCioZWsPcvqhpl8y_sD4v73Y,9901
+cp_measure/core/utils.py,sha256=_XaW1XSzAE5c1jxI-5fUKyZ9I9TEVx3JGyF4XW20zDo,1106
+cp_measure/examples.py,sha256=S5qx4ROu5TXsiKrYRUwnzG-nAppr7uSp1UjNhel4EbE,1346
+cp_measure/multimask/measureobjectneighbors.py,sha256=9zDXfBytLtIMujrKeZbVsCp13uwLRKMTRgVaEJOniaY,25282
+cp_measure/multimask/measureobjectoverlap.py,sha256=6v2gbD9z2h7P7U5sLHodEsCLQfTetFQXggsoaxPeY3M,28774
+cp_measure/utils.py,sha256=wWfbsCOvHPZylFzPs256yr84fBfkM1_ehFnIAOWDtjo,1102
+cp_measure-0.1.7.dist-info/METADATA,sha256=cbElSFVDM_BJBI6DMWGxlHxprdJP_N8-2GWtBUlaHBY,4812
+cp_measure-0.1.7.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+cp_measure-0.1.7.dist-info/RECORD,,
