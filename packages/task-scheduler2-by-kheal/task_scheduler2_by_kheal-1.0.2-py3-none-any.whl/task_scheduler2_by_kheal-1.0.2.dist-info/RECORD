@@ -1,0 +1,10 @@
+taskscheduler/__init__.py,sha256=XlRE-YsZD_-lcyAeUdBH59_0YWPrzLV6pw4vRPpWzyY,62
+taskscheduler/main.py,sha256=uKLI8bXKoupfA8qasOafpvk5FuUVL6m9oxAcVobjJs0,172
+taskscheduler/ui.py,sha256=a7nJr5C9r_BSNoGqLQpA36lOV79jEj1-z1icRZ515fE,12033
+taskscheduler/utils.py,sha256=_fEASSqu_C6mxxXtVD1GpwH3vXV_xpM0n67PgdZHXkM,1096
+task_scheduler2_by_kheal-1.0.2.dist-info/LICENSE,sha256=VDftZjQI4FpWPl7bdtBPs-I-yFzaU7joIQcUlsLh5RM,1093
+task_scheduler2_by_kheal-1.0.2.dist-info/METADATA,sha256=eRBJJIDcquTpTSqcXoVdYYDVXF5D02SY_FZ2hk6EiLQ,1469
+task_scheduler2_by_kheal-1.0.2.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+task_scheduler2_by_kheal-1.0.2.dist-info/entry_points.txt,sha256=y8oZkT190ErsxXUC4FJtPbzMS0a46obY_wmF-YgsrIo,59
+task_scheduler2_by_kheal-1.0.2.dist-info/top_level.txt,sha256=BxZuKCI6E1CpwWATzqZIw4hxv5GTXqasLd9igiha5b8,14
+task_scheduler2_by_kheal-1.0.2.dist-info/RECORD,,
