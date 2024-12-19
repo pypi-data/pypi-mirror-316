@@ -1,0 +1,9 @@
+milvus_haystack/__about__.py,sha256=btfF7ZgDkQiPHZtHvH2T_4hFUQHi-GAmAsV98VuCZzo,139
+milvus_haystack/__init__.py,sha256=Aeu-inlzIbE2zDSUMN9PKlO0i2982JmXeXb4HKzfFyk,449
+milvus_haystack/document_store.py,sha256=y7tjmsN_inl5JJvJgp6ncWV6A7kmZAmgwJFSh2q-nPA,39368
+milvus_haystack/filters.py,sha256=dQRVafUrQwdNKBMEzsy0k3Hh3s-vgZNK4SgOOoqW5pw,2905
+milvus_haystack/milvus_embedding_retriever.py,sha256=BE7LENJfshI8EkRm60oIVJPmkTgQ62z0McyQB__kaYs,8735
+milvus_haystack-0.0.13.dist-info/METADATA,sha256=d_R3jkkjZMEbsllGzL8S7fy2hlYXf1sgRhyofP7K4I4,11550
+milvus_haystack-0.0.13.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+milvus_haystack-0.0.13.dist-info/licenses/LICENSE.txt,sha256=wnT4A3LZDAEpNzcPDh8VCH0i4wjvmLJ86l3A0tCINmw,10279
+milvus_haystack-0.0.13.dist-info/RECORD,,
