@@ -1,0 +1,35 @@
+[project]
+name = "cvectors"
+authors = [{name = "Tom Fryers"}]
+version = "9.1.2"
+description = "A simple complex vector package."
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = []
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://gitlab.com/Tom_Fryers/cvectors"
+
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[tool.tox]
+legacy_tox_ini="""
+[tox]
+isolated_build = True
+envlist = python3.9, python3.10, python3.11, python3.12
+
+[testenv]
+deps =
+    pytest
+    pytest-cov
+commands =
+    pytest --cov=cvectors
+"""
