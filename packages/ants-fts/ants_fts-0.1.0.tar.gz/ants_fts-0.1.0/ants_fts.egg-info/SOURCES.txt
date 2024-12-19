@@ -1,0 +1,7 @@
+README.md
+setup.py
+ants_fts.egg-info/PKG-INFO
+ants_fts.egg-info/SOURCES.txt
+ants_fts.egg-info/dependency_links.txt
+ants_fts.egg-info/requires.txt
+ants_fts.egg-info/top_level.txt
