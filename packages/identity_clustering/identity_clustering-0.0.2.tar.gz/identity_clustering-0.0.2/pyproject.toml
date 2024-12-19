@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "identity_clustering"
+version = "0.0.2"
+description = ""
+authors = ["vinotharjun <vinod.looser00@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+opencv-python = "^4.10.0.84"
+cython = "^3.0.11"
+facenet-pytorch = "^2.5.3"
+
+[tool.poetry.dev-dependencies]
+poethepoet = "^0.31.1"
+jupyterlab = "^4.3.3"
+pytest = "^8.3.4"
+
+
+[tool.poe.tasks]
+force-cuda11 = "python -m pip install torch==2.2.0+cu118 torchvision==0.17.0+cu118 -f https://download.pytorch.org/whl/torch_stable.html"
