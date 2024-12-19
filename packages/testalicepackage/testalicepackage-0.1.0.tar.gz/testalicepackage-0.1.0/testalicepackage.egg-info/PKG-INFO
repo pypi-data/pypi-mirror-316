@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: testalicepackage
+Version: 0.1.0
+Summary: Add your description here
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: uv==0.5.4
+
+# myfirstpackage
+workshop for pypl publish
+list
+- dd
+- dd
+- de

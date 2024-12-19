@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+alicepackage/__init__.py
+alicepackage/function.py
+testalicepackage.egg-info/PKG-INFO
+testalicepackage.egg-info/SOURCES.txt
+testalicepackage.egg-info/dependency_links.txt
+testalicepackage.egg-info/requires.txt
+testalicepackage.egg-info/top_level.txt
+tests/test_alice_add_positive.py
