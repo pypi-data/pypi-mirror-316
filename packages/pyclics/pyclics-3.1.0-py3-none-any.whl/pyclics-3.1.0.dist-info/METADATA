@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: pyclics
+Version: 3.1.0
+Summary: creating colexification networks from lexical data
+Home-page: https://github.com/clics/pyclics
+Author: Johann-Mattis List and Robert Forkel
+Author-email: clics@shh.mpg.de
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: attrs>=18.1
+Requires-Dist: pylexibank>=2.0
+Requires-Dist: pyconcepticon>=2.2
+Requires-Dist: clldutils>=3.2
+Requires-Dist: pyglottolog>=2.0
+Requires-Dist: geojson
+Requires-Dist: python-igraph>=0.7.1
+Requires-Dist: networkx>=2.1
+Requires-Dist: unidecode
+Requires-Dist: zope.component
+Requires-Dist: zope.interface
+Requires-Dist: pybtex
+Provides-Extra: dev
+Requires-Dist: tox; extra == "dev"
+Requires-Dist: flake8; extra == "dev"
+Requires-Dist: wheel; extra == "dev"
+Requires-Dist: twine; extra == "dev"
+Provides-Extra: test
+Requires-Dist: pytest>=5.0; extra == "test"
+Requires-Dist: pytest-cov; extra == "test"
+Requires-Dist: pytest-mock; extra == "test"
+Requires-Dist: coverage>=4.2; extra == "test"
+
+# pyclics
+python package implementing the CLICS processing workflow
+
+[![PyPI](https://img.shields.io/pypi/v/pyclics.svg)](https://pypi.org/project/pyclics)
+
+
+See [clics3](https://github.com/clics/clics3/) for an example application.
