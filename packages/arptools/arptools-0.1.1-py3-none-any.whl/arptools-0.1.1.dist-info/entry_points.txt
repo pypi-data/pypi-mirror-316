@@ -1,0 +1,6 @@
+[console_scripts]
+arpa = arptools.__main__:arpa
+arpr = arptools.__main__:main
+arprobe = arptools.__main__:arprobe
+arpscan = arptools.__main__:arpscan
+garp = arptools.__main__:garp
