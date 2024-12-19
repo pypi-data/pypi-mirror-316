@@ -1,0 +1,17 @@
+geode_background/__init__.py,sha256=F_KbrkXdXScIp4O6t6PFOJfIuaJaVMWllfCNhAcEN1Q,176
+geode_background/brep_background.py,sha256=CvXUH_pK1hYWw4q37x5Zc0jKhFSrRG0yQd7o7mPz5vM,191
+geode_background/common_background.py,sha256=fQvHb9jwNuYRnRZxoJl0izWRTFCFnd6YA5tHfJZ1IY0,195
+geode_background/solid_background.py,sha256=N0pBLglv9f58p0rmzx7H2kXI7UTDCxwLvojSDoA6oUg,192
+geode_background/surface_background.py,sha256=y1CRwP6BtWw-IJIJVbB8Ihg0qeL8cG7cB4WEj5ls1Aw,196
+geode_background/lib64/geode_background_py_brep.cpython-39-x86_64-linux-gnu.so,sha256=5eRngOUiQJFdw0lWFgQh28ry6-Zgmsmq9_8MSo2FlyE,142936
+geode_background/lib64/geode_background_py_common.cpython-39-x86_64-linux-gnu.so,sha256=4hs9e_ZausHYdaGpUL8ciyS4FONGTLchww1KXg7KvxU,142936
+geode_background/lib64/geode_background_py_solid.cpython-39-x86_64-linux-gnu.so,sha256=cafGaZSzWJ-22Y72Wc6lweWtTSc_sE2ADqDQVGzyvG8,142936
+geode_background/lib64/geode_background_py_surface.cpython-39-x86_64-linux-gnu.so,sha256=npi6E-sgfWImxmtHFL6gD9t2KoMOWNBCjZdDz_t0p38,142936
+geode_background/lib64/libGeode-Background_brep.so,sha256=hnObjDQrQdKNOQDKWXNM42MrelZGdr7h5JRGlWoptjQ,282872
+geode_background/lib64/libGeode-Background_common.so,sha256=7X_kR1iyuZzHs5heILF6rWcFHmtf_QSy8E99O2f7LA8,179088
+geode_background/lib64/libGeode-Background_solid.so,sha256=8TAXqQh5k_GeVv-EZ7HXhrBhihafTPKu5XQOCtFvbvQ,5956136
+geode_background/lib64/libGeode-Background_surface.so,sha256=j9DgJtUiFgmLTKyIimq_8VowN5PXpLeFP9XU1WIGSiM,5709224
+Geode_Background-8.8.7rc1.dist-info/METADATA,sha256=aL2vxMZLQoEoUxvDtuoZfFVafBu6s_6G-ePa97TjP0c,543
+Geode_Background-8.8.7rc1.dist-info/WHEEL,sha256=fGA_zHiSaXqIW_K5j4IbY-v47z8zpn1vp7k9CBunlvs,102
+Geode_Background-8.8.7rc1.dist-info/top_level.txt,sha256=Zrf1AIA63yPEiQFwdZwLsHzGAE3soNFO7AVs5NdN_r4,17
+Geode_Background-8.8.7rc1.dist-info/RECORD,,
