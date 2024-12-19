@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+setup.py
+opinionhub/__init__.py
+oponionhub.egg-info/PKG-INFO
+oponionhub.egg-info/SOURCES.txt
+oponionhub.egg-info/dependency_links.txt
+oponionhub.egg-info/requires.txt
+oponionhub.egg-info/top_level.txt
+oponionhub.egg-info/zip-safe
