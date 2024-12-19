@@ -1,0 +1,3 @@
+[console_scripts]
+gmate = pygitmate.main:cli
+pygitmate = pygitmate.main:cli
