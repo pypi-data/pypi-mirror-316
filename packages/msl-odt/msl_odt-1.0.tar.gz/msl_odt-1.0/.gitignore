@@ -1,0 +1,15 @@
+# Global directories
+__pycache__/
+
+# Global files
+*.py[codz]
+*.bak
+
+# Root directories
+# May or may not exist - exclude anyway
+/.venv/
+/venv/
+/.pytest_cache/
+
+# Project files
+/src/msl/odt/_version.py

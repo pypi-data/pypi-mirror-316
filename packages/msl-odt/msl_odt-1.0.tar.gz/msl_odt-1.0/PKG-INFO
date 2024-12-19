@@ -1,0 +1,107 @@
+Metadata-Version: 2.4
+Name: msl-odt
+Version: 1.0
+Summary: Write Open Document Foundation documents with Python.
+Project-URL: Changelog, https://mslnz.github.io/msl-odt/about/release-notes/
+Project-URL: Documentation, https://mslnz.github.io/msl-odt/
+Project-URL: Homepage, https://mslnz.github.io/msl-odt/
+Project-URL: Issues, https://github.com/MSLNZ/msl-odt/issues
+Project-URL: Source, https://github.com/MSLNZ/msl-odt
+Author-email: Measurement Standards Laboratory of New Zealand <info@measurement.govt.nz>
+Maintainer-email: Adam Dunford <adam.dunford@measurement.govt.nz>
+License: MIT License
+        
+        Copyright (c) 2024, Measurement Standards Laboratory of New Zealand
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+License-File: LICENSE.txt
+Keywords: .odt,MSL,Open Document Foundation,Open Office
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Software Development
+Requires-Python: >=3.8
+Requires-Dist: odfpy
+Provides-Extra: dev
+Requires-Dist: black; extra == 'dev'
+Requires-Dist: markdown; extra == 'dev'
+Requires-Dist: mkdocs; extra == 'dev'
+Requires-Dist: mkdocs-material; extra == 'dev'
+Requires-Dist: mkdocstrings-python; extra == 'dev'
+Requires-Dist: pymdown-extensions; extra == 'dev'
+Requires-Dist: pytest; extra == 'dev'
+Provides-Extra: docs
+Requires-Dist: black; extra == 'docs'
+Requires-Dist: markdown; extra == 'docs'
+Requires-Dist: mkdocs; extra == 'docs'
+Requires-Dist: mkdocs-material; extra == 'docs'
+Requires-Dist: mkdocstrings-python; extra == 'docs'
+Requires-Dist: pymdown-extensions; extra == 'docs'
+Provides-Extra: tests
+Requires-Dist: pytest; extra == 'tests'
+Description-Content-Type: text/markdown
+
+# msl-odt
+
+[![Tests Status](https://github.com/MSLNZ/msl-odt/actions/workflows/tests.yml/badge.svg)](https://github.com/MSLNZ/msl-odt/actions/workflows/tests.yml)
+[![Docs Status](https://github.com/MSLNZ/msl-odt/actions/workflows/docs.yml/badge.svg)](https://github.com/MSLNZ/msl-odt/actions/workflows/docs.yml)
+
+## Overview
+
+`msl-odt` is a Python module for creating and modifying Open Document Text (.odt) files. It provides an interface for adding formatted text, tables, lists, equations, images, and other elements to an ODT document. The module uses the `odfpy` library for Open Document file manipulation and aims to follow PEP8 conventions.
+
+## Features
+
+- **Add Text and Headings:** Supports adding paragraphs, heading levels 1 and 2, and handling special characters like `\t` and `\n`.
+- **Hyperlink Detection:** Automatically converts URLs (starting with `http://` or `https://`) in text to hyperlinks.
+- **Page Breaks:** Insert page breaks for document formatting.
+- **Table Support:** Allows creating tables with customisable column widths, table widths, borders, and optional captions.
+- **Figure support:** Supports adding images with specified dimensions and optional captions.
+- **Hierarchical Lists:** Add bulleted or numbered lists with optional hierarchical levels for nested lists.
+- **Equation Support:** Add equations using Star Math 5.0 notation, with options for setting frame size and text wrapping.
+
+
+## Installation
+
+`msl-odt` is available for installation via the [Python Package Index](https://pypi.org/) and may be installed with [pip](https://pip.pypa.io/en/stable/)
+
+To install the module, using `pip`:
+
+```console
+pip install msl-odt
+```
+
+## Examples
+[Examples](https://mslnz.github.io/msl-odt/examples/msl-odt_introduction/) on how to use the code are available 
+in the `msl-odt` [repository](https://github.com/MSLNZ/msl-odt/tree/main/src/msl/examples/odt) and these examples 
+are also included with the `msl-odt` installation in the `../site-packages/msl/examples/msl-odt` 
+directory of your Python interpreter.
+
+The examples are provided as `Python` to allow users to cut-and-paste into their own code.
