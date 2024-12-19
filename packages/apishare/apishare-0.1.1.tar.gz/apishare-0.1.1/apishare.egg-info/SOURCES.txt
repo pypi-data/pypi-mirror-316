@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+apishare/__init__.py
+apishare/core.py
+apishare.egg-info/PKG-INFO
+apishare.egg-info/SOURCES.txt
+apishare.egg-info/dependency_links.txt
+apishare.egg-info/requires.txt
+apishare.egg-info/top_level.txt
