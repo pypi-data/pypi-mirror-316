@@ -1,0 +1,12 @@
+rfit/__init__.py,sha256=L39QbXc-ueLa3PNbbh2P34XvZpvuVMUfs8MfD7SwsiQ,984
+rfit/api.py,sha256=ImzB759djOfmCLx99JBD-KfU2Qp72C5wh5ZUmhKMEJY,2225
+rfit/learn/__init__.py,sha256=DEadDNO0n4pLZDBb3Mk39EyPLUhAIwlQ0U_ROwF0XFw,356
+rfit/learn/boundary_plots.py,sha256=fTk8gXoHzFlFrAA65JSWfCnALhZtnA-RNnFfPM-upic,4749
+rfit/learn/grads.py,sha256=TC0vToMIGSI60d_n6Z8B8JdTMc5g_berccs04cB3rRE,46578
+rfit/learn/helper.py,sha256=wzTT8ZXhmRrfe8YXnKRGlVycgx4Dm6kTcIIJxZCSd5w,20358
+rfit/learn/tf_utils.py,sha256=OXKmr3FVvyx-XGc71caCcNX_b6JgudbuYqAmhMeVCf8,1122
+rfit-0.7.20241220.dist-info/LICENSE,sha256=--SkoZppEYKGwVdVnBdet_ilaLXw1cY07Ms5WGydbuc,1065
+rfit-0.7.20241220.dist-info/METADATA,sha256=U2qXBQTQJhr5HFd0gJe09tZ2YDhW1r_dyjYKWVxHna4,1170
+rfit-0.7.20241220.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+rfit-0.7.20241220.dist-info/top_level.txt,sha256=wdI3gXhKNgWSWryHGdekMO2z2a93_wPgvxC5qV7_1Ow,5
+rfit-0.7.20241220.dist-info/RECORD,,
