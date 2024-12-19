@@ -1,0 +1,2 @@
+[abx]
+abx_plugin_singlefile = abx_plugin_singlefile

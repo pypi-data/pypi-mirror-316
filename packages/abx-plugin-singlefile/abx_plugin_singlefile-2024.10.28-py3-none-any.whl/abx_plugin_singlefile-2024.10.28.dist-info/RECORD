@@ -1,0 +1,11 @@
+abx_plugin_singlefile/__init__.py,sha256=21Z_z9H5MVTxbsVRKxBZ3L9fitgxRxFypwa35bR66dQ,681
+abx_plugin_singlefile/actors.py,sha256=McDe7XJ6yRYDOX7pYj0tGHqcQVm9b3fR4vPr0LkmGTI,1109
+abx_plugin_singlefile/binaries.py,sha256=r_GE65pwptqj5WNuhGClYT8UdVBUGz0B_tdHEI-dtM8,1838
+abx_plugin_singlefile/config.py,sha256=SeSVy6BETwAjHcjUvgr2zB96fgZ98tlZ5W1j-Wz_5zw,812
+abx_plugin_singlefile/extractors.py,sha256=g3uEs71ivwHm4EuNNgaDDXtgzMpP5i754S9PZLNkVpY,480
+abx_plugin_singlefile/models.py,sha256=qi9PuOoXmxWsvn7CK1ycNFeG-WDSg_5uqBKDnlktzX8,350
+abx_plugin_singlefile/singlefile.py,sha256=EldkX6xyeV0Ywn8Jr3nuJkuD-zmYc6XTk-hdw_U9J3g,3485
+abx_plugin_singlefile-2024.10.28.dist-info/METADATA,sha256=P3sl5lYs6jaJEVVdIrVU5mcD3_bfeQrV7bXTLqOQKus,262
+abx_plugin_singlefile-2024.10.28.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+abx_plugin_singlefile-2024.10.28.dist-info/entry_points.txt,sha256=O9lcHzwhitAYQQlwR_kng8VS9TCrDLA7yjHe4w_GcAQ,52
+abx_plugin_singlefile-2024.10.28.dist-info/RECORD,,
