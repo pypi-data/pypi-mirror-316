@@ -1,0 +1,8 @@
+abx_plugin_ripgrep_search/__init__.py,sha256=YZLgDB_40fRz01LkOCR2z1XaTV7I11QbiMuIfxBZNi8,573
+abx_plugin_ripgrep_search/binaries.py,sha256=q7KRSzJFndSmKHIY6GMRfcETEV8cV6TEu0OYFKLU000,588
+abx_plugin_ripgrep_search/config.py,sha256=5Wbqvv5y8SOdZTrpzgAYXhv2CRbR6mBr41_CpmHIzOw,931
+abx_plugin_ripgrep_search/searchbackend.py,sha256=JKtpOWZ5eMHGQGPyl8fsL2fmq9O3737A6euUza4XCh0,1615
+abx_plugin_ripgrep_search-2024.10.28.dist-info/METADATA,sha256=20sObcBuLeTvcng_c9ixOr7xaCzHet676CSjPp9cl1Q,242
+abx_plugin_ripgrep_search-2024.10.28.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+abx_plugin_ripgrep_search-2024.10.28.dist-info/entry_points.txt,sha256=90qg8bFG8SSFlULWToS4OzkwSrWBlG50OfH3g6r1n0I,60
+abx_plugin_ripgrep_search-2024.10.28.dist-info/RECORD,,
