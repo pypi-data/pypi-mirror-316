@@ -1,0 +1,10 @@
+src/__init__.py,sha256=784xAOnZjisUiO54BzaLr2nAueDQj75cRJ6qtL_skME,42
+src/codegen.py,sha256=p9T5B4w2koNG7nuz5JNJJW1S1nvjPLmwglmwZyA0lJE,2817
+src/sqlmodelgen.py,sha256=AipJJi77pkqI41_HRZ1tuFEXIrKqKsGeEDDS7vCib9E,154
+src/ir/ir.py,sha256=rvLO46OPFVTnfZ9pUIjb4ljRT2zFcHhL10cwGPJfUNQ,955
+src/ir/parse/ir_parse.py,sha256=s5zsS1VUMvwUn7SzEpwVvdisj3J2zzC02O_CJSToNL4,2602
+src/ir/parse/org_parse.py,sha256=WbxzmkN6QwTGSNkdjwUxsjfcnJM6ZSGtHZpsC4Zybcc,3182
+sqlmodelgen-0.0.1.dist-info/METADATA,sha256=dUZmsBM3dduApBFs9acCiKDJ8-xxlFh1WgzoYB7WgZo,1582
+sqlmodelgen-0.0.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+sqlmodelgen-0.0.1.dist-info/licenses/LICENSE,sha256=SQcuaeMStbRZZLflqQH-ACYSCArfJ8tn5SLWXWf5fBQ,1062
+sqlmodelgen-0.0.1.dist-info/RECORD,,
