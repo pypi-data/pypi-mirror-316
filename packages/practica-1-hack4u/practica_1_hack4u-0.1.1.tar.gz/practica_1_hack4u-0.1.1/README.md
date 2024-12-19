@@ -1,0 +1,46 @@
+# Hack4u Academy Courses Library
+
+Una biblioteca en Python para consultar cursos de Hack4u.
+
+## Cursos disponibles:
+
+- Introducción a Linux [15 horas]
+- Personalización de entornos [3 horas]
+- Introducción al hacking [53 horas]
+- Python Ofensivo [35 horas]
+
+## Instalación
+
+Instala el paquete usando `pip3`:
+
+```python3
+pip3 install hack4u
+```
+
+## Uso básico
+
+## Listar todos los cursos
+
+```python
+from hacku import listar_cursos
+
+for curso in listar_cursos():
+    print(curso)
+```
+
+### Obtener un curso por nombre
+
+```python
+from hacku import buscar_curso_por_nombre
+
+curso = buscar_curso_port_nombre("Introducción a Linux")
+print(curso)
+```
+
+### Calcular duración total de los cursos
+
+```python3
+from hack4u.utils import duracion_total
+
+print(f"Duración total: {duracion_total()} horas")
+```
