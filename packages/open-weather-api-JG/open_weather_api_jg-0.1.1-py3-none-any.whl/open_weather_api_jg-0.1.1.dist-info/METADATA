@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: open_weather_api_JG
+Version: 0.1.1
+Summary: Пакет с openweatherapi Гиниятуллиной Ю.С.
+Home-page: https://github.com/julia1gin/prog_sem5_lr2
+Author: Julia Giniyatullina
+Author-email: keitaroromance@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: requests (>=2.28.1,<3.0.0)
