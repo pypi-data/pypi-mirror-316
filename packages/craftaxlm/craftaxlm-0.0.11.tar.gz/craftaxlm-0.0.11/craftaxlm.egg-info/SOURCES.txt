@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+craftaxlm/__init__.py
+craftaxlm/recording.py
+craftaxlm/shared.py
+craftaxlm.egg-info/PKG-INFO
+craftaxlm.egg-info/SOURCES.txt
+craftaxlm.egg-info/dependency_links.txt
+craftaxlm.egg-info/requires.txt
+craftaxlm.egg-info/top_level.txt
