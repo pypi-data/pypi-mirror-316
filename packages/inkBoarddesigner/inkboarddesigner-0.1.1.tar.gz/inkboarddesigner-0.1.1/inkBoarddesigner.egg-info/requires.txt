@@ -1,0 +1,4 @@
+inkBoard>=0.2.0
+ttkbootstrap
+tkthread
+packaging
