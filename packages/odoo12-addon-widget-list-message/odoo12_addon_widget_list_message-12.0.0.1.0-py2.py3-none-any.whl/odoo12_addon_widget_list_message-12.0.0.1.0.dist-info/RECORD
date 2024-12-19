@@ -1,0 +1,10 @@
+odoo/addons/widget_list_message/README.rst,sha256=PEqBrq4mOxBqKEOI80_e5wVFIVu63pKIAUlXyYppVWg,2904
+odoo/addons/widget_list_message/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+odoo/addons/widget_list_message/__manifest__.py,sha256=DbYuwvK0XOqiyd4_NF8xyQtsIqzy4lo_aBPSKMNUKxw,718
+odoo/addons/widget_list_message/static/description/icon.png,sha256=3taXULJl0n0Ko0YOBXiXtspPonsicVgYojo1ghzHmuY,17607
+odoo/addons/widget_list_message/static/src/js/list_renderer.js,sha256=HeG9zJ0qZQfEq4u0t2_lpgnu95wl8_ySjL0DqvV91uo,1799
+odoo/addons/widget_list_message/views/widget_list_message_view.xml,sha256=0K_STJ8rT8pu-y63rRCXDgU2SCFM5n3mZOTx0UGrZfc,342
+odoo12_addon_widget_list_message-12.0.0.1.0.dist-info/METADATA,sha256=NPRfcKKr_qrCbfUGKv44-HXjrUhNICkrIsmwCfa4OU8,3508
+odoo12_addon_widget_list_message-12.0.0.1.0.dist-info/WHEEL,sha256=DZajD4pwLWue70CAfc7YaxT1wLUciNBvN_TTcvXpltE,110
+odoo12_addon_widget_list_message-12.0.0.1.0.dist-info/top_level.txt,sha256=qBj40grFkGOfDZ2WDSw3y1RnDlgG0u8rP8pvGNdbz4w,5
+odoo12_addon_widget_list_message-12.0.0.1.0.dist-info/RECORD,,
