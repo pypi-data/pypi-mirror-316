@@ -1,0 +1,17 @@
+[project]
+name = "artefactual"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Hicham Randrianarivo", email = "hicham.randrianarivo@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = []
+
+[project.scripts]
+artefactual = "artefactual:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
