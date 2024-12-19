@@ -1,0 +1,69 @@
+site_name: polars-bio
+nav:
+  - Home: index.md
+  - Quickstart: quickstart.md
+  - Tutorial: notebooks/tutorial.ipynb
+  - API reference: api.md
+
+plugins:
+  - search
+  - autorefs
+  - mkdocs-jupyter:
+      execute: true
+      allow_errors: false
+  - mkdocstrings:
+      default_handler:
+      python:
+        options:
+          docstring_style: google
+theme:
+  name: material
+  features:
+    - content.code.copy
+    - content.code.select
+    - content.code.annotate
+    - content.tabs.link
+    - content.action.edit
+    - content.tooltips
+    - toc.follow
+    - navigation.top
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.footer
+    - navigation.tracking
+    - navigation.instant
+    - content.footnote.tooltips
+extra:
+  version:
+    provider: mike
+
+markdown_extensions:
+  - admonition
+  - footnotes
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets:
+      base_path: ..
+      dedent_subsections: true
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - md_in_html
+  - abbr
+  - attr_list
+  - pymdownx.snippets
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - markdown.extensions.toc:
+      baselevel: 1
+      permalink: ""
