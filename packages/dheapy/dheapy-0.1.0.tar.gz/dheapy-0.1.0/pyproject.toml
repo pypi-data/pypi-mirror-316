@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools >= 61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dheapy"
+version = "0.1.0"
+authors = [
+  { name="Vivi Andasari, PhD", email="vandasari@gmail.com" },
+]
+description = "Max/min d-ary heap implementation for priority queues."
+readme = "README.md"
+license = {file = "LICENSE"}
+keywords = ["priority queue", "heap", "max-heap", "min-heap", "d-ary heap", "binary heap", "ternary heap", "quaternary heap", "quinary heap"]
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/vandasari/dheapy"
+Repository = "https://github.com/vandasari/dheapy"
+Issues = "https://github.com/vandasari/dheapy/issues"
+
