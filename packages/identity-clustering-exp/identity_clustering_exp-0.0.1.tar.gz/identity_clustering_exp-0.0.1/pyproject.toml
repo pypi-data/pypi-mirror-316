@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "identity-clustering-exp"
+version = "0.0.1"
+description = ""
+authors = ["Sanjith Kumar R <sanjith.kumar@phospheneai.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pytest = "^8.3.4"
+opencv-python = "^4.10.0.84"
+cython = "^3.0.11"
+jupyterlab = "^4.3.3"
+torch = {version = "2.4.1", source = "pytorch"}
+torchvision = {version = "0.19.1", source = "pytorch"}
+
+
+[[tool.poetry.source]]
+name = "pytorch"
+url = "https://download.pytorch.org/whl/cu118"
+priority = "explicit"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
