@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: postmansub
+Version: 0.1
+Summary: A small package to sent post requests.
+Author: Benevant Mathew
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+postmansub 
+    helps to send post requests with a simple gui interface.
+    file attach option available apart from simple form data.

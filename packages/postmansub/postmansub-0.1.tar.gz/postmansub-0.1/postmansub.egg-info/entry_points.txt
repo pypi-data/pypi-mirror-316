@@ -1,0 +1,2 @@
+[console_scripts]
+postmansub = postmansub.main:create_gui
