@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: identity-clustering-exp
+Version: 0.0.2
+Summary: 
+Author: Sanjith Kumar R
+Author-email: sanjith.kumar@phospheneai.com
+Requires-Python: >=3.12,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: cython (>=3.0.11,<4.0.0)
+Requires-Dist: jupyterlab (>=4.3.3,<5.0.0)
+Requires-Dist: opencv-python (>=4.10.0.84,<5.0.0.0)
+Requires-Dist: pytest (>=8.3.4,<9.0.0)
+Requires-Dist: torch (==2.4.1+cu118)
+Requires-Dist: torchvision (==0.19.1+cu118)
+Description-Content-Type: text/markdown
+
+
