@@ -1,0 +1,2 @@
+[mkpipe.loaders]
+redshift = mkpipe_loader_redshift:RedshiftLoader
