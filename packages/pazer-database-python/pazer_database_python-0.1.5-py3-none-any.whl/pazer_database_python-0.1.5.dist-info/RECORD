@@ -1,0 +1,12 @@
+pazer_database_python/DatabaseClient.py,sha256=NokEW7KzUxJpzI8ioIcUBdyUeFGZOrLVF2T5vJURSqw,4923
+pazer_database_python/DatabaseHostForm.py,sha256=mK6SEiW7SBGqPtEjwQznp0K1KLEWZjph8o4N1AXoiIQ,326
+pazer_database_python/Executor.py,sha256=GrcCTYy_d-jmU4EObVwhEjp6kvxvbYG04k8WxXZrc2w,770
+pazer_database_python/SessionClient.py,sha256=qR5tMAm2I4Vmnhy2_ky5POVpxidGdf-g0ZR3GmXKRwI,3944
+pazer_database_python/SessionHostForm.py,sha256=_nDyEuJ7uVHZ-B7K78_Z2syGGF6kB-KLhTO91_9JNuE,281
+pazer_database_python/__init__.py,sha256=b40weXOQsB_rMpyugNnTrTBatYiKIrWgHxTOLfGTJAE,1273
+test/__init__.py,sha256=oZZGwefjqS7wUeLSJzGl9vfV1dMduden7eA9HuSY6N8,2315
+pazer_database_python-0.1.5.dist-info/LICENSE,sha256=bLeAtGocsPdFGrGpK7cd3NVD06p0-jnOGfUCfIoVzNY,1065
+pazer_database_python-0.1.5.dist-info/METADATA,sha256=dnRhcPiYXXix6PnQG4Ta6eU4APxlQxRnGSLBBj8xohs,1578
+pazer_database_python-0.1.5.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+pazer_database_python-0.1.5.dist-info/top_level.txt,sha256=u3LPKkMmo1lDpb9Eunygu5rE293b1bXRYdPkZ0_Ji50,27
+pazer_database_python-0.1.5.dist-info/RECORD,,
