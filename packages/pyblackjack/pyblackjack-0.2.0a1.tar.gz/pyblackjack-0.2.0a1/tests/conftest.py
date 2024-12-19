@@ -1,0 +1,19 @@
+import pytest
+
+from pyblackjack import objects
+from pyblackjack.objects import CARDSET, Shoe
+
+class MockShoe(Shoe):
+    def set_next(self, n):
+        self.next = CARDSET[n - 1]
+
+    def deal(self):
+        return self.next
+
+@pytest.fixture
+def mock_shoe(monkeypatch, request):
+    shoe = MockShoe()
+    monkeypatch.setattr(objects, "SHOE", shoe)
+
+def get_cards(cards):
+    return [CARDSET[n - 1] for n in cards]
