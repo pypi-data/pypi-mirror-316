@@ -1,0 +1,182 @@
+# MkDocs Drawio Converter Plugin
+
+A MkDocs plugin that automatically converts Draw.io (`.drawio`) files to SVG format during the build process. The plugin supports both direct links to Draw.io files and image embeds, with support for multi-page Draw.io documents.
+
+## Features
+
+- Automatic conversion of Draw.io files to SVG format
+- Support for both image embeds and direct links
+- Multi-page Draw.io document support
+- File caching for improved build performance
+- Configurable output formats
+- Customizable image and link embedding formats
+- Docker-based conversion support
+
+## Installation
+
+### Prerequisites
+
+1. Install Docker on your system
+2. Pull the Draw.io export Docker image:
+```bash
+docker pull rlespinasse/drawio-export
+```
+
+### Plugin Installation
+
+Install the plugin using pip:
+
+```bash
+pip install mkdocs-drawio-converter
+```
+
+## Configuration
+
+Add the plugin to your `mkdocs.yml`:
+
+```yaml
+plugins:
+  - drawio-converter:
+      cache_dir: .drawio-cache             # Cache directory for converted files
+      format: svg                          # Output format (svg, png, etc.)
+      embed_format: '<img alt="{img_alt}" src="{img_src}">'  # Format for embedding images
+      link_format: '[{text}]({href})'     # Format for direct links
+      sources: '*.drawio'                 # Source file pattern
+```
+
+### Configuration Options
+
+| Option | Description | Default |
+|--------|-------------|----------|
+| `cache_dir` | Directory to store converted files | `.drawio-cache` |
+| `format` | Output format for converted files | `svg` |
+| `embed_format` | Template for image embeds | `<img alt="{img_alt}" src="{img_src}">` |
+| `link_format` | Template for direct links | `[{text}]({href})` |
+| `sources` | File pattern for Draw.io files | `*.drawio` |
+
+## Usage
+
+### Basic Usage
+
+1. Place your Draw.io files in your docs directory
+2. Reference them in your markdown files:
+
+```markdown
+# As an image
+![Diagram Title](path/to/diagram.drawio)
+
+# With a specific page number
+![Diagram Title](path/to/diagram.drawio#0)
+
+# As a direct link
+[View Diagram](path/to/diagram.drawio)
+```
+
+### Directory Structure Example
+
+```
+docs/
+├── diagrams/
+│   └── architecture.drawio
+├── index.md
+└── architecture.md
+```
+
+In your markdown file:
+```markdown
+Here's our system architecture:
+
+![Architecture Diagram](diagrams/architecture.drawio#0)
+```
+
+### Multi-page Documents
+
+For Draw.io files with multiple pages, specify the page number using the `#` syntax:
+
+```markdown
+![Page 1](diagram.drawio#0)
+![Page 2](diagram.drawio#1)
+```
+
+## Build Process
+
+During the MkDocs build:
+
+1. The plugin scans markdown files for Draw.io references
+2. Converts referenced Draw.io files to SVG using Docker
+3. Updates markdown references to point to converted files
+4. Caches converted files for future builds
+
+## Caching
+
+The plugin maintains a cache of converted files to improve build performance. Files are only reconverted when:
+- The source Draw.io file has been modified
+- The cache file doesn't exist
+- The output format configuration has changed
+
+## Docker Conversion
+
+The plugin uses the `rlespinasse/drawio-export` Docker image for conversion. The conversion process:
+1. Mounts the source directory in the container
+2. Converts the Draw.io file to the specified format
+3. Saves the output to the cache directory
+
+## Troubleshooting
+
+### Common Issues
+
+1. **Docker Not Found**
+   ```
+   Error: Docker executable not found
+   ```
+   Solution: Install Docker and ensure it's running
+
+2. **Permission Issues**
+   ```
+   Error: Permission denied when accessing cache directory
+   ```
+   Solution: Ensure write permissions for the cache directory
+
+3. **File Not Found**
+   ```
+   Error: Draw.io file not found
+   ```
+   Solution: Check file path relative to your docs directory
+
+### Debug Logging
+
+Enable debug logging in your `mkdocs.yml`:
+
+```yaml
+plugins:
+  - drawio-converter:
+      # ... other options ...
+```
+
+Add to command:
+```bash
+mkdocs build --verbose
+```
+
+## Development
+
+### Running Tests
+
+```bash
+# Install development dependencies
+pip install -e ".[test]"
+
+# Run tests
+python test_drawio_plugin.py
+```
+
+### Contributing
+
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Submit a pull request
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
