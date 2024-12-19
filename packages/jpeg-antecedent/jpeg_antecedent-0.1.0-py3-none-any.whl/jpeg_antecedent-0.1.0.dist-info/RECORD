@@ -1,0 +1,13 @@
+jpeg_antecedent/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jpeg_antecedent/block.py,sha256=15WZ5MzxKf_v3MovaxseKnlhwyPKKq1__fAkEFGe5jY,8643
+jpeg_antecedent/build_incompatibility_likelihood.py,sha256=C59EO1dIG5UbR8y9BhosbW3PMwx3OgKgPOUZDpmCl4k,5396
+jpeg_antecedent/image.py,sha256=7EYgAqlUdvjaIKQbUk9IDFo-tIP-EKfyADjvXPJnYeA,10783
+jpeg_antecedent/jpeg_toolbox.py,sha256=tbx0z-ZR5NXqPsoo5uljqn5j4b-d5U1kwEKhwKwFuM0,17806
+jpeg_antecedent/pipeline.py,sha256=sEQRnjuRgEchb8YRJwF-c1olPnzOykfS26u4bh2Icl8,9856
+jpeg_antecedent/run_on_dataset.py,sha256=6lZmfn_iX5lyZBpIEBVM1nlMOfW6CjodNLbSUQAGEA4,10256
+jpeg_antecedent/utils.py,sha256=TD8BXbeOVgI-TKcYnGhVhrfMqsM681gGNQDtBPRFqto,855
+jpeg_antecedent-0.1.0.dist-info/LICENSE.md,sha256=zUOFXRTl6JGqi-Nxj49tozwC5BxP63L2dgagTMbrrA0,1077
+jpeg_antecedent-0.1.0.dist-info/METADATA,sha256=G0qnoDHaRmSndPqyrv3zAjhJEzD8SPBze9pzAFBW8V0,10191
+jpeg_antecedent-0.1.0.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+jpeg_antecedent-0.1.0.dist-info/top_level.txt,sha256=eUByMS1iviECe7u4BbG0tS1EgIKIbPh6aLEQRW4SmVw,16
+jpeg_antecedent-0.1.0.dist-info/RECORD,,
