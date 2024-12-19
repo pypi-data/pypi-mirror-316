@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+src/sentry_plugin_ph/__init__.py
+src/sentry_plugin_ph/forms.py
+src/sentry_plugin_ph/plugin.py
+src/sentry_plugin_ph/template.py
+src/sentry_plugin_ph.egg-info/PKG-INFO
+src/sentry_plugin_ph.egg-info/SOURCES.txt
+src/sentry_plugin_ph.egg-info/dependency_links.txt
+src/sentry_plugin_ph.egg-info/entry_points.txt
+src/sentry_plugin_ph.egg-info/not-zip-safe
+src/sentry_plugin_ph.egg-info/requires.txt
+src/sentry_plugin_ph.egg-info/top_level.txt
