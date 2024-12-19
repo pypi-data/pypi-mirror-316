@@ -1,0 +1,16 @@
+jupyter_cgi_theme/__init__.py,sha256=FKCXlhr5DlPKsGUv4B_K4CrUdu3k1kLNXxBrU48YHZ8,592
+jupyter_cgi_theme/_version.py,sha256=zZyLIzVVv7PabPSb1khVjn6pJ0JrrX9QFbCcHliXN_0,171
+jupyter_cgi_theme-0.7.0.data/data/share/jupyter/labextensions/jupyter-cgi-theme/build_log.json,sha256=boXD2eUUdqfgUCdPzqyf2xnnLiMU0yhBj5wpgj57dF0,23735
+jupyter_cgi_theme-0.7.0.data/data/share/jupyter/labextensions/jupyter-cgi-theme/package.json,sha256=eLaU31UQ5zq4XJI7VHkZ9JJUHooOROy8PAr_cuHKJ5w,5896
+jupyter_cgi_theme-0.7.0.data/data/share/jupyter/labextensions/jupyter-cgi-theme/static/2714a8345c85e5efab18.png,sha256=JxSoNFyF5e-rGJ7FyRD5Tqq7Kdefia-rtUvwxH9DWyE,1335
+jupyter_cgi_theme-0.7.0.data/data/share/jupyter/labextensions/jupyter-cgi-theme/static/5ba9f5de2a2d0be07dd0.png,sha256=W6n13iotC-B90JymYEmRVoknVGXrQGEjt3TeR4QavHw,19926
+jupyter_cgi_theme-0.7.0.data/data/share/jupyter/labextensions/jupyter-cgi-theme/static/lib_index_js.c6a4d41132a17819e1b7.js,sha256=gif5Qn3UtIytg3sled-5_BI1SHtLIzfF8sXLM3Sg4io,44325
+jupyter_cgi_theme-0.7.0.data/data/share/jupyter/labextensions/jupyter-cgi-theme/static/lib_index_js.c6a4d41132a17819e1b7.js.map,sha256=25QTZlZGrBAn5pgUjZwqpMi2VxPj7_j8t-vSlLc39JU,54496
+jupyter_cgi_theme-0.7.0.data/data/share/jupyter/labextensions/jupyter-cgi-theme/static/style.js,sha256=-CQt0ZTPaCTvrRiLcznxflAbfvIKlOVzjOos-muaXQ8,118
+jupyter_cgi_theme-0.7.0.data/data/share/jupyter/labextensions/jupyter-cgi-theme/themes/jupyter-cgi-theme/index.css,sha256=qge-gmZORmr93YolAsD2DtqZ_-ltiAxd8Ol2EKTKup4,20264
+jupyter_cgi_theme-0.7.0.data/data/share/jupyter/labextensions/jupyter-cgi-theme/themes/jupyter-cgi-theme/index.js,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jupyter_cgi_theme-0.7.0.data/data/share/jupyter/labextensions/jupyter-cgi-theme/install.json,sha256=ZmDTQJ0s243n01J6_yhwbjkYanSbC0HmWYdzK6sqwvQ,195
+jupyter_cgi_theme-0.7.0.dist-info/METADATA,sha256=0x_b_5-hY-LD4Yvah4k7lEkLNkDsUzuQeLEJUiDPZLo,6620
+jupyter_cgi_theme-0.7.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+jupyter_cgi_theme-0.7.0.dist-info/licenses/LICENSE,sha256=M-QZNwcIJ3LR6JhTm_4FtjbpX2olccZUHhPYR8votPs,1525
+jupyter_cgi_theme-0.7.0.dist-info/RECORD,,
