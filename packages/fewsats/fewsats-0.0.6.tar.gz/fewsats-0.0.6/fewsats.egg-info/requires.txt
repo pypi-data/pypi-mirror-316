@@ -1,0 +1,5 @@
+fastcore
+httpx
+python-dotenv
+
+[dev]
