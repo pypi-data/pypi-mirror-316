@@ -1,0 +1,43 @@
+Metadata-Version: 2.4
+Name: pydantic_sqlalchemy_deco
+Version: 0.0.1
+Summary: Seamlessly use Pydantic 2 models in a Postgres SQLAlchemy model
+Project-URL: Homepage, https://github.com/kevinhikaruevans/pydantic-sqlalchemy-type-decorator
+Project-URL: Issues, https://github.com/kevinhikaruevans/pydantic-sqlalchemy-type-decorator/issues
+Author-email: Kevin Evans <evans.kevinh@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.11
+Requires-Dist: psycopg2
+Requires-Dist: pydantic
+Requires-Dist: sqlalchemy
+Description-Content-Type: text/markdown
+
+# pydantic-sqlalchemy-type-decorator
+Seamlessly use Pydantic 2 models in a Postgres SQLAlchemy model
+
+# Usage
+
+Given some Pydantic model called `MyCustomModel`, you can specify your columns like:
+
+```python
+from pydantic_sqlalchemy_deco.decorator import PydanticJSON
+
+...
+
+class MyTable(Base):
+
+    response: Mapped[MyCustomModel] = mapped_column(PydanticJSON(MyCustomModel))
+```
+
+
+
+# BaseModel changes
+
+If your `BaseModel` has custom serializers, you can specify this using the `T` parameter:
+
+```python
+    response: Mapped[MyCustomModel] = mapped_column(PydanticJSON[CoolerBaseModel](MyCustomModel))
+```
