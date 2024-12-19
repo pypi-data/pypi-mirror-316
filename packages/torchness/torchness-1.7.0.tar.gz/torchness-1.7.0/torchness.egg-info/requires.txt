@@ -1,0 +1,10 @@
+GPUtil
+numpy
+ompr
+pillow
+pypaq
+tqdm
+scikit-learn
+sentence-transformers
+tensorboard
+torch
