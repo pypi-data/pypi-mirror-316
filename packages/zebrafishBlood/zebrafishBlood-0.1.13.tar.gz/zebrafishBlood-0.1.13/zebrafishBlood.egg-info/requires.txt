@@ -1,0 +1,6 @@
+scikit-build
+pytorch
+torchvision
+numpy
+ultralytics
+opencv-python
