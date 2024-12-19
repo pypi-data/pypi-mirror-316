@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+test/test_fai_add_positive.py
+test_fai_package.egg-info/PKG-INFO
+test_fai_package.egg-info/SOURCES.txt
+test_fai_package.egg-info/dependency_links.txt
+test_fai_package.egg-info/requires.txt
+test_fai_package.egg-info/top_level.txt
+testfaipackage/__init__.py
+testfaipackage/functions.py

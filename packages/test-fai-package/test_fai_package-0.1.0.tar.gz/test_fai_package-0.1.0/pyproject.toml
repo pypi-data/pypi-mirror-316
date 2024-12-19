@@ -1,0 +1,15 @@
+[project]
+name = "test-fai-package"
+version = "0.1.0"
+description = "This is a test package for fai"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "uv==0.5.4"
+]
+
+[dependency-groups]
+dev = [
+    "ipykernel>=6.29.5",
+    "pytest>=8.3.4",
+]
