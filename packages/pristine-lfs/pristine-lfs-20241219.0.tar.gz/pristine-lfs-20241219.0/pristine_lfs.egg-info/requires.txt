@@ -1,0 +1,8 @@
+python-debian
+sh>=1.14
+
+[:python_version < "3.8"]
+sh<=1.999
+
+[test]
+pytest>=4.6
