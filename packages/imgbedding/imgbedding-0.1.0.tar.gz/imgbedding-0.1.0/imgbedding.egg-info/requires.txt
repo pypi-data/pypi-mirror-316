@@ -1,0 +1,5 @@
+transformers>=4.17.0
+onnxruntime>=1.10.0
+Pillow
+tqdm
+scikit-learn

@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: imgbedding
+Version: 0.1.0
+Summary: A Python package to generate image embeddings with CLIP without PyTorch/TensorFlow (UPDATED)
+Home-page: UNKNOWN
+Author: Malay Damani
+Author-email: damanimalay@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: ai,transformers,onnx,images,image-processing,embeddings,clip
+Platform: UNKNOWN
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
