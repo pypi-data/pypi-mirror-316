@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: simple_py_config
+Version: 0.0.1
+Summary: Simple python app configuration
+Author-email: Dmitry Sibiryakov <sibiriakoff2006@yandex.py>
+Project-URL: Homepage, https://github.com/sibir007/simple-py-config
+Project-URL: Issues, https://github.com/pypa/simple-py-config/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# simple-py-config
+
+Module for simple configuring python applications. This module is basically a copy of the corresponding Flack module with some modification.
