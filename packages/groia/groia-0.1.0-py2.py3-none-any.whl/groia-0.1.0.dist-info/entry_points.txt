@@ -1,0 +1,3 @@
+[console_scripts]
+groia-cli=groia.groia:main
+
