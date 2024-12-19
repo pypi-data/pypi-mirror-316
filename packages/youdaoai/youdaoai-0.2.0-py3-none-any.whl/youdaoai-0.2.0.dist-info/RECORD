@@ -1,0 +1,10 @@
+youdaoai-0.2.0.dist-info/METADATA,sha256=kw39S93lGixI91lDwL6eniY4ZMvLeIR6fP9V56WsaLg,9726
+youdaoai-0.2.0.dist-info/WHEEL,sha256=thaaA2w1JzcGC48WYufAs8nrYZjJm8LqNfnXFOFyCC4,90
+youdaoai-0.2.0.dist-info/entry_points.txt,sha256=6OYgBcLyFCUgeqLgnvMyOJxPCWzgy7se4rLPKtNonMs,34
+youdaoai-0.2.0.dist-info/licenses/LICENSE,sha256=0RsTth-YNYIZNr4mb6HS3-FSFwxZpgpiYQjEBOCh4Ro,1086
+youdaoai/__init__.py,sha256=geCyMuF5zDnFlKil4t5A_6iT0wiX3m8qh8CAVlU2lVw,104
+youdaoai/_utils.py,sha256=f3SaszCjhGaBsvJIJacRHdKCnhV0JvAmKn4731ZgKXo,603
+youdaoai/base.py,sha256=UhTNiYE0PcOXQgRQONp0O0ICPy-D9a9REcyywuSNfH0,1796
+youdaoai/client.py,sha256=V2F8J_lv5xjBo6JLzp-nbscN-JPvF3D0sWOp_IvfwI8,16502
+youdaoai/types.py,sha256=3QFgg4vemw4GAWZu5pa0WpcET7t5YgSzVA6TULnhOHk,6046
+youdaoai-0.2.0.dist-info/RECORD,,
