@@ -1,0 +1,6 @@
+README.md
+setup.py
+testhwsdk.egg-info/PKG-INFO
+testhwsdk.egg-info/SOURCES.txt
+testhwsdk.egg-info/dependency_links.txt
+testhwsdk.egg-info/top_level.txt
