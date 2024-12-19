@@ -1,0 +1,2 @@
+[abx]
+abx_plugin_sonic_search = abx_plugin_sonic_search
