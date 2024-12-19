@@ -1,0 +1,204 @@
+Metadata-Version: 2.1
+Name: shasta-python
+Version: 0.0.2
+Summary: The official Python client for Krugle Shasta.
+Home-page: https://krugle.ai/shasta
+License: Apache-2.0
+Author: Jason
+Author-email: jason@aragoncg.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: httpx (>=0.27.0,<0.28.0)
+Requires-Dist: pydantic (>=2.9.0,<3.0.0)
+Project-URL: Repository, https://github.com/krugle2/shasta-python
+Description-Content-Type: text/markdown
+
+# Shasta Python Library
+
+The Shasta Python library provides the easiest way to integrate Python 3.8+ projects with [Shasta](https://github.com/krugle2/shasta).
+
+## Prerequisites
+
+- Install Shasta and init with KrugleAI models
+
+## Install
+
+```sh
+pip install shasta-python
+```
+
+## Usage
+
+```python
+from shasta_python import chat
+from shasta_python import ChatResponse
+
+response: ChatResponse = chat(model='llama3.2', messages=[
+  {
+    'role': 'user',
+    'content': 'Why is the sky blue?',
+  },
+])
+print(response['message']['content'])
+# or access fields directly from the response object
+print(response.message.content)
+```
+
+See [_types.py](shasta/_types.py) for more information on the response types.
+
+## Streaming responses
+
+Response streaming can be enabled by setting `stream=True`.
+
+```python
+from shasta_python import chat
+
+stream = chat(
+    model='llama3.2',
+    messages=[{'role': 'user', 'content': 'Why is the sky blue?'}],
+    stream=True,
+)
+
+for chunk in stream:
+  print(chunk['message']['content'], end='', flush=True)
+```
+
+## Custom client
+A custom client can be created by instantiating `Client` or `AsyncClient` from `shasta`.
+
+All extra keyword arguments are passed into the [`httpx.Client`](https://www.python-httpx.org/api/#client).
+
+```python
+from shasta_python import Client
+client = Client(
+  host='http://localhost:5668',
+  headers={'x-some-header': 'some-value'}
+)
+response = client.chat(model='llama3.2', messages=[
+  {
+    'role': 'user',
+    'content': 'Why is the sky blue?',
+  },
+])
+```
+
+## Async client
+
+The `AsyncClient` class is used to make asynchronous requests. It can be configured with the same fields as the `Client` class.
+
+```python
+import asyncio
+from shasta_python import AsyncClient
+
+async def chat():
+  message = {'role': 'user', 'content': 'Why is the sky blue?'}
+  response = await AsyncClient().chat(model='llama3.2', messages=[message])
+
+asyncio.run(chat())
+```
+
+Setting `stream=True` modifies functions to return a Python asynchronous generator:
+
+```python
+import asyncio
+from shasta_python import AsyncClient
+
+async def chat():
+  message = {'role': 'user', 'content': 'Why is the sky blue?'}
+  async for part in await AsyncClient().chat(model='llama3.2', messages=[message], stream=True):
+    print(part['message']['content'], end='', flush=True)
+
+asyncio.run(chat())
+```
+
+## API
+
+The Shasta Python library's API is designed around the [Shasta REST API](https://github.com/krugle2/shasta/blob/main/docs/api.md)
+
+### Chat
+
+```python
+shasta.chat(model='llama3.2', messages=[{'role': 'user', 'content': 'Why is the sky blue?'}])
+```
+
+### Generate
+
+```python
+shasta.generate(model='llama3.2', prompt='Why is the sky blue?')
+```
+
+### List
+
+```python
+shasta.list()
+```
+
+### Show
+
+```python
+shasta.show('llama3.2')
+```
+
+### Create
+
+```python
+modelfile='''
+FROM llama3.2
+SYSTEM You are mario from super mario bros.
+'''
+
+shasta.create(model='example', modelfile=modelfile)
+```
+
+### Copy
+
+```python
+shasta.copy('llama3.2', 'user/llama3.2')
+```
+
+### Delete
+
+```python
+shasta.delete('llama3.2')
+```
+
+### Embed
+
+```python
+shasta.embed(model='llama3.2', input='The sky is blue because of rayleigh scattering')
+```
+
+### Embed (batch)
+
+```python
+shasta.embed(model='llama3.2', input=['The sky is blue because of rayleigh scattering', 'Grass is green because of chlorophyll'])
+```
+
+### Ps
+
+```python
+shasta.ps()
+```
+
+
+## Errors
+
+Errors are raised if requests return an error status or if an error is detected while streaming.
+
+```python
+model = 'does-not-yet-exist'
+
+try:
+  shasta.chat(model)
+except shasta.ResponseError as e:
+  print('Error:', e.error)
+  if e.status_code == 404:
+    shasta.pull(model)
+```
+
