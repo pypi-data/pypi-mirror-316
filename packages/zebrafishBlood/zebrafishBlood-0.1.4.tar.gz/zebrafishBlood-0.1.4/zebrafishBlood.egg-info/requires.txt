@@ -1,0 +1,6 @@
+pytorch
+torchvision
+cudatoolkit==11.1.1
+numpy
+ultralytics
+opencv
