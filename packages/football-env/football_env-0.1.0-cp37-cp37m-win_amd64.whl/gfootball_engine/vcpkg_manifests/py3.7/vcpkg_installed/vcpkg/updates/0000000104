@@ -1,0 +1,8 @@
+Package: boost-function
+Version: 1.78.0
+Depends: boost-assert, boost-bind, boost-config, boost-core, boost-integer, boost-preprocessor, boost-throw-exception, boost-type-index, boost-type-traits, boost-typeof, boost-vcpkg-helpers
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 4751c8355befbda09138151bd3436726615f57a1321f8f98b6f2ad92b168660a
+Description: Boost function module
+Status: install ok half-installed

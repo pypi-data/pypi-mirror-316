@@ -1,0 +1,8 @@
+Package: boost-chrono
+Version: 1.78.0
+Depends: boost-assert, boost-build, boost-config, boost-core, boost-integer, boost-modular-build-helper, boost-move, boost-mpl, boost-predef, boost-ratio, boost-static-assert, boost-system, boost-throw-exception, boost-type-traits, boost-typeof, boost-utility, boost-vcpkg-helpers, boost-winapi, vcpkg-cmake
+Architecture: x64-windows
+Multi-Arch: same
+Abi: d77fb12723d5364b6e3723d09b5b3cb1b1283c6eed5319ef6ecb80e13859cb11
+Description: Boost chrono module
+Status: install ok half-installed

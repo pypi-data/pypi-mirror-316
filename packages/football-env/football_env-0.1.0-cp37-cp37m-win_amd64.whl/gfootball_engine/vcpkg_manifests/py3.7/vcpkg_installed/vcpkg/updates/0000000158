@@ -1,0 +1,8 @@
+Package: boost-math
+Version: 1.78.0
+Depends: boost-assert, boost-build, boost-concept-check, boost-config, boost-core, boost-integer, boost-lexical-cast, boost-modular-build-helper, boost-predef, boost-random, boost-static-assert, boost-throw-exception, boost-vcpkg-helpers, vcpkg-cmake
+Architecture: x64-windows
+Multi-Arch: same
+Abi: fda4e54e42ee6558b6d65fc01395586b59f5c835989ed93b7bca420615369f02
+Description: Boost math module
+Status: install ok half-installed
