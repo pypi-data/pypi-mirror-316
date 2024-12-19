@@ -1,0 +1,8 @@
+syntax_checker-0.2.9.dist-info/METADATA,sha256=jal6E8x0hQ_TL-24aCu7_FXRqSWrPnDbOfO3y2pAUEI,4848
+syntax_checker-0.2.9.dist-info/WHEEL,sha256=elgID9LFIzePVV_Dkdh89zcJ07DrxkMR1AXQnJi0QBQ,95
+syntax_checker-0.2.9.dist-info/licenses/LICENSE,sha256=mNAs4EEcp80sx-hAK9wZKLmHJ5o8aJxW49WXVPWIgCo,1103
+syntax_checker/__init__.py,sha256=PHgOTt8et16N8TnygwKRYQZz9r4mzmv1QZmYB4XdgZg,139
+syntax_checker/__init__.pyi,sha256=YfGEFpv2XTex4DcHvb3UjDHFZfE-CaxcS8h_gC5Vz9k,1643
+syntax_checker/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+syntax_checker/syntax_checker.pyd,sha256=Ctt6IymcKydRJQdG95LXEvMMOzcwZ6AwPX0pf0ZZ_88,19060736
+syntax_checker-0.2.9.dist-info/RECORD,,
