@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "model-inference"
+version = "0.1.0"
+description = ""
+authors = ["Sanjith Kumar R <sanjithkumar986@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+torch = {version = "2.4.1", source = "pytorch"}
+torchvision = {version = "0.19.1", source = "pytorch"}
+numpy = "1.26.4"
+pillow = "10.2.0"
+opencv-python = "4.9.0.80"
+identity-cluster = {path = "../../identity_cluster/dist/identity_cluster-0.1.0-py3-none-any.whl"}
+
+
+[[tool.poetry.source]]
+name = "pytorch"
+url = "https://download.pytorch.org/whl/cu118"
+priority = "explicit"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
