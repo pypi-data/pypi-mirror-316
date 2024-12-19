@@ -1,0 +1,3 @@
+[console_scripts]
+rstbebe=rstbebe.__main__:main
+
