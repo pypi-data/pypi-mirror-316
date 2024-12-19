@@ -1,0 +1,16 @@
+numpy<2.0,>=1.26.0
+
+[bpy]
+bpy>=4.2
+
+[dev]
+fake-bpy-module
+
+[docs]
+quartodoc
+jupyter
+
+[test]
+pytest
+pytest-cov
+syrupy
