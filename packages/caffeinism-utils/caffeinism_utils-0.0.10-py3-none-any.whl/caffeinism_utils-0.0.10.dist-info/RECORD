@@ -1,0 +1,8 @@
+caffeinism_utils/__init__.py,sha256=MER0q-NVosxQWibvx3a3bKwxRWGVXWeso9-qaU6oH_E,43
+caffeinism_utils/asyncio.py,sha256=OspIOFFxh3L_W8H39pvdJSOU_ixuvhPvOPHww0187y0,1124
+caffeinism_utils/prefetch.py,sha256=S3M8_D3J4QNpM_tp9sEjBal2561jWILS94f4xgLVqBs,950
+caffeinism_utils/utils.py,sha256=Rf8SucktzZ7FOTrFUlT6WKUsGS-DvTy8bPqmTlPU4FY,191
+caffeinism_utils/zip.py,sha256=APqhYnIyBVTmeaiYsJhZIyFGMevikl2jlyVPo4PW-XM,1256
+caffeinism_utils-0.0.10.dist-info/METADATA,sha256=ZiW_NYeKGM1ZfLZMz4yUgPHHySR_YOVWI9vYQ6HvvrM,572
+caffeinism_utils-0.0.10.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+caffeinism_utils-0.0.10.dist-info/RECORD,,
