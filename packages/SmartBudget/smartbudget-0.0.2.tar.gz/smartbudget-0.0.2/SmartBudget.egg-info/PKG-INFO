@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: SmartBudget
+Version: 0.0.2
+Summary: Бибилиотека для удобного управления финансами, анализом расходов и бюджетированием
+Author: 
+Author-email: 1sergeiivanov1@mail.ru
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# SmartBudget
+
+## Описание
+SmartBudget - Бибилиотека для удобного управления финансами, анализом расходов и бюджетированием.
+
+## Установка
+
+```python
+pip install SmartBudget
