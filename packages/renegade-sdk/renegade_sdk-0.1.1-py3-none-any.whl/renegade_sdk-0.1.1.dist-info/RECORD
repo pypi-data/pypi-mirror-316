@@ -1,0 +1,8 @@
+renegade/__init__.py,sha256=BZ19CbCgNPn2jT_MV2cjAyfiB7gU-qCuZ5Mgi4ElGok,497
+renegade/client.py,sha256=zWSPC3-1FoytFFWSG3RnPT-XAZxPGRb9SVWGlr1pSvU,8912
+renegade/http.py,sha256=cBuAh7hxZtXep4-XEGa5SQeUXDSHbkzkys5ShSmTnzU,5139
+renegade/types.py,sha256=dACKPhQVeCl1rh_1k_RC0qn8Zw1GRDnhtY1iMo78ics,3631
+renegade_sdk-0.1.1.dist-info/METADATA,sha256=2ncarNz6sIEao6YUvDOySjFkA27pknB_fdejGY-3pqU,5882
+renegade_sdk-0.1.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+renegade_sdk-0.1.1.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+renegade_sdk-0.1.1.dist-info/RECORD,,
