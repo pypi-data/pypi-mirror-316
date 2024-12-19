@@ -1,0 +1,7 @@
+httpx
+sqlglot[rs]
+tobiko-cloud-api-client==202451.18.0
+tobiko-cloud-helpers==202451.18.0
+
+[airflow]
+apache-airflow
