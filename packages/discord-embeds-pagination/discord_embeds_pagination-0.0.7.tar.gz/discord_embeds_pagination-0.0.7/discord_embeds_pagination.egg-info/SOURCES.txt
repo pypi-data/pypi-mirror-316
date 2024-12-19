@@ -1,0 +1,10 @@
+LICENCE
+README.md
+setup.py
+discord_embeds_pagination.egg-info/PKG-INFO
+discord_embeds_pagination.egg-info/SOURCES.txt
+discord_embeds_pagination.egg-info/dependency_links.txt
+discord_embeds_pagination.egg-info/requires.txt
+discord_embeds_pagination.egg-info/top_level.txt
+pagination/__init__.py
+pagination/pagination.py
