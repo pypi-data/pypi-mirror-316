@@ -1,0 +1,12 @@
+[project]
+name = "banffprocessor"
+version = "0.0.0"
+readme="README.md"
+maintainers = [
+    {name = "Banff Support, Statistics Canada", email = "statcan.banff-banff.statcan@statcan.gc.ca"}
+]
+authors = [
+  { name="Andrew Dombowsky", email="andrew.dombowsky@statcan.gc.ca" },
+  { name="Gregory Ludwinski", email="gregory.ludwinski@statcan.gc.ca" },
+]
+description = "Coming soon ... The Banff Processor, a tool for creating imputation strategies developed by Statistics Canada"
