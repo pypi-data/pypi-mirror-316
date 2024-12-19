@@ -1,0 +1,1 @@
+ovos_workshop>=3.2.0
