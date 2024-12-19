@@ -1,0 +1,9 @@
+hjimi_tools/__init__.py,sha256=7eOqRHoCclrPngf6oHArSOk8TXasOYBt1GyqHl8xt7I,197
+hjimi_tools/create_c_project.py,sha256=DUplUHSOz_0bFu3QaTMk8JkVH-2BKjTloKCZFAKa3Sk,6214
+hjimi_tools/file_collector.py,sha256=tikyvOcCXgq6BpfxZpCNSJ-qfJXwq7oujARNftILCVQ,4717
+hjimi_tools/setup_package.py,sha256=pV8gSemBl2xHVqaTfaPnlpvfH0ZvDywz0ZagkhzEwHU,4387
+hjimi_tools-0.0.5.dist-info/LICENSE,sha256=f4-D-9s1xGWXiSOIKZHVPh6YLMgjPDjkUkrjVsG2YuM,1090
+hjimi_tools-0.0.5.dist-info/METADATA,sha256=UumZYwFVTI9Ni5EgZaEkNwB8igdZ5iBd0mlL82w0ckc,8444
+hjimi_tools-0.0.5.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+hjimi_tools-0.0.5.dist-info/top_level.txt,sha256=wJakUz0wIeEfZP6fHzgn7od91898F9DxMbFrkkfR82U,12
+hjimi_tools-0.0.5.dist-info/RECORD,,
