@@ -1,0 +1,13 @@
+dash_paperdragon/DashPaperdragon.py,sha256=6sWkMSrFxNpu9xBuutRhFrZLiYVYcza0iNROO_YBx9A,3104
+dash_paperdragon/__init__.py,sha256=HhbxDBlWfrP8x83qda0A6cQI6J7p9SSTgYmxEVlHuN0,2261
+dash_paperdragon/_imports_.py,sha256=p0xQY5yb8qwhYkXAqFWMfMLQC1F1KpVuhso-PmgFZc0,81
+dash_paperdragon/dash_paperdragon.min.js,sha256=VST6XAwG5kieQLJilLwtKDA0F0RUzZqnyloACOeyvpY,743880
+dash_paperdragon/dash_paperdragon.min.js.map,sha256=TrOYxU7fhxQ5ZYY0hiNGDXsr0755TiR5xxITFxxPmck,2435489
+dash_paperdragon/metadata.json,sha256=4J8IEKLD9h_TAQbHg2g_mx_drta8nv3qxH3v0b8bO6U,3475
+dash_paperdragon/package-info.json,sha256=r6eHS1nWB6tLIAXHaAq3v8pKovuEuVAyEZT6Lqz_nbU,2322
+dash_paperdragon/utils.py,sha256=a85yYoaM61tx2oUfQqq96_zs_h8w_gSCPDbMgxdZHKA,10842
+dash_paperdragon-0.1.11.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dash_paperdragon-0.1.11.dist-info/METADATA,sha256=AFBAM2VxIZdfFvJ4Jg3QzMU3oKVvjtAp7G74RbBAIr4,4087
+dash_paperdragon-0.1.11.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+dash_paperdragon-0.1.11.dist-info/top_level.txt,sha256=XPVD7mtASw3d2N-85ww64_8g-bbocWn1naYOoxUnkdA,17
+dash_paperdragon-0.1.11.dist-info/RECORD,,
