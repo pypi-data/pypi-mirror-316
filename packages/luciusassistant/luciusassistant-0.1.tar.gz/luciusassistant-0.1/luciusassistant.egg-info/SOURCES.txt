@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+luciusassistant/__init__.py
+luciusassistant/lucius_prompt.md
+luciusassistant.egg-info/PKG-INFO
+luciusassistant.egg-info/SOURCES.txt
+luciusassistant.egg-info/dependency_links.txt
+luciusassistant.egg-info/requires.txt
+luciusassistant.egg-info/top_level.txt
