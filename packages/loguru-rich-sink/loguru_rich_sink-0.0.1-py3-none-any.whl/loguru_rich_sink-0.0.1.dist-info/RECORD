@@ -1,0 +1,8 @@
+loguru_rich_sink/__init__.py,sha256=tz3NrO-Yeya3Aw4Mw4w8L_Pl4oJOKHQA5sG0pgKiSHQ,355
+loguru_rich_sink/__main__.py,sha256=J1z2Gw2YTx_VsnHkGMEmJS3Cv51oM5F39C7z1Wa_qs4,2664
+loguru_rich_sink/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+loguru_rich_sink/sink.py,sha256=twoxm62endNh2ttXOL0JpJ9mAp0ix6yiTZKjm7jqjMQ,6925
+loguru_rich_sink-0.0.1.dist-info/METADATA,sha256=cvsKUra2-_WCBGBHETScItq15b79lf2sDXQmThE8qvg,399
+loguru_rich_sink-0.0.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+loguru_rich_sink-0.0.1.dist-info/entry_points.txt,sha256=fd3McMb55_-8kTjwEzK5o7fwdyM1QRQfwVdjsN-AOMM,54
+loguru_rich_sink-0.0.1.dist-info/RECORD,,

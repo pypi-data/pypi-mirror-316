@@ -1,0 +1,2 @@
+[console_scripts]
+rich-logger = loguru_rich_sink:main
