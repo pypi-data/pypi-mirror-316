@@ -1,0 +1,15 @@
+sage_language/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sage_language/apps.py,sha256=KlI1W04ZD-Cd38PlyVn5S392bC0AI2Xkm6Oth6puaLI,296
+sage_language/checks.py,sha256=SqcYrXWAihsYj_qLV82nPpLxSnUvak2LOJu5zlWK0XQ,3293
+sage_language/middlewares/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sage_language/middlewares/cookie.py,sha256=lSFk6ouCDGBmuezEbm1NtElBS7Rm4m89G6XLKwByY_Q,6889
+sage_language/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sage_language/templates/admin/base_site.html,sha256=xnp7KFYh2xhRceSiO_5weNvavKzGYp4S-EGjxjE33UI,778
+sage_language/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sage_language/utils/locale.py,sha256=xs6NdDdW-T9r-ibLg7jSipITafVGruNA8ccnpKQPvhk,3920
+sage_language/views/__init__.py,sha256=CNQcIiIudb1AEw3xaKBoPSgMikONh4q5EaeqssG7R0Q,67
+sage_language/views/locale.py,sha256=PTZdoDoLRwBgwliWOunR26opVxzYgZnxCBlv9o03tqM,2917
+django_sage_language-0.1.1.dist-info/LICENSE,sha256=hGGwIZBJg3rfNB8ORrYseBDUw1YdTdCmHmsYtpdPpMI,1065
+django_sage_language-0.1.1.dist-info/METADATA,sha256=SEqPg0JzNuC9TUXNblvqEYpuqK8rgWZsZWtrpPJf1-0,5273
+django_sage_language-0.1.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+django_sage_language-0.1.1.dist-info/RECORD,,
