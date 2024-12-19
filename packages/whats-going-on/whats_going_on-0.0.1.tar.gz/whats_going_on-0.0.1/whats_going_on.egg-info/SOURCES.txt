@@ -1,0 +1,8 @@
+README.md
+setup.py
+whats_going_on/__init__.py
+whats_going_on/main.py
+whats_going_on.egg-info/PKG-INFO
+whats_going_on.egg-info/SOURCES.txt
+whats_going_on.egg-info/dependency_links.txt
+whats_going_on.egg-info/top_level.txt
