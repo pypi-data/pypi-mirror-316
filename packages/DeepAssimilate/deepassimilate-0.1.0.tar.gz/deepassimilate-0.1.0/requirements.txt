@@ -1,0 +1,9 @@
+torch>=1.7.1
+numpy
+opencv-python
+scikit-learn
+pytest
+torchvision
+tensorboard
+diffusers
+matplotlib
