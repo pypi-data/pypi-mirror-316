@@ -1,0 +1,52 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "singlecell-cookbook"
+version = "0.3.1"
+description = "A collection of tools for analyzing single-cell genomics data."
+readme = "README.md"
+requires-python = ">=3.11,<3.13"
+license = { file = "LICENSE.md" }
+keywords = ["bioinformatics", "single-cell", "genomics", "RNA-seq", "analysis"]
+authors = [
+    { name = "Argenis Arriojas", email = "arriojasmaldonado001@umb.edu" },
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+dependencies = ["numpy", "pandas", "anndata", "scipy", "scanpy"]
+
+[project.optional-dependencies]
+test = ["pytest~=8.3.3"]
+docs = [
+    "sphinx~=8.1.3",
+    "sphinx-rtd-theme~=3.0.1",
+    "sphinx-autodoc-typehints~=2.5.0",
+    "myst-parser~=4.0.0",
+]
+r = ["rpy2>=3.5.14", "anndata2ri>=1.3"]
+dev = [
+    "bump2version~=1.0.1",
+    "ruff~=0.8.0",
+    "pre-commit~=4.0.1",
+    "singlecell-cookbook[test]",
+    "singlecell-cookbook[docs]",
+    "singlecell-cookbook[r]",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/argearriojas/singlecell-cookbook"
+"Documentation" = "https://singlecell-cookbook.readthedocs.io"
+"Repository" = "https://github.com/argearriojas/singlecell-cookbook"
+"Issues" = "https://github.com/argearriojas/singlecell-cookbook/issues"
+"Release Notes" = "https://github.com/argearriojas/singlecell-cookbook/releases"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/singlecell_cookbook"]
