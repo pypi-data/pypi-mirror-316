@@ -1,0 +1,2 @@
+[console_scripts]
+dbrownell-uvtest = dbrownell_uvtest:main.app
