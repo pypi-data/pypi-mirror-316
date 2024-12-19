@@ -1,0 +1,7 @@
+astropy
+numpy
+
+[tools]
+vpython
+json
+itertools
