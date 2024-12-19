@@ -1,0 +1,4 @@
+[console_scripts]
+smonline=zenius.smonline:main
+zenius=zenius.vanisher:main
+
