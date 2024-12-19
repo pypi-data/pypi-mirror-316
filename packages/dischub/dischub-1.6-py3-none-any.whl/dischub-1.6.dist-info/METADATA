@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: dischub
+Version: 1.6
+Summary: A Django SDK to initiate online payment to the Dischub API
+Home-page: https://github.com/stanleychihz/my_sdk
+Author: Stanford Chihoyi
+Author-email: chihoyistanford@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+
+# Dischub SDK
+
+The Dischub SDK is a Python package designed to initiate online payment to Dischub API. It abstracts the API URL and simplifies the process of integrating the Dischub payment gateway or other services into Django applications.
+
+## Features
+
+- Send dynamic JSON data to Dischub API
+- Abstracted API URL to enhance security
+- Easy integration with Django-based applications
+- Handles POST requests and JSON payloads efficiently
+- Error handling for API communication issues
+
+## Installation
+
+You can install the **Dischub SDK** via pip:
+
+```bash
+pip install dischub
