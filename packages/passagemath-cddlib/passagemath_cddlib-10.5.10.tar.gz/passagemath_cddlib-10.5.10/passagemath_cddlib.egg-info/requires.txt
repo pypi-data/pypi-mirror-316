@@ -1,0 +1,7 @@
+passagemath-environment~=10.5.10.0
+cysignals==1.12.0rc2
+
+[test]
+passagemath-polyhedra
+passagemath-linbox
+passagemath-repl
