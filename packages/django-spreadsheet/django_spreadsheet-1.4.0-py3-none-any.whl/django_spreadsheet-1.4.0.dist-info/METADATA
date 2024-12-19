@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: django-spreadsheet
+Version: 1.4.0
+Summary: Create a spreadsheet from the database with minimal code
+Author-email: Antonis Christofides <antonis@antonischristofides.com>
+Maintainer-email: Antonis Christofides <antonis@antonischristofides.com>
+Project-URL: Homepage, https://github.com/aptiko/django-spreadsheet
+Project-URL: Documentation, https://django-spreadsheet.readthedocs.io
+Project-URL: Repository, https://github.com/aptiko/django-spreadsheet
+Project-URL: Changelog, https://github.com/aptiko/django-spreadsheet/blob/master/CHANGELOG.rst
+Keywords: django-spreadsheet
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Python: >=3.10
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: django<6,>=3.2
+Requires-Dist: openpyxl<4,>=3
+
+==================
+django-spreadsheet
+==================
+
+.. image:: https://github.com/aptiko/django-spreadsheet/actions/workflows/run-tests.yml/badge.svg
+    :alt: Build button
+    :target: https://github.com/aptiko/django-spreadsheet/actions/workflows/run-tests.yml
+
+.. image:: https://img.shields.io/codecov/c/gh/aptiko/django-spreadsheet
+        :target: https://app.codecov.io/gh/aptiko/django-spreadsheet
+
+.. image:: https://readthedocs.org/projects/django-spreadsheet/badge/?version=latest
+        :target: https://django-spreadsheet.readthedocs.io/en/latest/?version=latest
+        :alt: Documentation Status
+
+.. image:: https://img.shields.io/pypi/v/django-spreadsheet.svg
+        :target: https://pypi.python.org/pypi/django-spreadsheet
+
+Create a spreadsheet from the database with minimal code
+
+* Free software: BSD license
+* Documentation: https://django-spreadsheet.readthedocs.io.
