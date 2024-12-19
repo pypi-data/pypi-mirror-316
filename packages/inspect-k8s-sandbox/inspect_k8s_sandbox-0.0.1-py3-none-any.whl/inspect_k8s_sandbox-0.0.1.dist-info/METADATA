@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: inspect-k8s-sandbox
+Version: 0.0.1
+Summary: Placeholder package only. Please install from source https://github.com/UKGovernmentBEIS/inspect_k8s_sandbox. A Kubernetes Sandbox Environment for Inspect.
+Home-page: https://github.com/UKGovernmentBEIS/inspect_k8s_sandbox
+Author: UK AI Safety Institute
