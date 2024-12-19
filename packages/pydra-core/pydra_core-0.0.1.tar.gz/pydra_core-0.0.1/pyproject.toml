@@ -1,0 +1,31 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.version]
+path = "pydra_core/__init__.py"
+
+[tool.hatch.build.targets.wheel]
+packages = ["pydra_core"]
+
+[project]
+name = "pydra_core"
+version = "0.0.1"
+description = "Python package for calculating hydraulic loads"
+readme = "README.md"
+license = "GPL-3.0"
+license-file = "LICENSE"
+authors = [
+  { name = "Niels van der Vegt", email = "n.vandervegt@hkv.nl" },
+  { name = "Paulina Kindermann"},
+  { name = "Jochem Caspers"},
+  { name = "David Haasnoot"},
+  { name = "Guy Dupuits"},
+  { name = "Jerom Aerts"},
+  { name = "Rolf Waterman"},
+  { name = "Bart Thonus"},
+  { name = "Marit Zethof"}
+  
+]
+
+# [project.urls]
