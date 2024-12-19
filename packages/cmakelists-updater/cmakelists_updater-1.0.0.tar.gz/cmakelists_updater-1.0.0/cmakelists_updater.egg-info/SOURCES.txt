@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.py
+cmakelists_updater/__init__.py
+cmakelists_updater/updater.py
+cmakelists_updater.egg-info/PKG-INFO
+cmakelists_updater.egg-info/SOURCES.txt
+cmakelists_updater.egg-info/dependency_links.txt
+cmakelists_updater.egg-info/entry_points.txt
+cmakelists_updater.egg-info/requires.txt
+cmakelists_updater.egg-info/top_level.txt
