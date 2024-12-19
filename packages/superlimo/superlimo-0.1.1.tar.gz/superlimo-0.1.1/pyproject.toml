@@ -1,0 +1,53 @@
+[build-system]
+requires = ["setuptools", "setuptools_scm"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools_scm]
+
+[project]
+name = "superlimo"
+description = "SuperPoint-based Lagrangian Ice MOtion algorithm"
+readme = "README.md"
+authors = [
+    {name = "Anton A. Korosov", email="anton.korosov@nersc.no"},
+    {name = "Sean Chua"}
+]
+license = {file = "LICENSE"}
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Plugins",
+    "Environment :: Console",
+    "Intended Audience :: Information Technology",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: Apache Software License",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Topic :: Scientific/Engineering",
+    "Topic :: Scientific/Engineering :: Image Processing",
+    "Topic :: Scientific/Engineering :: Oceanography",
+    "Topic :: Utilities",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+keywords = ["sea ice drift", "SAR", "computer vision", "machine learning"]
+dependencies = [
+    "numpy",
+    "matplotlib",
+    "pyproj",
+    "scipy",
+    "torch",
+    "nansat",
+    "omegaconf",
+    "scikit-image",
+]
+urls = {Repository = "https://github.com/nansencenter/py-thesaurus-interface"}
+dynamic = ["version"]
+
+[project.entry-points.console_scripts]
+derive-drift = "superlimo.derive_drift:main"
+
+[tool.setuptools]
+packages = ["superlimo"]
+
+[tool.setuptools.package-data]
+"superlimo" = ["weights.pth"]

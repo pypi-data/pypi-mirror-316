@@ -1,0 +1,52 @@
+## SAR Preprocessing parameters
+# Spatial reference system of the destination domain on which the processing will be performed
+proj4: +proj=stere +lon_0=28.9 +lat_0=82.96 +lat_ts=80 +ellps=WGS84 +datum=WGS84 +units=m
+# Spatial extent of the domain on which the processing will be performed
+extent: -100000 -80000 100000 80000
+# Resolution of the reprojected SAR images in meters
+sar_resolution: 100
+# Minimal SAR signal to include in the processing. Values below are clipped.
+min_sar_signal: 0.005
+# Percentile limits of the SAR image clipping. Values below or above the <plim> percentile are clipped.
+plim:
+- 1
+- 99
+
+## SuperLIMo parameters
+# Torch device
+device: cpu
+# Path to the trained model. Leave empty to use the default weights.
+checkpoint_url:
+# Minimal score of the superlimo to be considered as a valid keypoint detection
+superlimo_min_score: 0.1
+
+## Brute force matcher and filtering parameters
+# Norm used to compute the distance between the descriptors
+matcher_norm: NORM_L2
+# Minimal distance between the descriptors to be considered as a match
+matcher_max_distance: 0.8
+# Maximal drift (m/s) between the matched keypoints
+matcher_max_drift: 0.2
+# RANSAC model used to filter the matches
+matcher_ransac_model: AffineTransform
+# RANSAC ratio used to filter the matches
+matcher_ransac_ratio: 0.2
+# RANSAC threshold used to filter the matches
+matcher_ransac_threshold: 0.01
+# Lowe ratio used to filter the matches (when Lowe ratio is used instead of BF-matcher with cross-check)
+matcher_lowe_ratio: 0.9
+# Plot the matches between the images
+matcher_plot: false
+# Use RANSAC to filter the matches
+matcher_use_ransac: true
+
+## Patter matching (maximum cross correlation) parameters
+# Step in the pixels of the destination domain to derive ice drift
+# E.g., if resolution is 100, then with pm_step 20 ice drift vectors will be spaced by 2000 m.
+pm_step: 20
+# Which polarisation to use for the pattern matching
+pm_pol: hh
+# Size of the template in pixels
+pm_template_size: 33
+# Size of the border around the template in pixels
+pm_border: 32

@@ -1,0 +1,21 @@
+name: superlimo
+channels:
+  - conda-forge
+dependencies:
+  - gdal
+  - cartopy
+  - cython
+  - pip
+  - opencv
+  - pip:
+    - ipykernel
+    - matplotlib
+    - netcdf4
+    - pillow
+    - pyproj
+    - scipy
+    - torch
+    - pythesint
+    - git+https://github.com/nansencenter/nansat.git
+    - omegaconf
+    - scikit-image

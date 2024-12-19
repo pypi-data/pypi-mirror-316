@@ -1,0 +1,8 @@
+numpy
+matplotlib
+pyproj
+scipy
+torch
+nansat
+omegaconf
+scikit-image
