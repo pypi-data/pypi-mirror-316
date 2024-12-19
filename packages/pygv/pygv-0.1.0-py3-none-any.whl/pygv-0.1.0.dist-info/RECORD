@@ -1,0 +1,12 @@
+pygv/__init__.py,sha256=L0iRDIM95l6aeTQmNjFHKc_TWYKXeitTBt0ZaVaFxqQ,192
+pygv/_api.py,sha256=Fymad8yWkAp5OdZ_dA0Mp2bV8tPQtmSh5uYIhVfEeDk,2245
+pygv/_browser.py,sha256=-Dqo7l7wEjjUKrL50CILP9yukSzwAz6ctWrKIj3j5LU,688
+pygv/_config.py,sha256=U0EXZuWSNCzOjcNF_HUICAVzrrIihJ62zh_GKZJj8yQ,2685
+pygv/_tracks.py,sha256=gr00wHFJe4j4R0frokzRAXegl55JcLm27FH0oueyPlM,9806
+pygv/_util.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+pygv/_version.py,sha256=i1Qt4frrrkonncA4d5pQs9ajmbH4m6BzP3RB-cwRHjA,161
+pygv/static/widget.js,sha256=4XrmkXEWH3jaWElLlS5rWZnLPTMlAEayvdhVtkRMzG8,513
+pygv-0.1.0.dist-info/METADATA,sha256=oXwe7Go_e_36-JCnzxNl4FQMC8-HlTbkiZjLZ5O-5dQ,1795
+pygv-0.1.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+pygv-0.1.0.dist-info/licenses/LICENSE,sha256=XmE7GAxpN5gdK3J3ipGMYO2YbGI22o1Xn_ZxF1UP2uY,11341
+pygv-0.1.0.dist-info/RECORD,,
