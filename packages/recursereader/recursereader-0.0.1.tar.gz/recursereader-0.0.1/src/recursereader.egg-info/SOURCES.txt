@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+src/recursereader/__init__.py
+src/recursereader/recursereader.py
+src/recursereader.egg-info/PKG-INFO
+src/recursereader.egg-info/SOURCES.txt
+src/recursereader.egg-info/dependency_links.txt
+src/recursereader.egg-info/entry_points.txt
+src/recursereader.egg-info/top_level.txt
