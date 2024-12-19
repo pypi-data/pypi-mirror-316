@@ -1,0 +1,11 @@
+README.md
+license.txt
+setup.cfg
+setup.py
+resume_module/__init__.py
+resume_module/resume.py
+resume_module.egg-info/PKG-INFO
+resume_module.egg-info/SOURCES.txt
+resume_module.egg-info/dependency_links.txt
+resume_module.egg-info/requires.txt
+resume_module.egg-info/top_level.txt
