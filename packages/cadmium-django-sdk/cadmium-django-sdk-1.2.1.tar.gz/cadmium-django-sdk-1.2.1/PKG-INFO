@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: cadmium-django-sdk
+Version: 1.2.1
+Summary: Cadmium SDK for capturing and sending Django errors.
+Home-page: https://github.com/bannawandoor27/cadmium-django-sdk
+Author: bannawandoor
+Author-email: connect@hasanulbanna.in
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Framework :: Django
+Description-Content-Type: text/markdown
+
+# Cadmium-Django SDK
+
+This SDK captures and sends errors from your Django application to the Cadmium server.
+
+## Installation
+
+```bash
+pip install cadmium-django-sdk
+```
+
+## Configuration
+
+Add the following to your `settings.py`:
+
+```python
+INSTALLED_APPS += ['cadmium_django']
+
+APPLICATION_ID = "your-application-id"
+CD_SECRET = "your-secret"
+CD_ID = "your-cd-id"
+
+import cadmium_django
+cadmium_django.initialize()
+```
+
+## Usage
+
+Once configured, any unhandled exception will automatically be sent to the Cadmium server.
+
+
