@@ -1,0 +1,8 @@
+MANIFEST.in
+setup.py
+calculate_statistics/__init__.py
+calculate_statistics.egg-info/PKG-INFO
+calculate_statistics.egg-info/SOURCES.txt
+calculate_statistics.egg-info/dependency_links.txt
+calculate_statistics.egg-info/requires.txt
+calculate_statistics.egg-info/top_level.txt
