@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: dataquality_rules
+Version: 0.1.0
+Summary: This library is used for Data Quality
+Author: Abhishek Kumar
+Author-email: officialabhishek1997@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: Jinja2==3.1.4
+Requires-Dist: MarkupSafe==3.0.2
+Requires-Dist: py4j==0.10.9.7
+Requires-Dist: pyspark==3.5.3
+
+# Data Quality
+
+This project provides a Data Quality Rule (DQR) enabler class for validating and reporting data quality metrics using Apache Spark and Jinja2. It allows users to perform various checks on a DataFrame, such as checking for null values, duplicates, uniqueness, range constraints, and values within a specific list. The results can be saved as an HTML report for easy review and sharing.
+
+# Features
+
+* Schema Validation : Compare the DataFrame's schema with an expected schema.
+* Null Value Check : Identify the percentage of null values in specified columns.
+* Duplicate Check : Find duplicate rows based on one or more columns.
+* Uniqueness Check : Measure the uniqueness of values in specified columns.
+* Range Check : Ensure column values fall within a defined range.
+* Value Set Check : Verify if column values exist within a predefined list.
+* HTML Report Generation : Automatically generate an HTML report summarizing all checks with visual tables.
+
+# Installation
+
+You can install the library using pip:
+
+```bash
+pip install dataquality_rules
+```
+

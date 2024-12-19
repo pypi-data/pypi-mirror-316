@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+dataquality_rules/__init__.py
+dataquality_rules/core.py
+dataquality_rules.egg-info/PKG-INFO
+dataquality_rules.egg-info/SOURCES.txt
+dataquality_rules.egg-info/dependency_links.txt
+dataquality_rules.egg-info/requires.txt
+dataquality_rules.egg-info/top_level.txt
