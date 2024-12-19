@@ -1,0 +1,15 @@
+dnscli/__init__.py,sha256=jUTHLRTDwKnn_S-gir79rtnkw5OKiTkuSMCTXkZgXSA,88
+dnscli/cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dnscli/cli/alidns.py,sha256=yGdGC64ghT81ouCnLpv2vLkB_0RZX5q64Nr0txH-7x8,6792
+dnscli/cli/cli.py,sha256=stI7ciQupp_YK0Tx9Iv9VdM5thhz68OjRphEV0vfnaA,9851
+dnscli/cli/dnspod.py,sha256=UGwXjzl_RpDhixa3uoEXdUTh2VoTxNYLhioyipObH0I,7028
+dnscli/dns/__init__.py,sha256=2hu-7Qz9up25uhxkCRf9MVeGO2m-uq6GMHrPGurXLoM,147
+dnscli/dns/aliyun.py,sha256=a60ihWqWZP4Rfu2IZ3763fV_6C37Un49tw0Uxi4CHe4,8235
+dnscli/dns/dns_api.py,sha256=J0PcqJtIdIUv33ZoxLmmP1ktdRHDNEMYD1jbbKu0IiQ,843
+dnscli/dns/dnspod.py,sha256=kFiUirnsTKg6sK5uSDkn__4gVhJn7I3ocFf3L3CUvls,7420
+dnscli/dns/utils.py,sha256=tseVazYUNPK0u0itVVwzdb9Ad8bPA9hk4uUCQ1MyiJo,464
+dnscli-0.0.3.dist-info/METADATA,sha256=w_5tmcZ51uus0w347F1v2103umeeHNTfH4GXKae3yI4,4768
+dnscli-0.0.3.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+dnscli-0.0.3.dist-info/entry_points.txt,sha256=CUqENLcTx4YBeS_hCuX3sQpWWKLobv2lWCSG18obUkc,82
+dnscli-0.0.3.dist-info/licenses/LICENSE,sha256=X8w5R1wlFhM_hu1grt6H7EV8flSWhoMtdEPGbJBPs-0,1065
+dnscli-0.0.3.dist-info/RECORD,,
