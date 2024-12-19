@@ -1,0 +1,98 @@
+# python
+build/
+dist/
+*.egg-info/
+*.pkl
+venv
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+__pycache__
+
+# Pycharm
+.idea
+
+# misc msvs files
+*.u2d
+*.suo
+*.user
+*VC.db*
+.vs/
+prms_src/prms5.2.1/msvs/x64/Debug/
+prms_src/prms5.2.1/msvs/x64/Release/
+prms_src/prms5.3.0/msvs/x64/Debug/
+prms_src/prms5.3.0/msvs/x64/Release/
+
+# prms obj, mod, and library files
+*.o
+*.obj
+*.mod
+*.smod
+*.lib
+*.a
+
+# meson build information
+prms_src/prms5.3.0/builddir/
+
+# prms binaries
+prms_src/prms5.2.1/bin
+prms_src/prms5.3.0/bin
+
+# prms output files
+*.out
+*.wbal
+wbal.msgs
+soltab_debug
+output*/
+
+# emacs
+*~
+
+# pytest
+autotest/pytest.xml
+autotest/coverage.xml
+autotest/codecov
+autotest/.coverage
+autotest/temp
+
+# test_data
+test_data/.test_data_version*
+
+# sphinx
+generated/
+
+# example output data and gis data
+examples/0*/
+examples/snow_errors
+examples/compare_pws_prms
+examples/runoff_errors
+examples/pynhm_gis
+examples/pywatershed_gis
+examples/model_loop_custom_output
+pywatershed/data/pynhm_gis
+pywatershed/data/pywatershed_gis
+
+
+# graphics
+*.png
+*.svg
+*.jpg
+
+# compressed/tarballs
+*.gz
+*.zip
+
+# f2y detritus
+*module.c
+PRMS*.so
+*f2pywrappers*.f*
+
+# starfit repo used for development
+starfit_minimal/
+
+# asv
+.asv
+
+# environment files
+.env
