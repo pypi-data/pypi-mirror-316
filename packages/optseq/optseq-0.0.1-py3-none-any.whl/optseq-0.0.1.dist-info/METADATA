@@ -1,0 +1,9 @@
+Metadata-Version: 2.4
+Name: optseq
+Version: 0.0.1
+Summary: Optseq is a solver for optimization.
+Author-email: Saito Tsutomu <tsutomu7@hotmail.co.jp>
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+Wrapper of OPTSEQ
