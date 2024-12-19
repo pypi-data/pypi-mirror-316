@@ -1,0 +1,8 @@
+sudoku/__init__.py,sha256=ugBLFnWCsQmPraHz5_YhK-mCdhRPdAKUO7npuX7kHIc,26
+sudoku/sudoku.py,sha256=fg2a8VsMF4fJLwf_MCSh3EwyrYLjax7LLvNIj8pU29s,2242
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_sudoku.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+labeshkere123-0.1.0.dist-info/METADATA,sha256=3xzSa7O1vF0lanKdnsMG21fmyu97opEcMWKYq_lPNaQ,227
+labeshkere123-0.1.0.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+labeshkere123-0.1.0.dist-info/top_level.txt,sha256=8vCAubhYTay_HsVHYgWwRgnuNGmn4lFElheNb8tBEnM,13
+labeshkere123-0.1.0.dist-info/RECORD,,
