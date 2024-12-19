@@ -1,0 +1,9 @@
+okayjack/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+okayjack/http.py,sha256=HEoCx32H7SON-1VkktlsSFwGIutWUfPSS8tclXne1zs,7425
+okayjack/middleware.py,sha256=tElkwu3FR-_vnBNNGfmAoRNtCV6flHZ1O-nrqHirJwM,3044
+okayjack/static/okayjack/js/htmx.ext.okayjack.js,sha256=0_PqRohRChc9GquVxyLQswNcxXnqEt3FOzdBmZqHi24,2785
+django_htmx_okayjack-1.1.dist-info/LICENSE,sha256=eJUo_AFmR2OzSovoQdgCrgvBE3vERMeko-6MP4fBWQo,1266
+django_htmx_okayjack-1.1.dist-info/METADATA,sha256=02WLbnXXOWA_dzeE1LTS7PO1Vr44vfotpTVV3LLN2iw,8243
+django_htmx_okayjack-1.1.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+django_htmx_okayjack-1.1.dist-info/top_level.txt,sha256=ltlvz8LVTHf9SSo3NUvcEgSZhI1xOBccxEzMT-KcXZ4,9
+django_htmx_okayjack-1.1.dist-info/RECORD,,
