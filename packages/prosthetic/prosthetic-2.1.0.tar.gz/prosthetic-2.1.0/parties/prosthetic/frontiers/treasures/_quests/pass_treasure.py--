@@ -1,0 +1,133 @@
+
+
+''''
+	from prosthetic.frontiers.treasures._quests.pass_treasure import pass_treasure
+"'''
+
+
+''''
+	prosthetic treasures send --name "treasure.1" --version 1.0.0
+"'''
+
+''''
+	objective:
+		stow_treasure ({
+			"domain": "treasure.1",
+		})
+	
+		the procedure:
+			[ ] search the treasures
+"'''
+
+''''
+	perhaps:
+		version..
+
+"'''
+
+''''
+	DB: prosthetic_trends_DB
+		collection: treasures_collection
+"'''
+
+
+#/
+#
+import shutil
+import io
+import os
+#
+#
+from prosthetic.frontiers.treasures._quests.itemize import itemize_treasures
+from prosthetic.frontiers.treasures.check.domain_fiber import check_domain_fiber
+#
+from prosthetic.adventures.monetary.DB_prosthetic_trends.collection_novels.document.insert import insert_novel
+from prosthetic.adventures.monetary.DB_prosthetic_trends.collection_novels.document.retrieve import retrieve_novel
+#
+from prosthetic._essence import retrieve_essence
+#
+from prosthetic.mixes.zipping.make_zip import make_zip
+from prosthetic.mixes.zipping.make_dir import make_dir
+#
+#\
+
+
+
+import ships.paths.directory.check_equality as check_equality
+from prosthetic.adventures.monetary.DB_prosthetic_trends.collection_vernacular.document.insert import insert_document
+
+
+#
+#	moves:
+#		1. zip the treasure with "ships"
+#		2. save to GridFS
+#		3. retrieve from GridFS
+#		4. check equality
+#		
+#
+def pass_treasure (packet):
+	domain = packet ["domain"]
+
+	essence = retrieve_essence ()
+	the_mix_directory = essence ["the_mix_directory"]
+	treasures_path = essence ["treasures"] ["path"]
+	ephemeral_path = essence ["ephemeral"] ["path"]
+
+	domain_directory = str (os.path.normpath (os.path.join (treasures_path, domain)));
+	domain_zip_path_without_extension = str (os.path.normpath (os.path.join (ephemeral_path, domain + "-zip")));
+	domain_directory_extracted = str (os.path.normpath (os.path.join (ephemeral_path, domain + "-extracted")));
+
+	#treasures = itemize_treasures ()
+	
+	print ("pass treasure", domain_directory);	
+	
+	zip_data = make_zip ({ 
+		"directory_path": domain_directory,
+		"zip_path_without_extension": domain_zip_path_without_extension
+	});
+	# print ("zip_data:", zip_data);
+	
+	insertion = insert_novel ({ "zip_buffer": zip_data });
+	novella_id = insertion ["_id"]
+	
+	print ("novella_id:", novella_id);
+	
+	#
+	#
+	#	Retrieve
+	#
+	#
+	retrieved = retrieve_novel ({
+		"_id": novella_id
+	});
+	zip_buffer_2 = retrieved ["zip_buffer"]
+	# print ("zip_buffer_2:", zip_buffer_2);
+	
+	make_dir (zip_buffer_2, domain_directory_extracted);
+	
+	report = check_equality.start (domain_directory, domain_directory_extracted)	
+	assert (
+		report ==
+		{'1': {}, '2': {}}
+	)
+	print ("The equality vow for the [ directory -> zip -> GridFS -> directory ] passed.")
+
+	
+	insert_document ({
+		"document": {
+			"domain": domain,
+			"novella": str (novella_id)
+		}
+	});
+	
+	
+	#
+	#
+	#	Remove the emperemal directories
+	#
+	#
+	os.remove (domain_zip_path_without_extension + ".zip")
+	shutil.rmtree (domain_directory_extracted)
+	
+	
+	return;

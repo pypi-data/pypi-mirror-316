@@ -1,0 +1,65 @@
+
+
+
+<pre>
+
+	<header>Publishing</header>
+	
+		#
+		#
+		#	Frontend: Build
+		#		
+		#		Locations of build:
+		#			package.json
+		#			svelte.config.js
+		#
+		#
+		(cd /habitat/parties_frontend/sveltenetics && pnpm run build_frontend)
+		ls /habitat/parties/prosthetic/sveltnetics_packets
+	
+	
+		#
+		#
+		#	Turn off
+		#
+		#
+		(cd /habitat/constellations && prosthetic_1 ventures off)
+		
+		#
+		#
+		#	Check the guarantees (vows, status)
+		#
+		#
+		python3 /habitat/parties/prosthetic/_status/status.proc.py
+		
+		
+		#
+		#
+		#	Build the sdist
+		#
+		#
+		(cd /habitat && rm -rf dist && poetry build --format sdist --verbose && chmod -R 777 /habitat && du -sh /habitat/dist)
+		
+		#
+		#	login to pypi:
+		#	
+		#
+		#
+		(cd /habitat && poetry publish --verbose);
+		
+		chmod -R 777 /habitat
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</pre>

@@ -1,0 +1,93 @@
+
+
+
+<pre>
+
+	<nav>
+		<header>Prosthetic</header>
+			
+	</nav>
+	
+	<article>
+		<header>Prospectus</header>
+		<p>
+			This is a module for organizing.
+		</p>
+	</article>
+		
+	
+	<article>
+		<header>on</header>
+			<h3>session 1</h3>
+				docker compose up -d; docker exec -it prosthetic.1 bash -c "bash"
+				. /habitat/_controls/build_1.sh
+				
+			<h3>session 2</h3>
+				 docker exec -it prosthetic.1 bash -c "bash"
+				. /habitat/_controls/build_2.sh
+	</article>
+	
+	<header>Frontend</header>
+		#
+		#
+		#	Frontend: Build
+		#		
+		#		Locations of build:
+		#			package.json
+		#			svelte.config.js
+		#
+		#
+		# (cd /habitat/parties_frontend/sveltenetics && pnpm run build_frontend)
+	
+	
+	<header>off</header>
+		docker container stop prosthetic.1; docker container remove prosthetic.1
+
+	<header>constellation (tmux)</header>
+
+		(cd /habitat/constellations && prosthetic_1 ventures on)
+		(cd /habitat/parties_frontend/sveltenetics && pnpm run dev)
+		
+		#
+		#	localStorage.setItem ("origin_address", "http://192.168.0.98:22000")
+		#
+		#
+		
+		#
+		# 	[mongo] 192.168.0.98:39000
+		#	[sanic] 192.168.0.98:22000
+		#
+	
+	
+	<header>prosthetic cli</header>
+		
+		unfinished:
+			prosthetic_1 trends move_to_treasures --domain "garbage.2"
+			
+			prosthetic_1 treasures pass --domain "garbage.3"
+			
+			
+			
+			
+	<h2>monetary</h2>
+		objectives:
+			[ ] export the "passes", dump the "squeezes"
+	
+		<h3>saving</h3>
+			prosthetic_1 adventures monetary saves export --version 1
+
+		<h3>loading</h3>
+			prosthetic_1 adventures monetary saves import --version 1 --drop
+	
+
+		
+		
+		
+
+
+
+
+
+
+
+</pre>
