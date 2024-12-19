@@ -1,0 +1,36 @@
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[tool.poetry]
+name = "osm_helper"
+version = "0.0.8"
+license = "MIT"
+authors = [
+  "Waseem Kntar <waseem.kntar@gmail.com>",
+]
+description = "A fast way to get the ETA for the logistics projects that depends heavily on it"
+readme = ["Readme.md"]
+packages = [{include = "osm_helper"}]
+
+[tool.poetry.urls]
+"Homepage" = "https://github.com/mo-waseem/osm-helper"
+"Bug Tracker" = "https://github.com/mo-waseem/osm-helper/issues"
+
+[tool.poetry.dependencies]
+python='>=3.8'
+requests = ">=2.31.0"
+redis = ">=4.6.0"
+python-dotenv = ">=1.0.0"
+pyyaml = "^6.0.1"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.0"
+coverage = "^7.3.0"
+
