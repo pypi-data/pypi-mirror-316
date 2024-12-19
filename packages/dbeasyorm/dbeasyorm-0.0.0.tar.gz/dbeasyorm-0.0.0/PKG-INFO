@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: dbeasyorm
+Version: 0.0.0
+Summary: DBEasyORM is a lightweight and intuitive Object-Relational Mapping (ORM) library
+Home-page: https://github.com/artur24814/DBEasyORM
+Author: artur24814
+Author-email: artur24814@gmail.com
+License: MIT
+Project-URL: Documentation, https://dbeasyorm.readthedocs.io
+Project-URL: Source, https://github.com/artur24814/DBEasyORM
+Project-URL: Bug Tracker, https://github.com/artur24814/DBEasyORM/issues
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Database
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+License-File: LICENSE
+
+# DBEasyORM: Simplified ORM for SQL Databases
+
+Streamlined Object-Relational Mapping for Python and SQL Databases.
+
+## About the Project
+DBEasyORM is a lightweight and intuitive Object-Relational Mapping (ORM) library designed to simplify interactions between Python applications and SQL databases. By mapping Python objects to SQL tables, DBEasyORM eliminates the need for complex raw SQL queries, enabling developers to focus on writing clean, maintainable, and efficient code.
+
+With built-in support for model definitions, queries, migrations, and transactions, DBEasyORM makes database operations seamless for beginners and experts alike.
+
+## Features
+* **Database Connection**: Connect to PostgreSQL, MySQL, SQLite, and other SQL databases with ease.
+* **Model Definition**: Map Python classes to SQL tables with field types, constraints, and relationships.
+* **CRUD Operations**: Create, read, update, and delete records without writing raw SQL.
+* **Querying API**: Perform complex queries using filter, order, limit, and chaining methods.
+* **Migrations**: Automatically generate and apply schema changes with simple commands.
+* **Transaction Management**: Handle atomic database operations with robust transaction support.
+* **Relationships**: Define and query one-to-many and many-to-many relationships.
+* **Custom Validation**: Add custom field-level validation to enforce business rules.
+
+## Installation
+You can install DBEasyORM via pip:
+
+```bash
+pip install dbeasyorm
+```
+
+Or install development dependencies. Use the following commands:
+
+```bash
+pip install dbeasyorm[dev]
+```
+
+## Documentation
+Check out the <a href="https://dbeasyorm.readthedocs.io/en/latest/index.html">Full Documentation</a> for a complete guide on using DBEasyORM, including advanced querying, relationships, and configurations.
