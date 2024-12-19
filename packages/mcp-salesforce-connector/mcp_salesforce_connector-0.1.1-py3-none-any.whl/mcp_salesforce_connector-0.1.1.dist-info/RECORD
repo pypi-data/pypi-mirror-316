@@ -1,0 +1,6 @@
+src/salesforce/__init__.py,sha256=xZTgsEoYWD1T9KZgDBEOVT9yOahOxz7Q4KO6mmrLxXI,212
+src/salesforce/server.py,sha256=qbBN6hGjVGRExMFn17tJOiG7tyRE9l1fb7F6FHNt2Sk,5671
+mcp_salesforce_connector-0.1.1.dist-info/METADATA,sha256=AE1K1k8cCryAhCS5VfJQDx2fVJ-kWupgYUZw191SspY,763
+mcp_salesforce_connector-0.1.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+mcp_salesforce_connector-0.1.1.dist-info/entry_points.txt,sha256=tv9mmwvVVvKVyECsQyDRgvYHhlA52sMKJlEki1GDySA,51
+mcp_salesforce_connector-0.1.1.dist-info/RECORD,,

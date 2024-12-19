@@ -1,0 +1,25 @@
+Metadata-Version: 2.4
+Name: mcp-salesforce-connector
+Version: 0.1.1
+Summary: A Model Context Protocol (MCP) server implementation for Salesforce integration
+Project-URL: Homepage, https://github.com/smn2gnt/MCP-Salesforce
+Author-email: Suman G <suman.gunaganti@gmail.com>
+License: MIT
+Requires-Python: >=3.10
+Requires-Dist: mcp
+Requires-Dist: python-dotenv
+Requires-Dist: simple-salesforce
+Description-Content-Type: text/markdown
+
+# MCP Salesforce Connector
+
+A Model Context Protocol (MCP) server implementation for Salesforce integration, allowing LLMs to interact with Salesforce data through SOQL queries and SOSL searches.
+
+## Features
+
+- Execute SOQL (Salesforce Object Query Language) queries
+- Perform SOSL (Salesforce Object Search Language) searches
+
+
+
+
