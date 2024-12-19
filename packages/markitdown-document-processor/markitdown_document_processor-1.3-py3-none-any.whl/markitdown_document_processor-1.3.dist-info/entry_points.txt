@@ -1,0 +1,2 @@
+[console_scripts]
+document_processor = document_processor.main:main
