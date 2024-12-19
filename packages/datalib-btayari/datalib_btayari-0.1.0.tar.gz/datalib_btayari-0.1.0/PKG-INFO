@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: datalib_btayari
+Version: 0.1.0
+Summary: A Python library for data manipulation and analysis
+Home-page: https://github.com/votre_nom_utilisateur/DataLib
+Author: Votre Nom
+Author-email: votre.email@example.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy>=1.21.0
+Requires-Dist: pandas>=1.3.0
+Requires-Dist: matplotlib>=3.4.0
+Requires-Dist: scikit-learn>=0.24.0
+
+# DataLib
+
+DataLib est une bibliothÃ¨que Python puissante pour manipuler et analyser des donnÃ©es.
+
+## FonctionnalitÃ©s principales
+- **Manipulation de donnÃ©es** : Chargement et traitement de fichiers CSV, normalisation, gestion des valeurs manquantes.
+- **Statistiques** : Moyenne, mÃ©diane, mode, tests statistiques simples (t-test, chi-carrÃ©).
+- **Visualisation de donnÃ©es** : Graphiques simples et matrices de corrÃ©lation.
+- **Analyse avancÃ©e** : RÃ©gressions, classification supervisÃ©e (k-NN, arbres de dÃ©cision), clustering non supervisÃ©.
+
+## Installation
+Installez DataLib avec pip :
+```bash
+pip install datalib
