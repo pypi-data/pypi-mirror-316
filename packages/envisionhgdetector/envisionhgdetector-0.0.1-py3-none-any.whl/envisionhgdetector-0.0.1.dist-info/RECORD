@@ -1,0 +1,11 @@
+envisionhgdetector/__init__.py,sha256=9K-QIeWsIXlVCjCq4RYy-LgZK5iLUHuJmK7PWfS0-jo,764
+envisionhgdetector/config.py,sha256=UWrlChVK9kRN-PEtHsEOwEKs0i_OfYRhCCgpwoDU74k,2224
+envisionhgdetector/detector.py,sha256=mSkxkDpXc-nqB9mYgzKv_TYNOkUiNW1q7anLTnM7VIA,7344
+envisionhgdetector/model.py,sha256=Gl4PIFES98S4DBKstNoZ_wnJ5OZEm2QBZPetJ7MtG8U,4777
+envisionhgdetector/preprocessing.py,sha256=3dapLcE6kkLGZfOxQTlEbmr_ZmVOnx5bTombBZbTjVg,21905
+envisionhgdetector/utils.py,sha256=WfCid_wYXgxWMSKYWXVEj6LHFfcIDkQG7sUO1tjOASw,9044
+envisionhgdetector-0.0.1.dist-info/LICENSE,sha256=dwtH-l6vNxicME8TUO85A_sfq5Yu49Sv4fHC577NvTc,1085
+envisionhgdetector-0.0.1.dist-info/METADATA,sha256=s2VU1Uob0HkRMs-wYYrAtCaYaQqKQTWHDiHE7WVS4lY,6370
+envisionhgdetector-0.0.1.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+envisionhgdetector-0.0.1.dist-info/top_level.txt,sha256=2MeLrx2LItP6cTpItwXitYWJJiJNtGgC1nwxmUYYvb0,19
+envisionhgdetector-0.0.1.dist-info/RECORD,,
