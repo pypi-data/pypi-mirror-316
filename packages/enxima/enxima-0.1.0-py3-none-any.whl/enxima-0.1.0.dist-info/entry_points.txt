@@ -1,0 +1,3 @@
+[console_scripts]
+enxima=enxima.main:app
+
