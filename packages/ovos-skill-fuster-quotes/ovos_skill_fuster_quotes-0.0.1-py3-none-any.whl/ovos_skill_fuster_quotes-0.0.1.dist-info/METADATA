@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: ovos-skill-fuster-quotes
+Version: 0.0.1
+Summary: JoanFusterQuotesSkill
+Home-page: https://github.com/OpenVoiceOS/ovos-skill-fuster-quotes
+Author: OpenVoiceOS
+Author-email: UNKNOWN
+License: Apache2.0
+Keywords: ovos skill plugin
+Platform: UNKNOWN
+Requires-Dist: ovos-workshop
+
+UNKNOWN
+
+
