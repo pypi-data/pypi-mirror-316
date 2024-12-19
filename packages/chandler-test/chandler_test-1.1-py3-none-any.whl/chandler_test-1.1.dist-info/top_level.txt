@@ -1,0 +1,2 @@
+common
+moniotor_rule_scripts
