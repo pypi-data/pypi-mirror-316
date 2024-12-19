@@ -1,0 +1,10 @@
+abx_plugin_favicon/__init__.py,sha256=kuXrIojQz1cX9a13VBlURhtyGy8onz7bdp0GTiqGITs,545
+abx_plugin_favicon/actors.py,sha256=10Zf0vfmuYK5wxTJzESsPszwMBUhhd-xDDW6xcxBF7c,1168
+abx_plugin_favicon/config.py,sha256=mVxkHPVYZpllSefRSyejXqa_0kIXPHrCrEyD3z6Cb6k,240
+abx_plugin_favicon/extractors.py,sha256=i6UAfIbNX7oct7QQEmfX6Zan3KwhaQ9IHX6NUb0oFLs,469
+abx_plugin_favicon/favicon.py,sha256=uz9hxFwVjXx2ICim05RsYfvHm2SPVhetJn7HXMdbmaM,2221
+abx_plugin_favicon/models.py,sha256=8K_ZXM0Kc9y0ZdzANYcJ1kYysZODMs8oReBImue16Es,338
+abx_plugin_favicon-2024.10.28.dist-info/METADATA,sha256=OCNmaRXordn1lqQny4v39nHVOUoIUDDKbpt-nH9oE0A,233
+abx_plugin_favicon-2024.10.28.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+abx_plugin_favicon-2024.10.28.dist-info/entry_points.txt,sha256=0Rz9mkuEEnS6r7ws6CERxWHaMX0Kit8BsfAmkBEbtzA,46
+abx_plugin_favicon-2024.10.28.dist-info/RECORD,,
