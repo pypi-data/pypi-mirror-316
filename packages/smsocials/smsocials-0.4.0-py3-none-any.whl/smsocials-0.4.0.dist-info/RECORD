@@ -1,0 +1,7 @@
+smsocials/__init__.py,sha256=Q62vj-bR7YEIZnyZoAim1wiN59pAYlaOF2LOeAox8WM,60
+smsocials/clients/base.py,sha256=E8IAqBTR4e-zLoE9dxgUQy0bfU0A4Q4DdWSj_qBIVTo,808
+smsocials/clients/vk.py,sha256=1Y4ttdgMJQQUOcRUzLyuUZ7YHBS81MDwYAa_sqCrngI,4688
+smsocials/services/vk.py,sha256=v8UYj1LFhuTDkQaKLtukJ8kpVYpbCCOvoSlFzUtzTys,1982
+smsocials-0.4.0.dist-info/METADATA,sha256=eBFYbhQ4V22LQDoCcTV9ppVUqXFk5JCmOhd8FRM_sFc,747
+smsocials-0.4.0.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+smsocials-0.4.0.dist-info/RECORD,,
