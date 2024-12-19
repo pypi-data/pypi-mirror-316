@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: AIStructDynSolve
+Version: 1.3
+Summary: A framework focused on solving structural dynamics problems using artificial intelligence (AI) methods
+Author: Ke Du(杜轲)
+Author-email: duke@iem.ac.cn
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: scikit-optimize
+Requires-Dist: scipy
+Requires-Dist: pandas
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+# AIStructDynSolve
+
+AIStructDynSolve is a framework focused on solving structural dynamics problems using artificial intelligence (AI) methods. The framework solves the following ODE of MDOF:
+
+\[
+M \cdot \ddot{U} + C \cdot \dot{U} + K \cdot U = P_t
+\]
+
+### Initial Conditions:
+- \( U(t=0) = \text{InitialU} \)
+- \( \dot{U}(t=0) = \text{InitialU\_dot} \)
+
+### Author:
+- **Du Ke (鏉滆讲)**  
+  Email: duke@iem.ac.cn
+
+### Date:
+- 2023/12/26
+
