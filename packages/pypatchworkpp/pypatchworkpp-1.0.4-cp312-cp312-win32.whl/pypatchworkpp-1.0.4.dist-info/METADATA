@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: pypatchworkpp
+Version: 1.0.4
+Summary: ground segmentation
+Requires-Python: >=3.8
+Requires-Dist: numpy>=1.23
+Requires-Dist: open3d-cpu>=0.17; extra == "demo"
+Provides-Extra: demo
