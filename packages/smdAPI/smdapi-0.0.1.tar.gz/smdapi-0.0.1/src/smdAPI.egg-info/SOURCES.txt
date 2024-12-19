@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+setup.cfg
+src/smdAPI/__init__.py
+src/smdAPI.egg-info/PKG-INFO
+src/smdAPI.egg-info/SOURCES.txt
+src/smdAPI.egg-info/dependency_links.txt
+src/smdAPI.egg-info/top_level.txt
