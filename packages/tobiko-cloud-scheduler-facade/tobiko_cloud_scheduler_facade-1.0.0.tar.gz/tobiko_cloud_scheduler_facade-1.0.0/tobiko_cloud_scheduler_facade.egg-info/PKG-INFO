@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: tobiko-cloud-scheduler-facade
+Version: 1.0.0
+Author: TobikoData Inc.
+Author-email: engineering@tobikodata.com
+Requires-Python: <3.13,>=3.9
+Requires-Dist: httpx
+Requires-Dist: sqlglot[rs]
+Requires-Dist: tobiko-cloud-api-client==202451.17.0
+Requires-Dist: tobiko-cloud-helpers==202451.17.0+2b9d15b
+Provides-Extra: airflow
+Requires-Dist: apache-airflow; extra == "airflow"
