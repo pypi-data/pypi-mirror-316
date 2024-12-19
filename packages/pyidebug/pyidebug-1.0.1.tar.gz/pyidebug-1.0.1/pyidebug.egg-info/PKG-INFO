@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: pyidebug
+Version: 1.0.1
+Summary: Module that allows you to interactively debug your code.
+Home-page: UNKNOWN
+Author: Natanael Quintino
+Author-email: natanael.quintino@ipiaget.pt
+License: CC0 1.0 Universal
+Keywords: debug,interactive,edit,code
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE
+
+UNKNOWN
+
