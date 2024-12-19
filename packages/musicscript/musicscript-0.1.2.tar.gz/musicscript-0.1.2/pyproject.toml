@@ -1,0 +1,17 @@
+[project]
+name = "musicscript"
+version = "0.1.2"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Meek Msaki", email = "98189596+mmsaki@users.noreply.github.com" },
+]
+requires-python = ">=3.9"
+dependencies = ["ruff>=0.8.3"]
+
+[project.scripts]
+musicscript = "musicscript:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
