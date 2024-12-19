@@ -1,0 +1,10 @@
+README.md
+setup.py
+DocumentProcessor/__init__.py
+DocumentProcessor/processor.py
+markitdown_document_processor.egg-info/PKG-INFO
+markitdown_document_processor.egg-info/SOURCES.txt
+markitdown_document_processor.egg-info/dependency_links.txt
+markitdown_document_processor.egg-info/requires.txt
+markitdown_document_processor.egg-info/top_level.txt
+tests/test_processor.py
