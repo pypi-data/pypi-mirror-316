@@ -1,0 +1,90 @@
+`软件说明`
+    This is an automation toolkit development environment to use, the software integrates multi-threading, global variables, global agents and other tools, for high efficiency automated office, for automated script office provides a certain help behavior.
+    Used to do scripting global variable proxy test tool, the tool can add ports and specified local production environment for local automation and multi-threaded batch interface testing
+    This software is a toolkit series, provides a huge API interface, you can package the interface code, has a certain help for automated testing or for the development of JS and the like also have a little help, thank you for your support
+
+`功能使用说明`:
+    `文件模块API`:
+        1.nick_name_id()
+         随机生成JSON接口数据,这里简单示例,同时你需要传入一个参数,就是生成的个数1代表一个
+        {'code': '200', 'msg': 'success', 'data': [{'code': 0, 'msg': '0', 'message': '0', 'ttl': 1, 'data':}]}
+
+        2.identify_words() 
+        传入一个参数,这个是字符拆分,返回类型 ['你', '好''],参数是你拆分的文字
+
+        3.md5_Key() 
+        传入你要加密的md5字符串 例如md5_Key('123') 7fa8282ad93047a4d6fe6111c93b308a
+
+        4.md5_re('123456','827ccb0eea8a706c4c34a16891f84e7b') 校验md5值,如果返回有问题,则返回错误!
+
+        5.chrome() 调用此返回谷歌驱动网址 您可以借此进行使用下载使用
+
+        6.text_json_list([{'title':'张三'}])  传入JSON数据,自动写入表中,必须一一对应,title为头,键值对
+
+        7.is_chinese_s(text):检查是否是汉字
+
+        8.get_location(ip) API获取IP地理位置信息,通过第三方接口处理的信息
+
+        9.mp3_find(serch_text) 查询歌曲列表
+
+        10.mp3_id(nums) 填入一个id,返回一个歌曲ID接口
+
+        11.Jietugongju()  全屏截图
+
+        12.Jietugongju_width_height(x,y,width,height)  指定区域截图
+
+        13.文件提交 Files_date(url:str,value:str)  url上传地址,目标服务器,value本地文件 
+
+        14.Text_Dip.Text_线程值('//*[@id="kw"]','https://www.baidu.com/')
+            利用第三方库处理文本
+            image_线程池1(text_xpath,url_host) 
+            利用第三方库处理图片
+            综合数据处理(text_xpath,url_host)
+                也是上面,这个你需要传入多个数据,确保含有图片,文本,等
+            这个是调用第三方库,进行操作的. 
+
+        15.Image_list() 传入查询的文本 可以得到相应的图片接口,接口是很多,返回是JSON类型
+`上面部分是采取API或者第三方接口完成,如果您觉得麻烦,可以不用这样操作`
+`自动化代理模块:`
+`老版本优化后调用`:
+    1. `get_ip()`  ip_address,port
+    2. `get_port()` ip_address,port
+    3. `get_ip_port()` proxy_url,ip_address_url
+    4. `get_ip_port_list()` proxy_file
+    5.`Proxy_ua()`  环境UA
+    6.`mac_id_random` 随机生成mac地址,随机地址,不可以当做真实地址,属于模拟地址
+    7.` _path` 判断文件是否存在 
+以上均为老板API进行了优化调整,后期API以及也可能会被弃用
+
+`新版本关于自动化接口的处理`:
+    1.`Global_variable(ip,port,url_host)` IP端口,以及目标URL网址
+    2.`Global_variable(ip_s,port_s,url_host)` IP+代理端口以及目标端口 数组格式 
+    3.目前关于其余的并没有多做其余更新!
+
+`其它功能集合`:
+    1.计算器 sums(value,value2,sum:str) 例如说(1,2,'+') 1+2 =>3
+    2.简历工具 jianli_Scode()
+    3.关于自动化全局接口处理:
+        1.zidonghua_scanf_s() 本地多参数 ip,port,value,value2 value指的是/lisi value2 例如说?zhangsan=2 不需要另外加符号
+        2.zidonghua(ip,port)  本地环境ip port https模式
+        3.zidonghua_s(ip,port) 本地环境ip port http模式
+    4.关于项目线上环境:
+        zidonghua_scanf_ss(value:str,value2:str,value3) 传入网址域名,接口后参数以及请求{}
+
+
+
+
+//如果版本过低,请升级到最新版本,升级最新版本!!!低版本部分已经弃用
+`历史版本`:
+`1.7.4` ##增加大部分API接口,优化了部分功能,处理了本地无法使用的bug,具体请详细看功能代码,工具包仅供工作使用或者娱乐测试,禁止用于商业使用!
+`1.7.2` ##增加了虚拟环境包版本,对之前本地以及线上环境无法识别包进行了优化处理,部分功能得到了优化处理
+`1.7.0` ##对部分的代码进行了整合优化处理
+`1.6.9` ##修复了版本无法无法识别问题,增加了部分功能日志,删除部分文件无用工具,本版本作为临时的测试API版本,后期有需要会进行整改
+`1.6.7` ##更新了1.1.7,修复了大部分漏洞,修复了部分bug,增加了很多功能工具,具体看功能日志 
+
+
+`版本差异说明`:
+    每个版本均有差异,但均没有进行废弃代码,若存在本地残留,请进行删除,或者进行指定版本更新
+    npm install xiaoyu_proxy_pool==最新版本号
+    用于更新最新版本,这边也建议您更新最新版本,若存在重新更新,可以在本地删除残留,进行更新!
+    若停留在老版本,可能导致使用失败!
