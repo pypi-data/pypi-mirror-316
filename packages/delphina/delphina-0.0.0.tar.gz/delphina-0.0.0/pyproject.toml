@@ -1,0 +1,41 @@
+[project]
+name = "delphina"
+version = "0.0.0"
+description = "Python client library"
+requires-python = ">=3.8"
+dependencies = [
+    "requests>=2.28.0",
+    "pydantic>=2.0.0",
+    "typing-extensions>=4.0.0",
+    "pyyaml>=6.0.2",
+    "yattag>=1.16.0",
+    "catboost==1.2.5",
+    "graphviz>=0.20.3",
+    "ipython>=8.27.0",
+    "httpx>=0.27.2",
+    "httpx-sse>=0.4.0",
+    "joblib>=1.4.2",
+    "lightgbm~=4.5.0",
+    "numpy==1.26.4",
+    "optuna>=3.6.1,<4.0.0",
+    "pandas==2.2.3",
+    "pyarrow==17.0.0",
+    "s3fs>=0.4.2,<0.5.0",
+    "scikit-learn==1.5.0",
+    "shap>=0.46.0,<0.47.0",
+    "sqlparse>=0.5.1,<0.6.0",
+    "sqlglot>=25.8.1,<26.0.0",
+    "tabulate>=0.9.0,<0.10.0",
+    "tqdm>=4.66.6",
+    "xgboost==2.1.1",
+    "dill>=0.3.8,<0.4.0",
+
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+
+[tool.hatch.build.targets.wheel]
+packages = ["delphina"]
