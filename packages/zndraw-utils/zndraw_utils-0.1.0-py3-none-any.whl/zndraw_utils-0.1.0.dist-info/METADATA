@@ -1,0 +1,22 @@
+Metadata-Version: 2.4
+Name: zndraw-utils
+Version: 0.1.0
+Summary: ZnDraw Extensions
+Requires-Python: >=3.10
+Requires-Dist: ase>=3.23.0
+Requires-Dist: mace-torch>=0.3.9
+Requires-Dist: rdkit2ase>=0.1.4
+Requires-Dist: tqdm>=4.67.1
+Requires-Dist: typer>=0.13.1
+Requires-Dist: zndraw>=0.5.7
+Description-Content-Type: text/markdown
+
+# ZnDraw Utils
+
+The `pip install zndraw-utils` package provides additional extensions for ZnDraw.
+
+You can register any of the provided extensions using a CLI:
+
+```console
+(.venv) $ zndraw-register md --url http://localhost:5003
+```
