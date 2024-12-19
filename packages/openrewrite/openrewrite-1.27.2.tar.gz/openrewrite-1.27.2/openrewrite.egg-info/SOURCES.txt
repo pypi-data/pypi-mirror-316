@@ -1,0 +1,16 @@
+pyproject.toml
+openrewrite.egg-info/PKG-INFO
+openrewrite.egg-info/SOURCES.txt
+openrewrite.egg-info/dependency_links.txt
+openrewrite.egg-info/requires.txt
+openrewrite.egg-info/top_level.txt
+rewrite/__init__.py
+rewrite/execution.py
+rewrite/markers.py
+rewrite/parser.py
+rewrite/result.py
+rewrite/style.py
+rewrite/test.py
+rewrite/tree.py
+rewrite/utils.py
+rewrite/visitor.py
