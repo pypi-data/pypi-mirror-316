@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: chandler-test
+Version: 1.1
+Summary: chandler_test project
+Home-page: https://www.guwave.com
+Author: dajunqian
+Author-email: qdj2002@qq.com
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+
+Python study and work...
