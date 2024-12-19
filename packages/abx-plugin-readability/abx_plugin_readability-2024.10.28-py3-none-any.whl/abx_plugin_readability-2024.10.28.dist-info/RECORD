@@ -1,0 +1,9 @@
+abx_plugin_readability/__init__.py,sha256=YdEAxZAXzUfXs1ElHlvA03vyVQTIQXsZV-aR3CaCHCU,600
+abx_plugin_readability/binaries.py,sha256=fWttmnDBVIZ0-77lPqCzWmFUDO7lLLcnv1pYA4vwYjE,916
+abx_plugin_readability/config.py,sha256=A1sRJO4bl3Bv83oGul7Wlg4Nr7GWu4fKQOE9hs5j1mA,593
+abx_plugin_readability/extractors.py,sha256=wFPYu9mg-uGEB_GGfda9yoSf_vsIL89FJblvb6bi0RI,500
+abx_plugin_readability/readability.py,sha256=rYs_JNroW9wtk2_wEp3SZKoYBHTj0wO_95fnaRV2Gkc,4186
+abx_plugin_readability-2024.10.28.dist-info/METADATA,sha256=cMS3CgYdZ6waZ-N9EzvjIOcQzQK-iKg2uqOm-1Azds8,194
+abx_plugin_readability-2024.10.28.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+abx_plugin_readability-2024.10.28.dist-info/entry_points.txt,sha256=jcKP55vC3AzxBxa_RJmgQjs_vxRZDzynIMnPs3XRJWA,54
+abx_plugin_readability-2024.10.28.dist-info/RECORD,,
