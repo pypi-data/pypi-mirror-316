@@ -1,0 +1,3 @@
+[console_scripts]
+fastapi-injectable=fastapi_injectable.__main__:main
+
