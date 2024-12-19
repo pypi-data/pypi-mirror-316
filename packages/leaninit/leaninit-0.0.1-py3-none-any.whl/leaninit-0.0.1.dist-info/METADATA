@@ -1,0 +1,41 @@
+Metadata-Version: 2.4
+Name: leaninit
+Version: 0.0.1
+Summary: Initialized data compression for embedded systems
+Project-URL: Homepage, https://github.com/sebastien-riou/lean-init
+Project-URL: Bug Tracker, https://github.com/sebastien-riou/lean-init/issues
+Author: Sebastien Riou
+License-File: LICENSE
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.10
+Requires-Dist: humanfriendly
+Provides-Extra: build
+Requires-Dist: build; extra == 'build'
+Provides-Extra: doc
+Requires-Dist: sphinx; extra == 'doc'
+Description-Content-Type: text/markdown
+
+# lean-init
+Compression of initialized data for embedded systems.
+
+## How to integrate
+
+### LD file
+- User add a new section `.leaninit` and specify in it which sections shall be compressed.
+- Remove `AT` statement for sections to compress.
+
+### Start up file
+- Replace uncompressed initialization loop by a call to the compressed initialization function. 
+
+### C code
+- Include `leaninit.h` in `main.c`.
+
+### Build system
+- Invoke `leansys.cli` at the end of the build to generate the final elf file.
