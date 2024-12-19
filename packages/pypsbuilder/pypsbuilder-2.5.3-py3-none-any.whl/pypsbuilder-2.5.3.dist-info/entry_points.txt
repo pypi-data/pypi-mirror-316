@@ -1,0 +1,11 @@
+[console_scripts]
+psdrawpd = pypsbuilder.psexplorer:ps_drawpd
+psgrid = pypsbuilder.psexplorer:ps_grid
+psiso = pypsbuilder.psexplorer:ps_iso
+psshow = pypsbuilder.psexplorer:ps_show
+tcinit = pypsbuilder.tcinit:tcprojinit
+
+[gui_scripts]
+ptbuilder = pypsbuilder.psbuilders:ptbuilder
+pxbuilder = pypsbuilder.psbuilders:pxbuilder
+txbuilder = pypsbuilder.psbuilders:txbuilder
