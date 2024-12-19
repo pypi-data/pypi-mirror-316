@@ -1,0 +1,4 @@
+[console_scripts]
+postbuild=build:create_executable
+tt=tableau_toolkit.cli:cli
+
