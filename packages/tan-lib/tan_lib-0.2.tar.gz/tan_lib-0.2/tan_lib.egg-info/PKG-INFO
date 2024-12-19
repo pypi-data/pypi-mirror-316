@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: tan_lib
+Version: 0.2
+Summary: A simple math library
+Home-page: https://github.com/yourusername/tan_lib
+Author: Tanmay Dumbre
+Author-email: tanmaymdumbrek@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# tan_lib
+
+This is a simple math library with basic functions like add and subtract.
+
+## Installation
+
+To install this library, use pip:
+
+```bash
+pip install tan_lib
