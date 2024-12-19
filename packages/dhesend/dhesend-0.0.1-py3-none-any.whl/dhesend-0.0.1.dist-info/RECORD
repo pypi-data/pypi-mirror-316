@@ -1,0 +1,15 @@
+dhesend/__init__.py,sha256=wCr0TGF8PWz73oyDcKYo7jhTm-7Pd_mDxiYeVRBwXuI,46
+dhesend/_email.py,sha256=66aZBqZpKqnhMk3xOHdqW2hD8RYh2ONXj0mt_kih-0M,1282
+dhesend/apikey.py,sha256=iKWEDQoOrxTYha5yRlqrEjpNU6Vx6cbBIhL_dJ5_sg8,694
+dhesend/constants.py,sha256=11ZjNJi10ie9JrMhsL4AaaqHeul_Zre_KMp2mqu8HKg,93
+dhesend/domain.py,sha256=W-noey14oOCSAiLIiWy8covtETFoiI-Sa4UQ8J3Pxlw,1222
+dhesend/main.py,sha256=JOwAVc6iriHSa6Q4F1LapFf5mZ6pRKzNpfvwvz3c2vc,3365
+dhesend/path.py,sha256=SqEUYOQXMjX_ZFJ9tBW3sK7aYxeu01ea0LK3EVrpvZ4,610
+dhesend/test.py,sha256=EKFhKCQ2-DjVTVcK7jweWJ-tEAn1EjOijHEVLbiYCx8,3606
+dhesend/type.py,sha256=rgh46BJBSEH_Tz8ge2VMv-xh9ZZK7Hs70zKnb6PW4wM,7254
+dhesend/webhook.py,sha256=XrV8uNipXFLOD0pS05w-Ri_p7lCqoaGTFp-6_QLT4dA,2459
+dhesend-0.0.1.dist-info/LICENCE,sha256=KZgZovLW3e-vR9_WhCQt1oP50XwtKe3OCLp3e0wmSmU,1076
+dhesend-0.0.1.dist-info/METADATA,sha256=Zgu4N3aCWozuTXNHtIYh42lObtYg2VT-aXps-qWI2uA,2146
+dhesend-0.0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+dhesend-0.0.1.dist-info/top_level.txt,sha256=piGlzduDPocPqDmyo6jOQWPYbPviQ6GHe3pxrrZWDP0,8
+dhesend-0.0.1.dist-info/RECORD,,
