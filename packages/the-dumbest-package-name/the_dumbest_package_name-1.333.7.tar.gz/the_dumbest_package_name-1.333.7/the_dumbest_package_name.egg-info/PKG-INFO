@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: the_dumbest_package_name
+Version: 1.333.7
+Summary: Demonstration of Python packaging with pyproject.toml and setuptools.
+Author-email: mattt leee <dev@matlee.pro>
+Classifier: Development Status :: 1 - Planning
+Requires-Python: <3.13,>=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests<2.33,>=2.10

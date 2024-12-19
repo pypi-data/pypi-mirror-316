@@ -1,0 +1,27 @@
+[build-system]
+requires = [
+    "setuptools >= 61.0",
+    "setuptools-scm",
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "the_dumbest_package_name"
+description = "Demonstration of Python packaging with pyproject.toml and setuptools."
+version = "1.333.7"
+authors = [
+    {name = "mattt leee", email = "dev@matlee.pro"},
+]
+readme = "README.md"
+license = {file = "LICENSE"}
+classifiers = [
+    "Development Status :: 1 - Planning",
+]
+
+requires-python = ">= 3.9, < 3.13"
+dependencies = [
+    "requests >= 2.10, < 2.33",
+]
+
+[project.scripts]
+

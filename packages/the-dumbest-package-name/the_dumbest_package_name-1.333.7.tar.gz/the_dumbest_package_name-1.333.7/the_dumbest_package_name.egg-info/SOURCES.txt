@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+example_package/a_code_file.py
+example_package/some_py_config.py
+the_dumbest_package_name.egg-info/PKG-INFO
+the_dumbest_package_name.egg-info/SOURCES.txt
+the_dumbest_package_name.egg-info/dependency_links.txt
+the_dumbest_package_name.egg-info/requires.txt
+the_dumbest_package_name.egg-info/top_level.txt
