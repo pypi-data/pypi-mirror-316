@@ -1,0 +1,9 @@
+gama_client/__init__.py,sha256=frcCV1k9oG9oKj3dpUqdJg1PxRT2RSN_XKdLCPjaYaY,2
+gama_client/base_client.py,sha256=Ihjbo7G9hpPSxmaWRe87PMOPOdfChkebfqOAlyWq8-k,18408
+gama_client/command_types.py,sha256=VE11k_f7z5RL5wIWyKnt5erLqsPhB73_pWygQ-Xbluc,361
+gama_client/message_types.py,sha256=K5f9VfpjOzj89xqQEpZIjMF-PXAxUzvZzXJ92o2yztY,956
+gama_client/sync_client.py,sha256=wdjIr_3vtq1wNPzgdEijgUZLxfbQY-8LNFm0PrNy7IE,18591
+gama_client-1.2.1.dist-info/METADATA,sha256=X6bBnQXFcrp3Mq_TcH44XBS2C8kQt3yW93s15Es9iE4,14121
+gama_client-1.2.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+gama_client-1.2.1.dist-info/licenses/LICENSE,sha256=fQE_2io-g2ef_u_9lbXOPZZ6UZS0l3zB8OvZqS5XL94,1094
+gama_client-1.2.1.dist-info/RECORD,,
