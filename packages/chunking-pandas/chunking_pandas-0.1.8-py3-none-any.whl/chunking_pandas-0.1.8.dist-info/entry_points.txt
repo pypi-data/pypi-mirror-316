@@ -1,0 +1,2 @@
+[console_scripts]
+chunking-interface = chunking_pandas.interface:launch_interface

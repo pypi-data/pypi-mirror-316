@@ -1,0 +1,11 @@
+chunking_pandas/__init__.py,sha256=Rpo0ecED47eP7AZjSKskob2_Hlk1uKwYy-TpiEEQX18,457
+chunking_pandas/benchmark.py,sha256=fVi2nCFpu9-guf7T7q7nGM0BnZjHocsAFvSunNNMkbo,1500
+chunking_pandas/core.py,sha256=OP1JG6vHn4VYEB0QgRqyg40MLjfghi_FInmwdgeqyWg,13252
+chunking_pandas/visualization.py,sha256=OMYx27_SjEE_1TTnX5OvGguUyvLiFrzCT0tcYBeeGW8,1093
+chunking_pandas/utils/__init__.py,sha256=Nqnn8clbgv-5l0PgxcTOldg8mkMKrFn4TvPL-rYUUGg,1
+chunking_pandas/utils/logging.py,sha256=tFUdOFHh3a3kIY9hUEklap1YboN6fCp65Jce8qU84ww,415
+chunking_pandas-0.1.8.dist-info/METADATA,sha256=0z6Hv6Tg9s2_xrjO4PtbPam9srD5WAICMdUtI-nwMfc,3614
+chunking_pandas-0.1.8.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+chunking_pandas-0.1.8.dist-info/entry_points.txt,sha256=5nBB2Z28dj4lt80sgiw2veD-HjlCeybcOuSzc604Kzo,82
+chunking_pandas-0.1.8.dist-info/licenses/LICENSE,sha256=8NUtJw09-llnrtT-WAfHZnyFk5zoKIKiodww4u9_Aog,1090
+chunking_pandas-0.1.8.dist-info/RECORD,,
