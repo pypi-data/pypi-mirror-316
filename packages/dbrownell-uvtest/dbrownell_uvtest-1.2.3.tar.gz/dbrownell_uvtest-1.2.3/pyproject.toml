@@ -1,0 +1,23 @@
+[project]
+name = "dbrownell-uvtest"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "David Brownell", email = "github@davidbrownell.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "typer>=0.15.1",
+]
+
+dynamic = ["version"]
+
+[project.scripts]
+dbrownell-uvtest = "dbrownell_uvtest:main.app"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.version]
+path = "src/dbrownell_uvtest/__init__.py"
