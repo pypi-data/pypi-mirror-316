@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+servitorconnectqr/__init__.py
+servitorconnectqr/cli.py
+servitorconnectqr.egg-info/PKG-INFO
+servitorconnectqr.egg-info/SOURCES.txt
+servitorconnectqr.egg-info/dependency_links.txt
+servitorconnectqr.egg-info/entry_points.txt
+servitorconnectqr.egg-info/top_level.txt
