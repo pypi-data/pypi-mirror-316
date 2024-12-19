@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+dpmg/__init__.py
+dpmg/main.py
+dpmg.egg-info/PKG-INFO
+dpmg.egg-info/SOURCES.txt
+dpmg.egg-info/dependency_links.txt
+dpmg.egg-info/top_level.txt

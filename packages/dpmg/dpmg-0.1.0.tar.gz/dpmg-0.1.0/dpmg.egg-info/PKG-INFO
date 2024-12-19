@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: dpmg
+Version: 0.1.0
+Summary: Este é a primeira versão de nosso Datapackage Manager de Minas Gerais.
+Author-email: Gabriel <gabrielbdornas@gmail.com>
+License: MIT
+Project-URL: Homepage, https://github.com/splor-mg/dpmg
+Description-Content-Type: text/markdown
+
+# Meu Pacote
+
+Este é a primeira versão de nosso Datapackage Manager de Minas Gerais.

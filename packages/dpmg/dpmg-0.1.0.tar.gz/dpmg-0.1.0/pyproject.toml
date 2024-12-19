@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dpmg"  # Substitua pelo nome desejado
+version = "0.1.0"
+description = "Este é a primeira versão de nosso Datapackage Manager de Minas Gerais."
+readme = "README.md"
+license = {text = "MIT"}
+authors = [{name = "Gabriel", email = "gabrielbdornas@gmail.com"}]
+dependencies = []
+
+[project.urls]
+"Homepage" = "https://github.com/splor-mg/dpmg"
