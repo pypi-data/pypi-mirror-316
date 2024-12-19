@@ -1,0 +1,9 @@
+kamu/__init__.py,sha256=81vSHzpexE9auPwUOTkeDP_FfvJpKU2mqmlLW-T2Bo0,857
+kamu/_connection.py,sha256=LzyC5J5Yi0x_gEEBR8ZhfLsLHWk8BgzO4bFYw3GMnsU,1005
+kamu/_connection_flight_sql.py,sha256=EI9CP76xXIAsbtDnx0wsMPRspbX9UNxfIXy--M0wVqA,1063
+kamu/_connection_livy.py,sha256=MF4AvoIJGgH_ymelrx3fRWWhUP3-O5MA1mp0qjkzf1w,3539
+kamu-0.2.0.dist-info/LICENSE,sha256=_-WU-AwZuo0jl-hsmyzbJwjEWeBvt9cJpZ9Kvr_VzD4,11349
+kamu-0.2.0.dist-info/METADATA,sha256=-C1f7s93eBa4zEY8vAVb81oeH79HyNMgm1Y18deOs8w,15161
+kamu-0.2.0.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+kamu-0.2.0.dist-info/top_level.txt,sha256=ZMjBB4TyYb1113fGSQldLiOw5NQl_2KPkyRIZrOMcQ8,5
+kamu-0.2.0.dist-info/RECORD,,
