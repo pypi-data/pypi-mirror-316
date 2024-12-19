@@ -1,0 +1,13 @@
+epimodels/__init__.py,sha256=rWOmKEf76Q62LmxmVHr_rGf9FXntxylHCVmeQYyeV74,2061
+epimodels/continuous/__init__.py,sha256=2yjU5cJy2tO5hOFMzOY2u0HFrFjyuTyzvuvQAlnPKUs,87
+epimodels/continuous/models.py,sha256=c3kxqw4-9sEjnm-z0nES86V0RmDT32Jf15_1itoExjY,6991
+epimodels/discrete/__init__.py,sha256=5OMeOKU42jnQcyZ_ECoGid8Gn9fPvG4pLJzpiWur6hU,89
+epimodels/discrete/models.py,sha256=Y-cwZJzqK0DJPx6-M85gAJWYXNEygQsknVU5zK3VCWo,23737
+epimodels/tools/__init__.py,sha256=uPkG_zfRDlEL3Tk-4_PgeEExcKEuNG812_t-OgowrfA,67
+epimodels/tools/phase.py,sha256=2yc8l8Vjc_DruacwA_0q0YhQ4Drw1kgjFd6ZD8oW6JU,1407
+epimodels-0.4.3.dist-info/AUTHORS.rst,sha256=P_uE4-e9PnavE2Nx1He3iGM9tl0uOsSAJW1DLe-gQSU,86
+epimodels-0.4.3.dist-info/LICENSE.txt,sha256=bA719BKTZAPYGw9xrAChIlgb4_aMFFlm1Irrj4lXIic,1089
+epimodels-0.4.3.dist-info/METADATA,sha256=TqOBjqhmN3aN-VMhpEenPRT9ey2EdCdlXRjs05gbUa4,1331
+epimodels-0.4.3.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+epimodels-0.4.3.dist-info/top_level.txt,sha256=i6eMN1ClC28OCstbFUjnnRk01AE98pGFpexS9GUy17Q,10
+epimodels-0.4.3.dist-info/RECORD,,
