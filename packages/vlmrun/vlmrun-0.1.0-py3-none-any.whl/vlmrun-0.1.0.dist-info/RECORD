@@ -1,0 +1,8 @@
+vlmrun/version.py,sha256=Pru0BlFBASFCFo7McHdohtKkUtgMPDwbGfyUZlE2_Vw,21
+vlmrun/client/__init__.py,sha256=M0MsdjynBsX4lqX7xSy4XjWHa-RMoyAZustKa7lQc_I,41
+vlmrun/client/client.py,sha256=meF49FO4gW10skbKIDY-7zHK_3llvDkEV3_WvXDHYew,65
+vlmrun-0.1.0.dist-info/LICENSE,sha256=fwnMAbo_IpPg7BojKDDYjJLi2BGubpQLoeQ1G3ojRNI,11355
+vlmrun-0.1.0.dist-info/METADATA,sha256=-XKEnXMmtdxOgNhmqj7o__WLcxX8xYFWCkex_DVnkA0,14248
+vlmrun-0.1.0.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+vlmrun-0.1.0.dist-info/top_level.txt,sha256=keAeh1F2cJnl4BBhZniqPiD3bGY_6_5V_gijs3Kc4h8,7
+vlmrun-0.1.0.dist-info/RECORD,,
