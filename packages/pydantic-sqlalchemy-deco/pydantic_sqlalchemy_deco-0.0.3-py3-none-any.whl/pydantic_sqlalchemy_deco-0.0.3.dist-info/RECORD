@@ -1,0 +1,7 @@
+pydantic_sqlalchemy_deco/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pydantic_sqlalchemy_deco/decorator.py,sha256=EEM9--ODxUYn6GfTqQllOCp4gRDo_ATYDj8xe1R6kSk,1316
+pydantic_sqlalchemy_deco/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pydantic_sqlalchemy_deco-0.0.3.dist-info/METADATA,sha256=Q1oboEw7btWkG6WIZJ12p6R_ab3ZNRy9xPIw_sWXJTI,1489
+pydantic_sqlalchemy_deco-0.0.3.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+pydantic_sqlalchemy_deco-0.0.3.dist-info/licenses/LICENSE,sha256=gj3tq1_p7q8kIOgoxvDkum1g9lHYG9LMmaODv5C1z4Y,1068
+pydantic_sqlalchemy_deco-0.0.3.dist-info/RECORD,,
