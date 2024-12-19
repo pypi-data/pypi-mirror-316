@@ -1,0 +1,15 @@
+scanpy
+anndata
+numpy
+pandas
+scipy
+geosketch
+gprofiler-official
+
+
+pytest
+tox
+build
+twine
+Sphinx
+sphinx-book-theme
