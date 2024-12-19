@@ -1,0 +1,10 @@
+include/patchwork/patchworkpp.h,sha256=2MeNt8HGSZeni1QoyjFdcRinZSaQxoQYmjalrWVML6E,8769
+lib/cmake/patchworkpp/patchworkppConfig-release.cmake,sha256=GtE8sAUee8v61J0WMuPAgOL7GLMXGIJTciPX09PxJvw,955
+lib/cmake/patchworkpp/patchworkppConfig.cmake,sha256=iJ3jLqwkGeRwonhQwlyoN1ACRzEwTqk8VGTpy6xME1E,5135
+lib/cmake/patchworkpp/patchworkppTargets-release.cmake,sha256=GtE8sAUee8v61J0WMuPAgOL7GLMXGIJTciPX09PxJvw,955
+lib/cmake/patchworkpp/patchworkppTargets.cmake,sha256=zCWyAhNupMvo4yfWs3u3XNxw-zZaBUBYKBINgP3wFxU,5136
+lib/ground_seg_cores.lib,sha256=VY1wkEQUE-UQZkePHSusUcALRPSxpFGQutV8LMB-uHo,1223094
+pypatchworkpp.pypy310-pp73-win_amd64.pyd,sha256=IbseHDBP0ToGidhhUR6z_OrCXQEzy7SekmnlFBLRfNk,299520
+pypatchworkpp-1.0.4.dist-info/METADATA,sha256=2OJb-X1tEU3m3xO-vwSojlDtkhyNwVZkOS2V0QoKr7g,206
+pypatchworkpp-1.0.4.dist-info/WHEEL,sha256=NFYxN4cWhdat5sJJuopKhrLPG4jvYRBbF7L3wzRIvL4,113
+pypatchworkpp-1.0.4.dist-info/RECORD,,
