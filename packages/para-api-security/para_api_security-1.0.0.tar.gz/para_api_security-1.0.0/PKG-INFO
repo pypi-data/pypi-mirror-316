@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: para_api_security
+Version: 1.0.0
+Summary: Common Package to authenticate APIs
+Home-page: https://github.com/paratwin/para_be_common_lib
+Author: Hussein Habhab
+Author-email: hussein.habhab@dar.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
+Requires-Dist: python-dotenv
+
+# para_be_lib_logging
+Common logging Python library
