@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+pykit_vortexdude.egg-info/PKG-INFO
+pykit_vortexdude.egg-info/SOURCES.txt
+pykit_vortexdude.egg-info/dependency_links.txt
+pykit_vortexdude.egg-info/requires.txt
+pykit_vortexdude.egg-info/top_level.txt
