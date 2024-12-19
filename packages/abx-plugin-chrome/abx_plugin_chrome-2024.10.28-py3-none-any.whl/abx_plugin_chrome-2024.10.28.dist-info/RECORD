@@ -1,0 +1,12 @@
+abx_plugin_chrome/__init__.py,sha256=JCXhWBLxGisPRO6Xxl4FmeHN1MLErEnB7Q4rUD_OqX8,1002
+abx_plugin_chrome/binaries.py,sha256=kYKiZj_oWOksxRVnwx69U0ZH-gJfl0rU3XQi0LbPUQk,5806
+abx_plugin_chrome/config.py,sha256=gmmtG8pxe3nyatJmj170Z2dReY4Un_XSVK7EaRrNlUw,12886
+abx_plugin_chrome/dom.py,sha256=rMxXBRPNzhIAQfvs4XZsinNw3IY3Di6o7JWI_wefmIU,2130
+abx_plugin_chrome/extract.js,sha256=6IZJ4QUlGVgzenB67d4pr_75l68U1_Mpi3QLt6iGPrw,3092
+abx_plugin_chrome/extractors.py,sha256=lyki88RXfVh6KLcga7xNJ45PrKVVi3R7MefpM36nzqo,613
+abx_plugin_chrome/pdf.py,sha256=SaTN6giYKFR-KIMIlc6lsKaCembrUbsqj-dxaokEMqQ,2012
+abx_plugin_chrome/screenshot.py,sha256=jXnE7QX_8gfCCyBzTotD6nrAYaAYND9OW_aor8sTx6M,2020
+abx_plugin_chrome-2024.10.28.dist-info/METADATA,sha256=945teIh22-OCxbKRO0pEHy_TKq4IapryIWb7JFvpWr0,228
+abx_plugin_chrome-2024.10.28.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+abx_plugin_chrome-2024.10.28.dist-info/entry_points.txt,sha256=FtPqqF33elYO8nIfSZDybiAquERnomsGlgjy2W4bCVE,44
+abx_plugin_chrome-2024.10.28.dist-info/RECORD,,
