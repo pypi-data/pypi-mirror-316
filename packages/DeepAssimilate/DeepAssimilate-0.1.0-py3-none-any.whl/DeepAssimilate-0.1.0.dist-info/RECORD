@@ -1,0 +1,13 @@
+deepassimilate/__init__.py,sha256=jMihLuggMegUrxZzpVdHRC2tpNJ9T_axhhxs0IjgyAg,462
+deepassimilate/core.py,sha256=h-1e_zLR9StZoHuajnGNx_v47V8Xd145p5hVRefRA0Y,25384
+deepassimilate/dataset.py,sha256=5_UzIjpvJ3vvsftwftLGk7azqlOctYbkZYIxLNBpfRM,460
+deepassimilate/deepassimilate.py,sha256=AmcGakyUwnOO6mNgS9b3WZeleWmaTFwbqpVgLlC5j4g,1181
+deepassimilate/loss.py,sha256=VBXVozEZ-706xtW7_sxfiIGXB7m2vpq5AtmuFEnSN44,323
+deepassimilate/models.py,sha256=a9FoOPkGUXlj6Q8U5_PiPZw9EMLe0R1PJ0agFLs1A94,779
+deepassimilate/train.py,sha256=37vz94LVCFL3KjoSp0VDQNViz24LnkEYZp3nNcaCMRY,624
+deepassimilate/utils.py,sha256=3x1CCkeP58NFaZTDqiYdJLPUjCdrQcnswq23o1XkWpI,1778
+DeepAssimilate-0.1.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+DeepAssimilate-0.1.0.dist-info/METADATA,sha256=zFAPds8iSG9A5LHD9UKdytFXCiFluDBJx2PYbwcWsgE,1776
+DeepAssimilate-0.1.0.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+DeepAssimilate-0.1.0.dist-info/top_level.txt,sha256=7w9VDieGj6oD-pVZx0LTeCrp2awNFtQlFLN24lEZS3s,15
+DeepAssimilate-0.1.0.dist-info/RECORD,,
