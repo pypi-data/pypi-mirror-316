@@ -1,0 +1,2 @@
+[abx]
+abx_plugin_git = abx_plugin_git

@@ -1,0 +1,9 @@
+abx_plugin_git/__init__.py,sha256=5g0LDgfWhB79tBiUI9-P4YCXl_iFTD_44EM41Sd0e8w,443
+abx_plugin_git/binaries.py,sha256=gha2mALGRMH93Nvh4aSbSHT3D7ICeovIvk3u2edu7NQ,403
+abx_plugin_git/config.py,sha256=DVtxGXTUQwjOZ8rBD3nSvrQ4PSBT4Bhm_Q7F5KkfOek,730
+abx_plugin_git/extractors.py,sha256=K2leTEFu_ovfzDtEo9QkWuc9BxwNlScF7bX2pRCS79g,365
+abx_plugin_git/git.py,sha256=G4MNnlUXVs2HZDaK7mERcr6hVTjUvhNED5zREJW6-34,2824
+abx_plugin_git-2024.10.28.dist-info/METADATA,sha256=4WkRFJsrSXO6BKRrZZd3ae3fC-rnNTCpYqkn7_9lrYQ,284
+abx_plugin_git-2024.10.28.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+abx_plugin_git-2024.10.28.dist-info/entry_points.txt,sha256=rqeZz4E2fZCt3U-5yq45bmMoeL5HbbtPa6oYkQTpZNg,38
+abx_plugin_git-2024.10.28.dist-info/RECORD,,
