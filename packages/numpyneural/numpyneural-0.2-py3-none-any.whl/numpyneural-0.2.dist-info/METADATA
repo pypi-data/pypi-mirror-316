@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: numpyneural
+Version: 0.2
+Summary: This is the short description
+Home-page: https://github.com/your_username/numpyneural
+Author: nndl
+Author-email: nndl@xyz.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENCE
+
+# My Package
+
+This is a Python package that includes text files and demonstrates how to create and distribute a package.
