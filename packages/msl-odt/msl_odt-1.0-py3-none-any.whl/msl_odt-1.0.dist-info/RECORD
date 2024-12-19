@@ -1,0 +1,16 @@
+msl/examples/odt/PM5544_with_non-PAL_signals.png,sha256=BJGU7EswSBxgLScMfdk4cOBwQX_1rfEkMukXUuq0NDo,15118
+msl/examples/odt/Sweden_TV1_colour_1969.png,sha256=oawSBD-X4_xfa2HH9zo_MiRRmuLIe1AlikNF1AgS6f8,3522006
+msl/examples/odt/example_msl-odt_append.py,sha256=B5gIn6lzq8buvZHhtpd5O9gfRJBYbfyPV9dBnqC3zHY,2761
+msl/examples/odt/example_msl-odt_figures.py,sha256=u9a7q8eloidD73O3nasoBtA4xDWYlIntrudQatBsCss,3486
+msl/examples/odt/example_msl-odt_introduction.py,sha256=qcBir27FFAlaOFFlNMA8iOz19W2rgekS_rFuTabLPOE,3534
+msl/examples/odt/example_msl-odt_lists.py,sha256=yMRRVMGE_zba8x2uIf2MzMA8bJMHJMIy7KrVzJxF2UY,3838
+msl/examples/odt/example_msl-odt_math.py,sha256=D_44SV_zaE4Vg52gksccC_2Ako-tPtor93Pkr7UQR-0,7026
+msl/examples/odt/example_msl-odt_readme.odt,sha256=etRp5mo6bFiaWj_gESB52S-GTCWNFKzO827S7a_6zmE,11048
+msl/examples/odt/example_msl-odt_tables.py,sha256=jIJLCiNhl7ejGpM0GZMWW5MVKkTmqlIOlow-hAYS4cw,2664
+msl/odt/__init__.py,sha256=b9hkfKMkj92ktJFp5VysrhAqjEUUJab7_SQ4IUkSm5U,134
+msl/odt/_version.py,sha256=2iALBJjf4-UaAgxeGhstCluGOkLVRO3Cx5ZyUB3qclU,422
+msl/odt/odt.py,sha256=-bEvkHxYdv5dXKlWxnY7aKptE9mi89QSsRNO1l2Oqi0,45784
+msl_odt-1.0.dist-info/METADATA,sha256=vFz15C7naI4lpad35iuaxoEJpEMQ1f-G57ru8AyevU8,5546
+msl_odt-1.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+msl_odt-1.0.dist-info/licenses/LICENSE.txt,sha256=uTCAQ4o9XJpLvfQ0soVdPriIIRT5dvz2m0AsTeQMxiM,1124
+msl_odt-1.0.dist-info/RECORD,,
