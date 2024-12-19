@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+text_engine/__init__.py
+text_engine/dialog.py
+text_engine/engine.py
+text_engine/intents.py
+text_engine/utils.py
+text_engine/version.py
+text_engine.egg-info/PKG-INFO
+text_engine.egg-info/SOURCES.txt
+text_engine.egg-info/dependency_links.txt
+text_engine.egg-info/top_level.txt
