@@ -1,0 +1,8 @@
+abx_plugin_playwright/__init__.py,sha256=uN3K2q7ysMCvcoFOZKQQ31fW4PPYLirqmDeGxzdsf0w,549
+abx_plugin_playwright/binaries.py,sha256=wsjVbPP8ecBlBmn76-EqctkFIu4hg9OsY1T72eGki5Q,603
+abx_plugin_playwright/binproviders.py,sha256=96oEZEmyAfzy4VYtzfER-B59Do4mNbsIS8ItdBlGv10,6986
+abx_plugin_playwright/config.py,sha256=HQEpegm0hVLcXqI0VzLNW-MrvFprvwzMnh6DAoUQuXY,167
+abx_plugin_playwright-2024.10.28.dist-info/METADATA,sha256=4LadxKvXQyUJ-XGETQDUt4A96ItfGVndlsvpgVv69nA,293
+abx_plugin_playwright-2024.10.28.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+abx_plugin_playwright-2024.10.28.dist-info/entry_points.txt,sha256=QDsLNYKm_TlIgw6J6Np2gpj753CcBkWpMfJjU7e6iE4,52
+abx_plugin_playwright-2024.10.28.dist-info/RECORD,,
