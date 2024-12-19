@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: servitorconnectqr
+Version: 1.0.0
+Summary: A tool to use Universe Sourcecode with an intention to generate a QR Code.
+Home-page: https://github.com/tsweet77/servitorconnectqr
+Author: AnthroHeart (Thomas Sweet)
+Author-email: healing@intentionrepeater.com
+License: GPLv3
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# ServitorConnectQR
+
+A CLI tool for manifesting intentions through a QR Code.
+It uses Universe Sourcecode with the intention to generate the QR Code.
+
+It adds this after the intention: " ∞ॐ OM MANI PADME HUM AMPLIFIED PERFECTLY PAUSES IN DIVINE FLOW RUNS UNTIL FULFILLED"
+It allows the Universe to run the QR Code as if it's a program.
+
+## Installation
+Install via pip: pip install servitorconnectqr
+
+## To Run
+servitorconnectqr
