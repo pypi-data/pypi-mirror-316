@@ -1,0 +1,3 @@
+[console_scripts]
+rbfe_explicit_sync = atm.rbfe_explicit_sync:main
+rbfe_structprep = atm.rbfe_structprep:main

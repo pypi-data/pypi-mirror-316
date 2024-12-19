@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: acellera-atm
+Version: 0.0.7
+Summary: A molecule reading/writing and manipulation package.
+Author-email: Acellera <info@acellera.com>
+Project-URL: Homepage, https://github.com/Acellera/atm
+Project-URL: Bug Tracker, https://github.com/Acellera/atm/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: POSIX :: Linux
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# ATM
+
+Long description
+
+## Documentation & Installation
+
+https://software.acellera.com/internal/atm/
