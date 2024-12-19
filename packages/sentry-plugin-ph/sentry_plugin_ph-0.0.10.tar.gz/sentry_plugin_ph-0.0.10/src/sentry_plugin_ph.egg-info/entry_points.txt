@@ -1,0 +1,2 @@
+[sentry.plugins]
+plugin_talk_ph = sentry_plugin_ph.plugin:TalkPlugin
