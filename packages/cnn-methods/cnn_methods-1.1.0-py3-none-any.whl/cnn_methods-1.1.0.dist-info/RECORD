@@ -1,0 +1,16 @@
+cnn_methods/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cnn_methods/classification_nn.py,sha256=SfP3q1-5rSJ9qfSpXpSRFCxs7YVd7_0nt-21mzU2aiQ,18473
+cnn_methods/utils.py,sha256=K78TrvnnLkcZYUcWi01OkSi68v_uquTHRcQ4QIayg0M,4215
+cnn_methods/yolo_sam.py,sha256=IA0A9Ivt0ScDesKmddre1qe_mhPioaip_K3vI6B7Lw4,6134
+cnn_methods/images/apple.jpg,sha256=v7r2goYH2blPtUBWh3SXrDKSaqdcCd5KvWG8Bbok4qc,576216
+cnn_methods/images/banana.jpg,sha256=_R5MbNpGgJk2heGcIYogNiYAKlaT5U4OCTDP8NjI44g,1137831
+cnn_methods/images/coches.jpg,sha256=2ra528YCDHdr0VSUh2od7yO2uy0J45zlwPDQFZHBDN4,282346
+cnn_methods/images/orange.png,sha256=AjAS0GINC1FJ9IjciIJXorVm1M8SV4-5CzUtR8y8J7E,976850
+cnn_methods/images/rottenapple.jpg,sha256=W92qC-Z0HCEVgAK95fZ0AkQEke0JsvqNrVo0ZfNLrYY,390768
+cnn_methods/images/rottenbanana.png,sha256=zooo9Lj62MVKRN2LCi_xjJqYlQWareN5dAq7Ps9KSVs,48503
+cnn_methods/images/rottenorange.jpg,sha256=p-HreOt39cKz95jL6dkrET0hM00hzmS45rq-lAHIAHE,374704
+cnn_methods/images/yolov5-model-structure.avif,sha256=EQ1YqEYQ4CWg4GV9ecimUyVSAIzK4fvIu2eOmxpQEYo,99315
+cnn_methods-1.1.0.dist-info/METADATA,sha256=Zdb8jH-CCJYWN5O3eT8G4R_o4KEwV5ds4Yiy3ulDBmE,3484
+cnn_methods-1.1.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+cnn_methods-1.1.0.dist-info/licenses/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+cnn_methods-1.1.0.dist-info/RECORD,,
