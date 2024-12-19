@@ -1,0 +1,2 @@
+[abx]
+abx_plugin_sqlitefts_search = abx_plugin_sqlitefts_search
