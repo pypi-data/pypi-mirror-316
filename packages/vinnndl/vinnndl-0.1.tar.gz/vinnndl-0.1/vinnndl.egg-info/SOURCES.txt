@@ -1,0 +1,8 @@
+LICENCE
+MANIFEST.in
+README.md
+setup.py
+vinnndl.egg-info/PKG-INFO
+vinnndl.egg-info/SOURCES.txt
+vinnndl.egg-info/dependency_links.txt
+vinnndl.egg-info/top_level.txt
