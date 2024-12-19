@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pazer_database_python"
+version = "0.1.5"
+authors = [{ name = "David Kim", email = "woody@woody.co.kr" }]
+description = "Pazer Database - Python"
+readme = "README.md"
+requires-python = ">=3.7"
+keywords = ["pazer", "database"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies= [
+    "pazer_dataform_python>=0.1.3",
+    "pazer_logger_python>=0.1.0",
+    "pymysql>=1.1.1",
+    "redis>=5.2.1",
+    "pydantic>=1.10.0"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/pazer-app/pazer-database-python"
+"Bug Tracker" = "https://github.com/pazer-app/pazer-database-python/issues"
