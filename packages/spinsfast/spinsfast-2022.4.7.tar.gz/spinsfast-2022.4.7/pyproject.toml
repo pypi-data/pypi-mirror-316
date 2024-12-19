@@ -1,0 +1,47 @@
+[tool.poetry]
+name = "spinsfast"
+version = "2022.4.7"
+description = "Fast and exact spin-s spherical-harmonic transforms"
+readme = "README.md"
+license = "GPL-3.0-only"
+authors = ["Michael Boyle <mob22@cornell.edu>"]
+homepage = "https://github.com/moble/spinsfast"
+
+[tool.cibuildwheel]
+# See pyfftw for a good example: https://github.com/pyFFTW/pyFFTW/blob/master/.github/workflows/wheel_tests_and_release.yml
+# See also numpy: https://github.com/numpy/numpy/blob/main/pyproject.toml#L137
+# And scipy: https://github.com/scipy/scipy/blob/main/pyproject.toml#L123
+# SciPy and NumPy don't support musllinux
+# SciPy and NumPy don't support 32-bit Linux from Python 3.10 and onwards
+# Numpy only supports pypy38 x86_64 on Linux
+#skip = "cp36-* cp37-* pp37-* pp38-*i686 pp38-macos* pp39-* *musl* *-win*"
+#skip = "cp36-* cp37-* cp-38* pp37-* *-manylinux_i686 *_ppc64le *_s390x *_universal2"
+#skip = "cp36-* cp37-* cp38-* pp* *_ppc64le *_i686 *_s390x"
+skip = "cp36-* cp37-* cp38-* cp39-* pp3* *musl* *-win* *-manylinux_i686 *_ppc64le *_s390x *_universal2"
+# before-build = "python -m pip install --no-cache-dir --force-reinstall oldest-supported-numpy"
+
+[tool.cibuildwheel.environment]
+# this makes sure that we build only on platforms that have a corresponding numpy wheel
+PIP_ONLY_BINARY = ":all:"
+
+[tool.cibuildwheel.macos]
+# Docs say not to use homebrew: https://cibuildwheel.readthedocs.io/en/stable/faq/#missing-dependencies
+# If there are problems on macos arm or something, this is probably why
+before-all = "brew install fftw"
+before-test = "python -m pip install numpy>=2.0"
+test-command = "python -c 'import spinsfast'"
+# This target needs to match the macos runner version in .github/workflows/build.yml
+environment = { MACOSX_DEPLOYMENT_TARGET="13.0" }
+
+[tool.cibuildwheel.linux]
+before-all = "yum install -y fftw fftw-devel"
+before-test = "python -m pip install numpy>=2.0"
+test-command = "python -c 'import spinsfast'"
+
+[[tool.cibuildwheel.overrides]]
+select = "*musllinux*"
+before-all = "apk add fftw fftw-dev"
+
+[build-system]
+requires = ["setuptools!=50.0", "wheel", "numpy>=1.25"]
+build-backend = "setuptools.build_meta"
