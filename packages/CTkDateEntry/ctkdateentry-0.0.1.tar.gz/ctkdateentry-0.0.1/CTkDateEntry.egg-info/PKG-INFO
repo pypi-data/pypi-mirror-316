@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: CTkDateEntry
+Version: 0.0.1
+Summary: A customized dateentry to facilitate date selection in graphical interfaces.
+Home-page: https://github.com/ClaudioM1386/CTkWidgets
+Author: Claudio Morais
+Author-email: jc.morais86@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: customtkinter
+Requires-Dist: ctkcalendar
+
+# CTkDateEntry
+
+**CTkDateEntry** is a Python library that extends the use of `customtkinter` to provide custom widgets such as a customtkinter DateEntry with a calendar (`CTkCalendar`) with selectable dates. It was designed to make it easier to create more modern and interactive graphical user interfaces (GUIs).
+
+## Features
+
+- **CTkDateEntry**: A custom DateEntry based on Customtkinter to facilitate date selection in graphical interfaces.
+
+## Themes
+
+- **CTkDateEntry**: When customtkinter themes are applied to the graphical interface, they are automatically applied to CTkDateEntry, meaning there is no need to use a separate Theme Style
