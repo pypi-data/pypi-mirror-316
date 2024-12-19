@@ -1,0 +1,9 @@
+stopstart/__init__.py,sha256=i80gqiENRvSpaklw_5Q5jWmnE0XWiCJn4YcrH72OlzA,43
+stopstart/stopstart.py,sha256=56GAXFflNKilG1o8EBOX96u2tP1OHp3bc0skhOzK0no,4546
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_stopstart.py,sha256=8SQte1E9iwlTiutHNSzm8ev1N14pss5G2v84HsWTXDc,3444
+stopstart-0.1.0.dist-info/LICENSE,sha256=ULI5qNd91z9gmo6exfG-y4dgow8j86c9WQVQfxf_SSo,1318
+stopstart-0.1.0.dist-info/METADATA,sha256=PClLNykaxSneaDVQfEWrxXgXemqLmOcMn1Xok1a5jkM,6492
+stopstart-0.1.0.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+stopstart-0.1.0.dist-info/top_level.txt,sha256=kvFBS3zkQEk4XynJUvqYlvw5IFgfsuNN-t9pBIHATCg,16
+stopstart-0.1.0.dist-info/RECORD,,
