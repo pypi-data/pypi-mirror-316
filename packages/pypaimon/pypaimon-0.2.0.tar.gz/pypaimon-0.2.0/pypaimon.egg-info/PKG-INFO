@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: pypaimon
+Version: 0.2.0
+Summary: Apache Paimon Python API
+Home-page: https://paimon.apache.org
+Author: Apache Software Foundation
+Author-email: dev@paimon.apache.org
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+License-File: NOTICE
+
+See Apache Paimon Python API [Doc](https://paimon.apache.org/docs/master/program-api/python-api/) for usage.
