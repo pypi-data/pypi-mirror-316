@@ -1,0 +1,16 @@
+singlecell_cookbook/__init__.py,sha256=UwyILovNWXfkm4bIVlWAx6dixkDFCi18ZEb0jej-nfk,92
+singlecell_cookbook/tools/__init__.py,sha256=uFTApVGwPF2r1uKM9XpD81D-fuSQcgDbYN44UGJ_wwM,95
+singlecell_cookbook/tools/analysis/__init__.py,sha256=AagC4_-9j2548AsMJeO7GxU6FQZNIWtW-wZ8Rzkoyio,259
+singlecell_cookbook/tools/analysis/_go_enrichment.py,sha256=4Kl2a2cDjYL1y82fHYpI-zNj_QEKTsTsY-WdeBmjL6w,11294
+singlecell_cookbook/tools/analysis/pseudobulk/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+singlecell_cookbook/tools/analysis/pseudobulk/_edger.py,sha256=a_fROtl6X7PszrFtA6SIStU55a9CBnnLTFvvpmaNIWY,8448
+singlecell_cookbook/tools/analysis/pseudobulk/utils/__init__.py,sha256=r1NZUuhw9bQMSr93DzdKEMpvfz2L9Axz99xT5dSKBbE,99
+singlecell_cookbook/tools/analysis/pseudobulk/utils/_aggregate_and_filter.py,sha256=iBNRVbTTnq7CHnAP1fvE6iKdA_J5_0Y1XDl_PhS1gH4,7285
+singlecell_cookbook/tools/preprocess/__init__.py,sha256=JACRNpmm0j5U3f3SnK87Lt9RzQ0FZfE90k_5F43KAmQ,156
+singlecell_cookbook/tools/preprocess/_subset.py,sha256=o3S_jAacMr7CfQNW1X-nFwggGBgaKg_pVPD6R9xwlvc,5853
+singlecell_cookbook/tools/preprocess/_transform.py,sha256=n2xHJR3T-rRxZneCFH2oMw9RaQcGGBfHpOu1-YP1c1E,2312
+singlecell_cookbook/tools/preprocess/_utils.py,sha256=dLeS_fIvQGZZfesEtbJKtnPmqjqy3fmyTC4GewRD3Fc,3078
+singlecell_cookbook-0.3.1.dist-info/METADATA,sha256=3IRlYfTdYk78loML-zNMUBctq-V3pCrbqERSq6cILME,4710
+singlecell_cookbook-0.3.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+singlecell_cookbook-0.3.1.dist-info/licenses/LICENSE.md,sha256=beAMAD1Bs9BxoXrS6i_Yck3Rbq3aeM3tit5uc0Nko0o,1073
+singlecell_cookbook-0.3.1.dist-info/RECORD,,
