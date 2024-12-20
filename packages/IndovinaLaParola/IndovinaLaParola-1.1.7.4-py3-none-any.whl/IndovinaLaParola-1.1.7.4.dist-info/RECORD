@@ -1,0 +1,11 @@
+IndovinaLaParola/IndovinaLaParola.py,sha256=fmIJt6lMpT1ssIAMrb_wBu1KGb6-K6xuivYePJhSzWs,1648
+IndovinaLaParola/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+IndovinaLaParola/main.py,sha256=huFAuaE0hVK4VpGEpcjG0tdQbkaZrrO24J90QWmtgFg,1476
+tests/Integration_Test_IndovinaLaParola.py,sha256=6ziAHMgH-YZ6M_6UBb6mcCB5hCem0r_tgkrfZMB5A4s,1149
+tests/Unit_Test_IndovinaLaParola.py,sha256=mgBa0qgCYDWWwVbxGt9_K0MChGkwS9GPma3g06EfA4A,953
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+IndovinaLaParola-1.1.7.4.dist-info/METADATA,sha256=jMlIuHyKBkJft_8IOBIeU3emjXCPkn87Ha6-OTkTn0k,184
+IndovinaLaParola-1.1.7.4.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+IndovinaLaParola-1.1.7.4.dist-info/entry_points.txt,sha256=uKngLv5eSAmUMbKLpEMC1QQzozghoFYZx84c9ltXWvU,73
+IndovinaLaParola-1.1.7.4.dist-info/top_level.txt,sha256=M_gUizBA5mlBhuTr_IbYOU8K7zWUAFcZe9Rv6sxDw34,23
+IndovinaLaParola-1.1.7.4.dist-info/RECORD,,
