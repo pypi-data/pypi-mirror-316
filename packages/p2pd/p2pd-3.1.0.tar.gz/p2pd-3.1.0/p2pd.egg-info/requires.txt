@@ -1,0 +1,5 @@
+ntplib
+xmltodict
+ecdsa
+fasteners
+winregistry
