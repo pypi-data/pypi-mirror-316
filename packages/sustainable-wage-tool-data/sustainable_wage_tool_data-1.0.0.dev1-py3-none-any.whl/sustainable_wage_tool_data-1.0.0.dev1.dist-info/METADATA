@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: sustainable_wage_tool_data
+Version: 1.0.0.dev1
+Author: Angel Febles
+License-File: LICENCE
+Requires-Dist: beautifulsoup4 ==4.12.3
+Requires-Dist: pdfplumber ==0.11.4
+Requires-Dist: polars ==1.9.0
+Requires-Dist: Requests ==2.32.3
+Requires-Dist: selenium ==4.25.0
+Requires-Dist: XlsxWriter ==3.2.0
+Requires-Dist: fastexcel
+Requires-Dist: argparse
+
