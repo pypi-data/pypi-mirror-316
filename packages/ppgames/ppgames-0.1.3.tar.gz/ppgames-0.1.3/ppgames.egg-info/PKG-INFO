@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: ppgames
+Version: 0.1.3
+Summary: A simple game designed by PythonPavan
+Home-page: https://github.com/pythonpavan04/ppgames
+Author: PYTHON PAVAN
+Author-email: pavan.sidd2004@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# ppgames
+
+`ppgames` is a simple text-based game where the user tries to match their batting score with the computer's bowling score. The game continues until the user matches the score.
+
+## Installation
+
+To install `ppgames`, use `pip`:
+
+```bash
+pip install ppgames
