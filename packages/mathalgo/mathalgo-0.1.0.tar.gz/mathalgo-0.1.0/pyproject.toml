@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mathalgo"
+version = "0.1.0"
+authors = [
+    { name="Donseking", email="0717albert@gmail.com" },
+]
+description = "MyMod 是一個專為 Python 開發者設計的模組，提供多種演算法、資料結構與數學工具，方便進行科學計算與程式開發。"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/Donseking/MathAlgo.git"
+"Bug Tracker" = "https://github.com/Donseking/MathAlgo/issues"
