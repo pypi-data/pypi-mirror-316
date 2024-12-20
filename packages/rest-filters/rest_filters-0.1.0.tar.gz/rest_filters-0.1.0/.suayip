@@ -1,0 +1,24 @@
+# Django Settings ve What can be be a setting? (blank, known params)
+# modelviewset factory oluşturup ordan kaymaca?
+
+# 2.
+# sort
+# OrderingFilter() ? (idk)
+# maybe just do all that in Meta?
+# e.g., ordering = {"default": "field", } idk.. []
+
+# -1.
+# big todo: filteset metaclass for Meta>Options creation
+# where we do checks to ensure integrity. we also need to
+# implement introspect() {param: serializer} thing so that
+# we can derive fields and also serializer for sanity checks
+# and also schema generation.
+# ^^ we need to do this because we would like to introspect filterset
+# before initiating it. that how Options.fields wil work too
+
+# 0. BONUS: `invalid_query_param` or `%s_query_param`
+# code usage? and maybe add as a setting as well
+
+# help_text, start writing tests
+
+# extend_known_parameters?
