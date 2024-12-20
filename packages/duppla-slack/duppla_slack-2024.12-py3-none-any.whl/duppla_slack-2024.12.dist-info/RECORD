@@ -1,0 +1,10 @@
+duppla_slack/__init__.py,sha256=jqZT14LtvdvUwJ6IUU_hs1UttFb2l2pValrJvDXRuH0,657
+duppla_slack/models/__init__.py,sha256=w_8iXPup-865VSSL-jIJTo-h8Ot0R5pGixHVVUjl4kM,616
+duppla_slack/models/duppla.py,sha256=bDr1DzXZG74NgNPrgkXC6o5gEN8vHg7yHkYUt7ufD6Q,369
+duppla_slack/models/message.py,sha256=-mU0dtPWSLGZQD9bPyHUecWu39ZvgGR8tBmtD-FUBN8,5394
+duppla_slack/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+duppla_slack-2024.12.dist-info/LICENSE,sha256=7AJ-lkyPu7Z5RVsZRQvN2PAkRzgk-bAuIQi7EGkbgec,859
+duppla_slack-2024.12.dist-info/METADATA,sha256=25-3IH8f7-YlLq9Ay1b4oRhHA7JfgP3lN_oh3UDj9Gg,765
+duppla_slack-2024.12.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+duppla_slack-2024.12.dist-info/top_level.txt,sha256=uNssNNLxhE28CYhvfasxuXSMbS3TRhncmbS2GMUU9j8,13
+duppla_slack-2024.12.dist-info/RECORD,,
