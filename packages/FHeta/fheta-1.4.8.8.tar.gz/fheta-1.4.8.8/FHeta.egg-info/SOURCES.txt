@@ -1,0 +1,6 @@
+setup.py
+FHeta.egg-info/PKG-INFO
+FHeta.egg-info/SOURCES.txt
+FHeta.egg-info/dependency_links.txt
+FHeta.egg-info/requires.txt
+FHeta.egg-info/top_level.txt
