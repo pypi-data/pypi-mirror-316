@@ -1,0 +1,14 @@
+fastapi_ws_rpc/__init__.py,sha256=ELNX2ccyKjNFeU3RoIlt6YM_H667Qz_PHATT47aycHQ,363
+fastapi_ws_rpc/connection_manager.py,sha256=B_ShNkH8skesxwU46mVFM67YpRL91v2Kn62-gD0VT0I,394
+fastapi_ws_rpc/logger.py,sha256=KARkqA2dqJSq7nQx2kzU04DNc9EF2rNW9gcWFk-EzII,3188
+fastapi_ws_rpc/rpc_channel.py,sha256=Pc56E0Y7g2xzIMcoKDVgtu4ueYSWFgn2VTbNgTNceOM,17035
+fastapi_ws_rpc/rpc_methods.py,sha256=nnuVUoDJqrdcv9qIigVr1vN8_qFsZBvetYJ9na79fRE,2634
+fastapi_ws_rpc/schemas.py,sha256=Bv55JSEaBF0p-Mg88bWAIhu0Gq9osB8psePtr_05w5w,956
+fastapi_ws_rpc/simplewebsocket.py,sha256=pQFuU08nCh5qGP26_EIxo7XB_ga5ZRSLaUqADFmXmfw,1824
+fastapi_ws_rpc/utils.py,sha256=zpuIlkl_0waAMCTtLhGtel7KXRsJLpfEFA6bHNa_Xlg,2535
+fastapi_ws_rpc/websocket_rpc_client.py,sha256=5rNuyU5DzVZB2P2jUr8vzYH608sNpZSkIRowS-Znoyk,11745
+fastapi_ws_rpc/websocket_rpc_endpoint.py,sha256=TBx-_nqpO1_x4jBYHfK-lNlt7RqDtH-DG7i7Kvh86m4,5306
+fastapi_ws_rpc-0.1.0.dist-info/LICENSE,sha256=krjNobWZI8Zp2NQ-7ywOP0PG0-DwoSVHpZdNnCFMZvY,1065
+fastapi_ws_rpc-0.1.0.dist-info/METADATA,sha256=9J3NAMm1-vwItYy_kpBtW_4pmX1WByT-PceYWToMyLI,7562
+fastapi_ws_rpc-0.1.0.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+fastapi_ws_rpc-0.1.0.dist-info/RECORD,,
