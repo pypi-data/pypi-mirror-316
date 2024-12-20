@@ -1,0 +1,12 @@
+FastSQLModel/__init__.py,sha256=sXLh7g3KC4QCFxcZGBTpG2scR7hmmBsMjq6LqRptkRg,22
+FastSQLModel/_modidx.py,sha256=de_4a_PZcJjjpBnc5Z8vZTxyUbE_xigBwlMA59BCf7A,8902
+FastSQLModel/cli.py,sha256=tEBZQbRI8WTcZJNFnzHmJxP-HReVL6FVudvf9sNj2MY,5506
+FastSQLModel/db.py,sha256=geuTvRCTsY-_3P9KBMfhgGQLU4J2QqmifVhICcc-Wws,21257
+FastSQLModel/templates/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+FastSQLModel/templates/env.py,sha256=asqCVoPrg9mSIy2olVThQsBrfF-M-FHfXETXvx1WteE,2367
+FastSQLModel-0.1.1.dist-info/LICENSE,sha256=xV8xoN4VOL0uw9X8RSs2IMuD_Ss_a9yAbtGNeBWZwnw,11337
+FastSQLModel-0.1.1.dist-info/METADATA,sha256=VTQKq3b6tg2ERMiU8f_Y1OsEBUzcpYSnjaHfxFFDqE4,13892
+FastSQLModel-0.1.1.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+FastSQLModel-0.1.1.dist-info/entry_points.txt,sha256=N5iz1UtcnB6IN9PEuUi410stGEjdx64-G6jMrithbjs,51
+FastSQLModel-0.1.1.dist-info/top_level.txt,sha256=w8h8CMWIf4Ttxq3KzPr7s0sHx_DoqC-_6Ok9lLBQFDE,13
+FastSQLModel-0.1.1.dist-info/RECORD,,
