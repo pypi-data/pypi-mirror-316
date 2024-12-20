@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: parquetv
+Version: 0.1.6
+Summary: A high-performance Parquet file viewer with CSV export capabilities
+Author-email: Tobias Kragholm <tkragholm@gmail.com>
+License: MIT OR Apache-2.0
+Project-URL: Homepage, https://github.com/tkragholm/parquet-viewer
+Project-URL: Repository, https://github.com/tkragholm/parquet-viewer.git
+Project-URL: Issues, https://github.com/tkragholm/parquet-viewer/issues
+Keywords: parquet,csv,viewer,data,converter
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Database
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Parquet Viewer
+
+A high-performance Parquet file viewer.
