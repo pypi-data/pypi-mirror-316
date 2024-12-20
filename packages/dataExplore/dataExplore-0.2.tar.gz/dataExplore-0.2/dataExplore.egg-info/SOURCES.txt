@@ -1,0 +1,13 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.py
+dataExplore/__init__.py
+dataExplore/builder.py
+dataExplore/dataExplorer.py
+dataExplore/director.py
+dataExplore/main.py
+dataExplore.egg-info/PKG-INFO
+dataExplore.egg-info/SOURCES.txt
+dataExplore.egg-info/dependency_links.txt
+dataExplore.egg-info/top_level.txt
