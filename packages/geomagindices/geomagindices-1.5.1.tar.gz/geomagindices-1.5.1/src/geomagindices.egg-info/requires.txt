@@ -1,0 +1,16 @@
+python-dateutil
+pandas
+requests
+numpy
+
+[lint]
+flake8
+flake8-bugbear
+flake8-builtins
+flake8-blind-except
+mypy
+types-requests
+types-python-dateutil
+
+[tests]
+pytest

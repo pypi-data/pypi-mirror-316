@@ -1,0 +1,17 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+pyproject.toml
+src/geomagindices/__init__.py
+src/geomagindices/__main__.py
+src/geomagindices/base.py
+src/geomagindices/dataio.py
+src/geomagindices/web.py
+src/geomagindices.egg-info/PKG-INFO
+src/geomagindices.egg-info/SOURCES.txt
+src/geomagindices.egg-info/dependency_links.txt
+src/geomagindices.egg-info/requires.txt
+src/geomagindices.egg-info/top_level.txt
+src/geomagindices/data/May2016Rpt.txt
+src/geomagindices/data/__init__.py
+src/geomagindices/tests/test_read.py
