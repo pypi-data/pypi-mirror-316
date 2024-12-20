@@ -1,0 +1,41 @@
+[
+    {
+        "group_names": [
+            "3m_25mm",
+            "24m_25mm",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "group_dirs": [
+            "/Users/mahan/sciebo/Research/AutoGaitA/Mouse/Full Dataset and Results Nov 2024/25mm/9w",
+            "/Users/mahan/sciebo/Research/AutoGaitA/Mouse/Full Dataset and Results Nov 2024/25mm/104w",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "results_dir": "/Users/mahan/sciebo/Research/AutoGaitA/Mouse/Full Dataset and Results Nov 2024/YoungOld25mm/"
+    },
+    {
+        "do_permtest": false,
+        "do_anova": true,
+        "anova_design": "Mixed ANOVA",
+        "permutation_number": "10000",
+        "stats_threshold": "0.05",
+        "which_leg": "right",
+        "PCA_n_components": "3",
+        "PCA_custom_scatter_PCs": "",
+        "PCA_save_3D_video": true,
+        "PCA_bins": "",
+        "plot_SE": true,
+        "color_palette": "Set2",
+        "dont_show_plots": false,
+        "legend_outside": true,
+        "stats_variables": [
+            "Ankle Angle"
+        ],
+        "PCA_variables": []
+    }
+]
