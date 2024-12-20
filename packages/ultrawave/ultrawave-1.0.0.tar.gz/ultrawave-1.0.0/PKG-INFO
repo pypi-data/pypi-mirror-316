@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: ultrawave
+Version: 1.0.0
+Summary: Deskripsi singkat tentang library
+Home-page: https://github.com/ipungg-junior/ultrawave
+Author: Muhammad Thoyfur
+Author-email: ipungg.id@gmail.com
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# WELCOME TO ULTRAWAVE
+
+`ultrawave` is a simple Python library that does read Ultra High Frequency!
+
+## Installation
+
+You can install `ultrawave` using `pip`:
+
+```bash
+pip install ultrawave
