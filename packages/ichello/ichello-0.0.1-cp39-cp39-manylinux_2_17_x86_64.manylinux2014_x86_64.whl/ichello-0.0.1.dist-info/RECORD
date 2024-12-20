@@ -1,0 +1,7 @@
+ichello-0.0.1.dist-info/RECORD,,
+ichello-0.0.1.dist-info/METADATA,sha256=XlsShdM-BWZ7QxDFhi16Djli3kXjcyzw7OVnGTUmUYI,1396
+ichello-0.0.1.dist-info/WHEEL,sha256=kTiiq_ty6YfCgVTXDxMfzvIhNXkmkVPizZllzkx1WUM,152
+ichello-0.0.1.dist-info/licenses/LICENSE,sha256=PYLvboMhXCqCCrZhv2sk7um3q8txs9dfq_pgcsHVnew,1069
+ichello/hello.py,sha256=WG9QtBTrmHMrsd1a4_jtZXsvrSIS7d_IMU9i13alkBg,49
+ichello/__init__.py,sha256=ZJjvzJm9p4oG8X4PGnSrQ-63948KY1Y_43Y2ySWwbiU,34
+ichello/ichello_ext.cpython-39-x86_64-linux-gnu.so,sha256=NHJegTD9KXot5PbUBTOrYGNF82rf4uWC2-RpYCpkoE0,135696
