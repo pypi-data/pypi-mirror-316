@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: datalib_genta
+Version: 0.1.0
+Summary: A Python library for data manipulation, statistical analysis, and machine learning.
+Author: Ibrahim Trabelsi
+Author-email: youremail@example.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# DataLib
+
+DataLib is a Python library for data manipulation, statistical analysis, and machine learning.
+
+## Features
+- Data preprocessing (normalization, handling missing values)
+- Statistical calculations (mean, median, mode)
+- Data visualization (histograms, scatter plots)
+- Regression and classification analysis
+
+## Installation
+```bash
+pip install datalib
