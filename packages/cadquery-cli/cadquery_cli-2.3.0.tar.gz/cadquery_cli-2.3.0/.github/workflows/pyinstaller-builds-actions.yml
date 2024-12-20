@@ -1,0 +1,92 @@
+name: build
+on:
+  # schedule:
+  #   - cron: '0 0 * * 1'
+  workflow_dispatch:
+    inputs:
+      type:
+        description: 'Whether to build a single file (onefile) or directory (dir) dist'
+        required: true
+        default: 'dir'
+jobs:
+  build-linux:
+    runs-on: ubuntu-20.04
+    steps:
+    - uses: actions/checkout@v2
+    - uses: conda-incubator/setup-miniconda@v2
+      with:
+        # miniconda-version: "latest"
+        miniforge-version: latest
+        auto-update-conda: true
+        python-version: 3.8
+        activate-environment: test
+    - name: Install CadQuery and pyinstaller
+      shell: bash --login {0}
+      run: |
+        mamba info
+        mamba install -c cadquery -c conda-forge cadquery=master python=3.8
+        mamba install -c conda-forge pyinstaller
+        pip install path
+    - name: Run build
+      shell: bash --login {0}
+      run: |
+        mamba info
+        pyinstaller cq-cli_pyinstaller.spec ${{ github.event.inputs.type }}
+    - uses: actions/upload-artifact@v2
+      with:
+        name: cq-cli-Linux-x86_64
+        path: dist
+  build-macos:
+    runs-on: macos-latest
+    steps:
+    - uses: actions/checkout@v2
+    - uses: conda-incubator/setup-miniconda@v2
+      with:
+        miniconda-version: "latest"
+        auto-update-conda: true
+        python-version: 3.8
+        activate-environment: test
+    - name: Install CadQuery and pyinstaller
+      shell: bash --login {0}
+      run: |
+        conda info
+        conda install -c cadquery -c conda-forge cadquery=master python=3.8
+        conda install -c conda-forge pyinstaller
+        pip install path
+    - name: Run build
+      shell: bash --login {0}
+      run: |
+        conda info
+        pyinstaller cq-cli_pyinstaller.spec ${{ github.event.inputs.type }}
+    - uses: actions/upload-artifact@v2
+      with:
+        name: cq-cli-MacOS
+        path: dist
+  build-windows:
+    runs-on: windows-latest
+    steps:
+    - uses: actions/checkout@v2
+    - uses: conda-incubator/setup-miniconda@v2
+      with:
+        miniforge-version: latest
+        # auto-update-conda: true
+        python-version: 3.8
+        activate-environment: test
+    - name: Install CadQuery and pyinstaller
+      shell: pwsh
+      run: |
+        mamba info
+        mamba install -c cadquery -c conda-forge cadquery=master python=3.8 libnetcdf=4.7.4 ocp
+        mamba install -c conda-forge pyinstaller
+        pip install path
+    - name: Run build
+      shell: pwsh
+      run: |
+        dir C:\Mini*
+        Get-ChildItem -Path C:\Miniconda3\envs\test\ -Filter OCP* -Recurse
+        mamba info
+        pyinstaller cq-cli_pyinstaller.spec ${{ github.event.inputs.type }}
+    - uses: actions/upload-artifact@v2
+      with:
+        name: cq-cli-Windows
+        path: dist
