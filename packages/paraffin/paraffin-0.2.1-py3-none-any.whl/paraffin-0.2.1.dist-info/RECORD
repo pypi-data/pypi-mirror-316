@@ -1,0 +1,11 @@
+paraffin/__init__.py,sha256=6mvLrVs2FFKNqDxMbguzYdA2MryL3iIBa_uDkCA9LKI,80
+paraffin/abc.py,sha256=FsQWNhC7GJFoupFHYl5f6U00-ubXutOfzXflWzuwRQI,558
+paraffin/cli.py,sha256=kSoVQCxQgLKSnOSD0Oc5hn6Abn41JUup_MZJ4AFFT8M,4400
+paraffin/submit.py,sha256=VmTewZHWyQFfGM0zIqdZmQwUUmEYYhdq5SCDT-e_2_0,961
+paraffin/utils.py,sha256=d-89736dR2jEl5fGMoHwtdF8b5r31cPjP4FrOHZcg7s,6760
+paraffin/worker/__init__.py,sha256=WBt3_jLAVZDSIKyNz5KGfppTMC06Bl7IKEil5QULQvM,4475
+paraffin-0.2.1.dist-info/LICENSE,sha256=FKf4VPZYbuyRVMVSrl6HO48bnw6ih8Uur5y-h_MJAcA,13576
+paraffin-0.2.1.dist-info/METADATA,sha256=NZmGFDuEPEA8IgtAiIN9xiXsD13cHY3vEhTfXTekYkA,3968
+paraffin-0.2.1.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+paraffin-0.2.1.dist-info/entry_points.txt,sha256=UuCbRtmXlTQRB_2SJTDtXtmPhkbUbJ06cVGAVdPDt4I,45
+paraffin-0.2.1.dist-info/RECORD,,
