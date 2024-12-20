@@ -1,0 +1,16 @@
+hurry.workflow-4.0-py3.11-nspkg.pth,sha256=n51__yIlCg9viwfw2PBQCilQtajs4FKVnF4OZKEVVQw,462
+hurry/workflow/__init__.py,sha256=T2pBxhni8Nb8SOr5-8nKMXKTZYiMJt-Md1DPTFce6Pw,20
+hurry/workflow/configure.zcml,sha256=8AMjymDPDA3ugyEIvSe9JUj6MiPPQHJs180LpGqPeq4,223
+hurry/workflow/interfaces.py,sha256=TQot9va64DMulo2H1B-AbCNmsMzxe4Z5P8t0DtkZwRI,6401
+hurry/workflow/workflow.py,sha256=bCmJ7ko1SDxJCG8Eqd5uHF3j9oXhFe58zJWOVPbA11Y,12670
+hurry/workflow/workflow.txt,sha256=OWIiPFjVLFmgP24kTfvf66y7lwwPhK89LFpNpXdr7Qw,28961
+hurry/workflow/tests/__init__.py,sha256=T2pBxhni8Nb8SOr5-8nKMXKTZYiMJt-Md1DPTFce6Pw,20
+hurry/workflow/tests/test_doctest.py,sha256=ljxHMypQo0XB3XE4kkm2EbIHcoM16EkMFfufA_UV0oI,2410
+hurry/workflow/tests/test_edgecases.py,sha256=yNZzF9Z36BcvgrNvZTnNDylf0IxHYd_AOD3FXAUqk3s,4868
+hurry/workflow/tests/test_ordering.py,sha256=J01wefrxDgLUNeamUDZl6HxAn1IONrx_2ppP4pYGqpQ,902
+hurry.workflow-4.0.dist-info/LICENSE.txt,sha256=PmcdsR32h1FswdtbPWXkqjg-rKPCDOo_r1Og9zNdCjw,2070
+hurry.workflow-4.0.dist-info/METADATA,sha256=fq4jpvmH2AFsIFSGHNZsftFiq9rSu-qsQRQFchZXcMk,33082
+hurry.workflow-4.0.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+hurry.workflow-4.0.dist-info/namespace_packages.txt,sha256=9f_1Zibynhg1o5BX6EzcsPcvgVM_GjoIzSMqxzPrZ1M,6
+hurry.workflow-4.0.dist-info/top_level.txt,sha256=9f_1Zibynhg1o5BX6EzcsPcvgVM_GjoIzSMqxzPrZ1M,6
+hurry.workflow-4.0.dist-info/RECORD,,
