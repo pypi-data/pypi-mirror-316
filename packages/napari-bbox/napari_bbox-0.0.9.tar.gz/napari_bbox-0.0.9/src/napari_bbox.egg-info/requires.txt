@@ -1,0 +1,15 @@
+numpy
+qtpy
+napari>=0.4.15
+packaging
+pandas
+npe2
+vispy
+
+[testing]
+tox
+pytest
+pytest-cov
+pytest-qt
+napari
+pyqt5
