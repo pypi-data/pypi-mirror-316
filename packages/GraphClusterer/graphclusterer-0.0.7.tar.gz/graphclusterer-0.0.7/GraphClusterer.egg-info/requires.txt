@@ -1,0 +1,15 @@
+replicate
+cohere
+networkx
+numpy
+pandas
+scikit-learn
+scipy
+spacy
+plotly
+matplotlib
+chardet
+requests
+webbrowser
+python-dotenv
+sentence-transformers
