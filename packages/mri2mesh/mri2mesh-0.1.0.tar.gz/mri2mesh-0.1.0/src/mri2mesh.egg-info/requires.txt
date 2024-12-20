@@ -1,0 +1,14 @@
+pyvista
+numpy
+matplotlib
+nibabel
+scikit-image
+scipy
+
+[docs]
+pyvista[jupyter]
+jupyter-book
+
+[test]
+pytest
+pytest-cov
