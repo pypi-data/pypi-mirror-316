@@ -1,0 +1,7 @@
+README.md
+blastutils.py
+setup.py
+blastutils.egg-info/PKG-INFO
+blastutils.egg-info/SOURCES.txt
+blastutils.egg-info/dependency_links.txt
+blastutils.egg-info/top_level.txt
