@@ -1,0 +1,7 @@
+vllmlp/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vllmlp/qwen.py,sha256=_6IlSR2qDXn0XVWy5bl3M7jHThxuobuS9pe5j5SSxsY,486
+vllmlp/data/qwen-cjk.npy,sha256=r7R8U3w9lc91LcbN0xYZy7Iv6ot972iz2A7RHQMGan0,152192
+vllmlp-0.0.1.dist-info/METADATA,sha256=qAi21_n_jxgrUXsv8nRg7gc7vJsSVwXcgvQBnOV52ls,513
+vllmlp-0.0.1.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+vllmlp-0.0.1.dist-info/top_level.txt,sha256=fO6LdqLTRkuNZL38Cp4NJAIw7roLjsmKXUn8pujB8rE,7
+vllmlp-0.0.1.dist-info/RECORD,,
