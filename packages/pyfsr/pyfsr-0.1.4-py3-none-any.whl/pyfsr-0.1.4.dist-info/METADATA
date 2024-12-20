@@ -1,0 +1,39 @@
+Metadata-Version: 2.4
+Name: pyfsr
+Version: 0.1.4
+Summary: Python implementation of the FortiSOAR REST API
+Project-URL: Homepage, https://github.com/ftnt-dspille/pyFSR
+Project-URL: Bug Tracker, https://github.com/ftnt-dspille/pyFSR/issues
+Project-URL: Documentation, https://github.com/ftnt-dspille/pyFSR#readme
+Project-URL: Source Code, https://github.com/ftnt-dspille/pyFSR
+Author-email: Dylan Spille <dspille@fortinet.com>
+License: MIT
+License-File: LICENSE
+Keywords: api,fortinet,fortisoar,rest
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.10
+Requires-Dist: requests>=2.31.0
+Provides-Extra: dev
+Requires-Dist: pytest; extra == 'dev'
+Requires-Dist: pytest-cov; extra == 'dev'
+Requires-Dist: pytest-mock; extra == 'dev'
+Description-Content-Type: text/markdown
+
+# pyfsr
+
+Goal of the library is be a Python Client for the FortiSOAR Rest API. 
+
+## Installation
+
+```bash
+pip install pyfsr
+```
+
+This library is a work in progress and is not yet ready for production use.
+
