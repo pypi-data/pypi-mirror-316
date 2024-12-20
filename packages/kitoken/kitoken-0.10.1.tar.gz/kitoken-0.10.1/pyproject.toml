@@ -1,0 +1,69 @@
+[project]
+
+name = "kitoken"
+description = "Fast and versatile tokenizer for language models, supporting BPE, Unigram and WordPiece tokenization"
+requires-python = ">=3.10"
+license = { text = "BSD-2-Clause" }
+version = "0.10.1"
+classifiers = [
+    "Programming Language :: Rust",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: Implementation :: PyPy",
+    "Operating System :: Microsoft :: Windows",
+    "Operating System :: POSIX :: Linux",
+    "Operating System :: MacOS :: MacOS X",
+    "Environment :: Console",
+    "Topic :: File Formats",
+    "Topic :: Text Processing :: Linguistic",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "Intended Audience :: End Users/Desktop",
+    "License :: OSI Approved :: BSD License",
+    "Typing :: Typed",
+]
+keywords = ["tokenizer", "nlp", "bpe", "unigram", "wordpiece"]
+authors = [{ name = "Christian Sdunek", email = "me@systemcluster.me" }]
+readme = "README.md"
+
+
+[project.urls]
+
+Homepage = "https://kitoken.dev"
+Repository = "https://github.com/Systemcluster/kitoken"
+
+
+[build-system]
+
+requires = [
+    "maturin==1.6",
+]
+build-backend = "maturin"
+
+
+[tool.uv]
+
+dev-dependencies = [
+    "maturin==1.6",
+    "pip>=24.2",
+]
+
+
+[tool.uv.pip]
+
+universal = true
+
+
+[tool.maturin]
+
+profile = "performance"
+bindings = "pyo3"
+strip = true
+include = [
+    "kitoken.pyi",
+]
+exclude = [
+    "test.py",
+]
+manifest-path = "packages/python/Cargo.toml"
