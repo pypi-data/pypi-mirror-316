@@ -1,0 +1,12 @@
+singer-python==5.12.1
+paramiko==2.6.0
+backoff==1.8.0
+singer-encodings==0.1.3
+
+[dev]
+ipdb
+pylint
+nose
+
+[test]
+paramiko==2.6.0
