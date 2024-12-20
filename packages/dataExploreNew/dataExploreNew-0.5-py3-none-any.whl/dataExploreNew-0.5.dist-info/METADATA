@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: dataExploreNew
+Version: 0.5
+Summary: Dataset visualization package
+Home-page: https://github.com/alessionuovo/dataExplore
+Author: Alessio
+Author-email: alex123494@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+This package provides data visualiazation on dataset
+To install press pip install dataExplore
+To run please call
+from dataExplore.builder import Builder
+import seaborn as sns
+tips = sns.load_dataset("tips")
+print(tips.head())
+b=Builder(tips)
+d=b.getExplorer()
+
