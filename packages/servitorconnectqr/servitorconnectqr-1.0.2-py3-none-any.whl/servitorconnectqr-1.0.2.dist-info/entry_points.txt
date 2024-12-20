@@ -1,0 +1,2 @@
+[console_scripts]
+servitorconnectqr = servitorconnectqr.cli:main
