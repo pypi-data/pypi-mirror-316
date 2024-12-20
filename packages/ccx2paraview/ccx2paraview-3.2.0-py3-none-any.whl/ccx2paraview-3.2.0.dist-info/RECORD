@@ -1,0 +1,10 @@
+ccx2paraview/__init__.py,sha256=5LUP1I8jhf08Bc_3KocnjOYD45ArrfDPc54PuYWy3qE,79
+ccx2paraview/__main__.py,sha256=5Bif4nwM1MbCFhTn_E7CXYdFTQWWgUSeRFGSzDUVMxM,105
+ccx2paraview/cli.py,sha256=dSfGbld6oacOL5vowW65aVwaOLMy5H5XUh51hK8D5OU,2186
+ccx2paraview/common.py,sha256=lCADo5-wX4JgSsDvEFw_dz5ixcKeRS4j0qXfDxCoT1s,37046
+ccx2paraview-3.2.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+ccx2paraview-3.2.0.dist-info/METADATA,sha256=z0C54h1p0KVo8_vGnoh7FAm8eGOX43zY5L79BJNuR3s,14212
+ccx2paraview-3.2.0.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+ccx2paraview-3.2.0.dist-info/entry_points.txt,sha256=6wbFRYKBY1Xs5Cov0XOuq_nTXq-g1feICwjYuqYX-Ds,133
+ccx2paraview-3.2.0.dist-info/top_level.txt,sha256=EIvTkK_jrg426C3dtS0tDq9RQpqk1FUcNzr2Z4OfbDk,13
+ccx2paraview-3.2.0.dist-info/RECORD,,
