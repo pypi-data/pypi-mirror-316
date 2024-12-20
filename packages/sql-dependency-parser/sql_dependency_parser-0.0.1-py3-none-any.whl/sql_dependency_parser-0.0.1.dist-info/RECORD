@@ -1,0 +1,7 @@
+sqldeps/__init__.py,sha256=FbHwJolnWCecamKvFK0AJPtwd24IR7hrJiyndAbKpUU,135
+sqldeps/extractor.py,sha256=9_Ltthrom-BLBc7TxTAse8ZRZIxqDJF4jcDscSS0qRk,5303
+sqldeps/models.py,sha256=FZ-d6FKucDSTA02NzpI_JPqMxanacysNCIiVm7Clhys,358
+sql_dependency_parser-0.0.1.dist-info/METADATA,sha256=A7PHft8sukv3MnXw8PWNA3XI5Ul9VulAjW6FIQ9v87M,519
+sql_dependency_parser-0.0.1.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+sql_dependency_parser-0.0.1.dist-info/top_level.txt,sha256=W657yaaa_z0FB3NTDOM58JReJ9HgzoN127bfcRKNgRA,8
+sql_dependency_parser-0.0.1.dist-info/RECORD,,
