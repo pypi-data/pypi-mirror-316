@@ -1,0 +1,21 @@
+{
+  "status": "done",
+  "assets": {
+    "kolibri.plugins.coach.side_nav-0.17.5.js": {
+      "name": "kolibri.plugins.coach.side_nav-0.17.5.js",
+      "path": "/home/runner/work/kolibri/kolibri/kolibri/plugins/coach/static/kolibri.plugins.coach.side_nav/kolibri.plugins.coach.side_nav-0.17.5.js"
+    },
+    "kolibri.plugins.coach.side_nav-0.17.5.js.map": {
+      "name": "kolibri.plugins.coach.side_nav-0.17.5.js.map",
+      "path": "/home/runner/work/kolibri/kolibri/kolibri/plugins/coach/static/kolibri.plugins.coach.side_nav/kolibri.plugins.coach.side_nav-0.17.5.js.map"
+    }
+  },
+  "chunks": {
+    "kolibri.plugins.coach.side_nav": [
+      {
+        "name": "kolibri.plugins.coach.side_nav-0.17.5.js",
+        "path": "/home/runner/work/kolibri/kolibri/kolibri/plugins/coach/static/kolibri.plugins.coach.side_nav/kolibri.plugins.coach.side_nav-0.17.5.js"
+      }
+    ]
+  }
+}
