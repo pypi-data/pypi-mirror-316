@@ -1,0 +1,5 @@
+[console_scripts]
+textshot = textshot.textshot:main
+
+[gui_scripts]
+textshotw = textshot.textshot:main

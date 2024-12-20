@@ -1,0 +1,17 @@
+.gitignore
+LICENSE.txt
+README.md
+pyproject.toml
+requirements.txt
+textshot.ahk
+textshot/logger.py
+textshot/messages.py
+textshot/notifications.py
+textshot/ocr.py
+textshot/textshot.py
+textshot.egg-info/PKG-INFO
+textshot.egg-info/SOURCES.txt
+textshot.egg-info/dependency_links.txt
+textshot.egg-info/entry_points.txt
+textshot.egg-info/requires.txt
+textshot.egg-info/top_level.txt
