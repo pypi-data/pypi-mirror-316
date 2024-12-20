@@ -1,0 +1,7 @@
+README.md
+setup.py
+/Volumes/Data/Laptrinh/App/color_terminalpython/color_terminal_objc/main.m
+color_terminal_objc.egg-info/PKG-INFO
+color_terminal_objc.egg-info/SOURCES.txt
+color_terminal_objc.egg-info/dependency_links.txt
+color_terminal_objc.egg-info/top_level.txt
