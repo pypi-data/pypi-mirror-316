@@ -1,0 +1,2 @@
+[console_scripts]
+doc-ufcn-masks = doc_ufcn.train.mask:main
