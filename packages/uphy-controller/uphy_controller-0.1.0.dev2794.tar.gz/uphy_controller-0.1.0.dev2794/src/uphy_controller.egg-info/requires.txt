@@ -1,0 +1,5 @@
+dearpygui>=2.0.0
+pymodbus>=3.7.3
+rich>=13.9.2
+typer>=0.12.5
+zeroconf>=0.135.0
