@@ -1,0 +1,1362 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1500</width>
+    <height>900</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>Tree Time</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QFormLayout" name="formLayout_2">
+    <item row="0" column="1">
+     <widget class="QSplitter" name="splitter">
+      <property name="cursor">
+       <cursorShape>ArrowCursor</cursorShape>
+      </property>
+      <property name="lineWidth">
+       <number>0</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Orientation::Horizontal</enum>
+      </property>
+      <property name="opaqueResize">
+       <bool>true</bool>
+      </property>
+      <property name="handleWidth">
+       <number>10</number>
+      </property>
+      <property name="childrenCollapsible">
+       <bool>false</bool>
+      </property>
+      <widget class="QTableWidget" name="tableWidget">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>300</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="baseSize">
+        <size>
+         <width>300</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="midLineWidth">
+        <number>0</number>
+       </property>
+       <property name="showGrid">
+        <bool>false</bool>
+       </property>
+       <property name="sortingEnabled">
+        <bool>false</bool>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+       <property name="rowCount">
+        <number>23</number>
+       </property>
+       <property name="columnCount">
+        <number>5</number>
+       </property>
+       <attribute name="horizontalHeaderVisible">
+        <bool>false</bool>
+       </attribute>
+       <attribute name="horizontalHeaderCascadingSectionResizes">
+        <bool>false</bool>
+       </attribute>
+       <attribute name="horizontalHeaderMinimumSectionSize">
+        <number>10</number>
+       </attribute>
+       <attribute name="horizontalHeaderDefaultSectionSize">
+        <number>10</number>
+       </attribute>
+       <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+        <bool>true</bool>
+       </attribute>
+       <attribute name="horizontalHeaderStretchLastSection">
+        <bool>false</bool>
+       </attribute>
+       <attribute name="verticalHeaderVisible">
+        <bool>false</bool>
+       </attribute>
+       <attribute name="verticalHeaderCascadingSectionResizes">
+        <bool>true</bool>
+       </attribute>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <column/>
+       <column/>
+       <column/>
+       <column/>
+       <column/>
+      </widget>
+      <widget class="QTabWidget" name="tabWidget">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>500</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="baseSize">
+        <size>
+         <width>500</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="currentIndex">
+        <number>-1</number>
+       </property>
+       <property name="documentMode">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QToolBox" name="toolBox">
+      <property name="minimumSize">
+       <size>
+        <width>250</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="toolTip">
+       <string/>
+      </property>
+      <property name="currentIndex">
+       <number>1</number>
+      </property>
+      <widget class="QWidget" name="pageFile">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>229</width>
+         <height>816</height>
+        </rect>
+       </property>
+       <attribute name="label">
+        <string>File</string>
+       </attribute>
+       <layout class="QFormLayout" name="formLayout">
+        <property name="fieldGrowthPolicy">
+         <enum>QFormLayout::FieldGrowthPolicy::ExpandingFieldsGrow</enum>
+        </property>
+        <item row="0" column="0" colspan="2">
+         <spacer name="verticalSpacer_10">
+          <property name="orientation">
+           <enum>Qt::Orientation::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="1" column="0" colspan="2">
+         <widget class="QLabel" name="label_8">
+          <property name="text">
+           <string>Connected to Data File:</string>
+          </property>
+          <property name="wordWrap">
+           <bool>true</bool>
+          </property>
+          <property name="textInteractionFlags">
+           <set>Qt::TextInteractionFlag::NoTextInteraction</set>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0" colspan="2">
+         <widget class="QLabel" name="labelCurrentFile">
+          <property name="enabled">
+           <bool>true</bool>
+          </property>
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Ignored" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="font">
+           <font>
+            <italic>true</italic>
+           </font>
+          </property>
+          <property name="toolTip">
+           <string>The current data file. All changes made are silently written to this file.</string>
+          </property>
+          <property name="text">
+           <string>[current file name]</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignmentFlag::AlignRight|Qt::AlignmentFlag::AlignTrailing|Qt::AlignmentFlag::AlignVCenter</set>
+          </property>
+          <property name="wordWrap">
+           <bool>true</bool>
+          </property>
+          <property name="openExternalLinks">
+           <bool>true</bool>
+          </property>
+          <property name="textInteractionFlags">
+           <set>Qt::TextInteractionFlag::NoTextInteraction</set>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0" colspan="2">
+         <spacer name="verticalSpacer_8">
+          <property name="orientation">
+           <enum>Qt::Orientation::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="4" column="0" colspan="2">
+         <widget class="QLabel" name="label_5">
+          <property name="font">
+           <font>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Load and Save</string>
+          </property>
+          <property name="scaledContents">
+           <bool>false</bool>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignmentFlag::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="0" colspan="2">
+         <widget class="QPushButton" name="pushButtonNewFromTemplate">
+          <property name="toolTip">
+           <string>&lt;b&gt;Create a new tree sheet from a template file&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;• Lets you choose a template in a file dialog, then choose a file location for your new file.&lt;br/&gt;• Changes are silently written to the new file.</string>
+          </property>
+          <property name="text">
+           <string>New from Template</string>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="0" colspan="2">
+         <widget class="QPushButton" name="pushButtonLoadFile">
+          <property name="toolTip">
+           <string>&lt;b&gt;Load an existing tree sheet&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;Subsequent changes will be written silently to the loaded file.</string>
+          </property>
+          <property name="text">
+           <string>Load File</string>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="0" colspan="2">
+         <widget class="QPushButton" name="pushButtonSaveToFile">
+          <property name="toolTip">
+           <string>&lt;b&gt;Save the current file to a new location&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;Subsequent changes will be written silently to the new location.</string>
+          </property>
+          <property name="text">
+           <string>Save As</string>
+          </property>
+         </widget>
+        </item>
+        <item row="8" column="0" colspan="2">
+         <spacer name="verticalSpacer_14">
+          <property name="orientation">
+           <enum>Qt::Orientation::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="9" column="0" colspan="2">
+         <widget class="QLabel" name="label_11">
+          <property name="font">
+           <font>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Export</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignmentFlag::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="10" column="0" colspan="2">
+         <widget class="QGroupBox" name="groupBoxExportSource">
+          <property name="flat">
+           <bool>true</bool>
+          </property>
+          <property name="checkable">
+           <bool>false</bool>
+          </property>
+          <layout class="QGridLayout" name="gridLayout">
+           <item row="0" column="1">
+            <widget class="QRadioButton" name="radioButtonExportTree">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="toolTip">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Export the entire tree&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Export all branches to file or clipboard.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+             <property name="text">
+              <string>Whole tree</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0">
+            <widget class="QRadioButton" name="radioButtonExportBranch">
+             <property name="toolTip">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Export selected branch&lt;/span&gt;&lt;/p&gt;&lt;p&gt;The selected node and all its children will be exported to file or clipboard.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+             <property name="text">
+              <string>&amp;This branch</string>
+             </property>
+             <property name="checked">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0" colspan="2">
+            <widget class="QRadioButton" name="radioButtonThisNodeWithContext">
+             <property name="toolTip">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Export the current node&lt;/span&gt;&lt;/p&gt;&lt;p&gt;The selected node will be exported to file or clipboard, inside a collapsed tree showing only direct parents and their siblings. The collapsed tree starts at the root node, or at the level set in the &lt;span style=&quot; font-style:italic;&quot;&gt;depth &lt;/span&gt;box.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+             <property name="text">
+              <string>This node with conte&amp;xt</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="11" column="0" colspan="2">
+         <widget class="QGroupBox" name="groupBoxExportContent">
+          <property name="flat">
+           <bool>true</bool>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_2">
+           <item row="0" column="0">
+            <widget class="QRadioButton" name="radioButtonExportAllFields">
+             <property name="toolTip">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Export all fields&lt;/span&gt;&lt;/p&gt;&lt;p&gt;All tree fields visible in the GUI will be exported.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+             <property name="text">
+              <string>A&amp;ll fields</string>
+             </property>
+             <property name="checked">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QRadioButton" name="radioButtonExportNamesOnly">
+             <property name="toolTip">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Export only names&lt;/span&gt;&lt;/p&gt;&lt;p&gt;No fields, only node names, will be exported.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+             <property name="text">
+              <string>Names onl&amp;y</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="12" column="0" colspan="2">
+         <widget class="QGroupBox" name="groupBoxExportTarget">
+          <property name="flat">
+           <bool>true</bool>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_3">
+           <item row="0" column="0">
+            <widget class="QRadioButton" name="radioButtonExportToFile">
+             <property name="toolTip">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Export to file.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;The export will be saved in a file. When clicking [Export], a file dialog opens to select a target file.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+             <property name="text">
+              <string>To file</string>
+             </property>
+             <property name="checked">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QRadioButton" name="radioButtonExportToClipboard">
+             <property name="toolTip">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Export to clipboard.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;When the [Export] button is clicked, the exported data will be in the clipboard and can be pasted (Menu/Paste or Ctrl+V) it into any document.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+             <property name="text">
+              <string>To clipboard</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="14" column="0">
+         <widget class="QLabel" name="label_6">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="text">
+           <string>Depth  </string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignmentFlag::AlignRight|Qt::AlignmentFlag::AlignTrailing|Qt::AlignmentFlag::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="14" column="1">
+         <widget class="QComboBox" name="comboBoxExportDepth">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="toolTip">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Select a level down to which the current branch is copied.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;For the options &amp;quot;This branch&amp;quot; and &amp;quot;Whole tree&amp;quot; this will show the respective level of children.&lt;/p&gt;&lt;p&gt;For the option &amp;quot;This node with content&amp;quot; this will show the summary path starting at the respective level, counting from the top.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <item>
+           <property name="text">
+            <string>all levels</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>1 level</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>2 levels</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>3 levels</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>4 levels</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>5 levels</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>6 levels</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>7 levels</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>8 levels</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>9 levels</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>10 levels</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="15" column="0">
+         <widget class="QLabel" name="label_15">
+          <property name="text">
+           <string>Format</string>
+          </property>
+         </widget>
+        </item>
+        <item row="15" column="1">
+         <widget class="QComboBox" name="comboBoxExportFormat">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="toolTip">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Select export file format&lt;/span&gt;&lt;/p&gt;&lt;p&gt;• HTML (Tiles) — html file, nodes are tiles within tiles&lt;br/&gt;• HTML (List) — html file, nodes are list lines&lt;br/&gt;• Text/Unicode — pure text file with text graphics&lt;br/&gt;• CSV — csv file with heading, first column is the tree structure, next are name and fields&lt;p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <item>
+           <property name="text">
+            <string>HTML (Tiles)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>HTML (List)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Text/Unicode</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>CSV</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="17" column="0" colspan="2">
+         <widget class="QGroupBox" name="groupBoxExportContinuous">
+          <property name="title">
+           <string/>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_4">
+           <item row="5" column="1">
+            <widget class="QRadioButton" name="radioButtonExportContinuously">
+             <property name="text">
+              <string>Contin&amp;uously</string>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="0">
+            <widget class="QRadioButton" name="radioButtonExportOnce">
+             <property name="text">
+              <string>Once</string>
+             </property>
+             <property name="checked">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="18" column="0" colspan="2">
+         <widget class="QLabel" name="labelExportFileDescription">
+          <property name="text">
+           <string>Last exported file:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="19" column="0" colspan="2">
+         <widget class="QLabel" name="labelCurrentExportFile">
+          <property name="font">
+           <font>
+            <italic>true</italic>
+            <kerning>true</kerning>
+           </font>
+          </property>
+          <property name="text">
+           <string>[last exported file name]</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignmentFlag::AlignRight|Qt::AlignmentFlag::AlignTrailing|Qt::AlignmentFlag::AlignVCenter</set>
+          </property>
+          <property name="wordWrap">
+           <bool>true</bool>
+          </property>
+          <property name="openExternalLinks">
+           <bool>true</bool>
+          </property>
+          <property name="textInteractionFlags">
+           <set>Qt::TextInteractionFlag::NoTextInteraction</set>
+          </property>
+         </widget>
+        </item>
+        <item row="20" column="0" colspan="2">
+         <widget class="QPushButton" name="pushButtonExport">
+          <property name="toolTip">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Export.&lt;/span&gt;&lt;br/&gt;Starts the export to a file after showing a file selection dialog, or to the clipboard.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <property name="text">
+           <string>Export</string>
+          </property>
+         </widget>
+        </item>
+        <item row="26" column="0" colspan="2">
+         <spacer name="verticalSpacer_18">
+          <property name="orientation">
+           <enum>Qt::Orientation::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="pageEdit">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>250</width>
+         <height>760</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>200</width>
+         <height>716</height>
+        </size>
+       </property>
+       <attribute name="label">
+        <string>Edit Content</string>
+       </attribute>
+       <layout class="QFormLayout" name="formLayout">
+        <property name="fieldGrowthPolicy">
+         <enum>QFormLayout::FieldGrowthPolicy::ExpandingFieldsGrow</enum>
+        </property>
+        <item row="1" column="0" colspan="2">
+         <spacer name="verticalSpacer">
+          <property name="orientation">
+           <enum>Qt::Orientation::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="2" column="0" colspan="2">
+         <widget class="QLabel" name="label">
+          <property name="font">
+           <font>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Insert New Nodes</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignmentFlag::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0" colspan="2">
+         <widget class="QPushButton" name="pushButtonNewChild">
+          <property name="toolTip">
+           <string>&lt;b&gt;Create a new item and link it as a child to the selected node&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;Only this tree will be affected.</string>
+          </property>
+          <property name="text">
+           <string>New Child</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="0" colspan="2">
+         <widget class="QPushButton" name="pushButtonNewSibling">
+          <property name="toolTip">
+           <string>&lt;b&gt;Create a new item and link it as a sibling next to the selected node&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;Only this tree will be affected.</string>
+          </property>
+          <property name="text">
+           <string>New Sibling</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="0" colspan="2">
+         <widget class="QPushButton" name="pushButtonNewParent">
+          <property name="toolTip">
+           <string>&lt;b&gt;Create a new item and insert it as a parent above the selected node&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;Only this tree will be affected.</string>
+          </property>
+          <property name="text">
+           <string>New Parent</string>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="0" colspan="2">
+         <spacer name="verticalSpacer_3">
+          <property name="orientation">
+           <enum>Qt::Orientation::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="7" column="0" colspan="2">
+         <widget class="QLabel" name="label_2">
+          <property name="font">
+           <font>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Copy Existing Nodes</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignmentFlag::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="8" column="0" colspan="2">
+         <widget class="QPushButton" name="pushButtonCopyNodeChild">
+          <property name="toolTip">
+           <string>&lt;b&gt;Insert a new child underneath&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;• The child will be a copy of the current node.&lt;br/&gt;• In all other trees the new item will appear as sibling.</string>
+          </property>
+          <property name="text">
+           <string>Copy Node as Child</string>
+          </property>
+         </widget>
+        </item>
+        <item row="9" column="0" colspan="2">
+         <widget class="QPushButton" name="pushButtonCopyNodeSibling">
+          <property name="toolTip">
+           <string>&lt;b&gt;Insert a new sibling&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;• The sibling will be a copy of the current node.&lt;br/&gt;• In all other trees the new item will appear as sibling.</string>
+          </property>
+          <property name="text">
+           <string>Copy Node as Sibling</string>
+          </property>
+         </widget>
+        </item>
+        <item row="10" column="0" colspan="2">
+         <widget class="QPushButton" name="pushButtonCopyNodeParent">
+          <property name="toolTip">
+           <string>&lt;b&gt;Insert a new parent above&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;• The parent will be a copy of the current node.&lt;br/&gt;• In all other trees the new item will appear as sibling.</string>
+          </property>
+          <property name="text">
+           <string>Copy Node as Parent</string>
+          </property>
+         </widget>
+        </item>
+        <item row="11" column="0" colspan="2">
+         <spacer name="verticalSpacer_4">
+          <property name="orientation">
+           <enum>Qt::Orientation::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="12" column="0" colspan="2">
+         <widget class="QLabel" name="label_3">
+          <property name="font">
+           <font>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Copy Parts of the Tree</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignmentFlag::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="13" column="0">
+         <widget class="QLabel" name="label_6">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="text">
+           <string>Depth  </string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignmentFlag::AlignRight|Qt::AlignmentFlag::AlignTrailing|Qt::AlignmentFlag::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="13" column="1">
+         <widget class="QComboBox" name="comboBoxCopyDepth">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="toolTip">
+           <string>&lt;b&gt;Select a level down to which the current branch is copied&lt;/b&gt;</string>
+          </property>
+          <item>
+           <property name="text">
+            <string>all levels</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>1 level</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>2 levels</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>3 levels</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>4 levels</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>5 levels</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>6 levels</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>7 levels</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>8 levels</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>9 levels</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>10 levels</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="15" column="0" colspan="2">
+         <widget class="QPushButton" name="pushButtonCopyBranchSibling">
+          <property name="toolTip">
+           <string>&lt;b&gt;Copy the current branch&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;• The current node and all its children will be copied.&lt;br/&gt;• The copy will be inserted as sibling.&lt;br/&gt;• Other trees are not affected.</string>
+          </property>
+          <property name="toolTipDuration">
+           <number>-1</number>
+          </property>
+          <property name="text">
+           <string>Copy Branch as Sibling</string>
+          </property>
+         </widget>
+        </item>
+        <item row="16" column="0" colspan="2">
+         <widget class="QPushButton" name="pushButtonCopyChildrenSiblings">
+          <property name="toolTip">
+           <string>&lt;b&gt;Copy all child branches&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;• All children are copied underneath the siblings of the current node.&lt;br/&gt;• The copy depth can be selected in the box above.&lt;br/&gt;• Other trees are not affected.</string>
+          </property>
+          <property name="text">
+           <string>Copy Children to Siblings</string>
+          </property>
+         </widget>
+        </item>
+        <item row="17" column="0" colspan="2">
+         <spacer name="verticalSpacer_5">
+          <property name="orientation">
+           <enum>Qt::Orientation::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="18" column="0" colspan="2">
+         <widget class="QLabel" name="label_4">
+          <property name="font">
+           <font>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Remove Single Node</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignmentFlag::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="19" column="0" colspan="2">
+         <widget class="QPushButton" name="pushButtonRemoveNode">
+          <property name="toolTip">
+           <string>&lt;b&gt;Remove the current node&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;• Children of the node are moved up, to be children of the node's parent.&lt;br/&gt;• Other trees are not affected.</string>
+          </property>
+          <property name="text">
+           <string>Remove Node (this Tree)</string>
+          </property>
+         </widget>
+        </item>
+        <item row="20" column="0" colspan="2">
+         <widget class="QPushButton" name="pushButtonDeleteNode">
+          <property name="toolTip">
+           <string>&lt;b&gt;Delete the current item&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;• In each tree, children of the node are moved up, to be children of the node's parent.&lt;br/&gt;• The node is removed from all trees.</string>
+          </property>
+          <property name="text">
+           <string>Delete Item (all Trees)</string>
+          </property>
+         </widget>
+        </item>
+        <item row="21" column="0" colspan="2">
+         <spacer name="verticalSpacer_7">
+          <property name="orientation">
+           <enum>Qt::Orientation::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="22" column="0" colspan="2">
+         <widget class="QLabel" name="label_12">
+          <property name="font">
+           <font>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Remove Branch</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignmentFlag::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="23" column="0" colspan="2">
+         <widget class="QPushButton" name="pushButtonRemoveBranch">
+          <property name="toolTip">
+           <string>&lt;b&gt;Remove the current branch&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;• All descentants (children, grandchildren, ...), are removed.&lt;br/&gt;• Other trees are not affected.&lt;/li&gt;&lt;/ul&gt;</string>
+          </property>
+          <property name="text">
+           <string>Remove Branch (this Tree)</string>
+          </property>
+         </widget>
+        </item>
+        <item row="24" column="0" colspan="2">
+         <widget class="QPushButton" name="pushButtonDeleteBranch">
+          <property name="toolTip">
+           <string>&lt;b&gt;Delete the entire branch from all trees&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;• All descendants (children, grandchildren, etc) in all trees are deleted.&lt;br/&gt;• Children of a node are deleted recursively across trees.&lt;br/&gt;• Please make sure there are no unwanted connections before use.</string>
+          </property>
+          <property name="text">
+           <string>Delete Branch (all Trees)</string>
+          </property>
+         </widget>
+        </item>
+        <item row="26" column="0" colspan="2">
+         <spacer name="verticalSpacer_6">
+          <property name="orientation">
+           <enum>Qt::Orientation::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="pageStructure">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>250</width>
+         <height>760</height>
+        </rect>
+       </property>
+       <attribute name="label">
+        <string>View Form</string>
+       </attribute>
+       <layout class="QFormLayout" name="formLayout">
+        <property name="fieldGrowthPolicy">
+         <enum>QFormLayout::FieldGrowthPolicy::ExpandingFieldsGrow</enum>
+        </property>
+        <item row="1" column="0" colspan="2">
+         <widget class="QLabel" name="label_13">
+          <property name="font">
+           <font>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Data Fields</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignmentFlag::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0" colspan="2">
+         <widget class="QPushButton" name="pushButtonDataFields">
+          <property name="text">
+           <string>View Data Fields</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="0" colspan="2">
+         <widget class="QLabel" name="label_14">
+          <property name="font">
+           <font>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Tree Fields</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignmentFlag::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="0" colspan="2">
+         <widget class="QPushButton" name="pushButtonTreeFields">
+          <property name="text">
+           <string>View Tree Fields</string>
+          </property>
+         </widget>
+        </item>
+        <item row="8" column="0" colspan="2">
+         <spacer name="verticalSpacer_15">
+          <property name="orientation">
+           <enum>Qt::Orientation::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="3" column="0" colspan="2">
+         <spacer name="verticalSpacer_2">
+          <property name="orientation">
+           <enum>Qt::Orientation::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="0" column="0" colspan="2">
+         <spacer name="verticalSpacer_13">
+          <property name="orientation">
+           <enum>Qt::Orientation::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="6" column="0" colspan="2">
+         <spacer name="verticalSpacer_16">
+          <property name="orientation">
+           <enum>Qt::Orientation::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="7" column="0" colspan="2">
+         <spacer name="verticalSpacer_17">
+          <property name="orientation">
+           <enum>Qt::Orientation::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="pageSettings">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>250</width>
+         <height>760</height>
+        </rect>
+       </property>
+       <attribute name="label">
+        <string>Settings</string>
+       </attribute>
+       <layout class="QFormLayout" name="formLayout">
+        <property name="fieldGrowthPolicy">
+         <enum>QFormLayout::FieldGrowthPolicy::ExpandingFieldsGrow</enum>
+        </property>
+        <property name="horizontalSpacing">
+         <number>6</number>
+        </property>
+        <property name="bottomMargin">
+         <number>6</number>
+        </property>
+        <item row="1" column="0" colspan="2">
+         <spacer name="verticalSpacer_9">
+          <property name="orientation">
+           <enum>Qt::Orientation::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="2" column="0" colspan="2">
+         <widget class="QLabel" name="label_9">
+          <property name="font">
+           <font>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Look and Feel</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignmentFlag::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0" colspan="2">
+         <widget class="QComboBox" name="cboxTheme"/>
+        </item>
+        <item row="4" column="0" colspan="2">
+         <widget class="QComboBox" name="cboxColours"/>
+        </item>
+        <item row="10" column="0" colspan="2">
+         <spacer name="verticalSpacer_12">
+          <property name="orientation">
+           <enum>Qt::Orientation::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>136</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="11" column="0" colspan="2">
+         <widget class="QLabel" name="label_10">
+          <property name="font">
+           <font>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>About</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignmentFlag::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="12" column="0" colspan="2">
+         <widget class="QLabel" name="label_7">
+          <property name="text">
+           <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+hr { height: 1px; border-width: 0; }
+li.unchecked::marker { content: &quot;\2610&quot;; }
+li.checked::marker { content: &quot;\2612&quot;; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Noto Sans'; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;     TreeTime 2024.4&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;     Official website:&lt;br /&gt;     &lt;a href=&quot;https://github.com/jkanev/treetime&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#2980b9;&quot;&gt;tree-time.info&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;     Updates and source code:&lt;br /&gt;     &lt;a href=&quot;https://github.com/jkanev/treetime&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#2980b9;&quot;&gt;github.com/jkanev/treetime&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;    Documentation:&lt;br /&gt;     &lt;a href=&quot;https://treetime-data-manager.readthedocs.io&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#2980b9;&quot;&gt;treetime-data-manager.&lt;/span&gt;&lt;/a&gt;&lt;br /&gt;     &lt;a href=&quot;https://treetime-data-manager.readthedocs.io&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#2980b9;&quot;&gt;readthedocs.io&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+        </item>
+        <item row="13" column="0" colspan="2">
+         <spacer name="verticalSpacer_11">
+          <property name="orientation">
+           <enum>Qt::Orientation::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>136</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="5" column="0" colspan="2">
+         <widget class="QSlider" name="sliderZoom">
+          <property name="minimum">
+           <number>-8</number>
+          </property>
+          <property name="maximum">
+           <number>15</number>
+          </property>
+          <property name="pageStep">
+           <number>2</number>
+          </property>
+          <property name="tracking">
+           <bool>true</bool>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Orientation::Horizontal</enum>
+          </property>
+          <property name="invertedAppearance">
+           <bool>false</bool>
+          </property>
+          <property name="invertedControls">
+           <bool>false</bool>
+          </property>
+          <property name="tickPosition">
+           <enum>QSlider::TickPosition::TicksBelow</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="0">
+         <widget class="QLabel" name="labelZoom">
+          <property name="text">
+           <string>Zoom</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <action name="actionQuit">
+   <property name="text">
+    <string>Quit</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>actionQuit</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>299</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
