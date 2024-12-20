@@ -1,0 +1,2 @@
+include STM32_ST_link/ST_Link_CLI/**/*
+include STM32_ST_link/ST-LINK_USB_V2_1_Driver/**/*
