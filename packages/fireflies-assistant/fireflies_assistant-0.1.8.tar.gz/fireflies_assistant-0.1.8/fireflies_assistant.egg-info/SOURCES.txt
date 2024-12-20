@@ -1,0 +1,8 @@
+README.md
+setup.py
+fireflies_assistant.egg-info/PKG-INFO
+fireflies_assistant.egg-info/SOURCES.txt
+fireflies_assistant.egg-info/dependency_links.txt
+fireflies_assistant.egg-info/entry_points.txt
+fireflies_assistant.egg-info/requires.txt
+fireflies_assistant.egg-info/top_level.txt
