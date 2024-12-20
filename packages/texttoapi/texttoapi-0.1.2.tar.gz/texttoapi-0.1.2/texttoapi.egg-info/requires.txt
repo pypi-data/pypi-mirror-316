@@ -1,0 +1,11 @@
+Flask
+llama-index
+llama-index-embeddings-azure-openai
+llama-index-llms-azure-openai
+openinference-instrumentation-llama-index
+opentelemetry-exporter-otlp
+opentelemetry-proto
+opentelemetry-sdk
+python-dotenv
+rich
+setuptools
