@@ -1,0 +1,9 @@
+datalib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+datalib/advanced_analysis.py,sha256=pIYKDG6mQ4nTtDHwe7dRRajLTVy8W4UK6MMj5ClXs0c,1707
+datalib/manipulation_data.py,sha256=W5TU-9AlgZiS2_HqdH5FL5XIolktLkN_zFmfLhuePok,2515
+datalib/statistics.py,sha256=5e0ss-GQIWHeCcgpo92YTb2TPqEWIySi_jCNI-kxC5Y,806
+datalib/visualization.py,sha256=-IvJxHg1cZIteW-FMpfxCKXuv6lYFI2KIWm1YhemtcQ,1544
+datalibhope-1.0.0.dist-info/LICENSE,sha256=klIfw8vZZL3J9YSpkbif3apXVO0cyW1tQkRTOGacEwU,5
+datalibhope-1.0.0.dist-info/METADATA,sha256=OqzKvOedD7K_0MgfrT5MnRAfbc0kb1Zq4WBtdD2bxOk,1164
+datalibhope-1.0.0.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+datalibhope-1.0.0.dist-info/RECORD,,
