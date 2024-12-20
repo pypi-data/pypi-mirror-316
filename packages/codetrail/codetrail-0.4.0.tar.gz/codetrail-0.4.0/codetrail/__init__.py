@@ -1,0 +1,1 @@
+"""VCS inspired by Git."""
