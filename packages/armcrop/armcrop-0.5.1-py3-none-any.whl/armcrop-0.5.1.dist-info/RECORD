@@ -1,0 +1,7 @@
+armcrop/__init__.py,sha256=DkvS6a9HxWJ7klGSkDYTaLMSrXfl3aFZzjZd31pCQ9Y,179
+armcrop/crop_volume.py,sha256=-mZBjhuLa4mJVAZmgkJWynezhrjNoCHIeC89OzNeImI,16940
+armcrop/crop_volume_obb.py,sha256=MzfQYGFpRvNElYxHDw39MRw6Br6N6wlYzfJi6-Nn3wo,28620
+armcrop/segmentation_transform.py,sha256=6kSABjyZ7aJkKrAK-_jISxfeufEoywZNW9ybTcH7tjE,13555
+armcrop-0.5.1.dist-info/METADATA,sha256=Yui9467YRHQKg321z2cRkrqedEv50yst6sBSQjzcJSs,1716
+armcrop-0.5.1.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+armcrop-0.5.1.dist-info/RECORD,,
