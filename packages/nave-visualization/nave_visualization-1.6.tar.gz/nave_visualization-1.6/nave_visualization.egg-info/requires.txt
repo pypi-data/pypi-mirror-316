@@ -1,0 +1,7 @@
+geopandas
+matplotlib
+numpy==2.0.2
+pandas
+shapely
+xarray
+rasterio
