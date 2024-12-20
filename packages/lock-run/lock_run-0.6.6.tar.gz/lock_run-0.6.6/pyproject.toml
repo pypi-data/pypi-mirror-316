@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "lock-run"
+version = "0.6.6"
+description = "Python runner with cipher"
+authors = ["dima-on <sinica911@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [
+    { include = "lock_run"}
+]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+seal-py = "^0.8.2"
+
+
+[tool.poetry.scripts]
+lock-run = "lock_run.main:run_code_cui"
+lock-run-cipher = "lock_run.main:cipher_code_cui"
+lock-run-key = "lock_run.main:gen_key_cui"
+
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
