@@ -1,0 +1,22 @@
+[project]
+name = "junghomeapi"
+version = "0.0.3"
+authors = [
+  { name="Edna Krabbable", email="tantenic@gmail.com" },
+]
+description = "A paython api for Junghome"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/Edna-Krabappel/junghomeapi"
+Issues = "https://github.com/Edna-Krabappel/junghomeapi/issues"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
