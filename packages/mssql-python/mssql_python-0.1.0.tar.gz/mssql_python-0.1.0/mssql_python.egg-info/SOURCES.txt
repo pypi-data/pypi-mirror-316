@@ -1,0 +1,7 @@
+README.md
+setup.py
+mssql_python/__init__.py
+mssql_python.egg-info/PKG-INFO
+mssql_python.egg-info/SOURCES.txt
+mssql_python.egg-info/dependency_links.txt
+mssql_python.egg-info/top_level.txt
