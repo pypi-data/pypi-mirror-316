@@ -1,0 +1,5 @@
+iban_validation_polars-0.1.1.dist-info/METADATA,sha256=AgN4xUaSNg0MSN_agB1cUm5CvptgejuWJTRVRM4CzOw,652
+iban_validation_polars-0.1.1.dist-info/WHEEL,sha256=9gdSmIoQieRKFI_krqG6wxNRIco3eJJW2ekPs9SF4ro,94
+iban_validation_polars/__init__.py,sha256=F39_uALtU6XnIzgeQ7p_INOTs-Jh4HaEySaWUiG69uc,545
+iban_validation_polars/iban_validation_polars.cp39-win_amd64.pyd,sha256=F7ld37uGDPKr0h-wolSq0tpYTumj8XAHkpDSNgJI8ZE,14025728
+iban_validation_polars-0.1.1.dist-info/RECORD,,
