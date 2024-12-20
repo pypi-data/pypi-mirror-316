@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: pytask-queue
+Version: 0.1.2
+Summary: A simple queue for Python tasks
+Author-email: Jayden Pyles <jpylesbusiness@gmail.com>
+License: MIT
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: typing-extensions>=4.12.2
+
+# pytask
