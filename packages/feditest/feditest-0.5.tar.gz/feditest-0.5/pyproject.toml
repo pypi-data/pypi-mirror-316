@@ -1,0 +1,74 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+
+[project]
+name = "feditest"
+version = "0.5"
+authors = [
+  { name="Johannes Ernst", email="git@j12t.org" },
+  { name="Steve Bate", email="svc-github@stevebate.net" }
+]
+maintainers = [
+  { name="Johannes Ernst", email="git@j12t.org" },
+  { name="Steve Bate", email="svc-github@stevebate.net" }
+]
+dependencies = [
+  "cryptography",
+  "httpx",
+  "langcodes",
+  "msgspec",
+  "multidict",
+  "jinja2",
+  "pyhamcrest",
+  "requests",
+  "types-requests",
+  "pre-commit",
+
+  # For testing: not sure how to specify this just for testing
+  "pytest",
+  "beautifulsoup4"
+]
+
+description = "Test framework to test distributed, heterogeneous systems with complex protocols such as the Fediverse"
+readme = "README-PyPI.md"
+
+# We develop on 3.11, so we can support debian 12 (including Raspberry PI OS) systems,
+# which have not been upgraded to 3.12 yet.
+requires-python = ">=3.11"
+# We really want 3.12 so we can use @override
+# Do not specify an upper boundary, see https://github.com/fediverse-devnet/feditest/issues/412
+
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: MacOS :: MacOS X",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python :: 3",
+    "Topic :: Software Development :: Testing"
+]
+
+[project.scripts]
+feditest = "feditest.cli:main"
+
+[project.urls]
+Homepage = "https://feditest.org/"
+
+[tool.hatch.build.targets.sdist]
+exclude = [
+    "docs/"
+]
+
+[tool.pylint."MESSAGES CONTROL"]
+max-line-length=120
+disable="arguments-renamed, empty-docstring, global-variable-not-assigned, line-too-long, missing-class-docstring, missing-function-docstring, too-few-public-methods, too-many-arguments"
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = [ "tests.unit" ]
+
+[tool.ruff]
+target-version = "py311"
