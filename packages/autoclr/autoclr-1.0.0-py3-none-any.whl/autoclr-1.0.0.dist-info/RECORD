@@ -1,0 +1,11 @@
+autoclr/README.md,sha256=i_N48UgEcN-W192hwhTpQh5QiMIJijdsdDfrRtAKy0s,89
+autoclr/__init__.py,sha256=s442v7JEIpBNvHADCPz4Bwv8_DDJtRvS0WmyWa7ASw4,793
+autoclr/loaders/__init__.py,sha256=iwhKnzeBJLKxpRVjvzwiRE63_zNpIBfaKLITauVph-0,24
+autoclr/loaders/default.py,sha256=-U3EH4XsWX9ERHlrzeaM7CSz4-47cBG9liiQQUz7Ths,199
+autoclr/loaders/offline.py,sha256=7vTiW2aug_QAnmNQ2URDz97dq1jKHvvVTQ_qXnS1KM0,2301
+autoclr/loaders/online.py,sha256=9NLO0ITO2DZHwK2hYwzFNSHShXzjrxIlG8ia6cDkJAY,3225
+autoclr/loaders/system.py,sha256=u9BpCCF3SE6gjq8RxeZbX3d-cF501UA2KxDu7uGap5U,799
+autoclr-1.0.0.dist-info/LICENSE,sha256=wGQH1UKQo6Uu-PXHmtoicFFNLDSgVlSH-1xmjJf_o6c,1077
+autoclr-1.0.0.dist-info/WHEEL,sha256=CpUCUxeHQbRN5UGRQHYRJorO5Af-Qy_fHMctcQ8DSGI,82
+autoclr-1.0.0.dist-info/METADATA,sha256=Lb5UEtXuhnCoaIkff8nlFz_7xy8_H2Lb159WFyMPin8,2727
+autoclr-1.0.0.dist-info/RECORD,,
