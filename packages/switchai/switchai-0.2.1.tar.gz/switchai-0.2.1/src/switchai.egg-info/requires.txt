@@ -1,0 +1,6 @@
+pydantic
+openai
+mistralai
+anthropic
+google-generativeai
+deepgram-sdk
