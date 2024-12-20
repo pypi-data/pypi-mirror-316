@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c697c69a-2050-4ca7-96b6-efa362a2ab6d" name="更改" comment="更改">
+      <change afterPath="$PROJECT_DIR$/dist/kutilz-0.1.1-py3-none-any.whl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/kutilz-0.1.1.tar.gz" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FlaskConsoleOptions" custom-start-script="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))">
+    <envs>
+      <env key="FLASK_APP" value="app" />
+    </envs>
+    <option name="myCustomStartScript" value="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))" />
+    <option name="myEnvs">
+      <map>
+        <entry key="FLASK_APP" value="app" />
+      </map>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/KUtils/Helpers/CacheMan/VersionedCacheMixin.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/KUtils/Helpers/DataClass/DataClass.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/KUtils/Helpers/DataClass/__init__.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/KUtils/Helpers/KGenric/__init__.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/KUtils/Helpers/Mixins/BaseMixin.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/KUtils/Helpers/Shapez/Bases/Backends.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/KUtils/Helpers/Shapez/Bases/Base.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/KUtils/Helpers/Shapez/Bases/KImage.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/KUtils/Helpers/Shapez/Bases/NumpyWrapper.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/KUtils/Helpers/Shapez/ModuleClazz.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/KUtils/Helpers/Shapez/Shapes/Polygonal.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/KUtils/Helpers/Shapez/Utils/__init__.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/KUtils/Helpers/Shapez/Utils/geo.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/KUtils/Helpers/Shapez/__init__.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/KUtils/Helpers/Trees/NamedTree.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/KUtils/Helpers/Trees/__init__.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/KUtils/Helpers/__init__.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/KUtils/Typing.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/KUtils/Utils/ArrayUtils/__init__.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/KUtils/Utils/ArrayUtils/_utils.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/KUtils/Utils/DebugUtils/Timer.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/KUtils/Utils/DevUtils/BasePropertyWrapper.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/KUtils/Utils/DevUtils/__init__.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/KUtils/Utils/DevUtils/accessor.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/KUtils/Utils/DevUtils/inspectors.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/KUtils/Utils/DevUtils/simprop.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/KUtils/Utils/StringUtils/StringUtils.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/KUtils/Utils/StringUtils/pretty.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/KUtils/Utils/TimeUtils/__init__.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/KUtils/Utils/TimeUtils/_utils.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/KUtils/Utils/VisionUtils/Image.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/KUtils/Utils/VisionUtils/VisualizationTools/_common.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/KUtils/Utils/__init__.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/KUtils/__init__.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/pyproject.toml" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/requirements.txt" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/../UniversalDataTool/UniversalDataTool/Protocol/Resource/UniversalResource.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$USER_HOME$/miniconda3/envs/cv2d/lib/python3.8/site-packages/numpy/__init__.pyi" root0="SKIP_INSPECTION" />
+    <setting file="file://$USER_HOME$/miniconda3/envs/cv2d/lib/python3.8/xml/etree/ElementTree.py" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="2mkbtoddIRymMqh2O8jzU6iwOs2" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Python.ReadonlyProperty.executor&quot;: &quot;Run&quot;,
+    &quot;Python._utils.executor&quot;: &quot;Run&quot;,
+    &quot;Python.accessor.executor&quot;: &quot;Run&quot;,
+    &quot;Python.readonly.executor&quot;: &quot;Run&quot;,
+    &quot;Python.simprop.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/kai/QOL/KUtils&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors.Color Scheme Font&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RdControllerToolWindowsLayoutState" isNewUi="false">
+    <layout>
+      <window_info id="Commit_Guest" show_stripe_button="false" />
+      <window_info id="Bookmarks" order="0" show_stripe_button="false" side_tool="true" />
+      <window_info id="Merge Requests" order="1" show_stripe_button="false" />
+      <window_info id="Structure" order="2" show_stripe_button="false" side_tool="true" />
+      <window_info id="Pull Requests" order="3" show_stripe_button="false" />
+      <window_info active="true" content_ui="combo" id="Project" order="4" visible="true" weight="0.25" />
+      <window_info id="Commit" order="5" show_stripe_button="false" />
+      <window_info id="Learn" order="6" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Database Changes" order="4" show_stripe_button="false" />
+      <window_info anchor="bottom" id="TypeScript" order="5" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Python Packages" order="6" show_stripe_button="false" />
+      <window_info anchor="bottom" id="TODO" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Inspection" order="8" weight="0.4" />
+      <window_info anchor="bottom" id="File Transfer" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Problems View" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Services" order="12" show_stripe_button="false" />
+      <window_info anchor="right" id="Plots" order="0" show_stripe_button="false" />
+      <window_info anchor="right" id="Endpoints" order="1" show_stripe_button="false" />
+      <window_info anchor="right" id="Database" order="2" show_stripe_button="false" />
+      <window_info anchor="right" id="Translation.Wordbook" order="3" show_stripe_button="false" side_tool="true" />
+      <window_info anchor="right" id="Coverage" order="4" show_stripe_button="false" side_tool="true" />
+      <window_info anchor="right" id="Python Console" order="5" show_stripe_button="false" />
+      <window_info anchor="right" id="AIAssistant" order="6" show_stripe_button="false" />
+      <window_info anchor="right" id="SciView" order="7" show_stripe_button="false" />
+      <window_info anchor="right" id="Notifications" order="8" weight="0.25" />
+    </layout>
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/KUtils/Helpers" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/KUtils/Helpers/Shapez/Bases" />
+      <recent name="$PROJECT_DIR$/KUtils/Helpers/Shapez/Shapes" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-c2d6afa66fbe-39cff9de6eef-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-242.20224.347" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="c697c69a-2050-4ca7-96b6-efa362a2ab6d" name="更改" comment="" />
+      <created>1727623738942</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1727623738942</updated>
+      <workItem from="1727623740619" duration="2499000" />
+      <workItem from="1727714647839" duration="2849000" />
+      <workItem from="1727717960753" duration="73000" />
+      <workItem from="1727718321074" duration="4930000" />
+      <workItem from="1727797536099" duration="13155000" />
+      <workItem from="1728573261148" duration="1398000" />
+      <workItem from="1728791331214" duration="1042000" />
+      <workItem from="1730103494357" duration="3844000" />
+      <workItem from="1730182547556" duration="957000" />
+      <workItem from="1730192492019" duration="612000" />
+      <workItem from="1730266587117" duration="643000" />
+      <workItem from="1730362817631" duration="5173000" />
+      <workItem from="1730665819809" duration="1206000" />
+      <workItem from="1730691066793" duration="940000" />
+      <workItem from="1730768721800" duration="12622000" />
+      <workItem from="1730796934072" duration="1809000" />
+      <workItem from="1732069598744" duration="599000" />
+      <workItem from="1733296832308" duration="16061000" />
+      <workItem from="1734078421579" duration="624000" />
+      <workItem from="1734321814904" duration="706000" />
+      <workItem from="1734322525907" duration="10193000" />
+      <workItem from="1734513768394" duration="599000" />
+      <workItem from="1734575626321" duration="599000" />
+      <workItem from="1734597581778" duration="2510000" />
+      <workItem from="1734613374454" duration="2186000" />
+    </task>
+    <task id="LOCAL-00001" summary="更改">
+      <option name="closed" value="true" />
+      <created>1730123276844</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1730123276844</updated>
+    </task>
+    <task id="LOCAL-00002" summary="更改">
+      <option name="closed" value="true" />
+      <created>1730392068933</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1730392068933</updated>
+    </task>
+    <task id="LOCAL-00003" summary="更改">
+      <option name="closed" value="true" />
+      <created>1734618042005</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1734618042005</updated>
+    </task>
+    <task id="LOCAL-00004" summary="更改">
+      <option name="closed" value="true" />
+      <created>1734618095109</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1734618095109</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="更改" />
+    <option name="LAST_COMMIT_MESSAGE" value="更改" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/KUtils$ReadonlyProperty.coverage" NAME="ReadonlyProperty 覆盖结果" MODIFIED="1727808063047" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/KUtils/Utils/DevUtils" />
+    <SUITE FILE_PATH="coverage/KUtils$accessor.coverage" NAME="accessor Coverage Results" MODIFIED="1730105894020" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/KUtils/Utils/DevUtils" />
+    <SUITE FILE_PATH="coverage/KUtils$_utils.coverage" NAME="_utils Coverage Results" MODIFIED="1730785681424" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/KUtils/Utils/TimeUtils" />
+    <SUITE FILE_PATH="coverage/KUtils$simprop.coverage" NAME="simprop 覆盖结果" MODIFIED="1727811583717" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/KUtils/Utils/DevUtils" />
+    <SUITE FILE_PATH="coverage/KUtils$readonly.coverage" NAME="readonly 覆盖结果" MODIFIED="1727811560783" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/KUtils/Utils/DevUtils" />
+  </component>
+</project>
