@@ -1,0 +1,2 @@
+[console_scripts]
+rs = build1101.cli:cli
