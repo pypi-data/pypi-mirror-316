@@ -1,0 +1,85 @@
+Metadata-Version: 2.4
+Name: glpi_grafana_exporter
+Version: 0.0.1
+Summary: Export GLPI statistics into Grafana (Grafana Cloud)
+Project-URL: Homepage, https://github.com/yaroslaff/glpi-grafana-exporter
+Project-URL: Issues, https://github.com/yaroslaff/glpi-grafana-exporter/issues
+Author-email: Yaroslav Polyakov <yaroslaff@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2024 Yaroslav
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Requires-Dist: python-dotenv
+Requires-Dist: sqlalchemy
+Provides-Extra: mysql
+Requires-Dist: mysqlclient; extra == 'mysql'
+Provides-Extra: postgresql
+Requires-Dist: psycopg2; extra == 'postgresql'
+Description-Content-Type: text/markdown
+
+# GLPI to Grafana exporter
+
+This script exports GLPI statistics from database into JSON format, usable with [grafana-infinity-datasource](https://github.com/grafana/grafana-infinity-datasource) plugin of [Grafana](https://grafana.com/). Tested on GLPI version 10.0.6.
+
+![image](https://raw.githubusercontent.com/yaroslaff/glpi-grafana-exporter/refs/heads/master/demo/glpi-grafana-dashboard-small.png)
+
+## Install
+~~~
+pipx install glpi-grafana-exporter[mysql]
+~~~
+(or postgresql)
+
+Example config (`config.env`):
+~~~
+DBURL=mysql:///support
+TICKETS_TABLE=glpi_tickets
+USERS_TABLE=glpi_users
+JSONFILE=/var/www/html/statistics/glpi.json
+OPEN=25
+~~~
+
+DBURL is in SQLAlchemy format: `dialect+driver://username:password@host:port/database`, e.g.:
+~~~
+postgresql+psycopg2://user:password@localhost:5432/mydatabase
+mysql://user:password@localhost:3306/mydatabase
+~~~
+(you can omit `+driver` part)
+
+
+## Make JSON file 
+~~~
+# make glpi.json with statistics for last year
+glpi-grafana-exporter -c config.env --hard 365
+
+# recalculate statistics for a last 3 days (for [daily] cron job)
+glpi-grafana-exporter -c config.env --hard 3
+~~~
+at this step you get glpi.json file for Grafana with Infinity Datasource plugin. Update it from cron job.
+
+## Make grafana dashboard
+1. Install [Grafana Infinity Datasource
+](https://grafana.com/grafana/plugins/yesoreyeram-infinity-datasource/) plugin
+2. Configure it (Connection > Data Sources > yesoreyeram-infinity-datasource > Security), to allow "https://raw.githubusercontent.com/" (for demo JSON) or your URL. Save & test.
+3. use [demo/dashboard.json](https://raw.githubusercontent.com/yaroslaff/glpi-grafana-exporter/refs/heads/master/demo/dashboard.json) to create dashboard in Grafana (or Grafana Cloud)
