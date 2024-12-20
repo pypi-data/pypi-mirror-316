@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+anygen/__init__.py
+anygen/anygen.py
+anygen.egg-info/PKG-INFO
+anygen.egg-info/SOURCES.txt
+anygen.egg-info/dependency_links.txt
+anygen.egg-info/requires.txt
+anygen.egg-info/top_level.txt
+tests/test_anygen.py
