@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+ip2loaction.egg-info/PKG-INFO
+ip2loaction.egg-info/SOURCES.txt
+ip2loaction.egg-info/dependency_links.txt
+ip2loaction.egg-info/requires.txt
+ip2loaction.egg-info/top_level.txt
+ip2location/__init__.py
+ip2location/db.py
+ip2location/ip.db3
+ip2location/ip2region.xdb
+ip2location/xdbSearcher.py
