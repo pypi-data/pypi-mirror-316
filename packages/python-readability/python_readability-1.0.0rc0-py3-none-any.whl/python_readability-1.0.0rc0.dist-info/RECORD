@@ -1,0 +1,16 @@
+python_readability-1.0.0rc0.dist-info/METADATA,sha256=vdUWxTSELq8Ryixx9bSl6oMmWZqiLQN-IhlTtcG-5Hc,1482
+python_readability-1.0.0rc0.dist-info/WHEEL,sha256=thaaA2w1JzcGC48WYufAs8nrYZjJm8LqNfnXFOFyCC4,90
+python_readability-1.0.0rc0.dist-info/entry_points.txt,sha256=6OYgBcLyFCUgeqLgnvMyOJxPCWzgy7se4rLPKtNonMs,34
+readability/__init__.py,sha256=QHmtSZemtIh84_1zbYuP6d5Ulkq5k-GzdpsqbAAzFu0,96
+readability/api/parse.py,sha256=XPUb0X2UydyOaDJNtI2sr-zHFJhQ6KlEIO-3Fg_MLpQ,3729
+readability/impl/__init__.py,sha256=Dort1svy0BaTOjcH5PFhrBCivYfWfjm5GC-WA75JlRo,436
+readability/impl/common.py,sha256=HK2dNXk5DROJHAmbbx1x3FvxDcbLKoKrWwYQ5rQEvC8,209
+readability/impl/mini_racer.py,sha256=NJ-nluAWg6TYlVUAd0fWSMs76p8uQJfBgE4Vy055-8Q,563
+readability/impl/node_subprocess.py,sha256=tcBTBpC-R7pQ5SSDb7a-R7I2P2jRdnWE15fwS3ExBFc,1436
+readability/impl/parse.cjs,sha256=p1lCGNv459wobZ5i05lUFzzfe0Kj35MehUold5CUHYo,486284
+readability/impl/pyodide.py,sha256=eLxK_KumGJXCqnZdev6BtgHaicLdR6vQYknfxyz-rdc,305
+readability/impl/pythonmonkey.py,sha256=5-hOytRpmeXeytYWCtjYZqI2Q_Lrloz0P9IMPbPZw-I,354
+readability/impl/stdio-worker.js,sha256=jkeHOP_cEwzVkVW6KdyvrO3ivFlHfp-bxcX_i5Ffkow,953
+readability/impl/stpyv8.py,sha256=idf4gRHj3FhYkrbV-8bOsLk5LQj69VXY9JSDnVhetbs,264
+readability/utils/cases.py,sha256=7_Ca_9AxaJNzasnK2onY1NASFJL82iKLyKKCgGtBfkg,495
+python_readability-1.0.0rc0.dist-info/RECORD,,
