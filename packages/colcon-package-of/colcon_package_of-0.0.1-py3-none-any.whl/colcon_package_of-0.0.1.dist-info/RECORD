@@ -1,0 +1,10 @@
+colcon_package_of/__init__.py,sha256=tFAV8PInRevTMwN4QGjRgh40NnRW88ljT6VwZ5wQJi0,101
+colcon_package_of/verb/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+colcon_package_of/verb/package_of.py,sha256=xejOStAiKk7BOnLut0BFBsoBqAK_PooNXUSxP9e-uH0,8681
+colcon_package_of-0.0.1.dist-info/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+colcon_package_of-0.0.1.dist-info/METADATA,sha256=en5LbT4FfQw8Qi9A7su1lCtYSw_j7NW9w1CRmlvTuhs,1645
+colcon_package_of-0.0.1.dist-info/WHEEL,sha256=tZoeGjtWxWRfdplE7E3d45VPlLNQnvbKiYnx7gwAy8A,92
+colcon_package_of-0.0.1.dist-info/entry_points.txt,sha256=QhEq3pxBblGELmIve6TZqEoyKXMu9YW7ExrXQYWE05Q,81
+colcon_package_of-0.0.1.dist-info/top_level.txt,sha256=fbPh2u6TopCd7H8n_vuMocABhlqdzluOQa4STwxOgjQ,18
+colcon_package_of-0.0.1.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+colcon_package_of-0.0.1.dist-info/RECORD,,
