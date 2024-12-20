@@ -1,0 +1,3 @@
+[console_scripts]
+parquet-viewer = pv:main
+pv = pv:main
