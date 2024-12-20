@@ -1,0 +1,4 @@
+[console_scripts]
+zap=zapman.__main__:main
+zapx=zapman.__main__:main
+
