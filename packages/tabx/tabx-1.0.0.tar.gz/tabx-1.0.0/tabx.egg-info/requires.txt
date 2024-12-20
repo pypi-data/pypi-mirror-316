@@ -1,0 +1,12 @@
+opencv-python
+numpy
+pandas
+pytesseract
+doctr
+camelot-py[cv]
+tabula-py
+openpyxl
+transformers
+torch
+pillow
+pdf2image

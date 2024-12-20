@@ -1,0 +1,11 @@
+README.md
+setup.py
+hdi/__init__.py
+hdi/extractors.py
+hdi/models.py
+hdi/utils.py
+tabx.egg-info/PKG-INFO
+tabx.egg-info/SOURCES.txt
+tabx.egg-info/dependency_links.txt
+tabx.egg-info/requires.txt
+tabx.egg-info/top_level.txt
