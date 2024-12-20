@@ -1,0 +1,137 @@
+Metadata-Version: 2.1
+Name: bangla-ipa
+Version: 0.1
+Summary: A Python module for generating Bangla IPA transliterations.
+Home-page: https://github.com/bipsec/IPA-PyPI
+Author: Biplab Kumar Sarkar, Afrar Jahin, Asif Shusmit
+Author-email: bip.sec22@gmail.com
+License: MIT
+Keywords: python,IPA,Bangla IPA,International Phonetic Alphabet,Bangla linguistics,transliteration
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: certifi==2024.8.30
+Requires-Dist: chardet==3.0.4
+Requires-Dist: charset-normalizer==3.3.2
+Requires-Dist: colorama==0.4.6
+Requires-Dist: docutils==0.21.2
+Requires-Dist: filelock==3.15.4
+Requires-Dist: fsspec==2024.9.0
+Requires-Dist: googletrans==3.0.0
+Requires-Dist: h11==0.9.0
+Requires-Dist: h2==3.2.0
+Requires-Dist: hpack==3.0.0
+Requires-Dist: hstspreload==2024.9.1
+Requires-Dist: httpcore==0.9.1
+Requires-Dist: httpx==0.13.3
+Requires-Dist: hyperframe==5.2.0
+Requires-Dist: idna==2.10
+Requires-Dist: jaraco.classes==3.4.0
+Requires-Dist: jaraco.context==6.0.1
+Requires-Dist: jaraco.functools==4.1.0
+Requires-Dist: Jinja2==3.1.4
+Requires-Dist: keyring==25.5.0
+Requires-Dist: markdown-it-py==3.0.0
+Requires-Dist: MarkupSafe==2.1.5
+Requires-Dist: mdurl==0.1.2
+Requires-Dist: more-itertools==10.5.0
+Requires-Dist: mpmath==1.3.0
+Requires-Dist: networkx==3.3
+Requires-Dist: nh3==0.2.20
+Requires-Dist: numpy==2.1.1
+Requires-Dist: packaging==24.2
+Requires-Dist: pandas==2.2.2
+Requires-Dist: pkginfo==1.12.0
+Requires-Dist: Pygments==2.18.0
+Requires-Dist: python-dateutil==2.9.0.post0
+Requires-Dist: pytz==2024.1
+Requires-Dist: pywin32-ctypes==0.2.3
+Requires-Dist: readme_renderer==44.0
+Requires-Dist: requests==2.32.3
+Requires-Dist: requests-toolbelt==1.0.0
+Requires-Dist: rfc3986==1.5.0
+Requires-Dist: rich==13.9.4
+Requires-Dist: sentencepiece==0.2.0
+Requires-Dist: setuptools==74.1.2
+Requires-Dist: six==1.16.0
+Requires-Dist: sniffio==1.3.1
+Requires-Dist: sympy==1.13.2
+Requires-Dist: torch==2.4.1
+Requires-Dist: torchdata==0.7.1
+Requires-Dist: torchtext==0.6.0
+Requires-Dist: tqdm==4.66.5
+Requires-Dist: twine==6.0.1
+Requires-Dist: typing_extensions==4.12.2
+Requires-Dist: tzdata==2024.1
+Requires-Dist: urllib3==2.2.2
+
+# BanglaToIPA Conversion
+
+BanglaToIPA is a Python package designed to transcribe Bengali words into the International Phonetic Alphabet (IPA). This tool simplifies the pronunciation of Bengali words, making it easier for people worldwide who are familiar with IPA to accurately pronounce them.
+## Installation
+
+You can install the BanglaToIPA package using pip:
+
+```shell
+pip install bangla-ipa
+```
+
+## File Structure
+```sh
+IPA/
+├── ipa/
+│   ├── __init__.py
+│   ├── ipa.py
+├── model/
+│   ├── ipa_model.pth
+├── data/
+│   │   ├── ipa_vocab_data
+├── script/
+│   │   ├── __init__.py
+│   │   ├── translator.py
+├── tests/
+│   │   ├── __init__.py
+│   │   ├── test_bangla_ipa.py
+├── __init__.py
+├── .gitignore
+├── LICENSE
+├── setup.py
+├── README.md
+└── requirements.txt
+```
+
+
+## Usage
+
+Here's an example of how to use the BanglaDictionary package:
+
+```python
+# Create an instance of the BanglaDictionary
+from ipa.ipa import BanglaIPATranslator
+ipa = BanglaIPATranslator()
+
+# Get the meaning of a word
+translated_ipa = ipa.translate("মহারাজ") # Output: "mɔharaɟ"
+```
+
+## Data Source
+
+The data used by the BanglaToIPA package is sourced from private annotated corpus for bengali letters and their appropriate form of IPA. It is carefully curated and validated from multiple resources before training and generating the model for transcribing IPA for bengali words.
+
+## Contributing
+If you find any issues or would like to contribute to the BanglaToIPA package, please feel free to open an issue or submit a pull request on the GitHub repository. Feel free to create issues to contact.
+
+
+## License
+The BanglaToIPA package is released under the MIT License. You are free to use, modify, and distribute this package in your own projects.
+
