@@ -1,0 +1,9 @@
+setup.py
+validator.py
+FundaDeliverSample.egg-info/PKG-INFO
+FundaDeliverSample.egg-info/SOURCES.txt
+FundaDeliverSample.egg-info/dependency_links.txt
+FundaDeliverSample.egg-info/entry_points.txt
+FundaDeliverSample.egg-info/requires.txt
+FundaDeliverSample.egg-info/top_level.txt
+pyarmor_runtime_000000/__init__.py
