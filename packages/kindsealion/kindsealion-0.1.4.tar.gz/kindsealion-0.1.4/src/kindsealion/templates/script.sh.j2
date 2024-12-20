@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+{% block bash_options %}
+set -e
+set -u
+set -x
+{% endblock %}
+
+{% block commands %}
+{% endblock %}
+
+{{ script_content }}

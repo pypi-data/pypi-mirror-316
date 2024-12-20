@@ -1,0 +1,123 @@
+cloud_init: |
+  #cloud-config
+  package:
+  - curl
+  bootcmd:
+  - echo "Hello, World from bootcmd.  The time is now $(date -R)!"
+  write_files:
+  - content: |
+      # https://netplan.readthedocs.io/en/stable/examples/#how-to-configure-dns-servers-and-search-domains
+      network:
+        version: 2
+        ethernets:
+          ens5:
+            nameservers:
+              addresses:
+              - 8.8.8.8
+              - 8.8.4.4
+    path: /etc/netplan/99-custom-dns.yaml
+    append: true
+manifests:
+  - name: wacky_pickle
+    script_content: |
+      apt_update_with_retry() {
+          max_retries=5
+          retry_delay=10
+
+          for ((i = 1; i <= max_retries; i++)); do
+              sudo apt-get update && break
+              if [ $i -eq $max_retries ]; then
+                  echo "Failed to run apt update after $max_retries attempts. Exiting."
+                  exit 1
+              fi
+              echo "apt update failed. Retrying in $retry_delay seconds... (Attempt $i/$max_retries)"
+              sleep $retry_delay
+          done
+      }
+
+      apt_update_with_retry
+
+  - name: sprightly_squirrel
+    cloud_init: |
+      #cloud-config
+      write_files:
+      - content: |
+          #!/bin/bash
+          echo "Hello World from per-boot.  The time is now $(date -R)!"
+        path: /var/lib/cloud/scripts/per-boot/myScript.sh
+        permissions: "0755"
+    script_content: |
+  - name: mirthful_meerkat
+    script_content: |
+      echo mirthful_meerkat
+  - name: goofy_giraffe
+    script_content: |
+      apt-get --assume-yes install curl
+  - name: bubbly_baboon
+    script_content: |
+      apt-get --assume-yes install mlocate
+  - name: silly_goose
+    script_content: |
+      sh -c "$(curl --location https://taskfile.dev/install.sh)" -- -d -b /usr/local/bin
+      /usr/local/bin/task --version
+  - name: quirky_penguin
+    script_content: |
+      apt-get --assume-yes install git
+  - name: jaunty_jaguar
+    script_content: |
+      task --dir=/opt/ringgem install-jq-on-linux
+  - name: giddy_gazelle
+    script_content: |
+      apt-get --assume-yes install bash-completion
+  - name: perky_porcupine
+    script_content: |
+      task --dir=/opt/ringgem install-go-task-bash-completion-on-linux
+  - name: merry_manatee
+    script_content: |
+      task --dir=/opt/ringgem configure-homebrew-on-linux
+  - name: sassy_seahorse
+    script_content: |
+      sudo --login --user linuxbrew brew install rye
+  - name: bouncy_butterfly
+    script_content: |
+      sudo --login --user linuxbrew brew install taylormonacelli/homebrew-tools/itmetrics
+  - name: whimsical_walrus
+    script_content: |
+      task --dir=/opt/ringgem install-txtar-on-linux
+      sudo --login --user linuxbrew brew install golang
+      task --dir=/opt/ringgem install-nix-on-linux
+      task --dir=/opt/ringgem install-devbox-on-linux
+      task --dir=/opt/ringgem install-elasticsearch-on-ubuntu
+      task --dir=/opt/ringgem install-kibana-on-ubuntu
+  - name: kooky_kangaroo
+    script_content: |
+  - name: cheeky_chimpanzee
+    script_content: |
+  - name: playful_platypus
+    script_content: |
+  - name: jolly_jellyfish
+    script_content: |
+  - name: frisky_flamingo
+    script_content: |
+  - name: zippy_zebra
+    script_content: |
+  - name: bouncy_butterfly
+    script_content: |
+  - name: chirpy_chipmunk
+    script_content: |
+  - name: lively_lemur
+    script_content: |
+  - name: spunky_sparrow
+    script_content: |
+  - name: funky_llama
+    script_content: |
+  - name: frisky_flamingo
+    script_content: |
+  - name: joyful_jackrabbit
+    script_content: |
+  - name: gleeful_gorilla
+    script_content: |
+  - name: mischievous_monkey
+    script_content: |
+  - name: vibrant_vulture
+    script_content: |
