@@ -1,0 +1,6 @@
+exclude .git-blame-ignore-revs
+include *.rst
+include *.yaml
+include Makefile
+include tox.ini
+recursive-include src *.js
