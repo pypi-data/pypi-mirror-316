@@ -1,0 +1,560 @@
+-- manifest.yml --
+cloud_init: |
+  #cloud-config
+  package:
+  - curl
+  bootcmd:
+  - echo "Hello, World from bootcmd.  The time is now $(date -R)!"
+  write_files:
+  - content: |
+      # https://netplan.readthedocs.io/en/stable/examples/#how-to-configure-dns-servers-and-search-domains
+      network:
+        version: 2
+        ethernets:
+          ens5:
+            nameservers:
+              addresses:
+              - 8.8.8.8
+              - 8.8.4.4
+    path: /etc/netplan/99-custom-dns.yaml
+    append: true
+manifests:
+  - name: wacky_pickle
+    script_content: |
+      apt_update_with_retry() {
+          max_retries=5
+          retry_delay=10
+
+          for ((i = 1; i <= max_retries; i++)); do
+              sudo apt-get update && break
+              if [ $i -eq $max_retries ]; then
+                  echo "Failed to run apt update after $max_retries attempts. Exiting."
+                  exit 1
+              fi
+              echo "apt update failed. Retrying in $retry_delay seconds... (Attempt $i/$max_retries)"
+              sleep $retry_delay
+          done
+      }
+
+      apt_update_with_retry
+
+  - name: sprightly_squirrel
+    cloud_init: |
+      #cloud-config
+      write_files:
+      - content: |
+          #!/bin/bash
+          echo "Hello World from per-boot.  The time is now $(date -R)!"
+        path: /var/lib/cloud/scripts/per-boot/myScript.sh
+        permissions: "0755"
+    script_content: |
+  - name: mirthful_meerkat
+    script_content: |
+      echo mirthful_meerkat
+  - name: goofy_giraffe
+    script_content: |
+      apt-get --assume-yes install curl
+  - name: bubbly_baboon
+    script_content: |
+      apt-get --assume-yes install mlocate
+  - name: silly_goose
+    script_content: |
+      sh -c "$(curl --location https://taskfile.dev/install.sh)" -- -d -b /usr/local/bin
+      /usr/local/bin/task --version
+  - name: quirky_penguin
+    script_content: |
+      apt-get --assume-yes install git
+  - name: jaunty_jaguar
+    script_content: |
+      task --dir=/opt/ringgem install-jq-on-linux
+  - name: giddy_gazelle
+    script_content: |
+      apt-get --assume-yes install bash-completion
+  - name: perky_porcupine
+    script_content: |
+      task --dir=/opt/ringgem install-go-task-bash-completion-on-linux
+  - name: merry_manatee
+    script_content: |
+      task --dir=/opt/ringgem configure-homebrew-on-linux
+  - name: sassy_seahorse
+    script_content: |
+      sudo --login --user linuxbrew brew install rye
+  - name: bouncy_butterfly
+    script_content: |
+      sudo --login --user linuxbrew brew install taylormonacelli/homebrew-tools/itmetrics
+  - name: whimsical_walrus
+    script_content: |
+      task --dir=/opt/ringgem install-txtar-on-linux
+      sudo --login --user linuxbrew brew install golang
+      task --dir=/opt/ringgem install-nix-on-linux
+      task --dir=/opt/ringgem install-devbox-on-linux
+      task --dir=/opt/ringgem install-elasticsearch-on-ubuntu
+      task --dir=/opt/ringgem install-kibana-on-ubuntu
+  - name: kooky_kangaroo
+    script_content: |
+  - name: cheeky_chimpanzee
+    script_content: |
+  - name: playful_platypus
+    script_content: |
+  - name: jolly_jellyfish
+    script_content: |
+  - name: frisky_flamingo
+    script_content: |
+  - name: zippy_zebra
+    script_content: |
+  - name: bouncy_butterfly
+    script_content: |
+  - name: chirpy_chipmunk
+    script_content: |
+  - name: lively_lemur
+    script_content: |
+  - name: spunky_sparrow
+    script_content: |
+  - name: funky_llama
+    script_content: |
+  - name: frisky_flamingo
+    script_content: |
+  - name: joyful_jackrabbit
+    script_content: |
+  - name: gleeful_gorilla
+    script_content: |
+  - name: mischievous_monkey
+    script_content: |
+  - name: vibrant_vulture
+    script_content: |
+-- src/kindsealion/__init__.py --
+from . import main2
+
+__project_name__ = "kindsealion"
+
+
+def main() -> int:
+    main2.main()
+    return 0
+-- src/kindsealion/__main__.py --
+import sys
+
+import kindsealion
+
+sys.exit(kindsealion.main())
+-- src/kindsealion/main2.py --
+import dataclasses
+import logging
+import pathlib
+import typing
+import urllib.error
+import urllib.parse
+import urllib.request
+
+import jinja2
+import networkx
+import ruamel.yaml
+
+from .parse_args import parse_args
+
+ringgem_tpl = pathlib.Path("ringgem.sh.j2")
+
+
+def get_template(template_name):
+    TEMPLATES_PATH = pathlib.Path(__file__).resolve().parent / "templates"
+    loader = jinja2.FileSystemLoader(searchpath=TEMPLATES_PATH)
+    env = jinja2.Environment(loader=loader, keep_trailing_newline=True)
+    return env.get_template(template_name)
+
+
+def render_template(template_name, **kwargs):
+    template = get_template(template_name)
+    return template.render(**kwargs)
+
+
+@dataclasses.dataclass
+class Builder:
+    name: str
+    script_content: ruamel.yaml.scalarstring.PreservedScalarString
+    script: str = ""
+    image: str = ""
+    output_image: str = ""
+    task: str = ""
+    packer_file: str = ""
+    deps: list = dataclasses.field(default_factory=list)
+    cloud_init_file: str = ""
+    cloud_init: str = ""
+
+
+def build_dependency_tree(manifests):
+    G = networkx.DiGraph()
+    for i, manifest in enumerate(manifests):
+        G.add_node(manifest.name)
+        if i > 0:
+            G.add_edge(manifests[i - 1].name, manifest.name)
+    return G
+
+
+def load_manifest_data(
+    manifest_path: typing.Union[str, pathlib.Path],
+) -> typing.Dict[typing.Any, typing.Any]:
+    if not manifest_path:
+        raise ValueError("Manifest path cannot be empty")
+
+    yaml_parser = ruamel.yaml.YAML(typ="safe")
+
+    parsed_url = urllib.parse.urlparse(str(manifest_path))
+    is_url = parsed_url.scheme in ("http", "https")
+
+    try:
+        if is_url:
+            with urllib.request.urlopen(manifest_path) as response:
+                return yaml_parser.load(response)
+        else:
+            path = pathlib.Path(manifest_path)
+            with path.open("r", encoding="utf-8") as file:
+                return yaml_parser.load(file)
+
+    except FileNotFoundError:
+        raise FileNotFoundError(f"Manifest file not found: {manifest_path}")
+    except urllib.error.URLError as e:
+        raise urllib.error.URLError(f"Failed to fetch manifest from URL: {e}")
+    except ruamel.yaml.YAMLError as e:
+        raise ruamel.yaml.YAMLError(f"Failed to parse YAML content: {e}")
+
+
+def create_manifests(data, starting_image):
+    all_manifests = []
+    for i, item in enumerate(data["manifests"]):
+        script_content = item.get("script_content", "")
+        if script_content:
+            script_content = ruamel.yaml.scalarstring.PreservedScalarString(
+                script_content
+            )
+        manifest = Builder(
+            name=item["name"],
+            script_content=script_content,
+            cloud_init=item.get("cloud_init", ""),
+        )
+        prefix = f"{i:03d}_{manifest.name}"
+        manifest.script = f"{prefix}.sh"
+        manifest.output_image = prefix
+        manifest.task = prefix
+        manifest.packer_file = f"{prefix}.pkr.hcl"
+        manifest.cloud_init_file = f"{prefix}-cloud-init.yml"
+        if i == 0:
+            manifest.image = starting_image
+        else:
+            manifest.image = all_manifests[-1].output_image
+        all_manifests.append(manifest)
+    return all_manifests
+
+
+def filter_manifests(all_manifests):
+    return [m for m in all_manifests if m.script_content or m.cloud_init]
+
+
+def update_manifest_dependencies(manifests, dependency_tree):
+    manifests_by_name = {m.name: m for m in manifests}
+    for manifest in manifests:
+        parent = list(dependency_tree.predecessors(manifest.name))
+        if parent:
+            manifest.deps.append(manifests_by_name[parent[0]].task)
+
+
+def process_manifest(manifest, outdir, skip_publish, data):
+    logging.info(
+        f"Processing manifest: {manifest.name}\n"
+        f"Script: {manifest.script}\n"
+        f"Image: {manifest.image}\n"
+        f"Output Image: {manifest.output_image}\n\n"
+    )
+    script_path = outdir / f"{manifest.script}"
+    with script_path.open("w") as script_file:
+        rendered_script = render_template(
+            "script.sh.j2", script_content=manifest.script_content
+        )
+        script_file.write(rendered_script)
+    packer_path = outdir / manifest.packer_file
+    with packer_path.open("w") as packer_file:
+        rendered_packer = render_template(
+            "ubuntu.pkr.hcl",
+            image=manifest.image,
+            output_image=manifest.output_image,
+            script=manifest.script,
+            ringgem=ringgem_tpl.with_suffix("").name,
+            skip_publish="true" if skip_publish else "false",
+            cloud_init=manifest.cloud_init_file,
+        )
+        packer_file.write(rendered_packer)
+
+    cloud_init_content = data.get("cloud_init", "")
+    if manifest.cloud_init:
+        cloud_init_content = manifest.cloud_init
+
+    if cloud_init_content:
+        cloud_init_path = outdir / manifest.cloud_init_file
+        with cloud_init_path.open("w") as cloud_init_file:
+            cloud_init_file.write(cloud_init_content)
+
+
+def write_taskfile(outdir, manifests, dependency_tree, manifests_by_name):
+    taskfile_path = outdir / "Taskfile.yml"
+    with taskfile_path.open("w") as taskfile:
+        rendered_taskfile = render_template(
+            "Taskfile.yml.j2",
+            manifests=manifests,
+            dependency_tree=dependency_tree,
+            manifests_by_name=manifests_by_name,
+        )
+        rendered_taskfile = rendered_taskfile.strip()
+        taskfile.write(rendered_taskfile + "\n")
+
+
+def write_ringgem_update(outdir):
+    bash = ringgem_tpl.with_suffix("")
+    name = str(ringgem_tpl)
+    out = outdir / bash
+    with out.open("w") as f:
+        u = render_template(name, ringgem=bash)
+        f.write(u)
+
+
+def write_dns(outdir):
+    dns_path = outdir / "dns.sh"
+    with dns_path.open("w") as ringgem:
+        r = render_template(
+            "dns.sh.j2",
+        )
+        ringgem.write(r)
+
+
+def configure_logging(verbose):
+    log_level = logging.DEBUG if verbose else logging.INFO
+    logging.basicConfig(level=log_level, format="%(levelname)s: %(message)s")
+
+
+def main():
+    args = parse_args()
+    outdir = args.outdir
+    starting_image = args.starting_image
+    skip_publish = args.skip_publish
+    manifest_url = args.manifest_url
+    verbose = args.verbose
+
+    configure_logging(verbose)
+
+    data = load_manifest_data(manifest_url)
+    all_manifests = create_manifests(data, starting_image)
+    manifests = filter_manifests(all_manifests)
+    dependency_tree = build_dependency_tree(manifests)
+    update_manifest_dependencies(manifests, dependency_tree)
+
+    outdir.mkdir(parents=True, exist_ok=True)
+    for manifest_name in networkx.topological_sort(dependency_tree):
+        manifest = next(m for m in manifests if m.name == manifest_name)
+        process_manifest(manifest, outdir, skip_publish, data)
+
+    manifests_by_name = {m.name: m for m in manifests}
+    write_taskfile(outdir, manifests, dependency_tree, manifests_by_name)
+    write_ringgem_update(outdir)
+    write_dns(outdir)
+
+
+if __name__ == "__main__":
+    main()
+-- src/kindsealion/parse_args.py --
+import argparse
+import pathlib
+
+DEFAULT_MANIFEST_URL = (
+    "https://raw.githubusercontent.com/taylormonacelli/kindsealion/master/manifest.yml"
+)
+
+
+def parse_args():
+    parser = argparse.ArgumentParser()
+    parser.add_argument(
+        "--outdir",
+        type=pathlib.Path,
+        help="Output directory",
+        default="rendered",
+    )
+    parser.add_argument(
+        "-s",
+        "--starting-image",
+        type=str,
+        help="Starting image for the first manifest",
+        default="images:ubuntu/20.04/cloud",
+    )
+    parser.add_argument(
+        "--skip-publish",
+        action="store_true",
+        help="Skip publishing the output image",
+    )
+    parser.add_argument(
+        "-m",
+        "--manifest-url",
+        type=str,
+        help=f"URL or file path of the manifest.yml (default: {DEFAULT_MANIFEST_URL})",
+        default=DEFAULT_MANIFEST_URL,
+    )
+    parser.add_argument(
+        "-v",
+        "--verbose",
+        action="store_true",
+        help="Enable verbose logging",
+    )
+    return parser.parse_args()
+-- src/kindsealion/templates/Taskfile.yml.j2 --
+version: '3'
+
+output: prefixed
+
+tasks:
+  {% for manifest in manifests %}
+  {{- manifest.task }}:
+    cmds:
+      - packer init {{ manifest.packer_file }}
+      - packer build {{ manifest.packer_file }}
+    {%- if manifest.deps %}
+    deps:
+      {%- for dep in manifest.deps %}
+      - {{ dep }}
+      {%- endfor %}
+    {%- endif %}
+    status:
+      - incus image info {{ manifest.task }} &>/dev/null
+  {% endfor %}
+-- src/kindsealion/templates/base.j2 --
+I am base.j2
+{% block content %}base
+{% endblock %}
+-- src/kindsealion/templates/dns.sh.j2 --
+wait_for_dns() {
+    start_time=$(date +%s)
+    timeout=180
+
+    while true; do
+        if ping -c 1 google.com &> /dev/null; then
+            echo "Ping successful. Exiting with status 0."
+            return 0
+        fi
+
+        current_time=$(date +%s)
+        elapsed_time=$((current_time - start_time))
+
+        if [ $elapsed_time -ge $timeout ]; then
+            echo "Ping failed for 3 minutes. Exiting with status 1."
+            return 1
+        fi
+
+        sleep 1
+    done
+}
+
+if ! wait_for_dns; then
+    echo "couldn't ping google.com, but we need dns to be availble, exitting"
+    exit 1
+fi
+-- src/kindsealion/templates/extended.j2 --
+{% extends 'base.j2' %}
+{% block content %}I am extended.j2
+{% endblock %}
+-- src/kindsealion/templates/ringgem.sh.j2 --
+{% extends 'script.sh.j2' %}
+
+{% block commands %}
+echo running script:{{ ringgem }}
+
+{% block wait_for_dns %}
+{% include 'dns.sh.j2' %}
+{% endblock %}
+
+if ! command -v git &>/dev/null; then
+    echo git is not installed, exiting
+    exit 0
+fi
+
+mkdir -p /opt/ringgem
+cd /opt/ringgem
+
+git init
+git config user.email "you@example.com"
+git config user.name "Your Name"
+
+if ! git remote get-url origin &>/dev/null; then
+    git remote add origin https://github.com/taylormonacelli/ringgem.git
+fi
+
+git fetch --depth 1
+
+if ! git rev-parse --verify master &>/dev/null; then
+    git checkout -b master origin/master
+fi
+
+git branch --set-upstream-to=origin/master master
+git log --pretty=format:'%h%d %ar %s' --reverse -20
+{% endblock %}
+-- src/kindsealion/templates/script.sh.j2 --
+#!/usr/bin/env bash
+
+{% block bash_options %}
+set -e
+set -u
+set -x
+{% endblock %}
+
+{% block commands %}
+{% endblock %}
+
+{{ script_content }}
+-- src/kindsealion/templates/ubuntu.pkr.hcl --
+packer {
+ required_plugins {
+   incus = {
+     version = ">= 1.0.0"
+     source  = "github.com/bketelsen/incus"
+   }
+   ansible = {
+     version = "~> 1"
+     source = "github.com/hashicorp/ansible"
+   }
+ }
+}
+
+source "incus" "jammy" {
+ image        = "{{ image }}"
+ output_image = "{{ output_image }}"
+ container_name = "kindsealion"
+ reuse        = true
+ skip_publish = {{ skip_publish }}
+}
+
+build {
+  sources = ["incus.jammy"]
+
+  provisioner "file" {
+    source      = "{{ ringgem }}"
+    destination = "/var/lib/cloud/scripts/per-boot/{{ ringgem }}"
+    max_retries = 10
+  }
+  provisioner "shell" {
+    inline = [
+      "chmod +x /var/lib/cloud/scripts/per-boot/{{ ringgem }}",
+    ]
+  }
+
+  provisioner "file" {
+    source      = "{{ cloud_init }}"
+    destination = "/etc/cloud/cloud.cfg.d/custom-cloud-init.cfg"
+    max_retries = 10
+  }
+
+  provisioner "shell" {
+    inline = [
+      "cloud-init status --wait",
+    ]
+  }
+
+  provisioner "shell" {
+    scripts = [
+      "{{ script }}",
+    ]
+  }
+}

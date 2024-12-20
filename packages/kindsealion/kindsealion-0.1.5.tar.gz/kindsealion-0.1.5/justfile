@@ -1,0 +1,32 @@
+set shell := ["bash", "-uec"]
+
+shell_files := `find . -name .git -prune -o -name '*.sh' -print | tr '\n' ' '`
+
+[group('maint')]
+default:
+    @just --list
+
+[group('maint')]
+pre-commit:
+    pre-commit sample-config >.pre-commit-config.yaml
+    pre-commit install --config .pre-commit-config.yaml
+    git add .pre-commit-config.yaml
+    pre-commit run --all-files
+
+# Checks if the git working directory is clean
+check-git-status:
+    #!/usr/bin/env bash
+    git status --porcelain || exit 0
+    echo "Error: Git working directory is not clean. Please commit or stash your changes first."
+    exit 1
+
+[group('maint')]
+fmt:
+    test -z "{{ shell_files }}" || shfmt -w -s -i 4 {{ shell_files }}
+    terraform fmt -recursive .
+    prettier --ignore-path=.prettierignore --config=.prettierrc.json --write .
+    just --unstable --fmt
+
+[group('lint')]
+lint:
+    test -z "{{ shell_files }}" || shellcheck {{ shell_files }}
