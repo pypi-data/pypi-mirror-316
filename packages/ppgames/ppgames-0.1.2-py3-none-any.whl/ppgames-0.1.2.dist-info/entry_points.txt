@@ -1,0 +1,2 @@
+[console_scripts]
+ppgames = ppgames.game:run
