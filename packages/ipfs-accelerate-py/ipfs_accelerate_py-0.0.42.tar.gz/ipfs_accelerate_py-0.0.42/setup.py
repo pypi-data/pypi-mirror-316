@@ -1,0 +1,41 @@
+from setuptools import setup, find_packages
+
+setup(
+	name='ipfs_accelerate_py',
+	version='0.0.41',
+	packages=find_packages(),
+	install_requires=[
+		'ipfs_kit_py',
+		'sentence_transformers',
+		'transformers',
+		'transformers>=4.36',
+		'ipfs_transformers_py',
+		'ipfs_model_manager_py',
+		'torch',
+		'torchvision',
+		'numpy',
+		'torchtext',
+		'urllib3',
+		'requests',
+		'boto3',
+		'trio',
+		'InstructorEmbedding',
+		'FlagEmbedding',
+		'llama-cpp-python',
+		'gguf',
+		'optimum',
+		# "git+https://github.com/huggingface/optimum-intel.git --extra-index-url https://download.pytorch.org/whl/cpu",
+		'optimum[openvino]',
+		'toml',
+		'pydantic',
+		'einops',
+		'timm',
+		'flash-attn',
+		'openvino>=2024.5',
+		'openvino-tokenizers>=2024.5',
+		'openvino-genai>=2024.5',
+		'Pillow',
+		'nncf>=2.14.0',
+		'optimum[exporters]'
+	]
+)
