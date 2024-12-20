@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: working_ujson
+Version: 0.0.1
+Summary: Working with file package
+Requires: ujson
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+
+ujson bilan ishlaydigan kutubxona
+
+```
+
+data = {
+    'name': 'valijon'
+}
+
+filename = 'data.json'
+
+write_json(filename, data)
+
+```

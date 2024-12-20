@@ -1,0 +1,8 @@
+README.md
+setup.py
+files/__init__.py
+files/operations.py
+working_ujson.egg-info/PKG-INFO
+working_ujson.egg-info/SOURCES.txt
+working_ujson.egg-info/dependency_links.txt
+working_ujson.egg-info/top_level.txt
