@@ -1,0 +1,113 @@
+"""
+Geek Cafe, LLC
+Maintainers: Eric Wilson
+MIT License.  See Project Root for the license information.
+"""
+
+import unittest
+from typing import Dict
+from boto3_assist.models.serializable_model import SerializableModel
+
+
+class ExampleModel(SerializableModel):
+    """A model that inherits the serializable"""
+
+    def __init__(self, name: str = "", age: int = 0, active: bool = False):
+        self.name = name
+        self.age = age
+        self.active = active
+
+
+class TestSerializableModel(unittest.TestCase):
+    """Testing Serialzing Models"""
+
+    def setUp(self) -> None:
+        self.source_dict: Dict[str, any] = {
+            "name": "John Doe",
+            "age": 30,
+            "active": True,
+        }
+
+        self.target_object = ExampleModel()
+
+    def test_map_valid_data(self):
+        """
+        Test mapping a valid dictionary to an object instance.
+        """
+        result = ExampleModel.map(self.source_dict, self.target_object)
+
+        self.assertEqual(result.name, "John Doe")
+        self.assertEqual(result.age, 30)
+        self.assertEqual(result.active, True)
+
+    def test_map_partial_data(self):
+        """
+        Test mapping a dictionary with partial data.
+        """
+        partial_dict = {"name": "Jane Doe"}
+        result = ExampleModel.map(partial_dict, self.target_object)
+
+        self.assertEqual(result.name, "Jane Doe")
+        self.assertEqual(result.age, 0)  # Default value
+        self.assertEqual(result.active, False)  # Default value
+
+    def test_map_empty_data(self):
+        """
+        Test mapping an empty dictionary.
+        """
+        empty_dict = {}
+        result = ExampleModel.map(empty_dict, self.target_object)
+
+        self.assertEqual(result.name, "")  # Default value
+        self.assertEqual(result.age, 0)  # Default value
+        self.assertEqual(result.active, False)  # Default value
+
+    def test_map_invalid_data(self):
+        """
+        Test mapping a dictionary with invalid data types.
+        """
+        invalid_dict = {"name": 123, "age": "thirty", "active": "yes"}
+
+        with self.assertRaises(ValueError):
+            ExampleModel.map(invalid_dict, self.target_object, coerce=False)
+
+    def test_map_invalid_data_coerce_with_failure(self):
+        """
+        Test mapping a dictionary with invalid data types.
+        """
+        invalid_dict = {"name": 123, "age": "thirty", "active": "yes"}
+
+        result = ExampleModel.map(invalid_dict, self.target_object)
+
+        self.assertEqual(result.name, "123")
+        # currently we're allowing this to happen
+        self.assertEqual(result.age, "thirty")
+        self.assertEqual(result.active, True)
+
+    def test_map_invalid_data_coerce(self):
+        """
+        Test mapping a dictionary with invalid data types.
+        """
+        invalid_dict = {"name": 123, "age": 30, "active": "yes"}
+
+        result = ExampleModel.map(invalid_dict, self.target_object)
+
+        self.assertEqual(result.name, "123")
+        self.assertEqual(result.age, 30)
+        self.assertEqual(result.active, True)
+
+    def test_map_non_dict_source(self):
+        """
+        Test mapping from a non-dictionary source object.
+        """
+        source_object = ExampleModel(name="Alice", age=25, active=True)
+
+        result = ExampleModel.map(source_object, self.target_object)
+
+        self.assertEqual(result.name, "Alice")
+        self.assertEqual(result.age, 25)
+        self.assertEqual(result.active, True)
+
+
+if __name__ == "__main__":
+    unittest.main()
