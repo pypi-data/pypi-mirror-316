@@ -1,0 +1,41 @@
+Metadata-Version: 2.4
+Name: ManMade2.WowTools
+Version: 1.0.2
+Project-URL: Documentation, https://github.com/ManMade2/wow-tools#readme
+Project-URL: Issues, https://github.com/ManMade2/wow-tools/issues
+Project-URL: Source, https://github.com/ManMade2/wow-tools
+Author-email: ManMade2 <madskris@proton.me>
+License-Expression: MIT
+License-File: LICENSE.txt
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.13
+Requires-Dist: manmade2-belialdb==1.0.10
+Requires-Dist: manmade2-commander==1.0.4
+Requires-Dist: pydantic
+Requires-Dist: python-json-logger
+Requires-Dist: tk
+Description-Content-Type: text/markdown
+
+# wow tools
+
+[![PyPI - Version](https://img.shields.io/pypi/v/wow-tools.svg)](https://pypi.org/project/wow-tools)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/wow-tools.svg)](https://pypi.org/project/wow-tools)
+
+-----
+
+## Table of Contents
+
+- [Installation](#installation)
+- [License](#license)
+
+## Installation
+
+```console
+pip install wow-tools
+```
+
+## License
+
+`wow-tools` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
