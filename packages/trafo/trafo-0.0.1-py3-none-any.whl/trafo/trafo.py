@@ -1,0 +1,2 @@
+class Trafo():
+    pass

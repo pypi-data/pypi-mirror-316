@@ -1,0 +1,19 @@
+Metadata-Version: 2.4
+Name: trafo
+Version: 0.0.1
+Summary: Library for handling 3D transformations
+Project-URL: Homepage, https://github.com/mqnc/trafo
+Project-URL: Issues, https://github.com/mqnc/trafo/issues
+Author: Mirko Kunze
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown
+
+# trafo 
+
+Dependency-free library for handling 3D transformations
+
+(in development, empty stub)
