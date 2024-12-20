@@ -1,0 +1,6 @@
+README.md
+setup.py
+seamoney_perfcheese.egg-info/PKG-INFO
+seamoney_perfcheese.egg-info/SOURCES.txt
+seamoney_perfcheese.egg-info/dependency_links.txt
+seamoney_perfcheese.egg-info/top_level.txt
