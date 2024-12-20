@@ -1,0 +1,15 @@
+kindsealion/__init__.py,sha256=KrvWfKIRHnHRIjAnCYndE1VqYmxO3VmeF2-lcGdo7lI,105
+kindsealion/__main__.py,sha256=xxQGXZ-entO9yTX6bueVKyLhJ7QXuLj_RmpeF4ASUGk,61
+kindsealion/main2.py,sha256=XDLkNoc65NtnlXvo1EkxbrGRmP_wzW7ehMWWC5GO6tc,7049
+kindsealion/parse_args.py,sha256=zm2vB5Zcru1nTsGTpXW7e4cNP9RnzxvUh3sArnbvFxM,1050
+kindsealion/templates/Taskfile.yml.j2,sha256=-Hpk59-y3fxfxoNp5mQq3csIZ_W66azYYycHtLxC_dc,417
+kindsealion/templates/base.j2,sha256=UHSrvUxMX54fM6b_Rp-ZOCBzj4T9msGS_avM6UWLeXg,52
+kindsealion/templates/dns.sh.j2,sha256=UuaBN5tPyiAoF639aSv5m6XUqS7NklXSidiB-a9q5Xg,603
+kindsealion/templates/extended.j2,sha256=6Jk719S3NkReJ8fltPy7UD5p2GuBAcA9NXNfbbmG66E,75
+kindsealion/templates/ringgem.sh.j2,sha256=J5dKbvMKaq6zOsSd9xSQmxS5j7tY30NNvMTXevZY_ac,729
+kindsealion/templates/script.sh.j2,sha256=ZCRuJiJMILwsUFZqKBhyHwj5vtYXzpm4bESysZXIlTw,141
+kindsealion/templates/ubuntu.pkr.hcl,sha256=Debrn_mGW5RDQGC7acddgAXL4HyJRHJVt1W_b-ETPvo,1001
+kindsealion-0.1.4.dist-info/METADATA,sha256=YZ8xPHdG6CAw7BE8NsFGCu5tEq5Br1QV4ki95ujzitA,438
+kindsealion-0.1.4.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+kindsealion-0.1.4.dist-info/entry_points.txt,sha256=jw1LLmtTo2FxVWv6JpRgPWBzjykE_xrngT-ke-kvGpM,49
+kindsealion-0.1.4.dist-info/RECORD,,
