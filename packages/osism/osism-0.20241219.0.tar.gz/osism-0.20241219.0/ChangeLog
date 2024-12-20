@@ -1,0 +1,7 @@
+CHANGES
+=======
+
+v0.20241219.0
+-------------
+
+* chore(deps): update dependency openstack.cloud to v2.3.1 (#1160)
