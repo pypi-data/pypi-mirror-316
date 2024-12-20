@@ -1,0 +1,9 @@
+README.md
+setup.py
+ppgames/__init__.py
+ppgames/game.py
+ppgames.egg-info/PKG-INFO
+ppgames.egg-info/SOURCES.txt
+ppgames.egg-info/dependency_links.txt
+ppgames.egg-info/entry_points.txt
+ppgames.egg-info/top_level.txt
