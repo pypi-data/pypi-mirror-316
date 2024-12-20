@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: feautils
+Version: 0.0.7
+Summary: 
+Author: Clem
+Author-email: clem@futureenergy.associates
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: matplotlib (>=3.10.0,<4.0.0)
+Requires-Dist: pandas (>=2.2.2,<3.0.0)
+Requires-Dist: requests (>=2.32.3,<3.0.0)
+Description-Content-Type: text/markdown
+
+# FEA utils
+
+Useful code snippets and helper methods that Future Energy Associates frequently use for data science.
+
+Install with `pip install feautils`
+
+## Deploy to pypi
+
+Publishing a package is now done with the `Trusted Publisher Management` workflow via github. See this example for more details 
+
+https://medium.com/@blackary/publishing-a-python-package-from-github-to-pypi-in-2024-a6fb8635d45d
+
