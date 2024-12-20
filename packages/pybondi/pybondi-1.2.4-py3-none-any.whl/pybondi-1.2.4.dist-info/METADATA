@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: pybondi
+Version: 1.2.4
+Summary: A lightweight library for creating event driven systems using domain driven design.
+License: MIT
+Author: Eric Cardozo
+Author-email: eric.m.cardozo@mi.unc.edu.ar
+Requires-Python: >=3.12,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: fast-depends (>=2.4.12,<3.0.0)
+Description-Content-Type: text/markdown
+
+PyBondi
+===
+A lightweight library for creating event driven systems using the unit of work pattern, pubsub and domain driven desing. 
+
+## Installation
+``` bash
+pip install pybondi
+```
+
+## Introduction
+
+This package provides a framework for modeling complex domains using an event driven architecture and the pub/sub pattern and unit of work.
