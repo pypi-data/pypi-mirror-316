@@ -1,0 +1,12 @@
+numpy
+pandas>=2.0.1
+pyarrow
+lxml
+pooch
+pyproj
+geopandas
+xlrd
+openpyxl
+rioxarray>=0.15.3
+shapely>=2.0.1
+pyvista>=0.36.1
