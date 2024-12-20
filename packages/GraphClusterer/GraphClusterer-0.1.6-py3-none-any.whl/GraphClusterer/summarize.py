@@ -1,0 +1,314 @@
+"""
+Yoel Ashkenazi
+this file is responsible for summarizing the result graphs.
+"""
+import os
+import pandas as pd
+from typing import List
+import networkx as nx
+import cohere
+import pickle as pkl
+import replicate
+
+
+def upload_graph(graph: nx.Graph, name: str) -> None:
+    """
+    Upload the graph to the given path.
+    :param graph: the graph to upload.
+    :param name: the name of the graph.
+    :return: None
+    """
+    graph_path = f'data/clustered_graphs/{name}.gpickle'
+
+    # save the graph.
+    with open(graph_path, 'wb') as f:
+        pkl.dump(graph, f, protocol=pkl.HIGHEST_PROTOCOL)
+
+
+def load_graph(name: str) -> nx.Graph:
+    """
+    Load the graph with the given name.
+    :param name: the name of the graph.
+    :return: the graph.
+    :return:
+    """
+    graph_path = f'data/clustered_graphs/{name}.gpickle'  # the path to the graph.
+
+    # load the graph.
+    with open(graph_path, 'rb') as f:
+        graph = pkl.load(f)
+
+    # filter the graph in order to remove the nan nodes.
+    nodes = graph.nodes(data=True)
+    nodes = [node for node, data in nodes if not pd.isna(node)]
+
+    graph = graph.subgraph(nodes)
+
+    return graph
+
+
+def filter_by_colors(graph: nx.Graph) -> List[nx.Graph]:
+    """
+    Partition the graph into subgraphs according to the vertex colors.
+    :param graph: the graph.
+    :return:
+    """
+    # Filter non-paper nodes.
+    articles = [node for node in graph.nodes if graph.nodes()[node].get('type', '') == 'paper']
+    articles_graph = graph.subgraph(articles)
+    graph = articles_graph
+
+    # second filter divides the graph by colors.
+    colors = set([graph.nodes()[n]['color'] for n in graph.nodes])
+    subgraphs = []
+    for i, color in enumerate(colors):  # filter by colors.
+        nodes = [node for node in graph.nodes if graph.nodes()[node]['color'] == color]
+        subgraph = graph.subgraph(nodes)
+        subgraphs.append(subgraph)
+        print(f"color {color} has {len(subgraph.nodes)} vertices.")
+
+    return subgraphs
+
+
+def summarize_per_color(subgraphs: List[nx.Graph], name: str, vertices: pd.DataFrame,
+                        key: str = "") -> List[str]:
+    """
+    Summarizes each subgraph's abstract texts using Cohere's API, prints the results, and optionally saves them to
+    text files.
+
+    :param subgraphs: List of subgraphs.
+    :param name: The name of the dataset.
+    :param vertices: The vertices DataFrame.
+    :param key: The API key for cohere.
+    :return: None
+    """
+    assert key, "The key must be provided."
+
+    co = cohere.Client(key)
+
+    result_file_path = f"Results/Summaries/{name}/"  # the path to save the results.
+
+    # Ensure the directory exists
+    os.makedirs(result_file_path, exist_ok=True)
+
+    # Clean previous summaries by removing existing files in the directory
+    if os.path.exists(result_file_path):
+        for file in os.listdir(result_file_path):  # remove all the files in the directory.
+            os.remove(os.path.join(result_file_path, file))
+
+    # Load the abstracts from the CSV file
+    df = vertices[['id', 'abstract']]
+    count_titles = 2
+    titles_list = []
+    vertex_to_title_map = {}  # map from vertex to title.
+    # Iterate over each subgraph to generate summaries
+    for i, subgraph in enumerate(subgraphs, start=1):
+        # Extract abstracts corresponding to the nodes in the subgraph
+        node_ids = set(subgraph.nodes())
+        abstracts = df[df['id'].isin(node_ids)]['abstract'].dropna().tolist()
+
+        # If only one abstract is present, skip summarization.
+        if len(abstracts) <= 1:
+            print(f"Cluster {i}: Insufficient abstracts, Skipping.")
+            continue
+
+        # Combine all abstracts into a single text block with clear delimiters and instructional prompt
+        combined_abstracts = " ".join([f"<New Text:> {abstract}" for j, abstract in enumerate(abstracts)])
+        with open('./prompt for command-r.txt', 'r') as file:
+            instructions_command_r = file.read()
+
+        # Generate the summary using Cohere's summarize API
+        response = co.generate(
+            model='command-r-plus-08-2024',
+            prompt=instructions_command_r + combined_abstracts,
+            max_tokens=500
+        )
+        summary = response.generations[0].text.strip()
+
+        # Refine the summary by generating a title using the LLAMA API
+        with open('./prompt for llama.txt', 'r') as file:
+            instructions_llama = file.read()
+        input_params = {
+            "prompt": instructions_llama + summary,
+            "max_tokens": 500
+        }
+        output = replicate.run(
+            "meta/meta-llama-3.1-405b-instruct",
+            input=input_params
+        )
+        summary = "".join(output)
+
+        # Generate a unique title if the title already exists
+        with open('./prompt for llama 2.txt', 'r') as file:
+            instructions_llama2 = file.read()
+        prompt = instructions_llama2 + summary
+        if titles_list:
+            prompt += f"\n\nTry ao avoid giving one of those titles: {titles_list}"
+        input_params = {
+            "prompt": prompt,
+            "max_tokens": 300
+        }
+        output = replicate.run(
+            "meta/meta-llama-3.1-405b-instruct",
+            input=input_params
+        )
+        title = "".join(output)
+        title = title.replace('"', '')
+
+        print(f"Cluster {i}: {title} ({len(abstracts)} textual vertices)")
+
+        if title in titles_list:
+            title = f"{title} ({count_titles})"
+            count_titles += 1
+        titles_list.append(title)
+        # save the summary.
+        num_nodes = len(subgraph)
+        vers = 'vertices' if num_nodes != 1 else 'vertex'
+
+        file_name = f'{title} ({num_nodes} {vers}).txt'
+
+        try:
+            with open(result_file_path + file_name, 'w') as f:
+                f.write(summary)
+                # print(f"Summary saved to {result_file_path + file_name}")
+        except FileNotFoundError:  # create the directory if it doesn't exist.
+            os.makedirs(result_file_path)
+            with open(file_name, 'w') as f:
+                f.write(summary)
+        except UnicodeEncodeError:
+            # make the summary encoding compatible
+            summary = summary.encode('ascii', 'ignore').decode()
+            with open(result_file_path + file_name, 'w') as f:
+                f.write(summary)
+                # print(f"Summary saved to {result_file_path + file_name}")
+
+        for v in subgraph.nodes():
+            vertex_to_title_map[v] = f'{title} ({num_nodes} {vers})'
+
+    # Add the titles to the graph
+    G = load_graph(name)
+    nx.set_node_attributes(G, values=vertex_to_title_map, name='title')
+    upload_graph(G, name)
+    return titles_list
+
+
+def improve_summary(summary, data, scores, score_names, name, key):
+    """
+    Re-create the summary with a focused prompt on the scores, so that the scores will be higher later.
+    :param summary: the summary.
+    :param data: the data.
+    :param scores: the scores.
+    :param score_names: the names of the scores.
+    :param name: the name of the file.
+    :param key: the API key for cohere.
+    :return: the improved summary.
+    """
+
+    PROMPT = """
+             In the following task, you will receive a summary and the original texts that the summary was created from. 
+             {TASK_DESCRIPTION}
+             You will receive the summary and the texts separated by '<New Text>' between each consecutive pair of 
+             texts. After the texts, you will receive the current summary.
+             You will need to improve the summary according to the following Instructions:
+             
+             1- You must not directly reference any of the texts.
+             2- Your summary must be between 5-10 sentences long.
+             3- Your summary must mention key ideas and concepts that repeat in the texts.
+             4- You must not invent any information. The summary must contain only information directly deduced from 
+                the texts.
+             5- Your summary must be coherent, fluent in language, and relevant in content to the texts.
+             6- In your summary, only refer to the texts you get as input, do not make things up in the summary.
+             7- Try your best that the summary will be the most relevant, coherent, consistent and as fluent as can be.
+             8- Do not use characters that are outside the standard ASCII range.
+             
+             Texts:{TEXTS}
+             
+             Summary:{SUMMARY}
+             """
+
+    co = cohere.Client(key)
+
+    # Create a list of texts to summarize.
+    texts = data['abstract'].tolist()  # Get the abstracts.
+    texts = [abstract for abstract in texts if pd.notna(abstract)]  # Remove NaN values.
+    texts = [f"<New Text:> {text}" for text in texts]  # Add the prompt to each text.
+    TEXTS = " ".join(texts)  # Combine the texts.
+
+    # Load the instructions for the llama model. (for refining)
+    with open('./prompt for llama.txt', 'r') as file:
+        instructions_llama = file.read()
+
+    TASK_DESCRIPTION = ""
+    for score, name in zip(scores, score_names):  # For each score.
+
+        if score >= 0.8:  # If the score is high enough, continue.
+            continue
+
+        if TASK_DESCRIPTION == "":
+            TASK_DESCRIPTION = f"Your task is to improve the summary's {name}."
+
+        # Combine the prompt with the texts.
+        prompt = PROMPT.format(TASK_DESCRIPTION=TASK_DESCRIPTION, TEXTS=TEXTS, SUMMARY=summary)
+
+        # Generate the summary using Cohere's summarize API
+        response = co.generate(
+            model='command-r-plus-08-2024',
+            prompt=prompt,
+            max_tokens=500
+        )
+
+        summary = response.generations[0].text.strip()  # Get the summary.
+
+        # Refine the summary using Llama.
+        input_params = {
+            "prompt": instructions_llama + summary,
+            "max_tokens": 500
+        }
+
+        output = replicate.run(
+            "meta/meta-llama-3.1-405b-instruct",
+            input=input_params,
+        )
+
+        summary = "".join(output)  # Get the summary.
+
+    # Save the summary. (after improving all necessary scores)
+    try:
+        with open(f'Results/Summaries/{name}', 'w') as f:
+            f.write(summary)
+    except UnicodeEncodeError:
+        summary = summary.encode('ascii', 'ignore').decode()
+        with open(f'Results/Summaries/{name}', 'w') as f:
+            f.write(summary)
+
+    return summary  # Return the summary.
+
+
+def improve_summaries(name, vertices, titles_to_scores, key: str = ""):
+    """
+    Improve the summaries of the given data.
+    :param name:  The name of the dataset.
+    :param vertices: The vertices DataFrame.
+    :param titles_to_scores:  The scores of the titles.
+    :param key: The API key for cohere.
+    :return:
+    """
+    G = load_graph(name)  # Load the graph.
+
+    assert key, "The key must be provided."
+
+    SCORE_NAMES = ['coherence', 'relevance', 'consistency', 'fluency']
+
+    for title, scores in titles_to_scores.items():
+        # Get the summary.
+        with open(f"Results/Summaries/{name}/{title}.txt", 'r') as file:
+            summary = file.read()
+
+        # Get the relevant data.
+        texts = [node for node in G.nodes if 'title' in G.nodes()[node]]
+        G = G.subgraph(texts)
+        relevant_ids = [node for node in G.nodes() if G.nodes()[node]['title'] == title]
+        data = vertices[vertices['id'].isin(relevant_ids)]
+
+        # Improve the summary.
+        improve_summary(summary, data, scores, SCORE_NAMES, name, key)
