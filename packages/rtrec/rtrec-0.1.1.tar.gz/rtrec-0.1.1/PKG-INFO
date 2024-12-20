@@ -1,0 +1,26 @@
+Metadata-Version: 2.4
+Name: rtrec
+Version: 0.1.1
+Summary: An realtime recommendation system supporting online updates
+Project-URL: homepage, https://github.com/myui/rtrec
+Project-URL: repository, https://github.com/myui/rtrec
+Author-email: myui <myui@apache.org>
+License-File: LICENSE
+Classifier: Programming Language :: Python
+Requires-Python: >=3.10
+Requires-Dist: boto3>=1.35.50
+Requires-Dist: fastapi>=0.115.4
+Requires-Dist: httpx>=0.27.2
+Requires-Dist: implicit>=0.7.2
+Requires-Dist: numpy>=2.1.2
+Requires-Dist: optuna>=4.1.0
+Requires-Dist: pandas>=2.2.3
+Requires-Dist: pydantic>=2.9.2
+Requires-Dist: rectools-lightfm>=1.17.3
+Requires-Dist: scipy>=1.14.1
+Requires-Dist: tqdm>=4.67.0
+Requires-Dist: uvicorn>=0.32.0
+Description-Content-Type: text/markdown
+
+# rtrec
+An realtime recommendation system supporting online updates

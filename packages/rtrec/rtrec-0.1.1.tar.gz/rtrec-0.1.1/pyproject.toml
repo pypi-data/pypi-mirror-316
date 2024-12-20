@@ -1,0 +1,54 @@
+[project]
+name = "rtrec"
+version = "0.1.1"
+description = "An realtime recommendation system supporting online updates"
+authors = [
+    { name = "myui", email = "myui@apache.org" }
+]
+readme = "README.md"
+requires-python = ">= 3.10"
+dependencies = [
+    "numpy>=2.1.2",
+    "scipy>=1.14.1",
+    "pandas>=2.2.3",
+    "fastapi>=0.115.4",
+    "pydantic>=2.9.2",
+    "uvicorn>=0.32.0",
+    "httpx>=0.27.2",
+    "boto3>=1.35.50",
+    "tqdm>=4.67.0",
+    # The latest released version of lightfm 1.17 does not work for python 3.12
+    # see https://github.com/lyst/lightfm/issues/709
+    "rectools-lightfm>=1.17.3",
+    "optuna>=4.1.0",
+    "implicit>=0.7.2",
+]
+
+classifiers = [
+    "Programming Language :: Python"
+]
+
+[project.urls]
+homepage = "https://github.com/myui/rtrec"
+repository = "https://github.com/myui/rtrec"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv]
+managed = true
+dev-dependencies = [
+    "pytest>=8.3.3",
+    "streamlit>=1.41.1",
+]
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["rtrec"]
+
+[tool.pytest.ini_options]
+addopts = "-s"
+testpaths = [ "tests" ]
