@@ -1,0 +1,20 @@
+# ---
+
+# ### 2. **Ajouter des exemples concrets d’utilisation**
+# Créez un dossier `examples/` contenant des scripts montrant comment utiliser votre bibliothèque pour différentes tâches.
+
+# #### Exemple de fichier `examples/example_usage.py` :
+# ```python
+# from datalib.data.csv_handler import read_csv, write_csv
+# from datalib.stats.descriptive_stats import calculate_mean
+# from datalib.visualization.simple_plots import histogram
+
+# # Charger des données
+# data = read_csv("data.csv")
+
+# # Calculer des statistiques
+# mean_value = calculate_mean(data, "column_name")
+# print(f"La moyenne de la colonne est : {mean_value}")
+
+# # Visualisation
+# histogram(data["column_name"], bins=10, title="Histogramme des valeurs")
