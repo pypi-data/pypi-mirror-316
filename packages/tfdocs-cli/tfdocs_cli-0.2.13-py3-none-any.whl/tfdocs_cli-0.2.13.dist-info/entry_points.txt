@@ -1,0 +1,7 @@
+[console_scripts]
+components=tfdocs.views.component_viewer:app
+refmt=tfdocs.utils:refmt
+tfd-ui=tfdocs.views.app:app
+tfdocs=tfdocs.__main__:main
+watchlog=tfdocs.logging.watch_logs:main
+
