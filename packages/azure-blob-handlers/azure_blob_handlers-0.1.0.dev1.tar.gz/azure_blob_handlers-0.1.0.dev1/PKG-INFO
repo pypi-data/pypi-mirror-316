@@ -1,0 +1,71 @@
+Metadata-Version: 2.1
+Name: azure-blob-handlers
+Version: 0.1.0.dev1
+Summary: Azure Blob Handlers
+Home-page: https://github.com/osrokas/azure-handlers.git
+Keywords: azure,handlers,blob
+Author: osrokas
+Author-email: rokasptr@gmail.com
+Requires-Python: >=3.9
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: azure-storage-blob (>=12.24.0,<13.0.0)
+Requires-Dist: fastparquet (>=2024.11.0,<2025.0.0)
+Requires-Dist: geojson (>=3.1.0,<4.0.0)
+Requires-Dist: geopandas (>=1.0.1,<2.0.0)
+Requires-Dist: pandas (>=2.2.3,<3.0.0)
+Requires-Dist: pyarrow (>=18.1.0,<19.0.0)
+Requires-Dist: pytest (>=8.3.3,<9.0.0)
+Project-URL: Repository, https://github.com/osrokas/azure-handlers.git
+Description-Content-Type: text/markdown
+
+# Azure Blob Handlers
+
+Azure Blob Handling libray for Python.
+
+
+## Setup environment
+
+### 1. Install dependencies
+
+```
+poetry install
+```
+
+### 2. Build with poetry
+
+```
+poetry build
+```
+
+### 3. Publish to PyPi
+
+```
+poetry publish
+```
+
+
+## Test azure-blob-hadlers package
+
+### 1. Create azurite container
+
+```
+docker compose up -d
+```
+
+### 2. Create test container and upload test files
+
+```
+python -m tests.setup_azurite
+```
+
+## 3. Run tests
+
+```
+python -m pytest
+```
+
