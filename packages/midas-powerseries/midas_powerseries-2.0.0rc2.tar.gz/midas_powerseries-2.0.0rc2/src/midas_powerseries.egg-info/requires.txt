@@ -1,0 +1,11 @@
+midas-mosaik>=2.0.0rc2
+mosaik_api
+numpy
+polars
+
+[dev]
+build
+twine
+pytest
+coverage
+ruff
