@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: PyMVPA
+Version: 3.0.3
+Summary: Multivariate Pattern Analysis in Python
+Home-page: https://github.com/MVPA-Solutions/PyMVPA
+Author: PyMVPA Developers
+Author-email: developers@pymvpa.org
+Project-URL: Source, https://github.com/MVPA-Solutions/PyMVPA
+Project-URL: Bug Reports, https://github.com/MVPA-Solutions/PyMVPA/issues
+Project-URL: Original Project, https://github.com/PyMVPA/PyMVPA
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: COPYING
+Requires-Dist: scipy
+Requires-Dist: nibabel
+Requires-Dist: h5py
+Requires-Dist: joblib
+Requires-Dist: scikit-learn
+
+PyMVPA is a Python module for multivariate pattern analysis (MVPA) of fMRI datasets with a high-level interface that is easy to learn and use, building on numpy, scipy, matplotlib, nibabel, h5py, scikit-learn, joblib, and, optionally, other packages for neuroimaging, machine learning, and psychophysics.
