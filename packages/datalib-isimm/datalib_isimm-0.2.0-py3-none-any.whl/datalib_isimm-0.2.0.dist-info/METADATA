@@ -1,0 +1,177 @@
+Metadata-Version: 2.1
+Name: datalib-isimm
+Version: 0.2.0
+Summary: Une bibliothèque Python pour la manipulation et l'analyse de données
+Home-page: https://github.com/username/datalib
+Author: Yassine Saidane
+Author-email: yassinesaidane003@gmail.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: numpy>=1.20.0
+Requires-Dist: pandas>=1.3.0
+Requires-Dist: matplotlib>=3.4.0
+Requires-Dist: scikit-learn>=0.24.0
+Requires-Dist: scipy>=1.7.0
+Provides-Extra: dev
+Requires-Dist: pytest>=6.0; extra == "dev"
+Requires-Dist: pytest-cov>=2.0; extra == "dev"
+Requires-Dist: black>=21.0; extra == "dev"
+Requires-Dist: isort>=5.0; extra == "dev"
+Requires-Dist: flake8>=3.9; extra == "dev"
+Requires-Dist: sphinx>=4.0; extra == "dev"
+
+# DataLib
+
+DataLib est une bibliothÃ¨que Python conÃ§ue pour simplifier la manipulation et l'analyse de donnÃ©es.
+
+## Installation
+
+```bash
+pip install datalib
+```
+
+## FonctionnalitÃ©s principales
+
+- Manipulation de donnÃ©es
+  - Chargement et traitement des fichiers CSV
+  - Transformation des donnÃ©es (normalisation, gestion des valeurs manquantes)
+- Statistiques
+  - Calculs statistiques de base (moyenne, mÃ©diane, mode, Ã©cart-type)
+  - Tests statistiques simples
+- Visualisation
+  - Graphiques simples (barres, histogrammes, nuages de points)
+  - Visualisations avancÃ©es (matrices de corrÃ©lation)
+- Analyse avancÃ©e
+  - ModÃ¨les de rÃ©gression (linÃ©aire, Ridge)
+  - Classification supervisÃ©e (k-NN, Random Forest)
+  - MÃ©thodes non supervisÃ©es (k-means, DBSCAN, PCA)
+
+## Exemples d'utilisation
+
+### Manipulation de donnÃ©es
+
+```python
+from datalib.data import loader, transformer
+from datalib.stats import basic
+from datalib.viz import basic as viz
+
+# Charger des donnÃ©es
+data_loader = loader.DataLoader()
+df = data_loader.read_csv("donnees.csv")
+
+# Transformer les donnÃ©es
+data_transformer = transformer.DataTransformer()
+df_normalized = data_transformer.normalize(df["colonne"])
+df_clean = data_transformer.handle_missing_values(df)
+
+# Calculer des statistiques
+stats = basic.BasicStats()
+moyenne = stats.mean(df["colonne"])
+correlation = stats.correlation(df["colonne1"], df["colonne2"])
+
+# CrÃ©er des visualisations
+plots = viz.BasicPlots()
+plots.histogram(df["colonne"], title="Distribution des valeurs")
+plots.scatter_plot(df["colonne1"], df["colonne2"], title="Relation entre variables")
+```
+
+### Apprentissage supervisÃ©
+
+```python
+from datalib.ml.supervised import SupervisedModels
+
+# RÃ©gression linÃ©aire
+reg_model = SupervisedModels.linear_regression(X, y)
+print(f"RÂ² Score: {reg_model['r2']}")
+print(f"Coefficients: {reg_model['coefficients']}")
+
+# Classification avec Random Forest
+rf_model = SupervisedModels.random_forest_classifier(
+    X, y,
+    n_estimators=100,
+    max_depth=5
+)
+print(f"Accuracy: {rf_model['accuracy']}")
+print("Classification Report:")
+print(rf_model['classification_report'])
+
+# Ã‰valuation avec validation croisÃ©e
+eval_results = SupervisedModels.evaluate_classifier(
+    rf_model['model'],
+    X, y,
+    cv=5
+)
+print(f"Mean CV Accuracy: {eval_results['mean_accuracy']}")
+print(f"Mean CV F1-Score: {eval_results['mean_f1']}")
+```
+
+### Apprentissage non supervisÃ©
+
+```python
+from datalib.ml.unsupervised import UnsupervisedModels
+
+# Clustering K-means
+kmeans_results = UnsupervisedModels.kmeans_clustering(
+    X,
+    n_clusters=3
+)
+print(f"Inertia: {kmeans_results['inertia']}")
+print("Cluster Labels:", kmeans_results['labels'])
+
+# Analyse en composantes principales (PCA)
+pca_results = UnsupervisedModels.pca_analysis(
+    X,
+    n_components=2
+)
+print("Variance expliquÃ©e:", pca_results['explained_variance_ratio'])
+
+# Clustering DBSCAN
+dbscan_results = UnsupervisedModels.dbscan_clustering(
+    X,
+    eps=0.5,
+    min_samples=5
+)
+print(f"Nombre de clusters: {dbscan_results['n_clusters']}")
+print(f"Points de bruit: {dbscan_results['n_noise']}")
+
+# Ã‰valuation du clustering
+eval_scores = UnsupervisedModels.evaluate_clustering(
+    X,
+    kmeans_results['labels']
+)
+print(f"Score de silhouette: {eval_scores['silhouette_score']}")
+```
+
+## Documentation
+
+La documentation complÃ¨te est disponible sur [Read the Docs](https://datalib.readthedocs.io/).
+
+## Contribution
+
+Les contributions sont les bienvenues ! Voici comment contribuer :
+
+1. Forkez le projet
+2. CrÃ©ez votre branche de fonctionnalitÃ© (`git checkout -b feature/ma-fonctionnalite`)
+3. Committez vos changements (`git commit -m 'Ajout de ma fonctionnalitÃ©'`)
+4. Poussez vers la branche (`git push origin feature/ma-fonctionnalite`)
+5. Ouvrez une Pull Request
+
+## Tests
+
+Pour exÃ©cuter les tests :
+
+```bash
+pytest tests/
+```
+
+## Licence
+
+Ce projet est sous licence MIT.
+
