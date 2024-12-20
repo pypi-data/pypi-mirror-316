@@ -1,0 +1,2 @@
+[django.asetukset]
+localhost_run = localhost_run.asetukset

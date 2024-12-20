@@ -1,0 +1,12 @@
+localhost_run/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+localhost_run/asetukset.py,sha256=bcu998bOkx0WP5C_VIRb2Welrlkr4GlfP2EwTyWEm64,77
+localhost_run/konteksti.py,sha256=sERqsuqsaTkpv0p_e0d2PyImiIuqZqlPrrZaCAk532Q,798
+localhost_run/management/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+localhost_run/management/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+localhost_run/management/commands/runserver.py,sha256=Nn2SE2SdfRU1q7QDF5-mmfKqhx1WdJfFkF2uQyl_VUc,2086
+django_localhost_run-0.1.dist-info/METADATA,sha256=1kweDT7YD49DWUKcHgiEozL4bTQKana4f_d9-9qs74U,3390
+django_localhost_run-0.1.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+django_localhost_run-0.1.dist-info/entry_points.txt,sha256=YpXgHuYbYmOwmWeJ2RAQ_7FCtyHvECGGT91W-1rSqBo,59
+django_localhost_run-0.1.dist-info/historia.json,sha256=saoqjShRc6yY2OvfsOpqk3bcL_tUmTOuaQcWbKvlL6I,125
+django_localhost_run-0.1.dist-info/top_level.txt,sha256=7Ll6hBTkqmsHU2iro5LJT424mfhXaLAaLxK5n6icAyw,14
+django_localhost_run-0.1.dist-info/RECORD,,
