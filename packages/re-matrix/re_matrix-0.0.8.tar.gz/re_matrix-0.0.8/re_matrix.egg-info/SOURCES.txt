@@ -1,0 +1,9 @@
+README.md
+setup.py
+re_matrix/__init__.py
+re_matrix/matrix_math_helpers.py
+re_matrix/row_reducer.py
+re_matrix.egg-info/PKG-INFO
+re_matrix.egg-info/SOURCES.txt
+re_matrix.egg-info/dependency_links.txt
+re_matrix.egg-info/top_level.txt
