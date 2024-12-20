@@ -1,0 +1,6 @@
+README.md
+setup.py
+perfcheese.egg-info/PKG-INFO
+perfcheese.egg-info/SOURCES.txt
+perfcheese.egg-info/dependency_links.txt
+perfcheese.egg-info/top_level.txt
