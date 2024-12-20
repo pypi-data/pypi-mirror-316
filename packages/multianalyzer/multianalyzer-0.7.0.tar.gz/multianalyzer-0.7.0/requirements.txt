@@ -1,0 +1,5 @@
+numpy
+pyopencl
+cython
+h5py
+hdf5plugin
