@@ -1,0 +1,16 @@
+cvat_cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cvat_cli/__main__.py,sha256=WPiN0jobs9PBmfSP06IWU7Ub1VeDuPxv3ozl-1jCtTM,1036
+cvat_cli/version.py,sha256=eBi6A9ajkgjH5d2Csi7hRQ0tRdu7rACvYgo0k7uKlPs,19
+cvat_cli/_internal/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cvat_cli/_internal/command_base.py,sha256=qEMjG5gbysyFIrsJdKEqQS8-94z0OovtZIIwLu7nhvs,3948
+cvat_cli/_internal/commands_all.py,sha256=y98UC-3KZFFmQsRE0xJpQk8_g1x9NVsKlS4cIZ61z40,838
+cvat_cli/_internal/commands_projects.py,sha256=Z067oPDun3-sVo9Ph-7F_VcIrJTGiNHJOS4z3gZZp1w,2698
+cvat_cli/_internal/commands_tasks.py,sha256=ix1yuzA-tZsdEV9_sBctlx33yNuIJ--Ddr4omi-d96c,16452
+cvat_cli/_internal/common.py,sha256=Ojw8tE1CLejHCzmS-ZxuYUQkas9S0J3u1rMWkbUO0-8,3185
+cvat_cli/_internal/parsers.py,sha256=KuG-RM93NsGSxbxTCJozFHYvY7RN3bIZAcY01wujIqI,1932
+cvat_cli/_internal/utils.py,sha256=dmQLSMhAlZzlpbrTDEqZclYFNIP-wXFswLy8glusqLI,171
+cvat_cli-2.24.0.dist-info/METADATA,sha256=pFDTeqRWDEvhO1o9SFKaxN4wUFsWzSYevVpQ3KY0SeE,2354
+cvat_cli-2.24.0.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+cvat_cli-2.24.0.dist-info/entry_points.txt,sha256=9xo0PDxKUPoASg3d-ZAe-faH9H8lOkiFP1lKjrRlJbI,52
+cvat_cli-2.24.0.dist-info/top_level.txt,sha256=45N8wshdXSAkrv7-ohVE7jBSXPhhVpaRIpGTMxllrsI,9
+cvat_cli-2.24.0.dist-info/RECORD,,
