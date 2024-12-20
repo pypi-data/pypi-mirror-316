@@ -1,0 +1,8 @@
+re_matrix/__init__.py,sha256=3sVCY4tm2WHbpMyIjAQdx_1e9ARn2GGfR8P1WSYf67g,372
+re_matrix/matrix_math_helpers.py,sha256=euOugKlXdz0QWw2Z-Jn_NE9zBsF0P0SDmJQaOE16ZCQ,1651
+re_matrix/row_reducer.py,sha256=QIFJ9jemkaj6NxdgUflJ6jZ1EijFGGk2D-eQ1WdgfLI,5765
+re_matrix/row_reducer_tests.py,sha256=aLLNr7bFuc9DNN6k0YxDuFeHkb63qc4tRivAAnvUw2A,607
+re_matrix-0.0.6.dist-info/METADATA,sha256=cWPNSGYYisdP8kSQtGY5vNId_iRD2kwTPr0Nrb17uDQ,555
+re_matrix-0.0.6.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+re_matrix-0.0.6.dist-info/top_level.txt,sha256=HISdUax8V1WW2aRXsl2Zfb65UNPC44iaN0wdUWsVJwk,10
+re_matrix-0.0.6.dist-info/RECORD,,
