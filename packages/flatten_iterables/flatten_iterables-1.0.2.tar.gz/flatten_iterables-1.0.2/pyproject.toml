@@ -1,0 +1,25 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "flatten_iterables"
+dynamic = ["version"]
+authors = [
+  { name="Adam Patterson", email="adam@farar.net" },
+]
+description = "Flatten iterables and mappings into a dictionary of reference paths and values."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/faranalytics/flatten_iterables.git"
+"Bug Tracker" = "https://github.com/faranalytics/flatten_iterables/issues"
+
+[tool.hatch.version]
+path = "src/flatten_iterables/__about__.py"
