@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+lyrical.egg-info/PKG-INFO
+lyrical.egg-info/SOURCES.txt
+lyrical.egg-info/dependency_links.txt
+lyrical.egg-info/requires.txt
+lyrical.egg-info/top_level.txt
