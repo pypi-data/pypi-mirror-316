@@ -1,0 +1,87 @@
+Metadata-Version: 2.1
+Name: wagtail-wordpress-image-importer
+Version: 0.1.0
+Summary: Import WordPress images into Wagtail
+Author: Tom Dyson
+License: MIT License
+        
+        Copyright (c) 2024 Your Name
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE. 
+Project-URL: Homepage, https://github.com/tomdyson/wagtail-wordpress-image-importer
+Keywords: wagtail,wordpress,images,import
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Wagtail
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: wagtail>=5.0
+Requires-Dist: requests>=2.25.0
+Requires-Dist: Pillow>=9.0.0
+Requires-Dist: tqdm>=4.65.0
+
+# Wagtail WordPress Image Importer
+
+A Django management command to import images from a WordPress XML export into Wagtail.
+
+## Installation
+
+```bash
+pip install wagtail-wordpress-image-importer
+```
+
+## Configuration
+
+Add to your INSTALLED_APPS in Django settings:
+
+```python
+INSTALLED_APPS = [
+    ...
+    'wagtail_wordpress_image_importer',
+    ...
+]
+```
+
+## Usage
+
+Export your WordPress content as XML from WordPress admin (Tools > Export).
+
+Then run:
+
+```bash
+python manage.py import_wordpress_images /path/to/your/wordpress-export.xml
+```
+
+### Options
+
+- `--delete-existing`: Delete all existing Wagtail images before importing
+- `--debug`: Show detailed debug information during import
+
+## License
+
+MIT License

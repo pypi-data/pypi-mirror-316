@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+wagtail_wordpress_image_importer/__init__.py
+wagtail_wordpress_image_importer/apps.py
+wagtail_wordpress_image_importer.egg-info/PKG-INFO
+wagtail_wordpress_image_importer.egg-info/SOURCES.txt
+wagtail_wordpress_image_importer.egg-info/dependency_links.txt
+wagtail_wordpress_image_importer.egg-info/requires.txt
+wagtail_wordpress_image_importer.egg-info/top_level.txt
+wagtail_wordpress_image_importer/management/__init__.py
+wagtail_wordpress_image_importer/management/commands/__init__.py
+wagtail_wordpress_image_importer/management/commands/import_wordpress_images.py
