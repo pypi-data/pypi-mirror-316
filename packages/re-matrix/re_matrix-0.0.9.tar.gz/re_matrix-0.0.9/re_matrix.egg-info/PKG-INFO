@@ -1,0 +1,83 @@
+Metadata-Version: 2.1
+Name: re-matrix
+Version: 0.0.9
+Summary: Simple python package
+Author: Charlie
+Author-email: <charlie@thatcharlie.com>
+Keywords: python,matrices,row reduction,linear algebra
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+
+# re-matrix
+This library includes functions for row reducing matrices along with some basic matrix math functions. For example, the following code gets a row reduced version of an example matrix.
+
+```py
+
+from re_matrix import row_reducer
+
+example_matrix = [[8, 2, 3, 4],
+                  [5, 3, 7, 8],
+                  [7, 9, 2, 5]]
+reduced_matrix = row_reducer.get_row_reduced_matrix(example_matrix)
+row_reducer.pretty_print_matrix(reduced_matrix)
+```
+Here is the output in the console: 
+```commandline
+------------------
+ 1.0   0.0  0.0  0.0620915032679738
+ 0.0   1.0  0.0  0.2908496732026147
+-0.0  -0.0  1.0  0.9738562091503268
+------------------
+```
+You can also get the solutions directly using this code:
+```py
+import re_matrix
+
+example_matrix = [[8, 2, 3, 4],
+                  [5, 3, 7, 8],
+                  [7, 9, 2, 5]]
+reduced_matrix = re_matrix.get_row_reduced_matrix(example_matrix)
+solution_set = re_matrix.get_matrix_solutions(reduced_matrix)
+re_matrix.print_solution_set(solution_set)
+```
+which produces this output: 
+```commandline
+the solution set is: 
+x_0 = 0.0620915032679738
+x_1 = 0.2908496732026147
+x_2 = 0.9738562091503268
+```
+
+You can also use the analyze_and_row_reduce_matrix function to see the whole process printed out
+```py
+import re_matrix
+
+example_matrix = [[8, 2, 3, 4],
+                  [5, 3, 7, 8],
+                  [7, 9, 2, 5]]
+reduced_matrix = re_matrix.analyze_and_row_reduce_matrix(example_matrix)
+```
+```commandline
+original matrix:
+------------------
+8  2  3  4
+5  3  7  8
+7  9  2  5
+------------------
+row reduced matrix:
+------------------
+ 1.0   0.0  0.0  0.0620915032679738
+ 0.0   1.0  0.0  0.2908496732026147
+-0.0  -0.0  1.0  0.9738562091503268
+------------------
+the solution set is: 
+x_0 = 0.0620915032679738
+x_1 = 0.2908496732026147
+x_2 = 0.9738562091503268
+The solution set solves the original matrix
+```
