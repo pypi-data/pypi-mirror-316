@@ -1,0 +1,2 @@
+flit==3.10.1
+# py-resource-pack==0.3.0
