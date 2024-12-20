@@ -1,0 +1,7 @@
+CHANGES
+=======
+
+v0.20241219.1
+-------------
+
+* Fix the new wait for Pypi script (#1161)
