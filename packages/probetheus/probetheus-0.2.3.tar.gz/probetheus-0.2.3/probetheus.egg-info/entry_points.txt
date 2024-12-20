@@ -1,0 +1,2 @@
+[console_scripts]
+probetheus = probetheus.cli:main
