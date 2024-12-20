@@ -1,0 +1,8 @@
+LICENSE.txt
+README.md
+setup.py
+Min_Craft.egg-info/PKG-INFO
+Min_Craft.egg-info/SOURCES.txt
+Min_Craft.egg-info/dependency_links.txt
+Min_Craft.egg-info/requires.txt
+Min_Craft.egg-info/top_level.txt
