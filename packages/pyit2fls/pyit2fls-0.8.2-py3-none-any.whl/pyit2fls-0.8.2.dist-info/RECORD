@@ -1,0 +1,9 @@
+pyit2fls/__init__.py,sha256=iEeaHhmObCPRn1jTCStKRcgpMU1ZVyo8-T1WJRTdtK0,78
+pyit2fls/fuzzymatrix.py,sha256=__Cn4kA5DoFajVwD3ZY9HTzit-S7DNRse7se99g7BB0,1606
+pyit2fls/learning.py,sha256=wbzk01Bx1ZX7MgaNCIe97wiB8tExdsaukiIT47owZbM,37056
+pyit2fls/pyit2fls.py,sha256=iFnFa5QuRPzJP3zgrG-3MN6Xn3y9Nz8vYs9Lrhu8Rwo,140238
+pyit2fls-0.8.2.dist-info/LICENSE,sha256=K8YxQjATzBeMJBRDiMUJ0i_ZK_lROW45GFdTlHBVXZ8,1063
+pyit2fls-0.8.2.dist-info/METADATA,sha256=Drpy72xGzIWDdA0nJVab-dj3MS8Kc6Huk1WGNLEF6GY,18777
+pyit2fls-0.8.2.dist-info/WHEEL,sha256=P9jw-gEje8ByB7_hXoICnHtVCrEwMQh-630tKvQWehc,91
+pyit2fls-0.8.2.dist-info/top_level.txt,sha256=HEOtf0JqBS7WVsWNbhUpHXoUOvv0kXt1RwdwtmyzoUc,9
+pyit2fls-0.8.2.dist-info/RECORD,,
