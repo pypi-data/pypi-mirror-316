@@ -1,0 +1,14 @@
+builtins
+hoc
+linter
+linters
+macOS
+pypi
+reStructuredText
+sphinxcontrib
+tokenizer
+txt
+wikis
+wordfiles
+wordlist
+wordlists
