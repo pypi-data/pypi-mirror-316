@@ -1,0 +1,16 @@
+deglib_cpp.cp311-win_amd64.pyd,sha256=fu6zxwY5G-IN1wTw9ITwwcApX6yyc4VyJG0ZLj4cvms,848896
+deglib/__init__.py,sha256=r26tV9A87UY_XSYz8npNBzJ4w_3-WrDtj1YUk9H4-IE,447
+deglib/analysis.py,sha256=O5dB25Z5xhqx1RG9n_eX6H0G3Ib2ylsg24FsqXP0GdA,3438
+deglib/benchmark.py,sha256=tItdfhlu49u56B_8t0-BYuxGNcupInmFnfzkOsNR038,6559
+deglib/builder.py,sha256=t_vvkRUqmsJT-Kf5BLqAfzLh0Nr1R_akDOXWZlxG1M4,10459
+deglib/distances.py,sha256=OTmxcCuxseOzTUtRJPK4EmAF70x2nsTZs2OBVCNsSzs,2498
+deglib/graph.py,sha256=oa_-VsjKGrZ8jy8hQZHOq1OEWcnq7ooNTDsRngkJofM,29393
+deglib/repository.py,sha256=Mxv6mbJIytNcE25AfPcWZ6BxMwO4g7iH1HyabTB4r0o,1019
+deglib/search.py,sha256=ttaNjv5o6fMCS6m0TSljyhp4mRUEKaFNF1eh1zp5Eko,5745
+deglib/std.py,sha256=pPwavFONwTjL-DEEV3mVD5yPD1CTq5CeHfzzEJk2jL4,331
+deglib/utils.py,sha256=BNb8YOkyEGcdjo0VqhPm7WdSUc8wvUld25CbNSns-oU,1623
+deglib-0.1.1.dist-info/LICENSE,sha256=1d5GH7yl_XLJ4Ah6fWGxFKG8zmUXQNMHlLPwSYTmYes,1100
+deglib-0.1.1.dist-info/METADATA,sha256=SoAhiJBXFH7L2tXj9fnLdRR_WcJ-KrCfYPNZyqDoCkI,7495
+deglib-0.1.1.dist-info/WHEEL,sha256=nkBcd8Ko0v5sEcSagm2-x_RVrb8gBSkTa8VFFZ0Mr1o,101
+deglib-0.1.1.dist-info/top_level.txt,sha256=hJjC6kt3SM4VxsLnTXycFrGkQGiyIbaaR0FmlAQtGqY,18
+deglib-0.1.1.dist-info/RECORD,,
