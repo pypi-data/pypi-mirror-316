@@ -1,0 +1,14 @@
+nosa_autostreamlit/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nosa_autostreamlit/cli.py,sha256=uV2GqlPfF3EV_Mv_6kjY-gfDmL6rR9hE-WIS5GqNayY,1336
+nosa_autostreamlit/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nosa_autostreamlit/generators/__init__.py,sha256=2O0WOK1p3tJ5Zj7Hsu562l8BOSPqJmgva3V0qxtGs5A,302
+nosa_autostreamlit/generators/base_generator.py,sha256=63vHFOyFU8rYsQfXILrujK_OYF-Vv575O7mAh84eWc8,1897
+nosa_autostreamlit/generators/data_visualization_generator.py,sha256=5TYW7wqAeKIa-B9iUaeDBGkfgiGeuZR7tC3NTEpwMGE,6847
+nosa_autostreamlit/generators/machine_learning_generator.py,sha256=QYj-6J58_q1ObeFFBei4kYTg1kkgV4ItNAV9LVqWT9c,19614
+nosa_autostreamlit/utils/__init__.py,sha256=Am26chlzNiC7z1Q2qnN5DkDGTUVs2Ii7BzB9pnp9gY4,68
+nosa_autostreamlit/utils/data_utils.py,sha256=lE-JmOJ3dURP91uIH2Wxu-f3upHGyrcjWbjznnmft1U,1212
+nosa_autostreamlit-0.1.0.dist-info/LICENSE,sha256=cp5oy7U6Dg_0E3C-wzhElDc9HDgHDn_q1Y8aZn4kNCQ,1091
+nosa_autostreamlit-0.1.0.dist-info/METADATA,sha256=FHU2qsGJoPFHYO8lOzKonqzBZ79MRtr-RVRxeeR92Ms,5501
+nosa_autostreamlit-0.1.0.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+nosa_autostreamlit-0.1.0.dist-info/top_level.txt,sha256=VOIfjEM7plqhvQFmeMIFQ8fdnqXGug5a-m76xzMjaTE,19
+nosa_autostreamlit-0.1.0.dist-info/RECORD,,
