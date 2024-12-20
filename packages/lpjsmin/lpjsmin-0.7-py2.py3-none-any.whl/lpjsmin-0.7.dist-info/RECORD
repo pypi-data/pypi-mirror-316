@@ -1,0 +1,10 @@
+lpjsmin/__init__.py,sha256=d5eThlbKh2nU4EvU8Jbr2UzhjP4WvLrKz_FYBoWxMvE,2169
+lpjsmin/jsmin.py,sha256=IMsIcA_Eyos011DsZI_ucVt9cQ6t95yC0eMKRDr2vpc,7661
+lpjsmin/tests/__init__.py,sha256=_6NzCQpC-Au-mSWaN7tM6wWqZxiGOom3J2g__RMHGAw,4439
+lpjsmin/tests/jsfiles/sample1.js,sha256=gXMn9Bx1MqvOz65Y_cnzbalFc_zRweF7SQEbXBkspSM,91
+lpjsmin/tests/jsfiles/sample2.js,sha256=oWPdrWv-4pZO7vkBE83tveHHrQahmlxq-kljNLaAoEo,96
+lpjsmin-0.7.dist-info/METADATA,sha256=16Ti2pabzs0LJZ2HbyStPoWm9o2z97xomFzBfBHyPUY,3564
+lpjsmin-0.7.dist-info/WHEEL,sha256=pxeNX5JdtCe58PUSYP9upmc7jdRPgvT0Gm9kb1SHlVw,109
+lpjsmin-0.7.dist-info/entry_points.txt,sha256=HttDQxeGV81XNlgWf-xwa6qR_DykmK0BzI1F5QZS8qE,41
+lpjsmin-0.7.dist-info/top_level.txt,sha256=5HjgnE8Dq6dGADK5qdQQcE9wDN-lhn4Htf4hZf-EEwo,8
+lpjsmin-0.7.dist-info/RECORD,,
