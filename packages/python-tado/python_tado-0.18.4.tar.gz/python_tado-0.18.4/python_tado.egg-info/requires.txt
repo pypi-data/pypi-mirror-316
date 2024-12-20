@@ -1,0 +1,11 @@
+requests
+
+[dev]
+black>=24.3
+pytype
+pylint
+types-requests
+responses
+coverage
+pytest
+pytest-cov
