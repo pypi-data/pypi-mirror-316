@@ -1,0 +1,7 @@
+setup.py
+Thick Of It/TOI.py
+Thick Of It/__init__.py
+ThickofIt.egg-info/PKG-INFO
+ThickofIt.egg-info/SOURCES.txt
+ThickofIt.egg-info/dependency_links.txt
+ThickofIt.egg-info/top_level.txt
