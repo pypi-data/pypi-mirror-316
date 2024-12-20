@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+aigraphcodescan.egg-info/PKG-INFO
+aigraphcodescan.egg-info/SOURCES.txt
+aigraphcodescan.egg-info/dependency_links.txt
+aigraphcodescan.egg-info/entry_points.txt
+aigraphcodescan.egg-info/requires.txt
+aigraphcodescan.egg-info/top_level.txt
+aigraphcodescan/src/aigraphcodescan/__main__.py
+aigraphcodescan/src/aigraphcodescan/app.py
