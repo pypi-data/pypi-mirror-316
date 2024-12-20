@@ -1,0 +1,13 @@
+sysprompt/__init__.py,sha256=LlF7DkVtNfaf0hYDrp96GpQ2jCTLwQiz1P1h46C0x0E,69
+sysprompt/cache.py,sha256=1MML1D9COlUyOTI_JJ3bzGCfMXlD5khXpduWvAJmMLc,2278
+sysprompt/main.py,sha256=t86AgIb2WsdJdV9_iVCr4sst8j5d0le0e6PokV3ol4c,20272
+sysprompt/wrappers/__init__.py,sha256=E1vcl2cg6rjMcpKrAaTR0EZhrqXRfr_beeOLJsz9_aY,266
+sysprompt/wrappers/anthropic.py,sha256=HMr168UPVsaOxLgvk9OU0gJDBOvZ_imLmXxHM66HSKg,1689
+sysprompt/wrappers/gemini.py,sha256=mLZSYxoOx-SLSQ31eSs4vL0ukFSLnCdrUIEKU7mSbag,1766
+sysprompt/wrappers/openai.py,sha256=y5hRV_y2pA_EoFS-yNR7WbjGKXatUCig7r-3hp2SiKM,2497
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+Sysprompt-0.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+Sysprompt-0.1.dist-info/METADATA,sha256=k44zihOk8h0EzInFKpdLg0KkWiTx4QJVqXxi7vSuxk0,253
+Sysprompt-0.1.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+Sysprompt-0.1.dist-info/top_level.txt,sha256=gIKsBOLiWlF0dAHpaB6q5IvhG77q0UaarCrFdnJN3SU,16
+Sysprompt-0.1.dist-info/RECORD,,
