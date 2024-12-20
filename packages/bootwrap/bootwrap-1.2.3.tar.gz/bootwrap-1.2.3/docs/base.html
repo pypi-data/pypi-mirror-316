@@ -1,0 +1,3233 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1,
+                        shrink-to-fit=no" name="viewport"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet" type="text/css"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css" rel="stylesheet" type="text/css"/>
+  <link href="favicon.ico" rel="icon" type="image/x-icon"/>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" type="application/javascript">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js" type="application/javascript">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" type="application/javascript">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js" type="application/javascript">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/python.min.js" type="application/javascript">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/json.min.js" type="application/javascript">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/yaml.min.js" type="application/javascript">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/bash.min.js" type="application/javascript">
+  </script>
+ </head>
+ <body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+   <img alt="Bootwrap Logo" id="043d1db2-770a-40c9-a451-8ccad8f50e4c" src="logo.png" width="32"/>
+   <strong class="text-light" id="09f9d3d0-0e32-49bd-905f-d96a36c63cbd">
+    Bootwrap
+   </strong>
+   <button aria-controls="menu" aria-expanded="false" aria-label="Toggle menu" class="navbar-toggler" data-bs-target="#menu" data-bs-toggle="collapse" type="button">
+    <span class="navbar-toggler-icon">
+    </span>
+   </button>
+   <div class="collapse navbar-collapse" id="menu">
+    <ul class="navbar-nav me-auto">
+     <li class="nav-item">
+      <a class="ms-2 nav-link" href="index.html" id="ebc2f05c-d8b9-4074-b528-b492dce67f9e">
+       Home
+      </a>
+     </li>
+     <li class="nav-item">
+      <a class="ms-2 nav-link" href="layout.html" id="20067dba-b87a-4389-8816-d0627b5fe78b">
+       Layout
+      </a>
+     </li>
+     <li class="nav-item">
+      <a class="ms-2 nav-link" href="base.html" id="29b96a01-314b-42a5-b8c5-cff16c295ab8">
+       Base
+      </a>
+     </li>
+     <li class="nav-item">
+      <a class="ms-2 nav-link" href="components.html" id="dd4816d6-4e76-4afc-9d7f-2e5c3201589d">
+       Components
+      </a>
+     </li>
+    </ul>
+    <a class="ms-2 btn btn-outline-light" href="https://github.com/mmgalushka/bootwrap" id="03b45558-71f7-47bb-bedb-be6f2dd8ac3b" role="button">
+     GitHub
+    </a>
+   </div>
+  </nav>
+  <div class="container-fluid">
+   <ul class="nav nav-pills" id="f75a2d46-6220-42dd-8c7d-a3b407efcdfe" role="tablist">
+    <li class="nav-item">
+     <a class="nav-link active" data-bs-target="#a89affdf-fd21-425a-9bd3-d59c115cd17f" data-bs-toggle="tab" href="#a89affdf-fd21-425a-9bd3-d59c115cd17f" id="2b0f0ee0-b040-463a-ac2b-4e042dbb4653" role="tab">
+      WebComponent
+     </a>
+    </li>
+    <li class="nav-item">
+     <a class="nav-link" data-bs-target="#f7af798a-2822-4a52-aacb-062d0e26db65" data-bs-toggle="tab" href="#f7af798a-2822-4a52-aacb-062d0e26db65" id="cf2a4705-3591-4800-bea7-f765376bf5b2" role="tab">
+      ClassMixin
+     </a>
+    </li>
+    <li class="nav-item">
+     <a class="nav-link" data-bs-target="#7b751d53-5ac8-4ab7-856f-81e0ac378f12" data-bs-toggle="tab" href="#7b751d53-5ac8-4ab7-856f-81e0ac378f12" id="7a9bf95f-ae62-4f41-8dec-b71337b91185" role="tab">
+      ActionMixin
+     </a>
+    </li>
+    <li class="nav-item">
+     <a class="nav-link" data-bs-target="#caef63e3-63ff-47b0-92e5-edc4931760e7" data-bs-toggle="tab" href="#caef63e3-63ff-47b0-92e5-edc4931760e7" id="ef39bfba-78f2-4922-8d83-5aeb2b788cb1" role="tab">
+      AppearanceMixin
+     </a>
+    </li>
+    <li class="nav-item">
+     <a class="nav-link" data-bs-target="#5b2efc73-c5b4-42db-9ffd-1de18bc803c5" data-bs-toggle="tab" href="#5b2efc73-c5b4-42db-9ffd-1de18bc803c5" id="13fc065b-080c-4041-b134-d52a442d17f1" role="tab">
+      OutlineMixin
+     </a>
+    </li>
+    <li class="nav-item">
+     <a class="nav-link" data-bs-target="#d7478cb8-809c-426f-9277-4bcb2e11a58c" data-bs-toggle="tab" href="#d7478cb8-809c-426f-9277-4bcb2e11a58c" id="a426c4ce-65ea-4af1-9155-e6731730f0bb" role="tab">
+      AvailabilityMixin
+     </a>
+    </li>
+    <li class="nav-item">
+     <a class="nav-link" data-bs-target="#13dd3405-88ff-4de6-91b3-3557054a5693" data-bs-toggle="tab" href="#13dd3405-88ff-4de6-91b3-3557054a5693" id="3464c69d-b1d8-4e03-9d22-f75e5cf0f8df" role="tab">
+      Constants
+     </a>
+    </li>
+   </ul>
+   <div class="tab-content w-100">
+    <div class="tab-pane fade active show" id="a89affdf-fd21-425a-9bd3-d59c115cd17f">
+     <div class="mt-5" id="5a3d3343-4448-4519-9233-b3698d174464">
+      <div class="d-flex justify-content-between" id="67e92c2e-f334-499c-b652-d454e4143dfe">
+       <h1 id="f816e0b6-341d-41fa-91be-5722cba8043b">
+        Class
+        <span class="text-primary" id="5102062f-b0cd-426f-88bc-8c522ccfae51">
+         WebComponent
+        </span>
+       </h1>
+       <div id="de56e835-c574-4e34-8838-f73bf3d9dc55">
+       </div>
+      </div>
+      <span class="text-muted" id="e5dddccd-1b64-4426-b416-67404c93b50b">
+       A web component base class.
+      </span>
+      <pre id="1c349ce5-0d01-4005-89a1-e88f4c316185"><code class="language-python">WebComponent()</code></pre>
+      <p id="d1f6e073-d810-4873-a604-421de73d7486">
+       This class must be inherited by all web components.
+      </p>
+      <p id="60c779d0-d71c-446a-b65c-48281f96399f">
+       In many operations where one web component encapsulates another one has
+    implemented a type check. If the received element is not
+       <code>
+        WebComponent
+       </code>
+       will be generated a
+       <code>
+        TypeError
+       </code>
+       . To ensure correct handling of your
+    custom component, do not forget to inherit the
+       <code>
+        WebComponent
+       </code>
+       class.
+      </p>
+      <div class="ms-3" id="7f0e1688-7bef-460b-bd2f-1cc839e39751">
+       <h6 id="717f0329-2674-43a3-9adf-ac335ec79e99">
+        Example
+       </h6>
+       <pre id="add939cd-2918-4106-ac31-9e34abaf70d3"><code class="language-python">from bootwrap import WebComponent
+
+class CustomHeader(WebComponent):
+    def __init__(self, title):
+        self.__title = title
+
+    sef __str__(self):
+        return f'''
+            &lt;h1 id="{self.identifier}"&gt;
+                {self.__title}
+            &lt;/h1&gt;
+        '''
+</code></pre>
+      </div>
+      <div class="mt-5" id="80b989d6-c502-4fdd-aaaf-3c66bd060ecd">
+       <h4 id="d0e0f2bf-950e-4ec8-9598-4c78ea9d6ff9">
+        Property
+        <span class="text-primary" id="fa474dc9-04c1-42db-9978-e7834ca345f4">
+         identifier
+        </span>
+       </h4>
+       <span class="text-muted" id="eb229003-5de9-418b-94d6-573df0001f19">
+        A unique web component identifier.
+       </span>
+       <p id="7922c35e-0cce-44cd-b5db-924324879fc7">
+        Every
+        <code>
+         WebComponent
+        </code>
+        has a unique identifier (ex. cfe040e6-df5f-4a3a-
+        b96e-b0cefc31bbd9). This identifier is used for referencing between
+        components inside a page. This property returns this identifier as
+        <code>
+         str
+        </code>
+        .
+       </p>
+       <p id="e535a387-8cf0-411a-891f-297b80f274a6">
+        When you create a custom
+        <code>
+         WebComponent
+        </code>
+        it is advisable to set its
+        tag attribute
+        <code>
+         id
+        </code>
+        equals to
+        <code>
+         identifier
+        </code>
+        .
+       </p>
+       <div class="ms-3" id="8fb5354f-a1de-4fe3-a3f7-b5fde0c3fb6e">
+        <h6 id="7bd44a2a-d717-484e-a07c-e9c3b658e34b">
+         Example
+        </h6>
+        <pre id="ed32b02c-8d5d-4ed4-a372-ac28dbf62e01"><code class="language-python">header = CustomHeader('Hello World")
+print(header.classes)
+
+# Result: cfe040e6-df5f-4a3a-b96e-b0cefc31bbd9
+</code></pre>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="tab-pane fade" id="f7af798a-2822-4a52-aacb-062d0e26db65">
+     <div class="mt-5" id="927be507-9e14-48dc-acea-3ad1b183b8b4">
+      <div class="d-flex justify-content-between" id="e7f4daaf-f7d0-4c48-ad1a-395f9649faa0">
+       <h1 id="09a41b20-958f-497a-a3e7-3cc2ee748fd5">
+        Class
+        <span class="text-primary" id="358d0c46-2d84-4bae-a379-def07f27343f">
+         ClassMixin
+        </span>
+       </h1>
+       <div id="e5039d26-4d43-45e0-a116-3d9bcf61f3bd">
+       </div>
+      </div>
+      <span class="text-muted" id="81dcf85e-db82-42c8-9c82-26ec3b4950a5">
+       Mixin for a web component which class can be amended.
+      </span>
+      <pre id="0c13c8de-d0e0-45b4-b788-796fd7e5031b"><code class="language-python">ClassMixin()</code></pre>
+      <p id="970080b6-14e8-49bf-b923-07d6a526f415">
+       The vast majority of web components in Bootwrap inherit this class.
+    It allows a user to adjust web components look and feel.
+      </p>
+      <div class="mt-5" id="ad8a48d2-e4b5-4cef-8678-844dd8bf1fc9">
+       <h4 id="f706977d-c2b5-4ae7-8989-13905080854d">
+        Property
+        <span class="text-primary" id="137d6ab7-6be7-46b4-974f-f6caaa5357a5">
+         classes
+        </span>
+       </h4>
+       <span class="text-muted" id="cec58a89-41a1-41c7-8562-61a4872ee84f">
+        The web component classes.
+       </span>
+       <div class="ms-3" id="34398ce0-558a-4caf-8159-b6a3401b8a8f">
+        <h6 id="8499497d-ee42-4cb9-8821-ad1e9e727b78">
+         Example
+        </h6>
+        <pre id="226fbf5a-9024-4b10-9123-2d19b9be919d"><code class="language-python">from bootwrap import Button
+
+# Note, that Button inherits ClassMixin.
+button = Button("Hello").add_classes("ms-1 me-1")
+print(button.classes)
+
+# Result: ms-1 me-1
+</code></pre>
+       </div>
+      </div>
+      <div class="mt-5" id="be9ef320-0721-4eee-a3f0-b19d246838e1">
+       <div class="d-flex justify-content-between" id="f688742a-e8fe-49a5-91fe-fe62765f50ae">
+        <h4 id="2731f6e3-bc2c-4beb-9d53-b29618f58da5">
+         Method
+         <span class="text-primary" id="75e7547f-7557-4559-8c01-9f34ca547892">
+          add_classes
+         </span>
+        </h4>
+        <div id="e3212e72-b2d3-4007-9e2a-6fafd4dc4414">
+         <button class="ms-1 me-1 btn-sm btn btn-outline-primary" data-bs-target="#c41b91c7-75a9-469b-9963-9c10c929283e" data-bs-toggle="collapse" id="963bb5d1-cfc4-4a3c-bb3e-8916bb61b9eb" onclick="return false;" type="button">
+          Argument
+         </button>
+         <button class="btn-sm btn btn-outline-primary" data-bs-target="#2a4a3272-5044-4486-ab55-fbfb868fba95" data-bs-toggle="collapse" id="7225b013-9d0c-4c3c-9a2e-bd6e9a3e623e" onclick="return false;" type="button">
+          Returns
+         </button>
+        </div>
+       </div>
+       <span class="text-muted" id="40e30f26-f672-4343-b284-ef14cd7c0f41">
+        Adds other classes.
+       </span>
+       <pre id="01a6e6ed-3616-40e1-a985-21979b5c21ee"><code class="language-python">add_classes(classes)</code></pre>
+       <div class="ms-3 collapse" id="c41b91c7-75a9-469b-9963-9c10c929283e">
+        <h6 id="8e7a35d7-a021-4f4c-8c58-b01cc75f638a">
+         Arguments
+        </h6>
+        <table class="table table-sm bg-light" id="b9ede404-d794-440f-b42c-6f8d439faeaa">
+         <thead>
+          <tr>
+           <th scope="col">
+            Name
+           </th>
+           <th scope="col">
+            Type
+           </th>
+           <th scope="col">
+            Description
+           </th>
+          </tr>
+         </thead>
+         <tbody>
+          <tr>
+           <td scope="row">
+            <i style="white-space: nowrap">
+             classes
+            </i>
+           </td>
+           <td>
+            <code style="white-space: nowrap">
+             str
+            </code>
+           </td>
+           <td>
+            The classes to add. The specified classes must be
+                separated by white space.
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="ms-3 collapse" id="2a4a3272-5044-4486-ab55-fbfb868fba95">
+        <h6 id="9ce35cdf-0d75-4402-9b2f-4af17cbe712c">
+         Returns
+        </h6>
+        <table class="table table-sm bg-light" id="f2583179-a6c3-4bbd-aaf9-badca4050202">
+         <thead>
+          <tr>
+           <th scope="col">
+            Name
+           </th>
+           <th scope="col">
+            Type
+           </th>
+           <th scope="col">
+            Description
+           </th>
+          </tr>
+         </thead>
+         <tbody>
+          <tr>
+           <td scope="row">
+            <i style="white-space: nowrap">
+             obj
+            </i>
+           </td>
+           <td>
+            <code style="white-space: nowrap">
+             self
+            </code>
+           </td>
+           <td>
+            The instance of this class.
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <p id="dc6d030b-448a-484d-989e-84cd934510ce">
+        Note, the order of specified classes will be preserved during the
+        component rendering.
+       </p>
+       <div class="ms-3" id="8d1a71d5-dd0b-497f-8e86-408d3dd0fba4">
+        <h6 id="bd09503c-ddef-419c-b44a-b4e337ad538b">
+         Example
+        </h6>
+        <pre id="5dba05d6-afca-4765-866b-1da6597babbf"><code class="language-python">from bootwrap import Button
+
+# Note, that Button inherits ClassMixin.
+button = Button("Hello").add_classes("ms-1 me-1")
+</code></pre>
+       </div>
+      </div>
+      <div class="mt-5" id="f7ef46e9-e8c3-4c72-8e76-c127833dff14">
+       <div class="d-flex justify-content-between" id="d551f651-cccb-44fe-ac10-f7f64df079dc">
+        <h4 id="1f72e536-493f-49ef-859f-236b7dbaf4b3">
+         Method
+         <span class="text-primary" id="53ab41e3-d082-48ff-99a1-8013696d2f72">
+          m
+         </span>
+        </h4>
+        <div id="cb09b6ee-3527-4f86-a90e-fe71c89308b4">
+         <button class="ms-1 me-1 btn-sm btn btn-outline-primary" data-bs-target="#e7b1603d-cdc0-4805-bec8-1245a7c73259" data-bs-toggle="collapse" id="e41fffeb-204a-481d-8a5c-c8d48ca2da24" onclick="return false;" type="button">
+          Argument
+         </button>
+         <button class="btn-sm btn btn-outline-primary" data-bs-target="#a4939081-5c61-4fcb-aa93-ea2c009c53c9" data-bs-toggle="collapse" id="fe8aefb1-f863-4a5d-8927-a3fb7424c917" onclick="return false;" type="button">
+          Returns
+         </button>
+        </div>
+       </div>
+       <span class="text-muted" id="8035d96e-8a55-44b0-991e-3ab956beff48">
+        Sets margin for all four sides to the specified size.
+       </span>
+       <pre id="218b8885-8cb1-47b2-830e-85e586b4c19a"><code class="language-python">m(size)</code></pre>
+       <div class="ms-3 collapse" id="e7b1603d-cdc0-4805-bec8-1245a7c73259">
+        <h6 id="ccc3a68f-857a-471f-a405-a691389a3132">
+         Arguments
+        </h6>
+        <table class="table table-sm bg-light" id="b6374fc8-f3d1-4e8c-976c-85215e3461da">
+         <thead>
+          <tr>
+           <th scope="col">
+            Name
+           </th>
+           <th scope="col">
+            Type
+           </th>
+           <th scope="col">
+            Description
+           </th>
+          </tr>
+         </thead>
+         <tbody>
+          <tr>
+           <td scope="row">
+            <i style="white-space: nowrap">
+             size
+            </i>
+           </td>
+           <td>
+            <code style="white-space: nowrap">
+             int
+            </code>
+           </td>
+           <td>
+            Size of the margin to set.
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="ms-3 collapse" id="a4939081-5c61-4fcb-aa93-ea2c009c53c9">
+        <h6 id="ce964b30-a5c9-43c2-b195-d937a73712e1">
+         Returns
+        </h6>
+        <table class="table table-sm bg-light" id="dfba5942-7871-417f-ba0d-3a53c50295a7">
+         <thead>
+          <tr>
+           <th scope="col">
+            Name
+           </th>
+           <th scope="col">
+            Type
+           </th>
+           <th scope="col">
+            Description
+           </th>
+          </tr>
+         </thead>
+         <tbody>
+          <tr>
+           <td scope="row">
+            <i style="white-space: nowrap">
+             obj
+            </i>
+           </td>
+           <td>
+            <code style="white-space: nowrap">
+             self
+            </code>
+           </td>
+           <td>
+            The instance of this class.
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="ms-3" id="e9d3392b-b22f-4eff-83b2-00c2cfa8ab5f">
+        <h6 id="9ab82eef-7563-4f65-a450-870d41de4224">
+         Example
+        </h6>
+        <pre id="94c96c6b-5f43-4fbb-9030-496ae70e0189"><code class="language-python">from bootwrap import Button
+
+# Note, that Button inherits ClassMixin.
+button = Button("Hello").m(3)
+</code></pre>
+       </div>
+      </div>
+      <div class="mt-5" id="b2a384d5-9980-4cb4-b0e8-b9058da3e568">
+       <div class="d-flex justify-content-between" id="d335c51c-b8da-4398-95cb-cb3f55cd38e6">
+        <h4 id="1591d02c-f8e1-422e-93bd-69efaf6f7ce7">
+         Method
+         <span class="text-primary" id="ebd958b4-728f-4b6b-aec7-62ff2e4ec4e8">
+          mb
+         </span>
+        </h4>
+        <div id="fdecb794-dede-43bf-89ce-5fec7cb0f489">
+         <button class="ms-1 me-1 btn-sm btn btn-outline-primary" data-bs-target="#9b3eb11a-a235-4750-827c-43279664ade2" data-bs-toggle="collapse" id="3b0f9a81-06af-4b9b-9d0b-1d09c838216e" onclick="return false;" type="button">
+          Argument
+         </button>
+         <button class="btn-sm btn btn-outline-primary" data-bs-target="#df898548-4a69-498e-a03b-7a9cdae8eaad" data-bs-toggle="collapse" id="7c6edda5-41ed-432f-9dd2-13ba33577af1" onclick="return false;" type="button">
+          Returns
+         </button>
+        </div>
+       </div>
+       <span class="text-muted" id="282cb697-6f87-4c5a-a7a0-b74f6879a4d2">
+        Sets margin for the bottom side the specified size.
+       </span>
+       <pre id="253802c4-8bc6-4a61-8a6a-fb8ec6f18c8e"><code class="language-python">mb(size)</code></pre>
+       <div class="ms-3 collapse" id="9b3eb11a-a235-4750-827c-43279664ade2">
+        <h6 id="452f9790-fa64-48da-9c45-2c2c14d4c259">
+         Arguments
+        </h6>
+        <table class="table table-sm bg-light" id="62325e64-3479-4c84-a2d2-a38267657873">
+         <thead>
+          <tr>
+           <th scope="col">
+            Name
+           </th>
+           <th scope="col">
+            Type
+           </th>
+           <th scope="col">
+            Description
+           </th>
+          </tr>
+         </thead>
+         <tbody>
+          <tr>
+           <td scope="row">
+            <i style="white-space: nowrap">
+             size
+            </i>
+           </td>
+           <td>
+            <code style="white-space: nowrap">
+             int
+            </code>
+           </td>
+           <td>
+            Size of the margin to set.
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="ms-3 collapse" id="df898548-4a69-498e-a03b-7a9cdae8eaad">
+        <h6 id="95197b34-50b8-4dd8-a492-635ab365789d">
+         Returns
+        </h6>
+        <table class="table table-sm bg-light" id="e75b13ed-af9a-489c-933c-8b71daf9b87f">
+         <thead>
+          <tr>
+           <th scope="col">
+            Name
+           </th>
+           <th scope="col">
+            Type
+           </th>
+           <th scope="col">
+            Description
+           </th>
+          </tr>
+         </thead>
+         <tbody>
+          <tr>
+           <td scope="row">
+            <i style="white-space: nowrap">
+             obj
+            </i>
+           </td>
+           <td>
+            <code style="white-space: nowrap">
+             self
+            </code>
+           </td>
+           <td>
+            The instance of this class.
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="ms-3" id="d97fbb05-d88b-4a58-86d3-718f0ff58906">
+        <h6 id="bf2365f5-9085-48bc-90a6-e498d1fbc12c">
+         Example
+        </h6>
+        <pre id="cfaffa4a-c5cb-48a3-b475-559f38de115c"><code class="language-python">from bootwrap import Button
+
+# Note, that Button inherits ClassMixin.
+button = Button("Hello").mb(3)
+</code></pre>
+       </div>
+      </div>
+      <div class="mt-5" id="79c99e8f-9faa-4b20-b37e-3d12a976660d">
+       <div class="d-flex justify-content-between" id="6277f000-59c1-47a9-88c2-628fc2a81e80">
+        <h4 id="2236eced-9270-4753-b77f-0c21a22dbb1b">
+         Method
+         <span class="text-primary" id="2e39c7ad-c0b8-4522-93fc-f2e488999318">
+          me
+         </span>
+        </h4>
+        <div id="200de266-c5cf-4c98-a338-489a40d5d41a">
+         <button class="ms-1 me-1 btn-sm btn btn-outline-primary" data-bs-target="#c594e30e-03aa-41c1-9008-a49825177103" data-bs-toggle="collapse" id="204da682-99a4-44f9-8437-6b145a4564ed" onclick="return false;" type="button">
+          Argument
+         </button>
+         <button class="btn-sm btn btn-outline-primary" data-bs-target="#1a315084-5e9f-44fd-b9b6-242696a5c167" data-bs-toggle="collapse" id="28b5e4da-9bcc-4574-92a9-9f3f51a050df" onclick="return false;" type="button">
+          Returns
+         </button>
+        </div>
+       </div>
+       <span class="text-muted" id="6871c756-7d91-4516-af88-7911ad0dc796">
+        Sets margin for the end(right-side) to the specified size.
+       </span>
+       <pre id="dcc66e1f-99ec-463b-aea4-4fe40b918554"><code class="language-python">me(size)</code></pre>
+       <div class="ms-3 collapse" id="c594e30e-03aa-41c1-9008-a49825177103">
+        <h6 id="d791b268-461a-4808-a209-901f6350e90b">
+         Arguments
+        </h6>
+        <table class="table table-sm bg-light" id="9e774823-01bd-4d45-b5e4-447916d74395">
+         <thead>
+          <tr>
+           <th scope="col">
+            Name
+           </th>
+           <th scope="col">
+            Type
+           </th>
+           <th scope="col">
+            Description
+           </th>
+          </tr>
+         </thead>
+         <tbody>
+          <tr>
+           <td scope="row">
+            <i style="white-space: nowrap">
+             size
+            </i>
+           </td>
+           <td>
+            <code style="white-space: nowrap">
+             int
+            </code>
+           </td>
+           <td>
+            Size of the margin to set.
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="ms-3 collapse" id="1a315084-5e9f-44fd-b9b6-242696a5c167">
+        <h6 id="cb3150d7-5871-4588-84fb-50216587960b">
+         Returns
+        </h6>
+        <table class="table table-sm bg-light" id="741b7283-1251-453c-b037-6ca64345deb8">
+         <thead>
+          <tr>
+           <th scope="col">
+            Name
+           </th>
+           <th scope="col">
+            Type
+           </th>
+           <th scope="col">
+            Description
+           </th>
+          </tr>
+         </thead>
+         <tbody>
+          <tr>
+           <td scope="row">
+            <i style="white-space: nowrap">
+             obj
+            </i>
+           </td>
+           <td>
+            <code style="white-space: nowrap">
+             self
+            </code>
+           </td>
+           <td>
+            The instance of this class.
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="ms-3" id="0ae9855a-e26f-45e8-849b-03bf1e742e09">
+        <h6 id="5132b012-670f-43e8-8476-d1c46f59edf6">
+         Example
+        </h6>
+        <pre id="76b9dc1b-d668-4add-999f-5bcf6ae80f31"><code class="language-python">from bootwrap import Button
+
+# Note, that Button inherits ClassMixin.
+button = Button("Hello").me(3)
+</code></pre>
+       </div>
+      </div>
+      <div class="mt-5" id="119f95cc-3d2a-4c4d-9e2e-37976242b846">
+       <div class="d-flex justify-content-between" id="bb17f44d-6ac2-4ff5-8c79-6fa1dc40ad15">
+        <h4 id="2a603f78-422c-44e2-9fde-48c585e74312">
+         Method
+         <span class="text-primary" id="34ab57ba-40f1-4db3-9dec-5a5a3c6945f4">
+          ms
+         </span>
+        </h4>
+        <div id="d50a10fb-c4e4-4212-a0a6-74cdc0814d7b">
+         <button class="ms-1 me-1 btn-sm btn btn-outline-primary" data-bs-target="#24a4ea42-1387-4b5c-9271-3516490c11e9" data-bs-toggle="collapse" id="afe4090b-e23a-4af3-b50a-1d9da463302e" onclick="return false;" type="button">
+          Argument
+         </button>
+         <button class="btn-sm btn btn-outline-primary" data-bs-target="#965dcc79-f3af-4710-99ff-ff610e682220" data-bs-toggle="collapse" id="de59d89c-aadb-4d96-9af3-45780024b59f" onclick="return false;" type="button">
+          Returns
+         </button>
+        </div>
+       </div>
+       <span class="text-muted" id="f8d59c13-8bc3-46f6-8ea6-653d5ecb1f39">
+        Sets margin for the start(left-side) to the specified size.
+       </span>
+       <pre id="cb634492-adde-4760-b039-1f1bc0e6a1fe"><code class="language-python">ms(size)</code></pre>
+       <div class="ms-3 collapse" id="24a4ea42-1387-4b5c-9271-3516490c11e9">
+        <h6 id="9020c4bb-2b44-4eed-8f3c-23879af80739">
+         Arguments
+        </h6>
+        <table class="table table-sm bg-light" id="350cc212-4245-4592-89b2-28e950fed5e9">
+         <thead>
+          <tr>
+           <th scope="col">
+            Name
+           </th>
+           <th scope="col">
+            Type
+           </th>
+           <th scope="col">
+            Description
+           </th>
+          </tr>
+         </thead>
+         <tbody>
+          <tr>
+           <td scope="row">
+            <i style="white-space: nowrap">
+             size
+            </i>
+           </td>
+           <td>
+            <code style="white-space: nowrap">
+             int
+            </code>
+           </td>
+           <td>
+            Size of the margin to set.
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="ms-3 collapse" id="965dcc79-f3af-4710-99ff-ff610e682220">
+        <h6 id="76cc7f9e-dc11-4f64-a8dd-82945dacf403">
+         Returns
+        </h6>
+        <table class="table table-sm bg-light" id="0ec13959-903f-416a-b2a5-8d32581cc2bf">
+         <thead>
+          <tr>
+           <th scope="col">
+            Name
+           </th>
+           <th scope="col">
+            Type
+           </th>
+           <th scope="col">
+            Description
+           </th>
+          </tr>
+         </thead>
+         <tbody>
+          <tr>
+           <td scope="row">
+            <i style="white-space: nowrap">
+             obj
+            </i>
+           </td>
+           <td>
+            <code style="white-space: nowrap">
+             self
+            </code>
+           </td>
+           <td>
+            The instance of this class.
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="ms-3" id="ff7ac7cf-7584-4b4d-8620-bfed37e9f4be">
+        <h6 id="81bc5c30-70d8-42c6-843e-3a511d1cc145">
+         Example
+        </h6>
+        <pre id="73d4b189-1e0b-4d5b-b04d-e68b8f36dd56"><code class="language-python">from bootwrap import Button
+
+# Note, that Button inherits ClassMixin.
+button = Button("Hello").ms(3)
+</code></pre>
+       </div>
+      </div>
+      <div class="mt-5" id="5fab6514-9eca-4c28-8d53-f4848f268777">
+       <div class="d-flex justify-content-between" id="d2b49474-c9de-4ee5-bf12-56e3b8ec440e">
+        <h4 id="3b18e9dd-9ba6-4150-94b9-c303555e9572">
+         Method
+         <span class="text-primary" id="1c38d0ab-87cd-48cd-9d24-6289ab9f6c93">
+          mt
+         </span>
+        </h4>
+        <div id="bde3c637-aa3e-4566-ae23-a8d4be255f7d">
+         <button class="ms-1 me-1 btn-sm btn btn-outline-primary" data-bs-target="#eaffe598-7a31-49bb-bced-d5fe0578cdaf" data-bs-toggle="collapse" id="c57aead8-ea6c-4b53-add6-18262e6bf0f2" onclick="return false;" type="button">
+          Argument
+         </button>
+         <button class="btn-sm btn btn-outline-primary" data-bs-target="#8cb73093-36f9-4a78-91a0-0767032b8191" data-bs-toggle="collapse" id="4cc504c4-6a07-4b78-9b0c-2967ca44d161" onclick="return false;" type="button">
+          Returns
+         </button>
+        </div>
+       </div>
+       <span class="text-muted" id="acaf7e43-fc4e-4a42-a89a-eeb1e70664dc">
+        Sets margin for the top side to the specified size.
+       </span>
+       <pre id="5424c468-d176-4233-9719-8b9db4b7b0e7"><code class="language-python">mt(size)</code></pre>
+       <div class="ms-3 collapse" id="eaffe598-7a31-49bb-bced-d5fe0578cdaf">
+        <h6 id="78af32d1-9896-415a-b970-d11e356ac04c">
+         Arguments
+        </h6>
+        <table class="table table-sm bg-light" id="770ae10a-f8f6-4012-a28f-f20b81d70142">
+         <thead>
+          <tr>
+           <th scope="col">
+            Name
+           </th>
+           <th scope="col">
+            Type
+           </th>
+           <th scope="col">
+            Description
+           </th>
+          </tr>
+         </thead>
+         <tbody>
+          <tr>
+           <td scope="row">
+            <i style="white-space: nowrap">
+             size
+            </i>
+           </td>
+           <td>
+            <code style="white-space: nowrap">
+             int
+            </code>
+           </td>
+           <td>
+            Size of the margin to set.
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="ms-3 collapse" id="8cb73093-36f9-4a78-91a0-0767032b8191">
+        <h6 id="389015be-c82a-433d-9bd2-28eadd668435">
+         Returns
+        </h6>
+        <table class="table table-sm bg-light" id="3e0f6a6d-7dfb-404c-9ebc-bf644f3a223e">
+         <thead>
+          <tr>
+           <th scope="col">
+            Name
+           </th>
+           <th scope="col">
+            Type
+           </th>
+           <th scope="col">
+            Description
+           </th>
+          </tr>
+         </thead>
+         <tbody>
+          <tr>
+           <td scope="row">
+            <i style="white-space: nowrap">
+             obj
+            </i>
+           </td>
+           <td>
+            <code style="white-space: nowrap">
+             self
+            </code>
+           </td>
+           <td>
+            The instance of this class.
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="ms-3" id="513a71bf-8cc5-4f6d-807c-69687b178d88">
+        <h6 id="01bd6516-0db9-488c-8fc4-c4a9a4372078">
+         Example
+        </h6>
+        <pre id="7f7c6a4f-e99c-468e-861e-afead4418d0e"><code class="language-python">from bootwrap import Button
+
+# Note, that Button inherits ClassMixin.
+button = Button("Hello").mt(3)
+</code></pre>
+       </div>
+      </div>
+      <div class="mt-5" id="ee208af7-b5fc-46f6-995f-53803ef8bb2b">
+       <div class="d-flex justify-content-between" id="141590bf-650a-442e-aca2-b980c5d34a6f">
+        <h4 id="11f76f68-ee9c-4294-96fe-27f182dd7d38">
+         Method
+         <span class="text-primary" id="012c73ba-a609-40dc-8c7b-f4fd63e4a34d">
+          mx
+         </span>
+        </h4>
+        <div id="feb45870-cf3b-47f0-9620-462348c5e41d">
+         <button class="ms-1 me-1 btn-sm btn btn-outline-primary" data-bs-target="#6de41801-c7e2-41c1-abe0-1a1578cf8f92" data-bs-toggle="collapse" id="3ad6134d-d692-4acb-8f9b-9bbe30d5a87d" onclick="return false;" type="button">
+          Argument
+         </button>
+         <button class="btn-sm btn btn-outline-primary" data-bs-target="#30db7f04-4e1e-4499-a6fd-94859a8208ed" data-bs-toggle="collapse" id="a2167595-c406-497f-8524-5fab5111631b" onclick="return false;" type="button">
+          Returns
+         </button>
+        </div>
+       </div>
+       <span class="text-muted" id="9efd1acd-1f54-46a0-96e2-ebc70a43a5db">
+        Sets margin for left and right sides to the specified size.
+       </span>
+       <pre id="68928de1-78b4-4094-9327-474ac94699ed"><code class="language-python">mx(size)</code></pre>
+       <div class="ms-3 collapse" id="6de41801-c7e2-41c1-abe0-1a1578cf8f92">
+        <h6 id="f7008b30-42a4-4ad1-a292-da0c86d07342">
+         Arguments
+        </h6>
+        <table class="table table-sm bg-light" id="a3fe8365-2f23-45df-a165-e4590a7f9fe6">
+         <thead>
+          <tr>
+           <th scope="col">
+            Name
+           </th>
+           <th scope="col">
+            Type
+           </th>
+           <th scope="col">
+            Description
+           </th>
+          </tr>
+         </thead>
+         <tbody>
+          <tr>
+           <td scope="row">
+            <i style="white-space: nowrap">
+             size
+            </i>
+           </td>
+           <td>
+            <code style="white-space: nowrap">
+             int
+            </code>
+           </td>
+           <td>
+            Size of the margin to set.
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="ms-3 collapse" id="30db7f04-4e1e-4499-a6fd-94859a8208ed">
+        <h6 id="23277894-78c6-4b68-97a2-a6ece07bc349">
+         Returns
+        </h6>
+        <table class="table table-sm bg-light" id="245f5180-d8dd-46ab-a9dd-dca668a628f1">
+         <thead>
+          <tr>
+           <th scope="col">
+            Name
+           </th>
+           <th scope="col">
+            Type
+           </th>
+           <th scope="col">
+            Description
+           </th>
+          </tr>
+         </thead>
+         <tbody>
+          <tr>
+           <td scope="row">
+            <i style="white-space: nowrap">
+             obj
+            </i>
+           </td>
+           <td>
+            <code style="white-space: nowrap">
+             self
+            </code>
+           </td>
+           <td>
+            The instance of this class.
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="ms-3" id="37f57279-a03f-458d-bfce-e10db4fe30a1">
+        <h6 id="0f9aa62d-1798-40f7-b202-2503d937020b">
+         Example
+        </h6>
+        <pre id="0b5b1172-e994-4189-adad-39a2e512ae19"><code class="language-python">from bootwrap import Button
+
+# Note, that Button inherits ClassMixin.
+button = Button("Hello").mx(3)
+</code></pre>
+       </div>
+      </div>
+      <div class="mt-5" id="3493aa86-c77f-4122-8946-5264ac8e1ac0">
+       <div class="d-flex justify-content-between" id="7e3a37b4-7557-4287-8032-46b272c888d6">
+        <h4 id="c8a06f36-beaf-4ee5-85df-e728013f4f23">
+         Method
+         <span class="text-primary" id="6bf675a6-dc81-4ecb-96b4-688aa0c9de55">
+          my
+         </span>
+        </h4>
+        <div id="5fcb3e0e-58e3-4234-b5a7-10635283c78e">
+         <button class="ms-1 me-1 btn-sm btn btn-outline-primary" data-bs-target="#89928b49-a215-4e3a-b71c-e7fe577414f4" data-bs-toggle="collapse" id="20d02516-33d2-41d2-9be4-bed1b95d2cef" onclick="return false;" type="button">
+          Argument
+         </button>
+         <button class="btn-sm btn btn-outline-primary" data-bs-target="#e471bf67-0712-49f7-a6ef-47068651031b" data-bs-toggle="collapse" id="33914e2d-a28f-4858-8072-401dd88256aa" onclick="return false;" type="button">
+          Returns
+         </button>
+        </div>
+       </div>
+       <span class="text-muted" id="7459767f-3308-44af-b679-100aca649158">
+        Sets margin for top and bottom sides to the specified size.
+       </span>
+       <pre id="d61a3317-3e52-4740-b4f6-2028ed815223"><code class="language-python">my(size)</code></pre>
+       <div class="ms-3 collapse" id="89928b49-a215-4e3a-b71c-e7fe577414f4">
+        <h6 id="76369865-cbde-4c0a-addd-677c97a2d5ec">
+         Arguments
+        </h6>
+        <table class="table table-sm bg-light" id="49928af5-3e91-4726-a21b-4f3550c80ddd">
+         <thead>
+          <tr>
+           <th scope="col">
+            Name
+           </th>
+           <th scope="col">
+            Type
+           </th>
+           <th scope="col">
+            Description
+           </th>
+          </tr>
+         </thead>
+         <tbody>
+          <tr>
+           <td scope="row">
+            <i style="white-space: nowrap">
+             size
+            </i>
+           </td>
+           <td>
+            <code style="white-space: nowrap">
+             int
+            </code>
+           </td>
+           <td>
+            Size of the margin to set.
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="ms-3 collapse" id="e471bf67-0712-49f7-a6ef-47068651031b">
+        <h6 id="f66d8dc7-2ecd-481f-95b7-90d351349c3e">
+         Returns
+        </h6>
+        <table class="table table-sm bg-light" id="b3d3acb0-a391-443d-a0b5-7a1ecbd8808c">
+         <thead>
+          <tr>
+           <th scope="col">
+            Name
+           </th>
+           <th scope="col">
+            Type
+           </th>
+           <th scope="col">
+            Description
+           </th>
+          </tr>
+         </thead>
+         <tbody>
+          <tr>
+           <td scope="row">
+            <i style="white-space: nowrap">
+             obj
+            </i>
+           </td>
+           <td>
+            <code style="white-space: nowrap">
+             self
+            </code>
+           </td>
+           <td>
+            The instance of this class.
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="ms-3" id="adeb05f6-857c-4cc8-8c4b-931f54095b46">
+        <h6 id="1cd2ea58-adba-4150-982d-7880e228a721">
+         Example
+        </h6>
+        <pre id="65028c25-5d8e-4ab2-8120-a7656514a4e1"><code class="language-python">from bootwrap import Button
+
+# Note, that Button inherits ClassMixin.
+button = Button("Hello").my(3)
+</code></pre>
+       </div>
+      </div>
+      <div class="mt-5" id="55491c95-4fe2-488b-a81c-2be1cdbdfca9">
+       <div class="d-flex justify-content-between" id="cdb8bc54-18b9-4585-b530-f3ecc39cdc5d">
+        <h4 id="237c9dab-36f9-4079-a0d5-318158916f86">
+         Method
+         <span class="text-primary" id="c46b72ca-6a8b-4ff9-a3de-903d964a7d99">
+          p
+         </span>
+        </h4>
+        <div id="23b32f1f-d82b-4d00-830e-f89674fb8d82">
+         <button class="ms-1 me-1 btn-sm btn btn-outline-primary" data-bs-target="#a62e655c-9b67-4e5d-97f7-21aa5722db66" data-bs-toggle="collapse" id="2d800e71-532b-40d9-a6a6-07a34404ec77" onclick="return false;" type="button">
+          Argument
+         </button>
+         <button class="btn-sm btn btn-outline-primary" data-bs-target="#abf88764-87d4-44fe-9565-4c5aabd6dd1b" data-bs-toggle="collapse" id="5c267181-96b7-4a6c-8eaa-9861d3b15b33" onclick="return false;" type="button">
+          Returns
+         </button>
+        </div>
+       </div>
+       <span class="text-muted" id="1a0e8e58-ee51-4b00-a239-a10b7316b25d">
+        Sets padding for all four sides to the specified size.
+       </span>
+       <pre id="e3bbb4f8-ddb3-454a-97af-ad7394818fee"><code class="language-python">p(size)</code></pre>
+       <div class="ms-3 collapse" id="a62e655c-9b67-4e5d-97f7-21aa5722db66">
+        <h6 id="15ef6994-f3d3-4db6-b69f-70b5c8b1a9da">
+         Arguments
+        </h6>
+        <table class="table table-sm bg-light" id="71a05a9a-b418-42b1-b0b4-cd5f9496225e">
+         <thead>
+          <tr>
+           <th scope="col">
+            Name
+           </th>
+           <th scope="col">
+            Type
+           </th>
+           <th scope="col">
+            Description
+           </th>
+          </tr>
+         </thead>
+         <tbody>
+          <tr>
+           <td scope="row">
+            <i style="white-space: nowrap">
+             size
+            </i>
+           </td>
+           <td>
+            <code style="white-space: nowrap">
+             int
+            </code>
+           </td>
+           <td>
+            Size of the padding to set.
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="ms-3 collapse" id="abf88764-87d4-44fe-9565-4c5aabd6dd1b">
+        <h6 id="cfc4a620-b91d-4d5c-9dfe-b91b68c2c8c2">
+         Returns
+        </h6>
+        <table class="table table-sm bg-light" id="bb73eefc-8423-407e-8d4f-e9b6cbe0fb9f">
+         <thead>
+          <tr>
+           <th scope="col">
+            Name
+           </th>
+           <th scope="col">
+            Type
+           </th>
+           <th scope="col">
+            Description
+           </th>
+          </tr>
+         </thead>
+         <tbody>
+          <tr>
+           <td scope="row">
+            <i style="white-space: nowrap">
+             obj
+            </i>
+           </td>
+           <td>
+            <code style="white-space: nowrap">
+             self
+            </code>
+           </td>
+           <td>
+            The instance of this class.
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="ms-3" id="5e1bf105-f871-4b9b-a91d-99cd446754d3">
+        <h6 id="7bb8f208-1637-466b-888e-025be2a4462b">
+         Example
+        </h6>
+        <pre id="97c19f5a-eb39-4882-a189-f11a721144ea"><code class="language-python">from bootwrap import Button
+
+# Note, that Button inherits ClassMixin.
+button = Button("Hello").p(3)
+</code></pre>
+       </div>
+      </div>
+      <div class="mt-5" id="af5b5ccc-1612-4351-92b7-a34a1709693c">
+       <div class="d-flex justify-content-between" id="79b89e08-64d7-4d94-9d85-d507be1ecd97">
+        <h4 id="eb6cf14e-7aa0-4c99-bcd9-25d31ab94e1e">
+         Method
+         <span class="text-primary" id="f1816865-a416-4ca5-b70b-20d5f65c9bad">
+          pb
+         </span>
+        </h4>
+        <div id="4ef80c3b-f338-4937-9525-27f92e814e46">
+         <button class="ms-1 me-1 btn-sm btn btn-outline-primary" data-bs-target="#b61fe135-76b4-43c6-9b35-73031bd7f97c" data-bs-toggle="collapse" id="e7455f7b-0f4c-4b4c-b6f8-dfe3a683d254" onclick="return false;" type="button">
+          Argument
+         </button>
+         <button class="btn-sm btn btn-outline-primary" data-bs-target="#383b7e3e-38d4-47f8-960a-d5871cce2125" data-bs-toggle="collapse" id="0bf30139-823e-4593-b8ef-fb2b2e7a3d30" onclick="return false;" type="button">
+          Returns
+         </button>
+        </div>
+       </div>
+       <span class="text-muted" id="8e8fdc61-8cce-4270-af56-18a6dd64ae1f">
+        Sets padding for the bottom side the specified size.
+       </span>
+       <pre id="cd2b467b-d32d-4e15-a00a-87a060f65557"><code class="language-python">pb(size)</code></pre>
+       <div class="ms-3 collapse" id="b61fe135-76b4-43c6-9b35-73031bd7f97c">
+        <h6 id="520c9282-69b1-4256-862f-087767fd3922">
+         Arguments
+        </h6>
+        <table class="table table-sm bg-light" id="2f1c39e0-c762-43b5-9de2-23ca043e6376">
+         <thead>
+          <tr>
+           <th scope="col">
+            Name
+           </th>
+           <th scope="col">
+            Type
+           </th>
+           <th scope="col">
+            Description
+           </th>
+          </tr>
+         </thead>
+         <tbody>
+          <tr>
+           <td scope="row">
+            <i style="white-space: nowrap">
+             size
+            </i>
+           </td>
+           <td>
+            <code style="white-space: nowrap">
+             int
+            </code>
+           </td>
+           <td>
+            Size of the padding to set.
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="ms-3 collapse" id="383b7e3e-38d4-47f8-960a-d5871cce2125">
+        <h6 id="ad728b54-e3bb-44c0-8722-7071efd12db4">
+         Returns
+        </h6>
+        <table class="table table-sm bg-light" id="35e2c81d-c551-492a-8341-2a060f3597c8">
+         <thead>
+          <tr>
+           <th scope="col">
+            Name
+           </th>
+           <th scope="col">
+            Type
+           </th>
+           <th scope="col">
+            Description
+           </th>
+          </tr>
+         </thead>
+         <tbody>
+          <tr>
+           <td scope="row">
+            <i style="white-space: nowrap">
+             obj
+            </i>
+           </td>
+           <td>
+            <code style="white-space: nowrap">
+             self
+            </code>
+           </td>
+           <td>
+            The instance of this class.
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="ms-3" id="beaa2526-c0a4-45fc-9989-f637f2922454">
+        <h6 id="188afd12-4d14-47ad-b3f2-8c5c27e73e90">
+         Example
+        </h6>
+        <pre id="26e40352-9d81-4c58-8a01-3db8d218bbbb"><code class="language-python">from bootwrap import Button
+
+# Note, that Button inherits ClassMixin.
+button = Button("Hello").pb(3)
+</code></pre>
+       </div>
+      </div>
+      <div class="mt-5" id="eb02f7b0-d9be-45bc-b7c2-b40ddf5fc00e">
+       <div class="d-flex justify-content-between" id="d5b6347a-3b27-4180-b2df-f60fea29860e">
+        <h4 id="d24d7d47-6dd7-48e5-9af4-5f1dda9d6f26">
+         Method
+         <span class="text-primary" id="f6ea76d5-f1fa-4075-82e2-e8353ade31a4">
+          pe
+         </span>
+        </h4>
+        <div id="12cc62fa-ee51-4b27-b113-ce78edf5429c">
+         <button class="ms-1 me-1 btn-sm btn btn-outline-primary" data-bs-target="#09a45db2-df35-4084-b169-8d9217db7a34" data-bs-toggle="collapse" id="920617e4-b7bb-4b46-8225-66f2c36a1fbe" onclick="return false;" type="button">
+          Argument
+         </button>
+         <button class="btn-sm btn btn-outline-primary" data-bs-target="#ea172b3e-1293-4d7b-b1cf-4606764b37b8" data-bs-toggle="collapse" id="46b5f5e0-8784-4636-969b-68d9fae1ecef" onclick="return false;" type="button">
+          Returns
+         </button>
+        </div>
+       </div>
+       <span class="text-muted" id="8cf17e14-3f97-4979-9d4c-ebd223a83310">
+        Sets padding for the end(right-side) to the specified size.
+       </span>
+       <pre id="1d73daa2-6d00-4277-a7c9-b9f56e61e035"><code class="language-python">pe(size)</code></pre>
+       <div class="ms-3 collapse" id="09a45db2-df35-4084-b169-8d9217db7a34">
+        <h6 id="d5e33f33-eb73-4f8a-a7ca-09fdfe0cf510">
+         Arguments
+        </h6>
+        <table class="table table-sm bg-light" id="7f302ebb-50e1-4df1-a10c-b0e0d8cac19f">
+         <thead>
+          <tr>
+           <th scope="col">
+            Name
+           </th>
+           <th scope="col">
+            Type
+           </th>
+           <th scope="col">
+            Description
+           </th>
+          </tr>
+         </thead>
+         <tbody>
+          <tr>
+           <td scope="row">
+            <i style="white-space: nowrap">
+             size
+            </i>
+           </td>
+           <td>
+            <code style="white-space: nowrap">
+             int
+            </code>
+           </td>
+           <td>
+            Size of the padding to set.
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="ms-3 collapse" id="ea172b3e-1293-4d7b-b1cf-4606764b37b8">
+        <h6 id="b5927f83-4a8e-4673-9246-2fbf8fe8aad2">
+         Returns
+        </h6>
+        <table class="table table-sm bg-light" id="b8430515-0861-485e-a322-dd5db8f5ea2f">
+         <thead>
+          <tr>
+           <th scope="col">
+            Name
+           </th>
+           <th scope="col">
+            Type
+           </th>
+           <th scope="col">
+            Description
+           </th>
+          </tr>
+         </thead>
+         <tbody>
+          <tr>
+           <td scope="row">
+            <i style="white-space: nowrap">
+             obj
+            </i>
+           </td>
+           <td>
+            <code style="white-space: nowrap">
+             self
+            </code>
+           </td>
+           <td>
+            The instance of this class.
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="ms-3" id="93d1aa8b-81ea-48b8-a082-35ac1ecf0b9b">
+        <h6 id="dff04e00-d706-418c-af55-1fb2f1cfd85d">
+         Example
+        </h6>
+        <pre id="2980ab51-047a-45a2-8334-fdc7509ae416"><code class="language-python">from bootwrap import Button
+
+# Note, that Button inherits ClassMixin.
+button = Button("Hello").pe(3)
+</code></pre>
+       </div>
+      </div>
+      <div class="mt-5" id="e5764f72-65c4-41c2-b549-6371dad6590a">
+       <div class="d-flex justify-content-between" id="c3d34613-bd22-4b1f-8064-590205454c6d">
+        <h4 id="4023afdc-8081-49a8-9ed0-f9199dc48450">
+         Method
+         <span class="text-primary" id="2275d5b8-8459-42b1-84ff-e9c297fa34c3">
+          ps
+         </span>
+        </h4>
+        <div id="96ad7156-242b-4686-bbf8-9ad4bd17e714">
+         <button class="ms-1 me-1 btn-sm btn btn-outline-primary" data-bs-target="#07d6e171-959b-4be1-91a9-d0c4f1f6486b" data-bs-toggle="collapse" id="5b73e997-966e-4f19-a0b4-641664e54b8e" onclick="return false;" type="button">
+          Argument
+         </button>
+         <button class="btn-sm btn btn-outline-primary" data-bs-target="#3b02ced9-61ee-46f7-97e9-7353969977a7" data-bs-toggle="collapse" id="8b594252-531c-4755-8ddf-d343a7c1fd02" onclick="return false;" type="button">
+          Returns
+         </button>
+        </div>
+       </div>
+       <span class="text-muted" id="409c3ce9-8f56-42c2-8c28-20605d5af103">
+        Sets padding for the start(left-side) to the specified size.
+       </span>
+       <pre id="77c4f80d-fd4f-4876-b805-d1ef82e03953"><code class="language-python">ps(size)</code></pre>
+       <div class="ms-3 collapse" id="07d6e171-959b-4be1-91a9-d0c4f1f6486b">
+        <h6 id="c05e7d6a-f3ce-4e76-9cb9-8b6fe61c99d2">
+         Arguments
+        </h6>
+        <table class="table table-sm bg-light" id="5b1942ec-0681-4143-b27e-97acf3e58c4f">
+         <thead>
+          <tr>
+           <th scope="col">
+            Name
+           </th>
+           <th scope="col">
+            Type
+           </th>
+           <th scope="col">
+            Description
+           </th>
+          </tr>
+         </thead>
+         <tbody>
+          <tr>
+           <td scope="row">
+            <i style="white-space: nowrap">
+             size
+            </i>
+           </td>
+           <td>
+            <code style="white-space: nowrap">
+             int
+            </code>
+           </td>
+           <td>
+            Size of the padding to set.
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="ms-3 collapse" id="3b02ced9-61ee-46f7-97e9-7353969977a7">
+        <h6 id="35fd1251-56d8-4584-b08e-05af9fdca747">
+         Returns
+        </h6>
+        <table class="table table-sm bg-light" id="dda91564-3be1-4321-af9d-49394dec465d">
+         <thead>
+          <tr>
+           <th scope="col">
+            Name
+           </th>
+           <th scope="col">
+            Type
+           </th>
+           <th scope="col">
+            Description
+           </th>
+          </tr>
+         </thead>
+         <tbody>
+          <tr>
+           <td scope="row">
+            <i style="white-space: nowrap">
+             obj
+            </i>
+           </td>
+           <td>
+            <code style="white-space: nowrap">
+             self
+            </code>
+           </td>
+           <td>
+            The instance of this class.
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="ms-3" id="adb0368a-0b25-41f5-816e-bcccfc7017fd">
+        <h6 id="0d50dfa2-d72d-4f27-9e99-bb7e2aa1fd02">
+         Example
+        </h6>
+        <pre id="6055da9f-345f-48af-bd07-6f80cc4b462c"><code class="language-python">from bootwrap import Button
+
+# Note, that Button inherits ClassMixin.
+button = Button("Hello").ps(3)
+</code></pre>
+       </div>
+      </div>
+      <div class="mt-5" id="c6c82809-7f30-417d-a68b-569db40655b5">
+       <div class="d-flex justify-content-between" id="618093e2-b28a-4dea-947a-638486e7d428">
+        <h4 id="aca70757-8a49-4e91-805c-26b9f180baab">
+         Method
+         <span class="text-primary" id="9a741c7f-2807-4e1b-8586-9221c3a03488">
+          pt
+         </span>
+        </h4>
+        <div id="2f95554a-bcac-4f0f-8ebc-094e6afc93de">
+         <button class="ms-1 me-1 btn-sm btn btn-outline-primary" data-bs-target="#98967d8e-f557-4bfb-ac44-ed3bca475f9e" data-bs-toggle="collapse" id="604d597e-f3db-4649-9731-32a785b03a15" onclick="return false;" type="button">
+          Argument
+         </button>
+         <button class="btn-sm btn btn-outline-primary" data-bs-target="#b647a0ac-7306-46bd-9159-0b958558e938" data-bs-toggle="collapse" id="b76a24e7-2a1e-403d-9e07-58405791da6d" onclick="return false;" type="button">
+          Returns
+         </button>
+        </div>
+       </div>
+       <span class="text-muted" id="2160017d-112b-4088-9cf2-270f4f2654e5">
+        Sets padding for the top side to the specified size.
+       </span>
+       <pre id="2f4f07e4-5765-4b36-80f2-1209a8e5c658"><code class="language-python">pt(size)</code></pre>
+       <div class="ms-3 collapse" id="98967d8e-f557-4bfb-ac44-ed3bca475f9e">
+        <h6 id="8a754139-4d22-4478-817f-aa5ca811b2e9">
+         Arguments
+        </h6>
+        <table class="table table-sm bg-light" id="2aedcdf8-6ec2-4e02-8bc9-c50d11bf1440">
+         <thead>
+          <tr>
+           <th scope="col">
+            Name
+           </th>
+           <th scope="col">
+            Type
+           </th>
+           <th scope="col">
+            Description
+           </th>
+          </tr>
+         </thead>
+         <tbody>
+          <tr>
+           <td scope="row">
+            <i style="white-space: nowrap">
+             size
+            </i>
+           </td>
+           <td>
+            <code style="white-space: nowrap">
+             int
+            </code>
+           </td>
+           <td>
+            Size of the padding to set.
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="ms-3 collapse" id="b647a0ac-7306-46bd-9159-0b958558e938">
+        <h6 id="bf1dcd68-d266-4b2a-9191-97ee285b8458">
+         Returns
+        </h6>
+        <table class="table table-sm bg-light" id="7135cf12-f0ee-4513-926a-613354295083">
+         <thead>
+          <tr>
+           <th scope="col">
+            Name
+           </th>
+           <th scope="col">
+            Type
+           </th>
+           <th scope="col">
+            Description
+           </th>
+          </tr>
+         </thead>
+         <tbody>
+          <tr>
+           <td scope="row">
+            <i style="white-space: nowrap">
+             obj
+            </i>
+           </td>
+           <td>
+            <code style="white-space: nowrap">
+             self
+            </code>
+           </td>
+           <td>
+            The instance of this class.
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="ms-3" id="0859ae03-e132-4353-aeeb-a624b1b7c76e">
+        <h6 id="dc33bc71-6bfa-4009-ba0d-408d6abe1ba4">
+         Example
+        </h6>
+        <pre id="74587eb0-56f4-43ce-8f3c-4ba946af8855"><code class="language-python">from bootwrap import Button
+
+# Note, that Button inherits ClassMixin.
+button = Button("Hello").pt(3)
+</code></pre>
+       </div>
+      </div>
+      <div class="mt-5" id="e09c6142-325a-4e62-a119-23a20277d491">
+       <div class="d-flex justify-content-between" id="7caaee6a-a907-43d2-8b9e-6ac964134b30">
+        <h4 id="d6d78811-aabf-4097-b5f6-a759b7b53c6e">
+         Method
+         <span class="text-primary" id="eb8826f1-2a21-4de1-8a88-f897d0c212e9">
+          px
+         </span>
+        </h4>
+        <div id="4d63d24d-9a93-491a-8bd4-610c05f5c820">
+         <button class="ms-1 me-1 btn-sm btn btn-outline-primary" data-bs-target="#b2a6fcf9-ac34-4de2-a5fa-664e949ada7a" data-bs-toggle="collapse" id="4c965a4b-a1c3-4bd3-83cf-d39f0dadf2ae" onclick="return false;" type="button">
+          Argument
+         </button>
+         <button class="btn-sm btn btn-outline-primary" data-bs-target="#8d9ef6d7-2299-4869-a518-0bde91217848" data-bs-toggle="collapse" id="b47c6033-4b33-4704-b090-84d10d5b39e1" onclick="return false;" type="button">
+          Returns
+         </button>
+        </div>
+       </div>
+       <span class="text-muted" id="37b511b2-bde5-4ab4-888b-a1251044a9a7">
+        Sets padding for left and right sides to the specified size.
+       </span>
+       <pre id="9613b29b-e304-4dfb-a039-c1d5b603cce2"><code class="language-python">px(size)</code></pre>
+       <div class="ms-3 collapse" id="b2a6fcf9-ac34-4de2-a5fa-664e949ada7a">
+        <h6 id="a9b3d9c6-9c92-4635-8f8d-9462dcb05adf">
+         Arguments
+        </h6>
+        <table class="table table-sm bg-light" id="d01e0f68-4162-4701-855c-9ba21a7eebdd">
+         <thead>
+          <tr>
+           <th scope="col">
+            Name
+           </th>
+           <th scope="col">
+            Type
+           </th>
+           <th scope="col">
+            Description
+           </th>
+          </tr>
+         </thead>
+         <tbody>
+          <tr>
+           <td scope="row">
+            <i style="white-space: nowrap">
+             size
+            </i>
+           </td>
+           <td>
+            <code style="white-space: nowrap">
+             int
+            </code>
+           </td>
+           <td>
+            Size of the padding to set.
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="ms-3 collapse" id="8d9ef6d7-2299-4869-a518-0bde91217848">
+        <h6 id="5e84adf8-6cd0-416b-a466-1633e57402fa">
+         Returns
+        </h6>
+        <table class="table table-sm bg-light" id="a8a45113-4ee5-4abc-8f38-2f54aa900f04">
+         <thead>
+          <tr>
+           <th scope="col">
+            Name
+           </th>
+           <th scope="col">
+            Type
+           </th>
+           <th scope="col">
+            Description
+           </th>
+          </tr>
+         </thead>
+         <tbody>
+          <tr>
+           <td scope="row">
+            <i style="white-space: nowrap">
+             obj
+            </i>
+           </td>
+           <td>
+            <code style="white-space: nowrap">
+             self
+            </code>
+           </td>
+           <td>
+            The instance of this class.
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="ms-3" id="919a210a-2659-4b43-b7d9-0c3c077a6f2f">
+        <h6 id="651f8d9f-7c5f-4592-93c9-996dc45a2ec4">
+         Example
+        </h6>
+        <pre id="ef60e770-6b11-47c3-81b8-bc37bab8cf3c"><code class="language-python">from bootwrap import Button
+
+# Note, that Button inherits ClassMixin.
+button = Button("Hello").px(3)
+</code></pre>
+       </div>
+      </div>
+      <div class="mt-5" id="87ff1490-03fd-4e6c-bf1c-fd7d3e79f5d0">
+       <div class="d-flex justify-content-between" id="89751942-3d47-470c-af85-6cc07b999dab">
+        <h4 id="7226e36c-9e4c-4327-8c9d-9a82fcd26d39">
+         Method
+         <span class="text-primary" id="b8b83c6b-654b-4624-b93b-6e5a3f452f35">
+          py
+         </span>
+        </h4>
+        <div id="11e0b0a5-d6c8-4459-861b-26dc07c9ada8">
+         <button class="ms-1 me-1 btn-sm btn btn-outline-primary" data-bs-target="#09e079e2-d47e-4e6d-b7ae-11ee5c0b86d9" data-bs-toggle="collapse" id="a6f53ae9-da45-47cb-812a-2611e3c8be5c" onclick="return false;" type="button">
+          Argument
+         </button>
+         <button class="btn-sm btn btn-outline-primary" data-bs-target="#99cf064d-3ec1-4916-8e2a-fa2930a2c889" data-bs-toggle="collapse" id="640eb883-07a2-42eb-bdc3-4d8ee7c5d227" onclick="return false;" type="button">
+          Returns
+         </button>
+        </div>
+       </div>
+       <span class="text-muted" id="f0e62167-db85-47a4-ab96-7b69b61cb2f1">
+        Sets padding for top and bottom sides to the specified size.
+       </span>
+       <pre id="4f6549c9-03b0-4766-9c45-e85947b10b58"><code class="language-python">py(size)</code></pre>
+       <div class="ms-3 collapse" id="09e079e2-d47e-4e6d-b7ae-11ee5c0b86d9">
+        <h6 id="4a462c41-eef5-4f20-a63b-ef7a583ef13e">
+         Arguments
+        </h6>
+        <table class="table table-sm bg-light" id="8f574c4f-4ec8-437a-8168-72ce5f2043ff">
+         <thead>
+          <tr>
+           <th scope="col">
+            Name
+           </th>
+           <th scope="col">
+            Type
+           </th>
+           <th scope="col">
+            Description
+           </th>
+          </tr>
+         </thead>
+         <tbody>
+          <tr>
+           <td scope="row">
+            <i style="white-space: nowrap">
+             size
+            </i>
+           </td>
+           <td>
+            <code style="white-space: nowrap">
+             int
+            </code>
+           </td>
+           <td>
+            Size of the padding to set.
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="ms-3 collapse" id="99cf064d-3ec1-4916-8e2a-fa2930a2c889">
+        <h6 id="d40dc245-0528-4535-b86e-6d32cd81207e">
+         Returns
+        </h6>
+        <table class="table table-sm bg-light" id="7bced412-c5f1-4622-a410-12a6b0c498e2">
+         <thead>
+          <tr>
+           <th scope="col">
+            Name
+           </th>
+           <th scope="col">
+            Type
+           </th>
+           <th scope="col">
+            Description
+           </th>
+          </tr>
+         </thead>
+         <tbody>
+          <tr>
+           <td scope="row">
+            <i style="white-space: nowrap">
+             obj
+            </i>
+           </td>
+           <td>
+            <code style="white-space: nowrap">
+             self
+            </code>
+           </td>
+           <td>
+            The instance of this class.
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="ms-3" id="62498576-09af-42db-a32a-ea121a66c0d6">
+        <h6 id="144cb4c0-90db-4b9c-9d23-4167c0b31674">
+         Example
+        </h6>
+        <pre id="de492a10-179d-41cb-8997-227f70c0df32"><code class="language-python">from bootwrap import Button
+
+# Note, that Button inherits ClassMixin.
+button = Button("Hello").py(3)
+</code></pre>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="tab-pane fade" id="7b751d53-5ac8-4ab7-856f-81e0ac378f12">
+     <div class="mt-5" id="8207c336-a708-491c-84e8-5fade7b75707">
+      <div class="d-flex justify-content-between" id="5421460f-d7c5-4f91-9553-52aefd72a180">
+       <h1 id="d4e2d331-6a18-433d-bdc6-1d6cd5a59ee0">
+        Class
+        <span class="text-primary" id="e4e2bc82-71fb-467a-985d-f98d6bdbed35">
+         ActionMixin
+        </span>
+       </h1>
+       <div id="5cb1e1cc-66ba-454b-9fb1-1e81d205aeea">
+       </div>
+      </div>
+      <span class="text-muted" id="80f5425d-89ab-43d9-835d-f0bb6052caac">
+       Mixin for a web component which able to perform an action.
+      </span>
+      <pre id="82db85f6-aec1-40bd-b20c-252893e61193"><code class="language-python">ActionMixin()</code></pre>
+      <div class="mt-5" id="484f05a0-e6e9-472a-bd97-5202bcd35786">
+       <div class="d-flex justify-content-between" id="53204255-f4d0-4a82-9f3a-2c1004a8b09f">
+        <h4 id="48595da7-a0eb-4a68-9edc-b5dca2964cbe">
+         Method
+         <span class="text-primary" id="c813afee-a67f-4e15-9ba5-5cf3d6ce921f">
+          add_menu
+         </span>
+        </h4>
+        <div id="2d67f763-3941-46a0-8558-68e0583e8f02">
+         <button class="ms-1 me-1 btn-sm btn btn-outline-primary" data-bs-target="#724c4988-5a69-4072-9fc1-75ded3be2236" data-bs-toggle="collapse" id="17b0e920-5203-4856-8b48-048d0eeba8ac" onclick="return false;" type="button">
+          Argument
+         </button>
+         <button class="btn-sm btn btn-outline-primary" data-bs-target="#25f21fa3-9652-45be-832b-4df04bca6baf" data-bs-toggle="collapse" id="8b09b347-22e3-42a1-9f72-a1385518bbc2" onclick="return false;" type="button">
+          Returns
+         </button>
+        </div>
+       </div>
+       <span class="text-muted" id="8dc5d433-118f-48ea-9ef1-9654654742e8">
+        Adds dropdown menu.
+       </span>
+       <pre id="78342add-d7ae-4824-9b38-202bb7991769"><code class="language-python">add_menu(*menu)</code></pre>
+       <div class="ms-3 collapse" id="724c4988-5a69-4072-9fc1-75ded3be2236">
+        <h6 id="43feb9ad-72ed-45da-a9f5-bfcece6fe3f3">
+         Arguments
+        </h6>
+        <table class="table table-sm bg-light" id="10b1b9f0-c490-4564-b12d-14a9f3f02343">
+         <thead>
+          <tr>
+           <th scope="col">
+            Name
+           </th>
+           <th scope="col">
+            Type
+           </th>
+           <th scope="col">
+            Description
+           </th>
+          </tr>
+         </thead>
+         <tbody>
+          <tr>
+           <td scope="row">
+            <i style="white-space: nowrap">
+             *menu
+            </i>
+           </td>
+           <td>
+            <code style="white-space: nowrap">
+             list
+            </code>
+           </td>
+           <td>
+            The list of dropdown menu actions. These actions
+                must be represented by
+            <code>
+             WebComponent
+            </code>
+            s instantiating
+            <code>
+             ActionMixin
+            </code>
+            class.
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="ms-3 collapse" id="25f21fa3-9652-45be-832b-4df04bca6baf">
+        <h6 id="d17dd69d-4036-4a25-89e0-36fc010955d2">
+         Returns
+        </h6>
+        <table class="table table-sm bg-light" id="ab3e175f-e1a7-4ead-b469-1c2ebce922c9">
+         <thead>
+          <tr>
+           <th scope="col">
+            Name
+           </th>
+           <th scope="col">
+            Type
+           </th>
+           <th scope="col">
+            Description
+           </th>
+          </tr>
+         </thead>
+         <tbody>
+          <tr>
+           <td scope="row">
+            <i style="white-space: nowrap">
+             obj
+            </i>
+           </td>
+           <td>
+            <code style="white-space: nowrap">
+             self
+            </code>
+           </td>
+           <td>
+            The instance of this class.
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="ms-3" id="c63e3f2c-e740-4155-b7fb-e724a87b3523">
+        <h6 id="ebfe84a8-9bb7-4f4c-95c6-403130de4532">
+         Example
+        </h6>
+        <pre id="754bc7f0-583d-4f1e-bd5c-5b9a17d786b5"><code class="language-python">from bootwrap import Button
+
+# Note, that Button inherits ActionMixin.
+button = Button('Portfolio').add_menu(
+    Button("Buy"),
+    Button("Sell"),
+    Button("Transfer")
+)
+</code></pre>
+       </div>
+      </div>
+      <div class="mt-5" id="e8424f44-7ce6-4fb1-a559-1fb46498de99">
+       <div class="d-flex justify-content-between" id="df0a2efc-8124-4008-bfdc-1a0d180fc5b5">
+        <h4 id="c6ecaa41-a3db-495e-9ffe-bd02bbf39fee">
+         Method
+         <span class="text-primary" id="a70a37fc-96fd-49b9-b884-5068bc41a325">
+          dismiss
+         </span>
+        </h4>
+        <div id="a8412c9b-5080-4630-98b0-b916f4b2164b">
+         <button class="btn-sm btn btn-outline-primary" data-bs-target="#6792635c-d616-4def-beb2-80ef10c88e92" data-bs-toggle="collapse" id="d6b36ce3-6730-4372-945e-519e061ed247" onclick="return false;" type="button">
+          Returns
+         </button>
+        </div>
+       </div>
+       <span class="text-muted" id="99ebdd26-5c5b-448f-9cba-c282dbaa941d">
+        Performes a dismiss action.
+       </span>
+       <pre id="2df30951-f30e-4516-8c02-8591fd8bfb14"><code class="language-python">dismiss()</code></pre>
+       <div class="ms-3 collapse" id="6792635c-d616-4def-beb2-80ef10c88e92">
+        <h6 id="12707df2-7cf1-4719-9aad-33a52e3f725d">
+         Returns
+        </h6>
+        <table class="table table-sm bg-light" id="96d2be4f-5a42-4d95-8bb0-e6e074bdc2e9">
+         <thead>
+          <tr>
+           <th scope="col">
+            Name
+           </th>
+           <th scope="col">
+            Type
+           </th>
+           <th scope="col">
+            Description
+           </th>
+          </tr>
+         </thead>
+         <tbody>
+          <tr>
+           <td scope="row">
+            <i style="white-space: nowrap">
+             obj
+            </i>
+           </td>
+           <td>
+            <code style="white-space: nowrap">
+             self
+            </code>
+           </td>
+           <td>
+            The instance of this class.
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="ms-3" id="63a81df2-1a0a-4dd3-b460-036db715c3c1">
+        <h6 id="e8845857-5ec2-42d6-a89c-6a645ffdf650">
+         Example
+        </h6>
+        <pre id="fb429ced-2b78-47c8-9b65-61ef0bb48ea6"><code class="language-python">from bootwrap import Dialog, Button
+
+# Note, that Button inherits ActionMixin.
+dialog = Dialog(
+    ...,
+    Button("Bye").dismiss()
+)
+</code></pre>
+       </div>
+      </div>
+      <div class="mt-5" id="19eb3848-8490-494e-8ea0-97f4665fbe14">
+       <div class="d-flex justify-content-between" id="87c3ef2b-2917-444a-9748-f2478294950e">
+        <h4 id="887f3ea1-bc9c-4f84-9589-de554f0e5a0e">
+         Method
+         <span class="text-primary" id="123dd205-730e-40cc-a399-4f2b90dad991">
+          link
+         </span>
+        </h4>
+        <div id="cb4146c6-3c1d-4f6c-a051-5fda6434b5f3">
+         <button class="ms-1 me-1 btn-sm btn btn-outline-primary" data-bs-target="#f94bf329-b36e-487e-b3c0-4939d799c009" data-bs-toggle="collapse" id="031ebaaf-496f-4460-9dad-e70ea7ba9d18" onclick="return false;" type="button">
+          Argument
+         </button>
+         <button class="btn-sm btn btn-outline-primary" data-bs-target="#7e908097-8700-4ea5-a961-92556559a40b" data-bs-toggle="collapse" id="fca31404-58b3-4160-ad9e-dac9896c2cc0" onclick="return false;" type="button">
+          Returns
+         </button>
+        </div>
+       </div>
+       <span class="text-muted" id="e6794762-f9ad-4076-8b81-d1308409f18c">
+        Links to the web-resource.
+       </span>
+       <pre id="d24b89d5-a1af-4054-a02c-965f7e455a5c"><code class="language-python">link(target)</code></pre>
+       <div class="ms-3 collapse" id="f94bf329-b36e-487e-b3c0-4939d799c009">
+        <h6 id="91bfd0a5-ed00-40a4-b136-6efff56c9dbc">
+         Arguments
+        </h6>
+        <table class="table table-sm bg-light" id="052c7cc3-c62b-45db-b999-998447b05adf">
+         <thead>
+          <tr>
+           <th scope="col">
+            Name
+           </th>
+           <th scope="col">
+            Type
+           </th>
+           <th scope="col">
+            Description
+           </th>
+          </tr>
+         </thead>
+         <tbody>
+          <tr>
+           <td scope="row">
+            <i style="white-space: nowrap">
+             target
+            </i>
+           </td>
+           <td>
+            <code style="white-space: nowrap">
+             str|WebComponent
+            </code>
+           </td>
+           <td>
+            The URL to the linking web-page or
+                linking
+            <code>
+             WebComponent
+            </code>
+            .
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="ms-3 collapse" id="7e908097-8700-4ea5-a961-92556559a40b">
+        <h6 id="37efef44-da88-4cad-a86f-5795ce2000e4">
+         Returns
+        </h6>
+        <table class="table table-sm bg-light" id="1d574078-6b07-4543-bfc1-8a7adc43d55c">
+         <thead>
+          <tr>
+           <th scope="col">
+            Name
+           </th>
+           <th scope="col">
+            Type
+           </th>
+           <th scope="col">
+            Description
+           </th>
+          </tr>
+         </thead>
+         <tbody>
+          <tr>
+           <td scope="row">
+            <i style="white-space: nowrap">
+             obj
+            </i>
+           </td>
+           <td>
+            <code style="white-space: nowrap">
+             self
+            </code>
+           </td>
+           <td>
+            The instance of this class.
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="ms-3" id="8e25122d-3293-47e1-bae6-bcc8f799ea3d">
+        <h6 id="d5634b2e-af9b-49b0-88dc-bd9035434815">
+         Example
+        </h6>
+        <pre id="73e29576-fa60-429f-aa0e-4c2c5c24f136"><code class="language-python">from bootwrap import Button
+
+# Note, that Button inherits ActionMixin.
+button = Button("Search").link("https://www.google.com")
+</code></pre>
+       </div>
+      </div>
+      <div class="mt-5" id="67010664-997e-411e-93f8-37bb9261483f">
+       <div class="d-flex justify-content-between" id="57758a64-f825-46ef-9b19-668fb3f5ba17">
+        <h4 id="c7ab1900-d338-40a1-9b91-9f96b6380897">
+         Method
+         <span class="text-primary" id="7d59c282-d5e2-4cca-8819-f00652b1eaa4">
+          submit
+         </span>
+        </h4>
+        <div id="02037b59-2602-4af7-8bdd-438f56e7e709">
+         <button class="btn-sm btn btn-outline-primary" data-bs-target="#6c5845a9-fe86-4bfb-944e-184e9c1202c1" data-bs-toggle="collapse" id="566c6a96-fdda-48f9-8e3f-7da016a59201" onclick="return false;" type="button">
+          Returns
+         </button>
+        </div>
+       </div>
+       <span class="text-muted" id="821b3a7a-41c1-4a52-a91d-af444014f506">
+        Performes a submit action.
+       </span>
+       <pre id="c3b97a2a-1e27-4d20-b3a0-6b87b8b3f9e9"><code class="language-python">submit()</code></pre>
+       <div class="ms-3 collapse" id="6c5845a9-fe86-4bfb-944e-184e9c1202c1">
+        <h6 id="96aa4073-6bd8-493c-b986-c0efa23ef99b">
+         Returns
+        </h6>
+        <table class="table table-sm bg-light" id="24ae7204-cf1c-42ea-9c8e-fe4f02dc6338">
+         <thead>
+          <tr>
+           <th scope="col">
+            Name
+           </th>
+           <th scope="col">
+            Type
+           </th>
+           <th scope="col">
+            Description
+           </th>
+          </tr>
+         </thead>
+         <tbody>
+          <tr>
+           <td scope="row">
+            <i style="white-space: nowrap">
+             obj
+            </i>
+           </td>
+           <td>
+            <code style="white-space: nowrap">
+             self
+            </code>
+           </td>
+           <td>
+            The instance of this class.
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="ms-3" id="2eefe439-7c24-4d1e-bde3-3abfa4dba697">
+        <h6 id="7c3c88f4-9209-48c7-9595-4188f311c6a6">
+         Example
+        </h6>
+        <pre id="56245d76-9854-4b4b-a9ed-c54894f84273"><code class="language-python">from bootwrap import Form, Button
+
+# Note, that Button inherits ActionMixin.
+form = Form(
+    ...,
+    Button("Send").submit()
+)
+</code></pre>
+       </div>
+      </div>
+      <div class="mt-5" id="7f619e87-5e90-4088-ab43-494ec42f0a70">
+       <div class="d-flex justify-content-between" id="ce356bf6-ee6e-46b5-8bf7-f18924ddff68">
+        <h4 id="fce50ca2-154e-443c-b834-deab9d33203c">
+         Method
+         <span class="text-primary" id="6b245852-95b1-4402-acd4-09493a4746a7">
+          toggle
+         </span>
+        </h4>
+        <div id="8ba237bb-7e6b-4705-b540-1c1b68e48bec">
+         <button class="ms-1 me-1 btn-sm btn btn-outline-primary" data-bs-target="#899d114a-50d1-4885-8f85-3bd958da76a5" data-bs-toggle="collapse" id="ac0a4c7e-c802-4b2a-b2e5-dd2116a4de48" onclick="return false;" type="button">
+          Argument
+         </button>
+         <button class="btn-sm btn btn-outline-primary" data-bs-target="#a2534b91-d098-40fa-968e-0aed21e8358a" data-bs-toggle="collapse" id="9a7140dd-17dd-41f2-a043-4ff8b8c26161" onclick="return false;" type="button">
+          Returns
+         </button>
+        </div>
+       </div>
+       <span class="text-muted" id="b4316a7d-3ca1-4443-963b-0a674f042b7d">
+        Toggles an other web component.
+       </span>
+       <pre id="3ad3dfc1-3dd7-42e7-a035-6ecc1cfa26c8"><code class="language-python">toggle(target)</code></pre>
+       <div class="ms-3 collapse" id="899d114a-50d1-4885-8f85-3bd958da76a5">
+        <h6 id="0177baaf-61ad-4342-a7db-d2d7dd1ced50">
+         Arguments
+        </h6>
+        <table class="table table-sm bg-light" id="22053769-9bf2-4b4e-ae6f-e49481a43860">
+         <thead>
+          <tr>
+           <th scope="col">
+            Name
+           </th>
+           <th scope="col">
+            Type
+           </th>
+           <th scope="col">
+            Description
+           </th>
+          </tr>
+         </thead>
+         <tbody>
+          <tr>
+           <td scope="row">
+            <i style="white-space: nowrap">
+             target
+            </i>
+           </td>
+           <td>
+            <code style="white-space: nowrap">
+             WebComponent
+            </code>
+           </td>
+           <td>
+            The web component to toggle.
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="ms-3 collapse" id="a2534b91-d098-40fa-968e-0aed21e8358a">
+        <h6 id="58157249-a0f4-4a19-b52e-35168fd7c694">
+         Returns
+        </h6>
+        <table class="table table-sm bg-light" id="35647b7e-c5f8-4501-bfe8-5e8fbba93921">
+         <thead>
+          <tr>
+           <th scope="col">
+            Name
+           </th>
+           <th scope="col">
+            Type
+           </th>
+           <th scope="col">
+            Description
+           </th>
+          </tr>
+         </thead>
+         <tbody>
+          <tr>
+           <td scope="row">
+            <i style="white-space: nowrap">
+             obj
+            </i>
+           </td>
+           <td>
+            <code style="white-space: nowrap">
+             self
+            </code>
+           </td>
+           <td>
+            The instance of this class.
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="ms-3" id="5682af65-2593-474b-b96a-1130b36e6f78">
+        <h6 id="ebf996f8-80b0-4e7b-8e5a-61d53523ccb7">
+         Example
+        </h6>
+        <pre id="2fa9e47c-5bc0-4271-9c03-6af4e9ab7e65"><code class="language-python">from bootwrap import Button, Dialog
+
+# Note, that Button inherits ActionMixin.
+dialog = Dialog(...)
+button = Button("Open").toggle(dialog)
+</code></pre>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="tab-pane fade" id="caef63e3-63ff-47b0-92e5-edc4931760e7">
+     <div class="mt-5" id="9acaf25a-5ca0-438c-945e-c43316aae709">
+      <div class="d-flex justify-content-between" id="c7c1a2b5-fb68-42ca-9ab1-75ce0b13ea66">
+       <h1 id="7f6c6c6a-2ea5-4a0c-86f9-9ff02c387d76">
+        Class
+        <span class="text-primary" id="1a0c8089-d9b5-48d0-b65a-953b3731dc26">
+         AppearanceMixin
+        </span>
+       </h1>
+       <div id="92435965-d0ec-48a5-a6cf-a0f530869e4b">
+       </div>
+      </div>
+      <span class="text-muted" id="23055741-d00b-407d-978b-0e8a261919dd">
+       Mixin for a web component which appearance can be associated
+    with predefined categories.
+      </span>
+      <pre id="ab1a93be-378e-4584-b7ec-d1e38a0a577c"><code class="language-python">AppearanceMixin()</code></pre>
+      <div class="mt-5" id="5fa3f413-59dc-4e45-86a1-dc34969e86cb">
+       <div class="d-flex justify-content-between" id="380d8313-3388-4b79-9c6f-5b1a85626493">
+        <h4 id="36099f6a-3c02-466d-9c36-492d99db4ddb">
+         Method
+         <span class="text-primary" id="18a154ff-adae-4aea-afab-97378f1ef5bf">
+          as_danger
+         </span>
+        </h4>
+        <div id="a971bbef-ff4d-4d39-a15c-366547e52e25">
+         <button class="btn-sm btn btn-outline-primary" data-bs-target="#c0355111-3bb3-4df7-b0a4-e987f0966e0d" data-bs-toggle="collapse" id="9ef80d7b-085b-4c91-933f-43d19ba08893" onclick="return false;" type="button">
+          Returns
+         </button>
+        </div>
+       </div>
+       <span class="text-muted" id="a607d814-3af9-492f-947a-4b557d76e6f8">
+        Makes the 'danger' look to a web components.
+       </span>
+       <pre id="38fe4493-7ce2-4a04-b56a-7dbc88d27955"><code class="language-python">as_danger()</code></pre>
+       <div class="ms-3 collapse" id="c0355111-3bb3-4df7-b0a4-e987f0966e0d">
+        <h6 id="8ddaf439-314f-47ae-b571-b7e2e7061928">
+         Returns
+        </h6>
+        <table class="table table-sm bg-light" id="e50f0192-5306-4e46-ba69-8347ec39547a">
+         <thead>
+          <tr>
+           <th scope="col">
+            Name
+           </th>
+           <th scope="col">
+            Type
+           </th>
+           <th scope="col">
+            Description
+           </th>
+          </tr>
+         </thead>
+         <tbody>
+          <tr>
+           <td scope="row">
+            <i style="white-space: nowrap">
+             obj
+            </i>
+           </td>
+           <td>
+            <code style="white-space: nowrap">
+             self
+            </code>
+           </td>
+           <td>
+            The instance of this class.
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="ms-3" id="1e1df157-de80-40e8-b110-bb3e734e49e7">
+        <h6 id="da48a6df-2886-481a-b079-f952c40e8363">
+         Example
+        </h6>
+        <pre id="efa4b433-22b3-4072-babb-18e1c54775df"><code class="language-python">from bootwrap import Button
+
+# Note, that Button inherits AppearanceMixin.
+button = ("Danger").as_danger()
+</code></pre>
+       </div>
+      </div>
+      <div class="mt-5" id="21d122e8-86b8-4f7b-a3d9-b405b9b1a43c">
+       <div class="d-flex justify-content-between" id="9427c49c-7528-48a3-a9dd-8ce218051280">
+        <h4 id="de0c472a-9872-4e0c-ad4d-c68ef8b6f48b">
+         Method
+         <span class="text-primary" id="70c8834a-e023-49c7-a917-da06a411270d">
+          as_dark
+         </span>
+        </h4>
+        <div id="ec00d27b-5368-475a-b452-f7942bc614d9">
+         <button class="btn-sm btn btn-outline-primary" data-bs-target="#8dc020ca-2547-419b-be43-f06b95f25204" data-bs-toggle="collapse" id="cbd895d4-2463-40fa-a1c4-14d4a0209260" onclick="return false;" type="button">
+          Returns
+         </button>
+        </div>
+       </div>
+       <span class="text-muted" id="5d2e100f-e795-4df7-9950-c56a607beabf">
+        Makes the 'dark' look to a web components.
+       </span>
+       <pre id="02cdd443-494b-4b91-af71-7521ff59a27b"><code class="language-python">as_dark()</code></pre>
+       <div class="ms-3 collapse" id="8dc020ca-2547-419b-be43-f06b95f25204">
+        <h6 id="a3716e6f-9ff8-4393-8d27-fa0a9f93ca90">
+         Returns
+        </h6>
+        <table class="table table-sm bg-light" id="8a755e7a-bdf3-4b5b-83b4-8d66f6d860fb">
+         <thead>
+          <tr>
+           <th scope="col">
+            Name
+           </th>
+           <th scope="col">
+            Type
+           </th>
+           <th scope="col">
+            Description
+           </th>
+          </tr>
+         </thead>
+         <tbody>
+          <tr>
+           <td scope="row">
+            <i style="white-space: nowrap">
+             obj
+            </i>
+           </td>
+           <td>
+            <code style="white-space: nowrap">
+             self
+            </code>
+           </td>
+           <td>
+            The instance of this class.
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="ms-3" id="e73e61a4-c1af-4590-bb92-2feaa5af1802">
+        <h6 id="64e03396-fe2d-40df-b876-671828501d0f">
+         Example
+        </h6>
+        <pre id="4aebe674-d81d-48e9-ab1a-bf8a11be9a2e"><code class="language-python">from bootwrap import Button
+
+# Note, that Button inherits AppearanceMixin.
+button = ("Dark").as_dark()
+</code></pre>
+       </div>
+      </div>
+      <div class="mt-5" id="db6a564b-1184-4053-9bcb-2bcb385bb052">
+       <div class="d-flex justify-content-between" id="7118ab5a-bedd-41fa-815f-f2c06eb1cf6d">
+        <h4 id="b4a9a10c-24ea-43bd-a12f-dbfe17a93270">
+         Method
+         <span class="text-primary" id="e9444287-4620-45ad-b4ac-73b2c2d248fa">
+          as_info
+         </span>
+        </h4>
+        <div id="90b40933-282d-4df8-8730-5e71f2ad82be">
+         <button class="btn-sm btn btn-outline-primary" data-bs-target="#75a21498-8a92-4b2b-aa3f-9a4e7fb0de54" data-bs-toggle="collapse" id="12d1637a-1421-4b6c-8d75-3806027229ae" onclick="return false;" type="button">
+          Returns
+         </button>
+        </div>
+       </div>
+       <span class="text-muted" id="1a16aef5-bb63-480c-8d5c-c39fb5f3272b">
+        Makes the 'info' look to a web components.
+       </span>
+       <pre id="bc68b79d-7411-4fa0-b148-7b02405ba574"><code class="language-python">as_info()</code></pre>
+       <div class="ms-3 collapse" id="75a21498-8a92-4b2b-aa3f-9a4e7fb0de54">
+        <h6 id="3b737ebd-d66d-4224-96ae-ee5f2abb3a5c">
+         Returns
+        </h6>
+        <table class="table table-sm bg-light" id="72ebe7f0-037d-4581-968e-b0e60d18ea4b">
+         <thead>
+          <tr>
+           <th scope="col">
+            Name
+           </th>
+           <th scope="col">
+            Type
+           </th>
+           <th scope="col">
+            Description
+           </th>
+          </tr>
+         </thead>
+         <tbody>
+          <tr>
+           <td scope="row">
+            <i style="white-space: nowrap">
+             obj
+            </i>
+           </td>
+           <td>
+            <code style="white-space: nowrap">
+             self
+            </code>
+           </td>
+           <td>
+            The instance of this class.
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="ms-3" id="31f5935e-3542-46c4-8a37-7c4d4b4d0114">
+        <h6 id="66c7dfb2-f487-48ed-a49a-9693d5f889ff">
+         Example
+        </h6>
+        <pre id="53eda0c0-38d8-4208-8536-e49d399891f5"><code class="language-python">from bootwrap import Button
+
+# Note, that Button inherits AppearanceMixin.
+button = ("Info").as_info()
+</code></pre>
+       </div>
+      </div>
+      <div class="mt-5" id="cce741e4-cb77-4eda-838f-4f63472e8782">
+       <div class="d-flex justify-content-between" id="6488e8da-4d42-4a50-911b-ab66849c97a7">
+        <h4 id="55fb203d-f860-46a4-a9dd-06bb5490507a">
+         Method
+         <span class="text-primary" id="d364023e-aa0c-4fc4-aa06-58a382b230ee">
+          as_light
+         </span>
+        </h4>
+        <div id="9be3a6f3-b40f-4b81-8060-e54a41bafdf1">
+         <button class="btn-sm btn btn-outline-primary" data-bs-target="#3b37e820-923e-40b1-be67-8163ea3e8204" data-bs-toggle="collapse" id="8658f820-0925-4167-bbb3-05a84d62f36f" onclick="return false;" type="button">
+          Returns
+         </button>
+        </div>
+       </div>
+       <span class="text-muted" id="65626e4b-c9aa-4d52-a383-81fd514e72db">
+        Makes the 'light' look to a web components.
+       </span>
+       <pre id="49488466-e9f6-46fc-a29a-c7d3b4ddd1d1"><code class="language-python">as_light()</code></pre>
+       <div class="ms-3 collapse" id="3b37e820-923e-40b1-be67-8163ea3e8204">
+        <h6 id="82dd1a15-3590-4b3d-9961-54066e43b8c3">
+         Returns
+        </h6>
+        <table class="table table-sm bg-light" id="229de7d7-1fca-47f5-8c55-6fa5a6d9ff01">
+         <thead>
+          <tr>
+           <th scope="col">
+            Name
+           </th>
+           <th scope="col">
+            Type
+           </th>
+           <th scope="col">
+            Description
+           </th>
+          </tr>
+         </thead>
+         <tbody>
+          <tr>
+           <td scope="row">
+            <i style="white-space: nowrap">
+             obj
+            </i>
+           </td>
+           <td>
+            <code style="white-space: nowrap">
+             self
+            </code>
+           </td>
+           <td>
+            The instance of this class.
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="ms-3" id="7eccbf24-7985-4c1a-844c-9014ab20f8ee">
+        <h6 id="fdc6c109-cff1-48f2-9198-ee166bcfbdfa">
+         Example
+        </h6>
+        <pre id="a3730fd8-e317-4f54-b09e-685802f0c20d"><code class="language-python">from bootwrap import Button
+
+# Note, that Button inherits AppearanceMixin.
+button = ("Light").as_light()
+</code></pre>
+       </div>
+      </div>
+      <div class="mt-5" id="7373b6de-b609-4202-870a-2791ac228e89">
+       <div class="d-flex justify-content-between" id="e44af611-ca6d-436d-b354-5c558661547b">
+        <h4 id="cd16d538-6c0a-4ffa-87a1-ab5a706e3ab9">
+         Method
+         <span class="text-primary" id="909ef781-68c9-4f42-aacd-cabcc0631437">
+          as_primary
+         </span>
+        </h4>
+        <div id="20f41e00-5972-497b-b36c-9cf74f2dcce9">
+         <button class="btn-sm btn btn-outline-primary" data-bs-target="#2758dda6-65d4-4ed1-9537-1f9af08e3d5a" data-bs-toggle="collapse" id="197d0c45-6318-466d-b3f6-b7fe20c07f0e" onclick="return false;" type="button">
+          Returns
+         </button>
+        </div>
+       </div>
+       <span class="text-muted" id="40a03a8a-6845-429b-a65c-882dde28da2e">
+        Makes the 'primary' look to a web components.
+       </span>
+       <pre id="b52f0786-fbed-42a8-9298-8b1e912d9a65"><code class="language-python">as_primary()</code></pre>
+       <div class="ms-3 collapse" id="2758dda6-65d4-4ed1-9537-1f9af08e3d5a">
+        <h6 id="ba6ee8aa-cac0-46ae-8f50-74436bd83144">
+         Returns
+        </h6>
+        <table class="table table-sm bg-light" id="2b93eb61-f206-47ce-8ec9-dbb721a3dcb6">
+         <thead>
+          <tr>
+           <th scope="col">
+            Name
+           </th>
+           <th scope="col">
+            Type
+           </th>
+           <th scope="col">
+            Description
+           </th>
+          </tr>
+         </thead>
+         <tbody>
+          <tr>
+           <td scope="row">
+            <i style="white-space: nowrap">
+             obj
+            </i>
+           </td>
+           <td>
+            <code style="white-space: nowrap">
+             self
+            </code>
+           </td>
+           <td>
+            The instance of this class.
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="ms-3" id="b62054e3-e957-4b12-98cd-5fe95767e00e">
+        <h6 id="82172058-8f40-44fd-9fd2-68296bee6d3e">
+         Example
+        </h6>
+        <pre id="bc62052e-2280-4ea8-ba33-58cee665c2c3"><code class="language-python">from bootwrap import Button
+
+# Note, that Button inherits AppearanceMixin.
+button = ("Primary").as_primary()
+</code></pre>
+       </div>
+      </div>
+      <div class="mt-5" id="e9acd817-1ec9-4667-a4f3-a4ad5f3cf35c">
+       <div class="d-flex justify-content-between" id="0f139b88-96f7-4682-9ea2-53741384fb1c">
+        <h4 id="10f3fae2-b31a-46d7-b722-5a1c31006e78">
+         Method
+         <span class="text-primary" id="ed40f685-0dc1-4a33-8b98-417b1f956015">
+          as_secondary
+         </span>
+        </h4>
+        <div id="44bab2be-99cc-4845-b920-2b1e81264e55">
+         <button class="btn-sm btn btn-outline-primary" data-bs-target="#52af7d5a-55d5-4a85-baef-10e5bf76352f" data-bs-toggle="collapse" id="73ffb9f2-8f8e-4be7-8f0c-9ac873b7e5bc" onclick="return false;" type="button">
+          Returns
+         </button>
+        </div>
+       </div>
+       <span class="text-muted" id="fe347a6e-514c-425c-a0d5-a98c9fee62c3">
+        Makes the 'secondary' look to a web components.
+       </span>
+       <pre id="188356c3-ee7c-446e-9fdf-61f69af44aaf"><code class="language-python">as_secondary()</code></pre>
+       <div class="ms-3 collapse" id="52af7d5a-55d5-4a85-baef-10e5bf76352f">
+        <h6 id="abe5c73f-2724-4348-be7a-4ca1dcf57d48">
+         Returns
+        </h6>
+        <table class="table table-sm bg-light" id="68b99327-9189-4056-a88d-b983d5376262">
+         <thead>
+          <tr>
+           <th scope="col">
+            Name
+           </th>
+           <th scope="col">
+            Type
+           </th>
+           <th scope="col">
+            Description
+           </th>
+          </tr>
+         </thead>
+         <tbody>
+          <tr>
+           <td scope="row">
+            <i style="white-space: nowrap">
+             obj
+            </i>
+           </td>
+           <td>
+            <code style="white-space: nowrap">
+             self
+            </code>
+           </td>
+           <td>
+            The instance of this class.
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="ms-3" id="09958bf0-623a-44df-a293-d783bda87a3b">
+        <h6 id="7704095b-545a-4b74-bd61-713bad241ccf">
+         Example
+        </h6>
+        <pre id="23e016e1-0b19-4c30-b6b5-f71ff813f0b3"><code class="language-python">from bootwrap import Button
+
+# Note, that Button inherits AppearanceMixin.
+button = ("Secondary").as_secondary()
+</code></pre>
+       </div>
+      </div>
+      <div class="mt-5" id="c44fea69-6f78-4016-bad6-2ebf85e7a053">
+       <div class="d-flex justify-content-between" id="31df2a32-8c2c-4ba4-841d-41f7c0882ebf">
+        <h4 id="69d450b2-1ad2-41b3-b225-1916cf0936e1">
+         Method
+         <span class="text-primary" id="3c58ee2e-6365-4922-ae25-0ec4b1aeb3fe">
+          as_success
+         </span>
+        </h4>
+        <div id="b0c1c753-daae-44ba-86fb-f081dfc5c78f">
+         <button class="btn-sm btn btn-outline-primary" data-bs-target="#9101f9e9-b18b-46d5-9c38-94341dabe7b0" data-bs-toggle="collapse" id="d9574889-1800-476e-a98b-ad1f7f90e592" onclick="return false;" type="button">
+          Returns
+         </button>
+        </div>
+       </div>
+       <span class="text-muted" id="412d70b5-9349-43d9-8bd6-7cc8f65ec1b3">
+        Makes the 'success' look to a web components.
+       </span>
+       <pre id="b641ac90-8515-4145-8263-0d616aaa4e1f"><code class="language-python">as_success()</code></pre>
+       <div class="ms-3 collapse" id="9101f9e9-b18b-46d5-9c38-94341dabe7b0">
+        <h6 id="d62cdfef-bd0b-4c63-bf98-b203abff7a23">
+         Returns
+        </h6>
+        <table class="table table-sm bg-light" id="669ce099-6787-4278-a5b3-d2d8b92bd43d">
+         <thead>
+          <tr>
+           <th scope="col">
+            Name
+           </th>
+           <th scope="col">
+            Type
+           </th>
+           <th scope="col">
+            Description
+           </th>
+          </tr>
+         </thead>
+         <tbody>
+          <tr>
+           <td scope="row">
+            <i style="white-space: nowrap">
+             obj
+            </i>
+           </td>
+           <td>
+            <code style="white-space: nowrap">
+             self
+            </code>
+           </td>
+           <td>
+            The instance of this class.
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="ms-3" id="1a350a84-4730-423e-8557-7318cba447d7">
+        <h6 id="b6e1e1ce-1ad2-4974-8e36-fef9bf89ad0e">
+         Example
+        </h6>
+        <pre id="3de3b616-c9b8-400f-9b15-f1435aa22e51"><code class="language-python">from bootwrap import Button
+
+# Note, that Button inherits AppearanceMixin.
+button = ("Success").as_success()
+</code></pre>
+       </div>
+      </div>
+      <div class="mt-5" id="721fe5ca-8f51-479f-9acd-5e273c0f3053">
+       <div class="d-flex justify-content-between" id="b633c9b6-f07e-4891-bc15-1a44535a48ba">
+        <h4 id="e7115865-8c53-4cb6-a065-bb8f0470bf66">
+         Method
+         <span class="text-primary" id="fed3e499-8de1-4400-9b34-1e554e2edad6">
+          as_warning
+         </span>
+        </h4>
+        <div id="4e7e8435-4cec-4e4e-909a-1aad9113118a">
+         <button class="btn-sm btn btn-outline-primary" data-bs-target="#84588504-32e3-4435-8483-3e52531d0aaf" data-bs-toggle="collapse" id="7828aaa3-ae9f-4d74-95fe-7d78a6e6bb39" onclick="return false;" type="button">
+          Returns
+         </button>
+        </div>
+       </div>
+       <span class="text-muted" id="6b3a3a49-8020-41c3-922c-054c1a18805b">
+        Makes the 'warning' look to a web components.
+       </span>
+       <pre id="ba17d22b-482c-460f-8821-7c03bdd86e15"><code class="language-python">as_warning()</code></pre>
+       <div class="ms-3 collapse" id="84588504-32e3-4435-8483-3e52531d0aaf">
+        <h6 id="10c6c564-3bc5-444b-9be2-ca77577a3be7">
+         Returns
+        </h6>
+        <table class="table table-sm bg-light" id="bbcc9751-4d8a-4c71-80eb-3b063f2c6552">
+         <thead>
+          <tr>
+           <th scope="col">
+            Name
+           </th>
+           <th scope="col">
+            Type
+           </th>
+           <th scope="col">
+            Description
+           </th>
+          </tr>
+         </thead>
+         <tbody>
+          <tr>
+           <td scope="row">
+            <i style="white-space: nowrap">
+             obj
+            </i>
+           </td>
+           <td>
+            <code style="white-space: nowrap">
+             self
+            </code>
+           </td>
+           <td>
+            The instance of this class.
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="ms-3" id="9922e0a3-de91-4024-9375-7fb0dc614e62">
+        <h6 id="0aa6b429-1600-433e-8a15-22677a226762">
+         Example
+        </h6>
+        <pre id="ac574fa9-fd1a-4d30-b003-b9753076bb6c"><code class="language-python">from bootwrap import Button
+
+# Note, that Button inherits AppearanceMixin.
+button = ("Warning").as_warning()
+</code></pre>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="tab-pane fade" id="5b2efc73-c5b4-42db-9ffd-1de18bc803c5">
+     <div class="mt-5" id="d5cbb5b9-9c11-4413-a9af-11e5c1cf8e32">
+      <div class="d-flex justify-content-between" id="b7ca6e80-a349-486b-b021-791487665a3c">
+       <h1 id="83d4945d-d370-41aa-a8e0-a295cb3dc30b">
+        Class
+        <span class="text-primary" id="5ab3c331-a31d-49f7-89dc-013675096b83">
+         OutlineMixin
+        </span>
+       </h1>
+       <div id="398116e6-4700-47c0-bc24-38c8ba85ce66">
+       </div>
+      </div>
+      <span class="text-muted" id="6586b6f0-23a1-46c7-be89-44ce8e8c99fa">
+       Mixin for a web component that can be surrounded by a border.
+      </span>
+      <pre id="7d641a43-72b3-401b-903e-405937b93b2c"><code class="language-python">OutlineMixin()</code></pre>
+      <p id="9cffadb1-73c9-45ef-8700-b58be6a62b6e">
+       Usually
+       <code>
+        OutlineMixin
+       </code>
+       is used in conjunction with
+       <code>
+        AppearanceMixin
+       </code>
+       to
+    specify the border appearance.
+      </p>
+      <div class="mt-5" id="4165707e-5dd2-48ab-b4e3-6c360fa06582">
+       <div class="d-flex justify-content-between" id="0ca1cca9-42a4-49fa-b329-40a51f49f838">
+        <h4 id="f3884cf0-9a41-4393-a15a-eac301bc00f0">
+         Method
+         <span class="text-primary" id="f7bfefa5-1cd8-4498-92b8-25c66d2ba0c9">
+          as_outline
+         </span>
+        </h4>
+        <div id="5ec742bb-ba23-4127-8700-edab7658db44">
+         <button class="btn-sm btn btn-outline-primary" data-bs-target="#56876c02-c003-4c31-907a-25ba64af8502" data-bs-toggle="collapse" id="ec0c6329-cbc2-4f2a-9f12-828dc5eb385c" onclick="return false;" type="button">
+          Returns
+         </button>
+        </div>
+       </div>
+       <span class="text-muted" id="01c22482-2942-49cc-8256-bef88d83e213">
+        Makes the web component surrounded by a border.
+       </span>
+       <pre id="e9e6d4a7-9be3-42bc-a083-ecc6700cbee6"><code class="language-python">as_outline()</code></pre>
+       <div class="ms-3 collapse" id="56876c02-c003-4c31-907a-25ba64af8502">
+        <h6 id="7dd7e828-e5dd-4be0-8050-7324f32ec213">
+         Returns
+        </h6>
+        <table class="table table-sm bg-light" id="ce210ec3-26ef-4359-8643-fe3102adf429">
+         <thead>
+          <tr>
+           <th scope="col">
+            Name
+           </th>
+           <th scope="col">
+            Type
+           </th>
+           <th scope="col">
+            Description
+           </th>
+          </tr>
+         </thead>
+         <tbody>
+          <tr>
+           <td scope="row">
+            <i style="white-space: nowrap">
+             obj
+            </i>
+           </td>
+           <td>
+            <code style="white-space: nowrap">
+             self
+            </code>
+           </td>
+           <td>
+            The instance of this class.
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="ms-3" id="88188a05-2f10-4425-a992-2a550b4f38d1">
+        <h6 id="d253ee9b-777b-47a6-9f28-cdac85c97fae">
+         Example
+        </h6>
+        <pre id="31c9aa38-20f9-40b9-97d3-9663ca7ff1bc"><code class="language-python">from bootwrap import Button
+
+# Note, that Button inherits AppearanceMixin.
+button = ("Primary").as_primary().as_outline()
+</code></pre>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="tab-pane fade" id="d7478cb8-809c-426f-9277-4bcb2e11a58c">
+     <div class="mt-5" id="8aedb11f-d5cd-4eef-9bc1-26e8bea1f8a3">
+      <div class="d-flex justify-content-between" id="03cf3e23-ccdb-4525-b06d-5e9a168208b8">
+       <h1 id="5329fc57-6c4a-4b3e-a85f-d660988a11bd">
+        Class
+        <span class="text-primary" id="05b6e3a7-1397-40de-8635-a6d91b83437b">
+         AvailabilityMixin
+        </span>
+       </h1>
+       <div id="53b884c7-b318-4d63-97c4-95d47a98acd4">
+       </div>
+      </div>
+      <span class="text-muted" id="041d991b-55fb-4ea6-9060-8aa1009917a5">
+       Mixin for a web component which can be enabled or disabled.
+      </span>
+      <pre id="45935f79-c28d-4058-aaae-0fe87c51751b"><code class="language-python">AvailabilityMixin()</code></pre>
+      <p id="40211d85-2a68-4308-9ab4-204f59b62535">
+       By default, every web component is enabled. The web components inheriting
+    this class can be forced to be disabled.
+      </p>
+      <div class="mt-5" id="ffdb3919-c3ac-47ee-9289-e74d48f2e2a4">
+       <div class="d-flex justify-content-between" id="a574dd5a-8e15-4180-860c-78e0bf2423c5">
+        <h4 id="ea551a40-91fd-42ad-85b3-b9dd5c7a12dc">
+         Method
+         <span class="text-primary" id="4c754a90-5c91-4039-b070-ac62e340c6e2">
+          as_disabled
+         </span>
+        </h4>
+        <div id="f741ad64-d707-4f5d-b5aa-3d1bb8964401">
+         <button class="btn-sm btn btn-outline-primary" data-bs-target="#a42f102d-5832-4506-af45-84fd6734d242" data-bs-toggle="collapse" id="abbe2245-bb16-4914-b57a-84e85df6a82b" onclick="return false;" type="button">
+          Returns
+         </button>
+        </div>
+       </div>
+       <span class="text-muted" id="d4341774-ef85-4dd4-9173-bef897a89952">
+        Disables a web component.
+       </span>
+       <pre id="a70e1116-5411-4f29-be6f-409168db3bdd"><code class="language-python">as_disabled()</code></pre>
+       <div class="ms-3 collapse" id="a42f102d-5832-4506-af45-84fd6734d242">
+        <h6 id="8a092b0d-29a6-44ae-afe3-faf8eec51f75">
+         Returns
+        </h6>
+        <table class="table table-sm bg-light" id="f3fe007f-3ab7-460e-851a-6ade2917e647">
+         <thead>
+          <tr>
+           <th scope="col">
+            Name
+           </th>
+           <th scope="col">
+            Type
+           </th>
+           <th scope="col">
+            Description
+           </th>
+          </tr>
+         </thead>
+         <tbody>
+          <tr>
+           <td scope="row">
+            <i style="white-space: nowrap">
+             obj
+            </i>
+           </td>
+           <td>
+            <code style="white-space: nowrap">
+             self
+            </code>
+           </td>
+           <td>
+            The instance of this class.
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="ms-3" id="b84e3a6c-04cd-46c1-90ef-6c5f009e9d36">
+        <h6 id="c39aaf28-781b-4015-acc3-67193cc6b319">
+         Example
+        </h6>
+        <pre id="15944ba9-76cd-458b-bf21-67a842d268db"><code class="language-python">from bootwrap import Button
+
+# Note, that Button inherits AppearanceMixin.
+button = ("Primary").as_disabled()
+</code></pre>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="tab-pane fade" id="13dd3405-88ff-4de6-91b3-3557054a5693">
+     <div id="c83d71c6-7974-438b-ad49-29316e9880f7">
+      <hr/>
+      <ul class="nav" id="d533cc13-2ed3-4606-b181-b95a50ac9e1c" role="tablist">
+       <li class="nav-item">
+        <a class="nav-link active" data-bs-target="#9e35f4ee-adc1-43e1-9a37-7282812eb16a" data-bs-toggle="tab" href="#9e35f4ee-adc1-43e1-9a37-7282812eb16a" id="54835f24-7720-4c3a-9721-83fb28393b0d" role="tab">
+         <span class="text-secondary" id="e2175615-5429-4e2f-8beb-0f96e0c311eb">
+          Breakpoint
+         </span>
+        </a>
+       </li>
+       <li class="nav-item">
+        <a class="nav-link" data-bs-target="#59c4e45b-4333-4841-9012-2f117f9ed83d" data-bs-toggle="tab" href="#59c4e45b-4333-4841-9012-2f117f9ed83d" id="ecfa302f-5239-4bdf-bae2-3b3788663293" role="tab">
+         <span class="text-secondary" id="6f59d11a-be4d-4dad-a7a4-8ad8b6e7bf0a">
+          Action
+         </span>
+        </a>
+       </li>
+      </ul>
+      <div class="tab-content w-100">
+       <div class="tab-pane fade active show" id="9e35f4ee-adc1-43e1-9a37-7282812eb16a">
+        <div class="mt-5" id="1e12af5f-7f03-4543-805a-00088462bea9">
+         <div class="d-flex justify-content-between" id="b93c9e92-9513-41aa-9934-41c6d2991f6f">
+          <h1 id="7f22a7af-0d26-46c5-9ea5-00f9864ca1f4">
+           Class
+           <span class="text-primary" id="3844d290-5da7-48b0-93b2-c7b868867f07">
+            Breakpoint
+           </span>
+          </h1>
+          <div id="78ccef74-6dc2-417e-a9fd-dbe422b58475">
+          </div>
+         </div>
+         <span class="text-muted" id="72f22c11-de41-4a6f-b4e5-f1018e1f471e">
+          The breakpoint constants.
+         </span>
+         <p id="dc81ff74-6da2-4e3f-9711-8951f2ddd698">
+          Breakpoints are defined by Bootstrap and mostly based on minimum
+    viewport widths and allow us to scale up elements as the viewport
+    changes.
+         </p>
+         <p id="2aa874a4-2e17-4e95-a47c-3a418877e5a5">
+          See
+          <a href="https://getbootstrap.com/docs/4.0/layout/overview/#responsive-breakpoints">
+           for more information.
+          </a>
+         </p>
+         <div id="c0cf0ffa-1f73-4253-9a9e-bea7efe4a014">
+          <div class="row">
+           <div class="col-md">
+            <div class="p-1 m-1 border text-center" id="c8f959ad-6ba9-46a1-b69d-74ecc4b74dd7">
+             Breakpoint.
+             <strong class="text-primary">
+              LG
+             </strong>
+            </div>
+           </div>
+           <div class="col-md">
+            <div class="p-1 m-1 border text-center" id="07b87a5e-477f-490a-9c09-0c11be41dcd2">
+             Breakpoint.
+             <strong class="text-primary">
+              MD
+             </strong>
+            </div>
+           </div>
+           <div class="col-md">
+            <div class="p-1 m-1 border text-center" id="81961c4d-35a6-4600-b9af-621ce879ebc9">
+             Breakpoint.
+             <strong class="text-primary">
+              SM
+             </strong>
+            </div>
+           </div>
+           <div class="col-md">
+            <div class="p-1 m-1 border text-center" id="0f2c89da-908a-4798-bb1d-7496e438c4cf">
+             Breakpoint.
+             <strong class="text-primary">
+              XL
+             </strong>
+            </div>
+           </div>
+           <div class="col-md">
+            <div class="p-1 m-1 border text-center" id="011c6a79-8f52-4241-a4b3-0b6645d685ea">
+             Breakpoint.
+             <strong class="text-primary">
+              XS
+             </strong>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="tab-pane fade" id="59c4e45b-4333-4841-9012-2f117f9ed83d">
+        <div class="mt-5" id="2beff483-d167-4028-a913-e6894ee13027">
+         <div class="d-flex justify-content-between" id="7758a718-6fa5-4fcf-bcac-0bd2fba5bd01">
+          <h1 id="aa71eac1-585d-4d32-adb9-aabb26baa998">
+           Class
+           <span class="text-primary" id="f48b4df7-e097-4e8f-9aeb-9fd0b60e1317">
+            Action
+           </span>
+          </h1>
+          <div id="8d2e7dbb-0b36-44bc-8141-85a147c6810d">
+          </div>
+         </div>
+         <span class="text-muted" id="52190ae3-9596-468f-87fb-7675da144b2b">
+          The action constants.
+         </span>
+         <div id="1b06e34d-f6d1-4f6b-9351-5d826a7a7228">
+          <div class="row">
+           <div class="col-md">
+            <div class="p-1 m-1 border text-center" id="0161813b-73c3-45df-8283-21ea01855c9e">
+             Action.
+             <strong class="text-primary">
+              DISMISS
+             </strong>
+            </div>
+           </div>
+           <div class="col-md">
+            <div class="p-1 m-1 border text-center" id="cfa2e0bc-56d2-4326-941e-26521151ad25">
+             Action.
+             <strong class="text-primary">
+              LINK
+             </strong>
+            </div>
+           </div>
+           <div class="col-md">
+            <div class="p-1 m-1 border text-center" id="5b8ca555-bebb-4bb8-ba54-073007c8bebc">
+             Action.
+             <strong class="text-primary">
+              SUBMIT
+             </strong>
+            </div>
+           </div>
+           <div class="col-md">
+            <div class="p-1 m-1 border text-center" id="b863c7ab-81e0-47a2-be7f-36145a037bab">
+             Action.
+             <strong class="text-primary">
+              TOGGLE
+             </strong>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+ <script>
+  hljs.highlightAll();
+ </script>
+ <style>
+  :root{--container-margin-top: 90px}html {  width: 100%;  height: 100%; }  body {  background-color: var(--body-background-color);  background-image: var(--body-background-image);  background-position: var(--body-background-position);  background-size: var(--body-background-size);  -webkit-background-size: var(--body-background-size);  -moz-background-size: var(--body-background-size);  -o-background-size: var(--body-background-size);  background-repeat: var(--body-background-repeat);  background-origin: var(--body-background-origin);  background-clip: var(--body-background-clip);  background-attachment: var(--body-background-attachment); }  .container-fluid {  margin-top: var(--container-margin-top); }  .auth {  width: 400px;  margin-top: 150px; }  @media only screen and (max-width: 420px) {  body {  background-image: none;  }   .auth {  width: 100%;  margin-top: 0px;  } }  .grid-container {  display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }  .card {  margin-top: 10px; }
+ </style>
+</html>
