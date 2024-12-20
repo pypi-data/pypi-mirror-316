@@ -1,0 +1,11 @@
+graft ./inkBoarddesigner/files
+
+recursive-include ./inkBoarddesigner/platforms *
+recursive-include ./inkBoarddesigner/integrations *
+
+global-exclude */__pycache__/*
+global-exclude *.pyc
+
+global-exclude */settings.ini
+global-exclude */secrets.yaml
+global-exclude */secrets.yml
