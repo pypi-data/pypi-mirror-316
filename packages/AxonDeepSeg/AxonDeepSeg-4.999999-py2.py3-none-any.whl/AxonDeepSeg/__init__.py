@@ -1,0 +1,5 @@
+import os
+import sys
+
+__name__ = "AxonDeepSeg"
+__version__ = 4.999999
