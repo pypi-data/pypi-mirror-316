@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: airsmodel
+Version: 0.5.11
+Summary: ARLAS Item Registration Service Model
+Home-page: UNKNOWN
+Author: Gisaïa
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+
+
+
+ # Readme
+
+
+
+## /
+
+* [Item](./model.schema.md) – `airs_model` (Unknown)
+
+
+
