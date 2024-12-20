@@ -1,0 +1,2 @@
+[console_scripts]
+glpi-grafana-exporter = glpi_grafana_exporter:main

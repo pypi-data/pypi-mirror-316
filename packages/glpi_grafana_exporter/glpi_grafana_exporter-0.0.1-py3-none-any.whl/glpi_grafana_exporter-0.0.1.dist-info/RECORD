@@ -1,0 +1,7 @@
+glpi_grafana_exporter/__init__.py,sha256=qflJc6wx2AwSBHDRMGGVtDHMKePI0GiC9MWze4YodEs,8660
+glpi_grafana_exporter/fake.py,sha256=x3UJxy53QU1Pj3SpPphdfz6z2Szvv6DwLNj8vx5vvb8,1956
+glpi_grafana_exporter-0.0.1.dist-info/METADATA,sha256=TRIr4hbf5r4tyUmmPOYM9ubxEJhNkan5RJUx6WX1RXw,3731
+glpi_grafana_exporter-0.0.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+glpi_grafana_exporter-0.0.1.dist-info/entry_points.txt,sha256=TcoXq0_TS3lnTPJF9F8pzVaB8Dh-Mzbzi5ZJzNCJK5I,69
+glpi_grafana_exporter-0.0.1.dist-info/licenses/LICENSE,sha256=Ru2ST3vMAcMz5RaB8FVhXUE6OWGP_hqmippd7EHB1dY,1065
+glpi_grafana_exporter-0.0.1.dist-info/RECORD,,
