@@ -1,0 +1,9 @@
+Package: sdl2-ttf
+Version: 2.0.15
+Port-Version: 5
+Depends: freetype, sdl2
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 1883bb85a60de11ce4446e8ec99109d5910e148249a208a619457b204509958b
+Description: A library for rendering TrueType fonts with SDL
+Status: install ok installed

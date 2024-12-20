@@ -1,0 +1,8 @@
+Package: boost-integer
+Version: 1.78.0
+Depends: boost-assert, boost-config, boost-core, boost-static-assert, boost-throw-exception, boost-vcpkg-helpers
+Architecture: x64-windows
+Multi-Arch: same
+Abi: c73897e65ff93dc7efd83d02f654c1bed9f8a0b25959b1e530d7e7b053ab5507
+Description: Boost integer module
+Status: install ok half-installed

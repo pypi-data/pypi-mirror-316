@@ -1,0 +1,8 @@
+Package: boost-move
+Version: 1.78.0
+Depends: boost-assert, boost-config, boost-core, boost-static-assert, boost-vcpkg-helpers, boost-winapi
+Architecture: x64-windows
+Multi-Arch: same
+Abi: bf94287f2213a0ad0eb3fcc183743c93bbb4a8a8168b9942d73ae3218ef7e47e
+Description: Boost move module
+Status: install ok half-installed

@@ -1,0 +1,8 @@
+Package: brotli
+Version: 1.0.9
+Port-Version: 2
+Architecture: x64-windows
+Multi-Arch: same
+Abi: a7ce995298cc6cb9339f31c795da64df80af6e8813bac7ffdaea5333aeea68f9
+Description: a generic-purpose lossless compression algorithm that compresses data using a combination of a modern variant of the LZ77 algorithm, Huffman coding and 2nd order context modeling.
+Status: install ok installed
