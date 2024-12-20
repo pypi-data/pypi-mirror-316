@@ -1,0 +1,29 @@
+Effizienz: Zuerst in ein kompaktes Format konvertieren:
+
+
+ # Load dataset
+    paths = list(Path(replays_path).glob("*-trajectory"))
+    dataset = TrajectoryDatasetSequence(
+        datasets.concatenate_datasets([datasets.load_from_disk(path) for path in paths])
+    )
+
+    converted_trajectories = []
+    for trajectory in tqdm(dataset):
+        new_obs = []
+        for obs in trajectory.obs:
+            d = environment.observation(obs)
+            new_obs.append(d)
+
+        # noinspection PyUnresolvedReferences
+        converted_trajectories.append(
+            TrajectoryWithRew(
+                obs=np.stack(new_obs),
+                acts=np.stack([a["end"] for a in trajectory.acts]),
+                infos=trajectory.infos,
+                terminal=trajectory.terminal,
+                rews=trajectory.rews,
+            )
+        )
+
+    save(Path(replays_path) / "converted", converted_trajectories)
+'''
