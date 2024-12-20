@@ -1,0 +1,6 @@
+/.vscode/
+/.trunk/
+/local/
+.directory
+venv/
+.venv/

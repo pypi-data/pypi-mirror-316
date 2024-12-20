@@ -1,0 +1,22 @@
+[project]
+name = "trafo"
+version = "0.0.1"
+authors = [
+  { name="Mirko Kunze" },
+]
+description = "Library for handling 3D transformations"
+readme = "README.md"
+requires-python = ">=3.0"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/mqnc/trafo"
+Issues = "https://github.com/mqnc/trafo/issues"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
