@@ -1,0 +1,11 @@
+aztools/__init__.py,sha256=hIgA1u8LIEQBCOQ6dYIPpMXA9viVXlFCFz-jbgkyOhA,155
+aztools/azmonitor.py,sha256=2SFFqgbE4hOJ-zIPs1g2hOhDld8TVHNQKPvW9lvJT4M,2318
+aztools/loganalytics.py,sha256=8eZUlQRuLfyOHDH-feQHv5Fk6n0M2vHSFlzvo36Ckr4,1049
+aztools/m365d.py,sha256=y80uNNCmutsAJP5VFd11vR42nHxZ9Dub0GEuF88Buw0,3202
+aztools/oauth.py,sha256=WIr-ATg7bpKiaftl-aaf3ckbmJrsKzXYDmIMOqoV8mU,9145
+aztools/sentinel.py,sha256=oUXaHXztEvLS9zWZNF90yJzyWIsZMBWknKvziQD0ox0,1041
+h2w_aztools-1.0.0.dist-info/LICENSE.txt,sha256=-CzhdSeL6lXkpaF6TWBa2ufFy2XUtCoBUBYOrBMSRaw,1070
+h2w_aztools-1.0.0.dist-info/METADATA,sha256=0qqiDMV7hRlEhFV8lj7tOwH-mTq9e56q469qsa9moVc,1797
+h2w_aztools-1.0.0.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+h2w_aztools-1.0.0.dist-info/top_level.txt,sha256=ffJZ-5hmU4ZbiLAeWNI2T2ZKd-hsbHV_6BTyrad8aBY,8
+h2w_aztools-1.0.0.dist-info/RECORD,,
