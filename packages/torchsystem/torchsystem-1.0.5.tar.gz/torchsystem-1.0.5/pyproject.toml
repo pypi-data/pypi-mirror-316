@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "torchsystem"
+version = "1.0.5"
+description = "An IA training system, based on domain driven design and an event driven architecture, created on top of the pybondi library."
+authors = ["Eric Cardozo <eric.m.cardozo@mi.unc.edu.ar>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+mlregistry = "^1.0.3"
+pybondi = "^1.2.3"
+
+
+[tool.poetry.group.tests.dependencies]
+pytest = "^8.3.4"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
