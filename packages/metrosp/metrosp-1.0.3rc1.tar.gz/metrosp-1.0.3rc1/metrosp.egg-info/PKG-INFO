@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: metrosp
+Version: 1.0.3rc1
+Summary: Ferramenta de linha de comando para recuperar situação atual do Metro de SP
+Home-page: https://github.com/renatolipi/status_metro_sp
+Author: Renato Lipi
+Author-email: 
+License: LGPLv3
+Keywords: metro metrosp SP
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/plain
+Requires-Dist: beautifulsoup4==4.12.3
+Requires-Dist: requests==2.32.3
+
+Ferramenta de linha de comando para recuperar situação atual das linhas do Metro de SP. Para mais infos: https://github.com/renatolipi/status_metro_sp/blob/master/README.md
