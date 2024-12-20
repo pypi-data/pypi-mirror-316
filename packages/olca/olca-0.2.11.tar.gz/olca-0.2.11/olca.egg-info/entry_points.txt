@@ -1,0 +1,3 @@
+[console_scripts]
+fusewill = olca.fusewill:main
+olca2 = olca.olcacli:main
