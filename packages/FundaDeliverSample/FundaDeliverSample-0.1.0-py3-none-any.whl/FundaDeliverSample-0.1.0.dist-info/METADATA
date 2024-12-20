@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: FundaDeliverSample
+Version: 0.1.0
+Summary: A package for delivering the FundaDeliverSample project
+Author: Vons
+Author-email: zb8cvonsdeliver@icloud.com
+Requires-Dist: gin-config
+Requires-Dist: cryptography
+
