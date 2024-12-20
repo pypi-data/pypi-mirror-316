@@ -1,0 +1,16 @@
+dsd_flyio/__init__.py,sha256=wsYq2dGUgbrGbCy1HASerFyJNka8gCjRdhjhCs85H1I,93
+dsd_flyio/deploy.py,sha256=1LFl5Az_dYdDkR8stQKz2O1ItNqpDABTvYv9KU_D8_A,869
+dsd_flyio/deploy_messages.py,sha256=XI18Zv-xlKZv6ZfTB8uzhAInjXrsFJyr_UN9qzJcXIo,7860
+dsd_flyio/platform_deployer.py,sha256=5B9QbEOBrrobUY67CIrCX8RRYrn8fCTViFakqyWwwPc,28224
+dsd_flyio/plugin_config.py,sha256=72-seXikZGmHXklv0yM8o-vuPlGUNRjObC_SM2yeRlQ,858
+dsd_flyio/templates/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dsd_flyio/templates/dockerfile,sha256=E3_0C3FF1uvO22GQXaWroL2LN-J9Tbb7merLUHmkwZE,507
+dsd_flyio/templates/dockerfile_pipenv,sha256=isp3D4g-Q8JQNHWAIm0n5jquK7dSy-tmpE_r1bebeiw,555
+dsd_flyio/templates/dockerfile_poetry,sha256=4fFfbWVkXHQhFGlihrMlqLQaj9wjeLwE2Rz3YFMgmxE,687
+dsd_flyio/templates/fly.toml,sha256=Po1dwOuIaJG-FQ326E1sEVZPMki9OKOKqdsr4w3Sjxc,889
+dsd_flyio/templates/settings.py,sha256=BM9Q5a4ZTan2bq3Wyx1LDxXykNX-Ru9L45ffgxZc-G0,1539
+dsd_flyio-0.9.2.dist-info/LICENSE,sha256=eE0PSpGK-C_T72lmuE6kQ_Am4fOlJympaeS_aItmiws,1484
+dsd_flyio-0.9.2.dist-info/METADATA,sha256=RhVZyibZHq7VsGkcn_fopLYABDsD6S-m3Cv5RKyqcNo,1731
+dsd_flyio-0.9.2.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+dsd_flyio-0.9.2.dist-info/top_level.txt,sha256=AsIPwrOwYTvzCKKiv2ThEE4HH-JPhOaX-SuV-Ow0HF8,10
+dsd_flyio-0.9.2.dist-info/RECORD,,
