@@ -1,0 +1,11 @@
+pyetymdict/__init__.py,sha256=p-DJfb5WDIhoWryuX792KFInWfSS5F5JT4zfv4l7czk,168
+pyetymdict/dataset.py,sha256=7_vL0egwqgVYaehxtES_5PZts6dCL-P_2-WFD9dXlr8,9251
+pyetymdict/tree.py,sha256=UNuYuw4ITTwmVdKcWPsVtDv1kpmapGKsJPjdgNbMBe8,1361
+pyetymdict/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyetymdict/commands/set.py,sha256=dcL2upywOm3OY2kGKko3GE5V9Sz83yBoh7rJygd19SA,6518
+pyetymdict-1.0.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+pyetymdict-1.0.0.dist-info/METADATA,sha256=YrhdU00KUo8j4E8sD80qidj9HbKqwbJmq8ZLS7CCRxc,2263
+pyetymdict-1.0.0.dist-info/WHEEL,sha256=pxeNX5JdtCe58PUSYP9upmc7jdRPgvT0Gm9kb1SHlVw,109
+pyetymdict-1.0.0.dist-info/entry_points.txt,sha256=1uKoy2736WZEKkWOPMM-c4BtAXC6FwP1UZE684FqByg,52
+pyetymdict-1.0.0.dist-info/top_level.txt,sha256=y1uOqeMWwkYRyppsYOPixJGkMwxY2hI84muHiiq1oNA,11
+pyetymdict-1.0.0.dist-info/RECORD,,
