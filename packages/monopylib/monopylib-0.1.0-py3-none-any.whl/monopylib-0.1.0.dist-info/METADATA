@@ -1,0 +1,96 @@
+Metadata-Version: 2.1
+Name: monopylib
+Version: 0.1.0
+Summary: Tool for managing Python monorepos
+Home-page: https://gitlab.com/yakov.perets/python-monorepo-simulation
+Author: Yakov Perets
+Author-email: yakov.perets@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: click
+
+# monopy
+**monopy** is a Python tool designed to help manage monorepo structures efficiently, with support for managing dependencies, configurations, and service execution.
+
+### monorepo structure
+````
+â””â”€â”€ python-monorepo
+    â”œâ”€â”€ Readme.md
+    â”œâ”€â”€ config.json  
+    â”œâ”€â”€ monorepo
+    â”‚   â”œâ”€â”€ services
+    â”‚   â”‚   â”œâ”€â”€ x
+    â”‚   â”‚   â”‚   â”œâ”€â”€ Dockerfile
+    â”‚   â”‚   â”‚   â”œâ”€â”€ app
+    â”‚   â”‚   â”‚   â”‚   â”œâ”€â”€ __init__.py
+    â”‚   â”‚   â”‚   â”‚   â”œâ”€â”€ application.py
+    â”‚   â”‚   â”‚   â”‚   â”œâ”€â”€ main.py
+    â”‚   â”‚   â”‚   â”‚   â””â”€â”€ requirements.txt        
+    â”‚   â”‚   â”‚   â”œâ”€â”€ local-utils.json
+    â”‚   â”‚   â”‚   â””â”€â”€ requirements.txt
+    â”‚   â”œâ”€â”€ utils
+    â”‚   â”‚   â”œâ”€â”€ y
+    â”‚   â”‚   â”‚   â”œâ”€â”€ app     
+    â”‚   â”‚   â”‚   â”‚   â”œâ”€â”€ __init__.py
+    â”‚   â”‚   â”‚   â”‚   â””â”€â”€ y.py
+    â”‚   â”‚   â”‚   â”œâ”€â”€ local-utils.json
+    â”‚   â”‚   â”‚   â””â”€â”€ requirements.txt
+    â”‚   â”‚   â””â”€â”€ z
+    â”‚   â”‚       â”œâ”€â”€ app
+    â”‚   â”‚       â”‚   â”œâ”€â”€ __init__.py
+    â”‚   â”‚       â”‚   â””â”€â”€ z.py
+    â”‚   â”‚       â”œâ”€â”€ local-utils.json
+    â”‚   â”‚       â””â”€â”€ requirements.txt
+    â”‚   â””â”€â”€ versions-lock.json
+````
+### config.json 
+````
+{
+    "repo_name": "monorepo",
+    "services_dir": "services",
+    "utils_dir": "utils",
+    "venv_dir_name": ".venv",
+    "default_case": "local-case",
+    "version_lock_file": "versions-lock.json",
+    "service_main_file": "main.py",
+    "local_utils_file": "local-utils.json"
+  }
+  
+````
+### monorepo/services/x/local-utils.json
+````
+{
+    "local_dependencies": [
+        "y"
+    ],
+    "requirements": [
+        "boto3"
+    ],
+    "local_dependencies_requirements": [
+
+    ]
+}
+````
+## run specific service:
+```  cd python-monorepo  ```
+```  monopy run service x  ```
+or:
+```  cd monorepo  ```
+```  monopy run service x .. ```
+
+## ci command for uncopy unnecceassery util service:
+
+```  monopy run service x . ci-case ```
+
+## build command inside the dockerfile:
+
+```  monopy run service x . build-case ```
+
+## build command inside the cmd in dockerfile:
+
+```  monopy run service x . build-case ```
+
+

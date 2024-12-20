@@ -1,0 +1,2 @@
+[console_scripts]
+monopylib = monopylib.init.cli:cli
