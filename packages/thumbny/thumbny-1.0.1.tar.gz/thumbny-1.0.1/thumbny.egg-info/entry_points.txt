@@ -1,0 +1,2 @@
+[console_scripts]
+thumbny = thumbny.__main__:main
