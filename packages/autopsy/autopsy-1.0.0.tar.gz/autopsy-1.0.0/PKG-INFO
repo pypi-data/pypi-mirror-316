@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: autopsy
+Version: 1.0.0
+Summary: A new debugging experience
+Home-page: https://github.com/shobrook/autopsy
+Author: shobrook
+Author-email: shobrookj@gmail.com
+Keywords: debugger
+Requires-Python: >=3
+License-File: LICENSE
