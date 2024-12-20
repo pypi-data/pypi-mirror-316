@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: cbox-tool
+Version: 0.1.8
+Summary: A powerful multi-repository management tool for Git projects
+Home-page: https://github.com/beliefei/cbox
+Author: belief
+Author-email: beliefchinese@gmail.com
+Project-URL: Bug Tracker, https://github.com/beliefei/cbox/issues
+Project-URL: Documentation, https://github.com/beliefei/cbox/tree/main/docs
+Project-URL: Source Code, https://github.com/beliefei/cbox
+Keywords: git repository management tool workspace
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Version Control :: Git
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: click>=8.0.0
+Requires-Dist: pyyaml>=6.0.0
+Requires-Dist: rich>=13.0.0
+Requires-Dist: gitpython>=3.1.0
+Requires-Dist: PySide6>=6.6.0
+
+
+    # CBox
+    
+    [English](docs/README_en.md) | [中文](docs/README_zh.md)
+    
+    <div align="center">
+    
+    ![CBox Logo](icon.png)
+    
+    A powerful multi-repository management tool with GUI support.
+    
+    [![PyPI version](https://badge.fury.io/py/cbox-tool.svg)](https://badge.fury.io/py/cbox-tool)
+    [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+    
+    </div>
+    
+    ---
+    
+    **English** | [中文](docs/README_zh.md)
+    
+    CBox is a powerful multi-repository management tool that helps you better organize and manage multiple Git repositories. It supports workspace management, batch operations, branch management, and other features, making multi-repository management simple and efficient.
+    
