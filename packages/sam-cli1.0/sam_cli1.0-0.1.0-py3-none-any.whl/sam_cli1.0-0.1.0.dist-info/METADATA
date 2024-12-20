@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: sam-cli1.0
+Version: 0.1.0
+Summary: A CLI tool to fetch current weather information.
+Author: Samuel
+License: MIT
+License-File: LICENSE
+Requires-Dist: requests==2.31.0

@@ -1,0 +1,9 @@
+weather/__init__.py,sha256=b2sw0bVDGPzEcVcJANrHyOTFkseUiIlj8OypkxAQQqA,234
+weather/cli.py,sha256=i4DVcnnAoh7-T8GnBmlp7zChrp6KM53wYDGnG6pX4Zg,583
+weather/weather.py,sha256=yQFv17Se-w_H12gN-PJ8-R3YilmdYhVDZPBXQpf40Mk,1343
+sam_cli1.0-0.1.0.dist-info/LICENSE,sha256=LPgAJcOnSXSMiAmwk-7IcvWPlO0TtDbcgUTv7EVVWDI,12
+sam_cli1.0-0.1.0.dist-info/METADATA,sha256=qroBgp697HRQsvt8o_gs4VjA9o4F2IbNOfUlfeW1b50,194
+sam_cli1.0-0.1.0.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+sam_cli1.0-0.1.0.dist-info/entry_points.txt,sha256=tMjizd_ruBRM_DrLn0aitXsfhy4-jYgZW55RRhylIPc,45
+sam_cli1.0-0.1.0.dist-info/top_level.txt,sha256=2tbXK1iKdrSrH0Lq70rXasewSS_nZEceapXCFi6zuXA,8
+sam_cli1.0-0.1.0.dist-info/RECORD,,
