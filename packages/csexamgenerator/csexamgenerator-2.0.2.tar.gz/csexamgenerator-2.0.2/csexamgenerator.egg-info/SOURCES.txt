@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+csexamgenerator/__init__.py
+csexamgenerator/main.py
+csexamgenerator.egg-info/PKG-INFO
+csexamgenerator.egg-info/SOURCES.txt
+csexamgenerator.egg-info/dependency_links.txt
+csexamgenerator.egg-info/top_level.txt
