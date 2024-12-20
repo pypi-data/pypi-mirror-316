@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+setup.py
+dataExploreNew/__init__.py
+dataExploreNew/builder.py
+dataExploreNew/dataExplorer.py
+dataExploreNew/director.py
+dataExploreNew/main.py
+dataExploreNew.egg-info/PKG-INFO
+dataExploreNew.egg-info/SOURCES.txt
+dataExploreNew.egg-info/dependency_links.txt
+dataExploreNew.egg-info/top_level.txt
