@@ -1,0 +1,4 @@
+midas-mosaik>=2.0.0rc2
+midas-powerseries>=2.0.0rc2
+wget
+xlrd
