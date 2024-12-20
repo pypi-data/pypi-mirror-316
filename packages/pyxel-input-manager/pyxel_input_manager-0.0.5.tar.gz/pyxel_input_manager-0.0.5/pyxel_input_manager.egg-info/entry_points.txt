@@ -1,0 +1,2 @@
+[console_scripts]
+pyxel-input-manager = pyxel_input_manager.__main__:main
