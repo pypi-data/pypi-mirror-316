@@ -1,0 +1,149 @@
+Metadata-Version: 2.4
+Name: fstrent_bkitup
+Version: 0.1.4
+Summary: A utility for creating timestamped backups of Python scripts and projects
+Project-URL: Homepage, https://github.com/wrm3/fstrent_bkitup
+Project-URL: Issues, https://github.com/wrm3/fstrent_bkitup/issues
+Author-email: Warren R Martel III <wrmartel3@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2024 [Your Name]
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE. 
+License-File: LICENSE
+Keywords: backup,development,utility
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# Backup Utils
+
+A Python utility for creating timestamped backups of Python scripts and projects.
+
+## Installation
+
+```bash
+pip install fstrent_bkitup
+```
+
+## Usage
+
+### Backing up a single script
+
+Place this at the very top of your script, right after your imports:
+
+```python
+# your_script.py
+import sys
+import os
+# ... your other imports ...
+
+from fstrent_bkitup import backup_script
+
+# Create backup before running the script
+backup_script(__file__)
+
+# Rest of your script below
+def main():
+    # your code here
+    pass
+
+if __name__ == "__main__":
+    main()
+```
+
+### Backing up a project
+
+For backing up multiple files or entire directories, use backup_project:
+
+```python
+# your_script.py
+import sys
+import os
+# ... your other imports ...
+
+from fstrent_bkitup import backup_project
+
+# Create backup of script and project files before running
+backup_project(
+    __file__,  # current script
+    additional_paths=[
+        'lib',           # backup entire lib directory
+        'config.json',   # backup specific files
+        'src'           # backup src directory
+    ],
+    output_dir='backups'  # where to store the zip files
+)
+
+# Rest of your script below
+def main():
+    # your code here
+    pass
+
+if __name__ == "__main__":
+    main()
+```
+
+## Features
+
+- Create timestamped backups of individual Python scripts
+- Create ZIP archives of entire projects including specified directories and files
+- Preserve file metadata
+- Configurable output directory
+
+### Backup Naming
+
+- Single script backups: `original_name_YYYYMMDD_HHMMSS.py`
+- Project backups: `original_name_YYYYMMDD_HHMMSS.zip`
+
+## Examples
+
+### Basic Script Backup
+
+```python
+from fstrent_bkitup import backup_script as bks
+
+# Creates a backup in ./bkups/myscript_20240320_143022.py
+bks(__file__)
+
+# Or specify custom backup directory
+bks(__file__, output_dir='my_backups')
+```
+
+### Project Backup with Multiple Paths
+
+```python
+from fstrent_bkitup import backup_project as bkp
+
+# Creates a zip file in ./bkups/myscript_20240320_143022.zip
+bkp(
+    __file__,
+    additional_paths=[
+        'lib',
+        'config',
+        'data/important.csv'
+    ]
+)
+```
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
