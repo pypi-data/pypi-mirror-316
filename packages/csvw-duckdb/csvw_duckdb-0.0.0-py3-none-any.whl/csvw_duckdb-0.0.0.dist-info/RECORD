@@ -1,0 +1,10 @@
+csvw_duckdb/__init__.py,sha256=Y8xkTT5UeFHFwwmLlmdhJhTjJqF6pBgPqbh-dJreqak,83
+csvw_duckdb/__main__.py,sha256=x4yjq9oDB7iL9OH7hfUynlV88Dd1mZs8yshdhOw8E0U,1438
+csvw_duckdb/table.py,sha256=shKQwFUZ36FMXwGvIgUxm-VBg5iNQQlQpGSTX0jV-Wk,447
+csvw_duckdb/table_group.py,sha256=8QekvqdaRmGAQtIIggAn7z2L4O1TkGvzMLcmmfVANxw,934
+csvw_duckdb-0.0.0.dist-info/LICENSE,sha256=POf9mioDqEsmNpW6_5PT-qxe2VbqvC5SlfnyB9jBKv4,1069
+csvw_duckdb-0.0.0.dist-info/METADATA,sha256=9vmLeo65SzrjHZKMuTWWk94ANOCn5Jd_IZfJuKercb4,129
+csvw_duckdb-0.0.0.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+csvw_duckdb-0.0.0.dist-info/entry_points.txt,sha256=ik6EEFdR1-eOsHC6B1YRNKFzu89oWIhP8mQWvlv-5Uc,58
+csvw_duckdb-0.0.0.dist-info/top_level.txt,sha256=X_vNwJdfOAo8dGkV9zREhFPf8vAd_Lj5sYAgI_xxlDc,12
+csvw_duckdb-0.0.0.dist-info/RECORD,,
