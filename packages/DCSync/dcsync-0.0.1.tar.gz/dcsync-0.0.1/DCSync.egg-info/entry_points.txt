@@ -1,0 +1,2 @@
+[console_scripts]
+dcsync = DCSync.__main__:main
