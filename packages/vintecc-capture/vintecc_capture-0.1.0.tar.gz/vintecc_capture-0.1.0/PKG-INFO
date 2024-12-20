@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: vintecc-capture
+Version: 0.1.0
+Summary: Package that can be used to connect to data platform Capture
+Home-page: https://github.com/Vintecc/Capture.Tools.PythonClient
+Author: Mathijs Carlu
+Author-email: mathijs.carlu@vintecc.com
+Project-URL: Bug Tracker, https://github.com/Vintecc/Capture.Tools.PythonClient
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+
+# Vintecc-capture
+
+This package allows to connect to Capture, a data platform used to capture data from industry (<https://www.vintecc.com/en/solutions/capture>) from python code.
