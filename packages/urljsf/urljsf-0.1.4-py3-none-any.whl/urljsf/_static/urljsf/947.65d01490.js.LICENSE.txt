@@ -1,0 +1,207 @@
+/* binding */
+
+/* harmony export */
+
+/* impossible */
+
+/* unused */
+
+/* unused harmony exports FlateErrorCode, Deflate, AsyncDeflate, deflate, deflateSync, Inflate, AsyncInflate, inflate, inflateSync, Gzip, AsyncGzip, gzip, gzipSync, Gunzip, AsyncGunzip, gunzip, gunzipSync, Zlib, AsyncZlib, zlib, zlibSync, Unzlib, AsyncUnzlib, unzlib, unzlibSync, compress, AsyncCompress, compressSync, Compress, Decompress, AsyncDecompress, decompress, decompressSync, DecodeUTF8, EncodeUTF8, ZipPassThrough, ZipDeflate, AsyncZipDeflate, Zip, zip, UnzipPassThrough, UnzipInflate, AsyncUnzipInflate, Unzip, unzip, unzipSync */
+
+/*#__PURE__*/
+
+/**
+ * Compresses data with DEFLATE without any wrapper
+ * @param data The data to compress
+ * @param opts The compression options
+ * @returns The deflated version of the data
+ */
+
+/**
+ * Converts a Uint8Array to a string
+ * @param dat The data to decode to string
+ * @param latin1 Whether or not to interpret the data as Latin-1. This should
+ *               not need to be true unless encoding to binary string.
+ * @returns The original UTF-8/Latin-1 string
+ */
+
+/**
+ * Converts a string into a Uint8Array for use with compression/decompression methods
+ * @param str The string to encode
+ * @param latin1 Whether or not to interpret the data as Latin-1. This should
+ *               not need to be true unless decoding a binary string.
+ * @returns The string encoded in UTF-8/Latin-1 binary
+ */
+
+/**
+ * Streaming DEFLATE decompression
+ */
+
+/**
+ * Streaming DEFLATE decompression for ZIP archives. Prefer AsyncZipInflate for
+ * better performance.
+ */
+
+/**
+ * Streaming UTF-8 decoding
+ */
+
+/**
+ * Streaming pass-through decompression for ZIP archives
+ */
+
+/**
+ * Synchronously creates a ZIP file. Prefer using `zip` for better performance
+ * with more than one file.
+ * @param data The directory structure for the ZIP archive
+ * @param opts The main options, merged with per-file options
+ * @returns The generated ZIP archive
+ */
+
+/***/
+
+//    left            cost
+
+//  ind      num         streak
+
+//  ind    debt
+
+//  len    dist   chain
+
+// DEFLATE is a complex format; to read this code, you should probably check the RFC first:
+
+// However, the vast majority of the codebase has diverged from UZIP.js to increase performance and reduce bundle size.
+
+// Make sure this is recognized as a len/dist with 28th bit (2^28)
+
+// Much faster than just using the start
+
+// Need extra info to make a tree
+
+// Note that the semicolon was intentional
+
+// Some of the following code is similar to that of UZIP.js:
+
+// Sometimes 0 will appear where -1 would be more appropriate. This is because using a uint
+
+// TODO: find out how this code works (debt)
+
+// TODO: optimize/split up?
+
+// We always should modify head and prev, but only add symbols if
+
+// You may also wish to take a look at the guide I made about this program:
+
+// after i2 reaches last ind, will be stopped
+
+// bits to remove for reverser
+
+// break out early when we reach "nice" (we are satisfied enough)
+
+// bytes remaining
+
+// can't use .constructor in case user-supplied
+
+// check the previous match
+
+// closures have awful performance
+
+// code lengths
+
+// create huffman tree from u8 "map": index -> code length for code index
+
+// d will be nonzero only when a match was found
+
+// decode UTF8
+
+// deflate bit flag
+
+// efficient algorithm from UZIP.js
+
+// end
+
+// every 16 bit value starting with the code yields the same result
+
+// fixed distance map
+
+// fixed distance tree
+
+// fixed length map
+
+// fixed length tree
+
+// flatten a directory structure
+
+// free bits
+
+// freq must be greater than largest possible number of symbols
+
+// hash value
+
+// https://gist.github.com/101arrowz/253f31eb5abc3d9275ab943003ffecad
+
+// https://github.com/photopea/UZIP.js
+
+// https://tools.ietf.org/html/rfc1951
+
+// i0 is lookbehind, i2 is lookahead - after processing two low-freq
+
+// ignore 0 lengths
+
+// index
+
+// index mod 32768    previous index mod
+
+// is better for memory in most engines (I *think*).
+
+// length of cd must be 288 (total # of codes)
+
+// length of literals and search for that instead.
+
+// m is end value
+
+// map of value to reverse (assuming 16 bits)
+
+// max bits in tree
+
+// mb (max bits) must be at most 15
+
+// more algorithms from UZIP.js
+
+// no need to write 00 as type: TypedArray defaults to 0
+
+// non-composite) symbols instead
+
+// now, find the rarest 2-byte sequence within this
+
+// num encoding both symbol and bits read
+
+// numbers here are at max 18 bits
+
+// reverse table algorithm from SO
+
+// see https://reddit.com/r/photopea/comments/ikekht/uzipjs_questions/
+
+// shft(pos) now 1 less if pos & 7 != 0
+
+// skip disk
+
+// skip local zip header
+
+// spec compliance? what's that?
+
+// store both dist and len data in one int32
+
+// symbols that combined have high freq, will start processing i2 (high-freq,
+
+// text encoder
+
+// this data is not yet processed ("wait" for wait index)
+
+// u16 "map": index -> minimum code for bit length = index
+
+// u16 "map": index -> number of actual bits, symbol for code
+
+// we can ignore the fact that the other numbers are wrong; they never happen anyway
+
+// write final block
