@@ -1,0 +1,5 @@
+behave
+keyring
+requests
+PyYAML
+openpyxl
