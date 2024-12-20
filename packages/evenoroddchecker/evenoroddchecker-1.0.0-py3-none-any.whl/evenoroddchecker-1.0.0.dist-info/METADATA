@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: evenoroddchecker
+Version: 1.0.0
+Summary: Checks if the number provided is even or odd.
+Author: superhenryman
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
