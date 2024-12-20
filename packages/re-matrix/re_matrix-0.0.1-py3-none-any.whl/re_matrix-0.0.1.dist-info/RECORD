@@ -1,0 +1,12 @@
+re_matrix/__init__.py,sha256=PC2tc1jY7-Hb1bnewhLpN4mPrUX4Y-Zwia_pmbL4a_s,280
+re_matrix/matrix_math_helpers.py,sha256=euOugKlXdz0QWw2Z-Jn_NE9zBsF0P0SDmJQaOE16ZCQ,1651
+re_matrix/row_reducer.py,sha256=E_PePI3HE3jto-2-XgXyfe3CUWCa02vVR3OKeY3kh1E,5764
+re_matrix/row_reducer_tests.py,sha256=aLLNr7bFuc9DNN6k0YxDuFeHkb63qc4tRivAAnvUw2A,607
+re_matrix_module/__init__.py,sha256=PC2tc1jY7-Hb1bnewhLpN4mPrUX4Y-Zwia_pmbL4a_s,280
+re_matrix_module/matrix_math_helpers.py,sha256=euOugKlXdz0QWw2Z-Jn_NE9zBsF0P0SDmJQaOE16ZCQ,1651
+re_matrix_module/row_reducer.py,sha256=E_PePI3HE3jto-2-XgXyfe3CUWCa02vVR3OKeY3kh1E,5764
+re_matrix_module/row_reducer_tests.py,sha256=aLLNr7bFuc9DNN6k0YxDuFeHkb63qc4tRivAAnvUw2A,607
+re_matrix-0.0.1.dist-info/METADATA,sha256=gDeCnp6IMTrQfYpj8F4o92FlNNA9ov4lwE9Z94pHr3w,555
+re_matrix-0.0.1.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+re_matrix-0.0.1.dist-info/top_level.txt,sha256=HISdUax8V1WW2aRXsl2Zfb65UNPC44iaN0wdUWsVJwk,10
+re_matrix-0.0.1.dist-info/RECORD,,
