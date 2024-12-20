@@ -1,0 +1,12 @@
+sema4ai/data/__init__.py,sha256=XSNz4hTdD-SLVaZ_FJ0oAt40sZ2Jy85IjETvVfR36FI,5982
+sema4ai/data/_connection_provider.py,sha256=R6NzeS4MqvayVxXkUQMxH5roPC06nv6mE8EBGzGq630,9163
+sema4ai/data/_data_server_connection.py,sha256=pGHVF1nsNVi_hYEwNaq3DM-ljjXOh7dAqznorNdTLpI,8296
+sema4ai/data/_data_source.py,sha256=hwpbCTCoolpgpZeqALiCYru1KLx6p450mYjN2b6zAyQ,3784
+sema4ai/data/_data_source_spec.py,sha256=QkEjCgKzDwPeRrLuRBpyHZdqq9Wstd8wZgQ2l-J-d-Y,15702
+sema4ai/data/_result_set.py,sha256=MHb-vShEgaJCANKRWP2kG1JaYmplLOjrExixD4h4qNc,6699
+sema4ai/data/_sql_handling.py,sha256=dZ5guwFu0V49p9ilTP3YbfuNygMhyRWzQgwQvBEL6PQ,3498
+sema4ai/data/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sema4ai_data-0.0.4.dist-info/LICENSE,sha256=EIJ8y_pWK87SVAwOuQgK6o5t4fVuK3BbHwiEkiQvHdw,30258
+sema4ai_data-0.0.4.dist-info/METADATA,sha256=SYTnShUEMMhbAyzWhKIHhYAKYVWed6jRQ36Fe_us5jE,977
+sema4ai_data-0.0.4.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+sema4ai_data-0.0.4.dist-info/RECORD,,
