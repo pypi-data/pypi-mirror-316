@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "nhl-calendar"
+version = "0.1.1"
+description = "Simple program to display the current week's games and generate iCal files to add a team's schedule to your calendar"
+authors = ["Dave Brown <dave.brown@exit107.com>"]
+readme = "README.md"
+packages = [{include = "nhl_calendar"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+requests = "^2.32.3"
+flask = "^3.1.0"
+types-requests = "^2.32.0.20241016"
+pytz = "^2024.2"
+datetype = "^2024.2.28"
+python-dateutil = "^2.9.0.post0"
+types-python-dateutil = "^2.9.0.20241206"
+types-pytz = "^2024.2.0.20241003"
+ical = "^8.2.0"
+gunicorn = "^23.0.0"
+
+
+[tool.poetry.group.dev.dependencies]
+ipython = "^8.30.0"
+ipdb = "^0.13.13"
+black = "^24.10.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
