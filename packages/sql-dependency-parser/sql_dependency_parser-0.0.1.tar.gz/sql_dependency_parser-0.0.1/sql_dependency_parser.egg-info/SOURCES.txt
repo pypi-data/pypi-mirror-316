@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+sql_dependency_parser.egg-info/PKG-INFO
+sql_dependency_parser.egg-info/SOURCES.txt
+sql_dependency_parser.egg-info/dependency_links.txt
+sql_dependency_parser.egg-info/requires.txt
+sql_dependency_parser.egg-info/top_level.txt
+sqldeps/__init__.py
+sqldeps/extractor.py
+sqldeps/models.py
+tests/test_extractor.py
