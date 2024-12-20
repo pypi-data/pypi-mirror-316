@@ -1,0 +1,95 @@
+Metadata-Version: 2.1
+Name: multianalyzer
+Version: 0.7.0
+Summary: Rebinning of powder diffraction data taken with multiple analyzer crystals and a large area detector
+Author-Email: =?utf-8?q?J=C3=A9r=C3=B4me_Kieffer?= <jerome.kieffer@esrf.fr>
+License: Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+         Upstream-Name: multianalyzer
+         Upstream-Contact: Jérôme Kieffer <kieffer@esrf.fr>
+         Source: https://github.com/kif/multianalyzer/releases/tag/v0.5.0
+         Files-Excluded: third_party
+         
+         Files: *
+         Copyright: 2021-2023 Jerome Kieffer
+                    European Synchrotron Radiation Facility
+                    71 Avenue des Martyrs
+                    38000 Grenoble, France
+         License: MIT
+         
+         License: MIT
+          Permission is hereby granted, free of charge, to any person
+          obtaining a copy of this software and associated documentation files
+          (the "Software"), to deal in the Software without restriction,
+          including without limitation the rights to use, copy, modify, merge,
+          publish, distribute, sublicense, and/or sell copies of the Software,
+          and to permit persons to whom the Software is furnished to do so,
+          subject to the following conditions:
+         
+          The above copyright notice and this permission notice shall be
+          included in all copies or substantial portions of the Software.
+         
+          THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+          EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+          OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+          NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+          HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+          WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+          FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+          OTHER DEALINGS IN THE SOFTWARE.
+         
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: C
+Classifier: Programming Language :: Cython
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Scientific/Engineering :: Chemistry
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Project-URL: homepage, https://pypi.org/project/multianalyzer/
+Project-URL: source, https://github.com/kif/multianalyzer
+Project-URL: download, https://github.com/kif/multianalyzer/releases
+Project-URL: tracker, https://github.com/kif/multianalyzer/issues
+Requires-Python: >=3.7
+Requires-Dist: numpy
+Requires-Dist: h5py
+Requires-Dist: pyopencl
+Description-Content-Type: text/markdown
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7223895.svg)](https://doi.org/10.5281/zenodo.7223895)
+
+# Multianalyzer
+Rebinning of powder diffraction data taken with multiple analyzer crystals and a large area detector
+
+This project is about the rebinning of data comming from the [high resolution powder diffraction beamline (ID22) at the ESRF](https://www.esrf.fr/id22). 
+It implements the math which are described in [J. Appl. Cryst. (2021). 54, 1088-1099](https://doi.org/10.1107/S1600576721005288).
+
+There are two implementations, Cython parallelized with OpenMP and OpenCL running on GPU.
+The later is faster. 
+
+The main executable is `id22rebin` which takes a BLISS-HDF5 file with ROI-collections in it (as generated on the ID22 beamline) and rebins the intensities 
+of the diffeent ROI, after calculating their precise position.
+The geometry is described in an output file from TOPAS.
+Intensities are grouped per analyzer crystal and per column (depth dependent) and need to be normalized.   
+
+## Installation
+`pip install multianalyzer`
+
+## Development version:
+```
+git clone https://github.com/kif/multianalyzer
+cd multianalyzer
+pip install -r requirements.txt
+pip install .
+```
+
+The tests are only validating input file reading. 
