@@ -1,0 +1,7 @@
+setup.py
+fhetalib/__init__.py
+fhetalib.egg-info/PKG-INFO
+fhetalib.egg-info/SOURCES.txt
+fhetalib.egg-info/dependency_links.txt
+fhetalib.egg-info/requires.txt
+fhetalib.egg-info/top_level.txt
