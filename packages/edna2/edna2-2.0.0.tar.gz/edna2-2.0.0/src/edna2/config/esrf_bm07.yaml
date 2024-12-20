@@ -1,0 +1,23 @@
+Include:
+  esrf: null
+  esrf_ispyb_prod: null
+  esrf_icat_prod: null
+
+Logging:
+  log_file_path: /var/log/edna2/bm07.log
+  log_file_backupCount: 15
+
+ExecDozor:
+  ix_min: 0
+  ix_max: 1262
+  iy_min: 1219
+  iy_max: 1308
+
+XDSTask:
+  DIRECTION_OF_DETECTOR_X-AXIS: "1.0 0.0 0.0"
+  DIRECTION_OF_DETECTOR_Y-AXIS: "0.0 1.0 0.0"
+  ROTATION_AXIS: "1.0 0.0 0.0"
+  INCIDENT_BEAM_DIRECTION: "0.0 0.0 1.0"
+
+ExpectedFileSize:
+  image: 6000000
