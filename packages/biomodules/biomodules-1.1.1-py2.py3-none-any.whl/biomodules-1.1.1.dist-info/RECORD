@@ -1,0 +1,14 @@
+biomodules/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+biomodules/merge_dir.py,sha256=XPztN2OsrTNNSepvCuqUrIXT5i1az9DNNrulCYGfEXs,877
+biomodules/align/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+biomodules/align/blastn.py,sha256=DVFrSacz25HLV4tZTB4Kz9IC84D5NmOVnaSNathom_M,1772
+biomodules/align/minimap2.py,sha256=ZBFgPPXkFbM7u8CpIvSYrZEsz0rYZi-f5QIXRTRfUbo,1080
+biomodules/preprocessing/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+biomodules/preprocessing/fastqc.py,sha256=KHgCnr2hf04qAv8l_HWcxcSKXtK7Z-XGw8Is0ALY5nk,507
+biomodules/preprocessing/filtlong.py,sha256=IzkM8Owtwrhi6Zp01NwmbJIRcygYvhQEuc9ChwFhlKg,478
+biomodules/seq/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+biomodules/seq/fastq2fasta.py,sha256=aZcG71GZ1qSTr9V7zq8qVzOnc2d5Lp39dEKhQMUQ1SY,1040
+biomodules-1.1.1.dist-info/METADATA,sha256=3wu4mSUrHOEVLmhVFVoKxttenU-buJF8jC5RTA7W8sM,1127
+biomodules-1.1.1.dist-info/WHEEL,sha256=Kh9pAotZVRFj97E15yTA4iADqXdQfIVTHcNaZTjxeGM,110
+biomodules-1.1.1.dist-info/top_level.txt,sha256=NMAS-ClP0Bt6FMc9tY6aiOVH_vPkjP3mUaLNu2eAG_A,11
+biomodules-1.1.1.dist-info/RECORD,,
