@@ -1,0 +1,2 @@
+[console_scripts]
+csvw-duckdb = csvw_duckdb.__main__:main
