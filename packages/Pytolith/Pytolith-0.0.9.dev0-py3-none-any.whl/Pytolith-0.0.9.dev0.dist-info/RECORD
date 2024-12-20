@@ -1,0 +1,16 @@
+Pytolith/TagTypes.py,sha256=nyQMoLxruNohos6c32njvfoLpOitzf04WurSOrn2xJ0,6166
+Pytolith/_TagSystem.py,sha256=vDjqBDKXaVvWAswgKYQEhtfRE2rBmYrvI4GTBEF5q8E,6599
+Pytolith/__init__.py,sha256=TQcoEYzwTMtLsWIfEtq89A0aHb1dC1PdqI7f3C1oCwQ,41
+Pytolith/halo2.layouts,sha256=dsDfGb7TfXnOgx-rx886w09ZXLFowJTWfiZr6aEbqus,437397
+Pytolith/Definitions/Fields.py,sha256=N3Rr_uWNJNSdmiH_BGHqq4ZSzn-l91CDRU7Q2laL_oU,2601
+Pytolith/Definitions/Layout.py,sha256=f7eVW8W0TteTEqSHx0cPYGewW8igre-0sfhhTUHGE3k,11204
+Pytolith/Definitions/Package.py,sha256=guueGgtSHdDVWvGW2vuUslmC6N-MtXpW2bIa3owtjM0,14527
+Pytolith/Definitions/__init__.py,sha256=EpFlbh7t7RE8knm1JIoDf6kVwAvODwCjQQ25qRUg5qk,170
+Pytolith/_TagBinary/Header.py,sha256=M2VYGOn1WNg4bPD3c6XxPpAvQugQbDX13gyMPJHfNME,4385
+Pytolith/_TagBinary/Loader.py,sha256=QlRm60sfrataLP797X_X-oNcC_vuRaTkZv6ox-9n7ZM,34200
+Pytolith/_TagBinary/_FastTagLoaders.py,sha256=pv7kzkozpve3YUyb6TtFZKV_3YfwjxeGkz1__K2DfsU,2611183
+Pytolith-0.0.9.dev0.dist-info/COPYING,sha256=OKzGdVGFlFi6lSHZmPugbC1Rb9OEfdI77TJL9A0BLww,1069
+Pytolith-0.0.9.dev0.dist-info/METADATA,sha256=Mm6cXtIrE3weoluER5M2vnCMszvtqydLmB0hbfGSkwU,3518
+Pytolith-0.0.9.dev0.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+Pytolith-0.0.9.dev0.dist-info/top_level.txt,sha256=Oh1kRIXtK4JFmA2poL2x9DLy3Dk2ko7UaUzzRGqqmII,9
+Pytolith-0.0.9.dev0.dist-info/RECORD,,
