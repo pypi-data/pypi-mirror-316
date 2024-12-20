@@ -1,0 +1,74 @@
+[project]
+name = "cdediff"
+description = "Creates human readable descriptions and comparisons of CdEDB-Events."
+version = "0.5.0"
+authors = [
+    { name="Tobias Udtke", email="tobias.udtke@gmail.com" },
+]
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "License :: OSI Approved :: GNU General Public License (GPL)",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "termcolor ~= 2.4.0",
+    "colorama >= 0.4.6",
+]
+
+[project.optional-dependencies]
+dev = [
+    "mypy~=1.13.0",
+    "ruff~=0.8.4",
+    "types-colorama",
+]
+build = [
+    "build",
+    "twine",
+]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.mypy]
+python_version = "3.12"
+exclude = [
+    "venv",
+    "build",
+]
+disallow_untyped_defs = true
+color_output = true
+
+[tool.ruff]
+line-length = 128
+
+[tool.ruff.lint]
+select = [
+    "ALL"
+]
+ignore = [
+    "D",  # pydocstyle
+    "T201",  # Usage of `print`.
+    "RUF001",  # Ambiguous dash '–' instead of '-'.
+    "PLR0912",  # Too many branches.
+    "C90",  # McCabe complexity.
+    "COM812",  # Trailing comma, due to possible conflict with formatter.
+    "ISC001",  # single line implicit str concat, due to possible conflict with formatter.
+]
+fixable = ["ALL"]
+exclude = [
+    "build/*.py",
+]
+
+[tool.ruff.lint.flake8-builtins]
+builtins-ignorelist = ["id"]
+
+[tool.ruff.lint.pylint]
+max-args = 6
+max-branches = 24
+max-statements = 70

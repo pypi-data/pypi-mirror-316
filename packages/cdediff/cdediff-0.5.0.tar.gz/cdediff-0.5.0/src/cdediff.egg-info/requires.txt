@@ -1,0 +1,11 @@
+termcolor~=2.4.0
+colorama>=0.4.6
+
+[build]
+build
+twine
+
+[dev]
+mypy~=1.13.0
+ruff~=0.8.4
+types-colorama
