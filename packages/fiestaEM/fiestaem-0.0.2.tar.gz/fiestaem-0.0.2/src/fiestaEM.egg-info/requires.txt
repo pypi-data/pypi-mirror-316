@@ -1,0 +1,14 @@
+jax<=0.4.31
+jaxlib<=0.4.31
+numpy<2.0.0
+pandas<2.0.0
+jaxtyping
+beartype
+tqdm
+scipy<=1.14.0
+ml_collections
+astropy
+sncosmo
+flowMC
+joblib
+h5py
