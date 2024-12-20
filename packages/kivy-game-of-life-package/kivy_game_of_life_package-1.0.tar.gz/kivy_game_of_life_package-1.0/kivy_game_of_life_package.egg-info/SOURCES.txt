@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+kivy_game_of_life_package/gameoflife.kv
+kivy_game_of_life_package/main.py
+kivy_game_of_life_package.egg-info/PKG-INFO
+kivy_game_of_life_package.egg-info/SOURCES.txt
+kivy_game_of_life_package.egg-info/dependency_links.txt
+kivy_game_of_life_package.egg-info/entry_points.txt
+kivy_game_of_life_package.egg-info/requires.txt
+kivy_game_of_life_package.egg-info/top_level.txt
