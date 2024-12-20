@@ -1,0 +1,2 @@
+[console_scripts]
+cq-cli = cq_cli.main:main
