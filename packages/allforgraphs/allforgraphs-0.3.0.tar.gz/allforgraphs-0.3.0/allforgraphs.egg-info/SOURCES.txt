@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+allforgraphs.egg-info/PKG-INFO
+allforgraphs.egg-info/SOURCES.txt
+allforgraphs.egg-info/dependency_links.txt
+allforgraphs.egg-info/requires.txt
+allforgraphs.egg-info/top_level.txt
+tests/test.py
