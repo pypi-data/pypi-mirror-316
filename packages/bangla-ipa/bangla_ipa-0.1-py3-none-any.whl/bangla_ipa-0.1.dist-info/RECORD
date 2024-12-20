@@ -1,0 +1,13 @@
+ipa/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ipa/ipa.py,sha256=8W8-d3q4YVTlsNcbwJtBxQFTeV49K_F9yQ7o2BX6flI,7062
+model/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+model/ipa_model.pth,sha256=eqbqbVeSRKvuHieQOxPzKmWk9y6POpPCDUFKVnL2lt8,23529259
+script/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+script/translator.py,sha256=YvagJEV0mTopjAZWVkPIlvNqjC0BtD1Z9eEmdhJse6g,731
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_bangla_ipa.py,sha256=67jurzIQUtzahlR6p81SMtCFMiOwwVaQzbRNC8nB78k,558
+bangla_ipa-0.1.dist-info/LICENSE,sha256=F6vCWNpqvBop_eca5HtOHxIv2tO3oGLhtaarPDQf8-Q,1097
+bangla_ipa-0.1.dist-info/METADATA,sha256=O9ZsF3brsnsJ2ySCrIWVO0hng3WS7op-13IbCwJXXCM,4759
+bangla_ipa-0.1.dist-info/WHEEL,sha256=cVxcB9AmuTcXqmwrtPhNK88dr7IR_b6qagTj0UvIEbY,91
+bangla_ipa-0.1.dist-info/top_level.txt,sha256=vb3m8bPF9-yiOOXk8wE02hG8PfGGkwjYTIN-TpO2amo,23
+bangla_ipa-0.1.dist-info/RECORD,,
