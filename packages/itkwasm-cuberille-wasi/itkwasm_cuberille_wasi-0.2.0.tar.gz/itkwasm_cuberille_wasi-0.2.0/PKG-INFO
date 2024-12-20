@@ -1,0 +1,54 @@
+Metadata-Version: 2.4
+Name: itkwasm-cuberille-wasi
+Version: 0.2.0
+Summary: Cuberille implicit surface polygonization
+Project-URL: Home, https://github.com/InsightSoftwareConsortium/ITKCuberille
+Project-URL: Source, https://github.com/InsightSoftwareConsortium/ITKCuberille
+License-Expression: Apache-2.0
+Keywords: itkwasm,wasi,webassembly
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: WebAssembly
+Classifier: Environment :: WebAssembly :: Emscripten
+Classifier: Environment :: WebAssembly :: WASI
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: C++
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.8
+Requires-Dist: importlib-resources
+Requires-Dist: itkwasm>=1.0.b171
+Description-Content-Type: text/markdown
+
+# itkwasm-cuberille-wasi
+
+[![PyPI version](https://badge.fury.io/py/itkwasm-cuberille-wasi.svg)](https://badge.fury.io/py/itkwasm-cuberille-wasi)
+
+Cuberille implicit surface polygonization WASI implementation.
+
+This package provides the WASI WebAssembly implementation. It is usually not called directly. Please use [`itkwasm-cuberille`](https://pypi.org/project/itkwasm-cuberille/) instead.
+
+
+## Installation
+
+```sh
+pip install itkwasm-cuberille-wasi
+```
+
+## Development
+
+```sh
+pip install pytest
+pip install -e .
+pytest
+
+# or
+pip install hatch
+hatch run test
+```
