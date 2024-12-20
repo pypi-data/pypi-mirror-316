@@ -1,0 +1,21 @@
+# python generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+mip-cmor-tables/
+sb.py
+# venv
+.venv
+*.lock
+*.sqlite
+.pdm-python
+.DS_Store
+.vscode
+tmp*
+.cache
+CHANGELOG.md
+.mise.toml
+.mise.toml
