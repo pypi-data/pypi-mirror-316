@@ -1,0 +1,5 @@
+pyproject.toml
+rameau.egg-info/PKG-INFO
+rameau.egg-info/SOURCES.txt
+rameau.egg-info/dependency_links.txt
+rameau.egg-info/top_level.txt
