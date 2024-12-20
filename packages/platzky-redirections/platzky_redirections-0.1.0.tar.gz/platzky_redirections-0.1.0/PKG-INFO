@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: platzky_redirections
+Version: 0.1.0
+Summary: 
+License: MIT
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: gql (>=3.5.0,<4.0.0)
+Requires-Dist: pydantic (>=2.10.3,<3.0.0)
+Description-Content-Type: text/markdown
+
+# Platzky Redirections
+
+## Overview
+
+Platzky Redirections is a plugin for the Platzky framework that allows you to set up URL redirections easily. This can be useful for maintaining SEO, handling outdated URLs, or simply redirecting traffic from one part of your site to another.
+
+## Installation
+
+To install Platzky Redirections, you can use pip:
+
+```sh
+pip install platzky-redirections
+```
+
+### Usage
+
+```json
+"plugins": [
+{
+  "name": "redirections",
+  "config": {
+    "/old-path": "/new-path"
+  }
+}
+]
+```
+
