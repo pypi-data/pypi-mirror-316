@@ -1,0 +1,5 @@
+[console_scripts]
+lock-run=lock_run.main:run_code_cui
+lock-run-cipher=lock_run.main:cipher_code_cui
+lock-run-key=lock_run.main:gen_key_cui
+
