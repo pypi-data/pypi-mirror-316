@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: pyaida
+Version: 0.1.2
+Summary: An AI Data Architecture library
+License: MIT
+Author: mr-saoirse
+Author-email: amartey@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: anthropic (>=0.40.0,<0.41.0)
+Requires-Dist: beautifulsoup4 (>=4.12.3,<5.0.0)
+Requires-Dist: docstring-parser (>=0.16,<0.17)
+Requires-Dist: fastapi (>=0.115.6,<0.116.0)
+Requires-Dist: firebase-admin (>=6.6.0,<7.0.0)
+Requires-Dist: loguru (>=0.7.2,<0.8.0)
+Requires-Dist: numpy (>=2.2.0,<3.0.0)
+Requires-Dist: openai (>=1.55.3,<2.0.0)
+Requires-Dist: pillow (>=11.0.0,<12.0.0)
+Requires-Dist: psycopg2-binary (>=2.9.10,<3.0.0)
+Requires-Dist: pydantic (>=2.10.2,<3.0.0)
+Requires-Dist: pyyaml (>=6.0.2,<7.0.0)
+Requires-Dist: uvicorn (>=0.32.1,<0.33.0)
+Description-Content-Type: text/markdown
+
+# Introduction
+
+Pyaida is a python ai data architecture. It provides a simple way to build agentic systems with postgres.
+
+- Agent registry
+- Smart query
+- CRUD and semantics
+- Function registry
