@@ -1,0 +1,15 @@
+Metadata-Version: 2.3
+Name: iban_validation_py
+Version: 0.1.0
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Summary: A package to facilitate validation of IBANs and selecting Bank_id and Branch_id
+Author: Eric
+License: MIT
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+Project-URL: Homepage, https://github.com/ericqu/iban_validation
+Project-URL: Issues, https://github.com/ericqu/iban_validation/issues
+
+# iban_validation_py
+A package to facilitate validation of IBANs and selecting Bank_id and Branch_id in Python
