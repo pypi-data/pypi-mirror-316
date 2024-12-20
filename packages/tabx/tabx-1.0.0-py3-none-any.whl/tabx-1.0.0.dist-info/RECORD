@@ -1,0 +1,8 @@
+hdi/__init__.py,sha256=rH1hrcpp_USsitHHy_8HDKlxS7AikJ9ahd9WwS7usV4,205
+hdi/extractors.py,sha256=yunpyZjPDCl6IgLGzzijCzgHsQu96rRbWT2JOTYht6U,2415
+hdi/models.py,sha256=yunpyZjPDCl6IgLGzzijCzgHsQu96rRbWT2JOTYht6U,2415
+hdi/utils.py,sha256=HlbhYRJRzoOqHhh9cre1d7bPWF_I-SVewUwzEbUjKAU,627
+tabx-1.0.0.dist-info/METADATA,sha256=xbX0GgbmEoy_41b2jc6fogQvtjFwTM7Vo6ENZQynjLQ,512
+tabx-1.0.0.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+tabx-1.0.0.dist-info/top_level.txt,sha256=TtkQY2ouv_3jZ-qUVf9vhE5delOF6P8yNbAg8ZAodrk,4
+tabx-1.0.0.dist-info/RECORD,,
