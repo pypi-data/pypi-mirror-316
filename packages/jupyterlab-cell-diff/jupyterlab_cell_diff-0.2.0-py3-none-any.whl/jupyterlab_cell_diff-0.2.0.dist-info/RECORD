@@ -1,0 +1,16 @@
+jupyterlab_cell_diff/__init__.py,sha256=MhcwYQfhQY-NRixnZMrWPYVg_UvGjbCXsw2QHb6aSEA,1132
+jupyterlab_cell_diff/_version.py,sha256=73xmj_rtt0boRuIZ0h5wqHItFsCNZHTC-Wa0tSeAxyY,171
+jupyterlab_cell_diff/handlers.py,sha256=SvpdoB1mBUMAviGmZ5c67I3qutCVA2ZG6T8AjtBQfGM,1007
+jupyterlab_cell_diff-0.2.0.data/data/etc/jupyter/jupyter_server_config.d/jupyterlab_cell_diff.json,sha256=G98TlI8KTQUrpWtR8pM8xT5QwdhKuAUBreXRSoWiAVs,95
+jupyterlab_cell_diff-0.2.0.data/data/share/jupyter/labextensions/jupyterlab-cell-diff/package.json,sha256=XQhmdPoEXbEg2sIrquXwA1C3zn-aFiVgvw48Wizfwmw,6149
+jupyterlab_cell_diff-0.2.0.data/data/share/jupyter/labextensions/jupyterlab-cell-diff/static/509.2c87bac6f9a74f15c7f8.js,sha256=LIe6xvmnTxXH-P6G-YY-Of4RTWYKF0IH643243II0q4,133
+jupyterlab_cell_diff-0.2.0.data/data/share/jupyter/labextensions/jupyterlab-cell-diff/static/596.b55ae650257a34b66820.js,sha256=tVrmUCV6NLZoIDq-r6Wu37STXMmpWHvEZRjcopZZPmo,1210
+jupyterlab_cell_diff-0.2.0.data/data/share/jupyter/labextensions/jupyterlab-cell-diff/static/728.588f7ee51892571b117d.js,sha256=WI9-5RiSVxsRfeDtDJjA1RqXBcEzRtIWIOLjDd51Z_k,4193
+jupyterlab_cell_diff-0.2.0.data/data/share/jupyter/labextensions/jupyterlab-cell-diff/static/remoteEntry.0123e3e593cdeef7e811.js,sha256=ASPj5ZPN7vfoEVwKdQ0UU1piiNcSQrcy8y0i3MRTFso,6902
+jupyterlab_cell_diff-0.2.0.data/data/share/jupyter/labextensions/jupyterlab-cell-diff/static/style.js,sha256=84bTY-F2V5yR7vaqctx_RYhNnzf76HwZNJ5WRj9BtI4,163
+jupyterlab_cell_diff-0.2.0.data/data/share/jupyter/labextensions/jupyterlab-cell-diff/static/third-party-licenses.json,sha256=uJGxl8aQsDHH5pe9ZB3KxTahdc26BHRwU_z7fCIlg60,4153
+jupyterlab_cell_diff-0.2.0.data/data/share/jupyter/labextensions/jupyterlab-cell-diff/install.json,sha256=m33IzNHSsV7DvzERJ7vAzUtAIjeAEbCWpZLLNET9wBw,201
+jupyterlab_cell_diff-0.2.0.dist-info/METADATA,sha256=5T7aRtLle6rab79a5cV3uj8arFG2f_t4U0rsjwGrUM4,4143
+jupyterlab_cell_diff-0.2.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+jupyterlab_cell_diff-0.2.0.dist-info/licenses/LICENSE,sha256=OEG9RvhdHKGY1ZU37dk3Huhyy5kRtBvkJE5fLGSAU9U,1519
+jupyterlab_cell_diff-0.2.0.dist-info/RECORD,,
