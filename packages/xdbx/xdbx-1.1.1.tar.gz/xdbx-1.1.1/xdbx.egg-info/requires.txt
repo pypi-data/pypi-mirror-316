@@ -1,0 +1,10 @@
+wheel
+pymysql
+psycopg2
+pymssql==2.2.4
+dbutils
+pyxbox>=0.0.3
+kafka-python
+elasticsearch
+pandas
+xlsxwriter
