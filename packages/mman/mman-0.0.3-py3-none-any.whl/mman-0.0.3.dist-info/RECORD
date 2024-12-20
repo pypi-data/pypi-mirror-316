@@ -1,0 +1,14 @@
+mman/CHECKSUM-SHA3-256.py,sha256=67Ez7W4S5D00bq_3MO7DnOd1DLuHLCu35ukoDfnF-oo,1130
+mman/__init__.py,sha256=75x4ZhKlPCgmcyLjOAu-mHTcZB0StmbgRWeV0Bv8eN0,1990
+mman/__main__.py,sha256=qAYqr9Ag4NWGEbD1DCxVmloe2bRQoqI1PJFvvW-aSF8,1887
+mman/man_common.py,sha256=Vmkus44wtUctZRKryOIN09cjV7mpSeeZ9oNidD_XQ9A,7120
+mman/manenfb.py,sha256=Ng1msDTdg7p4M06lv4MBmY8rZmty8LYXkKrsudrBB1s,1872
+mman/manenob.py,sha256=I9ffvEcXNAMyjZ0VA_mNYcEaoKyoXB01nEHtclmZGAE,1872
+mman/manjpfb.py,sha256=_5l59HRwN8_1btaGHqzX61HNtY33DbkzmTaceUPwaUY,1872
+mman/mman.py,sha256=NRhBS0TocXEB90qyB1m61LBLESexy8hoAosa2fWt5_U,33113
+mman-0.0.3.dist-info/LICENSE,sha256=Gbf4oytEpvIgljvsZreqnirAUK0QmT7dh7y0kuJc24A,17136
+mman-0.0.3.dist-info/METADATA,sha256=_4eO38zkKrZZqmbOvVmyD34QRAkDTZtwPqID2i1XI3o,26477
+mman-0.0.3.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+mman-0.0.3.dist-info/entry_points.txt,sha256=N_5ZwRZ9hDU2G6ufC3inuOinvpTSiXPTYikv0oBiEvY,124
+mman-0.0.3.dist-info/top_level.txt,sha256=tXe6JHSLgvmEZqmdnYBRgVJqVZF9YFtnJ3M7tmGO3Wk,5
+mman-0.0.3.dist-info/RECORD,,
