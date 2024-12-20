@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+pazer_core_python/CoreConfig.py
+pazer_core_python/__init__.py
+pazer_core_python.egg-info/PKG-INFO
+pazer_core_python.egg-info/SOURCES.txt
+pazer_core_python.egg-info/dependency_links.txt
+pazer_core_python.egg-info/requires.txt
+pazer_core_python.egg-info/top_level.txt
+test/__init__.py

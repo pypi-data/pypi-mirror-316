@@ -1,0 +1,4 @@
+pazer_database_python>=0.4.1
+pazer_logger_python>=0.4.1
+fastapi>=0.115.6
+pydantic>=2.10.4
