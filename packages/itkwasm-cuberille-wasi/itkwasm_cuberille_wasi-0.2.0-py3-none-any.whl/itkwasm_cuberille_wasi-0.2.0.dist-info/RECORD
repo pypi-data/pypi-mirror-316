@@ -1,0 +1,8 @@
+itkwasm_cuberille_wasi/__init__.py,sha256=d8PGncyqPbhm2sDbGNnr2paTMUGpDZzBHXYyghI6A4U,284
+itkwasm_cuberille_wasi/_version.py,sha256=Zn1KFblwuFHiDRdRAiRnDBRkbPttWh44jKa5zG2ov0E,22
+itkwasm_cuberille_wasi/cuberille.py,sha256=-tVJBTebLvmqTwvCwQvAxgvuTH0-yhze7BteOz0vIvs,4143
+itkwasm_cuberille_wasi/wasm_modules/anti-alias-cuberille.wasi.wasm,sha256=5-tuGlvgTvhURjBzfsl_yoTzKHJXKMLTXiSKTHdcBlI,5769942
+itkwasm_cuberille_wasi/wasm_modules/cuberille.wasi.wasm,sha256=w2H79yx1HZR3Txd9dtUy_be2OaxiXb4nsWjb7GK-5Lo,5337895
+itkwasm_cuberille_wasi-0.2.0.dist-info/METADATA,sha256=EEQ7Grv7NM5rGToQcEfTP33lVbB7D-7jjrB7QaVokaE,1760
+itkwasm_cuberille_wasi-0.2.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+itkwasm_cuberille_wasi-0.2.0.dist-info/RECORD,,
