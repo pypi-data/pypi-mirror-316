@@ -1,0 +1,7 @@
+include settings.ini
+include LICENSE
+include CONTRIBUTING.md
+include README.md
+include */templates/*
+recursive-include */templates *
+recursive-exclude * __pycache__
