@@ -1,0 +1,4 @@
+--extra-index-url=https://python.suprocktech.com/
+
+asphodel==1.3.3
+hyperborea==2.0.0

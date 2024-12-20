@@ -1,0 +1,6 @@
+[console_scripts]
+acheron-cli = acheron.core.__main__:main
+
+[gui_scripts]
+acheron = acheron.gui.__main__:main
+

@@ -1,0 +1,16 @@
+asphodel
+boto3
+croniter
+diskcache
+hyperborea
+intervaltree
+numpy
+packaging
+psutil
+pydantic
+pymodbus<3,>=2.5.3
+pyqtgraph
+pyserial
+PySide6-Essentials
+requests
+setproctitle
