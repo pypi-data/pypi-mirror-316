@@ -1,0 +1,2 @@
+[console_scripts]
+fertilizer = fertilizer.main:main
