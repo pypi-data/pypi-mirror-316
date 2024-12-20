@@ -1,0 +1,17 @@
+odoo/addons/hr_employee_ssn/README.rst,sha256=VPk5HZGxqucEFG8_cy-ExBZX6YOdADO96tf-x51Vm78,2830
+odoo/addons/hr_employee_ssn/__init__.py,sha256=IDAgTYGxyXVze4qvgVlencHk1h8lpHz9LRfCRzOSr3g,70
+odoo/addons/hr_employee_ssn/__manifest__.py,sha256=AUINRZTV52sU5Bk7U9Dcj8nNHqoM0O1T791biha6ucI,591
+odoo/addons/hr_employee_ssn/i18n/de.po,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+odoo/addons/hr_employee_ssn/i18n/es_AR.po,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+odoo/addons/hr_employee_ssn/i18n/fr.po,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+odoo/addons/hr_employee_ssn/i18n/hr_employee_ssn.pot,sha256=MSiEHPDUKhvGZ0dHQExrrZDUtp-bjziejrPpkzYMeWg,341
+odoo/addons/hr_employee_ssn/i18n/it.po,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+odoo/addons/hr_employee_ssn/readme/CONTRIBUTORS.md,sha256=GpBausfMaF60DQZrzApYP3FHf0523l1qq1BSpwbFo7k,132
+odoo/addons/hr_employee_ssn/readme/DESCRIPTION.md,sha256=QkrPPDvKPq6xt62KQPH7Dcva6jd55TCYZQCq2EVGVGw,87
+odoo/addons/hr_employee_ssn/static/description/icon.png,sha256=6xBPJauaFOF0KDHfHgQopSc28kKvxMaeoQFQWZtfZDo,9455
+odoo/addons/hr_employee_ssn/static/description/index.html,sha256=r-d52jCTMczP85FVeXQ26x7y7tzwozmKSbmJgI7VGSk,12285
+odoo/addons/hr_employee_ssn/views/hr_employee_views.xml,sha256=-EdSJLj4KlEz4S8E3NFyiAVLLJaUlKgVYBu7AXKUWRs,622
+odoo_addon_hr_employee_ssn-17.0.1.0.0.2.dist-info/METADATA,sha256=WzIe_6s1fffOxv7N2-zf8mQYx1fRVuBU54h1xbE29Ao,3344
+odoo_addon_hr_employee_ssn-17.0.1.0.0.2.dist-info/WHEEL,sha256=9fEMia4zL7ZuZbnCOrcYogUhmn4XFIVaJ8G4YGI31xc,81
+odoo_addon_hr_employee_ssn-17.0.1.0.0.2.dist-info/top_level.txt,sha256=QE6RBQ0QX5f4eFuUcGgU5Kbq1A_qJcDs-e_vpr6pmfU,4
+odoo_addon_hr_employee_ssn-17.0.1.0.0.2.dist-info/RECORD,,
