@@ -1,0 +1,3 @@
+[console_scripts]
+kivy_game_of_life = kivy_game_of_life.__main__:main
+
