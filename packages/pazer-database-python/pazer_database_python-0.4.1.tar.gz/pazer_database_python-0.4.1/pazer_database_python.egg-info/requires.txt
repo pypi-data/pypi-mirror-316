@@ -1,0 +1,5 @@
+pazer_dataform_python>=0.4.1
+pazer_logger_python>=0.4.1
+pymysql>=1.1.1
+redis>=5.2.1
+pydantic>=2.10.4
