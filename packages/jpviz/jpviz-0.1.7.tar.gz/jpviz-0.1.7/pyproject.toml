@@ -1,0 +1,42 @@
+[tool.poetry]
+name = "jpviz"
+version = "0.1.7"
+description = "Jaxpr Visualisation Tool"
+authors = [
+    "Zombie-Einstein <zombie-einstein@proton.me>"
+]
+readme = "README.md"
+license = "MIT"
+packages = [{include = "jpviz"}]
+homepage = "https://github.com/zombie-einstein/jaxpr-viz"
+repository = "https://github.com/zombie-einstein/jaxpr-viz"
+keywords = ["JAX", "Computation Graph"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: Implementation :: CPython",
+  "Programming Language :: Python :: Implementation :: PyPy",
+  "License :: OSI Approved :: MIT License",
+]
+
+[tool.poetry.dependencies]
+python = "^3.10,<3.13"
+jax = "^0.4.14"
+pydot = "^1.4.2"
+scipy = "^1.10.0"
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^3.3.3"
+taskipy = "^1.12.0"
+pytest = "^7.4.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.taskipy.tasks]
+test = { cmd = "pytest", help="Run tests"}
+lint = { cmd = "pre-commit run --all-files", help="Code format checks"}
