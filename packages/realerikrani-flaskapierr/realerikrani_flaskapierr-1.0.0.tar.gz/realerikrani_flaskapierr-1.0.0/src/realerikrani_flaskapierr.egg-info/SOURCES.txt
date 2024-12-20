@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+requirements/prod.in
+src/realerikrani/flaskapierr/__init__.py
+src/realerikrani/flaskapierr/error.py
+src/realerikrani/flaskapierr/error_handler.py
+src/realerikrani/flaskapierr/py.typed
+src/realerikrani_flaskapierr.egg-info/PKG-INFO
+src/realerikrani_flaskapierr.egg-info/SOURCES.txt
+src/realerikrani_flaskapierr.egg-info/dependency_links.txt
+src/realerikrani_flaskapierr.egg-info/requires.txt
+src/realerikrani_flaskapierr.egg-info/top_level.txt
