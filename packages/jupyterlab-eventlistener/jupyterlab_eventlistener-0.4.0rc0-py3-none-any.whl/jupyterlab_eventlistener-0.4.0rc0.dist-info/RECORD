@@ -1,0 +1,15 @@
+jupyterlab_eventlistener/__init__.py,sha256=Cd4FWxTEOCRavTjdKAIVGRO7zyWygvDyNna81EzwYLc,616
+jupyterlab_eventlistener/_version.py,sha256=_BWhYVcfLP2NpoFdk47YqHA4NCHllxx9K4zB9JyxYLw,174
+jupyterlab_eventlistener-0.4.0rc0.data/data/share/jupyter/labextensions/jupyterlab-eventlistener-extension/package.json,sha256=uwSQM89jMH5rr-nJMZNJvqj4sdL53zHkUZ0a30IF1Kw,2648
+jupyterlab_eventlistener-0.4.0rc0.data/data/share/jupyter/labextensions/jupyterlab-eventlistener-extension/schemas/jupyterlab-eventlistener-extension/package.json.orig,sha256=5ZTVaI0Py1Z8yqAezgkWDOzzdIElqQzPuD52zDsIya0,2768
+jupyterlab_eventlistener-0.4.0rc0.data/data/share/jupyter/labextensions/jupyterlab-eventlistener-extension/static/432.57100b29bc9fea211a0e.js,sha256=VxALKbyf6iEaDm0teiIF0OsoDFj1drd17_8bVJ2EnnM,4041
+jupyterlab_eventlistener-0.4.0rc0.data/data/share/jupyter/labextensions/jupyterlab-eventlistener-extension/static/509.055a07a3d15b7c0f30b4.js,sha256=BVoHo9FbfA8wtGONubJkzEEaKYHcQQcRZ1iGWfo9HVk,513
+jupyterlab_eventlistener-0.4.0rc0.data/data/share/jupyter/labextensions/jupyterlab-eventlistener-extension/static/666.84cadfe40c86b502f11d.js,sha256=hMrf5AyGtQLxHWgPcyjLDhBtzlIezxLdIwfaPLMoOH4,660
+jupyterlab_eventlistener-0.4.0rc0.data/data/share/jupyter/labextensions/jupyterlab-eventlistener-extension/static/remoteEntry.a3da27d4da7354122b29.js,sha256=o9on1NpzVBIrKV1asYbKJwdWsKQM35MTOxnA4snDTs8,7596
+jupyterlab_eventlistener-0.4.0rc0.data/data/share/jupyter/labextensions/jupyterlab-eventlistener-extension/static/style.js,sha256=9_pYBBRGpfab-OmlqJB2t0sEs5qqLt6UprePN-5aLdM,177
+jupyterlab_eventlistener-0.4.0rc0.data/data/share/jupyter/labextensions/jupyterlab-eventlistener-extension/static/third-party-licenses.json,sha256=X9nIwp325dAko7bvjcbGsdaQltInlJrqlzayr3O6fsk,2604
+jupyterlab_eventlistener-0.4.0rc0.data/data/share/jupyter/labextensions/jupyterlab-eventlistener-extension/install.json,sha256=I8ubAlcxeODLieAMh4504D1Lk_ZG1VBwXPZsexJJmQU,209
+jupyterlab_eventlistener-0.4.0rc0.dist-info/METADATA,sha256=oi_0iFD2w6T1jGqOsh1uFJrESOCn4dxwJxi73PH13mA,7725
+jupyterlab_eventlistener-0.4.0rc0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+jupyterlab_eventlistener-0.4.0rc0.dist-info/licenses/LICENSE,sha256=OEG9RvhdHKGY1ZU37dk3Huhyy5kRtBvkJE5fLGSAU9U,1519
+jupyterlab_eventlistener-0.4.0rc0.dist-info/RECORD,,
