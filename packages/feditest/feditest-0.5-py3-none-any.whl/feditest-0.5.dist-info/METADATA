@@ -1,0 +1,42 @@
+Metadata-Version: 2.4
+Name: feditest
+Version: 0.5
+Summary: Test framework to test distributed, heterogeneous systems with complex protocols such as the Fediverse
+Project-URL: Homepage, https://feditest.org/
+Author-email: Johannes Ernst <git@j12t.org>, Steve Bate <svc-github@stevebate.net>
+Maintainer-email: Johannes Ernst <git@j12t.org>, Steve Bate <svc-github@stevebate.net>
+License-File: LICENSE
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Testing
+Requires-Python: >=3.11
+Requires-Dist: beautifulsoup4
+Requires-Dist: cryptography
+Requires-Dist: httpx
+Requires-Dist: jinja2
+Requires-Dist: langcodes
+Requires-Dist: msgspec
+Requires-Dist: multidict
+Requires-Dist: pre-commit
+Requires-Dist: pyhamcrest
+Requires-Dist: pytest
+Requires-Dist: requests
+Requires-Dist: types-requests
+Description-Content-Type: text/markdown
+
+# FediTest
+
+Test framework to test distributed, heterogeneous systems...
+
+...with complex protocols
+
+...such as the Fediverse.
+
+---
+
+More info and documentation: [feditest.org](https://feditest.org/).
