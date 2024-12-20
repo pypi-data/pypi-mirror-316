@@ -1,0 +1,13 @@
+geomagindices/__init__.py,sha256=u4VrzgIf3k6GpyDoMWPENIN67Eo6gDsFw9LTKtiGjE8,80
+geomagindices/__main__.py,sha256=6MqFhpP9Pij8HdnAnK5tSZtn-idSXcypgMIwOWbONXU,446
+geomagindices/base.py,sha256=nv6L94iQlVq-kg_Yzjc4NVSX-46K6hPPT8uHv83rAIU,1350
+geomagindices/dataio.py,sha256=GWwhPrksYFBIC2WwpLEYVzbRJREuH3MOkrQVBrSbRS8,5223
+geomagindices/web.py,sha256=Ne_g6i6qKY6IneOJOQ8GeMOTCd0h6c5xjqCOOFtwSm4,4274
+geomagindices/data/May2016Rpt.txt,sha256=gEpatGRoDFrXW9UnYh_4cFrsy2kwtf2tA4S7ZlZUArc,15235
+geomagindices/data/__init__.py,sha256=Z4VNszHWmaKqT-h-Ge0Va-5mNSfC6WHxUgYG9_pkLC8,48
+geomagindices/tests/test_read.py,sha256=hh4ObC-rggbokQqp05Xb12NfbqUoh2SegTFe3V2IxEk,2872
+geomagindices-1.5.1.dist-info/LICENSE.txt,sha256=rbSn0EvQDd5vzfpMN3kgtpVg7vjR3WmX60YHT3qIslY,1078
+geomagindices-1.5.1.dist-info/METADATA,sha256=PdPcrajJxZ3fPMWhTm18dF5Q49b6sIkcv2GTf55fpjs,2565
+geomagindices-1.5.1.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+geomagindices-1.5.1.dist-info/top_level.txt,sha256=fpyjm_zp80g_qCQBaYByiLfUPO4ki0GtrgElKCk9VZU,14
+geomagindices-1.5.1.dist-info/RECORD,,
