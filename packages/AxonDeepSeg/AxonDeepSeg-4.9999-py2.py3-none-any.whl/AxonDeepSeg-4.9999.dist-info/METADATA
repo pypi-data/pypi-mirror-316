@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: AxonDeepSeg
+Version: 4.9999
+Summary: Python tool for automatic axon and myelin segmentation
+Home-page: https://github.com/neuropoly/axondeepseg
+Author: NeuroPoly Lab, Polytechnique Montreal
+Author-email: neuropoly@googlegroups.com
+License: MIT
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3
+License-File: LICENSE
+
+Pipy installation of AxonDeepSeg is no longer supported, please visit https://github.com/axondeepseg/axondeepseg for installation isntructions.
