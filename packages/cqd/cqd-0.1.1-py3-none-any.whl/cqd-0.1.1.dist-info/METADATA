@@ -1,0 +1,60 @@
+Metadata-Version: 2.4
+Name: cqd
+Version: 0.1.1
+Summary: cqd - A colorful object attribute inspector
+Project-URL: Homepage, https://github.com/rayking99/cqd
+Project-URL: Bug Tracker, https://github.com/rayking99/cqd/issues
+Author-email: Jason Pickup <therayking99@gmail.com>
+License-File: LICENSE
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Debuggers
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# cqd
+
+A lightweight Python utility that provides colored visualization of object attributes, making it easier to inspect objects during development and debugging.
+
+## Features
+
+- Color-coded attribute display:
+  - 🔵 Blue: Dunder methods
+  - 🟡 Yellow: Protected attributes (starting with `_`)
+  - 🟢 Green: Public attributes and methods
+
+
+For example - here is a snippet of the tokenizer from huggingface. 
+
+![alt text](assets/example.png)
+
+
+## Installation
+
+You can install the package using pip:
+
+```
+pip install cqd
+```
+
+## Usage
+
+To use the `cqd` function, import it from the package:
+
+```python
+from cqd import cqd
+
+# Example usage
+cqd(your_object)
+```
+
+## Contributing
+
+Feel free to submit issues or pull requests for improvements or bug fixes.
+
+## License
+
+This project is licensed under the MIT License.
