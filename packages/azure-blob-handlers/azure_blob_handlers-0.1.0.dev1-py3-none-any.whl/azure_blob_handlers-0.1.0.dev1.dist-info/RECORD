@@ -1,0 +1,8 @@
+blobhand/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+blobhand/blob/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+blobhand/blob/reader.py,sha256=_uroNaixs3vtE8Lot7_9wmfqQZwyYlriH2ZZkgFGe5o,6243
+blobhand/blob/writer.py,sha256=8Ta25Plib8ymonGEO43OYqV_z4TaOr5wnW_vUawwRBU,6448
+azure_blob_handlers-0.1.0.dev1.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+azure_blob_handlers-0.1.0.dev1.dist-info/METADATA,sha256=8uMI03_j5tdRMxtDWFr9H1edOwRQkuao8PFQ6T0pA2I,1446
+azure_blob_handlers-0.1.0.dev1.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+azure_blob_handlers-0.1.0.dev1.dist-info/RECORD,,
