@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: mhi-enerplot
+Version: 3.0.0
+Summary: Manitoba Hydro International: Enerplot Automation library
+Author-email: "Manitoba Hydro International Ltd." <pscad@mhi.ca>
+License: BSD-3-Clause-Clear
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: mhi.common<4,>=3.1.0
+Provides-Extra: dev
+Requires-Dist: coverage>=7.4.3; extra == "dev"
+Requires-Dist: pytest>=8.0.1; extra == "dev"
+Requires-Dist: pylint-gitlab>=2.0.0; extra == "dev"
+
+# Enerplot Automation Library
+
+The Enerplot Automation Library is designed to allow control of the Enerplot
+application from a Python script.
+
+
+## Requirements
+
+The Enerplot Automation Library requires the following tools are installed:
+
+* Enerplot
+
+* Python 3.x (such as Python 3.7.1)
+
+Installation of these tools is beyond the scope of this README.
+
+
+## Installation
+
+* For the default version of Python 3:
+  * `py -3 -m pip install  mhi.enerplot`
+* For a specific version of Python, such as Python 3.7
+  * `py -3.7  -m pip install  mhi.enerplot`
+
+
+## Resources
+
+For help, see:
+
+  * [PSCAD Support Resources](https://www.pscad.com/support/support-resources)
+  * [Enerplot Automation Library](https://www.pscad.com/enerplot/automation/index.html)
+
