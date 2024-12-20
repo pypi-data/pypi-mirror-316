@@ -1,0 +1,9 @@
+sentry_feishu_gsmini/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sentry_feishu_gsmini/forms.py,sha256=HUuBZEndOvWxYmuWsl3-VVCPACHXMEpEc38yemM2eG0,217
+sentry_feishu_gsmini/plugin.py,sha256=J721EEZAyRJVytKHwu_MrJR83IluUp4qrhDo0SPap-c,5618
+sentry_feishu_gsmini-1.6.dist-info/LICENSE,sha256=zruJLIOxtWRrUwh-ID721N3_JWfCjG6JZJgeisidZ-c,1062
+sentry_feishu_gsmini-1.6.dist-info/METADATA,sha256=cNPdQXmavbD1zjCLOpt9byCm2bjgaEDkdlfYaxbkVoU,634
+sentry_feishu_gsmini-1.6.dist-info/WHEEL,sha256=tZoeGjtWxWRfdplE7E3d45VPlLNQnvbKiYnx7gwAy8A,92
+sentry_feishu_gsmini-1.6.dist-info/entry_points.txt,sha256=rPtBMZcEsjQ1QdM0kvCfcmZemHjf5ZeUGhK5YDkGa4w,82
+sentry_feishu_gsmini-1.6.dist-info/top_level.txt,sha256=kIYM52LECle0TMhjamECiRlQO3hrjmvTMf5Um0XKAIg,21
+sentry_feishu_gsmini-1.6.dist-info/RECORD,,
