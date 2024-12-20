@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: dieStruct
+Version: 1.1.2
+Summary: Librería para comprender el analísis y diseño estructural
+Home-page: https://www.youtube.com/results?search_query=daningenio
+Author: Daniel Ilbay Yupa
+Author-email: daningenio@gmail.com
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Education
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Education
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# dieStruct
+
+**dieStruct** es una librerÃ­a educativa desarrollada para enseÃ±ar la lÃ³gica de programaciÃ³n aplicada al anÃ¡lisis y diseÃ±o estructural. Su objetivo principal es facilitar el aprendizaje de conceptos fundamentales en ingenierÃ­a estructural mediante herramientas computacionales, promoviendo la comprensiÃ³n de algoritmos y procesos detrÃ¡s del diseÃ±o estructural automatizado.
+
+Esta librerÃ­a estÃ¡ diseÃ±ada tanto para estudiantes como para profesionales que deseen profundizar en los principios computacionales del anÃ¡lisis estructural, utilizando Python como medio de aprendizaje e implementaciÃ³n.
