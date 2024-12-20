@@ -1,0 +1,8 @@
+setup.py
+Hnatyshakten.egg-info/PKG-INFO
+Hnatyshakten.egg-info/SOURCES.txt
+Hnatyshakten.egg-info/dependency_links.txt
+Hnatyshakten.egg-info/top_level.txt
+reverse/__init__.py
+reverse/reverse.py
+tests/test_reverse.py

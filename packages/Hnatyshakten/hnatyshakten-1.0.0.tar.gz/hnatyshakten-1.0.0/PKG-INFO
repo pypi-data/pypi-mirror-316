@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: Hnatyshakten
+Version: 1.0.0
+Summary: A package to reverse words with special characters in a text
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.6
