@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: pdp-python
+Version: 0.0.1
+Summary: Arithmetic operations package
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+
