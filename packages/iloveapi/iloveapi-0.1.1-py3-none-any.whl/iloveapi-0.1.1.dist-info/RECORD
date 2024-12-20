@@ -1,0 +1,13 @@
+iloveapi-0.1.1.dist-info/METADATA,sha256=97JOAsIchPV000T5FtWRAcaEAQD9Bu9b5a9AWxUc4uA,984
+iloveapi-0.1.1.dist-info/WHEEL,sha256=thaaA2w1JzcGC48WYufAs8nrYZjJm8LqNfnXFOFyCC4,90
+iloveapi-0.1.1.dist-info/entry_points.txt,sha256=6OYgBcLyFCUgeqLgnvMyOJxPCWzgy7se4rLPKtNonMs,34
+iloveapi-0.1.1.dist-info/licenses/LICENSE,sha256=aO8tPT7it_emHL_xQiSJg3iBzXxniJjYrZFqhT6PoKE,1064
+iloveapi/__init__.py,sha256=RkqQt6mcyFocYDFoIv05udSWZ9b-QqnxzpmGfOe4H7U,43
+iloveapi/auth.py,sha256=cCflGE4AEHXMugfQk-qVQRup1ppyLjvPsuOBu4Tm52Y,1339
+iloveapi/iloveapi.py,sha256=WNkcur_zPF8zWBeQ527yc68UMtaQ8v8RpKMQTZyL33k,4354
+iloveapi/rest.py,sha256=33k7_DyufequxgAnth61D2-TrWeTBKoccJFcAlXf1ts,5581
+iloveapi/task.py,sha256=rW6q2SQtKgNqV2r8qi3knct25dYYpCLLqisakFa3ESs,4964
+iloveapi/typing.py,sha256=I8YN7xfqA2Mgp-mXudktGl5WlAgoXOoAyv_HOdnfoco,521
+iloveapi/utils.py,sha256=e0gkPU3L8yW-jgAaCxQKRtCwjjkAPDzkhLG4bWYf5MA,599
+iloveapi/workflow.py,sha256=bdganQuVFgfTL-qN3VTvcLSD2kCqI8_fNxIck8g_tFA,981
+iloveapi-0.1.1.dist-info/RECORD,,
