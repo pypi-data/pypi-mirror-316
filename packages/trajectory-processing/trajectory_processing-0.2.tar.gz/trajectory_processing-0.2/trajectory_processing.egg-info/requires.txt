@@ -1,0 +1,9 @@
+pandas
+geopandas
+ptrail
+numpy
+scipy
+matplotlib
+joblib
+scikit-learn
+torch
