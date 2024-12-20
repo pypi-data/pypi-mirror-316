@@ -1,0 +1,16 @@
+LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+README.md,sha256=WDLbXrzZtrPDgMu2yt9ijfYEg7NfCv1KjnBBV-BQNtI,5909
+dist-readme.md,sha256=BsPWUCpSLXo6SbqrODHtCKsYUVSL-hQbnD7FGZrOkzU,1202
+requirements.txt,sha256=y6ZrB5rvjZ6RNvPRh2N-strf2On4XXUSsTNcGcJrTRc,45
+interface_gen/.flake8,sha256=7aA_O0WQv4CKNC9QSZXLIehpoEwwR4dVDAWfHBWARF8,31
+interface_gen/README.md,sha256=Qt8Fse9IpueAuqRtSBHjNMpHfMZRCHnfDiC4jytaWVY,1869
+interface_gen/__init__.py,sha256=axFhwW7Cqq6SZ63LVoKUunB3Bdrm3DOWD1_XrP6IftY,24
+interface_gen/docs.py,sha256=lEeAG-9SM18_1cC3aixOBv6hDt4Z2ZZ24YzIbJosfFI,5772
+interface_gen/generate.py,sha256=5sRIVSAI6b3VWmEcA18nRBvAsoVHaMLHnuLxv6a4wnM,4854
+interface_gen/protocols_test.py,sha256=ck-5hl8BnK31cPUfbfgcSyrvixmK8X0AnJSI5vVu11c,2495
+interface_gen/toolchain.py,sha256=2YmZVZxg0mOBj6NE8UAoS-TYYlNHpeAzbKWxO_CZAY8,2861
+interface_gen-0.0.22.dist-info/METADATA,sha256=PGureOqA6mDO3Pz5qP99ppXO83Zp0n6vDkaR8dbErlM,1972
+interface_gen-0.0.22.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+interface_gen-0.0.22.dist-info/entry_points.txt,sha256=IBPStPY-mlPH_KuNvRtHBq0XDSc0OPmytFlY0GJAVEY,54
+interface_gen-0.0.22.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+interface_gen-0.0.22.dist-info/RECORD,,
