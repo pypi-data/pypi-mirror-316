@@ -1,0 +1,13 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.py
+dataExploreBetter/__init__.py
+dataExploreBetter/builder.py
+dataExploreBetter/dataExplorer.py
+dataExploreBetter/director.py
+dataExploreBetter/main.py
+dataExploreBetter.egg-info/PKG-INFO
+dataExploreBetter.egg-info/SOURCES.txt
+dataExploreBetter.egg-info/dependency_links.txt
+dataExploreBetter.egg-info/top_level.txt
