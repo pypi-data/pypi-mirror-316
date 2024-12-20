@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: neszen_helper
+Version: 0.3.0
+Summary: A simple package to convert text to uppercase and lowercase
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# neszen-package
+
+A simple Python package to convert text to uppercase.
+
+## Installation
+
+You can install the package via pip:
+
+```bash
+pip install neszen-package
