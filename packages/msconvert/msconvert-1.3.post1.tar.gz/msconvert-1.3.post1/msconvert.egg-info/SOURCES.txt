@@ -1,0 +1,13 @@
+.gitignore
+LICENSE
+README.rst
+setup.py
+.github/workflows/python-publish.yml
+msconvert/__cli.py
+msconvert/__init__.py
+msconvert/__main__.py
+msconvert.egg-info/PKG-INFO
+msconvert.egg-info/SOURCES.txt
+msconvert.egg-info/dependency_links.txt
+msconvert.egg-info/entry_points.txt
+msconvert.egg-info/top_level.txt
