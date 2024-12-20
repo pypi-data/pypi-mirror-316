@@ -1,0 +1,18 @@
+ipfs_embeddings_py/__init__.py,sha256=lEacTAQUZajrbV0fzUwiBDZ5HVhdLczKgh7_m7T6UEk,166
+ipfs_embeddings_py/chunker.py,sha256=cn-lHnJm6NuEbmpd2p6d5MX-NXy87JV4UIf63UyFJq8,12857
+ipfs_embeddings_py/elasticsearch_kit.py,sha256=50mrcLLQzUwFtdiFru63MsSfXhpJXP5VPFbbeEn3dYg,7949
+ipfs_embeddings_py/elasticsearch_test.py,sha256=TMRaW39IHLFJrKRczfZW_HGaqIuQoyGNHMpNY4UOE40,1322
+ipfs_embeddings_py/ipfs_embeddings.py,sha256=1OGIjqPc_3HB0Ct089KWslLwESq9qHLXkQw_-G_9EI0,37282
+ipfs_embeddings_py/ipfs_multiformats.py,sha256=smHV4QkH9Oze7vZg0vOc8N1N8Tt--0wldzk7zl8EfaA,1501
+ipfs_embeddings_py/qdrant_kit copy.py,sha256=vhbWX9egtTbm13Z5NktRiF6K_2w1cdGgXDiEVNBlpf8,20727
+ipfs_embeddings_py/qdrant_kit.py,sha256=m3qsbe7cgtYslaGtDmHaLvuOi3hkENF3OLbmUi3OWf0,20365
+ipfs_embeddings_py/schema.py,sha256=pSeR-bagWJPfcm-a6nE9kp6ohTZmsMFV1JJUg7Z1im0,27858
+ipfs_embeddings_py/temporary_file.py,sha256=UydKBjQS56vO3LzahiRjCJLw9KrD7IHrzXvfjQY4hfE,43776
+ipfs_embeddings_py/test_ipfs_embeddings.py,sha256=pWPzY3KLwJ8_KcR5dEgWwIz9w_ryGt-ret6CFR2w1GE,9697
+ipfs_embeddings_py/typing_inspect.py,sha256=5gIWomLPfuDpgd3gX1GlnX0MuXM3VorR4j2W2qXORiQ,28269
+ipfs_embeddings_py-0.0.22.dist-info/LICENSE,sha256=hIahDEOTzuHCU5J2nd07LWwkLW7Hko4UFO__ffsvB-8,34523
+ipfs_embeddings_py-0.0.22.dist-info/LICENSE copy,sha256=hIahDEOTzuHCU5J2nd07LWwkLW7Hko4UFO__ffsvB-8,34523
+ipfs_embeddings_py-0.0.22.dist-info/METADATA,sha256=RwCpp56Ybmh3b3l9jidQmye-M82si-O_4CbkNnEPylI,2627
+ipfs_embeddings_py-0.0.22.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+ipfs_embeddings_py-0.0.22.dist-info/top_level.txt,sha256=uSJzgfDsbxC7iTcPrHgFYAq4y2huLACgL9RVklRhHV8,19
+ipfs_embeddings_py-0.0.22.dist-info/RECORD,,
