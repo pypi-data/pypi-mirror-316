@@ -1,0 +1,4 @@
+dist
+sysprompt
+tests
+venv
