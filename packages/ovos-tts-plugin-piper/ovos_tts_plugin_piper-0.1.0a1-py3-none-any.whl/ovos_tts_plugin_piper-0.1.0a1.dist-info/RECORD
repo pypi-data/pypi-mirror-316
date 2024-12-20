@@ -1,0 +1,12 @@
+ovos_tts_plugin_piper/__init__.py,sha256=Mh2rLwMlazcpT8PflTwaDYwd-jvuBF-QOl7yuZGRQ9A,7097
+ovos_tts_plugin_piper/piper.py,sha256=rjaPteRbNMimE12J3GMmVSWVe0klcvQHKaqn1ha86lE,7773
+ovos_tts_plugin_piper/version.py,sha256=95gLFCt-8xv9DgF7FIF6CljWmhm8SUhevumEBfo7Pl0,114
+ovos_tts_plugin_piper/voice_models.py,sha256=i1atjOsOysejUtyt8utrU17gKk3Y1bd8EBvLj3U6BaM,7454
+ovos_tts_plugin_piper/voices.json,sha256=HajmnzAvraAQRKVStbKZ-1ZOv_N3ptA3sAFAIoltJBQ,191563
+ovos_tts_plugin_piper-0.1.0a1.dist-info/LICENSE,sha256=fYHkowW9JcaEcqCPTXYBayNJ9J1lGdYVb7Mf9oy6oEY,11349
+ovos_tts_plugin_piper-0.1.0a1.dist-info/METADATA,sha256=FCQlW4_xuSKY8LkqtTmk5-0zWXS7zahyR8ahsc8TDBY,1457
+ovos_tts_plugin_piper-0.1.0a1.dist-info/WHEEL,sha256=tZoeGjtWxWRfdplE7E3d45VPlLNQnvbKiYnx7gwAy8A,92
+ovos_tts_plugin_piper-0.1.0a1.dist-info/entry_points.txt,sha256=eHpADEdMHzf8Y-h30EKm587TkxMsv91Xb98ph3DgRUY,186
+ovos_tts_plugin_piper-0.1.0a1.dist-info/top_level.txt,sha256=WTvxxS42UAwh0oi25ypLaxvMGD85j_wGzrux2QFoqLs,22
+ovos_tts_plugin_piper-0.1.0a1.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+ovos_tts_plugin_piper-0.1.0a1.dist-info/RECORD,,
