@@ -1,0 +1,16 @@
+Oikeudet.txt
+README.md
+pyproject.toml
+django_localhost_run.egg-info/PKG-INFO
+django_localhost_run.egg-info/SOURCES.txt
+django_localhost_run.egg-info/dependency_links.txt
+django_localhost_run.egg-info/entry_points.txt
+django_localhost_run.egg-info/historia.json
+django_localhost_run.egg-info/requires.txt
+django_localhost_run.egg-info/top_level.txt
+localhost_run/__init__.py
+localhost_run/asetukset.py
+localhost_run/konteksti.py
+localhost_run/management/__init__.py
+localhost_run/management/commands/__init__.py
+localhost_run/management/commands/runserver.py
