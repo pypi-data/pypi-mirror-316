@@ -1,0 +1,6 @@
+create_pypi_skeleton/__init__.py,sha256=zfcAN8PIWGKTfwhTyyFafsyjkcHMdUm6sDxfYXwkDhI,6162
+create_pypi_skeleton/__main__.py,sha256=eRzjWO41nttPUgNEJq59nrv_pb-lNVyJWPHp0dEDvnQ,290
+create_pypi_skeleton-0.0.7.dist-info/METADATA,sha256=0mU_CGRbORISvyynPoHrPAuHU9IFfF1UrGmpE8HcSP0,1752
+create_pypi_skeleton-0.0.7.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+create_pypi_skeleton-0.0.7.dist-info/licenses/LICENSE,sha256=jCWdze2olLbjt4A6VX2rE9ESCf9cMcKVWFQ84E9EKKw,17
+create_pypi_skeleton-0.0.7.dist-info/RECORD,,
