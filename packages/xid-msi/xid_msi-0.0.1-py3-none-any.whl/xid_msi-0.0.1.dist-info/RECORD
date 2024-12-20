@@ -1,0 +1,16 @@
+msi/__init__.py,sha256=MZGfk37pYwexZb0L5XD4vel6Lmd2QHKnMOmjrtWxxu8,1036
+msi/commandmanager.py,sha256=SiRbq5H0vo5RI5aIFz2B-w3uEarkgDyW8zwwdvtsd_c,1452
+msi/customactiontype.py,sha256=wTzoS9674o0fuUsHbvpqbjJyLMcPSKlZYL_g_P469cA,1664
+msi/database.py,sha256=XlIkO6sGY5B2Nfrer-QGqELp5z3kSbnj-e6Zy11tlzI,6387
+msi/databasescope.py,sha256=GLwsVKOowcOqP9caIYCXKnH_jLpP8hP6ZyID-JKlqCU,2240
+msi/query.py,sha256=EHXxXW6j459-EpqXEiQLAnq-DT5skgI3S-HUpG498oE,2709
+msi/queryscope.py,sha256=5oYDRVOvYZ7jlHOAzwL6ImQNyGPMwL4wNwvVTv4-GZs,2224
+msi/record.py,sha256=c9ixibJLapV06TNfZGVKtfevtdChJnQEOt7iFrCi6U8,7756
+msi/table.py,sha256=OAZBSmhS5EjCMbJuHdxTcdTrlE8XnFbLi9OFx2Izhv0,4746
+msi/tablefieldtype.py,sha256=dPIq_cCXp8mnuuhvG8AuhLp1ZOdqNdJbSlq6hU3Pn-U,1005
+xid_msi-0.0.1.dist-info/LICENSE,sha256=hylpGcMgXr0oPC2pPHrmkB4VZRemyc9f2U8fKtydWFs,1085
+xid_msi-0.0.1.dist-info/METADATA,sha256=gGtAjd1NJM7p16IIK_Bd5bvJVLqCrtqQ_XYvE2PHtyA,454
+xid_msi-0.0.1.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+xid_msi-0.0.1.dist-info/entry_points.txt,sha256=P-yui3034McHfk1KrN3Y6i-ndQD4pRoc0wmcE3s8hRU,62
+xid_msi-0.0.1.dist-info/top_level.txt,sha256=iyVQXLjWp1p5D3rudZMKYtwD36vatNQ6zEBGhIVQn0s,4
+xid_msi-0.0.1.dist-info/RECORD,,
