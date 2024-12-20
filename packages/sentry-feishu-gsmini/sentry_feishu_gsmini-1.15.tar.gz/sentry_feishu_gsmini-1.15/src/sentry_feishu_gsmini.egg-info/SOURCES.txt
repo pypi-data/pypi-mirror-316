@@ -1,0 +1,11 @@
+README.md
+setup.py
+src/sentry_feishu_gsmini/__init__.py
+src/sentry_feishu_gsmini/forms.py
+src/sentry_feishu_gsmini/plugin.py
+src/sentry_feishu_gsmini.egg-info/PKG-INFO
+src/sentry_feishu_gsmini.egg-info/SOURCES.txt
+src/sentry_feishu_gsmini.egg-info/dependency_links.txt
+src/sentry_feishu_gsmini.egg-info/entry_points.txt
+src/sentry_feishu_gsmini.egg-info/not-zip-safe
+src/sentry_feishu_gsmini.egg-info/top_level.txt
