@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: vt-ugcs
+Version: 1.0.0
+Summary: VT Universal Ground Control Station Software
+Author: vtneil
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: click
+Requires-Dist: contourpy
+Requires-Dist: cycler
+Requires-Dist: dash
+Requires-Dist: dash-bootstrap-components[pandas]
+Requires-Dist: dash-core-components
+Requires-Dist: dash-html-components
+Requires-Dist: dash-table
+Requires-Dist: Flask
+Requires-Dist: fonttools
+Requires-Dist: imageio
+Requires-Dist: itsdangerous
+Requires-Dist: Jinja2
+Requires-Dist: kiwisolver
+Requires-Dist: lazy_loader
+Requires-Dist: MarkupSafe
+Requires-Dist: matplotlib
+Requires-Dist: networkx
+Requires-Dist: numpy
+Requires-Dist: packaging
+Requires-Dist: pandas
+Requires-Dist: Pillow
+Requires-Dist: plotly
+Requires-Dist: pyparsing
+Requires-Dist: pyserial
+Requires-Dist: python-dateutil
+Requires-Dist: pytz
+Requires-Dist: PyWavelets
+Requires-Dist: scikit-image
+Requires-Dist: scipy
+Requires-Dist: six
+Requires-Dist: tenacity
+Requires-Dist: tifffile
+Requires-Dist: Werkzeug
+
+# VT UGCS
+
+A universal ground control station (GCS) GUI with Plotly dash framework.
+(The old version CUGS-V1 used QT framework.) It is equipped with newly 
+developed library and backend with easier syntax, usages and better performance.
+
+You can read [instructions.md](instructions.md) for how to setup.

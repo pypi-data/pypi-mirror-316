@@ -1,0 +1,2 @@
+[console_scripts]
+vt-ugcs = vt_ugcs.serve:main
