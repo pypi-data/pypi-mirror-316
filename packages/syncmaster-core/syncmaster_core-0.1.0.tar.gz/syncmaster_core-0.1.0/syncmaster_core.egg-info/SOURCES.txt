@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+syncmaster-core/__init__.py
+syncmaster_core.egg-info/PKG-INFO
+syncmaster_core.egg-info/SOURCES.txt
+syncmaster_core.egg-info/dependency_links.txt
+syncmaster_core.egg-info/top_level.txt
