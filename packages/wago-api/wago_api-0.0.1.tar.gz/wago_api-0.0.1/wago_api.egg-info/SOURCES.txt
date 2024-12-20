@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+wago/__init__.py
+wago/client.py
+wago/models.py
+wago_api.egg-info/PKG-INFO
+wago_api.egg-info/SOURCES.txt
+wago_api.egg-info/dependency_links.txt
+wago_api.egg-info/not-zip-safe
+wago_api.egg-info/requires.txt
+wago_api.egg-info/top_level.txt
