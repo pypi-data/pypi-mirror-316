@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: trajectory_processing
+Version: 0.2
+Summary: A package for processing trajectory data
+Author: Name
+Author-email: email@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: pandas
+Requires-Dist: geopandas
+Requires-Dist: ptrail
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: matplotlib
+Requires-Dist: joblib
+Requires-Dist: scikit-learn
+Requires-Dist: torch
+
+# Trajectory Processing Package
+
+## 安装
+
+使用 pip 安装：
+
+```bash
+pip install trajectory_processing
