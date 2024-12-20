@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: nget
+Version: 0.0.2
+Summary: A simple package for safely retrieving nested values from data structures using a sequence of keys or indexes.
+Author-Email: alcortazzo <ipodarock@gmail.com>
+License: MIT
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+
+# nget
