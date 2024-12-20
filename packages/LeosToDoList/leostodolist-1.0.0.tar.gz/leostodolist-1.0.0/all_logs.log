@@ -1,0 +1,343 @@
+2024-12-19 08:06:12,555 - my_logger - DEBUG - Dies ist eine Debug-Nachricht (in allen Logs).
+2024-12-19 08:06:12,556 - my_logger - INFO - Dies ist eine Info-Nachricht (in allen Logs und info_logs.log).
+2024-12-19 08:06:12,556 - my_logger - WARNING - Dies ist eine Warnung (in allen Logs und info_logs.log).
+2024-12-19 08:06:12,556 - my_logger - ERROR - Dies ist eine Fehler-Nachricht (in allen Logs und info_logs.log).
+2024-12-19 08:06:12,556 - my_logger - CRITICAL - Dies ist eine kritische Nachricht (in allen Logs und info_logs.log).
+2024-12-19 08:25:11,127 - DEBUG - Dies ist eine Debug-Nachricht (in allen Logs).
+2024-12-19 08:25:11,127 - INFO - Dies ist eine Info-Nachricht (in allen Logs und in info_logs.log).
+2024-12-19 08:25:11,127 - WARNING - Dies ist eine Warnung (in allen Logs und in info_logs.log).
+2024-12-19 08:25:11,127 - ERROR - Dies ist eine Fehler-Nachricht (in allen Logs und in info_logs.log).
+2024-12-19 08:25:11,127 - CRITICAL - Dies ist eine kritische Nachricht (in allen Logs und in info_logs.log).
+2024-12-19 08:29:31,503 - DEBUG - Dies ist eine Debug-Nachricht (in allen Logs).
+2024-12-19 08:29:31,504 - INFO - Dies ist eine Info-Nachricht (in allen Logs und in info_logs.log).
+2024-12-19 08:29:31,504 - WARNING - Dies ist eine Warnung (in allen Logs und in info_logs.log).
+2024-12-19 08:29:31,504 - ERROR - Dies ist eine Fehler-Nachricht (in allen Logs und in info_logs.log).
+2024-12-19 08:29:31,504 - CRITICAL - Dies ist eine kritische Nachricht (in allen Logs und in info_logs.log).
+2024-12-19 08:29:39,981 - DEBUG - Dies ist eine Debug-Nachricht (in allen Logs).
+2024-12-19 08:29:39,981 - INFO - Dies ist eine Info-Nachricht (in allen Logs und in info_logs.log).
+2024-12-19 08:29:39,982 - WARNING - Dies ist eine Warnung (in allen Logs und in info_logs.log).
+2024-12-19 08:29:39,982 - ERROR - Dies ist eine Fehler-Nachricht (in allen Logs und in info_logs.log).
+2024-12-19 08:29:39,982 - CRITICAL - Dies ist eine kritische Nachricht (in allen Logs und in info_logs.log).
+2024-12-19 09:20:35,469 - INFO - Gui wird gestartet...
+2024-12-19 09:20:35,470 - DEBUG - User-Liste abgerufen
+2024-12-19 09:20:35,532 - DEBUG - User-Auswal-Fenster erstellt
+2024-12-19 09:20:40,901 - DEBUG - Ausgewählter user: Leo
+2024-12-19 09:20:40,914 - DEBUG - task-fenster erstellt
+2024-12-19 09:20:42,660 - DEBUG - Bearbeitung für: (0,)
+2024-12-19 09:20:42,734 - DEBUG - Task-Bearbeiten-Fenster erstellt
+2024-12-19 09:20:44,099 - INFO - Bearbeitung wurde gespeichert
+2024-12-19 09:20:45,532 - INFO - GUI beendet!
+2024-12-19 09:21:19,839 - INFO - Gui wird gestartet...
+2024-12-19 09:21:19,839 - DEBUG - User-Liste abgerufen
+2024-12-19 09:21:19,904 - DEBUG - User-Auswal-Fenster erstellt
+2024-12-19 09:21:21,857 - DEBUG - Ausgewählter user: Leo
+2024-12-19 09:21:21,872 - DEBUG - task-fenster erstellt
+2024-12-19 09:21:24,003 - DEBUG - Bearbeitung für: (1,)
+2024-12-19 09:21:24,062 - DEBUG - Task-Bearbeiten-Fenster erstellt
+2024-12-19 09:21:24,906 - INFO - Bearbeitung wurde gespeichert
+2024-12-19 09:21:25,898 - INFO - GUI beendet!
+2024-12-19 09:24:20,122 - INFO - Gui wird gestartet...
+2024-12-19 09:24:20,122 - DEBUG - User-Liste abgerufen
+2024-12-19 09:24:20,201 - DEBUG - User-Auswal-Fenster erstellt
+2024-12-19 09:24:24,160 - DEBUG - Ausgewählter user: Leo
+2024-12-19 09:24:24,173 - DEBUG - task-fenster erstellt
+2024-12-19 09:24:33,746 - DEBUG - Bearbeitung für: ()
+2024-12-19 09:24:39,059 - DEBUG - Bearbeitung für: (8,)
+2024-12-19 09:24:42,493 - DEBUG - Bearbeitung für: (8,)
+2024-12-19 09:24:45,655 - DEBUG - exit name bearbeiten per esc
+2024-12-19 09:24:48,342 - DEBUG - Bearbeitung für: (1,)
+2024-12-19 09:24:48,409 - DEBUG - Task-Bearbeiten-Fenster erstellt
+2024-12-19 09:25:21,821 - DEBUG - task_list wurde gespeichert
+2024-12-19 09:25:24,254 - DEBUG - Bearbeitung für: (2,)
+2024-12-19 09:25:24,308 - DEBUG - Task-Bearbeiten-Fenster erstellt
+2024-12-19 09:25:27,223 - DEBUG - Bearbeitung für: ()
+2024-12-19 09:28:01,045 - DEBUG - User-Auswal-Fenster erstellt
+2024-12-19 09:28:03,102 - DEBUG - Ausgewählter user: test200
+2024-12-19 09:28:03,115 - DEBUG - task-fenster erstellt
+2024-12-19 09:28:05,650 - DEBUG - Bearbeitung für: (0,)
+2024-12-19 09:28:05,704 - DEBUG - Task-Bearbeiten-Fenster erstellt
+2024-12-19 09:28:07,274 - INFO - Bearbeitung wurde gespeichert
+2024-12-19 09:28:11,612 - DEBUG - exit name bearbeiten per esc
+2024-12-19 09:28:15,555 - DEBUG - Bearbeitung für: (2,)
+2024-12-19 09:32:34,679 - INFO - Gui wird gestartet...
+2024-12-19 09:32:34,680 - DEBUG - User-Liste abgerufen
+2024-12-19 09:32:34,750 - DEBUG - User-Auswal-Fenster erstellt
+2024-12-19 09:32:37,111 - DEBUG - Ausgewählter user: Leo
+2024-12-19 09:32:37,128 - DEBUG - task-fenster erstellt
+2024-12-19 09:32:38,819 - DEBUG - Bearbeitung für: (1,)
+2024-12-19 09:32:38,898 - DEBUG - Task-Bearbeiten-Fenster erstellt
+2024-12-19 09:32:39,978 - INFO - Bearbeitung wurde gespeichert
+2024-12-19 09:32:40,921 - INFO - GUI beendet!
+2024-12-19 09:33:10,840 - INFO - Gui wird gestartet...
+2024-12-19 09:33:10,841 - DEBUG - User-Liste abgerufen
+2024-12-19 09:33:10,903 - DEBUG - User-Auswal-Fenster erstellt
+2024-12-19 09:33:12,462 - DEBUG - Ausgewählter user: Leo
+2024-12-19 09:33:12,477 - DEBUG - task-fenster erstellt
+2024-12-19 09:33:13,733 - DEBUG - task_list wurde gespeichert
+2024-12-19 09:33:14,620 - INFO - GUI beendet!
+2024-12-19 09:52:03,792 - INFO - Gui wird gestartet...
+2024-12-19 09:52:03,793 - DEBUG - User-Liste abgerufen
+2024-12-19 09:52:03,859 - DEBUG - User-Auswal-Fenster erstellt
+2024-12-19 09:52:14,689 - DEBUG - Ausgewählter user: Leo
+2024-12-19 09:52:14,697 - DEBUG - task-fenster erstellt
+2024-12-19 09:52:30,732 - DEBUG - 'task' soll hinzugefügt werden.
+2024-12-19 09:52:30,733 - DEBUG - [{'task': 'test100', 'completed': False, 'beschreibung': 'Beschreibung:\n\n\n\n\n\n\n\n\n\n\n', 'faelligkeit': '-nicht festgelegt-', 'erstellung': '16.12.2024'}, {'task': 'test200', 'completed': True, 'beschreibung': 'Beschreibung:\n\nabg 20\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n', 'faelligkeit': '20.11.24', 'erstellung': '16.12.2024'}, {'task': 'test300', 'completed': True, 'beschreibung': 'Beschreibung:\n\n\n\n\n\n\n', 'faelligkeit': '19.11.24', 'erstellung': '16.12.2024'}, {'task': 'cool', 'completed': False, 'beschreibung': 'Beschreibung:\n\n', 'faelligkeit': '-nicht festgelegt-', 'erstellung': '16.12.2024'}, {'task': 'task', 'completed': False, 'beschreibung': 'Beschreibung:\n\n', 'faelligkeit': '-nicht festgelegt-', 'erstellung': '19.12.2024'}]
+2024-12-19 09:52:34,851 - DEBUG - task_list wurde gespeichert
+2024-12-19 09:52:38,533 - DEBUG - Bearbeitung für: (2,)
+2024-12-19 09:52:38,611 - DEBUG - Task-Bearbeiten-Fenster erstellt
+2024-12-19 09:52:47,547 - INFO - Bearbeitung wurde gespeichert
+2024-12-19 09:52:52,644 - DEBUG - User-Auswal-Fenster erstellt
+2024-12-19 09:52:55,600 - DEBUG - Ausgewählter user: test200
+2024-12-19 09:52:55,605 - DEBUG - task-fenster erstellt
+2024-12-19 09:52:58,852 - INFO - delete test200
+2024-12-19 09:52:58,853 - DEBUG - ['Leo']
+2024-12-19 09:52:58,915 - DEBUG - User-Auswal-Fenster erstellt
+2024-12-19 09:53:06,440 - DEBUG - Ausgewählter user: Leo
+2024-12-19 09:53:06,446 - DEBUG - task-fenster erstellt
+2024-12-19 09:53:10,147 - DEBUG - (4,) gelöscht.
+2024-12-19 09:53:13,413 - DEBUG - task_list wurde gespeichert
+2024-12-19 09:53:15,082 - INFO - GUI beendet!
+2024-12-19 09:56:30,551 - INFO - Gui wird gestartet...
+2024-12-19 09:56:30,551 - DEBUG - User-Liste abgerufen
+2024-12-19 09:56:30,615 - DEBUG - User-Auswal-Fenster erstellt
+2024-12-19 09:57:08,466 - INFO - Gui wird gestartet...
+2024-12-19 09:57:08,466 - DEBUG - User-Liste abgerufen
+2024-12-19 09:57:08,527 - DEBUG - User-Auswal-Fenster erstellt
+2024-12-19 09:57:09,911 - DEBUG - Ausgewählter user: Leo
+2024-12-19 09:57:09,934 - DEBUG - task-fenster erstellt
+2024-12-19 09:57:15,112 - DEBUG - exit name bearbeiten per esc
+2024-12-19 09:57:17,386 - DEBUG - User-Auswal-Fenster erstellt
+2024-12-19 09:57:19,910 - DEBUG - User-erstellen-Fenster erstellt
+2024-12-19 09:57:22,870 - INFO - Neuer User: test user
+2024-12-19 09:57:22,871 - DEBUG - Neue user_liste: ['Leo', 'test user']
+2024-12-19 09:57:22,872 - DEBUG - User-Liste abgerufen
+2024-12-19 09:57:22,894 - DEBUG - Ausgewählter user: test user
+2024-12-19 09:57:22,903 - INFO - Keine Aufgaben gespeichert
+2024-12-19 09:57:22,903 - DEBUG - task-fenster erstellt
+2024-12-19 09:57:28,013 - DEBUG - 'test task' soll hinzugefügt werden.
+2024-12-19 09:57:28,014 - DEBUG - [{'task': 'test task', 'completed': False, 'beschreibung': 'Beschreibung:\n\n', 'faelligkeit': '-nicht festgelegt-', 'erstellung': '19.12.2024'}]
+2024-12-19 09:57:29,693 - DEBUG - task_list wurde gespeichert
+2024-12-19 09:57:34,103 - DEBUG - Bearbeitung für: (0,)
+2024-12-19 09:57:34,170 - DEBUG - Task-Bearbeiten-Fenster erstellt
+2024-12-19 09:57:40,135 - DEBUG - Bearbeitung für: (1,)
+2024-12-19 10:09:26,396 - DEBUG - Bearbeitung für: ()
+2024-12-19 10:09:32,934 - DEBUG - exit name bearbeiten per esc
+2024-12-19 10:09:35,170 - DEBUG - Bearbeitung für: ()
+2024-12-19 10:09:39,670 - DEBUG - exit name bearbeiten per esc
+2024-12-19 10:09:40,772 - DEBUG - Bearbeitung für: ()
+2024-12-19 10:09:44,800 - DEBUG - Bearbeitung für: ()
+2024-12-19 10:44:06,705 - INFO - Gui wird gestartet...
+2024-12-19 10:44:06,706 - DEBUG - User-Liste abgerufen
+2024-12-19 10:44:06,780 - DEBUG - User-Auswal-Fenster erstellt
+2024-12-19 10:44:08,286 - DEBUG - Ausgewählter user: Leo
+2024-12-19 10:44:08,306 - DEBUG - task-fenster erstellt
+2024-12-19 10:44:09,943 - DEBUG - Bearbeitung für: (1,)
+2024-12-19 10:44:10,014 - DEBUG - Task-Bearbeiten-Fenster erstellt
+2024-12-19 10:44:11,575 - INFO - Bearbeitung wurde gespeichert
+2024-12-19 10:44:46,274 - DEBUG - Bearbeitung für: ()
+2024-12-19 10:44:49,513 - DEBUG - accept name bearbeiten per enter
+2024-12-19 10:44:51,640 - DEBUG - Bearbeitung für: (0,)
+2024-12-19 10:44:51,683 - DEBUG - Task-Bearbeiten-Fenster erstellt
+2024-12-19 10:44:56,958 - DEBUG - Bearbeitung für: ()
+2024-12-19 10:45:55,751 - INFO - Gui wird gestartet...
+2024-12-19 10:45:55,752 - DEBUG - User-Liste abgerufen
+2024-12-19 10:45:55,836 - DEBUG - User-Auswal-Fenster erstellt
+2024-12-19 10:45:57,768 - DEBUG - Ausgewählter user: Leo
+2024-12-19 10:45:57,783 - DEBUG - task-fenster erstellt
+2024-12-19 10:45:59,226 - DEBUG - Bearbeitung für: ()
+2024-12-19 10:46:37,556 - DEBUG - Bearbeitung für: (0,)
+2024-12-19 10:46:37,629 - DEBUG - Task-Bearbeiten-Fenster erstellt
+2024-12-19 10:50:11,338 - INFO - Gui wird gestartet...
+2024-12-19 10:50:11,339 - DEBUG - User-Liste abgerufen
+2024-12-19 10:50:11,422 - DEBUG - User-Auswal-Fenster erstellt
+2024-12-19 10:50:13,112 - DEBUG - Ausgewählter user: Leo
+2024-12-19 10:50:13,124 - DEBUG - task-fenster erstellt
+2024-12-19 10:50:14,058 - DEBUG - Bearbeitung für: ()
+2024-12-19 10:50:52,624 - INFO - Gui wird gestartet...
+2024-12-19 10:50:52,625 - DEBUG - User-Liste abgerufen
+2024-12-19 10:50:52,736 - DEBUG - User-Auswal-Fenster erstellt
+2024-12-19 10:50:54,132 - DEBUG - Ausgewählter user: Leo
+2024-12-19 10:50:54,147 - DEBUG - task-fenster erstellt
+2024-12-19 10:50:56,295 - DEBUG - Bearbeitung für: (2,)
+2024-12-19 10:50:56,431 - DEBUG - Task-Bearbeiten-Fenster erstellt
+2024-12-19 10:51:02,057 - INFO - Bearbeitung wurde gespeichert
+2024-12-19 10:51:04,088 - DEBUG - Bearbeitung für: (2,)
+2024-12-19 10:51:04,167 - DEBUG - Task-Bearbeiten-Fenster erstellt
+2024-12-19 10:51:06,222 - INFO - Bearbeitung wurde gespeichert
+2024-12-19 10:51:13,574 - DEBUG - Bearbeitung für: (0,)
+2024-12-19 10:51:13,663 - DEBUG - Task-Bearbeiten-Fenster erstellt
+2024-12-19 10:51:17,178 - DEBUG - User-Auswal-Fenster erstellt
+2024-12-19 10:51:18,095 - DEBUG - Ausgewählter user: Leo
+2024-12-19 10:51:18,102 - DEBUG - task-fenster erstellt
+2024-12-19 10:51:19,333 - DEBUG - Bearbeitung für: ()
+2024-12-19 10:55:11,972 - INFO - Gui wird gestartet...
+2024-12-19 10:55:11,973 - DEBUG - User-Liste abgerufen
+2024-12-19 10:55:12,054 - DEBUG - User-Auswal-Fenster erstellt
+2024-12-19 10:55:13,692 - DEBUG - Ausgewählter user: Leo
+2024-12-19 10:55:13,698 - DEBUG - task-fenster erstellt
+2024-12-19 10:55:15,394 - DEBUG - Bearbeitung für: ()
+2024-12-19 10:55:39,832 - INFO - GUI beendet!
+2024-12-19 10:55:44,053 - INFO - Gui wird gestartet...
+2024-12-19 10:55:44,053 - DEBUG - User-Liste abgerufen
+2024-12-19 10:55:44,119 - DEBUG - User-Auswal-Fenster erstellt
+2024-12-19 10:55:45,536 - DEBUG - Ausgewählter user: Leo
+2024-12-19 10:55:45,557 - DEBUG - task-fenster erstellt
+2024-12-19 10:55:46,812 - DEBUG - Bearbeitung für: ()
+2024-12-19 10:55:59,382 - INFO - GUI beendet!
+2024-12-19 10:56:01,860 - INFO - Gui wird gestartet...
+2024-12-19 10:56:01,861 - DEBUG - User-Liste abgerufen
+2024-12-19 10:56:01,930 - DEBUG - User-Auswal-Fenster erstellt
+2024-12-19 10:56:04,580 - DEBUG - Ausgewählter user: Leo
+2024-12-19 10:56:04,597 - DEBUG - task-fenster erstellt
+2024-12-19 10:56:05,694 - DEBUG - Bearbeitung für: ()
+2024-12-19 10:57:17,201 - INFO - GUI beendet!
+2024-12-19 10:57:20,565 - INFO - Gui wird gestartet...
+2024-12-19 10:57:20,566 - DEBUG - User-Liste abgerufen
+2024-12-19 10:57:20,656 - DEBUG - User-Auswal-Fenster erstellt
+2024-12-19 10:57:22,469 - DEBUG - Ausgewählter user: Leo
+2024-12-19 10:57:22,481 - DEBUG - task-fenster erstellt
+2024-12-19 10:57:23,205 - DEBUG - Bearbeitung für: ()
+2024-12-19 10:58:42,432 - INFO - Gui wird gestartet...
+2024-12-19 10:58:42,432 - DEBUG - User-Liste abgerufen
+2024-12-19 10:58:42,498 - DEBUG - User-Auswal-Fenster erstellt
+2024-12-19 10:58:43,961 - DEBUG - Ausgewählter user: Leo
+2024-12-19 10:58:43,985 - DEBUG - task-fenster erstellt
+2024-12-19 10:58:44,690 - DEBUG - Bearbeitung für: ()
+2024-12-19 10:58:59,685 - INFO - Gui wird gestartet...
+2024-12-19 10:58:59,685 - DEBUG - User-Liste abgerufen
+2024-12-19 10:58:59,753 - DEBUG - User-Auswal-Fenster erstellt
+2024-12-19 10:59:01,885 - DEBUG - Ausgewählter user: Leo
+2024-12-19 10:59:01,911 - DEBUG - task-fenster erstellt
+2024-12-19 10:59:02,847 - DEBUG - Bearbeitung für: ()
+2024-12-19 10:59:06,985 - DEBUG - Bearbeitung für: (1,)
+2024-12-19 10:59:07,062 - DEBUG - Task-Bearbeiten-Fenster erstellt
+2024-12-19 10:59:12,889 - DEBUG - Bearbeitung für: ()
+2024-12-19 11:04:57,943 - INFO - Gui wird gestartet...
+2024-12-19 11:04:57,944 - DEBUG - User-Liste abgerufen
+2024-12-19 11:05:06,030 - INFO - Gui wird gestartet...
+2024-12-19 11:05:06,031 - DEBUG - User-Liste abgerufen
+2024-12-19 11:05:06,091 - DEBUG - User-Auswal-Fenster erstellt
+2024-12-19 11:05:08,042 - DEBUG - Ausgewählter user: Leo
+2024-12-19 11:05:08,050 - DEBUG - task-fenster erstellt
+2024-12-19 11:05:08,930 - DEBUG - Bearbeitung für: ()
+2024-12-19 11:06:30,198 - INFO - Gui wird gestartet...
+2024-12-19 11:06:30,199 - DEBUG - User-Liste abgerufen
+2024-12-19 11:06:30,274 - DEBUG - User-Auswal-Fenster erstellt
+2024-12-19 11:06:32,775 - DEBUG - Ausgewählter user: Leo
+2024-12-19 11:06:32,785 - DEBUG - task-fenster erstellt
+2024-12-19 11:06:34,005 - DEBUG - Bearbeitung für: ()
+2024-12-19 11:10:54,921 - INFO - GUI beendet!
+2024-12-19 11:10:57,783 - INFO - Gui wird gestartet...
+2024-12-19 11:10:57,783 - DEBUG - User-Liste abgerufen
+2024-12-19 11:10:57,851 - DEBUG - User-Auswal-Fenster erstellt
+2024-12-19 11:10:59,343 - DEBUG - Ausgewählter user: Leo
+2024-12-19 11:10:59,358 - DEBUG - task-fenster erstellt
+2024-12-19 11:11:01,499 - DEBUG - '' soll hinzugefügt werden.
+2024-12-19 11:11:01,499 - INFO - Geben Sie erst eine Aufgabe ein
+2024-12-19 11:11:02,980 - DEBUG - task_list wurde gespeichert
+2024-12-19 11:11:07,913 - DEBUG - task_list wurde gespeichert
+2024-12-19 11:11:24,973 - DEBUG - task_list wurde gespeichert
+2024-12-19 11:11:35,086 - DEBUG - Bearbeitung für: ()
+2024-12-19 11:11:35,086 - INFO - Keine Aufgabe zur Bearbeitung ausgewählt
+2024-12-19 11:12:30,035 - INFO - GUI beendet!
+2024-12-19 11:12:32,365 - INFO - Gui wird gestartet...
+2024-12-19 11:12:32,366 - DEBUG - User-Liste abgerufen
+2024-12-19 11:12:32,435 - DEBUG - User-Auswal-Fenster erstellt
+2024-12-19 11:12:33,691 - DEBUG - Ausgewählter user: Leo
+2024-12-19 11:12:33,700 - DEBUG - task-fenster erstellt
+2024-12-19 11:12:35,133 - DEBUG - task_list wurde gespeichert
+2024-12-19 11:14:25,042 - INFO - GUI beendet!
+2024-12-19 11:14:27,161 - INFO - Gui wird gestartet...
+2024-12-19 11:14:27,162 - DEBUG - User-Liste abgerufen
+2024-12-19 11:14:27,234 - DEBUG - User-Auswal-Fenster erstellt
+2024-12-19 11:14:28,561 - DEBUG - Ausgewählter user: Leo
+2024-12-19 11:14:28,580 - DEBUG - task-fenster erstellt
+2024-12-19 11:14:31,417 - DEBUG - Bearbeitung für: ()
+2024-12-19 11:14:31,418 - INFO - Keine Aufgabe zur Bearbeitung ausgewählt
+2024-12-19 11:14:37,677 - DEBUG - task_list wurde gespeichert
+2024-12-19 11:14:41,355 - DEBUG - task_list wurde gespeichert
+2024-12-19 11:14:43,249 - DEBUG - Bearbeitung für: (6,)
+2024-12-19 11:14:51,033 - DEBUG - (3,) gelöscht.
+2024-12-19 11:14:52,004 - DEBUG - task_list wurde gespeichert
+2024-12-19 11:15:35,548 - DEBUG - '' soll hinzugefügt werden.
+2024-12-19 11:15:35,548 - INFO - Geben Sie erst eine Aufgabe ein
+2024-12-19 11:18:29,769 - DEBUG - Bearbeitung für: ()
+2024-12-19 11:18:29,769 - INFO - Keine Aufgabe zur Bearbeitung ausgewählt
+2024-12-19 11:18:31,889 - DEBUG - Bearbeitung für: (2,)
+2024-12-19 11:18:31,965 - DEBUG - Task-Bearbeiten-Fenster erstellt
+2024-12-19 11:30:47,128 - INFO - GUI beendet!
+2024-12-19 11:30:49,827 - INFO - Gui wird gestartet...
+2024-12-19 11:30:49,827 - DEBUG - User-Liste abgerufen
+2024-12-19 11:30:49,895 - DEBUG - User-Auswal-Fenster erstellt
+2024-12-19 11:30:51,019 - DEBUG - Ausgewählter user: Leo
+2024-12-19 11:30:51,036 - DEBUG - task-fenster erstellt
+2024-12-19 11:30:52,053 - DEBUG - Bearbeitung für: ()
+2024-12-19 11:30:52,053 - INFO - Keine Aufgabe zur Bearbeitung ausgewählt
+2024-12-19 11:30:52,746 - DEBUG - '' soll hinzugefügt werden.
+2024-12-19 11:30:52,746 - INFO - Geben Sie erst eine Aufgabe ein
+2024-12-19 11:30:54,025 - DEBUG - task_list wurde gespeichert
+2024-12-19 11:30:58,110 - INFO - GUI beendet!
+2024-12-19 12:36:44,199 - INFO - Gui wird gestartet...
+2024-12-19 12:36:44,200 - DEBUG - User-Liste abgerufen
+2024-12-19 12:36:44,276 - DEBUG - User-Auswal-Fenster erstellt
+2024-12-19 12:36:45,658 - DEBUG - Ausgewählter user: Leo
+2024-12-19 12:36:45,679 - DEBUG - task-fenster erstellt
+2024-12-19 12:36:50,852 - DEBUG - Bearbeitung für: (1,)
+2024-12-19 12:36:50,953 - DEBUG - Task-Bearbeiten-Fenster erstellt
+2024-12-19 12:36:52,464 - INFO - Bearbeitung wurde gespeichert
+2024-12-19 12:36:54,862 - DEBUG - User-Auswal-Fenster erstellt
+2024-12-19 12:36:57,263 - DEBUG - User-erstellen-Fenster erstellt
+2024-12-19 12:37:02,229 - DEBUG - Ausgewählter user: test user
+2024-12-19 12:37:02,243 - DEBUG - task-fenster erstellt
+2024-12-19 12:37:04,862 - DEBUG - Bearbeitung für: ()
+2024-12-19 12:37:04,862 - INFO - Keine Aufgabe zur Bearbeitung ausgewählt
+2024-12-19 12:37:09,087 - DEBUG - exit name bearbeiten per esc
+2024-12-19 12:37:11,747 - DEBUG - Bearbeitung für: (0,)
+2024-12-19 12:37:11,803 - DEBUG - Task-Bearbeiten-Fenster erstellt
+2024-12-19 12:37:16,042 - DEBUG - Bearbeitung für: ()
+2024-12-19 12:37:16,043 - INFO - Keine Aufgabe zur Bearbeitung ausgewählt
+2024-12-19 12:37:18,476 - DEBUG - task_list wurde gespeichert
+2024-12-19 12:37:21,727 - DEBUG - Bearbeitung für: (1,)
+2024-12-19 12:37:40,814 - DEBUG - Bearbeitung für: (1,)
+2024-12-19 12:37:46,555 - DEBUG - task_list wurde gespeichert
+2024-12-19 12:39:54,493 - INFO - Gui wird gestartet...
+2024-12-19 12:39:54,493 - DEBUG - User-Liste abgerufen
+2024-12-19 12:39:54,570 - DEBUG - User-Auswal-Fenster erstellt
+2024-12-19 12:39:55,971 - DEBUG - Ausgewählter user: Leo
+2024-12-19 12:39:55,988 - DEBUG - task-fenster erstellt
+2024-12-19 12:40:28,157 - DEBUG - Bearbeitung für: (1,)
+2024-12-19 12:40:28,255 - DEBUG - Task-Bearbeiten-Fenster erstellt
+2024-12-19 12:40:31,252 - DEBUG - Bearbeitung für: ()
+2024-12-19 12:40:31,252 - INFO - Keine Aufgabe zur Bearbeitung ausgewählt
+2024-12-19 12:40:44,108 - DEBUG - 'test bearbeiten' soll hinzugefügt werden.
+2024-12-19 12:40:44,109 - DEBUG - [{'task': 'test100', 'completed': False, 'beschreibung': 'Beschreibung:\n\n\n\n\n\n\n\n\n\n\n', 'faelligkeit': '-nicht festgelegt-', 'erstellung': '16.12.2024'}, {'task': 'test200', 'completed': True, 'beschreibung': 'Beschreibung:\n\nabg 20\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n', 'faelligkeit': '20.11.24', 'erstellung': '16.12.2024'}, {'task': 'test300', 'completed': True, 'beschreibung': 'Beschreibung:\n\n\n\nff\n\n\n\n\n\n', 'faelligkeit': '19.11.24', 'erstellung': '16.12.2024'}, {'task': 'test bearbeiten', 'completed': False, 'beschreibung': 'Beschreibung:\n\n', 'faelligkeit': '-nicht festgelegt-', 'erstellung': '19.12.2024'}]
+2024-12-19 12:40:46,322 - DEBUG - Bearbeitung für: (3,)
+2024-12-19 12:40:46,386 - DEBUG - Task-Bearbeiten-Fenster erstellt
+2024-12-19 12:40:49,543 - INFO - Bearbeitung wurde gespeichert
+2024-12-19 12:40:55,252 - DEBUG - task_list wurde gespeichert
+2024-12-19 12:40:57,963 - DEBUG - (3,) gelöscht.
+2024-12-19 12:44:29,727 - DEBUG - Bearbeitung für: (1,)
+2024-12-19 12:44:29,795 - DEBUG - Task-Bearbeiten-Fenster erstellt
+2024-12-19 12:44:32,809 - DEBUG - Bearbeitung für: ()
+2024-12-19 12:44:32,810 - INFO - Keine Aufgabe zur Bearbeitung ausgewählt
+2024-12-19 12:44:42,151 - DEBUG - Bearbeitung für: ()
+2024-12-19 12:44:42,152 - INFO - Keine Aufgabe zur Bearbeitung ausgewählt
+2024-12-19 12:44:44,812 - DEBUG - User-Auswal-Fenster erstellt
+2024-12-19 12:44:47,304 - DEBUG - Ausgewählter user: Leo
+2024-12-19 12:44:47,322 - DEBUG - task-fenster erstellt
+2024-12-19 13:05:21,408 - INFO - GUI beendet!
+2024-12-19 13:14:04,745 - INFO - Gui wird gestartet...
+2024-12-19 13:14:04,745 - DEBUG - User-Liste abgerufen
+2024-12-19 13:14:04,810 - DEBUG - User-Auswal-Fenster erstellt
+2024-12-19 13:14:06,995 - DEBUG - Ausgewählter user: Leo
+2024-12-19 13:14:07,006 - DEBUG - task-fenster erstellt
+2024-12-19 13:14:09,175 - DEBUG - Bearbeitung für: (0,)
+2024-12-19 13:14:09,262 - DEBUG - Task-Bearbeiten-Fenster erstellt
+2024-12-19 13:14:10,908 - INFO - Bearbeitung wurde gespeichert
+2024-12-19 13:14:12,449 - DEBUG - Bearbeitung für: (1,)
+2024-12-19 13:14:12,509 - DEBUG - Task-Bearbeiten-Fenster erstellt
+2024-12-19 13:14:15,080 - INFO - Bearbeitung wurde gespeichert
+2024-12-19 13:15:48,396 - DEBUG - User-Auswal-Fenster erstellt
+2024-12-19 13:15:49,777 - DEBUG - Ausgewählter user: Leo
+2024-12-19 13:15:49,791 - DEBUG - task-fenster erstellt
+2024-12-19 13:15:50,669 - INFO - GUI beendet!

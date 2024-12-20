@@ -1,0 +1,6 @@
+dist/
+.gitignore
+venv/
+__pycache__/
+*.json
+*.log
