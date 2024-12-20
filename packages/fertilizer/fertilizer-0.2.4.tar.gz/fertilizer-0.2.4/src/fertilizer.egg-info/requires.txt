@@ -1,0 +1,9 @@
+bencoder
+colorama
+requests
+flask
+
+[dev]
+pytest
+ruff
+requests-mock
