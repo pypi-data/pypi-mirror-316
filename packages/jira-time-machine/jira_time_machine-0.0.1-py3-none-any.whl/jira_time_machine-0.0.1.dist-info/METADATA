@@ -1,0 +1,101 @@
+Metadata-Version: 2.4
+Name: jira-time-machine
+Version: 0.0.1
+Summary: Jira Time Machine gives you the state of your Jira project at any time in its history
+Project-URL: Homepage, https://github.com/ingoweiss/jira-time-machine
+Project-URL: Bug Tracker, https://github.com/ingoweiss/jira-time-machine/issues
+Project-URL: Repository, https://github.com/ingoweiss/jira-time-machine.git
+Project-URL: Changelog, https://github.com/ingoweiss/jira-time-machine/blob/master/CHANGELOG.md
+Project-URL: Documentation, https://github.com/ingoweiss/jira-time-machine
+Author-email: Ingo Weiss <ingo@ingoweiss.com>
+License: MIT License
+        
+        Copyright (c) 2024 Ingo Weiss
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+License-File: LICENSE
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Software Development
+Requires-Python: >=3.8
+Requires-Dist: jira>=3.4.0
+Requires-Dist: mock>=4.0.0
+Requires-Dist: numpy>=1.21.0
+Requires-Dist: pandas>=1.3.0
+Requires-Dist: pytest-mock>=3.6.0
+Requires-Dist: pytest>=7.0.0
+Requires-Dist: tqdm>=4.64.0
+Description-Content-Type: text/markdown
+
+# Jira Time Machine
+
+Jira Time Machine gives you the state of your Jira project at any time in its history.
+
+## Table of Contents
+
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+
+## Installation
+
+To install Jira Time Machine, you can use pip:
+
+```sh
+pip install jira-time-machine
+```
+
+## Usage
+
+```python
+
+from jira import JIRA
+from jira_time_machine import JiraTimeMachine
+
+# Initialize a JIRA instance
+jira = JIRA(server='https://your-jira-instance.atlassian.net', basic_auth=('email', 'api_token'))
+
+# Initialize the JiraTimeMachine instance
+jira_time_machine = JiraTimeMachine(jira)
+
+# Specify a JQL query and fields to track
+jql_query = "project = TEST"
+fields_to_track = ["Status", "Assignee", "Priority"]
+
+# Get the history of the issues
+history_df = jira_time_machine.history(jql_query, fields_to_track)
+
+# Get a snapshot of the backlog at a specific timestamp
+snapshot = jira_time_machine.snapshot(history_df, pd.Timestamp('2023-01-01'))
+```
+
+## License
+
+This project is licensed under the MIT License. See the LICENSE file for details.
+
