@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+treefy/__init__.py
+treefy/tree.py
+treefy.egg-info/PKG-INFO
+treefy.egg-info/SOURCES.txt
+treefy.egg-info/dependency_links.txt
+treefy.egg-info/top_level.txt
