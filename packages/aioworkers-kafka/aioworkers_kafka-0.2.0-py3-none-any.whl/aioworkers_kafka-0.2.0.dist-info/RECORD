@@ -1,0 +1,10 @@
+aioworkers_kafka/__init__.py,sha256=Zn1KFblwuFHiDRdRAiRnDBRkbPttWh44jKa5zG2ov0E,22
+aioworkers_kafka/consumer.py,sha256=TjK7YiQbL_C0_w-Wu5Eayj38u8vUpkUkpLeuQbJyUd0,4267
+aioworkers_kafka/producer.py,sha256=V7E13Vh5TxJnz4QrhucZ5QGxJK1raESekgVIgS3TJVo,4659
+aioworkers_kafka/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aioworkers_kafka/utils.py,sha256=u4v7pLGrd06G_mRlPQmvf-WZE08DaB5Uwv5i9a9Ndjw,352
+aioworkers_kafka-0.2.0.dist-info/METADATA,sha256=8nNgn0ujEDsX5d_MlfH5Ys8-RjZwCD-s0JFlISM5d8Y,4378
+aioworkers_kafka-0.2.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+aioworkers_kafka-0.2.0.dist-info/entry_points.txt,sha256=GuX41wYNBxo2vATYOsMlRqx9WgDG17pzNbUT3fjVd3w,38
+aioworkers_kafka-0.2.0.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+aioworkers_kafka-0.2.0.dist-info/RECORD,,
