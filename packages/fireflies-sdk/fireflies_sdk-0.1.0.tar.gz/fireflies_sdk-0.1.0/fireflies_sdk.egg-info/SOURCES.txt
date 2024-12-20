@@ -1,0 +1,9 @@
+README.md
+setup.py
+fireflies_sdk/__init__.py
+fireflies_sdk/api.py
+fireflies_sdk.egg-info/PKG-INFO
+fireflies_sdk.egg-info/SOURCES.txt
+fireflies_sdk.egg-info/dependency_links.txt
+fireflies_sdk.egg-info/requires.txt
+fireflies_sdk.egg-info/top_level.txt
