@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+osm2les_dev/__init__.py
+osm2les_dev.egg-info/PKG-INFO
+osm2les_dev.egg-info/SOURCES.txt
+osm2les_dev.egg-info/dependency_links.txt
+osm2les_dev.egg-info/requires.txt
+osm2les_dev.egg-info/top_level.txt

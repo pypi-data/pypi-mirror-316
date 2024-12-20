@@ -1,0 +1,9 @@
+numpy
+matplotlib
+pandas
+shapely
+osmnx<=1.9.4
+rioxarray
+rasterio
+geopy
+geopandas
