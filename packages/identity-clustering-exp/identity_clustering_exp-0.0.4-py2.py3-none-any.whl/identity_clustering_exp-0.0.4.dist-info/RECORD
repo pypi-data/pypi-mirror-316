@@ -1,0 +1,11 @@
+identity_clustering_exp/__init__.py,sha256=0WcJp6C9QPqSPwNyFRD89P1RPGCKLd_Da8GdoIFtTU0,80
+identity_clustering_exp/_version.py,sha256=u43TCdue4T7_nFBe5jjZvPkn4oNOFy0O7u59SFHyhq0,368
+identity_clustering_exp/cluster.py,sha256=d-GEYsDaWXiOdofx1oYEg7hJs8qzy56u0Ed0EG2ioKY,5722
+identity_clustering_exp/dataset.py,sha256=HIny-IkI5bfDusQxPYP4KeiIL0ZFFuPdHzozkL3eH9o,1489
+identity_clustering_exp/facedetector.py,sha256=rGMMJthHWcwKydvTEqCgPfmFrd9u6oM1fj7Kc8RZ6Js,1245
+identity_clustering_exp/imports.py,sha256=QtRlodp7QLETi4Zahk2ZT9RCP8QdIjKB5Uh60hrZsio,427
+identity_clustering_exp/utils.py,sha256=glRzHen9Tfw9Nm0yayBRL4S-EtDgnL6s8MlzFDPCCaA,2998
+identity_clustering_exp/version.py,sha256=6C0yO-P_UxlAZOS4Vddxb58tL-uLyeDcedB8xNz3was,159
+identity_clustering_exp-0.0.4.dist-info/METADATA,sha256=gd-hI1SpnctO8rh0tbcSDMtu5FWBViWuGBwtvQvgSyE,845
+identity_clustering_exp-0.0.4.dist-info/WHEEL,sha256=iAMR_6Qh95yyjYIwRxyjpiFq4FhDPemrEV-SyWIQB3U,92
+identity_clustering_exp-0.0.4.dist-info/RECORD,,
