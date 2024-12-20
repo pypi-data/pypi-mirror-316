@@ -1,0 +1,9 @@
+LICENSE.txt
+README.rst
+pyproject.toml
+rgptrxy/rgpt.py
+rgptrxy.egg-info/PKG-INFO
+rgptrxy.egg-info/SOURCES.txt
+rgptrxy.egg-info/dependency_links.txt
+rgptrxy.egg-info/requires.txt
+rgptrxy.egg-info/top_level.txt
