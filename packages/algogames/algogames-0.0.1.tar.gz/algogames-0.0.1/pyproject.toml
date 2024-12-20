@@ -1,0 +1,19 @@
+[project]
+name = "algogames"
+version = "0.0.1"
+authors = [
+    {name="Hudson Hochstedler", email="hudson.hochstedler@algogames.ai"},
+    {name="Harrison Hochstedler", email="harrison.hochstedler@algogames.ai"}
+]
+description = "SDK for algogames.ai"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

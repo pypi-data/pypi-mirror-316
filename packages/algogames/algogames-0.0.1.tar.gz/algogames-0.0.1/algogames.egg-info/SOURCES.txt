@@ -1,0 +1,6 @@
+pyproject.toml
+algogames/__init__.py
+algogames.egg-info/PKG-INFO
+algogames.egg-info/SOURCES.txt
+algogames.egg-info/dependency_links.txt
+algogames.egg-info/top_level.txt

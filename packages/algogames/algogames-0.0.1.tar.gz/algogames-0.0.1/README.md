@@ -1,0 +1,1 @@
+# This is the Python SDK for [AlgoGames](algogames.ai)
