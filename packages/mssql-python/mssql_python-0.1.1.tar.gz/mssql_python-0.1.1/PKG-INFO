@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: mssql-python
+Version: 0.1.1
+Summary: A Python library for interacting with Microsoft SQL Server
+Home-page: https://sqlclientdrivers.visualstudio.com/mssql-python
+Author: Microsoft Corporation
+Author-email: pysqldriver@microsoft.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# mssql-python
+
+This is a new Python driver for Microsoft SQL Server currently under development.
+
+## Development Stage
+
+Please note that this project is in the early stages of development. No code, logic, or binaries are present in this package at this time. This release is intended to reserve the package name on PyPI and provide a placeholder for future development. Stay tuned for updates as we continue to work on this project.
