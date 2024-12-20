@@ -1,0 +1,381 @@
+Metadata-Version: 2.1
+Name: lock-run
+Version: 0.6.3
+Summary: Python runner with cipher
+License: MIT
+Author: dima-on
+Author-email: sinica911@gmail.com
+Requires-Python: >=3.12,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: seal-py (>=0.8.2,<0.9.0)
+Description-Content-Type: text/markdown
+
+Overview:
+Lock Run is a Python-based project that allows users to encrypt and decrypt files within a project directory. It utilizes the seal-py library for encryption and decryption processes and supports running encrypted Python files.
+
+Features:
+- Encrypts and decrypts files within a project directory
+- Runs encrypted Python files using CPython interpreter
+- Provides a command-line interface for cipher operations
+- Generates keys for encryption
+- Handles file paths and project directories
+
+Structure:
+- `reader.py`: Contains classes for managing project files and directories
+- `handler_data_files.py`: Contains data handling classes for encryption and decryption
+- `main.py`: The main entry point for the script with command-line interface functions
+- `utilitiles.py`: Contains utility functions for path handling
+
+Usage:
+1. Install required dependencies using `poetry install`
+2. Run `lock-run --key <your_key> --root_dir <your_project_directory>` to encrypt the project
+3. Use `lock-run --key <your_key> --root_dir <your_project_directory> --file_path <your_encrypted_file>` to run a specific encrypted file within the project
+4. Generate a new key using `lock-run-key --key_len <key_length>` (optional)
+5. Run `lock-run-cipher --key <your_key> --root_dir <your_project_directory>` to encrypt a project using the command-line interface
+
+Note: Customize the script based on your project's requirements and follow the installation and usage instructions to ensure smooth operation.
+# handler_code.py
+
+This file contains classes and methods to handle the encryption and decryption of files in a specified directory, and to execute a Python file within that directory. It is designed to be used as part of a larger project and may need additional context and usage examples.
+
+## Usage
+
+- `Worker(key, root_dir)`: Initializes a worker with the provided encryption key and root directory.
+- `run_cpython(file_path)`: Runs a specified Python file within the root directory, decrypts the files in the directory with the provided key.
+- `cipher_file()`: Encrypts the files in the root directory with the provided key.
+
+### Worker
+
+- **Parameters:**
+  - `key`: The encryption key to be used for both encryption and decryption.
+  - `root_dir`: The root directory where files will be processed.
+
+#### Methods
+
+- **run_cpython(file_path)**
+  Decrypts files in the root directory using a provided key, executes a specified Python file within the root directory, and deletes the directory after execution.
+  
+  - **Parameter:**
+    - `file_path`: The path to the Python file to be executed.
+
+- **cipher_file()**
+  Encrypts files in the root directory using the provided key.
+
+  - Returns: `text`, `key`, and `path` for the encrypted files.
+
+### Example
+
+```python
+# Key and root directory
+KEY = """256Z5D2I7G7R0W3M0C0U6V8B8Y4H4Q3Z1L3Z8N6D4C1J5J0Q4M1Y8Y2K2X9P8U7O4T7"""
+FOLDER = "C_Test_Py_Project\\"
+
+# Initialize the Worker
+worker = Worker(key=KEY, root_dir=FOLDER)
+
+# Run CPython file example
+worker.run_cpython(file_path="main.py")
+```
+
+Please note this documentation does not cover the full usage of the file or all its functionalities; it is just an addition to any existing documentation that may already be in place.
+# handler_data_files.py Documentation
+
+This documentation provides details on the usage of functions and methods within the `handler_data_files.py` file. 
+
+## Classes
+
+### HandleFiles
+
+This class provides core functionality for handling files and paths in the program.
+
+**Constructor:**
+
+```python
+__init__(self, files_path: list[str], key: str, root_dir: str) -> None:
+```
+
+- `files_path` (list[str]): a list of file paths to be processed.
+- `key` (str): a key used for encryption/decryption.
+- `root_dir` (str): a directory acting as the base path.
+
+**Methods:**
+
+```python
+handler(self, new_text: str, key: str, path: str) -> tuple[str, str, str]:
+```
+
+- `new_text` (str): new text to be processed (not currently used).
+- `key` (str): a key used for encryption/decryption.
+- `path` (str): a path of the file.
+- Returns: A tuple containing `new_text`, `key`, and `path`.
+
+```python
+can_be_cipher(self) -> list:
+```
+
+- Returns: A list of error files which cannot be processed.
+
+```python
+make_path(self, arr, with_start = True):
+```
+
+- `arr` (list): a list of folder names.
+- `with_start` (bool): a flag indicating whether to include a backslash at the beginning of the path.
+- Returns: A constructed file path string.
+
+```python
+path_handler(self, adder, minus: int = 2):
+```
+
+- `adder` (str): a prefix to be added to the path.
+- `minus` (int): a number of directory levels to go back from the root directory.
+- Returns: A new path with the modified directory structure.
+
+### CipherFile
+
+This class extends the `HandleFiles` class and provides encryption capabilities.
+
+**Constructor:**
+
+```python
+__init__(self, files_path: list[str], key: str, root_dir: str):
+```
+
+Same parameters as `HandleFiles`.
+
+**Methods:**
+
+```python
+handler(self) -> tuple[str, str]:
+```
+
+- Returns: A tuple containing the ciphered text, key, and root directory.
+
+### AntiCipherFile
+
+This class extends the `HandleFiles` class and provides decryption capabilities.
+
+**Constructor:**
+
+```python
+__init__(self, files_path: list[str], key: str, root_dir: str):
+```
+
+Same parameters as `HandleFiles`.
+
+**Methods:**
+
+```python
+handler(self) -> tuple[str, str]:
+```
+
+- Returns: A tuple containing the anti-ciphered text, key, and root directory.
+
+```python
+del_folder(self):
+```
+
+- Removes the temporary directory created during the processing.
+
+## Additional Documentation
+
+This document covers the major components of the `handler_data_files.py` file. It is crucial to check the code for any additional comments or documentation specific to the use cases.
+# main.py Documentation
+
+This documentation describes usage of the `main.py` file, a Python application consisting of several methods for reading, encrypting, decrypting, and running code in a secure environment. The accompanying `readme.md` file provides a thorough explanation of the project's goals, features, and how to install it. This document focuses on usage and describes every method.
+
+## generate\_key(key\_len: int=32)
+
+The `generate_key` function generates a secure key of specified length (default is 32). This key is used for encryption and decryption of code.
+
+Usage:
+```python
+import main
+
+key = main.generate_key(key_len=32)
+print(key)  # Output: SecureKey object with 32-character key
+```
+
+## cipher\_code(root\_dir: str, key: str)
+
+The `cipher_code` function encrypts all files within a specified root directory with the provided key.
+
+Usage:
+```python
+import main
+
+main.cipher_code(root_dir="C:/Users/YourProject", key="YourSecureKey")
+print("Project was ciphered securely!")  # Output: Project was ciphered in C:/Users/YourProject/encripted with key: 5fdb9b5e5f8a9946
+```
+
+## run\_file(root\_dir: str, key: str, file\_path: str)
+
+The `run_file` function runs a specified file within a secure environment.
+
+Usage:
+```python
+import main
+
+main.run_file(root_dir="C:/Users/YourProject", key="YourSecureKey", file_path="example.py")
+print("file example.py just ran in a secure environment!")  # Output: file example.py just ran in a secure environment!
+```
+
+## cipher\_code\_cui()
+
+The `cipher_code_cui` function is a command-line utility interface for `cipher_code`.
+
+Usage:
+```bash
+python main.py --root_dir "C:/Users/YourProject" --key "YourSecureKey"
+```
+
+This will encrypt all files within the provided directory.
+
+## run\_code\_cui()
+
+The `run_code_cui` function is a command-line utility interface for `run_file`.
+
+Usage:
+```bash
+python main.py --root_dir "C:/Users/YourProject" --key "YourSecureKey" --file_path "example.py"
+```
+
+This will run the specified file (`example.py`) within a secure environment.
+
+## gen\_key\_cui()
+
+The `gen_key_cui` function is a command-line utility interface for `generate_key`, allowing you to generate a custom-length key.
+
+Usage:
+```bash
+python main.py --key_len 128
+```
+
+This will generate a 128-character-length key, suitable for advanced security scenarios. By default, the key length is set to 32 characters.
+# reader.py
+
+Documentation for the `reader.py` file in Markdown format, following the Google Style.
+
+## Usage
+
+To use the `ReaderProject` class, create an instance by specifying the root directory containing the files you wish to process. Then, use the available methods to perform actions such as reading files, ciphers, and deciphering files in the specified directory.
+
+```python
+from reader import ReaderProject
+import os
+
+# Initialize the reader project with the root directory
+root_dir = "C:/Users/huina/Python Projects/Important projects/CipherCode/lock_run/"
+reader = ReaderProject(root_dir=root_dir)
+
+# Get all files in the root directory and its subdirectories
+files = reader.get_files_from_directory()
+
+# Encrypt files using a specific key
+key = "secret_key"
+ciphered_text, cipher_key, cipher_path = reader.cipher_files(key)
+
+# Decrypt files using the specific key and cipher key
+deciphered_text, decipher_key, decipher_path, decipher_handler = reader.anti_cipher_files(key)
+
+# Remember to close the decipher handler once done
+decipher_handler.close()
+```
+
+## Methods
+
+### `__init__(self, root_dir: str)`
+
+- **Parameters**: `root_dir` (str): The path to the root directory containing the files.
+- **Description**: Initializes the `ReaderProject` object and sets the root directory for file operations.
+
+### `get_files_from_directory(self, current_path: str = "") -> list`
+
+- **Parameters**: `current_path` (str, optional): The current path within the directory structure.
+- **Returns**: A list with all the file paths within the specified root directory and its subdirectories.
+
+### `cipher_files(self, key: str)`
+
+- **Parameters**: `key` (str): The key used for encrypting the files.
+- **Returns**: A tuple containing the ciphered text, the used cipher key, and the path of the ciphered text.
+
+### `anti_cipher_files(self, key: str)`
+
+- **Parameters**: `key` (str): The key used for decrypting the files.
+- **Returns**: A tuple containing the deciphered text, the used decipher key, the path of the deciphered text, and the decipher handler object.
+
+Note: After using the `anti_cipher_files` method, make sure to call the `close()` method on the `decipher_handler` to release any resources associated with the process.
+# utils.py
+
+This file contains the `refactor_path` function, which is used to refactor the given path to ensure it adheres to Google Style guidelines.
+
+## Usage
+
+The following usage examples demonstrate how to use the `refactor_path` function:
+
+### Example 1:
+```python
+import unittest
+from your_module import refactor_path
+
+class TestRefactorPath(unittest.TestCase):
+    def test_example_path(self):
+        example_path = "C:\\some\\path\\to\\file.txt"
+        expected_path = "C:/some/path/to/file.txt"
+        self.assertEqual(refactor_path(example_path), expected_path)
+```
+In this example, the `refactor_path` function takes a string input, which is a Windows-style file path. The function converts it to a POSIX-style file path, replacing the backslashes (`\`) with forward slashes (`/`). Also, it ensures that there is a trailing slash at the end of the path.
+
+### Example 2:
+```python
+import unittest
+from your_module import refactor_path
+
+class TestRefactorPath(unittest.TestCase):
+    def test_single_level_path(self):
+        single_level_path = "C:"
+        expected_path = "C:/"
+        self.assertEqual(refactor_path(single_level_path), expected_path)
+```
+In this example, a single-level path is passed to the `refactor_path` function. The function adds a trailing slash at the end of the path to adhere to Google Style guidelines.
+# Usage
+
+## lock-run command
+```lock-run``` is an entry point to execute a code in the terminal.
+
+**Arguments:**
+- file_path (str): The path to the Python file that will run.
+
+Example:
+```shell
+lock-run path/to/your/code.py
+```
+
+## lock-run-cipher command
+```lock-run-cipher``` is an entry point to execute encrypted code in the terminal.
+
+**Arguments:**
+- file_path (str): The path to the Python file that will run in cipher mode.
+
+Example:
+```shell
+lock-run-cipher path/to/your/code.cipher
+```
+
+## lock-run-key command
+```lock-run-key``` is an entry point to generate a key for encrypting your code.
+
+Example:
+```shell
+lock-run-key
+```
+Saves the generated key to the path: ```.lock_run/key.txt```
+
+## Python Dependencies
+- Python 3.10 or newer
+- seal-py 0.8.2 or newer
+
+
