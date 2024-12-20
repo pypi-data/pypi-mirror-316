@@ -1,0 +1,6 @@
+treq
+pyserial
+pypubsub
+tabulate
+Pillow
+python-decouple
