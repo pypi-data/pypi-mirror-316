@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+tgcodes/tgcodes.py
+tgcodes/tgcodesasync.py
+tgcodes/tgcodescore.py
+tgcodes/tgctypes.py
+tgcodes.egg-info/PKG-INFO
+tgcodes.egg-info/SOURCES.txt
+tgcodes.egg-info/dependency_links.txt
+tgcodes.egg-info/requires.txt
+tgcodes.egg-info/top_level.txt
