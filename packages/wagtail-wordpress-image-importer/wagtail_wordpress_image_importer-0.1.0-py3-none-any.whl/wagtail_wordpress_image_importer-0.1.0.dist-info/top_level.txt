@@ -1,0 +1,1 @@
+wagtail_wordpress_image_importer
