@@ -1,0 +1,146 @@
+{
+    "contracts": [
+        {
+            "contract_name": "IPAssetRegistry",
+            "contract_address": "0x28E59E91C0467e89fd0f0438D47Ca839cDfEc095",
+            "functions": [
+                "initialize",
+                "pause",
+                "register",
+                "registerIpAccount",
+                "setAuthority",
+                "unpause",
+                "upgradeToAndCall",
+                "authority",
+                "getIPAccountImpl",
+                "ipAccount",
+                "ipId",
+                "isConsumingScheduledOp",
+                "isRegistered",
+                "paused",
+                "proxiableUUID",
+                "totalSupply"
+            ]
+        },
+        {
+            "contract_name": "PILicenseTemplate",
+            "contract_address": "0x58E2c909D557Cd23EF90D14f8fd21667A5Ae7a93",
+            "functions": [
+                "initialize",
+                "registerLicenseTerms",
+                "setApproval",
+                "setAuthority",
+                "upgradeToAndCall",
+                "verifyRegisterDerivative",
+                "verifyRegisterDerivativeForAllParents",
+                "exists",
+                "getLicenseTerms",
+                "getLicenseTermsId",
+                "getRoyaltyPolicy"
+            ]
+        },
+        {
+            "contract_name": "LicensingModule",
+            "contract_address": "0x5a7D9Fa17DE09350F481A53B470D798c1c1aabae",
+            "functions": [
+                "attachLicenseTerms",
+                "initialize",
+                "mintLicenseTokens",
+                "pause",
+                "registerDerivative",
+                "registerDerivativeWithLicenseTokens",
+                "setAuthority",
+                "setLicensingConfig",
+                "unpause",
+                "upgradeToAndCall"
+            ]
+        },
+        {
+            "contract_name": "LicenseRegistry",
+            "contract_address": "0xBda3992c49E98392e75E78d82B934F3598bA495f",
+            "functions": [
+                "authority",
+                "exists",
+                "getAttachedLicenseTerms",
+                "getAttachedLicenseTermsCount",
+                "getDefaultLicenseTerms",
+                "getDerivativeIp",
+                "getDerivativeIpCount",
+                "getExpireTime",
+                "getLicensingConfig",
+                "getParentIp",
+                "getParentIpCount",
+                "hasDerivativeIps",
+                "hasIpAttachedLicenseTerms",
+                "isConsumingScheduledOp",
+                "isDerivativeIp",
+                "isExpiredNow",
+                "isParentIp",
+                "isRegisteredLicenseTemplate",
+                "proxiableUUID",
+                "verifyMintLicenseToken"
+            ]
+        },
+        {
+            "contract_name": "LicenseToken",
+            "contract_address": "0xB138aEd64814F2845554f9DBB116491a077eEB2D",
+            "functions": [
+                "ownerOf"
+            ]
+        },
+        {
+            "contract_name": "RoyaltyPolicyLAP",
+            "contract_address": "0x28b4F70ffE5ba7A26aEF979226f77Eb57fb9Fdb6",
+            "functions": [
+                "getRoyaltyData"
+            ]
+        },
+        {
+            "contract_name": "RoyaltyModule",
+            "contract_address": "0xEa6eD700b11DfF703665CCAF55887ca56134Ae3B",
+            "functions": [
+                "payRoyaltyOnBehalf",
+                "isWhitelistedRoyaltyPolicy",
+                "isWhitelistedRoyaltyToken"
+            ]
+        },
+        {
+            "contract_name": "AccessController",
+            "contract_address": "0xf709c8001E94e2ca6F98b7fFBCd5BD3943E46D81",
+            "functions": [
+                "checkPermission"
+            ]
+        },
+        {
+            "contract_name": "RegistrationWorkflows",
+            "contract_address": "0xde13Be395E1cd753471447Cf6A656979ef87881c",
+            "functions": [
+                "createCollection",
+                "mintAndRegisterIp",
+                "registerIp"
+            ]
+        },
+        {
+            "contract_name": "LicenseAttachmentWorkflows", 
+            "contract_address": "0x44Bad1E4035a44eAC1606B222873E4a85E8b7D9c",
+            "functions": [
+                "registerIpAndAttachPILTerms",
+                "mintAndRegisterIpAndAttachPILTerms"
+            ]
+        },
+        {
+            "contract_name": "DerivativeWorkflows",
+            "contract_address": "0xa8815CEB96857FFb8f5F8ce920b1Ae6D70254C7B", 
+            "functions": [
+                "registerIpAndMakeDerivative"
+            ]
+        },
+        {
+            "contract_name": "CoreMetadataModule",
+            "contract_address": "0x89630Ccf23277417FBdfd3076C702F5248267e78",
+            "functions": [
+            ]
+        }
+
+    ]
+}
