@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: kognitos-bdk-linter
+Version: 1.12.3
+Summary: Kognitos BDK Linter
+License: Propietary
+Author: Emiliano Lesende
+Author-email: emiliano@kognitos.com
+Requires-Python: >=3.11,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: kognitos-bdk-api (>=1.7.4,<2.0.0)
+Requires-Dist: kognitos-bdk-klang (>=2.0.0,<3.0.0)
+Requires-Dist: pylint (>=3.0,<4.0)
+Description-Content-Type: text/markdown
+
+# Python Linter for Book Development Kit
+
+This package provides an extension for Pylint that will test a book conformance to BCI 3.
+
+
+## Usage
+
+In order to configure the project as a dependency you must follow the following steps:
+
+Add the repository to your project:
+
+```shell
+poetry source add --priority=supplemental bdk "https://kognitos-719468614044.d.codeartifact.us-west-2.amazonaws.com/pypi/bdk/simple/"
+```
+
+Authenticate the repository using your AWS credentials (notice the authentication will only last 12 hours):
+
+```shell
+poetry config http-basic.bdk aws $(aws codeartifact get-authorization-token --domain-owner 719468614044 --domain kognitos --query 'authorizationToken' --output text)
+```
+
+Add the dependency:
+
+```shell
+poetry add --source bdk kognitos-bdk-linter
+```
