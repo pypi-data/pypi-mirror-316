@@ -1,0 +1,3 @@
+fundrive[baidu]>=1.2.74
+funutil>=1.0.46
+moviepy>=2.0.0
