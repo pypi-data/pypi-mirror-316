@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+src/csvw_duckdb/__init__.py
+src/csvw_duckdb/__main__.py
+src/csvw_duckdb/table.py
+src/csvw_duckdb/table_group.py
+src/csvw_duckdb.egg-info/PKG-INFO
+src/csvw_duckdb.egg-info/SOURCES.txt
+src/csvw_duckdb.egg-info/dependency_links.txt
+src/csvw_duckdb.egg-info/entry_points.txt
+src/csvw_duckdb.egg-info/requires.txt
+src/csvw_duckdb.egg-info/top_level.txt
+tests/test_duckdb.py
+tests/test_table_group.py

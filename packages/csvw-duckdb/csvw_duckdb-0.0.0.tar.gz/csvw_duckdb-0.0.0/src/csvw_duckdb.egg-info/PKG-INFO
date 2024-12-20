@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: csvw-duckdb
+Version: 0.0.0
+License-File: LICENSE
+Requires-Dist: csvw==3.*
+Requires-Dist: duckdb==1.*

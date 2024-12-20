@@ -1,0 +1,15 @@
+[project]
+name = "csvw-duckdb"
+version = "0.0.0"
+dependencies = [
+    "csvw==3.*",
+    "duckdb==1.*"
+]
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+# https://packaging.python.org/en/latest/guides/writing-pyproject-toml/#creating-executable-scripts
+[project.scripts]
+csvw-duckdb = "csvw_duckdb.__main__:main"
