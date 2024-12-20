@@ -1,0 +1,3 @@
+[console_scripts]
+git_substitute=git_substitute.__main__:main
+
