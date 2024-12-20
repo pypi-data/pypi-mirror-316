@@ -1,0 +1,32 @@
+[build-system]
+requires = ["poetry-core>=1.0.0", "poetry-dynamic-versioning>=1.0.0,<2.0.0"]
+build-backend = "poetry_dynamic_versioning.backend"
+
+[tool.poetry]
+name = "git-substitute"
+version = "0.1.1"  # Replaced by dynamic versioning
+description = ""
+authors = ["Robert Roos <robert.soor@gmail.com>"]
+readme = "README.md"
+packages = [
+    { include = "git_substitute", from = "src" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+gitpython = "^3.1.43"
+
+[tool.poetry.scripts]
+git_substitute = "git_substitute.__main__:main"
+
+[tool.poetry.group.dev]
+optional = true
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.4"
+pytest-cov = "^6.0.0"
+
+[tool.poetry-dynamic-versioning]
+enable = false
+
+[tool.poetry-dynamic-versioning.substitution]
+files = ["src/*/__init__.py"]
