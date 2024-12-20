@@ -1,0 +1,13 @@
+mtly/__init__.py,sha256=V5o0K2GTeJorZINYDvifwf78plBBVPkrqyLM4Y-wMF0,168
+mtly/logging_settings.py,sha256=XlJBqsOvNPvS4dLRidThMRyIM3C3Nxh6wW1wMcz6-94,245
+mtly/motley.py,sha256=AEuiCq4Kjtot41ieUulv5C2oVYmibc8P6TxJwUK2aTc,1568
+mtly/motley_settings/__init__.py,sha256=IWy_zziYNt36dktGmMVOSZTg7NREqxGpfl8S8CB0KWI,208
+mtly/motley_settings/color_combos.py,sha256=XV5CJbnHBb8ihDZ9OGLEUPGoxjUCX2-a2vepJCdXMco,7228
+mtly/motley_settings/enums/__init__.py,sha256=HNJXHFdDwbjRrSXN7EVnFz5q_V2b2BjVs0yfky_JQbw,177
+mtly/motley_settings/enums/enum_color_combos.py,sha256=OFlu6G2NQLeNOmsIOYtAtBN-zY3SWpqtr70oVYY_NTI,138
+mtly/motley_settings/enums/enum_colors.py,sha256=LyMJU0BazkaRUSqaRXOA5tdtNzRrpEHbH60DJE8tiuE,531
+mtly/motley_settings/enums/enum_styles.py,sha256=1hhAuZ1ZpdtGH3_FRcs-_4cExsk0E2tPpzGu1ifSS78,173
+mtly-12.3.1.dist-info/LICENSE,sha256=BP4wHuYQSnVhBonskgDRCgtQIXzMFcGZ0nRaZjIbiT4,301
+mtly-12.3.1.dist-info/METADATA,sha256=84UoJXdOakt8fXzR3BQ7jAu1fkyGp_5f9hzKHxTx7fI,2922
+mtly-12.3.1.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+mtly-12.3.1.dist-info/RECORD,,
