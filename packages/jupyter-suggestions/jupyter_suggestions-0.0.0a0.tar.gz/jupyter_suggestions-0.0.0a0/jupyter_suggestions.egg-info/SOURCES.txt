@@ -1,0 +1,5 @@
+setup.py
+jupyter_suggestions.egg-info/PKG-INFO
+jupyter_suggestions.egg-info/SOURCES.txt
+jupyter_suggestions.egg-info/dependency_links.txt
+jupyter_suggestions.egg-info/top_level.txt
