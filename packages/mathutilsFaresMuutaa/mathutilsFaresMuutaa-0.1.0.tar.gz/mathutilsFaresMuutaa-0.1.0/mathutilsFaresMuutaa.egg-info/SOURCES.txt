@@ -1,0 +1,7 @@
+setup.py
+mathutilsFaresMuutaa.egg-info/PKG-INFO
+mathutilsFaresMuutaa.egg-info/SOURCES.txt
+mathutilsFaresMuutaa.egg-info/dependency_links.txt
+mathutilsFaresMuutaa.egg-info/top_level.txt
+my-package/__init__.py
+my-package/operations.py
