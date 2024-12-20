@@ -1,0 +1,41 @@
+{
+  "status": "done",
+  "assets": {
+    "kolibri.plugins.user_profile.app0.17.5.css": {
+      "name": "kolibri.plugins.user_profile.app0.17.5.css",
+      "path": "/home/runner/work/kolibri/kolibri/kolibri/plugins/user_profile/static/kolibri.plugins.user_profile.app/kolibri.plugins.user_profile.app0.17.5.css"
+    },
+    "kolibri.plugins.user_profile.app-0.17.5.js": {
+      "name": "kolibri.plugins.user_profile.app-0.17.5.js",
+      "path": "/home/runner/work/kolibri/kolibri/kolibri/plugins/user_profile/static/kolibri.plugins.user_profile.app/kolibri.plugins.user_profile.app-0.17.5.js"
+    },
+    "kolibri.plugins.user_profile.app0.17.5.rtl.css": {
+      "name": "kolibri.plugins.user_profile.app0.17.5.rtl.css",
+      "path": "/home/runner/work/kolibri/kolibri/kolibri/plugins/user_profile/static/kolibri.plugins.user_profile.app/kolibri.plugins.user_profile.app0.17.5.rtl.css"
+    },
+    "kolibri.plugins.user_profile.app-0.17.5.js.LICENSE.txt": {
+      "name": "kolibri.plugins.user_profile.app-0.17.5.js.LICENSE.txt",
+      "path": "/home/runner/work/kolibri/kolibri/kolibri/plugins/user_profile/static/kolibri.plugins.user_profile.app/kolibri.plugins.user_profile.app-0.17.5.js.LICENSE.txt"
+    },
+    "kolibri.plugins.user_profile.app-0.17.5.js.map": {
+      "name": "kolibri.plugins.user_profile.app-0.17.5.js.map",
+      "path": "/home/runner/work/kolibri/kolibri/kolibri/plugins/user_profile/static/kolibri.plugins.user_profile.app/kolibri.plugins.user_profile.app-0.17.5.js.map"
+    }
+  },
+  "chunks": {
+    "kolibri.plugins.user_profile.app": [
+      {
+        "name": "kolibri.plugins.user_profile.app0.17.5.css",
+        "path": "/home/runner/work/kolibri/kolibri/kolibri/plugins/user_profile/static/kolibri.plugins.user_profile.app/kolibri.plugins.user_profile.app0.17.5.css"
+      },
+      {
+        "name": "kolibri.plugins.user_profile.app-0.17.5.js",
+        "path": "/home/runner/work/kolibri/kolibri/kolibri/plugins/user_profile/static/kolibri.plugins.user_profile.app/kolibri.plugins.user_profile.app-0.17.5.js"
+      },
+      {
+        "name": "kolibri.plugins.user_profile.app0.17.5.rtl.css",
+        "path": "/home/runner/work/kolibri/kolibri/kolibri/plugins/user_profile/static/kolibri.plugins.user_profile.app/kolibri.plugins.user_profile.app0.17.5.rtl.css"
+      }
+    ]
+  }
+}
