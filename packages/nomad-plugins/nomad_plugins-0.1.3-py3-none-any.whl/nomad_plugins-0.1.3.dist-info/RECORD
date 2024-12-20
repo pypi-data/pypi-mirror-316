@@ -1,0 +1,11 @@
+nomad_plugins/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nomad_plugins/plugin_crawler.py,sha256=RfKPSlV4rMELflXDo7baDS4nJsHjRGAVlClu_00prmc,18977
+nomad_plugins/apps/__init__.py,sha256=Yhn36Fm3R3CgH2pve1U4UfbC2z6gIaGy3epsggag9k8,4108
+nomad_plugins/schema_packages/__init__.py,sha256=oXtVIRnDARHiPj0bpv95kmDLJmfd4xW-c1A_maufppY,496
+nomad_plugins/schema_packages/plugin.py,sha256=OePg888h4XcBo0cwXPd7Rubf3S7NdD9nQLNm7Q9b4_4,4424
+nomad_plugins-0.1.3.dist-info/LICENSE,sha256=CUvt2ilcBwKAfRAnoA4RNPTLcdUj3En21LPK9YkFMGg,11358
+nomad_plugins-0.1.3.dist-info/METADATA,sha256=C5ZfosH7_AD4qN--G7xHZjiRNbyMEaZsrhiXPwr1eK4,19716
+nomad_plugins-0.1.3.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+nomad_plugins-0.1.3.dist-info/entry_points.txt,sha256=pgl_FEDrMgkW1gc5SqmM-mEXwlI6aney9_Gen-ZXlAo,238
+nomad_plugins-0.1.3.dist-info/top_level.txt,sha256=r9AmSdTgQ4kKPJQtlU85hQr43x0oHBaNExH2DlG933Y,14
+nomad_plugins-0.1.3.dist-info/RECORD,,

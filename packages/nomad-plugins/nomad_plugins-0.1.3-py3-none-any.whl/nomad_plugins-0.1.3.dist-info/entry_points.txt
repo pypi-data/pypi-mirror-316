@@ -1,0 +1,6 @@
+[console_scripts]
+plugin-crawler = nomad_plugins.plugin_crawler:main
+
+[nomad.plugin]
+plugin_app_entry_point = nomad_plugins.apps:plugin_app_entry_point
+schema_package_entry_point = nomad_plugins.schema_packages:schema_package_entry_point
