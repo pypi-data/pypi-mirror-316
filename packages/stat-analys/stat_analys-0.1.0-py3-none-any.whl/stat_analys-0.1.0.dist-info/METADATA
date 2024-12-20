@@ -1,0 +1,80 @@
+Metadata-Version: 2.1
+Name: stat_analys
+Version: 0.1.0
+Summary: Un package pour l'analyse statistique univariée
+Home-page: https://github.com/Jean-Paul15/stat_analys
+Author: ADOGLI Jean-Paul
+Author-email: adoglijeanpaul@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: seaborn
+Requires-Dist: matplotlib
+Requires-Dist: plotly
+Requires-Dist: scipy
+Requires-Dist: sklearn
+Requires-Dist: tabulate
+Requires-Dist: dataclasses
+Requires-Dist: logging
+Requires-Dist: warnings
+Requires-Dist: collections
+
+# Stat Analysis
+
+`stat_analysis` est un package Python pour l'analyse statistique univariÃ©e avancÃ©e. Il permet de rÃ©aliser des analyses statistiques dÃ©taillÃ©es et de gÃ©nÃ©rer des visualisations pour les variables numÃ©riques et catÃ©gorielles.
+
+## Installation
+
+Installez le package en utilisant la commande suivante :
+
+```bash
+pip install stat_analysis
+```
+
+## Utilisation
+
+Voici un exemple d'utilisation du package :
+
+```python
+import pandas as pd
+from stat_analysis.advanced_univariate_stat import AdvancedUnivariateStat
+from stat_analysis.configuration import ConfigurationPlot
+
+# CrÃ©ation d'un DataFrame exemple
+data = {
+    'numerique': [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+    'categorielle': ['A', 'B', 'A', 'C', 'B', 'A', 'C', 'B', 'A', 'C']
+}
+df = pd.DataFrame(data)
+
+# Configuration des paramÃ¨tres de visualisation
+config = ConfigurationPlot(theme_plotly="plotly_dark", theme_seaborn="darkgrid")
+
+# CrÃ©ation de l'objet d'analyse
+stat = AdvancedUnivariateStat(config)
+
+# Analyse statistique avancÃ©e
+resultats = stat.analyse_statistique_avancee(df, colonnes=['numerique', 'categorielle'], afficher_plots=True)
+```
+
+## FonctionnalitÃ©s
+
+- **Analyse statistique descriptive** : Moyennes, mÃ©dianes, Ã©cart-types, etc.
+- **Tests de normalitÃ©** : VÃ©rifiez si vos donnÃ©es suivent une distribution normale.
+- **Calcul des intervalles de confiance** : Obtenez des estimations robustes de vos donnÃ©es.
+- **Visualisations** : Graphiques interactifs avec Plotly et esthÃ©tiques avec Seaborn.
+
+## Contribution
+
+Les contributions sont les bienvenues !
+
+1. Ouvrez une issue pour discuter de vos idÃ©es d'amÃ©lioration ou signaler des bugs.
+2. Faites un fork du dÃ©pÃ´t.
+3. Apportez vos modifications et soumettez une pull request.
+
+Nous serons ravis de collaborer avec vous !
+# stat_analysis
