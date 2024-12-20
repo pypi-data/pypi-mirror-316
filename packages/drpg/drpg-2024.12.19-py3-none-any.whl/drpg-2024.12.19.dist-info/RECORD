@@ -1,0 +1,13 @@
+drpg/__init__.py,sha256=ArBxrHcnaJgMCLGYjkWwqTK3CHgPJ8Oh9LuPh6ho-II,82
+drpg/__main__.py,sha256=0yDyaMZaiNxOf9g9X5-tbHKP3bChbSRVKrd-wZTz5gI,63
+drpg/api.py,sha256=XhY_myQpS6UW2la0cljSJO5lB0xkqqtSS_nPepEjqA4,4260
+drpg/cmd.py,sha256=wRoGHnJKa58vdS7Bp-_-03FbgtC0oF5x-g_mM_HgXsA,5120
+drpg/config.py,sha256=DiK_nZ5tWrs47X1P-tP3SVhQvEhG_WpCt2dcEe3S4LY,284
+drpg/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+drpg/sync.py,sha256=wg1IhVrPtmE76akbNOE1LZAo8td6ImUKq8B-IZ9zKps,6601
+drpg/types.py,sha256=zJbMid3gJXE7T3PqYy1-vZLL41xbVyUQ8lYfh4cZnoY,619
+drpg-2024.12.19.dist-info/METADATA,sha256=GKi8HyKJse8xVj5E6KdKtmmtDDY-71Je1O0kmgafbCs,4306
+drpg-2024.12.19.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+drpg-2024.12.19.dist-info/entry_points.txt,sha256=tpwscSQSJwOCISeWLPWLcad8c-qVKklIUdmre97-Nvo,38
+drpg-2024.12.19.dist-info/licenses/LICENSE,sha256=fiJj8soIG3zQdB1wSelEHmmsUl7TkJ8eddJAlalTqwE,1063
+drpg-2024.12.19.dist-info/RECORD,,
