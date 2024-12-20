@@ -1,0 +1,673 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="75cb9f62-a544-4693-8c2b-8223973ac079" name="Changes" comment="analyzing HFC - pt 1.5">
+      <change beforePath="$PROJECT_DIR$/pyproject.toml" beforeDir="false" afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="Jupyter Notebook" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;JonNir1&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/JonNir1/pEYES.git&quot;,
+    &quot;accountId&quot;: &quot;620ce0cd-162c-4432-ac4e-1c900e66ad75&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2mkaQpfKjZWELYmSjLUX9CU1PeM" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python tests.Python tests for test_event.TestEvent.test_overlaps.executor&quot;: &quot;Debug&quot;,
+    &quot;Python tests.Python tests for test_event.TestEvent.test_properties.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_metric_utils.TestMetricUtils.test_nld.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_pixel_utils.TestPixelUtils.test_cast_to_integers.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;database.data.extractors.current.export.id&quot;: &quot;Comma-separated (CSV)_id&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/jonathanni/PycharmProjects/pEYES/analysis/_article_results/hfc&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;Jupyter Settings&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\jonathanni\PycharmProjects\pEYES\analysis\_article_results\hfc" />
+      <recent name="C:\Users\jonathanni\PycharmProjects\pEYES\analysis\_article_results\lund2013_detector_analysis" />
+      <recent name="C:\Users\jonathanni\PycharmProjects\pEYES\analysis\_article" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\jonathanni\PycharmProjects\pEYES\analysis\_article_results\lund2013\detector_analysis" />
+      <recent name="C:\Users\jonathanni\PycharmProjects\pEYES\analysis\_article_results\lund2013" />
+      <recent name="C:\Users\jonathanni\PycharmProjects\pEYES\analysis\_article_results\figures" />
+      <recent name="C:\Users\jonathanni\PycharmProjects\pEYES\analysis\_article_results\lund2013_detector_analysis" />
+      <recent name="C:\Users\jonathanni\PycharmProjects\pEYES\analysis\_article_results" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python tests.Python tests for test_pixel_utils.TestPixelUtils.test_cast_to_integers">
+    <configuration name="Python tests for test_event.TestEvent.test_overlaps" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="pEYES" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/unit_tests/data_models" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_event.TestEvent.test_overlaps&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_event.TestEvent.test_properties" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="pEYES" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/unit_tests/data_models" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_event.TestEvent.test_properties&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_metric_utils.TestMetricUtils.test_nld" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="pEYES" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/unit_tests/utils" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_metric_utils.TestMetricUtils.test_nld&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_pixel_utils.TestPixelUtils.test_cast_to_integers" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="pEYES" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/unit_tests/utils" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_pixel_utils.TestPixelUtils.test_cast_to_integers&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python tests.Python tests for test_pixel_utils.TestPixelUtils.test_cast_to_integers" />
+        <item itemvalue="Python tests.Python tests for test_event.TestEvent.test_properties" />
+        <item itemvalue="Python tests.Python tests for test_event.TestEvent.test_overlaps" />
+        <item itemvalue="Python tests.Python tests for test_metric_utils.TestMetricUtils.test_nld" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-PY-242.23726.102" />
+        <option value="bundled-python-sdk-5e1850174b45-399fe30bd8c1-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-242.23726.102" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="75cb9f62-a544-4693-8c2b-8223973ac079" name="Changes" comment="" />
+      <created>1727623015336</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1727623015336</updated>
+      <workItem from="1727623016611" duration="191000" />
+      <workItem from="1727623215876" duration="255000" />
+      <workItem from="1727623498460" duration="864000" />
+      <workItem from="1727774483995" duration="920000" />
+      <workItem from="1727777265212" duration="509000" />
+      <workItem from="1727778325822" duration="7077000" />
+      <workItem from="1727789093026" duration="4860000" />
+      <workItem from="1729002167856" duration="725000" />
+      <workItem from="1729260055589" duration="13000" />
+      <workItem from="1729271192182" duration="1149000" />
+      <workItem from="1729438113561" duration="907000" />
+      <workItem from="1729761614997" duration="3249000" />
+      <workItem from="1729964889613" duration="2261000" />
+      <workItem from="1730188051209" duration="737000" />
+      <workItem from="1730204359776" duration="16000" />
+      <workItem from="1730359657797" duration="33000" />
+      <workItem from="1730359719382" duration="1055000" />
+      <workItem from="1730367228647" duration="54040000" />
+      <workItem from="1730632171047" duration="21685000" />
+      <workItem from="1730654446375" duration="46840000" />
+      <workItem from="1731229605563" duration="8700000" />
+      <workItem from="1731238412495" duration="457000" />
+      <workItem from="1731238957711" duration="39425000" />
+      <workItem from="1731412465880" duration="12640000" />
+      <workItem from="1731518681385" duration="823000" />
+      <workItem from="1731574513775" duration="9214000" />
+      <workItem from="1731587362452" duration="16489000" />
+      <workItem from="1731919642995" duration="339000" />
+      <workItem from="1731919998064" duration="13899000" />
+      <workItem from="1731938434758" duration="3380000" />
+      <workItem from="1732179914366" duration="20682000" />
+      <workItem from="1732525507251" duration="2000" />
+      <workItem from="1732528693298" duration="14508000" />
+      <workItem from="1732565215857" duration="2584000" />
+      <workItem from="1732569570201" duration="118000" />
+      <workItem from="1732569696197" duration="83000" />
+      <workItem from="1732569787224" duration="176000" />
+      <workItem from="1732569973071" duration="5448000" />
+      <workItem from="1732575705502" duration="2337000" />
+      <workItem from="1732648499896" duration="33977000" />
+      <workItem from="1733044763958" duration="13530000" />
+      <workItem from="1733058450682" duration="14784000" />
+      <workItem from="1733132364760" duration="9019000" />
+      <workItem from="1733141504201" duration="4612000" />
+      <workItem from="1733146188105" duration="2608000" />
+      <workItem from="1733387301416" duration="6083000" />
+      <workItem from="1733401344477" duration="2203000" />
+      <workItem from="1733404929429" duration="1214000" />
+      <workItem from="1733406165277" duration="680000" />
+      <workItem from="1733407012285" duration="4100000" />
+      <workItem from="1734616232793" duration="25000" />
+    </task>
+    <task id="LOCAL-00136" summary="nit">
+      <option name="closed" value="true" />
+      <created>1732207655186</created>
+      <option name="number" value="00136" />
+      <option name="presentableId" value="LOCAL-00136" />
+      <option name="project" value="LOCAL" />
+      <updated>1732207655186</updated>
+    </task>
+    <task id="LOCAL-00137" summary="make sure we dont miss matches due to some rounding error">
+      <option name="closed" value="true" />
+      <created>1732207682140</created>
+      <option name="number" value="00137" />
+      <option name="presentableId" value="LOCAL-00137" />
+      <option name="project" value="LOCAL" />
+      <updated>1732207682152</updated>
+    </task>
+    <task id="LOCAL-00138" summary="propagate `max_diff` arg">
+      <option name="closed" value="true" />
+      <created>1732207734452</created>
+      <option name="number" value="00138" />
+      <option name="presentableId" value="LOCAL-00138" />
+      <option name="project" value="LOCAL" />
+      <updated>1732207734453</updated>
+    </task>
+    <task id="LOCAL-00139" summary="rerun">
+      <option name="closed" value="true" />
+      <created>1732207798223</created>
+      <option name="number" value="00139" />
+      <option name="presentableId" value="LOCAL-00139" />
+      <option name="project" value="LOCAL" />
+      <updated>1732207798223</updated>
+    </task>
+    <task id="LOCAL-00140" summary="add `marginal alpha` arg">
+      <option name="closed" value="true" />
+      <created>1732208513799</created>
+      <option name="number" value="00140" />
+      <option name="presentableId" value="LOCAL-00140" />
+      <option name="project" value="LOCAL" />
+      <updated>1732208513799</updated>
+    </task>
+    <task id="LOCAL-00141" summary="use `marginal alpha` arg">
+      <option name="closed" value="true" />
+      <created>1732208712332</created>
+      <option name="number" value="00141" />
+      <option name="presentableId" value="LOCAL-00141" />
+      <option name="project" value="LOCAL" />
+      <updated>1732208712332</updated>
+    </task>
+    <task id="LOCAL-00142" summary="change symbol">
+      <option name="closed" value="true" />
+      <created>1732208953826</created>
+      <option name="number" value="00142" />
+      <option name="presentableId" value="LOCAL-00142" />
+      <option name="project" value="LOCAL" />
+      <updated>1732208953828</updated>
+    </task>
+    <task id="LOCAL-00143" summary="figs 4-5">
+      <option name="closed" value="true" />
+      <created>1732208960983</created>
+      <option name="number" value="00143" />
+      <option name="presentableId" value="LOCAL-00143" />
+      <option name="project" value="LOCAL" />
+      <updated>1732208960983</updated>
+    </task>
+    <task id="LOCAL-00144" summary="naming">
+      <option name="closed" value="true" />
+      <created>1732528812029</created>
+      <option name="number" value="00144" />
+      <option name="presentableId" value="LOCAL-00144" />
+      <option name="project" value="LOCAL" />
+      <updated>1732528812029</updated>
+    </task>
+    <task id="LOCAL-00145" summary="deleted unused imports">
+      <option name="closed" value="true" />
+      <created>1732529421336</created>
+      <option name="number" value="00145" />
+      <option name="presentableId" value="LOCAL-00145" />
+      <option name="project" value="LOCAL" />
+      <updated>1732529421346</updated>
+    </task>
+    <task id="LOCAL-00146" summary="naming">
+      <option name="closed" value="true" />
+      <created>1732535532365</created>
+      <option name="number" value="00146" />
+      <option name="presentableId" value="LOCAL-00146" />
+      <option name="project" value="LOCAL" />
+      <updated>1732535532365</updated>
+    </task>
+    <task id="LOCAL-00147" summary="nit">
+      <option name="closed" value="true" />
+      <created>1732535572263</created>
+      <option name="number" value="00147" />
+      <option name="presentableId" value="LOCAL-00147" />
+      <option name="project" value="LOCAL" />
+      <updated>1732535572263</updated>
+    </task>
+    <task id="LOCAL-00148" summary="naming">
+      <option name="closed" value="true" />
+      <created>1732535632265</created>
+      <option name="number" value="00148" />
+      <option name="presentableId" value="LOCAL-00148" />
+      <option name="project" value="LOCAL" />
+      <updated>1732535632265</updated>
+    </task>
+    <task id="LOCAL-00149" summary="doc">
+      <option name="closed" value="true" />
+      <created>1732538091334</created>
+      <option name="number" value="00149" />
+      <option name="presentableId" value="LOCAL-00149" />
+      <option name="project" value="LOCAL" />
+      <updated>1732538091334</updated>
+    </task>
+    <task id="LOCAL-00150" summary="nit">
+      <option name="closed" value="true" />
+      <created>1732538095002</created>
+      <option name="number" value="00150" />
+      <option name="presentableId" value="LOCAL-00150" />
+      <option name="project" value="LOCAL" />
+      <updated>1732538095002</updated>
+    </task>
+    <task id="LOCAL-00151" summary="nit">
+      <option name="closed" value="true" />
+      <created>1732539783353</created>
+      <option name="number" value="00151" />
+      <option name="presentableId" value="LOCAL-00151" />
+      <option name="project" value="LOCAL" />
+      <updated>1732539783353</updated>
+    </task>
+    <task id="LOCAL-00152" summary="analyze fixation detection">
+      <option name="closed" value="true" />
+      <created>1732575406204</created>
+      <option name="number" value="00152" />
+      <option name="presentableId" value="LOCAL-00152" />
+      <option name="project" value="LOCAL" />
+      <updated>1732575406204</updated>
+    </task>
+    <task id="LOCAL-00153" summary="analyze fixation detection">
+      <option name="closed" value="true" />
+      <created>1732575640456</created>
+      <option name="number" value="00153" />
+      <option name="presentableId" value="LOCAL-00153" />
+      <option name="project" value="LOCAL" />
+      <updated>1732575640456</updated>
+    </task>
+    <task id="LOCAL-00154" summary="analyze saccade detection">
+      <option name="closed" value="true" />
+      <created>1732575652967</created>
+      <option name="number" value="00154" />
+      <option name="presentableId" value="LOCAL-00154" />
+      <option name="project" value="LOCAL" />
+      <updated>1732575652967</updated>
+    </task>
+    <task id="LOCAL-00155" summary="refactor">
+      <option name="closed" value="true" />
+      <created>1732575818138</created>
+      <option name="number" value="00155" />
+      <option name="presentableId" value="LOCAL-00155" />
+      <option name="project" value="LOCAL" />
+      <updated>1732575818138</updated>
+    </task>
+    <task id="LOCAL-00156" summary="calc for image subset">
+      <option name="closed" value="true" />
+      <created>1732576279241</created>
+      <option name="number" value="00156" />
+      <option name="presentableId" value="LOCAL-00156" />
+      <option name="project" value="LOCAL" />
+      <updated>1732576279241</updated>
+    </task>
+    <task id="LOCAL-00157" summary="nit">
+      <option name="closed" value="true" />
+      <created>1732577657618</created>
+      <option name="number" value="00157" />
+      <option name="presentableId" value="LOCAL-00157" />
+      <option name="project" value="LOCAL" />
+      <updated>1732577657618</updated>
+    </task>
+    <task id="LOCAL-00158" summary="names">
+      <option name="closed" value="true" />
+      <created>1732577800627</created>
+      <option name="number" value="00158" />
+      <option name="presentableId" value="LOCAL-00158" />
+      <option name="project" value="LOCAL" />
+      <updated>1732577800627</updated>
+    </task>
+    <task id="LOCAL-00159" summary="update">
+      <option name="closed" value="true" />
+      <created>1732657046669</created>
+      <option name="number" value="00159" />
+      <option name="presentableId" value="LOCAL-00159" />
+      <option name="project" value="LOCAL" />
+      <updated>1732657046669</updated>
+    </task>
+    <task id="LOCAL-00160" summary="bugfix">
+      <option name="closed" value="true" />
+      <created>1732659694503</created>
+      <option name="number" value="00160" />
+      <option name="presentableId" value="LOCAL-00160" />
+      <option name="project" value="LOCAL" />
+      <updated>1732659694503</updated>
+    </task>
+    <task id="LOCAL-00161" summary="bugfix">
+      <option name="closed" value="true" />
+      <created>1732659711538</created>
+      <option name="number" value="00161" />
+      <option name="presentableId" value="LOCAL-00161" />
+      <option name="project" value="LOCAL" />
+      <updated>1732659711538</updated>
+    </task>
+    <task id="LOCAL-00162" summary="naming">
+      <option name="closed" value="true" />
+      <created>1732714926747</created>
+      <option name="number" value="00162" />
+      <option name="presentableId" value="LOCAL-00162" />
+      <option name="project" value="LOCAL" />
+      <updated>1732714926747</updated>
+    </task>
+    <task id="LOCAL-00163" summary="bugfix">
+      <option name="closed" value="true" />
+      <created>1732715438540</created>
+      <option name="number" value="00163" />
+      <option name="presentableId" value="LOCAL-00163" />
+      <option name="project" value="LOCAL" />
+      <updated>1732715438540</updated>
+    </task>
+    <task id="LOCAL-00164" summary="process HFC dataset">
+      <option name="closed" value="true" />
+      <created>1732900336774</created>
+      <option name="number" value="00164" />
+      <option name="presentableId" value="LOCAL-00164" />
+      <option name="project" value="LOCAL" />
+      <updated>1732900336774</updated>
+    </task>
+    <task id="LOCAL-00165" summary="align yaxes in gaze trajectory">
+      <option name="closed" value="true" />
+      <created>1733047456613</created>
+      <option name="number" value="00165" />
+      <option name="presentableId" value="LOCAL-00165" />
+      <option name="project" value="LOCAL" />
+      <updated>1733047456613</updated>
+    </task>
+    <task id="LOCAL-00166" summary="bugfixes with heatmap">
+      <option name="closed" value="true" />
+      <created>1733052398882</created>
+      <option name="number" value="00166" />
+      <option name="presentableId" value="LOCAL-00166" />
+      <option name="project" value="LOCAL" />
+      <updated>1733052398882</updated>
+    </task>
+    <task id="LOCAL-00167" summary="generalize `trajectory` visualization to prepare for `trajecotry_with_labels`">
+      <option name="closed" value="true" />
+      <created>1733057530162</created>
+      <option name="number" value="00167" />
+      <option name="presentableId" value="LOCAL-00167" />
+      <option name="project" value="LOCAL" />
+      <updated>1733057530162</updated>
+    </task>
+    <task id="LOCAL-00168" summary="fig1 subplots">
+      <option name="closed" value="true" />
+      <created>1733058683985</created>
+      <option name="number" value="00168" />
+      <option name="presentableId" value="LOCAL-00168" />
+      <option name="project" value="LOCAL" />
+      <updated>1733058683985</updated>
+    </task>
+    <task id="LOCAL-00169" summary="main sequence fixes">
+      <option name="closed" value="true" />
+      <created>1733085517454</created>
+      <option name="number" value="00169" />
+      <option name="presentableId" value="LOCAL-00169" />
+      <option name="project" value="LOCAL" />
+      <updated>1733085517454</updated>
+    </task>
+    <task id="LOCAL-00170" summary="naming">
+      <option name="closed" value="true" />
+      <created>1733086348943</created>
+      <option name="number" value="00170" />
+      <option name="presentableId" value="LOCAL-00170" />
+      <option name="project" value="LOCAL" />
+      <updated>1733086348943</updated>
+    </task>
+    <task id="LOCAL-00171" summary="supp 1-2">
+      <option name="closed" value="true" />
+      <created>1733086354319</created>
+      <option name="number" value="00171" />
+      <option name="presentableId" value="LOCAL-00171" />
+      <option name="project" value="LOCAL" />
+      <updated>1733086354319</updated>
+    </task>
+    <task id="LOCAL-00172" summary="add missing colors">
+      <option name="closed" value="true" />
+      <created>1733137903515</created>
+      <option name="number" value="00172" />
+      <option name="presentableId" value="LOCAL-00172" />
+      <option name="project" value="LOCAL" />
+      <updated>1733137903515</updated>
+    </task>
+    <task id="LOCAL-00173" summary="add missing colors">
+      <option name="closed" value="true" />
+      <created>1733141372123</created>
+      <option name="number" value="00173" />
+      <option name="presentableId" value="LOCAL-00173" />
+      <option name="project" value="LOCAL" />
+      <updated>1733141372123</updated>
+    </task>
+    <task id="LOCAL-00174" summary="change spacing between scarfs">
+      <option name="closed" value="true" />
+      <created>1733141381287</created>
+      <option name="number" value="00174" />
+      <option name="presentableId" value="LOCAL-00174" />
+      <option name="project" value="LOCAL" />
+      <updated>1733141381287</updated>
+    </task>
+    <task id="LOCAL-00175" summary="write figures to vectorized EPS format">
+      <option name="closed" value="true" />
+      <created>1733141683817</created>
+      <option name="number" value="00175" />
+      <option name="presentableId" value="LOCAL-00175" />
+      <option name="project" value="LOCAL" />
+      <updated>1733141683817</updated>
+    </task>
+    <task id="LOCAL-00176" summary="save EPS">
+      <option name="closed" value="true" />
+      <created>1733141754712</created>
+      <option name="number" value="00176" />
+      <option name="presentableId" value="LOCAL-00176" />
+      <option name="project" value="LOCAL" />
+      <updated>1733141754712</updated>
+    </task>
+    <task id="LOCAL-00177" summary="fig 2">
+      <option name="closed" value="true" />
+      <created>1733141772093</created>
+      <option name="number" value="00177" />
+      <option name="presentableId" value="LOCAL-00177" />
+      <option name="project" value="LOCAL" />
+      <updated>1733141772093</updated>
+    </task>
+    <task id="LOCAL-00178" summary="update all figures">
+      <option name="closed" value="true" />
+      <created>1733146279444</created>
+      <option name="number" value="00178" />
+      <option name="presentableId" value="LOCAL-00178" />
+      <option name="project" value="LOCAL" />
+      <updated>1733146279444</updated>
+    </task>
+    <task id="LOCAL-00179" summary="start analyzing HFC dataset">
+      <option name="closed" value="true" />
+      <created>1733146352289</created>
+      <option name="number" value="00179" />
+      <option name="presentableId" value="LOCAL-00179" />
+      <option name="project" value="LOCAL" />
+      <updated>1733146352289</updated>
+    </task>
+    <task id="LOCAL-00180" summary="nit">
+      <option name="closed" value="true" />
+      <created>1733389566079</created>
+      <option name="number" value="00180" />
+      <option name="presentableId" value="LOCAL-00180" />
+      <option name="project" value="LOCAL" />
+      <updated>1733389566079</updated>
+    </task>
+    <task id="LOCAL-00181" summary="nit">
+      <option name="closed" value="true" />
+      <created>1733389586293</created>
+      <option name="number" value="00181" />
+      <option name="presentableId" value="LOCAL-00181" />
+      <option name="project" value="LOCAL" />
+      <updated>1733389586293</updated>
+    </task>
+    <task id="LOCAL-00182" summary="nit">
+      <option name="closed" value="true" />
+      <created>1733409975899</created>
+      <option name="number" value="00182" />
+      <option name="presentableId" value="LOCAL-00182" />
+      <option name="project" value="LOCAL" />
+      <updated>1733409975899</updated>
+    </task>
+    <task id="LOCAL-00183" summary="analyzing HFC - pt 1">
+      <option name="closed" value="true" />
+      <created>1733409988739</created>
+      <option name="number" value="00183" />
+      <option name="presentableId" value="LOCAL-00183" />
+      <option name="project" value="LOCAL" />
+      <updated>1733409988739</updated>
+    </task>
+    <task id="LOCAL-00184" summary="analyzing HFC - pt 1.5">
+      <option name="closed" value="true" />
+      <created>1733738325446</created>
+      <option name="number" value="00184" />
+      <option name="presentableId" value="LOCAL-00184" />
+      <option name="project" value="LOCAL" />
+      <updated>1733738325446</updated>
+    </task>
+    <option name="localTasksCounter" value="185" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="analyze fixation detection" />
+    <MESSAGE value="analyze saccade detection" />
+    <MESSAGE value="refactor" />
+    <MESSAGE value="calc for image subset" />
+    <MESSAGE value="names" />
+    <MESSAGE value="update" />
+    <MESSAGE value="bugfix" />
+    <MESSAGE value="process HFC dataset" />
+    <MESSAGE value="align yaxes in gaze trajectory" />
+    <MESSAGE value="bugfixes with heatmap" />
+    <MESSAGE value="generalize `trajectory` visualization to prepare for `trajecotry_with_labels`" />
+    <MESSAGE value="fig1 subplots" />
+    <MESSAGE value="main sequence fixes" />
+    <MESSAGE value="naming" />
+    <MESSAGE value="supp 1-2" />
+    <MESSAGE value="add missing colors" />
+    <MESSAGE value="change spacing between scarfs" />
+    <MESSAGE value="write figures to vectorized EPS format" />
+    <MESSAGE value="save EPS" />
+    <MESSAGE value="fig 2" />
+    <MESSAGE value="update all figures" />
+    <MESSAGE value="start analyzing HFC dataset" />
+    <MESSAGE value="nit" />
+    <MESSAGE value="analyzing HFC - pt 1" />
+    <MESSAGE value="analyzing HFC - pt 1.5" />
+    <option name="LAST_COMMIT_MESSAGE" value="analyzing HFC - pt 1.5" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/analysis/statistics/_helpers.py</url>
+          <line>370</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/pEYES$.coverage" NAME=" Coverage Results" MODIFIED="1733049235493" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/unit_tests/utils" />
+  </component>
+</project>
