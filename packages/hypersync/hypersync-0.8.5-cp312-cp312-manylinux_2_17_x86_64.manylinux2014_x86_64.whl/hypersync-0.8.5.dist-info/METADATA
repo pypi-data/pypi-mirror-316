@@ -1,0 +1,43 @@
+Metadata-Version: 2.4
+Name: hypersync
+Version: 0.8.5
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Development Status :: 3 - Alpha
+Classifier: Topic :: Database :: Front-Ends
+Classifier: Topic :: Software Development :: Libraries
+Requires-Dist: strenum >=0.4.15, <0.4.16
+License-File: LICENSE
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+Project-URL: homepage, https://envio.dev/
+Project-URL: documentation, https://docs.envio.dev/docs/HyperSync/overview
+Project-URL: repository, https://github.com/enviodev/hypersync-client-python
+
+# hypersync-client-python
+Python package for [Envio's](https://envio.dev/) HyperSync client written in Rust
+
+## Setup
+
+Recommeded to use a venv to install the package.
+
+```bash
+python -m venv .venv
+```
+
+Then activate the venv before use.
+```bash
+source .venv/bin/activate
+```
+
+Then istall the packages with pip.
+
+```bash
+pip install -e .
+```
+
+### Examples in `examples/`
+
+There are a collection of self-contained examples you can look through. To run them run `python examples/<example>.py`.
+
