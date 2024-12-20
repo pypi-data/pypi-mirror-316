@@ -1,0 +1,10 @@
+cocorum/__init__.py,sha256=vmQKQ3ZZ554xF7rfyYuN4GaeRs1l9bMtEeNU7JKRHjU,21873
+cocorum/chatapi.py,sha256=HMb2iPT4syGnpL2eMGT9desxBXru9R5jRPnD4ZfNvEo,22459
+cocorum/servicephp.py,sha256=vkuUHK8ax04iUx5T08iPYBglxiBpA650ogV_e5qhZA0,39363
+cocorum/static.py,sha256=55OeI2xgeICpONdJWlOK13tcAUYYUl8p-vtMSO61xnI,4267
+cocorum/uploadphp.py,sha256=r06FdIIiN_7w_Yrm-bI_P0-Qa1VnFHa5__itj1ay77k,12740
+cocorum/utils.py,sha256=ij-59-GqtlzAfvNkrTkhxV36ywreC3jh2e_oKqc1r6Y,8056
+cocorum-2.3.0.dist-info/METADATA,sha256=wZUapy5IGybUJW2-9f587GaA4Y8ERHrxr4j6U-vIHAY,3760
+cocorum-2.3.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+cocorum-2.3.0.dist-info/licenses/LICENSE.txt,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+cocorum-2.3.0.dist-info/RECORD,,
