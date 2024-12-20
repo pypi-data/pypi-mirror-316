@@ -1,0 +1,12 @@
+mrcfile
+tensorboard
+numpy>=1.20.0
+scikit-learn
+scikit-image
+pystardb>=0.4.2
+pandas
+numexpr>=2.8.4
+numba
+tabulate
+setuptools_scm
+tqdm
