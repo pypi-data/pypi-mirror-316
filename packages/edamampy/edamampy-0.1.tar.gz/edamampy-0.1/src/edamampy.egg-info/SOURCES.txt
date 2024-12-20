@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+src/edamampy/__init__.py
+src/edamampy/classes.py
+src/edamampy/cli.py
+src/edamampy/constants.py
+src/edamampy/exceptions.py
+src/edamampy/models.py
+src/edamampy.egg-info/PKG-INFO
+src/edamampy.egg-info/SOURCES.txt
+src/edamampy.egg-info/dependency_links.txt
+src/edamampy.egg-info/entry_points.txt
+src/edamampy.egg-info/requires.txt
+src/edamampy.egg-info/top_level.txt
