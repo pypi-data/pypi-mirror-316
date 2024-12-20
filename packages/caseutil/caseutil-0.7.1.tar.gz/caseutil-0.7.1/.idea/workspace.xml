@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="bf22cfdc-2fa5-438f-a101-33afebc11c75" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/setup.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/setup.cfg" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;makukha&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/makukha/caseutil.git&quot;,
+    &quot;accountId&quot;: &quot;b386b55d-7397-4263-963e-a1fdb5098e75&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="2jvNT9d9uPt2AcxGg42qdow5mPv" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Shell Script.alacritty.sh (1).executor": "Run",
+    "Shell Script.alacritty.sh.executor": "Run",
+    "Shell Script.terminal.sh.executor": "Run",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/m/repos/caseutil",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.general",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/.dev" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src/caseutil" />
+      <recent name="$PROJECT_DIR$/.github" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="terminal.sh" type="ShConfigurationType" temporary="true">
+      <option name="SCRIPT_TEXT" value="" />
+      <option name="INDEPENDENT_SCRIPT_PATH" value="true" />
+      <option name="SCRIPT_PATH" value="$PROJECT_DIR$/.dev/terminal.sh" />
+      <option name="SCRIPT_OPTIONS" value="" />
+      <option name="INDEPENDENT_SCRIPT_WORKING_DIRECTORY" value="true" />
+      <option name="SCRIPT_WORKING_DIRECTORY" value="$PROJECT_DIR$/.dev" />
+      <option name="INDEPENDENT_INTERPRETER_PATH" value="true" />
+      <option name="INTERPRETER_PATH" value="/bin/sh" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="EXECUTE_IN_TERMINAL" value="true" />
+      <option name="EXECUTE_SCRIPT_FILE" value="true" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Shell Script.terminal.sh" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-PY-241.18034.82" />
+        <option value="bundled-python-sdk-975db3bf15a3-2767605e8bc2-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-241.18034.82" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bf22cfdc-2fa5-438f-a101-33afebc11c75" name="Changes" comment="" />
+      <created>1722263597818</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1722263597818</updated>
+      <workItem from="1722263600116" duration="18668000" />
+      <workItem from="1722328224232" duration="4145000" />
+      <workItem from="1722405104959" duration="4130000" />
+      <workItem from="1722585659165" duration="2256000" />
+      <workItem from="1722592180738" duration="12235000" />
+      <workItem from="1722616228804" duration="1472000" />
+      <workItem from="1722709264065" duration="21486000" />
+      <workItem from="1723123594862" duration="12337000" />
+      <workItem from="1723553798847" duration="6979000" />
+      <workItem from="1723741650167" duration="702000" />
+      <workItem from="1723754392026" duration="19000" />
+      <workItem from="1723755197718" duration="1177000" />
+      <workItem from="1725519666783" duration="1744000" />
+      <workItem from="1725792305274" duration="581000" />
+      <workItem from="1725822677720" duration="10872000" />
+      <workItem from="1725864598749" duration="765000" />
+      <workItem from="1725891938426" duration="13000" />
+      <workItem from="1725892267343" duration="7000" />
+      <workItem from="1725896975486" duration="12000" />
+      <workItem from="1726229343688" duration="508000" />
+      <workItem from="1726249685358" duration="6846000" />
+      <workItem from="1726380893652" duration="2223000" />
+      <workItem from="1726723962398" duration="4914000" />
+      <workItem from="1728490858214" duration="3215000" />
+      <workItem from="1731966749857" duration="30028000" />
+      <workItem from="1732300757321" duration="26728000" />
+      <workItem from="1732519781044" duration="31563000" />
+      <workItem from="1734547342784" duration="15258000" />
+      <workItem from="1734614244125" duration="5457000" />
+      <workItem from="1734625015578" duration="294000" />
+      <workItem from="1734626083471" duration="30561000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
