@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: acc_provision
+Version: 6.1.1.2
+Summary: Tool to provision ACI for ACI Containers Controller  Build info: Git commit ID: 60753b18b4cf578e85f0baf0831dbfbf9067c1e8 Build time: 12-20-2024.09:55:40.UTC 
+Home-page: http://github.com/noironetworks/acc-provision/
+Author: Cisco Systems, Inc.
+Author-email: apicapi@noironetworks.com
+License: http://www.apache.org/licenses/LICENSE-2.0
