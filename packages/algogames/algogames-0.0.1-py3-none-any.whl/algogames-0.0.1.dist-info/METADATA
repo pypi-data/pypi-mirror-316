@@ -1,0 +1,13 @@
+Metadata-Version: 2.4
+Name: algogames
+Version: 0.0.1
+Summary: SDK for algogames.ai
+Author-email: Hudson Hochstedler <hudson.hochstedler@algogames.ai>, Harrison Hochstedler <harrison.hochstedler@algogames.ai>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# This is the Python SDK for [AlgoGames](algogames.ai)

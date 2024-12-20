@@ -1,0 +1,11 @@
+algogames/Chess.py,sha256=E9zlas81AV_Robjq8ZKy4ffpGNU-VAAaZ6ZXQDQaay4,10589
+algogames/DuelSnakes.py,sha256=ZxLtIwRMLquFwhtZm0v2hmGyoXK8kli6VIJEphlRkP8,1330
+algogames/Snake.py,sha256=83AZSNhbjCQeLPtHEmx7q0D_e3iy1UiR1oHjWROD7FY,1127
+algogames/TenTen.py,sha256=Ei2UM-xUhMdRKI9yOIjHMXfBf4xV2tYIYxwZTTTHGdA,883
+algogames/TicTacToe.py,sha256=ejYGp343Ng7BbefS19XiuHMBOqhsk0Orl7eNkeZOjYM,1026
+algogames/__init__.py,sha256=HPKxPU3RpSznLQ6YFxCr1v6LBLhY8H6BtysLucLdteA,268
+algogames/base.py,sha256=oNVPiqQVqmZNRWIuAI1wR-YYktbPTDEGSe2K4hgamGI,2880
+algogames-0.0.1.dist-info/METADATA,sha256=3WtTPsdfhoitU91EtJksuCaS2ra2xe8LpwcM04I7rhs,494
+algogames-0.0.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+algogames-0.0.1.dist-info/licenses/LICENSE,sha256=QmNvymUmtIM_U4PZgFxSZDN0qNnVOCfKaVGASC2_2vY,1120
+algogames-0.0.1.dist-info/RECORD,,
