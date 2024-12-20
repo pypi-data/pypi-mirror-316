@@ -1,0 +1,265 @@
+Metadata-Version: 2.1
+Name: aiostdlib
+Version: 0.1.0
+Summary: Only the standard library... but asynchronous!
+Home-page: https://github.com/syubogdanov/aiostdlib
+License: MIT
+Author: Sergei Bogdanov
+Author-email: syubogdanov@outlook.com
+Maintainer: Sergei Bogdanov
+Maintainer-email: syubogdanov@outlook.com
+Requires-Python: >=3.9,<=3.13
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: typing-extensions (>=4.12,<5.0) ; python_full_version <= "3.10.0"
+Project-URL: Documentation, https://github.com/syubogdanov/aiostdlib/tree/main/docs/
+Project-URL: Repository, https://github.com/syubogdanov/aiostdlib
+Description-Content-Type: text/markdown
+
+# aiostdlib
+
+[![PyPI Version][shields/pypi/version]][pypi/homepage]
+[![PyPI Downloads][shields/pypi/downloads]][pypi/homepage]
+[![License][shields/pypi/license]][github/license]
+[![Python Version][shields/python/version]][pypi/homepage]
+
+> [!WARNING]
+> The library is in the pre-alpha stage.
+
+## Key Features
+
+* Provides asynchronous version of the standard library;
+* The same API as the Python's standard, blocking API;
+* Blocking IO is performed in a separate thread.
+
+## Getting Started
+
+### Installation
+
+The library is available as [`aiostdlib`][pypi/homepage] on PyPI:
+
+```shell
+pip install aiostdlib
+```
+
+### Usage
+
+The `aiostdlib` API is the same as the standard library (*v3.13*), except that it is asynchronous.
+
+#### [SOON] builtins
+
+For more, see the [documentation][github/docs/builtins].
+
+```python
+import asyncio
+
+from aiostdlib import builtins
+
+
+async def main() -> None:
+    async with builtins.open("./aiostdlib.txt", mode="w") as file:
+        await file.write("aiostdlib")
+
+
+if __name__ == "__main__":
+    asyncio.run(main())
+```
+
+#### [SOON] io
+
+For more, see the [documentation][github/docs/io].
+
+```python
+import asyncio
+
+from aiostdlib import io
+
+
+async def main() -> None:
+    async with io.open_code("aiostdlib.py") as file:
+        data = await file.read()
+
+
+if __name__ == "__main__":
+    asyncio.run(main())
+```
+
+#### json
+
+For more, see the [documentation][github/docs/json].
+
+```python
+import asyncio
+
+from aiostdlib import builtins, json
+
+
+async def main() -> None:
+    async with builtins.open("./aiostdlib.json", mode="w") as file:
+        await json.dump(["aiostdlib"], file)
+
+
+if __name__ == "__main__":
+    asyncio.run(main())
+```
+
+#### [SOON] pathlib
+
+For more, see the [documentation][github/docs/pathlib].
+
+```python
+import asyncio
+
+from aiostdlib import pathlib
+
+
+async def main() -> None:
+    path = pathlib.Path("./aiostdlib.txt")
+
+    if not await path.exists():
+        await path.write_text("aiostdlib")
+
+
+if __name__ == "__main__":
+    asyncio.run(main())
+```
+
+#### [SOON] shutil
+
+For more, see the [documentation][github/docs/shutil].
+
+```python
+import asyncio
+
+from aiostdlib import shutil
+
+
+async def main() -> None:
+    await shutil.rmtree("/tmp/aiostdlib/")
+
+
+if __name__ == "__main__":
+    asyncio.run(main())
+```
+
+#### [SOON] tarfile
+
+For more, see the [documentation][github/docs/tarfile].
+
+```python
+import asyncio
+
+from aiostdlib import tarfile
+
+
+async def main() -> None:
+    if not await tarfile.is_tarfile("./aiostdlib.tar.gz"):
+        detail = "The file is not a `tar` archive"
+        raise RuntimeError(detail)
+
+
+if __name__ == "__main__":
+    asyncio.run(main())
+```
+
+#### [SOON] tempfile
+
+For more, see the [documentation][github/docs/tempfile].
+
+```python
+import asyncio
+
+from aiostdlib import tempfile
+
+
+async def main() -> None:
+    tempdir, path = await asyncio.gather(
+        tempfile.gettempdir(),
+        tempfile.mkdtemp(),
+    )
+
+    if not path.startswith(tempdir):
+        detail = "This is strange..."
+        raise RuntimeError(detail)
+
+
+if __name__ == "__main__":
+    asyncio.run(main())
+```
+
+#### tomllib
+
+For more, see the [documentation][github/docs/tomllib].
+
+```python
+import asyncio
+
+from aiostdlib import builtins, tomllib
+
+
+async def main() -> None:
+    async with builtins.open("./aiostdlib.toml", mode="rb") as file:
+        data = await tomllib.load(file)
+
+        if "aiostdlib" not in data:
+            detail = "Where is 'aiostdlib'?"
+            raise RuntimeError(detail)
+
+
+if __name__ == "__main__":
+    asyncio.run(main())
+```
+
+#### [SOON] zipfile
+
+For more, see the [documentation][github/docs/zipfile].
+
+```python
+import asyncio
+
+from aiostdlib import zipfile
+
+
+async def main() -> None:
+    if not await zipfile.is_zipfile("./aiostdlib.zip"):
+        detail = "The file is not a `zip` archive"
+        raise RuntimeError(detail)
+
+
+if __name__ == "__main__":
+    asyncio.run(main())
+```
+
+## License
+
+MIT License, Copyright (c) 2024 Sergei Bogdanov. See [LICENSE][github/license] file.
+
+<!-- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- -->
+
+[github/docs/builtins]: https://github.com/syubogdanov/aiostdlib/tree/main/docs/builtins.md
+[github/docs/io]: https://github.com/syubogdanov/aiostdlib/tree/main/docs/io.md
+[github/docs/json]: https://github.com/syubogdanov/aiostdlib/tree/main/docs/json.md
+[github/docs/pathlib]: https://github.com/syubogdanov/aiostdlib/tree/main/docs/pathlib.md
+[github/docs/shutil]: https://github.com/syubogdanov/aiostdlib/tree/main/docs/shutil.md
+[github/docs/tarfile]: https://github.com/syubogdanov/aiostdlib/tree/main/docs/tarfile.md
+[github/docs/tempfile]: https://github.com/syubogdanov/aiostdlib/tree/main/docs/tempfile.md
+[github/docs/tomllib]: https://github.com/syubogdanov/aiostdlib/tree/main/docs/tomllib.md
+[github/docs/zipfile]: https://github.com/syubogdanov/aiostdlib/tree/main/docs/zipfile.md
+[github/license]: https://github.com/syubogdanov/aiostdlib/tree/main/LICENSE
+
+[pypi/homepage]: https://pypi.org/project/aiostdlib/
+
+[shields/pypi/downloads]: https://img.shields.io/pypi/dm/aiostdlib.svg?color=green
+[shields/pypi/license]: https://img.shields.io/pypi/l/aiostdlib.svg?color=green
+[shields/pypi/version]: https://img.shields.io/pypi/v/aiostdlib.svg?color=green
+[shields/python/version]: https://img.shields.io/pypi/pyversions/aiostdlib.svg?color=green
+
