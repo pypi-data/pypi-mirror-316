@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: tfdocs-cli
+Version: 0.2.12.dev14
+Summary: Terraform provider documentation viewer for the CLI
+Author: acrease
+Author-email: alex@crease.sh
+Requires-Python: >=3.11.4,<3.14
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Provides-Extra: build
+Requires-Dist: ijson (>=3.3.0,<4.0.0)
+Requires-Dist: result (>=0.17.0,<0.18.0)
+Requires-Dist: rich (>=13.8.1,<14.0.0)
+Requires-Dist: textual (>=0.82.0,<0.83.0)
+Description-Content-Type: text/markdown
+
+# TFDocs
+*Read Terraform provider documentation in the terminal*
+
+TFDocs is a command-line tool that lets you view provider documentation from the terminal.
+
+## Installation
+
+### Supported Platforms
+| Platform        | Software Repository | Manual Install     |
+|-----------------|---------------------|--------------------|
+| linux-x86_64    | No                  | Yes                |
+| linux-arm64     | No                  | Yes                |
+| debian (Ubuntu) | Yes                 | Yes                |
+| homebrew        | Yes                 | Yes                |
+| nix             | No (NUR in future\*)| Yes, as flake      |
+
+### Manual Installation
+This is the current primary method of installation for different platforms. In the future, different repositories for different platforms will be provided.
+1. Download the relevant binary from the 'Releases' section on GitHub
+   ```
+     curl https://github.com/Apollo-XIV/tfdocs/releases/latest/PLATFORM 
+   ```
+2. 
+
+\*The NUR is the Nix-User-Repository
+
