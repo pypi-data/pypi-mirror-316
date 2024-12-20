@@ -1,0 +1,2 @@
+[console_scripts]
+smul = smul:hello
