@@ -1,0 +1,8 @@
+PUBLISH ON TEST PYPI:
+uv publish --publish-url https://test.pypi.org/legacy/ --token $TEST_PYPI_TOKEN
+
+PUBLISH ON PYPI:
+uv publish --token $PYPI_TOKEN
+
+
+uv run --with shiny-calendar --index-url https://test.pypi.org/simple/ --no-project -- python -c "import shiny_calendar"
