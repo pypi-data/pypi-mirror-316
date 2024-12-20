@@ -1,0 +1,98 @@
+Metadata-Version: 2.1
+Name: graylog_telemidia
+Version: 1.0.1
+Summary: Uma abstração da biblioteca graypy, projetada para adaptar as requisições do Graylog ao padrão utilizado pela Telemidia.
+Home-page: http://git.telemidia.net.br/Telemidia/graylog-telemidia-py
+Author: Thales Casa Grande de Lima
+Author-email: thales.lima@telemidia.net.br
+License: UNKNOWN
+Description: # graylog-telemidia-py
+        
+        Uma abstração da biblioteca **graypy**, projetada para adaptar as requisições do Graylog ao padrão utilizado pela Telemidia.
+        
+        ## Instalação
+        
+        Para instalar a biblioteca, utilize o seguinte comando:
+        
+        ```bash
+        pip3 install graylog_telemidia
+        ```
+        
+        ## Inicialização
+        
+        Para inicializar a biblioteca, você deve configurar as informações do Graylog. Um exemplo de configuração é apresentado abaixo:
+        
+        ```python
+        from graylog_telemidia import GraylogTelemidia
+        
+        GRAYLOG_CONFIG = {
+            "server": "graylog-datanode.myserver.com",
+            "inputPort": 12201,
+            "appName": "my-app", # Nome que será exibido no campo "facility" do Graylog
+            "environment": "PROD" # Pode ser "PROD" ou "DEV"
+        } # Todos os parâmetros são obrigatórios
+        
+        graylog = GraylogTelemidia(GRAYLOG_CONFIG)
+        ```
+        ### Configuração via variáveis de ambiente
+        
+        Como alternativa, você pode definir a configuração através de variáveis de ambiente. As variáveis necessárias são:
+        
+        * GRAYLOG_SERVER
+        * GRAYLOG_INPUT_PORT
+        * GRAYLOG_APP_NAME
+        * GRAYLOG_ENVIRONMENT
+        
+        Neste caso, o objeto pode ser inicializado sem a necessidade de passar um parâmetro de configuração:
+        
+        ```python
+        graylog = GraylogTelemidia()
+        ```
+        
+        ## Utilização
+        
+        A biblioteca permite o envio de mensagens de log de forma simples e eficiente. Veja alguns exemplos de uso:
+        
+        ### Enviar uma mensagem simples
+        
+        ```python
+        graylog.error('Ocorreu um erro horrível!')
+        ```
+        
+        ### Enviar mensagem com informações adicionais
+        
+        Para enviar uma mensagem com informações adicionais, basta adicionar um argumento adicional ao método de envio de mensagem. Esse argumento pode ser um dicionário ou qualquer outro objeto que possa ser convertido para JSON. O exemplo abaixo demonstra como enviar uma mensagem de erro com informações adicionais:
+        
+        ```python
+        debug_info_example = {
+            "isUserAuthenticated": True,
+            "isUserAdmin": False,
+        }
+        graylog.error('Ocorreu um erro horrível!', debug_info_example)
+        ```
+        ### Enviar traceback
+        Para enviar o traceback de uma exceção, utilize o parâmetro exc_info, que também pode ser combinado com o argumento de informações adicionais:
+        
+        
+        ```python
+        graylog.error('Ocorreu um erro horrível!', exc_info=1)
+        ```
+        
+        ## Métodos suportados
+        Além do método 'error', a biblioteca suporta outros métodos, todos com suporte a informações adicionais e traceback:
+        Método | Nível Graylog
+        --- | ---
+        critical | 2
+        error | 3
+        warning | 4
+        info | 6
+        debug | 7
+        
+        ## Licença
+        Este projeto está licenciado sob a Licença MIT.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
