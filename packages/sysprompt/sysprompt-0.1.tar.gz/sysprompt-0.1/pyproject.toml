@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "Sysprompt"
+version = "0.1"
+description = "Official Python SDK for managing and consuming LLM prompts hosted on SysPrompt"
+authors = [
+    { name = "SysPrompt (powered by DailyBot)", email = "sdk@sysprompt.com" },
+]
+dependencies = [
+    "requests",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
