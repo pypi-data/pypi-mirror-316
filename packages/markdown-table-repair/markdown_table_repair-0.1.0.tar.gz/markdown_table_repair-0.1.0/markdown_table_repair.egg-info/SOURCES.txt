@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+markdown_table_repair/__init__.py
+markdown_table_repair/repair.py
+markdown_table_repair.egg-info/PKG-INFO
+markdown_table_repair.egg-info/SOURCES.txt
+markdown_table_repair.egg-info/dependency_links.txt
+markdown_table_repair.egg-info/requires.txt
+markdown_table_repair.egg-info/top_level.txt
+tests/test_repair.py
