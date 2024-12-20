@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: re-matrix
+Version: 0.0.1
+Summary: Simple python package for row reducing matrices
+Author: Charlie
+Author-email: <charlie@thatcharlie.com>
+Keywords: python,matrices,row reduction,linear algebra
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+
+Simple python package for row reducing matrices
