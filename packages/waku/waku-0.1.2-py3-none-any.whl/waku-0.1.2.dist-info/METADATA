@@ -1,0 +1,29 @@
+Metadata-Version: 2.4
+Name: waku
+Version: 0.1.2
+Summary: Microframework for building modular and loosely coupled applications
+Project-URL: Changelog, https://github.com/waku-py/waku/blob/master/CHANGELOG.md
+Project-URL: Issues, https://github.com/waku-py/waku/issues
+Project-URL: Repository, https://github.com/waku-py/waku
+Author-email: Daniil Kharkov <fadeddexofan@gmail.com>, Doctor <thirvondukr@gmail.com>
+License-Expression: MIT
+License-File: LICENSE
+Keywords: architecture,decoupled,framework,modular
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: Typing :: Typed
+Requires-Python: >=3.11
+Provides-Extra: aioinject
+Requires-Dist: aioinject>=0.35.3; extra == 'aioinject'
+Provides-Extra: litestar
+Requires-Dist: litestar-msgspec; extra == 'litestar'
+Requires-Dist: litestar>2; extra == 'litestar'
