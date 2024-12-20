@@ -1,0 +1,130 @@
+Metadata-Version: 2.1
+Name: unfazed
+Version: 0.0.4
+Summary: a django-like async python web framework
+License: BSD 3-Clause "New" or "Revised"
+Author: xin.zhou
+Author-email: zhouxin576@gmail.com
+Requires-Python: >=3.12,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: aerich (>=0.8.0,<0.9.0)
+Requires-Dist: anyio (>=4.7.0,<5.0.0)
+Requires-Dist: asgiref (>=3.8.1,<4.0.0)
+Requires-Dist: click (>=8.1.7,<9.0.0)
+Requires-Dist: httpx (>=0.27.2,<0.28.0)
+Requires-Dist: itsdangerous (>=2.2.0,<3.0.0)
+Requires-Dist: jinja2 (>=3.1.3,<4.0.0)
+Requires-Dist: orjson (>=3.10.3,<4.0.0)
+Requires-Dist: pydantic (>=2.6.3,<3.0.0)
+Requires-Dist: python-multipart (>=0.0.16,<0.0.17)
+Requires-Dist: redis (>=5.0.8,<6.0.0)
+Requires-Dist: starlette (>=0.37.2,<0.38.0)
+Requires-Dist: tortoise-orm (>=0.22.2,<0.23.0)
+Requires-Dist: uvicorn (>=0.28.0,<0.29.0)
+Description-Content-Type: text/markdown
+
+
+
+
+<p align="center">
+    <em>Production Ready ASGI web framework</em>
+</p>
+
+
+-----
+
+**Documentation**: [unfazed](https://unfazed.readthedocs.io/)
+
+-----
+
+
+Unfazed
+----
+
+
+Unfazed is a fully-featured ASGI web framework that is production ready. It is designed to build fast, scalable, maintainable web applications and inspired by Django.
+
+
+Unfazed offer you
+
+- pluggable app system
+- command system
+- middleware
+- tortoise-orm integration
+- redis cache integration
+- process safe log handler
+- lifespan protocol
+- openapi support
+- serializer support based on tortoise-orm
+- scalable admin page with unfazed-admin(coming soon)
+- basic rbac system
+- session support
+- test client support
+- request args parser support
+
+
+and with unfazed ecosystem
+
+- unfazed-admin
+- unfazed-prometheus
+- unfazed-celery
+- unfazed-sentry
+- unfazed-redis
+- unfazed-locust
+- unfazed-pyroscope
+- unfazed-scalene ?
+
+with these tools, you can build a production-ready web application quickly.
+
+
+## Installation
+
+```shell
+
+pip install unfazed
+
+
+```
+
+## Quick start
+
+1、create a new project
+
+```shell
+unfazed-cli startproject -n myproject
+
+cd myproject/src/backend
+
+docker-compose up -d
+docker-compose exec unfazed bash
+
+
+```
+
+2. create a new app
+
+```shell
+
+# add app to project
+python manage.py startapp -n myapp
+
+```
+
+
+3. runserver
+
+```shell
+
+python manage.py runserver --host 0.0.0.0 --port 9527
+
+```
+
+4. follow toturial
+
+[unfazed-tutorial](https://unfazed.readthedocs.io/zh_CN/latest/tutorial/index.html)
+
+
+
