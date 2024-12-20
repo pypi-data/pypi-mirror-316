@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: graylog-telemidia
+Version: 1.0
+Summary: Uma abstração da biblioteca graypy, projetada para adaptar as requisições do Graylog ao padrão utilizado pela Telemidia.
+Home-page: http://git.telemidia.net.br/Telemidia/graylog-telemidia-py
+Author: Thales Casa Grande de Lima
+Author-email: thales.lima@telemidia.net.br
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+
+UNKNOWN
+
