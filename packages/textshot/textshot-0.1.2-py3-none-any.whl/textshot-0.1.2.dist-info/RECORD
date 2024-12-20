@@ -1,0 +1,11 @@
+textshot/logger.py,sha256=yX6XSU3U29CeHPYsxu2F6_Nkos1YK23-YX1veUn7_Yo,380
+textshot/messages.py,sha256=MkT0VzuO_KqryNXTfrpsS4geSPDDEecyV7LYiMRcis0,180
+textshot/notifications.py,sha256=XUBbOu4qJy2vLcLPZ-VPThegtnW_tIZfC3wcTc5u8RM,759
+textshot/ocr.py,sha256=U3_z973rewsakj3meqR6vMjWgi3Cbcp1rTxTcHso1r4,1182
+textshot/textshot.py,sha256=XzSHp-oDfkU0jVtwe9qKgyfMr_iS1Jj-93wv_E924-s,5651
+textshot-0.1.2.dist-info/LICENSE.txt,sha256=PH7sRSfvcPlP9zRd54FTkL5N_LcfNWdbhPj-QaMhHS4,1086
+textshot-0.1.2.dist-info/METADATA,sha256=4t4OlRog5s3hLbBDDPZgjrnRgwTniUmRoE9mXQWIPCI,4992
+textshot-0.1.2.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+textshot-0.1.2.dist-info/entry_points.txt,sha256=R9BJezG1caW0cwrtzc7ygKKitQv4PHcttrC_UUS090g,102
+textshot-0.1.2.dist-info/top_level.txt,sha256=QQhzZwqU7HF5FHB7kOoqq0m6fiGvNB7so2nobvzcaxw,9
+textshot-0.1.2.dist-info/RECORD,,
