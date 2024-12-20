@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+splicer/__init__.py
+splicer/cli.py
+splicer_cli.egg-info/PKG-INFO
+splicer_cli.egg-info/SOURCES.txt
+splicer_cli.egg-info/dependency_links.txt
+splicer_cli.egg-info/entry_points.txt
+splicer_cli.egg-info/top_level.txt
