@@ -1,0 +1,27 @@
+2024-12-20 11:24:43,397 - Keys words and phrases - DEBUG - Start measuring get_keys_words
+2024-12-20 11:24:43,426 - Keys words and phrases - DEBUG - Splitted (Len=51) text completed at 0.0282
+2024-12-20 11:24:44,823 - Keys words and phrases - DEBUG - NLP chunk document loaded in 1.3968 secondes
+2024-12-20 11:24:45,262 - Keys words and phrases - DEBUG - NLP chunk document loaded in 0.4383 secondes
+2024-12-20 11:24:45,705 - Keys words and phrases - DEBUG - NLP chunk document loaded in 0.4431 secondes
+2024-12-20 11:24:46,124 - Keys words and phrases - DEBUG - NLP chunk document loaded in 0.4179 secondes
+2024-12-20 11:24:46,535 - Keys words and phrases - DEBUG - NLP chunk document loaded in 0.4109 secondes
+2024-12-20 11:24:46,951 - Keys words and phrases - DEBUG - NLP chunk document loaded in 0.4153 secondes
+2024-12-20 11:24:47,379 - Keys words and phrases - DEBUG - NLP chunk document loaded in 0.4271 secondes
+2024-12-20 11:24:47,790 - Keys words and phrases - DEBUG - NLP chunk document loaded in 0.4105 secondes
+2024-12-20 11:24:48,195 - Keys words and phrases - DEBUG - NLP chunk document loaded in 0.4046 secondes
+2024-12-20 11:24:48,611 - Keys words and phrases - DEBUG - NLP chunk document loaded in 0.4156 secondes
+2024-12-20 11:24:49,013 - Keys words and phrases - DEBUG - NLP chunk document loaded in 0.4009 secondes
+2024-12-20 11:24:49,426 - Keys words and phrases - DEBUG - NLP chunk document loaded in 0.4120 secondes
+2024-12-20 11:24:49,813 - Keys words and phrases - DEBUG - NLP chunk document loaded in 0.3871 secondes
+2024-12-20 11:24:50,205 - Keys words and phrases - DEBUG - NLP chunk document loaded in 0.3908 secondes
+2024-12-20 11:24:50,587 - Keys words and phrases - DEBUG - NLP chunk document loaded in 0.3808 secondes
+2024-12-20 11:24:51,013 - Keys words and phrases - DEBUG - NLP chunk document loaded in 0.4261 secondes
+2024-12-20 11:24:51,431 - Keys words and phrases - DEBUG - NLP chunk document loaded in 0.4170 secondes
+2024-12-20 11:24:51,828 - Keys words and phrases - DEBUG - NLP chunk document loaded in 0.3963 secondes
+2024-12-20 11:24:52,224 - Keys words and phrases - DEBUG - NLP chunk document loaded in 0.3953 secondes
+2024-12-20 11:24:52,632 - Keys words and phrases - DEBUG - NLP chunk document loaded in 0.4072 secondes
+2024-12-20 11:24:52,633 - Keys words and phrases - DEBUG - Freq_mots step 1 completed at 9.2353
+2024-12-20 11:24:52,633 - Keys words and phrases - DEBUG - Freq_mots completed at 9.2355
+2024-12-20 11:24:52,633 - Keys words and phrases - DEBUG - Threshold : 0.1
+2024-12-20 11:24:52,633 - Keys words and phrases - DEBUG - freq_mot threshold completed at 9.2356
+2024-12-20 11:24:52,633 - Keys words and phrases - DEBUG - freq_mot sorted at 9.2357

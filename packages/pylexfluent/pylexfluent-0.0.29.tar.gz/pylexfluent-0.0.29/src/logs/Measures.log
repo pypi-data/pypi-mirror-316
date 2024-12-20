@@ -1,0 +1,9 @@
+2024-12-20 11:24:43,397 - Measures - DEBUG - get_text_and_tables_from_pdf executed in 6.0445 seconds 
+2024-12-20 11:24:43,399 - Measures - DEBUG - sanitize_text executed in 0.0020 seconds 
+2024-12-20 11:24:52,633 - Measures - DEBUG - get_key_words executed in 9.2358 seconds 
+2024-12-20 11:24:55,114 - Measures - DEBUG - inference executed in 2.4801 seconds 
+2024-12-20 11:24:55,114 - Measures - DEBUG - get_classification executed in 17.7617 seconds 
+2024-12-20 11:24:55,114 - Measures - DEBUG - do_test_classifier executed in 17.7618 seconds 
+2024-12-20 11:25:12,029 - Measures - DEBUG - get_text_and_tables_from_pdf executed in 6.7715 seconds 
+2024-12-20 11:25:16,258 - Measures - DEBUG - extract_data executed in 11.0016 seconds 
+2024-12-20 11:25:16,258 - Measures - DEBUG - do_test_odp executed in 11.0026 seconds 
