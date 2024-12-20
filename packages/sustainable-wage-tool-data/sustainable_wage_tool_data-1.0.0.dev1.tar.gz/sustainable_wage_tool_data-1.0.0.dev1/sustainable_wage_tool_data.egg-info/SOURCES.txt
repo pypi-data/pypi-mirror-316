@@ -1,0 +1,9 @@
+LICENCE
+README.md
+setup.py
+sustainable_wage_tool_data/__main__.py
+sustainable_wage_tool_data.egg-info/PKG-INFO
+sustainable_wage_tool_data.egg-info/SOURCES.txt
+sustainable_wage_tool_data.egg-info/dependency_links.txt
+sustainable_wage_tool_data.egg-info/requires.txt
+sustainable_wage_tool_data.egg-info/top_level.txt
