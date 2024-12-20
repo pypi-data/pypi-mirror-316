@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NHL Schedules</title>
+</head>
+<body>
+    <h1>NHL Schedules</h1>
+    <p>Right click and copy the link to the calendar for the team's schedule. The description has what networks it is available on.</p>
+    <ul>
+        {% for team in teams %}
+            <li><a href="{{ url_for('schedule', team=team.abbreviation, output_type='ics') }}">{{ team.name }}</a></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
