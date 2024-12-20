@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: my_graph_algorithms
+Version: 0.1.2
+Summary: A package for graph algorithms, including Floyd-Warshall.
+Author: Hemanth Reddy Gangula
+Author-email: hemanthreddy8181@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# Graphs
+
+A Python package for graph algorithms, including a Floyd-Warshall implementation.
+
+## Installation
+
+Install the package using pip:
+
+```bash
+pip install my-graph-algorithms
+
+
+
+## Useage
+```python
+from graphs.floyd_warshall_bidirectional import floyd_warshall_bidirectional
+
+# Example usage
+graph = [[0, 3, float('inf')], [float('inf'), 0, 1], [float('inf'), float('inf'), 0]]
+result = floyd_warshall_bidirectional(graph)
+print(result)
+
+
