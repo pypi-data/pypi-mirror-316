@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/datalib_ym/__init__.py
+src/datalib_ym/advanced_analysis.py
+src/datalib_ym/data_manipulation.py
+src/datalib_ym/statistics.py
+src/datalib_ym/visualization.py
+src/datalib_ym.egg-info/PKG-INFO
+src/datalib_ym.egg-info/SOURCES.txt
+src/datalib_ym.egg-info/dependency_links.txt
+src/datalib_ym.egg-info/requires.txt
+src/datalib_ym.egg-info/top_level.txt
+tests/test_data_manipulation.py
