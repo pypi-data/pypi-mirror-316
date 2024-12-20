@@ -1,0 +1,5 @@
+[console_scripts]
+build=scripts:build
+docs-build=scripts:docs_build
+docs-serve=scripts:docs_serve
+
