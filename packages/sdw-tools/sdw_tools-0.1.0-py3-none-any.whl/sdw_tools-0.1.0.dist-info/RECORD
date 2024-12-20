@@ -1,0 +1,14 @@
+sdw_tools/MetricCalculator.py,sha256=jFTNlLIDlRC55-nDNQxOgOcFPgBefvRzgM6F-cmwN1U,11030
+sdw_tools/RepoScraper.py,sha256=gQwqWf2RWP0TH5lxQjA9t1MmGjBQNqxewn5ukabZ9yA,11813
+sdw_tools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sdw_tools/backlog_inversion.py,sha256=UNsIN5zp0XPZkvNBHoUHpswP9FDQjJ8_WkL5X_J2yuA,3407
+sdw_tools/duplicate_work.py,sha256=mRY8ew6qqpvIX8G2OU7McikV9_J1iNlAUJttGOaVRA0,703
+sdw_tools/ffr.py,sha256=GppXgfBn8D5vuYiBaM_KFsEOPm7EXW-90hxCs9veN0E,5607
+sdw_tools/pdi.py,sha256=1lrYkHdFCHIsQ6wTq8UKWeg7TFuI5eVEpiorvSec7i0,1852
+sdw_tools/stale_forks.py,sha256=-wnXWT43LkT7OTxPCTPrMa9_aKksREJTLCzflYpSwtw,2039
+sdw_tools/utils.py,sha256=rC807f1xrqU1mjRqwFQGui_FzLZmYJHEb0NbOb8uFi8,866
+sdw_tools-0.1.0.dist-info/LICENSE,sha256=PZ4rtZqkCW6efnxiLvda90KPLMR7uiKQdZ6NxNNu81s,1057
+sdw_tools-0.1.0.dist-info/METADATA,sha256=xE3g_3cVxdErB1o3prckc6jVYQXlvqFKMpqcoXeI1Cc,665
+sdw_tools-0.1.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+sdw_tools-0.1.0.dist-info/top_level.txt,sha256=CeYQk4w3nXv9Mxj2AKa7h3urdRGzmryspMIL8LwWH8I,10
+sdw_tools-0.1.0.dist-info/RECORD,,
