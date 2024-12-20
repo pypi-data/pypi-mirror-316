@@ -1,0 +1,10 @@
+README.md
+setup.py
+fireflies_cli/__init__.py
+fireflies_cli/cli.py
+fireflies_cli.egg-info/PKG-INFO
+fireflies_cli.egg-info/SOURCES.txt
+fireflies_cli.egg-info/dependency_links.txt
+fireflies_cli.egg-info/entry_points.txt
+fireflies_cli.egg-info/requires.txt
+fireflies_cli.egg-info/top_level.txt

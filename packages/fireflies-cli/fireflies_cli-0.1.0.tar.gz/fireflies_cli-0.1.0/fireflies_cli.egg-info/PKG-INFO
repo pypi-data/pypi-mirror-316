@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: fireflies-cli
+Version: 0.1.0
+Summary: Command line interface for Fireflies.ai
+Home-page: https://github.com/trilogy-group/pocs
+Author: David Schwartz
+Author-email: david.schwartz@devfactory.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: click
+Requires-Dist: python-dotenv
+Requires-Dist: fireflies-sdk
+
+# Fireflies CLI
+
+Command line interface for Fireflies.ai. This package provides a convenient way to interact with Fireflies.ai from the command line.
+
+## Installation
+
+```bash
+pip install fireflies-cli
+```
+
+## Usage
+
+```bash
+# Set your API key (only needed once)
+ff config set-key YOUR_API_KEY
+
+# Join a meeting
+ff join --url https://meet.google.com/xxx-yyyy-zzz
+
+# Get video URL for a transcript
+ff video TRANSCRIPT_ID
+
+# Download video
+ff video -d TRANSCRIPT_ID
+
+# List recent transcripts
+ff list
+
+# Delete a transcript
+ff delete TRANSCRIPT_ID
+```
+
+## Features
+
+- Join meetings with optional duration and name
+- Get video URLs for transcripts
+- Download meeting recordings
+- List transcripts
+- Delete transcripts
+
+## Note
+
+This CLI tool uses the `fireflies-sdk` package. If you need programmatic access to Fireflies.ai, consider using the SDK directly.
