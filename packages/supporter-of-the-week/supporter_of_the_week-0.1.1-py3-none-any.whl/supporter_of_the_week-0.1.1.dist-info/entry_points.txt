@@ -1,0 +1,3 @@
+[console_scripts]
+supporter_of_the_week=supporter_of_the_week:main
+
