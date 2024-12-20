@@ -1,0 +1,7 @@
+CHANGES
+=======
+
+v0.20241219.2
+-------------
+
+* Remove netbox-manager as requirement (#1162)
