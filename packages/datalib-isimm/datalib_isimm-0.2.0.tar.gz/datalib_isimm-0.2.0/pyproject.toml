@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "datalib"
+version = "0.2.0"
+description = ""
+authors = ["Yassine Saidane <yassinesaidane003@gmail.com>"]
+readme = "README.md"
+packages = [{include = "src/datalib"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+[build-system]
+requires = ["setuptools>=45", "wheel", "setuptools_scm>=6.2"]
+build-backend = "setuptools.build_meta"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+addopts = "-ra -q"
+
+[tool.black]
+line-length = 88
+include = '\.pyi?$'
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3 
