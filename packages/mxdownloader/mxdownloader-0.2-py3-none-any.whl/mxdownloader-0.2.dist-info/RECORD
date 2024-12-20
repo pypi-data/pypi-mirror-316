@@ -1,0 +1,11 @@
+mxdownloader/__init__.py,sha256=uwJLRsjvfC2XNcMMjDrROOjb6EjMRmB4VyjUU8ojDjI,22
+mxdownloader/cli_click.py,sha256=G4YMaTPWFmSgqLlG6q5N9slVDgB4GdtHkcWVnL66mGQ,614
+mxdownloader/cli_inq.py,sha256=gg_0_Pif_-PMT7YCtrq5Mg-zt8p38grsLcTfWsefBnQ,4403
+mxdownloader/functions.py,sha256=0zV4RRBIZfD61pqswKmQXJ7bg0q_Bx1lcbGiKmpV0n8,14662
+mxdownloader/mdx.py,sha256=T7ovx3lalKUuh0Ce7kSaQXSYcLx0lzQPhFaNuuPZYa0,228
+mxdownloader-0.2.dist-info/LICENSE,sha256=GVdNXLbyS7aaORpsukpgLmYxNJ-ReFL0k1zkLiP5Qss,1065
+mxdownloader-0.2.dist-info/METADATA,sha256=voobn3huEYN6wq9_ONUcYegVrIS7481MYjG0tSBtSO0,5497
+mxdownloader-0.2.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+mxdownloader-0.2.dist-info/entry_points.txt,sha256=bme-j9jFKFQD-lPg1HXoQ2tPJN7emvk9Vg-lnGCyG68,42
+mxdownloader-0.2.dist-info/top_level.txt,sha256=3OTSkVg4U_5yZ541RqnkY6dBrQI7e7RnZZABrID58_Y,13
+mxdownloader-0.2.dist-info/RECORD,,
