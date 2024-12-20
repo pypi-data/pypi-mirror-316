@@ -1,0 +1,9 @@
+README.md
+setup.py
+cxcsvtopandas/__init__.py
+cxcsvtopandas/dataframeloader.py
+cxcsvtopandas.egg-info/PKG-INFO
+cxcsvtopandas.egg-info/SOURCES.txt
+cxcsvtopandas.egg-info/dependency_links.txt
+cxcsvtopandas.egg-info/requires.txt
+cxcsvtopandas.egg-info/top_level.txt
