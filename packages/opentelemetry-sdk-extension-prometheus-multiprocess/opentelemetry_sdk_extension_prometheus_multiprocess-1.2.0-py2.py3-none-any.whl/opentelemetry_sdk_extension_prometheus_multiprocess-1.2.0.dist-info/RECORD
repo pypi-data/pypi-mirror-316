@@ -1,0 +1,6 @@
+opentelemetry/sdk/extension/prometheus_multiprocess/__init__.py,sha256=5Pm1WRhHmTyTGpsVYHfBp83kMWpd5Prn3hdAYsL8HNA,129
+opentelemetry/sdk/extension/prometheus_multiprocess/provider.py,sha256=KNVFWxMfNsNwinja99m9A2_BafVgofoSCmNi391CIKk,9485
+opentelemetry/sdk/extension/prometheus_multiprocess/registry.py,sha256=S0IHYUVAWs9haKAg1aNBlVAfmHBceom6c1ijmQsO_cE,658
+opentelemetry_sdk_extension_prometheus_multiprocess-1.2.0.dist-info/METADATA,sha256=beeWkGbAxx3uSAD3I6xTlRKLEzgU1_zCiXn7OwbRvYA,3154
+opentelemetry_sdk_extension_prometheus_multiprocess-1.2.0.dist-info/WHEEL,sha256=cDcbFFSNXOE-241I5PFuLkIYfR_FM7WTlPEi33njInY,105
+opentelemetry_sdk_extension_prometheus_multiprocess-1.2.0.dist-info/RECORD,,
