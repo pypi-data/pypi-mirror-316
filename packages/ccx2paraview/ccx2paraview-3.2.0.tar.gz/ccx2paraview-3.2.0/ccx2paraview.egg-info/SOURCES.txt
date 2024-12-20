@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+ccx2paraview/__init__.py
+ccx2paraview/__main__.py
+ccx2paraview/cli.py
+ccx2paraview/common.py
+ccx2paraview.egg-info/PKG-INFO
+ccx2paraview.egg-info/SOURCES.txt
+ccx2paraview.egg-info/dependency_links.txt
+ccx2paraview.egg-info/entry_points.txt
+ccx2paraview.egg-info/requires.txt
+ccx2paraview.egg-info/top_level.txt
+tests/test.py
