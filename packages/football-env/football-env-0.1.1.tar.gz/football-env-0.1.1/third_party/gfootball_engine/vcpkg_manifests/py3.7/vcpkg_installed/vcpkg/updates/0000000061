@@ -1,0 +1,8 @@
+Package: boost-container-hash
+Version: 1.78.0
+Depends: boost-assert, boost-config, boost-core, boost-detail, boost-integer, boost-static-assert, boost-type-traits, boost-vcpkg-helpers
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 0e9858959bd16cb7109cfe7c379554a6e6eb6ebd52d9502ea6d59a16f11a1575
+Description: Boost container_hash module
+Status: install ok installed

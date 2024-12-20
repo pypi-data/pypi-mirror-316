@@ -1,0 +1,7 @@
+pygame==2.1.1
+opencv-python
+psutil==6.0.0
+numpy
+gym==0.22.0
+absl-py==2.1.0
+wheel==0.38.0
