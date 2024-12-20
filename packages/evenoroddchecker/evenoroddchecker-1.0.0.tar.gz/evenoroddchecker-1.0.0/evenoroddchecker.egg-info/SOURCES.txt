@@ -1,0 +1,7 @@
+setup.py
+evenoroddchecker.egg-info/PKG-INFO
+evenoroddchecker.egg-info/SOURCES.txt
+evenoroddchecker.egg-info/dependency_links.txt
+evenoroddchecker.egg-info/top_level.txt
+evenoroddtool/__init__.py
+evenoroddtool/evenorodd.py
