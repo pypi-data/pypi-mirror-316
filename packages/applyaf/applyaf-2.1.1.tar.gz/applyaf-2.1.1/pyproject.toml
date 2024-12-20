@@ -1,0 +1,37 @@
+# pyproject.toml
+
+[project]
+name = "applyaf"
+version = "2.1.1"
+description = "Apply antenna factors and cable loss to spectrum analyzer measurements"
+readme = "README.md"
+authors = [{ name = "Matthew Rankin", email = "matthew@questrail.com" }]
+requires-python = ">=3.12"
+dependencies = ["numpy>=2.2.0"]
+classifiers = [
+  'Programming Language :: Python',
+  'Programming Language :: Python :: 3',
+  'Programming Language :: Python :: 3.12',
+  'Programming Language :: Python :: 3.13',
+  'License :: OSI Approved :: MIT License',
+  'Development Status :: 5 - Production/Stable',
+  'Operating System :: OS Independent',
+  'Intended Audience :: Developers',
+  'Topic :: Software Development :: Libraries :: Python Modules',
+]
+
+[project.urls]
+Homepage = "https://github.com/questrail/applyaf"
+Issues = "https://github.com/questrail/applyaf/issues"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.pyright]
+venvPath = "."
+venv = ".venv"
+include = ["src"]
+
+[dependency-groups]
+dev = ["pytest>=8.3.4"]
