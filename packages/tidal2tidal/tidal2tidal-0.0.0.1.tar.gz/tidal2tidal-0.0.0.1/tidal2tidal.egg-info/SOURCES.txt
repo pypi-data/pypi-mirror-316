@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+tidal2tidal/__init__.py
+tidal2tidal/__main__.py
+tidal2tidal/tidal2tidal.py
+tidal2tidal.egg-info/PKG-INFO
+tidal2tidal.egg-info/SOURCES.txt
+tidal2tidal.egg-info/dependency_links.txt
+tidal2tidal.egg-info/entry_points.txt
+tidal2tidal.egg-info/requires.txt
+tidal2tidal.egg-info/top_level.txt
