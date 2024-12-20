@@ -1,0 +1,13 @@
+ipfs_model_manager_py/__init__.py,sha256=Z7IioirLlIPdwWbNTYS_cEuZiYjyX7sWFX6wckDX0w8,189
+ipfs_model_manager_py/ipfs_model_manager.py,sha256=sHRmd_2TwVUnYJaonbJR5wFsK-wlepdiHrHpjKNFtgw,108120
+ipfs_model_manager_py/test_fio.py,sha256=B-cGwo-rNUOW8TeGWUM7thwUaV4ITGBBpo8SKiF3Au0,4502
+ipfs_model_manager_py/aria2/aria2.py,sha256=mO56UzuLISx3XCmjhLYGSYjc69MT2yU3ihd_6DqwDlk,2532
+ipfs_model_manager_py/aria2/aria2c,sha256=0js3YgDM0xG2HlIyKZQynKz0prTqkduXf_Y4FDfZgSM,90087952
+ipfs_model_manager_py/s3_kit/s3_kit.py,sha256=ilfuz1ZJRgOKOBy7qJ8f08vouA5cfre8szCLb2w95Ts,15478
+ipfs_model_manager_py/test/test_fio.py,sha256=B-cGwo-rNUOW8TeGWUM7thwUaV4ITGBBpo8SKiF3Au0,4502
+ipfs_model_manager_py/test/test_hf_ipfs.py,sha256=gv-1zqlWOcbRtPsKXRjUyisTgNQ7jjzVCNXKT17WGJo,1786
+ipfs_model_manager_py-0.0.17.dist-info/LICENSE,sha256=hIahDEOTzuHCU5J2nd07LWwkLW7Hko4UFO__ffsvB-8,34523
+ipfs_model_manager_py-0.0.17.dist-info/METADATA,sha256=CibSrJXrjMFjeLW5zJBBJs7-8JXSGFYDeDt2Ce5iKUQ,3481
+ipfs_model_manager_py-0.0.17.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+ipfs_model_manager_py-0.0.17.dist-info/top_level.txt,sha256=BKZXpidLHNryNrkoOnMdWOmMMV2g0LmV2cNFJQuzf44,22
+ipfs_model_manager_py-0.0.17.dist-info/RECORD,,
