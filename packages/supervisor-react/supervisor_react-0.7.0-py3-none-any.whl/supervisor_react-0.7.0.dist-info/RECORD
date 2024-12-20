@@ -1,0 +1,14 @@
+supervisor_react/__init__.py,sha256=ubrX49BQfHsL4Jl6WfkOGbp1quHxgboXvF9Q6A23A_8,3073
+supervisor_react/__main__.py,sha256=-6L-FhK5PO1DzUzzpLVSZLl8JR3BcMXXDo5Y7yTl0P8,64
+supervisor_react/statics/asset-manifest.json,sha256=jVIbB6YfRKhdWHh9Hl8VfUyiVa9t3DHPa-4UtECMmv8,155
+supervisor_react/statics/icon.png,sha256=i3DxrLOJ_zt0rmnfjZ40f1vRF5cIF6IZPmalFD-XiQc,1702
+supervisor_react/statics/index.html,sha256=d2poXlCm0if3erTgDsm8OW9GDuzwpL0U80G0aLq0Ons,517
+supervisor_react/statics/manifest.json,sha256=E7dGyAvHDhk0AXkA1sQCJON0Wc0LL3bkXDJX-qEJ99s,284
+supervisor_react/statics/robots.txt,sha256=kNJLw79pisHhc3OVAimMzKcq3x9WT6sF9IS4xI0crdI,67
+supervisor_react/statics/static/js/main.5a2f7e99.js,sha256=Cp3oX2HmgZ8d2FFMe6GxTeTiJEo8k6zei287nTZSKS0,462173
+supervisor_react/statics/static/js/main.5a2f7e99.js.LICENSE.txt,sha256=pfweliM0kVY7YJJB3ddpNeA22WpGVLf9MXwUZIqK4pg,1977
+supervisor_react-0.7.0.dist-info/LICENCE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+supervisor_react-0.7.0.dist-info/METADATA,sha256=2tSjdFp9rUeqGTnrPVmYM_-WXLdePbuWweZvqgH1dKc,1180
+supervisor_react-0.7.0.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+supervisor_react-0.7.0.dist-info/entry_points.txt,sha256=hms8geGJwYd7ur3sRQM_hj97xIgwltTcLVPLGfrNOXc,58
+supervisor_react-0.7.0.dist-info/RECORD,,
