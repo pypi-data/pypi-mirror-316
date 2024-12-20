@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: pcap-anonymize
+Version: 0.1.0
+Summary: Anonymize PCAP files
+Author-email: François De Keersmaeker <francois.dekeersmaeker@uclouvain.be>
+Maintainer-email: François De Keersmaeker <francois.dekeersmaeker@uclouvain.be>
+Project-URL: Homepage, https://forge.uclouvain.be/smart-home-network-security/pcap-anonymize
+Project-URL: Source, https://forge.uclouvain.be/smart-home-network-security/pcap-anonymize
+Keywords: network,traffic,pcap,anonymize
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: scapy
+
+# pcap-anonymization
+
+Anonymize PCAP files.
