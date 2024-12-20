@@ -1,0 +1,64 @@
+[tool.poetry]
+name = "kognitos-bdk-klang"
+version = "2.2.2"
+description = "A Signature parser for Kognitos book development kit (BDK)"
+authors = ["Ignacio Delmont <ignacio@kognitos.com>"]
+readme = "README.md"
+license = "Propietary"
+packages = [{include = "kognitos", from="src"}]
+
+[tool.poetry.group.dev.dependencies]
+mypy = "^1.10.0"
+pytest = "^8.2.0"
+isort = "^5.13.2"
+black = "^24.4.2"
+pylint = "^3.1.1"
+pyright = "^1.1.362"
+coverage = "^7.5.3"
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+
+[tool.poetry.dependencies]
+python = "^3.9,<4.0"
+
+[tool.poetry.scripts]
+tests = 'poetry_scripts:run_tests'
+format = 'poetry_scripts:run_format'
+lint = 'poetry_scripts:run_lint'
+type-check = 'poetry_scripts:run_type_check'
+coverage-report = 'poetry_scripts:run_coverage_report'
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pylint.messages_control]
+disable = [
+    "missing-final-newline",
+    "missing-module-docstring",
+    "missing-function-docstring",
+    "missing-class-docstring",
+    "too-few-public-methods",
+    "too-many-branches",
+    "too-many-return-statements",
+    "too-many-statements",
+    "too-many-locals",
+    "too-many-lines",
+    "too-many-arguments",
+    "too-many-instance-attributes",
+    "protected-access",
+    "duplicate-code",
+    "too-many-nested-blocks",
+    "line-too-long"
+]
+
+[tool.black]
+line-length = 180
+
+[tool.pyright]
+include = ["src"]
+pythonVersion = "3.11"
+pythonPlatform = "Linux"
+reportAttributeAccessIssue = "none"
