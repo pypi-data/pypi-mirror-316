@@ -1,0 +1,2 @@
+[pytest11]
+http_page_checker = http_testing.plugin

@@ -1,0 +1,51 @@
+[project]
+name = "pytest-httptesting"
+dynamic = ["version"]
+description = "http_testing framework on top of pytest"
+authors = [
+    {name = "heqile", email = "mr.qile@gmail.com"},
+    {name = "HE Qile", email = "mr.qile@gmail.com"},
+]
+dependencies = [
+    "pytest>=8.2.0",
+    "httpx>=0.28.0",
+    "attrs>=24.2.0",
+]
+requires-python = ">=3.8"
+readme = "README.md"
+license = {text = "MIT"}
+
+[build-system]
+requires = ["setuptools>=64", "setuptools-scm>=8"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools_scm]
+
+[project.entry-points.pytest11]
+http_page_checker = "http_testing.plugin"
+
+[tool.pdm]
+distribution = false
+
+[tool.pdm.build]
+includes = ["http_testing", "http_testing/py.typed", "LICENSE"]
+
+[tool.ruff]
+line-length = 120
+
+[tool.mypy]
+ignore_missing_imports = true
+
+[project.urls]
+homepage = "https://github.com/heqile/http_testing"
+repository = "https://github.com/heqile/http_testing"
+
+[dependency-groups]
+dev = [
+    "pre-commit>=3.1.1",
+    "mypy>=1.1.1",
+    "black>=24.4.2",
+    "ruff>=0.5.5",
+    "respx>=0.21.1",
+    "freezegun>=1.5.1",
+]
