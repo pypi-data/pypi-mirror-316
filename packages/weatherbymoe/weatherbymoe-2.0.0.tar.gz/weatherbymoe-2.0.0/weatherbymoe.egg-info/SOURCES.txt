@@ -1,0 +1,8 @@
+setup.py
+weatherbymoe/__init__.py
+weatherbymoe/weatherbymoe.py
+weatherbymoe.egg-info/PKG-INFO
+weatherbymoe.egg-info/SOURCES.txt
+weatherbymoe.egg-info/dependency_links.txt
+weatherbymoe.egg-info/requires.txt
+weatherbymoe.egg-info/top_level.txt
