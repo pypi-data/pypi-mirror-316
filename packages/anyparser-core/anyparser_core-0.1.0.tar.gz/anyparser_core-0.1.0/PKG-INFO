@@ -1,0 +1,29 @@
+Metadata-Version: 2.4
+Name: anyparser-core
+Version: 0.1.0
+Summary: Anyparser SDK for Python
+Project-URL: Homepage, https://github.com/anyparser/sdk
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# Anyparser Core
+
+A Python SDK for Anyparser.
+
+## Installation
+
+```bash
+pip install anyparser-core
+```
+
+## Usage
+
+```python
+from anyparser_core import Client
+
+client = Client()
+``` 

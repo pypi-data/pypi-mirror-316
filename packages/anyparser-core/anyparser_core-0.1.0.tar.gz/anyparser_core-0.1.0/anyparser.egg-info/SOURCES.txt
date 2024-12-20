@@ -1,0 +1,6 @@
+setup.py
+anyparser/__init__.py
+anyparser.egg-info/PKG-INFO
+anyparser.egg-info/SOURCES.txt
+anyparser.egg-info/dependency_links.txt
+anyparser.egg-info/top_level.txt
