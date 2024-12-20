@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+setup.py
+microsoft_login_button/__init__.py
+microsoft_login_button/example.py
+microsoft_login_button/build/asset-manifest.json
+microsoft_login_button/build/bootstrap.min.css
+microsoft_login_button/build/index.html
+microsoft_login_button/build/static/js/main.09461a26.js
+microsoft_login_button/build/static/js/main.09461a26.js.LICENSE.txt
+microsoft_login_button/build/static/js/main.09461a26.js.map
+msal_streamlit_button.egg-info/PKG-INFO
+msal_streamlit_button.egg-info/SOURCES.txt
+msal_streamlit_button.egg-info/dependency_links.txt
+msal_streamlit_button.egg-info/requires.txt
+msal_streamlit_button.egg-info/top_level.txt

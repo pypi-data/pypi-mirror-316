@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: msal-streamlit-button
+Version: 1.0.2
+Summary: Streamlit component that allows you to create a microsoft login Button
+Home-page: 
+Author: Alia Shiraz
+Author-email: aliashiraz05@gmail.com
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: streamlit>=1.3
+Provides-Extra: devel
+Requires-Dist: wheel; extra == "devel"
+Requires-Dist: pytest==7.4.0; extra == "devel"
+Requires-Dist: playwright==1.48.0; extra == "devel"
+Requires-Dist: requests==2.31.0; extra == "devel"
+Requires-Dist: pytest-playwright-snapshot==1.0; extra == "devel"
+Requires-Dist: pytest-rerunfailures==12.0; extra == "devel"
+
+# streamlit-custom-component
+
+Streamlit component that allows you to do X
+
+## Installation instructions
+
+```sh
+pip install streamlit-custom-component
+```
+
+## Usage instructions
+
+```python
+import streamlit as st
+
+from microsoft_login_button import microsoft_login_button
+
+value = microsoft_login_button(client_id, tenant_id,LoginText,styles )
+
+st.write(value)
+```
