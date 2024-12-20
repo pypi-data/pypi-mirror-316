@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: ecommerce-price-scraper
+Version: 0.2.3
+Summary: A package for scraping product prices from Bukalapak, Lazada, and your own custom e-commerce website.
+Home-page: https://github.com/RichardOwen2/ecommerce-price-scraper
+Author: Richard Owen Hoan
+Author-email: richardowen2411@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+License-File: LICENSE.md
+Requires-Dist: selenium
+Requires-Dist: webdriver-manager
+Requires-Dist: beautifulsoup4
+Requires-Dist: requests

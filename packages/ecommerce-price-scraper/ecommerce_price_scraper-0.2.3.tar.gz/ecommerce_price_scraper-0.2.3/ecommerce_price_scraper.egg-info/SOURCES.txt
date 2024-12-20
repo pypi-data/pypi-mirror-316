@@ -1,0 +1,11 @@
+LICENSE.md
+README.md
+pyproject.toml
+setup.py
+ecommerce-price-scraper/__init__.py
+ecommerce-price-scraper/scraper.py
+ecommerce_price_scraper.egg-info/PKG-INFO
+ecommerce_price_scraper.egg-info/SOURCES.txt
+ecommerce_price_scraper.egg-info/dependency_links.txt
+ecommerce_price_scraper.egg-info/requires.txt
+ecommerce_price_scraper.egg-info/top_level.txt
