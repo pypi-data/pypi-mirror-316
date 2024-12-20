@@ -1,0 +1,12 @@
+edamampy/__init__.py,sha256=Xv3EYf6rvb-MIp5pIADX3DKiFThnsS7bukcu3YqKaRI,215
+edamampy/classes.py,sha256=lGJIt0hbR_rkwshzI3WeQOWNK69LU6c7EjVAr8A22Fc,12518
+edamampy/cli.py,sha256=lPjJ_EwVHurh9X2w_ZLLk-jy3BwCAMlaiqWDai_ab5Q,3607
+edamampy/constants.py,sha256=ljZXHeK0Yp0-L9KSWd2JFQZZV402iHHg_7lhRhEqtxM,5124
+edamampy/exceptions.py,sha256=99BOtBZj_YErq_iQ2CCdKRlqSknPSLJ3jwzuNkD8lk4,914
+edamampy/models.py,sha256=CsMNIS4KwGVwmT1WcTGeJ_i5p2t546kOIf0uJVJTkBs,2644
+edamampy-0.1.dist-info/LICENSE,sha256=_oEhvDehnu6V97dPlxni6-q74ChcH7hVcfjmbV0k2zY,1070
+edamampy-0.1.dist-info/METADATA,sha256=xlBGySova6ubjoO2Xv1phhWpBuv-tDcX-KbPFinzme0,3421
+edamampy-0.1.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+edamampy-0.1.dist-info/entry_points.txt,sha256=iqthoXmyuOjE64zDvbC_tAKrloyKYSZtv9IvsW5L2yU,37
+edamampy-0.1.dist-info/top_level.txt,sha256=YpOfij5wSuNA47mzK99B2ez-7rq5pN9-kgqKH-JZXRc,9
+edamampy-0.1.dist-info/RECORD,,
