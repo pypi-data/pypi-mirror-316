@@ -1,0 +1,10 @@
+[tool.poetry]
+name = "identity-clustering-exp"
+version = "0.0.4"
+description = "experimental"
+authors = ["Sanjith Kumar R <sanjithkumar986@gmail.com>"]
+readme = "README.md"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
