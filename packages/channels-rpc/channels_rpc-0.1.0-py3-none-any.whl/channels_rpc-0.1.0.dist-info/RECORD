@@ -1,0 +1,13 @@
+channels_rpc/__init__.py,sha256=gLoy57WDSjA0NdIXERm4nGq8XQQoRRSLvoaf05xHSQ4,418
+channels_rpc/async_json_rpc_websocket_consumer.py,sha256=Jz2PNYwyrI4WIdz4gUJ7jZQXPG2YiEYMYvnzE7v9szI,291
+channels_rpc/async_rpc_base.py,sha256=yiWLwkpPJJ25YbIbab9QjqlvwQQ7TX5c6-NLkexKjaw,4965
+channels_rpc/async_rpc_http_consumer.py,sha256=dLB-XHAUVYLeqIG2bBwOn4mDoN--docACryoOm1wBno,1701
+channels_rpc/exceptions.py,sha256=KevAO4wtBnS_FDNmUHrMKE-JUdG055ZWZum64_x1LHQ,2290
+channels_rpc/json_rpc_websocket_consumer.py,sha256=UIOCf6SV_piGGQ2bRbxcc0KTYuWIO6nMEOXblzpbkZQ,1639
+channels_rpc/logs.py,sha256=oTQ8Pj3LhPVr-P8Ru6erlpJ1S7JdlTwbMn68_sXRlHA,503
+channels_rpc/rpc_base.py,sha256=qmdDRGOJN2--To39okOaQwbY4J-ZvCwxOTlIYReUh6Y,14365
+channels_rpc/utils.py,sha256=7rh-AeyZyVqW3__ZVdVjNPVj1XNJD0DFD9VXvIOzWUw,1025
+channels_rpc-0.1.0.dist-info/LICENSE,sha256=AaaJXhI-xi4cBLB2zCCcomMyhb7jmeMBHEkKZ2LUC2g,1066
+channels_rpc-0.1.0.dist-info/METADATA,sha256=Ya7u4prplE7ULmFFUmIjNF2J4ewNxhAFRI_1dgvaIag,4301
+channels_rpc-0.1.0.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+channels_rpc-0.1.0.dist-info/RECORD,,
