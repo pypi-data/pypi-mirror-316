@@ -1,0 +1,12 @@
+Metadata-Version: 2.4
+Name: ryo3
+Version: 0.0.1
+Summary: ryo3 - python package
+Author-email: jessekrubin <jessekrubin@gmail.com>
+License-File: LICENSE-APACHE
+License-File: LICENSE-MIT
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+
+# ryo3
+
