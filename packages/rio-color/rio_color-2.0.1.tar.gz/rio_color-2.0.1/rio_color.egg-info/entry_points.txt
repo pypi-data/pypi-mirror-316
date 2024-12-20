@@ -1,0 +1,3 @@
+[rasterio.rio_plugins]
+atmos = rio_color.scripts.cli:atmos
+color = rio_color.scripts.cli:color

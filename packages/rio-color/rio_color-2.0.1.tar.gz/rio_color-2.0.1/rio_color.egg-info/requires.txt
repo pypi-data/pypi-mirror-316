@@ -1,0 +1,9 @@
+click>=8.0
+rasterio~=1.4
+rio-mucho
+
+[test]
+pytest
+colormath==3.0.0
+pytest-cov
+codecov
