@@ -1,0 +1,22 @@
+[project]
+name = "nget"
+version = "0.0.1"
+description = "A simple package for safely retrieving nested values from data structures using a sequence of keys or indexes."
+authors = [
+    { name = "alcortazzo", email = "ipodarock@gmail.com" },
+]
+dependencies = []
+requires-python = ">=3.9"
+readme = "README.md"
+
+[project.license]
+text = "MIT"
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[tool.pdm]
+distribution = true
