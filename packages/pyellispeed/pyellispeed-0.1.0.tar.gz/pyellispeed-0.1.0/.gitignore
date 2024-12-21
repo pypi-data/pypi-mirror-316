@@ -1,0 +1,26 @@
+# general things to ignore
+.vscode
+
+# for python
+build/
+dist/
+*.egg-info/
+*.egg
+*.py[cod]
+__pycache__/
+*.so
+*~
+*.whl
+
+# for rust
+debug/
+target/
+Cargo.lock
+**/*.rs.bk
+*.pdb
+
+# for profilers
+*.svg
+*.data
+*.data.old
+profile.json
