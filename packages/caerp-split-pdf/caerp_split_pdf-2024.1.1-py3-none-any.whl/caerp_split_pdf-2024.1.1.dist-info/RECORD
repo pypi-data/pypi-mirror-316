@@ -1,0 +1,15 @@
+caerp_split_pdf/__init__.py,sha256=HRohBdfoWG-MMrxcsGQMYmHbh-BJziJo5nLBCJjYtc4,4183
+caerp_split_pdf/config.py,sha256=aB4A2FJd6-wm5PA_5YKfO-Ob8sJPz5lJDyDNbtKlmIw,4038
+caerp_split_pdf/data_finder.py,sha256=9gohcX1QD54RZ-Td68-vStAF9Y1xylINqwaMxXkq3f0,6401
+caerp_split_pdf/errors.py,sha256=VXkDbMsShsP8tZ_jVm1jeOmbMyPnx3nxyEuVkDjAZTE,335
+caerp_split_pdf/log_config.py,sha256=wp8NVAlgSrJLbuzFyEYbSzbf2Ws6Trcuetff75zZiGY,6961
+caerp_split_pdf/splitter.py,sha256=OhSRdO3A5NZ9fBrKKNESaMR4_mH4JPIdZPlZ36yvbgM,12290
+caerp_split_pdf/utils.py,sha256=kXNXDDDrAB0nLbF9ChT2cSajtDKTvPnzKhy3DXyixmc,1271
+caerp_split_pdf-2024.1.1.data/scripts/caerp-change-code-analytic,sha256=1GKruvK6KRCrWmBJI_uQawLtzbntNLvrCx2eF5_TMuo,545
+caerp_split_pdf-2024.1.1.data/scripts/caerp-split-pdf-page2text,sha256=8vPoSJkpahebpYdnlXLCw8LrIjfpgc4WwkZoz6-zOXI,562
+caerp_split_pdf-2024.1.1.data/scripts/caerp-split-pdf-run,sha256=JN3VonjieGrz6cTYeSpD8bgqkLQrurLRyzkcZdAXPhw,83
+caerp_split_pdf-2024.1.1.dist-info/LICENSE.txt,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+caerp_split_pdf-2024.1.1.dist-info/METADATA,sha256=Cajp8oh9xHODQSqjjsZ-cbr8nQhIiHU4flbxSANKG_s,6682
+caerp_split_pdf-2024.1.1.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+caerp_split_pdf-2024.1.1.dist-info/top_level.txt,sha256=JRbWee3LFaZF35U4WVhikbryBj9ceVLGAR5jZvkcoZo,16
+caerp_split_pdf-2024.1.1.dist-info/RECORD,,
