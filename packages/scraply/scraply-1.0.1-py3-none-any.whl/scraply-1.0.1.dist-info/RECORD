@@ -1,0 +1,8 @@
+scraply/__init__.py,sha256=b_TBN9Qq8-sAH2XC21aLR_wqcLt55DBM6QK7XTeSe0I,46
+scraply/cli.py,sha256=07_2eiz6gwBoilLWMKHU10FX4AEZ1KlXX1CefGZUplM,1305
+scraply/scraper.py,sha256=KB5S9zHHQetAXGn837SrdXpzAufLdYwqcExLHpQUVDM,782
+scraply-1.0.1.dist-info/METADATA,sha256=p0z812b5gWvQ3Y1rc5k8ObZlouk_lv-TZuFyAtevO44,3413
+scraply-1.0.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+scraply-1.0.1.dist-info/entry_points.txt,sha256=LOWj_IROV1ArBAHIDVwVXeaBwrZPsyFkgsWFM5PX6QI,45
+scraply-1.0.1.dist-info/top_level.txt,sha256=35Jux63BRHXCMtMzBaiU8svh2jChzyeTxdwHpQXsDv4,8
+scraply-1.0.1.dist-info/RECORD,,
