@@ -1,0 +1,10 @@
+LICENSE
+README.md
+VERSION
+pyproject.toml
+src/vlcrc/__init__.py
+src/vlcrc/main.py
+src/vlcrc.egg-info/PKG-INFO
+src/vlcrc.egg-info/SOURCES.txt
+src/vlcrc.egg-info/dependency_links.txt
+src/vlcrc.egg-info/top_level.txt
