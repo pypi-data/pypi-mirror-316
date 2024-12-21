@@ -1,0 +1,10 @@
+hackrf/HackRF.py,sha256=4WdP0RTT8-fpEirjpR2R-ADlVyx7swsG7rjjapMZzmc,15366
+hackrf/__init__.py,sha256=mjZm8zxyAF2kGP-MLPNzEiW9J0wQLQvloJ-LzQ8JHQo,2606
+hackrf/config.json,sha256=tD0i19KrxSXvWh_T_NQfGnM2y0MvZz0rgRCKz-76W0Q,57
+hackrf/const.py,sha256=xdZ4OmmuPyOoEAhd0cnr3UQzfzQshJ5gigipLDorvV8,2365
+hackrf/core.py,sha256=y5gtzTLlS6FwvGixbxqDPtqmywSpZGydfD_iXcRKLqQ,11068
+hackrf/util.py,sha256=7wJ9BjCMw49cLPVZHEJ1BwtW3qmh6xN6IKWIKyFiQbs,2060
+HackRF_SDR-1.0.0.dist-info/METADATA,sha256=uhdvbMDlWF176cd1Kf-eT4_uzmjhY1OEMtJQuKRuPTY,387
+HackRF_SDR-1.0.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+HackRF_SDR-1.0.0.dist-info/top_level.txt,sha256=uUCzKqa30G05qpRiOaUSH0tenVRl7gv7jcQnhjrYSqs,7
+HackRF_SDR-1.0.0.dist-info/RECORD,,
