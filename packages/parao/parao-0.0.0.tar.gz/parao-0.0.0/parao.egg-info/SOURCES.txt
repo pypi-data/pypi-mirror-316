@@ -1,0 +1,6 @@
+pyproject.toml
+parao/__init__.py
+parao.egg-info/PKG-INFO
+parao.egg-info/SOURCES.txt
+parao.egg-info/dependency_links.txt
+parao.egg-info/top_level.txt
