@@ -1,0 +1,10 @@
+odoo/addons/mrp_order_report_lot_barcode/README.rst,sha256=YSTCYuzoOpPOlN8DzDkJfhWdzIMMA4YCL1KBpCnBZZg,1456
+odoo/addons/mrp_order_report_lot_barcode/__init__.py,sha256=goLc3MsoZcKd9WdiSAZN1K5S_a4PO4CTfVSwmzGtLWg,111
+odoo/addons/mrp_order_report_lot_barcode/__manifest__.py,sha256=p04WgGwD1s_NfmY2kkh7CtoPdbecSVpywbT3a-uZ2yA,508
+odoo/addons/mrp_order_report_lot_barcode/i18n/mrp_order_report_lot_barcode.pot,sha256=YkEt9CFm5FkSb3hTLeewTkG882CQkoVGJbTnpho4pQw,559
+odoo/addons/mrp_order_report_lot_barcode/static/description/icon.png,sha256=6xBPJauaFOF0KDHfHgQopSc28kKvxMaeoQFQWZtfZDo,9455
+odoo/addons/mrp_order_report_lot_barcode/views/mrp_order_report_product_barcode.xml,sha256=8e8-RwUmBD7CahcuSTHCOQy3VjDRQIjiUn3DNjkf8Z4,1314
+odoo_addon_mrp_order_report_lot_barcode-16.0.1.0.0.1.dist-info/METADATA,sha256=mQ0BVQizfHfY8xdzBis7XNfHjW6JXmiLsCDWwYZLRnE,2017
+odoo_addon_mrp_order_report_lot_barcode-16.0.1.0.0.1.dist-info/WHEEL,sha256=tZoeGjtWxWRfdplE7E3d45VPlLNQnvbKiYnx7gwAy8A,92
+odoo_addon_mrp_order_report_lot_barcode-16.0.1.0.0.1.dist-info/top_level.txt,sha256=qBj40grFkGOfDZ2WDSw3y1RnDlgG0u8rP8pvGNdbz4w,5
+odoo_addon_mrp_order_report_lot_barcode-16.0.1.0.0.1.dist-info/RECORD,,
