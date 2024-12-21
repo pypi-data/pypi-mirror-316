@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.py
+mssqldbfade/__init__.py
+mssqldbfade/facade.py
+mssqldbfade.egg-info/PKG-INFO
+mssqldbfade.egg-info/SOURCES.txt
+mssqldbfade.egg-info/dependency_links.txt
+mssqldbfade.egg-info/requires.txt
+mssqldbfade.egg-info/top_level.txt
