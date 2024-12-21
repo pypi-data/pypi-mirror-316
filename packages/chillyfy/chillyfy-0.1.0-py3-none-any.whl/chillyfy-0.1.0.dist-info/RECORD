@@ -1,0 +1,8 @@
+music/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+music/info.py,sha256=yV0vZtnDoFKMXnsDgQO-QWTY5qSEmOsZiZS0GFQJ90U,1966
+music/player.py,sha256=8FJLBv1kefYHAEaC1L54rVAHh89gr6W4_lXb42cjeo0,2493
+music/queue.py,sha256=wjpNaX2zr_edVnfxI19f4lTXjEi5CIS3DXyiWh3Znic,1236
+chillyfy-0.1.0.dist-info/METADATA,sha256=P-yy7knUFkr0q3a5apv1a1bBkjU-pOEgckVO1XIwX1o,863
+chillyfy-0.1.0.dist-info/WHEEL,sha256=tZoeGjtWxWRfdplE7E3d45VPlLNQnvbKiYnx7gwAy8A,92
+chillyfy-0.1.0.dist-info/top_level.txt,sha256=1UOi-eyxFhEV2pR0CUl6CjFoOGTBOzSxgeXXhrZyRDU,6
+chillyfy-0.1.0.dist-info/RECORD,,

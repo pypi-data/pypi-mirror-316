@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: chillyfy
+Version: 0.1.0
+Summary: Una libreria per creare bot musicali su Discord
+Home-page: https://github.com/ChillatoDevOfficial/chillyfy
+Author: ChillatoDev
+Author-email: voipfra303@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: discord.py[voice]
+Requires-Dist: yt-dlp
+Requires-Dist: PyNaCl
+
+## Caratteristiche
+
+- ðŸŽµ Supporto per YouTube e altri servizi di streaming
+- ðŸ“‹ Sistema di code avanzato per server multipli
+- ðŸŽ¨ Embed personalizzabili
+- ðŸ”„ Auto-play della coda
+- ðŸ“Š Informazioni dettagliate sulle canzoni
+
+## Requisiti
+
+- Python 3.8+
+- discord.py
+- yt-dlp
+- PyNaCl
+
+## Licenza
+
+MIT License
