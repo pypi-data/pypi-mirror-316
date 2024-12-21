@@ -1,0 +1,5 @@
+impacket>=0.9.20
+python-libnmap
+lxml
+pdftotext
+python-magic
