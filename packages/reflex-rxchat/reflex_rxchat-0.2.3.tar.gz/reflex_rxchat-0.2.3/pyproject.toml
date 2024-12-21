@@ -1,0 +1,36 @@
+[build-system]
+requires = [
+    "setuptools",
+    "wheel",
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "reflex-rxchat"
+version = "0.2.3"
+description = "Local chat for Reflex applications"
+readme = "README.md"
+license = { text = "Apache-2.0" }
+requires-python = ">=3.12"
+authors = [{ name = "Albert Sola", email = "albert.sola@tardix.net" }]
+keywords = [
+    "reflex",
+    "reflex-custom-components"]
+
+dependencies = [
+    "reflex>=0.6.6",
+    "aiohttp"
+]
+
+classifiers = [
+  "Development Status :: 4 - Beta",
+]
+
+[project.urls]
+Homepage = "https://github.com/albertsola/rxchat"
+
+[project.optional-dependencies]
+dev = ["build", "twine"]
+
+[tool.setuptools.packages.find]
+where = ["custom_components"]
