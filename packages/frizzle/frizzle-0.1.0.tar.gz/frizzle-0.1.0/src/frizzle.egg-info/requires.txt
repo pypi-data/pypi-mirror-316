@@ -1,0 +1,12 @@
+numpy
+finufft
+pylops
+scipy
+sklearn
+
+[dev]
+pytest
+pytest-cov
+pytest-sugar
+pre-commit
+black
