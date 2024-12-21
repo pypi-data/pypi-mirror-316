@@ -1,0 +1,66 @@
+name: Test OtterAI Code Review
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+    paths-ignore:
+      - "**.md"
+      - "LICENSE"
+      - ".gitignore"
+
+jobs:
+  # Run tests
+  tests:
+    runs-on: ubuntu-latest
+    container:
+      image: python:3.12
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Run BASIC tests
+        run: |
+          python -m unittest discover -s tests -p 'test_*.py'
+
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+
+      - name: Run tests
+        run: |
+          python -m unittest discover -s cori_ai/tests -p 'test_*.py'
+
+  code-review:
+    needs: tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # Required to get full history for better context
+
+      - name: Cori Auth Step
+        id: generate-token
+        uses: actions/create-github-app-token@v1
+        with:
+          app-id: ${{ secrets.CORI_APP_ID }}
+          private-key: ${{ secrets.CORI_APP_PRIVATE_KEY }}
+
+      - name: CoriAI ✨ Code Review
+        uses: ./ # Uses the action from the current repository
+        with:
+          github_token: ${{ steps.generate-token.outputs.token }}
+          provider: "openai"
+          openai_api_key: ${{ secrets.OPENAI_API_KEY }}
+          openai_base_url: ${{ secrets.OPENAI_BASE_URL }}
+          model: gpt-4o-mini
+          extra_prompt: |
+            Please focus on:
+            - Python best practices and PEP8 compliance
+            - Security implications of the changes
+            - Performance optimizations
+            - Code maintainability and documentation
+            - Potential edge cases and error handling 
+            - Use emojis in your comments and be very specific.
+            - Use markdown in your comments.
+            - Use code blocks in your comments.
+            - Use inline code in your comments.
