@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: netbox_memory_input
+Version: 0.1
+Summary: Input VM memory in GB instead of MB in NetBox.
+Home-page: https://itandtel.at
+Author: jannis
+License: AGPLv3

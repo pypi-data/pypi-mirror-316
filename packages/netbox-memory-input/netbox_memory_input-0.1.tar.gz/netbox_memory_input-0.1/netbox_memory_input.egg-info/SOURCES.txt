@@ -1,0 +1,9 @@
+README.md
+setup.py
+netbox_memory_input/__init__.py
+netbox_memory_input/forms.py
+netbox_memory_input.egg-info/PKG-INFO
+netbox_memory_input.egg-info/SOURCES.txt
+netbox_memory_input.egg-info/dependency_links.txt
+netbox_memory_input.egg-info/not-zip-safe
+netbox_memory_input.egg-info/top_level.txt
