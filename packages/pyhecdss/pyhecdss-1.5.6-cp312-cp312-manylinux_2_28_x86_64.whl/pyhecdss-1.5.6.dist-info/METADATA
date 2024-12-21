@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: pyhecdss
+Version: 1.5.6
+Summary: For reading/writing HEC-DSS files
+Author-email: Nicky Sandhu <psandhu@water.ca.gov>
+License: MIT
+Project-URL: homepage, https://github.com/dwr-psandhu/pyhecdss
+Keywords: pyhecdss,hec-dss,hydrology
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.11
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+License-File: AUTHORS.rst
+Requires-Dist: numpy
+Requires-Dist: pandas
+
+========
+pyhecdss
+========
+
+>  **Note:** This project only supports **DSS version 6** and now recommends users to `HEC-DSS Python`_ version 7 and higher
+
+For reading/writing HEC-DSS files [https://www.hec.usace.army.mil/software/hec-dss/]
+HEC-DSS is an ancient database used by the Army Corps of Engineers and prevalent
+in water related models. This module is a bridge to read and write time series
+data from this data format and read it into pandas DataFrame
+
+* Free software: MIT license
+* Documentation: https://cadwrdeltamodeling.github.io/pyhecdss/
+
+
+Features
+--------
+
+* Open and close DSS files
+* Read catalog of DSS files as pandas DataFrame
+* Read and write time series from DSS files
+
+Limitations
+-----------
+
+* Only support for Python 3 - 64 bit for windows and linux
+* Relies on pre-compiled libraries the source distribution of which is not allowed
+
+Credits
+-------
+
+This package wraps the `HEC-DSS Software`_ using the `Swig`_ library.
+
+This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+
+.. _Cookiecutter: https://github.com/audreyr/cookiecutter
+.. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+.. _`HEC-DSS Software`: https://www.hec.usace.army.mil/software/hec-dss/
+.. _`HEC-DSS Python`: https://github.com/HydrologicEngineeringCenter/hec-dss-python
+.. _Swig: http://www.swig.org/
