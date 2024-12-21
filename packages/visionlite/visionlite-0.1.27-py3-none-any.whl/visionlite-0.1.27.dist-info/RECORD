@@ -1,0 +1,15 @@
+vision_gui.py,sha256=hepbFtklOtgwxTUy5hz2hI2BKaW2mpgzkWJ0MvAp4V8,314
+vision_run.py,sha256=xGaHiSoNsoQEeaJ7LaSigy7o-Oo6NgKzqCiguXySEfI,73
+visionlite/__init__.py,sha256=3bKRmB8X5bf-kDB3GYLoCFuPwXETiKlpIUMpSWUL0JI,167
+visionlite/_st_app.py,sha256=JdhxTXBxvjAMuTvaqnpu6MTysT5uUEmwThcn6zxi5d4,5893
+visionlite/_vision_ai.py,sha256=WBiHu7wHbj4odkhs5NhbLLenh9csvfL_bKblEbrELCM,11812
+visionlite/data.csv,sha256=po1s0bW1lQc5HJWWaYlxX3wL3tx3dwDov7zOp1v0aOM,573351
+visionlite/data_top_3.csv,sha256=SRGjIAJjB0dxzYX1eypo665l8SXgu52TwS4hSQ98BE8,1149845
+visionlite/final.csv,sha256=g8J05R_Cm_zmINaoSAX6MSupPCG4eLlH_3iwY1ecza8,288937
+visionlite/latest_st_app.py,sha256=HUnSTz1NnVKAnm3Jdg_gTfqyI3hWPgCewgs-ehnAauA,3267
+visionlite/main.py,sha256=waZlQnE9oN-SuG6M8YwoRmps_w2wYT0WBMd0tK40YQc,2349
+visionlite-0.1.27.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+visionlite-0.1.27.dist-info/METADATA,sha256=_KE4432XlLFrE78re2ZyE7EtzxNpo17NG6ewMxkJ-TQ,4449
+visionlite-0.1.27.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+visionlite-0.1.27.dist-info/entry_points.txt,sha256=TIShlmnRVhdSrqmMvgI8BDJ9AEMmyp0r--3ri-Xz87s,49
+visionlite-0.1.27.dist-info/RECORD,,
