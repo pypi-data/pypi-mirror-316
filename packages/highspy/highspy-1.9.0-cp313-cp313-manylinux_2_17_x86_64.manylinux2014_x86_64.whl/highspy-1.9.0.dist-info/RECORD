@@ -1,0 +1,12 @@
+highspy-1.9.0.dist-info/RECORD,,
+highspy-1.9.0.dist-info/METADATA,sha256=8Rpb4q2YwbNFP_c9_kiyXYzxXdIY9ge2dvFGm4URypY,10475
+highspy-1.9.0.dist-info/WHEEL,sha256=OPFh3Tj2X8LlzG9poNJc0ZCOysKaZvnrmITeqCOAK5U,156
+highspy-1.9.0.dist-info/licenses/LICENSE.txt,sha256=ELOdunt3MRdfBwU5i220MgtkrdG9Ltn57FtRKp7xvZU,1062
+highspy-1.9.0.dist-info/licenses/AUTHORS,sha256=FsZ2uj0GyU6ZGGzuRVLNM3I4SVpse9aiusthpnuUtkg,85
+highspy/__init__.py,sha256=-DhdxoxqHKovc2J2Y74NHVA6sfKWcqDacu4ip1KYNAc,1840
+highspy/highs.py,sha256=Z0psFIcavLhv76dM_CVTk1AXs88kyDiE_f9fmGIKGGI,89014
+highspy/_core.cpython-313-x86_64-linux-gnu.so,sha256=kNlPXMlr8boxoUMArxvj6YrJn4-Zf8g9jvO5ipo54dw,5331464
+highspy/__init__.pyi,sha256=96WLxvO-EEFN24mPXIzAMyJ5RM40z_xc03cdxagnI8A,2019
+highspy/_core/simplex_constants.pyi,sha256=MgZmYwvFmK-nA5-s7JOMKLWOvc5_8sBkDmveZuJVfcU,17580
+highspy/_core/cb.pyi,sha256=WXihzWeiuNrjlvAISIn9iPYTbTWhtqZXdjMLeQT3tD0,3240
+highspy/_core/__init__.pyi,sha256=I4FduxxifAZPLemGUpF3XL6Rvo9gCa8DtMTNmnJVMWM,34725
