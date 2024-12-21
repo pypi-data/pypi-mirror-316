@@ -1,0 +1,8 @@
+bigquery_agent/__init__.py,sha256=6r16WxLCZW7bxmWR2ljD64BbMEadf5eMTWxEiDI2LoE,4025
+bigquery_agent/bigquery_helper.py,sha256=cM4H9mXty2rbqfaJwhlBtqsE39is9IwFRFt3CZe-Hqo,2853
+bigquery_helper/__init__.py,sha256=h9dyurVipacVYRbkHEQzz2vwskDucXTVCxZK_QxhM2c,2799
+bigquery_helper/bigquery_helper.py,sha256=5J7m_SKnZVdn9mUVRvxfWgGDqhS8BThAD30K7gwjvrs,1998
+bigquery_agent-1.1.0.dist-info/METADATA,sha256=enlFmjr54_U6YpTINIIT5jq-cNYnAnn8ebN7TcqWTm4,1606
+bigquery_agent-1.1.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+bigquery_agent-1.1.0.dist-info/top_level.txt,sha256=wl47YXxQpnnJItWl2_LTn5Hl_SHBHrOWD1oHp73CJ8E,15
+bigquery_agent-1.1.0.dist-info/RECORD,,
