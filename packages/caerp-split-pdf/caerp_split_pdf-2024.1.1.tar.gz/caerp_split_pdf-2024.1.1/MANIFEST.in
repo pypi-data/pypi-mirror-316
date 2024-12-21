@@ -1,0 +1,7 @@
+include README.md MANIFEST.in setup.cfg setup.py pyproject.toml LICENSE.txt
+graft scripts/
+graft src/caerp_split_pdf
+global-exclude __pycache__
+global-exclude *.py[co]
+global-exclude *.egg-info
+
