@@ -1,0 +1,16 @@
+odoo/addons/purchase_split_wizard_stock/README.rst,sha256=2o37elT2_Vqe5lE5OpTDtKBkBRMJL7CTeFMbb4KSiX8,2510
+odoo/addons/purchase_split_wizard_stock/__init__.py,sha256=eXw_jhPYGmdl9mu5XU-EemhVf1CP3SsLE_I0Ubc-Hlo,88
+odoo/addons/purchase_split_wizard_stock/__manifest__.py,sha256=KNnNG5W-7lvcL-9TZSDUUw63womTC8OQaHqzlNQR5UE,659
+odoo/addons/purchase_split_wizard_stock/i18n/es.po,sha256=-hiw6FmG1a2fe7eHskukr_k1rDTZtL6Lk5iiJvezjew,851
+odoo/addons/purchase_split_wizard_stock/readme/CONTRIBUTORS.md,sha256=vdTcwM0_6IuPK1jIEMuLS9tYXVdeqoRcW38GgFp2UV8,136
+odoo/addons/purchase_split_wizard_stock/readme/DESCRIPTION.md,sha256=Y4modHfGvUCXvkkHN0sibq7EnHIQ3PHgJ8_DlaUSw4M,116
+odoo/addons/purchase_split_wizard_stock/readme/USAGE.md,sha256=axQNjJBb-SJTYbuDMU1__NkKJqDa5VMhqy6BtgBXJRg,178
+odoo/addons/purchase_split_wizard_stock/static/description/icon.png,sha256=bVbNdnyk7PXHuZ3ye_Aqh1M9tbfPJ5zU5W1VnoO8mBQ,35820
+odoo/addons/purchase_split_wizard_stock/static/description/index.html,sha256=7eM8S0wr2tPTQBzovMd8LIhXoKB5hJORU4NspgDTyjA,11979
+odoo/addons/purchase_split_wizard_stock/wizards/__init__.py,sha256=aAE-_pXDxkv1nNfrGU20lSleQnGhbHnRn2Kx5F0sDQ0,102
+odoo/addons/purchase_split_wizard_stock/wizards/purchase_split_wizard.py,sha256=bTMOU-AGyIPIRcgh4rcOFeDBaERhb3kEq4x6FXqN2KI,682
+odoo/addons/purchase_split_wizard_stock/wizards/purchase_split_wizard_views.xml,sha256=rWWjVzDD4MCm6qSHbrKusEy3O5cy1cU5JatpHegb46M,1097
+odoo_addon_purchase_split_wizard_stock-16.0.1.0.0.1.dist-info/METADATA,sha256=0SIC0vFGEjszleILb77dGIHpui-Ul6emlUiI8ZjDX0c,3141
+odoo_addon_purchase_split_wizard_stock-16.0.1.0.0.1.dist-info/WHEEL,sha256=9fEMia4zL7ZuZbnCOrcYogUhmn4XFIVaJ8G4YGI31xc,81
+odoo_addon_purchase_split_wizard_stock-16.0.1.0.0.1.dist-info/top_level.txt,sha256=QE6RBQ0QX5f4eFuUcGgU5Kbq1A_qJcDs-e_vpr6pmfU,4
+odoo_addon_purchase_split_wizard_stock-16.0.1.0.0.1.dist-info/RECORD,,
