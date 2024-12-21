@@ -1,0 +1,10 @@
+*.egg-info/
+*.pyc
+*.swp
+.coverage
+.pytest_cache/
+.venv/
+dist/
+build/
+**/__pycache__/
+**/target/
