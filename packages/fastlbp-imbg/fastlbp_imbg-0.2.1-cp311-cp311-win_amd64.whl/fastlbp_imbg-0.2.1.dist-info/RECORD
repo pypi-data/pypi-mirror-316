@@ -1,0 +1,12 @@
+fastlbp_imbg/__init__.py,sha256=aJFdVs8d1KufZGvbhCeXuoWkQGkUTTT-lZ6z9E5gHsk,804
+fastlbp_imbg/_lbp.cp311-win_amd64.pyd,sha256=9LLMmn9rfltmXP_GdqS-Cl_JKOO-f6uptIZ60yIyADw,221696
+fastlbp_imbg/common.py,sha256=BNVU4azGFnsZ9UaACgMT_UNvils_2q_uYqNCu0ApcGE,51
+fastlbp_imbg/fastlbp.py,sha256=ipfQ3XUU2D2HgvFhoCMuaju2wCA_OwY4ThaW2_eCItI,15273
+fastlbp_imbg/lbp.py,sha256=cAMjMtJogl4fLSO38TIrqq9igf7_WqAFl2n18r9RsTA,4608
+fastlbp_imbg/utils.py,sha256=2v_4N3UwiaaNWjxDGQgiA3RUClrwEElCg5RNqwQHEnM,13263
+fastlbp_imbg/workers.py,sha256=p35X96F9045LsVpJBaV-5oo_0FafScWxQTR1ldUDsMM,5324
+fastlbp_imbg-0.2.1.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+fastlbp_imbg-0.2.1.dist-info/METADATA,sha256=4UKo57jhDbsSDtzfoaKOLbulc5aIjMaZAoz49yAoa3Q,3597
+fastlbp_imbg-0.2.1.dist-info/WHEEL,sha256=nkBcd8Ko0v5sEcSagm2-x_RVrb8gBSkTa8VFFZ0Mr1o,101
+fastlbp_imbg-0.2.1.dist-info/top_level.txt,sha256=fF-M6b3rhf5EQletutvhK8-LdwO_cIdtApUNO0FG4QA,13
+fastlbp_imbg-0.2.1.dist-info/RECORD,,
