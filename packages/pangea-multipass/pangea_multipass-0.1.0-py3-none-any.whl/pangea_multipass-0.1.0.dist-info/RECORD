@@ -1,0 +1,12 @@
+pangea_multipass/__init__.py,sha256=tPsJbR_FQVziKPs8n6kLh-TM89aznrAXNIex5ynZvU4,340
+pangea_multipass/core.py,sha256=cB84RofKsBD5Zyyu2-udCop4UZyOCHYdmav_SjqiXhw,8272
+pangea_multipass/sources/__init__.py,sha256=Fu2iGE-pkMvvlO7RZPs1GNe-gQ4ViItpSJVQYtLx_EE,146
+pangea_multipass/sources/confluence/__init__.py,sha256=GLSJN3gA4mnJRtGAvr5jkaGAissBEYTOycjJrmr2G40,152
+pangea_multipass/sources/confluence/confluence.py,sha256=GuZdnJatddpaooaeMwkKVFBdYiG7VlOFhRn35oAk_1U,7081
+pangea_multipass/sources/gdrive/__init__.py,sha256=KFu1LU05OOZkhGGia6HA_kCQdecJO26qMMV434UO2GU,135
+pangea_multipass/sources/gdrive/gdrive.py,sha256=FwPuW-39t9_UCxz_Jsm2SKrU79tFQlAGqiwkl6DmQrQ,13524
+pangea_multipass/sources/jira/__init__.py,sha256=L8GHNnKN8IosuFQDhEI5JPPLF2kgaMW0vPplCn1NoEE,128
+pangea_multipass/sources/jira/jira.py,sha256=52yL4EsHOirXesANuf6OQoG_BLrhh8RuqW2CX1OJ6XA,9505
+pangea_multipass-0.1.0.dist-info/METADATA,sha256=GesQ20mOsbxc6lH6qTunoXP6gbw5JIbussxprJI5vy8,798
+pangea_multipass-0.1.0.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+pangea_multipass-0.1.0.dist-info/RECORD,,
