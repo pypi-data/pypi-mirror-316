@@ -1,0 +1,48 @@
+[project]
+name = "pairid"
+version = "0.0.0a"
+description = """\
+    Library of cryptographic key generation and data preparation \
+    procedures associated with the PAIR protocol.\
+    """
+license = {text = "MIT"}
+readme = "README.rst"
+requires-python = ">=3.11"
+dependencies = [
+    "rbcl~=1.0",
+    "oblivious~=7.0"
+]
+
+[project.urls]
+Repository = "https://github.com/choosek/pairid"
+Documentation = "https://pairid.readthedocs.io"
+
+[project.optional-dependencies]
+docs = [
+    "toml~=0.10.2",
+    "sphinx~=5.0",
+    "sphinx-rtd-theme~=2.0.0"
+]
+test = [
+    "pytest~=8.2",
+    "pytest-cov~=5.0"
+]
+lint = [
+    "pylint~=3.2.0"
+]
+coveralls = [
+    "coveralls~=4.0"
+]
+publish = [
+    "build~=0.10",
+    "twine~=4.0"
+]
+
+[build-system]
+requires = [
+    "setuptools>=68.0"
+]
+build-backend = "setuptools.build_meta"
+
+[tool.pytest.ini_options]
+addopts = "--doctest-modules --ignore=docs --cov=pairid --cov-report term-missing"

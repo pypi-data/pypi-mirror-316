@@ -1,0 +1,10 @@
+LICENSE
+README.rst
+pyproject.toml
+src/pairid/__init__.py
+src/pairid/pairid.py
+src/pairid.egg-info/PKG-INFO
+src/pairid.egg-info/SOURCES.txt
+src/pairid.egg-info/dependency_links.txt
+src/pairid.egg-info/requires.txt
+src/pairid.egg-info/top_level.txt
