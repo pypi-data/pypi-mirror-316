@@ -1,0 +1,3 @@
+[console_scripts]
+TiffTag=tifftag.__main__:main
+
