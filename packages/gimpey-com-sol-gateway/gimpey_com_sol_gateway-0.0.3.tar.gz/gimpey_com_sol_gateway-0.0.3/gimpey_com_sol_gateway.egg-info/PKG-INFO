@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: gimpey_com_sol_gateway
+Version: 0.0.3
+Summary: Python package for the `gimpey.com` `sol-gateway` service.
+Home-page: https://github.com/gimpey-com/sol-gateway
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: grpcio>=1.50.0
+Requires-Dist: protobuf>=4.0.0
+
+# 🌐 Gimpey SOL Gateway
+
+![Gimpey Generic Banner](https://cdn.gimpey.com/.github/gimpey-com-generic-banner.png)
+
+`gimpey.com` offers a gRPC which acts as a layer to retrieve and send Solana transactions.
