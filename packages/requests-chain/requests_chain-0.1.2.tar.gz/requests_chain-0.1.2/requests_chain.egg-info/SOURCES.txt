@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+requests_chain/__init__.py
+requests_chain/chained_socks.py
+requests_chain/requests_patched.py
+requests_chain.egg-info/PKG-INFO
+requests_chain.egg-info/SOURCES.txt
+requests_chain.egg-info/dependency_links.txt
+requests_chain.egg-info/requires.txt
+requests_chain.egg-info/top_level.txt
