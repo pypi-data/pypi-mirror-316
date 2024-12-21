@@ -1,0 +1,9 @@
+airouter/__init__.py,sha256=yGNq-YDr9plA2jiTDbbB2EwmdKGkoQZzgdsB-3zn7Gw,103
+airouter/chat.py,sha256=kpGP3Y6ZnFYTGwav4dVt02Y57GkeVHQlzzicf0bnr4Q,234
+airouter/completions.py,sha256=bLAxLBEONiCAqsOYHdUTK_lGB-IC1BUrQTLH7cI1dVM,1133
+airouter/router.py,sha256=N2AxguB2NwalfAhYgU5lKu1g2h04imA5zIrKnpUPYT8,3054
+airouter/types.py,sha256=FnyIFfNxG_UZTr78YFJ3yrqU6g_LLa_6wrDrk0f37bQ,1378
+airouter_sdk-0.1.1.dist-info/LICENSE,sha256=Ig-BEok2_pA1oG6MyAmeEevO0TKHYWH6-scA1qFf8gA,1094
+airouter_sdk-0.1.1.dist-info/METADATA,sha256=mFlq-y-8j7Ba8uPmVWDCkLj3dD1R4J_UiIxkLqB8iqU,4255
+airouter_sdk-0.1.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+airouter_sdk-0.1.1.dist-info/RECORD,,
