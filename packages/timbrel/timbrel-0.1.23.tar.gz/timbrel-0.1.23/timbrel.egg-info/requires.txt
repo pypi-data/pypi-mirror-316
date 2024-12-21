@@ -1,0 +1,11 @@
+django>=5.1
+africastalking>=1.2.9
+celery>=5.4.0
+django-cities-light>=3.10.1
+django-unfold>=0.43.0
+djangorestframework>=3.15.2
+inflect>=7.4.0
+django-simple-history>=3.7.0
+django-phonenumber-field>=8.0.0
+django-import-export>=4.3.3
+django-filter>=24.3
