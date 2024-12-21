@@ -1,0 +1,14 @@
+catholic_mass_readings/__init__.py,sha256=4V2JUThcPUB9vhOPVV9YEGU1m2mSoV4Dsr9Dr_Gt7Rw,474
+catholic_mass_readings/__main__.py,sha256=2Zd3v1VitGqiUqzKkR70ioxWcyK1fO4zhfB_80avCME,366
+catholic_mass_readings/commands/__init__.py,sha256=WEviiC9egOlhZJMmb34ZPbNyZF38xDOiEpqN8SIybhI,133
+catholic_mass_readings/commands/common.py,sha256=YU_8hG8Kru0_1l4iCmfXkvBZMjGZEMWaUs32KLePcoc,72
+catholic_mass_readings/commands/mass.py,sha256=DY5EZZ0qLg65dYAvoRtxzbAb0dvzfdMTX9ZmqXiRQe8,3273
+catholic_mass_readings/constants.py,sha256=EmaBmPkp5AFYLdGfQLnE_plFcLp3f79K_5s-bmL8xsk,11299
+catholic_mass_readings/models.py,sha256=ZwAR8bVmfeh8XGtBn7llgjZgnA_d3ZrINFZWWzUx-0M,6984
+catholic_mass_readings/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+catholic_mass_readings/usccb.py,sha256=NP-pDu_JFthC1SrjCvQbp68GwcSLImzdypZIjuvCTN8,8609
+catholic_mass_readings/utils.py,sha256=T5uZMTxIwHWdWAgzpDawWCMc5hCgyeN2JpCJpl-A4FI,6419
+catholic_mass_readings-0.3.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+catholic_mass_readings-0.3.0.dist-info/METADATA,sha256=AXYBV87zE1QubS9XpXBwceKkGoVtwpaDHFCfKAbM1iw,4652
+catholic_mass_readings-0.3.0.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+catholic_mass_readings-0.3.0.dist-info/RECORD,,
