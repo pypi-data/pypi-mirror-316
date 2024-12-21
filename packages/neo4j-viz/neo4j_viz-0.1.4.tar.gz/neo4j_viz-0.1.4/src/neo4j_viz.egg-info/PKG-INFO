@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: neo4j-viz
+Version: 0.1.4
+Summary: A simple graph visualization tool
+Author-email: Neo4j <team-gds@neo4j.org>
+Project-URL: Homepage, https://neo4j.com/
+Keywords: graph,visualization,neo4j
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Topic :: Database :: Front-Ends
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Classifier: Topic :: Software Development
+Classifier: Typing :: Typed
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: ipython<9,>=8
+Requires-Dist: pydantic<3,>=2
+Requires-Dist: pydantic-extra-types<3,>=2
+Provides-Extra: dev
+Requires-Dist: ruff==0.8.4; extra == "dev"
+Requires-Dist: mypy==1.13.0; extra == "dev"
+Requires-Dist: pytest==8.3.4; extra == "dev"
+Requires-Dist: selenium==4.27.1; extra == "dev"
+Requires-Dist: palettable==3.3.3; extra == "dev"
+Requires-Dist: pytest-mock==3.14.0; extra == "dev"
+Provides-Extra: pandas
+Requires-Dist: pandas<3,>=2; extra == "pandas"
+Requires-Dist: pandas-stubs<3,>=2; extra == "pandas"
+Provides-Extra: gds
+Requires-Dist: graphdatascience<2,>=1; extra == "gds"
+Provides-Extra: notebook
+Requires-Dist: ipykernel==6.29.5; extra == "notebook"
+Requires-Dist: pykernel==0.1.6; extra == "notebook"
+Requires-Dist: neo4j>=5.26.0; extra == "notebook"
+Requires-Dist: ipywidgets>=8.0.0; extra == "notebook"
+Requires-Dist: palettable==3.3.3; extra == "notebook"
