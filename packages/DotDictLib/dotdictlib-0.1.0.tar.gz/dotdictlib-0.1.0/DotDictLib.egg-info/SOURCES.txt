@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+DotDictLib.egg-info/PKG-INFO
+DotDictLib.egg-info/SOURCES.txt
+DotDictLib.egg-info/dependency_links.txt
+DotDictLib.egg-info/top_level.txt
+dictator/__init__.py
+dictator/dot_dict.c
