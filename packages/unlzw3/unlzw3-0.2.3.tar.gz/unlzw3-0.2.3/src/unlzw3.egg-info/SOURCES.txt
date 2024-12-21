@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+pyproject.toml
+src/unlzw3/__init__.py
+src/unlzw3/unlzw.py
+src/unlzw3.egg-info/PKG-INFO
+src/unlzw3.egg-info/SOURCES.txt
+src/unlzw3.egg-info/dependency_links.txt
+src/unlzw3.egg-info/requires.txt
+src/unlzw3.egg-info/top_level.txt
+src/unlzw3/tests/__init__.py
+src/unlzw3/tests/test_mod.py
