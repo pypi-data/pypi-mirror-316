@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: fh_flowbite
+Version: 0.0.1
+Summary: Extension package for FastHT_Tailwind using Flowbite.
+Author-email: lmbelo <lucas.belo@live.com>
+License-File: LICENSE
+Requires-Dist: python-fasthtml>=0.10.1
+Requires-Dist: fh_tailwind>=0.0.1

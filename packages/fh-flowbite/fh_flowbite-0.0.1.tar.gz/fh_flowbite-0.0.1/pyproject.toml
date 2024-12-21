@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fh_flowbite"
+version = "0.0.1"
+description = "Extension package for FastHT_Tailwind using Flowbite."
+authors = [
+    { name = "lmbelo", email = "lucas.belo@live.com" },
+]
+dependencies = [
+    "python-fasthtml>=0.10.1",
+    "fh_tailwind>=0.0.1"
+]

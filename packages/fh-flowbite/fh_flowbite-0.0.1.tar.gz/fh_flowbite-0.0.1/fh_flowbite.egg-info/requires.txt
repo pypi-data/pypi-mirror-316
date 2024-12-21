@@ -1,0 +1,2 @@
+python-fasthtml>=0.10.1
+fh_tailwind>=0.0.1
