@@ -1,0 +1,7 @@
+README.md
+setup.py
+openqudit.egg-info/PKG-INFO
+openqudit.egg-info/SOURCES.txt
+openqudit.egg-info/dependency_links.txt
+openqudit.egg-info/top_level.txt
+qudit/__init__.py
