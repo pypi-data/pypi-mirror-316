@@ -1,0 +1,4 @@
+[console_scripts]
+post_install=trossen_aloha_ui.post_install:main
+trossen_aloha_ui=trossen_aloha_ui.__main__:main
+
