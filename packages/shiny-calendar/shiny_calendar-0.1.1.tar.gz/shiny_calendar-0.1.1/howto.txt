@@ -1,0 +1,9 @@
+PUBLISH ON TEST PYPI:
+uv publish --publish-url https://test.pypi.org/legacy/ --token $TEST_PYPI_TOKEN
+
+PUBLISH ON PYPI:
+uv publish --token $PYPI_TOKEN
+
+SHINYLIVE:
+uv run shinylive export example-app docs
+
