@@ -1,0 +1,8 @@
+pyellispeed-0.1.0.dist-info/METADATA,sha256=XJSXe6gmnf00CgCc6ri48IHZFQTu8ulXy-gwHBEDLyM,3633
+pyellispeed-0.1.0.dist-info/WHEEL,sha256=hpKbFb-2Zvmsak_6d8vr0j66WRaorvC5PJqwzoRk5aU,127
+pyellispeed/__init__.py,sha256=lMA4s-JyraCbo9llf4jSPEfqMeHTmFncILUI8vE7Fn0,127
+pyellispeed/geometry.py,sha256=1SECqCR0IaGSUvevKNO3B3PNR2CdIY7l7hquR8VcQZg,4504
+pyellispeed/analysis.py,sha256=wgr_iO71kHVBrSOcslURpqoDxGvE0hNcJIXF3i-Fx8A,3845
+pyellispeed/drawing.py,sha256=oioqE-oJ8h9-qMhP3k4H438O7zV9RciQWcJHaDVSJA8,1898
+pyellispeed/pyellispeed.cpython-312-s390x-linux-gnu.so,sha256=6otOmNbIA1_zPoPWsYeZQzTyc1nM7-LghsGAlJJuyto,987864
+pyellispeed-0.1.0.dist-info/RECORD,,
