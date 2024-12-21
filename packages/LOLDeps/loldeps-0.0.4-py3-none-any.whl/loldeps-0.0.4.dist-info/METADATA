@@ -1,0 +1,27 @@
+Metadata-Version: 2.4
+Name: LOLDeps
+Version: 0.0.4
+Summary: A tool to find vulnerabilities in packages using native package manager tools such as nuget.
+Project-URL: Homepage, https://github.com/pritchyspritch/LOLDeps
+Project-URL: Issues, https://github.com/pritchyspritch/LOLDeps/issues
+Author-email: Sam Pritchard <47423802+pritchyspritch@users.noreply.github.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# LOLDeps
+LOLDeps stands for Living Off the Land Dependencies, it is a simple tool that uses native package managers to highlight vulnerabilities in your package manifests and alerts you when it finds issues.
+
+```shell
+usage: LOLDeps.py [-h] [--path PATH] [--failure-level FAILURE_LEVEL] [--ado]
+
+options:
+  -h, --help            show this help message and exit
+  --path PATH           Path to the directory where your code and package manifest is held.
+  --failure-level FAILURE_LEVEL
+                        Provide the risk level that must be failed on. Options: critical, high, moderate
+  --ado                 Choose if you are running in Azure DevOps pipeline.
+```
