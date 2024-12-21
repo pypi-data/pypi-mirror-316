@@ -1,0 +1,13 @@
+clts_pcp/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+clts_pcp/clts.py,sha256=3KTAqUcCH26GWhby8X1ej06vffBiU0hlscb6xBFHQFU,1294
+clts_pcp/setup.py,sha256=rVwJaqnrRZKAmzZUW0DnHzU0f1MCoxyqu5GM29bCOVk,149
+clts_pcp/testlistts.py,sha256=SDBGXTzC0g9iBEmd8EdlAf70Acr3DQ3FcELbfZNvNQk,465
+clts_pcp/lts.egg-info/PKG-INFO,sha256=kh2abPHhm4rHVGHieJZTg1gFNzkAgNC1HIM0fPmN2rQ,71
+clts_pcp/lts.egg-info/SOURCES.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+clts_pcp/lts.egg-info/dependency_links.txt,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+clts_pcp/lts.egg-info/requires.txt,sha256=bgRHU3BQz4cfmraj_sVxX5xv_1IS9mZpk_H8RrH3F6M,5
+clts_pcp/lts.egg-info/top_level.txt,sha256=c7mr5vZIMuXO-GUTpcZNofxzxesL-AZCJPqKp_cf_hY,4
+clts_pcp-1.0.0.dist-info/METADATA,sha256=scL_5jVTlSR48ap_UQ_aYrp8nsJaT4ZuNHau7949tUc,2629
+clts_pcp-1.0.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+clts_pcp-1.0.0.dist-info/licenses/LICENSE,sha256=Qv2ilebwoUtMJnRsZwRy729xS5JZQzLauJ0tQzkAkTA,1088
+clts_pcp-1.0.0.dist-info/RECORD,,
