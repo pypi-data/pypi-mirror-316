@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+
+[tool.bandit]
+exclude_dirs = ["tests", ".venv", "node_modules"]
+
+[tool.pylint]
+output-format = "pylint_gitlab.GitlabCodeClimateReporter"
+
+[tool.pylint.master]
+ignore = ["tests", ".venv", "setup.py", "blog_app/static", "blog_app/templates", "node_modules"]
+
+[tool.pylint.messages_control]
+disable = [
+    "missing-module-docstring",
+    "missing-class-docstring",
+    "missing-function-docstring",
+    "too-few-public-methods"
+]
