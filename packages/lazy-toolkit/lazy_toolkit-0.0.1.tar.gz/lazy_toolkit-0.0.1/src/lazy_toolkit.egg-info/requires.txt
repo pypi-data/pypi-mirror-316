@@ -1,0 +1,4 @@
+pytz>=2024.2
+aiohttp
+jsonpickle>=4.0.1
+requests>=2.32.3
