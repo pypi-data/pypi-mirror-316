@@ -1,0 +1,2 @@
+[console_scripts]
+zookeeper-utils = zookeeper_utils.cli:main
