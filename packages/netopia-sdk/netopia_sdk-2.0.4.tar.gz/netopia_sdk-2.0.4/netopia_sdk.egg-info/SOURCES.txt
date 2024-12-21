@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.MD
+requirements.txt
+setup.py
+netopia_sdk.egg-info/PKG-INFO
+netopia_sdk.egg-info/SOURCES.txt
+netopia_sdk.egg-info/dependency_links.txt
+netopia_sdk.egg-info/requires.txt
+netopia_sdk.egg-info/top_level.txt
+tests/test_client.py
+tests/test_config.py
