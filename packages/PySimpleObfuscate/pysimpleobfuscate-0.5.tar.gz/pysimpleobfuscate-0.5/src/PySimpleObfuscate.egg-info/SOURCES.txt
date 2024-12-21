@@ -1,0 +1,11 @@
+README.md
+setup.py
+src/PySimpleObfuscate.egg-info/PKG-INFO
+src/PySimpleObfuscate.egg-info/SOURCES.txt
+src/PySimpleObfuscate.egg-info/dependency_links.txt
+src/PySimpleObfuscate.egg-info/entry_points.txt
+src/PySimpleObfuscate.egg-info/top_level.txt
+src/lib/__init__.py
+src/lib/cli.py
+src/lib/framework.py
+test/test_cli.py
