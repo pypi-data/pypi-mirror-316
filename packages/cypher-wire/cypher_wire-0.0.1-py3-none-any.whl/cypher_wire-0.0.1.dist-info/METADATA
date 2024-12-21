@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: cypher_wire
+Version: 0.0.1
+Author: Ahmad Gamal, Eslam Nasr
+Author-email: PaNDa2Code <moaaz0688@gmail.com>
+Project-URL: github, https://github.com/PaNDa2code/CypherWire.git
+Project-URL: pypi, https://pypi.org/project/CypherWire
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Cypher Wire
