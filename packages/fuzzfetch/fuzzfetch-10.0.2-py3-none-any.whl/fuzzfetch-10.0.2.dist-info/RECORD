@@ -1,0 +1,17 @@
+fuzzfetch/__init__.py,sha256=ll9axid_47wFo-FNxOtWXLOP7_nHW4qKnoRUuf1A5xE,644
+fuzzfetch/__main__.py,sha256=Duiyi3l8VgIUk8dh3MP8fvm6j7nFbhnQNZQtko4Vl84,292
+fuzzfetch/args.py,sha256=4lX-dV_Dzt7n_X_wL4eksbevnrnkzK1T31HdVhigKe4,7332
+fuzzfetch/core.py,sha256=badHyTAHXz5d1YmGgsTwIXZV1xb47tpxWmRCoMAliRA,29725
+fuzzfetch/download.py,sha256=HFxdLRACgVxKOCgZMCFDBsEwlpyvHJ8jyQW6K4HqltU,3678
+fuzzfetch/errors.py,sha256=IG6lXMedj_h8UUEFxH6thWs0o-_z9P8eJnrmwouMp3Y,359
+fuzzfetch/extract.py,sha256=wd0_YHCpBmeHnnK7887CqcJN6Equn4dr9M-1OZ-4Aow,5214
+fuzzfetch/models.py,sha256=yo-xrNtkpUYV9nH0I75NGDSfMkwmenRoRRjpokkRt6U,14875
+fuzzfetch/path.py,sha256=qMui6g7QFkava68RHSSTSPqoenmw_IHfknLifqim5xI,2689
+fuzzfetch/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fuzzfetch/utils.py,sha256=GBt_hZ0FiqWekR3IyYjNtkoRtRqhykpA00mBw1mXeRM,1636
+fuzzfetch-10.0.2.dist-info/LICENSE.md,sha256=5rZWbwhd9XRlFcbX4u3K7A0rd9UnrEDZFAnXg_tshQg,15550
+fuzzfetch-10.0.2.dist-info/METADATA,sha256=k28bdf2Q4hciQgGR8yabvIy8gpVkB4kfEHhrMeAnJMY,5451
+fuzzfetch-10.0.2.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+fuzzfetch-10.0.2.dist-info/entry_points.txt,sha256=siF8226Vrw4ASamlFVVHLMnGJ1iIQrYAIKshZyHlxOY,53
+fuzzfetch-10.0.2.dist-info/top_level.txt,sha256=mzB1UnNOEei60LZP6sqKtRE6b3wnNoaaVvOCcWqW2fc,10
+fuzzfetch-10.0.2.dist-info/RECORD,,
