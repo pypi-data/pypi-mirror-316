@@ -1,0 +1,145 @@
+[project]
+name = "wigglecam"
+description = "Wigglecam package help you building an awesome camera."
+authors = [
+    { name = "Michael G", email = "me@mgineer85.de" },
+]
+maintainers = [
+    { name = "Michael G", email = "me@mgineer85.de" },
+]
+requires-python = ">=3.10,<3.14"
+dynamic = []
+readme = "README.md"
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Multimedia :: Graphics",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Multimedia :: Graphics :: Capture :: Digital Camera",
+]
+keywords = [
+    "wigglecam",
+    "wigglecamera",
+    "stereoscopic",
+    "picamera2",
+    "picamera",
+    "camera",
+    "python",
+    "synchronized camera",
+]
+dependencies = [
+    "pydantic",
+    "pydantic-settings",
+    "gpiozero",
+    "pillow>=10.0.0",
+    "requests",
+    "fastapi",
+    "uvicorn",
+    "gpiod>=2.2.1; platform_system == 'Linux'",
+    "pyturbojpeg>=1.7.0",
+    "opencv-contrib-python",
+    "matplotlib>=3.9.3",
+]
+version = "0.0.1"
+
+[project.license]
+text = "MIT"
+
+[project.optional-dependencies]
+gui = [
+    "pyside6>=6.8.0.2",
+]
+
+[project.urls]
+homepage = "https://photobooth-app.org/wigglegramcamera/"
+repository = "https://github.com/photobooth-app/wigglecam"
+documentation = "https://photobooth-app.org/wigglegramcamera/"
+
+[project.scripts]
+wigglecam-mobile = "examples.lowlevel.gpio:main"
+wigglecam-gui = "examples.gui.camera:main"
+wigglecam-virtual = "examples.lowlevel.multiserver:main"
+wigglecam-node = "wigglecam.__main__:main"
+
+[tool.pdm.version]
+source = "file"
+path = "wigglecam/__version__.py"
+
+[tool.pdm.dev-dependencies]
+test = [
+    "pytest",
+    "pytest-benchmark",
+    "pytest-cov",
+    "coverage[toml]",
+    "numpy",
+    "simplejpeg",
+]
+lint = [
+    "ruff",
+]
+
+[tool.pdm.scripts]
+test = "pytest --basetemp=./tests_tmp/ -v ./tests/tests --cov-report=term --cov-report=xml:coverage.xml --cov"
+benchmark = "pytest --basetemp=./tests_tmp/ -v ./tests/benchmarks"
+
+[tool.pdm.build]
+includes = [
+    "./wigglecam",
+    "./examples",
+]
+
+[tool.ruff]
+line-length = 150
+extend-exclude = [
+    "vendor",
+]
+
+[tool.ruff.lint]
+select = [
+    "E",
+    "W",
+    "F",
+    "B",
+    "UP",
+    "I",
+]
+ignore = [
+    "B008",
+]
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
+
+[tool.pytest.ini_options]
+testpaths = [
+    "tests",
+]
+log_cli = true
+log_cli_level = "DEBUG"
+log_cli_format = "%(asctime)s [%(levelname)8s] %(message)s (%(filename)s:%(lineno)s)"
+log_cli_date_format = "%Y-%m-%d %H:%M:%S"
+
+[tool.coverage.run]
+disable_warnings = [
+    "couldnt-parse",
+]
+omit = [
+    "test_*.py",
+    "./tests/*",
+]
+parallel = true
+concurrency = [
+    "thread",
+    "multiprocessing",
+]
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
