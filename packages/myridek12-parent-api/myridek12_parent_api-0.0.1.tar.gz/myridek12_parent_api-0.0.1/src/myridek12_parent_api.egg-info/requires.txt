@@ -1,0 +1,9 @@
+aiohttp
+pydantic
+beautifulsoup4
+hashlib
+html
+urllib
+base64
+os
+re
