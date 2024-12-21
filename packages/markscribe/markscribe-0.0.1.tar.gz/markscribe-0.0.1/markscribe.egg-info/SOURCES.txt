@@ -1,0 +1,14 @@
+README.md
+setup.py
+markscribe/__init__.py
+markscribe/cli.py
+markscribe/version.py
+markscribe.egg-info/PKG-INFO
+markscribe.egg-info/SOURCES.txt
+markscribe.egg-info/dependency_links.txt
+markscribe.egg-info/entry_points.txt
+markscribe.egg-info/requires.txt
+markscribe.egg-info/top_level.txt
+markscribe/documents/__init__.py
+markscribe/documents/pdf.py
+markscribe/documents/utils.py

@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: markscribe
+Version: 0.0.1
+Summary: Convert documents to Markdown using Vision LLMs
+Home-page: https://github.com/r-salas/markscribe
+Author: Rubén Salas
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: openai>=1.0.0
+Requires-Dist: typer>=0.10.0
+Requires-Dist: pdf2image>=1.16.0
+Requires-Dist: Pillow>=9.0.0
+Requires-Dist: tqdm>=4.50.0
+
+# markscribe
+Convert documents to Markdown using Vision LLMs
