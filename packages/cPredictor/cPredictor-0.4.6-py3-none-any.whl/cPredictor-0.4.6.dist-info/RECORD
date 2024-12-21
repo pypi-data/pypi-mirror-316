@@ -1,0 +1,11 @@
+cPredictor/SVM_prediction.py,sha256=ajBeUUw-asjVVYI7ntPu2Go5tIaE41YEDb-u-YEQfDk,33564
+cPredictor/__init__.py,sha256=kDQ8oTwzMlMfD4MaWtJHHcUzKdKhivD_WD78saVL1HI,270
+cPredictor/tests/SVM_prediction_test.py,sha256=_eXF3uycVxWeKUpCJB0Q6TeXWkEodszNtPZu0ud_nEA,5416
+cPredictor/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cPredictor/tests/cPredictor_test_model.py,sha256=F5K59LZlgsmTB2hsTpbsWHlArKHS_TdhSnw01vDE6-U,8174
+cPredictor-0.4.6.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+cPredictor-0.4.6.dist-info/METADATA,sha256=ZrrbLlsc5039mj43qTIcAtf-7aiZG6RXbt7MWre7uQI,3383
+cPredictor-0.4.6.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+cPredictor-0.4.6.dist-info/entry_points.txt,sha256=jWviDlyXk8UTuVRVDXW5ihbZ7xWbKSt3uKRwjx2pvJw,227
+cPredictor-0.4.6.dist-info/top_level.txt,sha256=NXWRMFJ_ywM9zoRGffXs1j38bnAtf-odfECMfsNtJV4,11
+cPredictor-0.4.6.dist-info/RECORD,,
