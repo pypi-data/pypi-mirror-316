@@ -1,0 +1,181 @@
+[tool.poetry]
+name = "betterproto2"
+version = "0.0.1"
+description = "A better Protobuf / gRPC generator & library"
+authors = ["Adrien Vannson <adrien.vannson@protonmail.com>", "Daniel G. Taylor <danielgtaylor@gmail.com>"]
+readme = "README.md"
+repository = "https://github.com/betterproto/python-betterproto2"
+keywords = ["protobuf", "gRPC"]
+license = "MIT"
+packages = [
+    { include = "betterproto", from = "src" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+# The Ruff version is pinned. To update it, also update it in .pre-commit-config.yaml
+ruff = { version = "~0.7.4", optional = true }
+grpclib = "^0.4.1"
+jinja2 = { version = ">=3.0.3", optional = true }
+python-dateutil = "^2.8"
+typing-extensions = "^4.7.1"
+betterproto-rust-codec = { version = "0.1.1", optional = true }
+
+[tool.poetry.group.dev.dependencies]
+asv = "^0.4.2"
+bpython = "^0.19"
+jinja2 = ">=3.0.3"
+mypy = "^1.11.2"
+pre-commit = "^2.17.0"
+grpcio-tools = "^1.54.2"
+tox = "^4.0.0"
+mkdocs-material = {version = "^9.5.49", python = ">=3.10"}
+mkdocstrings = {version = "^0.27.0", python = ">=3.10", extras = ["python"]}
+
+[tool.poetry.group.test.dependencies]
+poethepoet = ">=0.9.0"
+pytest = "^6.2.5"
+pytest-asyncio = "^0.12.0"
+pytest-cov = "^2.9.0"
+pytest-mock = "^3.1.1"
+pydantic = ">=2.0,<3"
+protobuf = "^4"
+cachelib = "^0.10.2"
+tomlkit = ">=0.7.0"
+
+[tool.poetry.scripts]
+protoc-gen-python_betterproto = "betterproto.plugin:main"
+
+[tool.poetry.extras]
+compiler = ["ruff", "jinja2"]
+rust-codec = ["betterproto-rust-codec"]
+
+[tool.ruff]
+extend-exclude = ["tests/output_*"]
+target-version = "py38"
+line-length = 120
+
+[tool.ruff.lint]
+select = [
+    "F401",  # Unused imports
+    "F841",  # Unused local variables
+    "F821",  # Undefined names
+    "E501",  # Line length violations
+
+    "SIM101", # Simplify unnecessary if-else blocks
+    "SIM102", # Simplify return or yield statements
+    "SIM103", # Simplify list/set/dict comprehensions
+
+    "I",
+]
+
+
+[tool.ruff.lint.isort]
+combine-as-imports = true
+
+# Dev workflow tasks
+
+[tool.poe.tasks.generate]
+script = "tests.generate:main"
+help = "Generate test cases (do this once before running test)"
+
+[tool.poe.tasks.test]
+cmd = "pytest"
+help = "Run tests"
+
+[tool.poe.tasks.types]
+cmd  = "mypy src --ignore-missing-imports"
+help = "Check types with mypy"
+
+[tool.poe.tasks.format]
+sequence = ["_format", "_sort-imports"]
+help = "Format the source code, and sort the imports"
+
+[tool.poe.tasks.check]
+sequence = ["_check-format", "_check-imports"]
+help = "Check that the source code is formatted and the imports sorted"
+
+[tool.poe.tasks._format]
+cmd = "ruff format src tests"
+help = "Format the source code without sorting the imports"
+
+[tool.poe.tasks._sort-imports]
+cmd = "ruff check --select I --fix src tests"
+help = "Sort the imports"
+
+[tool.poe.tasks._check-format]
+cmd = "ruff format --diff src tests"
+help = "Check that the source code is formatted"
+
+[tool.poe.tasks._check-imports]
+cmd = "ruff check --select I src tests"
+help = "Check that the imports are sorted"
+
+[tool.poe.tasks.docs]
+cmd  = "sphinx-build docs docs/build"
+help = "Build the sphinx docs"
+
+[tool.poe.tasks.bench]
+shell = "asv run master^! && asv run HEAD^! && asv compare master HEAD"
+help  = "Benchmark current commit vs. master branch"
+
+[tool.poe.tasks.clean]
+cmd  = """
+rm -rf .asv .coverage .mypy_cache .pytest_cache
+       dist betterproto.egg-info **/__pycache__
+       testsoutput_*
+"""
+help = "Clean out generated files from the workspace"
+
+[tool.poe.tasks.generate_lib]
+cmd = """
+protoc
+    --plugin=protoc-gen-custom=src/betterproto/plugin/main.py
+    --custom_opt=INCLUDE_GOOGLE
+    --custom_out=src/betterproto/lib/std
+    -I /usr/local/include/
+    /usr/local/include/google/protobuf/**/*.proto
+"""
+help = "Regenerate the types in betterproto.lib.std.google"
+
+# CI tasks
+
+[tool.poe.tasks.full-test]
+shell = "poe generate && tox"
+help = "Run tests with multiple pythons"
+
+[tool.doc8]
+paths = ["docs"]
+max_line_length = 88
+
+[tool.doc8.ignore_path_errors]
+"docs/migrating.rst" = [
+    "D001",  # contains table which is longer than 88 characters long
+]
+
+[tool.coverage.run]
+omit = ["betterproto/tests/*"]
+
+[tool.tox]
+legacy_tox_ini = """
+[tox]
+requires =
+    tox>=4.2
+    tox-poetry-installer[poetry]==1.0.0b1
+env_list =
+    py311
+    py38
+    py37
+
+[testenv]
+commands =
+    pytest {posargs: --cov betterproto}
+poetry_dep_groups =
+    test
+require_locked_deps = true
+require_poetry = true
+"""
+
+[build-system]
+requires = ["poetry-core>=1.0.0,<2"]
+build-backend = "poetry.core.masonry.api"
