@@ -1,0 +1,2 @@
+[console_scripts]
+dottxt = dottxt.cli:dottxt_cli
