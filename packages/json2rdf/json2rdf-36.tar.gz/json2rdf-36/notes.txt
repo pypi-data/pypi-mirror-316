@@ -1,0 +1,6 @@
+cli
+
+precommit to automate:
+- publishing. set ver to num of commits. post commit
+
+- code check
