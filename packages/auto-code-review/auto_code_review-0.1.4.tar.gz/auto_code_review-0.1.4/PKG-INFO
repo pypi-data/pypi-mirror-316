@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: auto-code-review
+Version: 0.1.4
+Summary: Auto code review for PR in GitHub
+Home-page: https://github.com/yosuke-yuikimatsu/auto-code-review
+Author: Dmitry Geyvandov
+Author-email: geyvandovdd@gmail.com
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+License-File: LICENSE.txt
+Requires-Dist: openai>=0.27
+Requires-Dist: jinja2<4.0,>=3.0
+Requires-Dist: PyYAML>=6.0
+Requires-Dist: requests>=2.26.0
