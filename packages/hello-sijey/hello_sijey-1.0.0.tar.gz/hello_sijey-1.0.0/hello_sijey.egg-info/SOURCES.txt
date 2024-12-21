@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+hello_sijey.egg-info/PKG-INFO
+hello_sijey.egg-info/SOURCES.txt
+hello_sijey.egg-info/dependency_links.txt
+hello_sijey.egg-info/requires.txt
+hello_sijey.egg-info/top_level.txt
+package/__init__.py
+package/main.py
