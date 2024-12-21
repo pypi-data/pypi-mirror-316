@@ -1,0 +1,11 @@
+README.md
+setup.py
+chillyfy.egg-info/PKG-INFO
+chillyfy.egg-info/SOURCES.txt
+chillyfy.egg-info/dependency_links.txt
+chillyfy.egg-info/requires.txt
+chillyfy.egg-info/top_level.txt
+music/__init__.py
+music/info.py
+music/player.py
+music/queue.py
