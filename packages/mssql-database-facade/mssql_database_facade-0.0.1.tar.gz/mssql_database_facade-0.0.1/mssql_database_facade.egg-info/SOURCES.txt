@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+setup.py
+mssql_database_facade.egg-info/PKG-INFO
+mssql_database_facade.egg-info/SOURCES.txt
+mssql_database_facade.egg-info/dependency_links.txt
+mssql_database_facade.egg-info/requires.txt
+mssql_database_facade.egg-info/top_level.txt

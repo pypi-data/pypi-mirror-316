@@ -1,0 +1,18 @@
+[project]
+name = "mssql_database_facade"
+version = "0.0.1"
+authors = [
+  { name="Alan Medina", email="alan.medina@beetmann.com" },
+]
+description = "A package implement a facade fro acces to database mssql"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/amedinabeetmann32/mssql_database_facade"
+Issues = "https://github.com/amedinabeetmann32/mssql_database_facade"
