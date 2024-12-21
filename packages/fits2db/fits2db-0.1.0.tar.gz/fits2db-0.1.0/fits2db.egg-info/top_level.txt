@@ -1,0 +1,6 @@
+dist
+docs
+fits2db
+plots
+sql
+tests
