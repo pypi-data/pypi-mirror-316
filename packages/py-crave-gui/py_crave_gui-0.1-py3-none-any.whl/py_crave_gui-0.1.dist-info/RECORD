@@ -1,0 +1,10 @@
+py_crave_gui/__init__.py,sha256=8bkDfI1o0Cz_Tl5kzAtn4XehGcTDprx9F0mULkdO8_c,141
+py_crave_gui/window.py,sha256=CPwZAtRlT32IPJYjKx3hoVdlT8VY7WrCGs0u27FozI8,340
+py_crave_gui/components/__init__.py,sha256=EEmBXu3uCCbQUMQunWpeJVTE92knkeQj_Sf_yii6rOo,80
+py_crave_gui/components/button.py,sha256=a4Ww_EUa2V2lpcGK818Mjz3-s-8Iyf6t9Qplj0a3wSM,212
+py_crave_gui/components/entry.py,sha256=oAOt1rU7fzs0GO0gLtD-0fkMiqGfV3blHg32DTZ4YUE,220
+py_crave_gui/components/label.py,sha256=bBiPt5-SJX7BgnGD5ZZFsSKlD5OFcuFwJUTmE_Ygx9Y,177
+py_crave_gui-0.1.dist-info/METADATA,sha256=qxrOErVRo8VCXfjKo8vp-whLvs58eACOFSlE3Z0EgZ4,271
+py_crave_gui-0.1.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+py_crave_gui-0.1.dist-info/top_level.txt,sha256=xGBQ2hLGUfZpiTg7h3kSxZ3SaDGPfwJwqn0yBXSS5vc,13
+py_crave_gui-0.1.dist-info/RECORD,,
