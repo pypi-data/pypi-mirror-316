@@ -1,0 +1,5 @@
+requests
+pyhunter
+PyYAML
+Unidecode
+yaspin
