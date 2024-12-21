@@ -1,0 +1,28 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "django_wplogin"
+readme = "README.md"
+authors = [
+    {name = "Alex Gómez"},
+    {name = "Baptiste Mispelon", email = "hello@bmispelon.rocks"}
+]
+license = {file = "LICENSE"}
+classifiers = [
+    "Development Status :: 6 - Mature",
+    "Framework :: Django",
+    "Framework :: Wagtail",
+    "Intended Audience :: Legal Industry",
+    "Intended Audience :: Religion",
+    "License :: OSI Approved :: MIT License",
+    "License :: OSI Approved :: Nokia Open Source License",
+    "Topic :: Games/Entertainment",
+    "Topic :: Software Development :: Libraries :: PHP Classes",
+    "Topic :: Software Development :: Testing :: Mocking",
+]
+dynamic = ["version", "description"]
+
+[project.urls]
+Funding = "https://www.djangoproject.com/fundraising"
