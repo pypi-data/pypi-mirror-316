@@ -1,0 +1,9 @@
+parfor/__init__.py,sha256=IGNdABcT01k0UL2-3-YI-L9Og-sN2KJJZC-OZ0iXRok,12034
+parfor/common.py,sha256=6tLFhHeDzlxtAcrw7nwuU6BNEsxwlT7DLA-IuQPmJlg,176
+parfor/gil.py,sha256=S2c_SnEPcG20UD85MzJZQj6LsPNWvhw_3BoHeViaHP0,19380
+parfor/nogil.py,sha256=AffvOk7sc0zkCy595xchPkTiHPl83lweGVrB7CiJvOE,5306
+parfor/pickler.py,sha256=86MUmyQZLEb7dudRCuSb6H3UYBvp8DvCyUT9Xf3Mc9A,4283
+parfor-2024.12.1.dist-info/LICENSE,sha256=N0P3pKtRMvfb64jmgJdlerg3TnS0a2QC776AzPsbZIg,35128
+parfor-2024.12.1.dist-info/METADATA,sha256=Wg9wKTtmKd7xRg36FX9tiS5LAIXzUQJbE50rkUxKlgY,7553
+parfor-2024.12.1.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+parfor-2024.12.1.dist-info/RECORD,,
