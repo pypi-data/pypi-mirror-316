@@ -1,0 +1,6 @@
+name: DICOM CT Classifier
+includes:
+  - select_modality.yaml
+  - CT.yaml
+  - CT_check_classification.yaml
+  - CT_fallback.yaml

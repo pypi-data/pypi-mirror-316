@@ -1,0 +1,68 @@
+name: Philips DWI classifier
+profile:
+  - name: classify_DWI
+    description: Checks if file is "DWI".
+    evaluate: "all"
+    depends_on:
+      - mr-classifier-select-manufacturer/is_mr
+      - mr-classifier-select-manufacturer/is_philips
+    rules:
+      - match_type: "any"
+        match:
+          - and:
+              - or:
+                  - key: file.info.header.dicom.ScanOptions
+                    contains: "EPI_GEMS"
+                  - key: file.info.header.dicom.ScanningSequence
+                    contains: "EP"
+              - key: file.info.header.dicom.RepetitionTime
+                greater_than: 6999
+              - key: file.info.header.dicom.EchoTime
+                greater_than: 50
+              - key: file.info.header.dicom.FlipAngle
+                is: 90
+              - key: file.info.header.dicom.PixelBandwidth
+                greater_than: 1200
+          - key: file.info.header.dicom.ImageType
+            contains: "DIFFUSION"
+          - key: file.info.header.dicom.ImageType
+            contains: "ADC"
+          - key: file.info.header.dicom.ImageType
+            contains: "EADC"
+          - key: file.info.header.dicom.ImageType
+            contains: "TRACE"
+          - key: file.info.header.dicom.ImageType
+            contains: "DIFFUSION MAP"
+          - and:
+              - key: file.info.header.dicom.DiffusionBValue
+                exists: true
+              - key: file.info.header.dicom.DiffusionBValue
+                greater_than: 1
+              - key: file.info.header.dicom.DiffusionBValue
+                less_than: 1e8
+          - and:
+              - key: file.info.header.dicom.ScanningSequence
+                contains: "SE"
+              - key: file.info.header.dicom.PixelBandwidth
+                greater_than: 1200
+              - key: file.info.header.dicom.RepetitionTime
+                greater_than: 3000
+              - key: file.info.header.dicom.EchoTime
+                greater_than: 50
+              - key: file.info.header.dicom.FlipAngle
+                is: 90
+          - and:
+              # Body DWIBS
+              - key: file.info.header.dicom.ImageType
+                contains: "IR"
+              - key: file.info.header.dicom.RepetitionTime
+                greater_than: 5000
+              - key: file.info.header.dicom.InversionTime
+                greater_than: 100
+              - key: file.info.header.dicom.InversionTime
+                less_than: 200
+              - key: file.info.header.dicom.PixelBandwidth
+                greater_than: 2000
+        action:
+          - key: "file.classification.Measurement"
+            add: "Diffusion"

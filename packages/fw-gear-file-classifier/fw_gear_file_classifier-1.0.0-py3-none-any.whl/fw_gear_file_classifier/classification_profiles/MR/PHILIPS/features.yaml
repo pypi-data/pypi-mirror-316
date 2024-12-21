@@ -1,0 +1,240 @@
+name: Philips feature Classifier
+profile:
+  - name: classify_MRAcquisitionType
+    description: Set MRAcquisitionType
+    evaluate: "all"
+    depends_on:
+      - mr-classifier-select-manufacturer/is_mr
+      - mr-classifier-select-manufacturer/is_philips
+    rules:
+      - match_type: "any"
+        match:
+          - key: file.info.header.dicom.MRAcquisitionType
+            is: "3D"
+        action:
+          - key: file.classification.Features
+            add: "3D"
+
+      - match_type: "any"
+        match:
+          - key: file.info.header.dicom.MRAcquisitionType
+            is: "2D"
+        action:
+          - key: file.classification.Features
+            add: "2D"
+
+  # - name: classify_FatSaturation
+  #   description: Set FatSaturation
+  #   evaluate: "all"
+  #   depends_on:
+  #     - mr-classifier-select-manufacturer/is_mr
+  #     - mr-classifier-select-manufacturer/is_philips
+  #   rules:
+  #     - match_type: "any"
+  #       match:
+  #         - key: file.info.header.dicom.ScanOptions
+  #           contains: "FS"
+  #       action:
+  #         - key: file.classification.Feature
+  #           add: "Fat saturation"
+
+  - name: classify_features
+    description: Sets any features found.
+    evaluate: "all"
+    depends_on:
+      - mr-classifier-select-manufacturer/is_mr
+      - mr-classifier-select-manufacturer/is_philips
+    rules:
+      - match_type: "any"
+        match:
+          - and:
+              - key: file.info.header.dicom.ScanningSequence
+                contains: "GR"
+              - key: file.info.header.dicom.SequenceVariant
+                contains: "SP"
+        action:
+          - key: file.classification.Features
+            add: "SPGR"
+
+      # - match_type: "any"
+      #   match:
+      #     - or:
+      #         - key: file.info.header.dicom.MagneticFieldStrength
+      #           is: 1.5
+      #         - key: file.info.header.dicom.MagneticFieldStrength
+      #           is: 15000.0
+      #   action:
+      #     - key: file.classification.Feature
+      #       add: "1.5T"
+
+      # - match_type: "any"
+      #   match:
+      #     - key: file.info.header.dicom.MagneticFieldStrength
+      #       is: 3
+      #   action:
+      #     - key: file.classification.Feature
+      #       add: "3T"
+
+      # # Match Combined IP-OOP images
+      # - match_type: "all"
+      #   match:
+      #     - key: file.info.header.dicom.MagneticFieldStrength
+      #       is: 1.5
+      #     - key: file.info.header.dicom_array.EchoTime.0
+      #       is: 2.084
+      #     - key: file.info.header.dicom_array.EchoTime.1
+      #       is: 4.168
+      #   action:
+      #     - key: file.classification.Feature
+      #       add: "DualEcho"
+      #     - key: file.classification.Feature
+      #       add: "In phase"
+      #     - key: file.classification.Feature
+      #       add: "Out of phase"
+
+      # # Match Separate In-Phase
+      # - match_type: "all"
+      #   match:
+      #     - or:
+      #         - key: file.info.header.dicom.ImageType
+      #           contains: "IN_PHASE"
+      #         - and:
+      #             - key: file.info.header.dicom.MagneticFieldStrength
+      #               is: 3
+      #             - key: file.info.header.dicom.EchoTime
+      #               is: 2.1
+      #               approximate: 0
+      #             - key: file.info.header.dicom_array.EchoTime.1
+      #               exists: false
+      #             - key: file.info.header.dicom.InversionTime
+      #               exists: false
+      #   action:
+      #     - key: file.classification.Feature
+      #       add: "In phase"
+
+      # Match MRA TOF
+      - match_type: "all"
+        match:
+          - key: file.info.header.dicom.ScanningSequence
+            contains: "GR"
+          - key: file.info.header.dicom.ScanOptions
+            contains: "VASCTOF_GEMS"
+        action:
+          - key: file.classification.Features
+            add: "TOF"
+
+      # # Match Projection
+      # - match_type: "any"
+      #   match:
+      #     - key: file.info.header.dicom.ImageType
+      #       contains: "PROJECTION IMAGE"
+      #     - key: file.info.header.dicom.ImageType
+      #       contains: "PROJECTION IMAG"
+      #   action:
+      #     - key: file.classification.Feature
+      #       add: "Projection"
+
+      # Match TRACEap
+      - match_type: "any"
+        match:
+          - key: file.info.header.dicom.ImageType
+            contains: "ADC"
+          - key: file.info.header.dicom.ImageType
+            contains: "EADC"
+        action:
+          - key: file.classification.Features
+            add: "TRACE"
+
+      # Match TRACEmap
+      - match_type: "all"
+        match:
+          - key: file.info.header.dicom.ImageType
+            contains: "DERIVED"
+          - key: file.info.header.dicom.ImageType
+            contains: "SECONDARY"
+          - key: file.info.header.dicom.ImageType
+            contains: "DIFFUSION MAP"
+        action:
+          - key: file.classification.Features
+            add: "TRACE"
+
+      # DualEcho
+      - match_type: "any"
+        match:
+          # Need to verify echotime index exists (or could be silently failing)
+          - and:
+              - key: file.info.header.dicom_array.EchoTime.0
+                exists: true
+              - key: file.info.header.dicom_array.EchoTime.1
+                exists: true
+              - key: file.zip_member_count
+                greater_than: 10
+              - not:
+                  - key: file.info.header.dicom_array.EchoTime.0
+                    is: file.info.header.dicom_array.EchoTime.1
+                    resolve: true
+        action:
+          - key: file.classification.Features
+            add: "Multi-Echo"
+
+  # - name: classify_scan_orientation
+  #   description: Sets scan orientation.
+  #   evaluate: "first"
+  #   depends_on:
+  #     - mr-classifier-select-manufacturer/is_mr
+  #     - mr-classifier-select-manufacturer/is_philips
+  #   rules:
+  #     - match_type: "all"
+  #       match:
+  #         - or:
+  #             - key: file.info.header.dicom.ImageOrientationPatient.0
+  #               greater_than: 0.75
+  #             - key: file.info.header.dicom.ImageOrientationPatient.0
+  #               less_than: -0.75
+  #         - or:
+  #             - key: file.info.header.dicom.ImageOrientationPatient.4
+  #               greater_than: 0.75
+  #             - key: file.info.header.dicom.ImageOrientationPatient.4
+  #               less_than: -0.75
+  #       action:
+  #         - key: "file.classification.Scan Orientation"
+  #           set: ["Axial"]
+
+  #     - match_type: "all"
+  #       match:
+  #         - or:
+  #             - key: file.info.header.dicom.ImageOrientationPatient.0
+  #               greater_than: 0.75
+  #             - key: file.info.header.dicom.ImageOrientationPatient.0
+  #               less_than: -0.75
+  #         - or:
+  #             - key: file.info.header.dicom.ImageOrientationPatient.5
+  #               greater_than: 0.75
+  #             - key: file.info.header.dicom.ImageOrientationPatient.5
+  #               less_than: -0.75
+  #       action:
+  #         - key: "file.classification.Scan Orientation"
+  #           set: ["Coronal"]
+
+  #     - match_type: "all"
+  #       match:
+  #         - or:
+  #             - key: file.info.header.dicom.ImageOrientationPatient.1
+  #               greater_than: 0.75
+  #             - key: file.info.header.dicom.ImageOrientationPatient.1
+  #               less_than: -0.75
+  #         - or:
+  #             - key: file.info.header.dicom.ImageOrientationPatient.5
+  #               greater_than: 0.75
+  #             - key: file.info.header.dicom.ImageOrientationPatient.5
+  #               less_than: -0.75
+  #       action:
+  #         - key: "file.classification.Scan Orientation"
+  #           set: ["Sagittal"]
+
+  #     - match_type: "all"
+  #       match:
+  #         - {key: "file.classification.Scan Orientation", exists: false}
+  #       action:
+  #         - key: "file.classification.Scan Orientation"
+  #           set: ["Oblique"]

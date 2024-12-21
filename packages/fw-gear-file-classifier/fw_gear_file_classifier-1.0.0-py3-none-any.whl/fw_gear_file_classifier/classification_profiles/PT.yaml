@@ -1,0 +1,410 @@
+---
+
+name: DICOM PT Classifier
+profile:
+
+  - name: pt_file
+    evaluate: "first"
+    rules:
+      - match_type: 'all'
+        match:
+          - key: file.type
+            is: dicom
+          - key: file.info.header.dicom.Modality
+            is: 'PT'
+      - match_type: 'all'
+        match:
+          - key: file.type
+            is: nifti
+          - key: file.info.header.dicom.Modality
+            is: 'PT'
+
+  - name: pt_set_modality
+    description: Set modality if not set.
+    evaluate: "first"
+    depends_on:
+      - pt_file
+    rules:
+      - match_type: "all"
+        match:
+          - not:
+              - key: file.modality
+                is: None
+        action:
+          - key: file.modality
+            set: PT
+
+  - name: pt_is_not_scout
+    evaluate: "first"
+    description: |
+      Evaluate to if File is not a scout
+    variables:
+      # Will loop values of al at 0, then 1.
+      label:
+        0: acquisition.label
+        1: file.info.header.dicom.SeriesDescription
+        2: file.name
+    depends_on:
+      - pt_file
+    rules:
+      - match_type: "any"
+        match:
+          - not:
+            - {key: $label, regex: '\bscout\b', case-sensitive: false}
+          - not:
+            - {key: $label, regex: 'scout', case-sensitive: false}
+
+  - name: pt_set_anatomy
+    evaluate: "all"
+    description: Set Anatomy of the Acquisitions
+    variables:
+      label:
+        0: session.label
+        1: file.info.header.dicom.SeriesDescription
+        2: file.info.header.dicom.StudyDescription
+        3: file.info.header.dicom.ProtocolName
+        4: acquisition.label
+        5: file.info.header.dicom.BodyPartExamined
+      fc: file.classification
+    depends_on:
+      - pt_file
+      - pt_is_not_scout
+    rules:
+      - match_type: "any"
+        match:
+          - {key: $label, regex: 'CHABPEL', case-sensitive: false}
+          - {key: $label, regex: '([^a-zA-Z])cap([^a-zA-Z])|^(cap)', case-sensitive: false}
+          - {key: $label, regex: 'C/A/P', case-sensitive: false}
+        action:
+          - key: $fc.Anatomy
+            add: ['Chest', 'Abdomen', 'Pelvis']
+      - match_type: "any"
+        match:
+          - {key: $label, regex: '([^a-zA-Z])ap([^a-zA-Z])|^(ap)', case-sensitive: false}
+          - {key: $label, regex: 'ABPEL', case-sensitive: false}
+        action:
+          - key: $fc.Anatomy
+            add: ['Abdomen', 'Pelvis']
+      - match_type: "any"
+        match:
+          - {key: $label, regex: 'Chest', case-sensitive: false}
+          - {key: $label, regex: '([^a-zA-Z])CH([^a-zA-Z])|^(CH)', case-sensitive: false}
+          - {key: $label, regex: 'LUNG', case-sensitive: false}
+          - {key: $label, regex: 'klatka piersiowa', case-sensitive: false}
+          - {key: $label, regex: 'Thorax', case-sensitive: false}
+          - {key: $label, regex: 'BREAST', case-sensitive: false}
+        action:
+          - key: $fc.Anatomy
+            add: ['Chest']
+      - match_type: "any"
+        match:
+          - {key: $label, regex: 'Pelvis', case-sensitive: false}
+          - {key: $label, regex: 'PELV', case-sensitive: false}
+          - {key: $label, regex: '([^a-zA-Z])PEL([^a-zA-Z])|^(PEL)', case-sensitive: false}
+          - {key: $label, regex: 'miednic', case-sensitive: false}
+        action:
+          - key: $fc.Anatomy
+            add: ['Pelvis']
+      - match_type: "any"
+        match:
+          - {key: $label, regex: 'Abdomen', case-sensitive: false}
+          - {key: $label, regex: '([^a-zA-Z])ABD([^a-zA-Z])|^(ABD)', case-sensitive: false}
+          - {key: $label, regex: '([^a-zA-Z])AB([^a-zA-Z])|^(AB)', case-sensitive: false}
+          - {key: $label, regex: 'brzusznej', case-sensitive: false}
+          - {key: $label, regex: 'brzu', case-sensitive: false}
+        action:
+          - key: $fc.Anatomy
+            add: ['Abdomen']
+      - match_type: "any"
+        match:
+          - {key: $label, regex: 'head', case-sensitive: false}
+        action:
+          - key: $fc.Anatomy
+            add: ['Head']
+
+
+  - name: pt_set_anatomy_wb
+    evaluate: "all"
+    description: Set Anatomy of the Acquisitions
+    variables:
+      label:
+        0: session.label
+        1: file.info.header.dicom.SeriesDescription
+        2: file.info.header.dicom.StudyDescription
+        3: file.info.header.dicom.ProtocolName
+        4: acquisition.label
+      fc: file.classification
+    depends_on:
+      - pt_file
+      - pt_is_not_scout
+    rules:
+      - match_type: "any"
+        match:
+          - {key: $label, regex: 'Pelvis to Head', case-sensitive: false}
+          - {key: $label, regex: 'Eyes to Thighs', case-sensitive: false}
+          - {key: $label, regex: 'WHOLE BODY', case-sensitive: false}
+          - {key: $label, regex: 'WHOLEBODY', case-sensitive: false}
+        action:
+          - key: $fc.Anatomy
+            set: ['Whole Body']
+
+  - name: pt_set_processing
+    evaluate: "all"
+    description: Set Processing Value of the Acquisitions
+    variables:
+      fihd: file.info.header.dicom
+      fc: file.classification
+    depends_on:
+      - pt_file
+    rules:
+    - match_type: "all"
+      match:
+       - key: $fihd.AttenuationCorrectionMethod
+         exists: true
+       - not:
+         - key: $fihd.AttenuationCorrectionMethod
+           is: None
+      action:
+        - key: $fc.Processing
+          add: ['Attenuation Corrected']
+
+    - match_type: "all"
+      match:
+       - key: $fihd.CorrectedImage
+         contains: ATTN
+      action:
+       - key: $fc.Processing
+         add: ['Attenuation Corrected']
+
+    - match_type: "all"
+      match:
+       - key: $fihd.CorrectedImage
+         contains: MOTN
+      action:
+       - key: $fc.Processing
+         add: ['Motion Corrected']
+
+  - name: pt_set_type
+    evaluate: "first"
+    description: Set Type Value of the Acquisitions
+    variables:
+     fihd: file.info.header.dicom
+     fc: file.classification
+    depends_on:
+     - pt_file
+    rules:
+    - match_type: "all"
+      match:
+        - key: $fihd.SeriesType
+          contains: STATIC
+      action:
+        - key: $fc.Type
+          add: ['Static']
+    - match_type: "all"
+      match:
+        - key: $fihd.SeriesType
+          contains: DYNAMIC
+      action:
+        - key: $fc.Type
+          add: ['Dynamic']
+    - match_type: "all"
+      match:
+        - key: $fihd.SeriesType
+          contains: GATED
+      action:
+        - key: $fc.Type
+          add: ['Gated']
+
+  - name: pt_set_tracer
+    evaluate: "first"
+    description: Set Tracer Value
+    variables:
+     fihd: file.info.header.dicom
+     fc: file.classification
+    depends_on:
+     - pt_file
+    rules:
+      - match_type: "any"
+        match:
+          - {key: $fihd.RadiopharmaceuticalInformationSequence.0.Radiopharmaceutical,
+             regex: '^fdg(\W+|$)|\W+fdg\W+|(^|\W+)fdg$|fluorodeoxyglucose',
+             case-sensitive: false}
+        action:
+          - key: $fc.Tracer
+            set: ['FDG']
+      - match_type: "any"
+        match:
+          - {key: $fihd.RadiopharmaceuticalInformationSequence.0.Radiopharmaceutical,
+             regex: '^fes(\W+|$)|\W+fes\W+|(^|\W+)fes$|fluoroestradiol',
+             case-sensitive: false}
+        action:
+          - key: $fc.Tracer
+            set: ['FES']
+      - match_type: "any"
+        match:
+          - {key: $fihd.RadiopharmaceuticalInformationSequence.0.Radiopharmaceutical,
+             regex: '^zr-cd8(\W+|$)|\W+zr-cd8\W+|(^|\W+)zr-cd8$|cd8',
+             case-sensitive: false}
+        action:
+          - key: $fc.Tracer
+            set: ['Zr-CD8']
+      - match_type: "any"
+        match:
+          - {key: $fihd.RadiopharmaceuticalInformationSequence.0.Radiopharmaceutical,
+             regex: '^zr-her(\W+|$)|\W+zr-her\W+|(^|\W+)zr-her$',
+             case-sensitive: false}
+        action:
+          - key: $fc.Tracer
+            set: ['Zr-HER']
+      - match_type: "any"
+        match:
+          - {key: $fihd.RadiopharmaceuticalInformationSequence.0.Radiopharmaceutical,
+             regex: '^gtp1(\W+|$)|\W+gtp1\W+|(^|\W+)gtp1$|genentech tau probe 1',
+             case-sensitive: false}
+        action:
+          - key: $fc.Tracer
+            set: ['GTP1']
+      - match_type: "any"
+        match:
+          - {key: $fihd.RadiopharmaceuticalInformationSequence.0.Radiopharmaceutical,
+             regex: '^av45(\W+|$)|\W+av45\W+|(^|\W+)av45$|florbetapir',
+             case-sensitive: false}
+        action:
+          - key: $fc.Tracer
+            set: ['AV45']
+      - match_type: "any"
+        match:
+          - {key: $fihd.RadiopharmaceuticalInformationSequence.0.Radiopharmaceutical,
+             regex: '^pipb(\W+|$)|\W+pipb\W+|(^|\W+)pipb$',
+             case-sensitive: false}
+        action:
+          - key: $fc.Tracer
+            set: ['PIPB']
+      - match_type: "any"
+        match:
+          - {key: $fihd.RadiopharmaceuticalInformationSequence.0.Radiopharmaceutical,
+             regex: '^mab(\W+|$)|\W+mab\W+|(^|\W+)mab$|monoclonal antibod',
+             case-sensitive: false}
+        action:
+          - key: $fc.Tracer
+            set: ['mAb']
+      - match_type: "any"
+        match:
+          - {key: $fihd.RadiopharmaceuticalInformationSequence.0.Radiopharmaceutical,
+             regex: '^fbb(\W+|$)|\W+fbb\W+|(^|\W+)fbb$|florbetaben',
+             case-sensitive: false}
+        action:
+          - key: $fc.Tracer
+            set: ['FBB']
+      - match_type: "any"
+        match:
+          - {key: $fihd.RadiopharmaceuticalInformationSequence.0.Radiopharmaceutical,
+             regex: '^fbp(\W+|$)|\W+fbp\W+|(^|\W+)fbp$|florbetapir',
+             case-sensitive: false}
+        action:
+          - key: $fc.Tracer
+            set: ['FBP']
+      - match_type: "any"
+        match:
+          - {key: $fihd.RadiopharmaceuticalInformationSequence.0.Radiopharmaceutical,
+             regex: '^fmm(\W+|$)|\W+fmm\W+|(^|\W+)fmm$|flutemetamol',
+             case-sensitive: false}
+        action:
+          - key: $fc.Tracer
+            set: ['FMM']
+      - match_type: "any"
+        match:
+          - {key: $fihd.RadiopharmaceuticalInformationSequence.0.Radiopharmaceutical,
+             regex: '^flt(\W+|$)|\W+flt\W+|(^|\W+)flt$|FLT',
+             case-sensitive: false}
+        action:
+          - key: $fc.Tracer
+            set: ['FLT']
+
+
+  - name: pt_set_isotope
+    evaluate: "first"
+    description: Set Isotope Value
+    variables:
+     fihd: file.info.header.dicom
+     fc: file.classification
+    depends_on:
+     - pt_file
+    rules:
+      - match_type: "all"
+        match:
+          - {key: $fihd.RadiopharmaceuticalInformationSequence.0.RadionuclideCodeSequence.0.CodingSchemeDesignator,
+             regex: 'SRT|SNM3',
+             case-sensitive: false}
+          - {key: $fihd.RadiopharmaceuticalInformationSequence.0.RadionuclideCodeSequence.0.CodeValue,
+             regex: 'C-111A1',
+             case-sensitive: false}
+        action:
+          - key: $fc.Isotope
+            set: ['F18']
+      - match_type: "all"
+        match:
+          - {key: $fihd.RadiopharmaceuticalInformationSequence.0.RadionuclideCodeSequence.0.CodingSchemeDesignator,
+             regex: 'SRT|SNM3',
+             case-sensitive: false}
+          - {key: $fihd.RadiopharmaceuticalInformationSequence.0.RadionuclideCodeSequence.0.CodeValue,
+             regex: 'C-127A2',
+             case-sensitive: false}
+        action:
+          - key: $fc.Isotope
+            set: ['Cu64']
+      - match_type: "all"
+        match:
+          - {key: $fihd.RadiopharmaceuticalInformationSequence.0.RadionuclideCodeSequence.0.CodingSchemeDesignator,
+             regex: 'SRT|SNM3',
+             case-sensitive: false}
+          - {key: $fihd.RadiopharmaceuticalInformationSequence.0.RadionuclideCodeSequence.0.CodeValue,
+             regex: 'C-131A3',
+             case-sensitive: false}
+        action:
+          - key: $fc.Isotope
+            set: ['Ga68']
+      - match_type: "all"
+        match:
+          - {key: $fihd.RadiopharmaceuticalInformationSequence.0.RadionuclideCodeSequence.0.CodingSchemeDesignator,
+             regex: 'SRT|SNM3',
+             case-sensitive: false}
+          - {key: $fihd.RadiopharmaceuticalInformationSequence.0.RadionuclideCodeSequence.0.CodeValue,
+             regex: 'C-107A1',
+             case-sensitive: false}
+        action:
+          - key: $fc.Isotope
+            set: ['N13']
+      - match_type: "all"
+        match:
+          - {key: $fihd.RadiopharmaceuticalInformationSequence.0.RadionuclideCodeSequence.0.CodingSchemeDesignator,
+             regex: 'SRT|SNM3',
+             case-sensitive: false}
+          - {key: $fihd.RadiopharmaceuticalInformationSequence.0.RadionuclideCodeSequence.0.CodeValue,
+             regex: 'C-B1038',
+             case-sensitive: false}
+        action:
+          - key: $fc.Isotope
+            set: ['O15']
+      - match_type: "all"
+        match:
+          - {key: $fihd.RadiopharmaceuticalInformationSequence.0.RadionuclideCodeSequence.0.CodingSchemeDesignator,
+             regex: 'SRT|SNM3',
+             case-sensitive: false}
+          - {key: $fihd.RadiopharmaceuticalInformationSequence.0.RadionuclideCodeSequence.0.CodeValue,
+             regex: 'C-105A1',
+             case-sensitive: false}
+        action:
+          - key: $fc.Isotope
+            set: ['C11']
+      - match_type: "all"
+        match:
+          - {key: $fihd.RadiopharmaceuticalInformationSequence.0.RadionuclideCodeSequence.0.CodingSchemeDesignator,
+             regex: 'SRT|SNM3',
+             case-sensitive: false}
+          - {key: $fihd.RadiopharmaceuticalInformationSequence.0.RadionuclideCodeSequence.0.CodeValue,
+             regex: 'C-114A5',
+             case-sensitive: false}
+        action:
+          - key: $fc.Isotope
+            set: ['I124']

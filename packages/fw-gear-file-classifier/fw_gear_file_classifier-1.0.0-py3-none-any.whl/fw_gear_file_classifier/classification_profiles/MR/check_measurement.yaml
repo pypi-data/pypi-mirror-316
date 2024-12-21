@@ -1,0 +1,14 @@
+# This profile checks if the Measurement key exists in the file classification.
+name: check-measurement
+description: A profile to check if Measurement exists.
+profile:
+  - name: is_not_classified
+    description: Checks if file.classification.Measurement exists.
+    evaluate: "all"
+    depends_on:
+      - mr-classifier-select-manufacturer/is_mr
+    rules:
+      - match_type: "all"
+        match:
+          - key: file.classification.Measurement
+            exists: false

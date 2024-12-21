@@ -1,0 +1,441 @@
+---
+name: DICOM MG Classifier
+profile:
+  - name: mg_file
+    evaluate: "first"
+    rules:
+      - match_type: "all"
+        match:
+          - key: file.type
+            is: dicom
+          - key: file.info.header.dicom.Modality
+            is: "MG"
+      - match_type: "all"
+        match:
+          - key: file.type
+            is: nifti
+          - key: file.info.header.dicom.Modality
+            is: "MG"
+
+  - name: mg_set_modality
+    description: Set modality if not set.
+    evaluate: "first"
+    depends_on:
+      - mg_file
+    rules:
+      - match_type: "all"
+        match:
+          - not:
+              - key: file.modality
+                is: None
+        action:
+          - key: file.modality
+            set: MG
+
+  - name: set_empty
+    evaluate: "all"
+    description: set empty
+    variables:
+      fc: file.classification
+    depends_on:
+      - mg_file
+    rules:
+      - match_type: "any"
+        match:
+          - {key: file.info.header.dicom.Modality, exists: true}
+        action:
+          - key: $fc.Laterality
+            set: []
+          - key: $fc.Contrast
+            set: []
+          - key: $fc.View
+            set: []
+          - key: $fc.Scan Type
+            set: []
+          - key: $fc.Intent
+            set: []
+          - key: $fc.Submodality
+            set: []
+
+  - name: check_laterality_exists_dicom_metadata
+    evaluate: "first"
+    description: Check if ImageLaterality Tag is presentin dicom metadata
+    variables:
+      fiml: file.info.header.dicom_array.ImageLaterality
+      fc: file.classification
+    depends_on:
+      - mg_file
+      - set_empty
+    rules:
+      - match_type: "any"
+        match:
+          - {key: $fiml, exists: true}
+
+  - name: mg_set_laterality_using_ImageLaterality
+    evaluate: "first"
+    description: Set Laterality as Bilateral of the Acquisitions
+    variables:
+      fiml: file.info.header.dicom_array.ImageLaterality
+      fc: file.classification
+    depends_on:
+      - mg_file
+      - check_laterality_exists_dicom_metadata
+    rules:
+      - match_type: "all"
+        match:
+          - key: $fiml
+            contains: "L"
+          - key: $fiml
+            contains: "R"
+        action:
+          - key: $fc.Laterality
+            set: ["Bilateral"]
+
+      - match_type: "all"
+        match:
+          - key: $fiml
+            contains: "L"
+          - not:
+              - key: $fiml
+                contains: "R"
+        action:
+          - key: $fc.Laterality
+            set: ["Left"]
+
+      - match_type: "all"
+        match:
+          - key: $fiml
+            contains: "R"
+          - not:
+              - key: $fiml
+                contains: "L"
+        action:
+          - key: $fc.Laterality
+            set: ["Right"]
+
+  - name: laterality_not_set
+    evaluate: "all"
+    description: |
+      To Check if Laterality is set
+    variables:
+      fc: file.classification
+    depends_on:
+      - mg_file
+    rules:
+      - match_type: "all"
+        match:
+          - not:
+              - key: $fc.Laterality
+                contains: "Left"
+          - not:
+              - key: $fc.Laterality
+                contains: "Right"
+          - not:
+              - key: $fc.Laterality
+                contains: "Bilateral"
+
+  - name: mg_set_laterality
+    evaluate: "first"
+    description: Set Laterality of the Acquisitions
+    variables:
+      label:
+        0: file.info.header.dicom.SeriesDescription
+        1: acquisition.label
+        2: file.info.header.dicom.ImageLaterality
+        3: file.info.header.dicom.ProtocolName
+      fc: file.classification
+    depends_on:
+      - mg_file
+      - laterality_not_set
+    rules:
+      - match_type: "any"
+        match:
+          - {
+              key: $label,
+              regex: "([^a-zA-Z])L([^a-zA-Z])|^L([^a-zA-Z]|$)|[^a-zA-Z]L$",
+              case-sensitive: false,
+            }
+          - {key: $label, regex: "left", case-sensitive: false}
+        action:
+          - key: $fc.Laterality
+            set: ["Left"]
+      - match_type: "any"
+        match:
+          - {
+              key: $label,
+              regex: "([^a-zA-Z])R([^a-zA-Z])|^R([^a-zA-Z]|$)|[^a-zA-Z]R$",
+              case-sensitive: false,
+            }
+          - {key: $label, regex: "right", case-sensitive: false}
+        action:
+          - key: $fc.Laterality
+            set: ["Right"]
+      - match_type: "any"
+        match:
+          - {
+              key: $label,
+              regex: "([^a-zA-Z])bil([^a-zA-Z])|^(bil)([^a-zA-Z])?",
+              case-sensitive: false,
+            }
+          - {key: $label, regex: "bilat", case-sensitive: false}
+        action:
+          - key: $fc.Laterality
+            set: ["Bilateral"]
+
+  - name: mg_set_contrast
+    evaluate: "first"
+    description: Set Constrast from acquisition.label or SeriesDescription
+    variables:
+      # Will loop through different value of label
+      label:
+        0: acquisition.label
+        1: file.info.header.dicom.SeriesDescription
+        2: file.info.header.dicom.ProtocolName
+      fihd: file.info.header.dicom
+      fc: file.classification
+      cba: file.info.header.dicom.ContrastBolusAgent
+    depends_on:
+      - mg_file
+    rules:
+      - match_type: "any"
+        match:
+          - {key: $label, regex: "(un.?enhanced)", case-sensitive: false}
+          - {key: $label, regex: 'w\^.?o', case-sensitive: false}
+          - {key: $label, regex: 'w\/.?o', case-sensitive: false}
+          - {
+              key: $label,
+              regex: "(^|[^a-zA-Z])wo([^a-zA-Z]|$)",
+              case-sensitive: false,
+            }
+          - {
+              key: $label,
+              regex: "(^|[^a-zA-Z])no([^a-zA-Z]|$)",
+              case-sensitive: false,
+            }
+          - {key: $label, regex: "(no.?IV)", case-sensitive: false}
+          - {key: $label, regex: "(sans.?IV)", case-sensitive: false}
+          - {key: $label, regex: "(non.?contrast)", case-sensitive: false}
+          - {key: $label, regex: "NON CON", case-sensitive: false}
+        action:
+          - key: $fc.Contrast
+            set: No Contrast
+      - match_type: "any"
+        match:
+          - {key: $label, regex: "enhanced", case-sensitive: false}
+          - {key: $label, regex: '(w\^.?IV)', case-sensitive: false}
+          - {key: $label, regex: '(w\/.?IV)', case-sensitive: false}
+          - {key: $label, regex: "contrast", case-sensitive: false}
+          - {key: $label, regex: "contraste", case-sensitive: false}
+          - {key: $label, regex: "(with.?contrast)", case-sensitive: false}
+          # - {key: $label, regex: '(w\/)', case-sensitive: false}
+          - {key: $label, regex: "(w.?^o)", case-sensitive: false}
+          - {key: $label, regex: "(w.?contrast)", case-sensitive: false}
+          - {key: $label, regex: "(IV.?contrast)", case-sensitive: false}
+          - {key: $label, regex: "(with.?contra)", case-sensitive: false}
+          - {key: $label, regex: "(w.?con)", case-sensitive: false}
+          - {key: $label, regex: "arterial", case-sensitive: false}
+          - {key: $label, regex: "ART", case-sensitive: false}
+          - {key: $label, regex: "portal", case-sensitive: false}
+          - {key: $label, regex: "venous", case-sensitive: false}
+          - {key: $label, regex: "delayed", case-sensitive: false}
+          - {key: $label, regex: "equil", case-sensitive: false}
+          - {key: $label, regex: "dynamic", case-sensitive: false}
+          - {key: $label, regex: "oral", case-sensitive: false}
+        action:
+          - key: $fc.Contrast
+            set: Contrast
+      - match_type: "all"
+        match:
+          - key: $cba
+            exists: true
+          - not:
+              - key: $cba
+                is: None
+        action:
+          - key: $fc.Contrast
+            set: Contrast
+
+  - name: mg_set_view
+    evaluate: "first"
+    description: Set View of the Acquisitions
+    variables:
+      label:
+        0: file.info.header.dicom.ViewPosition
+        1: file.info.header.dicom.ProtocolName
+        2: file.info.header.dicom.ViewCodeSequence.0.CodeMeaning
+        3: file.info.header.dicom.SeriesDescription
+        4: file.info.header.dicom.StudyDescription
+        5: acquisition.label
+        6: session.label
+      fc: file.classification
+    depends_on:
+      - mg_file
+    rules:
+      - match_type: "any"
+        match:
+          - {key: $label, regex: "XCCM", case-sensitive: false}
+          - {
+              key: $label,
+              regex: '^(?=.*\bcranio\b)(?=.*\bcaudal\b)(?=.*\bexaggerated\b)(?=.*\bmedially\b).*$',
+              case-sensitive: false,
+            }
+        action:
+          - key: $fc.View
+            set: ["XCCM"]
+
+      - match_type: "any"
+        match:
+          - {key: $label, regex: "XCC", case-sensitive: false}
+        action:
+          - key: $fc.View
+            set: ["XCC"]
+
+      - match_type: "any"
+        match:
+          - {key: $label, regex: "RCC", case-sensitive: false}
+        action:
+          - key: $fc.View
+            set: ["RCC"]
+      - match_type: "any"
+        match:
+          - {key: $label, regex: "MLO", case-sensitive: false}
+          - {
+              key: $label,
+              regex: '^(?=.*\bmedio\b)(?=.*\blateral\b)(?=.*\boblique\b).*$',
+              case-sensitive: false,
+            }
+        action:
+          - key: $fc.View
+            set: ["MLO"]
+      - match_type: "any"
+        match:
+          - {key: $label, regex: "CC", case-sensitive: false}
+          - {
+              key: $label,
+              regex: '^(?=.*\bcranio\b)(?=.*\bcaudal\b).*$',
+              case-sensitive: false,
+            }
+        action:
+          - key: $fc.View
+            set: ["CC"]
+
+  - name: mg_set_scan_type
+    evaluate: "first"
+    description: |
+      Infer scan type
+    variables:
+      # Will loop through different value of label
+      label:
+        0: acquisition.label
+        1: file.info.header.dicom.SeriesDescription
+      fihd: file.info.header.dicom
+      fc: file.classification
+    depends_on:
+      - mg_file
+      - set_empty
+    rules:
+      - match_type: "all"
+        match:
+          - key: $fihd.ImageType
+            contains: ORIGINAL
+        action:
+          - key: $fc.Scan Type
+            set: ["Original"]
+      - match_type: "all"
+        match:
+          - key: $fihd.ImageType
+            contains: DERIVED
+        action:
+          - key: $fc.Scan Type
+            set: ["Derived"]
+
+  - name: mg_set_intent
+    evaluate: "first"
+    description: |
+      Infer Intent
+    variables:
+      # Will loop through different value of label
+      label:
+        0: acquisition.label
+        1: file.info.header.dicom.SeriesDescription
+        2: session.label
+        3: file.info.header.dicom.StudyDescription
+        4: file.info.header.dicom.PerformedProcedureStepDescription
+        5: file.info.header.dicom.RequestedProcedureDescription
+        6: file.info.header.dicom.ReasonForStudy
+      fihd: file.info.header.dicom
+      fc: file.classification
+    depends_on:
+      - mg_file
+      - set_empty
+    rules:
+      - match_type: "any"
+        match:
+          - {key: $label, regex: "screening", case-sensitive: false}
+        action:
+          - key: $fc.Intent
+            set: ["Screening"]
+
+      - match_type: "any"
+        match:
+          - {
+              key: $label,
+              regex: "([^a-zA-Z])diag([^a-zA-Z])|^diag([^a-zA-Z]|$)|[^a-zA-Z]diag$",
+              case-sensitive: false,
+            }
+          - {key: $label, regex: "diagnostic", case-sensitive: false}
+        action:
+          - key: $fc.Intent
+            set: ["Diagnostic"]
+
+      - match_type: "any"
+        match:
+          - {key: $label, regex: "biopsy", case-sensitive: false}
+        action:
+          - key: $fc.Intent
+            set: ["Biopsy"]
+
+  - name: mg_set_submodality
+    evaluate: "first"
+    description: |
+      Infer SubModality
+    variables:
+      # Will loop through different value of label
+      label:
+        0: acquisition.label
+        1: file.info.header.dicom.VolumeBasedCalculationTechnique
+        2: file.info.header.dicom.StudyDescription
+      fihd: file.info.header.dicom
+      fc: file.classification
+    depends_on:
+      - mg_file
+      - set_empty
+    rules:
+      - match_type: "all"
+        match:
+          - key: $fihd.ImageType
+            contains: TOMOSYNTHESIS
+        action:
+          - key: $fc.Submodality
+            set: ["Tomo/3D"]
+      - match_type: "all"
+        match:
+          - key: $fihd.ImageType
+            contains: MAMMOGRAM
+        action:
+          - key: $fc.Submodality
+            set: ["Mammo/2D"]
+      - match_type: "any"
+        match:
+          - {key: $label, regex: mammo, case-sensitive: false}
+        action:
+          - key: $fc.Submodality
+            set: ["Mammo/2D"]
+
+      - match_type: "any"
+        match:
+          - {key: $label, regex: "DBT", case-sensitive: false}
+          - {key: $label, regex: "tomo", case-sensitive: false}
+        action:
+          - key: $fc.Submodality
+            set: ["Tomo/3D"]

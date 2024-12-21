@@ -1,0 +1,685 @@
+name: GE DICOM MR Classifier
+description:
+  A profile to classify GE MRI images. This will be split into classification of
+  Measurement and Features.
+profile:
+  - name: classify_PDw
+    description: Checks if file is "PDw"
+    evaluate: "all"
+    depends_on:
+      - mr-classifier-select-manufacturer/is_mr
+      - mr-classifier-select-manufacturer/is_ge
+    rules:
+      - match_type: "any"
+        match:
+          - and:
+              - key: file.info.header.dicom.ScanningSequence
+                contains: "SE"
+              - key: file.info.header.dicom.RepetitionTime
+                greater_than: 2000
+              - or:
+                  - key: file.info.header.dicom.EchoTime
+                    less_than: 30
+                  - and:
+                      - key: file.info.header.dicom_array.EchoTime.1
+                        exists: true
+                      - key: file.info.header.dicom_array.EchoTime.1
+                        less_than: 30
+              - key: file.info.header.dicom.FlipAngle
+                is: 90
+              - or:
+                  - key: file.info.header.dicom.InversionTime
+                    exists: false
+                  - key: file.info.header.dicom.InversionTime
+                    is: 0
+
+        action:
+          - key: "file.classification.Measurement"
+            add: "PD"
+
+  - name: classify_T1w
+    description: Checks if file is "T1w". Adds Measurement if true.
+    evaluate: "all"
+    depends_on:
+      - mr-classifier-select-manufacturer/is_mr
+      - mr-classifier-select-manufacturer/is_ge
+    rules:
+      - match_type: "any"
+        match:
+          - and:
+              - key: file.info.header.dicom.ScanningSequence
+                contains: "SE"
+              # - not:
+              #     - key: file.info.header.dicom.ScanOptions
+              #       contains: "VASCTOF_GEMS"
+              - key: file.info.header.dicom.RepetitionTime
+                less_than: 650
+              - key: file.info.header.dicom.EchoTime
+                less_than: 15
+              - key: file.info.header.dicom.FlipAngle
+                greater_than: 10
+          # Large FA, Moderate TR, Short TE GRE
+          - and:
+              - key: file.info.header.dicom.ScanningSequence
+                contains: "GR"
+              # - not:
+              #     - key: file.info.header.dicom.ScanOptions
+              #       contains: "VASCTOF_GEMS"
+              - key: file.info.header.dicom.RepetitionTime
+                less_than: 200
+              - key: file.info.header.dicom.EchoTime
+                less_than: 15
+              - key: file.info.header.dicom.FlipAngle
+                greater_than: 30
+
+          # Any FA, Short TR, Short TE GRE
+          - and:
+              - key: file.info.header.dicom.ScanningSequence
+                contains: "GR"
+              # - not:
+              #     - key: file.info.header.dicom.ScanOptions
+              #       contains: "VASCTOF_GEMS"
+              - key: file.info.header.dicom.RepetitionTime
+                less_than: 35
+              - key: file.info.header.dicom.EchoTime
+                less_than: 15
+              - key: file.info.header.dicom.FlipAngle
+                greater_than: 10
+          # T1 FLAIR images have large TR (but relatively short to other IR sequeneces).
+          # They also typically have TI = 800-1000 for nulling CSF.
+          - and:
+              - key: file.info.header.dicom.RepetitionTime
+                less_than: 4000
+              - key: file.info.header.dicom.InversionTime
+                exists: true
+              - key: file.info.header.dicom.InversionTime
+                greater_than: 700
+              - key: file.info.header.dicom.InversionTime
+                less_than: 1000
+              - key: file.info.header.dicom.ScanningSequence
+                contains: "IR"
+        action:
+          - key: "file.classification.Measurement"
+            add: "T1"
+
+  - name: classify_T2w
+    description: Checks if file is "T2w".
+    evaluate: "all"
+    depends_on:
+      - mr-classifier-select-manufacturer/is_mr
+      - mr-classifier-select-manufacturer/is_ge
+    rules:
+      - match_type: "all"
+        match:
+          - key: file.info.header.dicom.ScanningSequence
+            contains: "SE"
+          - not:
+              - key: file.info.header.dicom.ScanningSequence
+                contains: "EP"
+          - or:
+              - key: file.info.header.dicom.PixelBandwidth
+                less_than: 1900
+              - key: file.info.header.dicom.PixelBandwidth
+                exists: false
+          - or:
+              - key: file.info.header.dicom.ScanOptions
+                contains: "T2FLAIR_GEMS"
+              - and:
+                  - key: file.info.header.dicom.ScanningSequence
+                    contains: "SE"
+                  - or:
+                      - key: file.info.header.dicom.EchoTime
+                        greater_than: 75
+                      - and:
+                          - key: file.info.header.dicom_array.EchoTime.1
+                            exists: true
+                          - key: file.info.header.dicom_array.EchoTime.1
+                            greater_than: 75
+                  - key: file.info.header.dicom.RepetitionTime
+                    greater_than: 2400
+              - and:
+                  - key: file.info.header.dicom.ImageType
+                    contains: "DIR"
+                  - key: file.info.header.dicom.InversionTime
+                    exists: true
+                  - key: file.info.header.dicom.InversionTime
+                    less_than: 200
+                  - key: file.info.header.dicom.RepetitionTime
+                    greater_than: 1000
+                  - key: file.info.header.dicom.EchoTime
+                    greater_than: 30
+
+        action:
+          - key: "file.classification.Measurement"
+            add: "T2"
+
+      # T2 Flair
+      - match_type: "all"
+        match:
+          - not:
+              - key: file.info.header.dicom.ImageType
+                contains: "DIR"
+          - not:
+              - key: file.info.header.dicom.ScanningSequence
+                contains: "GR"
+          - key: file.info.header.dicom.InversionTime
+            exists: true
+          - key: file.info.header.dicom.InversionTime
+            greater_than: 1500
+          - key: file.info.header.dicom.RepetitionTime
+            greater_than: 4000
+          - key: file.info.header.dicom.EchoTime
+            greater_than: 80
+        action:
+          - key: "file.classification.Measurement"
+            add: "T2"
+
+      # T2 STIR
+      - match_type: "all"
+        match:
+          - and:
+              - key: file.info.header.dicom.InversionTime
+                exists: true
+              - key: file.info.header.dicom.InversionTime
+                less_than: 200
+              - key: file.info.header.dicom.InversionTime
+                greater_than: 0
+              - key: file.info.header.dicom.EchoTime
+                greater_than: 30
+              - key: file.info.header.dicom.RepetitionTime
+                greater_than: 1000
+        action:
+          - key: "file.classification.Measurement"
+            add: "T2"
+
+  - name: classify_T2*w
+    description: Checks if file is "T2*w".
+    evaluate: "all"
+    depends_on:
+      - mr-classifier-select-manufacturer/is_mr
+      - mr-classifier-select-manufacturer/is_ge
+    rules:
+      - match_type: "all"
+        match:
+          - key: file.info.header.dicom.ScanningSequence
+            contains: "GR"
+          - or:
+              - key: file.info.header.dicom.PixelBandwidth
+                less_than: 1900
+              - key: file.info.header.dicom.PixelBandwidth
+                exists: false
+          # - not:
+          #     - key: file.info.header.dicom.ScanOptions
+          #       contains: "VASCTOF_GEMS"
+          - key: file.info.header.dicom.EchoTime
+            greater_than: 5
+          - key: file.info.header.dicom.EchoTime
+            less_than: 30
+          - key: file.info.header.dicom.FlipAngle
+            less_than: 30
+          - key: file.info.header.dicom.FlipAngle
+            greater_than: 0
+          - key: file.info.header.dicom.RepetitionTime
+            greater_than: 35
+
+        action:
+          - key: "file.classification.Measurement"
+            add: "T2*"
+
+  - name: classify_DWI
+    description: Checks if file is "DWI".
+    evaluate: "all"
+    depends_on:
+      - mr-classifier-select-manufacturer/is_mr
+      - mr-classifier-select-manufacturer/is_ge
+    rules:
+      - match_type: "any"
+        match:
+          - and:
+              - or:
+                  - key: file.info.header.dicom.ScanOptions
+                    contains: "EPI_GEMS"
+                  - key: file.info.header.dicom.ScanningSequence
+                    contains: "EP"
+              - key: file.info.header.dicom.RepetitionTime
+                greater_than: 6999
+              - key: file.info.header.dicom.EchoTime
+                greater_than: 50
+              - key: file.info.header.dicom.FlipAngle
+                is: 90
+              - key: file.info.header.dicom.PixelBandwidth
+                greater_than: 600
+          - key: file.info.header.dicom.ImageType
+            contains: "DIFFUSION"
+          - key: file.info.header.dicom.ImageType
+            contains: "ADC"
+          - key: file.info.header.dicom.ImageType
+            contains: "EADC"
+          - key: file.info.header.dicom.ImageType
+            contains: "TRACE"
+        action:
+          - key: "file.classification.Measurement"
+            add: "Diffusion"
+
+  - name: classify_SWI
+    description: Checks if file is "SWI".
+    evaluate: "all"
+    depends_on:
+      - mr-classifier-select-manufacturer/is_mr
+      - mr-classifier-select-manufacturer/is_ge
+    rules:
+      - match_type: "all"
+        match:
+          - key: file.info.header.dicom.ScanningSequence
+            contains: "GR"
+          - key: file.info.header.dicom.RepetitionTime
+            greater_than: 50
+          - key: file.info.header.dicom.EchoTime
+            greater_than: 20
+          - key: file.info.header.dicom.FlipAngle
+            less_than: 30
+          - key: file.info.header.dicom.FlipAngle
+            greater_than: 5
+        action:
+          - key: "file.classification.Measurement"
+            add: "Susceptibility"
+          - key: "file.classification.Features"
+            add: "SWI"
+
+  - name: classify_FLAIR
+    description: Checks if Measurement is "FLAIR"
+    evaluate: "all"
+    depends_on:
+      - mr-classifier-select-manufacturer/is_mr
+      - mr-classifier-select-manufacturer/is_ge
+    rules:
+      - match_type: "any"
+        match:
+          - and:
+              # T2 Flair
+              - not:
+                  - key: file.info.header.dicom.ImageType
+                    contains: "DIR"
+              - key: file.info.header.dicom.InversionTime
+                exists: true
+              - key: file.info.header.dicom.InversionTime
+                greater_than: 1500
+              - key: file.info.header.dicom.RepetitionTime
+                greater_than: 4000
+              - key: file.info.header.dicom.EchoTime
+                greater_than: 80
+          - and:
+              # T1 Flair
+              - not:
+                  - key: file.info.header.dicom.ImageType
+                    contains: "DIR"
+              - key: file.info.header.dicom.InversionTime
+                exists: true
+              - key: file.info.header.dicom.InversionTime
+                greater_than: 700
+              - key: file.info.header.dicom.InversionTime
+                less_than: 1000
+              - key: file.info.header.dicom.ScanningSequence
+                contains: "IR"
+          - key: file.info.header.dicom.ScanOptions
+            contains: "T2FLAIR_GEMS"
+          # # Temporary fix for Philips/GE scans without Inversion Time parameter. Proper fix is to pull the Inversion
+          # # Time from private tags (2001,1084). Can't currently test as we don't want SeriesDescription in ground truth files.
+          - {key: acquisition.label, regex: "FLAIR", case-sensitive: false}
+          - {
+              key: file.info.header.dicom.SeriesDescription,
+              regex: "FLAIR",
+              case-sensitive: false,
+            }
+
+        action:
+          - key: "file.classification.Features"
+            add: "FLAIR"
+
+  # - name: classify_STIR
+  #   description: Checks if Measurement is "STIR"
+  #   evaluate: "all"
+  #   depends_on:
+  #     - mr-classifier-select-manufacturer/is_mr
+  #     - mr-classifier-select-manufacturer/is_ge
+  #   rules:
+  #     - match_type: "all"
+  #       match:
+  #         - and:
+  #             - key: file.info.header.dicom.InversionTime
+  #               exists: true
+  #             - key: file.info.header.dicom.InversionTime
+  #               less_than: 200
+  #             - key: file.info.header.dicom.InversionTime
+  #               greater_than: 0
+  #             - key: file.info.header.dicom.EchoTime
+  #               greater_than: 30
+  #             - key: file.info.header.dicom.RepetitionTime
+  #               greater_than: 1000
+  #       action:
+  #         - key: "file.classification.Features"
+  #           add: "STIR"
+
+  - name: classify_DIR
+    description: Checks if Measurement is "DIR" (Double Inversion Recovery)
+    evaluate: "all"
+    depends_on:
+      - mr-classifier-select-manufacturer/is_mr
+      - mr-classifier-select-manufacturer/is_ge
+    rules:
+      - match_type: "all"
+        match:
+          - and:
+              - key: file.info.header.dicom.ImageType
+                contains: "DIR"
+              - key: file.info.header.dicom.InversionTime
+                exists: true
+              - key: file.info.header.dicom.InversionTime
+                greater_than: 0
+        action:
+          - key: "file.classification.Measurement"
+            add: "DIR"
+
+  # - name: classify_DIXON
+  #   description: Checks if Measurement is "DIXON"
+  #   evaluate: "all"
+  #   depends_on:
+  #     - mr-classifier-select-manufacturer/is_mr
+  #     - mr-classifier-select-manufacturer/is_ge
+  #   rules:
+  #     - match_type: "all"
+  #       match:
+  #         - or:
+  #             - key: file.info.header.dicom.ImageType
+  #               contains: "DIXON"
+  #       action:
+  #         - key: "file.classification.Measurement"
+  #           add: "DIXON"
+
+  - name: classify_MRA
+    description: Checks if file is "MRA".
+    evaluate: "all"
+    depends_on:
+      - mr-classifier-select-manufacturer/is_mr
+      - mr-classifier-select-manufacturer/is_ge
+    rules:
+      - match_type: "all"
+        match:
+          - and:
+              - key: file.info.header.dicom.ScanningSequence
+                contains: "GR"
+              - key: file.info.header.dicom.ScanOptions
+                contains: "VASCTOF_GEMS"
+        action:
+          - key: "file.classification.Measurement"
+            add: "MRA"
+
+  - name: classify_fMRI
+    description: Checks if file is "fMRI".
+    evaluate: "all"
+    depends_on:
+      - mr-classifier-select-manufacturer/is_mr
+      - mr-classifier-select-manufacturer/is_ge
+    rules:
+      - match_type: "all"
+        match:
+          - and:
+              - key: file.info.header.dicom.ScanningSequence
+                contains: "EP"
+              - key: file.info.header.dicom.EchoTime
+                is: 50
+              - key: file.info.header.dicom.FlipAngle
+                is: 90
+              - key: file.info.header.dicom.RepetitionTime
+                is: 4000
+        action:
+          - key: "file.classification.Measurement"
+            add: "fMRI"
+
+  - name: classify_Localizer
+    description: Checks if Measurement is "Localizer"
+    evaluate: "all"
+    depends_on:
+      - mr-classifier-select-manufacturer/is_mr
+      - mr-classifier-select-manufacturer/is_ge
+    rules:
+      - match_type: "all"
+        match:
+          - key: file.info.header.dicom.SpacingBetweenSlices
+            greater_than: 8
+          - key: file.zip_member_count
+            less_than: 10
+          - not:
+              - or:
+                  - key: file.info.header.dicom.ImageType
+                    contains: "DERIVED"
+                  - key: file.info.header.dicom.ImageType
+                    contains: "SECONDARY"
+                  - key: file.info.header.dicom.ImageType
+                    contains: "REFORMATTED"
+                  - key: file.info.header.dicom.ImageType
+                    contains: "PROJECTION"
+                  - key: file.info.header.dicom.ImageType
+                    contains: "PROJECTION IMAGE"
+                  - key: file.info.header.dicom.ImageType
+                    contains: "PROJECTION IMAG"
+        action:
+          - key: "file.classification.Measurement"
+            add: "Localizer"
+
+  - name: classify_features
+    description: Sets any features found.
+    evaluate: "all"
+    depends_on:
+      - mr-classifier-select-manufacturer/is_mr
+      - mr-classifier-select-manufacturer/is_ge
+    rules:
+      - match_type: "any"
+        match:
+          - key: file.info.header.dicom.MRAcquisitionType
+            is: "3D"
+        action:
+          - key: file.classification.Features
+            add: "3D"
+
+      - match_type: "any"
+        match:
+          - key: file.info.header.dicom.MRAcquisitionType
+            is: "2D"
+        action:
+          - key: file.classification.Features
+            add: "2D"
+
+      - match_type: "all"
+        match:
+          - and:
+              - key: file.info.header.dicom.ScanningSequence
+                contains: "GR"
+              - key: file.info.header.dicom.SequenceVariant
+                contains: "SP"
+        action:
+          - key: file.classification.Features
+            add: "SPGR"
+
+      - match_type: "any"
+        match:
+          - key: file.info.header.dicom.ScanOptions
+            contains: "FS"
+        action:
+          - key: file.classification.Features
+            add: "Fat saturation"
+
+      - match_type: "any"
+        match:
+          - or:
+              - key: file.info.header.dicom.MagneticFieldStrength
+                is: 1.5
+              - key: file.info.header.dicom.MagneticFieldStrength
+                is: 15000.0
+        action:
+          - key: file.classification.Features
+            add: "1.5T"
+
+      - match_type: "any"
+        match:
+          - key: file.info.header.dicom.MagneticFieldStrength
+            is: 3
+        action:
+          - key: file.classification.Features
+            add: "3T"
+
+      # # Match Combined IP-OOP images
+      # - match_type: "all"
+      #   match:
+      #     - key: file.info.header.dicom_array
+      #       exists: true
+      #     - key: file.info.header.dicom.MagneticFieldStrength
+      #       is: 1.5
+      #     - key: file.info.header.dicom_array.EchoTime.0
+      #       is: 2.084
+      #     - key: file.info.header.dicom_array.EchoTime.1
+      #       is: 4.168
+      #   action:
+      #     - key: file.classification.Features
+      #       add: "DualEcho"
+      #     - key: file.classification.Features
+      #       add: "In phase"
+      #     - key: file.classification.Features
+      #       add: "Out of phase"
+
+      # Match Separate In-Phase
+      - match_type: "all"
+        match:
+          - or:
+              - key: file.info.header.dicom.ImageType
+                contains: "IN_PHASE"
+              - and:
+                  - key: file.info.header.dicom.MagneticFieldStrength
+                    is: 3
+                  - key: file.info.header.dicom.EchoTime
+                    is: 2.1
+                    approximate: 0
+                  - key: file.info.header.dicom_array.EchoTime.1
+                    exists: false
+                  - key: file.info.header.dicom.InversionTime
+                    exists: false
+        action:
+          - key: file.classification.Features
+            add: "In phase"
+
+      # Match MRA TOF
+      - match_type: "all"
+        match:
+          - key: file.info.header.dicom.ScanningSequence
+            contains: "GR"
+          - key: file.info.header.dicom.ScanOptions
+            contains: "VASCTOF_GEMS"
+        action:
+          - key: file.classification.Features
+            add: "TOF"
+
+      # Match Projection
+      - match_type: "any"
+        match:
+          - key: file.info.header.dicom.ImageType
+            contains: "PROJECTION IMAGE"
+        action:
+          - key: file.classification.Features
+            add: "Projection"
+
+      # Match TRACEmap
+      - match_type: "all"
+        match:
+          - key: file.info.header.dicom.ImageType
+            contains: "DERIVED"
+          - key: file.info.header.dicom.ImageType
+            contains: "PRIMARY"
+          - or:
+              - key: file.info.header.dicom.ImageType
+                contains: "ADC"
+              - key: file.info.header.dicom.ImageType
+                contains: "EADC"
+        action:
+          - key: file.classification.Features
+            add: "TRACEmap"
+
+      # DualEcho
+      - match_type: "any"
+        match:
+          # Need to verify echotime index exists (or could be silently failing)
+          - and:
+              - key: file.info.header.dicom_array.EchoTime.0
+                exists: true
+              - key: file.info.header.dicom_array.EchoTime.1
+                exists: true
+              - key: file.zip_member_count
+                greater_than: 10
+              - not:
+                  - key: file.info.header.dicom_array.EchoTime.0
+                    is: file.info.header.dicom_array.EchoTime.1
+                    resolve: true
+        action:
+          - key: file.classification.Features
+            add: "Multi-Echo"
+
+  # - name: classify_scan_orientation
+  #   description: Sets scan orientation.
+  #   evaluate: "first"
+  #   depends_on:
+  #     - mr-classifier-select-manufacturer/is_mr
+  #     - mr-classifier-select-manufacturer/is_ge
+  #   rules:
+  #     - match_type: "all"
+  #       match:
+  #         - or:
+  #             - key: file.info.header.dicom.ImageOrientationPatient.0
+  #               greater_than: 0.75
+  #             - key: file.info.header.dicom.ImageOrientationPatient.0
+  #               less_than: -0.75
+  #         - or:
+  #             - key: file.info.header.dicom.ImageOrientationPatient.4
+  #               greater_than: 0.75
+  #             - key: file.info.header.dicom.ImageOrientationPatient.4
+  #               less_than: -0.75
+  #       action:
+  #         - key: "file.classification.Scan Orientation"
+  #           set: ["Axial"]
+
+  #     - match_type: "all"
+  #       match:
+  #         - or:
+  #             - key: file.info.header.dicom.ImageOrientationPatient.0
+  #               greater_than: 0.75
+  #             - key: file.info.header.dicom.ImageOrientationPatient.0
+  #               less_than: -0.75
+  #         - or:
+  #             - key: file.info.header.dicom.ImageOrientationPatient.5
+  #               greater_than: 0.75
+  #             - key: file.info.header.dicom.ImageOrientationPatient.5
+  #               less_than: -0.75
+  #       action:
+  #         - key: "file.classification.Scan Orientation"
+  #           set: ["Coronal"]
+
+  #     - match_type: "all"
+  #       match:
+  #         - or:
+  #             - key: file.info.header.dicom.ImageOrientationPatient.1
+  #               greater_than: 0.75
+  #             - key: file.info.header.dicom.ImageOrientationPatient.1
+  #               less_than: -0.75
+  #         - or:
+  #             - key: file.info.header.dicom.ImageOrientationPatient.5
+  #               greater_than: 0.75
+  #             - key: file.info.header.dicom.ImageOrientationPatient.5
+  #               less_than: -0.75
+  #       action:
+  #         - key: "file.classification.Scan Orientation"
+  #           set: ["Sagittal"]
+
+  #     - match_type: "all"
+  #       match:
+  #         - {key: "file.classification.Scan Orientation", exists: false}
+  #       action:
+  #         - key: "file.classification.Scan Orientation"
+  #           set: ["Oblique"]

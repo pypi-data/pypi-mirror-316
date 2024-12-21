@@ -1,0 +1,45 @@
+name: Philips FLAIR classifier
+profile:
+  - name: classify_FLAIR
+    description: Checks if Measurement is "FLAIR"
+    evaluate: "all"
+    depends_on:
+      - mr-classifier-select-manufacturer/is_mr
+      - mr-classifier-select-manufacturer/is_philips
+    rules:
+      - match_type: "any"
+        match:
+          # T2 Flair
+          - and:
+              - key: file.info.header.dicom.InversionTime
+                exists: true
+              - key: file.info.header.dicom.InversionTime
+                greater_than: 1999
+              - key: file.info.header.dicom.RepetitionTime
+                greater_than: 5999
+              - key: file.info.header.dicom.EchoTime
+                greater_than: 59
+            # T1 Flair
+          - and:
+              - key: file.info.header.dicom.ImageType
+                contains: "IR"
+              - key: file.info.header.dicom.RepetitionTime
+                greater_than: 2000
+              - key: file.info.header.dicom.InversionTime
+                greater_than: 400
+              - key: file.info.header.dicom.InversionTime
+                less_than: 2000
+              - key: file.info.header.dicom.PixelBandwidth
+                less_than: 2000
+          # # Temporary fix for Philips/GE scans without Inversion Time parameter. Proper fix is to pull the Inversion
+          # # Time from private tags (2001,1084). Can't currently test as we don't want SeriesDescription in ground truth files.
+          - {key: acquisition.label, regex: "FLAIR", case-sensitive: false}
+          - {
+              key: file.info.header.dicom.SeriesDescription,
+              regex: "FLAIR",
+              case-sensitive: false,
+            }
+
+        action:
+          - key: "file.classification.Features"
+            add: "FLAIR"

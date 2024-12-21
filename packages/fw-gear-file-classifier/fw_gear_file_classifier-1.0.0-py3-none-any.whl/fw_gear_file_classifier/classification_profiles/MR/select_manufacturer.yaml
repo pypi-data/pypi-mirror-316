@@ -1,0 +1,78 @@
+name: mr-classifier-select-manufacturer
+description:
+  A profile to classify MRI images. This section checks if the file is modality
+  MR and the manufacturer.
+profile:
+  - name: is_mr
+    description: Checks if file is MR modality file
+    evaluate: "all"
+    rules:
+      - match_type: "any"
+        match:
+          - key: file.info.header.dicom.Modality
+            is: "MR"
+          - key: file.modality
+            is: "MR"
+        action:
+          - key: file.modality
+            set: "MR"
+          - key: file.classification
+            set: {}
+
+  - name: is_ge
+    description: Checks if manufacturer matches GE.
+    evaluate: "all"
+    depends_on:
+      - is_mr
+    rules:
+      - match_type: "all"
+        match:
+          - key: file.info.header.dicom.Manufacturer
+            in: ["GE MEDICAL SYSTEMS"]
+
+  - name: is_philips
+    description: Checks if file is from Philips manufacturer
+    evaluate: "all"
+    depends_on:
+      - is_mr
+    rules:
+      - match_type: "any"
+        match:
+          - key: file.info.header.dicom.Manufacturer
+            contains: "PHILIPS"
+          - key: file.info.header.dicom.Manufacturer
+            contains: "Philips"
+
+  - name: is_siemens
+    description: Checks if file is MR modality file and manufacturer matches.
+    evaluate: "all"
+    depends_on:
+      - is_mr
+    rules:
+      - match_type: "any"
+        match:
+          - key: file.info.header.dicom.Manufacturer
+            contains: "SIEMENS"
+          - key: file.info.header.dicom.Manufacturer
+            contains: "Siemens"
+
+  - name: is_generic
+    description: Checks if file is MR modality file and manufacturer matches.
+    evaluate: "all"
+    depends_on:
+      - is_mr
+    rules:
+      - match_type: "all"
+        match:
+          - not:
+              - or:
+                  - key: file.info.header.dicom.Manufacturer
+                    contains: "SIEMENS"
+                  - key: file.info.header.dicom.Manufacturer
+                    contains: "Siemens"
+                  - key: file.info.header.dicom.Manufacturer
+                    contains: "PHILIPS"
+                  - key: file.info.header.dicom.Manufacturer
+                    contains: "Philips"
+                  - key: file.info.header.dicom.Manufacturer
+                    in: ["GE MEDICAL SYSTEMS"]

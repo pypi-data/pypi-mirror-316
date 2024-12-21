@@ -1,0 +1,176 @@
+name: ct-fallback-classifier
+description: |
+  A profile to classify CT images. This is the fallback profile, intended to run only if the main CT classifier has not
+  classified a specific portion of the schema.
+profile:
+  - name: classify_anatomy_fallback
+    description: "Infer anatomy based on regular expressions on acquisition label"
+    evaluate: "first"
+    depends_on:
+      - ct-check-classification/anatomy_not_classified
+    variables:
+      # Will loop through $label 0, then $label 1...
+      label:
+        0: acquisition.label
+        1: file.info.header.dicom.SeriesDescription
+        2: file.name
+      fc: file.classification
+    rules:
+      - match_type: "any"
+        match:
+          - {key: $label, regex: "Head|Brain", case-sensitive: false}
+        action:
+          - key: $fc.Anatomy
+            add: "Head"
+      - match_type: "any"
+        match:
+          - {key: $label, regex: "Neck|Thor", case-sensitive: false}
+        action:
+          - key: $fc.Anatomy
+            add: "Neck"
+      - match_type: "any"
+        match:
+          - {
+              key: $label,
+              regex: "Chest|Cheast|CAP|C/A/P",
+              case-sensitive: false,
+            }
+        action:
+          - key: $fc.Anatomy
+            add: "Chest"
+      - match_type: "any"
+        match:
+          - {key: $label, regex: "Abd|CAP|C/A/P|liver", case-sensitive: false}
+        action:
+          - key: $fc.Anatomy
+            add: "Abdomen"
+      - match_type: "any"
+        match:
+          - {key: $label, regex: "Pel|CAP|C/A/P", case-sensitive: false}
+        action:
+          - key: $fc.Anatomy
+            add: "Pelvis"
+      - match_type: "all"
+        match:
+          - {key: $label, regex: "UP", case-sensitive: false}
+          - {key: $label, regex: "EXT", case-sensitive: false}
+        action:
+          - key: $fc.Anatomy
+            add: "Upper Extremities"
+      - match_type: "all"
+        match:
+          - {key: $label, regex: "LO", case-sensitive: false}
+          - {key: $label, regex: "EXT", case-sensitive: false}
+        action:
+          - key: $fc.Anatomy
+            add: "Lower Extremities"
+      - match_type: "any"
+        match:
+          - {key: $label, regex: "BODY", case-sensitive: false}
+        action:
+          - key: $fc.Anatomy
+            add: "Whole Body"
+
+  # Scan Type Classifier
+  - name: classify_scan_type_fallback
+    description: |
+      Classify Scan Type based on regular expressions on acquisition.label and SeriesDescription.
+      Only one scan type is set, so the first match will be used. The order of the rules is important.
+    evaluate: "first"
+    depends_on:
+      - ct-check-classification/scan_type_not_classified
+    variables:
+      label:
+        0: acquisition.label
+        1: file.info.header.dicom.SeriesDescription
+        2: file.name
+      fc: file.classification
+    rules:
+      - match_type: "any"
+        match:
+          - {key: $label, regex: "localizer", case-sensitive: false}
+          - {key: $label, regex: "localiser", case-sensitive: false}
+          - {key: $label, regex: "survey", case-sensitive: false}
+          - {key: $label, regex: 'loc\.', case-sensitive: false}
+          - {key: $label, regex: '\bscout\b', case-sensitive: false}
+          - {key: $label, regex: "(?=.*plane)(?=.*loc)", case-sensitive: false}
+          - {
+              key: $label,
+              regex: "(?=.*plane)(?=.*survey)",
+              case-sensitive: false,
+            }
+          - {key: $label, regex: "3-plane", case-sensitive: false}
+          - {key: $label, regex: "^loc*", case-sensitive: false}
+          - {key: $label, regex: "scout", case-sensitive: false}
+          - {key: $label, regex: "adjGre", case-sensitive: false}
+          - {key: $label, regex: "topogram", case-sensitive: false}
+          - {key: $label, regex: "_localizer", case-sensitive: false}
+          - {key: $label, regex: "locator", case-sensitive: false}
+          - {key: $label, regex: "surview", case-sensitive: false}
+          - {key: $label, regex: "preview", case-sensitive: false}
+          - {key: $label, regex: "pilot", case-sensitive: false}
+        action:
+          - key: $fc.Scan Type
+            add: "Localizer"
+      - match_type: "any"
+        match:
+          - {key: "$label", regex: "perf|dynamic", case-sensitive: false}
+        action:
+          - key: "$fc.Scan Type"
+            add: "Perfusion"
+      - match_type: "any"
+        match:
+          - {key: "$label", regex: "Dose Report", case-sensitive: false}
+        action:
+          - key: "$fc.Scan Type"
+            add: "Dose Report"
+      - match_type: "any"
+        match:
+          - {key: "$label", regex: "gated|phase|cardiac", case-sensitive: false}
+        action:
+          - key: "$fc.Scan Type"
+            add: "Gated"
+      - match_type: "any"
+        match:
+          - {key: "$label", regex: "CTA", case-sensitive: false}
+          - {key: "$label", regex: "angi|vascular|arter", case-sensitive: false}
+        action:
+          - key: "$fc.Scan Type"
+            add: "Angiography"
+
+  - name: classify_contrast_phase_fallback
+    evaluate: first
+    description: "Classify contrast based on regular expressions on acquisition.label and SeriesDescription."
+    variables:
+      label:
+        0: acquisition.label
+        1: file.info.header.dicom.SeriesDescription
+        2: file.name
+      fihd: file.info.header.dicom
+      fc: file.classification
+    depends_on:
+      - ct-check-classification/contrast_phase_not_classified
+    rules:
+      - match_type: "any"
+        match:
+          - {key: $label, regex: "arterial", case-sensitive: false}
+        action:
+          - key: "$fc.Contrast Phase"
+            add: Arterial Phase
+      - match_type: "any"
+        match:
+          - {key: $label, regex: "portal", case-sensitive: false}
+          - {key: $label, regex: "venous", case-sensitive: false}
+          - and:
+              - {key: $label, regex: "pv", case-sensitive: false}
+              - {key: $fc.Anatomy, contains: "Abdomen"}
+        action:
+          - key: "$fc.Contrast Phase"
+            add: Portal Venous Phase
+      - match_type: "any"
+        match:
+          - {key: $label, regex: "delayed", case-sensitive: false}
+          - {key: $label, regex: "equil", case-sensitive: false}
+        action:
+          - key: "$fc.Contrast Phase"
+            add: Delayed/Equilibrium Phase

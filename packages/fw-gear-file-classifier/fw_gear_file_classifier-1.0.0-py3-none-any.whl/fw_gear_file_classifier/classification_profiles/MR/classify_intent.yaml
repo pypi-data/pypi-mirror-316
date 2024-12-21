@@ -1,0 +1,40 @@
+name: intent-classifier
+description: A profile to classify MRI image intent.
+profile:
+  - name: classify_intent
+    description: Checks if structural intent.
+    evaluate: "all"
+    depends_on:
+      - mr-classifier-select-manufacturer/is_mr
+    rules:
+      - match_type: "any"
+        match:
+          - key: file.classification.Measurement
+            contains: "Diffusion"
+          - key: file.classification.Measurement
+            contains: "T1"
+          - key: file.classification.Measurement
+            contains: "T2"
+          - key: file.classification.Measurement
+            contains: "PD"
+          - key: file.classification.Measurement
+            contains: "Susceptibility"
+          - key: file.classification.Features
+            contains: "SPGR"
+          - key: file.classification.Features
+            contains: "MPRAGE"
+          - key: file.classification.Features
+            contains: "FLAIR"
+        action:
+          - key: "file.classification.Intent"
+            add: "Structural"
+
+      - match_type: "any"
+        match:
+          - key: file.classification.Measurement
+            contains: "T2*"
+          - key: file.classification.Measurement
+            contains: "Perfusion"
+        action:
+          - key: "file.classification.Intent"
+            add: "Functional"

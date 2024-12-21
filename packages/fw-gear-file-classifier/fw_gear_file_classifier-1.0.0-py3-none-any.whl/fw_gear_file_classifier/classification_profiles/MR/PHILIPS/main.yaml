@@ -1,0 +1,12 @@
+---
+name: Philips MR Classifier
+includes:
+  - features.yaml
+  - Localizer.yaml
+  - PD.yaml
+  - T1.yaml
+  - T2.yaml
+  - DWI.yaml
+  - FLAIR.yaml
+  - T2*.yaml
+  - SWI.yaml

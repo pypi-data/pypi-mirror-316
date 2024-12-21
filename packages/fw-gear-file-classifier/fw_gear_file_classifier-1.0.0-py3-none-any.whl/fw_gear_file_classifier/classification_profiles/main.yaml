@@ -1,0 +1,7 @@
+---
+name: DICOM MR Classifier
+includes:
+  - MR/main.yaml
+  - PT.yaml
+  - MG.yaml
+  - CT/main.yaml

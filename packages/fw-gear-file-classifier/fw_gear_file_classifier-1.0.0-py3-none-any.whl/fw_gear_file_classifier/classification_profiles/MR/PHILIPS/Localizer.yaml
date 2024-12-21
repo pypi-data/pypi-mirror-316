@@ -1,0 +1,57 @@
+name: Philips Localizer classifier
+profile:
+  - name: classify_Localizer
+    description: Checks if Measurement is "Localizer"
+    evaluate: "all"
+    depends_on:
+      - mr-classifier-select-manufacturer/is_mr
+      - mr-classifier-select-manufacturer/is_philips
+    rules:
+      - match_type: "any"
+        match:
+          - and:
+              - key: file.info.header.dicom.SpacingBetweenSlices
+                greater_than: 8
+              - key: file.zip_member_count
+                less_than: 10
+              - not:
+                  - or:
+                      - key: file.info.header.dicom.ImageType
+                        contains: "DERIVED"
+                      - key: file.info.header.dicom.ImageType
+                        contains: "SECONDARY"
+                      - key: file.info.header.dicom.ImageType
+                        contains: "REFORMATTED"
+                      - key: file.info.header.dicom.ImageType
+                        contains: "PROJECTION"
+                      - key: file.info.header.dicom.ImageType
+                        contains: "PROJECTION IMAGE"
+                      - key: file.info.header.dicom.ImageType
+                        contains: "PROJECTION IMAG"
+          - and:
+              - key: file.zip_member_count
+                less_than: 7
+              - not:
+                  - or:
+                      - key: file.info.header.dicom.ImageType
+                        contains: "DERIVED"
+                      - key: file.info.header.dicom.ImageType
+                        contains: "SECONDARY"
+                      - key: file.info.header.dicom.ImageType
+                        contains: "REFORMATTED"
+                      - key: file.info.header.dicom.ImageType
+                        contains: "PROJECTION"
+                      - key: file.info.header.dicom.ImageType
+                        contains: "PROJECTION IMAGE"
+                      - key: file.info.header.dicom.ImageType
+                        contains: "PROJECTION IMAG"
+          # Odd smartbrain scouts
+          - and:
+              - key: file.zip_member_count
+                is: 100
+              - key: acquisition.label
+                regex: "scout"
+                case-sensitive: false
+        action:
+          - key: "file.classification.Intent"
+            add: "Localizer"

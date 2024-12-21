@@ -1,0 +1,68 @@
+name: Philips T2w classifier
+profile:
+  - name: classify_T2w
+    description: Checks if file is "T2w".
+    evaluate: "all"
+    depends_on:
+      - mr-classifier-select-manufacturer/is_mr
+      - mr-classifier-select-manufacturer/is_philips
+    rules:
+      - match_type: "any"
+        match:
+          # This is a weird Measurement Philips does (https://www.imaios.com/en/e-mri/sequences/t2-enhanced-steady-state-gradient-echo)
+          - and:
+              - key: file.info.header.dicom.ScanningSequence
+                contains: "GR"
+              - key: file.info.header.dicom.SequenceVariant
+                contains: "SS"
+              - key: file.info.header.dicom.ImageType
+                contains: "FFE"
+              - or:
+                  - key: file.info.header.dicom.EchoTime
+                    less_than: 10
+                  - and:
+                      - key: file.info.header.dicom_array.EchoTime.1
+                        exists: true
+                      - key: file.info.header.dicom_array.EchoTime.1
+                        less_than: 10
+              - key: file.info.header.dicom.RepetitionTime
+                less_than: 25
+              - key: file.info.header.dicom.RepetitionTime
+                greater_than: 20
+          - and:
+              - key: file.info.header.dicom.ScanningSequence
+                contains: "SE"
+              - or:
+                  - key: file.info.header.dicom.EchoTime
+                    greater_than: 75
+                  - and:
+                      - key: file.info.header.dicom_array.EchoTime.1
+                        exists: true
+                      - key: file.info.header.dicom_array.EchoTime.1
+                        greater_than: 75
+              - key: file.info.header.dicom.RepetitionTime
+                greater_than: 2400
+              - or:
+                  - key: file.info.header.dicom.PixelBandwidth
+                    exists: false
+                  - key: file.info.header.dicom.PixelBandwidth
+                    less_than: 1200
+              - not:
+                  - key: file.info.header.dicom.ImageType
+                    contains: "DIFFUSION MAP"
+              - key: file.info.header.dicom.DiffusionBValue
+                exists: false
+
+          # T2w FLAIR
+          - and:
+              - key: file.info.header.dicom.InversionTime
+                exists: true
+              - key: file.info.header.dicom.InversionTime
+                greater_than: 1999
+              - key: file.info.header.dicom.RepetitionTime
+                greater_than: 5999
+              - key: file.info.header.dicom.EchoTime
+                greater_than: 59
+        action:
+          - key: "file.classification.Measurement"
+            add: "T2"

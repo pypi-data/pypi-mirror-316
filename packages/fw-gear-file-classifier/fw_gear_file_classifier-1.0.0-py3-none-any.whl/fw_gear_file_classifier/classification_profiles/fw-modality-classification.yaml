@@ -1,0 +1,221 @@
+MR:
+  Features:
+    - Quantitative
+    - Multi-Shell
+    - Multi-Echo
+    - Multi-Flip
+    - Multi-Band
+    - Steady-State
+    - 3D
+    - Compressed-Sensing
+    - Eddy-Current-Corrected
+    - Fieldmap-Corrected
+    - Gradient-Unwarped
+    - Motion-Corrected
+    - Physio-Corrected
+    - Derived
+    - In-Plane
+    - Phase
+    - Magnitude
+    - 2D
+    - AAscout
+    - Spin-Echo
+    - Gradient-Echo
+    - EPI
+    - WASSR
+    - FAIR
+    - FAIREST
+    - PASL
+    - EPISTAR
+    - PICORE
+    - pCASL
+    - MPRAGE
+    - MP2RAGE
+    - FLAIR
+    - SWI
+    - QSM
+    - RMS
+    - DTI
+    - DSI
+    - DKI
+    - HARDI
+    - NODDI
+    - Water-Reference
+    - Transmit-Reference
+    - SBRef
+    - Uniform
+    - Singlerep
+    - QC
+    - TRACE
+    - FA
+    - MIP
+    - Navigator
+    - Contrast-Agent
+    - Phase-Contrast
+    - TOF
+    - VASO
+    - iVASO
+    - DSC
+    - DCE
+    - Task
+    - Resting-State
+    - PRESS
+    - STEAM
+    - M0
+    - Phase-Reversed
+    - Spiral
+    - SPGR
+    - Control
+    - Label
+  Intent:
+    - Localizer
+    - Shim
+    - Calibration
+    - Fieldmap
+    - Structural
+    - Functional
+    - Screenshot
+    - Non-Image
+    - Spectroscopy
+  Measurement:
+    - B0
+    - B1
+    - T1
+    - T2
+    - T2*
+    - PD
+    - MT
+    - Perfusion
+    - Diffusion
+    - Susceptibility
+    - Fingerprinting
+    - MRA
+    - CEST
+    - T1rho
+    - SVS
+    - CSI
+    - EPSI
+    - BOLD
+    - Phoenix
+PT:
+  Anatomy:
+    - Head
+    - Neck
+    - Chest
+    - Abdomen
+    - Pelvis
+    - Upper Extremities
+    - Lower Extremities
+    - Whole Body
+  Isotope:
+    - Ga68
+    - F18
+    - Cu64
+    - N13
+    - O15
+    - C11
+    - I124
+    - Zr89
+    - Mn52
+    - I131
+  Processing:
+    - Motion Corrected
+    - Averaged
+    - Filtered
+    - Attenuation Corrected
+  Tracer:
+    - FDG
+    - FES
+    - Zr-CD8
+    - Zr-HER
+    - GTP1
+    - AV45
+    - PIPB
+    - mAb
+    - FBB
+    - FBP
+    - FMM
+    - PSMA
+    - FP-CIT
+    - PBR-28
+  Type:
+    - Dynamic
+    - Static
+    - Gated
+MG:
+  Contrast:
+    - Contrast
+    - No Contrast
+  Laterality:
+    - Left
+    - Right
+    - Bilateral
+  View:
+    - CC
+    - MLO
+    - RCC
+    - XCC
+    - XCCM
+    - ML
+    - LM
+    - LMO
+    - XCCL
+  Intent:
+    - Screening
+    - Diagnostic
+    - Biopsy
+  Submodality:
+    - Mammo/2D
+    - Tomo/3D
+  Scan Type:
+  - Original
+  - Derived
+CT:
+  Anatomy:
+  - Head
+  - Neck
+  - Chest
+  - Abdomen
+  - Pelvis
+  - Upper Ext
+  - Lower Ext
+  - Whole Body
+  - Spine
+  Contrast:
+  - Contrast
+  - No Contrast
+  Contrast Phase:
+  - Arterial
+  - Portal Venous
+  - Nephrogenic
+  - Excretory
+  Contrast Delivery:
+  - IV
+  - Oral
+  Scan Type:
+  - Localizer
+  - Standard
+  - Perfusion
+  - Dose Report
+  - Gated
+  - Angiography
+  Scan Orientation:
+  - Axial
+  - Sagittal
+  - Coronal
+  - Oblique
+  Slice Spacing:
+  - Thin
+  - Medium
+  - Thick
+  Convolution Kernel:
+  - Sharp
+  - Standard
+  Phases:
+  - Monophasic
+  - Biphasic
+  - Triphasic
+  - Polyphasic
+  Volumetric:
+  - Volumetric
+  - Non Volumetric

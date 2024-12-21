@@ -1,0 +1,629 @@
+name: SIEMENS DICOM MR Classifier
+profile:
+  - name: classify_PDw
+    description: Checks if file is "PDw"
+    evaluate: "all"
+    depends_on:
+      - mr-classifier-select-manufacturer/is_mr
+      - mr-classifier-select-manufacturer/is_siemens
+    rules:
+      - match_type: "any"
+        match:
+          - and:
+              - key: file.info.header.dicom.ScanningSequence
+                contains: "SE"
+              - key: file.info.header.dicom.RepetitionTime
+                greater_than: 2000
+              - or:
+                  - key: file.info.header.dicom.EchoTime
+                    less_than: 25
+                  - and:
+                      - key: file.info.header.dicom_array.EchoTime.1
+                        exists: true
+                      - key: file.info.header.dicom_array.EchoTime.1
+                        less_than: 25
+              - key: file.info.header.dicom.FlipAngle
+                is: 180
+              - or:
+                  - key: file.info.header.dicom.InversionTime
+                    exists: false
+                  - key: file.info.header.dicom.InversionTime
+                    is: 0
+        action:
+          - key: "file.classification.Measurement"
+            add: "PD"
+
+  - name: classify_T1w
+    description: Checks if file is "T1w"
+    evaluate: "all"
+    depends_on:
+      - mr-classifier-select-manufacturer/is_mr
+      - mr-classifier-select-manufacturer/is_siemens
+    rules:
+      - match_type: "any"
+        match:
+          - and:
+              - key: file.info.header.dicom.RepetitionTime
+                less_than: 651
+              - key: file.info.header.dicom.EchoTime
+                less_than: 15
+              - key: file.info.header.dicom.FlipAngle
+                greater_than: 9
+          - and:
+              - key: file.info.header.dicom.RepetitionTime
+                less_than: 4000
+              - key: file.info.header.dicom.InversionTime
+                exists: true
+              - key: file.info.header.dicom.InversionTime
+                greater_than: 700
+              - key: file.info.header.dicom.InversionTime
+                less_than: 1000
+              - key: file.info.header.dicom.ScanningSequence
+                contains: "IR"
+          - and:
+              # T1 Flair
+              - key: file.info.header.dicom.InversionTime
+                exists: true
+              - key: file.info.header.dicom.InversionTime
+                greater_than: 700
+              - key: file.info.header.dicom.InversionTime
+                less_than: 1200
+              - key: file.info.header.dicom.ScanningSequence
+                contains: "IR"
+          - and:
+              # T1 STIR
+              - key: file.info.header.dicom.ScanningSequence
+                contains: "SE"
+              - key: file.info.header.dicom.EchoTime
+                less_than: 75
+              - key: file.info.header.dicom.RepetitionTime
+                greater_than: 2400
+              - key: file.info.header.dicom.SequenceName
+                regex: "(?=.*tir[B]?2d1).*"
+              - key: file.info.header.dicom.InversionTime
+                exists: true
+              - key: file.info.header.dicom.InversionTime
+                greater_than: 250
+              - key: file.info.header.dicom.InversionTime
+                less_than: 500
+              - key: file.info.header.dicom.FlipAngle
+                greater_than: 90
+        action:
+          - key: "file.classification.Measurement"
+            add: "T1"
+
+      - match_type: "all"
+        match:
+          - key: file.info.header.dicom.SequenceName
+            regex: "(?=.*tfl3d1).*"
+            case-sensitive: false
+          - key: file.info.header.dicom.ScanOptions
+            contains: "IR"
+          - key: file.info.header.dicom.SequenceVariant
+            contains: "MP"
+        action:
+          - key: "file.classification.Measurement"
+            add: "T1"
+
+  - name: classify_T2w
+    description: Checks if file is "T2w".
+    evaluate: "all"
+    depends_on:
+      - mr-classifier-select-manufacturer/is_mr
+      - mr-classifier-select-manufacturer/is_siemens
+    rules:
+      - match_type: "any"
+        match:
+          - and:
+              - key: file.info.header.dicom.ScanningSequence
+                contains: "SE"
+              - or:
+                  - key: file.info.header.dicom.EchoTime
+                    greater_than: 75
+                  - and:
+                      - key: file.info.header.dicom_array.EchoTime.1
+                        exists: true
+                      - key: file.info.header.dicom_array.EchoTime.1
+                        greater_than: 75
+              - key: file.info.header.dicom.RepetitionTime
+                greater_than: 2400
+          - and:
+              - key: file.info.header.dicom.InversionTime
+                exists: true
+              - key: file.info.header.dicom.InversionTime
+                less_than: 250
+              - key: file.info.header.dicom.RepetitionTime
+                greater_than: 1000
+              - key: file.info.header.dicom.EchoTime
+                greater_than: 30
+          - and:
+              - key: file.info.header.dicom.ScanningSequence
+                contains: "SE"
+              - key: file.info.header.dicom.SequenceName
+                regex: "(?=.*h2d1).*"
+              - or:
+                  - key: file.info.header.dicom.EchoTime
+                    greater_than: 75
+                  - and:
+                      - key: file.info.header.dicom_array.EchoTime.1
+                        exists: true
+                      - key: file.info.header.dicom_array.EchoTime.1
+                        greater_than: 75
+              - key: file.info.header.dicom.RepetitionTime
+                greater_than: 1000
+          - and:
+              # T2 Flair
+              - key: file.info.header.dicom.SequenceName
+                regex: "(?=.*tir[B]?2d1).*"
+              - key: file.info.header.dicom.InversionTime
+                exists: true
+              - key: file.info.header.dicom.InversionTime
+                greater_than: 1999
+              - key: file.info.header.dicom.RepetitionTime
+                greater_than: 7999
+        action:
+          - key: "file.classification.Measurement"
+            add: "T2"
+
+  - name: classify_T2*w
+    description: Checks if file is "T2*w".
+    evaluate: "all"
+    depends_on:
+      - mr-classifier-select-manufacturer/is_mr
+      - mr-classifier-select-manufacturer/is_siemens
+    rules:
+      - match_type: "any"
+        match:
+          - and:
+              - key: file.info.header.dicom.ScanningSequence
+                contains: "GR"
+              - key: file.info.header.dicom.EchoTime
+                greater_than: 5
+              - key: file.info.header.dicom.EchoTime
+                less_than: 30
+              - key: file.info.header.dicom.FlipAngle
+                less_than: 30
+              - key: file.info.header.dicom.RepetitionTime
+                greater_than: 15
+                # 2D FLASH
+              - or:
+                  - key: file.info.header.dicom.SequenceName
+                    exists: false
+                  - key: file.info.header.dicom.SequenceName
+                    regex: "(?=.*fl2d1).*"
+                  - key: file.info.header.dicom.SequenceName
+                    regex: "(?=.*t2star).*"
+          - and:
+              - key: file.info.header.dicom.SequenceName
+                regex: "(?=.*epfid).*"
+              - not:
+                  - key: file.info.header.dicom.ImageType
+                    contains: "PERFUSION"
+
+        action:
+          - key: "file.classification.Measurement"
+            add: "T2*"
+
+  - name: classify_DWI
+    description: Checks if file is "DWI".
+    evaluate: "all"
+    depends_on:
+      - mr-classifier-select-manufacturer/is_mr
+      - mr-classifier-select-manufacturer/is_siemens
+    rules:
+      - match_type: "any"
+        match:
+          - key: file.info.header.dicom.ImageType
+            contains: "DIFFUSION"
+          - key: file.info.header.dicom.ImageType
+            contains: "ADC"
+          - key: file.info.header.dicom.ImageType
+            contains: "EADC"
+          - key: file.info.header.dicom.ImageType
+            contains: "TRACE"
+          - key: file.info.header.dicom.ImageType
+            contains: "TRACEW"
+          - key: file.info.header.dicom.SequenceName
+            regex: "(?=.*ep_b).*"
+        action:
+          - key: "file.classification.Measurement"
+            add: "Diffusion"
+
+  - name: classify_FLAIR
+    description: Checks if Measurement is "FLAIR"
+    evaluate: "all"
+    depends_on:
+      - mr-classifier-select-manufacturer/is_mr
+      - mr-classifier-select-manufacturer/is_siemens
+    rules:
+      - match_type: "any"
+        match:
+          # T2w FLAIR
+          - and:
+              - key: file.info.header.dicom.SequenceName
+                regex: "(?=.*spcir).*"
+              - key: file.info.header.dicom.InversionTime
+                exists: true
+          - and:
+              - key: file.info.header.dicom.SequenceName
+                regex: "(?=.*tir).*"
+              - key: file.info.header.dicom.InversionTime
+                exists: true
+              - key: file.info.header.dicom.InversionTime
+                greater_than: 1000
+              - key: file.info.header.dicom.EchoTime
+                greater_than: 79
+          - and:
+              # T1 Flair
+              - key: file.info.header.dicom.SequenceName
+                regex: "(?=.*tsevfl).*"
+              - key: file.info.header.dicom.InversionTime
+                exists: true
+              # - key: file.info.header.dicom.InversionTime
+              # #   greater_than: 800
+              # - key: file.info.header.dicom.ScanningSequence
+              #   contains: "IR"
+          - and:
+              # T2 Flair
+              - key: file.info.header.dicom.SequenceName
+                regex: "(?=.*tir[B]?2d1).*"
+              - key: file.info.header.dicom.InversionTime
+                exists: true
+              - key: file.info.header.dicom.InversionTime
+                greater_than: 1999
+              - key: file.info.header.dicom.RepetitionTime
+                greater_than: 7999
+              # - key: file.info.header.dicom.ScanningSequence
+              #   contains: "IR"
+          - and:
+              # T1 Flair
+              - key: file.info.header.dicom.SequenceName
+                regex: "(?=.*tir[B]?2d1).*"
+              - key: file.info.header.dicom.InversionTime
+                exists: true
+              - key: file.info.header.dicom.InversionTime
+                greater_than: 700
+              - key: file.info.header.dicom.InversionTime
+                less_than: 1200
+              - key: file.info.header.dicom.ScanningSequence
+                contains: "IR"
+          # Physics fallbacks
+          - and:
+              - key: file.info.header.dicom.InversionTime
+                exists: true
+              - key: file.info.header.dicom.InversionTime
+                greater_than: 1999
+              - key: file.info.header.dicom.RepetitionTime
+                greater_than: 7999
+              - key: file.info.header.dicom.EchoTime
+                greater_than: 75
+          - and:
+              # T1 Flair
+              - key: file.info.header.dicom.InversionTime
+                exists: true
+              - key: file.info.header.dicom.InversionTime
+                greater_than: 700
+              - key: file.info.header.dicom.InversionTime
+                less_than: 1200
+              - key: file.info.header.dicom.ScanningSequence
+                contains: "IR"
+              - not:
+                  - key: file.info.header.dicom.SequenceVariant
+                    contains: "MP"
+
+        action:
+          - key: "file.classification.Features"
+            add: "FLAIR"
+
+  # - name: classify_STIR
+  #   description: Checks if Measurement is "STIR"
+  #   evaluate: "all"
+  #   depends_on:
+  #     - mr-classifier-select-manufacturer/is_mr
+  #     - mr-classifier-select-manufacturer/is_siemens
+  #   rules:
+  #     - match_type: "any"
+  #       match:
+  #         - and:
+  #             # T2 STIR
+  #             - key: file.info.header.dicom.SequenceName
+  #               regex: "(?=.*tir[B]?2d1).*"
+  #             - key: file.info.header.dicom.InversionTime
+  #               exists: true
+  #             - key: file.info.header.dicom.InversionTime
+  #               less_than: 800
+  #             # - key: file.info.header.dicom.ScanningSequence
+  #             #   contains: "IR"
+  #         - and:
+  #             - key: file.info.header.dicom.InversionTime
+  #               exists: true
+  #             - key: file.info.header.dicom.InversionTime
+  #               less_than: 200
+  #             - key: file.info.header.dicom.InversionTime
+  #               greater_than: 0
+  #             - key: file.info.header.dicom.EchoTime
+  #               greater_than: 30
+  #             - key: file.info.header.dicom.RepetitionTime
+  #               greater_than: 1000
+  #       action:
+  #         - key: "file.classification.Features"
+  #           add: "STIR"
+
+  - name: classify_SWI
+    description: Checks if file is "SWI".
+    evaluate: "all"
+    depends_on:
+      - mr-classifier-select-manufacturer/is_mr
+      - mr-classifier-select-manufacturer/is_siemens
+    rules:
+      - match_type: "all"
+        match:
+          - key: file.info.header.dicom.SequenceName
+            regex: "(?=.*swi).*"
+        action:
+          - key: "file.classification.Measurement"
+            add: "Susceptibility"
+          - key: "file.classification.Features"
+            add: "SWI"
+
+  - name: classify_Perfusion
+    description: Checks if file is "Perfusion".
+    evaluate: "all"
+    depends_on:
+      - mr-classifier-select-manufacturer/is_mr
+      - mr-classifier-select-manufacturer/is_siemens
+    rules:
+      # T2* weighted perfusion is DSC
+      - match_type: "all"
+        match:
+          - key: file.info.header.dicom.ImageType
+            contains: "PERFUSION"
+          - key: file.info.header.dicom.SequenceName
+            regex: "(?=.*epfid).*"
+        action:
+          - key: "file.classification.Measurement"
+            add: "Perfusion"
+
+  - name: classify_Localizer
+    description: Checks if Measurement is "Localizer"
+    evaluate: "all"
+    depends_on:
+      - mr-classifier-select-manufacturer/is_mr
+      - mr-classifier-select-manufacturer/is_siemens
+    rules:
+      - match_type: "all"
+        match:
+          - key: file.info.header.dicom.SpacingBetweenSlices
+            greater_than: 8
+          - key: file.zip_member_count
+            less_than: 10
+          - not:
+              - or:
+                  - key: file.info.header.dicom.ImageType
+                    contains: "DERIVED"
+                  - key: file.info.header.dicom.ImageType
+                    contains: "SECONDARY"
+                  - key: file.info.header.dicom.ImageType
+                    contains: "REFORMATTED"
+                  - key: file.info.header.dicom.ImageType
+                    contains: "PROJECTION"
+                  - key: file.info.header.dicom.ImageType
+                    contains: "PROJECTION IMAGE"
+                  - key: file.info.header.dicom.ImageType
+                    contains: "PROJECTION IMAG"
+                  - key: file.info.header.dicom.ImageType
+                    contains: "MNIP"
+                  - key: file.info.header.dicom.ImageType
+                    contains: "MIP"
+
+        action:
+          - key: "file.classification.Intent"
+            add: "Localizer"
+
+  - name: classify_features
+    description: Sets any features found.
+    evaluate: "all"
+    depends_on:
+      - mr-classifier-select-manufacturer/is_mr
+      - mr-classifier-select-manufacturer/is_siemens
+    rules:
+      - match_type: "any"
+        match:
+          - key: file.info.header.dicom.MRAcquisitionType
+            is: "3D"
+        action:
+          - key: file.classification.Features
+            add: "3D"
+
+      - match_type: "any"
+        match:
+          - key: file.info.header.dicom.MRAcquisitionType
+            is: "2D"
+        action:
+          - key: file.classification.Features
+            add: "2D"
+
+      - match_type: "all"
+        match:
+          - key: file.info.header.dicom.SequenceName
+            regex: "(?=.*tfl3d1).*"
+            case-sensitive: false
+          - key: file.info.header.dicom.ScanOptions
+            contains: "IR"
+          - key: file.info.header.dicom.SequenceVariant
+            contains: "MP"
+        action:
+          - key: file.classification.Features
+            add: "MPRAGE"
+
+      - match_type: "any"
+        match:
+          - key: file.info.header.dicom.ImageType
+            contains: "IN_PHASE"
+        action:
+          - key: file.classification.Features
+            add: "In phase"
+
+      - match_type: "all"
+        match:
+          - and:
+              - key: file.info.header.dicom.ScanningSequence
+                contains: "GR"
+              - key: file.info.header.dicom.SequenceVariant
+                contains: "SP"
+        action:
+          - key: file.classification.Features
+            add: "SPGR"
+
+      # - match_type: "any"
+      #   match:
+      #     - key: file.info.header.dicom.ScanOptions
+      #       contains: "FS"
+      #   action:
+      #     - key: file.classification.Features
+      #       add: "Fat saturation"
+
+      # - match_type: "any"
+      #   match:
+      #     - key: file.info.header.dicom.MagneticFieldStrength
+      #       is: 1.5
+      #   action:
+      #     - key: file.classification.Features
+      #       add: "1.5T"
+
+      # - match_type: "any"
+      #   match:
+      #     - key: file.info.header.dicom.MagneticFieldStrength
+      #       is: 3
+      #   action:
+      #     - key: file.classification.Features
+      #       add: "3T"
+
+      # Match Projection
+      - match_type: "any"
+        match:
+          - key: file.info.header.dicom.ImageType
+            contains: "PROJECTION IMAGE"
+          - key: file.info.header.dicom.ImageType
+            contains: "MNIP"
+          - key: file.info.header.dicom.ImageType
+            contains: "MIP"
+        action:
+          - key: file.classification.Features
+            add: "MIP"
+
+      # # Match TTPmap
+      # - match_type: "any"
+      #   match:
+      #     - key: file.info.header.dicom.ImageType
+      #       contains: "TTP"
+      #   action:
+      #     - key: file.classification.Features
+      #       add: "TTPmap"
+
+      # Match TRACEmap
+      - match_type: "any"
+        match:
+          - key: file.info.header.dicom.ImageType
+            contains: "ADC"
+          - key: file.info.header.dicom.ImageType
+            contains: "EADC"
+          - key: file.info.header.dicom.ImageType
+            contains: "TRACE"
+        action:
+          - key: file.classification.Features
+            add: "TRACE"
+
+      # Match FAmap
+      - match_type: "all"
+        match:
+          - key: file.info.header.dicom.ImageType
+            contains: "DERIVED"
+          - key: file.info.header.dicom.ImageType
+            contains: "DIFFUSION"
+          - key: file.info.header.dicom.ImageType
+            contains: "FA"
+        action:
+          - key: file.classification.Features
+            add: "FA"
+
+      # DualEcho
+      - match_type: "any"
+        match:
+          # Need to verify echotime index exists (or could be silently failing)
+          - and:
+              - key: file.info.header.dicom_array.EchoTime.0
+                exists: true
+              - key: file.info.header.dicom_array.EchoTime.1
+                exists: true
+              - key: file.zip_member_count
+                greater_than: 10
+              - not:
+                  - key: file.info.header.dicom_array.EchoTime.0
+                    is: file.info.header.dicom_array.EchoTime.1
+                    resolve: true
+        action:
+          - key: file.classification.Features
+            add: "Multi-Echo"
+
+  # - name: classify_scan_orientation
+  #   description: Sets scan orientation.
+  #   evaluate: "first"
+  #   depends_on:
+  #     - mr-classifier-select-manufacturer/is_mr
+  #     - mr-classifier-select-manufacturer/is_siemens
+  #   rules:
+  #     - match_type: "all"
+  #       match:
+  #         - or:
+  #             - key: file.info.header.dicom.ImageOrientationPatient.0
+  #               greater_than: 0.75
+  #             - key: file.info.header.dicom.ImageOrientationPatient.0
+  #               less_than: -0.75
+  #         - or:
+  #             - key: file.info.header.dicom.ImageOrientationPatient.4
+  #               greater_than: 0.75
+  #             - key: file.info.header.dicom.ImageOrientationPatient.4
+  #               less_than: -0.75
+  #       action:
+  #         - key: "file.classification.Scan Orientation"
+  #           set: ["Axial"]
+
+  #     - match_type: "all"
+  #       match:
+  #         - or:
+  #             - key: file.info.header.dicom.ImageOrientationPatient.0
+  #               greater_than: 0.75
+  #             - key: file.info.header.dicom.ImageOrientationPatient.0
+  #               less_than: -0.75
+  #         - or:
+  #             - key: file.info.header.dicom.ImageOrientationPatient.5
+  #               greater_than: 0.75
+  #             - key: file.info.header.dicom.ImageOrientationPatient.5
+  #               less_than: -0.75
+  #       action:
+  #         - key: "file.classification.Scan Orientation"
+  #           set: ["Coronal"]
+
+  #     - match_type: "all"
+  #       match:
+  #         - or:
+  #             - key: file.info.header.dicom.ImageOrientationPatient.1
+  #               greater_than: 0.75
+  #             - key: file.info.header.dicom.ImageOrientationPatient.1
+  #               less_than: -0.75
+  #         - or:
+  #             - key: file.info.header.dicom.ImageOrientationPatient.5
+  #               greater_than: 0.75
+  #             - key: file.info.header.dicom.ImageOrientationPatient.5
+  #               less_than: -0.75
+  #       action:
+  #         - key: "file.classification.Scan Orientation"
+  #           set: ["Sagittal"]
+
+  #     - match_type: "all"
+  #       match:
+  #         - {key: "file.classification.Scan Orientation", exists: false}
+  #       action:
+  #         - key: "file.classification.Scan Orientation"
+  #           set: ["Oblique"]

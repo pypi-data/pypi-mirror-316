@@ -1,0 +1,34 @@
+name: Philips PDw classifier
+profile:
+  - name: classify_PDw
+    description: Checks if file is "PDw"
+    evaluate: "all"
+    depends_on:
+      - mr-classifier-select-manufacturer/is_mr
+      - mr-classifier-select-manufacturer/is_philips
+    rules:
+      - match_type: "any"
+        match:
+          - and:
+              - key: file.info.header.dicom.ScanningSequence
+                contains: "SE"
+              - key: file.info.header.dicom.RepetitionTime
+                greater_than: 2000
+              - or:
+                  - key: file.info.header.dicom.EchoTime
+                    less_than: 25
+                  - and:
+                      - key: file.info.header.dicom_array.EchoTime.1
+                        exists: true
+                      - key: file.info.header.dicom_array.EchoTime.1
+                        less_than: 30
+              - key: file.info.header.dicom.FlipAngle
+                is: 90
+              - or:
+                  - key: file.info.header.dicom.InversionTime
+                    exists: false
+                  - key: file.info.header.dicom.InversionTime
+                    is: 0
+        action:
+          - key: "file.classification.Measurement"
+            add: "PD"

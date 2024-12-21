@@ -1,0 +1,55 @@
+name: Philips T1w classifier
+profile:
+  - name: classify_T1w
+    description: Checks if file is "T1w"
+    evaluate: "all"
+    depends_on:
+      - mr-classifier-select-manufacturer/is_mr
+      - mr-classifier-select-manufacturer/is_philips
+    rules:
+      # T1w
+      - match_type: "all"
+        match:
+          - key: file.info.header.dicom.RepetitionTime
+            less_than: 700
+          - key: file.info.header.dicom.EchoTime
+            greater_than: 0
+          - key: file.info.header.dicom.EchoTime
+            less_than: 15
+          - key: file.info.header.dicom.FlipAngle
+            greater_than: 5
+          # This is a weird Measurement Philips does (https://www.imaios.com/en/e-mri/sequences/t2-enhanced-steady-state-gradient-echo)
+          - not:
+              - and:
+                  - key: file.info.header.dicom.ScanningSequence
+                    contains: "GR"
+                  - key: file.info.header.dicom.SequenceVariant
+                    contains: "SS"
+                  - key: file.info.header.dicom.ImageType
+                    contains: "FFE"
+                  - key: file.info.header.dicom.EchoTime
+                    less_than: 10
+                  - key: file.info.header.dicom.RepetitionTime
+                    less_than: 25
+                  - key: file.info.header.dicom.RepetitionTime
+                    greater_than: 20
+            action:
+          - key: "file.classification.Measurement"
+            add: "T1"
+
+      # T1w_FLAIR
+      - match_type: "all"
+        match:
+          - key: file.info.header.dicom.ImageType
+            contains: "IR"
+          - key: file.info.header.dicom.RepetitionTime
+            greater_than: 2000
+          - key: file.info.header.dicom.InversionTime
+            greater_than: 400
+          - key: file.info.header.dicom.InversionTime
+            less_than: 2000
+          - key: file.info.header.dicom.PixelBandwidth
+            less_than: 2000
+        action:
+          - key: "file.classification.Measurement"
+            add: "T1"

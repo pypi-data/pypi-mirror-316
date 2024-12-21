@@ -1,0 +1,19 @@
+name: Philips SWI classifier
+profile:
+  - name: classify_SWI
+    description: Checks if file is "SWI".
+    evaluate: "all"
+    depends_on:
+      - mr-classifier-select-manufacturer/is_mr
+      - mr-classifier-select-manufacturer/is_philips
+    rules:
+      - match_type: "any"
+        match:
+          - and:
+              - key: file.info.header.dicom.ImageType
+                contains: "SW_M"
+        action:
+          - key: "file.classification.Features"
+            add: "SWI"
+          - key: "file.classification.Measurement"
+            add: "Susceptibility"

@@ -1,0 +1,314 @@
+name: ct-dicom-classifier
+profile:
+  - name: set_modality_ct
+    description: Set modality if not set.
+    evaluate: "first"
+    depends_on:
+      - select-modality/is_ct
+    rules:
+      - match_type: "all"
+        match:
+          - not:
+              - key: file.modality
+                is: None
+        action:
+          - key: file.modality
+            add: CT
+
+  - name: classify_anatomy
+    description: "Infer anatomy based on DICOM metadata"
+    evaluate: "first"
+    depends_on:
+      - select-modality/is_ct
+    variables:
+      BodyPartExamined: file.info.header.dicom.BodyPartExamined
+      fc: file.classification
+    rules:
+      - match_type: "any"
+        match:
+          - {key: $BodyPartExamined, regex: "Head|Brain", case-sensitive: false}
+        action:
+          - key: $fc.Anatomy
+            add: "Head"
+      - match_type: "any"
+        match:
+          - {key: $BodyPartExamined, regex: "Neck|Thor", case-sensitive: false}
+        action:
+          - key: $fc.Anatomy
+            add: "Neck"
+      - match_type: "any"
+        match:
+          - {
+              key: $BodyPartExamined,
+              regex: "Chest|Cheast|CAP|C/A/P",
+              case-sensitive: false,
+            }
+          - key: file.info.header.dicom.ConvolutionKernel
+            regex: "lung"
+            case_sensitive: false
+        action:
+          - key: $fc.Anatomy
+            add: "Chest"
+      - match_type: "any"
+        match:
+          - {
+              key: $BodyPartExamined,
+              regex: "Abd|CAP|C/A/P|liver",
+              case-sensitive: false,
+            }
+        action:
+          - key: $fc.Anatomy
+            add: "Abdomen"
+      - match_type: "any"
+        match:
+          - {
+              key: $BodyPartExamined,
+              regex: "Pel|CAP|C/A/P",
+              case-sensitive: false,
+            }
+        action:
+          - key: $fc.Anatomy
+            add: "Pelvis"
+      - match_type: "all"
+        match:
+          - {key: $BodyPartExamined, regex: "UP", case-sensitive: false}
+          - {key: $BodyPartExamined, regex: "EXT", case-sensitive: false}
+        action:
+          - key: $fc.Anatomy
+            add: "Upper Extremities"
+      - match_type: "all"
+        match:
+          - {key: $BodyPartExamined, regex: "LO", case-sensitive: false}
+          - {key: $BodyPartExamined, regex: "EXT", case-sensitive: false}
+        action:
+          - key: $fc.Anatomy
+            add: "Lower Extremities"
+      - match_type: "any"
+        match:
+          - {key: $BodyPartExamined, regex: "BODY", case-sensitive: false}
+        action:
+          - key: $fc.Anatomy
+            add: "Whole Body"
+
+  # Scan Type Classifier
+  - name: classify_scan_type
+    description: |
+      Classify specialized types of scans. Order here matters. First we check if the scan is a localizer.
+      Then for specialty scan types: perfusion, Dose reports, etc.
+      If the scan is not classified, the fallback will attempt to classify based on the acquisition label or
+      SeriesDescription downstream.
+    evaluate: "first"
+    depends_on:
+      - select-modality/is_ct
+    variables:
+      ImageType: file.info.header.dicom.ImageType
+      TriggerTime: file.info.header.dicom.TriggerTime
+      ImageTriggerDelay: file.info.header.dicom.ImageTriggerDelay
+      fc: file.classification
+    rules:
+      - match_type: "all"
+        match:
+          - key: $ImageType
+            contains: LOCALIZER
+        action:
+          - key: $fc.Scan Type
+            add: "Localizer"
+      - match_type: "any"
+        match:
+          - {key: "$ImageType", contains: "perf"}
+          - {key: "$ImageType", contains: "dynamic"}
+        action:
+          - key: "$fc.Scan Type"
+            add: "Perfusion"
+      - match_type: "any"
+        match:
+          - {key: "$ImageType", contains: "Dose"}
+        action:
+          - key: "$fc.Scan Type"
+            add: "Dose Report"
+      - match_type: "any"
+        match:
+          - {key: "$TriggerTime", exists: true}
+          - {key: "$ImageTriggerDelay", exists: true}
+        action:
+          - key: "$fc.Scan Type"
+            add: "Gated"
+      - match_type: "any"
+        match:
+          - {key: "$ImageType", contains: "angi"}
+          - {key: "$ImageType", contains: "vascular"}
+          - {key: "$ImageType", contains: "arter"}
+        action:
+          - key: "$fc.Scan Type"
+            add: "Angiography"
+
+  - name: classify_contrast
+    description: "Classify presence or absence of contrast"
+    evaluate: "first"
+    depends_on:
+      - select-modality/is_ct
+    variables:
+      ContrastBolusVolume: file.info.header.dicom.ContrastBolusVolume
+      ContrastBolusRoute: file.info.header.dicom.ContrastBolusRoute
+      ContrastBolusAgent: file.info.header.dicom.ContrastBolusAgent
+      fc: file.classification
+    rules:
+      - match_type: "any"
+        match:
+          - and:
+              - {key: "$ContrastBolusVolume", exists: true}
+              - {key: "$ContrastBolusVolume", is_numeric: true}
+          - {key: "$ContrastBolusRoute", exists: true}
+        action:
+          - key: $fc.Contrast
+            add: "Contrast"
+      - match_type: "any"
+        match:
+          - and:
+              - {key: "$ContrastBolusRoute", exists: false}
+              - {key: "$ContrastBolusVolume", exists: false}
+          - {key: "$ContrastBolusAgent", regex: "no", case_sensitive: false}
+
+        action:
+          - key: $fc.Contrast
+            add: "No Contrast"
+
+  - name: classify_contrast_phase
+    description: "Classify different stages of contrast enhancement"
+    evaluate: "first"
+    depends_on:
+      - select-modality/is_ct
+    variables:
+      ContrastFlowDuration: file.info.header.dicom.ContrastFlowDuration
+      fc: file.classification
+    rules:
+      - match_type: "all"
+        match:
+          - {key: "$ContrastFlowDuration", exists: true}
+          - {key: "$ContrastFlowDuration", greater_than: 0}
+          - {key: "$ContrastFlowDuration", less_than: 45}
+        action:
+          - key: "$fc.Contrast Phase"
+            add: "Arterial Phase"
+      - match_type: "all"
+        match:
+          - {key: "$ContrastFlowDuration", exists: true}
+          - {key: "$ContrastFlowDuration", greater_than: 45}
+          - {key: "$ContrastFlowDuration", less_than: 85}
+        action:
+          - key: "$fc.Contrast Phase"
+            add: "Portal Venous Phase"
+      - match_type: "all"
+        match:
+          - {key: "$ContrastFlowDuration", exists: true}
+          - {key: "$ContrastFlowDuration", greater_than: 85}
+          - {key: "$ContrastFlowDuration", less_than: 120}
+        action:
+          - key: "$fc.Contrast Phase"
+            add: "Nephrogenic"
+      - match_type: "all"
+        match:
+          - {key: "$ContrastFlowDuration", exists: true}
+          - {key: "$ContrastFlowDuration", greater_than: 120}
+        action:
+          - key: "$fc.Contrast Phase"
+            add: "Delayed/Equilibrium Phase"
+
+      # Missing Dynamic Phase here...
+
+  # ContrastDelivery Classifier
+  - name: classify_contrast_delivery
+    description: "Classify delivery method of contrast"
+    evaluate: "first"
+    depends_on:
+      - select-modality/is_ct
+    variables:
+      ContrastBolusRoute: file.info.header.dicom.ContrastBolusRoute
+      fc: file.classification
+    rules:
+      - match_type: "all"
+        match:
+          - {key: "$ContrastBolusRoute", exists: true}
+          - {key: "$ContrastBolusRoute", regex: "Oral", case-sensitive: false}
+        action:
+          - key: "$fc.Contrast Delivery"
+            add: "Oral"
+      - match_type: "all"
+        match:
+          - {key: "$ContrastBolusRoute", exists: true}
+          - {key: "$ContrastBolusRoute", regex: "IV", case-sensitive: false}
+        action:
+          - key: "$fc.Contrast Delivery"
+            add: "IV"
+
+  - name: classify_scan_orientation
+    description: Sets scan orientation.
+    evaluate: "first"
+    depends_on:
+      - select-modality/is_ct
+    variables:
+      fc: file.classification
+    rules:
+      - match_type: "all"
+        match:
+          - or:
+              - key: file.info.header.dicom.ImageOrientationPatient.0
+                greater_than: 0.75
+              - key: file.info.header.dicom.ImageOrientationPatient.0
+                less_than: -0.75
+          - or:
+              - key: file.info.header.dicom.ImageOrientationPatient.4
+                greater_than: 0.75
+              - key: file.info.header.dicom.ImageOrientationPatient.4
+                less_than: -0.75
+        action:
+          - key: "$fc.Scan Orientation"
+            add: "Axial"
+      - match_type: "all"
+        match:
+          - key: file.info.header.dicom.ImageOrientationPatient
+            exists: false
+          - key: file.info.header.dicom.ImageType
+            contains: AXIAL
+        action:
+          - key: "$fc.Scan Orientation"
+            add: "Axial"
+
+      - match_type: "all"
+        match:
+          - or:
+              - key: file.info.header.dicom.ImageOrientationPatient.0
+                greater_than: 0.75
+              - key: file.info.header.dicom.ImageOrientationPatient.0
+                less_than: -0.75
+          - or:
+              - key: file.info.header.dicom.ImageOrientationPatient.5
+                greater_than: 0.75
+              - key: file.info.header.dicom.ImageOrientationPatient.5
+                less_than: -0.75
+        action:
+          - key: "$fc.Scan Orientation"
+            add: "Coronal"
+
+      - match_type: "all"
+        match:
+          - or:
+              - key: file.info.header.dicom.ImageOrientationPatient.1
+                greater_than: 0.75
+              - key: file.info.header.dicom.ImageOrientationPatient.1
+                less_than: -0.75
+          - or:
+              - key: file.info.header.dicom.ImageOrientationPatient.5
+                greater_than: 0.75
+              - key: file.info.header.dicom.ImageOrientationPatient.5
+                less_than: -0.75
+        action:
+          - key: "$fc.Scan Orientation"
+            add: "Sagittal"
+
+      - match_type: "all"
+        match:
+          - {key: "$fc.Scan Orientation", exists: false}
+        action:
+          - key: "$fc.Scan Orientation"
+            add: "Oblique"

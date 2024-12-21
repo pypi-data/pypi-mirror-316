@@ -1,0 +1,69 @@
+# This profile checks each field of the CT schema and if it is empty, evaluates to True. This can then be used to run fallback rules.
+name: ct-check-classification
+description: A profile to check if ct schema fields have been left empty.
+profile:
+  - name: anatomy_not_classified
+    description: Checks if file.classification.Anatomy exists. If it does not, it will evaluate to True.
+    evaluate: "all"
+    depends_on:
+      - select-modality/is_ct
+    rules:
+      - match_type: "all"
+        match:
+          - key: file.classification.Anatomy
+            exists: false
+
+  - name: contrast_not_classified
+    description: Checks if file.classification.Contrast exists. If it does not, it will evaluate to True.
+    evaluate: "all"
+    depends_on:
+      - select-modality/is_ct
+    rules:
+      - match_type: "all"
+        match:
+          - key: file.classification.Contrast
+            exists: false
+
+  - name: contrast_phase_not_classified
+    description: Checks if "file.classification.Contrast Phase" exists. If it does not, it will evaluate to True.
+    evaluate: "all"
+    depends_on:
+      - select-modality/is_ct
+    rules:
+      - match_type: "all"
+        match:
+          - key: "file.classification.Contrast Phase"
+            exists: false
+
+  - name: contrast_delivery_not_classified
+    description: Checks if "file.classification.Contrast Delivery" exists. If it does not, it will evaluate to True.
+    evaluate: "all"
+    depends_on:
+      - select-modality/is_ct
+    rules:
+      - match_type: "all"
+        match:
+          - key: "file.classification.Contrast Delivery"
+            exists: false
+
+  - name: scan_type_not_classified
+    description: Checks if "file.classification.Scan Type" exists. If it does not, it will evaluate to True.
+    evaluate: "all"
+    depends_on:
+      - select-modality/is_ct
+    rules:
+      - match_type: "all"
+        match:
+          - key: "file.classification.Scan Type"
+            exists: false
+
+  - name: scan_orientation_not_classified
+    description: Checks if "file.classification.Scan Type" exists. If it does not, it will evaluate to True.
+    evaluate: "all"
+    depends_on:
+      - select-modality/is_ct
+    rules:
+      - match_type: "all"
+        match:
+          - key: "file.classification.Scan Orientation"
+            exists: false

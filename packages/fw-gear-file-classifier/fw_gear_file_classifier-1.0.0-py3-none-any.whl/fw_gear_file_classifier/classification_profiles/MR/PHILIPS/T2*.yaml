@@ -1,0 +1,26 @@
+name: Philips T2*w classifier
+profile:
+  - name: classify_T2*w
+    description: Checks if file is "T2*w".
+    evaluate: "all"
+    depends_on:
+      - mr-classifier-select-manufacturer/is_mr
+      - mr-classifier-select-manufacturer/is_philips
+    rules:
+      - match_type: "all"
+        match:
+          - key: file.info.header.dicom.ScanningSequence
+            contains: "GR"
+          - key: file.info.header.dicom.EchoTime
+            greater_than: 5
+          - key: file.info.header.dicom.EchoTime
+            less_than: 30
+          - key: file.info.header.dicom.FlipAngle
+            less_than: 30
+          - key: file.info.header.dicom.FlipAngle
+            greater_than: 0
+          - key: file.info.header.dicom.RepetitionTime
+            greater_than: 50
+        action:
+          - key: "file.classification.Measurement"
+            add: "T2*"

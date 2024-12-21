@@ -1,0 +1,9 @@
+name: DICOM MR Classifier
+includes:
+  - select_manufacturer.yaml
+  - GE.yaml
+  - SIEMENS.yaml
+  - PHILIPS/main.yaml
+  - classify_intent.yaml
+  - check_measurement.yaml
+  - MR_fallback.yaml
