@@ -1,0 +1,91 @@
+# getzeit – Download DIE ZEIT newspaper in various formats
+
+[![PyPI Version](https://img.shields.io/pypi/v/getzeit?color=00aa00)](https://pypi.org/project/getzeit)
+[![PyPI License](https://img.shields.io/pypi/l/getzeit)](COPYING)
+
+## Installation from PyPI
+
+```sh
+pip install getzeit[full]
+```
+
+or
+
+```sh
+pip install getzeit[full]
+```
+
+which additionally installs `argcomplete` for bash/zsh tab completion.
+
+## Installation from source code
+
+Clone the repository and inside the folder do
+
+```sh
+pip install .
+```
+
+or
+
+```sh
+pip install .[full]
+```
+
+## Usage as standalone program
+
+Simply run
+
+```sh
+getzeit
+```
+
+to download the current issue of DIE ZEIT.
+
+At the first call it will open a browser with a temporary profile to get the
+session cookies from the login. You need to login with your credentials. The next
+step of accepting the advertisement and tracking is not necessary. After closing
+the browser the program will continue with the download of the specified issues.
+At subsequent calls the stored cookies will be used. If needed the cookies can be
+recreated with `--recreate-cookie-jar` at any time.
+
+Access the help of the program with
+
+```sh
+getzeit -h
+```
+
+to obtain information about the optional arguments and the issue selection
+procedure.
+
+## Usage as python module
+
+```python
+import getzeit
+with getzeit.ZeitSession() as session:
+    current_issue = session.get_issues()[0]
+    session.download_issue(current_issue)
+```
+
+## Dependencies
+
+`python>=3.8` with [`requests`](https://github.com/psf/requests),
+[`browser_cookie3>=0.20.1`](https://github.com/borisbabic/browser_cookie3)
+and optionally [`argcomplete`](https://github.com/kislyuk/argcomplete) for bash/zsh
+tab completion.
+
+## Copyright
+
+Copyright 2021–2024 Robert Wolff <mahlzahn@posteo.de>
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program. If not, see <https://www.gnu.org/licenses/>.
