@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+codexen/__init__.py
+codexen/foo.py
+codexen.egg-info/PKG-INFO
+codexen.egg-info/SOURCES.txt
+codexen.egg-info/dependency_links.txt
+codexen.egg-info/top_level.txt
+tests/test_foo.py
