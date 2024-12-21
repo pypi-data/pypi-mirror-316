@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: nl.export
+Version: 1.1.0
+Summary: Einfaches Tool für den Zugriff auf ein NL-CMS
+Home-page: https://github.com/gbv/nl.export
+Author: Marc-J. Tegethoff
+Author-email: marc.tegethoff@gbv.de
+License: GNU Affero General Public License v3
+Project-URL: PyPI, https://pypi.python.org/pypi/nl.export
+Project-URL: Source, https://github.com/gbv/nl.export
+Project-URL: Tracker, https://github.com/gbv/nl.export/issues
+Keywords: VZG Python Plone Nationallizenzen
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Natural Language :: German
+Classifier: Operating System :: POSIX :: Linux
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# Einfaches Tool für den Zugriff auf ein NL-CMS
+
+Mit diesem Tool **nl-export** lassen sich bestimmte Daten aus einem NL-CMS exportieren.
+
+## Konfiguration
+
+Die Konfigurationsdatei **nl_export.conf** sollte sich in $XDG_CONFIG_HOME des ausführenden Nutzers befinden.
