@@ -1,0 +1,3 @@
+[console_scripts]
+pythonrest = pythonrest:app
+
