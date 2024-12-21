@@ -1,0 +1,57 @@
+# Bash completion for etptool
+# Author: Jabez Winston <jabezwinston@gmail.com>
+# Date: 20 Dec 2024
+
+_etptool()
+{
+    local cur prev opts
+    COMPREPLY=()
+    cur="${COMP_WORDS[COMP_CWORD]}"
+    prev="${COMP_WORDS[COMP_CWORD-1]}"
+    opts="fw gpio adc pwm i2c spi"
+
+    case "${prev}" in
+        cfg)
+            local cfg_opts="save"
+            COMPREPLY=( $(compgen -W "${cfg_opts}" -- ${cur}) )
+            return 0
+            ;;
+        fw)
+            local fw_opts="info"
+            COMPREPLY=( $(compgen -W "${fw_opts}" -- ${cur}) )
+            return 0
+            ;;
+        gpio)
+            local gpio_opts="info init read write"
+            COMPREPLY=( $(compgen -W "${gpio_opts}" -- ${cur}) )
+            return 0
+            ;;
+        adc)
+            local adc_opts="info init read"
+            COMPREPLY=( $(compgen -W "${adc_opts}" -- ${cur}) )
+            return 0
+            ;;
+        pwm)
+            local pwm_opts="info init ctrl"
+            COMPREPLY=( $(compgen -W "${pwm_opts}" -- ${cur}) )
+            return 0
+            ;;
+        i2c)
+            local i2c_opts="info init scan read write read_reg write_reg"
+            COMPREPLY=( $(compgen -W "${i2c_opts}" -- ${cur}) )
+            return 0
+            ;;
+        spi)
+            local spi_opts="info init transfer"
+            COMPREPLY=( $(compgen -W "${spi_opts}" -- ${cur}) )
+            return 0
+            ;;
+        *)
+            ;;
+    esac
+
+    COMPREPLY=( $(compgen -W "${opts}" -- ${cur}) )
+    return 0
+}
+
+complete -F _etptool etptool
