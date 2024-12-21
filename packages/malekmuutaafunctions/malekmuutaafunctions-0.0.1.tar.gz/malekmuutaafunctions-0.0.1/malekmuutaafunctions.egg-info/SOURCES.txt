@@ -1,0 +1,5 @@
+setup.py
+malekmuutaafunctions.egg-info/PKG-INFO
+malekmuutaafunctions.egg-info/SOURCES.txt
+malekmuutaafunctions.egg-info/dependency_links.txt
+malekmuutaafunctions.egg-info/top_level.txt
