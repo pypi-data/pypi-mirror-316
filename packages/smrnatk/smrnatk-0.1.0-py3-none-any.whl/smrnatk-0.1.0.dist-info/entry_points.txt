@@ -1,0 +1,8 @@
+[console_scripts]
+smrnatk=smrnatk.common:main
+smrnatk-align=smrnatk.align:main
+smrnatk-collapse=smrnatk.collapse:main
+smrnatk-collate=smrnatk.collate:main
+smrnatk-filter=smrnatk.filter_fasta:main
+smrnatk-quality_parse=smrnatk.quality_parse:main
+

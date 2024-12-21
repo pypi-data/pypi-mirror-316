@@ -1,0 +1,12 @@
+smrnatk/__about__.py,sha256=kUR5RAFc7HCeiqdlX36dZOHkUI5wI6V_43RpEcD8b-0,22
+smrnatk/__init__.py,sha256=kPjsVmnNNBg7mw_fi5T177TDZyh2Mw9Kp2CIwrStF74,8
+smrnatk/align.py,sha256=yWVc9jEvlzlSjc3o2tEJz6YImdZlsu12FcSznDWGGrk,2984
+smrnatk/collapse.py,sha256=lsUuQ9RjNIPqyoHxQzw4_ICI50C0CkWZ1fx903CJuGQ,4281
+smrnatk/collate.py,sha256=m9TF7R418TrMiYjQMPj8cEjinxOvdD7sNrld-dSj-DQ,4387
+smrnatk/common.py,sha256=FunNhgFNfhvg3TDnNLyLhlsemJLbPC5d1PA2uVbFFtY,1220
+smrnatk/filter_fasta.py,sha256=HWcwwIVM121nUTUJeq_eL6Sx8Zqu6yktMK8UbItvOp8,1570
+smrnatk/quality_parse.py,sha256=YgYmkq4n4_tb6USXxypc2riBu7oCgk06217w5A9TqzA,7450
+smrnatk-0.1.0.dist-info/METADATA,sha256=7H9xRLOTbjqdFrTHGK1vZc_ePBP7jc07hrKS2WZx4xI,4214
+smrnatk-0.1.0.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+smrnatk-0.1.0.dist-info/entry_points.txt,sha256=BNGNcR6Js0QAdFZOseXjxz_F6NrXOOL3jlEG8MuUvzU,246
+smrnatk-0.1.0.dist-info/RECORD,,
