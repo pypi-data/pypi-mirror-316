@@ -1,0 +1,35 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* so_report_hide_lines
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-09-21 08:05+0000\n"
+"PO-Revision-Date: 2023-09-21 08:05+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: so_report_hide_lines
+#: model:ir.model.fields,help:so_report_hide_lines.field_sale_order_line__show_line_report
+msgid ""
+"If True the line will be displayed in the sales reports. If False, the line "
+"will not be displayed"
+msgstr ""
+"Si está seleccioanda la línea se mostrará en los informes de ventas. Si no, "
+"la línea no se mostrará"
+
+#. module: so_report_hide_lines
+#: model:ir.model.fields,field_description:so_report_hide_lines.field_sale_order_line__show_line_report
+msgid "Line in Report"
+msgstr "Línea en Impreso"
+
+#. module: so_report_hide_lines
+#: model:ir.model,name:so_report_hide_lines.model_sale_order_line
+msgid "Sales Order Line"
+msgstr "Línea de pedido de venta"

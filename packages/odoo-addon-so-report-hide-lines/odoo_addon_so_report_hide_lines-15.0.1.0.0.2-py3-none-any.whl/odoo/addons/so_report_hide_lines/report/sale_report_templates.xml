@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2023 Ángel García de la Chica Herrera <angel.garcia@sygel.es>
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <template
+        id="so_report_hide_lines_report_saleorder_document"
+        name="so.report.hide.lines.report.saleorder.document"
+        inherit_id="sale.report_saleorder_document"
+    >
+        <xpath expr="//t[@t-if='not line.display_type']/.." position="attributes">
+            <attribute name="t-if">line.show_line_report</attribute>
+        </xpath>
+    </template>
+</odoo>
