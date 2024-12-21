@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: pangea-multipass-llama-index
+Version: 0.1.0
+Summary: Pangea Multipass authorization library for Llama Index
+License: MIT
+Author: Apurv Jawle
+Author-email: apurv.jawle@pangea.cloud
+Requires-Python: >=3.10,<3.13
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: google-auth-oauthlib (>=1.2.1,<2.0.0)
+Requires-Dist: llama-index (==0.11.11)
+Requires-Dist: llama-index-embeddings-bedrock (==0.3.1)
+Requires-Dist: llama-index-llms-bedrock (==0.2.1)
+Requires-Dist: llama-index-readers-confluence (>=0.2.1,<0.3.0)
+Requires-Dist: llama-index-readers-google (>=0.4.1,<0.5.0)
+Requires-Dist: llama-index-readers-jira (>=0.3.1,<0.4.0)
+Requires-Dist: pangea-multipass (==0.1.0)
+Requires-Dist: pangea-sdk (>=5.1.0,<6.0.0)
+Description-Content-Type: text/markdown
+
+# Pangea Multipass for Llama Index
+
+This library extends the Pangea Multipass package to integrate metadata enrichment and document processing with Llama Index. It enables seamless use of authorization checks, metadata filtering, and custom processors on documents from Google Drive, JIRA, and Confluence, utilizing Llama Index structures for Retrieval-Augmented Generation (RAG) applications.
+
+## Features
+
+- **Document Integration**: Adapts Pangea processors and enrichers to handle Llama Index documents.
+- **Llama Index-Compatible Filtering**: Provides metadata filtering with operators for fine-grained document access control.
+- **Authorization Processing**: Aggregates and applies multiple authorization checks on Llama Index nodes with custom, combinable node processors.
+
+## Installation
+
+Use [Poetry](https://python-poetry.org/) to install dependencies:
+
+```bash
+poetry add pangea-multipass-llama-index
+```
+
+If installing directly from the source, clone the repository and run:
+
+```bash
+cd pangea-multipass-llama-index
+poetry install
+```
+
+## Usage
+### Core Components
+- Document Reader: LIDocumentReader reads content from Llama Index documents for enrichment.
+- Processors for Llama Index:
+    - LlamaIndexJiraProcessor — Handles JIRA documents within Llama Index.
+    - LlamaIndexConfluenceProcessor — Processes Confluence documents in Llama Index.
+    - LlamaIndexGDriveProcessor — Manages Google Drive documents in Llama Index.
+    - Node Postprocessor Mixer: Combines multiple processors for complex, multi-source document filtering.
+- Metadata Filters: Filter documents based on metadata using operators like EQ, CONTAINS, and custom metadata keys.
+
+## License
+This project is licensed under the MIT License.
+
