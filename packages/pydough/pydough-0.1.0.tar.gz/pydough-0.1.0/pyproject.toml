@@ -1,0 +1,11 @@
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "pydough"
+version = "0.1.0"
+description = "Bread!"
+authors = [{ name="Ella Bahry", email="bellonet@gmail.com" }]
+license = { text="MIT" }
+

@@ -1,0 +1,6 @@
+pyproject.toml
+pydough/__init__.py
+pydough.egg-info/PKG-INFO
+pydough.egg-info/SOURCES.txt
+pydough.egg-info/dependency_links.txt
+pydough.egg-info/top_level.txt
