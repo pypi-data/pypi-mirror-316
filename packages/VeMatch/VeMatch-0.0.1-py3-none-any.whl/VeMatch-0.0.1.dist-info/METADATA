@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: VeMatch
+Version: 0.0.1
+Summary: A comprehensive toolkit for managing datasets and implementing advanced techniques for similar image identification.
+Home-page: https://github.com/gsoaresbaptista/VeMatch
+Author: Gabriel Soares Baptista
+Author-email: gsoaresbaptista@gmail.com
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Scientific/Engineering :: Image Processing
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: PyYAML
+Requires-Dist: tqdm
+Requires-Dist: torch
+
+# VeMatch: A Toolkit for Image Similarity Search in Vector Space
+
+VeMatch is a Python library designed to implement state-of-the-art techniques for image similarity identification. Ideal for researchers and developers working on re-identification (ReID) and embedding analysis tasks, VeMatch provides practical, customizable tools for manipulating datasets and similarity algorithms.
+
+---
+## Installation
+Install the package via pip:
+```bash
+pip install VeMatch
+```
+---
+
+## Roadmap
+TO-DO

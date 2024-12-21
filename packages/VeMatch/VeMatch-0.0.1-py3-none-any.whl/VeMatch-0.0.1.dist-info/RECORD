@@ -1,0 +1,11 @@
+VeMatch/__init__.py,sha256=I3xeQhgexTzAgW8n3HeTB_O852VnxKyv_c4RoDQvJOQ,32
+VeMatch/datasets/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+VeMatch/datasets/config_loader.py,sha256=Z1NrE6KO2B6h-M4P_8roIZg0TPySwe2L-txunev-blg,202
+VeMatch/datasets/datasets.yaml,sha256=uwxTWQ220Ys4AJKEKNiXesWZcKVr-TCN_ouBQfIjLko,565
+VeMatch/datasets/downloader.py,sha256=qBM6RO-KJL2iX9leAUBMUtyXFg3jDdkY3iHn0cIqk7E,1100
+VeMatch/datasets/torch_datasets.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+VeMatch-0.0.1.dist-info/LICENSE,sha256=IAWFfpMmTpWYiIMO8HoRhteJAAyKHVGWqXp3lzm7hew,1080
+VeMatch-0.0.1.dist-info/METADATA,sha256=F_N96F-BGXwTOolL6zvuARLWOySBUGAU6RhwRtv_iP0,1463
+VeMatch-0.0.1.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+VeMatch-0.0.1.dist-info/top_level.txt,sha256=BWZXKuDyDPd4dFtJhiSMCeW-_5X0yUDEar80NdkvdmM,8
+VeMatch-0.0.1.dist-info/RECORD,,

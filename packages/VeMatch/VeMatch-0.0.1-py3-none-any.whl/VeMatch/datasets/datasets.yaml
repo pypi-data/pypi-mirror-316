@@ -1,0 +1,16 @@
+Market-1501:
+  url: https://www.dropbox.com/scl/fi/p4kds50b5ebc8w05i3pfo/Market-1501.zip?rlkey=gw8kmlcxucieb3gq5kk1eimo8&st=t0f1q3yf&dl=1
+  query: bounding_box_train
+  gallery: bounding_box_test
+  train: bounding_box_train
+  label-extraction:
+    method: regex
+    pattern: ^(\d+)_.*$
+CARLA:
+  url: https://www.dropbox.com/scl/fi/yfqjsd15k91ln71l26gik/VeRi_CARLA_dataset.zip?rlkey=uu83upmspkfkrabsyaob370lo&e=1&st=wyhvv32m&dl=1
+  query: image_query
+  gallery: image_query
+  train: image_train
+  label-extraction:
+    method: regex
+    pattern: ^(?:.*_?\D)?(\d+).*$
