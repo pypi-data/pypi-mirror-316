@@ -1,0 +1,41 @@
+Metadata-Version: 2.4
+Name: ManMade2.BelialBackend
+Version: 1.0.0
+Project-URL: Documentation, https://github.com/ManMade2/belial-backend#readme
+Project-URL: Issues, https://github.com/ManMade2/belial-backend/issues
+Project-URL: Source, https://github.com/ManMade2/belial-backend
+Author-email: ManMade2 <madskris@proton.me>
+License-Expression: MIT
+License-File: LICENSE.txt
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.13
+Requires-Dist: djlint
+Requires-Dist: flask
+Requires-Dist: flask-cors
+Requires-Dist: manmade2-belialdb==1.0.12
+Requires-Dist: pydantic
+Description-Content-Type: text/markdown
+
+# belial-backend
+
+[![PyPI - Version](https://img.shields.io/pypi/v/belial-backend.svg)](https://pypi.org/project/belial-backend)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/belial-backend.svg)](https://pypi.org/project/belial-backend)
+
+-----
+
+## Table of Contents
+
+- [Installation](#installation)
+- [License](#license)
+
+## Installation
+
+```console
+pip install belial-backend
+```
+
+## License
+
+`belial-backend` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
