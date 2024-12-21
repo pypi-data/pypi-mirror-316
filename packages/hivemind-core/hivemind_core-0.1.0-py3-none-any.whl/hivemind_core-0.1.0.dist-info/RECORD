@@ -1,0 +1,13 @@
+hivemind_core/__init__.py,sha256=jMv2Q4swLorR7q-96vGH3JOin31cZvCdzZLBLIQjdb0,658
+hivemind_core/__main__.py,sha256=nvPyjoCM-2fkJpOsvUf8jfp4m5o4SDRo_znFaz1oZxY,154
+hivemind_core/database.py,sha256=3aa29Hpf4qjFebnqlknolq6obCmpGv1sDVBosQcclGU,22858
+hivemind_core/protocol.py,sha256=g6BQo-pbJonWLXOvyCJghfNEs8Skbn96Ip5mCnVgwQU,34521
+hivemind_core/scripts.py,sha256=ryLfxm7W5JFE2pw9iCAI1XBpnl97HTnCrdWfuhfNhQw,24545
+hivemind_core/service.py,sha256=W07mYXdKneGhWGgUiDAdTDa7O8rrFKIMs5ryK8kVJCY,11012
+hivemind_core/version.py,sha256=d038l5FBpCuQMkh6IuR1rmmPFZ4Om4N1LyrVrSIILpY,114
+hivemind_core-0.1.0.dist-info/LICENSE,sha256=WVPey2FLZGoN0C_c0xLknC-1X2ehoOdGAHDs2zGQaKM,11743
+hivemind_core-0.1.0.dist-info/METADATA,sha256=SZ1rcUZ4Vp9dVdCzCjpgDs4H2SwzQkiFtje2NtvMVeQ,677
+hivemind_core-0.1.0.dist-info/WHEEL,sha256=tZoeGjtWxWRfdplE7E3d45VPlLNQnvbKiYnx7gwAy8A,92
+hivemind_core-0.1.0.dist-info/entry_points.txt,sha256=O2R5ZnCwAAacIP7kdHRL3IDzc9mDRnWRkiM5lkevq5U,69
+hivemind_core-0.1.0.dist-info/top_level.txt,sha256=8P9YIXnbJ0u4I-22NehOUUB7TRaVkPU-x800ElpV1qU,14
+hivemind_core-0.1.0.dist-info/RECORD,,
