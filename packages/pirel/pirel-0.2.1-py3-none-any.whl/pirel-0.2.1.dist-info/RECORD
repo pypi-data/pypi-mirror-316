@@ -1,0 +1,11 @@
+pirel/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pirel/__main__.py,sha256=wcCrL4PjG51r5wVKqJhcoJPTLfHW0wNbD31DrUN0MWI,28
+pirel/cli.py,sha256=rsCXSsHiQepNAoFNplathmGjZiyyfa11Ybxj1koswEw,2575
+pirel/logging.py,sha256=3CmX-CMT9Gm0xzbjIuY-VKMH7gSfjJIqfmSs08DzC50,738
+pirel/python_cli.py,sha256=cUUy_fvj-ohSTHw1MbYuvmikJJ-9fcOclZkfHLlsHvY,2253
+pirel/releases.py,sha256=CZ9TcNzpgRyEiazED4k7anRvqaNLuxy18Z2YgyvpYOA,5318
+pirel-0.2.1.dist-info/METADATA,sha256=oN8MPNiDK9xxUlV3njm3YVjyTrHeTOxbKUmdwn6Qf_0,6394
+pirel-0.2.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+pirel-0.2.1.dist-info/entry_points.txt,sha256=TMDEvmvFbX_CesH4c3YUVNnOv3f4pJIxup_Cx1Tajts,40
+pirel-0.2.1.dist-info/licenses/LICENSE,sha256=aCMf5RJbirDTuPedrRC137pbbI5SYGKzM1lj8KqFj_Q,1074
+pirel-0.2.1.dist-info/RECORD,,
