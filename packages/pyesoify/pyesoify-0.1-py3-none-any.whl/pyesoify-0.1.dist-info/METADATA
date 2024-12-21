@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: pyesoify
+Version: 0.1
+Summary: A simple Python package to convert Python code to a much, much, much less readable form.
+Home-page: https://github.com/tathyagarg/pyeosify
+Author: Tathya Garg
+Author-email: coding.tathya+gh@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+License-File: LICENSE
