@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: sdflab
+Version: 0.1
+Summary: Generate 3D meshes from signed distance functions.
+Author-email: Michael Fogleman <michael.fogleman@gmail.com>
+License: MIT
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE.md
+Requires-Dist: matplotlib
+Requires-Dist: meshio
+Requires-Dist: numpy
+Requires-Dist: scikit-image>=0.17
+Requires-Dist: scipy
+Requires-Dist: Pillow
