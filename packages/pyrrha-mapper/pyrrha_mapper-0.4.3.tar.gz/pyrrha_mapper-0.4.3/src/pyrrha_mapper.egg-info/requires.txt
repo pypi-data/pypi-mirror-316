@@ -1,0 +1,13 @@
+click
+coloredlogs
+lief>=0.15.0
+numbat>=0.2.2
+rich
+
+[doc]
+black
+mkdocs
+mkdocs-autorefs
+mkdocs-glightbox
+mkdocs-material
+mkdocs-section-index
