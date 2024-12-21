@@ -1,0 +1,2 @@
+[console_scripts]
+gunicorn = seatools.ioc.starters.gunicorn.wsgiapp:run

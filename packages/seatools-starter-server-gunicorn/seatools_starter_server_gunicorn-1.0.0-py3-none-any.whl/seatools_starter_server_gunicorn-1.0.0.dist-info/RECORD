@@ -1,0 +1,7 @@
+seatools/ioc/starters/gunicorn/__init__.py,sha256=qK_JarBcz1oi5PaFdu9ZqcHmG501JmjTTWqBwbXkNWs,38
+seatools/ioc/starters/gunicorn/wsgiapp.py,sha256=OvlRO6VX_mfiEIURSNlyGHyVOSRBaIwrO2L1kz3kGKw,1750
+seatools_starter_server_gunicorn-1.0.0.dist-info/METADATA,sha256=SSXE-WViUSHpETWi-iki0W_mD0vQ4qG9CTIoz8NHZAY,2023
+seatools_starter_server_gunicorn-1.0.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+seatools_starter_server_gunicorn-1.0.0.dist-info/entry_points.txt,sha256=nIerDbISahbke4Id3MR7L-uY2jJ95CqQT9vJS8Ch3iA,72
+seatools_starter_server_gunicorn-1.0.0.dist-info/licenses/LICENSE,sha256=LduyjxA3Y1efJOve6wB7602ArsRPlM6vc5aJ2q9-M6k,1067
+seatools_starter_server_gunicorn-1.0.0.dist-info/RECORD,,
