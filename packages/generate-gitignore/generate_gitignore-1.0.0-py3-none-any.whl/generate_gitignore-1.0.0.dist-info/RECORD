@@ -1,0 +1,11 @@
+generate_gitignore/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+generate_gitignore/cache.py,sha256=_3Xr8CP0qPIIMvX1hI3FfOlTtlGsepHarfQcQ2iLRnk,1574
+generate_gitignore/main.py,sha256=pZ6MCvUYhKNyGbKi_aZTIe9h4JXaSvI7MhRlfmoeOYQ,7245
+generate_gitignore/search.py,sha256=EUz403LG_FvYOJUQEIOgh7k1K4bYmahKuE3WYpDkIwM,3217
+generate_gitignore/version.py,sha256=Aj77VL1d5Mdku7sgCgKQmPuYavPpAHuZuJcy6bygQZE,21
+generate_gitignore-1.0.0.dist-info/LICENSE,sha256=m1wu9sHzcYwELuuk37uIJ17hcZNveZKdKemzj6cuFwg,1071
+generate_gitignore-1.0.0.dist-info/METADATA,sha256=gf1tPscxJrl5u7T6GtXKhVwnQ_VzYS7bfEWpXsHyqOQ,2982
+generate_gitignore-1.0.0.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+generate_gitignore-1.0.0.dist-info/entry_points.txt,sha256=wFQwulevCvpUXLiJj9-LaQjFV1AbQqPnCFSMrYIp9Kc,68
+generate_gitignore-1.0.0.dist-info/top_level.txt,sha256=Ii_BgpwPffDKY2Cgwwr7dsSJ37u5qpFSQqBAMfcH6SA,19
+generate_gitignore-1.0.0.dist-info/RECORD,,
