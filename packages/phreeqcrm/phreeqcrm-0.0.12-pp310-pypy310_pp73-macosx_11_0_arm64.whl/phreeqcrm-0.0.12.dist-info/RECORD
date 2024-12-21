@@ -1,0 +1,8 @@
+phreeqcrm-0.0.12.dist-info/RECORD,,
+phreeqcrm-0.0.12.dist-info/WHEEL,sha256=uxkwKkSaV2pc3sD3d44sbDGjdTRMBim1WjOy45_KYiM,121
+phreeqcrm-0.0.12.dist-info/METADATA,sha256=7-pwnFyCNBGoMqoQlrqPRIJwbgZXziulBk6BnbC9SrM,1923
+phreeqcrm-0.0.12.dist-info/licenses/LICENSE,sha256=ogEPNDSH0_dhiv_lT3ifVIdgIzHAqNA_SemnxUfPBJk,7048
+phreeqcrm/phreeqcrm.py,sha256=jaDqHJH6y7SHKNb36AGWB5UFsrXI8OdxzWIoD1qgJTE,200489
+phreeqcrm/__init__.py,sha256=U1vVjJnO8vvyOuIIgT04QmkJiYzMYTPPC_51Hw0_enI,326
+phreeqcrm/yamlphreeqcrm.py,sha256=Z6Wfm6N1Ln8H0RBxkxM6xfdBfzNYNe4iKhRUST_4RJA,77839
+phreeqcrm/_phreeqcrm.pypy310-pp73-darwin.so,sha256=S9sNsTRRKDvtbOk3BkSoFe5mVyZGKe_i1smq4tmjaKI,3940672
