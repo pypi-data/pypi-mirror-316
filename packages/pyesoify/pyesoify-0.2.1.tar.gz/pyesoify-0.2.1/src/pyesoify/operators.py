@@ -1,0 +1,35 @@
+import ast
+
+def obfs_operator(op) -> str:
+    match op:
+        case ast.Add(): return '__add__'
+        case ast.Sub(): return '__sub__'
+        case ast.Mult(): return '__mul__'
+        case ast.Div(): return '__truediv__'
+        case ast.Mod(): return '__mod__'
+        case ast.Pow(): return '__pow__'
+        case ast.LShift(): return '__lshift__'
+        case ast.RShift(): return '__rshift__'
+        case ast.BitOr(): return '__or__'
+        case ast.BitXor(): return '__xor__'
+        case ast.BitAnd(): return '__and__'
+        case ast.FloorDiv(): return '__floordiv__'
+        case ast.MatMult(): return '__matmul__'
+        case ast.And(): return 'and'
+        case ast.Or(): return 'or'
+        case ast.Invert(): return '~'
+        case ast.Not(): return 'not'
+        case ast.UAdd(): return '+'
+        case ast.USub(): return '-'
+        case ast.Eq(): return '__eq__'
+        case ast.NotEq(): return '__ne__'
+        case ast.Lt(): return '__lt__'
+        case ast.LtE(): return '__le__'
+        case ast.Gt(): return '__gt__'
+        case ast.GtE(): return '__ge__'
+        case ast.Is(): return 'is'
+        case ast.IsNot(): return 'is not'
+        case ast.In(): return 'in'
+        case ast.NotIn(): return 'not in'
+        case _: raise ValueError("Invalid operator")
+        
