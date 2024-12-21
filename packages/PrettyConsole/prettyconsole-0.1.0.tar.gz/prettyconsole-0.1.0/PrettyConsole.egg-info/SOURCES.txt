@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+PrettyConsole/PrettyConsole.py
+PrettyConsole/__init__.py
+PrettyConsole.egg-info/PKG-INFO
+PrettyConsole.egg-info/SOURCES.txt
+PrettyConsole.egg-info/dependency_links.txt
+PrettyConsole.egg-info/top_level.txt
+tests/test_PrettyConsole.py
