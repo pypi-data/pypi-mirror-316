@@ -1,0 +1,11 @@
+README.md
+setup.py
+scraply/__init__.py
+scraply/cli.py
+scraply/scraper.py
+scraply.egg-info/PKG-INFO
+scraply.egg-info/SOURCES.txt
+scraply.egg-info/dependency_links.txt
+scraply.egg-info/entry_points.txt
+scraply.egg-info/requires.txt
+scraply.egg-info/top_level.txt
