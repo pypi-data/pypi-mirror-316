@@ -1,0 +1,8 @@
+README.md
+setup.py
+nextquark/__init__.py
+nextquark/main.py
+nextquark.egg-info/PKG-INFO
+nextquark.egg-info/SOURCES.txt
+nextquark.egg-info/dependency_links.txt
+nextquark.egg-info/top_level.txt
