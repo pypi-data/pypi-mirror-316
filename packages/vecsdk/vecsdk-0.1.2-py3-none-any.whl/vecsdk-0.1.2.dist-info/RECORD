@@ -1,0 +1,7 @@
+vecsdk/__init__.py,sha256=ICzm_QGAp7Sm1DCQTpisQMiL07k9V_hgARVRUyUGpYg,8155
+vectorization_pb2.py,sha256=9MK3p2PmhmpiKkEN51fk4Oaarxs8n6J3nImaYNKhV1Y,3896
+vectorization_pb2.pyi,sha256=MJf-39aHGT-0JrLvzgyKQbWphx8OKOti_HRzxb_bySM,4047
+vectorization_pb2_grpc.py,sha256=WJL6UWsSpFeP_VJ8oFGfme1G4hgdyb9y-GVSVVNmLqo,6904
+vecsdk-0.1.2.dist-info/METADATA,sha256=sUI9v3aPCc1h1-p8iyGw5Ni1J5f9twc13B5d9GOhjQM,2578
+vecsdk-0.1.2.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+vecsdk-0.1.2.dist-info/RECORD,,
