@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: anigamerpy
+Version: 0.0.1
+Summary: 動畫瘋爬蟲工具
+Home-page: https://github.com/Sakuya0502/anigamerpy
+Author: Sakuya0502
+License: MIT
+Classifier: Natural Language :: Chinese (Traditional)
+Classifier: Operating System :: Microsoft :: Windows :: Windows 11
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires: requests
+Requires: bs4
+License-File: LICENSE
+
+# anigamerpy 0.0.1
+[動畫瘋](https://ani.gamer.com.tw/)爬蟲工具
+
+## License
+MIT © [Sakuya0502](https://github.com/Sakuya0502/anigamerpy/blob/main/LICENSE)
