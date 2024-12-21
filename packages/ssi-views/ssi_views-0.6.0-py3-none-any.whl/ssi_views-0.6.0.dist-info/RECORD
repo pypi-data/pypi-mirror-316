@@ -1,0 +1,14 @@
+ssi_views/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ssi_views/apps.py,sha256=6eo6NCCwzjK9d_7dkJrBJ3stPpumJrnbUyyLOKWOCco,173
+ssi_views/decorators.py,sha256=qF-HHGIs6qBTLIC17XqQvf2ml4GxSgJ6T8NAhBLi0cc,191
+ssi_views/helpers.py,sha256=rJ3lNqdTRnICm_92d6danzpBihRojjsVeV3bvSbJa4s,270
+ssi_views/logging.py,sha256=Bi445gSt9arKLRAOsEvxhKidGP7qRbSNIiGHk21Xkn4,56
+ssi_views/registry.py,sha256=UloaFZxTrnJaX6DfxONO52JxZbr0etsGokGE3s_WQXE,2355
+ssi_views/templatetags/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ssi_views/templatetags/ssi_views.py,sha256=ZDgpgqcD-_bPJnqCGz8steZHJlzpSOkWhfCI7fT8qVg,1410
+ssi_views/urls.py,sha256=q2o9Q8KVsAcg6iDyM-EAfI1rWcIImweQlpj5LOYVXnU,1936
+ssi_views/views.py,sha256=3lswNLITNUzCVjPxi7YGQWSUW65_z2THMt33bSaC00E,359
+ssi_views-0.6.0.dist-info/LICENSE,sha256=WqX5EsBSiasFtVlaQFWFplJXkVTPSpSmqV7SbfS9Lfc,907
+ssi_views-0.6.0.dist-info/METADATA,sha256=mXPF0riSgEBuRrTbpfYo3fyjCXMo0nzmYfWdQI6kajg,3861
+ssi_views-0.6.0.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+ssi_views-0.6.0.dist-info/RECORD,,
