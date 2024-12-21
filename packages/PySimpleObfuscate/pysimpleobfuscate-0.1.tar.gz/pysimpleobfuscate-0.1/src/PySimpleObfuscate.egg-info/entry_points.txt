@@ -1,0 +1,2 @@
+[console_scripts]
+pyobfuscate = PyObfuscate.lib.cli:cli
