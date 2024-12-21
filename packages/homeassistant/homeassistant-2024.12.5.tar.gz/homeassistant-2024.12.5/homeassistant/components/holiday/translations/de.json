@@ -1,0 +1,26 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Bereits konfiguriert. Es ist nur eine einzige Konfiguration f\u00fcr eine Kombination aus Land, Landesteil oder Kategorie m\u00f6glich.",
+            "reconfigure_successful": "Die Neukonfiguration war erfolgreich"
+        },
+        "step": {
+            "province": {
+                "data": {
+                    "province": "Landesteil"
+                }
+            },
+            "reconfigure": {
+                "data": {
+                    "province": "Landesteil"
+                }
+            },
+            "user": {
+                "data": {
+                    "country": "Land"
+                }
+            }
+        }
+    },
+    "title": "Feiertag"
+}

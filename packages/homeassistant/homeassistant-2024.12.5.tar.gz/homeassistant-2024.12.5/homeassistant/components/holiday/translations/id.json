@@ -1,0 +1,20 @@
+{
+    "config": {
+        "abort": {
+            "reconfigure_successful": "Konfigurasi ulang berhasil"
+        },
+        "step": {
+            "province": {
+                "data": {
+                    "province": "Provinsi"
+                }
+            },
+            "user": {
+                "data": {
+                    "country": "Negara"
+                }
+            }
+        }
+    },
+    "title": "Hari Libur"
+}

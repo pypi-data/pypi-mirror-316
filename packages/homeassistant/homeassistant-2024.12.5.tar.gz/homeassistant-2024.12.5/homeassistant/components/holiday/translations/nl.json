@@ -1,0 +1,20 @@
+{
+    "config": {
+        "abort": {
+            "reconfigure_successful": "Herconfiguratie was succesvol"
+        },
+        "step": {
+            "province": {
+                "data": {
+                    "province": "Provincie"
+                }
+            },
+            "user": {
+                "data": {
+                    "country": "Land"
+                }
+            }
+        }
+    },
+    "title": "Feestdag"
+}
