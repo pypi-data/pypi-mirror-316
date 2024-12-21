@@ -1,0 +1,12 @@
+setup.py
+HackRF_SDR.egg-info/PKG-INFO
+HackRF_SDR.egg-info/SOURCES.txt
+HackRF_SDR.egg-info/dependency_links.txt
+HackRF_SDR.egg-info/requires.txt
+HackRF_SDR.egg-info/top_level.txt
+hackrf/HackRF.py
+hackrf/__init__.py
+hackrf/config.json
+hackrf/const.py
+hackrf/core.py
+hackrf/util.py

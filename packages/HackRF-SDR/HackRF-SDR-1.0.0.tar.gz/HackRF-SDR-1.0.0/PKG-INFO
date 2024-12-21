@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: HackRF-SDR
+Version: 1.0.0
+Summary: A wrapper for libhackrf.dll, which can be used to access the HackRF, a software defined radio peripheral, by programs on Microsoft Windows platform.
+Author: Enbuging
+Author-email: electricfan@yeah.net
+License: MIT
+Keywords: radio,SDR,HackRF,libhackrf.dll,hackrf.dll
+Platform: Windows
