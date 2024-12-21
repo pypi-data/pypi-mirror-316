@@ -1,0 +1,8 @@
+[console_scripts]
+wigglecam-gui = examples.gui.camera:main
+wigglecam-mobile = examples.lowlevel.gpio:main
+wigglecam-node = wigglecam.__main__:main
+wigglecam-virtual = examples.lowlevel.multiserver:main
+
+[gui_scripts]
+
