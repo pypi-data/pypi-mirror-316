@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2022 Manuel Regidor <manuel.regidor@sygel.es>
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <template
+        id="so_report_hide_price_report_saleorder_document"
+        name="so.report.hide.price.report.saleorder.document"
+        inherit_id="sale.report_saleorder_document"
+    >
+        <xpath expr="//th[@name='th_priceunit']" position="attributes">
+            <attribute name="t-if">doc.has_show_price_report_lines</attribute>
+        </xpath>
+        <xpath expr="//th[@name='th_discount']" position="attributes">
+            <attribute
+                name="t-if"
+            >display_discount and doc.has_show_price_report_lines</attribute>
+        </xpath>
+        <xpath expr="//th[@name='th_taxes']" position="attributes">
+            <attribute
+                name="t-if"
+            >doc.has_show_price_report_lines or (not doc.has_show_price_report_lines and not doc.hide_tax_information)</attribute>
+        </xpath>
+        <xpath expr="//th[@name='th_subtotal']" position="attributes">
+            <attribute name="t-if">doc.has_show_price_report_lines</attribute>
+        </xpath>
+        <xpath expr="//td[@name='td_priceunit']" position="attributes">
+            <attribute name="t-if">doc.has_show_price_report_lines</attribute>
+        </xpath>
+        <xpath expr="//td[@t-if='display_discount']" position="attributes">
+            <attribute
+                name="t-if"
+            >display_discount and doc.has_show_price_report_lines</attribute>
+        </xpath>
+        <xpath expr="//td[@name='td_taxes']" position="attributes">
+            <attribute
+                name="t-if"
+            >doc.has_show_price_report_lines or (not doc.has_show_price_report_lines and  not doc.hide_tax_information)</attribute>
+        </xpath>
+            <xpath expr="//td[@name='td_taxes']/span" position="attributes">
+            <attribute
+                name="t-if"
+            >line.show_price_info_report or (not line.show_price_info_report and not doc.hide_tax_information)</attribute>
+        </xpath>
+        <xpath expr="//td[@name='td_subtotal']" position="attributes">
+            <attribute name="t-if">doc.has_show_price_report_lines</attribute>
+        </xpath>
+        <xpath expr="//span[@t-field='line.price_unit']" position="attributes">
+            <attribute name="t-if">line.show_price_info_report</attribute>
+        </xpath>
+        <xpath expr="//span[@t-field='line.discount']" position="attributes">
+            <attribute name="t-if">line.show_price_info_report</attribute>
+        </xpath>
+        <xpath expr="//span[@t-field='line.price_subtotal']" position="attributes">
+            <attribute name="t-if">line.show_price_info_report</attribute>
+        </xpath>
+        <xpath expr="//span[@t-field='line.price_total']" position="attributes">
+            <attribute name="t-if">line.show_price_info_report</attribute>
+        </xpath>
+    </template>
+</odoo>
