@@ -1,0 +1,2 @@
+[console_scripts]
+web-scraper-tool = web_scraper_tool.scraper:main
