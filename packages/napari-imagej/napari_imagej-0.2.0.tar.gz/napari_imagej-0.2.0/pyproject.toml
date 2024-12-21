@@ -1,0 +1,110 @@
+[build-system]
+requires = [ "setuptools>=61.2" ]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "napari-imagej"
+version = "0.2.0"
+description = "ImageJ functionality from napari"
+readme = "README.md"
+license = {text = "BSD-2-Clause"}
+authors = [{name = "ImageJ2 developers", email = "ctrueden@wisc.edu"}]
+keywords = ["java", "imagej", "imagej2", "fiji", "napari"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "Framework :: napari",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Operating System :: Microsoft :: Windows",
+    "Operating System :: Unix",
+    "Operating System :: MacOS",
+    "License :: OSI Approved :: BSD License",
+    "Topic :: Scientific/Engineering",
+    "Topic :: Scientific/Engineering :: Image Processing",
+    "Topic :: Scientific/Engineering :: Visualization",
+    "Topic :: Software Development :: Libraries :: Java Libraries",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+
+# NB: Keep this in sync with environment.yml AND dev-environment.yml!
+requires-python = ">=3.9, <3.13"
+dependencies = [
+    "confuse >= 2.0.0",
+    "imglyb >= 2.1.0",
+    "jpype1 >= 1.4.1",
+    "labeling >= 0.1.12",
+    "magicgui >= 0.5.1",
+    "napari >= 0.4.17",
+    "numpy",
+    "pandas",
+    "pyimagej >= 1.4.1",
+    "scyjava >= 1.9.1",
+    "superqt >= 0.7.0",
+    "xarray < 2024.10.0",
+    # Version rules to avoid problems
+    "qtconsole != 5.4.2", # https://github.com/napari/napari/issues/5700
+    "typing_extensions != 4.6.0", # https://github.com/pydantic/pydantic/issues/5821
+]
+
+[project.optional-dependencies]
+# NB: Keep this in sync with dev-environment.yml!
+# Development tools
+dev = [
+    "build",
+    "myst-parser",
+    "pre-commit",
+    "pyqt5",
+    "pytest",
+    "pytest-cov",
+    "pytest-env",
+    "pytest-qt",
+    "ruff",
+    "sphinx",
+    "sphinx-copybutton",
+    "sphinx-rtd-theme",
+    "qtpy",
+    "validate-pyproject[all]",
+]
+
+[project.urls]
+homepage = "https://github.com/imagej/napari-imagej"
+documentation = "https://napari-imagej.readthedocs.io"
+source = "https://github.com/imagej/napari-imagej"
+download = "https://pypi.org/project/napari-imagej/#files"
+tracker = "https://github.com/imagej/napari-imagej/issues"
+
+[project.entry-points."napari.manifest"]
+napari-imagej = "napari_imagej:napari.yml"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+# ruff configuration
+[tool.ruff]
+line-length = 88
+src = ["src", "tests"]
+include = ["pyproject.toml", "src/**/*.py", "tests/**/*.py"]
+extend-exclude = ["bin", "build", "dist", "doc", "scripts"]
+
+[tool.ruff.lint]
+extend-ignore = ["E203"]
+
+[tool.ruff.lint.per-file-ignores]
+# Ignore `E402` (import violations) in all `__init__.py` files, and in `path/to/file.py`.
+"__init__.py" = ["E402", "F401"]
+
+[tool.pytest.ini_options]
+addopts = "-s -p no:faulthandler"
+env = [
+    "NAPARI_IMAGEJ_TESTING=yes",
+    "NAPARI_IMAGEJ_JVM_COMMAND_LINE_ARGUMENTS=-Dfoo=bar",
+]
