@@ -1,0 +1,14 @@
+msgpack>=1.0.5
+orjson>=3.9.10
+google-generativeai
+hnswlib
+aiofiles
+aiohttp
+plotly
+pandas
+numpy
+
+[torch]
+sentence-transformers[torch]>=2.5.0
+torch
+transformers
