@@ -1,0 +1,31 @@
+Metadata-Version: 2.4
+Name: parquetv
+Version: 0.1.0
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Summary: A high-performance Parquet file viewer
+Keywords: parquet,csv,viewer,data,converter
+Author: Tobias Kragholm <tkragholm@gmail.com>
+Author-email: Tobias Kragholm <tkragholm@gmail.com>
+License: MIT OR Apache-2.0
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+Project-URL: Source Code, https://github.com/tkragholm/parquet-viewer
+
+# parquetv
+
+A high-performance Parquet file viewer written in Rust.
+
+## Installation
+
+```bash
+pip install parquetv
+```
+
+## Usage
+
+```bash
+parquetv <parquet-file> [options]
+```
+
