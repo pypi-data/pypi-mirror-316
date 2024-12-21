@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: nats_queue
+Version: 1.0.3
+Summary: 
+Author: Kristina Shishkina
+Author-email: k.shishkina@darwinsoft.ru
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: coverage (>=7.6.1,<8.0.0)
+Requires-Dist: mock (>=5.1.0,<6.0.0)
+Requires-Dist: nats-py (>=2.9.0,<3.0.0)
+Requires-Dist: pytest-asyncio (>=0.24.0,<0.25.0)
+Requires-Dist: python-dotenv (>=1.0.1,<2.0.0)
+Requires-Dist: setuptools (>=75.6.0,<76.0.0)
+Requires-Dist: twine (>=6.0.1,<7.0.0)
+Requires-Dist: wheel (>=0.45.1,<0.46.0)
+Description-Content-Type: text/markdown
+
+# NATS Queue
+
+![test](https://github.com/qwejid/nats_queue/actions/workflows/ci.yml/badge.svg?branch=main)
+[![codecov](https://codecov.io/gh/qwejid/nats_queue/graph/badge.svg?token=B623HA81JK)](https://codecov.io/gh/qwejid/nats_queue)
