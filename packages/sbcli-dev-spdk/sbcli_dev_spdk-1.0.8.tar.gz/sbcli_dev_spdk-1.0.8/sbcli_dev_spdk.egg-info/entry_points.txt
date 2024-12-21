@@ -1,0 +1,2 @@
+[console_scripts]
+sbcli-dev-spdk = simplyblock_cli.cli:main
