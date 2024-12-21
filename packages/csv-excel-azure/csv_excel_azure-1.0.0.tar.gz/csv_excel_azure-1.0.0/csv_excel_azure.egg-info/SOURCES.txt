@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+csv_excel_azure/__init__.py
+csv_excel_azure/converter.py
+csv_excel_azure.egg-info/PKG-INFO
+csv_excel_azure.egg-info/SOURCES.txt
+csv_excel_azure.egg-info/dependency_links.txt
+csv_excel_azure.egg-info/requires.txt
+csv_excel_azure.egg-info/top_level.txt
