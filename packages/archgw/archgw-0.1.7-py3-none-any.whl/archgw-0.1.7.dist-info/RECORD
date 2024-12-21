@@ -1,0 +1,11 @@
+cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cli/config_generator.py,sha256=QMxR42n5Hn9DlbGox8j-IXNvu_HHWeJ-a-w_982Eb04,3946
+cli/consts.py,sha256=9loixaJeiXx1SZUJyMNuHYyBFOgghxZ7z1kRaApjIRE,373
+cli/core.py,sha256=MCmbzrCYBfupW3V2KlBYnRx2JrRa3qqq5OhMh0aky8U,6467
+cli/main.py,sha256=8cnrqldYoag33RZWlAWsuUl-BscngvoJOhNw5VeQu-s,10243
+cli/targets.py,sha256=uaWoNHRo9LtTbEhJu_oZGbpQ7uLtj6I1H2Y7FjzMVus,14844
+cli/utils.py,sha256=3USj9VAkpHj-eru_agdzUg-UjNZwcLjwhHnAnpxrKlc,2742
+archgw-0.1.7.dist-info/METADATA,sha256=uKvmY1mZsvQNzR_jalmpLWwz1RD68G1FOVhN6eyuEfs,2213
+archgw-0.1.7.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+archgw-0.1.7.dist-info/entry_points.txt,sha256=veng1sTphHZOO6DvBOHBmBkXOgZQRSBaBY0EGSRyZJY,40
+archgw-0.1.7.dist-info/RECORD,,
