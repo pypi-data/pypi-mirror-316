@@ -1,0 +1,56 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "cori-ai"
+version = "0.1.7"
+description = "An AI-powered code review assistant"
+readme = "README.md"
+requires-python = ">=3.12"
+license = "MIT"
+authors = [
+    { name = "The Boring Human", email = "human@theboring.human" }
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Software Development :: Quality Assurance",
+]
+dependencies = []  # Will be populated from requirements.txt if exists
+
+[project.urls]
+Homepage = "https://github.com/theboringhumane/cori-ai"
+Repository = "https://github.com/theboringhumane/cori-ai"
+
+[tool.hatch.build.targets.wheel]
+packages = ["cori_ai"]
+
+[tool.hatch.build]
+exclude = [
+    "tests/*",
+    "test_*.py",
+]
+
+# Additional development tools configuration
+[tool.black]
+line-length = 100
+target-version = ["py312"]
+
+[tool.flake8]
+max-line-length = 100
+extend-ignore = ["E203"]
+
+[tool.mypy]
+python_version = "3.12"
+strict = true
+warn_return_any = true
+warn_unused_configs = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+addopts = "-ra -q" 

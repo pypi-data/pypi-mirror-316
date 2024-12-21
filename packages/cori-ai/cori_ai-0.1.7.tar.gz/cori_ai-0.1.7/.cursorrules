@@ -1,0 +1,127 @@
+# 🦦 Dr. OtterAI Code Review Rules
+
+# 🎯 Project Structure
+root = true
+language = python
+test_framework = pytest
+python_version = 3.12
+
+# 📁 File Organization
+[paths]
+src = "otterai/"
+tests = "tests/"
+workflows = ".github/workflows/"
+docs = "docs/"
+
+# 🐍 Python Rules
+[*.py]
+indent_style = space
+indent_size = 4
+max_line_length = 100
+quote_type = double
+docstring_style = google
+
+# 🧪 Test Rules
+[tests/**.py]
+test_naming = test_*
+test_framework = pytest
+test_dir = tests/
+
+# 🔧 GitHub Actions
+[.github/workflows/**.yml]
+indent_style = space
+indent_size = 2
+
+# 📝 Documentation
+[*.md]
+trim_trailing_whitespace = true
+insert_final_newline = true
+max_line_length = 120
+
+# 🎨 Code Style
+[style]
+formatter = black
+linter = flake8
+type_checker = mypy
+
+# 🚫 Skip Patterns
+[skip_patterns]
+title_patterns = [
+    "(no|skip)(-|\\s)?review",
+    "skip(-|\\s)?code(-|\\s)?review",
+    "otter(ai)?(-|\\s)?skip",
+    "otter(-|\\s)?restricted"
+]
+state_patterns = [
+    "merged",
+    "closed"
+]
+
+# 🔍 Review Focus
+[review]
+focus_areas = [
+    "security",
+    "performance",
+    "maintainability",
+    "code quality",
+    "test coverage"
+]
+comment_style = "markdown"
+include_code_snippets = true
+include_doc_references = true
+
+# 🤖 LLM Providers
+[llm_providers]
+default = "openai"
+supported = [
+    "openai",
+    "gemini",
+    "groq",
+    "mistral"
+]
+
+# 🎓 Models
+[models]
+openai = "gpt-4-turbo-preview"
+gemini = "gemini-1.5-flash"
+groq = "mixtral-8x7b-32768"
+mistral = "mistral-large-latest"
+
+# 🔒 Security
+[security]
+require_api_keys = true
+token_env_prefix = "INPUT_"
+sensitive_patterns = [
+    "api[_-]key",
+    "secret",
+    "token",
+    "password"
+]
+
+# 🎯 Git Hooks
+[hooks]
+pre_commit = [
+    "black",
+    "flake8",
+    "mypy",
+    "pytest"
+]
+
+# 📝 Commit Message Format example try to add what it will improve and why this is important, try to add the scope of the change, try to add the type of the change, try to add the description of the change
+[commit_message_format]
+type = "feat"
+scope = "otterai"
+title = "Add new feature"
+description = "This is a new feature"
+
+
+# 🚀 CI/CD
+[ci]
+required_checks = [
+    "test",
+    "lint",
+    "type-check",
+    "security-scan"
+]
+python_versions = ["3.12"]
+os_targets = ["ubuntu-latest"] 
