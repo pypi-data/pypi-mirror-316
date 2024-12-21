@@ -1,0 +1,9 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+setup.py
+cpulib/__init__.py
+cpulib_py.egg-info/PKG-INFO
+cpulib_py.egg-info/SOURCES.txt
+cpulib_py.egg-info/dependency_links.txt
+cpulib_py.egg-info/top_level.txt
