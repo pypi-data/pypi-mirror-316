@@ -1,0 +1,12 @@
+skytemple_ssb_emulator.cpython-310-darwin.so,sha256=0TiRV4HnOLPtWPcNVSVl8AfvlcJfAEnzq9WR4Z1P2gY,6271056
+skytemple_ssb_emulator-1.8.1.dist-info/RECORD,,
+skytemple_ssb_emulator-1.8.1.dist-info/LICENSE,sha256=ixuiBLtpoK3iv89l7ylKkg9rs2GzF9ukPH7ynZYzK5s,35148
+skytemple_ssb_emulator-1.8.1.dist-info/WHEEL,sha256=sGAopvm--bFvf7E0GZEeIxOBA5fV5kxSm0o5Rq3lIqM,110
+skytemple_ssb_emulator-1.8.1.dist-info/top_level.txt,sha256=V1e2DmJfqxXQR5V7bPpejA0XLGwAXfKy3c4Wa1-XK9A,23
+skytemple_ssb_emulator-1.8.1.dist-info/METADATA,sha256=RxqZm7T7tuH_22jwYzKlNwMdRt9JZPUaBR8z8hl9teY,2398
+skytemple_ssb_emulator/__init__.pyi,sha256=Kio18M8r5uyT3aWDOFYnXyONWbQc1Skfvh-ajmTSSlk,23678
+skytemple_ssb_emulator/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+skytemple_ssb_emulator.dylibs/libpcre2-8.0.dylib,sha256=MiNfkvCTZgZsuas4ktNYd3C0gVxzbmudBmxy4VtCBWk,612240
+skytemple_ssb_emulator.dylibs/libglib-2.0.0.dylib,sha256=nBcAuTi3bxQ-hmpYJX7SqGBaaDaUJ3HV1tIQGZMHrNg,1184832
+skytemple_ssb_emulator.dylibs/libSDL2-2.0.0.dylib,sha256=vkqBhuId-mlUquxnKUQ2Jt0V5HCrbv64uNo0D4YkbhI,1601328
+skytemple_ssb_emulator.dylibs/libintl.8.dylib,sha256=J2n8zSofPKdn9ZNJCLWYEHEf6Wg_XkvUUf5Xcqh4PsU,161904
