@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+{% include "partials/head_config.html" %}
+</head>
+
+<body id="background">
+  <div id="background-gradient"></div>
+  {% if config.theme.share_btn %}
+  <a id="share" onclick="on_share()">
+    <i class="fa fa-share-alt" alt="🔗"></i>
+  </a>
+  {% endif %}
+  <content id="content">
+  {% if page.is_homepage %}
+  {% include "partials/homepage_header.html" %}
+  {% else %}
+  {% include "partials/article_header.html" %}
+  {% endif %}
+  <main id="page">
+    {% include "partials/toc.html" %}
+    {{ page.content }}
+    <nav id="page-controls">
+      <a href="#content" id="return-top">
+        <i class="fa fa-arrow-up" alt="⇧"></i> Return to top
+      </a>
+    </nav>
+  </main>
+  </content>
+  <footer id="footer">
+    {% include "partials/footer.html" %}
+  </footer>
+</body>
+
+</html>
