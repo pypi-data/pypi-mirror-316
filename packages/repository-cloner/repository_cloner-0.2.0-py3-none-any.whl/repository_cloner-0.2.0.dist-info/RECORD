@@ -1,0 +1,13 @@
+repository_cloner/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+repository_cloner/actions.py,sha256=XRBE7ugMQHuKg6W4aByPmvz1kVx7PFGtd2WlG5F8wNA,3123
+repository_cloner/cli.py,sha256=Syea31PbZD7LVBFlR-04F3-XOjZVxN5bw72k19z2B6Y,1627
+repository_cloner/cloner.py,sha256=XZl0T2r3iLK6atx5wNUVS9_jyat9DjisGfphG07bArI,1740
+repository_cloner/config.py,sha256=E9DcCjqi47MH5AjKpJpZUmuvgmJJwoJov_cYA1y7TRs,724
+repository_cloner/context.py,sha256=95TooINlO0jrBfWLWkNHcQ0VPP55MecUFIZZQazieS0,110
+repository_cloner/provider.py,sha256=Ewej7rrsgb8b0zCDNFHUbRhy6kzKHQVTGjmoiJeULTg,1334
+repository_cloner/sync.py,sha256=UHRcCeD2fCIuD3ZfJN8PeYwMOqHz84V9c5kj0uSSsds,1953
+repository_cloner-0.2.0.dist-info/LICENSE,sha256=tGwsRq8FmTw2rF2i4OtS2-_2cdUPAOfvRKKvwbWOcTM,1069
+repository_cloner-0.2.0.dist-info/METADATA,sha256=L3eXQqDJVmnidGWprDsS4K3_REjKxOkVlNM9QcilVwY,520
+repository_cloner-0.2.0.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+repository_cloner-0.2.0.dist-info/entry_points.txt,sha256=b87l3IKut5kdd9oMIwDh6veoMUrDG00EC5HK45tp7pM,63
+repository_cloner-0.2.0.dist-info/RECORD,,

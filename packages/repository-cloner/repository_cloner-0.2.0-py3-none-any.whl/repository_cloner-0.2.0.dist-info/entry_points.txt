@@ -1,0 +1,3 @@
+[console_scripts]
+repository-cloner=repository_cloner.cli:cli
+

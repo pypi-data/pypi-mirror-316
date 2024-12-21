@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: repository-cloner
+Version: 0.2.0
+Summary: 
+Author: Jan Dittrich
+Author-email: mail@jand.one
+Requires-Python: >=3.13,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: GitPython (>=3.1,<4.0)
+Requires-Dist: PyGithub (>=2.5,<3.0)
+Requires-Dist: PyYAML (>=6.0,<7.0)
+Requires-Dist: click (>=8.1.7,<9.0.0)
+Requires-Dist: related (>=0.7,<0.8)
+Description-Content-Type: text/markdown
+
+# repository-cloner
+Clones Repositories, duh!
+
