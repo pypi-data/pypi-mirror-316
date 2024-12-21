@@ -1,0 +1,16 @@
+jupyterlab_cell_input_footer/__init__.py,sha256=vnrmhrPpfNxqAhtRYaSgZLXtTEKn3Z-EAPfiT1ZdegY,624
+jupyterlab_cell_input_footer/_version.py,sha256=lVzH4hSQoCJO7HfQxfO6U4vnapq0YLOe_v2oi1HqiH8,171
+jupyterlab_cell_input_footer-0.2.1.data/data/share/jupyter/labextensions/jupyterlab-cell-input-footer-extension/package.json,sha256=VOVEdhgMK8WYzvglmOt42m2tokLvgExEmYu4Uvijgu8,2720
+jupyterlab_cell_input_footer-0.2.1.data/data/share/jupyter/labextensions/jupyterlab-cell-input-footer-extension/schemas/jupyterlab-cell-input-footer-extension/package.json.orig,sha256=pNrwtZi4ztAmZHCWgRL_CoqMGdUgC7wDHs4mGfoxJag,2844
+jupyterlab_cell_input_footer-0.2.1.data/data/share/jupyter/labextensions/jupyterlab-cell-input-footer-extension/static/374.337049e099b23bd43d0f.js,sha256=M3BJ4JmyO9Q9D4mziT7npoXUc3g0jM2BY3-vkYykpd4,2356
+jupyterlab_cell_input_footer-0.2.1.data/data/share/jupyter/labextensions/jupyterlab-cell-input-footer-extension/static/432.d23895cc4d77efc3eb97.js,sha256=0jiVzE1378Prl9AILqktthvJXbZFqF5iTgowUIC24vM,5563
+jupyterlab_cell_input_footer-0.2.1.data/data/share/jupyter/labextensions/jupyterlab-cell-input-footer-extension/static/509.94d6ced66abaab78214e.js,sha256=lNbO1mq6q3ghThmkVT5j_7GFSryAwnTtAE50_YR67e0,1194
+jupyterlab_cell_input_footer-0.2.1.data/data/share/jupyter/labextensions/jupyterlab-cell-input-footer-extension/static/993.337049e099b23bd43d0f.js,sha256=M3BJ4JmyO9Q9D4mziT7npoXUc3g0jM2BY3-vkYykpd4,2356
+jupyterlab_cell_input_footer-0.2.1.data/data/share/jupyter/labextensions/jupyterlab-cell-input-footer-extension/static/remoteEntry.82c4c9f3d63a955fea78.js,sha256=gsTJ89Y6lV_qeOePRpr5HrV9Qh9r483VvQv7JKMbbcc,7936
+jupyterlab_cell_input_footer-0.2.1.data/data/share/jupyter/labextensions/jupyterlab-cell-input-footer-extension/static/style.js,sha256=TU-zzi5RLKZrreKGcWMK7LSEYom75jpqfeb26cLisgc,181
+jupyterlab_cell_input_footer-0.2.1.data/data/share/jupyter/labextensions/jupyterlab-cell-input-footer-extension/static/third-party-licenses.json,sha256=GECAIpAv51NOTNoye8sONcQ6z4hGy7nszRGZ_ECO_ck,2603
+jupyterlab_cell_input_footer-0.2.1.data/data/share/jupyter/labextensions/jupyterlab-cell-input-footer-extension/install.json,sha256=aG8ni2w5VrKpGXs2NqGXk_259PX1Ox03_xl-XQFTFKo,217
+jupyterlab_cell_input_footer-0.2.1.dist-info/METADATA,sha256=UXWXk-AJbC1tmTxXDb3mTwYkKcNhTrZvY9lx7x5tYDk,3831
+jupyterlab_cell_input_footer-0.2.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+jupyterlab_cell_input_footer-0.2.1.dist-info/licenses/LICENSE,sha256=OEG9RvhdHKGY1ZU37dk3Huhyy5kRtBvkJE5fLGSAU9U,1519
+jupyterlab_cell_input_footer-0.2.1.dist-info/RECORD,,
