@@ -1,0 +1,9 @@
+src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/database_facade.py,sha256=ANFqLsdO0IpgTkYygHwT--_ujPZ7SlpMn-bcIP4IjDI,13913
+src/mssql/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/mssql/singleton.py,sha256=7tQ9EPvMtK3PBR1Pu3ha5EYCBaMsJk6glm2awK8BPTI,2307
+mssqldbfade-0.0.1.dist-info/LICENSE,sha256=gv6XIZGrGekO4kCHP9DQbaRPYw_dT66BbG8uZYgtfL8,1077
+mssqldbfade-0.0.1.dist-info/METADATA,sha256=KBYgXksMeNN9yriYdyJzJXNFGG4sMQ614Bo9xOJoos4,1015
+mssqldbfade-0.0.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+mssqldbfade-0.0.1.dist-info/top_level.txt,sha256=74rtVfumQlgAPzR5_2CgYN24MB0XARCg0t-gzk6gTrM,4
+mssqldbfade-0.0.1.dist-info/RECORD,,
