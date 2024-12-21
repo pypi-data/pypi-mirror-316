@@ -1,0 +1,14 @@
+odoo/addons/so_report_hide_price_portal/README.rst,sha256=c39s6Sony9xkV5t5NHkZEZ3oLEytyKhjaeFk_UI7ZEg,2413
+odoo/addons/so_report_hide_price_portal/__init__.py,sha256=xa8UBMsr0sSN7abmLt-sJ9hKqhqNgpRZUVd-ODpVvZU,123
+odoo/addons/so_report_hide_price_portal/__manifest__.py,sha256=cFiFHLf3eG6a-Tpy1Mngv1G5LvB3T0PIejvqpKLRN3k,591
+odoo/addons/so_report_hide_price_portal/readme/CONFIGURE.rst,sha256=MAfx8kGzb23_CXf4Tv-OwxgIvWWRdc4R1O3tBROf2ik,135
+odoo/addons/so_report_hide_price_portal/readme/DESCRIPTION.rst,sha256=qAN_1SZAwNgbgky3jBaLVcIsSsy4Q2bI08ML5SenbNc,84
+odoo/addons/so_report_hide_price_portal/readme/README.rst,sha256=SV4MhZ4g2CazyebbQ-n1Lc0Usaia-rU2OzFYdaPrB2w,43
+odoo/addons/so_report_hide_price_portal/readme/USAGE.rst,sha256=3uMZQAOBTkz7SmeLXHknCJpHDlJLNeaphEUfzXzc4Cw,127
+odoo/addons/so_report_hide_price_portal/static/description/icon.png,sha256=bVbNdnyk7PXHuZ3ye_Aqh1M9tbfPJ5zU5W1VnoO8mBQ,35820
+odoo/addons/so_report_hide_price_portal/static/description/index.html,sha256=mavtxYPTZrrTQyzO8wdhsO_pLgeweaYBCB4mfGTK58k,11514
+odoo/addons/so_report_hide_price_portal/views/sale_portal_templates.xml,sha256=wpGNUcSnMJhq2dbdQu2VvfKa8mRMA6kBLF-KkHJ04eA,3912
+odoo_addon_so_report_hide_price_portal-15.0.1.0.0.2.dist-info/METADATA,sha256=ffz6xL4nOfd2eAqvKUj1ppa9-wbCvuO_NfmNuoEK62o,2959
+odoo_addon_so_report_hide_price_portal-15.0.1.0.0.2.dist-info/WHEEL,sha256=9fEMia4zL7ZuZbnCOrcYogUhmn4XFIVaJ8G4YGI31xc,81
+odoo_addon_so_report_hide_price_portal-15.0.1.0.0.2.dist-info/top_level.txt,sha256=QE6RBQ0QX5f4eFuUcGgU5Kbq1A_qJcDs-e_vpr6pmfU,4
+odoo_addon_so_report_hide_price_portal-15.0.1.0.0.2.dist-info/RECORD,,

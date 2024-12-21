@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2022 Manuel Regidor <manuel.regidor@sygel.es>
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <template
+        id="so_report_hide_price_sale_order_portal_content"
+        inherit_id="sale.sale_order_portal_content"
+    >
+        <xpath
+            expr="//table[@id='sales_order_table']/thead/tr/th[3]"
+            position="attributes"
+        >
+            <attribute name="t-if">sale_order.has_show_price_report_lines</attribute>
+        </xpath>
+        <xpath
+            expr="//table[@id='sales_order_table']/thead/tr/th[4]"
+            position="attributes"
+        >
+            <attribute
+                name="t-if"
+            >display_discount and sale_order.has_show_price_report_lines</attribute>
+        </xpath>
+        <xpath
+            expr="//table[@id='sales_order_table']/thead/tr/th[5]"
+            position="attributes"
+        >
+            <attribute
+                name="t-if"
+            >sale_order.has_show_price_report_lines or (not sale_order.has_show_price_report_lines and not sale_order.hide_tax_information)</attribute>
+        </xpath>
+        <xpath
+            expr="//table[@id='sales_order_table']/thead/tr/th[6]"
+            position="attributes"
+        >
+            <attribute name="t-if">sale_order.has_show_price_report_lines</attribute>
+        </xpath>
+        <xpath expr="//t[@t-if='not line.display_type']/td[3]" position="attributes">
+            <attribute name="t-if">sale_order.has_show_price_report_lines</attribute>
+        </xpath>
+        <xpath
+            expr="//t[@t-if='not line.display_type']/td[3]/div[1]"
+            position="attributes"
+        >
+            <attribute
+                name="t-if"
+            >line.discount &gt;= 0 and line.show_price_info_report</attribute>
+        </xpath>
+        <xpath
+            expr="//t[@t-if='not line.display_type']/td[3]/div[2]"
+            position="attributes"
+        >
+            <attribute
+                name="t-if"
+            >line.discount and line.show_price_info_report</attribute>
+        </xpath>
+        <xpath expr="//t[@t-if='not line.display_type']/td[4]" position="attributes">
+            <attribute
+                name="t-if"
+            >display_discount and sale_order.has_show_price_report_lines</attribute>
+        </xpath>
+        <xpath
+            expr="//t[@t-if='not line.display_type']/td[4]/strong"
+            position="attributes"
+        >
+            <attribute
+                name="t-if"
+            >line.discount &gt; 0 and line.show_price_info_report</attribute>
+        </xpath>
+        <xpath expr="//t[@t-if='not line.display_type']/td[5]" position="attributes">
+            <attribute
+                name="t-if"
+            >sale_order.has_show_price_report_lines or (not sale_order.has_show_price_report_lines and not sale_order.hide_tax_information)</attribute>
+        </xpath>
+        <xpath
+            expr="//t[@t-if='not line.display_type']/td[5]/span"
+            position="attributes"
+        >
+            <attribute
+                name="t-if"
+            >line.show_price_info_report or (not line.show_price_info_report and not sale_order.hide_tax_information)</attribute>
+        </xpath>
+        <xpath expr="//t[@t-if='not line.display_type']/td[6]" position="attributes">
+            <attribute name="t-if">sale_order.has_show_price_report_lines</attribute>
+        </xpath>
+        <xpath
+            expr="//t[@t-if='not line.display_type']/td[6]/span[1]"
+            position="attributes"
+        >
+            <attribute name="t-if">line.show_price_info_report</attribute>
+        </xpath>
+        <xpath
+            expr="//t[@t-if='not line.display_type']/td[6]/span[2]"
+            position="attributes"
+        >
+            <attribute name="t-if">line.show_price_info_report</attribute>
+        </xpath>
+    </template>
+</odoo>
