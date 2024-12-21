@@ -1,0 +1,4 @@
+python-fasthtml>=0.10.1
+
+[flowbite]
+fh_flowbite>=0.0.1
