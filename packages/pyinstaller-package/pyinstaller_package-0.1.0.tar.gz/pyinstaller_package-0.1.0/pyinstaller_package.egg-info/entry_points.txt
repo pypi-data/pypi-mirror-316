@@ -1,0 +1,3 @@
+[console_scripts]
+generate-executables = pyinstaller_package.executable_generator:generate_executables
+

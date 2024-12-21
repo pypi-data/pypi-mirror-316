@@ -1,0 +1,10 @@
+setup.py
+pyinstaller_package/__init__.py
+pyinstaller_package/config.py
+pyinstaller_package/executable_generator.py
+pyinstaller_package.egg-info/PKG-INFO
+pyinstaller_package.egg-info/SOURCES.txt
+pyinstaller_package.egg-info/dependency_links.txt
+pyinstaller_package.egg-info/entry_points.txt
+pyinstaller_package.egg-info/requires.txt
+pyinstaller_package.egg-info/top_level.txt
