@@ -1,0 +1,9 @@
+eyelink_reader/__init__.py,sha256=RWwWhmIU4THuchMYRH81B6L7T03rLd-NN4b_TL49mGg,173
+eyelink_reader/edfdata.py,sha256=zEPIdP4McTfnWqWzAkYoHwF_Y4sQjyiNuKIhmLxV6Io,20469
+eyelink_reader/edfdata_containers.py,sha256=PtMEm79xP7d8LYPXFal5HjrKC17JUI8KeoNjWRmP9Ro,7859
+eyelink_reader/edffile.py,sha256=6txFX3t6fJ1yG9P_kLqS6Jhz_m2Hxq77E1xSrV25tMk,20547
+eyelink_reader/data/example.edf,sha256=Qp2HHyQDbhQgGI33UU42SE3JurYeaUBQv4hMJ8YI_qc,267192
+eyelink_reader-0.1.4.dist-info/METADATA,sha256=AK41wKyGUQezA5lGWq6qeZcxu2hQnl5Wn6i0aiaYCKY,8262
+eyelink_reader-0.1.4.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+eyelink_reader-0.1.4.dist-info/licenses/LICENSE,sha256=zbutVnkO3WNn88Z2nYff8nrcCfqiVt8sk4dgMHW1uAo,1084
+eyelink_reader-0.1.4.dist-info/RECORD,,
