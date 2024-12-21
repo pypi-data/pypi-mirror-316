@@ -1,0 +1,3 @@
+recursive-include etptool *
+recursive-exclude etptool __pycache__/*
+include etptool share/*

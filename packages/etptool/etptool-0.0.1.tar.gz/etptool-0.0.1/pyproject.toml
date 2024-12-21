@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=60", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "etptool"
+authors = [
+    { name = "Jabez Winston", email = "jabezwinston@gmail.com" },
+    { name = "Stephen Kingston", email = "stephen.psk@gmail.com" },
+]
+description = "Embedded Tester Protocol (ETP) Tool"
+readme = "README.md"
+requires-python = ">=3.6"
+dependencies = ["pyserial", "etplib==0.2.1"]
+dynamic = ["version"]
+keywords = ["embedded", "firmware", "test", "protocol", "gpio", "i2c", "adc", "pwm"]
+license = {text = "MIT"}
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: Microsoft :: Windows",
+    "Operating System :: POSIX :: Linux",
+    "Operating System :: MacOS :: MacOS X",
+]
+
+[tool.setuptools]
+packages = ["etptool"]
+
+[project.urls]
+"Homepage" = "https://www.embeddedtester.com/"
+"Source code" = "https://github.com/jabezwinston/etptool"
+
+[project.scripts]
+etptool = "etptool.__main__:main"
+
+[tool.setuptools.dynamic]
+version = {attr = "etptool.version.VERSION"}
+
+[tool.setuptools.data-files]
+"share/bash-completion/completions" = ["share/bash-completions/etptool"]
