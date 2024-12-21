@@ -1,0 +1,4 @@
+diffdrr>=0.4.6
+h5py
+
+[dev]
