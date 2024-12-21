@@ -1,0 +1,2 @@
+[oslo.middleware.healthcheck]
+infra_health = openstack_health_middleware.infra_health:InfraHealthCheck
