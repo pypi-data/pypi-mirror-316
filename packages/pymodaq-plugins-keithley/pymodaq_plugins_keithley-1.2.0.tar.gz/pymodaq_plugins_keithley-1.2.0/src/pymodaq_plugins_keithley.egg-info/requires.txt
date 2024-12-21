@@ -1,0 +1,5 @@
+toml
+pyvisa
+pyvisa-py
+pymeasure
+pymodaq>=4.0
