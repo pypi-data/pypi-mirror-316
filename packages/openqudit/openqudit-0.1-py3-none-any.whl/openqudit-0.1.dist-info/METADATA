@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: openqudit
+Version: 0.1
+Summary: The OpenQudit library as a python package.
+Home-page: https://github.com/openqudit/qudit-python
+Author: LBNL - OpenQudit Team
+Author-email: edyounis@lbl.gov
+License: BSD 3-Clause License
+Requires-Python: >=3.9
+
