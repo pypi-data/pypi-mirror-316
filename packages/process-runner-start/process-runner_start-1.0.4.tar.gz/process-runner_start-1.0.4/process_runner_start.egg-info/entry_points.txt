@@ -1,0 +1,2 @@
+[console_scripts]
+process-runner_start = process_runner_start.main:main
