@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: PrettyConsole
+Version: 0.1.0
+Summary: A easy way to use colors in the terminal via ANSI Escape Codes
+Author: Erick Fernando Carvalho Sanchez
+Author-email: carvalhosanchezerickfernando@gmail.com
+License: BSD 3-Clause License
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# PrettyConsole
+A easy way to use colors in the terminal via ANSI Escape Codes
+
+Features:
+---------
+    - Support for creating new custom print functions
+    - Parse text between text color, background color and text style ANSI Escape Codes
+    - Gives access to all text colors, background colors and text styles ANSI Escape Codes
+    - Support for clearing the current text color, background color and text style
+    - Support for configure and print with only one object
