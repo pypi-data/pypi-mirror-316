@@ -1,0 +1,2 @@
+[console_scripts]
+anubisgit = anubisgit.cli:main_cli
