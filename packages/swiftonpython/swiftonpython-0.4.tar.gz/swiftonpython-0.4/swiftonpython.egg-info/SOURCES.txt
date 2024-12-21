@@ -1,0 +1,8 @@
+README.md
+setup.py
+swiftonpython/__init__.py
+swiftonpython/swift.py
+swiftonpython.egg-info/PKG-INFO
+swiftonpython.egg-info/SOURCES.txt
+swiftonpython.egg-info/dependency_links.txt
+swiftonpython.egg-info/top_level.txt
