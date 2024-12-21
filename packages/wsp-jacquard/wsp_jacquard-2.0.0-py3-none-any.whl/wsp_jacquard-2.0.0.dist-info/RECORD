@@ -1,0 +1,10 @@
+wsp_jacquard/__init__.py,sha256=J6ivnPL6eF9v28dNqcPBHkY9e3AHJ-DGzk7rakC_ZOI,201
+wsp_jacquard/_version.py,sha256=o9XMlNC6GoiUn7mwoOOgJdijgp3B_2fLdgizcKs1i2o,411
+wsp_jacquard/api.py,sha256=zXeadmbcLPMVhXWxVWJiBUMFKyfViyEX2UYf4IMr3yY,5205
+wsp_jacquard/exceptions.py,sha256=ntBQWA6M-Jl1H5rvDG18aXh7uok9vFlThg8urKtEhZM,153
+wsp_jacquard/jacquard.py,sha256=0StCfYlqWLvX0eazpz-soD6rD9NMhzU4zHNy9ZnwJSw,9639
+wsp_jacquard-2.0.0.dist-info/LICENSE,sha256=NhlMI9X0UOv5HWQzutqMdkLp_hoJc7no9t9Q7Bx4B64,1072
+wsp_jacquard-2.0.0.dist-info/METADATA,sha256=BaiBzymwIymjhOSTipQ4Fj1ptBfBNqkjpOxvEPo_K-A,4997
+wsp_jacquard-2.0.0.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+wsp_jacquard-2.0.0.dist-info/top_level.txt,sha256=1DMquYxegVgCBxcQ4Zn8Bzo_FUojgNRP5tfccWF0zew,13
+wsp_jacquard-2.0.0.dist-info/RECORD,,
