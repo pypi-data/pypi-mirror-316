@@ -1,0 +1,14 @@
+abstochkin/__init__.py,sha256=48avXwBji2VQ683DnKeiidJ0BaPEKfyxW327J48UD5o,869
+abstochkin/_simulation_methods.py,sha256=hYRl6wVfA5bmUKjs5_ipjA2CswyG8oCJPq1Ymch5zEk,64314
+abstochkin/agentstatedata.py,sha256=rM19T-XdjrcL2PmoPWApPpgpS5ocSy5qG7e4gHR-9-k,6066
+abstochkin/base.py,sha256=b-lwckBSH_gOQOVzwQcdr__a_PO-Y1e9A58PQ1f1SiM,17571
+abstochkin/de_calcs.py,sha256=Kz4U7CL3NtYFEkl7AgSReBi0rArf8xnNVk0cPlYfEY0,10189
+abstochkin/graphing.py,sha256=tWX6N26eJrN4HPCIpK7WAHtk9rU09sd1qf_lziAzsvc,22153
+abstochkin/het_calcs.py,sha256=2zjtlJdiX4WMs3_GINyJYFIfdnGHch9FNNiz3m_yb5Y,4584
+abstochkin/process.py,sha256=zBaILF_UasVsO2vg7EcfVIAUSYSFe54TOR_V3l8IXIg,62085
+abstochkin/simulation.py,sha256=w5TC7XlTHPmz0MmHoPlVGGP4NZsPbQAQrTpRq1B0wes,16397
+abstochkin/utils.py,sha256=uZK0X-qjwYcBy4oPsEUE6yj0Vw-KlLIF8JQrBXm74FQ,6741
+abstochkin-0.2.0.1.dist-info/METADATA,sha256=iEKBfBgXZQwNhCTSNe_eVmwCv3e6cnZNV0kbXDfSlTI,47873
+abstochkin-0.2.0.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+abstochkin-0.2.0.1.dist-info/licenses/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+abstochkin-0.2.0.1.dist-info/RECORD,,
