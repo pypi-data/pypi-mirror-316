@@ -1,0 +1,7 @@
+scisdk/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+scisdk/scisdk.py,sha256=Yp_6pQ2GyqxO4NVcIkIsBjuyUQkJoSRz30ezBP9EH28,29042
+scisdk/scisdk_defines.py,sha256=UH0keXk1DM27Wgwz9Fyq2str6xNCUUg7bfO4rII6fDU,16665
+scisdk-1.4.dist-info/METADATA,sha256=U229rqFwTiDj1a1KATxQW0IqIPPpMQvPRUmF0tUH00Y,4809
+scisdk-1.4.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+scisdk-1.4.dist-info/licenses/LICENSE,sha256=UcUOLl_MiQM4GpOo_f4iMcBN29WhoBTSw52Bscs4ZnY,1091
+scisdk-1.4.dist-info/RECORD,,
