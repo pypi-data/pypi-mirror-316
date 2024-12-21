@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: pangea-multipass
+Version: 0.1.0
+Summary: Pangea Multipass authorization library
+License: MIT
+Author: Apurv Jawle
+Author-email: apurv.jawle@pangea.cloud
+Requires-Python: >=3.10,<3.13
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: google-api-python-client (>=2.149.0,<3.0.0)
+Requires-Dist: google-auth (>=2.35.0,<3.0.0)
+Requires-Dist: google-auth-httplib2 (>=0.2.0,<0.3.0)
+Requires-Dist: google-auth-oauthlib (>=1.2.1,<2.0.0)
+Requires-Dist: openpyxl (>=3.1.5,<4.0.0)
+Requires-Dist: pangea-sdk (>=5.1.0,<6.0.0)
+Description-Content-Type: text/markdown
+
+
