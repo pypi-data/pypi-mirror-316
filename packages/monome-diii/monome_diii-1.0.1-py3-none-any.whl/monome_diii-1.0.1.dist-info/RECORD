@@ -1,0 +1,12 @@
+diii/__init__.py,sha256=UYQHXUgAhAMoWXkIDQVv9j_dYoAM_Uf5IzFcNjZrQlg,224
+diii/cli.py,sha256=_DiLy0HPJSxZwAYM6NkGWjpyNjz5MQdKB2id9gBEL6c,1578
+diii/exceptions.py,sha256=TgLruXYw2QSggsRmS0UnrSKowib78BoZD3viZSRDepI,136
+diii/iii.py,sha256=ammi2GMXD_5jVCM2h708F5QIx9i_tf2-Ap6UrSb855U,4467
+diii/repl.py,sha256=gdEqrR790LZpKH_UtMGSLB5ScNP1vCtnL1vGsEUraXo,12762
+diii/server.py,sha256=uBLmokxA6LptQXSmcGFG1eXsPidEq2hmP4HuVKnLvec,1232
+monome_diii-1.0.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+monome_diii-1.0.1.dist-info/METADATA,sha256=w3bnO_-GiNijXJPkFviKb9V0xnlPh0RACdoB5mOH8wA,2267
+monome_diii-1.0.1.dist-info/WHEEL,sha256=OVMc5UfuAQiSplgO0_WdW7vXVGAt9Hdd6qtN4HotdyA,91
+monome_diii-1.0.1.dist-info/entry_points.txt,sha256=pY9_BgrgO548pKzp5oShTqrUHUTYLmW5WMoGsoksG6Y,38
+monome_diii-1.0.1.dist-info/top_level.txt,sha256=cZgGr1Bvdl86nmwUwYIdNs5KYaTt3qYArmFdu9H3CJY,5
+monome_diii-1.0.1.dist-info/RECORD,,
