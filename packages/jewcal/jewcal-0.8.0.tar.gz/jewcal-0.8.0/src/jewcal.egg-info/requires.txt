@@ -1,0 +1,7 @@
+astral>=3.2
+
+[dev]
+pre-commit
+tox
+sphinx
+sphinx-rtd-theme
