@@ -1,0 +1,10 @@
+g3w_config_scripts/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+g3w_config_scripts/g3w_config.py,sha256=dkMzNJYpkKckqra0agOKrjYSEeGftad2Fldy_PgW5k0,31640
+g3w_config_scripts/g3w_config_gen.py,sha256=hS_jbWH1B-710iBfO4C7-FQeJ4Go0OmhFnd0UtrMTus,4158
+g3w_config_scripts/g3w_dev_setup.py,sha256=Ybiqnd1b97rh2T2lUX_NkugwzkmeN29D690hQPxHK7c,3910
+g3w_config_scripts/g3w_prod_setup.py,sha256=A1z2Iqg0hrLboYVMz8sypexrMxbfu7fAwe_OEp9tXe8,2354
+g3wsuite_config_scripts-0.3.1.dist-info/METADATA,sha256=awHDzeyonC_Yl8tgPUSedKrJecRkbGNzm6-mGlxbbuo,1310
+g3wsuite_config_scripts-0.3.1.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+g3wsuite_config_scripts-0.3.1.dist-info/entry_points.txt,sha256=HUFgZmBw01i8xDcrM3XkqIFT8tokd3ItNqCrF1LjnM0,184
+g3wsuite_config_scripts-0.3.1.dist-info/top_level.txt,sha256=MLSmjEtXY2kaz_TrLlpVQLDhfrEclpslXSDIEjU-ZIU,19
+g3wsuite_config_scripts-0.3.1.dist-info/RECORD,,
