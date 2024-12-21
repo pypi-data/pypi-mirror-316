@@ -1,0 +1,9 @@
+omnifold/__init__.py,sha256=u-yFCSTKFRYvNw7mODe4g3G_M2dGQlr-v8leNtOajuo,170
+omnifold/dataloader.py,sha256=NXTtKe7QRVHNATVEbDfFh37mkJxK4txkfF2B2TG-_Ak,4155
+omnifold/net.py,sha256=VgoECo6C3RrTE-cVi4O6DKisP_SAaMUd5qyOOHYrrZM,12236
+omnifold/omnifold.py,sha256=PzrHcBwFVFo6VIBpnA6ehNcHzeRE1ot9HQfLq5N8Ghg,18093
+omnifold/utils.py,sha256=i5VcF9jgpi0YC1OTM0XrOfhdwhAFVu_0LkxLe5Y7wTo,4900
+omnifold-0.1.36.dist-info/METADATA,sha256=iXWp2OZNClHfdjRdWRQiqKhCJLwaLiSLSHjpuA6A5iw,4984
+omnifold-0.1.36.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+omnifold-0.1.36.dist-info/top_level.txt,sha256=SekDA_qs45G4VfY4xlx2vO661pOS4iSIq4LYuNTm0Jg,9
+omnifold-0.1.36.dist-info/RECORD,,
