@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/irv_datapkg/__init__.py
+src/irv_datapkg.egg-info/PKG-INFO
+src/irv_datapkg.egg-info/SOURCES.txt
+src/irv_datapkg.egg-info/dependency_links.txt
+src/irv_datapkg.egg-info/requires.txt
+src/irv_datapkg.egg-info/top_level.txt
+tests/test_raster.py
