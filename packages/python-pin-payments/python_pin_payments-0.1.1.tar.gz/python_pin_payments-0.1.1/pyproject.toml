@@ -1,0 +1,48 @@
+[tool.poetry]
+name = "python-pin-payments"
+version = "0.1.1"
+description = "Python library for interacting with the Pin Payments API"
+authors = ["Viacheslav Lisovoi <viacheslav.lisovoi@onix-systems.com>"]
+readme = "README.md"
+packages = [{include = "pin_payments"}]
+license = "MIT"
+classifiers = [
+    "Programming Language :: Python :: 3.10",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent"
+]
+homepage = "https://github.com/Onix-Systems/python-pin-payments"
+
+[tool.poetry.urls]
+"Homepage" = "https://github.com/Onix-Systems/python-pin-payments"
+"Documentation" = "https://python-pin-payments.readthedocs.io/en/latest/overview.html"
+"Repository" = "https://github.com/Onix-Systems/python-pin-payments"
+"Bug Tracker" = "https://github.com/Onix-Systems/python-pin-payments/issues"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+requests = "^2.32.3"
+python-dotenv = ">=0.10.2, <1.0.0"
+sphinx = "^8.1.3"
+sphinx-rtd-theme = "^3.0.2"
+
+[tool.poetry.dev-dependencies]
+flake8 = "^6.1.0"
+commitizen = "^3.13.0"
+
+[tool.poetry.group.dev.dependencies]
+sphinx = "^8.1.3"
+sphinx-autodoc-typehints = "^2.5.0"
+sphinxcontrib-napoleon = "^0.7"
+
+[tool.commitizen]
+name = "cz_conventional_commits"
+tag_format = "$version"
+version_scheme = "pep440"
+version_provider = "poetry"
+update_changelog_on_bump = true
+major_version_zero = true
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
