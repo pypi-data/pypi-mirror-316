@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--Copyright 2023 Angel Garcia de la Chica Herrera <angel.garcia@sygel.es>
+    License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl.html).-->
+<odoo>
+    <template
+        id="so_report_hide_salesperson_report_saleorder_document"
+        name="so.report.hide.salesperson.report.saleorder.document"
+        inherit_id="sale.report_saleorder_document"
+    >
+        <xpath expr="//div[@t-if='doc.user_id.name']" position="attributes">
+            <attribute name="t-if"> False </attribute>
+        </xpath>
+    </template>
+</odoo>
