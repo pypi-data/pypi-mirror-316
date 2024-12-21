@@ -1,0 +1,6 @@
+django_wplogin/__init__.py,sha256=kapBSgurKv_U7CWA4SjgRgR98lrMYcnRVQb3UbJMMg0,66
+django_wplogin/templates/admin/login.html,sha256=5ZuPaE6I4viyJ_V8fRJMlwjaU8P2bW8nuqD_YwGIm4w,2223
+django_wplogin-10.0.dist-info/LICENSE,sha256=5I30NL57b9P1t-esHFlVtDdz9GNKhTMacsc1rhhlWM0,1084
+django_wplogin-10.0.dist-info/WHEEL,sha256=ssQ84EZ5gH1pCOujd3iW7HClo_O_aDaClUbX4B8bjKY,100
+django_wplogin-10.0.dist-info/METADATA,sha256=hC2OS5h4FkKD88PkL2nKdNcSt0Tq16LyCkobiIet5ss,1851
+django_wplogin-10.0.dist-info/RECORD,,
