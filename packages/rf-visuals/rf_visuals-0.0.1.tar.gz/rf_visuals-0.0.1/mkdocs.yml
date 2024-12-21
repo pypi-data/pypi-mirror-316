@@ -1,0 +1,81 @@
+# Project information
+site_name: rf-visuals
+site_description: Visualization and post-processing of RF data (e.g., Touchstone files). Get a presentation and report data fast.
+site_author: Rasmus Ravn Andersen
+site_url: https://github.com/rasmusravn/rf-visuals
+copyright: 'Copyright &copy; Rasmus Ravn Andersen 2024-present'
+
+# Repository
+repo_url: https://github.com/rasmusravn/rf-visuals
+repo_name: rasmusravn/rf-visuals
+
+theme:
+    name: material
+    font:
+        text: Roboto
+        code: Roboto Mono
+    icon:
+        logo: material/chart-box-outline
+    palette:
+        # Palette toggle for automatic mode
+        - media: "(prefers-color-scheme)"
+          toggle:
+            icon: material/brightness-auto
+            name: Switch to light mode
+
+        # Palette toggle for light mode
+        - media: "(prefers-color-scheme: light)"
+          scheme: default
+          primary: pink
+          accent: yellow
+          toggle:
+            icon: material/brightness-7
+            name: Switch to dark mode
+
+        # Palette toggle for dark mode
+        - media: "(prefers-color-scheme: dark)"
+          scheme: slate
+          primary: pink
+          accent: yellow
+          toggle:
+            icon: material/brightness-4
+            name: Switch to light mode
+
+markdown_extensions:
+    - toc:
+        permalink: true
+    - pymdownx.highlight:
+        anchor_linenums: true
+    - pymdownx.tasklist:
+        custom_checkbox: true
+    - pymdownx.inlinehilite
+    - pymdownx.snippets
+    - pymdownx.superfences
+
+plugins:
+    - search
+    - mkdocstrings:
+        handlers:
+            python:
+                import:
+                    - https://docs.python.org/3.13/objects.inv
+                options:
+                    docstring_style: google
+    - gen-files:
+        scripts:
+            - docs/scripts/gen_ref_nav.py
+
+watch:
+    - docs
+    - src/rf_visuals
+
+# Navigation
+nav:
+    - Home:
+        - About: index.md
+        - Changelog: changelog.md
+        - License: license.md
+        - Authors: authors.md
+        - Contributing: contributing.md
+    - Reference:
+        - rf_visuals: reference/rf_visuals.md

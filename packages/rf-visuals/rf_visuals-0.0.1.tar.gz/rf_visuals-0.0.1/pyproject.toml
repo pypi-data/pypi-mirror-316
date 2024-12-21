@@ -1,0 +1,251 @@
+[project]
+name = "rf-visuals"
+authors = [
+  { name = "rf-visuals", email = "rasmusravna@gmail.com" }
+]
+description = "Visualization and post-processing of RF data (e.g., Touchstone files). Get a presentation and report data fast."
+readme = "README.md"
+dynamic = ["version"]
+license = { file = "LICENSE" }
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: Implementation :: PyPy",
+]
+requires-python = ">=3.13"
+dependencies = [
+    "coverage>=7.6.9",
+    "pydantic>=2.10.4",
+]
+
+[project.urls]
+Documentation = "https://rasmusravn.github.io/rf-visuals/"
+Source = "https://github.com/rasmusravn/rf-visuals"
+
+[tool.hatch]
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+
+##############
+# Versioning #
+##############
+
+[tool.hatch.version]
+source = "regex"
+path = "src/rf_visuals/__version__.py"
+pattern = '__version__ = "(?P<version>.*?)"'
+##################
+# External Tools #
+##################
+
+[tool.mypy]
+files = ["rf_visuals"]
+exclude = ["build/", "dist/", "docs/", "tests/*"]
+disallow_untyped_defs = true
+disallow_any_unimported = true
+no_implicit_optional = true
+check_untyped_defs = true
+warn_return_any = true
+warn_unused_ignores = true
+show_error_codes = true
+plugins = ["pydantic.mypy"]
+
+
+[tool.ruff]
+target-version = "py313"
+include = [
+  "src/**/*.py",
+  "src/**/*.pyi",
+  "tests/**/*.py",
+  "tests/**/*.pyi"
+]
+exclude = ["tests", "src/rf_visuals/_version.py"]
+
+[tool.ruff.lint]
+preview = true # preview features & checks, use with caution
+extend-select = [ # features in preview
+    "W292", # missing-newline-at-end-of-file
+]
+select = [
+    "A",
+    "ARG",
+    "B",
+    "C4",
+    "DTZ",
+    "E",
+    "EM",
+    "F",
+    "FBT", # Boolean trap
+    "G",
+    "ICN",
+    "ISC",
+    "I",
+    "N",
+    "PT",
+    "Q",
+    "RUF",
+    "S",
+    "T",
+    "TID",
+    "UP",
+    "W",
+    "YTT",
+    "RUF100", # Automatically remove unused # noqa directives
+]
+ignore = [
+    # Allow non-abstract empty methods in abstract base classes
+    "B027",
+    # Allow boolean positional values in function calls, like `dict.get(... True)`
+    "FBT003",
+    # Ignore checks for possible passwords
+    "S105", "S106", "S107",
+    # Ignore complexity
+    "C901", "PLR0911", "PLR0912", "PLR0913", "PLR0915",
+    "PLC1901", # empty string comparisons
+    "PLW2901", # `for` loop variable overwritten
+    "SIM114", # Combine `if` branches using logical `or` operator
+    "E203", # Whitespace before :, needed for black compatability and also `ruff format`
+    "ISC001", # causes unexpected behaviour with formatter
+]
+unfixable = ["F401", "F841"]
+
+
+[tool.ruff.lint.isort]
+known-first-party = ["rf_visuals"]
+
+
+[tool.ruff.lint.flake8-tidy-imports]
+ban-relative-imports = "all"
+
+
+[tool.ruff.lint.per-file-ignores]
+# Allow print/pprint
+"examples/*" = ["T201"]
+# Tests can use magic values, assertions, and relative imports
+"tests/**/*" = ["PLR2004", "S101", "TID252"]
+
+
+[tool.pytest.ini_options]
+addopts = "--cov=src/rf_visuals/ --cov-report=term-missing"
+
+
+[tool.coverage.run]
+branch = true
+source = ["src/rf_visuals"]
+omit = [
+  "__version__.py",
+]
+
+[tool.coverage.paths]
+source = [
+  "src/",
+  "*/site-packages/",
+]
+
+
+#####################
+# Environment Setup #
+#####################
+[tool.hatch.env]
+requires = ["hatch-pip-compile~=1.11.1"]
+
+
+# Default env dendencies
+[tool.hatch.envs.default]
+dependencies = [
+]
+post-install-commands = ["pre-commit install"]
+type = "pip-compile"
+pip-compile-resolver = "uv"
+pip-compile-installer = "uv"
+# keep locks between default & others consistent
+pip-compile-constraint = "default"
+pip-compile-hashes = true
+[tool.hatch.envs.default.scripts]
+upgrade-all = "PIP_COMPILE_UPGRADE=1 hatch env run --env {env_name} -- python --version"
+upgrade-pkg = "PIP_COMPILE_UPGRADE='{args}' hatch env run --env {env_name} -- python --version"
+
+
+# Lint env dendencies
+[tool.hatch.envs.lint]
+dependencies = [
+  "mypy",
+  "ruff"
+]
+
+
+[tool.hatch.envs.lint.scripts]
+typing = [
+  "echo \"VERSION: `mypy --version`\"",
+  "mypy --install-types --non-interactive {args}"
+]
+lint = [
+  "echo \"VERSION: `ruff --version`\"",
+  "ruff format .",
+  "ruff check . --fix",
+  "mypy src/rf_visuals/",
+]
+lint-check = [
+  "echo \"VERSION: `ruff --version`\"",
+  "ruff format --check .",
+  "ruff check .",
+  "mypy src/rf_visuals/",
+]
+
+# Docs env dendencies
+[tool.hatch.envs.docs]
+dependencies = [
+"mkdocs",
+  "mkdocs-material",
+  "mkdocs-gen-files",
+  "mkdocstrings[python]",
+  "linkchecker",
+]
+
+
+[tool.hatch.envs.docs.scripts]
+docs-serve = "mkdocs serve"
+docs-build = "mkdocs build --clean --strict"
+validate = "linkchecker --ignore-url=/reference --ignore-url=None site"
+build-check = [
+  "docs-build",
+  "validate",
+]
+
+# Testing env dendencies
+[tool.hatch.envs.test]
+dependencies = [
+  "pytest",
+"pytest-cov",
+
+]
+
+
+[tool.hatch.envs.test.scripts]
+test = "pytest"
+test-cov-xml = "pytest --cov-report=xml"
+
+
+# Replace tox & nox
+[[tool.hatch.envs.test.matrix]]
+python = ["3.13"]
+
+#########
+# Build #
+#########
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.sdist]
+exclude = [
+  "/.github",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/rf_visuals/"]
+
