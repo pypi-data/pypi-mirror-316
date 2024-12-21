@@ -1,0 +1,9 @@
+phreeqcrm.libs/libgomp-d22c30c5.so.1.0.0,sha256=BTGH6is2VDtn03gF_z6BiPXVdnSzH2mP6Hz-IiGkPtk,274665
+phreeqcrm-0.0.12.dist-info/RECORD,,
+phreeqcrm-0.0.12.dist-info/METADATA,sha256=7-pwnFyCNBGoMqoQlrqPRIJwbgZXziulBk6BnbC9SrM,1923
+phreeqcrm-0.0.12.dist-info/WHEEL,sha256=xVfALr-PjH4P3cUBvdv4kqYHNbGwV0Tghj5iW6pjP2M,154
+phreeqcrm-0.0.12.dist-info/licenses/LICENSE,sha256=ogEPNDSH0_dhiv_lT3ifVIdgIzHAqNA_SemnxUfPBJk,7048
+phreeqcrm/_phreeqcrm.cpython-39-aarch64-linux-gnu.so,sha256=nW1hsZTACCxkGQvs6suHb9wgabsDKSlplDdgE8_wZEo,5720849
+phreeqcrm/phreeqcrm.py,sha256=jaDqHJH6y7SHKNb36AGWB5UFsrXI8OdxzWIoD1qgJTE,200489
+phreeqcrm/__init__.py,sha256=U1vVjJnO8vvyOuIIgT04QmkJiYzMYTPPC_51Hw0_enI,326
+phreeqcrm/yamlphreeqcrm.py,sha256=Z6Wfm6N1Ln8H0RBxkxM6xfdBfzNYNe4iKhRUST_4RJA,77839
