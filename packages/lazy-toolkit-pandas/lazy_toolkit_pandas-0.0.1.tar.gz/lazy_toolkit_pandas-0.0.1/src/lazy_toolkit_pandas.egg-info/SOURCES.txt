@@ -1,0 +1,9 @@
+LICENSE
+pyproject.toml
+src/lazy_toolkit_pandas/__init__.py
+src/lazy_toolkit_pandas/pandas.py
+src/lazy_toolkit_pandas.egg-info/PKG-INFO
+src/lazy_toolkit_pandas.egg-info/SOURCES.txt
+src/lazy_toolkit_pandas.egg-info/dependency_links.txt
+src/lazy_toolkit_pandas.egg-info/requires.txt
+src/lazy_toolkit_pandas.egg-info/top_level.txt
