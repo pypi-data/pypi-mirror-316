@@ -1,0 +1,6 @@
+main.py
+setup.py
+DeepDETAILS.egg-info/PKG-INFO
+DeepDETAILS.egg-info/SOURCES.txt
+DeepDETAILS.egg-info/dependency_links.txt
+DeepDETAILS.egg-info/top_level.txt
