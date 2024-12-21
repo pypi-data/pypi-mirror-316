@@ -1,0 +1,16 @@
+from _typeshed import Incomplete
+from typing import Any
+
+class Slot:
+    key: Incomplete
+    value: Incomplete
+    type: Incomplete
+    sqlite_id: Incomplete
+    def __init__(self, key: str, value: Any, slot_type: str) -> None: ...
+
+class SlottableObject:
+    slots: Incomplete
+    def __init__(self, slots: list[Slot] | None = None) -> None: ...
+    def get_slot_value(self, key: str) -> Any: ...
+    def set_slot_value(self, key: str, value: Any, slot_type: str) -> None: ...
+    def set_slot_value_bool(self, key: str, value: str | bool, slot_type: str) -> None: ...
