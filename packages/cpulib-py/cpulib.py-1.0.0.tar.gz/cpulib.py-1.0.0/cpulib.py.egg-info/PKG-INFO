@@ -1,0 +1,98 @@
+Metadata-Version: 2.1
+Name: cpulib.py
+Version: 1.0.0
+Summary: This is a test module.
+Home-page: UNKNOWN
+Author: CPUcademy
+Author-email: cpucademy@gmail.com
+License: MIT
+Keywords: cpucademy learning test
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE.txt
+
+==========================
+CPUlib
+==========================
+
+A test Python module for educational purposes.
+
+Installation
+==========================
+
+To install the project, follow these steps:
+
+1. Clone the repository:
+   
+   .. code-block:: bash
+
+      git clone https://github.com/CPUcademy/cpulib.git
+
+2. Navigate into the project directory:
+   
+   .. code-block:: bash
+
+      cd project-name
+
+3. Install the dependencies:
+   
+   .. code-block:: bash
+
+      pip install -r requirements.txt
+
+Usage
+==========================
+
+To use the project, follow these instructions:
+
+1. Example of running the project:
+
+   .. code-block:: bash
+
+      python app.py
+
+2. Additional configuration or environment setup (if applicable).
+
+Features
+==========================
+
+- Feature 1
+- Feature 2
+- Feature 3
+
+Contributing
+==========================
+
+1. Fork the repository
+2. Create your feature branch:
+   
+   .. code-block:: bash
+
+      git checkout -b feature-branch
+3. Commit your changes:
+   
+   .. code-block:: bash
+
+      git commit -am 'Add new feature'
+4. Push to the branch:
+   
+   .. code-block:: bash
+
+      git push origin feature-branch
+5. Create a new Pull Request.
+
+License
+==========================
+
+This project is licensed under the MIT License - see the `LICENSE` file for details.
+
+
+Change Log
+==========
+
+version 1.0.0: -first version
+
