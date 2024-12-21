@@ -1,0 +1,9 @@
+zeep
+python-dateutil
+M2Crypto
+pytz
+unidecode
+requests
+lxml
+qrcode
+bs4
