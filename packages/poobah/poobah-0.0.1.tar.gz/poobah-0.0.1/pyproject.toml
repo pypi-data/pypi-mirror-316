@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "poobah"
+version = "0.0.1"
+dynamic = ["dependencies", "optional-dependencies"]
+description = "Analytical wisdom and guidance"
+readme = "README.md"
+requires-python = ">=3.9"
+keywords = ["analytics", "ml", "statistics", "causal inference"]
+license = {text = "BSD-3-Clause License"}
+classifiers = [
+  "Environment :: Console",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Topic :: Scientific/Engineering :: Information Analysis",
+]
+
+[tool.setuptools.dynamic]
+dependencies = {file = "requirements.txt"}
+
+[tool.setuptools.packages]
+find = {}  # Scanning implicit namespaces is active by default
+
+[tool.pytest.ini_options]
+norecursedirs = "tests/helpers"
+# Testing for the Poobah package generally follows the Google testing guide
+# covered in the blog post https://testing.googleblog.com/2010/12/test-sizes.html
+markers = [
+    "unit: A small test that adressing a function or method with no inter system or external processes",
+    "integration: A medium test assesses state change between processes or environments to ensure they communicate properly",
+    "system: A large test that covers a process representing a full use case for the application",
+    "slow: A basic functionality or unit test that takes a long time and should be skipped for quick testing runs",
+]
+

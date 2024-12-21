@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: poobah
+Version: 0.0.1
+Summary: Analytical wisdom and guidance
+License: BSD-3-Clause License
+Keywords: analytics,ml,statistics,causal inference
+Classifier: Environment :: Console
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pyarrow
+Requires-Dist: click
+
+# Sage
+
+Sage is a Python package to impart wisdom and guidance to properly perform
+various advanced analytics tasks using established frameworks and best
+practices.
+

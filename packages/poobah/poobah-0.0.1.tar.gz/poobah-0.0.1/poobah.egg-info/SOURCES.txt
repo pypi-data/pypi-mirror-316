@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+requirements.txt
+poobah.egg-info/PKG-INFO
+poobah.egg-info/SOURCES.txt
+poobah.egg-info/dependency_links.txt
+poobah.egg-info/requires.txt
+poobah.egg-info/top_level.txt
+src/poobah/__init__.py
+src/poobah/main.py
