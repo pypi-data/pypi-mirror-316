@@ -1,0 +1,6 @@
+main.py
+setup.py
+GenomeViewer.egg-info/PKG-INFO
+GenomeViewer.egg-info/SOURCES.txt
+GenomeViewer.egg-info/dependency_links.txt
+GenomeViewer.egg-info/top_level.txt
