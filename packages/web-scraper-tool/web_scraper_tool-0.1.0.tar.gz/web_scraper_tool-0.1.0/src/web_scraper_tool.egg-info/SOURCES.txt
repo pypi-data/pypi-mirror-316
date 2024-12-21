@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+src/utils/__init__.py
+src/web_scraper_tool.egg-info/PKG-INFO
+src/web_scraper_tool.egg-info/SOURCES.txt
+src/web_scraper_tool.egg-info/dependency_links.txt
+src/web_scraper_tool.egg-info/entry_points.txt
+src/web_scraper_tool.egg-info/requires.txt
+src/web_scraper_tool.egg-info/top_level.txt
