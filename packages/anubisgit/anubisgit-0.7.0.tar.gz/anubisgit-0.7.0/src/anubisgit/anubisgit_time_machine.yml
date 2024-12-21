@@ -1,0 +1,9 @@
+# AnubisGit time machine input file
+
+git_path : /home/code/repo
+branch : master
+year_start : 2020
+year_end : 2020
+out_dir : ANUBIS_OUT
+mandatory_patterns : null # List of patterns to keep below the relative source path
+forbidden_patterns : null # List of patterns to remove below the relative source path
