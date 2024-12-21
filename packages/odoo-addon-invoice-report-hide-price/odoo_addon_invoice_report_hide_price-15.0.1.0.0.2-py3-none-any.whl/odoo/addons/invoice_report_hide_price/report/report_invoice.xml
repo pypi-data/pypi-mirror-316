@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2022 Manuel Regidor <manuel.regidor@sygel.es>
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <template
+        id="invoice_report_hide_price_report_invoice_document"
+        name="invoice.report.hide.price.report.invoice.document"
+        inherit_id="account.report_invoice_document"
+    >
+        <xpath expr="//th[@name='th_priceunit']" position="attributes">
+            <attribute name="t-if">o.has_show_price_report_lines</attribute>
+        </xpath>
+        <xpath expr="//th[@name='th_price_unit']" position="attributes">
+            <attribute
+                name="t-if"
+            >display_discount and o.has_show_price_report_lines</attribute>
+        </xpath>
+        <xpath expr="//th[@name='th_subtotal']" position="attributes">
+            <attribute name="t-if">o.has_show_price_report_lines</attribute>
+        </xpath>
+        <xpath
+            expr="//t[@name='account_invoice_line_accountable']/td[3]"
+            position="attributes"
+        >
+            <attribute name="t-if">o.has_show_price_report_lines</attribute>
+        </xpath>
+        <xpath
+            expr="//t[@name='account_invoice_line_accountable']/td[4]"
+            position="attributes"
+        >
+            <attribute
+                name="t-if"
+            >display_discount and o.has_show_price_report_lines</attribute>
+        </xpath>
+        <xpath
+            expr="//t[@name='account_invoice_line_accountable']/td[6]"
+            position="attributes"
+        >
+            <attribute name="t-if">o.has_show_price_report_lines</attribute>
+        </xpath>
+        <xpath expr="//span[@t-field='line.price_unit']" position="attributes">
+            <attribute name="t-if">line.show_price_info_report</attribute>
+        </xpath>
+        <xpath expr="//span[@t-field='line.discount']" position="attributes">
+            <attribute name="t-if">line.show_price_info_report</attribute>
+        </xpath>
+        <xpath expr="//span[@t-field='line.price_subtotal']" position="attributes">
+            <attribute name="t-if">line.show_price_info_report</attribute>
+        </xpath>
+        <xpath expr="//span[@t-field='line.price_total']" position="attributes">
+            <attribute name="t-if">line.show_price_info_report</attribute>
+        </xpath>
+    </template>
+</odoo>
