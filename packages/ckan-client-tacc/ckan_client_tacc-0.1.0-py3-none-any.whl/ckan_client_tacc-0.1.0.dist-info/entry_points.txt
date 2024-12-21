@@ -1,0 +1,3 @@
+[console_scripts]
+ckan-client-tacc=ckan_client_tacc.__main__:app
+
