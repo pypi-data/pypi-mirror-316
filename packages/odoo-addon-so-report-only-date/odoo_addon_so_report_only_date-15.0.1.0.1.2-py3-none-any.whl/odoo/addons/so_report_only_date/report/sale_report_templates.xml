@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2023 Ángel García de la Chica Herrera <angel.garcia@sygel.es>
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <template
+        id="sale_report_only_date_report_saleorder_document"
+        name="sale.report.only.date.report.saleorder.document"
+        inherit_id="sale.report_saleorder_document"
+    >
+        <xpath
+            expr="//div[@t-if=&quot;doc.date_order and doc.state not in ['draft','sent']&quot;]/p[@t-field='doc.date_order']"
+            position='attributes'
+        >
+            <attribute name="t-options">{'widget': 'date'}</attribute>
+        </xpath>
+    </template>
+</odoo>
