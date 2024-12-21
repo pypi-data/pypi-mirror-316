@@ -1,0 +1,17 @@
+{
+    "config": {
+        "step": {
+            "province": {
+                "data": {
+                    "province": "Estado"
+                }
+            },
+            "user": {
+                "data": {
+                    "country": "Pa\u00eds"
+                }
+            }
+        }
+    },
+    "title": "Feriado"
+}

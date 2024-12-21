@@ -1,0 +1,20 @@
+{
+    "config": {
+        "abort": {
+            "reconfigure_successful": "Uudelleenm\u00e4\u00e4ritys onnistui"
+        },
+        "step": {
+            "province": {
+                "data": {
+                    "province": "Maakunta"
+                }
+            },
+            "user": {
+                "data": {
+                    "country": "Maa"
+                }
+            }
+        }
+    },
+    "title": "Loma"
+}

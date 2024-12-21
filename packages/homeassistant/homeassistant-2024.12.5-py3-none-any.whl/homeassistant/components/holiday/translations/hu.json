@@ -1,0 +1,26 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "M\u00e1r konfigur\u00e1lva. Csak egyetlen konfigur\u00e1ci\u00f3 lehets\u00e9ges az orsz\u00e1g/tartom\u00e1ny/kateg\u00f3ri\u00e1k kombin\u00e1ci\u00f3j\u00e1ra.",
+            "reconfigure_successful": "\u00dajrakonfigur\u00e1l\u00e1s sikeres volt"
+        },
+        "step": {
+            "province": {
+                "data": {
+                    "province": "Tartom\u00e1ny"
+                }
+            },
+            "reconfigure": {
+                "data": {
+                    "province": "Tartom\u00e1ny"
+                }
+            },
+            "user": {
+                "data": {
+                    "country": "Orsz\u00e1g"
+                }
+            }
+        }
+    },
+    "title": "\u00dcnnep"
+}

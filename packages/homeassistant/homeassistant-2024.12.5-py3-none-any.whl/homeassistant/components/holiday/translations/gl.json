@@ -1,0 +1,16 @@
+{
+    "config": {
+        "step": {
+            "province": {
+                "data": {
+                    "province": "Provincia"
+                }
+            },
+            "user": {
+                "data": {
+                    "country": "Pa\u00eds"
+                }
+            }
+        }
+    }
+}
