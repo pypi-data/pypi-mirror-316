@@ -1,0 +1,8 @@
+httpx>=0.24.1
+pycryptodome>=3.17
+
+[dev]
+pytest>=7.0
+black>=23.0
+flake8>=6.0
+mypy>=0.991

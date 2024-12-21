@@ -1,0 +1,164 @@
+# **BitsCrunch Python SDK**
+
+The **BitsCrunch Python SDK** provides a simple and secure interface to interact with the BitsCrunch API. It includes functionality for signing requests, generating secure headers, and querying the network across different API versions.
+
+---
+
+## **Features**
+
+- 🚀 **Supports multiple API versions**: `/api/v1`, `/api/v2`, and future versions.
+- 🔐 **Automatic signing**: Ensures secure communication with the server by signing requests.
+- 🔧 **Flexible query support**: Handle query parameters and request bodies seamlessly.
+- 🛠️ **Built-in error handling**: Provides meaningful error messages for debugging.
+
+---
+
+## **Installation**
+
+Install the SDK using **pip**:
+
+```bash
+pip install bitscrunch-sdk
+```
+
+---
+
+## **Usage**
+
+### **1. Initialize the SDK**
+
+To begin using the SDK, you need:
+- An **access key JSON file** generated from the decentralization interface.
+- The desired API version (`/api/v1` or `/api/v2`).
+
+#### **Example: APIv1**
+
+```python
+from bitscrunch_sdk.apiv1 import APIv1
+
+# Load your access key
+access_key_file = "access-key.json"
+api_v1 = APIv1(access_key_file)
+```
+
+#### **Example: APIv2**
+
+```python
+from bitscrunch_sdk.apiv2 import APIv2
+
+# Load your access key
+access_key_file = "access-key.json"
+api_v2 = APIv2(access_key_file)
+```
+
+---
+
+### **2. Make a Request**
+
+#### **GET Request Example**
+
+```python
+try:
+    response = api_v1.request(
+        method="GET",
+        path="/market/metrics",
+        params={
+            "currency": "usd",
+            "blockchain": 1,
+            "metrics": "holders",
+            "time_range": "24h",
+            "include_washtrade": "true",
+        },
+    )
+    print("Response:", response)
+except Exception as e:
+    print("Error:", str(e))
+```
+
+#### **GET Request Async Example**
+
+```python
+try:
+    response = api_v1.request_async(
+        method="GET",
+        path="/market/metrics",
+        params={
+            "currency": "usd",
+            "blockchain": 1,
+            "metrics": "holders",
+            "time_range": "24h",
+            "include_washtrade": "true",
+        },
+    )
+    print("Response:", response)
+except Exception as e:
+    print("Error:", str(e))
+```
+
+---
+
+## **Best Practices**
+
+### 1. **Keep Your Access Key Secure**
+Store your `access-key.json` file securely and avoid committing it to source control.
+
+### 2. **Reuse the SDK Instance**
+Avoid creating multiple SDK instances for the same API version. Reuse a single instance:
+
+```python
+api_v1 = APIv1("access-key.json")
+# Reuse `api_v1` for multiple requests
+```
+
+### 3. **Handle Errors Gracefully**
+Use `try-except` blocks to manage API errors and display meaningful messages to the user.
+
+### 4. **Normalize Path Inputs**
+Always pass normalized paths (e.g., `"/market/metrics"`). The SDK will automatically handle leading/trailing slashes.
+
+### 5. **Use the Correct API Version**
+Ensure you're using the correct class (`APIv1`, `APIv2`, etc.) for the desired API version.
+
+---
+
+## **Error Handling**
+
+The SDK provides meaningful error messages for common scenarios:
+
+### **Invalid Access Key**
+```
+Error: Access key, base URL, and API prefix are required to initialize the SDK.
+```
+
+### **Invalid Request**
+```
+Error: HTTP 400: Invalid request parameters.
+```
+
+### **Server Errors**
+```
+Error: HTTP 500: Internal Server Error.
+```
+
+---
+
+## **Contributing**
+
+We welcome contributions! Please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Submit a pull request with a clear description of your changes.
+
+---
+
+## **License**
+
+This SDK is licensed under the [MIT License](LICENSE).
+
+---
+
+## **Support**
+
+For issues or questions, please contact [support@bitscrunch.com](mailto:support@bitscrunch.com) or open an issue on the [GitHub repository](https://github.com/bitscrunch/sdk).
+
