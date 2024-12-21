@@ -1,0 +1,2 @@
+[console_scripts]
+pistol = pistol.ep:ep
