@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: zato-ext-concurrent-log-handler
+Version: 0.9.1
+Home-page: https://zato.io
+Author: Zato Source s.r.o.
+License: https://www.apache.org/licenses/LICENSE-2.0
+Keywords: logging,windows,linux,unix,rotate,portalocker
+Platform: nt
+Platform: posix
+Classifier: Development Status :: 4 - Beta
+Classifier: Topic :: System :: Logging
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: Apache Software License
+License-File: LICENSE
