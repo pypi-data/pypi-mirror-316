@@ -1,0 +1,13 @@
+auto_code_review/__init__.py,sha256=vLK3L7WhulBn3S55xN8xvX5SVojdnFy1tCG5xz_LYUM,147
+auto_code_review/ai_analyzer.py,sha256=AmW9BzoSJcV9tECIiZtMt9EvNL9XoqMsoK7_93OYWW8,2503
+auto_code_review/cli.py,sha256=Mwtbo2TkP_UuDLweI5xacuIfXSovYr6YFdT-Rwsuf2U,407
+auto_code_review/core.py,sha256=Oe9miAD0pMjbTneMK-Ic0ddleaSJxzZzeYxloOnerCw,5346
+auto_code_review/github_client.py,sha256=rZfIvglJhXeuMBVmB0vt9rXYkbJWzcowPzUCgpiXYeQ,3682
+auto_code_review/utils.py,sha256=n0k8IJZ7tNe19z2zvjp42kr1OePcIQQKbrLKI71tgOE,2453
+auto_code_review/prompts/prompt_template.jinja2,sha256=4nc6VD4ykNbX2DlVvHMw2aVVwR_y-WpUN2lvuublPMg,1203
+auto_code_review-0.1.5.dist-info/LICENSE.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+auto_code_review-0.1.5.dist-info/METADATA,sha256=0a0E6RVfWsa8GfwInH_aQzlSaCth7dPzbuq1H6EYrKM,4804
+auto_code_review-0.1.5.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+auto_code_review-0.1.5.dist-info/entry_points.txt,sha256=jWEXBPxknzhuT1IsmbV3mEiltNXChWCyIaAzc2ws_uI,63
+auto_code_review-0.1.5.dist-info/top_level.txt,sha256=jtdzJXZT2PbLd5c9hG3LtKuwIN8uIdvyRTOjMMntOeE,17
+auto_code_review-0.1.5.dist-info/RECORD,,
