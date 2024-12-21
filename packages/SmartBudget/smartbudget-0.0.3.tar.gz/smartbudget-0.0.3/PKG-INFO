@@ -1,0 +1,157 @@
+Metadata-Version: 2.1
+Name: SmartBudget
+Version: 0.0.3
+Summary: Бибилиотека для удобного управления финансами, анализом расходов и бюджетированием
+Author: 
+Author-email: 1sergeiivanov1@mail.ru
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# SmartBudget
+
+## Описание
+SmartBudget — это мощная и удобная библиотека для управления личными финансами. Она предоставляет инструменты для учета доходов и расходов, анализа транзакций и бюджетирования. Библиотека идеально подходит для пользователей, которые хотят иметь полный 
+контроль над своими финансами и эффективно распределять бюджет.
+
+## Установка 
+
+```python
+pip install SmartBudget
+```
+# Основные возможности
+
+## Управление транзакциями (модуль TransactionManager)
+
+Класс TransactionManager предоставляет широкий функционал для работы с транзакциями:
+
+- Добавление транзакций: Вы можете добавить как доходы, так и расходы, указав их сумму, категорию и тип ("+" для доходов, "-" для расходов).
+
+- Удаление транзакций: Удаляйте отдельные транзакции по их номеру или очищайте список полностью.
+
+- Фильтрация по категориям: Получайте список транзакций, относящихся к конкретной категории.
+
+- Расчет баланса: Легко вычисляйте разницу между доходами и расходами.
+
+- Общий доход и расходы: Получайте суммарное значение доходов и расходов.
+
+**Пример использования:**
+```python
+from SmartBudget import TransactionManager
+
+# Создание менеджера транзакций
+manager = TransactionManager()
+
+# Добавление транзакций
+manager.add_transaction(5000, "Зарплата", "+")
+manager.add_transaction(1500, "Еда", "-")
+manager.add_transaction(200, "Транспорт", "-")
+
+# Вывод текущего баланса
+print("Баланс:", manager.get_balance())
+
+# Вывод общего дохода и расходов
+print("Доходы:", manager.total_income())
+print("Расходы:", manager.total_expenses())
+
+# Фильтрация транзакций по категории
+print(manager.filter_by_category("Еда"))
+
+# Удаление второй транзакции 
+manager.remove_transaction(2)
+print("Баланс после удаления:", manager.get_balance())
+
+# Очистка всех транзакций
+manager.clear_transactions()
+```
+## Анализ финансов (модуль Analysis)
+
+Класс Analysis включает в себя методы для анализа финансов:
+
+- Сводка по категориям: Считает разницу между доходами и расходами для каждой категории.
+
+- Процент расходов по категориям: Определяет, какой процент от общих расходов приходится на каждую категорию.
+
+**Пример использования:**
+
+```python
+from SmartBudget import Analysis, TransactionManager
+
+# Создание менеджера транзакций
+manager = TransactionManager()
+
+manager.add_transaction(500, "Зарплата", "+"),
+manager.add_transaction(200, "Еда", "-"),
+manager.add_transaction(200, "Транспорт", "-"),
+
+# Получаем список транзакций
+transactions = manager.transactions
+
+# Получение сводки по категориям
+summary = Analysis.category_summary(transactions)
+print("Сводка по категориям:", summary)
+
+# Расчет процентов расходов по категориям
+percentages = Analysis.percentage_spent(transactions)
+print("Процент расходов по категориям:", percentages)
+```
+
+## Бюджетирование (модуль Budget)
+
+Класс Budget предоставляет инструменты для управления лимитами расходов:
+
+- Установка лимитов: Определяйте максимальную сумму, которую можно потратить на каждую категорию.
+
+- Проверка превышения лимитов: Убедитесь, что расходы не превышают установленный лимит.
+
+- Список категорий с превышенными лимитами: Получите информацию о категориях, где расходы вышли за рамки бюджета.
+
+- Управление лимитами: Добавляйте, удаляйте или обновляйте лимиты.
+
+**Пример использования:**
+
+```python
+from SmartBudget import Budget, TransactionManager
+
+# Создание менеджера транзакций
+manager = TransactionManager()
+
+manager.add_transaction(500, "Зарплата", "+"),
+manager.add_transaction(200, "Еда", "-"),
+manager.add_transaction(200, "Транспорт", "-"),
+
+# Создание бюджета
+budget = Budget(1000)
+
+# Установка лимитов для категорий
+budget.set_category_limit("Еда", 150)
+budget.set_category_limit("Транспорт", 150)
+
+# Проверка превышения лимита (возвращает true/false)
+is_exceeded = budget.is_category_exceeded(manager.transactions, "Еда")
+if is_exceeded:
+    print("Превышен ли лимит по категории 'Еда'? Лимит превышен")
+else:
+    print("Превышен ли лимит по категории 'Еда'? Лимит не превышен")
+
+# Получение списка категорий с превышенными лимитами
+exceeded = budget.exceeded_categories(manager.transactions)
+print("Превышенные лимиты:", exceeded)
+
+# Удаление лимита для категории
+budget.remove_category_limit("Транспорт")
+
+# Получение текущих лимитов
+print("Текущие лимиты:", budget.get_category_limits())
+
+# Удаление всех лимитов
+budget.clear_limits()
+```
+
+Попробуйте SmartBudget и начните строить своё 
+финансовое благополучие! Если у вас есть вопросы, идеи, 
+или предложения, пишите нам. Мы ценим ваше мнение и будем рады помочь 
+вам максимально эффективно использовать SmartBudget.
