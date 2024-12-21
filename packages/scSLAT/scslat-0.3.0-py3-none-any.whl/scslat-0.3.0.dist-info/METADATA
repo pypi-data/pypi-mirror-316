@@ -1,0 +1,147 @@
+Metadata-Version: 2.1
+Name: scSLAT
+Version: 0.3.0
+Summary: A graph deep learning based tool to align single cell spatial omics data
+Home-page: https://github.com/gao-lab/SLAT
+License: MIT
+Keywords: bioinformatics,deep-learning,graph-neural-network,single-cell,spatial-omics
+Author: Chen-Rui Xia
+Author-email: xiachenrui@mail.cbi.pku.edu.cn
+Requires-Python: >=3.8
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Provides-Extra: dev
+Provides-Extra: docs
+Requires-Dist: anndata (>0.9)
+Requires-Dist: faiss-cpu
+Requires-Dist: h5py
+Requires-Dist: harmony-pytorch
+Requires-Dist: harmonypy
+Requires-Dist: ipython ; extra == "dev"
+Requires-Dist: jinja2 ; extra == "docs"
+Requires-Dist: joblib
+Requires-Dist: jupyter ; extra == "dev"
+Requires-Dist: kaleido
+Requires-Dist: leidenalg
+Requires-Dist: matplotlib (>3.1.2)
+Requires-Dist: myst-parser ; extra == "docs"
+Requires-Dist: nbformat ; extra == "dev"
+Requires-Dist: nbsphinx ; extra == "docs"
+Requires-Dist: numpy (>1.19,<2.0)
+Requires-Dist: opencv-python
+Requires-Dist: packaging
+Requires-Dist: pandas (>1.1,<2.0)
+Requires-Dist: papermill ; extra == "dev"
+Requires-Dist: parse ; extra == "dev"
+Requires-Dist: plotly
+Requires-Dist: pre-commit ; extra == "dev"
+Requires-Dist: pynvml
+Requires-Dist: pytest ; extra == "dev"
+Requires-Dist: pytest-cov ; extra == "dev"
+Requires-Dist: pyyaml
+Requires-Dist: scanpy (>1.9)
+Requires-Dist: scikit-learn (>0.21.2)
+Requires-Dist: scikit-misc
+Requires-Dist: scipy (>1.3)
+Requires-Dist: seaborn (>0.9)
+Requires-Dist: sphinx (<=6.2.1) ; extra == "docs"
+Requires-Dist: sphinx-autodoc-typehints ; extra == "docs"
+Requires-Dist: sphinx-copybutton ; extra == "docs"
+Requires-Dist: sphinx-intl ; extra == "docs"
+Requires-Dist: sphinx-rtd-theme ; extra == "docs"
+Requires-Dist: sphinx_gallery (>=0.8.2,<0.11) ; extra == "docs"
+Requires-Dist: torch (>=2.0,<2.4)
+Requires-Dist: torch_geometric (>=2.3.0,<2.6)
+Requires-Dist: torchaudio
+Requires-Dist: torchvision
+Project-URL: Documentation, https://slat.readthedocs.io/en/latest/
+Project-URL: Repository, https://github.com/gao-lab/SLAT
+Description-Content-Type: text/markdown
+
+[![stars-badge](https://img.shields.io/github/stars/gao-lab/SLAT?logo=GitHub&color=yellow)](https://github.com/gao-lab/SLAT/stargazers)
+[![pypi-badge](https://img.shields.io/pypi/v/scslat)](https://pypi.org/project/scslat)
+[![Downloads](https://static.pepy.tech/badge/scSLAT)](https://pepy.tech/project/scSLAT)
+[![build-badge](https://github.com/gao-lab/SLAT/actions/workflows/build.yml/badge.svg)](https://github.com/gao-lab/SLAT/actions/workflows/build.yml)
+[![docs-badge](https://readthedocs.org/projects/slat/badge/?version=latest)](https://slat.readthedocs.io/en/latest/?badge=latest)
+[![license-badge](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+
+# scSLAT: single cell spatial alignment tools
+**scSLAT** package implements the **SLAT** (**S**patial **L**inked **A**lignment **T**ool) model to align single cell spatial omics data.
+
+![Model architecture](docs/_static/Model.png)
+
+## Directory structure
+
+```
+.
+├── scSLAT/                  # Main Python package
+├── env/                     # Extra environment
+├── data/                    # Data files
+├── evaluation/              # SLAT evaluation pipeline
+├── benchmark/               # Benchmark pipeline
+├── case/                    # Case studies in paper
+├── docs/                    # Documentation files
+├── resource/                # Other useful resource
+├── pyproject.toml           # Python package metadata
+└── README.md
+```
+
+## [Tutorial](https://slat.readthedocs.io/en/latest/tutorials.html)
+Tutorial of `scSLAT` is [here](https://slat.readthedocs.io/en/latest/tutorials.html), if you have any question please open an issue on github
+
+<img src='docs/_static/imgalignment.gif' width='400'>
+
+
+## Installation
+
+### PyPI
+> **Note**
+> Installing `scSLAT` within a new [conda environment](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html) is recommended.
+
+> **Warning**
+> Old NVIDIA driver may raise error.
+
+First, we create a clean environment and install `scSLAT` from PyPI. Then we also need install dependencies for `pyg` manually via `install_pyg_dependencies`.
+
+```bash
+conda create -n scSLAT python=3.11 -y && conda activate scSLAT
+pip install scSLAT
+install_pyg_dependencies
+```
+
+### Docker
+You can pull the docker image directly from [Docker Hub](https://hub.docker.com/repository/docker/huhansan666666/slat) or refer to the [`Dockerfile`](Dockerfile) to build it.
+
+``` bash
+docker pull huhansan666666/slat:latest
+```
+
+### Development version
+For development purpose, clone this repo and install:
+
+```bash
+git clone git@github.com:gao-lab/SLAT.git && cd SLAT
+pip install -e ".[dev,docs]"
+install_pyg_dependencies
+```
+
+
+## Reproduce manuscript results
+1. Please follow the [`env/README.md`](env/README.md) to install all dependencies. Please checkout the repository to v0.2.1 before install `scSLAT`.
+2. Download and pre-process data follow the [`data/README.md`](data/README.md).
+3. Whole benchmark and evaluation procedure can be found in [`/benchmark`](benchmark/README.md) and [`/evaluation`](evaluation/README.md), respectively.
+4. Every case study is recorded in the [`/case`](case/README.md) directory in the form of jupyter notebook.
+

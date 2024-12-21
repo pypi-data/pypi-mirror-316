@@ -1,0 +1,3 @@
+[console_scripts]
+install_pyg_dependencies=scSLAT.utils:install_pyg_dep
+
