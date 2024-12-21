@@ -1,0 +1,8 @@
+iranges/IRanges.py,sha256=jFL6yCn5UkelYhLVk6BWfhLvDpoRPPaD-tJvWlrZAcI,74745
+iranges/__init__.py,sha256=GFvAKt1rQR0fhStdSNM9gRtkAvxBw97InynKxsGxFQc,608
+iranges/interval.py,sha256=NEdql-CqnGJyKUXR6nKfCY8ub57c0xDiqyerNHDRCGY,2431
+IRanges-0.3.0.dist-info/LICENSE.txt,sha256=RIPdBQEJwWOOJRmpXhEoW-hpkid8PbhtdBskBXyNkq0,1071
+IRanges-0.3.0.dist-info/METADATA,sha256=R9AGQGkKyttZPVr2047N2zfd_B-rNv_81GD4HY9iWIE,5945
+IRanges-0.3.0.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+IRanges-0.3.0.dist-info/top_level.txt,sha256=9REihK4vjFJokFKUMb_KMT7rUqsQhUO-RvZTPbM-fYM,8
+IRanges-0.3.0.dist-info/RECORD,,
