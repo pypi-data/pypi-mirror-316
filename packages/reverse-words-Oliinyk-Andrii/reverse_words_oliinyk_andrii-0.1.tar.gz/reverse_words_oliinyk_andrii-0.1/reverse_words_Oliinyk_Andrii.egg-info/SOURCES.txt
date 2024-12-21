@@ -1,0 +1,7 @@
+README.md
+setup.py
+reverse_words_Oliinyk_Andrii.egg-info/PKG-INFO
+reverse_words_Oliinyk_Andrii.egg-info/SOURCES.txt
+reverse_words_Oliinyk_Andrii.egg-info/dependency_links.txt
+reverse_words_Oliinyk_Andrii.egg-info/top_level.txt
+tests/test_reverse_words.py
