@@ -1,0 +1,5 @@
+[console_scripts]
+lint=flake8.main.cli:main
+test=pytest:main
+typecheck=mypy.main:main
+
