@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: csv_excel_azure
+Version: 1.1.1
+Summary: A package to convert CSV files to Excel on Azure Blob Storage.
+Home-page: https://github.com/vipulm124/csv-excel-azure
+Author: Vipul Malhotra
+Author-email: vipulm124@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: azure-storage-blob
+Requires-Dist: pandas
+Requires-Dist: openpyxl
+
+# CSV to Excel
+
+This project contains a python program that converts CSV files available at azure storage container to Excel format ans save at the same location.
+
+## Features
+
+- Convert CSV files available in azure blob storage and convert it to Excel format and save it at the same container location
+
+
+
+## Usage
+
+- To import in your project
+
+pip install csv-excel-azure
+
+
+from csv_excel_azure import AzureCSVToExcelConverter
+
+
+# Azure Blob Storage connection string
+connection_string = "<your-azure-connection-string>"
+
+# Initialize converter
+converter = AzureBlobConverter(connection_string="connection_string")
+
+# Convert CSV to Excel
+converter.csv_to_excel(container_name="container_name", csv_blob_name="file_name")
+
+
+
+
+## License
+
+This project is licensed under the MIT License.
