@@ -1,0 +1,927 @@
+{
+.appVersion = "3151";
+.formatVersion = 3;
+axes = (
+{
+name = Weight;
+tag = wght;
+},
+{
+name = Width;
+tag = wdth;
+}
+);
+date = "2023-12-13 14:28:10 +0000";
+familyName = GF_Greek_Expert;
+fontMaster = (
+{
+axesValues = (
+100,
+100
+);
+id = m01;
+metricValues = (
+{
+over = 16;
+pos = 800;
+},
+{
+over = 16;
+pos = 700;
+},
+{
+over = 16;
+pos = 500;
+},
+{
+over = -16;
+},
+{
+over = -16;
+pos = -200;
+},
+{
+over = -16;
+}
+);
+name = Regular;
+}
+);
+glyphs = (
+{
+glyphname = "numeral-greek.sc";
+},
+{
+glyphname = "lowernumeral-greek.sc";
+},
+{
+glyphname = anoteleia.sc;
+},
+{
+glyphname = questiongreek.sc;
+},
+{
+glyphname = tonos.sc;
+},
+{
+glyphname = dieresistonos.sc;
+},
+{
+glyphname = gamma_gamma;
+},
+{
+glyphname = lambda_lambda;
+},
+{
+glyphname = alpha.sc;
+},
+{
+glyphname = beta.sc;
+},
+{
+glyphname = gamma.sc;
+},
+{
+glyphname = delta.sc;
+},
+{
+glyphname = epsilon.sc;
+},
+{
+glyphname = zeta.sc;
+},
+{
+glyphname = eta.sc;
+},
+{
+glyphname = theta.sc;
+},
+{
+glyphname = iota.sc;
+},
+{
+glyphname = kappa.sc;
+},
+{
+glyphname = lambda.sc;
+},
+{
+glyphname = mu.sc;
+},
+{
+glyphname = nu.sc;
+},
+{
+glyphname = xi.sc;
+},
+{
+glyphname = omicron.sc;
+},
+{
+glyphname = pi.sc;
+},
+{
+glyphname = rho.sc;
+},
+{
+glyphname = sigma.sc;
+},
+{
+glyphname = tau.sc;
+},
+{
+glyphname = upsilon.sc;
+},
+{
+glyphname = phi.sc;
+},
+{
+glyphname = chi.sc;
+},
+{
+glyphname = psi.sc;
+},
+{
+glyphname = omega.sc;
+},
+{
+glyphname = iotatonos.sc;
+},
+{
+glyphname = iotadieresis.sc;
+},
+{
+glyphname = iotadieresistonos.sc;
+},
+{
+glyphname = upsilontonos.sc;
+},
+{
+glyphname = upsilondieresis.sc;
+},
+{
+glyphname = upsilondieresistonos.sc;
+},
+{
+glyphname = omicrontonos.sc;
+},
+{
+glyphname = omegatonos.sc;
+},
+{
+glyphname = alphatonos.sc;
+},
+{
+glyphname = epsilontonos.sc;
+},
+{
+glyphname = etatonos.sc;
+},
+{
+glyphname = stigma.sc;
+},
+{
+glyphname = digamma.sc;
+},
+{
+glyphname = koppa.sc;
+},
+{
+glyphname = sampi.sc;
+},
+{
+glyphname = kaiSymbol.sc;
+},
+{
+glyphname = alphapsili.sc;
+},
+{
+glyphname = alphadasia.sc;
+},
+{
+glyphname = alphapsilivaria.sc;
+},
+{
+glyphname = alphadasiavaria.sc;
+},
+{
+glyphname = alphapsilioxia.sc;
+},
+{
+glyphname = alphadasiaoxia.sc;
+},
+{
+glyphname = alphapsiliperispomeni.sc;
+},
+{
+glyphname = alphadasiaperispomeni.sc;
+},
+{
+glyphname = alphavaria.sc;
+},
+{
+glyphname = alphaoxia.sc;
+},
+{
+glyphname = alphaperispomeni.sc;
+},
+{
+glyphname = alphavrachy.sc;
+},
+{
+glyphname = alphamacron.sc;
+},
+{
+glyphname = alphaypogegrammeni.sc;
+},
+{
+glyphname = alphavariaypogegrammeni.sc;
+},
+{
+glyphname = alphaoxiaypogegrammeni.sc;
+},
+{
+glyphname = alphapsiliypogegrammeni.sc;
+},
+{
+glyphname = alphadasiaypogegrammeni.sc;
+},
+{
+glyphname = alphapsilivariaypogegrammeni.sc;
+},
+{
+glyphname = alphadasiavariaypogegrammeni.sc;
+},
+{
+glyphname = alphapsilioxiaypogegrammeni.sc;
+},
+{
+glyphname = alphadasiaoxiaypogegrammeni.sc;
+},
+{
+glyphname = alphapsiliperispomeniypogegrammeni.sc;
+},
+{
+glyphname = alphadasiaperispomeniypogegrammeni.sc;
+},
+{
+glyphname = alphaperispomeniypogegrammeni.sc;
+},
+{
+glyphname = epsilonpsili.sc;
+},
+{
+glyphname = epsilondasia.sc;
+},
+{
+glyphname = epsilonpsilivaria.sc;
+},
+{
+glyphname = epsilondasiavaria.sc;
+},
+{
+glyphname = epsilonpsilioxia.sc;
+},
+{
+glyphname = epsilondasiaoxia.sc;
+},
+{
+glyphname = epsilonvaria.sc;
+},
+{
+glyphname = epsilonoxia.sc;
+},
+{
+glyphname = etapsili.sc;
+},
+{
+glyphname = etadasia.sc;
+},
+{
+glyphname = etapsilivaria.sc;
+},
+{
+glyphname = etadasiavaria.sc;
+},
+{
+glyphname = etapsilioxia.sc;
+},
+{
+glyphname = etadasiaoxia.sc;
+},
+{
+glyphname = etapsiliperispomeni.sc;
+},
+{
+glyphname = etadasiaperispomeni.sc;
+},
+{
+glyphname = etavaria.sc;
+},
+{
+glyphname = etaoxia.sc;
+},
+{
+glyphname = etaperispomeni.sc;
+},
+{
+glyphname = etaypogegrammeni.sc;
+},
+{
+glyphname = etavariaypogegrammeni.sc;
+},
+{
+glyphname = etaoxiaypogegrammeni.sc;
+},
+{
+glyphname = etapsiliypogegrammeni.sc;
+},
+{
+glyphname = etadasiaypogegrammeni.sc;
+},
+{
+glyphname = etapsilivariaypogegrammeni.sc;
+},
+{
+glyphname = etadasiavariaypogegrammeni.sc;
+},
+{
+glyphname = etapsilioxiaypogegrammeni.sc;
+},
+{
+glyphname = etadasiaoxiaypogegrammeni.sc;
+},
+{
+glyphname = etapsiliperispomeniypogegrammeni.sc;
+},
+{
+glyphname = etadasiaperispomeniypogegrammeni.sc;
+},
+{
+glyphname = etaperispomeniypogegrammeni.sc;
+},
+{
+glyphname = iotapsili.sc;
+},
+{
+glyphname = iotadasia.sc;
+},
+{
+glyphname = iotapsilivaria.sc;
+},
+{
+glyphname = iotadasiavaria.sc;
+},
+{
+glyphname = iotapsilioxia.sc;
+},
+{
+glyphname = iotadasiaoxia.sc;
+},
+{
+glyphname = iotapsiliperispomeni.sc;
+},
+{
+glyphname = iotadasiaperispomeni.sc;
+},
+{
+glyphname = iotavaria.sc;
+},
+{
+glyphname = iotaoxia.sc;
+},
+{
+glyphname = iotaperispomeni.sc;
+},
+{
+glyphname = iotavrachy.sc;
+},
+{
+glyphname = iotamacron.sc;
+},
+{
+glyphname = iotadialytikavaria.sc;
+},
+{
+glyphname = iotadialytikaoxia.sc;
+},
+{
+glyphname = iotadialytikaperispomeni.sc;
+},
+{
+glyphname = omicronpsili.sc;
+},
+{
+glyphname = omicrondasia.sc;
+},
+{
+glyphname = omicronpsilivaria.sc;
+},
+{
+glyphname = omicrondasiavaria.sc;
+},
+{
+glyphname = omicronpsilioxia.sc;
+},
+{
+glyphname = omicrondasiaoxia.sc;
+},
+{
+glyphname = omicronvaria.sc;
+},
+{
+glyphname = omicronoxia.sc;
+},
+{
+glyphname = rhopsili.sc;
+},
+{
+glyphname = rhodasia.sc;
+},
+{
+glyphname = upsilonpsili.sc;
+},
+{
+glyphname = upsilondasia.sc;
+},
+{
+glyphname = upsilonpsilivaria.sc;
+},
+{
+glyphname = upsilondasiavaria.sc;
+},
+{
+glyphname = upsilonpsilioxia.sc;
+},
+{
+glyphname = upsilondasiaoxia.sc;
+},
+{
+glyphname = upsilonpsiliperispomeni.sc;
+},
+{
+glyphname = upsilondasiaperispomeni.sc;
+},
+{
+glyphname = upsilonvaria.sc;
+},
+{
+glyphname = upsilonoxia.sc;
+},
+{
+glyphname = upsilonperispomeni.sc;
+},
+{
+glyphname = upsilonvrachy.sc;
+},
+{
+glyphname = upsilonmacron.sc;
+},
+{
+glyphname = upsilondialytikavaria.sc;
+},
+{
+glyphname = upsilondialytikaoxia.sc;
+},
+{
+glyphname = upsilondialytikaperispomeni.sc;
+},
+{
+glyphname = omegapsili.sc;
+},
+{
+glyphname = omegadasia.sc;
+},
+{
+glyphname = omegapsilivaria.sc;
+},
+{
+glyphname = omegadasiavaria.sc;
+},
+{
+glyphname = omegapsilioxia.sc;
+},
+{
+glyphname = omegadasiaoxia.sc;
+},
+{
+glyphname = omegapsiliperispomeni.sc;
+},
+{
+glyphname = omegadasiaperispomeni.sc;
+},
+{
+glyphname = omegavaria.sc;
+},
+{
+glyphname = omegaoxia.sc;
+},
+{
+glyphname = omegaperispomeni.sc;
+},
+{
+glyphname = omegaypogegrammeni.sc;
+},
+{
+glyphname = omegavariaypogegrammeni.sc;
+},
+{
+glyphname = omegaoxiaypogegrammeni.sc;
+},
+{
+glyphname = omegapsiliypogegrammeni.sc;
+},
+{
+glyphname = omegadasiaypogegrammeni.sc;
+},
+{
+glyphname = omegapsilivariaypogegrammeni.sc;
+},
+{
+glyphname = omegadasiavariaypogegrammeni.sc;
+},
+{
+glyphname = omegapsilioxiaypogegrammeni.sc;
+},
+{
+glyphname = omegadasiaoxiaypogegrammeni.sc;
+},
+{
+glyphname = omegapsiliperispomeniypogegrammeni.sc;
+},
+{
+glyphname = omegadasiaperispomeniypogegrammeni.sc;
+},
+{
+glyphname = omegaperispomeniypogegrammeni.sc;
+},
+{
+glyphname = prosgegrammeni.sc;
+},
+{
+glyphname = Alphaprosgegrammeni.sc.ss01;
+},
+{
+glyphname = Alphapsiliprosgegrammeni.sc.ss01;
+},
+{
+glyphname = Alphadasiaprosgegrammeni.sc.ss01;
+},
+{
+glyphname = Alphapsilivariaprosgegrammeni.sc.ss01;
+},
+{
+glyphname = Alphadasiavariaprosgegrammeni.sc.ss01;
+},
+{
+glyphname = Alphapsilioxiaprosgegrammeni.sc.ss01;
+},
+{
+glyphname = Alphadasiaoxiaprosgegrammeni.sc.ss01;
+},
+{
+glyphname = Alphapsiliperispomeniprosgegrammeni.sc.ss01;
+},
+{
+glyphname = Alphadasiaperispomeniprosgegrammeni.sc.ss01;
+},
+{
+glyphname = Etaprosgegrammeni.sc.ss01;
+},
+{
+glyphname = Etapsiliprosgegrammeni.sc.ss01;
+},
+{
+glyphname = Etadasiaprosgegrammeni.sc.ss01;
+},
+{
+glyphname = Etapsilivariaprosgegrammeni.sc.ss01;
+},
+{
+glyphname = Etadasiavariaprosgegrammeni.sc.ss01;
+},
+{
+glyphname = Etapsilioxiaprosgegrammeni.sc.ss01;
+},
+{
+glyphname = Etadasiaoxiaprosgegrammeni.sc.ss01;
+},
+{
+glyphname = Etapsiliperispomeniprosgegrammeni.sc.ss01;
+},
+{
+glyphname = Etadasiaperispomeniprosgegrammeni.sc.ss01;
+},
+{
+glyphname = Omegaprosgegrammeni.sc.ss01;
+},
+{
+glyphname = Omegapsiliprosgegrammeni.sc.ss01;
+},
+{
+glyphname = Omegadasiaprosgegrammeni.sc.ss01;
+},
+{
+glyphname = Omegapsilivariaprosgegrammeni.sc.ss01;
+},
+{
+glyphname = Omegadasiavariaprosgegrammeni.sc.ss01;
+},
+{
+glyphname = Omegapsilioxiaprosgegrammeni.sc.ss01;
+},
+{
+glyphname = Omegadasiaoxiaprosgegrammeni.sc.ss01;
+},
+{
+glyphname = Omegapsiliperispomeniprosgegrammeni.sc.ss01;
+},
+{
+glyphname = Omegadasiaperispomeniprosgegrammeni.sc.ss01;
+},
+{
+glyphname = alphaypogegrammeni.sc.ss01;
+},
+{
+glyphname = alphavariaypogegrammeni.sc.ss01;
+},
+{
+glyphname = alphaoxiaypogegrammeni.sc.ss01;
+},
+{
+glyphname = alphapsiliypogegrammeni.sc.ss01;
+},
+{
+glyphname = alphadasiaypogegrammeni.sc.ss01;
+},
+{
+glyphname = alphapsilivariaypogegrammeni.sc.ss01;
+},
+{
+glyphname = alphadasiavariaypogegrammeni.sc.ss01;
+},
+{
+glyphname = alphapsilioxiaypogegrammeni.sc.ss01;
+},
+{
+glyphname = alphadasiaoxiaypogegrammeni.sc.ss01;
+},
+{
+glyphname = alphapsiliperispomeniypogegrammeni.sc.ss01;
+},
+{
+glyphname = alphadasiaperispomeniypogegrammeni.sc.ss01;
+},
+{
+glyphname = alphaperispomeniypogegrammeni.sc.ss01;
+},
+{
+glyphname = etaypogegrammeni.sc.ss01;
+},
+{
+glyphname = etavariaypogegrammeni.sc.ss01;
+},
+{
+glyphname = etaoxiaypogegrammeni.sc.ss01;
+},
+{
+glyphname = etapsiliypogegrammeni.sc.ss01;
+},
+{
+glyphname = etadasiaypogegrammeni.sc.ss01;
+},
+{
+glyphname = etapsilivariaypogegrammeni.sc.ss01;
+},
+{
+glyphname = etadasiavariaypogegrammeni.sc.ss01;
+},
+{
+glyphname = etapsilioxiaypogegrammeni.sc.ss01;
+},
+{
+glyphname = etadasiaoxiaypogegrammeni.sc.ss01;
+},
+{
+glyphname = etapsiliperispomeniypogegrammeni.sc.ss01;
+},
+{
+glyphname = etadasiaperispomeniypogegrammeni.sc.ss01;
+},
+{
+glyphname = etaperispomeniypogegrammeni.sc.ss01;
+},
+{
+glyphname = omegaypogegrammeni.sc.ss01;
+},
+{
+glyphname = omegavariaypogegrammeni.sc.ss01;
+},
+{
+glyphname = omegaoxiaypogegrammeni.sc.ss01;
+},
+{
+glyphname = omegapsiliypogegrammeni.sc.ss01;
+},
+{
+glyphname = omegadasiaypogegrammeni.sc.ss01;
+},
+{
+glyphname = omegapsilivariaypogegrammeni.sc.ss01;
+},
+{
+glyphname = omegadasiavariaypogegrammeni.sc.ss01;
+},
+{
+glyphname = omegapsilioxiaypogegrammeni.sc.ss01;
+},
+{
+glyphname = omegadasiaoxiaypogegrammeni.sc.ss01;
+},
+{
+glyphname = omegapsiliperispomeniypogegrammeni.sc.ss01;
+},
+{
+glyphname = omegadasiaperispomeniypogegrammeni.sc.ss01;
+},
+{
+glyphname = omegaperispomeniypogegrammeni.sc.ss01;
+},
+{
+glyphname = Alpha.sups;
+},
+{
+glyphname = Beta.sups;
+},
+{
+glyphname = Gamma.sups;
+},
+{
+glyphname = Delta.sups;
+},
+{
+glyphname = Epsilon.sups;
+},
+{
+glyphname = Zeta.sups;
+},
+{
+glyphname = Eta.sups;
+},
+{
+glyphname = Theta.sups;
+},
+{
+glyphname = Iota.sups;
+},
+{
+glyphname = Kappa.sups;
+},
+{
+glyphname = Lambda.sups;
+},
+{
+glyphname = Mu.sups;
+},
+{
+glyphname = Nu.sups;
+},
+{
+glyphname = Xi.sups;
+},
+{
+glyphname = Omicron.sups;
+},
+{
+glyphname = Pi.sups;
+},
+{
+glyphname = Rho.sups;
+},
+{
+glyphname = Sigma.sups;
+},
+{
+glyphname = Tau.sups;
+},
+{
+glyphname = Upsilon.sups;
+},
+{
+glyphname = Phi.sups;
+},
+{
+glyphname = Chi.sups;
+},
+{
+glyphname = Psi.sups;
+},
+{
+glyphname = Omega.sups;
+},
+{
+glyphname = alpha.sups;
+},
+{
+glyphname = beta.sups;
+},
+{
+glyphname = gamma.sups;
+},
+{
+glyphname = delta.sups;
+},
+{
+glyphname = epsilon.sups;
+},
+{
+glyphname = zeta.sups;
+},
+{
+glyphname = eta.sups;
+},
+{
+glyphname = theta.sups;
+},
+{
+glyphname = iota.sups;
+},
+{
+glyphname = kappa.sups;
+},
+{
+glyphname = lambda.sups;
+},
+{
+glyphname = mu.sups;
+},
+{
+glyphname = nu.sups;
+},
+{
+glyphname = xi.sups;
+},
+{
+glyphname = omicron.sups;
+},
+{
+glyphname = pi.sups;
+},
+{
+glyphname = rho.sups;
+},
+{
+glyphname = sigmafinal.sups;
+},
+{
+glyphname = sigma.sups;
+},
+{
+glyphname = tau.sups;
+},
+{
+glyphname = upsilon.sups;
+},
+{
+glyphname = phi.sups;
+},
+{
+glyphname = chi.sups;
+},
+{
+glyphname = psi.sups;
+},
+{
+glyphname = omega.sups;
+}
+);
+instances = (
+);
+kerningLTR = {
+};
+metrics = (
+{
+type = ascender;
+},
+{
+type = "cap height";
+},
+{
+type = "x-height";
+},
+{
+type = baseline;
+},
+{
+type = descender;
+},
+{
+type = "italic angle";
+}
+);
+stems = (
+);
+unitsPerEm = 1000;
+versionMajor = 1;
+versionMinor = 0;
+}
