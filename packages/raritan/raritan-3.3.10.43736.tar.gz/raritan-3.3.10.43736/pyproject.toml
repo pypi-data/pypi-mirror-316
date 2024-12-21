@@ -1,0 +1,22 @@
+[project]
+name = "raritan"
+version = "3.3.10.43736"
+authors = [
+  { name="Raritan OSS Team", email="oss@raritan.com" },
+]
+description = "Raritan/Servertech PDU JSON-RPC bindings"
+readme = "README.md"
+license = {text = "BSD-3-Clause"}
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: BSD License",
+    "Operating System :: OS Independent",
+]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project.urls]
+Homepage = "https://www.raritan.com/support"
