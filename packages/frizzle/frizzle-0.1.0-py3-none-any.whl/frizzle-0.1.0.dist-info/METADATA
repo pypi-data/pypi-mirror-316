@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: frizzle
+Version: 0.1.0
+Summary: Combine spectra by forward modelling
+Author-email: "Andrew R. Casey" <andrew.casey@monash.edu>, "David W. Hogg" <david.hogg@nyu.edu>
+Maintainer-email: Andy Casey <andrew.casey@monash.edu>
+License: LICENSE.md
+Keywords: astronomy software
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: finufft
+Requires-Dist: pylops
+Requires-Dist: scipy
+Requires-Dist: sklearn
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: pytest-cov; extra == "dev"
+Requires-Dist: pytest-sugar; extra == "dev"
+Requires-Dist: pre-commit; extra == "dev"
+Requires-Dist: black; extra == "dev"
+
+# NoDataInterpolation
+advice to the spectroscopists
+
+## Authors:
+- **David W Hogg** (NYU) (MPIA) (Flatiron)
+- **Andy Casey** (Monash)
+
+## License:
+Copyright 2022 the authors.
+All code herein is licensed for reuse under the open-source *MIT License*.
+See the file `LICENSE` for more details.
+
+## Contributors / Acknowledgements:
+- **Matt Daunt** (NYU)
+- **Adrian Price-Whelan** (Flatiron)
+- The **Astronomical Data Group** at the Flatiron Institute.
+
+## Projects:
+- Write a note for the astronomical community.
+- Release simple code or pseudo-code for the astronomical community.
