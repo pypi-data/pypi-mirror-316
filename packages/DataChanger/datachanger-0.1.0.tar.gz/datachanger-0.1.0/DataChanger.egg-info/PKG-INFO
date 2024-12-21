@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: DataChanger
+Version: 0.1.0
+Summary: A class for dot notation access to dictionaries
+Author: Adarsh Dhiman
+Author-email: adarshdhiman007@gmail.com
+Requires-Python: >=3.6
+License-File: LICENSE
+Requires-Dist: Cython
