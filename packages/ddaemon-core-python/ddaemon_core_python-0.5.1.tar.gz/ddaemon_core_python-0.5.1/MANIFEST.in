@@ -1,0 +1,15 @@
+recursive-include ddcore/migrations *.py
+recursive-include docs *
+recursive-include tests *.py
+
+include LICENSE
+include VERSION
+include CHANGELOG.md
+include CODE_OF_CONDUCT.md
+include HOW_TO_CONTRIBUTE.md
+include README.md
+include Dockerfile
+include Makefile
+include docker-compose.yml docker-compose.local.yml docker-compose.test.yml
+include manage.py
+include tox.ini
