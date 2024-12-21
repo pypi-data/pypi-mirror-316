@@ -1,0 +1,10 @@
+multiassayexperiment/MultiAssayExperiment.py,sha256=h20RJzx9n5VqR8QHzg0IvoFtQrpsFCgGsNp73STVE4M,45920
+multiassayexperiment/__init__.py,sha256=1UfyVXsPNeZ7r7DgmCA05THIn1tSI6miV9QvUbxWPCU,683
+multiassayexperiment/io/__init__.py,sha256=8JMVTCahjTSrcn86sa2bIaW2m_srm0aiLnlHLLuajj0,60
+multiassayexperiment/io/h5ad.py,sha256=AkQqyP_nr_2qVsuYQe9-FBS8zJdnGHhT7EC7cOxyLVM,692
+multiassayexperiment/io/interface.py,sha256=uVe8AaTmDCPWik8QQs5ET-HvmNhYxTCtficOb3INIa8,2885
+MultiAssayExperiment-0.5.0.dist-info/LICENSE.txt,sha256=pkwgQ8WMTR1-Qa0qwIaBf5I1-8OGN1B20E_eeDg-bqc,1082
+MultiAssayExperiment-0.5.0.dist-info/METADATA,sha256=ui8M9JujC_eJ8Wi8_4jwNTggTbtqHAZ3rflbAYS9jw4,5873
+MultiAssayExperiment-0.5.0.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+MultiAssayExperiment-0.5.0.dist-info/top_level.txt,sha256=c2FZrOyX5ZhMQRtdDeV43NDbMeqZL3ZvMG52Ptaiqu0,21
+MultiAssayExperiment-0.5.0.dist-info/RECORD,,
