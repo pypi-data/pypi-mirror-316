@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = {find = {exclude = [
+    "*.__pycache__",
+    "*.__pycache__.*",
+    "*.*.__pycache__",
+    "*.egg-info",
+    "tests",
+    "tests.*"
+]}}
+
+[project]
+name = "ccms"
+version = "0.1.0"
+description = "A Contract and Compliance Management System using Python and Supabase"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {file = "LICENSE"}
+authors = [
+    {name = "Vinayak Rastogi", email = "rvinayak108@gmail.com"}
+]
+
+[project.urls]
+Homepage = "https://github.com/VinVorteX/ccms"
