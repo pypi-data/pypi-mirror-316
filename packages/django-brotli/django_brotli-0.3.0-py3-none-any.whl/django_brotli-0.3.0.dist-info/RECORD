@@ -1,0 +1,7 @@
+django_brotli/__init__.py,sha256=SxPDZF_ouplhy8hSFMzNxQ8_5jRIsLv1PJiQOGpLC6U,530
+django_brotli/middleware.py,sha256=qhN511rsnHHRIhPzzGI1QCCiJ26v-0blB7AtGOLoy3c,3536
+django_brotli/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_brotli-0.3.0.dist-info/LICENSE,sha256=hcslAfqhRPgBj8MZXfBYISOkJDd3Zt8P1DICdidiGbA,1077
+django_brotli-0.3.0.dist-info/METADATA,sha256=fgrCOZNdYl26HfLyjNImjynI-mnR44VKaHDfLW46rNA,3780
+django_brotli-0.3.0.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+django_brotli-0.3.0.dist-info/RECORD,,
