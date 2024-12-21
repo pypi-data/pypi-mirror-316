@@ -1,0 +1,19 @@
+database:
+  type: {{ db_type }}
+  host: localhost
+  user: db_user
+  password: user_password
+  port: 3006
+
+fits_files:
+  paths:
+    - path/to/dir
+    - path/to/file.fits
+
+# Delete rows from above listed files from tables which are not listed below
+delete_rows_from_missing_tables: False 
+
+  tables:
+    - name: HOUSEKEEPING
+    date_column: timestamp # column containing dates, so that they will be properly converted
+    - name: OTHER_TABLE 
