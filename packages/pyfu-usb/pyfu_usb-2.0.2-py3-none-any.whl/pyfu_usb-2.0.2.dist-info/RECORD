@@ -1,0 +1,11 @@
+pyfu_usb/__init__.py,sha256=uBm6eBgkHpAxAtGDcCWif88KEgxYMc3u-32PlsX0MXY,9832
+pyfu_usb/__main__.py,sha256=byl8WJP8tQ8qm2uf3qxenA8e20pFt1nbgJLG_D7S_Kk,3618
+pyfu_usb/descriptor.py,sha256=qQfkbEG0zfNv9RldUgGPpVT8fKFYt9FN_VEAOsqrrTs,3785
+pyfu_usb/dfu.py,sha256=dNAjTjB7EBGxMD_KqK81Czl1chHltYsGt82W-vUGe4g,3201
+pyfu_usb/dfuse.py,sha256=vNHLcx7zFtStfC4gPtVyUT8FR_iMpWZdX09Nr_aOxTU,921
+pyfu_usb/py.typed,sha256=SVeFlM-ErPdUpDhPY5KKqyQ4TkaUwNkv8FA21YScsWQ,57
+pyfu_usb-2.0.2.dist-info/METADATA,sha256=dtdMBJLypgK5SO-KDgUUJhTHEJfhkaf8OCf-kVu_j14,3460
+pyfu_usb-2.0.2.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+pyfu_usb-2.0.2.dist-info/entry_points.txt,sha256=_lUgL9h3E6AtB-9Nx_VZIZwnMAlvqONhxZ828qvvRxw,52
+pyfu_usb-2.0.2.dist-info/licenses/LICENSE,sha256=aqQBqroGSFn9ppvMeLAANwDkKWrCOdrjjewmYTg39yk,1208
+pyfu_usb-2.0.2.dist-info/RECORD,,
