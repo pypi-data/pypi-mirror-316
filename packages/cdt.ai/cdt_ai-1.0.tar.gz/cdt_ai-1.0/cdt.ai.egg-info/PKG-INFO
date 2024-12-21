@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: cdt.ai
+Version: 1.0
+Summary: Cognitive Data Transformer for text, image, audio, and video processing
+Home-page: https://github.com/xtechie12345
+Author: Tanmay Dumbre
+Author-email: tanmaymdumbrek@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: scikit-learn
+Requires-Dist: whisper
+Requires-Dist: librosa
+Requires-Dist: opencv-python
+Requires-Dist: easyocr
+Requires-Dist: pydub
+Requires-Dist: moviepy
+Requires-Dist: torch
+Requires-Dist: sentence-transformers
+Requires-Dist: pillow
+Requires-Dist: pdfplumber
+Requires-Dist: PyMuPDF
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: seaborn
+Requires-Dist: regex
+Requires-Dist: tqdm
+Requires-Dist: flask
+Requires-Dist: gensim
+Requires-Dist: fuzzywuzzy
+Requires-Dist: pyyaml
+Requires-Dist: python-magic
+
+# Cognitive Data Transformer (CDT)
+
+CDT is a versatile library designed to process and analyze multi-modal data (text, images, audio, and documents) and generate actionable insights using advanced AI tools.
+
+## Installation
+
+To install the CDT library, run the following command:
+
