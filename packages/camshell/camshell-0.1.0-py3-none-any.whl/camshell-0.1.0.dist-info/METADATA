@@ -1,0 +1,69 @@
+Metadata-Version: 2.1
+Name: camshell
+Version: 0.1.0
+Summary: A simple tool to stream camera in shell.
+License: MIT
+Author: Aref Mehr
+Author-email: aref.moqadam@gmail.com
+Requires-Python: >=3.13,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: asciimatics (>=1.15.0,<2.0.0)
+Requires-Dist: click (>=8.1.7,<9.0.0)
+Requires-Dist: opencv-python (>=4.10.0.84,<5.0.0.0)
+Description-Content-Type: text/markdown
+
+# CamShell
+
+CamShell, A simple way to stream a camera as ASCII art directly in a terminal.
+
+
+## Installation
+
+Using pip:
+
+```bash
+pip install camshell
+```
+
+## How to Use
+
+CLI Usage:
+
+After installation, you can run the `camshell` command-line tool or by providing
+the device id.
+
+```bash
+# Run the default device
+camshell
+
+# Or run by device-id
+camshell 1
+
+# Or a device path specifically
+camshell /dev/video3
+```
+
+## Python API Usage
+
+If you’d like to use XDisplay in your Python code, here’s how:
+
+```python
+from camshell.xdisplay import XDisplay as CamShellDisplay
+
+# simply call:
+device_id = "/dev/video0"
+CamShellDisplay.start(device_id)
+```
+
+Run on a custom screen
+
+```python
+from asciimatics.screen import Screen
+from camshell.xdisplay import XDisplay as CamShellDisplay
+
+with XDisplay(cap_id="/dev/video0") as display:
+    Screen.wrapper(display.run)
+```
+
