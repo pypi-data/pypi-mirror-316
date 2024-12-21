@@ -1,0 +1,10 @@
+lib/__init__.py,sha256=qvYONFTO2fLrsk1ZlNgc3O9gzW4XDvF9EDx_bQhBtgU,72
+lib/cli.py,sha256=cN8iQza5rFPkMpWJ0GBWjwJxhixUnmoX02AAOKB34Lk,2214
+lib/defense.py,sha256=hJM-bcuP1zoL8pFSteBLcpGdHcwMhu425-bo5tfYeF8,984
+lib/event.py,sha256=ifXynaO7NWKG0z_VPVi6X4VCfC7LDMwL1y13NV1V5nQ,983
+lib/framework.py,sha256=KzV_xwiKRlq-Pd6KcEvzJItQgszC2z7OssoX66c4MjU,7536
+PySimpleObfuscate-0.3.dist-info/METADATA,sha256=UINf9BhRZzXZi-Zfu9Y9MUzFjVDwa_yfzeneFl3g4bY,2977
+PySimpleObfuscate-0.3.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+PySimpleObfuscate-0.3.dist-info/entry_points.txt,sha256=gZce8E1-ql3UdKNjM4YPlqgPZu7i3Mmty1EAzvuMiP0,62
+PySimpleObfuscate-0.3.dist-info/top_level.txt,sha256=oyXcrLgLICoBS0ILk_wZBhkAAY-M4hbQoMsA1hDsf5c,4
+PySimpleObfuscate-0.3.dist-info/RECORD,,
