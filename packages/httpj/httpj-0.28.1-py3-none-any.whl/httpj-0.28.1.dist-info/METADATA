@@ -1,0 +1,101 @@
+Metadata-Version: 2.4
+Name: httpj
+Version: 0.28.1
+Summary: HTTPX fork with custom JSON serializer support
+Project-URL: Changelog, https://github.com/gtors/httpj/blob/master/CHANGELOG.md
+Project-URL: Documentation, https://www.python-httpx.org
+Project-URL: Homepage, https://github.com/gtors/httpj
+Project-URL: Source, https://github.com/gtors/httpj
+Author-email: Andrey Torsunov <andrey.torsunov@gmail.com>, Tom Christie <tom@tomchristie.com>
+License-Expression: BSD-3-Clause
+License-File: LICENSE.md
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Web Environment
+Classifier: Framework :: AsyncIO
+Classifier: Framework :: Trio
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Internet :: WWW/HTTP
+Requires-Python: >=3.8
+Requires-Dist: anyio
+Requires-Dist: certifi
+Requires-Dist: httpcore==1.*
+Requires-Dist: idna
+Provides-Extra: brotli
+Requires-Dist: brotli; (platform_python_implementation == 'CPython') and extra == 'brotli'
+Requires-Dist: brotlicffi; (platform_python_implementation != 'CPython') and extra == 'brotli'
+Provides-Extra: cli
+Requires-Dist: click==8.*; extra == 'cli'
+Requires-Dist: pygments==2.*; extra == 'cli'
+Requires-Dist: rich<14,>=10; extra == 'cli'
+Provides-Extra: http2
+Requires-Dist: h2<5,>=3; extra == 'http2'
+Provides-Extra: socks
+Requires-Dist: socksio==1.*; extra == 'socks'
+Provides-Extra: zstd
+Requires-Dist: zstandard>=0.18.0; extra == 'zstd'
+Description-Content-Type: text/markdown
+
+<p align="center">
+  <a href="https://www.python-httpx.org/"><img width="350" height="208" src="https://raw.githubusercontent.com/gtors/httpj/master/docs/img/butterfly.png" alt='HTTPJ'></a>
+</p>
+
+<p align="center"><strong>HTTPJ</strong> <em>HTTPX fork with custom JSON serializer support.</em></p>
+
+<p align="center">
+<a href="https://github.com/gtors/httpj/actions">
+    <img src="https://github.com/gtors/httpj/workflows/Test%20Suite/badge.svg" alt="Test Suite">
+</a>
+<a href="https://pypi.org/project/httpj/">
+    <img src="https://badge.fury.io/py/httpj.svg" alt="Package version">
+</a>
+</p>
+
+- HTTPJ is nearly identical to HTTPX. The main difference lies in two extra parameters, `json_serialize` and `json_deserialize`, which afford you precise control over the serialization and deserialization of your objects in JSON format.
+- HTTPJ will remain synchronized with the mainstream HTTPX until similar functionality emerges.
+
+---
+
+Install HTTPJ using pip:
+
+```shell
+pip install httpj
+```
+
+Now, let's get started:
+
+```python
+import datetime
+import pprint
+
+import httpj
+import orjson
+
+
+resp = httpj.post(
+    "https://postman-echo.com/post",
+    json={"dt": datetime.datetime.utcnow()},
+    json_serialize=lambda j: orjson.dumps(j, option=orjson.OPT_NAIVE_UTC),  # optional
+    json_deserialize=orjson.loads,  # optional
+)
+pprint.pprint(resp.json(), indent=4)
+```
+
+## Release Information
+
+### Fixed
+
+* Reintroduced supposedly-private `URLTypes` shortcut. (#2673)
+
+
+---
+
+[Full changelog](https://github.com/gtors/httpj/blob/master/CHANGELOG.md)
