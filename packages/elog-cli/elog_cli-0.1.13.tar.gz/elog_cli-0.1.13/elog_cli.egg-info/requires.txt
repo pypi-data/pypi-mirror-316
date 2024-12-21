@@ -1,0 +1,10 @@
+click
+click-loglevel
+click_repl
+pytest
+requests
+jwt
+attrs
+httpx
+python-dateutil
+openapi-python-client
