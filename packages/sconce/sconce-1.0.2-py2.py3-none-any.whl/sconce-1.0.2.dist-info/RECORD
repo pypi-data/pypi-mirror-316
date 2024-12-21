@@ -1,0 +1,11 @@
+sconce/__init__.py,sha256=gS0IR-pH6wWcUq-3es4SozDMvXDyNQBa9iC9AbF1238,218
+sconce/model_analyzer.py,sha256=rcOCt0nJTIAx4StQ6oDTVYO4_9LRoCtHLUMLZMHsPUY,15150
+sconce/perf.py,sha256=iuZoKzJhTuu0dU8bdkP4vm3CH-lJLYObqtQeyN-TTTg,16837
+sconce/pruner.py,sha256=mAcS139WaRMmSzrMN9K0Xj7zZCyyV9MrySOZmJHTF14,22365
+sconce/quanter.py,sha256=77LmrKFjqM_oM1sebVPYIh5b5_bnv9Ry1cSYVtDVwHM,11483
+sconce/sconce.py,sha256=DG2yGzKO3Weq-FBAxH2Li-0HjYTSzhqooyRfKQQQeak,15832
+sconce-1.0.2.dist-info/LICENSE.txt,sha256=gmdwPynrtCIlQrln6SkqQ5TLwDHIXiU5TL6iLEWB55s,1073
+sconce-1.0.2.dist-info/METADATA,sha256=nBvDFW0-GHSltHUFVDoT6cmr4bpaXMogwNfjZF9T30Y,20711
+sconce-1.0.2.dist-info/WHEEL,sha256=Kh9pAotZVRFj97E15yTA4iADqXdQfIVTHcNaZTjxeGM,110
+sconce-1.0.2.dist-info/top_level.txt,sha256=83mqiXdE0Fk22qcnyw_Pt-vkBIsEJyptOiRKFUCUGzU,7
+sconce-1.0.2.dist-info/RECORD,,
