@@ -1,0 +1,44 @@
+---
+- secret:
+    name: SECRET_OPENSTACK_HEALTH_MIDDLEWARE
+    data:
+      PYPI_API_TOKEN: !encrypted/pkcs1-oaep
+        - ZpWIB/LYMUsvxVi5xmuJpf62TIrvBR3R37ePDMvksb5dH1fUHtWxxKH4Mg0rpP/4oTK0h
+          Vp9VfCiP/Lm72tqblIWII3aeoiftWoKNapo/TCAfQDIW096ZnohD7eH8rnoMxtuwTmdwJ
+          9wUcOkFjW1KkrQO05Kz5bOEJv/FXvdUb7a74R4oeEFHDssfYM+uG9cjFjUyThEyhCOBAj
+          irohJft7yDUOzARW/L3ocJT0je9nxY6x8eVp88mE5vE1K0YvOQF7vfYlOok5isVYFTE2P
+          NnX1Ve3m95ji7B/FNRwXzcUyyY7/j0gh1fAeDcD76tS5GEHlTBuyo7ljpo4F3eoPUtI8g
+          ch6RrZT1idNYsIZlKQCuXcoulvZOIykNF4iQQKyrMkwePXDGx8hkGEaTaDfv8381W4IhE
+          eWH4hnuf0SCrlN7qnuejm2rXTNek+ZkrIYi8MpG1CUjGDDdpx3UG6Qftqx7f1gQvzS3Fc
+          qnRGBWQ8PxLfiahoAofW7fKHnbjHYbO9h5r3wfjSRkQWiuVJT8rEVwrRNu9pHikqqP+NZ
+          Lo7Yq0bJXZ46pnX6tpqI12vMZ8faUtcdOk/WD6ufNJiDI0WrDNiFxb1TRjY97s/bA3mr2
+          Re9lETL1dnNeXeOUrtoIPmsim8jax/PMdSdLPgrr8zc6VRLRsyLYaeEurnfz+E=
+
+- job:
+    name: openstack-health-middleware-publish-pypi-package
+    parent: publish-pypi-package
+    secrets:
+      - name: secret
+        secret: SECRET_OPENSTACK_HEALTH_MIDDLEWARE
+        pass-to-parent: true
+    vars:
+      pypi_twine_executable: "/tmp/venv/bin/python -m twine"
+
+- project:
+    merge-mode: squash-merge
+    default-branch: main
+    check:
+      jobs:
+        - flake8
+        - python-black
+    gate:
+      jobs:
+        - flake8
+        - python-black
+    periodic-daily:
+      jobs:
+        - flake8
+        - python-black
+    tag:
+      jobs:
+        - openstack-health-middleware-publish-pypi-package

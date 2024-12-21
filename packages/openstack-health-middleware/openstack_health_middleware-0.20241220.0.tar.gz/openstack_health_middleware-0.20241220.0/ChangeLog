@@ -1,0 +1,18 @@
+CHANGES
+=======
+
+v0.20241220.0
+-------------
+
+* Fix long description in setup.cfg (#14)
+* Publish @ Pypi (#13)
+* chore(deps): update dependency oslo.db to ~=17.1.0 (#11)
+* chore(deps): update dependency oslo.db to v17 (#10)
+* chore(deps): update dependency oslo.middleware to ~=6.3.0 (#9)
+* zuul: remove mypy & fix flake8, black (#8)
+* Autoformat python files with black (#7)
+* Initial import (#5)
+* Add LICENSE file (#6)
+* Add zuul configuration (#3)
+* Add renovate configuration (#1)
+* Initial commit
