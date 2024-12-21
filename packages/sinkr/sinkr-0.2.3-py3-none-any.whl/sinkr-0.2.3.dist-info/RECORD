@@ -1,0 +1,6 @@
+sinkr/__init__.py,sha256=L2viEChxOY9Yi585B6E16a9gaZuCuPDSI7v169NJzdU,100
+sinkr/sink.py,sha256=mQR_K7oXk7e1KcwgFwGGffhVgS-K4JfTrht1c1sCMv8,4403
+sinkr/source.py,sha256=_g_2bu_cJxKnnGjElWxamOeCTDqM2aACklRizX46X4s,8648
+sinkr-0.2.3.dist-info/METADATA,sha256=ys04yUn48yIICOpeLOTC-PlwzgyyKLA-xzV0USr105k,945
+sinkr-0.2.3.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+sinkr-0.2.3.dist-info/RECORD,,
