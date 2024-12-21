@@ -1,0 +1,11 @@
+xrandpwm/__init__.py,sha256=luJQv1HsMF8bSeE5D3KWkv8oaw5sOAaze1PCVUrz-q4,3929
+xrandpwm/command.py,sha256=ioaKW9Myw6OSO0-x9V9BeKomZRwV2B8NV2jxHpu-CVk,6254
+xrandpwm/monitorbundle.py,sha256=6m8ag_WSraIiR5PZEMlqhzNFDaZFRGhCuzO_X0HHkgs,27818
+xrandpwm/monitorstate.py,sha256=gi3CY0ZmYCGdJVx3dpMtLutSClyck9nlHwPBqXuEdaA,21850
+xrandpwm/screenstate.py,sha256=V45Cs2Zh5ARUyfedKUIjXTLhIK3iseCbb7RH26Z2zG4,999
+xrandpwm/utils.py,sha256=uW5L4H6cfeMA_5YXVM8ubbr5MAO4sw_0qlDwjrWqYUc,3381
+xrandpwm-0.0.8.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+xrandpwm-0.0.8.dist-info/METADATA,sha256=1Sw4ALO2XLHRizdCHzEmtFw__FuZ23kiu8H93nZ5lK0,458
+xrandpwm-0.0.8.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+xrandpwm-0.0.8.dist-info/top_level.txt,sha256=R8N_OI2QvTDZxbXayHi5kkrk-alIsV6cfC_Lembx8IY,9
+xrandpwm-0.0.8.dist-info/RECORD,,
