@@ -1,0 +1,9 @@
+genio/__init__.py,sha256=s3M3fxWec8lNM6IwBjOGUGKETLJuCZ7u-fCLm1f4rWQ,207
+genio/bot.py,sha256=O_rqSv_Jn2SFVt3YVfBXzP1lyKk0ytwRufE086ST7U4,10868
+genio/exceptions.py,sha256=wWqgmWqUYbHFfE8-hXpK6zZKEbuTw_thNBR-vOxf4sY,429
+genio/types.py,sha256=aK2FhXg0MoF1v-IEpiBz2u_Fpqxn8B-GFPr6g0V3d-s,4741
+genio/utils.py,sha256=mtdB_edOwpdJHirgBg6JS3hDsg2jZwvjMwo2KiWywBk,1059
+genio_telegram-0.1.1.dist-info/METADATA,sha256=lwNmpWLGRuAQuAKclPbb-8i-eJndO3KbwIVMRV7Ymio,2277
+genio_telegram-0.1.1.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+genio_telegram-0.1.1.dist-info/top_level.txt,sha256=DaT3Zvas8f6X192VsituAL7TxzKEFxhIhPh9qadBdDA,6
+genio_telegram-0.1.1.dist-info/RECORD,,
