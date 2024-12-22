@@ -1,0 +1,8 @@
+hdfset-0.0.1.dist-info/METADATA,sha256=qTIjHVHyV2JSdoyT2J2bRHxJnccI1dke_p7huxPQjyI,1610
+hdfset-0.0.1.dist-info/WHEEL,sha256=LY1_Xro_hC4tdddppNUcOVkqFYvtOFLCNo9iJG8aqAo,130
+hdfset-0.0.1.dist-info/licenses/LICENSE,sha256=dbO9NY-nQXzIS5St3j3rPUd7gm5r6pczFYaNy5GVNdI,1105
+hdfset/__init__.py,sha256=_-HPjmcIUTyCbAsgLJ7sM-qMg6CXMDISFiMSTzu6Hns,43
+hdfset/hdfset.pyi,sha256=ilOXEvAdcm3FPbeGLonH-vUWhqpcP7NGI0TXbxbsepQ,43
+hdfset/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hdfset/hdfset.abi3.so,sha256=NxN92i_dtGjw3f6Nzh6o8NFu0WEtQWbWJYdIUt23Is4,640176
+hdfset-0.0.1.dist-info/RECORD,,
