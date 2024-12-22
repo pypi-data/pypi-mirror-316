@@ -1,0 +1,17 @@
+clipsmith/__init__.py,sha256=Ts6kap6ATrztTiR3Gdy5b6O_6m-qOBH30LG2z1iwh28,311
+clipsmith/_ffmpeg.py,sha256=GjtPaEoLwo3Koskv6lCSj1fVMQhemKdBhN0VRiBth-o,457
+clipsmith/cli/main.py,sha256=eFZMtDmtlXAugabp_b9fdlzxjrrFYINsS5E3I7eB0ZA,3838
+clipsmith/clip/__init__.py,sha256=3jg6JkF_xrll-_8fX2tIbZMCZhYrXm8V_FGHwCloAsg,155
+clipsmith/clip/clip.py,sha256=eBdfkvyy1y3R_vrHInkCYh5d95K78h3MKhtzYCHbdyU,6220
+clipsmith/clip/operation.py,sha256=UGXxM-2l8S3rdwvi1UBt1rnt3ZxBxjwp-mYrvHBCvGU,5977
+clipsmith/context.py,sha256=JCKkMqiMcv01k69dNUfFF-LHoHF5hGsN2wNlV2E7sbE,3714
+clipsmith/profile.py,sha256=eAYxTPrUfCMSKqrXTx3EcKcraikgmU2VZKZ6GbYYbvE,557
+clipsmith/profiles.py,sha256=_dU9xBKoLw8ukAeXnclx-P4DEJsKF3oXOtYbQXnCxaM,303
+clipsmith/video/__init__.py,sha256=_RVc_4lhUc-fRTP2y6bQ1ZFVtuIq46MiHAgZXhY-CLM,97
+clipsmith/video/base.py,sha256=YVejsdQrv9PEyclMZzWBdjXU2_L-TmLGepPaNA6vj4k,3969
+clipsmith/video/raw.py,sha256=3AZxo1UJfnX7kTbbhu6kjGveWXVZWwMMjmYqV-8JT4Y,4825
+clipsmith-0.1.5.dist-info/LICENSE,sha256=dYOnVlGLQifVo5n-SitSN9BY_2v1xP504bd4nAMEgqw,1061
+clipsmith-0.1.5.dist-info/METADATA,sha256=0td7J-tUqoSCVmfpqqEIWv3btuRg5ZpeInb5geCg4xs,10785
+clipsmith-0.1.5.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+clipsmith-0.1.5.dist-info/entry_points.txt,sha256=bN6s3uYZTjyuCcCHU-q1zJDrFcV06YNUU2wDpsTfufM,52
+clipsmith-0.1.5.dist-info/RECORD,,
