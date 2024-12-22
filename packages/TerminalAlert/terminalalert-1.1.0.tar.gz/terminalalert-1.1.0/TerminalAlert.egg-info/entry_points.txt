@@ -1,0 +1,2 @@
+[console_scripts]
+terminalalert = TerminalAlert.main:main
