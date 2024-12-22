@@ -1,0 +1,2 @@
+[console_scripts]
+PlasAnn = plasan.main:PlasAnn
