@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: odoo-addons-oca-l10n-portugal
+Version: 16.0.20241220.0
+Summary: Meta package for oca-l10n-portugal Odoo addons
+Classifier: Programming Language :: Python
+Classifier: Framework :: Odoo
+Classifier: Framework :: Odoo :: 16.0
+Requires-Dist: odoo-addon-l10n-pt-account-invoicexpress<16.1dev,>=16.0dev
+Requires-Dist: odoo-addon-l10n-pt-stock-invoicexpress<16.1dev,>=16.0dev
+Requires-Dist: odoo-addon-l10n-pt-stock-vehicle-daily<16.1dev,>=16.0dev
+Requires-Dist: odoo-addon-l10n-pt-vat<16.1dev,>=16.0dev
+
+UNKNOWN
