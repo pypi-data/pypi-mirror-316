@@ -1,0 +1,17 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "django-js-lib-select2"
+authors = []
+license = {file = "LICENSE"}
+classifiers = ["License :: OSI Approved :: MIT License"]
+readme = "README.md"
+dynamic = ["version", "description"]
+repository = "https://github.com/nonzero/django-js-lib-select2"
+requires-python = ">=3.8"
+
+
+[tool.flit.module]
+name = "js_lib_select2"

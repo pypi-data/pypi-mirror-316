@@ -1,0 +1,32 @@
+# Select2 for Django
+
+[Select2](https://select2.org/) packaged in a Django reusable app.
+
+This package includes the original JS and CSS files from the library.
+
+
+## Installation
+
+    pip install django-js-lib-select2
+
+## Usage
+
+1. Add `"js_lib_select2"` to your `INSTALLED_APPS` setting like this::
+
+       INSTALLED_APPS = [
+           ...
+           "js_lib_select2",
+           ...
+       ]
+
+2. In your template use:
+   
+       {% load static %}
+   
+   ...
+   
+       <link rel="stylesheet" href="{%static "js_lib_select2/css/select2.css" %}">
+
+   ...
+   
+       <script src="{%static "js_lib_select2/js/select2.js" %}"></script>
