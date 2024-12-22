@@ -1,0 +1,7 @@
+pyyaml
+
+[dev]
+importlib-resources
+pydata-sphinx-theme
+pytest
+pytest-dotenv
