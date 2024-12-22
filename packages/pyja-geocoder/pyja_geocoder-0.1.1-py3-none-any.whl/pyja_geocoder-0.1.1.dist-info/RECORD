@@ -1,0 +1,9 @@
+pyja_geocoder/__init__.py,sha256=r4_3BGNTpvhaT79PkmXgs6UOTQQx28sw0-HtOMyWBJ0,633
+pyja_geocoder/constants.py,sha256=Y2jD4YTlqjQCA-xqVUXTxMjzhTGsjMxFSVSqQ-l0P2c,151
+pyja_geocoder/data_fetcher.py,sha256=aMLiowG3naLZxbmX5aoS7ipJ_Gjeb3rN5rMw5ER31fc,2639
+pyja_geocoder/geocode.py,sha256=ce0WGnRirnib0N0wHaMzzPZsekpbCPRntVwjWcZLjmY,4378
+pyja_geocoder-0.1.1.dist-info/LICENSE,sha256=Y87DpVm7Q-PYc1-6F8jOLYqaWKAfJkZYLq6N2fpOsjE,1056
+pyja_geocoder-0.1.1.dist-info/METADATA,sha256=X7SDkj-LEgy7zpQimYhL_2hEzIeONMqKmQZFDhWKaVk,2945
+pyja_geocoder-0.1.1.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+pyja_geocoder-0.1.1.dist-info/top_level.txt,sha256=U-hVvxtsAIKIA2s9doS_POH51j4hY8H2SocYuwS9inw,14
+pyja_geocoder-0.1.1.dist-info/RECORD,,
