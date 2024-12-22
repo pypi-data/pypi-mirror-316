@@ -1,0 +1,17 @@
+logicqubit/__init__.py,sha256=yat7qcPbFPt0LFofMwuXJPxD6DcKTgGAGPN_utTYZ8k,314
+logicqubit/__main__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+logicqubit/circuit.py,sha256=iT1QnqZw1X_8u1IYMEzMmq0-ol4H9urRLZj28CXeGsg,606
+logicqubit/exceptions.py,sha256=rLAev4I9gTtyd5PsFMo0D_eH1JDNnm1Al2viYBgOgtY,312
+logicqubit/gates.py,sha256=NLWLTseviPgu2lfbakdNvl0mZeG1xUiwQu_ADriwgQM,16192
+logicqubit/hilbert.py,sha256=TCn3rtPPlUQtxsWpbXHevxoJWGm80I04HHs5-7YHJUY,5804
+logicqubit/logic.py,sha256=lfy-_FMFhbQxHI6Mz8pywf3M1_tw7E92QqkMbG1ny-c,13745
+logicqubit/oracle.py,sha256=6s-aLyWY1K9OnAwYXsLDOrRXCzmGx1iNMlu8_AkagJc,846
+logicqubit/qubits.py,sha256=AwhRdsLTWNF6bo_Z_xMsAVE_2qlFuAGwZlpQ00Tj1G4,16494
+logicqubit/synthesis.py,sha256=l0OQ7Hk13gJuZ79bIoejO75Ds4__g_MsRwb_HhMzktg,759
+logicqubit/utils.py,sha256=Za6XSaWwd3COqVJ3fxKSmrdd5SWgwR31hBK99J2gU9Q,1728
+logicqubit/zhegalkin.py,sha256=_dIWTuGgwSJLWLi4dezPdEKXFdD6MYX2IExhk8u-A-c,2908
+logicqubit_gpu-1.6.4.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+logicqubit_gpu-1.6.4.dist-info/METADATA,sha256=ddWg2szbYPTa3wql__YtkV3uFJE4hHabROmq9AhmxKQ,4433
+logicqubit_gpu-1.6.4.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+logicqubit_gpu-1.6.4.dist-info/top_level.txt,sha256=ZE2bl6TtgUvxkAQe5l4CdHbuOsKFWu-jKhLo98VrqZM,11
+logicqubit_gpu-1.6.4.dist-info/RECORD,,
