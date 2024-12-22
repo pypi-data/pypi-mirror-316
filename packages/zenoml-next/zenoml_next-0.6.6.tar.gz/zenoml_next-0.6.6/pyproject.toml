@@ -1,0 +1,51 @@
+[tool.poetry]
+name = "zenoml-next"
+version = "0.6.6"
+description = "Upkeeping the now archived Zeno, the AI Data Management & Evaluation Platform"
+license = "MIT"
+authors = ["Ángel Alexander Cabrera <alex.cabrera@gmail.com>", "trojblue <trojblue@gmail.com>"]
+readme = "README.md"
+repository = "https://github.com/trojblue/zeno-next"
+homepage = "https://github.com/trojblue"
+keywords = ["ml", "testing", "evaluation", "machine learning", "ai"]
+packages = [{ include = "zeno" }]
+include = ["zeno/frontend/**/*"]
+exclude = ["zeno/tests/*"]
+
+[tool.poetry.dependencies]
+fastapi = ">=0.95.1,<0.104.0"
+inquirer = "^3.1.2"
+nest-asyncio = "^1.5.6"
+opentsne = ">=0.7.1,<1.1.0"
+pandas = "^2.0.0"
+pathos = "^0.3.0"
+pydantic = ">=2.0.0"
+python = "^3.8"
+requests = "^2.28.1"
+setuptools = "*"
+tomli = "^2.0.1"
+tqdm = "^4.64.0"
+uvicorn = ">=0.22,<0.24"
+websockets = "^11.0"
+zeno-sliceline = "^0.0.1"
+
+[tool.poetry.dev-dependencies]
+black = "^23.9.1"
+httpx = "^0.25.0"
+pyright = "^1.1.329"
+pytest = "^7.4.2"
+ruff = "^0.0.292"
+
+[tool.poetry.scripts]
+zeno = "zeno.runner:command_line"
+
+[build-system]
+build-backend = "poetry.core.masonry.api"
+requires = ["poetry-core>=1.0.0"]
+
+[tool.pyright]
+include = ["zeno"]
+useLibraryCodeForTypes = true
+
+[tool.ruff]
+select = ["E", "F", "I", "PD", "N"]
