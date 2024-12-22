@@ -1,0 +1,67 @@
+Metadata-Version: 2.4
+Name: axonemalyze
+Version: 0.0.2
+Summary: Calculate the circularity of axoneme picks from cryo-ET images.
+Project-URL: repository, https://github.com/ammsa23/axonemalyze
+Author-email: Ammaar Saeed <ammaar_saeed@g.harvard.edu>
+License: MIT License
+License-File: LICENSE
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Typing :: Typed
+Requires-Python: >=3.7
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scipy
+Provides-Extra: dev
+Requires-Dist: black; extra == 'dev'
+Requires-Dist: pandas; extra == 'dev'
+Requires-Dist: pytest; extra == 'dev'
+Requires-Dist: pytest-cov; extra == 'dev'
+Provides-Extra: test
+Requires-Dist: numpy; extra == 'test'
+Requires-Dist: pytest-cov; extra == 'test'
+Requires-Dist: pytest>=6.0; extra == 'test'
+Requires-Dist: scipy; extra == 'test'
+Description-Content-Type: text/markdown
+
+# axonemalyze
+Calculate the circularity of axoneme picks from cryo-ET images.
+
+# Installation
+You can install the `axonemalyze` by performing the following command:
+```
+pip install axonemalyze
+```
+
+# Functions
+The code is split into two command-line functions:
+- `segment_axonemes`
+- `estimate_circularity`
+
+Installing the package gives access to these functions. The command-line functions are to be run in that order.
+
+For more help with these functions, use the `-h` flag.
+
+## segment_axonemes
+The function takes a directory as input. This directory should contain all files in the `.coords` format with the xyz coordinates of the picks.
+
+Here is an example of how to run this function:
+```
+segment_axonemes test_data/
+```
+
+This function outputs a directory (default `segmented/`) in the input directory with a single `.csv` file per axoneme.
+
+## estimate_circularity
+This function takes a directory as input. This directory should contain all files in the `.csv` format as outputted by `segment_axonemes.py`.
+
+Here is an example of how to run this function:
+```
+estimate_circularity test_data/segmented/
+```
+
+This function prints an average circularity for each axoneme that contains at least five doublets to the standard output.
