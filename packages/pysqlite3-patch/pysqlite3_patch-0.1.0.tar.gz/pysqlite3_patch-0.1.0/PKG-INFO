@@ -1,0 +1,64 @@
+Metadata-Version: 2.4
+Name: pysqlite3-patch
+Version: 0.1.0
+Summary: Replace sqlite3 with pysqlite3
+Project-URL: Repository, https://github.com/hmiladhia/pysqlite3-patch
+Project-URL: Issues, https://github.com/hmiladhia/pysqlite3-patch/issues
+Author-email: Dhia Hmila <hmila.dhia@dasquare.xyz>
+Maintainer-email: Dhia Hmila <hmila.dhia@dasquare.xyz>
+License: MIT License
+        
+        Copyright (c) 2024 Hmila Dhia
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+License-File: LICENSE
+Keywords: patch,pysqlite3,pysqlite3-binary
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# Patching `sqlite3` with `pysqlite3`
+![PyPI](https://img.shields.io/pypi/v/pysqlite3-patch)
+![PyPI - License](https://img.shields.io/pypi/l/pysqlite3-patch)
+![PyPI - Wheel](https://img.shields.io/pypi/wheel/pysqlite3-patch)
+
+This package will automatically replace `sqlite3` with `pysqlite3` in your application.
+
+### Installation
+
+You can install `pysqlite3-patch` via pip:
+
+```bash
+pip install pysqlite3-patch
+```
+
+### Contributing
+
+Contributions are welcome! If you encounter any issues or have suggestions for improvements, feel free to open an issue or submit a pull request on [GitHub](https://github.com/hmiladhia/pysqlite3-patch).
+
+### License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+### Disclaimer
+
+This package comes with no warranties or guarantees. Use it at your own risk.
