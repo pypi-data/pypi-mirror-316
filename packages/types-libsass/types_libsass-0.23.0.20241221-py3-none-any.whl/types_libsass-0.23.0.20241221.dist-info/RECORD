@@ -1,0 +1,14 @@
+sass-stubs/METADATA.toml,sha256=DLreMwnLA_mCoMQVg67As4Gz8fECV_ZhlywM09IC6aI,235
+sass-stubs/__init__.pyi,sha256=qSvlnxLR_Yk9cPcrA1QUmcv0kB8C0r7JKDFdo_dx8OA,6342
+sass-stubs/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sassutils-stubs/METADATA.toml,sha256=DLreMwnLA_mCoMQVg67As4Gz8fECV_ZhlywM09IC6aI,235
+sassutils-stubs/__init__.pyi,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sassutils-stubs/builder.pyi,sha256=xQlHG-7PeyuU1SSCoUR7NRHhOofsYPQEgDh1y_9dj-A,1261
+sassutils-stubs/distutils.pyi,sha256=NtRQridrE3jABNBVtTQy95PacIbDLBt4ZZpC_QgFkWU,550
+sassutils-stubs/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sassutils-stubs/wsgi.pyi,sha256=IygPSSUgU7XdSmSogb7ShJCeGNHi6q0PsF5EaTpG-Xw,792
+types_libsass-0.23.0.20241221.dist-info/LICENSE,sha256=KV-FOMlK5cMEMwHPfP8chS2ranhqjd7kceBhtA1eyr4,12657
+types_libsass-0.23.0.20241221.dist-info/METADATA,sha256=5Drh0hXiC-IhkvGfB-x3HdgXbcPbf-fbhb2dXay-wDQ,1865
+types_libsass-0.23.0.20241221.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+types_libsass-0.23.0.20241221.dist-info/top_level.txt,sha256=uBmnS7dFM84B9MB1KXRqkyh2wXwPT6n6WnIK_bOaFZo,27
+types_libsass-0.23.0.20241221.dist-info/RECORD,,
