@@ -1,0 +1,7 @@
+dist
+docs
+docsrc
+extensions
+perftest
+pyhecdss
+tests
