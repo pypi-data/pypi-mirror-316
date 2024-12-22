@@ -1,0 +1,17 @@
+Cars/Audi.py,sha256=_gCCSf_rMGKeFoHGWnq3l1a0Xud0sgRSHnfvPo9MjJs,365
+Cars/Bmw.py,sha256=1wm_r_KlFBk7IPAXg_FM-4d0fRFZIC8CSh0h9PaRwAE,364
+Cars/Nissan.py,sha256=-Rx2-PdViEHAD0cejQ_TtpGkyBQNjh9QOhKV_Qf0yDg,426
+Cars/__init__.py,sha256=4qAvouzsT9KiPw8e1w55fNJq-kzoyiKIhf5U2CcRMz8,74
+speedy_cars/__init__.py,sha256=vlJwD435ReoV7mcGK14jWyBUp8NfFzpyciTgn2wXujE,133
+speedy_cars/Cars/Audi.py,sha256=_gCCSf_rMGKeFoHGWnq3l1a0Xud0sgRSHnfvPo9MjJs,365
+speedy_cars/Cars/Bmw.py,sha256=1wm_r_KlFBk7IPAXg_FM-4d0fRFZIC8CSh0h9PaRwAE,364
+speedy_cars/Cars/Nissan.py,sha256=-Rx2-PdViEHAD0cejQ_TtpGkyBQNjh9QOhKV_Qf0yDg,426
+speedy_cars/Cars/__init__.py,sha256=4qAvouzsT9KiPw8e1w55fNJq-kzoyiKIhf5U2CcRMz8,74
+speedy_cars/F1s/Mercedez.py,sha256=Q08clxqvcuHArb5l9133yd9ErtpSNoQ5oSDSxxEstiE,360
+speedy_cars/F1s/__init__.py,sha256=zLFKCp-diOFEHO7gFc12iP9KPKlveuhVD-_4eSwXzxw,30
+speedy_cars-2024.1.2.dist-info/LICENSE.txt,sha256=DIlFPn0SByCQ9Yo17k9tT_lOnUI32CTC4DYG_hOsO5U,1080
+speedy_cars-2024.1.2.dist-info/METADATA,sha256=fGgkJdbfA7vjQUHDdNxWA29LrXppT1op8aDjamN8ols,888
+speedy_cars-2024.1.2.dist-info/WHEEL,sha256=pxeNX5JdtCe58PUSYP9upmc7jdRPgvT0Gm9kb1SHlVw,109
+speedy_cars-2024.1.2.dist-info/entry_points.txt,sha256=fQrLxXiUx7Xa21wDoSYgme5BJiu-8JVL0do48eOgbRo,129
+speedy_cars-2024.1.2.dist-info/top_level.txt,sha256=PnfqQyh7eeJ92FHPiD_1C46o-eX-ubdiM4Y7jHlUrN8,12
+speedy_cars-2024.1.2.dist-info/RECORD,,
