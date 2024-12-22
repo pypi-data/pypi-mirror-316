@@ -1,0 +1,12 @@
+livekit/plugins/deepgram/__init__.py,sha256=o1BgJLSoxrTkSUHXkKrFMl9e0bF6am2TFrDMV4U6j7g,584
+livekit/plugins/deepgram/_utils.py,sha256=0O3O77qURXjYYCenl5McE85fcBApaQvQl5zKQzvYfR8,1276
+livekit/plugins/deepgram/log.py,sha256=isjd2-ROJXiDFhRRnqRmYxv16U5H9dBV6ut2g5bU7q0,71
+livekit/plugins/deepgram/models.py,sha256=ZUkruW2vu3RhPYZyN8Lyz1y_J1V7lop5l-72ewVK-FY,1165
+livekit/plugins/deepgram/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+livekit/plugins/deepgram/stt.py,sha256=7TRnc06Yp8LuQIAQJdp_D07I93vDAHcum_OgbEpcvtM,25848
+livekit/plugins/deepgram/tts.py,sha256=I6ol-kNoY_A5YNuubIhT0YP77elHn_CucWKfcTaA4Bg,14545
+livekit/plugins/deepgram/version.py,sha256=nExrTVDq-6l6yKxEroIzpC5ouRwSZmhzHfD4Lvb4vyU,601
+livekit_plugins_deepgram-0.6.15.dist-info/METADATA,sha256=Xfcwn_N_n01ubaf3l7Pf8wQk9ORfKBIYbuehBEYChwM,1335
+livekit_plugins_deepgram-0.6.15.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+livekit_plugins_deepgram-0.6.15.dist-info/top_level.txt,sha256=OoDok3xUmXbZRvOrfvvXB-Juu4DX79dlq188E19YHoo,8
+livekit_plugins_deepgram-0.6.15.dist-info/RECORD,,
