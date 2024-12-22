@@ -1,0 +1,9 @@
+logscope/__init__.py,sha256=QCqPOKuCLMWTy8EksVpOqw0gEBurGw1nABdMIugGPvg,230
+logscope/core.py,sha256=X4uEqUXCtTni5gzyFyI9YprwISsxaqqxINs0rNkXAGo,1427
+logscope/formatter.py,sha256=--v3jfAXTg9fjthzuhfpaI7bxbbGscKdo0bVsABrJfc,1668
+logscope/handlers.py,sha256=wIDjgNQHQKEaVchiTQseuDlkDj2whrRvP9QXkLnzxxg,2039
+logscope/utils.py,sha256=iU89gjfMtc8mCZ9XtQHSGLylIS0GyYjv1EEs0mm9ucg,1418
+logscope-0.1.0.dist-info/METADATA,sha256=9RwRz3nmLhfIclywiOWf4dWyvxvcMIhZcmgQpcjwQSg,2618
+logscope-0.1.0.dist-info/WHEEL,sha256=C2FUgwZgiLbznR-k0b_5k3Ai_1aASOXDss3lzCUsUug,87
+logscope-0.1.0.dist-info/licenses/LICENSE.txt,sha256=4UySajSxxnrDT371byGu8jw0As4STITztGpndNzsMeI,1075
+logscope-0.1.0.dist-info/RECORD,,
