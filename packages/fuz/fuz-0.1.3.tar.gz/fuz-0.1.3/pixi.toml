@@ -1,0 +1,120 @@
+[project]
+  channels = ['conda-forge', 'nvidia', 'anaconda']
+  name = 'fuz'
+  platforms = ['linux-64', 'win-64', 'osx-64', 'osx-arm64']
+  preview = ['pixi-build']
+  version = '0.1.2-alpha.1'
+
+[host-dependencies]
+  hatchling = '*'
+  uv = '*'
+[build-system]
+  build-backend = { name = 'pixi-build-python', version = '*' }
+  channels = ['https://prefix.dev/pixi-build-backends', 'https://prefix.dev/conda-forge']
+[package]
+
+[tasks]
+
+[environments]
+  default = ['demo', 'plot']
+  dev = ['dev', 'demo', 'plot', 'minpy', 'jax', 'gpu', 'temp', 'doc']
+  doc = ['dev', 'demo', 'plot', 'maxpy', 'jax', 'doc']
+
+[dependencies]
+  attrs = '*'
+  jaxtyping = '*'
+  narwhals = '*'
+  plum-dispatch = '*'
+  scipy = '*'
+
+[pypi-dependencies]
+  fuz = { path = '.', editable = true }
+
+[feature.plot.dependencies]
+  altair = '*'
+  matplotlib = '*'
+  mpltern = '*'
+
+[feature.demo.dependencies]
+  linkify-it-py = '*'
+  marimo = '>=0.10.1'
+markdown = "*"
+  mdformat-myst = '*'
+  myst-parser = '*'
+  nbformat = '*'
+  pandas = '*'
+  polars = '*'
+
+[feature.demo.tasks]
+  demo = 'marimo run fuz/demo/main.py'
+  emo = 'marimo edit -p 3589 --headless --no-token'
+  wasm = { depends-on = ['wasm-ch1', 'wasm-ch2'] }
+  wasm-ch1 = 'marimo export html-wasm fuz/demo/optimal_bayesian_ranking_ch1.py -o docs/build/html/mo/obr1 --mode run --no-show-code '
+  wasm-ch1-test = 'marimo export html-wasm fuz/demo/optimal_bayesian_ranking_ch1.py -o private/mo/obr1 --mode edit'
+  wasm-ch2 = 'marimo export html-wasm fuz/demo/optimal_bayesian_ranking_ch2.py -o docs/build/html/mo/obr2 --mode run --no-show-code '
+  wasm-ch2-test = 'marimo export html-wasm fuz/demo/optimal_bayesian_ranking_ch2.py -o private/mo/obr2 --mode edit'
+  wasm-test = { depends-on = ['wasm-ch1-test', 'wasm-ch2-test'] }
+
+[feature.dev.dependencies]
+  ipykernel = '*'
+  ipympl = '*'
+  ipywidgets = '*'
+  mypy = '*'
+  nox = '*'
+  pytest = '*'
+  pytest-cov = '*'
+  ruff = '*'
+  tqdm = '*'
+
+[feature.dev.pypi-dependencies]
+  scipy-stubs = '*'
+  wat-inspector = '*'
+
+[feature.dev.tasks]
+  mypy = 'mypy fuz'
+
+[feature.doc.dependencies]
+  numpydoc = '*'
+  pydata-sphinx-theme = '*'
+  soupsieve = '*'
+  sphinx = '*'
+  sphinx-autoapi = '*'
+  sphinx-copybutton = '*'
+  sphinx-design = '*'
+  sphinx-togglebutton = '*'
+  sphinxcontrib-youtube = '*'
+
+[feature.doc.pypi-dependencies]
+  sphinx-autodoc-typehints = '*'
+  sphinx-docsearch = '*'
+
+[feature.doc.tasks]
+  doc = { depends-on = ['sphinx', 'wasm'] }
+  sphinx = { cmd = "make html", cwd = "docs" }
+  testdoc = { cmd = 'python -m http.server', cwd = "docs/build/html" }
+
+[feature.minpy.dependencies]
+  python = '3.10.*'
+
+[feature.maxpy.dependencies]
+  python = '>3.10, <3.13'
+
+[feature.temp.dependencies]
+  expression = '*'
+  openai = '*'
+  seaborn = '*'
+
+[feature.gpu]
+  system-requirements = { cuda = '12' }
+
+  [feature.gpu.target.linux-64.dependencies]
+    # jaxlib-feedstock fixed conda cuda issue in 0.4.35
+    jaxlib = { version = '>=0.4.35', build = '*cuda12*', channel = 'conda-forge' }
+
+[feature.jax.dependencies]
+  jax = '*'
+  jaxlib = '*'
+  torchquad = '*'
+
+[feature.jax.pypi-dependencies]
+  tensorflow-probability = { version = '*', extras = ['jax'] }
