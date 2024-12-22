@@ -1,0 +1,15 @@
+version: '3'
+
+tasks:
+
+  build:
+    desc: Build package.
+    cmds:
+      - rm -rf dist
+      - uv build -o ./dist
+
+  publish:
+    desc: Publish package on PyPI.
+    cmds:
+      - task: build
+      - uv publish

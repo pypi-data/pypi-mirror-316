@@ -1,0 +1,17 @@
+[project]
+name = "aiomesh"
+description = "Async Python queue-based operator mesh."
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.8"
+dynamic = ["version"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.version]
+path = "src/aiomesh/__version__.py"
+
+[tool.uv]
+package = true
