@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+kseniaWebsocketUtil/__init__.py
+kseniaWebsocketUtil/crc.py
+kseniaWebsocketUtil/websocketmanager.py
+kseniaWebsocketUtil/wscall.py
+kseniaWebsocketUtil.egg-info/PKG-INFO
+kseniaWebsocketUtil.egg-info/SOURCES.txt
+kseniaWebsocketUtil.egg-info/dependency_links.txt
+kseniaWebsocketUtil.egg-info/top_level.txt
+tests/test_websocketmanager.py
