@@ -1,0 +1,7 @@
+.ipynb_checkpoints/
+dist/
+build/
+easy_scpi.egg-info/
+__pycache__
+.venv
+.pytest_cache
