@@ -1,0 +1,11 @@
+asyncio
+typing-extensions
+dataclasses
+numpy
+pydantic
+
+[dev]
+pytest
+mypy
+flake8
+black

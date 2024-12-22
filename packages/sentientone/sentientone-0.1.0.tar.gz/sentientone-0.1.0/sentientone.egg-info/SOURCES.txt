@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+sentientone.egg-info/PKG-INFO
+sentientone.egg-info/SOURCES.txt
+sentientone.egg-info/dependency_links.txt
+sentientone.egg-info/requires.txt
+sentientone.egg-info/top_level.txt
+tests/test_perplexity_examples.py
