@@ -1,0 +1,4 @@
+[console_scripts]
+keeweb-ghcr=keeweb_ghcr.main:main
+keeweb-ghcr-server=keeweb_ghcr.server:main
+
