@@ -1,0 +1,11 @@
+nonebot_plugin_gemini-0.5.1.dist-info/METADATA,sha256=HbkJ6YXOekw6MCpIYcIt8Okt5egoWL7kVnQuOjaEVdI,3639
+nonebot_plugin_gemini-0.5.1.dist-info/WHEEL,sha256=thaaA2w1JzcGC48WYufAs8nrYZjJm8LqNfnXFOFyCC4,90
+nonebot_plugin_gemini-0.5.1.dist-info/entry_points.txt,sha256=6OYgBcLyFCUgeqLgnvMyOJxPCWzgy7se4rLPKtNonMs,34
+nonebot_plugin_gemini-0.5.1.dist-info/licenses/LICENSE,sha256=Z2dsBFAm3J5BjU-PbucbN-m3-0xbRv1w9O3GRNVYOv0,1062
+nonebot_plugin_gemini/__init__.py,sha256=PtS2sbbO356KLz79aNHgxJJWS-RDxf5N30OU_Yd0Xxo,9454
+nonebot_plugin_gemini/config.py,sha256=Pl6s8o-3yN4oIwTeYEvmRDtV4dgo4nPCckicfxDv-Zk,1054
+nonebot_plugin_gemini/search_engines/__init__.py,sha256=sasJIv2FshP8mx0Oogub7DiXlg1GqMGrhB5K_bRlKSs,100
+nonebot_plugin_gemini/search_engines/google/__init__.py,sha256=ZL-SNT6SLLBLZkLdiFVaKghytWL4_4eN8UdzlYQcaOA,1258
+nonebot_plugin_gemini/search_engines/google/models.py,sha256=jj2Oq5KDQ7eg4rCZUvm_GXZBiUyyjur5RW7x_MwLlS8,1733
+nonebot_plugin_gemini/search_engines/models.py,sha256=SSrLT4Ju_aNQkrRSQNs14QH6kIujT_7XBnOyNf0psKc,147
+nonebot_plugin_gemini-0.5.1.dist-info/RECORD,,
