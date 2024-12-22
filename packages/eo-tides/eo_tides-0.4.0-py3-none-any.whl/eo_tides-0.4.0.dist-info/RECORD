@@ -1,0 +1,11 @@
+eo_tides/__init__.py,sha256=pGvVlxMKiYjm_273G-oYcOgVuPra7uEdNZv0oN1i69c,1693
+eo_tides/eo.py,sha256=d4zFs_uhuTekJDDqiX7oIzvS1iP6nEr0rG2Yy4xbsEU,22746
+eo_tides/model.py,sha256=X_nuYkBbzq3cLgJc0dUknlL6w_90O9rz_2BOqX5uxsg,34585
+eo_tides/stats.py,sha256=-nL6Ay6TvA5GSdnglHoLMu5JZf6-YjQKERBGLjAZs34,22993
+eo_tides/utils.py,sha256=9xJ1q-b-TVHg5zFyLy6AT_srrPQDvmFdWJmlGSPaJF0,26563
+eo_tides/validation.py,sha256=KP8WLT5z7KLFjQ9oDla7VJOyLQAK4SVbcz2ySAbsbwI,11882
+eo_tides-0.4.0.dist-info/LICENSE,sha256=owxWsXViCL2J6Ks3XYhot7t4Y93nstmXAT95Zf030Cc,11350
+eo_tides-0.4.0.dist-info/METADATA,sha256=cqO3zJGPj-l5Xzi-cfPtkd7pzUUTt5ENVvCRM16HXFQ,8045
+eo_tides-0.4.0.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+eo_tides-0.4.0.dist-info/top_level.txt,sha256=lXZDUUM1DlLdKWHRn8zdmtW8Rx-eQOIWVvt0b8VGiyQ,9
+eo_tides-0.4.0.dist-info/RECORD,,
