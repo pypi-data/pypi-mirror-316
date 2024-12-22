@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: condoAccess
+Version: 0.0.2
+Summary: Sistema de gerenciamento de entrada e saída de condomínio.
+Home-page: https://github.com/Adonis071/gerenciamento_de_portaria.git
+Author: Adonis Pantoja
+Author-email: adonisruis07@gmail.com
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# Gerenciamento_de_portaria
+# condoAccess
+
+## DescriÃ§Ã£o
+
+Um sistema de armazenamento e gerenciamento de entrada e saÃ­da de um condomÃ­nio. Este projeto facilita o cadastro de visitantes, registro de entradas e saÃ­das, e a listagem de visitas.
+
+## Funcionalidades
+
+- **Cadastro de Visitantes**: Permite cadastrar novos visitantes com nome, RG e telefone.
+- **Listagem de Visitantes**: Lista todos os visitantes cadastrados.
+- **Registro de Entrada**: Registra a entrada dos visitantes no condomÃ­nio.
+- **Registro de SaÃ­da**: Registra a saÃ­da dos visitantes do condomÃ­nio.
+- **Listagem de Visitas**: Lista todas as visitas registradas.
+
+## Estrutura do projeto 
+
+    CONDOACCESS/
+        â”œâ”€â”€ __init__.py
+        â”œâ”€â”€ main.py
+        â”œâ”€â”€ visitantes.py
+        â”œâ”€â”€ visitas.py
+        â”œâ”€â”€ database/
+        â”‚   â”œâ”€â”€ __init__.py
+        â”‚   â””â”€â”€ database.py
+        â”œâ”€â”€ README.md
+        â”œâ”€â”€ setup.py
+        â””â”€â”€ requirements.txt
+
+## InstalaÃ§Ã£o
+
+Para instalar o pacote, vocÃª pode usar o comando abaixo:
+
+```sh
+pip install condoAccess
+```
+## Author
+ Adonis 
+
