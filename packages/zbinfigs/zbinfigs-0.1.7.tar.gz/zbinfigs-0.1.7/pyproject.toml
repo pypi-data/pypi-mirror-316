@@ -1,0 +1,69 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "zbinfigs"
+version = "0.1.7"
+authors = [
+  { name="Isaac Spackman", email="ispackman@mines.edu" },
+]
+description = "A package for figure classification from a zotero collection of scholarly articles"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "pandas>=2.2.3",
+  "matplotlib>=3.7.1",
+  "beautifulsoup4>=4.2.4",
+  "xhtml2pdf>=0.2.16",
+  "marker-pdf>=1.1.0",
+  "tqdm>=4.67"
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering",
+    "Topic :: Scientific/Engineering :: Information Analysis",
+]
+
+[project.optional-dependencies]
+test = [
+    "pytest",
+    "coverage"
+]
+docs = [
+  "sphinx_rtd_theme",
+  "myst_parser >=0.13",
+  "sphinx >=4.0", 
+  "sphinx-copybutton",
+  "sphinx-autodoc-typehints",
+]
+
+[project.urls]
+"Source Code" = "https://github.com/spackman/zbinfigs"
+
+# Ruff Linter
+[tool.ruff]
+src = ["src"]
+extend-include = ["*.ipynb"]
+
+# Use Numpy-style docstrings.
+[tool.ruff.lint]
+select = ["D"]
+[tool.ruff.lint.pydocstyle]
+convention = "numpy"
+
+[tool.bumpver]
+current_version = "0.1.7"
+version_pattern = "MAJOR.MINOR.PATCH"
+commit_message  = "Bump version {old_version} -> {new_version}"
+commit          = true
+tag             = true
+push            = false
+
+[tool.bumpver.file_patterns]
+"pyproject.toml" = ['current_version = "{version}"', 'version = "{version}"']
+"src/zbinfigs/__init__.py" = ['__version__ = "{version}"']
+"README.md" = ['Version : {version}']
