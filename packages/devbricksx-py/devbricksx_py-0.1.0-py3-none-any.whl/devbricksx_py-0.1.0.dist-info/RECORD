@@ -1,0 +1,16 @@
+devbricksx/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+devbricksx/apm/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+devbricksx/apm/exec_time.py,sha256=7tWAreDJMnxMko5-YrpqQuL-OF7UcXU4pj5KSp_2tOc,900
+devbricksx/async/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+devbricksx/async/managed_thread.py,sha256=P_A4w_iNWN3-Osf9KHp7MJxeqXkKjehGrngvAU0pM1s,542
+devbricksx/development/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+devbricksx/development/log.py,sha256=YRC-nfqQDaAvIIuk2z796VwaLMgL2fWBvTFHX49vsJw,877
+devbricksx/image/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+devbricksx/image/image_utils.py,sha256=v-0Tnmy1cIyukVqsnkQtp-hZELTUR3H48BieD9beXlE,8162
+devbricksx/text/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+devbricksx/text/text_utils.py,sha256=qZdRfI18WM8Afo5LOWAQYa8Z2RO999J_YJ4y2YPZ6EE,666
+devbricksx_py-0.1.0.dist-info/LICENSE,sha256=_VcgcPYRGhzWdfWVy4-VeKj_Vh41GTYtZWPvxjv3C9s,11341
+devbricksx_py-0.1.0.dist-info/METADATA,sha256=QV2Kz8H5fP0Q5tfekMOWoRb-A-K-LAqLZwh2Sj8q_TI,735
+devbricksx_py-0.1.0.dist-info/WHEEL,sha256=tZoeGjtWxWRfdplE7E3d45VPlLNQnvbKiYnx7gwAy8A,92
+devbricksx_py-0.1.0.dist-info/top_level.txt,sha256=e-1u_cfjtSIzDqsOJ5dXcyDLp8lG2yndhUmctF87VuE,11
+devbricksx_py-0.1.0.dist-info/RECORD,,
