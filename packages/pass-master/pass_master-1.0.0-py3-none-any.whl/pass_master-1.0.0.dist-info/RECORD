@@ -1,0 +1,8 @@
+pass_master/__init__.py,sha256=SputdVXVrSnFGgNWYDbthnkQn6rzsJWmnEsaLwRmzGk,46
+pass_master/cli.py,sha256=KdfWEtIfZ-u0wXr0YPCjxB0MqoystZBFgD1XTg33nzg,9739
+pass_master/password_store.py,sha256=epn0zTjEsKxUhEOkLHi4IpA7k_bNC0EwwhuNMTVqAdM,4137
+pass_master-1.0.0.dist-info/entry_points.txt,sha256=1CB7TE20yft238AxC5ZfTYAaRVhjiHl1H7QS-qMHiaE,51
+pass_master-1.0.0.dist-info/LICENSE,sha256=WJBygQT6Sn9z0O60a_krOOzDGVpQbW4_1nFNUKZg4jo,1081
+pass_master-1.0.0.dist-info/METADATA,sha256=p0yG4YIDd6A7dRzJTbcf_6PKyTuNDkuzS8b4_Bbe14U,2306
+pass_master-1.0.0.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+pass_master-1.0.0.dist-info/RECORD,,

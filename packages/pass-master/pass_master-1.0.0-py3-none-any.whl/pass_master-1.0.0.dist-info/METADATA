@@ -1,0 +1,73 @@
+Metadata-Version: 2.1
+Name: pass-master
+Version: 1.0.0
+Summary: Password manager from the terminal!
+Home-page: https://github.com/Maxthecoder123/pass-master
+License: MIT
+Keywords: password,manager,cli,security,encryption
+Author: Your Name
+Author-email: you@example.com
+Requires-Python: >=3.12,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Topic :: Security
+Classifier: Topic :: Utilities
+Requires-Dist: click (>=8.1.8,<9.0.0)
+Requires-Dist: colorama (>=0.4.6,<0.5.0)
+Requires-Dist: cryptography (>=42.0.5,<43.0.0)
+Requires-Dist: keyring (>=24.3.1,<25.0.0)
+Requires-Dist: password-strength (>=0.0.3.post2,<0.0.4)
+Requires-Dist: pyperclip (>=1.8.2,<2.0.0)
+Requires-Dist: rich (>=13.7.0,<14.0.0)
+Project-URL: Repository, https://github.com/Maxthecoder123/pass-master
+Description-Content-Type: text/markdown
+
+# Pass-Master 🔐
+
+A secure, feature-rich command-line password manager with encryption and modern UI.
+
+## Features ✨
+
+- 🔒 **Secure Password Storage**
+  - Strong encryption using Fernet (symmetric encryption)
+  - Master key stored securely in system keyring
+  - Passwords never stored in plain text
+
+- 🎲 **Password Generation**
+  - Generate strong random passwords
+  - Customizable length
+  - Includes uppercase, lowercase, numbers, and special characters
+
+- 📊 **Password Strength Checking**
+  - Minimum length requirements
+  - Character variety requirements
+  - Visual feedback on password strength
+
+- 📋 **Clipboard Integration**
+  - Quick copy passwords to clipboard
+  - Automatic clipboard copy for generated passwords
+
+- 🏷️ **Organization**
+  - Categorize passwords
+  - Search functionality
+  - List and filter capabilities
+
+- 💾 **Backup & Restore**
+  - Export passwords to JSON
+  - Import passwords from JSON
+  - Progress tracking for bulk operations
+
+- 🎨 **Modern UI**
+  - Beautiful terminal interface
+  - Color-coded information
+  - Progress indicators and spinners
+
+## Installation 📦
+
+1. Ensure you have Python 3.12+ and Poetry installed
+2. Clone the repository:
