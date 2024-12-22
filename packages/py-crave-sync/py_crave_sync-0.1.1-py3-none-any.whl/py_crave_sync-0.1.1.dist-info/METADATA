@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: py-crave-sync
+Version: 0.1.1
+Summary: A lightweight Python package that creates a local live server for syncing and serving data.
+Home-page: https://github.com/JuloxGames/py-crave-sync
+Author: Julox Games
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: >=3.6
+Requires-Dist: flask
