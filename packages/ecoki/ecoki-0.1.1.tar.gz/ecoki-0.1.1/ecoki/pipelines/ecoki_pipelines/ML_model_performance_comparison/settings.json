@@ -1,0 +1,92 @@
+{
+  "name": "ML_model_performance_comparison",
+  "topology": {
+    "nodes": [
+      {
+        "name": "EcoKI Data Reader",
+        "building_block_module": "ecoki.building_blocks.code_based.data_integration.acquire_data.ecoki_data_reader.ecoki_data_reader",
+        "building_block_class": "EcoKIDataReader",
+        "execution_mode": "local",
+        "settings": {
+          "data_reader": "",
+          "data_file_path": "",
+          "index_name": ""
+        },
+        "visualizer_module": "",
+        "visualizer_class": "",
+        "visualizer_input": {},
+        "interactive_configuration": true
+      },
+      {
+        "name": "Data Selector",
+        "building_block_module": "ecoki.building_blocks.code_based.data_integration.preprocess_data.data_selector.data_selector",
+        "building_block_class": "DataSelector",
+        "execution_mode": "local",
+        "settings":{
+          "columns": {}
+        },
+        "visualizer_module": "",
+        "visualizer_class": "",
+        "visualizer_input": {},
+        "interactive_configuration": true
+      },
+      {
+        "name": "Model Performance Comparison",
+        "building_block_module": "ecoki.building_blocks.code_based.modelling.build_and_train_model.model_performance_comparison.model_performance_comparison",
+        "building_block_class": "ModelPerformanceComparison",
+        "execution_mode": "local",
+        "settings": {
+          "savedir_path": "",
+          "analysis_name": "",
+          "results_folder_name": "",
+          "labels_list": [],
+          "numbers_list_rfe": [],
+          "plot_learning_curves": true,
+          "include_neural_network": false,
+          "neural_network_python_script_path": "",
+          "neural_network_requirements_txt_path": ""
+        },
+        "visualizer_module": "ecoki.building_blocks.code_based.modelling.build_and_train_model.model_performance_comparison.model_performance_comparison_visualizer",
+        "visualizer_class": "ModelPerformanceComparisonVisualizer",
+        "visualizer_input": {"error_metrics": "error_metrics_data", "learning_curves": "learning_curves_data", "rfe_number_labels": "rfe_number_labels",
+                             "noteworthiness_threshold": "noteworthiness_threshold", "plots_save_dir": "plots_save_dir"},
+        "interactive_configuration": true
+      }
+    ],
+    "connections": [
+      { 
+        "name": "1", 
+        "from_node": "EcoKI Data Reader", 
+        "from_port": "output_data", 
+        "to_node": "Data Selector", 
+        "to_port": "input_data"
+      },
+      {
+        "name": "2",
+        "from_node": "Data Selector",
+        "from_port": "output_data",
+        "to_node": "Model Performance Comparison",
+        "to_port": "input_data"
+      }
+    ]
+  },
+  "execution_mode": "local",
+  "metadata": {
+    "short_description": "Compares and evaluates different machine learning models to find the optimal model configuration",
+    "description": "This pipeline compares different machine learning models for a given dataset and recommends an optimal configuration based on model type, feature count, and training data size. The process involves evaluating three model categories: non-ML (Linear Regression), simple ML (XGBoost), and complex ML (Neural Networks). Feature selection is performed using Recursive Feature Elimination (RFE), allowing users to test multiple feature subset sizes. The pipeline generates comprehensive performance metrics and learning curves to visualize how model performance varies with different feature selections and training set sizes. For complex ML models like neural networks, users can integrate their own custom training scripts. The final output includes a data-driven recommendation for the most suitable model, balancing prediction accuracy with model complexity.",
+    "category": ["Modelling"],
+    "inputs": {
+      "dataset": {
+        "value range": "Tabular dataset as a pandas DataFrame",
+        "default value": "",
+        "intended use": "Compare and evaluate different ML models with feature selection to find optimal model configuration"
+      }
+    },
+    "outputs": {
+      "expected_results": "The expected results comprise error metrics for all tested models, learning curves showing training/validation performance across different training set sizes, feature importance rankings from RFE, model recommendations based on complexity-performance tradeoffs, and comprehensive visualization plots for performance analysis.",
+      "Output Format": ".png files for visualizations and DataFrames saved locally"
+    },
+    "example": "",
+    "version": "0.0.1"
+  }
+}

@@ -1,0 +1,78 @@
+{
+    "name": "Dataset_Live_Visualization_P2O_M07_Module",
+    "topology": {
+    "nodes": [
+      {
+        "name": "ecoKI_data_reader",
+        "building_block_module": "ecoki.building_blocks.code_based.data_integration.acquire_data.ecoki_data_reader.ecoki_data_reader",
+        "building_block_class": "EcoKIDataReader",
+        "execution_mode": "local",
+        "settings": {
+          "data_file_path": "C:\\Users\\xwang\\Downloads\\p2o_lab_data_processed.csv",
+          "columns_separator": "",
+          "index_name": "timestamp",
+          "invert_data": false,
+          "data_num": 3,
+          "data_reader": "DataReaderLocal",
+          "interval": 1
+        },
+        "visualizer_module": "",
+        "visualizer_class": "",
+        "visualizer_input": {
+        },
+        "interactive_configuration": false
+      },
+      {
+        "name": "data_selector",
+        "building_block_module": "ecoki.building_blocks.code_based.data_integration.preprocess_data.data_selector.data_selector",
+        "building_block_class": "DataSelector",
+        "execution_mode": "local",
+        "settings": {
+          "columns": {
+             "components.Vns=6;s=Arp.Plc.Eclr/AnaView_PI3014.V.property.value": "",
+            "components.Vns=6;s=Arp.Plc.Eclr/AnaView_PI3015.V.property.value": "",
+            "components.Vns=6;s=Arp.Plc.Eclr/AnaView_AI3024.V.property.value": "",
+            "components.Vns=6;s=Arp.Plc.Eclr/AnaView_TI3024.V.property.value": "",
+            "components.Vns=6;s=Arp.Plc.Eclr/AnaView_FI3025.V.property.value": "",
+            "components.Posns=6;s=Arp.Plc.Eclr/AnaVlv_VC3112.Pos.property.value": "",
+            "components.Vns=6;s=Arp.Plc.Eclr/AnaView_PI3017.V.property.value": "",
+            "difference_14_17.value": ""
+          },
+          "selected_columns": []
+        },
+        "visualizer_module": "ecoki.building_blocks.code_based.data_integration.acquire_data.live_data_reader.live_data_visualizer_new",
+        "visualizer_class": "LiveDataVisualizer",
+        "visualizer_input": {"input_data": "output_data"},
+        "interactive_configuration": false
+      }
+    ],
+    "connections": [
+      {
+        "name": "1",
+        "from_node": "ecoKI_data_reader",
+        "from_port": "output_data",
+        "to_node": "data_selector",
+        "to_port": "input_data"
+      }
+    ]
+  },
+    "execution_mode": "loop",
+    "metadata": {
+      "short_description": "Visualizes data in local dataset in real-time.",
+      "description": " This pipeline is intended to continuously read data from a local dataset with a user-defined interval, select certain columns to be visualized and visualize them in real-time.",
+      "category": ["Process Assessment", "Data Integration"],
+      "inputs": {
+      "dataset": {
+          "value range": "Tabular dataset as a pandas DataFrame",
+          "default value": "",
+          "intended use": "Visualization of tabular dataset in real-time"
+        }
+    },
+      "outputs": {
+        "expected_results": "real-time visualization of tabular dataset",
+        "Output Format": "Html"
+      },
+      "version": "0.0.1",
+      "example": "In this example, 3 data samples are visualized in each 1 second. All columns of the original dataset are selected for visualization, "
+    }
+}

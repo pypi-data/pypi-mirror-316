@@ -1,0 +1,125 @@
+{
+    "name": "Train_Xgboost_Multi_with_Data_Preprocessing",
+    "topology": {
+        "nodes": [
+          {
+            "name": "ecoKI_data_reader",
+            "building_block_module": "ecoki.building_blocks.code_based.data_integration.acquire_data.ecoki_data_reader.ecoki_data_reader",
+            "building_block_class": "EcoKIDataReader",
+            "execution_mode": "local",
+            "settings":{},
+            "visualizer_module": "",
+            "visualizer_class": "",
+            "visualizer_input": {},
+            "interactive_configuration": true
+          },
+          {
+            "name": "data_selector",
+            "building_block_module": "ecoki.building_blocks.code_based.data_integration.preprocess_data.data_selector.data_selector",
+            "building_block_class": "DataSelector",
+            "execution_mode": "local",
+            "settings": {},
+            "visualizer_module": "",
+            "visualizer_class": "",
+            "visualizer_input": {},
+            "interactive_configuration": true
+          },
+        {
+        "name": "data_imputer",
+            "building_block_module": "ecoki.building_blocks.code_based.data_integration.preprocess_data.data_imputer.data_imputer",
+            "building_block_class": "DataImputer",
+            "execution_mode": "local",
+            "settings":{"strategy_num": "median", "strategy_cat":  "most_frequent", "fill_value":  null, "labels":  null},
+            "visualizer_module": "ecoki.building_blocks.code_based.data_integration.identify_and_understand_data.tabular_data_visualization.tabular_data_visualizer",
+            "visualizer_class": "TabularDataVisualizer",
+            "visualizer_input": {"input_data": "output_data"},
+            "interactive_configuration": false
+          },
+          {
+            "name": "split_train_test",
+            "building_block_module": "ecoki.building_blocks.code_based.modelling.build_and_train_model.split_traintest_label.split_traintest_label",
+            "building_block_class": "SplitTrainTestLabel",
+            "execution_mode": "local",
+            "settings": {
+              "label_column": [
+                "Appliances"
+                ]
+              },
+            
+            "visualizer_module": "",
+            "visualizer_class": "",
+            "visualizer_input": {},
+            "interactive_configuration": true
+          },
+          {
+            "name": "train_predict_xgboost_multi",
+            "building_block_module": "ecoki.building_blocks.code_based.modelling.build_and_train_model.train_and_predict_xgboost_multioutput.train_and_predict_xgboost_multioutput",
+            "building_block_class": "TrainAndPredictXGBoostMultioutput",
+            "execution_mode": "local",
+            "settings": {
+          "create_inference_pipeline_template": true,
+          "create_inference_pipeline": true
+        },
+            "visualizer_module": "ecoki.building_blocks.code_based.modelling.build_and_train_model.train_and_predict_xgboost_multioutput.train_and_predict_xgboost_multioutput_visualizer",
+            "visualizer_class": "TrainAndPredictXGBoostMultiVisualizer",
+            "visualizer_input": [
+              "output_data_preds",
+              "output_data_featimp",
+              "output_data_metrics",
+              "output_data_hyperparameters",
+              "output_data_labels"
+            ],
+            "interactive_configuration": false
+          }
+        ],
+        "connections": [
+          {
+            "name": "1",
+            "from_node": "ecoKI_data_reader",
+            "from_port": "output_data",
+            "to_node": "data_selector",
+            "to_port": "input_data"
+          },
+          {
+            "name": "2",
+            "from_node": "data_selector",
+            "from_port": "output_data",
+            "to_node": "data_imputer",
+            "to_port": "input_data"
+          },
+          {
+            "name": "3",
+            "from_node": "data_imputer",
+            "from_port": "output_data",
+            "to_node": "split_train_test",
+            "to_port": "input_data"
+          },
+          {
+            "name": "4",
+            "from_node": "split_train_test",
+            "from_port": "output_data",
+            "to_node": "train_predict_xgboost_multi",
+            "to_port": "input_data"
+          }
+        ]
+    },
+    "execution_mode": "local",
+    "metadata": {
+      "short_description": "Trains an XGBoost regression model for multi-output prediction with data preprocessing and evaluates its performance",
+      "description": "This pipeline extends the basic XGBoost regression pipeline by incorporating essential data preprocessing steps before model training. The process begins with data cleaning through imputation of missing values, followed by splitting the dataset into training and testing sets. The preprocessed data is then used to train the XGBoost model for multi-output regression tasks. The comprehensive results, which encompass predictions, feature importance, evaluation metrics, and hyperparameters, are presented in an interactive panel dashboard for enhanced analysis.",
+      "category": ["Modelling", "Data Integration"],
+      "inputs": {
+        "dataset": {
+          "value range": "Tabular dataset as a pandas DataFrame",
+          "default value": "",
+          "intended use": "Train and predict features with XGBoost regression model, with preprocessing steps for data quality"
+        }
+      },
+      "outputs": {
+        "expected_results": "The expected results comprise a fully trained XGBoost model on preprocessed data, predictions on the test dataset, detailed feature importance scores, comprehensive evaluation metrics, and the hyperparameters utilized during training.",
+        "Output Format": ".sav file saved locally"
+      },
+      "example": "",
+      "version": "0.0.1"
+    }
+}

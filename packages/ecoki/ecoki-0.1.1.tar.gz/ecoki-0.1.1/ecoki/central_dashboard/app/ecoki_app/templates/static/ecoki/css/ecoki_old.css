@@ -1,0 +1,71 @@
+.bg-navy {
+    background-color:rgb(13,55,71) !IMPORTANT;}
+    
+.ecoki-background 
+{
+    background: 
+			url(/static/ecoki/img/ecoki-blatt-trans-schatten_2.png),
+			url(/static/ecoki/img/ecoki_label.png),
+			radial-gradient(circle 80px at left 90% top 10%, rgb(64,125,113,0.6), rgb(13,55,71,0)),
+			radial-gradient(circle 60px at left 76% top 65%, rgb(64,125,113,0.6), rgb(13,55,71,0)),
+			radial-gradient(circle 50px at left 10% top 20%, rgb(64,125,113,0.6), rgb(13,55,71,0)),
+			radial-gradient(circle 50vw at left 50% top 60%, rgb(64,125,113), rgb(13,55,71));
+
+	background-size: 15vh, 10vh, auto, auto, auto, auto;
+		
+	background-repeat: no-repeat, no-repeat,no-repeat, no-repeat, no-repeat, no-repeat;
+		
+    background-position: right 5vw bottom 0px, right 6vw top -3px, 0 0, 0 0, 0 0, 0 0;
+
+
+    height: 85vh;
+
+    }
+
+.content-wrapper {
+    background-color:rgb(64,125,113) !IMPORTANT;}
+
+.navbar {
+    background-color:rgb(13,55,71) !IMPORTANT;}
+
+.card-success:not(.card-outline) > .card-header {
+    background-color:rgb(13,55,71) !IMPORTANT;}
+
+.card-body {
+    color:black !IMPORTANT;}
+
+.img_base {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 20vh;
+ }
+
+.img_login {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 20vh;
+    border-radius: 1em;
+    box-shadow: 5px 10px 15px grey; }
+    
+
+
+.subtitel { 
+    text-align: center; 
+    margin: auto; /* Important */ 
+    font-size: large; 
+    color: white;
+}
+
+
+.titel { 
+    text-align: center; 
+    margin: auto; /* Important */ 
+    font-size: xx-large;
+    color: white;
+ }
+ 
+
+ .main-footer {
+    background-color:rgb(13,55,71) !IMPORTANT;}

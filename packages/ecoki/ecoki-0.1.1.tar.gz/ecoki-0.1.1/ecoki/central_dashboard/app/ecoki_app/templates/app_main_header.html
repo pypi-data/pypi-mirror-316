@@ -1,0 +1,51 @@
+{% extends 'adminlte/lib/_main_header.html' %}
+{% load static %}
+
+    {% block nav_bar %}
+    <!-- Left navbar links -->
+    <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link" data-widget="pushmenu" href="#"><i class="fas fa-bars"></i></a>
+        </li>
+        <li class="nav-item d-none d-sm-inline-block">
+            <a href="/" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item d-none d-sm-inline-block" style="width:700px;margin:0px auto;float:right;">
+            <a href="/admin" class="nav-link">Admin</a>
+        </li>
+        
+        {% comment %} {% if bb %}
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="/active/building_blocks_overview/{{ bbname }}/" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Selected Building Blocks</a>
+                <div class= "dropdown-menu" aria-labelledby="navbarDropdown">
+                    {% for item in bb %}
+                        <a class="dropdown-item">{{bb}}</a>
+                    {% endfor %}
+                </div>
+            </li>
+        {% endif %}  {% endcomment %}
+
+    </ul>
+    {% comment %} <div style="width:700px;margin:0px auto;float:right;"></div> {% endcomment %}
+    
+    {% block nav_bar_center %}
+
+    <!-- GOOGLE TRANSLATE -->
+    <formg class="form-inline ml-3" style="width:850px;margin:0px auto;float:right;">
+        <div id="google_translate_element"></div>    
+    {% endblock %}
+    
+
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" defer></script>
+    <script type="text/javascript" >
+        // When the user clicks on <div>, open the popup
+        function googleTranslateElementInit(){
+            new google.translate.TranslateElement(
+                {pageLanguage: 'en', layout:google.translate.TranslateElement.InlineLayout.SIMPLE},
+                'google_translate_element'
+            );
+        }
+    </script>
+    <meta name="google.translate.customisation" content="2a346d14a229c668-7e7397a8cc152430-g725eaceb7864f0fd-12"></meta>       
+{% endblock %}

@@ -1,0 +1,59 @@
+                        If you want the model comparison tool to include a neural network of your choice, 
+                        provide the path of the python file that trains a neural network and a requirements.txt
+                        file for installing dependencies.                        
+                       
+                       If you are accessing other files in your python script, such as reading a file, writing to a 
+                       file, etc., please use absolute paths to access those files. The software only supports Windows OS. 
+                       
+                       The structure of the python script, should be as follows:
+                              
+                        ####### imports
+                              
+                        import pandas as pd               
+                        import os
+                        import ....
+                              
+                        ###### function
+                              
+                        function_name(analysis_type, save_dir):  # At one time, the tool can ask for one of two analysis type options for the neural network. They 
+                                                                 # are cross validation and learning curves. Therefore, analysis_type can have 'cv' or 'lc' value.
+                                                                 # Since you will need to work with train and test datasets for the analyses, the program also 
+                                                                 # provides a save_dir argument that points to the folder containing the test and train datasets. 
+                                                                 # Basically, it points to the "analysis name" folder that the user provided to the gui. The program
+                                                                 # generates important data here such as datasets, venv, results, etc.                                                                 
+                                                                    
+                            # Use following code to read the train and test datasets that the program has created
+                            encoding = 'latin-1'        # choose an encoding for reading datasets
+                            [x_train, x_test, y_train, y_test] = [
+                                pd.read_csv(os.path.join(save_dir, '%%s.csv'%%(dt)),  
+                                            encoding=encoding) for dt in ("x_train", "x_test", "y_train", "y_test")]
+                                  
+                            # Use the aforementioned train, test datasets to do the following:
+                            # - create and train your neural network and make predictions
+                            # - calculate evaluation metrics based on analysis type (cv or lc). Other models compared in the tool compute mae, rmse, r2 and mape,
+                            #   therefore your script should also compute them. For cross validation (cv), you should create a dict variable called NN_score:    
+                            #   NN_score = {'Algorithm': name, 'Coeff. of Determination': r_2, 'Root Mean Square Error': rmse, 
+                            #               'Mean Absolute Error': mae, 'Mean Absolute %% Error': mape}
+                            #   For learning curve or lc, calculate training and validation score and store in a dict variable called learning_curve_score:
+                            #   learning_curve_score = {'Training Set Size': training_set_size, 'Training Error':  train_score, 'Validation Error': validation_score}
+                            # - Return the dict variable. Ensure that the aforementioned dict structures are fulfilled
+ 
+                            def main():
+                                # Use argparse to receive commandline arguments from subprocess that calls this script 
+                                # Only options for analysis_type are ['cv', 'lc']								
+                                parser = argparse.ArgumentParser(description='Train neural network')
+                                parser.add_argument('-a', '--analysis_type', choices=['cv', 'lc'], help="Type of analysis of neural network", type=str, required=True)
+                                # The arguments point to the "analysis name" folder that user provided to the gui. The program generates important data here such 
+                                # as datasets, venv, results, etc.
+                                parser.add_argument('-s', '--save_dir', help="Directory of user's choice where program generates necessary data", type=str, 
+                                                    required=True) 
+                                                    
+                                args, _ = parser.parse_known_args()
+
+                                score = function_name(args.analysis_type, args.save_dir)  # Call your function with analysis type and save_dir as arguments
+                                print(score)     # send the score to stdout. The subprocess that calls this script will receive
+
+                            if __name__ == '__main__':
+                                # The model comparison software will use subprocess to call this script and pass analysis_type and save_dir as arguments. 
+                                # This part of code is run when the script called
+                                main()
