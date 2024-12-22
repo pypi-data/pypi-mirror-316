@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>uhugo.download &#8212; uHugo 1.1.10 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="../../_static/nature.css?v=601dbdee" />
+    <link rel="stylesheet" type="text/css" href="../../_static/tabs.css?v=a5c4661c" />
+    <script src="../../_static/documentation_options.js?v=25b84aaa"></script>
+    <script src="../../_static/doctools.js?v=888ff710"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/tabs.js?v=3030b3cb"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../index.html">uHugo 1.1.10 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../index.html" accesskey="U">Module code</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">uhugo.download</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <h1>Source code for uhugo.download</h1><div class="highlight"><pre>
+<span></span><span class="kn">import</span> <span class="nn">os.path</span>
+<span class="kn">import</span> <span class="nn">platform</span>
+<span class="kn">import</span> <span class="nn">tempfile</span>
+
+<span class="kn">import</span> <span class="nn">requests</span>
+<span class="kn">from</span> <span class="nn">rich.progress</span> <span class="kn">import</span> <span class="n">Progress</span><span class="p">,</span> <span class="n">TextColumn</span><span class="p">,</span> <span class="n">BarColumn</span><span class="p">,</span> <span class="n">DownloadColumn</span><span class="p">,</span> <span class="n">TransferSpeedColumn</span><span class="p">,</span> <span class="n">TimeRemainingColumn</span>
+
+<span class="n">progress</span> <span class="o">=</span> <span class="n">Progress</span><span class="p">(</span>
+    <span class="n">TextColumn</span><span class="p">(</span><span class="s2">&quot;[bold blue]</span><span class="si">{task.fields[filename]}</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">justify</span><span class="o">=</span><span class="s2">&quot;right&quot;</span><span class="p">),</span>
+    <span class="n">BarColumn</span><span class="p">(),</span>
+    <span class="s2">&quot;[progress.percentage]</span><span class="si">{task.percentage:&gt;3.1f}</span><span class="s2">%&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;•&quot;</span><span class="p">,</span>
+    <span class="n">DownloadColumn</span><span class="p">(),</span>
+    <span class="s2">&quot;•&quot;</span><span class="p">,</span>
+    <span class="n">TransferSpeedColumn</span><span class="p">(),</span>
+    <span class="s2">&quot;•&quot;</span><span class="p">,</span>
+    <span class="n">TimeRemainingColumn</span><span class="p">(),</span>
+    <span class="n">transient</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+<span class="p">)</span>
+
+
+<div class="viewcode-block" id="download_hugo_zip">
+<a class="viewcode-back" href="../../reference/download.html#uhugo.download.download_hugo_zip">[docs]</a>
+<span class="k">def</span> <span class="nf">download_hugo_zip</span><span class="p">(</span><span class="n">version</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">os_type</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">download_to</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Download the Hugo file to temp folder.</span>
+
+<span class="sd">    :param os_type: OS type</span>
+<span class="sd">    :param version: Version number to download</span>
+<span class="sd">    :param download_to: Path to download to</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">os_type</span><span class="p">:</span>
+        <span class="n">os_type</span> <span class="o">=</span> <span class="n">platform</span><span class="o">.</span><span class="n">system</span><span class="p">()</span>
+
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">download_to</span><span class="p">:</span>
+        <span class="n">download_to</span> <span class="o">=</span> <span class="n">tempfile</span><span class="o">.</span><span class="n">gettempdir</span><span class="p">()</span>
+
+    <span class="n">download_to</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">download_to</span><span class="p">,</span> <span class="sa">f</span><span class="s2">&quot;hugo_</span><span class="si">{</span><span class="n">version</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="k">with</span> <span class="n">progress</span><span class="p">:</span>
+        <span class="n">task_id</span> <span class="o">=</span> <span class="n">progress</span><span class="o">.</span><span class="n">add_task</span><span class="p">(</span><span class="s2">&quot;download&quot;</span><span class="p">,</span> <span class="n">filename</span><span class="o">=</span><span class="sa">f</span><span class="s2">&quot;hugo_</span><span class="si">{</span><span class="n">version</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">start</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">download_to</span><span class="p">,</span> <span class="s2">&quot;wb&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">file</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">os_type</span> <span class="o">==</span> <span class="s2">&quot;Darwin&quot;</span><span class="p">:</span>
+                <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span>
+                    <span class="sa">f</span><span class="s2">&quot;https://github.com/gohugoio/hugo/releases/download/v</span><span class="si">{</span><span class="n">version</span><span class="si">}</span><span class="s2">/&quot;</span>
+                    <span class="sa">f</span><span class="s2">&quot;hugo_extended_</span><span class="si">{</span><span class="n">version</span><span class="si">}</span><span class="s2">_darwin-universal.tar.gz&quot;</span><span class="p">,</span>
+                    <span class="n">stream</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+                <span class="p">)</span>
+            <span class="k">elif</span> <span class="n">os_type</span> <span class="o">==</span> <span class="s2">&quot;Windows&quot;</span> <span class="ow">or</span> <span class="n">os_type</span> <span class="o">==</span> <span class="s2">&quot;nt&quot;</span><span class="p">:</span>
+                <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span>
+                    <span class="sa">f</span><span class="s2">&quot;https://github.com/gohugoio/hugo/releases/download/v</span><span class="si">{</span><span class="n">version</span><span class="si">}</span><span class="s2">/&quot;</span>
+                    <span class="sa">f</span><span class="s2">&quot;hugo_extended_</span><span class="si">{</span><span class="n">version</span><span class="si">}</span><span class="s2">_windows-amd64.zip&quot;</span><span class="p">,</span>
+                    <span class="n">stream</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+                <span class="p">)</span>
+            <span class="k">elif</span> <span class="n">os_type</span> <span class="o">==</span> <span class="s2">&quot;posix&quot;</span> <span class="ow">or</span> <span class="n">os_type</span> <span class="o">==</span> <span class="s2">&quot;Linux&quot;</span><span class="p">:</span>
+                <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span>
+                    <span class="sa">f</span><span class="s2">&quot;https://github.com/gohugoio/hugo/releases/download/v</span><span class="si">{</span><span class="n">version</span><span class="si">}</span><span class="s2">/&quot;</span>
+                    <span class="sa">f</span><span class="s2">&quot;hugo_extended_</span><span class="si">{</span><span class="n">version</span><span class="si">}</span><span class="s2">_linux-amd64.tar.gz&quot;</span><span class="p">,</span>
+                    <span class="n">stream</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+                <span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="k">raise</span> <span class="ne">OSError</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">os_type</span><span class="si">}</span><span class="s2"> not supported.&quot;</span><span class="p">)</span>
+
+            <span class="k">if</span> <span class="n">response</span><span class="o">.</span><span class="n">headers</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;Status&quot;</span><span class="p">)</span> <span class="o">==</span> <span class="s2">&quot;404 Not Found&quot;</span><span class="p">:</span>
+                <span class="k">raise</span> <span class="n">requests</span><span class="o">.</span><span class="n">exceptions</span><span class="o">.</span><span class="n">HTTPError</span><span class="p">(</span><span class="s2">&quot;File not found&quot;</span><span class="p">)</span>
+
+            <span class="n">total_length</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">headers</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;content-length&quot;</span><span class="p">))</span>
+
+            <span class="k">if</span> <span class="n">total_length</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+                <span class="n">progress</span><span class="o">.</span><span class="n">console</span><span class="o">.</span><span class="n">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;- Downloading Hugo v</span><span class="si">{</span><span class="n">version</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+                <span class="n">file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">content</span><span class="p">)</span>
+                <span class="n">progress</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">task_id</span><span class="p">,</span> <span class="n">completed</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+                <span class="n">progress</span><span class="o">.</span><span class="n">console</span><span class="o">.</span><span class="n">print</span><span class="p">(</span><span class="s2">&quot;- Hugo downloaded&quot;</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">progress</span><span class="o">.</span><span class="n">console</span><span class="o">.</span><span class="n">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;- Downloading Hugo v</span><span class="si">{</span><span class="n">version</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+                <span class="n">progress</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">task_id</span><span class="p">,</span> <span class="n">total</span><span class="o">=</span><span class="n">total_length</span><span class="p">)</span>
+                <span class="n">progress</span><span class="o">.</span><span class="n">start_task</span><span class="p">(</span><span class="n">task_id</span><span class="p">)</span>
+                <span class="k">for</span> <span class="n">data</span> <span class="ow">in</span> <span class="n">response</span><span class="o">.</span><span class="n">iter_content</span><span class="p">(</span><span class="n">chunk_size</span><span class="o">=</span><span class="mi">4096</span><span class="p">):</span>
+                    <span class="n">file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+                    <span class="n">progress</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">task_id</span><span class="p">,</span> <span class="n">advance</span><span class="o">=</span><span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="p">))</span>
+                <span class="n">progress</span><span class="o">.</span><span class="n">console</span><span class="o">.</span><span class="n">print</span><span class="p">(</span><span class="s2">&quot;- Hugo downloaded&quot;</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">download_to</span></div>
+
+</pre></div>
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../index.html">uHugo 1.1.10 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../index.html" >Module code</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">uhugo.download</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+    &#169; Copyright 2021, Akshay Raj Gollahalli.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.2.5.
+    </div>
+  </body>
+</html>
