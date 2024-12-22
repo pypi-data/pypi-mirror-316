@@ -1,0 +1,6 @@
+[uhugo]
+name = "cloudflare"
+project = "gollahalli-com"
+email_address = "env:cloudflare_email"
+account_id = "env:cloudflare_account_id"
+api_key = "env:cloudflare_key"

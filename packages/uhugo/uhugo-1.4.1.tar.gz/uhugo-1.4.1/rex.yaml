@@ -1,0 +1,11 @@
+projectName: uHugo
+userName: akshaybabloo
+ignoreRexGeneratorReference: true
+remoteGitURL: github.com/akshaybabloo/uHugo
+release:
+    groupBy:
+        issue:
+            - bug
+        pull:
+            - dependencies
+            - bug
