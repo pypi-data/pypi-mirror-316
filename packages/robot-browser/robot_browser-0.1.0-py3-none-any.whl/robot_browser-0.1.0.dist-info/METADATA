@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: robot_browser
+Version: 0.1.0
+Summary: robot browser tools
+Author: 
+Author-email: 
+Requires-Python: >=3.13
+Requires-Dist: playwright
+Requires-Dist: ddddocr
+Requires-Dist: pyrect
