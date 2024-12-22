@@ -1,0 +1,12 @@
+README.md
+setup.py
+sintaxis/__init__.py
+sintaxis/ascii.py
+sintaxis/main.py
+sintaxis/utils.py
+sintaxis.egg-info/PKG-INFO
+sintaxis.egg-info/SOURCES.txt
+sintaxis.egg-info/dependency_links.txt
+sintaxis.egg-info/entry_points.txt
+sintaxis.egg-info/requires.txt
+sintaxis.egg-info/top_level.txt

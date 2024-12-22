@@ -1,0 +1,2 @@
+[console_scripts]
+sintaxis = sintaxis.main:main
