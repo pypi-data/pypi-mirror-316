@@ -1,0 +1,10 @@
+versed/__about__.py,sha256=keT4AxicGtmVAil0DE_K7h2jiy18l0aRLSTr_Hn0RUY,135
+versed/__init__.py,sha256=9yPp8-BlSGQv4wPIo8JOBBNLY9f1D0p2oS1-4xE8QkI,113
+versed/auth.py,sha256=7vQtisZJhxGaHtxaS4DzwsHHNV3ObaQoQKLgz7_sqew,2679
+versed/layout.py,sha256=RUYAv_ZFD53Dt1AkDGWby6PqzPjZnFqJPvy7ScZ3nrE,1399
+versed/panes/chat_pane.py,sha256=eekmSVX4ZGqU6zL2s0MKgYGwbxLR5MGyCH-ZZRX4h4c,4436
+versed/panes/directory_pane.py,sha256=w9QpEwne4fROzZFe6YYDpf8I-AAH-RI7h2XPVhzE0Ck,926
+versed-0.0.1.dist-info/METADATA,sha256=OgwW4VMMCRdbPvfPrz6BHnQJZL_mW8dz8hqqdbOrS24,1486
+versed-0.0.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+versed-0.0.1.dist-info/licenses/LICENSE.txt,sha256=psI-FWd6FgzLXN2HaJx328w90BzomLSTpdgbYPTZFJY,1105
+versed-0.0.1.dist-info/RECORD,,
