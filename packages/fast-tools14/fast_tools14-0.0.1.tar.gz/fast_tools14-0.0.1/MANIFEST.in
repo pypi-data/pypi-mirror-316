@@ -1,0 +1,4 @@
+graft fast_tools14
+global-exclude __pycache__ *.py[cod] .DS_Store
+include LICENSE
+include README.md
