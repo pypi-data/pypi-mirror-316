@@ -1,0 +1,32 @@
+Metadata-Version: 2.4
+Name: uhdm
+Version: 1.84
+Summary: Universal Hardware Data Model. A complete modeling of the IEEE SystemVerilog Object Model with VPI Interface, Elaborator, Serialization, Visitor and Listener. Used as a compiled interchange format in between SystemVerilog tools.
+Project-URL: Repository, https://github.com/dau-dev/uhdm-pypi
+Project-URL: Homepage, https://github.com/dau-dev/uhdm-pypi
+Author-email: the uhdm authors <dev@dau.dev>
+License: Apache-2.0
+License-File: LICENSE
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.9
+Provides-Extra: develop
+Requires-Dist: build; extra == 'develop'
+Requires-Dist: cibuildwheel; extra == 'develop'
+Requires-Dist: hatchling; extra == 'develop'
+Requires-Dist: twine; extra == 'develop'
+Requires-Dist: wheel; extra == 'develop'
+Description-Content-Type: text/markdown
+
+# uhdm-pypi
+PyPI Packaging for [UHDM](https://github.com/chipsalliance/uhdm)
+
+[![Build Status](https://github.com/dau-dev/uhdm-pypi/actions/workflows/build.yml/badge.svg?branch=main&event=push)](https://github.com/dau-dev/uhdm-pypi/actions/workflows/build.yml)
+[![License](https://img.shields.io/github/license/dau-dev/uhdm-pypi)](https://github.com/dau-dev/uhdm-pypi)
+[![PyPI](https://img.shields.io/pypi/v/uhdm.svg)](https://pypi.python.org/pypi/uhdm)
