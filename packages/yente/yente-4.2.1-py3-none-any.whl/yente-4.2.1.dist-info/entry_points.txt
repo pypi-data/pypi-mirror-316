@@ -1,0 +1,3 @@
+[console_scripts]
+yente=yente.cli:cli
+
