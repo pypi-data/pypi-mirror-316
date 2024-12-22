@@ -1,0 +1,15 @@
+formatfusion/__main__.py,sha256=d1EPuAisg5NTTPMDVR0_tlBGPDzRHdoZw1ipFwMJxPQ,252
+formatfusion/commands/__init__.py,sha256=8PSU3LT436CSOhFLVKupKjF5nj0dG6nGiUxc1xzfD5M,35
+formatfusion/commands/cmd_image.py,sha256=0xhUDmpopsKLEu64AtgMbIsfBKSsbCOPkuofuUmmi_s,1240
+formatfusion/commands/cmd_yaml.py,sha256=HE-mvhc7pfsKe5ndna_ulfsjnJhsybNprHdFcNqLdQA,1936
+formatfusion/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+formatfusion/core/base.py,sha256=VmUht62AWsmdsRguQE5o73QStjaHYJFyvVgK8ksdiQE,586
+formatfusion/core/image.py,sha256=wC23VlF5BJIzANe32zh4ADOIzZC3E4WG4DYEkx80FLE,369
+formatfusion/core/json_and_yaml.py,sha256=nD0Q3iTr9ymuK0sScQb3geK5ofedjFlN52tOcokVSP4,858
+formatfusion/helpers.py,sha256=-BGGFGLw7IJPnTNa56Hv-AzC7qHPmI2t2wZsz9b-XLA,1136
+formatfusion/main.py,sha256=WgK8as9fTFE15pRVLfcwrqX4Dx2ZE2qXZspCvcEhy3g,1376
+cli_format_fusion-0.1.0.dist-info/entry_points.txt,sha256=6Lye3-qMZTvqz1FtQDkLnlJKnEHfHX_Ic-OnFSKK4Ws,122
+cli_format_fusion-0.1.0.dist-info/LICENSE,sha256=Tz_IaNoPq1X9oYY0Kis2iNH1guUiY9HLY6hTXMbPSyQ,11537
+cli_format_fusion-0.1.0.dist-info/METADATA,sha256=KmXNsIE-SqLBE3a5pM8eW7-DjpBNIos0oD20-0INK6c,1642
+cli_format_fusion-0.1.0.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+cli_format_fusion-0.1.0.dist-info/RECORD,,
