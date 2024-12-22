@@ -1,0 +1,8 @@
+README.md
+setup.py
+is_13ai/__init__.py
+is_13ai/is_13.py
+is_13ai.egg-info/PKG-INFO
+is_13ai.egg-info/SOURCES.txt
+is_13ai.egg-info/dependency_links.txt
+is_13ai.egg-info/top_level.txt
