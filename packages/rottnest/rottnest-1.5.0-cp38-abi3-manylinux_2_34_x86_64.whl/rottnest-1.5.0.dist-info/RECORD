@@ -1,0 +1,9 @@
+rottnest-1.5.0.dist-info/METADATA,sha256=Wti4IXQlMXbS9eRmtO9MRW1P6hR4TUBBkq9Hj_yV-Fk,4769
+rottnest-1.5.0.dist-info/WHEEL,sha256=BfEkoUpPw-8egRgRAev8ETSNiAvfV9nhW74bR1KDUos,106
+rottnest/nlp.py,sha256=Qe-aV3qRgS0GP3dFsTsOYnLjdyegfnBV9BVFhmQnHBM,3667
+rottnest/internal.py,sha256=76hIo3UT40DfW7MgcdFdbol1CKZ4Y0mmQTJXzJ9YePo,21395
+rottnest/__init__.py,sha256=AmlEtpoDXilSFMAL7ksfJLCZkx3466-kTVdzi6WE9VE,173
+rottnest/utils.py,sha256=-i_WlXOU0hPfelHiYCreKy-5DdeQCNvOk1N0iZ_TzJg,10299
+rottnest/table.py,sha256=3CpuxWmob5p0KJwUr3NM1poSAI1XKowvOakYWCrdM94,4321
+rottnest/rottnest.abi3.so,sha256=Civ5jdVyH0jKEcjjmVxe_NunM87h4yiRmMIWyFZVNWg,37870744
+rottnest-1.5.0.dist-info/RECORD,,
