@@ -1,0 +1,23 @@
+[project]
+name = 'django-persian-fields'
+version = '0.1.0'
+description = 'Persian Fields for Django'
+readme = 'README.md'
+requires-python = '>=3.12'
+classifiers = [
+    'Programming Language :: Python :: 3',
+    'License :: OSI Approved :: MIT License',
+    'Operating System :: OS Independent',
+]
+authors = [
+    { name = 'Ali Shekari', email = 'alishekari1991@outlook.com' }
+]
+
+dependencies = [
+    'django >= 4.1.5',
+    'djangorestframework >= 3.14.0'
+]
+
+[project.urls]
+"Homepage" = "https://github.com/alishekari/django-persian-fields"
+"Bug Tracker" = "https://github.com/alishekari/django-persian-fields/issues"
