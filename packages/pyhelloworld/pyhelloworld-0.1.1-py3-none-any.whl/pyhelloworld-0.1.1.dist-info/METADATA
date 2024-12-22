@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: pyhelloworld
+Version: 0.1.1
+Summary: A simple library to say hello
+Home-page: https://github.com/firzaelbuho/pyhelloworld
+Author: Firza Aditya 
+Author-email: elbuho1315@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/plain
+
+A Python package to generate greeting strings.
