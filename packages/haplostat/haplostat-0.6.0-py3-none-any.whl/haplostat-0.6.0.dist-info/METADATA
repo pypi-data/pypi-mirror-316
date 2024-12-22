@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: haplostat
+Version: 0.6.0
+Summary: A package for handling HLA-related tasks with Selenium WebDriver integration
+Home-page: https://github.com/jesse141245/haplostat
+Author: Jesse
+Author-email: woopeejesse@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: flask>=2.0.0
+Requires-Dist: selenium>=4.0.0
+Requires-Dist: beautifulsoup4>=4.10.0
+Requires-Dist: requests>=2.26.0
+Requires-Dist: webdriver-manager>=3.8.5
+
+## Installation
+
+```bash
+pip install haplo-package
