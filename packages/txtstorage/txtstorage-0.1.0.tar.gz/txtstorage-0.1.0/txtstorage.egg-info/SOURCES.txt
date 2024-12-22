@@ -1,0 +1,8 @@
+setup.py
+txtstorage/__init__.py
+txtstorage/timetrack.py
+txtstorage.egg-info/PKG-INFO
+txtstorage.egg-info/SOURCES.txt
+txtstorage.egg-info/dependency_links.txt
+txtstorage.egg-info/requires.txt
+txtstorage.egg-info/top_level.txt
