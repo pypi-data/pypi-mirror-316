@@ -1,0 +1,13 @@
+diff --git a/pyproject.toml b/pyproject.toml
+index fcc18e1..80cdfd0 100644
+--- a/pyproject.toml
++++ b/pyproject.toml
+@@ -42,7 +42,7 @@ classifiers = [
+ packages = ["igwn_segments"]
+ 
+ [tool.setuptools_scm]
+-version_file = "igwn_segments/_version.py"
++write_to = "igwn_segments/_version.py"
+ 
+ # -- ruff
+ 

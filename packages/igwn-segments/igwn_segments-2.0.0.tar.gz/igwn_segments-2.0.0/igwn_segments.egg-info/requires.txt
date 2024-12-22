@@ -1,0 +1,6 @@
+
+[docs]
+furo
+Sphinx
+sphinx-automodapi
+sphinx-design

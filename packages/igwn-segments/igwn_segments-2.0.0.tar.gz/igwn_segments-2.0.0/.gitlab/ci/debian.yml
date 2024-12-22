@@ -1,0 +1,37 @@
+include:
+  - local: .gitlab/ci/test.yml
+
+  # https://computing.docs.ligo.org/guide/gitlab/components/debian/all/
+  - component: $CI_SERVER_FQDN/computing/gitlab/components/debian/all@2
+    inputs:
+      needs: [sdist]
+      debian_versions:
+        - bullseye-backports
+        - bookworm
+      test_install: >-
+        make
+        python3-igwn-segments
+        python3-lal
+        python3-pip
+
+  # For future versions of Debian, we can't install LAL, so we need a separate
+  # test configuration
+  - component: $CI_SERVER_FQDN/computing/gitlab/components/debian/all@2
+    inputs:
+      needs: [sdist]
+      job_prefix: "debian_next"
+      debian_versions:
+        - testing
+        - sid
+      test_install: >-
+        make
+        python3-igwn-segments
+        python3-pip
+
+# -- overwrite test script with/without lal
+
+debian_test:
+  script: !reference [.test_with_lal, script]
+
+debian_next_test:
+  script: !reference [.test_without_lal, script]

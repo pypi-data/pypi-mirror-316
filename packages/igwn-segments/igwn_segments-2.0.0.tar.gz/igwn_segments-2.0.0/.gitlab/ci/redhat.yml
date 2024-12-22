@@ -1,0 +1,37 @@
+include:
+  - local: .gitlab/ci/test.yml
+
+  # https://computing.docs.ligo.org/guide/gitlab/components/redhat/all/
+  - component: $CI_SERVER_FQDN/computing/gitlab/components/redhat/all@2
+    inputs:
+      needs: [sdist]
+      redhat_versions:
+        - 8
+      test_install: >-
+        make
+        python3-igwn-segments
+        python3-lal
+        python3-pip
+
+  # For new versions of RedHat, we can't install LAL,
+  # so we need a separate test configuration
+  - component: $CI_SERVER_FQDN/computing/gitlab/components/redhat/all@2
+    inputs:
+      needs: [sdist]
+      job_prefix: redhat_next
+      redhat_versions:
+        - 9
+      test_install: >-
+        make
+        python3-igwn-segments
+        python3-pip
+
+# -- overwrite test script with/without lal
+
+redhat_test:
+  script: !reference [.test_with_lal, script]
+
+redhat_next_test:
+  variables:
+    GIT_STRATEGY: none
+  script: !reference [.test_without_lal, script]

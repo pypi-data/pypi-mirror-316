@@ -1,0 +1,82 @@
+# -- igwn-segments test configuration
+
+# generic test template (should work on all platforms)
+.test:
+  interruptible: true
+  script:
+    - python3 -m pip show igwn-segments || true
+    - make -C test
+
+.test_with_lal:
+  extends: .test
+
+.test_without_lal:
+  extends: .test
+  variables:
+    # simple tests don't need the source code, it actually gets in the way
+    GIT_STRATEGY: none
+  script:
+    - python3 -m pip show igwn-segments
+    # if we don't have LAL, we can't run the test suite, so we just
+    # perform some basic sanity checks
+    - |
+      python3 - << SIMPLE_TEST
+      from igwn_segments import segment;
+      a = segment(1, 2);
+      b = segment(2, 3);
+      c = segment(5, 6);
+      assert a.connects(b);
+      assert a in (a + b);
+      assert (a + b).intersects(b);
+      assert a.disjoint(c);
+      SIMPLE_TEST
+
+# -- Python-specific tests
+
+.python_test:
+  extends: .test
+  before_script:
+    - apt-get -yqq update && apt-get install make
+    - python -m pip install
+        *.whl
+        ${TEST_INSTALL:-}
+
+.python_test_without_lal:
+  extends:
+    - .python_test
+    - .test_without_lal
+
+.python_test_with_lal:
+  extends:
+    - .python_test
+    - .test_with_lal
+  variables:
+    TEST_INSTALL: "lalsuite"
+
+# gitlab CI/CD YAML can't handle variables in needs: or proper job
+# matrices, so we have to copy things out here for each Python version.
+
+python_test_manylinux_x86_64_3.9:
+  extends: .python_test_with_lal
+  image: "python:3.9"
+  needs: ["wheel_manylinux_x86_64: [3.9]"]
+
+python_test_manylinux_x86_64_3.10:
+  extends: .python_test_with_lal
+  image: "python:3.10"
+  needs: ["wheel_manylinux_x86_64: [3.10]"]
+
+python_test_manylinux_x86_64_3.11:
+  extends: .python_test_with_lal
+  image: "python:3.11"
+  needs: ["wheel_manylinux_x86_64: [3.11]"]
+
+python_test_manylinux_x86_64_3.12:
+  extends: .python_test_with_lal
+  image: "python:3.12"
+  needs: ["wheel_manylinux_x86_64: [3.12]"]
+
+python_test_manylinux_x86_64_3.13:
+  extends: .python_test_without_lal
+  image: "python:3.13"
+  needs: ["wheel_manylinux_x86_64: [3.13]"]
