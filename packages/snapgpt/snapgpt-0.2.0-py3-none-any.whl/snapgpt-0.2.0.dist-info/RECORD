@@ -1,0 +1,9 @@
+snapgpt/__init__.py,sha256=Gxvi3OEWOa2R4MWkKWWYn8QLfAx8WRfzpNNhEbu2MGA,94
+snapgpt/__main__.py,sha256=3vwBkHIlTCWv5MJNUGmFRk_WyPRl_qdCHs1BUvRpgVU,85
+snapgpt/cli.py,sha256=-XjdjwouTqc3DWKvupFrUN3dSBemlu1PFGezoei2WKI,30670
+snapgpt-0.2.0.dist-info/LICENSE,sha256=_Vaac0cO8PtgQoZTlyp55zm5JF_QTtBawMWxguHlYvw,1069
+snapgpt-0.2.0.dist-info/METADATA,sha256=nNFkFKYnDH01sJfHWkSfj-GEpLfP0m1OqlXRpMHWjJc,11021
+snapgpt-0.2.0.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+snapgpt-0.2.0.dist-info/entry_points.txt,sha256=elhQSdsdFoSG5At8pCNTI-seNhfONj6FrAReIXy2g9E,45
+snapgpt-0.2.0.dist-info/top_level.txt,sha256=F781eMGz7DCIFs1lSrepc1uB88ofYvs_6kKjxlJqi0g,8
+snapgpt-0.2.0.dist-info/RECORD,,
