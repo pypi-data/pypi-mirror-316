@@ -1,0 +1,17 @@
+Metadata-Version: 2.4
+Name: srtfilter
+Version: 0.1.0
+Project-URL: Homepage, https://github.com/arjunsatarkar/srtfilter
+Project-URL: Issues, https://github.com/arjunsatarkar/srtfilter/issues
+Author-email: Arjun Satarkar <me@arjunsatarkar.net>
+License-File: LICENSE.txt
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.12
+Requires-Dist: click==8.1.*
+Description-Content-Type: text/markdown
+
+# srtfilter
+
+Parser for SubRip (SRT) subtitle format and framework for utilities that manipulate it.
