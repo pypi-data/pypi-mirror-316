@@ -1,0 +1,84 @@
+[build-system]
+requires = ["hatchling", "hatch-vcs"]
+build-backend = "hatchling.build"
+
+[tool.hatch.version]
+source = "vcs"
+raw-options = { local_scheme = "no-local-version" }
+
+[project]
+name = "mcp_jetbrains_proxy"
+dynamic = ["version"]
+description = "MCP proxy between LLM and JetBrains IDE"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+keywords = ["mcp", "jetbrains", "ide", "llm", "proxy"]
+authors = [
+    { name = "Leonard Buskin", email = "leo@utility.pub" }
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+dependencies = [
+    "mcp>=0.1.0",
+    "aiohttp>=3.9.0",
+]
+
+[project.optional-dependencies]
+test = [
+    "pytest>=7.0.0",
+    "pytest-asyncio>=0.23.0",
+    "pytest-cov>=4.1.0",
+    "aiohttp>=3.9.0",
+    "mypy>=1.8.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/leobuskin/mcp_jetbrains_proxy"
+Repository = "https://github.com/leobuskin/mcp_jetbrains_proxy.git"
+Issues = "https://github.com/leobuskin/mcp_jetbrains_proxy/issues"
+
+[project.scripts]
+mcp_jetbrains_proxy = "mcp_jetbrains_proxy.server:main"
+
+[tool.ruff]
+# Line length of 120 characters
+line-length = 120
+
+[tool.ruff.lint]
+# Enable pycodestyle ('E'), pyflakes ('F'), and isort ('I') rules
+select = ["E", "F", "I"]
+
+[tool.ruff.format]
+quote-style = "single"
+
+[tool.mypy]
+python_version = "3.11"
+# Strict mode
+strict = true
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
+disallow_incomplete_defs = true
+check_untyped_defs = true
+disallow_untyped_decorators = true
+no_implicit_optional = true
+warn_redundant_casts = true
+warn_unused_ignores = true
+warn_no_return = true
+warn_unreachable = true
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+asyncio_default_fixture_loop_scope = "function"
+addopts = "-v --cov=mcp_jetbrains_proxy --cov-report=term-missing"
