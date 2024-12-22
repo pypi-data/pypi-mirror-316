@@ -1,0 +1,9 @@
+setup.py
+msordinal/__init__.py
+msordinal/main.py
+msordinal/module.py
+msordinal.egg-info/PKG-INFO
+msordinal.egg-info/SOURCES.txt
+msordinal.egg-info/dependency_links.txt
+msordinal.egg-info/entry_points.txt
+msordinal.egg-info/top_level.txt
