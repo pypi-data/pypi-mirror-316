@@ -1,0 +1,9 @@
+README.md
+setup.py
+cerebro_client/__init__.py
+cerebro_client/client.py
+cerebro_client.egg-info/PKG-INFO
+cerebro_client.egg-info/SOURCES.txt
+cerebro_client.egg-info/dependency_links.txt
+cerebro_client.egg-info/requires.txt
+cerebro_client.egg-info/top_level.txt
