@@ -1,0 +1,15 @@
+browserlite/__init__.py,sha256=jcOIOTi9wCotqvnQ6E917pKiXR-SWZoiGzMBqdGyB0I,43
+browserlite/app.py,sha256=w_1h6KHxH4aYXdR_9b1aKuMfJP-9CTvEQ0jQHSvGGGg,835
+browserlite/config.py,sha256=vR6cIMQBOYNelfnb0ESWdTk7ViDwKIAkFJAQDnEEmVo,427
+browserlite/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+browserlite/core/autoclip.py,sha256=TWXTQZXqQfa6APoNi9r1ED0ei4KQXI7f68jViIT2S8s,759
+browserlite/core/automation.py,sha256=gsi3p2V40G6wO0J2bMPfSGAh-9I39cV6WdlxfB4V1Hk,1538
+browserlite/core/autoweb.py,sha256=pOdeZ3KOjpr3nTrHdzBIFZFWIgv6eXx6dCbumHWnqlE,1714
+browserlite/services/__init__.py,sha256=4k0mEv1MHH67w1qbATbkIo5f7p32JITRzee6HDXhFXA,143
+browserlite/services/base.py,sha256=gAxQOwq9CTavKPflYIikt2Ji9CLrJjxAvxy1L01jQTY,541
+browserlite/services/chatgpt.py,sha256=lmpFm-RAiKLJNGPhOqu1BVnnTrda0CugP0GNAzeOMhI,1543
+browserlite/services/google.py,sha256=p1ksXhxz-WFkhKaL8LSxEAwJ-U_xkhQuOonKu_XPo_I,717
+browserlite/services/hugging_chat.py,sha256=MgPHzG1wcEz7a1zamacDqL8Qd2qVZ2uO-DyduntN8FM,1525
+browserlite-0.0.24.dist-info/METADATA,sha256=wNPi6HvDdShrDQIj_PwYnJ5DXwDiE6n0DFUkbCWHBqI,4806
+browserlite-0.0.24.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+browserlite-0.0.24.dist-info/RECORD,,
