@@ -1,0 +1,32 @@
+name: Runs test and checks formatting
+run-name: Github workflow by ${{ github.triggering_actor}}
+
+on:
+    # push:
+    pull_request:
+        branches:
+            - main
+        types:
+            - closed
+
+jobs:
+    checks:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout code
+              uses: actions/checkout@v3
+            
+            - name: tests and linters
+              uses: ./.github/actions/lint_test_action
+
+    build_on_pr_close:
+        needs: checks
+        runs-on: ubuntu-latest
+        if : github.event_name == 'pull_request' && github.event.action == 'closed'
+        steps:
+            - name: Checkout code
+              uses: actions/checkout@v3
+            
+            - name: Return artifact
+              uses: ./.github/actions/build_action
+            
