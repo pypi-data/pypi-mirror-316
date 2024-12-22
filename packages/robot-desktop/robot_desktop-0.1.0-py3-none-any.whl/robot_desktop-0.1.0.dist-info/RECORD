@@ -1,0 +1,12 @@
+robot_desktop/__init__.py,sha256=Kl5rtbY5GwRICPSsb8WAm9EhYODk_P97J9eQr7cDDNo,22
+robot_desktop/application.pyd,sha256=UaxZRt0De6ZeacihOUvYk2E56AtTyLim-YOdO_HRsIM,101888
+robot_desktop/extract_icon.pyd,sha256=o6hmslOpOyx6A2KszpX_PSslqB_6iOW8xVkNpF47358,50688
+robot_desktop/extract_icon_main.py,sha256=-fwEJsN6cQXSNPfov2PYcRjLPieE4kiEkiZaYoaYhe8,270
+robot_desktop/find_by_xpath.pyd,sha256=TGmv-yNOc-56JXavjrat26WNPygRNZepg3FpKGm8CMw,84480
+robot_desktop/index.pyd,sha256=QRYRxZezyTAkninPH03_-n96rGnguATyXooHOvP5l4Q,176640
+robot_desktop/windows_inspect.pyd,sha256=dyw3nixhNJFIshABzhSHUAX8GtowGmZ0L6LitD3vdhI,293376
+robot_desktop/windows_inspect_main.py,sha256=3orD_-1xb_vvho7NP2bo1xOaUuSKA_h7zi_Wn3noHlY,337
+robot_desktop-0.1.0.dist-info/METADATA,sha256=sXu-jyzoGgeea3qmzRhhA0FaVNk3WE7-sJlaRIDuoxk,382
+robot_desktop-0.1.0.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+robot_desktop-0.1.0.dist-info/top_level.txt,sha256=K_CzXUP4IBOolCvELS71xvevUEqmLWVtKpjv3pfSuSw,14
+robot_desktop-0.1.0.dist-info/RECORD,,
