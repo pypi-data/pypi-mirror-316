@@ -1,0 +1,26 @@
+[project]
+name = "calculate-mirror-size"
+version = "0.3"
+authors = [
+        { name="Jeffrey Serio", email="hyperreal@fedoraproject.org" },
+]
+description = "Calculate the size of an rsync mirror."
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+            "Programming Language :: Python :: 3",
+            "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+            "Operating System :: OS Independent",
+]
+dependencies = ["beautifulsoup4>=4.12.3", "docopt>=0.6.2", "requests>=2.32.3", "rich>=13.9.4"]
+
+[project.scripts]
+calculate-mirror-size = "calculate_mirror_size:main"
+
+[project.urls]
+Homepage = "https://codeberg.org/hyperreal/calculate-mirror-size"
+Issues = "https://codeberg.org/hyperreal/calculate-mirror-size/issues"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

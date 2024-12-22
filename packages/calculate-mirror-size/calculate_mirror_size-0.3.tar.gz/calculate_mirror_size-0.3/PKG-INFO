@@ -1,0 +1,32 @@
+Metadata-Version: 2.4
+Name: calculate-mirror-size
+Version: 0.3
+Summary: Calculate the size of an rsync mirror.
+Project-URL: Homepage, https://codeberg.org/hyperreal/calculate-mirror-size
+Project-URL: Issues, https://codeberg.org/hyperreal/calculate-mirror-size/issues
+Author-email: Jeffrey Serio <hyperreal@fedoraproject.org>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
+Requires-Dist: beautifulsoup4>=4.12.3
+Requires-Dist: docopt>=0.6.2
+Requires-Dist: requests>=2.32.3
+Requires-Dist: rich>=13.9.4
+Description-Content-Type: text/markdown
+
+# calculate-mirror-size
+
+## Installation
+
+``` shell
+pipx install calculate-mirror-size
+```
+
+## Usage
+
+``` shell
+calculate-mirror-size -H <http_url> -R <rsync_url>
+calculate-mirror-size --help
+```
