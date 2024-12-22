@@ -1,0 +1,11 @@
+certbot_nginx_unit/__init__.py,sha256=RgQE2Iv5Pb2y1Ob9pBDQ7AkfB2PDVhDmcynKRXZ3rVs,33
+certbot_nginx_unit/configurator.py,sha256=1I7q9fEmHCTgw1ZQXCYqtp7hLYh4HA_k3U7hxA2cOUY,17807
+certbot_nginx_unit/unitc.py,sha256=4C-sQfioUsONZ7HZ1CiW8DDVfTmP_uIIew87K2YiVWQ,1973
+certbot_nginx_unit/tests/__init__.py,sha256=3nPrmfr4Kvv0Rn_LmkHveOeel2yLcQWHJwJCLzetMzQ,31
+certbot_nginx_unit/tests/configurator_test.py,sha256=4c4QRXPY97YYVWSuOw9W4fNk3LONIhG1CG11-ctvAXI,6739
+certbot_nginx_unit-1.1.0.dist-info/LICENSE,sha256=YkZm3khKtc5NRDfdVIFK6L1v08VWgv3oyX0QmBFqwgo,1074
+certbot_nginx_unit-1.1.0.dist-info/METADATA,sha256=70nLf5kJMX_i0KnEgK7STZ3AKooj0vPg-pxTckrNSEI,5567
+certbot_nginx_unit-1.1.0.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+certbot_nginx_unit-1.1.0.dist-info/entry_points.txt,sha256=i2DDhtOQTMiX04sXfQdonzlaS0ZVBCQQxVeZVhHRxkI,76
+certbot_nginx_unit-1.1.0.dist-info/top_level.txt,sha256=8LDq2rRhZLXn2-IFroYXkRXYqYrqgkPkJghUUbDrnr8,19
+certbot_nginx_unit-1.1.0.dist-info/RECORD,,
