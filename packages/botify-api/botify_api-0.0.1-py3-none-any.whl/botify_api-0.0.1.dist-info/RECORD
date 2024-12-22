@@ -1,0 +1,9 @@
+botify/__init__.py,sha256=5DyPEELIoIWgAYNk0-Ux02bI_MBeTvliiIpcjTlj-1I,160
+botify/api.py,sha256=d8gL4HiMxUwJ5vfR9zvKtcnG6cEEArNjb_klgroQIuA,12636
+botify/errors.py,sha256=_nznyjWzPcEj8iT9kJXKF2hot8oEoBCz6jGu9w3FQAo,1215
+botify/models.py,sha256=0fpY_Y46-6Se_iszQ_8gLXw5AtpYctr8kdHsU29r-IQ,1057
+botify_api-0.0.1.dist-info/LICENSE,sha256=UoPqWIypLtuj9dvScBA24hw5gTjny7u8wle7c6TZMqc,1144
+botify_api-0.0.1.dist-info/METADATA,sha256=pesNxPygvAr-UZrHs5Yz24ak7m5bI_jxyrGLwwLvU_w,2576
+botify_api-0.0.1.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+botify_api-0.0.1.dist-info/top_level.txt,sha256=N3FtCOyN2VtlPWuc72gqzjl4Eq7xQOTZdMasDu3pWfE,7
+botify_api-0.0.1.dist-info/RECORD,,
