@@ -1,0 +1,2 @@
+[console_scripts]
+book-records = book_records.main:main
