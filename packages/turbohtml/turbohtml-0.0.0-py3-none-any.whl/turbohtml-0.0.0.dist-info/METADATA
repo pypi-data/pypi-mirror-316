@@ -1,0 +1,21 @@
+Metadata-Version: 2.4
+Name: turbohtml
+Version: 0.0.0
+Summary: Coming soon
+Project-URL: Homepage, https://github.com/emilstenstrom/turbohtml
+Project-URL: Issues, https://github.com/emilstenstrom/turbohtml/issues
+Author-email: Emil Stenström <emil@emilstenstrom.se>
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+An attempt at writing a html5 parser using AI tools.
+
+Current status on html5 treebuilder tests:
+
+~/Projects/turbohtml$ python validate.py
+.......................................................................xxxxxxxxxxxxxxx..xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.xxxx...xx.x...xxxx.xxx.xxxxxxxxxxxxxxxxxxxxxxxxxx..x.xxxxxxxxxxxxxxxxx..x........xxxxx.xx..x.xxx.xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx..xx.x..x..xxxx.xxxxxxxxx.x..x.xxxxxxxxxxxxx.xxxxxxxxxxxxxxxxxxxxxxxxxx.xx.xxxxxxxxxxxxxxxxxxxxxxxxx.xxxxxxxxxxxxxxxxxxxxx.xxxxxxxxxxxxxxxx..xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx..x.xx.xxxxxxxxx.xxxx..xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.x.xxxxxxxxxxxxx....xxxxxxxxxxxxxxxxxxxxxxxxxxxx.xxxxxxxxxxxxxxxxxxxxxxxxx...xxxxxxx.xxxx..........xxxxxxxxxxxxxxxxxxxxxx..xxxxx.xxxxxxxxxxxxxxx.xxxxxxxxx.x..x.x.xxxxxxxxxxxxxxxx.x....x.xxxx.x.xxxxxxx..xxxx.xx..xxxxxxxxxxxx......xx.......xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.x..xxxxxxxxxxxxxxx......xxxxxxxxxxxxx...xxxxxxxxxxxxxxxx...xxxxxxxxxxxxxxxxx.xx.xx.xxxxxxxxxxxxx.xxx.x.xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx...xx.xxxxx.xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx....xxxx..x..xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx........x.....x.................x.x..............x..xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx...xxxxxxx..xxx......xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx..xx.xxxxxxxxxxxxxxx..xxxxxxxxx
+
+Tests passed: 282/1756 (16%)
