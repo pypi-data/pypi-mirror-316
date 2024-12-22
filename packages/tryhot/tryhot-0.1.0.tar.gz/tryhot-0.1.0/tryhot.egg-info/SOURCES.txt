@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+tests/test_hotreload.py
+tryhot/tryhot.py
+tryhot.egg-info/PKG-INFO
+tryhot.egg-info/SOURCES.txt
+tryhot.egg-info/dependency_links.txt
+tryhot.egg-info/requires.txt
+tryhot.egg-info/top_level.txt

@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: tryhot
+Version: 0.1.0
+Summary: A minimal hot-reload implementation for Python
+Author-email: Your Name <your.email@example.com>
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8.10
+Description-Content-Type: text/markdown
+Requires-Dist: watchdog>=3.0.0
+Provides-Extra: dev
+Requires-Dist: pytest>=7.0.0; extra == "dev"
+Requires-Dist: build>=1.0.0; extra == "dev"
+Requires-Dist: twine>=4.0.0; extra == "dev"
+
+# hotreload
+
+A minimal hot-reload implementation for Python that allows you to modify your code while it's running.
+
+## Installation
+
+```bash
+pip install hotreload
+```
+
+## Usage
+
+```python
+from hotreloa 
