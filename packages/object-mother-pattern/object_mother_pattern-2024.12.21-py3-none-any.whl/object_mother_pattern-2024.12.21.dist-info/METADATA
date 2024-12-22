@@ -1,0 +1,90 @@
+Metadata-Version: 2.4
+Name: object-mother-pattern
+Version: 2024.12.21
+Summary: The Object Mother Pattern is a Python package that simplifies and standardizes the creation of test objects.
+Project-URL: Homepage, https://github.com/adriamontoto/object-mother-pattern
+Project-URL: Repository, https://github.com/adriamontoto/object-mother-pattern
+Project-URL: Issues, https://github.com/adriamontoto/object-mother-pattern/issues
+Author: Adria Montoto
+License-Expression: MIT
+License-File: LICENSE.md
+Keywords: development,object-mother,pattern,python,testing,tools,utilities,validation
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Typing :: Typed
+Requires-Python: >=3.11
+Requires-Dist: faker<34.0.0,>=28.0.0
+Provides-Extra: tests
+Requires-Dist: coverage[toml]<8.0.0,>=7.0.0; extra == 'tests'
+Requires-Dist: mypy[reports]<2.0.0,>=1.0.0; extra == 'tests'
+Requires-Dist: pre-commit<5.0.0,>=3.0.0; extra == 'tests'
+Requires-Dist: pytest-asyncio<1.0.0,>=0.0.0; extra == 'tests'
+Requires-Dist: pytest-randomly<4.0.0,>=3.0.0; extra == 'tests'
+Requires-Dist: pytest<9.0.0,>=8.0.0; extra == 'tests'
+Requires-Dist: ruff<1.0.0,>=0.0.0; extra == 'tests'
+Description-Content-Type: text/markdown
+
+<a name="readme-top"></a>
+
+# ⚒️ Object Mother Pattern
+
+<p align="center">
+    <a href="https://github.com/adriamontoto/object-mother-pattern/actions/workflows/test.yaml?event=push&branch=master" target="_blank">
+        <img src="https://github.com/adriamontoto/object-mother-pattern/actions/workflows/test.yaml/badge.svg?event=push&branch=master" alt="Test Pipeline">
+    </a>
+    <a href="https://github.com/adriamontoto/object-mother-pattern/actions/workflows/lint.yaml?event=push&branch=master" target="_blank">
+        <img src="https://github.com/adriamontoto/object-mother-pattern/actions/workflows/lint.yaml/badge.svg?event=push&branch=master" alt="Lint Pipeline">
+    </a>
+        <a href="https://coverage-badge.samuelcolvin.workers.dev/redirect/adriamontoto/object-mother-pattern" target="_blank">
+        <img src="https://coverage-badge.samuelcolvin.workers.dev/adriamontoto/object-mother-pattern.svg" alt="Coverage Pipeline">
+    </a>
+    <a href="https://pypi.org/project/object-mother-pattern" target="_blank">
+        <img src="https://img.shields.io/pypi/v/object-mother-pattern?color=%2334D058&label=pypi%20package" alt="Package Version">
+    </a>
+    <a href="https://pypi.org/project/object-mother-pattern/" target="_blank">
+        <img src="https://img.shields.io/pypi/pyversions/object-mother-pattern.svg?color=%2334D058" alt="Supported Python Versions">
+    </a>
+</p>
+
+The **Object Mother Pattern** is a Python 🐍 package that simplifies and standardizes the creation of test 🧪 objects. This pattern is especially helpful in testing scenarios where you need to generate multiple instances of complex objects quickly and consistently. By providing a set of prebuilt 🛠️ object mothers, you can drop these into your existing test suite and skip the boilerplate setup yourself.
+
+Easy to install and integrate, the **Object Mother Pattern** is a must-have for any Python developer looking to simplify their testing workflow, ensure design uniformity, and leverage the full potential of reusable test objects in their projects 🚀.
+<br><br>
+
+## Table of Contents
+
+- [📥 Installation](#installation)
+- [🔑 License](#license)
+<p align="right">
+    <a href="#readme-top">🔼 Back to top</a>
+</p><br><br>
+
+<a name="installation"></a>
+
+## 📥 Installation
+
+You can install **Object Mother Pattern** using `pip`:
+
+```bash
+pip install object-mother-pattern
+```
+
+<p align="right">
+    <a href="#readme-top">🔼 Back to top</a>
+</p><br><br>
+
+<a name="license"></a>
+
+## 🔑 License
+
+This project is licensed under the terms of the [`MIT license`](LICENSE.md).
+
+<p align="right">
+    <a href="#readme-top">🔼 Back to top</a>
+</p>
