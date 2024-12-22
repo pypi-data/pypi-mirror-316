@@ -1,0 +1,8 @@
+README.txt
+setup.py
+image_uploader/__init__.py
+image_uploader_sdk.egg-info/PKG-INFO
+image_uploader_sdk.egg-info/SOURCES.txt
+image_uploader_sdk.egg-info/dependency_links.txt
+image_uploader_sdk.egg-info/requires.txt
+image_uploader_sdk.egg-info/top_level.txt
