@@ -1,0 +1,10 @@
+crontab_win/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+crontab_win/__main__.py,sha256=8hDtWlaFZK24KhfNq_ZKgtXqYHsDQDetukOCMlsbW0Q,59
+crontab_win/app.py,sha256=phZaIhaCMjbxE7GuwQ2VjfQWovPtviCzY0m7k6dIm1I,3323
+crontab_win/cli.py,sha256=RAnqn-tiEemhTztwRb8eHCHpqd7ZJqldWHwvatBsA54,1677
+crontab_win-0.0.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+crontab_win-0.0.1.dist-info/METADATA,sha256=5SLzVlbGIu0HTYLjaRUndtIXGhdUYIbIrw1UsWKc7-Y,2565
+crontab_win-0.0.1.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+crontab_win-0.0.1.dist-info/entry_points.txt,sha256=ELhAWZSVFNADyIXQReOh1lfBmVfvn3ycyb0L9LqdW7E,75
+crontab_win-0.0.1.dist-info/top_level.txt,sha256=OkVYzd1lTfLTt5jBvNfbjuHG-sUSiJLdX4C-RBt5Nm8,12
+crontab_win-0.0.1.dist-info/RECORD,,
