@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: Benefer
+Version: 1.0.0
+Summary: Website Builder
+Home-page: https://github.com/Bogdan-UnReLiSe/Benefer.git
+Author: Bogdan Sterhov
+Author-email: unrelise_original@mail.ru
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: PyQt5
+Requires-Dist: PyQtWebEngine
+Requires-Dist: flask
+
