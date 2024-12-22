@@ -1,0 +1,39 @@
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "wagtail_form_plugins"
+version = "0.4.2"
+description = "A set of plugins used to customise and improve the Wagtail form builder in a modular way."
+authors = ["Nathanaël Jourdane <njourdane@laas.fr>"]
+license = "BSD-3-Clause"
+readme = "README.md"
+repository = "https://github.com/laas/wagtail-form-plugins"
+keywords = ["wagtail", "form", "plugins"]
+classifiers = [
+  "Framework :: Wagtail"
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+django = "^5"
+wagtail = "^6"
+
+[tool.poetry.group.demo]
+optional = true
+
+[tool.poetry.group.demo.dependencies]
+django-bootstrap5 = "^23"
+
+[tool.poetry.group.dev]
+optional = true
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.6"
+pre-commit = "^4.0"
+
+[tool.ruff]
+extend-exclude = ["migrations"]
+line-length = 100
+target-version = "py310"
