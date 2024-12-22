@@ -1,0 +1,5 @@
+cs.cmdutils>=20241222
+cs.gimmicks>=20240316
+cs.lex>=20241207
+django
+typeguard
