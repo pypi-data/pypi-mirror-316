@@ -1,0 +1,11 @@
+plexsearch/__init__.py,sha256=kRyt0fM1PYBAWTw-O8wjRDnVxbi08rOZdH15SfAFqas,201
+plexsearch/api.py,sha256=AoIZRx5t0V4LDxEPDbjikmaMAd-ljC69LB1CPIBBhqw,6981
+plexsearch/config.py,sha256=NwM_IsMyQZ_kM8QHosDhMfLe-CDavlmD0INmEKLkz5o,3081
+plexsearch/context.py,sha256=Rf8uIamqoNALyfRVrfRUznsxbEIuVeiA7LS8o5Iolsc,740
+plexsearch/core.py,sha256=HrTD2Ik_6pIBKLsrcMWcrkDJh3OICHhTG1XHWSH9WEs,10609
+plexsearch/update_checker.py,sha256=mWay0W8T3ijm6dcFZoIyUS8X6hgs6BSfKAOh4IVG5yQ,4776
+plexsearch-0.2.0.dist-info/LICENSE,sha256=4KWw-yLCfY80MEkgmoQZmInIrTYipFRr77MElJkiwsI,1066
+plexsearch-0.2.0.dist-info/METADATA,sha256=4aVoBnXZQm6_me6FzFkspQnpibzL_szMT0OWr1CTrc4,7140
+plexsearch-0.2.0.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+plexsearch-0.2.0.dist-info/entry_points.txt,sha256=A17iSHLv34V8K0rB5SP7BO-MQDzX1hOt0xKaWANq_MI,51
+plexsearch-0.2.0.dist-info/RECORD,,
