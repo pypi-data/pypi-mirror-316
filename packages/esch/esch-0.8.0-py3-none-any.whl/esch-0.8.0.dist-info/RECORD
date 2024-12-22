@@ -1,0 +1,13 @@
+esch/__init__.py,sha256=pxVFrL0YPFai9tl_Ni4TSe59eZIKifSKcMmdluoFUZk,259
+esch/axis.py,sha256=5E3pTBEeHQJsuPX77l3f9sfvVGmPgkvnjJSvfTY2GbE,416
+esch/data.py,sha256=pZX6thIPQagCkvZvldIJiAnqDQTcWrSGqDoLfD9MMw4,566
+esch/draw.py,sha256=pSc0hIGksBNsmF5eRRB8cmKBMiK6AGeBU-J3lC64UEQ,9011
+esch/edge.py,sha256=EESTnyWERJARJVUYxFND7eHbJkCDMt8tNm_nMcEu3fE,7697
+esch/line.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+esch/mesh.py,sha256=uHMKBRMaX5KPq9xRDKgwUYru7hr1cd4ROiCh_yDX66g,1556
+esch/ring.py,sha256=-XrhN_VDTrHofjJV2mAnu-3L3PfbYyxUOT_70fHKO7U,1405
+esch/util.py,sha256=Wag6udYTIzrDikKxX_LrmsnukJRoXQl40yp87wtiO2o,1451
+esch-0.8.0.dist-info/LICENSE,sha256=XL4-k1etFCemYBluxJ2CIG02XNEaF7AOanm7v4OWjkY,1068
+esch-0.8.0.dist-info/METADATA,sha256=KzvWhkTcwxMAzqJouO0rje8KvFrdTEYzC8OHLcEQkbU,1083
+esch-0.8.0.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+esch-0.8.0.dist-info/RECORD,,
