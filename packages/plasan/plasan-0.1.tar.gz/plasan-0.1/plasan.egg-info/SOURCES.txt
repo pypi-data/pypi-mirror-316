@@ -1,0 +1,13 @@
+README.md
+setup.py
+plasan/__init__.py
+plasan/annotate_plasmid.py
+plasan/draw_plasmid.py
+plasan/essential_annotation.py
+plasan/main.py
+plasan.egg-info/PKG-INFO
+plasan.egg-info/SOURCES.txt
+plasan.egg-info/dependency_links.txt
+plasan.egg-info/entry_points.txt
+plasan.egg-info/requires.txt
+plasan.egg-info/top_level.txt
