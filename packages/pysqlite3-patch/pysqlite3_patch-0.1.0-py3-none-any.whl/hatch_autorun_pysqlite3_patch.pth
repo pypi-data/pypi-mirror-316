@@ -1,0 +1,1 @@
+import os, sys;exec("sys.modules['sqlite3'] = __import__('pysqlite3')")
