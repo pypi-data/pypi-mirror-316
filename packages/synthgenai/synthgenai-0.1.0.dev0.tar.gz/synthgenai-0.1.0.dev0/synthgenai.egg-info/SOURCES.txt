@@ -1,0 +1,17 @@
+LICENCE
+README.md
+pyproject.toml
+synthgenai/__init__.py
+synthgenai/data_model.py
+synthgenai/dataset.py
+synthgenai/dataset_generator.py
+synthgenai/llm.py
+synthgenai/prompts.py
+synthgenai/utils.py
+synthgenai.egg-info/PKG-INFO
+synthgenai.egg-info/SOURCES.txt
+synthgenai.egg-info/dependency_links.txt
+synthgenai.egg-info/requires.txt
+synthgenai.egg-info/top_level.txt
+tests/test_dataset.py
+tests/test_llm.py
