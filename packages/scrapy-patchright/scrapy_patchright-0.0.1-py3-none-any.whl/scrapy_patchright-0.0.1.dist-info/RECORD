@@ -1,0 +1,10 @@
+scrapy_patchright/__init__.py,sha256=8xjpb8W03gbMhwi-AuZS56wu4p52tvJab-FgIbCxfag,23
+scrapy_patchright/_utils.py,sha256=Qh9NPACu3yOG7_-XeD_sSdZWS3Ac8yI_M-ZKKO-fAM4,5465
+scrapy_patchright/handler.py,sha256=9pquzCxswfrXBrVkggCiRD0-AHJOjoqLnSvgalIgcOA,40440
+scrapy_patchright/headers.py,sha256=JYR4KraBAB9xOEXcbqJQlWJP7217uAnYfQ-aJ7cVZ8Y,1576
+scrapy_patchright/memusage.py,sha256=XgxJinFgJ8QX28aR80KfvM70n0Qic95JCZCveNZgSlE,2129
+scrapy_patchright/page.py,sha256=kFA7Ax66WL--XDhDShctC8gPsU7LJGnN-oPBQPp911I,758
+scrapy_patchright-0.0.1.dist-info/LICENSE,sha256=irgaybyKbgi_FWAP_B5YejcPBH0Amj-mtT0O6bmr0A0,1461
+scrapy_patchright-0.0.1.dist-info/METADATA,sha256=iEG7zgk7tImr4BaqvPwyHXNaMkYIWjC9hbl9jaC-76s,42523
+scrapy_patchright-0.0.1.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+scrapy_patchright-0.0.1.dist-info/RECORD,,
