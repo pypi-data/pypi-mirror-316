@@ -1,0 +1,10 @@
+pytauri/__init__.py,sha256=-E1jGDSs9ulFr9k18xA_tvXK_QsHLj-Ijo_jShwDoWA,534
+pytauri/ipc.py,sha256=gbbQP5Vx4pUfiSufgnUXc12U_TdY_-tFhyYecAFQ_N8,13786
+pytauri/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pytauri/ffi/__init__.py,sha256=A-0gnC9ssgTHFwL2ecH_JSCLjTgRwgxbSpS9QpznhFA,633
+pytauri/ffi/_ext_mod.py,sha256=y-yioQZRHc6k2znjYJXAt6BXsecHU33m1kO9KAZoja0,2105
+pytauri/ffi/ipc.py,sha256=E-OE6XOJ-vkthKMOXVU6Sjvihy_MnjlrPAV3Bq_nMfM,3136
+pytauri/ffi/lib.py,sha256=075tMxXli1DrOamfoKkvbTNLKQbcRDGcO1TfVdHmyos,7294
+pytauri-0.1.0b0.dist-info/METADATA,sha256=9liR8hLuqvAzoSuAnIzVUDn8WrmNVPvTeAuBUy3jebY,497
+pytauri-0.1.0b0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+pytauri-0.1.0b0.dist-info/RECORD,,
