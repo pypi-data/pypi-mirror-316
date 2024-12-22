@@ -1,0 +1,12 @@
+autoentry.py,sha256=WP7z9qLLe_eQVCQW0gMcXGnvsFQRQq3eUmIyysCvCI8,8982
+modules/convert.py,sha256=GrmffBEEWgEF0BR2tm6G2jUQC6bt-M2vcIhZjyLJeWM,1269
+modules/database.py,sha256=qbJMzPo5D9xk9m13U2fRYgchCTSNVLMpr-RckJOES58,2091
+modules/dataframe.py,sha256=Wb0S5GnHx_9ORFXGnafC7aohfdIAu6NH5gdyPE5tn4k,2161
+modules/file.py,sha256=7mE4akkL1Jcehiw-Ky-1WSKlfxZ9bP_-vygIGwt1n60,6735
+modules/image.py,sha256=1q75dj4FoNxODjXnPjZYai_cHoxYcifDqNMgdg18A6M,1278
+modules/llm.py,sha256=FoqafAaO48jFWrI-RtUGdHnPKzjKchnMQ5M9ha8yr4s,1358
+modules/ocr.py,sha256=79sYkkim4KFaKOjlC4m1ulO_DaiA6qPNaP7lmwe0hX4,8307
+modules/pdf.py,sha256=AOI6lyfKvMbXDwF_I7Et0FlH3l7UK7dBDC2m33lGilk,2274
+soiz-0.1.6.dist-info/METADATA,sha256=bAC8FAHlq15uBE2uPPu2mgdl5XH0kBFRSMT9EQHXgHI,4339
+soiz-0.1.6.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+soiz-0.1.6.dist-info/RECORD,,
