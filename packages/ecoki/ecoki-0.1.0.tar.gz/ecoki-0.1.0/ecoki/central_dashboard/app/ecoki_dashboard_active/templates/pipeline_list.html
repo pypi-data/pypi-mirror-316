@@ -1,0 +1,226 @@
+{% extends 'app_base.html' %}
+{% load static %}
+
+{% if user.is_authenticated %}
+
+    {% block content_wrapper %}
+        <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        </head>
+        <div class="content-wrapper ecoki-background" style="min-height: 288.4px;">
+            <section class="content-header">
+                <div class="container-fluid">
+                  <div class="row mb-2">
+                  </div>
+
+                    <a href="/active/pipeline_list_overview">
+                      <button type="button" class="btn btn-success btn-sm {% if build in request.path %}active{% endif %}" style="background-color:rgb(13,55,71);color:white;">
+                        Back to overview
+                      </button>
+                    </a>
+
+                    <a href="/active/building_blocks_overview/new/pipeline/build/">
+                      <button type="button" class="btn btn-success btn-sm {% if build in request.path %}active{% endif %}" style="background-color:rgb(13,55,71);color:white;">  
+                        Build new Pipeline
+                      </button>
+                    </a>
+                </div>
+
+            </section>
+            <section class="content">
+              <div class="container-fluid py-2">          
+                  <!--For the pipeline structure-->
+                  <div>
+                    <div style="width:100%">
+                      <div style="display:inline-block">
+                        <div class="row">
+                          <div class="column d-flex flex-column align-items-left" style="width:300px">
+                            <h3 style="color:white">Pipeline Templates</h3>
+                          </div>
+                          <input id="search_name" type="text" placeholder="Search name" style="width:600px; height:35px; border-radius: 5px;">
+                          <a href="#" style="width:50px; height:50px" onclick="filter_pipelines(document.getElementById('search_name'))"><i class="fa fa-search" ></i></a>
+                          <span class="btn btn-primary" style="pointer-events:none; width:150px; height:33px; border:black; background-color:white; color:black">Sort by: Name</span>
+                      </div>
+                    </div>
+                    <div class="row mb-2">
+                    </div>
+                      <div style="background-color: rgba(45,68,69,0.5); border-radius: 5px; border: 1px solid rgb(45,68,69);">
+                        <div style="margin: 10px 10px; width:100%">
+                            <div style="display:inline-block">
+                              <div id="tag-filters" class="row">
+                                <div class="column d-flex flex-column align-items-left" style="width:150px">
+                                    <h4 style="color:#10f281"><b>Tag Filter</b></h4>
+                                </div>
+                                <div style="width:150px; margin-top:50px; margin-left:-150px">
+                                    <a id="select all" style="font-size: 13px; margin: 5px 5px; border:None; background-color:transparent; color:#00fff5;" onclick='filter_pipelines(this)'><b>Select All</b></a>
+                                    <a id="deselect all" style="font-size: 13px; margin: 5px 5px; border:None; background-color:transparent; color:#00fff5; opacity:0.3" onclick='filter_pipelines(this)'><b>Deselect All</b></a>
+                                </div>
+                                <div id="pipeline_types" class="column align-items-left" style="width:150px">
+                                    <h5 style="color:black">Pipeline Type</h5>
+                                    {% for pl_type, pipeline_tag in pipeline_tags.items %} 
+                                        <a id="{{ pipeline_tag.name }}" class="btn btn-primary mt-auto" style="font-size: 13px; margin: 5px 5px; border:None; background-color:{{ pipeline_tag.color }}; color:white; opacity:0.3" onclick='filter_pipelines(this)'>{{ pipeline_tag.name }}</a>
+                                    {% endfor %} 
+                                </div>
+                                <div id="category_types" class="column align-items-left" style="width:400px">
+                                    <h5 style="color:black">Category</h5>
+                                    {% for category_name, category_color in category_tags.items %} 
+                                      <a id="{{ category_name }}" class="btn btn-primary mt-auto" style="font-size: 13px; margin: 5px 5px; border:None; background-color:{{ category_color.color }}; color:white; opacity:0.3" onclick='filter_pipelines(this)'>{{ category_name }}</a>
+                                    {% endfor %}
+                                </div>
+                                {% if app_context_tags %}
+                                  <div id="app_context_types" class="column align-items-left" style="width:350px">
+                                      <h5 style="color:black">Application Context</h5>
+                                      {% for context_name, context_color in app_context_tags.items %}
+                                        <a id="{{ context_name }}"  class="btn btn-primary mt-auto" style="font-size: 13px; margin: 5px 5px; border:None; background-color:{{ context_color.color }}; color:white; opacity:0.3" onclick='filter_pipelines(this)'>{{ context_name }}</a>
+                                      {% endfor %}
+                                  </div>
+                                {% endif %}
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                  </div>  
+
+                  <div style="display: flex; flex-direction: row; flex-wrap: wrap; background:transparent">
+
+                    {% for pipeline in pipeline_list_template_data %} 
+                      <div id="{{ pipeline.name }}" class="card border-success mb-3" style="width: 22rem; margin: 10px">
+                        <div class="card-body d-flex flex-column">
+                          <h5 class="card-title"><b>{{ pipeline.name }}</b></h5>
+                          <p class="card-text">{{pipeline.description}}</p>
+                          <a href="{{pipeline.url}}" class="btn btn-primary mt-auto align-self-start", style="font-size: 13px; color:white">View Details</a>
+                        </div>
+                        <div class="card-footer text-muted">
+                          <span class="btn btn-primary", style="pointer-events:none; font-size: 10px; margin-top: 1px; background-color:{{pipeline.color}}; border-color:{{pipeline.color}}; color:white">{{ pipeline.type }}</span>
+                          {% for cat_name, cat_color in pipeline.categories.items %}
+                            {% if cat_name != 'no_category' %}
+                              <span class="btn btn-primary", style="pointer-events:none; font-size: 10px; margin-top: 1px; background-color:{{cat_color}}; border-color:{{ cat_color }}; color:white">{{ cat_name }}</span>                          
+                            {% endif %}
+                          {% endfor %}
+                        </div>
+                      </div>
+                    {% endfor %}
+
+                  </div>
+                  <!-- /.card -->
+                </div>
+              </div>
+            </section>
+        </div>
+    
+          {% endblock %}
+    {% block extra_foot %}
+
+            <script type="text/javascript">
+              function deselect_tags(list_of_tags)
+              {
+                list_of_tags.forEach(function (elemId) {
+                  ele = document.getElementById(elemId);
+                    if(ele) {
+                      ele.style.opacity = "0.3";
+                      ele.id = ele.id.replace("_active", '');
+                    }
+                });              
+              }
+
+              function handle_pipelines(pipeline_type_filter, pipeline_list)
+              {
+                if(pipeline_type_filter.length > 0) {
+                    var filtered_results = [];
+                    for (var id in pipeline_list) {
+                      if(pipeline_type_filter.includes(pipeline_list[id].type)) {
+                        filtered_results.push(pipeline_list[id])
+                        document.getElementById(pipeline_list[id].name).style.display = "flex";                        
+                      } else {
+                        document.getElementById(pipeline_list[id].name).style.display = "none";
+                      }
+                    }
+                    return filtered_results;
+                } else {
+                    return pipeline_list;
+                }                
+              }
+              
+              function handle_categories(category_filters, pipeline_list)
+              {
+                if(category_filters.length > 0) {
+                    filtered_results = [];
+                    for (var id in pipeline_list) {
+                      var all_filters_found = false;
+                      var pl_cat_list = Object.keys(pipeline_list[id].categories);
+                      for (var cat_id in category_filters) {
+                        if(pl_cat_list.includes(category_filters[cat_id])) {
+                          all_filters_found = true;  
+                        } else {
+                          all_filters_found = false;
+                          break;
+                        }
+                      }
+                      if (all_filters_found) {
+                        filtered_results.push(pipeline_list[id])
+                        document.getElementById(pipeline_list[id].name).style.display = "flex";
+                      } else {
+                        document.getElementById(pipeline_list[id].name).style.display = "none";
+                      }
+                    }
+                    return filtered_results;
+                } else {
+                    return pipeline_list;
+                }                
+              }
+              
+              function filter_pipelines(filter)
+              {
+                if(filter.id=="search_name"){
+                  if(filter.value){
+                    deselect_tags(['select all', 'deselect all']);
+                    deselect_tags([...document.querySelectorAll('#pipeline_types [id$="_active"]')].map(item => item.id));
+                    deselect_tags([...document.querySelectorAll('#category_types [id$="_active"]')].map(item => item.id));
+                    deselect_tags([...document.querySelectorAll('#app_context_types [id$="_active"]')].map(item => item.id));
+
+                    {% for pipeline in pipeline_list_template_data %} 
+                      var pl = {{ pipeline|safe }};
+                      document.getElementById(pl.name).style.display = (pl.name.toLowerCase().includes(filter.value.toLowerCase())) ? "flex" : "none";
+                    {% endfor %}
+                  }
+                }
+                else if(filter.id.endsWith("all")) {
+                  filter.style.opacity = "1";
+                  sibling = filter.parentNode.querySelector("[id]:not([id='"+filter.id+"'])");
+                  sibling.style.opacity = "0.3";
+                  deselect_tags([...document.querySelectorAll('#pipeline_types [id$="_active"]')].map(item => item.id));
+                  deselect_tags([...document.querySelectorAll('#category_types [id$="_active"]')].map(item => item.id));
+                  deselect_tags([...document.querySelectorAll('#app_context_types [id$="_active"]')].map(item => item.id));
+
+                  {% for pipeline in pipeline_list_template_data %} 
+                    var pl = {{ pipeline|safe }};
+                    document.getElementById(pl.name).style.display = (filter.id.startsWith("select")) ? "flex" : "none";
+                  {% endfor %}
+                } 
+                else {
+                  document.getElementById("select all").style.opacity = "0.3";
+                  document.getElementById("deselect all").style.opacity = "0.3";
+                  filter.style.opacity = (filter.style.opacity=="1") ? "0.3" : "1";
+                  filter.id = (filter.style.opacity=="1") ? filter.id + "_active" : filter.id.replace('_active', '');
+                  var active_pl_type_filters = [...document.querySelectorAll('#pipeline_types [id$="_active"]')].map(item => item.id.replace('_active', ''));
+                  var active_cat_type_filters = [...document.querySelectorAll('#category_types [id$="_active"]')].map(item => item.id.replace('_active', ''));
+                  var active_app_ctxt_type_filters = [...document.querySelectorAll('#app_context_types [id$="_active"]')].map(item => item.id.replace('_active', ''));
+                  var pipeline_list = {{ pipeline_list_template_data|safe }};
+                  
+                  if(active_pl_type_filters.length == 0 && active_cat_type_filters == 0 && active_app_ctxt_type_filters == 0) {
+                    for (var id in pipeline_list) {
+                      document.getElementById(pipeline_list[id].name).style.display = "none";  
+                    }
+                    return;
+                  }
+                  
+                  var pl_list = pipeline_list;
+                  pl_list = handle_pipelines(active_pl_type_filters, pl_list);
+                  pl_list = handle_categories(active_cat_type_filters, pl_list);
+                  pl_list = handle_categories(active_app_ctxt_type_filters, pl_list);
+                }
+              }
+            </script>
+           
+    {% endblock %}
+{% endif %}

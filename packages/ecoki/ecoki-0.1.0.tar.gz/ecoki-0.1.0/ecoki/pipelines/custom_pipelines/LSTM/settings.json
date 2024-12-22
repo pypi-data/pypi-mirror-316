@@ -1,0 +1,179 @@
+{
+  "name": "LSTM",
+  "description": "Use LSTM (Long Short-Term Memory) neural network architecture for multi-step time series forecasting",
+  "version": "",
+  "topology": {
+    "nodes": [
+      {
+        "name": "Data Reader",
+        "building_block_module": "ecoki.building_blocks.code_based.data_integration.acquire_data.data_reader_lstm.data_reader",
+        "building_block_class": "DataReader",
+        "execution_mode": "local",
+        "settings": {
+          "dataset_path": "ecoki/datasets/household_power_consumption.txt",
+          "col_separator": ";",
+          "parse_cols_as_date": {"datetime": ["Date", "Time"]},
+          "index_col": "datetime",
+          "target": "Global_active_power",
+          "ip_features": ["Global_active_power", "Global_reactive_power", "Voltage", "Global_intensity", "Sub_metering_1", "Sub_metering_2", "Sub_metering_3"]
+        },
+        "visualizer_module": "",
+        "visualizer_class": "",
+        "visualizer_input": {},
+        "interactive_configuration": true
+      },
+      {
+        "name": "Data Imputer",
+        "building_block_module": "ecoki.building_blocks.code_based.data_integration.preprocess_data.data_imputer_lstm.data_imputer",
+        "building_block_class": "DataImputer",
+        "execution_mode": "local",
+        "settings": {
+          "row_history": 1440
+        },
+        "visualizer_module": "",
+        "visualizer_class": "",
+        "visualizer_input": {},
+        "interactive_configuration": true
+      },
+      {
+        "name": "Data Sampler",
+        "building_block_module": "ecoki.building_blocks.code_based.data_integration.preprocess_data.data_sampler_lstm.data_sampler",
+        "building_block_class": "DataSampler",
+        "execution_mode": "local",
+        "settings": {
+          "datetime_sampling_resolution": "H"
+        },
+        "visualizer_module": "",
+        "visualizer_class": "",
+        "visualizer_input": {},
+        "interactive_configuration": true
+      },
+      {
+        "name": "Data Sequence generator",
+        "building_block_module": "ecoki.building_blocks.code_based.data_integration.preprocess_data.data_sequence_generator_lstm.data_sequence_generator",
+        "building_block_class": "DataSequenceGenerator",
+        "execution_mode": "local",
+        "settings": {
+          "num_steps_in": 14,
+          "num_steps_out": 10
+        },
+        "visualizer_module": "",
+        "visualizer_class": "",
+        "visualizer_input": {},
+        "interactive_configuration": true
+      },
+      {
+        "name": "Data Splitter",
+        "building_block_module": "ecoki.building_blocks.code_based.data_integration.preprocess_data.data_splitter_lstm.data_splitter",
+        "building_block_class": "DataSplitter",
+        "execution_mode": "local",
+        "settings": {
+          "test_dataset_size": 0.25
+        },
+        "visualizer_module": "",
+        "visualizer_class": "",
+        "visualizer_input": {},
+        "interactive_configuration": true
+      },
+      {
+        "name": "Model And Forecast",
+        "building_block_module": "ecoki.building_blocks.code_based.modelling.build_and_train_model.model_and_forecast_lstm.model_and_forecast",
+        "building_block_class": "ModelAndForecast",
+        "execution_mode": "local",
+        "settings": {
+          "nn_complexity": "Basic"
+        },
+        "visualizer_module": "ecoki.building_blocks.code_based.modelling.build_and_train_model.model_and_forecast_lstm.predictions_visualizer",
+        "visualizer_class": "PredictionsVisualizer",
+        "visualizer_input": {"input_data": "test_and_forecasted_data", "timesteps": "sequences_timesteps", "target": "target"},
+        "interactive_configuration": true
+      }
+    ],
+    "connections": [
+      {
+        "name": "1",
+        "from_node": "Data Reader",
+        "from_port": "output_data",
+        "to_node": "Data Imputer",
+        "to_port": "input_data"
+      },
+      {
+        "name": "2",
+        "from_node": "Data Imputer",
+        "from_port": "output_data",
+        "to_node": "Data Sampler",
+        "to_port": "input_data"
+      },
+      {
+        "name": "3",
+        "from_node": "Data Sampler",
+        "from_port": "output_data",
+        "to_node": "Data Sequence generator",
+        "to_port": "input_data"  
+      },
+      {
+        "name": "4",
+        "from_node": "Data Reader",
+        "from_port": "features",
+        "to_node": "Data Sequence generator",
+        "to_port": "input_and_target_features"
+      },
+      {
+        "name": "5",
+        "from_node": "Data Sequence generator",
+        "from_port": "output_data_sequences",
+        "to_node": "Data Splitter",
+        "to_port": "input_data_train_test"  
+      },
+      {
+        "name": "6",
+        "from_node": "Data Splitter",
+        "from_port": "output_data_train_test",
+        "to_node": "Model And Forecast",
+        "to_port": "input_data"  
+      },
+      {
+        "name": "7",
+        "from_node": "Data Sequence generator",
+        "from_port": "output_data_sequences_timesteps",
+        "to_node": "Model And Forecast",
+        "to_port": "data_sequences_timesteps"  
+      },
+      {
+        "name": "8",
+        "from_node": "Data Sequence generator",
+        "from_port": "target_column",
+        "to_node": "Model And Forecast",
+        "to_port": "target_column"  
+      }
+    ]
+  },
+  "execution_mode": "local",
+  "metadata": {
+      "short_description": "Diese Pipeline lädt ein trainiertes LSTM-Modell zur Vorhersage multivariater Mehrziel-Mehrschritt-Zeitreihen.",
+      "description": " Diese Pipeline lädt ein trainiertes LSTM-Modell zur Vorhersage multivariater Mehrziel-Mehrschritt-Zeitreihen. Hierbei handelt es sich um eine statische Analyse für einen bestehenden Datensatz.\n",
+      "category": ["Process Assessment", "Modelling"],
+      "inputs": {
+        "dataset": {
+            "value range": "Time Series dataset containing the features and labels that shuld be modeled by the LSTM",
+            "default value": "",
+            "intended use": "Create LSTM Model"
+          }
+      },
+      "outputs": {
+        "expected_results": "LSTM model predictions",
+        "Output Format": "plot"
+      },
+        "parameters": {
+          "parameter_name": "",
+          "value_range": "",
+          "default_value": "",
+          "intended_use": ""
+        },
+        "version": "0.0.1",
+        "required_information": {
+          "success stories": "",
+          "problem definitions": ""
+        }
+      }
+}

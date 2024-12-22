@@ -1,0 +1,242 @@
+{
+  "name": "Example_DS4_Train_Xgboost_Multi",
+  "topology": {
+    "nodes": [
+      {
+        "name": "ecoKI_data_reader",
+        "building_block_module": "ecoki.building_blocks.code_based.data_integration.acquire_data.ecoki_data_reader.ecoki_data_reader",
+        "building_block_class": "EcoKIDataReader",
+        "execution_mode": "local",
+        "settings": {
+          "data_file_path": "ecoki/datasets/Scenario_1_apple_juice_production.csv",
+          "index_name": null,
+          "data_reader": "DataReaderLocal"
+        },
+        "visualizer_module": "",
+        "visualizer_class": "",
+        "interactive_configuration": true,
+        "visualizer_input": {},
+        "description": "ecoKI data reader set",
+        "category": "",
+        "visualization_endpoint": "",
+        "interactive_gui_endpoint": "127.0.0.1:27501",
+        "execution_status": 1,
+        "ports": [
+          {
+            "name": "output_data",
+            "category": "outlet",
+            "data_type": "DataFrame",
+            "allowed_data_types": []
+          }
+        ]
+      },
+      {
+        "name": "data_selector",
+        "building_block_module": "ecoki.building_blocks.code_based.data_integration.preprocess_data.data_selector.data_selector",
+        "building_block_class": "DataSelector",
+        "execution_mode": "local",
+        "settings": {
+          "columns": {
+            "temperature_cooling_input": "",
+            "flow_meter_input_1": "",
+            "flow_meter_input_2": "",
+            "residual sugar": "",
+            "chlorides": "",
+            "free sulfur dioxide": "",
+            "total sulfur dioxide": "",
+            "process_parameter_1": "",
+            "process_parameter_2": "",
+            "workload_machine_1": "",
+            "energy_consumption_production": "",
+            "apple_juice_quality": ""
+          },
+          "selected_columns": []
+        },
+        "visualizer_module": "",
+        "visualizer_class": "",
+        "interactive_configuration": true,
+        "visualizer_input": {},
+        "description": "With this building block, the user can select and rename the column of Dataframe.",
+        "category": "preprocess_data",
+        "visualization_endpoint": "",
+        "interactive_gui_endpoint": "127.0.0.1:27502",
+        "execution_status": 1,
+        "ports": [
+          {
+            "name": "input_data",
+            "category": "inlet",
+            "data_type": "DataFrame",
+            "allowed_data_types": []
+          },
+          {
+            "name": "output_data",
+            "category": "outlet",
+            "data_type": "DataFrame",
+            "allowed_data_types": []
+          }
+        ]
+      },
+      {
+        "name": "split_train_test",
+        "building_block_module": "ecoki.building_blocks.code_based.modelling.build_and_train_model.split_traintest_label.split_traintest_label",
+        "building_block_class": "SplitTrainTestLabel",
+        "execution_mode": "local",
+        "settings": {
+          "selected_columns": [
+            "temperature_cooling_input",
+            "flow_meter_input_1",
+            "flow_meter_input_2",
+            "residual sugar",
+            "chlorides",
+            "free sulfur dioxide",
+            "total sulfur dioxide",
+            "process_parameter_1",
+            "process_parameter_2",
+            "workload_machine_1"
+          ],
+          "selected_columns_label": [
+            "energy_consumption_production",
+            "apple_juice_quality"
+          ]
+        },
+        "visualizer_module": "",
+        "visualizer_class": "",
+        "interactive_configuration": true,
+        "visualizer_input": {},
+        "description": "Split the input dataset (pre-processed) into Train and test datasets (10'%' size of the original) for further training and prediction.",
+        "category": "Transformer",
+        "visualization_endpoint": "",
+        "interactive_gui_endpoint": "127.0.0.1:27503",
+        "execution_status": 1,
+        "ports": [
+          {
+            "name": "input_data",
+            "category": "inlet",
+            "data_type": "DataFrame",
+            "allowed_data_types": []
+          },
+          {
+            "name": "output_data",
+            "category": "outlet",
+            "data_type": "list",
+            "allowed_data_types": []
+          }
+        ]
+      },
+      {
+        "name": "train_predict_xgboost_multi",
+        "building_block_module": "ecoki.building_blocks.code_based.modelling.build_and_train_model.train_and_predict_xgboost_multioutput.train_and_predict_xgboost_multioutput",
+        "building_block_class": "TrainAndPredictXGBoostMultioutput",
+        "execution_mode": "local",
+        "settings": {
+          "create_inference_pipeline_template": true,
+          "create_inference_pipeline": true
+        },
+        "visualizer_module": "ecoki.building_blocks.code_based.modelling.build_and_train_model.train_and_predict_xgboost_multioutput.train_and_predict_xgboost_multioutput_visualizer",
+        "visualizer_class": "TrainAndPredictXGBoostMultiVisualizer",
+        "interactive_configuration": false,
+        "visualizer_input": [
+          "output_data_preds",
+          "output_data_featimp",
+          "output_data_metrics",
+          "output_data_hyperparameters",
+          "output_data_labels"
+        ],
+        "description": "Building Block to do hyperparameter tuning (if dataset is large (&gt;10k) using GridSearchCV, and Trains a MultiOutputRegressor in combination with XGBoost regression model. Also predict                values on the test set (10% of dataset) and calculate the mean average error (mae)",
+        "category": "Transformer",
+        "visualization_endpoint": "127.0.0.1:27500",
+        "interactive_gui_endpoint": "",
+        "execution_status": 1,
+        "ports": [
+          {
+            "name": "input_data",
+            "category": "inlet",
+            "data_type": "list",
+            "allowed_data_types": []
+          },
+          {
+            "name": "output_data_preds",
+            "category": "outlet",
+            "data_type": "DataFrame",
+            "allowed_data_types": []
+          },
+          {
+            "name": "output_data_featimp",
+            "category": "outlet",
+            "data_type": "DataFrame",
+            "allowed_data_types": []
+          },
+          {
+            "name": "output_data_metrics",
+            "category": "outlet",
+            "data_type": "dict",
+            "allowed_data_types": []
+          },
+          {
+            "name": "output_data_hyperparameters",
+            "category": "outlet",
+            "data_type": "DataFrame",
+            "allowed_data_types": []
+          },
+          {
+            "name": "output_data_labels",
+            "category": "outlet",
+            "data_type": "DataFrame",
+            "allowed_data_types": []
+          }
+        ]
+      }
+    ],
+    "connections": [
+      {
+        "name": "1",
+        "from_node": "ecoKI_data_reader",
+        "from_port": "output_data",
+        "to_node": "data_selector",
+        "to_port": "input_data"
+      },
+      {
+        "name": "2",
+        "from_node": "data_selector",
+        "from_port": "output_data",
+        "to_node": "split_train_test",
+        "to_port": "input_data"
+      },
+      {
+        "name": "3",
+        "from_node": "split_train_test",
+        "from_port": "output_data",
+        "to_node": "train_predict_xgboost_multi",
+        "to_port": "input_data"
+      }
+    ]
+  },
+  "execution_mode": "local",
+  "metadata": {
+    "short_description": "Select the input dataset from interactive GUI and train, predict with XGBoost regression model.",
+    "description": "Select the input dataset from interactive GUI and train, predict with XGBoost regression model.",
+    "category": [
+      "Modelling"
+    ],
+    "inputs": {
+      "required": "Dataset from central database",
+      "optional": ""
+    },
+    "outputs": {
+      "expected_results": "Interactive panel dashboard on the central dashboard",
+      "Output Format": ""
+    },
+    "parameters": {
+      "parameter_name": "",
+      "value_range": "",
+      "default_value": "",
+      "intended_use": "Run building blocks sequentially"
+    },
+    "version": "",
+    "required_information": {
+      "success stories": "",
+      "problem definitions": ""
+    }
+  },
+  "execution_status": -1
+}

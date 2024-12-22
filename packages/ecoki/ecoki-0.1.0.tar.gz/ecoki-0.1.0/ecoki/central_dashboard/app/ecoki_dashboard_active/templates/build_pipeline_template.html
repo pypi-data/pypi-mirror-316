@@ -1,0 +1,127 @@
+{% extends 'app_base.html' %}
+{% load static %}
+{% load markdownify %}
+
+{% if user.is_authenticated %}
+
+
+    {% block content_wrapper %}
+      {% comment %} <div id="wrapper"> {% endcomment %}
+        <div class="content-wrapper ecoki-background" style="min-height: 288.4px;">
+            <section class="content-header">
+                <div class="container-fluid">
+                  <div class="row mb-2">
+                      <!--<div class="col-sm-6">-->
+                      <!--<h1>Pipeline</h1>-->
+                      <!--</div>-->
+                  </div>
+
+                  <!--For the pipeline structure-->
+                  <div>
+                    <a href="/active/pipeline_list_overview">
+                      <button type="button" class="btn btn-success btn-sm" style="background-color:rgb(13,55,71);color:white;">
+                        Back to overview
+                      </button>
+                    </a>
+
+                    <a href="/active/building_blocks_overview/new/pipeline/build">
+                      <button type="button" class="btn btn-cuspipe btn-sm {% if "build" in request.path %}active{% endif %}" style="background-color:rgb(27,188,44);color:white;">
+                        Build new Pipeline
+                      </button>
+                    </a>
+                    
+                  </div>
+                                      
+                </div><!-- /.container-fluid -->
+            </section>
+            <section class="content">
+              {% comment %} <div class="control-width"> {% endcomment %}
+              <div class="container-fluid py-2">
+                
+                <div class="card card-success" style="overflow-y:auto;">
+                  
+                  <div class="card-header">
+                    <h3 class="card-title">Building Block Explorer</h3>
+                      <div class="card-tools">
+                       
+                        <!-- This will cause the card to maximize when clicked -->
+                        <button type="button" class="btn btn-tool" data-card-widget="maximize"><i class="fas fa-expand "></i></button>
+                        <!-- This will cause the card to be removed when clicked -->
+                        <button type="button" class="btn btn-tool" data-card-widget="remove" onclick='window.location.replace("/active/pipeline_list_overview/");return false; '><i class="fas fa-times"></i></button>
+                        
+                     </div>
+                    <!-- /.card-tools -->
+                      
+                  </div>
+                  <!-- /.card-header -->
+                 
+                  <div class="card-body">
+                    <form name="JSONDATA" action="" method="POST">
+                      {% csrf_token %}
+                      
+                      <!-- Quill editor container -->
+                      <div id="editor-container">
+                        <textarea name="JSONDATA"></textarea>
+                      </div>
+
+                      <!-- Hidden input for the form data used for storing -->
+                      <input type="hidden" name="JSONDATA" id="form-data-input">
+
+                      <button type="submit" class="btn btn-pipe btn-sm" style="background-color:rgb(176,21,19);color:white;">Submit</button>
+                    </form>
+                                   
+                  </div>
+                    <!-- /.card-body -->
+                  </div>
+                  <!-- /.card -->
+                </div>
+              </div>
+            </div>
+          </div>
+         </section>
+
+          </div>
+    
+      {% endblock %}
+      </div>
+    {% block extra_foot %}
+
+      <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+      <script>
+        var quill = new Quill('#editor-container', {theme: 'snow'});
+
+        // Get the form data from Quill editor and update the hidden input
+        var form = document.querySelector('form[name="JSONDATA"]');
+        var formInput = document.getElementById('form-data-input');
+        
+        form.addEventListener('submit', function(event) {
+          var updated_sett_json = quill.root.innerText.replace(/\s/g,'');
+          var updated_name = JSON.parse(updated_sett_json).name;          
+              
+          {% for type, names in all_pipeline_names.items %}
+              var pl_type = '{{type}}';
+              var pl_names = "{{names|safe}}".split(',');
+              for (let i = 0, len = pl_names.length; i < len; i++) {
+                  pl_name = pl_names[i].substring(2, pl_names[i].length-1);
+                  if(updated_name == pl_name){
+                      if(pl_type=="ecoki") {
+                          alert("Ecoki pipeline with name "+updated_name+" cannot be edited. Please change the name to save changes to a new custom pipeline.");
+                          event.preventDefault();
+                      }else if(pl_type=="custom") {
+                          if(!confirm("Custom pipeline with name "+updated_name+" already exists and its settings will be overwritten. Are you sure?")){
+                              event.preventDefault();
+                          }
+                      }
+                  }
+              }
+          {% endfor %}
+
+          var formData = quill.root.innerText;
+          formInput.value = (formData);
+        }); 
+       
+      </script>
+            </script>           
+    {% endblock %}
+
+{% endif %}

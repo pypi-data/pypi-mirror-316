@@ -1,0 +1,30 @@
+{% extends 'app_base.html' %}
+{% load static %}
+
+{% if user.is_authenticated %}
+
+
+    {% block content_wrapper %}
+        <div class="content-wrapper ecoki-background" style="min-height: 288.4px;">
+            <section class="content-header">
+                <div class="container-fluid">
+                <div class="row mb-2">
+                    <div class="col-sm-6">
+                    <h1>Test</h1>
+                    </div>
+                </div>
+                </div><!-- /.container-fluid -->
+            </section>
+            <section class="content">
+
+            </section>
+
+        </div>
+    {% endblock %}
+
+    {% block extra_foot %}
+
+    {% endblock %}
+
+{% endif %}
+

@@ -1,0 +1,229 @@
+{% extends 'app_base.html' %}
+{% load static %}
+{% load markdownify %}
+
+{% if user.is_authenticated %}
+
+    {% block content_wrapper %}
+      {% comment %} <div id="wrapper"> {% endcomment %}
+        <div class="content-wrapper ecoki-background" style="min-height: 288.4px;">
+            <section class="content-header">
+                <div class="container-fluid">
+                  <div class="row mb-2">
+                      <!--<div class="col-sm-6">-->
+                      <!--<h1>Pipeline</h1>-->
+                      <!--</div>-->
+                  </div>
+
+                  <!--For the pipeline structure-->
+                  <div>
+                    <a href="/active/building_blocks_overview">
+                      <button type="button" class="btn btn-success btn-sm active">
+                        Back to overview
+                      </button>
+                    </a>
+
+                    <a href="/active/building_blocks_overview/new/pipeline/build/">
+                      <button type="button" class="btn btn-success btn-sm {% if build in request.path %}active{% endif %}" style="background-color:rgb(13,55,71);color:white;">  
+                        Build new Pipeline
+                      </button>
+                    </a>
+                    
+                    {% for item in list %} 
+                      <a href="/active/building_blocks_overview/{{item}}">
+                        <button type="button" class="btn btn-testg btn-sm {% if item in request.path %}active{% endif %}" style="background-color:rgb(106,172,144);color:white;">
+                          {{item}}<span id='close' style= "font-size:10px; margin-left:4px; margin-top:6px;background-color: transparent;" onclick='this.parentNode.parentNode.remove(); window.location.replace("/active/building_blocks_overview/{{item}}/removed/");return false; '>
+                            &#10006;</span> 
+                                                
+                        </button> 
+                      </a>                           
+                    {% endfor %}
+
+                    {% for item in list_nc %} 
+                      <a href="/active/building_blocks_overview/{{item}}">
+                        <button type="button" class="btn btn-test btn-sm {% if item in request.path %}active{% endif %}" style="background-color:rgb(80,185,193);color:white;">
+                          {{item}}<span id='close' style= "font-size:10px; margin-left:4px; margin-top:6px;background-color: transparent;" onclick='this.parentNode.parentNode.remove(); window.location.replace("/active/building_blocks_overview/{{item}}/removed/");return false; '>
+                            &#10006;</span> 
+                                                
+                        </button> 
+                      </a>                           
+                    {% endfor %}
+
+                                        
+                  </div>  
+                </div><!-- /.container-fluid -->
+            </section>
+            <section class="content">
+              <center>
+              <h2>Energy Efficiency Scenarios</h2>
+              </center>
+                  <!-- /.card-header -->
+                    <div class="carousel">
+                      <button class="carousel__button carousel__button--left is-hidden">
+                        <span aria-hidden="true">&laquo;</span>
+                      </button> <!-- For the left and right buttons of the carousels-->
+
+                      
+                      <div class="carousel__track-container">
+                        
+                        <ul class="carousel__track">     
+                          {% for energy_name,energy_popup,energy_url,energy_jpg,index in names_and_markdown_energy %} 
+                            {% if index == 0 %}                               
+                              <li class="carousel__slide current-slide">
+                                <div class="carousel-caption" style="text-align:right;margin-left:560px;margin-right:-130px;">
+                                  <center>
+                                    <h3>{{energy_name}}</h3>  
+                                    <br></br>                                  
+                                    {{energy_popup|markdownify }}                                    
+                                    <a href="{{energy_url}}" style="font-weight:600; font-size:10px; color:white; background-color:rgb(63,99,116); border: 2px solid rgb(30,81,85); border-radius: .25rem;padding: .375rem .75rem;">Open Energy Efficiency Scenario
+                                    </a>
+                                  </center>                                
+                                  <!-- /.card-body --> 
+                                </div>    
+                                <img class="carousel__image" src="data:image/png;base64,{{energy_jpg}}" alt="">                                   
+                              </li>                                                                           
+                              
+                            {% else %}
+                              <li class="carousel__slide">
+                                <div class="carousel-caption" style="text-align:right;margin-left:560px;margin-right:-130px;">
+                                  <center>
+                                    <h3>{{energy_name}}</h3> 
+                                    <br></br>                                    
+                                    {{energy_popup|markdownify }}                                    
+                                    <a href="{{energy_url}}" style="font-weight:600; font-size:10px; color:white; background-color:rgb(63,99,116); border: 2px solid rgb(30,81,85); border-radius: .25rem;padding: .375rem .75rem;">Open Energy Efficiency Scenario
+                                    </a>
+                                  </center>                                
+                                  <!-- /.card-body --> 
+                                </div>     
+                                <img class="carousel__image" src="data:image/png;base64,{{energy_jpg}}" alt="">  
+                              </li>
+                            {% endif %}
+                          {% endfor %}                                
+                        </ul> 
+                        
+                      </div> 
+                      
+                      <button class="carousel__button carousel__button--right">
+                        <span aria-hidden="true">&raquo;</span>
+                      </button>
+                      
+                      <div class="carousel__nav">
+                        {% for i in pointer %}                        
+                          {% if i == 0 %}
+                            <button class="carousel__indicator current-slide"></button>
+                          {% else %}
+                            <button class="carousel__indicator"></button>
+                          {% endif %}                         
+                        {% endfor %}
+                      </div>
+
+                    </div> 
+         </section>
+         
+          </div>
+    
+          {% endblock %}
+      {% comment %} </div> {% endcomment %}
+    {% block extra_foot %}
+
+            <script>
+              // When the user clicks on <div>, open the popup
+              function myFunction(bb_category) {
+                console.log("myFunction bb_category",bb_category)
+                var popup = document.getElementById(bb_category);
+                console.log("popup",popup)
+                popup.classList.toggle("show");
+              }
+            </script>
+            <script>
+              const track = document.querySelector('.carousel__track');
+              const slides = Array.from(track.children);              
+              const nextButton = document.querySelector('.carousel__button--right');
+              const prevButton = document.querySelector('.carousel__button--left');
+              const dotsNav = document.querySelector('.carousel__nav');
+              const dots = Array.from(dotsNav.children);
+
+              const slideSize = slides[0].getBoundingClientRect();
+              const slideWidth = slideSize.width;
+
+
+              //arrange the slides next to one another
+              const setSlidePosition = (slide,index) => {
+                slide.style.left = slideWidth * index + 'px';
+              };
+              
+              slides.forEach(setSlidePosition);
+
+              const moveToSlide = (track, currentSlide, targetSlide) => {
+                track.style.transform = 'translateX(-' + targetSlide.style.left + ')';
+                currentSlide.classList.remove('current-slide');
+                targetSlide.classList.add('current-slide');
+              };
+
+              const updateDots = (currentDot, targetDot) => {
+                currentDot.classList.remove('current-slide');
+                targetDot.classList.add('current-slide');
+              }
+              
+              
+              const hideShowArrows = (slides, prevButton, nextButton, targetIndex) => {          
+                if (targetIndex === 0) { 
+                  prevButton.classList.add('is-hidden');
+                  nextButton.classList.remove('is-hidden');                  
+                } else if (targetIndex === slides.length - 1) {
+                  prevButton.classList.remove('is-hidden');
+                  nextButton.classList.add('is-hidden');
+                } else {
+                  prevButton.classList.remove('is-hidden');
+                  nextButton.classList.remove('is-hidden');
+                }
+              }
+
+              // When I click left, move slides to the left
+              prevButton.addEventListener('click', e => {
+                const currentSlide = track.querySelector('.current-slide');
+                const prevSlide = currentSlide.previousElementSibling;
+                const currentDot = dotsNav.querySelector('.current-slide');
+                const prevDot = currentDot.previousElementSibling;
+                const prevIndex = slides.findIndex(slide => slide === prevSlide);
+
+                moveToSlide(track, currentSlide, prevSlide);
+                updateDots(currentDot, prevDot);
+                hideShowArrows(slides, prevButton, nextButton, prevIndex);
+              })
+
+              // When I click right, move slides to the right
+              nextButton.addEventListener('click', e => {
+                const currentSlide = track.querySelector('.current-slide');
+                const nextSlide = currentSlide.nextElementSibling;
+                const currentDot = dotsNav.querySelector('.current-slide');
+                const nextDot = currentDot.nextElementSibling;
+                const nextIndex = slides.findIndex(slide => slide === nextSlide);
+
+                moveToSlide(track, currentSlide, nextSlide);
+                updateDots(currentDot, nextDot);
+                hideShowArrows(slides, prevButton, nextButton, nextIndex);
+              })
+
+              // When I click the nav indicators ,move to that slide
+              dotsNav.addEventListener('click', e => {
+                //what indicator was clicked on
+                const targetDot = e.target.closest('button');
+                
+                if (!targetDot) return;
+
+                const currentSlide = track.querySelector('.current-slide');
+                const currentDot = dotsNav.querySelector('.current-slide');
+                const targetIndex = dots.findIndex(dot => dot === targetDot);
+                const targetSlide = slides[targetIndex];
+                moveToSlide(track, currentSlide, targetSlide);
+                updateDots(currentDot, targetDot);
+                hideShowArrows(slides, prevButton, nextButton, targetIndex);
+                
+              })
+
+            </script>
+           
+    {% endblock %}
+
+{% endif %}

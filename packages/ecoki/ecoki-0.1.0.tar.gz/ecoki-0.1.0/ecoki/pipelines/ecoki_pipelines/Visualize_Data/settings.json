@@ -1,0 +1,39 @@
+{
+    "name": "Visualize_Data",
+    "topology": {
+        "nodes": [
+          {
+            "name": "local_data_reader",
+            "building_block_module": "ecoki.building_blocks.code_based.data_integration.acquire_data.data_reader_local.data_reader_local",
+            "building_block_class": "DataReaderLocal",
+            "execution_mode": "local",
+            "settings":{"data_file_path": "ecoki/datasets/tabular_data_nan.csv", "index_name": "timestamp"},
+            "visualizer_module": "ecoki.building_blocks.code_based.data_integration.identify_and_understand_data.tabular_data_visualization.tabular_data_visualizer",
+            "visualizer_class": "TabularDataVisualizer",
+            "visualizer_input": {"input_data": "output_data"},
+            "interactive_configuration": true
+          }
+        ],
+        "connections": [
+        ]
+    },
+    "execution_mode": "local",
+    "metadata": {
+      "short_description": "Reads a local csv file and displays the tabular data in an interactive dashboard.",
+      "description": "This pipeline reads tabular data from a local csv file, then displays it in a Panel interactive dashboard. Using the interactive dashboard, the user can:\n* Select specific columns to display,\n* Generate line plots, histograms and correlation plots,\n* Visualize summary statistics about the dataset.",
+      "category": ["Process Assessment", "Data Integration"],
+      "outputs": {
+        "Expected results": "Dataset visualized in an interactive Panel dashboard",
+        "Output format": "Html"
+      },
+      "inputs": {
+        "dataset": {
+          "value range": "Tabular dataset as a pandas DataFrame",
+          "default value": "",
+          "intended use": "Dataset to visualize"
+        }
+      },
+      "example": "If necessary, illustrate how the pipeline unfolds on one of our example datasets. This can be done by including a link to a short demo video.",
+      "version": "0.0.1"
+    }
+}

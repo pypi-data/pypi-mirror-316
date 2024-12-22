@@ -1,0 +1,209 @@
+{% extends 'app_base.html' %}
+{% load static %}
+{% load markdownify %}
+{% if user.is_authenticated %}
+
+
+    {% block content_wrapper %}
+      {% comment %} <div id="wrapper"> {% endcomment %}
+        <div class="content-wrapper ecoki-background" style="min-height: 288.4px;">
+            <section class="content-header">
+                <div class="container-fluid">
+                  <div class="row mb-2">
+                      <!--<div class="col-sm-6">-->
+                      <!--<h1>Pipeline</h1>-->
+                      <!--</div>-->
+                  </div>
+
+                  <!--For the pipeline structure-->
+                  <div>
+                    <a href="/active/{% if list or list_nc %}building_blocks_overview{% else %}pipeline_list_overview{% endif %}/">
+                      <button type="button" class="btn btn-success btn-sm" style="background-color:rgb(13,55,71);color:white;">
+                        Back to overview
+                      </button>
+                    </a>
+
+                    <a href="/active/building_blocks_overview/new/pipeline/build/">
+                      <button type="button" class="btn btn-success btn-sm {% if build in request.path %}active{% endif %}" style="background-color:rgb(13,55,71);color:white;">
+                        Build new Pipeline
+                      </button>
+                    </a>
+
+                    {% for item in list %} 
+                      <a href="/active/building_blocks_overview/{{item}}">
+                        <button type="button" class="btn btn-testg btn-sm {% if item in request.path %}active{% endif %}" style="background-color:rgb(106,172,144);color:white;">
+                          {{item}}<span id='close' style= "font-size:10px; margin-left:4px; margin-top:6px;background-color: transparent;" onclick='this.parentNode.parentNode.remove(); window.location.replace("/active/building_blocks_overview/{{item}}/removed/");return false; '>
+                            &#10006;</span>     
+                        </button> 
+                      </a>                           
+                    {% endfor %}
+
+                    {% for itemnc in list_nc %} 
+                      <a href="/active/building_blocks_overview/{{itemnc}}">
+                        <button type="button" class="btn btn-test btn-sm {% if itemnc in request.path %}active{% endif %}" style="background-color:rgb(80,185,193);color:white;">
+                          {{itemnc}}<span id='close' style= "font-size:10px; margin-left:4px; margin-top:6px;background-color: transparent;" onclick='this.parentNode.parentNode.remove(); window.location.replace("/active/building_blocks_overview/{{itemnc}}/removed/");return false; '>
+                            &#10006;</span> 
+                                                
+                        </button> 
+                      </a>                           
+                    {% endfor %}
+                    
+                  </div>
+                                      
+                </div><!-- /.container-fluid -->
+            </section>
+            <section class="content">
+              {% comment %} <div class="control-width"> {% endcomment %}
+              <div class="container-fluid py-2">
+                
+                <div class="card card-success" style="overflow-y:auto;">
+                  
+                  <div class="card-header">
+                    <h3 class="card-title">Building Block Explorer</h3>
+                      <div class="card-tools">
+
+                        <!-- This will cause the card to maximize when clicked -->
+                        <button type="button" class="btn btn-tool" data-card-widget="maximize"><i class="fas fa-expand "></i></button>
+                        {% if list or list_nc %}
+                          <!-- This will cause the card to collapse when clicked -->
+                          <button type="button" class="btn btn-tool" data-card-widget="collapse"><i class="fas fa-minus"></i></button>
+                        {% else %}                        
+                          <!-- This will cause the card to be removed when clicked -->
+                          <button type="button" class="btn btn-tool" data-card-widget="remove" onclick='window.location.replace("/active/pipeline_list_overview/");return false; '><i class="fas fa-times"></i></button>
+                        {% endif %}
+                        
+                     </div>
+                    <!-- /.card-tools -->
+                      
+                  </div>
+                  <!-- /.card-header -->
+                 
+                  <div class="container-fluid">   
+                    <div class="scrolling-wrapper row flex-row flex-nowrap mt-1 pb-1 pt-1"> 
+                      <!-- Added for displaying the BB  -->
+                      {% for description in markdown_descriptions %}
+                        <div class="card-body">                        
+                          {{description|markdownify }}
+                          <!-- /.card-body -->
+                        </div> 
+                      {% endfor %}  
+
+                      <!-- Added for displaying pipelines  -->
+                      {% for meta_data,url,url_conf,url_dupl,url_del in pipelines_markdown_url %} 
+                        <div class="card-body">
+                          <h3>Description</h3>                        
+                          <pre style="font-family: Source Sans Pro; font-size: 16px">{{meta_data.description }}</pre>
+                          <h3>Building blocks</h3>
+                          <pre style="color:red">  {{meta_data.building_blocks|join:" [--->] "}}</pre>
+                          <h3>Inputs</h3>
+                          <ul>
+                            {% for key, value in meta_data.inputs.items %}
+                              <li> {{key}}:
+                                <ul>
+                                  {% for k, v in value.items %}
+                                    <li>{{k|capfirst}}: {{v}}</li>
+                                  {% endfor %}
+                                </ul>
+                            {% endfor %}
+                          </ul>
+                          <h3>Outputs</h3> 
+                          <ul>
+                            {% for key, value in meta_data.outputs.items %}
+                              <li>{{key|capfirst}}: {{value}}</li>
+                            {% endfor %}
+                          </ul>
+                          <div>
+                            <h3>Example</h3>
+                            <pre style="font-family: Source Sans Pro; font-size: 16px">{{ meta_data.example }}</pre>
+                          </div>
+                          <h3>Version</h3>
+                          {{meta_data.version}}
+                          <center> 
+                            <a href="{{url}}" class= "btn btn-success btn-sm {% if disable_create_button == True %}disabled{% endif %}" style="color:white;">Create this pipeline</a>
+                            <a href="{{url_conf}}" class= "btn btn-info btn-sm" style="color:white;">Configure this pipeline</a>
+                            <a href="{{url_dupl}}" class= "btn btn-primary btn-sm" style="color:white;">Duplicate this pipeline</a>
+                            {% if 'custom' in meta_data.type %}
+                              <a id="delete_custom_pl" class= "btn btn-danger btn-sm" style="color:white;" onclick="confirm_deletion( '{{url_del}}' )">Delete this pipeline</a>
+                            {% endif %}                              
+                          </center>
+                          <!-- /.card-body -->
+                        </div> 
+                      {% endfor %}
+
+                      <!-- Added for displaying the energy efficiency scenario -->
+                      {% for description,url in energy_markdown_url %} 
+                        <div class="card-body">                      
+                          {{description|markdownify }}
+                          {% comment %} <center> 
+                            <a href="{{url}}" class= "btn btn-success btn-sm" style="background-color:rgb(13,55,71);color:white;">Run this pipeline
+                            </a> 
+                          </center> {% endcomment %}
+                          <!-- /.card-body -->
+                        </div> 
+                      {% endfor %} 
+
+                      <!-- Added for displaying the success story -->  
+                      {% for description,url in ss_markdown_url %} 
+                        <div class="card-body">                      
+                          {{description|markdownify }}
+                          {% comment %} <center> 
+                            <a href="{{url}}" class= "btn btn-success btn-sm" style="background-color:rgb(13,55,71);color:white;">Run this pipeline
+                            </a> 
+                          </center> {% endcomment %}
+                          <!-- /.card-body -->
+                        </div> 
+                      {% endfor %}   
+                      
+                      <!-- Added for displaying the energy efficiency examples -->  
+                      {% for description,url in eee_markdown_url %} 
+                        <div class="card-body">                      
+                          {{description|markdownify }}
+                          {% comment %} <center> 
+                            <a href="{{url}}" class= "btn btn-success btn-sm" style="background-color:rgb(13,55,71);color:white;">Run this pipeline
+                            </a> 
+                          </center> {% endcomment %}
+                          <!-- /.card-body -->
+                        </div> 
+                      {% endfor %}   
+                      
+                      <!-- Added for displaying the pipeline trigger status (Keep this as last as its not under any condition)-->                      
+                      <div class="card-body"> 
+                        {{data1|safe}}
+                        <!-- /.card-body -->
+                      </div>
+
+                    </div>                    
+                    <!-- /.card-body -->
+                  </div>
+                  <!-- /.card -->
+                </div>
+              </div>
+            </div>
+          </div>
+         </section>
+
+          </div>
+    
+      {% endblock %}
+      {% comment %} </div> {% endcomment %}
+    {% block extra_foot %}
+            <script>
+              // When the user clicks on <div>, open the popup
+              function myFunction(bb_category) {
+                console.log("myFunction bb_category",bb_category)
+                var popup = document.getElementById(bb_category);
+                console.log("popup",popup)
+                popup.classList.toggle("show");
+              }
+              
+              function confirm_deletion(delete_url) {
+                console.log(delete_url)
+                if (confirm("The pipeline will be deleted permanently. Are you sure?")) {
+                  window.location = delete_url
+                }
+              }
+            </script>
+           
+    {% endblock %}
+
+{% endif %}

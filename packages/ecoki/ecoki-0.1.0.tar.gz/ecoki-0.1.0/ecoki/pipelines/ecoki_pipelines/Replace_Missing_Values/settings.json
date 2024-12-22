@@ -1,0 +1,51 @@
+{
+    "name": "Replace_Missing_Values",
+    "topology": {
+        "nodes": [
+          {
+            "name": "local_data_reader",
+            "building_block_module": "ecoki.building_blocks.code_based.data_integration.acquire_data.data_reader_local.data_reader_local",
+            "building_block_class": "DataReaderLocal",
+            "execution_mode": "local",
+            "settings":{"data_file_path": "ecoki/datasets/tabular_data_nan.csv", "index_name": "timestamp"},
+            "visualizer_module": "",
+            "visualizer_class": "",
+            "visualizer_input": {},
+            "interactive_configuration": true
+          },
+          {
+            "name": "data_imputer",
+            "building_block_module": "ecoki.building_blocks.code_based.data_integration.preprocess_data.data_imputer.data_imputer",
+            "building_block_class": "DataImputer",
+            "execution_mode": "local",
+            "settings":{"strategy_num": "median", "strategy_cat":  "most_frequent", "fill_value":  null, "labels":  null},
+            "visualizer_module": "ecoki.building_blocks.code_based.data_integration.identify_and_understand_data.tabular_data_visualization.tabular_data_visualizer",
+            "visualizer_class": "TabularDataVisualizer",
+            "visualizer_input": {"input_data": "output_data"},
+            "interactive_configuration": false
+          }
+        ],
+        "connections": [
+          {"name": "1", "from_node": "local_data_reader", "from_port": "output_data", "to_node": "data_imputer", "to_port": "input_data"}
+        ]
+    },
+    "execution_mode": "local",
+    "metadata": {
+      "short_description": "Replaces missing values from an input tabular dataset read from a local csv file",
+      "description": "This pipeline imputes missing values from an input tabular dataset read from a local csv file (tabular_data_nan.csv in our dataverse). The resulting, NaN-free, dataset is displayed in an interactive dashboard (see the 'Visualize_Data' pipeline for details).",
+      "category": ["Data Integration"],
+      "inputs": {
+        "dataset": {
+          "value range": "Tabular dataset as a pandas DataFrame",
+          "default value": "",
+          "intended use": "Dataset with missing values to impute"
+          }
+      },
+      "outputs": {
+        "Expected results": "Dataset with no missing values displayed in an interactive Panel dashboard",
+        "Output Format": "Html"
+      },
+      "example": "",
+      "version": "0.0.1"
+    }
+}

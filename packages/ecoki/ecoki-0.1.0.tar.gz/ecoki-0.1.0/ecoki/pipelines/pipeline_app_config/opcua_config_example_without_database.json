@@ -1,0 +1,19 @@
+{
+  "opcua": {
+    "server_url": "opc.tcp://localhost:4840",
+    "nodes": {
+      "0": {
+        "name_space": 2,
+        "index": 2
+      },
+      "1": {
+        "name_space": 2,
+        "index": 3
+      }
+    },
+    "database": {
+    },
+    "plantID": "MI07 Water",
+    "parameters": {"mode": "num", "param": 1, "interval": 1}
+  }
+}
