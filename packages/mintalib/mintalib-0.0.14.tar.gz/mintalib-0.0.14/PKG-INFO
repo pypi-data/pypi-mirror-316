@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: mintalib
+Version: 0.0.14
+Summary: Minimal Technical Analysis Library for Python
+Author-email: Furechan <furechan@xsmail.com>
+License: MIT License
+Project-URL: homepage, https://github.com/furechan/mintalib
+Keywords: python,cython,finance,technical-analysis,indicators
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: numpy
+Requires-Dist: pandas
