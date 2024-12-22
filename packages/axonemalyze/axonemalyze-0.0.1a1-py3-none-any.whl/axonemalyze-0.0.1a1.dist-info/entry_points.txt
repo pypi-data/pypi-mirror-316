@@ -1,0 +1,3 @@
+[console_scripts]
+estimate_circularity = axonemalyze.estimate_circularity:estimate_circularity
+segment_axonemes = axonemalyze.segment_axonemes:segment_axonemes
