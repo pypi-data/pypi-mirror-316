@@ -1,0 +1,18 @@
+[project]
+name = "pymakergame"
+version = "0.4"
+authors = [
+  { name="GaelHF", email="gael.31.hf@gmail.com" },
+]
+description = "Python Library That Makes Pygame Easy"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/GaelHF/pymakergame"
+Issues = "https://github.com/GaelHF/pymakergame/issues"

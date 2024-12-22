@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+setup.py
+pymakergame/__init__.py
+pymakergame/main.py
+pymakergame.egg-info/PKG-INFO
+pymakergame.egg-info/SOURCES.txt
+pymakergame.egg-info/dependency_links.txt
+pymakergame.egg-info/top_level.txt

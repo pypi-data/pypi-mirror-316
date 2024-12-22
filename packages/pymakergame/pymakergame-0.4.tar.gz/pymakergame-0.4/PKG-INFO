@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: pymakergame
+Version: 0.4
+Summary: Python Library That Makes Pygame Easy
+Author-email: GaelHF <gael.31.hf@gmail.com>
+Project-URL: Homepage, https://github.com/GaelHF/pymakergame
+Project-URL: Issues, https://github.com/GaelHF/pymakergame/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+![icon](https://raw.githubusercontent.com/GaelHF/pymakergame/refs/heads/main/pymakergame/icon.png)
+# PyMakerGame
+Python Library That Makes Pygame Easy
+
+## About
+- Released: 12/20/2024
+- Author: [@GaelHF](https://github.com/GaelHF)
+
+## Create a Game with PyMakerGame
+Create the game window
+```python
+import pymakergame as pmg
+jeux = pmg.Game("TEST GAME", (500, 500), 'YOUR ICON, EXEMPLE: assets/icon.png', (255, 255, 255))
+```
+It's Game(name, size, icon, background_color)
