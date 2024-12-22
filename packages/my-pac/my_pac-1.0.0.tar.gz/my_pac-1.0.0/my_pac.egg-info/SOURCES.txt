@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+__init__.py
+setup.py
+my_pac.egg-info/PKG-INFO
+my_pac.egg-info/SOURCES.txt
+my_pac.egg-info/dependency_links.txt
+my_pac.egg-info/requires.txt
+my_pac.egg-info/top_level.txt
