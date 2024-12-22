@@ -1,0 +1,8 @@
+LICENCE
+README.md
+setup.py
+fastapi_payme.egg-info/PKG-INFO
+fastapi_payme.egg-info/SOURCES.txt
+fastapi_payme.egg-info/dependency_links.txt
+fastapi_payme.egg-info/requires.txt
+fastapi_payme.egg-info/top_level.txt
