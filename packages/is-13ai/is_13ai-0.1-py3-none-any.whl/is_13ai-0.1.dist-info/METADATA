@@ -1,0 +1,5 @@
+Metadata-Version: 2.1
+Name: is_13ai
+Version: 0.1
+Summary: A package that uses Azure AI to determine if a number is 13 or not.
+Author: Cyrus Mante
