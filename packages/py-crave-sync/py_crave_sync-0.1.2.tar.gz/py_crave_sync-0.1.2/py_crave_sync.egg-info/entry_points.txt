@@ -1,0 +1,2 @@
+[console_scripts]
+py-crave-sync = py_crave_sync.server:app.run
