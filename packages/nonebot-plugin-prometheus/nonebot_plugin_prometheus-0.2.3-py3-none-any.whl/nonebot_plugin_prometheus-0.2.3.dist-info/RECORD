@@ -1,0 +1,8 @@
+nonebot_plugin_prometheus/__init__.py,sha256=Ty3NLjVQw7Zjjcrus3IFYFyirrZEgdrRTdB9lZUP4Ds,675
+nonebot_plugin_prometheus/api.py,sha256=QXldkTy4xHczGIpaosilPMpvYJD115SS9bY0U5yEzWc,1042
+nonebot_plugin_prometheus/config.py,sha256=vsFNHfZHqmo2qhnjiifoTq_ZS-Ma8pQEeGifg9MRUzY,229
+nonebot_plugin_prometheus/metrics.py,sha256=FUUs3dvyqiCzlITQ9Y8NR7sMxdXpb2JKSNC2IE8nMus,116
+nonebot_plugin_prometheus-0.2.3.dist-info/METADATA,sha256=Dbm3YqiGcd_AVjucgh8Y0QfnoBDc2vxDJ8Khr6MiF3U,1636
+nonebot_plugin_prometheus-0.2.3.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+nonebot_plugin_prometheus-0.2.3.dist-info/licenses/LICENSE,sha256=uKLTLxMG7D1FujLTkzvkXRIAKj4agghI9RF4UsInoqk,1065
+nonebot_plugin_prometheus-0.2.3.dist-info/RECORD,,
