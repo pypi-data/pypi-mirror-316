@@ -1,0 +1,17 @@
+Metadata-Version: 2.4
+Name: datawhale-core
+Version: 0.0.2
+Summary: Core Library for Data Whale Project
+Project-URL: Homepage, https://github.com/stonezhong/datawhale/tree/master/core
+Project-URL: Issues, https://github.com/stonezhong/datawhale/issues
+Author-email: Stone Zhong <stone.zhong@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
+Requires-Dist: pydantic>=2.6.3
+Requires-Dist: sqlalchemy>=2.0.36
+Description-Content-Type: text/markdown
+
+Blah...
