@@ -1,0 +1,232 @@
+# AFS - Aiello-Functions
+
+Aiello-Functions (AFS) provides a streamlined way to define and execute functions compatible with OpenAI's function calling tools. Designed for developers seeking to integrate seamless function executions within their AI-driven applications, AFS simplifies the process, ensuring smooth interoperability with OpenAI's ecosystem.
+
+## Table of Contents
+
+- [Installation](#installation)
+- [Usage](#usage)
+    - [Custom AFS Function Tool](#custom-afs-function-tool)
+    - [AFS Assistant Event Handler](#afs-assistant-event-handler)
+    - [AFS Function as Service](#afs-function-as-service)
+- [Features](#features)
+- [Configuration](#configuration)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
+
+## Installation
+
+Install the `afs` package using `pip`:
+
+```bash
+pip install --index-url https://asia-east1-python.pkg.dev/aiellovoiceinterface-233507/aiello-pypi/simple/ afs-py
+```
+
+## Usage
+
+### Custom AFS Function Tool
+
+Define your custom function to be compatible with OpenAI's function tools. Here's an example of how to create a function that retrieves the current date and time based on a specified timezone:
+
+```python
+# my_func.py
+import datetime
+import typing
+import zoneinfo
+
+import pydantic
+
+import afs
+
+
+class GetDateTimeNowConfig(afs.AfsConfig):
+    name: typing.Text = "get_date_time_now"
+    description: typing.Text = (
+        "Retrieve the current date and time adjusted to a specified timezone. "
+        "Defaults to UTC if no timezone is provided."
+    )
+    function: typing.Text = "my_func.get_date_time_now"  # Use module path
+
+
+class GetDateTimeNow(afs.AfsBaseModel):
+    # Function configuration
+    afs_config: typing.ClassVar[GetDateTimeNowConfig] = GetDateTimeNowConfig()
+
+    # Arguments
+    timezone: typing.Text = pydantic.Field(
+        default="UTC",
+        description=(
+            "The timezone identifier in which to retrieve the current date and time. "
+            "Should follow the IANA timezone database format, such as 'UTC', 'America/New_York', etc."
+        ),
+    )
+
+    @classmethod
+    def parse_content(cls, response: "datetime.datetime") -> typing.Text:
+        try:
+            return response.isoformat()
+        except Exception:
+            return str(response)
+
+
+def get_date_time_now(GetDateTimeNow) -> "datetime.datetime":
+    return datetime.datetime.now(zoneinfo.ZoneInfo(GetDateTimeNow.timezone))
+```
+
+### AFS Assistant Event Handler
+
+AFS provides event handlers to manage tool executions automatically. Here's how to set up the event handler:
+
+```python
+# my_asst.py
+import time
+import typing
+
+import openai
+from openai.types.beta.assistant import Assistant
+from openai.types.beta.threads import Message
+
+import afs.utils.instructions
+import afs.utils.logger
+import afs.utils.openai_utils.ensure as ENSURE
+import afs.utils.rich_print
+from afs.config import logger, settings
+from afs.utils.openai_utils.event_handlers import AfsEventHandler
+from my_func import GetDateTimeNow
+
+afs.utils.logger.setup_logger(logger)
+
+ASSISTANT_NAME = "asst_afs"
+ASSISTANT_INSTRUCTIONS = afs.utils.instructions.DEFAULT_TOOL_INSTRUCTIONS
+ASSISTANT_MODEL = "gpt-4o-mini"
+FUNCTION_TOOLS = (GetDateTimeNow,)
+FORCE = False
+DEBUG = True
+
+
+def retrieve_assistant(client: openai.AzureOpenAI) -> Assistant:
+    assistant = ENSURE.ensure_assistant(
+        ASSISTANT_NAME,
+        client,
+        cache=settings.local_cache,
+        name=ASSISTANT_NAME,
+        instructions=ASSISTANT_INSTRUCTIONS,
+        model=ASSISTANT_MODEL,
+        force=FORCE,
+    )
+    if DEBUG:
+        afs.utils.rich_print.dict_table(
+            assistant, title=f"Assistant '{ASSISTANT_NAME}' ({assistant.id})"
+        )
+        for _func in FUNCTION_TOOLS:
+            afs.utils.rich_print.function_definition_table(_func.function_definition)
+
+    return assistant
+
+
+def main(query: typing.Text):
+    client = openai.AzureOpenAI()
+    assistant = retrieve_assistant(client)
+
+    ts = time.perf_counter()
+
+    # Create a thread and messages
+    thread = client.beta.threads.create()
+    thread_messages: typing.List[Message] = []
+    thread_messages.append(
+        client.beta.threads.messages.create(
+            thread_id=thread.id, role="user", content=query
+        )
+    )
+
+    # Use AFS Assistant Event Handler to handle tool calls automatically
+    afs_event_handler = AfsEventHandler(
+        client, tools_set=FUNCTION_TOOLS, messages=thread_messages, debug=DEBUG
+    )
+
+    with client.beta.threads.runs.stream(
+        thread_id=thread.id,
+        assistant_id=assistant.id,
+        tools=[
+            tool.function_tool_param for tool in FUNCTION_TOOLS
+        ],  # Use AFS Function Definition directly!
+        event_handler=afs_event_handler,
+    ) as stream:
+        stream.until_done()
+
+        afs.utils.rich_print.messages_table(stream.records)  # type: ignore
+
+    logger.info(f"Time taken: {time.perf_counter() - ts:.2f} seconds")
+
+
+if __name__ == "__main__":
+    main("What is the date and time in Tokyo day after tomorrow?")
+```
+
+### AFS Function as Service
+
+You can run AFS as a service using `make`:
+
+```shell
+make run-svc-dev
+```
+
+## Features
+
+- **Function Compatibility**: Define functions compatible with OpenAI's function tools with ease.
+- **Event Handling**: Automatic handling of tool executions using event handlers.
+- **Extensible**: Easily add new functions for different services like weather forecasts, geocoding, currencies, etc.
+- **Logging**: Integrated logging with colored output for better visibility.
+- **API Integration**: Seamless integration with FastAPI for exposing APIs.
+
+## Configuration
+
+Configure your settings in `afs/config.py`. Ensure you have set up the necessary API keys and endpoints for OpenAI and any other services you integrate with.
+
+Example configuration:
+
+```python:src/afs/config.py
+import pathlib
+import typing
+import tempfile
+
+import diskcache
+from pydantic import BaseSettings, Field
+
+class Settings(BaseSettings):
+    # LLMs
+    OPENAI_API_KEY: typing.Optional[str] = Field(default=None)
+    AZURE_OPENAI_API_KEY: typing.Optional[str] = Field(default=None)
+    AZURE_OPENAI_ENDPOINT: typing.Optional[str] = Field(default=None)
+    OPENAI_API_VERSION: typing.Optional[str] = Field(default=None)
+
+    # Cache
+    LOCAL_CACHE_PATH: str = Field(
+        default=str(pathlib.Path(tempfile.gettempdir()).joinpath(".afs_cache"))
+    )
+
+    # Private
+    _local_cache: typing.Optional[diskcache.Cache] = PrivateAttr(default=None)
+
+    @property
+    def local_cache(self) -> diskcache.Cache:
+        if self._local_cache is None:
+            self._local_cache = diskcache.Cache(self.LOCAL_CACHE_PATH)
+        return self._local_cache
+
+
+settings = Settings()
+```
+
+## Contributing
+
+Contributions are welcome! Please fork the repository and submit a pull request with your enhancements. Ensure that your code follows the project's coding standards and includes appropriate tests.
+
+## License
+
+This project is licensed under the [Aiello Company Private License](LICENSE). See the [LICENSE](LICENSE) file for details.
+
+## Contact
+
+For any inquiries or support, please contact Aiello Company at <legal@aiello.ai>.
