@@ -1,0 +1,8 @@
+evalops/__init__.py,sha256=hsqLuQ-R-KjImBtcOq-K86nMAsMTfUZu_TKbUXQNDKg,211
+evalops/huggingface_loader.py,sha256=yMRqYJgtrX75E4vL3b0a_kbINEChnN9MOeugA64NKmU,9621
+evalops/main.py,sha256=UE2y1j7gygYD7GfAuOEnEL9AOZBGpIiMaefG9A2b6Io,13744
+evalops/wrapper.py,sha256=IsE6DmKSaFZ3PVmfZ3-H1c8PV7hU2dabCM28-cXx4bY,815
+evalops-0.0.6.dist-info/LICENSE,sha256=GHYD0Vn7cqu6O1FibXB1ix_cx8js09uZI1rKjCjW5sY,1074
+evalops-0.0.6.dist-info/METADATA,sha256=4J46UXmVepfb6NaVFPCzS11gH_cPUbZourQ5mhIKCIY,12735
+evalops-0.0.6.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+evalops-0.0.6.dist-info/RECORD,,
