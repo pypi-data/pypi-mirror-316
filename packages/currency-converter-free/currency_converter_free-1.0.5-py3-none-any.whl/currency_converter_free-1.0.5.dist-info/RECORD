@@ -1,0 +1,9 @@
+currency_converter/__init__.py,sha256=CmbxFvdU5gLj3lNJoL99gJON5KBClxCvNWkw3_HCBXI,74
+currency_converter/converter.py,sha256=p0fTAizhP67llO6RuvOqlofsyH3bvkZp1m6S2UudVfk,6301
+tests/__init__.py,sha256=jSsblu6CtF28_y2qdhGhnFor89y1AQQVK3S_i4K7dac,69
+tests/test_converter.py,sha256=HrJRcYsRMa8nepnd4V0-XC8tXTnrXeP-Ljp-c7qXWk0,725
+currency_converter_free-1.0.5.dist-info/LICENSE,sha256=Ev2perSMrlw-2W29Prq4I4sCuIWmfPY-1jVqv63Gpuo,1069
+currency_converter_free-1.0.5.dist-info/METADATA,sha256=NDqzprDB7OmS4aYZb7KPTUhAy-gsSr24Ub-XpbnodSk,4611
+currency_converter_free-1.0.5.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+currency_converter_free-1.0.5.dist-info/top_level.txt,sha256=OZnEGZEKT29Md_RhbhctCUDyyR-bB4DyDwxba7qqgSw,25
+currency_converter_free-1.0.5.dist-info/RECORD,,
