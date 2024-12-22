@@ -1,0 +1,10 @@
+
+[dev]
+black
+ruff
+tox
+
+[tests]
+pytest>=2.8.3
+pytest-cov
+coverage
