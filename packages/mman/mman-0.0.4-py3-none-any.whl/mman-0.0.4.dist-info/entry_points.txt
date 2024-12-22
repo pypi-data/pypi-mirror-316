@@ -1,0 +1,5 @@
+[console_scripts]
+manenfb = mman:main_manenfb
+manenob = mman:main_manenob
+manjpfb = mman:main_manjpfb
+mman = mman:main_mman
