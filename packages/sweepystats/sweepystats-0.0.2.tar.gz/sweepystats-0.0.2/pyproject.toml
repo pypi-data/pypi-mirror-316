@@ -1,0 +1,21 @@
+[project]
+name = "sweepystats"
+version = "0.0.2"
+authors = [
+  { name="Benjamin Chu", email="benchu99@hotmail.com" },
+]
+description = "Python package to perform the statistical sweep operation on symmetric numpy matrices"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/biona001/sweepystats"
+Issues = "https://github.com/biona001/sweepystats/issues"
+
+[tool.setuptools]
+packages = ["sweepystats"]
