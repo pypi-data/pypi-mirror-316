@@ -1,0 +1,3 @@
+[console_scripts]
+Kivy_Work_Timer_package = Kivy_Work_Timer_package.main:main
+
