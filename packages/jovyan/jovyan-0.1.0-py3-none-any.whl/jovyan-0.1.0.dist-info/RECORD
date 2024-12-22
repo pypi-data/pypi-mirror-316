@@ -1,0 +1,9 @@
+jovyan/__init__.py,sha256=icKBqvoQvcSG-XFmq6LkoDNc19z6xGSgVu-bU5FQ--4,154
+jovyan/__version__.py,sha256=VD2WkdcU5RbUxtuObdlBwawLP14ek1vVpRr0I-WMZlE,105
+jovyan/tests/__init__.py,sha256=zttvUWmKvODnYDcAD3kGumqnZxdboThMA6om6qDyN-k,104
+jovyan/tests/conftest.py,sha256=_bmgbi8TUR_w2NxGYuMEhqlFGP0g0YIhHa2YxTBI9Ug,2112
+jovyan/tests/test_client.py,sha256=y8WKExUcoqkI_fz8hbfX63hPxZ9nhd0qqAKU1TwfItQ,3761
+jovyan-0.1.0.dist-info/METADATA,sha256=1kUHf6PI4PigwGiNsb1rvOMLnHDG0q3Ck5mPUe5YYhY,4369
+jovyan-0.1.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+jovyan-0.1.0.dist-info/licenses/LICENSE,sha256=W_0rWKXq5rcG8a4qp2wkg_MUCpYg4QwjEMWZtVYdmT4,1882
+jovyan-0.1.0.dist-info/RECORD,,
