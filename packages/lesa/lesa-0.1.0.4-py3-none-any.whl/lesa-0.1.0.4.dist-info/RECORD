@@ -1,0 +1,20 @@
+lesa/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lesa/cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lesa/cli/main.py,sha256=wAUkS7uap-Bw3A7lIQmZP6Y_jTduZc70XRtifidQJxw,3519
+lesa/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lesa/core/conversation_manager.py,sha256=WF8vQzlQmTYu-rYXINAZeouqN5Zj36tjJAuU-4p4ask,8472
+lesa/core/document_manager.py,sha256=88N4nZ5sVuDr54W2aBsKDQwAyUdqp4h_8xD22kwdiCA,5451
+lesa/core/ollama_manager.py,sha256=-FVxzwrze6jdg3UsNvVn55QMfyb6OIGFRgaDv91GtdA,15296
+lesa/samples/documents/Microprocessor.pdf,sha256=W9IpPF0NIm3puA-QinlFqWBhFiUZzdr6iAi8WzSFk9w,74236
+lesa/samples/documents/Research Paper on Attitute of Urban and Rural College students.pdf,sha256=O_j357p2WdTf0si5gqwoLUNWBlmgzBBI1JJQ15F7dtc,198154
+lesa/samples/documents/fine-tuning-deck.pdf,sha256=aPgxxpT1BC3_HhFKr1jQlWkUhlBOsgN9FRvWUVK0JwY,370178
+lesa/samples/documents/story-sample-1.pdf,sha256=i9CxFqTJmKXk16t4XFtMRECcU-ff_A7019HcqgCB7xg,17077
+lesa/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lesa/tests/main.py,sha256=R1np3sTtcIA_ktKpnttrU23Va_I_mcHyJriyv5kby_Q,6640
+lesa/tests/notebook.ipynb,sha256=2NFA2TkupFv2YRguJDvBUgOKTyaMo5L4xJbaRLuXic0,4859
+lesa/utils/directory_manager.py,sha256=X39gyqh74Y10iJZhh-ZZd4obeUhr6XWtQfmOT8iHZDw,5401
+lesa-0.1.0.4.dist-info/LICENSE,sha256=QwcOLU5TJoTeUhuIXzhdCEEDDvorGiC6-3YTOl4TecE,11356
+lesa-0.1.0.4.dist-info/METADATA,sha256=cPS221lXA6ts9VEBnyx1wqzDAB5G7lp1dYr-fLv44tI,3432
+lesa-0.1.0.4.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+lesa-0.1.0.4.dist-info/entry_points.txt,sha256=26xRgEiB9LEqXh3PlotitUBGzcOhbqrx_Gq7bS5cE_Q,42
+lesa-0.1.0.4.dist-info/RECORD,,
