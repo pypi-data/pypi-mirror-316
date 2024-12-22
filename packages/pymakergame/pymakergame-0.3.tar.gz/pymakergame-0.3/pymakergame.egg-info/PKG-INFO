@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: pymakergame
+Version: 0.3
+Summary: Python Library That Makes Pygame Easy
+Author-email: GaelHF <gael.31.hf@gmail.com>
+Project-URL: Homepage, https://github.com/GaelHF/pymakergame
+Project-URL: Issues, https://github.com/GaelHF/pymakergame/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+![icon](https://raw.githubusercontent.com/GaelHF/pymakergame/refs/heads/main/pymakergame/icon.png)
+# PyMakerGame
+Python Library That Makes Pygame Easy
+
+## About
+- Released: 12/20/2024
+- Author: [@GaelHF](https://github.com/GaelHF)
+
+## Current Version
+0.1: First Version (Nothing)
