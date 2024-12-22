@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+src/git_diff_lm/__init__.py
+src/git_diff_lm/main.py
+src/komitai.egg-info/PKG-INFO
+src/komitai.egg-info/SOURCES.txt
+src/komitai.egg-info/dependency_links.txt
+src/komitai.egg-info/entry_points.txt
+src/komitai.egg-info/requires.txt
+src/komitai.egg-info/top_level.txt
