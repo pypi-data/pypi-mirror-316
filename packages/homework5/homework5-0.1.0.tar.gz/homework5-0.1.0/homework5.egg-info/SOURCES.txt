@@ -1,0 +1,14 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+homework5.egg-info/PKG-INFO
+homework5.egg-info/SOURCES.txt
+homework5.egg-info/dependency_links.txt
+homework5.egg-info/top_level.txt
+my_module/__init__.py
+my_module/data_params.py
+my_module/dataset.py
+my_module/inference.py
+my_module/train.py
+tests/test.py
