@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+haaaash.egg-info/PKG-INFO
+haaaash.egg-info/SOURCES.txt
+haaaash.egg-info/dependency_links.txt
+haaaash.egg-info/top_level.txt
