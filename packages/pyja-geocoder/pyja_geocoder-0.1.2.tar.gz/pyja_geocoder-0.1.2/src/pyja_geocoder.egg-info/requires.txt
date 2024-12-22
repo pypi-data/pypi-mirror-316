@@ -1,0 +1,4 @@
+geopandas>=0.10
+pyproj
+shapely>=2.0
+requests
