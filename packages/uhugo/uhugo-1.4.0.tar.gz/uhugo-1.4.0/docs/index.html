@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Welcome to uHugo’s documentation! &#8212; uHugo 1.1.10 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="_static/nature.css?v=601dbdee" />
+    <link rel="stylesheet" type="text/css" href="_static/tabs.css?v=a5c4661c" />
+    <script src="_static/documentation_options.js?v=25b84aaa"></script>
+    <script src="_static/doctools.js?v=888ff710"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Commands" href="commands.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="commands.html" title="Commands"
+             accesskey="N">next</a> |</li>
+        <li class="nav-item nav-item-0"><a href="#">uHugo 1.1.10 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Welcome to uHugo’s documentation!</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="welcome-to-uhugo-s-documentation">
+<h1>Welcome to uHugo’s documentation!<a class="headerlink" href="#welcome-to-uhugo-s-documentation" title="Link to this heading">¶</a></h1>
+<p>uHugo is a helper tool for <a class="reference external" href="https://gohugo.org">Hugo</a> that automates the instillation and updating of the application.
+It also updates static site cloud provider’s configurations if exists.</p>
+<section id="instillation">
+<h2>Instillation<a class="headerlink" href="#instillation" title="Link to this heading">¶</a></h2>
+<p>Make sure you are on Python 3.6+. In your terminal, type in:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>&gt;<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>uhugo
+</pre></div>
+</div>
+<p>You can test it by</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>&gt;<span class="w"> </span>uhugo<span class="w"> </span>--help
+
+Usage:<span class="w"> </span>uhugo<span class="w"> </span><span class="o">[</span>OPTIONS<span class="o">]</span><span class="w"> </span>COMMAND<span class="w"> </span><span class="o">[</span>ARGS<span class="o">]</span>...
+
+uhugo<span class="w"> </span>is<span class="w"> </span>a<span class="w"> </span>Hugo<span class="w"> </span>binary<span class="w"> </span>helper<span class="w"> </span>that<span class="w"> </span>downloads<span class="w"> </span>and<span class="w"> </span><span class="nb">set</span><span class="w"> </span>ups<span class="w"> </span>the<span class="w"> </span>environment.
+
+Options:
+--debug<span class="w">    </span>Use<span class="w"> </span>debug<span class="w"> </span>mode
+--version<span class="w">  </span>Show<span class="w"> </span>the<span class="w"> </span>version<span class="w"> </span>and<span class="w"> </span>exit.
+--help<span class="w">     </span>Show<span class="w"> </span>this<span class="w"> </span>message<span class="w"> </span>and<span class="w"> </span>exit.
+
+Commands:
+install<span class="w">  </span>Install<span class="w"> </span>latest<span class="w"> </span>Hugo<span class="w"> </span>binary<span class="w"> </span>files
+update<span class="w">   </span>Updates<span class="w"> </span>Hugo<span class="w"> </span>binary<span class="w"> </span>files<span class="w"> </span>and<span class="w"> </span>any<span class="w"> </span>associated<span class="w"> </span>configurations
+</pre></div>
+</div>
+<div class="toctree-wrapper compound">
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="commands.html">Commands</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="commands.html#install">Install</a></li>
+<li class="toctree-l2"><a class="reference internal" href="commands.html#update">Update</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="providers/index.html">Providers</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="providers/index.html#supported-providers">Supported Providers</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="reference/index.html">Reference</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="reference/cmd.html">uhugo.cmd</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/download.html">uhugo.download</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/checks.html">uhugo.checks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/install.html">uhugo.install</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/terminal_commands/init.html">uhugo.terminal_commands.__init__</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/terminal_commands/posix.html">uhugo.terminal_commands.posix</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/terminal_commands/windows.html">uhugo.terminal_commands.windows</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/post_install/detect_providers.html">uhugo.post_install.detect_providers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/post_install/providers/init.html">uhugo.post_install.providers.__init__</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/post_install/providers/cloudflare.html">uhugo.post_install.providers.cloudflare</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/post_install/providers/netlify.html">uhugo.post_install.providers.netlify</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference/post_install/providers/vercel.html">uhugo.post_install.providers.vercel</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+</section>
+<section id="indices-and-tables">
+<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Link to this heading">¶</a></h1>
+<ul class="simple">
+<li><p><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></p></li>
+<li><p><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></p></li>
+<li><p><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></p></li>
+</ul>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="#">Table of Contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">Welcome to uHugo’s documentation!</a><ul>
+<li><a class="reference internal" href="#instillation">Instillation</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#indices-and-tables">Indices and tables</a></li>
+</ul>
+
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="commands.html"
+                          title="next chapter">Commands</a></p>
+  </div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/index.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="commands.html" title="Commands"
+             >next</a> |</li>
+        <li class="nav-item nav-item-0"><a href="#">uHugo 1.1.10 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Welcome to uHugo’s documentation!</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+    &#169; Copyright 2021, Akshay Raj Gollahalli.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.2.5.
+    </div>
+  </body>
+</html>
