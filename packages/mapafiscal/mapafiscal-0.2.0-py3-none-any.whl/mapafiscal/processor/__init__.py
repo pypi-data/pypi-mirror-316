@@ -1,0 +1,1 @@
+from mapafiscal.processor.mapa_fiscal_processor import RegraFiscalProcessor
