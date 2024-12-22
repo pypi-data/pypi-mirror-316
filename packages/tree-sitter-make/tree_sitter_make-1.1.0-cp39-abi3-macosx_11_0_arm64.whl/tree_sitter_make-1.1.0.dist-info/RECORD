@@ -1,0 +1,11 @@
+tree_sitter_make/__init__.pyi,sha256=BjUNGj0SDvRXiCsYuZOKhBWynroI8AhIq5fnsyY2m-o,86
+tree_sitter_make/binding.c,sha256=Ft37ievAzuaN6xM-j3FPjV2Up86sHqm-5XLF38Qfse8,679
+tree_sitter_make/__init__.py,sha256=gO70cjxLtt3LSKK6z51qCPTAGezQPxk7crRkdl9X4MU,724
+tree_sitter_make/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tree_sitter_make/_binding.abi3.so,sha256=UWY_uhGDks5iJtBam3TcIQTnQKyPVDFBF8NH7O9dgaQ,202016
+tree_sitter_make/queries/highlights.scm,sha256=KVBFz2U_Ar3Kmfhr00Zn6rvEdJOQViCWVVBfrjyMg_Q,3465
+tree_sitter_make-1.1.0.dist-info/RECORD,,
+tree_sitter_make-1.1.0.dist-info/LICENSE,sha256=KO7Nt1tt4tkCBgNTFGFES_VNuCfuL7NFqPz02-58KtE,1076
+tree_sitter_make-1.1.0.dist-info/WHEEL,sha256=UKjR--1pVIq9MkMJj-FaHQIj2iexFlBKvgRqgi4PbrA,107
+tree_sitter_make-1.1.0.dist-info/top_level.txt,sha256=9ERJXPLfte47qVMSRcE0XKm16Gh-ID9zNB1GqzJ5MM4,26
+tree_sitter_make-1.1.0.dist-info/METADATA,sha256=iB9VgnUYEU6b09mrIsUimLw5PyENLKtlpcEwuq3L8Cs,1166
