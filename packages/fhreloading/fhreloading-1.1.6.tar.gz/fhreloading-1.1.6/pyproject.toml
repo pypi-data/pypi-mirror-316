@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "fhreloading"
+version = "1.1.6"
+description = "Reloads source code of a running program without losing state."
+authors = ["wsd <wsd@fhit.cn>"]
+readme = "README.md"
+packages = [{include = "**/*", from = "fhreloading", to = "reloading"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
