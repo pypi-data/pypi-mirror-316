@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: artix_engine
+Version: 0.0.1
+Summary: Хочете спробувати себе у створенні бота у діскорд? Давай з Artix
+Home-page: https://github.com/harttman/artix_engine
+Author: harttman
+Author-email: dakiv.work.vitaliy@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: websocket-client>=1.5.1
+
+0.0.0-PRE ALPHA;
+
+```py
+import asyncio
+import artix
+
+async def main() -> None:
+    client = artix.Client("Bot TOKEN")
+    await client.connect()
+
+if __name__ == "__main__":
+    asyncio.run(main())
+
+```
+# LIB USE LOGGINS DEFAULT.
