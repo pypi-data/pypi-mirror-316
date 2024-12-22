@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+AB_library/__init__.py
+AB_library/ab_testing.py
+AB_library.egg-info/PKG-INFO
+AB_library.egg-info/SOURCES.txt
+AB_library.egg-info/dependency_links.txt
+AB_library.egg-info/requires.txt
+AB_library.egg-info/top_level.txt
