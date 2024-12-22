@@ -1,0 +1,8 @@
+setup.py
+suits/__init__.py
+suits/donna.py
+suits.egg-info/PKG-INFO
+suits.egg-info/SOURCES.txt
+suits.egg-info/dependency_links.txt
+suits.egg-info/requires.txt
+suits.egg-info/top_level.txt
