@@ -1,0 +1,36 @@
+[tool.poetry]
+name = "routelookup"
+version = "1.0.3"
+description = "Routing table-style IP prefix lookups"
+authors = ["carter1643 <carter1643@pm.me>"]
+readme = "README.md"
+license = "MIT"
+keywords = ["cidr", "ip", "lookup", "prefix", "route", "routing table"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Developers",
+  "Intended Audience :: Telecommunications Industry",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: System :: Networking"
+]
+
+[tool.poetry.urls]
+repository = "https://github.com/carter1643/routelookup"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[tool.poetry.group.dev.dependencies]
+mypy = "^1.13.0"
+twine = "^6.0.1"
+netaddr = "^1.3.0"
+pytricia = "^1.0.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
