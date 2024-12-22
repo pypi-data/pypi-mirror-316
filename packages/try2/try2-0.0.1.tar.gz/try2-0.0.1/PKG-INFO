@@ -1,0 +1,27 @@
+Metadata-Version: 2.4
+Name: try2
+Version: 0.0.1
+Summary: SOME DESCRIPTION
+Project-URL: Homepage, https://github.com/zlliu246/try2
+Project-URL: Issues, https://github.com/zlliu246/try2/issues
+Author-email: Liu Zuo Lin <zlliu246@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+
+# try2
+Short description of project
+
+# Installation
+```
+pip install try2
+```
+
+# Quickstart
+```python
+# some code
+```
