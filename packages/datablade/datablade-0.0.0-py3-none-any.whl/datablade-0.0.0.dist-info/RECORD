@@ -1,0 +1,13 @@
+datablade/__init__.py,sha256=M1HPoNrZnhd3zOIQyYO1YXGBeA22ZXmi6BeSccg5774,6
+datablade/core/__init__.py,sha256=gsIXmdu1FoG6n34hKXNsD1BJBlycl2WIqvMIjUJv48M,345
+datablade/core/frames.py,sha256=H8w1F_CaxjjO7eCyzM5U251nvLv9VZRD59Ijhjt1qy8,9237
+datablade/core/json.py,sha256=9T-0EVfOZlLF9QtF6lleZMAEipFHNNtWnqt6vRAkkWQ,353
+datablade/core/lists.py,sha256=Og0rJnuGU-zu-EWEvQBvABhjBAUUc459ci15VbXpq4c,253
+datablade/core/messages.py,sha256=JyT3GN3SA3i__jw2ydwHTr9tzJV25X0VHBr4YKmbMEA,299
+datablade/core/strings.py,sha256=LjL41J0ceaTJsYqsvl4Fv8w0QBoh4-K8sLw4qGwtCk4,1351
+datablade/core/zip.py,sha256=MpupNV8JIlYkcCPJkdvz19wiIhnK3TeNVYYqUlnF2hI,1132
+datablade-0.0.0.dist-info/LICENSE,sha256=Iso0PPDOwCi8VarGhs6uVbh_Oue4BPT1H4_mixYF1tQ,1092
+datablade-0.0.0.dist-info/METADATA,sha256=dDlfyMxyZOSTUUa9KfF7UqUTQywvxMkls_AgvqCxpIo,367
+datablade-0.0.0.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+datablade-0.0.0.dist-info/top_level.txt,sha256=AwA5QxmfuaAs9XeXw1tCsboPsoffnMU-6CeLWMMUoUA,10
+datablade-0.0.0.dist-info/RECORD,,
