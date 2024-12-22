@@ -1,0 +1,2 @@
+recursive-include exiftoolpy/lib *
+recursive-include exiftoolpy exiftool
