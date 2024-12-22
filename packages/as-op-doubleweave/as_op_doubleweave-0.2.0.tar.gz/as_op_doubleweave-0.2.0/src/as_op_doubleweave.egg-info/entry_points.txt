@@ -1,0 +1,2 @@
+[console_scripts]
+as_op_doubleweave = as_op_doubleweave.main:main
