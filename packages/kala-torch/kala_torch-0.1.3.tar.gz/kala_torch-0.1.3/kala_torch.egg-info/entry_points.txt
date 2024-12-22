@@ -1,0 +1,2 @@
+[console_scripts]
+kala-torch = kala_torch_module.main:main
