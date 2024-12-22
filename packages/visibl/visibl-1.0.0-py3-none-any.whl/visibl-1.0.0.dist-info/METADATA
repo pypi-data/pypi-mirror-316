@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: visibl
+Version: 1.0.0
+Summary: A CLI tool for Visibl
+Home-page: UNKNOWN
+Author: Visibl Semiconductors
+License: UNKNOWN
+Platform: macosx_10_9_x86_64
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: click>=7.0
+
+TO test locally:
+
+# 1. First, uninstall the package
+pip uninstall visibl
+
+# 2. Clean up all cached files and build artifacts
+rm -rf build/ dist/ *.egg-info/
+find . -type d -name "__pycache__" -exec rm -r {} +
+rm -rf ~/.visibl/config.json  # Remove any existing config
+
+# 3. Reinstall the package in editable mode
+pip install -e .
+
+
+
+
+Publishing to pypi:
+
+# 1. Make sure you're in your virtual environment
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+
+# 2. Install required packages
+pip install build wheel pyinstaller
+
+# 3. Run the build script
+python build_wheels.py
+

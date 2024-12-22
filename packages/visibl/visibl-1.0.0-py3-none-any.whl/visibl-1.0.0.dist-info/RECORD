@@ -1,0 +1,12 @@
+visibl/__init__.py,sha256=eAd3S4Gqcj4hQutIuDHr2DWI6a6jNbYkF1lshR4OsWw,45
+visibl/backend.py,sha256=qINM3x_M9K-XtbUjzb6jEiVXkZi8SbMWDJts06PQimw,962
+visibl/cli.py,sha256=eMwj37y-SQ-Nfzpy2s2ydfcH8D-vGZaLKLxMT_TKEtw,4163
+visibl/server.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+visibl/dist/visibl_cli,sha256=ngukmP3uALmDkcXpVKN7Q0cwYcL0DyZZ04hyeoEWDnw,10615568
+visibl-1.0.0.data/data/visibl_cli,sha256=ngukmP3uALmDkcXpVKN7Q0cwYcL0DyZZ04hyeoEWDnw,10615568
+visibl-1.0.0.data/scripts/visibl.sh,sha256=IcSv3yWAo36K3TpdfiCFp3hEqFDtkwL6G4-P08VKWpU,69
+visibl-1.0.0.dist-info/METADATA,sha256=rIRyA5J_PejKHS97dhJvaMMCq3gdkwz7_aBT4IICzpE,1235
+visibl-1.0.0.dist-info/WHEEL,sha256=tZoeGjtWxWRfdplE7E3d45VPlLNQnvbKiYnx7gwAy8A,92
+visibl-1.0.0.dist-info/entry_points.txt,sha256=RSnYn_lSpxz0X8J1ZPW_SiHK37r0kRPbMd0H2J8XNfI,44
+visibl-1.0.0.dist-info/top_level.txt,sha256=PG9rhIihR3O4A918KlxJw1GgwoQEJcoQY0SXhyfAeSg,7
+visibl-1.0.0.dist-info/RECORD,,

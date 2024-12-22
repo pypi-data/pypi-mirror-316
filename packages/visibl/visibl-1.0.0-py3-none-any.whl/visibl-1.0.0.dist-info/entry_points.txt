@@ -1,0 +1,3 @@
+[console_scripts]
+visibl = visibl.cli:main
+
