@@ -1,0 +1,11 @@
+jpaye/__init__.py,sha256=BlNLVe54Gh2t-asF75f-nQ6Ib6X7uEWnEXSytzoXIDE,1429
+jpaye/jcpy/__init__.py,sha256=4YVGxubP6OaLN5mRD2wyEVhLIUlePRJk4m1KMhViquA,92
+jpaye/jcpy/redirect_stream.py,sha256=9IIHJc5PwtP_l00j-0k9g5NAqG9Z2HzGy6lK2G-Q424,328
+jpaye/libs/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jpaye/libs/jcpy_engine.so,sha256=RjLP0A_207cC64bjQNy6yCnniMji6Bx5vuFsfMyYoV0,188176
+jpaye/libs/jcpy_loader.so,sha256=wIj9mBKoxXUC7pmFWhzZohiOm9kVTLSEpVUupePJtw0,16616
+jpaye-0.0.1.dist-info/LICENSE,sha256=UQ9_d8goV9Jgz8KYXbF4WO9vzFB5jpthRka5VFNkMtc,1068
+jpaye-0.0.1.dist-info/METADATA,sha256=mhdpzvKKzp7BgAADD9Ms3KZF5aFUhzvsQNmy9pRIBNQ,2046
+jpaye-0.0.1.dist-info/WHEEL,sha256=skzQz8GoXX9ejJXFIvHQCNo8VhekCngTgxQ6NlZzKE8,109
+jpaye-0.0.1.dist-info/top_level.txt,sha256=oae9IVBVFQq_mOIe_XJOVJt33saKgfqOG4Oc9fIFB38,6
+jpaye-0.0.1.dist-info/RECORD,,
