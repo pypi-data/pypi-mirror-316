@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "realerikrani-base64token"
+version = "1.0.1"
+description = "Encode list of tuples into a string. Decode that string into a dictionary."
+requires-python = ">=3.10"
+readme = "README.md"
+license = { text = "Apache-2.0" }
+urls = { "Repository" = "https://github.com/realerikrani/base64token" }
+
+[tool.setuptools.package-data]
+"*" = ["py.typed"]
