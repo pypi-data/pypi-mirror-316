@@ -1,0 +1,5 @@
+[console_scripts]
+artix-news = artix_news:ArtixNewsParser.run
+
+[gui_scripts]
+
