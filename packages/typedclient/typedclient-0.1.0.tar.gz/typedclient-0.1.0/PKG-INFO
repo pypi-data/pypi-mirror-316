@@ -1,0 +1,5 @@
+Metadata-Version: 2.1
+Name: typedclient
+Version: 0.1.0
+Summary: A short description of your package
+Requires-Python: >=3.3

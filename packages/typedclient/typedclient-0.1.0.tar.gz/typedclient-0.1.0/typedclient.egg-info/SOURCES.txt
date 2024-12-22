@@ -1,0 +1,6 @@
+setup.py
+typedclient/__init__.py
+typedclient.egg-info/PKG-INFO
+typedclient.egg-info/SOURCES.txt
+typedclient.egg-info/dependency_links.txt
+typedclient.egg-info/top_level.txt
