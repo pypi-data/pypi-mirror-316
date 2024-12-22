@@ -1,0 +1,8 @@
+clockwise/__init__.py,sha256=1gMW6m8udGmgIe9_k2LOCNYIxIEE5f6WCKo3VNF3JJ8,213
+clockwise/interface.py,sha256=nln9V_yDfZa0TKwIkOy1wAodzagwTU9uUrJNUMcjuz8,1106
+clockwise/io.py,sha256=u7QRK8eyoHE89o0XMD1aaI97IlYPXB_xP0b7gN2-eig,1805
+clockwise-1.0.3.dist-info/LICENSE,sha256=QMuSO5bzDgKU_82J7RmfzlY8aZcfgepmKA1ZVbSkqY8,1070
+clockwise-1.0.3.dist-info/METADATA,sha256=iu9JGQHVeXTc_z2QVLWz9ccq3JJjopx-fUNX9r26XjY,75
+clockwise-1.0.3.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+clockwise-1.0.3.dist-info/top_level.txt,sha256=flf_V85l_rvJ5xfZIjOnT1D7iHPhjH7qGuWg040eypg,10
+clockwise-1.0.3.dist-info/RECORD,,
