@@ -1,0 +1,98 @@
+from enum import Enum
+from typing import List, Callable
+import time
+from dataclasses import dataclass, field
+import orjson
+
+
+class ConversationRole(str, Enum):
+    """Role in the conversation"""
+
+    USER = "user"
+    AI = "ai"
+
+
+class ChatStreamDataType(str, Enum):
+    """Type of chat stream data"""
+
+    STREAMING = "streaming"  # Currently streaming
+    FINISHED = "finished"  # Stream completed
+    ERROR = "error"  # Error occurred
+
+
+ChatStreamCallback = Callable[[ChatStreamDataType, str], None]
+
+
+@dataclass
+class AIModel:
+    """AI model definition"""
+
+    name: str
+    provider: str
+
+    def to_json(self) -> str:
+        """Convert to JSON string with camelCase naming"""
+        return orjson.dumps(
+            {
+                "name": self.name,
+                "provider": self.provider,
+            }
+        ).decode("utf-8")
+
+    @classmethod
+    def from_json(cls, json_str: str) -> "AIModel":
+        """Create from JSON string with camelCase naming"""
+        data = orjson.loads(json_str)
+        return cls(
+            name=data["name"],
+            provider=data["provider"],
+        )
+
+
+@dataclass
+class Conversation:
+    """Conversation content"""
+
+    role: ConversationRole
+    text: str
+    images: List[bytes] = field(default_factory=list)  # PNG format image data
+    timestamp: int = field(default_factory=lambda: int(time.time() * 1000))
+
+    def to_json(self) -> str:
+        """Convert to JSON string with camelCase naming"""
+        return orjson.dumps(
+            {
+                "role": self.role,
+                "text": self.text,
+                "images": [image.hex() for image in self.images] if self.images else [],
+                "timestamp": self.timestamp,
+            }
+        ).decode("utf-8")
+
+    @classmethod
+    def from_json(cls, json_str: str) -> "Conversation":
+        """Create from JSON string with camelCase naming"""
+        data = orjson.loads(json_str)
+        return cls(
+            role=ConversationRole(data["role"]),
+            text=data["text"],
+            images=[bytes.fromhex(img) for img in data["images"]] if data["images"] else [],
+            timestamp=data["timestamp"],
+        )
+
+    @classmethod
+    def new_user_message(cls, text: str, images: List[bytes] = []) -> "Conversation":
+        """Create a user message"""
+        return cls(
+            role=ConversationRole.USER,
+            text=text,
+            images=images,
+        )
+
+    @classmethod
+    def new_ai_message(cls, text: str) -> "Conversation":
+        """Create an AI message"""
+        return cls(
+            role=ConversationRole.AI,
+            text=text,
+        )
