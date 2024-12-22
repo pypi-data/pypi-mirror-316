@@ -1,0 +1,10 @@
+test/__init__.py,sha256=1CLKWlwxJaL5i93jEsUiHbpRx6_j9nTOQrJrXUnzr0g,90
+test/base_test.py,sha256=r81sTeEoaJcX7QCQ_fZMECeekq9BF4qGLbQT5bnPdkk,9655
+test/test_snap_schedule.py,sha256=LVuuBNvw73WrGKSdwzEVvRjRW0yQdbesD8HuM47J01w,32672
+test/test_snippet.py,sha256=rZCFCcCXyOVOCGkUbz25C-UBH1Q9VxKc8aZnDdFqnp4,218
+test/test_work_schedule.py,sha256=PA3ydZyZimDD3jWFJLhvU-_AYqL2BWFDrKtpQRk21gs,51517
+PyWorkShift-1.1.0.dist-info/LICENSE,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+PyWorkShift-1.1.0.dist-info/METADATA,sha256=2YznDUW4cn0fXZtP49SF-RljZGF7L1niCW7lxQ2qaA8,18364
+PyWorkShift-1.1.0.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+PyWorkShift-1.1.0.dist-info/top_level.txt,sha256=8sobtsfpB9Btr-Roflefznazfk6Tt2BQItpS5szCb9I,5
+PyWorkShift-1.1.0.dist-info/RECORD,,
