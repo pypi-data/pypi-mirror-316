@@ -1,0 +1,23 @@
+/**
+ * Returns a `Buffer` instance from the given data URI `uri`.
+ *
+ * @param {String} uri Data URI to turn into a Buffer instance
+ */
+
+/***/
+
+// Create a buffer with length equal to the string length
+
+// Create a view to manipulate the buffer content
+
+// Iterate over the string and populate the buffer with ASCII codes
+
+// defaults to US-ASCII only if type is not provided
+
+// get the encoded data portion and decode URI-encoded chars
+
+// remove the "data:" scheme and parse the metadata
+
+// split the URI up into the "metadata" and the "data" portions
+
+// strip newlines
