@@ -1,0 +1,57 @@
+{
+    "name": "OPCUA_P2O_M07_Module",
+    "topology": {
+        "nodes": [
+          {
+            "name": "opcua_data_reader",
+            "building_block_module": "ecoki.building_blocks.code_based.data_integration.acquire_data.data_reader_opcua.data_reader_opcua",
+            "building_block_class": "DataReaderOPCUA",
+            "execution_mode": "local",
+            "settings":{"opcua_config": "ecoki/pipelines/pipeline_app_config/opcua_config_example_without_database.json"},
+            "visualizer_module": "",
+            "visualizer_class": "",
+            "visualizer_input": {},
+            "interactive_configuration": false
+          },
+          {
+            "name": "data_converter",
+            "building_block_module": "ecoki.building_blocks.code_based.data_integration.acquire_data.mongoDB_data_reader.data_converter",
+            "building_block_class": "DataConverter",
+            "execution_mode": "local",
+            "settings":{"index_name":  "timestamp", "column_type":  "numeric"},
+            "visualizer_module": "ecoki.building_blocks.code_based.data_integration.acquire_data.live_data_reader.live_data_visualizer_new",
+            "visualizer_class": "LiveDataVisualizer",
+            "visualizer_input": {"input_data": "output_data"},
+            "interactive_configuration": false
+          }
+        ],
+        "connections": [
+          {
+        "name": "1",
+        "from_node": "opcua_data_reader",
+        "from_port": "output_data",
+        "to_node": "data_converter",
+        "to_port": "input_data"
+      }
+        ]
+    },
+    "execution_mode": "loop",
+    "metadata": {
+      "short_description": "Reads data from OPC UA server, stores data into mongoDB, converts data into pandas Dataframe and visualize data in real-time.",
+      "description": " This pipeline is intended to continuously read values of the given OPC UA nodes from OPC UA server deployed on the plant side.\nThe data can be then stored into mongoDB configured in the config file (see examples in pipeline_app_config folder).\nThen the data is going to be converted into tabular format (pandas Dataframe) and visualized in real-time.",
+      "category": ["Process Assessment", "Data Integration"],
+      "inputs": {
+      "dataset": {
+          "value range": "OPC UA node values from OPC UA server",
+          "default value": "",
+          "intended use": "Model training, inference and visualization"
+        }
+    },
+      "outputs": {
+        "expected_results": "real-time visualization of requested OPC UA node values",
+        "Output Format": "Html"
+      },
+      "version": "0.0.1",
+      "example": "To use this pipeline, the configuration of OPC UA server, names of OPC UA nodes and if needed, the configuration of mongoDB should be given in a config file.\nThe setting (opcua_config) of opcua_data_reader building block should be set to the path of this config files. Examples can be found in pipeline_app_config folder."
+    }
+}

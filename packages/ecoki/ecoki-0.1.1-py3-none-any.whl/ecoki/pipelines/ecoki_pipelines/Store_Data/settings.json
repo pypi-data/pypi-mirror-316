@@ -1,0 +1,61 @@
+{
+  "name": "Store_Data",
+  "topology": {
+    "nodes": [
+      {
+        "name": "data_writer",
+        "building_block_module": "ecoki.building_blocks.code_based.data_integration.identify_and_understand_data.data_writer_csv.data_writer_csv",
+        "building_block_class": "DataTransformationAndPresentationDataWriter",
+        "execution_mode": "local",
+        "settings": {},
+        "visualizer_module": "",
+        "visualizer_class": "",
+        "visualizer_input": {},
+        "interactive_configuration": true
+      },
+      {
+        "name": "data_storage",
+        "building_block_module": "ecoki.building_blocks.code_based.data_integration.identify_and_understand_data.data_storage_management.data_storage_management",
+        "building_block_class": "DataStorageManagement",
+        "execution_mode": "local",
+        "settings": {},
+        "visualizer_module": "ecoki.building_blocks.code_based.data_integration.identify_and_understand_data.data_storage_management.data_storage_management_visualizer",
+        "visualizer_class": "DataStorageManagementVisualization",
+        "visualizer_input": {
+          "input_data": "output_data"
+        },
+        "interactive_configuration": false
+      }
+    ],
+    "connections": [
+      {
+        "name": "1",
+        "from_node": "data_writer",
+        "from_port": "output_data",
+        "to_node": "data_storage",
+        "to_port": "input_data"
+      }
+    ]
+  },
+  "execution_mode": "local",
+  "metadata": {
+    "short_description": "Converts tabular data into data model and stores it in mongoDB",
+    "description": "This pipeline is intended to convert tabular dataset into a data model (Data_Model_v4.py in building_blocks/data_integration/identify_and_understand_data/data_model) and then persist the data in mongoDB.",
+    "category": [
+      "Data Integration"
+    ],
+    "inputs": {
+      "dataset": {
+        "value range": "Tabular dataset as a pandas DataFrame",
+        "default value": "",
+        "intended use": "Store tabular dataset into mongoDB"
+      }
+    },
+    "outputs": {
+      "expected_results": "Data in data model format",
+      "Output Format": "mongoDB documents"
+    },
+    "version": "0.0.1",
+    "example": "In order to store the data into database, user should connect to the corresponding mongoDB first\n and give the database and collection name or create them (if they do not exist) via the GUI of the data writer building block in the frontend."
+  }
+}

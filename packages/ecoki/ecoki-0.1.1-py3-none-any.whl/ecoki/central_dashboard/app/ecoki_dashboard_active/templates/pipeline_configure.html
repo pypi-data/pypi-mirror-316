@@ -1,0 +1,141 @@
+{% extends 'app_base.html' %}
+{% load static %}
+
+{% if user.is_authenticated %}
+
+    {% block content_wrapper %}
+        <div class="content-wrapper ecoki-background" style="min-height: 288.4px;">
+            <section class="content-header">
+                <div class="container-fluid">
+                  <div class="row mb-2">
+                    <div class="col-sm-6">
+                      <h1>{% if duplicate == "no" %}Configure {% else %}Duplicate{% endif %} pipeline "{{ name }}"</h1>                    
+                    </div>  
+                  </div>
+                </div><!-- /.container-fluid -->
+            </section>
+            <section class="content" style = "display:inline block">
+                <div class="card card-success">
+                  <div class="card-header">
+                    <h3 class="card-title">Pipeline graph</h3>
+
+                    <div class="card-tools">
+                      <!-- This will cause the card to maximize when clicked -->
+                      <button type="button" class="btn btn-tool" data-card-widget="maximize"><i class="fas fa-expand"></i></button>
+                      <!-- This will cause the card to collapse when clicked -->
+                      <button type="button" class="btn btn-tool" data-card-widget="collapse"><i class="fas fa-minus"></i></button>
+                    </div>
+                    <!-- /.card-tools -->
+                  </div>
+                  <!-- /.card-header -->
+                  <div class="card-body">
+                    {% for i in settings %}
+                    <button>{{i|safe}} </button>
+                    {% endfor %}
+                      <!--\n Test:
+                  </div>
+                  <!-- /.card-body -->
+                </div>
+                <!-- /.card -->
+
+                <div class="card card-success">
+                  <div class="card-header">
+                    <h3 class="card-title">{% if duplicate == "no" %}Settings Editor{% else %}Enter new pipeline name{% endif %}</h3>
+
+                    <div class="card-tools">
+                      <!-- This will cause the card to maximize when clicked -->
+                      <button type="button" class="btn btn-tool" data-card-widget="maximize"><i class="fas fa-expand"></i></button>
+                      <!-- This will cause the card to collapse when clicked -->
+                      <button type="button" class="btn btn-tool" data-card-widget="collapse"><i class="fas fa-minus"></i></button>
+                    </div>
+                    <!-- /.card-tools -->
+                  </div>
+                  <!-- /.card-header -->
+
+                  <div class="card-body">
+                   <form name="JSONDATA" action="/active/pipeline/{{ name }}/{{ current_bb }}/{{ active }}/{{ duplicate }}/trigger/" method="POST">
+                      {% csrf_token %}
+                      
+                      <!-- Quill editor container -->
+                      <div style="display:{% if duplicate == 'no' %}block{% else %}none{% endif %}" id="editor-container">
+                        <textarea name="JSONDATA">{{ form|safe }}</textarea>
+                      </div>
+                      {% if duplicate == "yes" %}
+                        <input name="JSONDATA" id="new-pipeline-name" style="margin:20px 0px; width:300px" required pattern="\S(.*\S)?" title="This field is required">
+                      {% endif %}
+                      <!-- Hidden input for the form data used for storing -->
+                      <input type="hidden" name="JSONDATA" id="form-data-input">
+                      
+                      <!-- Buttons -->
+                      <div>
+                        <button type="button" class="btn btn-pipe btn-sm" style="background-color:rgb(176,21,19);color:white;" onclick="window.location.href='/active/{% if active == 'yes' %}pipeline/{{ name }}/{{ current_bb }}{% else %}building_blocks_overview/{{ name }}{% endif %}/'">
+                          Back
+                        </button>
+                      
+                        <button type="submit" class="btn btn-pipe btn-sm" style="background-color:rgb(176,21,19);color:white;">
+                          {% if active == "yes" %}
+                              Save changes and restart pipeline
+                          {% else %}
+                              Save changes
+                          {% endif %}
+                        </button>
+                      </div>
+                    </form> 
+                  </div>
+                  <!-- /.card-body -->
+                  
+              </div>
+            </section>
+        </div>
+    {% endblock %}
+
+
+    {% block extra_foot %}
+
+      <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+      <script>
+        var dupl = "{{ duplicate }}";
+        if(dupl=="no") {
+          var quill = new Quill('#editor-container', {theme: 'snow'});
+        } else {
+          var quill = new Quill('#editor-container');
+        }
+
+        // Get the form data from Quill editor and update the hidden input
+        var form = document.querySelector('form[name="JSONDATA"]');
+        var formInput = document.getElementById('form-data-input');
+        
+        form.addEventListener('submit', function(event) {
+          var updated_sett_json = quill.root.innerText.replace(/\s/g,'');
+          var updated_name = JSON.parse(updated_sett_json).name;          
+          if(dupl == "yes") {
+            var dupl_pl_name_element = document.getElementById('new-pipeline-name')
+            updated_name = dupl_pl_name_element.value
+          }
+              
+          {% for type, names in all_pipeline_names.items %}
+              var pl_type = '{{type}}';
+              var pl_names = "{{names|safe}}".split(',');
+              for (let i = 0, len = pl_names.length; i < len; i++) {
+                  pl_name = pl_names[i].substring(2, pl_names[i].length-1);
+                  if(updated_name == pl_name){
+                      if(pl_type=="ecoki") {
+                          alert("Ecoki pipeline with name "+updated_name+" cannot be edited. Please change the name to save changes to a new custom pipeline.");
+                          event.preventDefault();
+                      }else if(pl_type=="custom") {
+                          if(!confirm("Custom pipeline with name "+updated_name+" already exists and its settings will be overwritten. Are you sure?")){
+                              event.preventDefault();
+                          }
+                      }
+                  }
+              }
+          {% endfor %}
+
+          var formData = quill.root.innerText;
+          formInput.value = (formData);
+        }); 
+       
+      </script>
+    {% endblock %}
+
+{% endif %}

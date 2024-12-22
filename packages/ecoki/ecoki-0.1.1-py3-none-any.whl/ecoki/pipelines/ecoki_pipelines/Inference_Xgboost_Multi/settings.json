@@ -1,0 +1,50 @@
+{
+    "name": "Inference_Xgboost_Multi",
+    "topology": {
+         "nodes": [
+          {
+            "name": "Inference_BuildingBlock",
+            "building_block_module": "ecoki.building_blocks.code_based.modelling.build_and_train_model.inference_xgboost_multioutput.inference_xgboost_multioutput",
+            "building_block_class": "InferenceXgboostMultioutput",
+            "execution_mode": "local",
+            "settings":{"model_file_path": "",
+                        "label_names": [],
+                        "feature_names": []
+            },
+            "visualizer_module": "",
+            "visualizer_class": "",
+            "visualizer_input": [],
+            "interactive_configuration": false
+          }
+        ],
+        "connections": []
+    },
+    "execution_mode": "local",
+    "metadata": {
+      "short_description": "Diese Pipeline kann die Inferenz für ein trainiertes XGBoost-Modell bereitstellen. Zuvor muss dieses mit der Pipeline Train_Xgboost_Multi erstellt worden sein, welches dann auch direkt diese Pipeline definiert eine Custom-Version erstellt.",
+      "description": "Diese Pipeline kann die Inferenz für ein trainiertes XGBoost-Modell bereitstellen. Zuvor muss dieses mit der Pipeline Train_Xgboost_Multi erstellt worden sein, welches dann auch direkt diese Pipeline definiert eine Custom-Version erstellt.",
+      "category": [],
+      "inputs": {
+        "dataset": {
+            "value range": "Tabular dataset with features that are input for the xgboost model",
+            "default value": "",
+            "intended use": "calculating the model predictions"
+          }
+      },
+      "outputs": {
+        "expected_results": "Model predictions",
+        "Output Format": "pandas dataframe"
+      },
+      "parameters": {
+        "parameter_name": "",
+        "value_range": "",
+        "default_value": "",
+        "intended_use": ""
+      },
+      "version": "",
+      "required_information": {
+        "success stories": "",
+        "problem definitions": ""
+      }
+    }
+}

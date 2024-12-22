@@ -1,0 +1,841 @@
+#wrapper //to adjust the zoom
+{
+background-color: #FFFFFF;
+width: 1348px;//This width can be anything according to your need
+margin-right: auto;//Note margin-right and left are allocated automatically
+margin-left: auto;
+}
+.bg-navy {
+    background-color:rgb(13,55,71) !IMPORTANT;}
+    
+.ecoki-logo-background {
+    background: 
+			url(/static/ecoki/img/ecoki-blatt-trans-schatten_496x1000.png),
+			url(/static/ecoki/img/ecoki_label_127x204.png),
+			radial-gradient(circle 80px at left 95% top 35%, rgb(64,125,113,0.6), rgb(13,55,71,0)),
+			radial-gradient(circle 60px at left 76% top 65%, rgb(64,125,113,0.6), rgb(13,55,71,0)),
+			radial-gradient(circle 50px at left 10% top 20%, rgb(64,125,113,0.6), rgb(13,55,71,0)),
+			radial-gradient(circle 70vw at left 50% top 60vh, rgb(64,125,113), rgb(13,55,71)) !important;
+
+	background-size: 15vh, 10vh, auto, auto, auto, auto !important;
+		
+	background-repeat: no-repeat, no-repeat,no-repeat, no-repeat, no-repeat, no-repeat !important;
+		
+    background-position: right 5vw bottom 0px, right 6vw top -3px, 0 0, 0 0, 0 0, 0 0 !important;
+}
+
+.ecoki-background {
+    background: 
+			radial-gradient(circle 80px at left 95% top 35%, rgb(64,125,113,0.6), rgb(13,55,71,0)),
+			radial-gradient(circle 60px at left 76% top 65%, rgb(64,125,113,0.6), rgb(13,55,71,0)),
+            radial-gradient(circle 50px at left 10% top 20%, rgb(64,125,113,0.6), rgb(13,55,71,0)),
+            radial-gradient(circle 70vw at left 50% top 60vh, rgb(64,125,113), rgb(13,55,71,0)),
+            radial-gradient(circle 70vw at left 50% top 120vh, rgb(64,125,113), rgb(13,55,71,0)),
+			radial-gradient(circle 70vw at left 50% top 180vh, rgb(64,125,113), rgb(13,55,71)) !important;
+}
+
+.navbar {
+    background-color:rgb(13,55,71) !IMPORTANT;}
+
+.card-success:not(.card-outline) > .card-header {
+    background-color:rgb(13,55,71) !IMPORTANT;}
+
+.card-body {
+    color:black !IMPORTANT;}
+
+.img_base {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 20vh;
+ }
+
+.img_login {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 20vh;
+    border-radius: 1em;
+    box-shadow: 5px 10px 15px grey; }
+    
+
+
+.subtitel { 
+    text-align: center; 
+    margin: auto; /* Important */ 
+    font-size: large; 
+    color: white;
+}
+
+
+.titel { 
+    text-align: center; 
+    margin: auto; /* Important */ 
+    font-size: xx-large;
+    color: white;
+ }
+ 
+
+.main-footer {
+    background-color:rgb(13,55,71) !IMPORTANT;
+}
+
+.dash-spreadsheet-container {
+    padding:10px !IMPORTANT;
+}
+
+/* Tide2Use */
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?8235no');
+  src:  url('../fonts/icomoon.eot?8235no#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?8235no') format('truetype'),
+    url('../fonts/icomoon.woff?8235no') format('woff'),
+    url('../fonts/icomoon.svg?8235no#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-t2u_wartezeit_sidebar:before {
+  content: "\e900";
+}
+
+.bg-tide {
+    background-color: #51befc !important;
+    color: #fff !important;
+}
+
+.header_img{
+width: 100%;
+height: auto;
+}
+
+.row:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column{
+  float: left;
+  width: 50%;
+  padding-left: 40px;
+  padding-right: 100px;
+  padding-button: 60px;
+  color: "white";
+}
+
+{% comment %} added by Nithya {% endcomment %}
+.scrolling-wrapper{
+    overflow-x: scroll; /*initially added*/
+    align-items: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-y: hidden;
+}
+
+.card-block{
+    height:550px;
+    position: relative;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #fff;
+    border: none;
+    background-position: center;
+    text-align: center;
+    background-size: cover;
+    transition: all 0.2s ease-in-out !important;
+    border-radius: 10px;
+    margin-top: 5px;
+    &:hover{
+        transform: translateY(-3px);
+        box-shadow: none;
+        opacity: 0.9;
+    }
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.card-1{
+    display: inline-block;
+    position: relative;
+    background-size: cover;
+    width: auto;
+    margin: 10px;
+    text-align: center;
+    background-color: rgb(166,214,192) ;   /* #808080 */
+    background-image: linear-gradient(43deg, rgb(166,214,192) 0%,rgb(166,214,192) 135%);
+}
+
+
+{% comment %} Button css for the custom pipeline {% endcomment %}
+.btn-group-cus-pipe button {
+    background-color: rgb(27,188,44); /* Red background */
+    border: 2px solid rgb(30,81,85); /* border */
+    color: white; /* White text */
+    padding: 10px 24px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    width: 500px; /* Set a width if needed */
+    height: 50px;
+    outline: none;
+    float: left;
+    margin-top: 20px;
+
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    padding: .375rem .75rem;
+    font-size: 13px;
+    line-height: 1.2;
+    border-radius: .25rem;
+    overflow: visible;
+    box-sizing: border-box;
+    writing-mode: horizontal-tb !important;
+    margin-right: 50px;
+}
+ 
+.btn-group-cus-pipe button:not(:last-child) {
+    border: 2px solid rgb(30,81,85);
+    border-top: none;
+    border-bottom: none; /* Prevent double borders */
+    outline: none;
+}
+  
+/* Add a background color on hover */
+.btn-group-cus-pipe button:hover {
+    outline: none;
+    box-shadow: 0 0 5px 0 rgb(106,172,144) inset, 0 0 5px 2px rgb(106,172,144);
+    border: 2px solid rgb(106,172,144);
+}
+.btn-group-cus-pipe button:focus {
+    background-color: rgb(27,188,44);
+    outline: none;
+}
+
+{% comment %} Button css for the pipeline {% endcomment %}
+.btn-group-pipe button {
+    background-color: rgb(176,21,19); /* Red background */
+    border: 2px solid rgb(30,81,85); /* border */
+    color: white; /* White text */
+    padding: 10px 24px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    width: 500px; /* Set a width if needed */
+    height: 50px;
+    outline: none;
+    float: left;
+    margin-top: -10px;
+
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    padding: .375rem .75rem;
+    font-size: 13px;
+    line-height: 1.2;
+    border-radius: .25rem;
+    overflow: visible;
+    box-sizing: border-box;
+    writing-mode: horizontal-tb !important;
+    margin-right: 100px;
+}
+ 
+.btn-group-pipe button:not(:last-child) {
+    border: 2px solid rgb(30,81,85);
+    border-top: none;
+    border-bottom: none; /* Prevent double borders */
+    outline: none;
+}
+  
+/* Add a background color on hover */
+.btn-group-pipe button:hover {
+    outline: none;
+    box-shadow: 0 0 5px 0 rgb(106,172,144) inset, 0 0 5px 2px rgb(106,172,144);
+    border: 2px solid rgb(106,172,144);
+}
+.btn-group-pipe button:focus {
+    background-color: rgb(176,21,19);
+    outline: none;
+}
+
+
+{% comment %} Popup for custom pipeline button {% endcomment %}
+
+/* The actual popup (appears on top) */
+.popup .cuspopuptext-pipeline {
+  visibility: hidden;
+  width: 500px;
+  height: auto;
+  background-color: rgb(27,188,44);
+  color: #fff;
+  text-align: center;
+  padding: 8px 0;
+  margin-left: -300px;
+  position: absolute;
+  z-index: 6;
+  border: 2px solid rgb(30,81,85);
+  border-radius: .25rem;
+  
+}
+
+
+/* Popup arrow at the bottom of the displayed popup*/
+.popup .cuspopuptext-pipeline::after {
+  content: "";
+  position: fixed;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent transparent;
+  border-radius: .25rem;
+}
+
+{% comment %} Popup for pipeline button {% endcomment %}
+/* The actual popup (appears on top) */
+.popup .popuptext-pipeline {
+  visibility: hidden;
+  width: 500px;
+  height: auto;
+  background-color: rgb(176,21,19);
+  color: #fff;
+  text-align: center;
+  padding: 8px 0;
+  margin-left: -300px;
+  position: absolute;
+  z-index: 6;
+  border: 2px solid rgb(30,81,85);
+  border-radius: .25rem;
+  
+}
+/* Popup arrow at the bottom of the displayed popup*/
+.popup .popuptext-pipeline::after {
+  content: "";
+  position: fixed;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent transparent;
+  border-radius: .25rem;
+}
+ 
+.btn-group-v-non buttoninner {
+    white-space: normal; /* Allow text to wrap within the button */
+    background-color: rgb(80,185,193); /* Bluish Green background */
+    border: 2px solid rgb(30,81,85); /* border */
+    color: white; /* White text */
+    padding: 10px 24px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    width: 140px; /* Set a width if needed */
+    height: 60px;
+    display: flex; /* Make the buttons appear below each other */
+    flex-direction: column;
+    align-items: center;
+    margin-left: 14px;
+    outline: none;
+
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    padding: .375rem .75rem;
+    font-size: 13px;
+    line-height: 1.2;
+    border-radius: .25rem;
+    overflow: visible;
+    box-sizing: border-box;
+    writing-mode: horizontal-tb !important;
+
+    margin-top: 30px;
+}
+.btn-group-v-non buttoninner:not(:last-child) {
+    border: 2px solid rgb(30,81,85);
+    {% comment %} border-top: none; /* Prevent double borders */ {% endcomment %}
+    {% comment %} border-bottom:1px solid green;{% endcomment %}
+    outline: none; 
+} 
+{% comment %} .btn-group-v-non button:not(:first-child) {
+    border: 2px solid rgb(30,81,85);
+    outline: none;
+}  {% endcomment %}
+  
+/* Add a background color on hover */
+.btn-group-v-non buttoninner:hover {
+    outline: none;
+    box-shadow: 0 0 5px 0 rgb(80,185,193) inset, 0 0 5px 2px rgb(80,185,193);
+    border: 2px solid rgb(80,185,193);
+}
+.btn-group-v-non buttoninner:focus {
+    background-color: rgb(80,185,193);
+    border: transparent;
+}
+.btn-group-v-non buttoninner:not focus {
+    background-color: rgb(80,185,193);
+    border: transparent;
+}
+
+.btn-group-v buttoninner {
+    white-space: normal; /* Allow text to wrap within the button */
+    background-color: rgb(106,172,144); /* Bluish Green background */
+    border: 2px solid rgb(30,81,85); /* border */
+    color: white; /* White text */
+    padding: 10px 24px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    width: 140px; /* Set a width if needed */
+    height: 60px;
+    display: flex; /* Make the buttons appear below each other */
+    flex-direction: column;
+    align-items: center;
+    margin-left: 14px;
+    outline: none;
+
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    padding: .375rem .75rem;
+    font-size: 13px;
+    line-height: 1.2;
+    border-radius: .25rem;
+    overflow: visible;
+    box-sizing: border-box;
+    writing-mode: horizontal-tb !important;
+
+    margin-top: 30px;
+}
+
+.btn-group-v buttoninner:(:first-child) {
+  border: 2px solid rgb(30,81,85);
+  outline: none;
+}
+  
+.btn-group-v buttoninner:not(:last-child) {
+    border: 2px solid rgb(30,81,85);
+    outline: none;
+}
+
+.btn-group-v buttoninner:not(:first-child) {
+    border: 2px solid rgb(30,81,85);
+    outline: none;
+} 
+  
+/* Add a background color on hover */
+.btn-group-v buttoninner:hover {
+    outline: none;
+    box-shadow: 0 0 5px 0 rgb(106,172,144) inset, 0 0 5px 2px rgb(106,172,144);
+    border: 2px solid rgb(106,172,144);
+}
+.btn-group-v buttoninner:focus {
+    background-color: rgb(106,172,144);
+    border: transparent;
+}
+.btn-group-v buttoninner:not focus {
+    background-color: rgb(106,172,144);
+    border: transparent;
+}
+
+.btn-group-vertical button{
+    white-space: normal; /* Allow text to wrap within the button */
+    width: 150px;
+    height : 40px;
+    background-color: #6c757d;
+    color: white;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border: none;
+    box-shadow: none;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    padding: .375rem .75rem;
+    font-size: 13px;
+    line-height: 1;
+    border-radius: .25rem;
+    overflow: visible;
+    box-sizing: border-box;
+    writing-mode: horizontal-tb !important;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+} 
+.btn-group-vertical button:hover{
+    background-color: none;
+}
+
+
+/* Popup container */
+.popup {
+  position: static;
+  display: inline-block; 
+  cursor: pointer;
+}
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+  visibility: hidden;
+  width: auto;
+  height: auto;
+  background-color: rgb(80,185,193);
+  color: white;
+  text-align: center;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 6;
+  top: auto;
+  bottom: auto;
+  {% comment %} left: 35%; {% endcomment %}
+  margin-right: 30px;
+  margin-left: -100px;
+  border: 2px solid rgb(30,81,85);
+  border-radius: .25rem;
+}
+
+/* Popup arrow at the bottom of the displayed popup*/
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent transparent;
+  border-radius: .25rem;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn .1s;
+  animation: fadeIn .1s;  
+  margin-top: 10px;
+  border-radius: .25rem;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+  border: transparent;
+}
+
+
+
+
+/* Popup for green cards */
+
+/* The actual popup (appears on top) */
+.popup .popuptext-g {
+  visibility: hidden;
+  width: auto;
+  height: auto;
+  background-color: rgb(106,172,144);
+  color: white;
+  text-align: center;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 6;
+  top: auto;
+  bottom: auto;
+  {% comment %} left: 35%; {% endcomment %}
+  margin-right: 30px;
+  margin-left: -100px;
+  border: 2px solid rgb(30,81,85);
+  border-radius: .25rem;
+}
+
+/* Popup arrow at the bottom of the displayed popup*/
+.popup .popuptext-g::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent transparent;
+  border-radius: .25rem;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn .1s;
+  animation: fadeIn .1s;  
+  margin-top: 10px;
+  border-radius: .25rem;
+}
+
+
+al:link {
+color: black;
+background-color: blue;
+text-decoration: underline;
+border:none
+}   
+
+al:visited {
+color: blue;
+background-color: transparent;
+text-decoration: underline;
+}
+
+al:hover {
+color: black;
+background-color: transparent;
+text-decoration: underline;
+}
+
+al:active {
+color: gray-dark;
+background-color: transparent;
+text-decoration: underline; 
+}
+
+{% comment %} Building block pipeline global navigation bar {% endcomment %}
+.btn-success:hover, .btn-success:focus, .btn-success:active, .btn-success.active, .open .dropdown-toggle.btn-success { 
+    background-color: rgb(32,126,52) !important; 
+    }
+.btn-test:hover, .btn-test:focus, .btn-test:active, .btn-test.active, .open .dropdown-toggle.btn-test { 
+    background-color: rgb(0,170,165) !important; 
+    }
+.btn-testg:hover, .btn-testg:focus, .btn-testg:active, .btn-testg.active, .open .dropdown-toggle.btn-testg { 
+background-color: rgb(32,126,52) !important; 
+}
+.btn-pipe:hover, .btn-pipe:focus, .btn-pipe:active, .btn-pipe.active, .open .dropdown-toggle.btn-pipe { 
+background-color: rgb(176,21,19) !important; 
+}
+
+.btn-cuspipe:hover, .btn-cuspipe:focus, .btn-cuspipe:active, .btn-cuspipe.active, .open .dropdown-toggle.btn-cuspipe { 
+    background-color: rgb(32,126,52) !important; 
+    }
+
+{% comment %} for the popup text {% endcomment %}
+.card-body-popup {  
+    height: auto;
+    width: auto;
+    color: white;
+    position: relative;
+    margin-right: 0px;
+    border: transparent;
+}
+
+.toprightb{
+    background-color: rgb(106,172,144); /* Green background */
+    border: 2px solid rgb(30,81,85); /* border */
+    color: white; /* White text */
+    padding: 10px 24px; /* Some padding */
+    width: 140px; /* Set a width if needed */
+    height: 60px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    padding: .375rem .75rem;
+    font-size: 13px;
+    line-height: 1.2;
+    border-radius: .25rem;
+    overflow: visible;
+    box-sizing: border-box;
+    writing-mode: horizontal-tb !important;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    border: 2px solid rgb(30,81,85);
+}
+.toprightbn{
+    background-color: rgb(80,185,193); /* Green background */
+    border: 2px solid rgb(30,81,85); /* border */
+    color: white; /* White text */
+    padding: 10px 24px; /* Some padding */
+    width: 140px; /* Set a width if needed */
+    height: 60px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    padding: .375rem .75rem;
+    font-size: 13px;
+    line-height: 1.2;
+    border-radius: .25rem;
+    overflow: visible;
+    box-sizing: border-box;
+    writing-mode: horizontal-tb !important;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    border: 2px solid rgb(30,81,85);
+}
+.toprightpipe{
+    background-color: rgb(27,188,44); /* Red background */
+    border: 2px solid rgb(30,81,85); /* border */
+    color: white; /* White text */
+    padding: 10px 24px; /* Some padding */
+    width: 140px; /* Set a width if needed */
+    height: 60px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    padding: .375rem .75rem;
+    font-size: 13px;
+    line-height: 1.2;
+    border-radius: .25rem;
+    overflow: visible;
+    box-sizing: border-box;
+    writing-mode: horizontal-tb !important;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    border: 2px solid rgb(30,81,85);
+}
+
+.toprightcustompipe{
+    background-color: rgb(27,188,44); /* Red background */
+    border: 2px solid rgb(30,81,85); /* border */
+    color: white; /* White text */
+    padding: 10px 24px; /* Some padding */
+    width: 140px; /* Set a width if needed */
+    height: 60px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    padding: .375rem .75rem;
+    font-size: 13px;
+    line-height: 1.2;
+    border-radius: .25rem;
+    overflow: visible;
+    box-sizing: border-box;
+    writing-mode: horizontal-tb !important;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    border: 2px solid rgb(30,81,85);
+}
+
+.control-width { width: 100%; margin: auto; }     /* to control the card zoom */
+
+
+
+{% comment %} for FAQ styling {% endcomment %}
+.toc {
+    position: fixed;
+    padding: 1em;
+    width: $menuWidth;
+    line-height: 2;
+    
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    
+    ul ul {
+      padding-left: 2em;
+    }
+    
+    li a {
+      display: inline-block;
+      color: #aaa;
+      text-decoration: none;
+      transition: all 0.3s cubic-bezier(0.230, 1.000, 0.320, 1.000);
+    }
+    
+    li.visible>a {
+      color: #111;
+      transform: translate( 5px );
+    }
+  }
+  
+  .toc-marker {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      
+      path {
+        transition: all 0.3s ease;
+      }
+    }
+  
+  .contents {
+    padding: 1em;
+    max-width: 800px;
+    margin-left: 350px;
+    font-size: 1.2em;
+    font-family: 'Frank Ruhl Libre', sans-serif;
+  
+    img {
+      max-width: 100%;
+    }
+    
+    .code-block {
+          white-space: pre;
+          overflow: auto;
+          max-width: 100%;
+  
+          code {
+        display: block;
+              background-color: #f9f9f9;
+              padding: 10px;
+          }
+      }
+  
+      .code-inline {
+          background-color: #f9f9f9;
+          padding: 4px;
+      }
+    
+    h2,
+    h3 {
+      padding-top: 1em;
+    }
+  }
+  
+  
+  @media screen and (max-width: 1200px) {
+  
+    body {
+      font-size: 14px;
+    }
+    
+  }
+  
+{% comment %} Ending FAQ Styling  {% endcomment %}
+
+{% comment %} added by Nithya {% endcomment %}

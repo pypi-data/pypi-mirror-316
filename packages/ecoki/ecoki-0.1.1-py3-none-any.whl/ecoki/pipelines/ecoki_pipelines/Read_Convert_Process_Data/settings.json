@@ -1,0 +1,84 @@
+{
+  "name": "Read_Convert_Process_Data",
+  "topology": {
+    "nodes": [
+      {
+        "name": "ecoKI_data_reader",
+        "building_block_module": "ecoki.building_blocks.code_based.data_integration.acquire_data.ecoki_data_reader.ecoki_data_reader",
+        "building_block_class": "EcoKIDataReader",
+        "execution_mode": "local",
+        "settings": {},
+        "visualizer_module": "",
+        "visualizer_class": "",
+        "visualizer_input": {},
+        "interactive_configuration": true
+      },
+      {
+        "name": "data_selector",
+        "building_block_module": "ecoki.building_blocks.code_based.data_integration.preprocess_data.data_selector.data_selector",
+        "building_block_class": "DataSelector",
+        "execution_mode": "local",
+        "settings": {},
+        "visualizer_module": "",
+        "visualizer_class": "",
+        "visualizer_input": {},
+        "interactive_configuration": true
+      },
+      {
+        "name": "data_imputer",
+        "building_block_module": "ecoki.building_blocks.code_based.data_integration.preprocess_data.data_imputer.data_imputer",
+        "building_block_class": "DataImputer",
+        "execution_mode": "local",
+        "settings": {
+          "strategy_num": "median",
+          "strategy_cat": "most_frequent",
+          "fill_value": null,
+          "labels": null
+        },
+        "visualizer_module": "ecoki.building_blocks.code_based.data_integration.identify_and_understand_data.tabular_data_visualization.tabular_data_visualizer",
+        "visualizer_class": "TabularDataVisualizer",
+        "visualizer_input": {
+          "input_data": "output_data"
+        },
+        "interactive_configuration": false
+      }
+    ],
+    "connections": [
+      {
+        "name": "1",
+        "from_node": "ecoKI_data_reader",
+        "from_port": "output_data",
+        "to_node": "data_selector",
+        "to_port": "input_data"
+      },
+      {
+        "name": "2",
+        "from_node": "data_selector",
+        "from_port": "output_data",
+        "to_node": "data_imputer",
+        "to_port": "input_data"
+      }
+    ]
+  },
+  "execution_mode": "local",
+  "metadata": {
+    "short_description": "Reads dara from database, converts it into tabular format and imputes missing values in the dataset",
+    "description": "This pipeline reads dataset from a local csv file, processes the dataset by selecting specific columns according to the user input and imputes missing values in the dataset",
+    "category": [
+      "Data Integration"
+    ],
+    "inputs": {
+      "dataset": {
+        "value range": "Tabular dataset as a pandas DataFrame",
+        "default value": "",
+        "intended use": "Process ad visualize dataset "
+      }
+    },
+    "outputs": {
+      "expected_results": "Processed dataset visualized in an interactive Panel dashboard",
+      "Output Format": "Html"
+    },
+    "example": "User can select the columns via interactive GUI of data selector building block in the frontend according to their onw use case. Normally, the non-numeric columns should be excluded for the visualization.",
+    "version": "0.0.1"
+  }
+}

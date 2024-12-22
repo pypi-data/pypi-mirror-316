@@ -1,0 +1,143 @@
+{
+  "name": "Train_NN_Multi",
+  "topology": {
+    "nodes": [
+      {
+        "name": "ecoKI_data_reader",
+        "building_block_module": "ecoki.building_blocks.code_based.data_integration.acquire_data.ecoki_data_reader.ecoki_data_reader",
+        "building_block_class": "EcoKIDataReader",
+        "execution_mode": "local",
+        "settings": {},
+        "visualizer_module": "",
+        "visualizer_class": "",
+        "visualizer_input": {},
+        "interactive_configuration": true
+      },
+      {
+        "name": "data_selector",
+        "building_block_module": "ecoki.building_blocks.code_based.data_integration.preprocess_data.data_selector.data_selector",
+        "building_block_class": "DataSelector",
+        "execution_mode": "local",
+        "settings": {},
+        "visualizer_module": "",
+        "visualizer_class": "",
+        "visualizer_input": {},
+        "interactive_configuration": true
+      },
+      {
+        "name": "split_train_test",
+        "building_block_module": "ecoki.building_blocks.code_based.modelling.build_and_train_model.split_traintest_label.split_traintest_label",
+        "building_block_class": "SplitTrainTestLabel",
+        "execution_mode": "local",
+        "settings": {
+          "selected_columns": [],
+          "selected_columns_label": [],
+          "shuffle": false
+        },
+        "visualizer_module": "",
+        "visualizer_class": "",
+        "visualizer_input": {},
+        "interactive_configuration": true
+      },
+      {
+        "name": "train_predict_nn_multi",
+        "building_block_module": "ecoki.building_blocks.code_based.modelling.build_and_train_model.train_and_predict_nn_multioutput.train_and_predict_nn_multioutput",
+        "building_block_class": "TrainAndPredictNNMultioutput",
+        "execution_mode": "local",
+        "settings": {
+          "dense_layers": [1000,500],
+          "dropout": 0.0,
+          "epochs": 100,
+          "learning_rate": 0.001,
+          "batch_size": 1000,
+          "create_inference_pipeline_template": true,
+          "create_inference_pipeline": true
+        },
+        "visualizer_module": "ecoki.building_blocks.code_based.modelling.build_and_train_model.train_and_predict_nn_multioutput.train_and_predict_nn_multioutput_visualizer",
+        "visualizer_class": "TrainAndPredictNNMultiVisualizer",
+        "visualizer_input": [
+          "output_data_preds",
+          "output_data_featimp",
+          "output_data_metrics",
+          "output_data_hyperparameters",
+          "output_data_labels"
+        ],
+        "interactive_configuration": true
+      },
+            {
+        "name": "as_timeseries_visualisierer",
+        "building_block_module": "ecoki.building_blocks.code_based.optimization.interpret_results.as_timeseries_visualizer.as_timeseries_visualizer",
+        "building_block_class": "AsTimeseriesVisualizer",
+        "execution_mode": "local",
+        "settings": {
+          "regex_pattern":"(.*)(T[\\+-]\\d+-)(.*)"
+        },
+        "visualizer_module": "ecoki.building_blocks.code_based.optimization.interpret_results.as_timeseries_visualizer.as_timeseries_visualizer_visualizer",
+        "visualizer_class": "AsTimeseriesVisualizerVisualizer",
+        "interactive_configuration": true,
+        "visualizer_input": [
+          "output_data",
+          "regex_pattern"
+        ]
+      }
+    ],
+    "connections": [
+      {
+        "name": "1",
+        "from_node": "ecoKI_data_reader",
+        "from_port": "output_data",
+        "to_node": "data_selector",
+        "to_port": "input_data"
+      },
+      {
+        "name": "2",
+        "from_node": "data_selector",
+        "from_port": "output_data",
+        "to_node": "split_train_test",
+        "to_port": "input_data"
+      },
+      {
+        "name": "3",
+        "from_node": "split_train_test",
+        "from_port": "output_data",
+        "to_node": "train_predict_nn_multi",
+        "to_port": "input_data"
+      },
+      {
+        "name": "4",
+        "from_node": "train_predict_nn_multi",
+        "from_port": "output_data_all",
+        "to_node": "as_timeseries_visualisierer",
+        "to_port": "input_data"
+      }
+    ]
+  },
+  "execution_mode": "local",
+  "metadata": {
+    "short_description": "Diese Pipeline trainiert ein neuronales Netz als Regressor basierend auf einem bereitgestellten Datensatz",
+    "description": "Diese Pipeline trainiert ein neuronales Netz als Regressor basierend auf einem bereitgestellten Datensatz",
+    "category": ["Modeling"],
+    "inputs": {
+      "dataset": {
+          "value range": "Tabular dataset with features and labels that should be modeled",
+          "default value": "",
+          "intended use": "splitting it in features, labels, train and test dataset for model training"
+        }
+    },
+    "outputs": {
+      "expected_results": "Trained model and saved model weights, configured inference pipeline",
+      "Output Format": "hdf5 file and settings.json"
+    },
+    "parameters": {
+      "parameter_name": "",
+      "value_range": "",
+      "default_value": "",
+      "intended_use": ""
+    },
+    "version": "",
+    "required_information": {
+      "success stories": "",
+      "problem definitions": ""
+    }
+  }
+}

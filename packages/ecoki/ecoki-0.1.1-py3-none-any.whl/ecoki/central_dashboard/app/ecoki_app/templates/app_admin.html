@@ -1,0 +1,27 @@
+{% extends 'admin/index.html' %}
+
+{% block body_class %}sidebar-collapse navbar-dark layout-fixed bg-navy accent-success{% endblock %}
+
+{% block meta %}
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link rel="apple-touch-icon" href="/static/ecoki/img/ecoki_300x300.png">
+    <link rel="stylesheet" href="/static/ecoki/css/ecoki.css">
+       
+{% endblock %}
+
+{% block title %}ecoKI-App{% endblock %}
+
+{% load static %}
+
+{% block nav_header %}
+    {% include 'app_main_header.html' %}
+{% endblock %}
+
+{% block nav_footer %}
+    {% include 'app_nav_footer.html' %}
+{% endblock %}
+

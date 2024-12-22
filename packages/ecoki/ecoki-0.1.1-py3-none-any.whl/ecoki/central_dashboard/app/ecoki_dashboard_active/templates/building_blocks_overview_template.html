@@ -1,0 +1,534 @@
+{% extends 'app_base.html' %}
+{% load static %}
+{% load markdownify %}
+
+{% if user.is_authenticated %}
+
+    {% block content_wrapper %}
+      <div class="content-wrapper ecoki-background" style="min-height: 288.4px;">
+        <section class="content-header">
+            <div class="container-fluid">
+              <!--For the pipeline structure-->
+              <div>
+                <a href="/active/building_blocks_overview">
+                  <button type="button" class="btn btn-success btn-sm active">
+                    Back to overview
+                  </button>
+                </a>
+
+                <a href="/active/building_blocks_overview/new/pipeline/build/">
+                  {% comment %} <button type="button" class="btn btn-cuspipe btn-sm {% if build in request.path %}active{% endif %}" style="background-color:rgb(27,188,44);color:white;"> {% endcomment %}
+                  <button type="button" class="btn btn-success btn-sm {% if build in request.path %}active{% endif %}" style="background-color:rgb(13,55,71);color:white;">  
+                    Build new Pipeline
+                  </button>
+                </a>
+                
+                {% for item in list %} 
+                  <a href="/active/building_blocks_overview/{{item}}">
+                    <button type="button" class="btn btn-testg btn-sm {% if item in request.path %}active{% endif %}" style="background-color:rgb(106,172,144);color:white;">
+                      {{item}}<span id='close' style= "font-size:10px; margin-left:4px; margin-top:6px;background-color: transparent;" onclick='this.parentNode.parentNode.remove(); window.location.replace("/active/building_blocks_overview/{{item}}/removed/");return false; '>
+                        &#10006;</span> 
+                                            
+                    </button> 
+                  </a>                           
+                {% endfor %}
+
+                {% for item in list_nc %} 
+                  <a href="/active/building_blocks_overview/{{item}}">
+                    <button type="button" class="btn btn-test btn-sm {% if item in request.path %}active{% endif %}" style="background-color:rgb(80,185,193);color:white;">
+                      {{item}}<span id='close' style= "font-size:10px; margin-left:4px; margin-top:6px;background-color: transparent;" onclick='this.parentNode.parentNode.remove(); window.location.replace("/active/building_blocks_overview/{{item}}/removed/");return false; '>
+                        &#10006;</span> 
+                                            
+                    </button> 
+                  </a>                           
+                {% endfor %}
+
+                                    
+              </div>  
+            </div><!-- /.container-fluid -->
+        </section>
+        <section class="content">
+          <div class="container-fluid py-2">
+            <div class="card card-success">
+              <div class="card-header">
+                <h3 class="card-title">Building Block Explorer</h3>
+                  <div class="card-tools">
+                    <button class= "toprightpipe" disabled>
+                      <x class="btn-group-v" >
+                      Pipeline
+                    </button>
+                    <button class= "toprightb" disabled>
+                      <x class="btn-group-v" >
+                      Code Building Block
+                    </button>
+                    <button class="toprightbn" disabled>
+                      Non-Code Building Block
+                    </button>
+                    
+                    <!-- This will cause the card to maximize when clicked -->
+                    <button type="button" class="btn btn-tool" data-card-widget="maximize"><i class="fas fa-expand "></i></button>
+                    <!-- This will cause the card to collapse when clicked -->
+                    <button type="button" class="btn btn-tool" data-card-widget="collapse"><i class="fas fa-minus"></i></button>
+                    <!-- This will cause the card to be removed when clicked -->
+                    <!-- <button type="button" class="btn btn-tool" data-card-widget="remove"><i class="fas fa-times"></i></button> -->
+                  
+                  </div>
+                <!-- /.card-tools -->
+                  
+              </div>
+              <!-- /.card-header -->
+              
+              <div class="container-fluid" style="overflow-y:auto;overflow-x:scroll;white-space: nowrap;">
+                <div class="card-block card-1">
+                  {% comment %} <div class="card-body" style="overflow-x:hidden; overflow-y:hidden;"> {% endcomment %}
+                    <h5 class="align-middle" style="font-weight:600; font-size:20px;color:black">Process Assessment</h5>
+                    {% for bb_name in primary_folders_nc %}
+                      <div class="btn-group-vertical align-top">                                 
+                        <button disabled>
+                          {{bb_name}}
+                        </button>
+                        
+                        <div class="btn-group-v-non">  
+                          {% for key, value in bb_name_bb_popup_nc.items %}                                            
+                            {% if key == bb_name %}
+                              {% for x in value %}
+                                <buttoninner> 
+                                    <div class="popup" onclick="myFunction('{{x}}')">
+                                      <al href = "#">{{x}}</al>
+                                      <span class="popuptext" id="{{x}}">
+                                        <a class="close" style= "font-size:10px; margin-right:10px;" href="#">&#10006;</a>
+                                        {% for k,v in bb_category_bb_markdown_nc.items %}
+                                        <div class="card-body-popup">
+                                          {% if k == x %}
+                                            {% for md in v %}
+                                              {{ md|markdownify }}
+                                              {% for c,u in bb_category_bb_url_nc.items %}
+                                                  {% if c == x %}
+                                                  {% for url in u %}
+                                                  <center> 
+                                                    <a href="{{url}}" style="font-weight:600; font-size:10px; color:white; background-color:rgb(63,99,116); border: 2px solid rgb(30,81,85); border-radius: .25rem;padding: .375rem .75rem;">Open Building Block
+                                                    </a>
+                                                  </center>
+                                                  {% endfor %}
+                                                  {% endif %}
+                                              {% endfor %}
+                                            {% endfor %}
+                                          {% endif %}  
+                                          <!-- /.card-body -->
+                                        </div>
+                                        {% endfor %}
+                                      </span>                                          
+                                    </div>                                  
+                                </buttoninner>  
+                              {% endfor %}
+                            {% endif %}        
+                          {% endfor %}                        
+                        </div>
+
+
+                        {% comment %} HTML for code based  {% endcomment %}
+                        <div class="btn-group-v">  
+                          {% for key, value in bb_name_bb_popup.items %}                                            
+                            {% if key == bb_name %}
+                              {% for x in value %}
+                                <buttoninner> 
+                                    <div class="popup" onclick="myFunction('{{x}}')">
+                                      <al href = "#">{{x}}</al>
+                                      <span class="popuptext-g" id="{{x}}">
+                                        <a class="close" style= "font-size:10px; margin-right:10px;" href="#">&#10006;</a>
+                                        {% for k,v in bb_category_bb_markdown.items %}
+                                        <div class="card-body-popup">
+                                          {% if k == x %}
+                                            {% for md in v %}
+                                              {{ md|markdownify }}
+                                              {% for c,u in bb_category_bb_url.items %}
+                                                  {% if c == x %}
+                                                  {% for url in u %}
+                                                  <center> 
+                                                    <a href="{{url}}" style="font-weight:600; font-size:10px; color:white; background-color:rgb(63,99,116); border: 2px solid rgb(30,81,85); border-radius: .25rem;padding: .375rem .75rem;">Open Building Block
+                                                    </a>
+                                                  </center>
+                                                  {% endfor %}
+                                                  {% endif %}
+                                              {% endfor %}
+                                            {% endfor %}
+                                          {% endif %}  
+                                          <!-- /.card-body -->
+                                        </div>
+                                        {% endfor %}
+                                      </span>                                          
+                                    </div>                                  
+                                </buttoninner>  
+                              {% endfor %}
+                            {% endif %}        
+                          {% endfor %}                        
+                        </div>
+                      </div>
+                    {% endfor %}
+                  </div> 
+
+                <div class="card-block card-1">
+                  <h5 class="align-middle" style="font-weight:600; font-size:20px;color:black">Data Integration</h5>
+                    {% for bb_name_dat_nc in primary_folders_dat_nc %}
+                      <div class="btn-group-vertical align-top" >                                 
+                        <button disabled>
+                          {{bb_name_dat_nc}}
+                        </button>
+                        
+                        <div class="btn-group-v-non">  
+                          {% for key, value in bb_name_bb_popup_dat_nc.items %}                                        
+                            {% if key == bb_name_dat_nc %}
+                              {% for x in value %}
+                                <buttoninner> 
+                                    <div class="popup" onclick="myFunction('{{x}}')">
+                                      <al href = "#">{{x}}</al>
+                                      <span class="popuptext" id="{{x}}">
+                                        <a class="close" style= "font-size:10px; margin-right:10px;" href="#">&#10006;</a>
+                                        {% for k,v in bb_category_bb_markdown_dat_nc.items %}
+                                        <div class="card-body-popup">
+                                          {% if k == x %}
+                                            {% for md in v %}
+                                              {{ md|markdownify }}
+                                              {% for c,u in bb_category_bb_url_dat_nc.items %}
+                                                  {% if c == x %}
+                                                  {% for url in u %}
+                                                  <center> 
+                                                    <a href="{{url}}" style="font-weight:600; font-size:10px; color:white; background-color:rgb(63,99,116); border: 2px solid rgb(30,81,85); border-radius: .25rem;padding: .375rem .75rem;">Open Building Block
+                                                    </a>
+                                                  </center>
+                                                  {% endfor %}
+                                                  {% endif %}
+                                              {% endfor %}
+                                            {% endfor %}
+                                          {% endif %}  
+                                          <!-- /.card-body -->
+                                        </div>
+                                        {% endfor %}
+                                      </span>                                          
+                                    </div>                                  
+                                </buttoninner>  
+                              {% endfor %}
+                            {% endif %}        
+                          {% endfor %}    
+                        </div>                         
+                          
+                        {% comment %} For code based building block {% endcomment %}
+                        <div class="btn-group-v">  
+                          {% for key, value in bb_name_bb_popup_dat.items %}                                       
+                            {% if key == bb_name_dat_nc %}
+                              {% for x in value %}
+                                <buttoninner> 
+                                    <div class="popup" onclick="myFunction('{{x}}')">
+                                      <al href = "#">{{x}}</al>
+                                      <span class="popuptext-g" id="{{x}}">
+                                        <a class="close" style= "font-size:10px; margin-right:10px;" href="#">&#10006;</a>
+                                        {% for k,v in bb_category_bb_markdown_dat.items %}
+                                        <div class="card-body-popup">
+                                          {% if k == x %}
+                                        
+                                            {% for md in v %}
+                                              {{ md|markdownify }}
+                                              {% for c,u in bb_category_bb_url_dat.items %}
+                                                  {% if c == x %}
+                                                  {% for url in u %}
+                                                  <center> 
+                                                    <a href="{{url}}" style="font-weight:600; font-size:10px; color:white; background-color:rgb(63,99,116); border: 2px solid rgb(30,81,85); border-radius: .25rem;padding: .375rem .75rem;">Open Building Block
+                                                    </a>
+                                                  </center>
+                                                  {% endfor %}
+                                                  {% endif %}
+                                              {% endfor %}
+                                            {% endfor %}
+                                          {% endif %}  
+                                          <!-- /.card-body -->
+                                        </div>
+                                        {% endfor %}
+                                      </span>                                          
+                                    </div>                                  
+                                </buttoninner>  
+                              {% endfor %}
+                            {% endif %}        
+                          {% endfor %}    
+                        </div>
+                      </div>
+                    {% endfor %}
+                </div>
+                <div class="card-block card-1">
+                  <h5 class="align-middle" style="font-weight:600; font-size:20px;color:black">Modelling</h5>
+                    {% for bb_name_mod_nc in primary_folders_mod_nc %}
+                      <div class="btn-group-vertical align-top" style="text-transform: capitalize;">                                 
+                        <button style="text-transform: capitalize;" disabled>
+                          {{bb_name_mod_nc}}
+                        </button>
+                        
+                        <div class="btn-group-v-non">  
+                          {% for key, value in bb_name_bb_popup_dat_nc.items %}                                        
+                            {% if key == bb_name_mod_nc %}
+                              {% for x in value %}
+                                <buttoninner> 
+                                    <div class="popup" onclick="myFunction('{{x}}')">
+                                      <al href = "#">{{x}}</al>
+                                      <span class="popuptext" id="{{x}}">
+                                        <a class="close" style= "font-size:10px; margin-right:10px;" href="#">&#10006;</a>
+                                        {% for k,v in bb_category_bb_markdown_mod_nc.items %}
+                                        <div class="card-body-popup">
+                                          {% if k == x %}
+                                            {% for md in v %}
+                                              {{ md|markdownify }}
+                                              {% for c,u in bb_category_bb_url_mod_nc.items %}
+                                                  {% if c == x %}
+                                                  {% for url in u %}
+                                                  <center> 
+                                                    <a href="{{url}}" style="font-weight:600; font-size:10px; color:white; background-color:rgb(63,99,116); border: 2px solid rgb(30,81,85); border-radius: .25rem;padding: .375rem .75rem;">Open Building Block
+                                                    </a>
+                                                  </center>
+                                                  {% endfor %}
+                                                  {% endif %}
+                                              {% endfor %}
+                                            {% endfor %}
+                                          {% endif %}  
+                                          <!-- /.card-body -->
+                                        </div>
+                                        {% endfor %}
+                                      </span>                                          
+                                    </div>                                  
+                                </buttoninner>  
+                              {% endfor %}
+                            {% endif %}        
+                          {% endfor %}    
+                        </div>                         
+                          
+                        {% comment %} For code based building block {% endcomment %}
+                        <div class="btn-group-v">  
+                          {% for key, value in bb_name_bb_popup_mod.items %}                                       
+                            {% if key == bb_name_mod_nc %}
+                              {% for x in value %}
+                                <buttoninner> 
+                                    <div class="popup" onclick="myFunction('{{x}}')">
+                                      <al href = "#">{{x}}</al>
+                                      <span class="popuptext-g" id="{{x}}">
+                                        <a class="close" style= "font-size:10px; margin-right:10px;" href="#">&#10006;</a>
+                                        {% for k,v in bb_category_bb_markdown_mod.items %}
+                                        <div class="card-body-popup">
+                                          {% if k == x %}
+                                        
+                                            {% for md in v %}
+                                              {{ md|markdownify }}
+                                              {% for c,u in bb_category_bb_url_mod.items %}
+                                                  {% if c == x %}
+                                                  {% for url in u %}
+                                                  <center> 
+                                                    <a href="{{url}}" style="font-weight:600; font-size:10px; color:white; background-color:rgb(63,99,116); border: 2px solid rgb(30,81,85); border-radius: .25rem;padding: .375rem .75rem;">Open Building Block
+                                                    </a>
+                                                  </center>
+                                                  {% endfor %}
+                                                  {% endif %}
+                                              {% endfor %}
+                                            {% endfor %}
+                                          {% endif %}  
+                                          <!-- /.card-body -->
+                                        </div>
+                                        {% endfor %}
+                                      </span>                                          
+                                    </div>                                  
+                                </buttoninner>  
+                              {% endfor %}
+                            {% endif %}        
+                          {% endfor %}    
+                        </div>
+                      </div>
+                    {% endfor %}
+                </div>
+                <div class="card-block card-1">
+                  <h5 class="align-middle" style="font-weight:600; font-size:20px;color:black">Optimization</h5>
+                    {% for bb_name_opt_nc in primary_folders_opt_nc %}
+                      <div class="btn-group-vertical align-top" style="text-transform: capitalize;">                                 
+                        <button style="text-transform: capitalize;" disabled>
+                          {{bb_name_opt_nc}}
+                        </button>
+                        
+                        <div class="btn-group-v-non">  
+                          {% for key, value in bb_name_bb_popup_opt_nc.items %}                                        
+                            {% if key == bb_name_opt_nc %}
+                              {% for x in value %}
+                                <buttoninner> 
+                                    <div class="popup" onclick="myFunction('{{x}}')">
+                                      <al href = "#">{{x}}</al>
+                                      <span class="popuptext" id="{{x}}">
+                                        <a class="close" style= "font-size:10px; margin-right:10px;" href="#">&#10006;</a>
+                                        {% for k,v in bb_category_bb_markdown_opt_nc.items %}
+                                        <div class="card-body-popup">
+                                          {% if k == x %}
+                                            {% for md in v %}
+                                              {{ md|markdownify }}
+                                              {% for c,u in bb_category_bb_url_opt_nc.items %}
+                                                  {% if c == x %}
+                                                  {% for url in u %}
+                                                  <center> 
+                                                    <a href="{{url}}" style="font-weight:600; font-size:10px; color:white; background-color:rgb(63,99,116); border: 2px solid rgb(30,81,85); border-radius: .25rem;padding: .375rem .75rem;">Open Building Block
+                                                    </a>
+                                                  </center>
+                                                  {% endfor %}
+                                                  {% endif %}
+                                              {% endfor %}
+                                            {% endfor %}
+                                          {% endif %}  
+                                          <!-- /.card-body -->
+                                        </div>
+                                        {% endfor %}
+                                      </span>                                          
+                                    </div>                                  
+                                </buttoninner>  
+                              {% endfor %}
+                            {% endif %}        
+                          {% endfor %}    
+                        </div>                         
+                          
+                        {% comment %} For code based building block {% endcomment %}
+                        <div class="btn-group-v">  
+                          {% for key, value in bb_name_bb_popup_opt.items %}                                       
+                            {% if key == bb_name_opt_nc %}
+                              {% for x in value %}
+                                <buttoninner> 
+                                    <div class="popup" onclick="myFunction('{{x}}')">
+                                      <al href = "#">{{x}}</al>
+                                      <span class="popuptext-g" id="{{x}}">
+                                        <a class="close" style= "font-size:10px; margin-right:10px;" href="#">&#10006;</a>
+                                        {% for k,v in bb_category_bb_markdown_opt.items %}
+                                        <div class="card-body-popup">
+                                          {% if k == x %}
+                                        
+                                            {% for md in v %}
+                                              {{ md|markdownify }}
+                                              {% for c,u in bb_category_bb_url_opt.items %}
+                                                  {% if c == x %}
+                                                  {% for url in u %}
+                                                  <center> 
+                                                    <a href="{{url}}" style="font-weight:600; font-size:10px; color:white; background-color:rgb(63,99,116); border: 2px solid rgb(30,81,85); border-radius: .25rem;padding: .375rem .75rem;">Open Building Block
+                                                    </a>
+                                                  </center>
+                                                  {% endfor %}
+                                                  {% endif %}
+                                              {% endfor %}
+                                            {% endfor %}
+                                          {% endif %}  
+                                          <!-- /.card-body -->
+                                        </div>
+                                        {% endfor %}
+                                      </span>                                          
+                                    </div>                                  
+                                </buttoninner>  
+                              {% endfor %}
+                            {% endif %}        
+                          {% endfor %}    
+                        </div>
+                      </div>
+                    {% endfor %}
+                </div>
+                <div class="card-block card-1">
+                  <h5 class="align-middle" style="font-weight:600; font-size:20px;color:black">Process Steering</h5>
+                    {% for bb_name_ps_nc in primary_folders_ps_nc %}
+                      <div class="btn-group-vertical align-top" style="text-transform: capitalize;">                                 
+                        <button style="text-transform: capitalize;" disabled>
+                          {{bb_name_ps_nc}}
+                        </button>
+                        
+                        <div class="btn-group-v-non">  
+                          {% for key, value in bb_name_bb_popup_ps_nc.items %}                                        
+                            {% if key == bb_name_ps_nc %}
+                              {% for x in value %}
+                                <buttoninner> 
+                                    <div class="popup" onclick="myFunction('{{x}}')">
+                                      <al href = "#">{{x}}</al>
+                                      <span class="popuptext" id="{{x}}">
+                                        <a class="close" style= "font-size:10px; margin-right:10px;" href="#">&#10006;</a>
+                                        {% for k,v in bb_category_bb_markdown_ps_nc.items %}
+                                        <div class="card-body-popup">
+                                          {% if k == x %}
+                                            {% for md in v %}
+                                              {{ md|markdownify }}
+                                              {% for c,u in bb_category_bb_url_ps_nc.items %}
+                                                  {% if c == x %}
+                                                  {% for url in u %}
+                                                  <center> 
+                                                    <a href="{{url}}" style="font-weight:600; font-size:10px; color:white; background-color:rgb(63,99,116); border: 2px solid rgb(30,81,85); border-radius: .25rem;padding: .375rem .75rem;">Open Building Block
+                                                    </a>
+                                                  </center>
+                                                  {% endfor %}
+                                                  {% endif %}
+                                              {% endfor %}
+                                            {% endfor %}
+                                          {% endif %}  
+                                          <!-- /.card-body -->
+                                        </div>
+                                        {% endfor %}
+                                      </span>                                          
+                                    </div>                                  
+                                </buttoninner>  
+                              {% endfor %}
+                            {% endif %}        
+                          {% endfor %}    
+                        </div>                         
+                          
+                        {% comment %} For code based building block {% endcomment %}
+                        <div class="btn-group-v">  
+                          {% for key, value in bb_name_bb_popup_ps.items %}                                       
+                            {% if key == bb_name_ps_nc %}
+                              {% for x in value %}
+                                <buttoninner> 
+                                    <div class="popup" onclick="myFunction('{{x}}')">
+                                      <al href = "#">{{x}}</al>
+                                      <span class="popuptext-g" id="{{x}}">
+                                        <a class="close" style= "font-size:10px; margin-right:10px;" href="#">&#10006;</a>
+                                        {% for k,v in bb_category_bb_markdown_ps.items %}
+                                        <div class="card-body-popup">
+                                          {% if k == x %}
+                                        
+                                            {% for md in v %}
+                                              {{ md|markdownify }}
+                                              {% for c,u in bb_category_bb_url_ps.items %}
+                                                  {% if c == x %}
+                                                  {% for url in u %}
+                                                  <center> 
+                                                    <a href="{{url}}" style="font-weight:600; font-size:10px; color:white; background-color:rgb(63,99,116); border: 2px solid rgb(30,81,85); border-radius: .25rem;padding: .375rem .75rem;">Open Building Block
+                                                    </a>
+                                                  </center>
+                                                  {% endfor %}
+                                                  {% endif %}
+                                              {% endfor %}
+                                            {% endfor %}
+                                          {% endif %}  
+                                          <!-- /.card-body -->
+                                        </div>
+                                        {% endfor %}
+                                      </span>                                          
+                                    </div>                                  
+                                </buttoninner>  
+                              {% endfor %}
+                            {% endif %}        
+                          {% endfor %}    
+                        </div>
+                      </div>
+                    {% endfor %}
+                </div>
+              </div>
+        </section>
+         
+      </div>
+    
+    {% endblock %}
+    {% block extra_foot %}
+            {% comment %} <script src="/static/admin-lte/dist/js/adminlte.min.js" defer></script> This created the problem of the top push button not clickable{% endcomment %} 
+            <script>
+              // When the user clicks on <div>, open the popup
+              function myFunction(bb_category) {
+                console.log("myFunction bb_category",bb_category)
+                var popup = document.getElementById(bb_category);
+                console.log("popup",popup)
+                popup.classList.toggle("show");
+              }
+            </script>
+           
+    {% endblock %}
+
+{% endif %}
