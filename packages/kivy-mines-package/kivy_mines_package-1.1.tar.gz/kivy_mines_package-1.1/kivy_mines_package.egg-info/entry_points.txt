@@ -1,0 +1,3 @@
+[console_scripts]
+kivy_mines_package = kivy_mines_package.main:main
+
