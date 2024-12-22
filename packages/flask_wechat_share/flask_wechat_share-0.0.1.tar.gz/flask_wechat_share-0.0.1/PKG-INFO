@@ -1,0 +1,8 @@
+Metadata-Version: 2.3
+Name: flask_wechat_share
+Version: 0.0.1
+Summary: wechat share
+Author-email: wumao <549240290@qq.com>
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: flask>=3.1.0
+Requires-Dist: requests>2.32.3
