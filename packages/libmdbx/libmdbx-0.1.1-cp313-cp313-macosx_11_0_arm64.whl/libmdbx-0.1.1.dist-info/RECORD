@@ -1,0 +1,8 @@
+mdbx/__init__.py,sha256=03iJohgr6kBNgh6p_rnP4F8SXP0avVTBPsZwAyfMAQQ,206
+mdbx/mdbx.py,sha256=6l3Xbqd4L67JqVri0R96QRn9telkeJpVY4NzcEZ1tqw,113032
+mdbx/lib/LICENSE,sha256=MQ_iXIWKlRX8jI19HySmfJSW-EqR4KDkHqmXWxNx5Wk,2214
+mdbx/lib/libmdbx.dylib,sha256=39pQfD0TbT4CHfY-UDDGmThtNPRGHQagyT_7ZDLeQnU,460912
+libmdbx-0.1.1.dist-info/RECORD,,
+libmdbx-0.1.1.dist-info/LICENSE,sha256=7a72Msu2Q-TnoiFxemxEGkwafJGObk1W3rw9hzmyM_Y,17984
+libmdbx-0.1.1.dist-info/WHEEL,sha256=XHdunrTUAJOMP9Rswu8Jlhk1RuLU5PkRCVAfR-lrlgg,106
+libmdbx-0.1.1.dist-info/METADATA,sha256=T3erD2uMekFDYeN9kLMXGa4WM72HHdYgotKbQrtsL6w,979
