@@ -1,0 +1,37 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name="knotctl"
+description="A CLI for knotapi."
+authors = [
+  {name = "Micke Nordin", email = "hej@mic.ke"},
+]
+license= { file="LICENSE" }
+readme= "README.md"
+classifiers=[
+        "Programming Language :: Python :: 3",
+        "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+        "Operating System :: OS Independent",
+        ]
+requires-python= ">=3.9"
+version = "0.1.1"
+
+dependencies = [
+  "argcomplete==2.0.0",
+  "pyyaml==6.0.1",
+  "requests==2.27.1",
+  "simplejson==3.17.6",
+]
+
+[project.urls]
+Source="https://code.smolnet.org/micke/knotctl"
+Documentation = "https://code.smolnet.org/micke/knotctl"
+
+[project.scripts]
+knotctl="knotctl:main"
+
+
+[tool.flit.sdist]
+include = ["LICENSE",]

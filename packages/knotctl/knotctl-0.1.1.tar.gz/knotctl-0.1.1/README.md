@@ -1,0 +1,256 @@
+# knotctl
+
+This is a commandline tool for knotapi: https://gitlab.nic.cz/knot/knot-dns-rest
+
+## Build and install
+
+To install using pip, run the following command in a virtual envrionment.
+
+```
+python -m pip install "knotctl @ git+https://code.smolnet.org/micke/knotctl
+```
+
+To build and install as a deb-package
+
+```
+sudo apt install python3-stdeb
+git clone https://code.smolnet.org/micke/knotctl
+cd knotctl
+python3 setup.py --command-packages=stdeb.command bdist_deb
+sudo dpkg -i deb_dist/knotctl_*_all.deb
+```
+A prebuilt deb-package is also available from the release page: https://code.smolnet.org/micke/knotctl/releases/
+
+## Shell completion
+
+For bash: add this to .bashrc
+
+```
+source <(knotctl completion)
+```
+
+For fish, run:
+
+```
+knotctl completion --shell fish > ~/.config/fish/completions/knotctl.fish
+```
+
+For tcsh: add this to .cshrc
+
+```
+complete "knotctl" 'p@*@`python-argcomplete-tcsh "knotctl"`@' ;
+```
+
+For zsh: add this to .zshrc
+
+```
+autoload -U bashcompinit
+bashcompinit
+source <(knotctl completion)
+```
+## Usage
+```
+usage: knotctl [-h] [--json | --no-json]
+               {add,auditlog,changelog,completion,config,delete,list,update}
+               ...
+
+Manage DNS records with knot dns rest api:
+        * https://gitlab.nic.cz/knot/knot-dns-rest
+
+positional arguments:
+  {add,auditlog,changelog,completion,config,delete,list,update}
+
+options:
+  -h, --help            show this help message and exit
+  --json, --no-json
+
+    The Domain Name System specifies a database of information
+    elements for network resources. The types of information
+    elements are categorized and organized with a list of DNS
+    record types, the resource records (RRs). Each record has a
+    name, a type, an expiration time (time to live), and
+    type-specific data.
+
+    The following is a list of terms used in this program:
+    ----------------------------------------------------------------
+    | Vocabulary | Description                                     |
+    ----------------------------------------------------------------
+    | zone       | A DNS zone is a specific portion of the DNS     |
+    |            | namespace in the Domain Name System (DNS),      |
+    |            | which a specific organization or administrator  |
+    |            | manages.                                        |
+    ----------------------------------------------------------------
+    | name       | In the Internet, a domain name is a string that |
+    |            | identifies a realm of administrative autonomy,  |
+    |            | authority or control. Domain names are often    |
+    |            | used to identify services provided through the  |
+    |            | Internet, such as websites, email services and  |
+    |            | more.                                           |
+    ----------------------------------------------------------------
+    | rtype      | A record type indicates the format of the data  |
+    |            | and it gives a hint of its intended use. For    |
+    |            | example, the A record is used to translate from |
+    |            | a domain name to an IPv4 address, the NS record |
+    |            | lists which name servers can answer lookups on  |
+    |            | a DNS zone, and the MX record specifies the     |
+    |            | mail server used to handle mail for a domain    |
+    |            | specified in an e-mail address.                 |
+    ----------------------------------------------------------------
+    | data       | A records data is of type-specific relevance,   |
+    |            | such as the IP address for address records, or  |
+    |            | the priority and hostname for MX records.       |
+    ----------------------------------------------------------------
+
+    This information was compiled from Wikipedia:
+       * https://en.wikipedia.org/wiki/DNS_zone
+       * https://en.wikipedia.org/wiki/Domain_Name_System
+       * https://en.wikipedia.org/wiki/Zone_file
+```
+
+### ADD
+
+```
+usage: knotctl add [-h] -d DATA -n NAME -r RTYPE [-t TTL] -z ZONE
+
+Add a new record to the zone.
+
+options:
+  -h, --help            show this help message and exit
+  -d DATA, --data DATA
+  -n NAME, --name NAME
+  -r RTYPE, --rtype RTYPE
+  -t TTL, --ttl TTL
+  -z ZONE, --zone ZONE
+```
+
+### COMPLETION
+
+```
+usage: knotctl completion [-h] [-s SHELL]
+
+Generate shell completion script.
+
+options:
+  -h, --help            show this help message and exit
+  -s SHELL, --shell SHELL
+```
+
+### AUDITLOG
+
+```
+usage: knotctl auditlog [-h]
+
+Audit the log file for errors.
+
+options:
+  -h, --help  show this help message and exit
+```
+
+### CHANGELOG
+
+```
+usage: knotctl changelog [-h] -z ZONE
+
+View the changelog of a zone.
+
+options:
+  -h, --help            show this help message and exit
+  -z ZONE, --zone ZONE
+```
+
+### CONFIG
+
+```
+usage: knotctl config [-h] [-b BASEURL] [-c CONTEXT] [-p PASSWORD] [-u USERNAME]
+
+Configure access to knot-dns-rest-api.
+
+options:
+  -h, --help            show this help message and exit
+  -b BASEURL, --baseurl BASEURL
+  -c CONTEXT, --context CONTEXT
+  -p PASSWORD, --password PASSWORD
+  -u USERNAME, --username USERNAME
+```
+
+### DELETE
+
+```
+usage: knotctl delete [-h] [-d DATA] [-n NAME] [-r RTYPE] -z ZONE
+
+Delete a record from the zone.
+
+options:
+  -h, --help            show this help message and exit
+  -d DATA, --data DATA
+  -n NAME, --name NAME
+  -r RTYPE, --rtype RTYPE
+  -z ZONE, --zone ZONE
+```
+
+### LIST
+
+```
+usage: knotctl list [-h] [-d DATA] [-n NAME] [-r RTYPE] [-z ZONE]
+
+List records.
+
+options:
+  -h, --help            show this help message and exit
+  -d DATA, --data DATA
+  -n NAME, --name NAME
+  -r RTYPE, --rtype RTYPE
+  -z ZONE, --zone ZONE
+```
+
+### UPDATE
+
+```
+usage: knotctl update [-h] -a [ARGUMENT ...] -d DATA -n NAME -r RTYPE [-t TTL]
+                      -z ZONE
+Update a record in the zone. The record must exist in the zone.
+In this case --data, --name, --rtype and --ttl switches are used
+for searching for the appropriate record, while the --argument
+switches are used for updating the record.
+
+options:
+  -h, --help            show this help message and exit
+  -a [KEY=VALUE ...], --argument [KEY=VALUE ...]
+                        Specify key - value pairs to be updated:
+                        name=dns1.example.com. or data=127.0.0.1 for example.
+                        --argument can be repeated
+  -d DATA, --data DATA
+  -n NAME, --name NAME
+  -r RTYPE, --rtype RTYPE
+  -t TTL, --ttl TTL
+  -z ZONE, --zone ZONE
+
+Available arguments are:
+    data: New record data.
+    name: New record domain name.
+    rtype: New record type.
+    ttl: New record time to live (TTL).
+```
+
+### USER
+```
+usage: knotctl user [-h] [-u USERNAME]
+
+View user information.
+
+options:
+  -h, --help            show this help message and exit
+  -u USERNAME, --username USERNAME
+```
+
+### ZONE
+
+```
+usage: knotctl zone 
+
+List zones.
+
+options:
+  -h, --help            show this help message and exit
+```
+
