@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: crypto-price-api-wrapper-aby
+Version: 0.1.0
+Summary: A Python library to fetch cryptocurrency prices from CoinMarketCap
+Home-page: https://github.com/AbyvargheseMandapathel/Crypto-Package
+Author: Aby Varghese
+Author-email: edxfr3q@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+License-File: LICENSE
+Requires-Dist: requests>=2.25.1
