@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+pyproject.toml
+emtd/__init__.py
+emtd/emtd.py
+emtd.egg-info/PKG-INFO
+emtd.egg-info/SOURCES.txt
+emtd.egg-info/dependency_links.txt
+emtd.egg-info/requires.txt
+emtd.egg-info/top_level.txt
