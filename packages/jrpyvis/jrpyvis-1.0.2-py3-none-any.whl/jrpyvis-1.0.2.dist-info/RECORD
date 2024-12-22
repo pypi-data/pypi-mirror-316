@@ -1,0 +1,14 @@
+jrpyvis/__init__.py,sha256=35lT0k2nQUrvBjZ9n3up5n1_HZOk5J2Cx01naAFyEA8,123
+jrpyvis/__version__.py,sha256=Y3LSfRioSl2xch70pq_ULlvyECXyEtN3krVaWeGyaxk,22
+jrpyvis/data/car_insurance.zip,sha256=9pO7cJ6XQjqIQ5suXD4m-A9ABWQB9Gr77Ua_B9N_iBQ,1252
+jrpyvis/data/csv_data.csv,sha256=Jf7d54KtDoM0JcT-lSo4QPdu8tnNFaabgihmxr_2NBU,39
+jrpyvis/data/insurance.zip,sha256=p5zS0tpSbPLvzvvmnL6d88ouAaK4LRS-i36aqnuYnrg,14375
+jrpyvis/data/movies.zip,sha256=qivayc0CcavExRtCYDR553KIHA0vp7L2mrtRcu1hGfU,1355247
+jrpyvis/data/tabsep_data.csv,sha256=vTJU8lYeJDEKfAOeq8-wvqutKTxk9MV3NOV0iR5JFls,39
+jrpyvis/data/titanic.xlsx,sha256=ygRpn4wSwNto77xnh7IdGz79MSsxEq-OZHK7_TrrdSw,36829
+jrpyvis/data.py,sha256=H-KsUIWRnigAPBLDNGcF6mf7vzShopbiVzv5NgGJ7ik,838
+jrpyvis/solutions/example_solution.mplstyle,sha256=_xv_jnw2ELhY7k9-Wlu9BNchthx3KXCpGn3lDyWOuZY,90
+jrpyvis/solutions.py,sha256=jes_GjG8CGEMIp78BoRUorJO4zM925owHy_AFehsJZk,413
+jrpyvis-1.0.2.dist-info/METADATA,sha256=sknNCQkEGLpGSh4KOdf3LW0uSnvFGfO7dR3PLlOrk1o,698
+jrpyvis-1.0.2.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+jrpyvis-1.0.2.dist-info/RECORD,,
