@@ -1,0 +1,7 @@
+# Needed for local development
+maturin[patchelf]>=1.7; sys_platform == "linux"
+maturin>=1.7; sys_platform != "linux"
+polars
+pre-commit
+ipykernel
+numpy
