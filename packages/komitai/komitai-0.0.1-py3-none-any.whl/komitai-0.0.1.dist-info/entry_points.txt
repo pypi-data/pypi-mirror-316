@@ -1,0 +1,2 @@
+[console_scripts]
+komitai = git_diff_lm.main:main
