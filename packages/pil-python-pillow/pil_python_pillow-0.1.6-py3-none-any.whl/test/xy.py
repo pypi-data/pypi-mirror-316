@@ -1,0 +1,55 @@
+'''// Variable and Array Declarations
+var x: int = 0;
+let y: float = 3.14;
+const z: string = "Hello World";
+array arr: int[5] = {1, 2, 3, 4, 5};
+
+// If-Else Statement
+if (x > 0) {
+    y = y + 1.0;
+} else {
+    y = y - 1.0;
+}
+
+// While Loop
+while (x < 10) {
+    x = x + 1;
+}
+
+// For Loop
+for (var i: int = 0; i < 5; i = i + 1) {
+    // Function Declaration
+    func add(a: int, b: int): int {
+        return a + b;
+    }
+    arr[i] = add(arr[i], x);
+    print(arr[i]);
+}
+
+// Class Declaration
+class Calculator {
+    var result: float;
+
+    func multiply(a: float, b: float): float {
+        return a * b;
+    }
+}
+
+// Instantiate the Calculator class
+var calc: Calculator = Calculator();
+
+// Try-Catch Statement
+try {
+    var result: float = calc.multiply(2.0, 3.5);
+    print(result);
+} catch (e) {
+    // Handle error
+    y = -1.0;
+    print(y);
+}
+
+// Print Statement
+print(x);
+print(y);
+print(z);
+'''
