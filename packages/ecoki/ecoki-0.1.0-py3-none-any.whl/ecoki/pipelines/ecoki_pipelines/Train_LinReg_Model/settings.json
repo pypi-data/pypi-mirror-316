@@ -1,0 +1,102 @@
+{
+  "name": "Train_LinReg_Model",
+  "topology": {
+    "nodes": [
+      {
+        "name": "ecoKI_data_reader",
+        "building_block_module": "ecoki.building_blocks.code_based.data_integration.acquire_data.ecoki_data_reader.ecoki_data_reader",
+        "building_block_class": "EcoKIDataReader",
+        "execution_mode": "local",
+        "settings": {},
+        "visualizer_module": "",
+        "visualizer_class": "",
+        "visualizer_input": {},
+        "interactive_configuration": true
+      },
+      {
+        "name": "data_selector",
+        "building_block_module": "ecoki.building_blocks.code_based.data_integration.preprocess_data.data_selector.data_selector",
+        "building_block_class": "DataSelector",
+        "execution_mode": "local",
+        "settings": {},
+        "visualizer_module": "",
+        "visualizer_class": "",
+        "visualizer_input": {},
+        "interactive_configuration": true
+      },
+      {
+        "name": "split_train_test",
+        "building_block_module": "ecoki.building_blocks.code_based.modelling.build_and_train_model.split_traintest_label.split_traintest_label",
+        "building_block_class": "SplitTrainTestLabel",
+        "execution_mode": "local",
+        "settings": {
+          "label_column": [
+            "Appliances"
+          ]
+        },
+        "visualizer_module": "",
+        "visualizer_class": "",
+        "visualizer_input": {},
+        "interactive_configuration": true
+      },
+      {
+        "name": "train_predict_linReg",
+        "building_block_module": "ecoki.building_blocks.code_based.modelling.build_and_train_model.train_and_predict_lin_reg.train_and_predict_lin_reg",
+        "building_block_class": "TrainAndPredictLinReg",
+        "execution_mode": "local",
+        "settings": {},
+        "visualizer_module": "ecoki.building_blocks.code_based.modelling.build_and_train_model.train_and_predict_lin_reg.train_and_predict_lin_reg_visualizer",
+        "visualizer_class": "TrainAndPredictLinRegVisualizer",
+        "visualizer_input": [
+          "output_data_preds",
+          "output_data_metrics",
+          "output_data_hyperparameters",
+          "output_data_labels"
+        ],
+        "interactive_configuration": false
+      }
+    ],
+    "connections": [
+      {
+        "name": "1",
+        "from_node": "ecoKI_data_reader",
+        "from_port": "output_data",
+        "to_node": "data_selector",
+        "to_port": "input_data"
+      },
+      {
+        "name": "2",
+        "from_node": "data_selector",
+        "from_port": "output_data",
+        "to_node": "split_train_test",
+        "to_port": "input_data"
+      },
+      {
+        "name": "3",
+        "from_node": "split_train_test",
+        "from_port": "output_data",
+        "to_node": "train_predict_linReg",
+        "to_port": "input_data"
+      }
+    ]
+  },
+  "execution_mode": "local",
+  "metadata": {
+    "short_description": "Trains a Linear Regression model and evaluates its performance",
+    "description": "This pipeline leverages the Scikit-learn Linear Regression model to train and predict features from a tabular dataset. The process involves splitting the dataset into training and testing sets, training the Linear Regression model on the training set, and using the trained model to generate predictions on the test set. The comprehensive results, which encompass predictions, evaluation metrics, and hyperparameters, are presented in an interactive panel dashboard for enhanced analysis.",
+    "category": ["Modelling"],
+    "inputs": {
+      "dataset": {
+        "value range": "Tabular dataset as a pandas DataFrame",
+        "default value": "",
+        "intended use": "Train and predict features with Linear Regression model"
+      }
+    },
+    "outputs": {
+      "expected_results": "The expected results comprise a fully trained Linear Regression model, predictions on the test dataset, comprehensive evaluation metrics, and the hyperparameters utilized during training.",
+      "Output Format": ".sav file saved locally"
+    },
+    "example": "",
+    "version": "0.0.1"
+  }
+}

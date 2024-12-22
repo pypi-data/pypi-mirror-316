@@ -1,0 +1,665 @@
+{% extends 'app_base.html' %}
+
+{% load static %}
+{% if user.is_authenticated %}
+
+    
+    {% block content_wrapper %}
+    
+        <div class="content-wrapper ecoki-background" style="min-height: 288.4px;">
+            <section class="content-header">
+                <div class="container-fluid">
+                <div class="row mb-2">
+                    <div class="col-sm-6">
+                    <h1>FAQs</h1>
+                    </div>
+                </div>
+                </div><!-- /.container-fluid -->
+            </section>
+            <section class="content">
+                <div class="card card-success">
+                  <div class="card-header">
+                    <h3 class="card-title">Building Block Description</h3>
+
+                    <div class="card-tools">
+                      <!-- This will cause the card to maximize when clicked -->
+                      <button type="button" class="btn btn-tool" data-card-widget="maximize"><i class="fas fa-expand"></i></button>
+                      <!-- This will cause the card to collapse when clicked -->
+                      <button type="button" class="btn btn-tool" data-card-widget="collapse"><i class="fas fa-minus"></i></button>
+                      <!-- This will cause the card to be removed when clicked -->
+                      <button type="button" class="btn btn-tool" data-card-widget="remove"><i class="fas fa-times"></i></button>
+                    </div>
+                    <!-- /.card-tools -->
+                  </div>
+                  <!-- /.card-header -->
+                  <div class="card-body">               
+                    <nav class="toc">
+                      <ul>
+                        <li style="list-style: none"><a href="#intro">Intro</a></li>
+                        <li style="list-style: none"><a href="#itsecurity">IT security</a></li>
+                            <ul>
+                              <li style="list-style: none"><a href="#itsecurity-access">Data access and storage</a></li>
+                              <li style="list-style: none"><a href="#itsecurity-usage">Data usage</a></li>
+                              <li style="list-style: none"><a href="#itsecurity-cloud">Cloud</a></li>
+                              <li style="list-style: none"><a href="#itsecurity-legal">Legal</a></li>
+                              <li style="list-style: none"><a href="#itsecurity-collection">Data collection</a></li>
+                            </ul>
+                        </li>
+                        <li style="list-style: none"><a href="#modelling">Data-modelling</a></li>
+                        <li style="list-style: none"><a href="#pipeline">Pipeline</a></li>
+                        <li style="list-style: none"><a href="#block">Building block</a></li> 
+                        <li style="list-style: none"><a href="#dashboard">Dashboard</a></li> 
+                        
+                      </ul>
+                      <svg class="toc-marker" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke="#444" stroke-width="3" fill="transparent" stroke-dasharray="0, 0, 0, 1000" stroke-linecap="round" stroke-linejoin="round" transform="translate(-0.5, -0.5)" />
+                      </svg>
+                    </nav>
+                    
+                    <article class="contents">
+                      <section id="intro">
+                        <h2 style="text-align:center"><b>FAQs</b></h2>
+                        <p>
+                          This section of the dashboard helps the users to get an overview of the existing FAQs and their answers.
+                        </p>
+                      </section>
+                    <br>
+
+                      <section>
+                        <div id="itsecurity"> <!-- For collapse of the header -->
+                          <h5><b>IT SECURITY</b></h5>
+                        </div>
+                    
+                        <div id="itsecurity-access" class="tab-content">
+                          <p style="color:green">1. How will the company data be accessed on premise?</p>
+                          <ul>
+                          <li>EcoKI offers three options for accessing your company's data:</li>
+                          </ul>
+                        
+
+                          <p style="color:green">2. How will the company data be accessed remotely?</p>
+                          <ul>
+                            <li>The on-premise central database, the on-premise running ecoKI building blocks and pipelines 
+                            and the central database need to be accessible remotely by the application engineers.</li>
+                            <li>This is necessary for the development, configuration and maintenance of our ecoKI-solutions.</li>
+                            <li>The connection will be established via a secure VPN-connection to the server(s), 
+                              where the following services run:
+                              <ul>
+                                <li style="list-style-type:square">Central database</li>
+                                <li style="list-style-type:square">Running ecoKI building blocks and pipelines</li>
+                              </ul>
+                            </li>
+                          </ul>
+                          
+                          <p style="color:green">3. How will the company data be stored off-premise?</p>
+                          <ul>
+                          <li>For funded research projects, data will need to be stored on the servers of the partner universities.
+                            This is necessary for the researchers, so they can work with the data.</li>
+                          <li>A secure VPN connection will be used to transfer the data to the off-premise servers.</li>
+                          <li>The full data will be stored at one location. Project partners will only be able to download limited amounts 
+                            of the data from this location (details to be agreed upon in project). Full access to data will only be possible
+                            via secure VPN connection.</li>
+                          </ul>
+                        
+                          <p style="color:green">4. What is expected from the company in terms of data security?</h3>
+                          <ul>
+                            <p><i>Answers to the following questions are expected from your company, regarding data security:</i></p>
+                            
+                            <li>Understanding the IT infrastructure and security measures on the SME side
+                              <ul>
+                              <li>What kind of connection options are possible ?</li>
+                              <li>How is data stored (for example on the plant side or in the cloud etc). What kind of measures are required
+                                to access the data ?
+                              </li>
+                              <li>Which virus protection software is used and what needs are to be considered to when interacting with it ?</li>
+                              </ul>
+                            </li>                          
+                            <li>Getting the access/connection rights
+                              <ul>
+                                <li>What is the procedure for online connection ?</li>
+                                <li>What is the procedure for offline connection ?</li>
+                              </ul>
+                            </li>
+                            <li>Understanding the data policy of the SME
+                              <ul>
+                                <li>Is it allowed to store the data in off-premise ecoKI central database ?</li>
+                                <li>How can we use the data and publish results from the project (model development, successs stories etc.) ?</li>
+                                <li>What kind of actions or documentation does SME expect from the ecoKI team regarding data security ?</li>                        
+                              </ul>
+                            </li>
+                          </ul>
+                      
+                          <p style="color:green">5. How will transparency be guaranteed on where which data is used?</p>
+                          <ul>
+                            <li>Q1 through Q3 explain where data may be used in projects done using ecoKI. To guarantee transparency 
+                              on this individual projects, a legally binding confidentiality agreement will be signed by all participants,
+                              clearly stating where (e.g. on/off premise, etc.) which data will be stored and used.
+                            </li>
+                            <li>Confidentiality agreement will include:
+                                <ul>
+                                  <li style="list-style-type:square">On which servers data will be stored</li>
+                                  <li style="list-style-type:square">Which institutions will have access to data</li>
+                                  <li style="list-style-type:square">How data will be accessed</li>
+                                </ul>
+                            </li>
+                          </ul>               
+                        </div>
+                    
+                        <div id="itsecurity-usage" class="tab-content">
+                          <p style="color:green">6. How will transparency be guaranteed for what the data is used for?</p>
+
+                          <ul>
+                        <p><i>ecoKI ensures transparency regarding what the data is used for by following the key practices lister below:</i></p>
+                        
+                        
+                          <li>Involve the client in the process</li>
+                          <ul>
+                            <li>A close collaboaration is established between your company and the Application Engineer (AE) at every
+                              step of the project, including the requirements analaysis step, where your company can define its data usage constraints.
+                            Additionally, the AE is required to present a detailed work plan that includes the intended use of data at any point in the project</li>
+                          </ul> 
+
+                          <li>Establish internal data usage transparency policy</li>
+                          <ul>
+                            <li>Your company's requirements on the intended use of the datacan be expressed as an internal data usage transparency
+                              policy that both your company and the AE have to explicitly agree upon. For example, your company may want to make sure 
+                              that no personal data, such as people's faces in images is used in the project.
+                            </li>
+                          </ul> 
+
+                          <li>Collect necessary data only</li>
+                          <ul>
+                            <li>By doing so, leeping track of what the data is used for becomes easier</li>       
+                          </ul> 
+
+                          <li>Code and dataset transparency</li>
+                          <ul>
+                            <li>To guarantee full transparency on how your company's data is used, the source code of all ecoKI's building
+                              blocks as well as the project-specific code developed by the AE, are available to your company. Additionally, 
+                              data changed during the course of the project (e.g. cleansed or transformed data) is also made available to your company.
+                            </li> 
+                          </ul>   
+                        </ul>   
+                      </div>
+                    
+                      <div id="itsecurity-cloud" class="tab-content">
+                        <p style="color:green">7. How will IT security be guaranteed when using a cloud approach ?</p>
+                        <p>To be answered</p> 
+                      </div>
+                    
+                      <div id="itsecurity-legal" class="tab-content">
+                        <p style="color:green">8. How will data security according to current legal requirements be ensured ?</p>
+                        <p>To be answered</p>
+                      </div>
+
+                      <div id="itsecurity-collection" class="tab-content">
+                        <p style="color:green">9. How will viruses be avoided when new data is collected with edge devices ?</p>
+                        <p>To be answered</p> 
+                      </div>
+                    
+                      </section>
+                    
+                      <section>
+                        <div id="modelling"> <!-- Data Modelling -->
+                          <h5><b>DATA MODELLING</b></h5>
+                                              
+                          <p style="color:green">1.	What is a data-model?</p>
+                          <ul>
+                          <li>Generally speaking, a data model is a conceptual representation of the data structures and 
+                            relationships that exist within a particular domain or application. It provides a way to 
+                            organize and structure data so that it can be easily managed, queried, and analyzed. 
+                            Data models are used by software developers, database administrators, and data analysts 
+                            to design and implement databases, data warehouses, and other data-related systems. 
+                            They help to ensure that data is stored and accessed in a consistent and efficient manner, 
+                            and they provide a foundation for data analysis and reporting.</li>
+                            https://drive.google.com/file/d/1Q4BmFkgl3LSo_6rZ0bWgzlfF8MNAn1fN/view?usp=sharing
+                            <li><img src="https://drive.google.com/file/d/1Q4BmFkgl3LSo_6rZ0bWgzlfF8MNAn1fN/view?usp=sharing" alt="Data Model" width="400"></li>
+                          </ul>
+                          <p style="color:green">2.	What is the importance of data-model?</p>
+                          <ul>
+                          <li>A data model provides a visual representation of the data, its structure, and its relationships,
+                             which makes it easier for developers, analysts, and stakeholders to understand and discuss 
+                             the data. It ensures that data is accurate and consistent across the entire system. 
+                             This helps to prevent errors, inconsistencies, and redundancies that can occur when data 
+                             is stored and managed in an ad-hoc manner. It can also help to optimize the performance and
+                             efficiency of the system by defining the most efficient way to store and access the data. 
+                             By minimizing the number of database queries and reducing redundant data, a data model can 
+                             help to improve the overall performance and responsiveness of the system.</li>
+                          </ul>
+                          <p style="color:green">3. Which Database is used in ecoKI platform? Is it different from the other conventional database?</p>
+                          <ul>
+                          <li>MongoDB is used for data-storage in ecoKI. It is a source-available cross-platform document-oriented 
+                            database program. Classified as a NoSQL database program, MongoDB uses JSON-like documents with optional 
+                            schemas. Instead of tables, a MongoDB database stores its data in collections. A collection holds one or 
+                            more BSON documents. Documents are analogous to records or rows in a relational database table. 
+                            Each document has one or more fields; fields are similar to the columns in a relational database 
+                            table. A record in MongoDB is a document, which is a data structure composed of field and value pairs.
+                            It's important to note that the suitability of MongoDB or a SQL database depends on specific use cases,
+                            requirements, and preferences. While MongoDB excels in certain areas such as scalability and flexibility.
+                            Below is a table outlining the pros and cons of MongoDB compared to a traditional SQL database:</li>
+                          <li>
+                            <table>
+                              <tr>
+                                <th>Aspect</th>
+                                <th>MongoDB</th>
+                                <th>SQL Database</th>
+                              </tr>
+                              <tr>
+                                <td>Data Model</td>
+                                <td>Document-oriented data model</td>
+                                <td>Table-based data model</td>
+                              </tr>
+                              <tr>
+                                <td>Schema Flexibility</td>
+                                <td>Flexible schema allows for dynamic data structure</td>
+                                <td>Strict schema requires predefined structure</td>
+                              </tr>
+                              <tr>
+                                <td>Scalability</td>
+                                <td>Horizontal scaling with sharding</td>
+                                <td>Vertical scaling with replication and clustering</td>
+                              </tr>
+                              <tr>
+                                <td>Performance</td>
+                                <td>High performance for read-heavy workloads</td>
+                                <td>Performance can degrade with complex queries</td>
+                              </tr>
+                              <tr>
+                                <td>Query Language</td>
+                                <td>Rich query language with MongoDB Query Language (MQL)</td>
+                                <td>SQL for querying data</td>
+                              </tr>
+                              <tr>
+                                <td>Data Integrity</td>
+                                <td>Eventual consistency model</td>
+                                <td>ACID compliance ensures data integrity</td>
+                              </tr>
+                              <tr>
+                                <td>Complex Transactions</td>
+                                <td>Limited support for multi-document transactions</td>
+                                <td>Full support for complex transactions</td>
+                              </tr>
+                              <tr>
+                                <td>Relationships</td>
+                                <td>No native support for JOIN operations</td>
+                                <td>Supports complex JOIN operations</td>
+                              </tr>
+                              <tr>
+                                <td>Development Flexibility</td>
+                                <td>Well-suited for agile development and rapid iteration</td>
+                                <td>Traditional development requires careful schema design</td>
+                              </tr>
+                              <tr>
+                                <td>Community & Support</td>
+                                <td>Active community and extensive documentation</td>
+                                <td>Established ecosystem with wide support</td>
+                              </tr>
+                            </table>
+                          </li>
+                          </ul>
+                          <p style="color:green">4.	How can I get connected to central database?</p>
+                          <ul>
+                          <li>With the IP address, you can get connected to the central database. 
+                            The building block ecoki_data_reader provides the functionality to connect 
+                            to a MongoDB server with a specific IP address. After establishing the 
+                            connection to the database server, users can continue selecting database 
+                            and its collection in drop-down menus.</li>
+                          </ul>
+                          <p style="color:green">5.   How do I bring the data into the format of the data model and upload the company's data?</p>
+                          <ul>
+                          <li>Converting tabular data into data model requires a json configuration file mapping the columns of the tabular data 
+                            to different properties of the data model. Company’s data can be uploaded into MongoDB by using the building block data_writer. 
+                            In this building block users have to upload this json configuration file and configure the database settings, 
+                            like IP address, database and collection. .</li>
+                          </ul>
+                          <p style="color:green">6.	Do I have to upload my data into the central ecoKI database (MongoDB)? 
+                            If yes, does it have to be in JSON format? If yes, does it have to be in the data model 
+                            format? What is the recommendation?</p>
+                          <ul>
+                          <li>No, you should upload in the local MongoDB on your own system. 
+                            The centralized database is restricted only for the development purposes of the ecoKI Team. 
+                            For configuration refer to the question no:5. Recommendation, is Yes, using the right data model is essential for effectively 
+                            storing unstructured data from process plants and manufacturing factories. It enables efficient storage, ensures data integrity, 
+                            facilitates data retrieval and analysis, integrates with analytics tools, and provides scalability and flexibility to accommodate evolving data requirements.</li>
+                          </ul>
+                        </div>                      
+                      </section>
+
+                      <section>
+                        <div id="pipeline"> <!-- Pipeline -->
+                          <h5><b>PIPELINE</b></h5>
+                                              
+                          <p style="color:green">1.   How a pipeline can be configured</p>
+                          <ul>
+                          <li>Using settings.json located in the corresponding pipeline folder.</li>
+                          </ul>
+
+                          <p style="color:green">2.   What steps are needed to run the pipeline?</p>
+                          <ul>
+                          <li>1. create the pipeline on the pipeline overview page of the central dashboard.
+                            2. open the created pipeline in the active pipelines and run it by clicking on run pipeline or configure run pipeline button.
+                          </li>
+                          </ul>
+
+                          <p style="color:green">3.   What need to be done to send the data from one building block to 
+                            another w.r.t pipeline settings.json file? what configuration are needed?</p>
+                          <ul>
+                          <li>The connection attribute in settings.json defines the connection between building blocks. 
+                            Users have to specify the name of the source and target building block and also the name of their output  and input ports.  </li>
+                          </ul>
+
+                          <p style="color:green">4.   How can the parameters of a pipeline can be modified?</p>
+                          <ul>
+                          <li>The parameter of custom pipelines can be modified via settings.json. 
+                            ecoKI pipelines can not be changed or overwritten. 
+                            Hence, users have to save the modified ecoKI pipelines as a new custom pipeline. </li>
+                          </ul>
+
+                          <p style="color:green">5. How do I use buildings pipelines in combination with my own code? 
+                            E.g. Do my own pre-processing, but then use the modelling BB, or vice versa.</p>
+                          <ul>
+                          <li>Define input and output ports for a new building block and implement the execute method by the new code of users. </li>
+                          </ul>
+
+                          <p style="color:green">6. I am new to ecoKI. Is there an example pipeline illustrating the basic 
+                            concepts that I can run quickly?</p>
+                          <ul>
+                          <li>Examples of some pipelines are present in “Custom Pipelines” category on the dashboard.</li>
+                          </ul>
+
+                          <p style="color:green">7. How to run the pipeline on windows?</p>
+                          <ul>
+                          <li>The same as on other operating systems. </li>
+                          </ul>
+
+                          <p style="color:green">8. How can I create a new pipeline?</p>
+                          <ul>
+                          <li>Please, read the answers to above questions. </li>
+                          </ul>
+                        </div>
+                      </section>  
+
+
+                      <section>
+                        <div id="block"><!-- BB -->
+                          <h5><b>BUILDING BLOCK</b></h5>
+                                              
+                          <p style="color:green">1.   How can the parameters of a building block can be modified?</p>
+                          <ul>
+                          <li>The parameters of a building block can be set via the settings.json file where the pipeline using said building block is defined.
+                            This is done via the settings field, which consists in a dictionary whose keys (resp. values) represent the building block’s parameter names (resp. values). 
+                            The mapping between the values in the settings.json file and the building block parameters is defined in the execute() method of the building block.</li>
+                          </ul>
+                          <p style="color:green">2.   How do I run building blocks?</p>
+                          <ul>
+                          <li>Building blocks are standalone python classes with a singular purpose. Running or testing an individual building block is an advanced skill and in order do it, 
+                            one needs to first understand what the purpose of the particular building block is, for this look in the READ.ME to get an overview of the functionality, 
+                            the inputs and outputs etc. There are two ways to test run a building block (subject to feasibility). 
+                            a.	Method-1: Using ecoki architecture: 
+                            i.	Create a custom pipeline including the building block with an appropriate settings.json file. (refer to pipeline FAQs)
+                            ii.	Subject to the needs, one could print out the results on the console or create a custom visualizer building block to view the results on the dashboard.
+                            iii.	Refer to ecoki/examples/energy_monitoring/energyMonitoring.py to see an example of how a building block is added to a settings.json, with its own visualization module. 
+                            iv.	Execute the pipeline via Dashboard and view the results on console or the dashboard
+                            b.	Method-2: Python
+                            i.	 A building class could be instantiated and executed locally as a python module using the LocalBuildingBlockExecutor feature of the EcoKI architecture. 
+                            ii.	Refer to the following example for a detailed view ecoki/examples/execute_eocki_pipeline/ecoKIBBExectuorExamples.ipynb 
+                            </li>
+                          </ul>
+                          <p style="color:green">3.   How do I use buildings blocks in combination with my own code? 
+                            E.g. Do my own pre-processing, but then use the modelling BB, or vice versa.</p>
+                          <ul>
+                          <li>One can combine their own pre-processing code with ecoKI modelling BBs, for example, by defining a pipeline whose first step is an ecoKI 
+                            data reader which loads the pre-processed data, then passes it  to the ecoKI modelling BB by mapping the result of the data reader to the 
+                            proper input of the modelling BB. If the pre-processing code is a customized building block, then one can define a pipeline that applies this building block, 
+                            then the modelling BB sequentially.</li>
+                          </ul>
+                          <p style="color:green">4.   How to use the visualization BB example to write the visualization method of individual BB?
+                            (essentially the answer will be instructions on how to use panel)</p>
+                          <ul>
+                          <li>To implement a customized visualizer, one needs to define a new class that inherits from the ecoki Visualizer class. 
+                            This class needs to define a run method, where data is fetched from the input dictionary, a Panel object – the interactive dashboard – is created, 
+                            assigned to the self.visualizer attribute and the self._show_visualizer() method is called.
+                            The simplest Panel object that would be informative is to take a pandas DataFrame and call .interactive() on it, 
+                            which returns an interactive Panel DataFrame (requires importing hvplot.pandas). This allows real-time interaction with the underlying DataFrame, 
+                            which can be transformed, filtered, etc, while the created plot is updated automatically. Calling .hvplot() on this interactive Panel object creates a plot, 
+                            which can be assigned to self.visualizer of the Visualizer sub-class created earlier. For any more detailed visualizations, one could take inspiration 
+                            from the given visualizers or online Panel tutorials.Existing visualizers can also be used with customized BBs by setting the visualizer_module and visualizer_class BB 
+                            entries to the visualizer’s module and class names when defining a pipeline in a settings.json file. The visualizer_input entry maps the BB output, i.e. the data to 
+                            visualize, to the input of the visualizer (the dictionary containing the data to visualize). This is illustrated in the following example, where the local data reader BB 
+                            uses the tabular data visualizer.
+                            "nodes": [
+                            {
+                              "name": "local_data_reader",
+                              "building_block_module": "ecoki.building_blocks.code_based.data_integration.acquire_data.data_reader_local.data_reader_local",
+                              "building_block_class": "DataReaderLocal",
+                              "execution_mode": "local",
+                              "settings":{"data_file_path":"ecoki/datasets/tabular_data_nan.csv","index_name":"timestamp"},
+                              "visualizer_module": "ecoki.building_blocks.code_based.data_integration.identify_and_understand_data.tabular_data_visualization.tabular_data_visualizer",
+                              "visualizer_class": "TabularDataVisualizer",
+                              "visualizer_input": {"input_data": "output_data"},                  
+                              "interactive_configuration": true
+                            }
+                            ],
+                          </li>
+                          </ul>      
+                          <p style="color:green">5. How to run the multiple methods (modules) in one BB</p>
+                          <ul>
+                          <li>Ideally the purpose of a building block is to serve a singular purpose. If this functionality is complex and needs multiple function definitions, then these could be defined 
+                            as class method inside the scope of class or as dynamic methods (monkey patching) out the class definition. .</li>
+                          </ul>
+                        </div>
+                      </section> 
+
+                      <section>
+                        <div id="dashboard"><!-- dashboard -->
+                          <h5><b>DASHBOARD</b></h5>
+                                              
+                          <p style="color:green">1.   How to initiate and run the dashboard application?</p>
+                          <ul>
+                          <li>The ecoKI dashboard can be started by executing "ecoki\central_dashboard\app\start_dashboard.py". 
+                            If no custom address or port was specified type “localhost:20000” in a browser. The ecoKI-Dashboard login-page should appear. 
+                            You can sign in with the user "ecoki_test" and password "energy2022". For full functionality of the dashboard the backend 
+                            and pipeline pool needs to be available. A full documentation for how to start all required services is provided in README.md..</li>
+                          </ul>
+                          </ul>
+                          <p style="color:green">2.   How can we get parameters from user through the visualization 
+                            class of dashboard for the specific building block?</p>
+                          <ul>
+                          <li>To configure pipelines step by step and provide settings via the UI, a configuration gui mode for running the pipelines is available. 
+                            Once you have created a pipeline under “Active pipelines”, select it and click on the “Configure run pipeline” button. You can now browse 
+                            through the building blocks and configure them via the UI.</li>
+                          </ul>
+                          <p style="color:green">3.   How to install ecoKI on Windows, Mac, Linux?</p>
+                          <ul>
+                          <li>Go to the navigation bar item “Pipelines”. From the existing pipelines select the one you want to start and click on “View Details”. 
+                            A page is opened where you get additional information. To create it click on “Create this pipeline” and 
+                            it should appear in the navbar item “Active pipelines”.</li>
+                          </ul>
+                        </div>
+                      </section> 
+
+                      <section>
+                        <div id="dashboard"><!-- Deployment -->
+                          <h5><b>DEPLOYMENT</b></h5>                  
+                          <p style="color:green">1.  How to install ecoKI on Windows, Mac, Linux? </p>
+                          <ul>
+                          <li>a.	Download ecoKI
+                            i.	Install git, if it isn’t available on your system already.
+                              1.	See https://git-scm.com/downloads
+                            ii.	Run in a command window / terminal to download ecoKI using git:
+                              1.	 git clone https://gitlab.bik.biba.uni-bremen.de/hop/ecoki.git
+                            iii.	(using the ZIP download on our Gitlab or a git GUI is possible too, but won’t be supported)
+                            b.	Install Docker
+                            i.	 See https://docs.docker.com/engine/install/
+                            c.	Start ecoKI, it will install on first run
+                            i.	Windows: Run “docker_start.bat”
+                              1.	You might have to start “Docker Desktop” beforehand to start the docker daemon
+                            ii.	Linux / Mac: Run “docker_start.sh”
+                            </li>
+                          </ul>
+                          <p style="color:green">2.   How to update ecoKI?</p>
+                          <ul>
+                          <li>a.	Open a command window / terminal inside the ecoKI folder
+                            b.	Run the following command to update your copy:
+                            i.	git pull
+                            c.	Run ecoKI like described above
+                            d.	In case of persisting issues / unexpected behavior: Force a rebuild of the environment
+                            i.	Windows: Run “docker_start_clean.bat”
+                            ii.	Linux / Mac: Run “docker_start_clean.sh”
+                            </li>
+                          </ul>
+                          <p style="color:green">3.   Can ecoKI auto start?</p>
+                          <ul>
+                          <li>a.	Yes, to configure
+                            i.	Oen the “compose.yaml” file in the ecoKI root folder
+                            ii.	Change the “restart” setting, for example to “always”
+                            1.	To disable, set it to “no”
+                            2.	Available options: See https://docs.docker.com/config/containers/start-containers-automatically/#restart-policy-details
+                            iii.	(Re)start ecoKI to apply
+                            </li>
+                          </ul>
+                        </div>
+                      </section> 
+                    </article>
+
+                </div>
+                <!-- /.card -->
+
+                </div>
+
+            </section>
+
+        </div>
+    {% endblock %}
+
+    {% block extra_foot %}
+
+            <script>
+              var toc = document.querySelector( '.toc' );
+              var tocPath = document.querySelector( '.toc-marker path' );
+              var tocItems;
+
+              // Factor of screen size that the element must cross
+              // before it's considered visible
+              var TOP_MARGIN = 0.1,
+                  BOTTOM_MARGIN = 0.2;
+
+              var pathLength;
+
+              var lastPathStart,
+                  lastPathEnd;
+
+              window.addEventListener( 'resize', drawPath, false );
+              window.addEventListener( 'scroll', sync, false );
+
+              drawPath();
+
+              function drawPath() {
+                
+                tocItems = [].slice.call( toc.querySelectorAll( 'li' ) );
+
+                // Cache element references and measurements
+                tocItems = tocItems.map( function( item ) {
+                  var anchor = item.querySelector( 'a' );
+                  var target = document.getElementById( anchor.getAttribute( 'href' ).slice( 1 ) );
+
+                  return {
+                    listItem: item,
+                    anchor: anchor,
+                    target: target
+                  };
+                } );
+
+                // Remove missing targets
+                tocItems = tocItems.filter( function( item ) {
+                  return !!item.target;
+                } );
+
+                var path = [];
+                var pathIndent;
+
+                tocItems.forEach( function( item, i ) {
+
+                  var x = item.anchor.offsetLeft - 5,
+                      y = item.anchor.offsetTop,
+                      height = item.anchor.offsetHeight;
+
+                  if( i === 0 ) {
+                    path.push( 'M', x, y, 'L', x, y + height );
+                    item.pathStart = 0;
+                  }
+                  else {
+                    // Draw an additional line when there's a change in
+                    // indent levels
+                    if( pathIndent !== x ) path.push( 'L', pathIndent, y );
+
+                    path.push( 'L', x, y );
+                    
+                    // Set the current path so that we can measure it
+                    tocPath.setAttribute( 'd', path.join( ' ' ) );
+                    item.pathStart = tocPath.getTotalLength() || 0;
+                    
+                    path.push( 'L', x, y + height );
+                  }
+                  
+                  pathIndent = x;
+                  
+                  tocPath.setAttribute( 'd', path.join( ' ' ) );
+                  item.pathEnd = tocPath.getTotalLength();
+
+                } );
+                
+                pathLength = tocPath.getTotalLength();
+                
+                sync();
+                
+              }
+
+              function sync() {
+                
+                var windowHeight = window.innerHeight;
+                
+                var pathStart = pathLength,
+                    pathEnd = 0;
+                
+                var visibleItems = 0;
+                
+                tocItems.forEach( function( item ) {
+
+                  var targetBounds = item.target.getBoundingClientRect();
+                  
+                  if( targetBounds.bottom > windowHeight * TOP_MARGIN && targetBounds.top < windowHeight * ( 1 - BOTTOM_MARGIN ) ) {
+                    pathStart = Math.min( item.pathStart, pathStart );
+                    pathEnd = Math.max( item.pathEnd, pathEnd );
+                    
+                    visibleItems += 1;
+                    
+                    item.listItem.classList.add( 'visible' );
+                  }
+                  else {
+                    item.listItem.classList.remove( 'visible' );
+                  }
+                  
+                } );
+                
+                // Specify the visible path or hide the path altogether
+                // if there are no visible items
+                if( visibleItems > 0 && pathStart < pathEnd ) {
+                  if( pathStart !== lastPathStart || pathEnd !== lastPathEnd ) {
+                    tocPath.setAttribute( 'stroke-dashoffset', '1' );
+                    tocPath.setAttribute( 'stroke-dasharray', '1, '+ pathStart +', '+ ( pathEnd - pathStart ) +', ' + pathLength );
+                    tocPath.setAttribute( 'opacity', 1 );
+                  }
+                }
+                else {
+                  tocPath.setAttribute( 'opacity', 0 );
+                }
+                
+                lastPathStart = pathStart;
+                lastPathEnd = pathEnd;
+
+              }
+          </script>
+    {% endblock %}
+
+{% endif %}

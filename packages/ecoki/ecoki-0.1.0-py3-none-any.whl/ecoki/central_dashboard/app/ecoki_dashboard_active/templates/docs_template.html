@@ -1,0 +1,128 @@
+{% extends 'app_base.html' %}
+{% load static %}
+
+{% if user.is_authenticated %}
+    {% block content_wrapper %}
+        <div class="content-wrapper ecoki-background" style="min-height: 288.4px;">
+            <section class="content-header">
+                <div class="container-fluid">
+                    <div class="row mb-2">
+                        <div class="col-sm-6">
+                            <h1>Documentation</h1>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="content">
+                <!-- Documentation Overview Card -->
+                <div class="card card-primary">
+                    <div class="card-header">
+                        <h3 class="card-title">Documentation Overview</h3>
+                        <div class="card-tools">
+                            <button type="button" class="btn btn-tool" data-card-widget="collapse"><i class="fas fa-minus"></i></button>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p>Welcome to ecoKI's documentation portal. Below you'll find a guide to all documentation resources and their locations.</p>
+
+                        <!-- Quick Access Section -->
+                        <div class="row mb-4">
+                            <div class="col-md-4">
+                                <div class="info-box bg-light">
+                                    <span class="info-box-icon bg-info"><i class="fas fa-book"></i></span>
+                                    <div class="info-box-content">
+                                        <h5><a href="https://gitlab.bik.biba.uni-bremen.de/hop/ecoki">GitLab Resources</a></h5>
+                                        <p><a href="https://gitlab.bik.biba.uni-bremen.de/hop/ecoki/-/tree/develop">Source code</a>, <a href="https://gitlab.bik.biba.uni-bremen.de/hop/ecoki/-/blob/develop/README.md">README files</a>, and <a href="/active/docs/index.html">technical documentation</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="info-box bg-light">
+                                    <span class="info-box-icon bg-success"><i class="fas fa-desktop"></i></span>
+                                    <div class="info-box-content">
+                                        <h5><a href="/active/building_blocks_overview/">Dashboard Guides</a></h5>
+                                        <p><a href="/active/building_blocks_overview/">Building blocks</a> and <a href="/active/pipeline_list_overview/">pipeline documentation</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="info-box bg-light">
+                                    <span class="info-box-icon bg-warning"><i class="fas fa-lightbulb"></i></span>
+                                    <div class="info-box-content">
+                                        <h5><a href="/active/success_stories/">Implementation</a></h5>
+                                        <p><a href="/active/success_stories/">Success stories</a> and efficiency scenarios</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-4">
+                            <h5><i class="fas fa-cogs mr-2"></i>Installation Documentation</h5>
+                            <ul>
+                                <li><a href="https://gitlab.bik.biba.uni-bremen.de/hop/ecoki">Main README in GitLab repository root: Setup instructions and prerequisites</a></li>
+                                <li>Step-by-step installation guide for ecoKI Python module</li>
+                                <li>System requirements and configuration guidelines</li>
+                            </ul>
+
+                            <h5 class="mt-4"><i class="fas fa-cubes mr-2"></i>Building Blocks Documentation</h5>
+                            <ul>
+                                <li>Component-specific README files in <a href="https://gitlab.bik.biba.uni-bremen.de/hop/ecoki/-/tree/develop/ecoki/building_blocks/code_based?ref_type=heads">GitLab folders</a></li>
+                                <li>Overview descriptions in <a href="/active/building_blocks_overview/">Dashboard's building blocks section</a></li>
+                                <li>Technical specifications in <a href="/active/docs/index.html">API documentation</a></li>
+                            </ul>
+
+                            <h5 class="mt-4"><i class="fas fa-project-diagram mr-2"></i>Pipeline Documentation</h5>
+                            <ul>
+                                <li>Configuration details in <a href="https://gitlab.bik.biba.uni-bremen.de/hop/ecoki/-/tree/develop/ecoki/pipelines/ecoki_pipelines?ref_type=heads">settings.json files</a></li>
+                                <li>Pipeline descriptions in <a href="/active/pipeline_list_overview/">Dashboard's pipeline pool</a></li>
+                                <li>Implementation examples in <a href="/active/success_stories/">Success Stories</a> section</li>
+                            </ul>
+
+                            <h5 class="mt-4"><i class="fas fa-play-circle mr-2"></i>Implementation Examples</h5>
+                            <ul>
+                                <li><a href="/active/success_stories/">Success Stories: Real-world implementation cases</a></li>
+                                <li><a href="/active/success_stories/">Energy Efficiency Scenarios: Detailed use cases and results</a></li>
+                                <li>Best practices and optimization guidelines</li>
+                            </ul>
+
+                            <h5 class="mt-4"><i class="fas fa-question-circle mr-2"></i>Guidelines and FAQs</h5>
+                            <ul>
+                                <li>Comprehensive FAQs section covering IT security, data modeling, pipelines, and building blocks</li>
+                                <li>Detailed answers to common questions about database, data connections, and implementation</li>
+                                <li>Best practices and usage guidelines</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Technical Documentation Card -->
+                <div class="card card-warning">
+                    <div class="card-header">
+                        <h3 class="card-title">Technical Documentation</h3>
+                        <div class="card-tools">
+                            <button type="button" class="btn btn-tool" data-card-widget="collapse"><i class="fas fa-minus"></i></button>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="callout callout-info">
+                                    <h5><i class="fas fa-book-open mr-2"></i>API Documentation</h5>
+                                    <p>
+                                        Complete API reference generated with Sphinx, containing detailed documentation of all modules, classes, and functions.
+                                    </p>
+                                    <a href="/active/docs/index.html" class="btn btn-warning">
+                                        <i class="fas fa-external-link-alt mr-2"></i>View API Documentation
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    {% endblock %}
+
+    {% block extra_foot %}
+    {% endblock %}
+{% endif %}

@@ -1,0 +1,122 @@
+Metadata-Version: 2.1
+Name: ecoki
+Version: 0.1.0
+Summary: 
+Author: xwang
+Author-email: xinyu.wang@mailbox.tu-dresden.de
+Requires-Python: >=3.10,<3.11
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: sphinx-copybutton (>=0.5.2,<0.6.0)
+Requires-Dist: sphinxcontrib-spelling (>=8.0.0,<9.0.0)
+Requires-Dist: textwrap3 (>=0.9.2,<0.10.0)
+Requires-Dist: virtualenv (>=20.24.7,<20.25.0)
+Description-Content-Type: text/markdown
+
+# ecoKI
+
+Features
+--------
+
+* ``ecoKI `` is an online platform with the goal of enabling a low-threshold and rapid introduction of AI to increase energy efficiency in production.
+* ``ecoKI `` provides tools, knowledge and infrastructure for the use of digitalization and AI in a user-friendly way.
+* ``ecoKI `` contributes networking opportunities with professionals and AI experts.
+
+
+Installation
+------------
+
+Installation of the ecoKI platform:
+
+* Currently, the ecoKI platform can only be installed/downloaded from the [develop](https://gitlab.bik.biba.uni-bremen.de/hop/ecoki) branch in Gitlab.
+* In addition, Python 3.10 is required. It can be downloaded here: https://www.python.org/downloads/release/python-31010/
+* Graphviz needs to be installed on the system (and needs to be added to "Path" during installation process). It can be downloaded here: https://graphviz.org/download/
+
+Installation of dependencies 
+
+* Install [poetry](https://python-poetry.org/docs/)
+
+* You can skip the following step, if Python 3.10 is your only python installation. In case you have multiple python versions installed, make sure that ``python`` points to the 3.10 version. You can check by just typing ``python`` in your terminal. If this isn't the case alternatively run:
+```bash
+poetry env use [insert path to python 3.10 here]
+```
+* Use ``poetry`` to install dependencies: Open a terminal in the ``root`` ecoki folder and run the following command:
+
+```bash
+poetry install 
+```
+* activate ``poetry`` environment in the terminal:
+```bash
+poetry shell
+```
+
+Now the correct virtual environment is activated.
+
+Using the docker images
+-----------------------
+
+*coming soon, as long as a stable docker image is available.*
+
+
+Usage
+-----------------------
+To run the ecoKI platform, the following three components have to be started from the root directory of the project. You need to open 3 poetry shell terminal windows:
+* ecoKI Dashboard/Frontend:
+```bash
+python ecoki/central_dashboard/app/start_dashboard.py
+```
+* ecoKI Backend:
+```bash
+python ecoki/main.py
+```  
+* ecoKI Pipeline Pool:
+```bash
+python ecoki/pipeline_pool/start_pipeline_pool.py
+```  
+If the ``poetry`` environment is not activated, add ``poetry run`` before each of the above-mentioned command, e.g.:
+```bash
+poetry run python ecoki/central_dashboard/app/start_dashboard.py
+```
+Instead of running the components separately, ecoKI can also be started on different operating systems via shell scripts ``run_ecoki_macos_linux.sh`` and ``run_ecoki_windows.sh`` in the root folder. The port can be changed in the first line of this file:
+```bash
+ports=(20000 5000 5002)
+```
+The order of the ports in the list corresponds to the execution order of the components: ``ecoKI Dashboard/Frontend``, ``ecoKI Backend`` and ``ecoKI Pipeline Pool``. Press ctrl+c to terminate ecoKI platform. After that all used ports are going to be released. 
+
+**Notice!!!**: 
+* If the specified ports re occupied by other processes, this shell script is going to free these ports by killing the corresponding processes.
+* For Windows users, the shell script ``run_ecoki_windows.sh`` should be run in WSL or Git bash. 
+ 
+Remote access
+-----------------------
+By default, the components of the ecoKI plaftform runs on the ``localhost`` with the followint ports:
+* ecoKI Dashboard/Frontend: ``20000``
+* ecoKI Backend: ``5000``
+* ecoKI Pipeline Pool: ``5002``
+
+These components can be deployed on different systems. So to enable remote access, the host addresses and ports are designed to be configurable by the positional parameters:
+* ecoKI Dashboard/Frontend:
+```bash
+python ecoki/central_dashboard/app/start_dashboard.py --host: <host of dashboard> --port <port of dashboard> --shell_host: <host of backend> --shell_port: <port f backend>
+```
+* ecoKI Backend:
+```bash
+python ecoki/main.py --host: <host of backend> --port: <port of backend> --pipeline_pool_host: <host of pipeline pool> --pipeline_pool_port: <port of pipeline pool>
+```  
+* ecoKI Pipeline Pool:
+```bash
+poetry run python ecoki/central_dashboard/app/start_dashboard.py --host: <host of pipeline pool> --port: <port of pipeline pool>
+```
+
+Development and Deployment 
+-------------
+*coming soon*
+
+Documentation
+-------------
+
+*The full documentation for CLI and API is available on: coming soon*
+
+Contributing
+------------
+*coming soon* 

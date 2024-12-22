@@ -1,0 +1,63 @@
+{
+  "name": "RFE",
+  "topology": {
+    "nodes": [
+      {
+            "name": "ecoKI_data_reader",
+            "building_block_module": "ecoki.building_blocks.code_based.data_integration.acquire_data.ecoki_data_reader.ecoki_data_reader",
+            "building_block_class": "EcoKIDataReader",
+            "execution_mode": "local",
+            "settings":{},
+            "visualizer_module": "",
+            "visualizer_class": "",
+            "visualizer_input": {},
+            "interactive_configuration": true
+          },
+          {
+            "name": "data_selector",
+            "building_block_module": "ecoki.building_blocks.code_based.data_integration.preprocess_data.data_selector.data_selector",
+            "building_block_class": "DataSelector",
+            "execution_mode": "local",
+            "settings":{},
+            "visualizer_module": "",
+            "visualizer_class": "",
+            "visualizer_input": {},
+            "interactive_configuration": true
+          },
+      {
+        "name": "rfe",
+        "building_block_module": "ecoki.building_blocks.code_based.modelling.build_and_train_model.recursive_feature_elimination.recursive_feature_elimination",
+        "building_block_class": "RecursiveFeatureElimination",
+        "execution_mode": "local",
+        "settings": {"labels_global": ["components.House.subcomponents.House Appliances.property.value"], "selectEstimator": ["SVR"]},
+        "visualizer_module": "ecoki.building_blocks.code_based.modelling.build_and_train_model.recursive_feature_elimination.recursive_feature_elimination_visualizer",
+        "visualizer_class": "RFEVisualizer",
+        "visualizer_input": {"output_data": "output_data", "output_data_1": "output_data_1", "output_data_2": "output_data_2"},
+        "interactive_configuration": true
+      }
+    ],
+    "connections": [
+      {"name": "1", "from_node": "ecoKI_data_reader", "from_port": "output_data", "to_node": "data_selector", "to_port": "input_data"},
+      {"name": "2", "from_node": "data_selector", "from_port": "output_data", "to_node": "rfe", "to_port": "input_data"}
+    ]
+  },
+  "execution_mode": "local",
+  "metadata": {
+    "short_description": "Performs recursive feature elimination to identify and select the most important features",
+    "description": "This pipeline employs recursive feature elimination (RFE) to enhance the feature selection process in machine learning models. RFE is a systematic approach that iteratively removes the least significant features based on a chosen estimator, thereby refining the dataset to retain only the most influential features. This technique is particularly advantageous in contexts such as improving energy efficiency in manufacturing, where identifying key features impacting energy consumption is essential. Users can specify the machine learning model for RFE, as well as the features and labels to be evaluated. ",
+    "category": ["Process Assessment", "Modelling"],
+    "inputs": {
+      "dataset": {
+        "value range": "Tabular dataset as a pandas DataFrame",
+        "default value": "",
+        "intended use": "Feature selection using RFE"
+      }
+    },
+    "outputs": {
+      "expected_results": "The expected results include a refined dataset with selected features ranked by importance and a model trained on these features, providing insights into feature significance.",
+      "Output Format": "Html"
+    },
+    "example": "",
+    "version": "0.0.1"
+  }
+}

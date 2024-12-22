@@ -1,0 +1,39 @@
+{
+  "opcua": {
+    "server_url": "opc.tcp://10.4.51.70:4840",
+    "nodes": {
+      "0": {
+        "name_space": 6,
+        "index": "Arp.Plc.Eclr/AnaView_PI3014.V"
+      },
+      "1": {
+        "name_space": 6,
+        "index": "Arp.Plc.Eclr/AnaView_PI3015.V"
+      },
+      "2": {
+        "name_space": 6,
+        "index": "Arp.Plc.Eclr/AnaView_AI3024.V"
+      },
+      "3": {
+        "name_space": 6,
+        "index": "Arp.Plc.Eclr/AnaView_TI3024.V"
+      },
+      "4": {
+        "name_space": 6,
+        "index": "Arp.Plc.Eclr/AnaView_FI3025.V"
+      },
+      "5": {
+        "name_space": 6,
+        "index": "Arp.Plc.Eclr/AnaVlv_VC3112.Pos"
+      },
+      "6": {
+        "name_space": 6,
+        "index": "Arp.Plc.Eclr/AnaView_PI3017.V"
+      }
+    },
+    "database": {
+    },
+    "plantID": "",
+    "parameters": {"mode": "num", "param": 1, "interval": 1}
+  }
+}

@@ -1,0 +1,351 @@
+{
+  "name": "Run_Parameter_Optimisation_Time_Series_Wrapper",
+  "topology": {
+    "nodes": [
+      {
+        "name": "ecoKI_data_reader",
+        "building_block_module": "ecoki.building_blocks.code_based.data_integration.acquire_data.ecoki_data_reader.ecoki_data_reader",
+        "building_block_class": "EcoKIDataReader",
+        "execution_mode": "local",
+        "settings": {
+          "data_file_path": "",
+          "index_name": null,
+          "data_reader": ""
+        },
+        "visualizer_module": "",
+        "visualizer_class": "",
+        "interactive_configuration": true,
+        "visualizer_input": {},
+        "description": "ecoKI data reader set",
+        "category": "",
+        "visualization_endpoint": "",
+        "interactive_gui_endpoint": "127.0.0.1:27502",
+        "execution_status": 1,
+        "ports": [
+          {
+            "name": "output_data",
+            "category": "outlet",
+            "data_type": "DataFrame",
+            "allowed_data_types": []
+          }
+        ]
+      },
+      {
+        "name": "data_selector",
+        "building_block_module": "ecoki.building_blocks.code_based.data_integration.preprocess_data.data_selector.data_selector",
+        "building_block_class": "DataSelector",
+        "execution_mode": "local",
+        "settings": {
+          "columns": {},
+          "selected_columns": []
+        },
+        "visualizer_module": "",
+        "visualizer_class": "",
+        "interactive_configuration": true,
+        "visualizer_input": {},
+        "description": "With this building block, the user can select and rename the column of Dataframe.",
+        "category": "preprocess_data",
+        "visualization_endpoint": "",
+        "interactive_gui_endpoint": "127.0.0.1:27503",
+        "execution_status": 1,
+        "ports": [
+          {
+            "name": "input_data",
+            "category": "inlet",
+            "data_type": "DataFrame",
+            "allowed_data_types": []
+          },
+          {
+            "name": "output_data",
+            "category": "outlet",
+            "data_type": "DataFrame",
+            "allowed_data_types": []
+          }
+        ]
+      },
+      {
+        "name": "Train-Testdatensatz Generator",
+        "building_block_module": "ecoki.building_blocks.code_based.modelling.build_and_train_model.split_traintest_label.split_traintest_label",
+        "building_block_class": "SplitTrainTestLabel",
+        "execution_mode": "local",
+        "settings": {
+          "selected_columns": [],
+          "selected_columns_label": [],
+          "shuffle": false
+        },
+        "visualizer_module": "",
+        "visualizer_class": "",
+        "interactive_configuration": true,
+        "visualizer_input": {},
+        "description": "Split the input dataset (pre-processed) into Train and test datasets (10'%' size of the original) for further training and prediction.",
+        "category": "Transformer",
+        "visualization_endpoint": "",
+        "interactive_gui_endpoint": "127.0.0.1:27504",
+        "execution_status": 1,
+        "ports": [
+          {
+            "name": "input_data",
+            "category": "inlet",
+            "data_type": "DataFrame",
+            "allowed_data_types": []
+          },
+          {
+            "name": "output_data",
+            "category": "outlet",
+            "data_type": "list",
+            "allowed_data_types": []
+          }
+        ]
+      },
+      {
+        "name": "Time Series Wrapper",
+        "building_block_module": "ecoki.building_blocks.code_based.data_integration.preprocess_data.time_series_wrapper.time_series_wrapper",
+        "building_block_class": "TimeSeriesWrapper",
+        "execution_mode": "local",
+        "settings": {
+          "feature_aggregations": {},
+          "label_aggregations": {},
+          "create_inference_wrapper_template": true,
+          "create_inference_wrapper": true,
+          "wrapped_inference_pipeline": "Inference_Neural_Network_Multi_custom"
+        },
+        "visualizer_module": "",
+        "visualizer_class": "",
+        "interactive_configuration": true,
+        "visualizer_input": {},
+        "description": "This building block can aggregate time series of a feature to a single feature (mean or median)",
+        "category": "Transformer",
+        "visualization_endpoint": "",
+        "interactive_gui_endpoint": "",
+        "execution_status": 1,
+        "ports": [
+          {
+            "name": "input_data",
+            "category": "inlet",
+            "data_type": "list",
+            "allowed_data_types": []
+          },
+          {
+            "name": "output_data",
+            "category": "outlet",
+            "data_type": "list",
+            "allowed_data_types": []
+          }
+        ]
+      },
+      {
+        "name": "Prozessparameter Optimierer",
+        "building_block_module": "ecoki.building_blocks.code_based.optimization.run_optimization.process_parameter_optimizer_test_ml.process_parameter_optimizer",
+        "building_block_class": "ProcessParameterOptimizer",
+        "execution_mode": "local",
+        "settings": {
+          "optimisation_parameters": {},
+          "objective_function": {
+            "optimization_target": "",
+            "boundary_conditions": {}
+          },
+          "optimisation_population_size": 200,
+          "optimisation_max_iterations": 10,
+          "optimisation_neighbours": 10,
+          "ball_tree_leaf_size": 100,
+          "number_of_test_data_optimisations": 5,
+          "prediction_pipeline_name": ""
+        },
+        "visualizer_module": "ecoki.building_blocks.code_based.optimization.run_optimization.process_parameter_optimizer.train_and_predict_lin_reg_visualizer",
+        "visualizer_class": "TrainAndPredictLinRegVisualizer",
+        "interactive_configuration": true,
+        "visualizer_input": {
+          "input_data": "output_data"
+        },
+        "description": "Dieser Baustein f\u00fchrt eine Black-Box-Optimierung auf Basis eines maschinell erlernten Modells durch. Die Optimierungsfunktion wird basierend auf den Augangs-Labels des verwendeten Modells definiert. Alle Einstellungen k\u00f6nnen in den Pipeline-Settings vorgenommen werden. Bei diesem Baustein handelt es sich um eine statische Analyse. Dabei wird f\u00fcr die ersten 100 Beispiele des Trainingsdatensatzes jeweils eine Optimierung der festgelegten Prozessparameter innerhalb definierter Grenzen vorgenommen. Als Ergebnis sind in folgender Visualisierung sowohl die originalen als auch die optimierten ('_optimized') Prozessparameter aufgelistet. Au\u00dferdem sind f\u00fcr beide F\u00e4lle die Vorhersagen des Modells f\u00fcr die Ausgangs-Labels dargestellt. Zuletzt ist auch das Rating-verf\u00fcgbar, nach dem der Black-Box-Optimierer die Optimierung der Prozessparameter vorgenommen hat. In der Visualisierung k\u00f6nnen sowohl die Werte geplotte werden als auch unter 'Descriptive Statistics' die KPIs wie beispielsweise der Mittelwert der optimierten Labels eingesehen und verglichen weren. Mehrere Spalten k\u00f6nnen durch das Gedr\u00fcckt-Halten von 'Strg' ausgew\u00e4hlt werden",
+        "category": "Transformer",
+        "visualization_endpoint": "127.0.0.1:27500",
+        "interactive_gui_endpoint": "127.0.0.1:27505",
+        "execution_status": 1,
+        "ports": [
+          {
+            "name": "input_data",
+            "category": "inlet",
+            "data_type": "object",
+            "allowed_data_types": []
+          },
+          {
+            "name": "output_data",
+            "category": "outlet",
+            "data_type": "object",
+            "allowed_data_types": []
+          },
+          {
+            "name": "output_data_split_train_test",
+            "category": "outlet",
+            "data_type": "object",
+            "allowed_data_types": []
+          },
+          {
+            "name": "output_data_settings",
+            "category": "outlet",
+            "data_type": "object",
+            "allowed_data_types": []
+          }
+        ]
+      },
+      {
+        "name": "Optimierung_2D_Visualisierer",
+        "building_block_module": "ecoki.building_blocks.code_based.optimization.interpret_results.optimization_2d_visualizer.optimization_2d_visualizer",
+        "building_block_class": "Optimization2DVisualizer",
+        "execution_mode": "local",
+        "settings": {},
+        "visualizer_module": "ecoki.building_blocks.code_based.optimization.interpret_results.optimization_2d_visualizer.optimization_2d_visualizer_visualizer",
+        "visualizer_class": "Optimization2DVisualizerVisualizer",
+        "interactive_configuration": false,
+        "visualizer_input": [
+          "input_data_split_train_test",
+          "input_data",
+          "input_data_settings",
+          "pp_manager"
+        ],
+        "description": "Dieser Baustein zeigt einen interaktiven 2D-Plot, der f\u00fcr die zu optimierenden Parameter die Vorhersage des Modells f\u00fcr die Labels und das Rating angibt. Auf diese Weise kann dem Nutzer geholfen werden, die Entscheidung des Optimierungsalgorithmus zur Anpassung der Prozessparameter nachzuvollziehen. Auf die X- und Y-Achse des Plots k\u00f6nnen die zu optimierenden Prozessparameter gesetzt werden. Bei mehr als zwei Prozessparametern k\u00f6nnen somit unterschiedliche 2D-Kombinationen erzeugt werden. \u00dcber 'Output_Name' kann das Label des Modells gew\u00e4hlt werden, f\u00fcr das der Nutzer eine farblich gekennzeichnete Kontur geplottet haben m\u00f6chte. Hier stehen alle Ausg\u00e4nge des Modells sowie das Rating des Optimierers entstanden durch die Optimierungsfunktion zur Auswahl. \u00dcber den 'Testdaten_Index' kann das Sample des Testdatensatzes ausgew\u00e4hlt werden, f\u00fcr das der Plot erstellt wird. Au\u00dferdem sind sowohl die originale Parameterkombination des Testdatensatzes (wei\u00df) als auch der optimierte Parametervorschlag (rot) dargestellt. Au\u00dferdem ist es m\u00f6glich, \u00fcber den Button 'Zeige_Trainingsdatensatz_Kombinationen' alle vorkommenden Parameterkombinationen des Trainingsdatensatzes anzuzeigen. Denn der Optimierer schl\u00e4gt nur neue Kombinationen vor, die sich in direkter N\u00e4he zu einer festgelegten Mindestzahl an bekannten Kombinationen befindet. So kann nachvollzogen werden, warum nicht aussichtsreichere Parameterkombinationen im 2D-Raum vorgeschlagen wurden.",
+        "category": "Transformer",
+        "visualization_endpoint": "127.0.0.1:27501",
+        "interactive_gui_endpoint": "",
+        "execution_status": 2,
+        "ports": [
+          {
+            "name": "input_data",
+            "category": "outlet",
+            "data_type": "object",
+            "allowed_data_types": []
+          },
+          {
+            "name": "input_data_split_train_test",
+            "category": "outlet",
+            "data_type": "object",
+            "allowed_data_types": []
+          },
+          {
+            "name": "input_data_settings",
+            "category": "outlet",
+            "data_type": "object",
+            "allowed_data_types": []
+          },
+          {
+            "name": "pp_manager",
+            "category": "outlet",
+            "data_type": "object",
+            "allowed_data_types": []
+          }
+        ]
+      },
+      {
+        "name": "as_timeseries_visualisierer",
+        "building_block_module": "ecoki.building_blocks.code_based.optimization.interpret_results.as_timeseries_visualizer.as_timeseries_visualizer",
+        "building_block_class": "AsTimeseriesVisualizer",
+        "execution_mode": "local",
+        "settings": {
+          "regex_pattern":"(.*)(T[\\+-]\\d+-)(.*)"
+        },
+        "visualizer_module": "ecoki.building_blocks.code_based.optimization.interpret_results.as_timeseries_visualizer.as_timeseries_visualizer_visualizer",
+        "visualizer_class": "AsTimeseriesVisualizerVisualizer",
+        "interactive_configuration": true,
+        "visualizer_input": [
+          "output_data",
+          "regex_pattern"
+        ]
+      }
+    ],
+    "connections": [
+      {
+        "name": "1",
+        "from_node": "ecoKI_data_reader",
+        "from_port": "output_data",
+        "to_node": "data_selector",
+        "to_port": "input_data"
+      },
+      {
+        "name": "2",
+        "from_node": "data_selector",
+        "from_port": "output_data",
+        "to_node": "Train-Testdatensatz Generator",
+        "to_port": "input_data"
+      },
+      {
+        "name": "3",
+        "from_node": "Train-Testdatensatz Generator",
+        "from_port": "output_data",
+        "to_node": "Time Series Wrapper",
+        "to_port": "input_data"
+      },
+      {
+        "name": "4",
+        "from_node": "Time Series Wrapper",
+        "from_port": "output_data",
+        "to_node": "Prozessparameter Optimierer",
+        "to_port": "input_data"
+      },
+      {
+        "name": "5",
+        "from_node": "Prozessparameter Optimierer",
+        "from_port": "output_data",
+        "to_node": "Optimierung_2D_Visualisierer",
+        "to_port": "input_data"
+      },
+      {
+        "name": "6",
+        "from_node": "Prozessparameter Optimierer",
+        "from_port": "output_data_split_train_test",
+        "to_node": "Optimierung_2D_Visualisierer",
+        "to_port": "input_data_split_train_test"
+      },
+      {
+        "name": "7",
+        "from_node": "Prozessparameter Optimierer",
+        "from_port": "output_data_settings",
+        "to_node": "Optimierung_2D_Visualisierer",
+        "to_port": "input_data_settings"
+      },
+      {
+        "name": "8",
+        "from_node": "Prozessparameter Optimierer",
+        "from_port": "output_data_unwrapped",
+        "to_node": "as_timeseries_visualisierer",
+        "to_port": "input_data"
+      }
+    ]
+  },
+  "execution_mode": "local",
+  "metadata": {
+    "short_description": "Diese Pipeline lädt ein trainiertes Zeitreihen-Modell und führt für einen Testdatensatz eine Optimierung der Prozessparameter durch.",
+    "description": "Diese Pipeline l\u00c3\u00a4dt ein trainiertes Zeitreihen-Modell und f\u00c3\u00bchrt f\u00c3\u00bcr einen Testdatensatz eine Optimierung der Prozessparameter durch. Hierbei handelt es sich um eine statische Analyse f\u00c3\u00bcr einen bestehenden Datensatz.",    "category": [
+      "Modelling",
+      "Optimization"
+    ],
+    "inputs": {
+      "dataset": {
+          "value range": "Time Series dataset containing the features and labels that are required by the used model and process paramaters to optimize",
+          "default value": "",
+          "intended use": "an optimisation is calculated for the parameters of each dataset instance"
+        },
+      "model inference pipeline": {
+          "value range": "The inference model pipeline",
+          "default value": "",
+          "intended use": "calculate the model predictions"
+        }
+    },
+    "outputs": {
+      "expected_results": "optimized process paramaters and the predictions amde by the model for these parameters",
+      "Output Format": "plot"
+    },
+    "parameters": {
+      "parameter_name": "",
+      "value_range": "",
+      "default_value": "",
+      "intended_use": ""
+    },
+    "version": "0.0.1",
+    "required_information": {
+      "success stories": "",
+      "problem definitions": ""
+    }
+  },
+  "execution_status": -1
+}

@@ -1,0 +1,192 @@
+{
+  "name": "Run_Parameter_Optimisation_Test_ML_chocolate",
+  "topology": {
+    "nodes": [
+      {
+        "name": "Lokaler Data Reader",
+        "building_block_module": "ecoki.building_blocks.code_based.data_integration.acquire_data.ecoki_data_reader.ecoki_data_reader",
+        "building_block_class": "EcoKIDataReader",
+        "execution_mode": "local",
+        "settings":{},
+        "visualizer_module": "",
+        "visualizer_class": "",
+        "visualizer_input": {},
+        "interactive_configuration": true
+        },
+          {
+            "name": "data_selector",
+            "building_block_module": "ecoki.building_blocks.code_based.data_integration.preprocess_data.data_selector.data_selector",
+            "building_block_class": "DataSelector",
+            "execution_mode": "local",
+            "settings":{},
+            "visualizer_module": "",
+            "visualizer_class": "",
+            "visualizer_input": {},
+            "interactive_configuration": true
+          },
+      {
+        "name": "Train-Testdatensatz Generator",
+        "building_block_module": "ecoki.building_blocks.code_based.modelling.build_and_train_model.split_traintest_label.split_traintest_label",
+        "building_block_class": "SplitTrainTestLabel",
+        "execution_mode": "local",
+        "settings": {
+          "label_column": [
+            "Totals Energy",
+            "Totals Energy per Unit Process"
+          ]
+        },
+        "visualizer_module": "",
+        "visualizer_class": "",
+        "interactive_configuration": true,
+        "visualizer_input": {},
+        "interactive_gui_endpoint": "",
+        "execution_status": -1
+      },
+      {
+        "name": "Prozessparameter Optimierer",
+        "building_block_module": "ecoki.building_blocks.code_based.optimization.run_optimization.process_parameter_optimizer.process_parameter_optimizer",
+        "building_block_class": "ProcessParameterOptimizer",
+        "execution_mode": "local",
+        "settings": {
+          "optimisation_parameters": {
+            "Machine-Tempering1 Temperature": {
+              "left_bound": 0.987,
+              "right_bound": 1.01,
+              "exploration_radius": 0.005,
+              "resolution": 0.0001
+            },
+            "Machine-Tempering1 Delaytime": {
+              "left_bound": 2.74,
+              "right_bound": 3.81,
+              "exploration_radius": 0.1,
+              "resolution": 0.01
+            }
+          },
+          "objective_function": {
+            "optimization_target": "Totals Energy per Unit Process",
+            "boundary_conditions": {
+              "condition_0": {
+                "label_name": "Totals Energy",
+                "operator": "greater",
+                "boundary": 6
+              }
+            }
+          },
+          "optimisation_population_size": 500,
+          "optimisation_max_iterations": 10,
+          "optimisation_neighbours": 1,
+          "ball_tree_leaf_size": 100,
+          "number_of_test_data_optimisations": 15,
+          "prediction_pipeline_name": "inner_loop"
+        },
+        "visualizer_module": "ecoki.building_blocks.code_based.optimization.run_optimization.process_parameter_optimizer.train_and_predict_lin_reg_visualizer",
+        "visualizer_class": "TrainAndPredictLinRegVisualizer",
+        "interactive_configuration": true,
+        "visualizer_input": [
+          "output_data"
+        ],
+        "interactive_gui_endpoint": "",
+        "execution_status": -1
+      },
+      {
+        "name": "Optimierung_2D_Visualisierer",
+        "building_block_module": "ecoki.building_blocks.code_based.optimization.interpret_results.optimization_2d_visualizer.optimization_2d_visualizer",
+        "building_block_class": "Optimization2DVisualizer",
+        "execution_mode": "local",
+        "settings": {},
+        "visualizer_module": "ecoki.building_blocks.code_based.optimization.interpret_results.optimization_2d_visualizer.optimization_2d_visualizer_visualizer",
+        "visualizer_class": "Optimization2DVisualizerVisualizer",
+        "interactive_configuration": false,
+        "visualizer_input": [
+          "input_data_split_train_test",
+          "input_data",
+          "input_data_settings",
+          "model"
+        ],
+        "interactive_gui_endpoint": "",
+        "execution_status": -1
+      }
+    ],
+    "connections": [
+      {
+        "name": "1",
+        "from_node": "Lokaler Data Reader",
+        "from_port": "output_data",
+        "to_node": "data_selector",
+        "to_port": "input_data"
+      },
+      {
+        "name": "2",
+        "from_node": "data_selector",
+        "from_port": "output_data",
+        "to_node": "Train-Testdatensatz Generator",
+        "to_port": "input_data"
+      },
+      {
+        "name": "3",
+        "from_node": "Train-Testdatensatz Generator",
+        "from_port": "output_data",
+        "to_node": "Prozessparameter Optimierer",
+        "to_port": "input_data"
+      },
+      {
+        "name": "4",
+        "from_node": "Prozessparameter Optimierer",
+        "from_port": "output_data",
+        "to_node": "Optimierung_2D_Visualisierer",
+        "to_port": "input_data"
+      },
+      {
+        "name": "5",
+        "from_node": "Prozessparameter Optimierer",
+        "from_port": "output_data_split_train_test",
+        "to_node": "Optimierung_2D_Visualisierer",
+        "to_port": "input_data_split_train_test"
+      },
+      {
+        "name": "6",
+        "from_node": "Prozessparameter Optimierer",
+        "from_port": "output_data_settings",
+        "to_node": "Optimierung_2D_Visualisierer",
+        "to_port": "input_data_settings"
+      }
+    ]
+  },
+  "execution_mode": "local",
+  "metadata": {
+    "short_description": "Diese Pipeline lädt ein trainiertes Modell und füchrt für einen Testdatensatz eine Optimierung der Prozessparameter durch.",
+    "description": "Diese Pipeline lädt ein trainiertes Modell und führt für einen Testdatensatz eine Optimierung der Prozessparameter durch. Hierbei handelt es sich um eine statische Analyse für einen bestehenden Datensatz.\n [http://localhost:20000/active/building_blocks_overview/Optimization 2D Visualizer/](http://localhost:20000/active/building_blocks_overview/Optimization 2D Visualizer/)\n [http://localhost:20000/active/building_blocks_overview/Process Parameter Optimizer/](http://localhost:20000/active/building_blocks_overview/Process Parameter Optimizer/)",
+    "category": [
+      "Modelling",
+      "Optimization"
+    ],
+    "inputs": {
+      "dataset": {
+          "value range": "Time Series dataset containing the features and labels that are required by the used model and process paramaters to optimize",
+          "default value": "",
+          "intended use": "an optimisation is calculated for the parameters of each dataset instance"
+        },
+      "model inference pipeline": {
+          "value range": "The inference model pipeline",
+          "default value": "",
+          "intended use": "calculate the model predictions"
+        }
+    },
+    "outputs": {
+      "expected_results": "optimized process paramaters and the predictions amde by the model for these parameters",
+      "Output Format": "plot"
+    },
+    "parameters": {
+      "parameter_name": "",
+      "value_range": "",
+      "default_value": "",
+      "intended_use": ""
+    },
+    "version": "",
+    "required_information": {
+      "success stories": "",
+      "problem definitions": ""
+    }
+  }
+
+}

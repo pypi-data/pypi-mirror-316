@@ -1,0 +1,95 @@
+{% extends 'adminlte/lib/_main_sidebar.html' %}
+{% block logo %}
+<a href="/" class="brand-link">
+    <img src="/static/ecoki/img/ecoki_300x300.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+    <span class="brand-text font-weight-light">ecoKI-App</span>
+</a>
+{% endblock %}
+
+{% block user_panel %}
+{% endblock %}
+
+{% block nav_links %}
+    {% if user.is_authenticated %}
+    <li class="nav-item has-treeview">
+        <a href="#" class="nav-link">
+          <i class="nav-icon fas fa-sitemap fa-spin"></i>
+          <p>
+            Active Pipelines
+            <i class="fas fa-angle-left right"></i>
+          </p>
+        </a>
+        <ul class="nav nav-treeview">
+            {% for pipeline in all_pipelines %}
+                <li class="nav-item">
+                    <a href="/active/pipeline/{{ pipeline }}/0/" class="nav-link">
+                      <i class="fas fa-user-chart nav-icon"></i>
+                      <p>{{ pipeline }}</p>
+                    </a>
+                </li>
+            {% endfor %}
+        </ul>
+    </li>
+
+    <li class="nav-item">
+        <a href="/active/faq/" class="nav-link">
+            <i class="fas fa-book nav-icon"></i>
+            <p>Guidelines and FAQs</p>
+        </a>
+    </li>
+
+    <li class="nav-item">
+        <a href="/active/success_stories/" class="nav-link">
+            <i class="fas fa-glass-cheers nav-icon"></i>
+            <p>Success Stories</p>
+        </a>
+    </li>
+
+    <li class="nav-item">
+        <a href="/active/building_blocks_overview/" class="nav-link">
+            <i class="fas fa-bars nav-icon"></i>
+            <p>Building Blocks</p>
+        </a>
+    </li>
+   
+    <li class="nav-item has-treeview">
+        <a href="/active/pipeline_list_overview/" class="nav-link">
+          <i class="nav-icon fas fa-sitemap"></i>
+          <p>
+            Pipelines
+          </p>
+        </a>
+    </li>
+
+    <li class="nav-item has-treeview">
+        <a href="/active/energy_overview/" class="nav-link">
+          <i class="nav-icon fas fa-leaf fa-spin"></i>
+          <p>
+            Energy Efficiency Scenarios
+          </p>
+        </a>
+    </li>
+
+    <!-- Add Documentation Link Here -->
+    <li class="nav-item">
+        <a href="/active/docs/" class="nav-link">
+            <i class="fas fa-book nav-icon"></i>
+            <p>Documentation</p>
+        </a>
+    </li>
+
+    <li class="nav-item">
+        <a href="/logout/" class="nav-link">
+            <i class="fas fa-user nav-icon"></i>
+            <p>Logout</p>
+        </a>
+    </li>
+    {% else %}
+        <li class="nav-item">
+            <a href="/login/" class="nav-link">
+              <i class="far fa-user nav-icon"></i>
+              <p>Login</p>
+            </a>
+        </li>
+    {% endif %}
+{% endblock nav_links %}

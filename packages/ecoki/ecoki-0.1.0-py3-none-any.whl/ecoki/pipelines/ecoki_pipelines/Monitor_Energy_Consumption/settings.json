@@ -1,0 +1,51 @@
+{
+    "name": "Monitor_Energy_Consumption",
+    "topology": {
+        "nodes": [
+          {
+            "name": "ecoKI_data_reader",
+            "building_block_module": "ecoki.building_blocks.code_based.data_integration.acquire_data.ecoki_data_reader.ecoki_data_reader",
+            "building_block_class": "EcoKIDataReader",
+            "execution_mode": "local",
+            "settings":{},
+            "visualizer_module": "",
+            "visualizer_class": "",
+            "visualizer_input": {},
+            "interactive_configuration": true
+          },
+          {
+            "name": "data_selector",
+            "building_block_module": "ecoki.building_blocks.code_based.data_integration.preprocess_data.data_selector.data_selector",
+            "building_block_class": "DataSelector",
+            "execution_mode": "local",
+            "settings": {},
+            "visualizer_module": "ecoki.building_blocks.code_based.data_integration.identify_and_understand_data.energy_data_monitoring.energy_data_monitoring",
+            "visualizer_class": "EnergyDataVisualizer",
+            "visualizer_input": {"input_data": "output_data"},
+            "interactive_configuration": true
+          }
+        ],
+        "connections": [
+          {"name": "1", "from_node": "ecoKI_data_reader", "from_port": "output_data", "to_node": "data_selector", "to_port":  "input_data"}
+        ]
+      },
+  "execution_mode": "local",
+  "metadata": {
+    "short_description": "Reads the Appliances dataset from a local csv file and displays energy data in an interactive dashboard.",
+    "description": "This pipeline reads the Appliances dataset from a local csv file (example_2_household_energy.csv in our dataverse) and displays energy consumption for a household's appliances and lights in an interactive dashboard.\nEnergy columns are displayed in a line plot as Wh. The user can select the granularity (default, hourly, daily, weekly, monthly or yearly), as well as the time interval, they want to display energy consumption over.\nThe interactive dashboard also offers the possibility to display the total energy consumption (appliances + lights).",
+    "category": ["Process Assessment", "Data Integration"],
+    "inputs": {
+      "dataset": {
+          "value range": "Tabular dataset as a pandas DataFrame",
+          "default value": "",
+          "intended use": "Energy dataset to visualize"
+        }
+    },
+    "outputs": {
+      "expected_results": "Energy columns visualized in an interactive Panel dashboard",
+      "Output Format": "Html"
+    },
+    "example": "In this example, the user should select the 'Appliances' and 'lights' columns when prompted to.",
+    "version": "0.0.1"
+  }
+}
