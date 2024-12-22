@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.rst
+pyproject.toml
+src/antropy/__init__.py
+src/antropy/entropy.py
+src/antropy/fractal.py
+src/antropy/utils.py
+src/antropy.egg-info/PKG-INFO
+src/antropy.egg-info/SOURCES.txt
+src/antropy.egg-info/dependency_links.txt
+src/antropy.egg-info/requires.txt
+src/antropy.egg-info/top_level.txt
+tests/test_entropy.py
+tests/test_fractal.py

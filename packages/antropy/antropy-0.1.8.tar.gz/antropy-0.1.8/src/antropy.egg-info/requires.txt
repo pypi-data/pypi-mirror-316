@@ -1,0 +1,17 @@
+numpy
+scipy
+scikit-learn
+numba>=0.57
+stochastic
+
+[docs]
+sphinx>7.0.0
+numpydoc
+sphinx-copybutton
+sphinx-design
+
+[test]
+pytest>=6
+pytest-cov
+coverage[toml]>=5.3
+ruff
