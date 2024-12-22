@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: feazdata
+Version: 0.0.2
+Summary: Data sets for Feature Enginering A-Z
+Home-page: https://github.com/emilhvitfeldt/feazdata
+Author: Emil Hvitfeldt
+Author-email: emil.h.hvitfeldt@gmail.com
+License: MIT
+Keywords: template,packaging
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pyyaml
+Provides-Extra: dev
+Requires-Dist: importlib-resources; extra == "dev"
+Requires-Dist: pydata-sphinx-theme; extra == "dev"
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: pytest-dotenv; extra == "dev"
+
+
+# feazdata
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+The goal of feazdata is to provide data sets for examples in "Feature Enginering A-Z"
