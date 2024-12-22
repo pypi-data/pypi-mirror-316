@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: fastapi-payme
+Version: 0.0.1
+Summary: A FastAPI library for Payme integration
+Home-page: https://github.com/KarimovMurodilla/fastapi-payme.git
+Author: Karimov Murodilla
+Author-email: karimovmurodilla15@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+License-File: LICENCE
+Requires-Dist: fastapi
+Requires-Dist: uvicorn
+
