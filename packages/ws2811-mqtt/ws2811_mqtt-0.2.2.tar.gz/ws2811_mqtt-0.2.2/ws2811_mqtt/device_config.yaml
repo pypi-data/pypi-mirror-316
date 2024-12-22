@@ -1,0 +1,466 @@
+---
+dev:
+  ids: ws2811_led_strip_50
+  name: WS2811 LED Strip
+  mf: LED Strip Manufacturer
+  mdl: WS2811
+  sw: '1.0'
+  sn: ws2811_sn_0001
+  hw: rev1
+o:
+  name: led_controller
+  sw: '3.0'
+  url: https://ledsupport.example.com
+cmps:
+  led_1:
+    p: light
+    clrm: "rgb"
+    unique_id: ws2811_led_01
+    rgb_stat_t: "stat/ws2811-1/led_01/rgb"
+    rgb_cmd_t: "cmnd/ws2811-1/led_01/rgb"
+    name: "Led 01"
+    command_topic: "cmnd/ws2811-1/led_01"
+    state_topic: "stat/ws2811-1/led_01"
+  led_2:
+    p: light
+    clrm: "rgb"
+    unique_id: ws2811_led_02
+    rgb_stat_t: "stat/ws2811-1/led_02/rgb"
+    rgb_cmd_t: "cmnd/ws2811-1/led_02/rgb"
+    name: "Led 02"
+    command_topic: "cmnd/ws2811-1/led_02"
+    state_topic: "stat/ws2811-1/led_02"
+  led_3:
+    p: light
+    clrm: "rgb"
+    unique_id: ws2811_led_03
+    rgb_stat_t: "stat/ws2811-1/led_03/rgb"
+    rgb_cmd_t: "cmnd/ws2811-1/led_03/rgb"
+    name: "Led 03"
+    command_topic: "cmnd/ws2811-1/led_03"
+    state_topic: "stat/ws2811-1/led_03"
+  led_4:
+    p: light
+    clrm: "rgb"
+    unique_id: ws2811_led_04
+    rgb_stat_t: "stat/ws2811-1/led_04/rgb"
+    rgb_cmd_t: "cmnd/ws2811-1/led_04/rgb"
+    name: "Led 04"
+    command_topic: "cmnd/ws2811-1/led_04"
+    state_topic: "stat/ws2811-1/led_04"
+  led_5:
+    p: light
+    clrm: "rgb"
+    unique_id: ws2811_led_05
+    rgb_stat_t: "stat/ws2811-1/led_05/rgb"
+    rgb_cmd_t: "cmnd/ws2811-1/led_05/rgb"
+    name: "Led 05"
+    command_topic: "cmnd/ws2811-1/led_05"
+    state_topic: "stat/ws2811-1/led_05"
+  led_6:
+    p: light
+    clrm: "rgb"
+    unique_id: ws2811_led_06
+    rgb_stat_t: "stat/ws2811-1/led_06/rgb"
+    rgb_cmd_t: "cmnd/ws2811-1/led_06/rgb"
+    name: "Led 06"
+    command_topic: "cmnd/ws2811-1/led_06"
+    state_topic: "stat/ws2811-1/led_06"
+  led_7:
+    p: light
+    clrm: "rgb"
+    unique_id: ws2811_led_07
+    rgb_stat_t: "stat/ws2811-1/led_07/rgb"
+    rgb_cmd_t: "cmnd/ws2811-1/led_07/rgb"
+    name: "Led 07"
+    command_topic: "cmnd/ws2811-1/led_07"
+    state_topic: "stat/ws2811-1/led_07"
+  led_8:
+    p: light
+    clrm: "rgb"
+    unique_id: ws2811_led_08
+    rgb_stat_t: "stat/ws2811-1/led_08/rgb"
+    rgb_cmd_t: "cmnd/ws2811-1/led_08/rgb"
+    name: "Led 08"
+    command_topic: "cmnd/ws2811-1/led_08"
+    state_topic: "stat/ws2811-1/led_08"
+  led_9:
+    p: light
+    clrm: "rgb"
+    unique_id: ws2811_led_09
+    rgb_stat_t: "stat/ws2811-1/led_09/rgb"
+    rgb_cmd_t: "cmnd/ws2811-1/led_09/rgb"
+    name: "Led 09"
+    command_topic: "cmnd/ws2811-1/led_09"
+    state_topic: "stat/ws2811-1/led_09"
+  led_10:
+    p: light
+    clrm: "rgb"
+    unique_id: ws2811_led_10
+    rgb_stat_t: "stat/ws2811-1/led_10/rgb"
+    rgb_cmd_t: "cmnd/ws2811-1/led_10/rgb"
+    name: "Led 10"
+    command_topic: "cmnd/ws2811-1/led_10"
+    state_topic: "stat/ws2811-1/led_10"
+  led_11:
+    p: light
+    clrm: "rgb"
+    unique_id: ws2811_led_11
+    rgb_stat_t: "stat/ws2811-1/led_11/rgb"
+    rgb_cmd_t: "cmnd/ws2811-1/led_11/rgb"
+    name: "Led 11"
+    command_topic: "cmnd/ws2811-1/led_11"
+    state_topic: "stat/ws2811-1/led_11"
+  led_12:
+    p: light
+    clrm: "rgb"
+    unique_id: ws2811_led_12
+    rgb_stat_t: "stat/ws2811-1/led_12/rgb"
+    rgb_cmd_t: "cmnd/ws2811-1/led_12/rgb"
+    name: "Led 12"
+    command_topic: "cmnd/ws2811-1/led_12"
+    state_topic: "stat/ws2811-1/led_12"
+  led_13:
+    p: light
+    clrm: "rgb"
+    unique_id: ws2811_led_13
+    rgb_stat_t: "stat/ws2811-1/led_13/rgb"
+    rgb_cmd_t: "cmnd/ws2811-1/led_13/rgb"
+    name: "Led 13"
+    command_topic: "cmnd/ws2811-1/led_13"
+    state_topic: "stat/ws2811-1/led_13"
+  led_14:
+    p: light
+    clrm: "rgb"
+    unique_id: ws2811_led_14
+    rgb_stat_t: "stat/ws2811-1/led_14/rgb"
+    rgb_cmd_t: "cmnd/ws2811-1/led_14/rgb"
+    name: "Led 14"
+    command_topic: "cmnd/ws2811-1/led_14"
+    state_topic: "stat/ws2811-1/led_14"
+  led_15:
+    p: light
+    clrm: "rgb"
+    unique_id: ws2811_led_15
+    rgb_stat_t: "stat/ws2811-1/led_15/rgb"
+    rgb_cmd_t: "cmnd/ws2811-1/led_15/rgb"
+    name: "Led 15"
+    command_topic: "cmnd/ws2811-1/led_15"
+    state_topic: "stat/ws2811-1/led_15"
+  led_16:
+    p: light
+    clrm: "rgb"
+    unique_id: ws2811_led_16
+    rgb_stat_t: "stat/ws2811-1/led_16/rgb"
+    rgb_cmd_t: "cmnd/ws2811-1/led_16/rgb"
+    name: "Led 16"
+    command_topic: "cmnd/ws2811-1/led_16"
+    state_topic: "stat/ws2811-1/led_16"
+  led_17:
+    p: light
+    clrm: "rgb"
+    unique_id: ws2811_led_17
+    rgb_stat_t: "stat/ws2811-1/led_17/rgb"
+    rgb_cmd_t: "cmnd/ws2811-1/led_17/rgb"
+    name: "Led 17"
+    command_topic: "cmnd/ws2811-1/led_17"
+    state_topic: "stat/ws2811-1/led_17"
+  led_18:
+    p: light
+    clrm: "rgb"
+    unique_id: ws2811_led_18
+    rgb_stat_t: "stat/ws2811-1/led_18/rgb"
+    rgb_cmd_t: "cmnd/ws2811-1/led_18/rgb"
+    name: "Led 18"
+    command_topic: "cmnd/ws2811-1/led_18"
+    state_topic: "stat/ws2811-1/led_18"
+  led_19:
+    p: light
+    clrm: "rgb"
+    unique_id: ws2811_led_19
+    rgb_stat_t: "stat/ws2811-1/led_19/rgb"
+    rgb_cmd_t: "cmnd/ws2811-1/led_19/rgb"
+    name: "Led 19"
+    command_topic: "cmnd/ws2811-1/led_19"
+    state_topic: "stat/ws2811-1/led_19"
+  led_20:
+    p: light
+    clrm: "rgb"
+    unique_id: ws2811_led_20
+    rgb_stat_t: "stat/ws2811-1/led_20/rgb"
+    rgb_cmd_t: "cmnd/ws2811-1/led_20/rgb"
+    name: "Led 20"
+    command_topic: "cmnd/ws2811-1/led_20"
+    state_topic: "stat/ws2811-1/led_20"
+  led_21:
+    p: light
+    clrm: "rgb"
+    unique_id: ws2811_led_21
+    rgb_stat_t: "stat/ws2811-1/led_21/rgb"
+    rgb_cmd_t: "cmnd/ws2811-1/led_21/rgb"
+    name: "Led 21"
+    command_topic: "cmnd/ws2811-1/led_21"
+    state_topic: "stat/ws2811-1/led_21"
+  led_22:
+    p: light
+    clrm: "rgb"
+    unique_id: ws2811_led_22
+    rgb_stat_t: "stat/ws2811-1/led_22/rgb"
+    rgb_cmd_t: "cmnd/ws2811-1/led_22/rgb"
+    name: "Led 22"
+    command_topic: "cmnd/ws2811-1/led_22"
+    state_topic: "stat/ws2811-1/led_22"
+  led_23:
+    p: light
+    clrm: "rgb"
+    unique_id: ws2811_led_23
+    rgb_stat_t: "stat/ws2811-1/led_23/rgb"
+    rgb_cmd_t: "cmnd/ws2811-1/led_23/rgb"
+    name: "Led 23"
+    command_topic: "cmnd/ws2811-1/led_23"
+    state_topic: "stat/ws2811-1/led_23"
+  led_24:
+    p: light
+    clrm: "rgb"
+    unique_id: ws2811_led_24
+    rgb_stat_t: "stat/ws2811-1/led_24/rgb"
+    rgb_cmd_t: "cmnd/ws2811-1/led_24/rgb"
+    name: "Led 24"
+    command_topic: "cmnd/ws2811-1/led_24"
+    state_topic: "stat/ws2811-1/led_24"
+  led_25:
+    p: light
+    clrm: "rgb"
+    unique_id: ws2811_led_25
+    rgb_stat_t: "stat/ws2811-1/led_25/rgb"
+    rgb_cmd_t: "cmnd/ws2811-1/led_25/rgb"
+    name: "Led 25"
+    command_topic: "cmnd/ws2811-1/led_25"
+    state_topic: "stat/ws2811-1/led_25"
+  led_26:
+    p: light
+    clrm: "rgb"
+    unique_id: ws2811_led_26
+    rgb_stat_t: "stat/ws2811-1/led_26/rgb"
+    rgb_cmd_t: "cmnd/ws2811-1/led_26/rgb"
+    name: "Led 26"
+    command_topic: "cmnd/ws2811-1/led_26"
+    state_topic: "stat/ws2811-1/led_26"
+  led_27:
+    p: light
+    clrm: "rgb"
+    unique_id: ws2811_led_27
+    rgb_stat_t: "stat/ws2811-1/led_27/rgb"
+    rgb_cmd_t: "cmnd/ws2811-1/led_27/rgb"
+    name: "Led 27"
+    command_topic: "cmnd/ws2811-1/led_27"
+    state_topic: "stat/ws2811-1/led_27"
+  led_28:
+    p: light
+    clrm: "rgb"
+    unique_id: ws2811_led_28
+    rgb_stat_t: "stat/ws2811-1/led_28/rgb"
+    rgb_cmd_t: "cmnd/ws2811-1/led_28/rgb"
+    name: "Led 28"
+    command_topic: "cmnd/ws2811-1/led_28"
+    state_topic: "stat/ws2811-1/led_28"
+  led_29:
+    p: light
+    clrm: "rgb"
+    unique_id: ws2811_led_29
+    rgb_stat_t: "stat/ws2811-1/led_29/rgb"
+    rgb_cmd_t: "cmnd/ws2811-1/led_29/rgb"
+    name: "Led 29"
+    command_topic: "cmnd/ws2811-1/led_29"
+    state_topic: "stat/ws2811-1/led_29"
+  led_30:
+    p: light
+    clrm: "rgb"
+    unique_id: ws2811_led_30
+    rgb_stat_t: "stat/ws2811-1/led_30/rgb"
+    rgb_cmd_t: "cmnd/ws2811-1/led_30/rgb"
+    name: "Led 30"
+    command_topic: "cmnd/ws2811-1/led_30"
+    state_topic: "stat/ws2811-1/led_30"
+  led_31:
+    p: light
+    clrm: "rgb"
+    unique_id: ws2811_led_31
+    rgb_stat_t: "stat/ws2811-1/led_31/rgb"
+    rgb_cmd_t: "cmnd/ws2811-1/led_31/rgb"
+    name: "Led 31"
+    command_topic: "cmnd/ws2811-1/led_31"
+    state_topic: "stat/ws2811-1/led_31"
+  led_32:
+    p: light
+    clrm: "rgb"
+    unique_id: ws2811_led_32
+    rgb_stat_t: "stat/ws2811-1/led_32/rgb"
+    rgb_cmd_t: "cmnd/ws2811-1/led_32/rgb"
+    name: "Led 32"
+    command_topic: "cmnd/ws2811-1/led_32"
+    state_topic: "stat/ws2811-1/led_32"
+  led_33:
+    p: light
+    clrm: "rgb"
+    unique_id: ws2811_led_33
+    rgb_stat_t: "stat/ws2811-1/led_33/rgb"
+    rgb_cmd_t: "cmnd/ws2811-1/led_33/rgb"
+    name: "Led 33"
+    command_topic: "cmnd/ws2811-1/led_33"
+    state_topic: "stat/ws2811-1/led_33"
+  led_34:
+    p: light
+    clrm: "rgb"
+    unique_id: ws2811_led_34
+    rgb_stat_t: "stat/ws2811-1/led_34/rgb"
+    rgb_cmd_t: "cmnd/ws2811-1/led_34/rgb"
+    name: "Led 34"
+    command_topic: "cmnd/ws2811-1/led_34"
+    state_topic: "stat/ws2811-1/led_34"
+  led_35:
+    p: light
+    clrm: "rgb"
+    unique_id: ws2811_led_35
+    rgb_stat_t: "stat/ws2811-1/led_35/rgb"
+    rgb_cmd_t: "cmnd/ws2811-1/led_35/rgb"
+    name: "Led 35"
+    command_topic: "cmnd/ws2811-1/led_35"
+    state_topic: "stat/ws2811-1/led_35"
+  led_36:
+    p: light
+    clrm: "rgb"
+    unique_id: ws2811_led_36
+    rgb_stat_t: "stat/ws2811-1/led_36/rgb"
+    rgb_cmd_t: "cmnd/ws2811-1/led_36/rgb"
+    name: "Led 36"
+    command_topic: "cmnd/ws2811-1/led_36"
+    state_topic: "stat/ws2811-1/led_36"
+  led_37:
+    p: light
+    clrm: "rgb"
+    unique_id: ws2811_led_37
+    rgb_stat_t: "stat/ws2811-1/led_37/rgb"
+    rgb_cmd_t: "cmnd/ws2811-1/led_37/rgb"
+    name: "Led 37"
+    command_topic: "cmnd/ws2811-1/led_37"
+    state_topic: "stat/ws2811-1/led_37"
+  led_38:
+    p: light
+    clrm: "rgb"
+    unique_id: ws2811_led_38
+    rgb_stat_t: "stat/ws2811-1/led_38/rgb"
+    rgb_cmd_t: "cmnd/ws2811-1/led_38/rgb"
+    name: "Led 38"
+    command_topic: "cmnd/ws2811-1/led_38"
+    state_topic: "stat/ws2811-1/led_38"
+  led_39:
+    p: light
+    clrm: "rgb"
+    unique_id: ws2811_led_39
+    rgb_stat_t: "stat/ws2811-1/led_39/rgb"
+    rgb_cmd_t: "cmnd/ws2811-1/led_39/rgb"
+    name: "Led 39"
+    command_topic: "cmnd/ws2811-1/led_39"
+    state_topic: "stat/ws2811-1/led_39"
+  led_40:
+    p: light
+    clrm: "rgb"
+    unique_id: ws2811_led_40
+    rgb_stat_t: "stat/ws2811-1/led_40/rgb"
+    rgb_cmd_t: "cmnd/ws2811-1/led_40/rgb"
+    name: "Led 40"
+    command_topic: "cmnd/ws2811-1/led_40"
+    state_topic: "stat/ws2811-1/led_40"
+  led_41:
+    p: light
+    clrm: "rgb"
+    unique_id: ws2811_led_41
+    rgb_stat_t: "stat/ws2811-1/led_41/rgb"
+    rgb_cmd_t: "cmnd/ws2811-1/led_41/rgb"
+    name: "Led 41"
+    command_topic: "cmnd/ws2811-1/led_41"
+    state_topic: "stat/ws2811-1/led_41"
+  led_42:
+    p: light
+    clrm: "rgb"
+    unique_id: ws2811_led_42
+    rgb_stat_t: "stat/ws2811-1/led_42/rgb"
+    rgb_cmd_t: "cmnd/ws2811-1/led_42/rgb"
+    name: "Led 42"
+    command_topic: "cmnd/ws2811-1/led_42"
+    state_topic: "stat/ws2811-1/led_42"
+  led_43:
+    p: light
+    clrm: "rgb"
+    unique_id: ws2811_led_43
+    rgb_stat_t: "stat/ws2811-1/led_43/rgb"
+    rgb_cmd_t: "cmnd/ws2811-1/led_43/rgb"
+    name: "Led 43"
+    command_topic: "cmnd/ws2811-1/led_43"
+    state_topic: "stat/ws2811-1/led_43"
+  led_44:
+    p: light
+    clrm: "rgb"
+    unique_id: ws2811_led_44
+    rgb_stat_t: "stat/ws2811-1/led_44/rgb"
+    rgb_cmd_t: "cmnd/ws2811-1/led_44/rgb"
+    name: "Led 44"
+    command_topic: "cmnd/ws2811-1/led_44"
+    state_topic: "stat/ws2811-1/led_44"
+  led_45:
+    p: light
+    clrm: "rgb"
+    unique_id: ws2811_led_45
+    rgb_stat_t: "stat/ws2811-1/led_45/rgb"
+    rgb_cmd_t: "cmnd/ws2811-1/led_45/rgb"
+    name: "Led 45"
+    command_topic: "cmnd/ws2811-1/led_45"
+    state_topic: "stat/ws2811-1/led_45"
+  led_46:
+    p: light
+    clrm: "rgb"
+    unique_id: ws2811_led_46
+    rgb_stat_t: "stat/ws2811-1/led_46/rgb"
+    rgb_cmd_t: "cmnd/ws2811-1/led_46/rgb"
+    name: "Led 46"
+    command_topic: "cmnd/ws2811-1/led_46"
+    state_topic: "stat/ws2811-1/led_46"
+  led_47:
+    p: light
+    clrm: "rgb"
+    unique_id: ws2811_led_47
+    rgb_stat_t: "stat/ws2811-1/led_47/rgb"
+    rgb_cmd_t: "cmnd/ws2811-1/led_47/rgb"
+    name: "Led 47"
+    command_topic: "cmnd/ws2811-1/led_47"
+    state_topic: "stat/ws2811-1/led_47"
+  led_48:
+    p: light
+    clrm: "rgb"
+    unique_id: ws2811_led_48
+    rgb_stat_t: "stat/ws2811-1/led_48/rgb"
+    rgb_cmd_t: "cmnd/ws2811-1/led_48/rgb"
+    name: "Led 48"
+    command_topic: "cmnd/ws2811-1/led_48"
+    state_topic: "stat/ws2811-1/led_48"
+  led_49:
+    p: light
+    clrm: "rgb"
+    unique_id: ws2811_led_49
+    rgb_stat_t: "stat/ws2811-1/led_49/rgb"
+    rgb_cmd_t: "cmnd/ws2811-1/led_49/rgb"
+    name: "Led 49"
+    command_topic: "cmnd/ws2811-1/led_49"
+    state_topic: "stat/ws2811-1/led_49"
+  led_50:
+    p: light
+    clrm: "rgb"
+    unique_id: ws2811_led_50
+    rgb_stat_t: "stat/ws2811-1/led_50/rgb"
+    rgb_cmd_t: "cmnd/ws2811-1/led_50/rgb"
+    name: "Led 50"
+    command_topic: "cmnd/ws2811-1/led_50"
+    state_topic: "stat/ws2811-1/led_50"
+state_topic: ws2811_led_strip/state
+qos: 1
