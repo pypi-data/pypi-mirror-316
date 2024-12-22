@@ -1,0 +1,15 @@
+dill
+msgpack
+msgpack_numpy
+numba
+psutil
+scikit-image
+scipy
+
+[all]
+SimpleITK
+itk
+itk-thickness3d
+networkx
+scikit-image
+vtk
