@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+snapgpt/__init__.py
+snapgpt/__main__.py
+snapgpt/cli.py
+snapgpt.egg-info/PKG-INFO
+snapgpt.egg-info/SOURCES.txt
+snapgpt.egg-info/dependency_links.txt
+snapgpt.egg-info/entry_points.txt
+snapgpt.egg-info/requires.txt
+snapgpt.egg-info/top_level.txt
