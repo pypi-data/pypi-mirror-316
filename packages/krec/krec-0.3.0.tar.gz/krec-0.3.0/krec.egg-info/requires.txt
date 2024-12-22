@@ -1,0 +1,6 @@
+colorlogging
+
+[dev]
+black
+isort
+ruff
