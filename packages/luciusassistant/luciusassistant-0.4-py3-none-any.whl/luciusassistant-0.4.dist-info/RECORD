@@ -1,0 +1,10 @@
+luciusassistant/__init__.py,sha256=Y85lDaR1bugHgdx9VAAr-iFSuIw3L-6kNzF0yaX4yww,11214
+luciusassistant/builtin_function_calls.py,sha256=8YUw9TPe-F3NYsJfc_8QcBZx90PU2y5-l5EVXJqfipM,8792
+luciusassistant/function_call.py,sha256=ZrmRdkOtaSt30HTOnvI2hEheOcDTK3FxG0JS9fvTvLY,3267
+luciusassistant/lucius_prompt.md,sha256=OX3P4z-Sh5LxrLSkQ3TWbSmtxiCCp-2IyRzAWN2YREI,3476
+nexus/__init__.py,sha256=m5FEHo0KN9lRxQ7AQmZYkay6zWD1mJL8jrpG_XNu1ZY,980
+luciusassistant-0.4.dist-info/LICENSE,sha256=Ieq174Inu5VEMUCohJubnmYs-xo_BmjArbx7HozDw7w,1093
+luciusassistant-0.4.dist-info/METADATA,sha256=hTvqrSgRoVbLashjABdoouHPdnz57V-TXcAfzZjOIIc,8552
+luciusassistant-0.4.dist-info/WHEEL,sha256=R06PA3UVYHThwHvxuRWMqaGcr-PuniXahwjmQRFMEkY,91
+luciusassistant-0.4.dist-info/top_level.txt,sha256=qyxbH1zt7xCDmaso5u1NhQi2D1bnCKa5xC5bPPLWM28,22
+luciusassistant-0.4.dist-info/RECORD,,

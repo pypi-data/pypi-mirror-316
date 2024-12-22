@@ -1,0 +1,243 @@
+Metadata-Version: 2.1
+Name: luciusassistant
+Version: 0.4
+Summary: An agentic AI assistant built on top of the Llama language model, designed to provide intelligent assistance through a robust function calling system. It offers seamless integration of chat capabilities with file operations and memory management.
+Author: Matthew Sanchez
+Author-email: 
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: chatollama
+
+# Lucius Assistant
+
+[![PyPI version](https://badge.fury.io/py/luciusassistant.svg)](https://badge.fury.io/py/luciusassistant)
+
+**Lucius Assistant** is an agentic AI assistant built on top of the Llama language model, designed to provide intelligent assistance through a robust function calling system. It offers seamless integration of chat capabilities with file operations and memory management.
+
+## Features
+
+- **Intelligent Model Selection**: Automatically selects the most suitable Llama model (3.1, 3.2, or others) with preference for 8b parameter versions
+- **File Operations**: 
+  - Directory listing with safety checks
+  - File reading and writing with path validation
+  - File and folder copying with automatic directory creation
+- **Memory System**:
+  - Store and retrieve text memories with UUID-based identification
+  - Contextual memory search with relevance scoring
+  - Memory management (add, remove, search)
+- **Event-Driven Architecture**:
+  - Real-time streaming text processing
+  - Separate handling of chat and function calls
+  - Automated response generation
+- **Safety Features**:
+  - Path validation to prevent directory traversal
+  - Relative path enforcement
+  - Graceful error handling
+  - Automatic parent directory creation
+
+## Installation
+
+```bash
+pip install luciusassistant
+```
+
+## Requirements
+
+- Python 3.7+
+- ollama
+- chatollama # This is also my python module, I have documentationfor it here https://pypi.org/project/chatollama/
+
+## Usage
+
+### Basic Usage
+
+```python
+from luciusassistant import LuciusAssistant, get_builtin_function_calls
+
+# Initialize Lucius with built-in functions
+lucius = LuciusAssistant()
+# Contains a built-in function to list the current directory and read files
+lucius.set_function_calls(get_builtin_function_calls())
+
+
+def print_response(mode: int, delta: str, text: str):
+    if mode == 0:
+        print("[Lucius]:")
+    elif mode == 1:
+        print(delta, end="", flush=True)
+    elif mode == 2:
+        print("")
+
+
+lucius.engine.stream_event.on(print_response)
+
+# Chat with Lucius
+response = lucius.chat("Hello, can you take a look at the current project?")
+
+```
+
+### File Operations
+
+```python
+from luciusassistant import LuciusAssistant, get_builtin_function_calls
+
+# Initialize with built-in functions
+lucius = LuciusAssistant()
+lucius.set_function_calls(get_builtin_function_calls())
+
+# List directory contents
+lucius.chat("List the contents of the current directory")
+
+# Read a file
+lucius.chat("Read the contents of config.json")
+
+# Write to a file
+lucius.chat("Create a new file named example.txt with 'Hello World' content")
+```
+
+### Memory System
+
+```python
+from luciusassistant import LuciusAssistant, get_builtin_function_calls
+
+# Initialize with built-in functions
+lucius = LuciusAssistant()
+lucius.set_function_calls(get_builtin_function_calls()) # Contains a built-in function to store and retrieve memories
+
+# Store a memory
+lucius.chat("Remember this phone number for support: 1-800-SUPPORT")
+
+# Long conversation later...
+
+# Search memories
+lucius.chat("Find any stored support contact information")
+
+# Lucius finds the support phone number memory
+
+# Remove a memory
+lucius.chat("Remove that memory")
+```
+
+### Creating Custom Functions
+
+You can extend Lucius's capabilities by creating custom functions:
+
+```python
+from luciusassistant import LuciusAssistant, FunctionCall, get_builtin_function_calls
+
+# Create a custom function
+class WeatherFunctionCall(FunctionCall):
+    def __init__(self):
+        super().__init__(
+            name="get_weather",
+            parameters={
+                "city": "Name of the city",
+                "country": "Country code (e.g., US, UK)"
+            },
+            description="Get the current weather for a specified city"
+        )
+
+    def invoke(self, city: str, country: str = "US"):
+        try:
+            # Implement your weather API call here
+            return f"Weather information for {city}, {country}"
+        except Exception as e:
+            return f"Failed to get weather: {str(e)}"
+
+# Initialize Lucius with both built-in and custom functions
+lucius = LuciusAssistant()
+function_calls = get_builtin_function_calls()
+function_calls.append(WeatherFunctionCall())
+lucius.set_function_calls(function_calls) # Very impotant you call this function at the start because this will clear the conversation history
+
+# Use the custom function
+lucius.chat("What's the weather like in San Francisco?")
+```
+
+### Events System
+
+Lucius provides three main events you can subscribe to for monitoring the conversation and function calls:
+
+```python
+from luciusassistant import LuciusAssistant, get_builtin_function_calls
+
+# Initialize Lucius with built-in functions
+lucius = LuciusAssistant()
+lucius.set_function_calls(get_builtin_function_calls())
+
+
+def handle_chat_text(mode: int, delta: str, text: str, switch: bool):
+    # mode: 0=stream start, 1=during stream, 2=stream end
+    # delta: new text generated in this iteration
+    # text: total accumulated text so far
+    # switch: True only when switching from chat to function call mode
+    print(f"Chat text: mode={mode}, delta={delta}, text={text}, switch={switch}")
+
+
+def handle_function_calls(mode: int, delta: str, text: str, switch: bool):
+    # mode: 0=stream start, 1=during stream, 2=stream end
+    # delta: new text generated in this iteration
+    # text: total accumulated text so far
+    # switch: True only when switching from chat to function call mode
+    print(f"Function calls: mode={mode}, delta={delta}, text={text}, switch={switch}")
+
+
+def handle_automated_response(automated_response: str):
+    # automated_response: the response generated by the automated function
+    print(f"Automated response: {automated_response}")
+
+
+# Subscribe to the events
+lucius.chat_text_event.on(handle_chat_text)                     # Triggered for each iteration normal text is generated
+lucius.function_calls_text_event.on(handle_function_calls)      # Triggered for each iteration of function call text is generated
+lucius.automated_response_event.on(handle_automated_response)   # Triggered when function calls are executed and results are returned
+
+# Example chat that will trigger events
+lucius.chat("Hello, can you take a look at the current project?")
+```
+
+The events system allows you to:
+- Monitor the streaming text generation in real-time
+- Track when function calls are being made
+- Handle function results as they come in
+- Build custom logging or response handling systems
+- Create interactive UIs that update in real-time
+
+Each event provides different information:
+1. **chat_text_event**: Streams the normal conversation text
+2. **function_calls_text_event**: Streams function call XML format
+3. **automated_response_event**: Provides function execution results
+
+The `mode` parameter in handlers indicates:
+- `0`: Stream start
+- `1`: During stream
+- `2`: Stream end
+
+The `switch` parameter indicates when Lucius switches between chat and function call modes.
+
+## Architecture
+
+Lucius Assistant is built with a modular architecture:
+
+1. **Core Engine**: Based on chatollama, utilizing Llama models for text generation
+2. **Function Call System**: XML-like format for structured function invocation
+3. **Event System**: Handles streaming, function results, and response generation
+4. **Memory Management**: In-memory storage with UUID-based retrieval
+5. **Safety Layer**: Input validation and path safety checks
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Acknowledgments
+
+- Built on top of the Llama language model
+- Uses chatollama for core functionality
