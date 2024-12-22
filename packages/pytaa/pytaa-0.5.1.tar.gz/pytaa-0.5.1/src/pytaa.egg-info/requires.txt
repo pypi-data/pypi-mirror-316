@@ -1,0 +1,5 @@
+numpy<3,>2.0.1
+pandas<3,>2.0.1
+numba<1,>=0.57.0
+scipy<2,>1.10.1
+yfinance<1,>0.1.0
