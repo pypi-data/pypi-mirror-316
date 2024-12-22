@@ -1,0 +1,99 @@
+Metadata-Version: 2.1
+Name: pycrystalpay
+Version: 0.0.1
+Summary: CrystalPay api wrapper
+Home-page: https://github.com/mrsmori/pycrystalpay
+Author: Lisica
+Author-email: nomail@google.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: httpx==0.28.1
+Requires-Dist: pydantic==2.10.4
+
+# pyCrystalPay
+
+## Install
+
+From Pypi\
+```pip install pycrystalpay```
+
+## Async 
+### Инициализация
+```python
+from pycrystalpay import AsyncCrystalPay, types
+
+
+client = AsyncCrystalPay(
+    auth_login="mylogin",
+    auth_secret="mysecret",
+    wait_cooldown=True # auto wait 5 rps
+)
+```
+### Методы /invoice/
+Создание платежа\
+[/invoice/create](https://docs.crystalpay.io/metody-api/invoice-platezhi/sozdanie-invoisa)
+```python
+payment: types.InvoiceCreate = await client.invoice_create("100","purchase","1")
+
+payment.url # Ссылка для оплаты
+payment.id
+```
+
+Получение информации о платеже по id\
+[/invoice/info](https://docs.crystalpay.io/metody-api/invoice-platezhi/poluchenie-informacii-ob-invoise)
+```python
+
+response: types.InvoiceInfo = await client.invoice_info("id_платежа")
+
+if response.is_payed:
+    ...
+```
+
+
+### Методы /me/
+
+[/me/info](https://docs.crystalpay.io/metody-api/me-kassa/poluchenie-informacii-o-kasse)
+```python
+response: types.MeInfo = await client.me_info()
+```
+
+### Методы /balance/
+[/balance/list](https://docs.crystalpay.io/metody-api/balance-balansy/poluchenie-spiska-balansov)
+```python
+response: types.BalanceList = await client.balance_list(hide_empty=True)
+```
+
+[/balance/get](https://docs.crystalpay.io/metody-api/balance-balansy/poluchenie-spiska-balansov)
+```python
+response: types.BalanceGet = await client.balance_list(method="BITCOIN")
+```
+
+### Методы /method/
+[/method/list](https://docs.crystalpay.io/metody-api/method-metody/poluchenie-spiska-metodov)
+```python
+response: types.MethodList = await client.method_list(compact=True)
+```
+
+[/method/get](https://docs.crystalpay.io/metody-api/method-metody/poluchenie-spiska-metodov)
+```python
+response: types.MethodInfo = await client.method_get(method="BITCOIN")
+```
+
+[/method/edit](https://docs.crystalpay.io/metody-api/method-metody/izmenenie-nastroek-metoda)
+```python
+response: bool = await client.method_edit(method="BITCOIN", enabled=True, extra_commission_percent=0)
+```
+
+### Методы /payoff/
+[/payoff/create](https://docs.crystalpay.io/metody-api/payoff-vyvody/sozdanie-vyvoda)
+```python
+response: types.PayoffCreate = await client.payoff_create(
+        "SBPP2P",
+        "somewallet",
+        100,
+        "amount"
+)
+```
