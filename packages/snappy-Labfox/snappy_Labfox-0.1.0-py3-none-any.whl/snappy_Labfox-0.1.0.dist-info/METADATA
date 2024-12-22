@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: snappy_Labfox
+Version: 0.1.0
+Summary: An snapchat api
+Author-email: Labfox <consockbind@gmail.com>
+Project-URL: Homepage, https://github.com/Labfox/snappy
+Project-URL: Issues, https://github.com/Labfox/snappy/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: selenium
+Requires-Dist: beautifulsoup4
+Requires-Dist: requests
+
+# A snapchat API (webdriver)
+## Features
+### Connect to snapchat
+
+```python
+import snappy
+import selenium.webdriver
+
+snapchat_c = snappy.main.SnapchatCredentials("<your username>", "<your password>")
+
+client = snappy.main.SnapchatClient(selenium.webdriver.Edge(), snapchat_c)
+```
+
+### List conversations
+
+```python
+client.listConversations()
+```
+
+### Get messages list on a conversation
+
+```python
+client.getMessagesBacklog(conversation)
+```
+
+### Send a message to a conversation
+
+```python
+client.sendMessage(conversation, message, cool_down=True)
+```
