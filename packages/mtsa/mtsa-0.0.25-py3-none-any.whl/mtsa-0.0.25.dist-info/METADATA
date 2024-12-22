@@ -1,0 +1,168 @@
+Metadata-Version: 2.1
+Name: mtsa
+Version: 0.0.25
+Summary: Multiple Time Series Analysis
+Home-page: https://github.com/diegompin/mtsa
+Author: Diego Pinheiro
+Author-email: diegompin@gmail.com
+License: BSD 3-Clause License
+Keywords: mtsa,setuptools
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+Requires-Dist: absl-py==1.4.0
+Requires-Dist: asttokens==2.2.1
+Requires-Dist: astunparse==1.6.3
+Requires-Dist: attrs==22.2.0
+Requires-Dist: audioread==3.0.0
+Requires-Dist: backcall==0.2.0
+Requires-Dist: blosc2==2.0.0
+Requires-Dist: cachetools==5.3.0
+Requires-Dist: certifi==2019.11.28
+Requires-Dist: cffi==1.15.1
+Requires-Dist: chardet==3.0.4
+Requires-Dist: comm==0.1.3
+Requires-Dist: contourpy==1.0.7
+Requires-Dist: cycler==0.11.0
+Requires-Dist: Cython==0.29.34
+Requires-Dist: debugpy==1.6.7
+Requires-Dist: decorator==5.1.1
+Requires-Dist: distro==1.4.0
+Requires-Dist: exceptiongroup==1.1.1
+Requires-Dist: executing==1.2.0
+Requires-Dist: flatbuffers==24.3.25
+Requires-Dist: fonttools==4.39.3
+Requires-Dist: gast==0.4.0
+Requires-Dist: google-auth==2.16.2
+Requires-Dist: google-auth-oauthlib==1.0.0
+Requires-Dist: google-pasta==0.2.0
+Requires-Dist: grpcio==1.51.3
+Requires-Dist: h5py==3.10.0
+Requires-Dist: idna==2.8
+Requires-Dist: importlib-metadata==6.1.0
+Requires-Dist: iniconfig==2.0.0
+Requires-Dist: ipykernel==6.16.0
+Requires-Dist: ipython==8.12.0
+Requires-Dist: jax==0.4.27
+Requires-Dist: jedi==0.18.2
+Requires-Dist: joblib==1.2.0
+Requires-Dist: jupyter_client==8.1.0
+Requires-Dist: jupyter_core==5.3.0
+Requires-Dist: keras==2.12.0
+Requires-Dist: kiwisolver==1.4.4
+Requires-Dist: libclang==16.0.0
+Requires-Dist: librosa==0.9.2
+Requires-Dist: llvmlite==0.40.0
+Requires-Dist: Markdown==3.4.3
+Requires-Dist: MarkupSafe==2.1.2
+Requires-Dist: matplotlib==3.7.1
+Requires-Dist: matplotlib-inline==0.1.6
+Requires-Dist: msgpack==1.0.5
+Requires-Dist: nest-asyncio==1.5.6
+Requires-Dist: numba==0.57
+Requires-Dist: numexpr==2.8.4
+Requires-Dist: numpy==1.24.1
+Requires-Dist: oauthlib==3.2.2
+Requires-Dist: opt-einsum==3.3.0
+Requires-Dist: packaging==23.2
+Requires-Dist: pandas==1.5.3
+Requires-Dist: parso==0.8.3
+Requires-Dist: pexpect==4.8.0
+Requires-Dist: pickleshare==0.7.5
+Requires-Dist: Pillow==9.5.0
+Requires-Dist: platformdirs==3.2.0
+Requires-Dist: pluggy==1.0.0
+Requires-Dist: pooch==1.7.0
+Requires-Dist: prompt-toolkit==3.0.38
+Requires-Dist: protobuf==4.22.1
+Requires-Dist: psutil==5.9.4
+Requires-Dist: ptyprocess==0.7.0
+Requires-Dist: pure-eval==0.2.2
+Requires-Dist: py-cpuinfo==9.0.0
+Requires-Dist: pyasn1==0.4.8
+Requires-Dist: pyasn1-modules==0.2.8
+Requires-Dist: pycparser==2.21
+Requires-Dist: Pygments==2.14.0
+Requires-Dist: pyparsing==3.0.9
+Requires-Dist: pytest==7.2.0
+Requires-Dist: python-dateutil==2.8.2
+Requires-Dist: pytz==2023.3
+Requires-Dist: pyzmq==25.0.2
+Requires-Dist: requests==2.27.1
+Requires-Dist: requests-oauthlib==1.3.1
+Requires-Dist: requests-unixsocket==0.2.0
+Requires-Dist: resampy==0.4.2
+Requires-Dist: rsa==4.9
+Requires-Dist: scikit-learn==1.2.2
+Requires-Dist: scipy==1.10.0
+Requires-Dist: seaborn==0.12.2
+Requires-Dist: six==1.14.0
+Requires-Dist: soundfile==0.12.1
+Requires-Dist: ssh-import-id==5.10
+Requires-Dist: stack-data==0.6.2
+Requires-Dist: tables==3.8.0
+Requires-Dist: tensorboard==2.17.0
+Requires-Dist: tensorboard-data-server==0.7.0
+Requires-Dist: tensorboard-plugin-wit==1.8.1
+Requires-Dist: tensorflow==2.17.0
+Requires-Dist: tensorflow-estimator==2.12.0
+Requires-Dist: tensorflow-io-gcs-filesystem==0.31.0
+Requires-Dist: termcolor==2.2.0
+Requires-Dist: threadpoolctl==3.1.0
+Requires-Dist: tomli==2.0.1
+Requires-Dist: tornado==6.2
+Requires-Dist: traitlets==5.9.0
+Requires-Dist: typing_extensions==4.10.0
+Requires-Dist: urllib3==1.25.8
+Requires-Dist: wcwidth==0.2.6
+Requires-Dist: Werkzeug==2.2.3
+Requires-Dist: wrapt==1.14.1
+Requires-Dist: spectrum==0.6.8
+Requires-Dist: torch==2.5.1
+
+# MTSA (Multiple Time Series Analysis)
+
+MTSA is a unified framework for anomaly detection in multiple time series, designed to facilitate the replication and development of state-of-the-art anomaly detection approaches. The framework is particularly focused on handling acoustic data from industrial machinery, such as valves, pumps, fans, and slide rails.
+
+## Table of Contents
+
+- [Introduction](#introduction)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Implemented Approaches](#implemented-approaches)
+
+## Introduction
+
+Anomaly detection is a crucial technique for identifying unusual patterns in data, which can indicate malfunctions or other significant events. In industrial settings, detecting anomalies in machinery data can enable predictive maintenance and reduce downtime.
+
+MTSA (Multiple Time Series Analysis) is a framework designed to simplify the implementation and replication of anomaly detection approaches, particularly for acoustic data. The framework provides a structured environment for developing, testing, and comparing different anomaly detection models, with a focus on replicability and ease of use.
+
+## Features
+
+- **Unified Framework:** MTSA provides a modular and extensible structure for developing and testing anomaly detection models on multiple time series.
+- **State-of-the-Art Implementations:** The framework includes implementations of three state-of-the-art anomaly detection approaches: Hitachi, RANSynCoders, and GANF.
+- **Enhanced Pipelines:** RANSynCoders and GANF pipelines have been enhanced with feature extraction based on Mel-Frequency Cepstral Coefficients (MFCC), improving their performance on acoustic data.
+- **Comparative Analysis:** MTSA enables easy comparison of different approaches, with a focus on acoustic data from industrial machinery.
+
+## Installation
+
+To install MTSA, clone the repository and install the necessary dependencies:
+
+```bash
+git clone https://github.com/your-username/MTSA.git
+cd MTSA
+pip install -r requirements.txt
+```
+
+## Usage
+
+MTSA can be used to run anomaly detection models on acoustic data from industrial machines. Find an example [here](examples/MTSA.ipynb).
+
+## Implemented Approaches
+
+MTSA includes the following anomaly detection approaches:
+
+- **Hitachi**: A robust approach tailored for industrial anomaly detection.
+- **RANSynCoders**: A state-of-the-art model enhanced with MFCC for better performance on acoustic data.
+- **GANF**: A generative adversarial network approach, also enhanced with MFCC.
