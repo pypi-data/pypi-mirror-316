@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+setup.py
+pil/__init__.py
+pil/all.py
+pil/audio.py
+pil/images.py
+pil/video.py
+pil_python_pillow.egg-info/PKG-INFO
+pil_python_pillow.egg-info/SOURCES.txt
+pil_python_pillow.egg-info/dependency_links.txt
+pil_python_pillow.egg-info/requires.txt
+pil_python_pillow.egg-info/top_level.txt
