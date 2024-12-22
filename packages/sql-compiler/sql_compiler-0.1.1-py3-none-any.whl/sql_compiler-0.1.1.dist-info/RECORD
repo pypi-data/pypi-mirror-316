@@ -1,0 +1,9 @@
+test/__init__.py,sha256=7U78b1ImNjTolj5HIS5nUm4JdRKkgixCfp_3QbteiDI,17
+test/compiler.py,sha256=ApzZOV2atOim_bjam1ZA40P3ZPmsPFNyvzykz8FAtoE,6295
+test/first_follow.py,sha256=ywAkca_SCK0Pgf5mgTtcdh186mxrFkJDT87B65O5Elk,12892
+test/main.py,sha256=G0oN93tFw0RumYBKBxcWXmryxDB0sm94KOSl6smeNRo,94089
+test/x.py,sha256=ApzZOV2atOim_bjam1ZA40P3ZPmsPFNyvzykz8FAtoE,6295
+sql_compiler-0.1.1.dist-info/METADATA,sha256=xVfk6HroJlooUlqYtt6z373aC2gz_59bQ1dSKmUysRA,450
+sql_compiler-0.1.1.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+sql_compiler-0.1.1.dist-info/top_level.txt,sha256=8sobtsfpB9Btr-Roflefznazfk6Tt2BQItpS5szCb9I,5
+sql_compiler-0.1.1.dist-info/RECORD,,
