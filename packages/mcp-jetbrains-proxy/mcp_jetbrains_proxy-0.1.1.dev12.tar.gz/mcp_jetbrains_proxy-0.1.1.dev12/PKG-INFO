@@ -1,0 +1,43 @@
+Metadata-Version: 2.4
+Name: mcp_jetbrains_proxy
+Version: 0.1.1.dev12
+Summary: MCP proxy between LLM and JetBrains IDE
+Project-URL: Homepage, https://github.com/leobuskin/mcp_jetbrains_proxy
+Project-URL: Repository, https://github.com/leobuskin/mcp_jetbrains_proxy.git
+Project-URL: Issues, https://github.com/leobuskin/mcp_jetbrains_proxy/issues
+Author-email: Leonard Buskin <leo@utility.pub>
+License-Expression: MIT
+License-File: LICENSE
+Keywords: ide,jetbrains,llm,mcp,proxy
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.11
+Requires-Dist: aiohttp>=3.9.0
+Requires-Dist: mcp>=0.1.0
+Provides-Extra: test
+Requires-Dist: aiohttp>=3.9.0; extra == 'test'
+Requires-Dist: mypy>=1.8.0; extra == 'test'
+Requires-Dist: pytest-asyncio>=0.23.0; extra == 'test'
+Requires-Dist: pytest-cov>=4.1.0; extra == 'test'
+Requires-Dist: pytest>=7.0.0; extra == 'test'
+Description-Content-Type: text/markdown
+
+# MCP JetBrains Proxy
+
+A Python implementation of Model Context Protocol (MCP) proxy for JetBrains IDEs. This package provides a bridge between LLM services and JetBrains IDEs using the MCP protocol.
+
+## Installation
+
+```bash
+pip install mcp_jetbrains_proxy
+```
+
+## License
+
+MIT
