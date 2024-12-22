@@ -1,0 +1,9 @@
+README.md
+setup.py
+pydictvalidator/__init__.py
+pydictvalidator/pydictvalidator.py
+pydictvalidator.egg-info/PKG-INFO
+pydictvalidator.egg-info/SOURCES.txt
+pydictvalidator.egg-info/dependency_links.txt
+pydictvalidator.egg-info/top_level.txt
+tests/test_validator.py
