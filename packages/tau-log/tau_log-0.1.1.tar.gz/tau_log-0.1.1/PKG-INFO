@@ -1,0 +1,66 @@
+Metadata-Version: 2.1
+Name: tau-log
+Version: 0.1.1
+Summary: Binary log decoder for Tau project
+Author-email: YuraTheBest <stuchalkin.yud@gmail.com>
+Project-URL: Homepage, https://github.com/AeroKITties/tau-log
+Project-URL: Issues, https://github.com/AeroKITties/tau-log/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# tau-log
+
+**tau-log** is a Python package that provides tools for reading and 
+decoding binary log files, used in [Tau project](https://github.com/AeroKITties/Tau). 
+
+## How to use it
+### Messages structure file creation
+**tau-log** needs a json file with the minimum necessary information about all messages types in log file. 
+An example of such file with only one message is given below:
+
+```json
+{
+  "TestMessage": {
+    "index": 168,
+    "data_field_names": [
+      "time_ms",
+      "pressure",
+      "temperature",
+      "altitude"
+    ],
+    "data_field_types": [
+      "uint32",
+      "float",
+      "float",
+      "double"
+    ]
+  }
+}
+```
+In this example structure:
+- **TestMessage** is a message unique name
+- **index** is message unique id, which is 168 in this example. Index is always the first message field and is always has uint8 type
+- **data_field_names** contains names of all message fields. All names must be unique within one message
+- **data_field_types** contains types of data in all message fields. This package currently supports only the following data types: 
+  - 4-byte signed integers: **int**, **int32**, **long**
+  - 4-byte unsigned integers: **uint32**
+  - 2-byte signed integers: **int16**
+  - 2-byte unsigned integers: **uint16**
+  - 1-byte signed integers: **int8**
+  - 1-byte unsigned integers: **uint8**
+  - 4-byte floating point numbers: **float**
+  - 8-byte floating point numbers: **double**
+  - 1-byte boolean numbers: **bool**
+### Log file decoding
+Typical use of **tau-log** decoder:
+```python
+log_decoder = TauLogDecoder()
+log_decoder.load_structure_from_json("structure.json")
+log_decoder.decode_log("log_1.tau")
+data = log_decoder.data
+```
+The decoder provides data in the form of a dictionary, where the data from each message is stored in a separate pandas DataFrame.

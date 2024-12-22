@@ -1,0 +1,26 @@
+[build-system]
+requires = [
+    "setuptools>=61.0",
+    "numpy",
+    "pandas"
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tau-log"
+version = "0.1.1"
+authors = [
+    { name = "YuraTheBest", email = "stuchalkin.yud@gmail.com" },
+]
+description = "Binary log decoder for Tau project"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/AeroKITties/tau-log"
+Issues = "https://github.com/AeroKITties/tau-log/issues"
