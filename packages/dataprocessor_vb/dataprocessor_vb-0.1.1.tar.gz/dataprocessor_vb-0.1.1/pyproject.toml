@@ -1,0 +1,46 @@
+[tool.poetry]
+name = "dataprocessor_vb"
+version = "0.1.1"
+description = "A comprehensive data processing library."
+authors = ["Vicba <victor.barra@live.be>"]
+readme = "README.md"
+keywords = ["data", "processing", "cleaning", "visualization", "feature engineering"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+numpy = "^2.1.2"
+pandas = "^2.2.3"
+scikit-learn = "^1.5.2"
+matplotlib = "^3.9.2"
+nltk = "^3.9.1"
+pillow = "^11.0.0"
+imgaug = "^0.4.0"
+albumentations = "^1.4.18"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.3"
+mypy = "^1.12.1"
+black = "^24.10.0"
+flake8 = "^7.1.1"
+pre-commit = "^4.0.1"
+
+[tool.poetry.urls]
+repository = "https://github.com/Vicba/data-preprocessing-package"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+
+[tool.black]
+line-length = 88
+
+[flake8]
+max-line-length = 88
