@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=61.0", "setuptools-scm>=8.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.package-data]
+"*" = ["*"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[project]
+name = "ben-sembira-python-package-template"
+dynamic = ["version"]
+authors = [
+  { name="Ben Sembira", email="ben.sembira.dev@gmail.com" },
+]
+description = "Package description"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+  "pytest",
+]
+
+[project.urls]
+Homepage = "https://github.com/ben-sembira-1/python-package-template"
+Issues = "https://github.com/ben-sembira-1/python-package-template/issues"
+
+[tool.pytest.ini_options]
+markers = [
+    "slow: marks tests as slow (deselect with '-m \"not slow\"')",
+]
+
+[tool.setuptools_scm]

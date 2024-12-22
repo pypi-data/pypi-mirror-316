@@ -1,0 +1,36 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/docker-existing-dockerfile
+{
+	"name": "Existing Dockerfile",
+	"build": {
+		// Sets the run context to one level up instead of the .devcontainer folder.
+		"context": "..",
+		// Update the 'dockerFile' property if you aren't using the standard 'Dockerfile' filename.
+		"dockerfile": "../Dockerfile"
+	},
+	"postCreateCommand": "pip install -e .[dev] && pre-commit install",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-python.python",
+				"ms-azuretools.vscode-docker",
+				"github.vscode-github-actions",
+				"ms-python.black-formatter",
+				"DavidAnson.vscode-markdownlint",
+				"streetsidesoftware.code-spell-checker",
+				"naumovs.color-highlight",
+				"eamodio.gitlens",
+				"streetsidesoftware.code-spell-checker-hebrew",
+				"VisualStudioExptTeam.vscodeintellicode",
+				"VisualStudioExptTeam.intellicode-api-usage-examples",
+				"VisualStudioExptTeam.vscodeintellicode-completions",
+				"ms-python.isort",
+				"bierner.markdown-mermaid",
+				"shardulm94.trailing-spaces",
+				"wayou.vscode-todo-highlight",
+				"rafamel.subtle-brackets",
+				"kisstkondoros.vscode-gutter-preview"
+			]
+		}
+	}
+}

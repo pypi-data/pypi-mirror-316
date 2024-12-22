@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: ben-sembira-python-package-template
+Version: 1.0.0
+Summary: Package description
+Author-email: Ben Sembira <ben.sembira.dev@gmail.com>
+Project-URL: Homepage, https://github.com/ben-sembira-1/python-package-template
+Project-URL: Issues, https://github.com/ben-sembira-1/python-package-template/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pytest
+
+# python-package-template
+A template for creating a python package
