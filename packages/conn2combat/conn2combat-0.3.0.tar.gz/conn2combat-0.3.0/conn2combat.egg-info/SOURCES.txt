@@ -1,0 +1,10 @@
+README.md
+setup.py
+conn2combat/__init__.py
+conn2combat/firstlevelparser.py
+conn2combat.egg-info/PKG-INFO
+conn2combat.egg-info/SOURCES.txt
+conn2combat.egg-info/dependency_links.txt
+conn2combat.egg-info/entry_points.txt
+conn2combat.egg-info/requires.txt
+conn2combat.egg-info/top_level.txt
