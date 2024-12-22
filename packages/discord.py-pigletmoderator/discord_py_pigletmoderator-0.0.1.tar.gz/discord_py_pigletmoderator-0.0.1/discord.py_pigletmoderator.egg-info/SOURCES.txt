@@ -1,0 +1,5 @@
+pyproject.toml
+discord.py_pigletmoderator.egg-info/PKG-INFO
+discord.py_pigletmoderator.egg-info/SOURCES.txt
+discord.py_pigletmoderator.egg-info/dependency_links.txt
+discord.py_pigletmoderator.egg-info/top_level.txt
