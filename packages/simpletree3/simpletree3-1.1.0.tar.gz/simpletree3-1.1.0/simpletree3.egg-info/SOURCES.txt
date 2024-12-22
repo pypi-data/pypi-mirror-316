@@ -1,0 +1,15 @@
+LICENSE
+README.rst
+pyproject.toml
+simpletree3/__init__.py
+simpletree3/algorithms.py
+simpletree3/nodes.py
+simpletree3.egg-info/PKG-INFO
+simpletree3.egg-info/SOURCES.txt
+simpletree3.egg-info/dependency_links.txt
+simpletree3.egg-info/top_level.txt
+tests/test_inheritance.py
+tests/test_tree_building.py
+tests/test_tree_iteration.py
+tests/test_tree_misc.py
+tests/test_tree_search.py
