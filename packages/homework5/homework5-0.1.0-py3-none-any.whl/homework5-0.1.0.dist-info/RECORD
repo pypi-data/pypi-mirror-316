@@ -1,0 +1,9 @@
+my_module/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+my_module/data_params.py,sha256=zFx3_Yi8B3PFuLgtXYzUQ0RoSDRlQ631zmK8hiwJgWs,3116
+my_module/dataset.py,sha256=PrkHl7JhUAOqKfeo-UQ9Dcv9y-0H6Ghi74BG-1WGXCk,1769
+my_module/inference.py,sha256=xuG9nDesbVFOaTCew3eLAJyKQf5TVG1A-Y4TI45XSDE,710
+my_module/train.py,sha256=dDX1EyzgT8h1IzWfa0Nkhokek27DCoWoccRhrn1fniA,2445
+homework5-0.1.0.dist-info/METADATA,sha256=9SD2cAOWIEMSGTXjGwqrkYOosjXbG85ynRVNSJRnBJM,157
+homework5-0.1.0.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+homework5-0.1.0.dist-info/top_level.txt,sha256=Bb4StK_Ok35CKigqwdRKkqwksAiQ5EkxG1eu5wTtsPE,10
+homework5-0.1.0.dist-info/RECORD,,
