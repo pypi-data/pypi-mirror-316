@@ -1,0 +1,22 @@
+---
+triple:          'x86_64-apple-darwin'
+binary-path:     bashversion
+relocations:
+  - { offsetInCU: 0x26, offset: 0x26, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x0, symBinAddr: 0x100003A10, symSize: 0x200 }
+  - { offsetInCU: 0x4D, offset: 0x4D, size: 0x8, addend: 0x0, symName: _shell_name, symObjAddr: 0x278, symBinAddr: 0x100004090, symSize: 0x0 }
+  - { offsetInCU: 0x67, offset: 0x67, size: 0x8, addend: 0x0, symName: _progname, symBinAddr: 0x1000040A0, symSize: 0x0 }
+  - { offsetInCU: 0x70, offset: 0x70, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x0, symBinAddr: 0x100003A10, symSize: 0x200 }
+  - { offsetInCU: 0x173, offset: 0x173, size: 0x8, addend: 0x0, symName: _usage, symObjAddr: 0x200, symBinAddr: 0x100003C10, symSize: 0x2A }
+  - { offsetInCU: 0x26, offset: 0x1D7, size: 0x8, addend: 0x0, symName: _shell_version_string, symObjAddr: 0x0, symBinAddr: 0x100003C40, symSize: 0x60 }
+  - { offsetInCU: 0x4D, offset: 0x1FE, size: 0x8, addend: 0x0, symName: _dist_version, symObjAddr: 0x278, symBinAddr: 0x100004060, symSize: 0x0 }
+  - { offsetInCU: 0x71, offset: 0x222, size: 0x8, addend: 0x0, symName: _patch_level, symObjAddr: 0x2A0, symBinAddr: 0x100003F88, symSize: 0x0 }
+  - { offsetInCU: 0x92, offset: 0x243, size: 0x8, addend: 0x0, symName: _build_version, symObjAddr: 0x2A4, symBinAddr: 0x100003F8C, symSize: 0x0 }
+  - { offsetInCU: 0xA7, offset: 0x258, size: 0x8, addend: 0x0, symName: _release_status, symObjAddr: 0x280, symBinAddr: 0x100004068, symSize: 0x0 }
+  - { offsetInCU: 0xBC, offset: 0x26D, size: 0x8, addend: 0x0, symName: _sccs_version, symObjAddr: 0x288, symBinAddr: 0x100004070, symSize: 0x0 }
+  - { offsetInCU: 0xD1, offset: 0x282, size: 0x8, addend: 0x0, symName: _bash_copyright, symObjAddr: 0x290, symBinAddr: 0x100004078, symSize: 0x0 }
+  - { offsetInCU: 0xE6, offset: 0x297, size: 0x8, addend: 0x0, symName: _bash_license, symObjAddr: 0x298, symBinAddr: 0x100004080, symSize: 0x0 }
+  - { offsetInCU: 0xFB, offset: 0x2AC, size: 0x8, addend: 0x0, symName: _shell_compatibility_level, symObjAddr: 0x2A8, symBinAddr: 0x100004098, symSize: 0x0 }
+  - { offsetInCU: 0x104, offset: 0x2B5, size: 0x8, addend: 0x0, symName: _shell_version_string, symObjAddr: 0x0, symBinAddr: 0x100003C40, symSize: 0x60 }
+  - { offsetInCU: 0x123, offset: 0x2D4, size: 0x8, addend: 0x0, symName: _shell_version_string.tt, symObjAddr: 0xC00, symBinAddr: 0x1000040B0, symSize: 0x0 }
+  - { offsetInCU: 0x14A, offset: 0x2FB, size: 0x8, addend: 0x0, symName: _show_shell_version, symObjAddr: 0x60, symBinAddr: 0x100003CA0, symSize: 0xA6 }
+...
