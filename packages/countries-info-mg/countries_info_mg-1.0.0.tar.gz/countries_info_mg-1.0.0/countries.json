@@ -1,0 +1,8599 @@
+{
+  "AFG": {
+    "name": {
+      "common": "Afghanistan",
+      "official": "Islamic Republic of Afghanistan"
+    },
+    "codes": {
+      "iso2": "AF",
+      "iso3": "AFG"
+    },
+    "capital": "Kabul",
+    "flag": {
+      "emoji": "🇦🇫",
+      "imageUrl": "https://flagcdn.com/af.svg"
+    },
+    "geography": {
+      "continent": "Asia",
+      "region": "Southern Asia",
+      "coordinates": {
+        "latitude": 33.0,
+        "longitude": 65.0
+      },
+      "borders": [
+        "IRN",
+        "PAK",
+        "TKM",
+        "UZB",
+        "TJK",
+        "CHN"
+      ],
+      "timezones": [
+        "UTC+04:30"
+      ]
+    },
+    "info": {
+      "population": 38928346,
+      "languages": [
+        "Pashto",
+        "Dari"
+      ],
+      "currency": {
+        "code": "AFN",
+        "symbol": "؋"
+      },
+      "callingCode": "93",
+      "tld": ".af"
+    }
+  },
+  "ALB": {
+    "name": {
+      "common": "Albania",
+      "official": "Republic of Albania"
+    },
+    "codes": {
+      "iso2": "AL",
+      "iso3": "ALB"
+    },
+    "capital": "Tirana",
+    "flag": {
+      "emoji": "🇦🇱",
+      "imageUrl": "https://flagcdn.com/al.svg"
+    },
+    "geography": {
+      "continent": "Europe",
+      "region": "Southern Europe",
+      "coordinates": {
+        "latitude": 41.0,
+        "longitude": 20.0
+      },
+      "borders": [
+        "MNE",
+        "GRC",
+        "MKD",
+        "KOS"
+      ],
+      "timezones": [
+        "UTC+01:00"
+      ]
+    },
+    "info": {
+      "population": 2877797,
+      "languages": [
+        "Albanian"
+      ],
+      "currency": {
+        "code": "ALL",
+        "symbol": "L"
+      },
+      "callingCode": "355",
+      "tld": ".al"
+    }
+  },
+  "DZA": {
+    "name": {
+      "common": "Algeria",
+      "official": "People's Democratic Republic of Algeria"
+    },
+    "codes": {
+      "iso2": "DZ",
+      "iso3": "DZA"
+    },
+    "capital": "Algiers",
+    "flag": {
+      "emoji": "🇩🇿",
+      "imageUrl": "https://flagcdn.com/dz.svg"
+    },
+    "geography": {
+      "continent": "Africa",
+      "region": "Northern Africa",
+      "coordinates": {
+        "latitude": 28.0,
+        "longitude": 3.0
+      },
+      "borders": [
+        "TUN",
+        "LBY",
+        "NER",
+        "ESH",
+        "MRT",
+        "MLI",
+        "MAR"
+      ],
+      "timezones": [
+        "UTC+01:00"
+      ]
+    },
+    "info": {
+      "population": 44616624,
+      "languages": [
+        "Arabic"
+      ],
+      "currency": {
+        "code": "DZD",
+        "symbol": "د.ج"
+      },
+      "callingCode": "213",
+      "tld": ".dz"
+    }
+  },
+  "AND": {
+    "name": {
+      "common": "Andorra",
+      "official": "Principality of Andorra"
+    },
+    "codes": {
+      "iso2": "AD",
+      "iso3": "AND"
+    },
+    "capital": "Andorra la Vella",
+    "flag": {
+      "emoji": "🇦🇩",
+      "imageUrl": "https://flagcdn.com/ad.svg"
+    },
+    "geography": {
+      "continent": "Europe",
+      "region": "Southern Europe",
+      "coordinates": {
+        "latitude": 42.5,
+        "longitude": 1.5
+      },
+      "borders": [
+        "FRA",
+        "ESP"
+      ],
+      "timezones": [
+        "UTC+01:00"
+      ]
+    },
+    "info": {
+      "population": 77265,
+      "languages": [
+        "Catalan"
+      ],
+      "currency": {
+        "code": "EUR",
+        "symbol": "€"
+      },
+      "callingCode": "376",
+      "tld": ".ad"
+    }
+  },
+  "AGO": {
+    "name": {
+      "common": "Angola",
+      "official": "Republic of Angola"
+    },
+    "codes": {
+      "iso2": "AO",
+      "iso3": "AGO"
+    },
+    "capital": "Luanda",
+    "flag": {
+      "emoji": "🇦🇴",
+      "imageUrl": "https://flagcdn.com/ao.svg"
+    },
+    "geography": {
+      "continent": "Africa",
+      "region": "Middle Africa",
+      "coordinates": {
+        "latitude": -12.5,
+        "longitude": 18.5
+      },
+      "borders": [
+        "COG",
+        "COD",
+        "ZMB",
+        "NAM"
+      ],
+      "timezones": [
+        "UTC+01:00"
+      ]
+    },
+    "info": {
+      "population": 32866272,
+      "languages": [
+        "Portuguese"
+      ],
+      "currency": {
+        "code": "AOA",
+        "symbol": "Kz"
+      },
+      "callingCode": "244",
+      "tld": ".ao"
+    }
+  },
+  "ATG": {
+    "name": {
+      "common": "Antigua and Barbuda",
+      "official": "Antigua and Barbuda"
+    },
+    "codes": {
+      "iso2": "AG",
+      "iso3": "ATG"
+    },
+    "capital": "Saint John's",
+    "flag": {
+      "emoji": "🇦🇬",
+      "imageUrl": "https://flagcdn.com/ag.svg"
+    },
+    "geography": {
+      "continent": "North America",
+      "region": "Caribbean",
+      "coordinates": {
+        "latitude": 17.05,
+        "longitude": -61.8
+      },
+      "borders": [],
+      "timezones": [
+        "UTC-04:00"
+      ]
+    },
+    "info": {
+      "population": 97929,
+      "languages": [
+        "English"
+      ],
+      "currency": {
+        "code": "XCD",
+        "symbol": "$"
+      },
+      "callingCode": "1268",
+      "tld": ".ag"
+    }
+  },
+  "ARG": {
+    "name": {
+      "common": "Argentina",
+      "official": "Argentine Republic"
+    },
+    "codes": {
+      "iso2": "AR",
+      "iso3": "ARG"
+    },
+    "capital": "Buenos Aires",
+    "flag": {
+      "emoji": "🇦🇷",
+      "imageUrl": "https://flagcdn.com/ar.svg"
+    },
+    "geography": {
+      "continent": "South America",
+      "region": "South America",
+      "coordinates": {
+        "latitude": -34.0,
+        "longitude": -64.0
+      },
+      "borders": [
+        "BOL",
+        "BRA",
+        "CHL",
+        "PRY",
+        "URY"
+      ],
+      "timezones": [
+        "UTC-03:00"
+      ]
+    },
+    "info": {
+      "population": 45195774,
+      "languages": [
+        "Spanish"
+      ],
+      "currency": {
+        "code": "ARS",
+        "symbol": "$"
+      },
+      "callingCode": "54",
+      "tld": ".ar"
+    }
+  },
+  "ARM": {
+    "name": {
+      "common": "Armenia",
+      "official": "Republic of Armenia"
+    },
+    "codes": {
+      "iso2": "AM",
+      "iso3": "ARM"
+    },
+    "capital": "Yerevan",
+    "flag": {
+      "emoji": "🇦🇲",
+      "imageUrl": "https://flagcdn.com/am.svg"
+    },
+    "geography": {
+      "continent": "Asia",
+      "region": "Western Asia",
+      "coordinates": {
+        "latitude": 40.0,
+        "longitude": 45.0
+      },
+      "borders": [
+        "AZE",
+        "GEO",
+        "IRN",
+        "TUR"
+      ],
+      "timezones": [
+        "UTC+04:00"
+      ]
+    },
+    "info": {
+      "population": 2963243,
+      "languages": [
+        "Armenian"
+      ],
+      "currency": {
+        "code": "AMD",
+        "symbol": "֏"
+      },
+      "callingCode": "374",
+      "tld": ".am"
+    }
+  },
+  "AUS": {
+    "name": {
+      "common": "Australia",
+      "official": "Commonwealth of Australia"
+    },
+    "codes": {
+      "iso2": "AU",
+      "iso3": "AUS"
+    },
+    "capital": "Canberra",
+    "flag": {
+      "emoji": "🇦🇺",
+      "imageUrl": "https://flagcdn.com/au.svg"
+    },
+    "geography": {
+      "continent": "Oceania",
+      "region": "Australia and New Zealand",
+      "coordinates": {
+        "latitude": -27.0,
+        "longitude": 133.0
+      },
+      "borders": [],
+      "timezones": [
+        "UTC+05:00",
+        "UTC+06:30",
+        "UTC+07:00",
+        "UTC+08:00",
+        "UTC+09:30",
+        "UTC+10:00",
+        "UTC+10:30",
+        "UTC+11:30"
+      ]
+    },
+    "info": {
+      "population": 25499884,
+      "languages": [
+        "English"
+      ],
+      "currency": {
+        "code": "AUD",
+        "symbol": "$"
+      },
+      "callingCode": "61",
+      "tld": ".au"
+    }
+  },
+  "AUT": {
+    "name": {
+      "common": "Austria",
+      "official": "Republic of Austria"
+    },
+    "codes": {
+      "iso2": "AT",
+      "iso3": "AUT"
+    },
+    "capital": "Vienna",
+    "flag": {
+      "emoji": "🇦🇹",
+      "imageUrl": "https://flagcdn.com/at.svg"
+    },
+    "geography": {
+      "continent": "Europe",
+      "region": "Central Europe",
+      "coordinates": {
+        "latitude": 47.33333333,
+        "longitude": 13.33333333
+      },
+      "borders": [
+        "CZE",
+        "DEU",
+        "HUN",
+        "ITA",
+        "LIE",
+        "SVK",
+        "SVN",
+        "CHE"
+      ],
+      "timezones": [
+        "UTC+01:00"
+      ]
+    },
+    "info": {
+      "population": 8917205,
+      "languages": [
+        "German"
+      ],
+      "currency": {
+        "code": "EUR",
+        "symbol": "€"
+      },
+      "callingCode": "43",
+      "tld": ".at"
+    }
+  },
+  "AZE": {
+    "name": {
+      "common": "Azerbaijan",
+      "official": "Republic of Azerbaijan"
+    },
+    "codes": {
+      "iso2": "AZ",
+      "iso3": "AZE"
+    },
+    "capital": "Baku",
+    "flag": {
+      "emoji": "🇦🇿",
+      "imageUrl": "https://flagcdn.com/az.svg"
+    },
+    "geography": {
+      "continent": "Asia",
+      "region": "Western Asia",
+      "coordinates": {
+        "latitude": 40.5,
+        "longitude": 47.5
+      },
+      "borders": [
+        "ARM",
+        "GEO",
+        "IRN",
+        "RUS",
+        "TUR"
+      ],
+      "timezones": [
+        "UTC+04:00"
+      ]
+    },
+    "info": {
+      "population": 10139177,
+      "languages": [
+        "Azerbaijani"
+      ],
+      "currency": {
+        "code": "AZN",
+        "symbol": "₼"
+      },
+      "callingCode": "994",
+      "tld": ".az"
+    }
+  },
+  "BHS": {
+    "name": {
+      "common": "Bahamas",
+      "official": "Commonwealth of The Bahamas"
+    },
+    "codes": {
+      "iso2": "BS",
+      "iso3": "BHS"
+    },
+    "capital": "Nassau",
+    "flag": {
+      "emoji": "🇧🇸",
+      "imageUrl": "https://flagcdn.com/bs.svg"
+    },
+    "geography": {
+      "continent": "North America",
+      "region": "Caribbean",
+      "coordinates": {
+        "latitude": 24.25,
+        "longitude": -76.0
+      },
+      "borders": [],
+      "timezones": [
+        "UTC-05:00"
+      ]
+    },
+    "info": {
+      "population": 393244,
+      "languages": [
+        "English"
+      ],
+      "currency": {
+        "code": "BSD",
+        "symbol": "$"
+      },
+      "callingCode": "1242",
+      "tld": ".bs"
+    }
+  },
+  "BHR": {
+    "name": {
+      "common": "Bahrain",
+      "official": "Kingdom of Bahrain"
+    },
+    "codes": {
+      "iso2": "BH",
+      "iso3": "BHR"
+    },
+    "capital": "Manama",
+    "flag": {
+      "emoji": "🇧🇭",
+      "imageUrl": "https://flagcdn.com/bh.svg"
+    },
+    "geography": {
+      "continent": "Asia",
+      "region": "Western Asia",
+      "coordinates": {
+        "latitude": 26.0,
+        "longitude": 50.55
+      },
+      "borders": [],
+      "timezones": [
+        "UTC+03:00"
+      ]
+    },
+    "info": {
+      "population": 1701575,
+      "languages": [
+        "Arabic"
+      ],
+      "currency": {
+        "code": "BHD",
+        "symbol": ".د.ب"
+      },
+      "callingCode": "973",
+      "tld": ".bh"
+    }
+  },
+  "BGD": {
+    "name": {
+      "common": "Bangladesh",
+      "official": "People's Republic of Bangladesh"
+    },
+    "codes": {
+      "iso2": "BD",
+      "iso3": "BGD"
+    },
+    "capital": "Dhaka",
+    "flag": {
+      "emoji": "🇧🇩",
+      "imageUrl": "https://flagcdn.com/bd.svg"
+    },
+    "geography": {
+      "continent": "Asia",
+      "region": "Southern Asia",
+      "coordinates": {
+        "latitude": 24.0,
+        "longitude": 90.0
+      },
+      "borders": [
+        "MMR",
+        "IND"
+      ],
+      "timezones": [
+        "UTC+06:00"
+      ]
+    },
+    "info": {
+      "population": 164689383,
+      "languages": [
+        "Bengali"
+      ],
+      "currency": {
+        "code": "BDT",
+        "symbol": "৳"
+      },
+      "callingCode": "880",
+      "tld": ".bd"
+    }
+  },
+  "BRB": {
+    "name": {
+      "common": "Barbados",
+      "official": "Barbados"
+    },
+    "codes": {
+      "iso2": "BB",
+      "iso3": "BRB"
+    },
+    "capital": "Bridgetown",
+    "flag": {
+      "emoji": "🇧🇧",
+      "imageUrl": "https://flagcdn.com/bb.svg"
+    },
+    "geography": {
+      "continent": "North America",
+      "region": "Caribbean",
+      "coordinates": {
+        "latitude": 13.17,
+        "longitude": -59.53
+      },
+      "borders": [],
+      "timezones": [
+        "UTC-04:00"
+      ]
+    },
+    "info": {
+      "population": 287375,
+      "languages": [
+        "English"
+      ],
+      "currency": {
+        "code": "BBD",
+        "symbol": "$"
+      },
+      "callingCode": "1246",
+      "tld": ".bb"
+    }
+  },
+  "BLR": {
+    "name": {
+      "common": "Belarus",
+      "official": "Republic of Belarus"
+    },
+    "codes": {
+      "iso2": "BY",
+      "iso3": "BLR"
+    },
+    "capital": "Minsk",
+    "flag": {
+      "emoji": "🇧🇾",
+      "imageUrl": "https://flagcdn.com/by.svg"
+    },
+    "geography": {
+      "continent": "Europe",
+      "region": "Eastern Europe",
+      "coordinates": {
+        "latitude": 53.0,
+        "longitude": 28.0
+      },
+      "borders": [
+        "LVA",
+        "LTU",
+        "POL",
+        "RUS",
+        "UKR"
+      ],
+      "timezones": [
+        "UTC+03:00"
+      ]
+    },
+    "info": {
+      "population": 9398861,
+      "languages": [
+        "Belarusian",
+        "Russian"
+      ],
+      "currency": {
+        "code": "BYN",
+        "symbol": "Br"
+      },
+      "callingCode": "375",
+      "tld": ".by"
+    }
+  },
+  "BEL": {
+    "name": {
+      "common": "Belgium",
+      "official": "Kingdom of Belgium"
+    },
+    "codes": {
+      "iso2": "BE",
+      "iso3": "BEL"
+    },
+    "capital": "Brussels",
+    "flag": {
+      "emoji": "🇧🇪",
+      "imageUrl": "https://flagcdn.com/be.svg"
+    },
+    "geography": {
+      "continent": "Europe",
+      "region": "Western Europe",
+      "coordinates": {
+        "latitude": 50.83333333,
+        "longitude": 4.0
+      },
+      "borders": [
+        "FRA",
+        "DEU",
+        "LUX",
+        "NLD"
+      ],
+      "timezones": [
+        "UTC+01:00"
+      ]
+    },
+    "info": {
+      "population": 11555997,
+      "languages": [
+        "Dutch",
+        "French",
+        "German"
+      ],
+      "currency": {
+        "code": "EUR",
+        "symbol": "€"
+      },
+      "callingCode": "32",
+      "tld": ".be"
+    }
+  },
+  "BLZ": {
+    "name": {
+      "common": "Belize",
+      "official": "Belize"
+    },
+    "codes": {
+      "iso2": "BZ",
+      "iso3": "BLZ"
+    },
+    "capital": "Belmopan",
+    "flag": {
+      "emoji": "🇧🇿",
+      "imageUrl": "https://flagcdn.com/bz.svg"
+    },
+    "geography": {
+      "continent": "North America",
+      "region": "Central America",
+      "coordinates": {
+        "latitude": 17.25,
+        "longitude": -88.75
+      },
+      "borders": [
+        "GTM",
+        "MEX"
+      ],
+      "timezones": [
+        "UTC-06:00"
+      ]
+    },
+    "info": {
+      "population": 397628,
+      "languages": [
+        "English"
+      ],
+      "currency": {
+        "code": "BZD",
+        "symbol": "$"
+      },
+      "callingCode": "501",
+      "tld": ".bz"
+    }
+  },
+  "BEN": {
+    "name": {
+      "common": "Benin",
+      "official": "Republic of Benin"
+    },
+    "codes": {
+      "iso2": "BJ",
+      "iso3": "BEN"
+    },
+    "capital": "Porto-Novo",
+    "flag": {
+      "emoji": "🇧🇯",
+      "imageUrl": "https://flagcdn.com/bj.svg"
+    },
+    "geography": {
+      "continent": "Africa",
+      "region": "Western Africa",
+      "coordinates": {
+        "latitude": 9.5,
+        "longitude": 2.25
+      },
+      "borders": [
+        "BFA",
+        "NER",
+        "NGA",
+        "TGO"
+      ],
+      "timezones": [
+        "UTC+01:00"
+      ]
+    },
+    "info": {
+      "population": 12123200,
+      "languages": [
+        "French"
+      ],
+      "currency": {
+        "code": "XOF",
+        "symbol": "Fr"
+      },
+      "callingCode": "229",
+      "tld": ".bj"
+    }
+  },
+  "BTN": {
+    "name": {
+      "common": "Bhutan",
+      "official": "Kingdom of Bhutan"
+    },
+    "codes": {
+      "iso2": "BT",
+      "iso3": "BTN"
+    },
+    "capital": "Thimphu",
+    "flag": {
+      "emoji": "🇧🇹",
+      "imageUrl": "https://flagcdn.com/bt.svg"
+    },
+    "geography": {
+      "continent": "Asia",
+      "region": "Southern Asia",
+      "coordinates": {
+        "latitude": 27.5,
+        "longitude": 90.5
+      },
+      "borders": [
+        "CHN",
+        "IND"
+      ],
+      "timezones": [
+        "UTC+06:00"
+      ]
+    },
+    "info": {
+      "population": 771608,
+      "languages": [
+        "Dzongkha"
+      ],
+      "currency": {
+        "code": "BTN",
+        "symbol": "Nu."
+      },
+      "callingCode": "975",
+      "tld": ".bt"
+    }
+  },
+  "BOL": {
+    "name": {
+      "common": "Bolivia",
+      "official": "Plurinational State of Bolivia"
+    },
+    "codes": {
+      "iso2": "BO",
+      "iso3": "BOL"
+    },
+    "capital": "Sucre",
+    "flag": {
+      "emoji": "🇧🇴",
+      "imageUrl": "https://flagcdn.com/bo.svg"
+    },
+    "geography": {
+      "continent": "South America",
+      "region": "South America",
+      "coordinates": {
+        "latitude": -17.0,
+        "longitude": -65.0
+      },
+      "borders": [
+        "ARG",
+        "BRA",
+        "CHL",
+        "PRY",
+        "PER"
+      ],
+      "timezones": [
+        "UTC-04:00"
+      ]
+    },
+    "info": {
+      "population": 11673021,
+      "languages": [
+        "Spanish",
+        "Aymara",
+        "Quechua"
+      ],
+      "currency": {
+        "code": "BOB",
+        "symbol": "Bs."
+      },
+      "callingCode": "591",
+      "tld": ".bo"
+    }
+  },
+  "BIH": {
+    "name": {
+      "common": "Bosnia and Herzegovina",
+      "official": "Bosnia and Herzegovina"
+    },
+    "codes": {
+      "iso2": "BA",
+      "iso3": "BIH"
+    },
+    "capital": "Sarajevo",
+    "flag": {
+      "emoji": "🇧🇦",
+      "imageUrl": "https://flagcdn.com/ba.svg"
+    },
+    "geography": {
+      "continent": "Europe",
+      "region": "Southern Europe",
+      "coordinates": {
+        "latitude": 44.0,
+        "longitude": 18.0
+      },
+      "borders": [
+        "HRV",
+        "MNE",
+        "SRB"
+      ],
+      "timezones": [
+        "UTC+01:00"
+      ]
+    },
+    "info": {
+      "population": 3280819,
+      "languages": [
+        "Bosnian",
+        "Croatian",
+        "Serbian"
+      ],
+      "currency": {
+        "code": "BAM",
+        "symbol": "KM"
+      },
+      "callingCode": "387",
+      "tld": ".ba"
+    }
+  },
+  "BWA": {
+    "name": {
+      "common": "Botswana",
+      "official": "Republic of Botswana"
+    },
+    "codes": {
+      "iso2": "BW",
+      "iso3": "BWA"
+    },
+    "capital": "Gaborone",
+    "flag": {
+      "emoji": "🇧🇼",
+      "imageUrl": "https://flagcdn.com/bw.svg"
+    },
+    "geography": {
+      "continent": "Africa",
+      "region": "Southern Africa",
+      "coordinates": {
+        "latitude": -22.0,
+        "longitude": 24.0
+      },
+      "borders": [
+        "NAM",
+        "ZAF",
+        "ZMB",
+        "ZWE"
+      ],
+      "timezones": [
+        "UTC+02:00"
+      ]
+    },
+    "info": {
+      "population": 2351627,
+      "languages": [
+        "English",
+        "Tswana"
+      ],
+      "currency": {
+        "code": "BWP",
+        "symbol": "P"
+      },
+      "callingCode": "267",
+      "tld": ".bw"
+    }
+  },
+  "BRA": {
+    "name": {
+      "common": "Brazil",
+      "official": "Federative Republic of Brazil"
+    },
+    "codes": {
+      "iso2": "BR",
+      "iso3": "BRA"
+    },
+    "capital": "Brasília",
+    "flag": {
+      "emoji": "🇧🇷",
+      "imageUrl": "https://flagcdn.com/br.svg"
+    },
+    "geography": {
+      "continent": "South America",
+      "region": "South America",
+      "coordinates": {
+        "latitude": -10.0,
+        "longitude": -55.0
+      },
+      "borders": [
+        "ARG",
+        "BOL",
+        "COL",
+        "GUF",
+        "GUY",
+        "PRY",
+        "PER",
+        "SUR",
+        "URY",
+        "VEN"
+      ],
+      "timezones": [
+        "UTC-05:00",
+        "UTC-04:00",
+        "UTC-03:00",
+        "UTC-02:00"
+      ]
+    },
+    "info": {
+      "population": 212559417,
+      "languages": [
+        "Portuguese"
+      ],
+      "currency": {
+        "code": "BRL",
+        "symbol": "R$"
+      },
+      "callingCode": "55",
+      "tld": ".br"
+    }
+  },
+  "BRN": {
+    "name": {
+      "common": "Brunei",
+      "official": "Nation of Brunei, Abode of Peace"
+    },
+    "codes": {
+      "iso2": "BN",
+      "iso3": "BRN"
+    },
+    "capital": "Bandar Seri Begawan",
+    "flag": {
+      "emoji": "🇧🇳",
+      "imageUrl": "https://flagcdn.com/bn.svg"
+    },
+    "geography": {
+      "continent": "Asia",
+      "region": "South-Eastern Asia",
+      "coordinates": {
+        "latitude": 4.5,
+        "longitude": 114.66666666
+      },
+      "borders": [
+        "MYS"
+      ],
+      "timezones": [
+        "UTC+08:00"
+      ]
+    },
+    "info": {
+      "population": 437479,
+      "languages": [
+        "Malay"
+      ],
+      "currency": {
+        "code": "BND",
+        "symbol": "$"
+      },
+      "callingCode": "673",
+      "tld": ".bn"
+    }
+  },
+  "BGR": {
+    "name": {
+      "common": "Bulgaria",
+      "official": "Republic of Bulgaria"
+    },
+    "codes": {
+      "iso2": "BG",
+      "iso3": "BGR"
+    },
+    "capital": "Sofia",
+    "flag": {
+      "emoji": "🇧🇬",
+      "imageUrl": "https://flagcdn.com/bg.svg"
+    },
+    "geography": {
+      "continent": "Europe",
+      "region": "Eastern Europe",
+      "coordinates": {
+        "latitude": 43.0,
+        "longitude": 25.0
+      },
+      "borders": [
+        "GRC",
+        "MKD",
+        "ROU",
+        "SRB",
+        "TUR"
+      ],
+      "timezones": [
+        "UTC+02:00"
+      ]
+    },
+    "info": {
+      "population": 6948445,
+      "languages": [
+        "Bulgarian"
+      ],
+      "currency": {
+        "code": "BGN",
+        "symbol": "лв"
+      },
+      "callingCode": "359",
+      "tld": ".bg"
+    }
+  },
+  "BFA": {
+    "name": {
+      "common": "Burkina Faso",
+      "official": "Burkina Faso"
+    },
+    "codes": {
+      "iso2": "BF",
+      "iso3": "BFA"
+    },
+    "capital": "Ouagadougou",
+    "flag": {
+      "emoji": "🇧🇫",
+      "imageUrl": "https://flagcdn.com/bf.svg"
+    },
+    "geography": {
+      "continent": "Africa",
+      "region": "Western Africa",
+      "coordinates": {
+        "latitude": 13.0,
+        "longitude": -2.0
+      },
+      "borders": [
+        "BEN",
+        "CIV",
+        "GHA",
+        "MLI",
+        "NER",
+        "TGO"
+      ],
+      "timezones": [
+        "UTC+00:00"
+      ]
+    },
+    "info": {
+      "population": 20903273,
+      "languages": [
+        "French"
+      ],
+      "currency": {
+        "code": "XOF",
+        "symbol": "Fr"
+      },
+      "callingCode": "226",
+      "tld": ".bf"
+    }
+  },
+  "BDI": {
+    "name": {
+      "common": "Burundi",
+      "official": "Republic of Burundi"
+    },
+    "codes": {
+      "iso2": "BI",
+      "iso3": "BDI"
+    },
+    "capital": "Gitega",
+    "flag": {
+      "emoji": "🇧🇮",
+      "imageUrl": "https://flagcdn.com/bi.svg"
+    },
+    "geography": {
+      "continent": "Africa",
+      "region": "Eastern Africa",
+      "coordinates": {
+        "latitude": -3.5,
+        "longitude": 30.0
+      },
+      "borders": [
+        "COD",
+        "RWA",
+        "TZA"
+      ],
+      "timezones": [
+        "UTC+02:00"
+      ]
+    },
+    "info": {
+      "population": 11890784,
+      "languages": [
+        "French",
+        "Kirundi"
+      ],
+      "currency": {
+        "code": "BIF",
+        "symbol": "Fr"
+      },
+      "callingCode": "257",
+      "tld": ".bi"
+    }
+  },
+  "KHM": {
+    "name": {
+      "common": "Cambodia",
+      "official": "Kingdom of Cambodia"
+    },
+    "codes": {
+      "iso2": "KH",
+      "iso3": "KHM"
+    },
+    "capital": "Phnom Penh",
+    "flag": {
+      "emoji": "🇰🇭",
+      "imageUrl": "https://flagcdn.com/kh.svg"
+    },
+    "geography": {
+      "continent": "Asia",
+      "region": "South-Eastern Asia",
+      "coordinates": {
+        "latitude": 13.0,
+        "longitude": 105.0
+      },
+      "borders": [
+        "LAO",
+        "THA",
+        "VNM"
+      ],
+      "timezones": [
+        "UTC+07:00"
+      ]
+    },
+    "info": {
+      "population": 16718965,
+      "languages": [
+        "Khmer"
+      ],
+      "currency": {
+        "code": "KHR",
+        "symbol": "៛"
+      },
+      "callingCode": "855",
+      "tld": ".kh"
+    }
+  },
+  "CMR": {
+    "name": {
+      "common": "Cameroon",
+      "official": "Republic of Cameroon"
+    },
+    "codes": {
+      "iso2": "CM",
+      "iso3": "CMR"
+    },
+    "capital": "Yaoundé",
+    "flag": {
+      "emoji": "🇨🇲",
+      "imageUrl": "https://flagcdn.com/cm.svg"
+    },
+    "geography": {
+      "continent": "Africa",
+      "region": "Middle Africa",
+      "coordinates": {
+        "latitude": 6.0,
+        "longitude": 12.0
+      },
+      "borders": [
+        "CAF",
+        "TCD",
+        "COG",
+        "GNQ",
+        "GAB",
+        "NGA"
+      ],
+      "timezones": [
+        "UTC+01:00"
+      ]
+    },
+    "info": {
+      "population": 26545863,
+      "languages": [
+        "English",
+        "French"
+      ],
+      "currency": {
+        "code": "XAF",
+        "symbol": "Fr"
+      },
+      "callingCode": "237",
+      "tld": ".cm"
+    }
+  },
+  "CAN": {
+    "name": {
+      "common": "Canada",
+      "official": "Canada"
+    },
+    "codes": {
+      "iso2": "CA",
+      "iso3": "CAN"
+    },
+    "capital": "Ottawa",
+    "flag": {
+      "emoji": "🇨🇦",
+      "imageUrl": "https://flagcdn.com/ca.svg"
+    },
+    "geography": {
+      "continent": "North America",
+      "region": "North America",
+      "coordinates": {
+        "latitude": 60.0,
+        "longitude": -95.0
+      },
+      "borders": [
+        "USA"
+      ],
+      "timezones": [
+        "UTC-08:00",
+        "UTC-07:00",
+        "UTC-06:00",
+        "UTC-05:00",
+        "UTC-04:00",
+        "UTC-03:30"
+      ]
+    },
+    "info": {
+      "population": 38005238,
+      "languages": [
+        "English",
+        "French"
+      ],
+      "currency": {
+        "code": "CAD",
+        "symbol": "$"
+      },
+      "callingCode": "1",
+      "tld": ".ca"
+    }
+  },
+  "CPV": {
+    "name": {
+      "common": "Cape Verde",
+      "official": "Republic of Cabo Verde"
+    },
+    "codes": {
+      "iso2": "CV",
+      "iso3": "CPV"
+    },
+    "capital": "Praia",
+    "flag": {
+      "emoji": "🇨🇻",
+      "imageUrl": "https://flagcdn.com/cv.svg"
+    },
+    "geography": {
+      "continent": "Africa",
+      "region": "Western Africa",
+      "coordinates": {
+        "latitude": 16.0,
+        "longitude": -24.0
+      },
+      "borders": [],
+      "timezones": [
+        "UTC-01:00"
+      ]
+    },
+    "info": {
+      "population": 555987,
+      "languages": [
+        "Portuguese"
+      ],
+      "currency": {
+        "code": "CVE",
+        "symbol": "Esc"
+      },
+      "callingCode": "238",
+      "tld": ".cv"
+    }
+  },
+  "CAF": {
+    "name": {
+      "common": "Central African Republic",
+      "official": "Central African Republic"
+    },
+    "codes": {
+      "iso2": "CF",
+      "iso3": "CAF"
+    },
+    "capital": "Bangui",
+    "flag": {
+      "emoji": "🇨🇫",
+      "imageUrl": "https://flagcdn.com/cf.svg"
+    },
+    "geography": {
+      "continent": "Africa",
+      "region": "Middle Africa",
+      "coordinates": {
+        "latitude": 7.0,
+        "longitude": 21.0
+      },
+      "borders": [
+        "CMR",
+        "TCD",
+        "COD",
+        "COG",
+        "SSD",
+        "SDN"
+      ],
+      "timezones": [
+        "UTC+01:00"
+      ]
+    },
+    "info": {
+      "population": 4829767,
+      "languages": [
+        "French",
+        "Sango"
+      ],
+      "currency": {
+        "code": "XAF",
+        "symbol": "Fr"
+      },
+      "callingCode": "236",
+      "tld": ".cf"
+    }
+  },
+  "TCD": {
+    "name": {
+      "common": "Chad",
+      "official": "Republic of Chad"
+    },
+    "codes": {
+      "iso2": "TD",
+      "iso3": "TCD"
+    },
+    "capital": "N'Djamena",
+    "flag": {
+      "emoji": "🇹🇩",
+      "imageUrl": "https://flagcdn.com/td.svg"
+    },
+    "geography": {
+      "continent": "Africa",
+      "region": "Middle Africa",
+      "coordinates": {
+        "latitude": 15.0,
+        "longitude": 19.0
+      },
+      "borders": [
+        "CMR",
+        "CAF",
+        "LBY",
+        "NER",
+        "NGA",
+        "SDN"
+      ],
+      "timezones": [
+        "UTC+01:00"
+      ]
+    },
+    "info": {
+      "population": 16425864,
+      "languages": [
+        "Arabic",
+        "French"
+      ],
+      "currency": {
+        "code": "XAF",
+        "symbol": "Fr"
+      },
+      "callingCode": "235",
+      "tld": ".td"
+    }
+  },
+  "CHL": {
+    "name": {
+      "common": "Chile",
+      "official": "Republic of Chile"
+    },
+    "codes": {
+      "iso2": "CL",
+      "iso3": "CHL"
+    },
+    "capital": "Santiago",
+    "flag": {
+      "emoji": "🇨🇱",
+      "imageUrl": "https://flagcdn.com/cl.svg"
+    },
+    "geography": {
+      "continent": "South America",
+      "region": "South America",
+      "coordinates": {
+        "latitude": -30.0,
+        "longitude": -71.0
+      },
+      "borders": [
+        "ARG",
+        "BOL",
+        "PER"
+      ],
+      "timezones": [
+        "UTC-06:00",
+        "UTC-04:00"
+      ]
+    },
+    "info": {
+      "population": 19458310,
+      "languages": [
+        "Spanish"
+      ],
+      "currency": {
+        "code": "CLP",
+        "symbol": "$"
+      },
+      "callingCode": "56",
+      "tld": ".cl"
+    }
+  },
+  "CHN": {
+    "name": {
+      "common": "China",
+      "official": "People's Republic of China"
+    },
+    "codes": {
+      "iso2": "CN",
+      "iso3": "CHN"
+    },
+    "capital": "Beijing",
+    "flag": {
+      "emoji": "🇨🇳",
+      "imageUrl": "https://flagcdn.com/cn.svg"
+    },
+    "geography": {
+      "continent": "Asia",
+      "region": "Eastern Asia",
+      "coordinates": {
+        "latitude": 35.0,
+        "longitude": 105.0
+      },
+      "borders": [
+        "AFG",
+        "BTN",
+        "MMR",
+        "HKG",
+        "IND",
+        "KAZ",
+        "NPL",
+        "PRK",
+        "KGZ",
+        "LAO",
+        "MAC",
+        "MNG",
+        "PAK",
+        "RUS",
+        "TJK",
+        "VNM"
+      ],
+      "timezones": [
+        "UTC+08:00"
+      ]
+    },
+    "info": {
+      "population": 1402112000,
+      "languages": [
+        "Chinese"
+      ],
+      "currency": {
+        "code": "CNY",
+        "symbol": "¥"
+      },
+      "callingCode": "86",
+      "tld": ".cn"
+    }
+  },
+  "COL": {
+    "name": {
+      "common": "Colombia",
+      "official": "Republic of Colombia"
+    },
+    "codes": {
+      "iso2": "CO",
+      "iso3": "COL"
+    },
+    "capital": "Bogotá",
+    "flag": {
+      "emoji": "🇨🇴",
+      "imageUrl": "https://flagcdn.com/co.svg"
+    },
+    "geography": {
+      "continent": "South America",
+      "region": "South America",
+      "coordinates": {
+        "latitude": 4.0,
+        "longitude": -72.0
+      },
+      "borders": [
+        "BRA",
+        "ECU",
+        "PAN",
+        "PER",
+        "VEN"
+      ],
+      "timezones": [
+        "UTC-05:00"
+      ]
+    },
+    "info": {
+      "population": 50882891,
+      "languages": [
+        "Spanish"
+      ],
+      "currency": {
+        "code": "COP",
+        "symbol": "$"
+      },
+      "callingCode": "57",
+      "tld": ".co"
+    }
+  },
+  "COM": {
+    "name": {
+      "common": "Comoros",
+      "official": "Union of the Comoros"
+    },
+    "codes": {
+      "iso2": "KM",
+      "iso3": "COM"
+    },
+    "capital": "Moroni",
+    "flag": {
+      "emoji": "🇰🇲",
+      "imageUrl": "https://flagcdn.com/km.svg"
+    },
+    "geography": {
+      "continent": "Africa",
+      "region": "Eastern Africa",
+      "coordinates": {
+        "latitude": -12.16666666,
+        "longitude": 44.25
+      },
+      "borders": [],
+      "timezones": [
+        "UTC+03:00"
+      ]
+    },
+    "info": {
+      "population": 869601,
+      "languages": [
+        "Arabic",
+        "French",
+        "Comorian"
+      ],
+      "currency": {
+        "code": "KMF",
+        "symbol": "Fr"
+      },
+      "callingCode": "269",
+      "tld": ".km"
+    }
+  },
+  "COG": {
+    "name": {
+      "common": "Congo",
+      "official": "Republic of the Congo"
+    },
+    "codes": {
+      "iso2": "CG",
+      "iso3": "COG"
+    },
+    "capital": "Brazzaville",
+    "flag": {
+      "emoji": "🇨🇬",
+      "imageUrl": "https://flagcdn.com/cg.svg"
+    },
+    "geography": {
+      "continent": "Africa",
+      "region": "Central Africa",
+      "coordinates": {
+        "latitude": -1.0,
+        "longitude": 15.0
+      },
+      "borders": [
+        "AGO",
+        "CMR",
+        "CAF",
+        "COD",
+        "GAB"
+      ],
+      "timezones": [
+        "UTC+01:00"
+      ]
+    },
+    "info": {
+      "population": 5518092,
+      "languages": [
+        "French",
+        "Lingala"
+      ],
+      "currency": {
+        "code": "XAF",
+        "symbol": "Fr"
+      },
+      "callingCode": "242",
+      "tld": ".cg"
+    }
+  },
+  "CRI": {
+    "name": {
+      "common": "Costa Rica",
+      "official": "Republic of Costa Rica"
+    },
+    "codes": {
+      "iso2": "CR",
+      "iso3": "CRI"
+    },
+    "capital": "San José",
+    "flag": {
+      "emoji": "🇨🇷",
+      "imageUrl": "https://flagcdn.com/cr.svg"
+    },
+    "geography": {
+      "continent": "North America",
+      "region": "Central America",
+      "coordinates": {
+        "latitude": 10.0,
+        "longitude": -84.0
+      },
+      "borders": [
+        "NIC",
+        "PAN"
+      ],
+      "timezones": [
+        "UTC-06:00"
+      ]
+    },
+    "info": {
+      "population": 5094118,
+      "languages": [
+        "Spanish"
+      ],
+      "currency": {
+        "code": "CRC",
+        "symbol": "₡"
+      },
+      "callingCode": "506",
+      "tld": ".cr"
+    }
+  },
+  "HRV": {
+    "name": {
+      "common": "Croatia",
+      "official": "Republic of Croatia"
+    },
+    "codes": {
+      "iso2": "HR",
+      "iso3": "HRV"
+    },
+    "capital": "Zagreb",
+    "flag": {
+      "emoji": "🇭🇷",
+      "imageUrl": "https://flagcdn.com/hr.svg"
+    },
+    "geography": {
+      "continent": "Europe",
+      "region": "Southern Europe",
+      "coordinates": {
+        "latitude": 45.16666666,
+        "longitude": 15.5
+      },
+      "borders": [
+        "BIH",
+        "HUN",
+        "MNE",
+        "SRB",
+        "SVN"
+      ],
+      "timezones": [
+        "UTC+01:00"
+      ]
+    },
+    "info": {
+      "population": 4105267,
+      "languages": [
+        "Croatian"
+      ],
+      "currency": {
+        "code": "EUR",
+        "symbol": "€"
+      },
+      "callingCode": "385",
+      "tld": ".hr"
+    }
+  },
+  "CUB": {
+    "name": {
+      "common": "Cuba",
+      "official": "Republic of Cuba"
+    },
+    "codes": {
+      "iso2": "CU",
+      "iso3": "CUB"
+    },
+    "capital": "Havana",
+    "flag": {
+      "emoji": "🇨🇺",
+      "imageUrl": "https://flagcdn.com/cu.svg"
+    },
+    "geography": {
+      "continent": "North America",
+      "region": "Caribbean",
+      "coordinates": {
+        "latitude": 21.5,
+        "longitude": -80.0
+      },
+      "borders": [],
+      "timezones": [
+        "UTC-05:00"
+      ]
+    },
+    "info": {
+      "population": 11326616,
+      "languages": [
+        "Spanish"
+      ],
+      "currency": {
+        "code": "CUP",
+        "symbol": "$"
+      },
+      "callingCode": "53",
+      "tld": ".cu"
+    }
+  },
+  "USA": {
+    "name": {
+      "common": "United States",
+      "official": "United States of America"
+    },
+    "codes": {
+      "iso2": "US",
+      "iso3": "USA"
+    },
+    "capital": "Washington, D.C.",
+    "flag": {
+      "emoji": "🇺🇸",
+      "imageUrl": "https://flagcdn.com/us.svg"
+    },
+    "geography": {
+      "continent": "North America",
+      "region": "Americas",
+      "coordinates": {
+        "latitude": 38.0,
+        "longitude": -97.0
+      },
+      "borders": [
+        "CAN",
+        "MEX"
+      ],
+      "timezones": [
+        "UTC-12:00",
+        "UTC-11:00",
+        "UTC-10:00",
+        "UTC-09:00",
+        "UTC-08:00",
+        "UTC-07:00",
+        "UTC-06:00",
+        "UTC-05:00",
+        "UTC-04:00"
+      ]
+    },
+    "info": {
+      "population": 331002651,
+      "languages": [
+        "English"
+      ],
+      "currency": {
+        "code": "USD",
+        "symbol": "$"
+      },
+      "callingCode": "1",
+      "tld": ".us"
+    }
+  },
+  "GBR": {
+    "name": {
+      "common": "United Kingdom",
+      "official": "United Kingdom of Great Britain and Northern Ireland"
+    },
+    "codes": {
+      "iso2": "GB",
+      "iso3": "GBR"
+    },
+    "capital": "London",
+    "flag": {
+      "emoji": "🇬🇧",
+      "imageUrl": "https://flagcdn.com/gb.svg"
+    },
+    "geography": {
+      "continent": "Europe",
+      "region": "Northern Europe",
+      "coordinates": {
+        "latitude": 54.0,
+        "longitude": -2.0
+      },
+      "borders": [
+        "IRL"
+      ],
+      "timezones": [
+        "UTC+00:00"
+      ]
+    },
+    "info": {
+      "population": 67886011,
+      "languages": [
+        "English"
+      ],
+      "currency": {
+        "code": "GBP",
+        "symbol": "£"
+      },
+      "callingCode": "44",
+      "tld": ".uk"
+    }
+  },
+  "CYP": {
+    "name": {
+      "common": "Cyprus",
+      "official": "Republic of Cyprus"
+    },
+    "codes": {
+      "iso2": "CY",
+      "iso3": "CYP"
+    },
+    "capital": "Nicosia",
+    "flag": {
+      "emoji": "🇨🇾",
+      "imageUrl": "https://flagcdn.com/cy.svg"
+    },
+    "geography": {
+      "continent": "Europe",
+      "region": "Southern Europe",
+      "coordinates": {
+        "latitude": 35.0,
+        "longitude": 33.0
+      },
+      "borders": [],
+      "timezones": [
+        "UTC+02:00"
+      ]
+    },
+    "info": {
+      "population": 1207359,
+      "languages": [
+        "Greek",
+        "Turkish"
+      ],
+      "currency": {
+        "code": "EUR",
+        "symbol": "€"
+      },
+      "callingCode": "357",
+      "tld": ".cy"
+    }
+  },
+  "CZE": {
+    "name": {
+      "common": "Czech Republic",
+      "official": "Czech Republic"
+    },
+    "codes": {
+      "iso2": "CZ",
+      "iso3": "CZE"
+    },
+    "capital": "Prague",
+    "flag": {
+      "emoji": "🇨🇿",
+      "imageUrl": "https://flagcdn.com/cz.svg"
+    },
+    "geography": {
+      "continent": "Europe",
+      "region": "Central Europe",
+      "coordinates": {
+        "latitude": 49.75,
+        "longitude": 15.5
+      },
+      "borders": [
+        "AUT",
+        "DEU",
+        "POL",
+        "SVK"
+      ],
+      "timezones": [
+        "UTC+01:00"
+      ]
+    },
+    "info": {
+      "population": 10708981,
+      "languages": [
+        "Czech",
+        "Slovak"
+      ],
+      "currency": {
+        "code": "CZK",
+        "symbol": "Kč"
+      },
+      "callingCode": "420",
+      "tld": ".cz"
+    }
+  },
+  "COD": {
+    "name": {
+      "common": "Democratic Republic of the Congo",
+      "official": "Democratic Republic of the Congo"
+    },
+    "codes": {
+      "iso2": "CD",
+      "iso3": "COD"
+    },
+    "capital": "Kinshasa",
+    "flag": {
+      "emoji": "🇨🇩",
+      "imageUrl": "https://flagcdn.com/cd.svg"
+    },
+    "geography": {
+      "continent": "Africa",
+      "region": "Central Africa",
+      "coordinates": {
+        "latitude": 0.0,
+        "longitude": 25.0
+      },
+      "borders": [
+        "AGO",
+        "BDI",
+        "CAF",
+        "COG",
+        "RWA",
+        "SSD",
+        "TZA",
+        "UGA",
+        "ZMB"
+      ],
+      "timezones": [
+        "UTC+01:00",
+        "UTC+02:00"
+      ]
+    },
+    "info": {
+      "population": 89561404,
+      "languages": [
+        "French",
+        "Lingala",
+        "Swahili",
+        "Tshiluba"
+      ],
+      "currency": {
+        "code": "CDF",
+        "symbol": "FC"
+      },
+      "callingCode": "243",
+      "tld": ".cd"
+    }
+  },
+  "DNK": {
+    "name": {
+      "common": "Denmark",
+      "official": "Kingdom of Denmark"
+    },
+    "codes": {
+      "iso2": "DK",
+      "iso3": "DNK"
+    },
+    "capital": "Copenhagen",
+    "flag": {
+      "emoji": "🇩🇰",
+      "imageUrl": "https://flagcdn.com/dk.svg"
+    },
+    "geography": {
+      "continent": "Europe",
+      "region": "Northern Europe",
+      "coordinates": {
+        "latitude": 56.0,
+        "longitude": 10.0
+      },
+      "borders": [
+        "DEU"
+      ],
+      "timezones": [
+        "UTC-04:00",
+        "UTC-03:00",
+        "UTC-01:00",
+        "UTC+00:00",
+        "UTC+01:00"
+      ]
+    },
+    "info": {
+      "population": 5831404,
+      "languages": [
+        "Danish"
+      ],
+      "currency": {
+        "code": "DKK",
+        "symbol": "kr"
+      },
+      "callingCode": "45",
+      "tld": ".dk"
+    }
+  },
+  "DJI": {
+    "name": {
+      "common": "Djibouti",
+      "official": "Republic of Djibouti"
+    },
+    "codes": {
+      "iso2": "DJ",
+      "iso3": "DJI"
+    },
+    "capital": "Djibouti",
+    "flag": {
+      "emoji": "🇩🇯",
+      "imageUrl": "https://flagcdn.com/dj.svg"
+    },
+    "geography": {
+      "continent": "Africa",
+      "region": "Eastern Africa",
+      "coordinates": {
+        "latitude": 11.5,
+        "longitude": 43.0
+      },
+      "borders": [
+        "ERI",
+        "ETH",
+        "SOM"
+      ],
+      "timezones": [
+        "UTC+03:00"
+      ]
+    },
+    "info": {
+      "population": 988000,
+      "languages": [
+        "Arabic",
+        "French"
+      ],
+      "currency": {
+        "code": "DJF",
+        "symbol": "Fr"
+      },
+      "callingCode": "253",
+      "tld": ".dj"
+    }
+  },
+  "DMA": {
+    "name": {
+      "common": "Dominica",
+      "official": "Commonwealth of Dominica"
+    },
+    "codes": {
+      "iso2": "DM",
+      "iso3": "DMA"
+    },
+    "capital": "Roseau",
+    "flag": {
+      "emoji": "🇩🇲",
+      "imageUrl": "https://flagcdn.com/dm.svg"
+    },
+    "geography": {
+      "continent": "North America",
+      "region": "Caribbean",
+      "coordinates": {
+        "latitude": 15.41666666,
+        "longitude": -61.33333333
+      },
+      "borders": [],
+      "timezones": [
+        "UTC-04:00"
+      ]
+    },
+    "info": {
+      "population": 71986,
+      "languages": [
+        "English"
+      ],
+      "currency": {
+        "code": "XCD",
+        "symbol": "$"
+      },
+      "callingCode": "1767",
+      "tld": ".dm"
+    }
+  },
+  "DOM": {
+    "name": {
+      "common": "Dominican Republic",
+      "official": "Dominican Republic"
+    },
+    "codes": {
+      "iso2": "DO",
+      "iso3": "DOM"
+    },
+    "capital": "Santo Domingo",
+    "flag": {
+      "emoji": "🇩🇴",
+      "imageUrl": "https://flagcdn.com/do.svg"
+    },
+    "geography": {
+      "continent": "North America",
+      "region": "Caribbean",
+      "coordinates": {
+        "latitude": 19.0,
+        "longitude": -70.66666666
+      },
+      "borders": [
+        "HTI"
+      ],
+      "timezones": [
+        "UTC-04:00"
+      ]
+    },
+    "info": {
+      "population": 10847910,
+      "languages": [
+        "Spanish"
+      ],
+      "currency": {
+        "code": "DOP",
+        "symbol": "$"
+      },
+      "callingCode": "1809",
+      "tld": ".do"
+    }
+  },
+  "ECU": {
+    "name": {
+      "common": "Ecuador",
+      "official": "Republic of Ecuador"
+    },
+    "codes": {
+      "iso2": "EC",
+      "iso3": "ECU"
+    },
+    "capital": "Quito",
+    "flag": {
+      "emoji": "🇪🇨",
+      "imageUrl": "https://flagcdn.com/ec.svg"
+    },
+    "geography": {
+      "continent": "South America",
+      "region": "South America",
+      "coordinates": {
+        "latitude": -2.0,
+        "longitude": -77.5
+      },
+      "borders": [
+        "COL",
+        "PER"
+      ],
+      "timezones": [
+        "UTC-06:00",
+        "UTC-05:00"
+      ]
+    },
+    "info": {
+      "population": 17643054,
+      "languages": [
+        "Spanish"
+      ],
+      "currency": {
+        "code": "USD",
+        "symbol": "$"
+      },
+      "callingCode": "593",
+      "tld": ".ec"
+    }
+  },
+  "EGY": {
+    "name": {
+      "common": "Egypt",
+      "official": "Arab Republic of Egypt"
+    },
+    "codes": {
+      "iso2": "EG",
+      "iso3": "EGY"
+    },
+    "capital": "Cairo",
+    "flag": {
+      "emoji": "🇪🇬",
+      "imageUrl": "https://flagcdn.com/eg.svg"
+    },
+    "geography": {
+      "continent": "Africa",
+      "region": "Northern Africa",
+      "coordinates": {
+        "latitude": 27.0,
+        "longitude": 30.0
+      },
+      "borders": [
+        "ISR",
+        "LBY",
+        "PSE",
+        "SDN"
+      ],
+      "timezones": [
+        "UTC+02:00"
+      ]
+    },
+    "info": {
+      "population": 102334404,
+      "languages": [
+        "Arabic"
+      ],
+      "currency": {
+        "code": "EGP",
+        "symbol": "£"
+      },
+      "callingCode": "20",
+      "tld": ".eg"
+    }
+  },
+  "SLV": {
+    "name": {
+      "common": "El Salvador",
+      "official": "Republic of El Salvador"
+    },
+    "codes": {
+      "iso2": "SV",
+      "iso3": "SLV"
+    },
+    "capital": "San Salvador",
+    "flag": {
+      "emoji": "🇸🇻",
+      "imageUrl": "https://flagcdn.com/sv.svg"
+    },
+    "geography": {
+      "continent": "North America",
+      "region": "Central America",
+      "coordinates": {
+        "latitude": 13.83333333,
+        "longitude": -88.91666666
+      },
+      "borders": [
+        "GTM",
+        "HND"
+      ],
+      "timezones": [
+        "UTC-06:00"
+      ]
+    },
+    "info": {
+      "population": 6486205,
+      "languages": [
+        "Spanish"
+      ],
+      "currency": {
+        "code": "USD",
+        "symbol": "$"
+      },
+      "callingCode": "503",
+      "tld": ".sv"
+    }
+  },
+  "GNQ": {
+    "name": {
+      "common": "Equatorial Guinea",
+      "official": "Republic of Equatorial Guinea"
+    },
+    "codes": {
+      "iso2": "GQ",
+      "iso3": "GNQ"
+    },
+    "capital": "Malabo",
+    "flag": {
+      "emoji": "🇬🇶",
+      "imageUrl": "https://flagcdn.com/gq.svg"
+    },
+    "geography": {
+      "continent": "Africa",
+      "region": "Middle Africa",
+      "coordinates": {
+        "latitude": 2.0,
+        "longitude": 10.0
+      },
+      "borders": [
+        "CMR",
+        "GAB"
+      ],
+      "timezones": [
+        "UTC+01:00"
+      ]
+    },
+    "info": {
+      "population": 1402985,
+      "languages": [
+        "Spanish",
+        "French",
+        "Portuguese"
+      ],
+      "currency": {
+        "code": "XAF",
+        "symbol": "Fr"
+      },
+      "callingCode": "240",
+      "tld": ".gq"
+    }
+  },
+  "ERI": {
+    "name": {
+      "common": "Eritrea",
+      "official": "State of Eritrea"
+    },
+    "codes": {
+      "iso2": "ER",
+      "iso3": "ERI"
+    },
+    "capital": "Asmara",
+    "flag": {
+      "emoji": "🇪🇷",
+      "imageUrl": "https://flagcdn.com/er.svg"
+    },
+    "geography": {
+      "continent": "Africa",
+      "region": "Eastern Africa",
+      "coordinates": {
+        "latitude": 15.0,
+        "longitude": 39.0
+      },
+      "borders": [
+        "DJI",
+        "ETH",
+        "SDN"
+      ],
+      "timezones": [
+        "UTC+03:00"
+      ]
+    },
+    "info": {
+      "population": 3546421,
+      "languages": [
+        "Tigrinya",
+        "Arabic",
+        "English"
+      ],
+      "currency": {
+        "code": "ERN",
+        "symbol": "Nfk"
+      },
+      "callingCode": "291",
+      "tld": ".er"
+    }
+  },
+  "EST": {
+    "name": {
+      "common": "Estonia",
+      "official": "Republic of Estonia"
+    },
+    "codes": {
+      "iso2": "EE",
+      "iso3": "EST"
+    },
+    "capital": "Tallinn",
+    "flag": {
+      "emoji": "🇪🇪",
+      "imageUrl": "https://flagcdn.com/ee.svg"
+    },
+    "geography": {
+      "continent": "Europe",
+      "region": "Northern Europe",
+      "coordinates": {
+        "latitude": 59.0,
+        "longitude": 26.0
+      },
+      "borders": [
+        "LVA",
+        "RUS"
+      ],
+      "timezones": [
+        "UTC+02:00"
+      ]
+    },
+    "info": {
+      "population": 1331057,
+      "languages": [
+        "Estonian"
+      ],
+      "currency": {
+        "code": "EUR",
+        "symbol": "€"
+      },
+      "callingCode": "372",
+      "tld": ".ee"
+    }
+  },
+  "SWZ": {
+    "name": {
+      "common": "Eswatini",
+      "official": "Kingdom of Eswatini"
+    },
+    "codes": {
+      "iso2": "SZ",
+      "iso3": "SWZ"
+    },
+    "capital": "Mbabane",
+    "flag": {
+      "emoji": "🇸🇿",
+      "imageUrl": "https://flagcdn.com/sz.svg"
+    },
+    "geography": {
+      "continent": "Africa",
+      "region": "Southern Africa",
+      "coordinates": {
+        "latitude": -26.5,
+        "longitude": 31.5
+      },
+      "borders": [
+        "MOZ",
+        "ZAF"
+      ],
+      "timezones": [
+        "UTC+02:00"
+      ]
+    },
+    "info": {
+      "population": 1160164,
+      "languages": [
+        "English",
+        "Swazi"
+      ],
+      "currency": {
+        "code": "SZL",
+        "symbol": "L"
+      },
+      "callingCode": "268",
+      "tld": ".sz"
+    }
+  },
+  "ETH": {
+    "name": {
+      "common": "Ethiopia",
+      "official": "Federal Democratic Republic of Ethiopia"
+    },
+    "codes": {
+      "iso2": "ET",
+      "iso3": "ETH"
+    },
+    "capital": "Addis Ababa",
+    "flag": {
+      "emoji": "🇪🇹",
+      "imageUrl": "https://flagcdn.com/et.svg"
+    },
+    "geography": {
+      "continent": "Africa",
+      "region": "Eastern Africa",
+      "coordinates": {
+        "latitude": 8.0,
+        "longitude": 38.0
+      },
+      "borders": [
+        "DJI",
+        "ERI",
+        "KEN",
+        "SOM",
+        "SSD",
+        "SDN"
+      ],
+      "timezones": [
+        "UTC+03:00"
+      ]
+    },
+    "info": {
+      "population": 114963588,
+      "languages": [
+        "Amharic"
+      ],
+      "currency": {
+        "code": "ETB",
+        "symbol": "Br"
+      },
+      "callingCode": "251",
+      "tld": ".et"
+    }
+  },
+  "FJI": {
+    "name": {
+      "common": "Fiji",
+      "official": "Republic of Fiji"
+    },
+    "codes": {
+      "iso2": "FJ",
+      "iso3": "FJI"
+    },
+    "capital": "Suva",
+    "flag": {
+      "emoji": "🇫🇯",
+      "imageUrl": "https://flagcdn.com/fj.svg"
+    },
+    "geography": {
+      "continent": "Oceania",
+      "region": "Melanesia",
+      "coordinates": {
+        "latitude": -18.0,
+        "longitude": 175.0
+      },
+      "borders": [],
+      "timezones": [
+        "UTC+12:00"
+      ]
+    },
+    "info": {
+      "population": 896444,
+      "languages": [
+        "English",
+        "Fijian",
+        "Hindi"
+      ],
+      "currency": {
+        "code": "FJD",
+        "symbol": "$"
+      },
+      "callingCode": "679",
+      "tld": ".fj"
+    }
+  },
+  "FIN": {
+    "name": {
+      "common": "Finland",
+      "official": "Republic of Finland"
+    },
+    "codes": {
+      "iso2": "FI",
+      "iso3": "FIN"
+    },
+    "capital": "Helsinki",
+    "flag": {
+      "emoji": "🇫🇮",
+      "imageUrl": "https://flagcdn.com/fi.svg"
+    },
+    "geography": {
+      "continent": "Europe",
+      "region": "Northern Europe",
+      "coordinates": {
+        "latitude": 64.0,
+        "longitude": 26.0
+      },
+      "borders": [
+        "NOR",
+        "SWE",
+        "RUS"
+      ],
+      "timezones": [
+        "UTC+02:00"
+      ]
+    },
+    "info": {
+      "population": 5530719,
+      "languages": [
+        "Finnish",
+        "Swedish"
+      ],
+      "currency": {
+        "code": "EUR",
+        "symbol": "€"
+      },
+      "callingCode": "358",
+      "tld": ".fi"
+    }
+  },
+  "FRA": {
+    "name": {
+      "common": "France",
+      "official": "French Republic"
+    },
+    "codes": {
+      "iso2": "FR",
+      "iso3": "FRA"
+    },
+    "capital": "Paris",
+    "flag": {
+      "emoji": "🇫🇷",
+      "imageUrl": "https://flagcdn.com/fr.svg"
+    },
+    "geography": {
+      "continent": "Europe",
+      "region": "Western Europe",
+      "coordinates": {
+        "latitude": 46.0,
+        "longitude": 2.0
+      },
+      "borders": [
+        "AND",
+        "BEL",
+        "DEU",
+        "ITA",
+        "LUX",
+        "MCO",
+        "ESP",
+        "CHE"
+      ],
+      "timezones": [
+        "UTC-10:00",
+        "UTC-09:30",
+        "UTC-09:00",
+        "UTC-08:00",
+        "UTC-04:00",
+        "UTC-03:00",
+        "UTC+01:00",
+        "UTC+02:00",
+        "UTC+03:00",
+        "UTC+04:00",
+        "UTC+05:00",
+        "UTC+10:00",
+        "UTC+11:00",
+        "UTC+12:00"
+      ]
+    },
+    "info": {
+      "population": 67391582,
+      "languages": [
+        "French"
+      ],
+      "currency": {
+        "code": "EUR",
+        "symbol": "€"
+      },
+      "callingCode": "33",
+      "tld": ".fr"
+    }
+  },
+  "GAB": {
+    "name": {
+      "common": "Gabon",
+      "official": "Gabonese Republic"
+    },
+    "codes": {
+      "iso2": "GA",
+      "iso3": "GAB"
+    },
+    "capital": "Libreville",
+    "flag": {
+      "emoji": "🇬🇦",
+      "imageUrl": "https://flagcdn.com/ga.svg"
+    },
+    "geography": {
+      "continent": "Africa",
+      "region": "Middle Africa",
+      "coordinates": {
+        "latitude": -1.0,
+        "longitude": 11.75
+      },
+      "borders": [
+        "CMR",
+        "COG",
+        "GNQ"
+      ],
+      "timezones": [
+        "UTC+01:00"
+      ]
+    },
+    "info": {
+      "population": 2225734,
+      "languages": [
+        "French"
+      ],
+      "currency": {
+        "code": "XAF",
+        "symbol": "Fr"
+      },
+      "callingCode": "241",
+      "tld": ".ga"
+    }
+  },
+  "GMB": {
+    "name": {
+      "common": "Gambia",
+      "official": "Republic of the Gambia"
+    },
+    "codes": {
+      "iso2": "GM",
+      "iso3": "GMB"
+    },
+    "capital": "Banjul",
+    "flag": {
+      "emoji": "🇬🇲",
+      "imageUrl": "https://flagcdn.com/gm.svg"
+    },
+    "geography": {
+      "continent": "Africa",
+      "region": "Western Africa",
+      "coordinates": {
+        "latitude": 13.46666666,
+        "longitude": -16.56666666
+      },
+      "borders": [
+        "SEN"
+      ],
+      "timezones": [
+        "UTC+00:00"
+      ]
+    },
+    "info": {
+      "population": 2416668,
+      "languages": [
+        "English"
+      ],
+      "currency": {
+        "code": "GMD",
+        "symbol": "D"
+      },
+      "callingCode": "220",
+      "tld": ".gm"
+    }
+  },
+  "GEO": {
+    "name": {
+      "common": "Georgia",
+      "official": "Georgia"
+    },
+    "codes": {
+      "iso2": "GE",
+      "iso3": "GEO"
+    },
+    "capital": "Tbilisi",
+    "flag": {
+      "emoji": "🇬🇪",
+      "imageUrl": "https://flagcdn.com/ge.svg"
+    },
+    "geography": {
+      "continent": "Asia",
+      "region": "Western Asia",
+      "coordinates": {
+        "latitude": 42.0,
+        "longitude": 43.5
+      },
+      "borders": [
+        "ARM",
+        "AZE",
+        "RUS",
+        "TUR"
+      ],
+      "timezones": [
+        "UTC+04:00"
+      ]
+    },
+    "info": {
+      "population": 3714000,
+      "languages": [
+        "Georgian"
+      ],
+      "currency": {
+        "code": "GEL",
+        "symbol": "₾"
+      },
+      "callingCode": "995",
+      "tld": ".ge"
+    }
+  },
+  "DEU": {
+    "name": {
+      "common": "Germany",
+      "official": "Federal Republic of Germany"
+    },
+    "codes": {
+      "iso2": "DE",
+      "iso3": "DEU"
+    },
+    "capital": "Berlin",
+    "flag": {
+      "emoji": "🇩🇪",
+      "imageUrl": "https://flagcdn.com/de.svg"
+    },
+    "geography": {
+      "continent": "Europe",
+      "region": "Central Europe",
+      "coordinates": {
+        "latitude": 51.0,
+        "longitude": 9.0
+      },
+      "borders": [
+        "AUT",
+        "BEL",
+        "CZE",
+        "DNK",
+        "FRA",
+        "LUX",
+        "NLD",
+        "POL",
+        "CHE"
+      ],
+      "timezones": [
+        "UTC+01:00"
+      ]
+    },
+    "info": {
+      "population": 83240525,
+      "languages": [
+        "German"
+      ],
+      "currency": {
+        "code": "EUR",
+        "symbol": "€"
+      },
+      "callingCode": "49",
+      "tld": ".de"
+    }
+  },
+  "GHA": {
+    "name": {
+      "common": "Ghana",
+      "official": "Republic of Ghana"
+    },
+    "codes": {
+      "iso2": "GH",
+      "iso3": "GHA"
+    },
+    "capital": "Accra",
+    "flag": {
+      "emoji": "🇬🇭",
+      "imageUrl": "https://flagcdn.com/gh.svg"
+    },
+    "geography": {
+      "continent": "Africa",
+      "region": "Western Africa",
+      "coordinates": {
+        "latitude": 8.0,
+        "longitude": -2.0
+      },
+      "borders": [
+        "BFA",
+        "CIV",
+        "TGO"
+      ],
+      "timezones": [
+        "UTC+00:00"
+      ]
+    },
+    "info": {
+      "population": 31072940,
+      "languages": [
+        "English"
+      ],
+      "currency": {
+        "code": "GHS",
+        "symbol": "₵"
+      },
+      "callingCode": "233",
+      "tld": ".gh"
+    }
+  },
+  "GRC": {
+    "name": {
+      "common": "Greece",
+      "official": "Hellenic Republic"
+    },
+    "codes": {
+      "iso2": "GR",
+      "iso3": "GRC"
+    },
+    "capital": "Athens",
+    "flag": {
+      "emoji": "🇬🇷",
+      "imageUrl": "https://flagcdn.com/gr.svg"
+    },
+    "geography": {
+      "continent": "Europe",
+      "region": "Southern Europe",
+      "coordinates": {
+        "latitude": 39.0,
+        "longitude": 22.0
+      },
+      "borders": [
+        "ALB",
+        "BGR",
+        "TUR",
+        "MKD"
+      ],
+      "timezones": [
+        "UTC+02:00"
+      ]
+    },
+    "info": {
+      "population": 10715549,
+      "languages": [
+        "Greek"
+      ],
+      "currency": {
+        "code": "EUR",
+        "symbol": "€"
+      },
+      "callingCode": "30",
+      "tld": ".gr"
+    }
+  },
+  "GRD": {
+    "name": {
+      "common": "Grenada",
+      "official": "Grenada"
+    },
+    "codes": {
+      "iso2": "GD",
+      "iso3": "GRD"
+    },
+    "capital": "St. George's",
+    "flag": {
+      "emoji": "🇬🇩",
+      "imageUrl": "https://flagcdn.com/gd.svg"
+    },
+    "geography": {
+      "continent": "North America",
+      "region": "Caribbean",
+      "coordinates": {
+        "latitude": 12.11666666,
+        "longitude": -61.66666666
+      },
+      "borders": [],
+      "timezones": [
+        "UTC-04:00"
+      ]
+    },
+    "info": {
+      "population": 112523,
+      "languages": [
+        "English"
+      ],
+      "currency": {
+        "code": "XCD",
+        "symbol": "$"
+      },
+      "callingCode": "1473",
+      "tld": ".gd"
+    }
+  },
+  "GTM": {
+    "name": {
+      "common": "Guatemala",
+      "official": "Republic of Guatemala"
+    },
+    "codes": {
+      "iso2": "GT",
+      "iso3": "GTM"
+    },
+    "capital": "Guatemala City",
+    "flag": {
+      "emoji": "🇬🇹",
+      "imageUrl": "https://flagcdn.com/gt.svg"
+    },
+    "geography": {
+      "continent": "North America",
+      "region": "Central America",
+      "coordinates": {
+        "latitude": 15.5,
+        "longitude": -90.25
+      },
+      "borders": [
+        "BLZ",
+        "SLV",
+        "HND",
+        "MEX"
+      ],
+      "timezones": [
+        "UTC-06:00"
+      ]
+    },
+    "info": {
+      "population": 16858333,
+      "languages": [
+        "Spanish"
+      ],
+      "currency": {
+        "code": "GTQ",
+        "symbol": "Q"
+      },
+      "callingCode": "502",
+      "tld": ".gt"
+    }
+  },
+  "GIN": {
+    "name": {
+      "common": "Guinea",
+      "official": "Republic of Guinea"
+    },
+    "codes": {
+      "iso2": "GN",
+      "iso3": "GIN"
+    },
+    "capital": "Conakry",
+    "flag": {
+      "emoji": "🇬🇳",
+      "imageUrl": "https://flagcdn.com/gn.svg"
+    },
+    "geography": {
+      "continent": "Africa",
+      "region": "Western Africa",
+      "coordinates": {
+        "latitude": 11.0,
+        "longitude": -10.0
+      },
+      "borders": [
+        "CIV",
+        "GNB",
+        "LBR",
+        "MLI",
+        "SEN",
+        "SLE"
+      ],
+      "timezones": [
+        "UTC+00:00"
+      ]
+    },
+    "info": {
+      "population": 13132795,
+      "languages": [
+        "French"
+      ],
+      "currency": {
+        "code": "GNF",
+        "symbol": "Fr"
+      },
+      "callingCode": "224",
+      "tld": ".gn"
+    }
+  },
+  "GNB": {
+    "name": {
+      "common": "Guinea-Bissau",
+      "official": "Republic of Guinea-Bissau"
+    },
+    "codes": {
+      "iso2": "GW",
+      "iso3": "GNB"
+    },
+    "capital": "Bissau",
+    "flag": {
+      "emoji": "🇬🇼",
+      "imageUrl": "https://flagcdn.com/gw.svg"
+    },
+    "geography": {
+      "continent": "Africa",
+      "region": "Western Africa",
+      "coordinates": {
+        "latitude": 12.0,
+        "longitude": -15.0
+      },
+      "borders": [
+        "GIN",
+        "SEN"
+      ],
+      "timezones": [
+        "UTC+00:00"
+      ]
+    },
+    "info": {
+      "population": 1967998,
+      "languages": [
+        "Portuguese"
+      ],
+      "currency": {
+        "code": "XOF",
+        "symbol": "Fr"
+      },
+      "callingCode": "245",
+      "tld": ".gw"
+    }
+  },
+  "GUY": {
+    "name": {
+      "common": "Guyana",
+      "official": "Co-operative Republic of Guyana"
+    },
+    "codes": {
+      "iso2": "GY",
+      "iso3": "GUY"
+    },
+    "capital": "Georgetown",
+    "flag": {
+      "emoji": "🇬🇾",
+      "imageUrl": "https://flagcdn.com/gy.svg"
+    },
+    "geography": {
+      "continent": "South America",
+      "region": "South America",
+      "coordinates": {
+        "latitude": 5.0,
+        "longitude": -59.0
+      },
+      "borders": [
+        "BRA",
+        "SUR",
+        "VEN"
+      ],
+      "timezones": [
+        "UTC-04:00"
+      ]
+    },
+    "info": {
+      "population": 786552,
+      "languages": [
+        "English"
+      ],
+      "currency": {
+        "code": "GYD",
+        "symbol": "$"
+      },
+      "callingCode": "592",
+      "tld": ".gy"
+    }
+  },
+  "HTI": {
+    "name": {
+      "common": "Haiti",
+      "official": "Republic of Haiti"
+    },
+    "codes": {
+      "iso2": "HT",
+      "iso3": "HTI"
+    },
+    "capital": "Port-au-Prince",
+    "flag": {
+      "emoji": "🇭🇹",
+      "imageUrl": "https://flagcdn.com/ht.svg"
+    },
+    "geography": {
+      "continent": "North America",
+      "region": "Caribbean",
+      "coordinates": {
+        "latitude": 19.0,
+        "longitude": -72.41666666
+      },
+      "borders": [
+        "DOM"
+      ],
+      "timezones": [
+        "UTC-05:00"
+      ]
+    },
+    "info": {
+      "population": 11402528,
+      "languages": [
+        "French",
+        "Haitian Creole"
+      ],
+      "currency": {
+        "code": "HTG",
+        "symbol": "G"
+      },
+      "callingCode": "509",
+      "tld": ".ht"
+    }
+  },
+  "VAT": {
+    "name": {
+      "common": "Vatican City",
+      "official": "Vatican City State"
+    },
+    "codes": {
+      "iso2": "VA",
+      "iso3": "VAT"
+    },
+    "capital": "Vatican City",
+    "flag": {
+      "emoji": "🇻🇦",
+      "imageUrl": "https://flagcdn.com/va.svg"
+    },
+    "geography": {
+      "continent": "Europe",
+      "region": "Southern Europe",
+      "coordinates": {
+        "latitude": 41.9,
+        "longitude": 12.45
+      },
+      "borders": [
+        "ITA"
+      ],
+      "timezones": [
+        "UTC+01:00"
+      ]
+    },
+    "info": {
+      "population": 825,
+      "languages": [
+        "Italian",
+        "Latin"
+      ],
+      "currency": {
+        "code": "EUR",
+        "symbol": "€"
+      },
+      "callingCode": "379",
+      "tld": ".va"
+    }
+  },
+  "HND": {
+    "name": {
+      "common": "Honduras",
+      "official": "Republic of Honduras"
+    },
+    "codes": {
+      "iso2": "HN",
+      "iso3": "HND"
+    },
+    "capital": "Tegucigalpa",
+    "flag": {
+      "emoji": "🇭🇳",
+      "imageUrl": "https://flagcdn.com/hn.svg"
+    },
+    "geography": {
+      "continent": "North America",
+      "region": "Central America",
+      "coordinates": {
+        "latitude": 15.0,
+        "longitude": -86.5
+      },
+      "borders": [
+        "GTM",
+        "SLV",
+        "NIC"
+      ],
+      "timezones": [
+        "UTC-06:00"
+      ]
+    },
+    "info": {
+      "population": 9904607,
+      "languages": [
+        "Spanish"
+      ],
+      "currency": {
+        "code": "HNL",
+        "symbol": "L"
+      },
+      "callingCode": "504",
+      "tld": ".hn"
+    }
+  },
+  "HUN": {
+    "name": {
+      "common": "Hungary",
+      "official": "Hungary"
+    },
+    "codes": {
+      "iso2": "HU",
+      "iso3": "HUN"
+    },
+    "capital": "Budapest",
+    "flag": {
+      "emoji": "🇭🇺",
+      "imageUrl": "https://flagcdn.com/hu.svg"
+    },
+    "geography": {
+      "continent": "Europe",
+      "region": "Central Europe",
+      "coordinates": {
+        "latitude": 47.0,
+        "longitude": 20.0
+      },
+      "borders": [
+        "AUT",
+        "HRV",
+        "ROU",
+        "SRB",
+        "SVK",
+        "SVN",
+        "UKR"
+      ],
+      "timezones": [
+        "UTC+01:00"
+      ]
+    },
+    "info": {
+      "population": 9749763,
+      "languages": [
+        "Hungarian"
+      ],
+      "currency": {
+        "code": "HUF",
+        "symbol": "Ft"
+      },
+      "callingCode": "36",
+      "tld": ".hu"
+    }
+  },
+  "ISL": {
+    "name": {
+      "common": "Iceland",
+      "official": "Iceland"
+    },
+    "codes": {
+      "iso2": "IS",
+      "iso3": "ISL"
+    },
+    "capital": "Reykjavik",
+    "flag": {
+      "emoji": "🇮🇸",
+      "imageUrl": "https://flagcdn.com/is.svg"
+    },
+    "geography": {
+      "continent": "Europe",
+      "region": "Northern Europe",
+      "coordinates": {
+        "latitude": 65.0,
+        "longitude": -18.0
+      },
+      "borders": [],
+      "timezones": [
+        "UTC+00:00"
+      ]
+    },
+    "info": {
+      "population": 366425,
+      "languages": [
+        "Icelandic"
+      ],
+      "currency": {
+        "code": "ISK",
+        "symbol": "kr"
+      },
+      "callingCode": "354",
+      "tld": ".is"
+    }
+  },
+  "IND": {
+    "name": {
+      "common": "India",
+      "official": "Republic of India"
+    },
+    "codes": {
+      "iso2": "IN",
+      "iso3": "IND"
+    },
+    "capital": "New Delhi",
+    "flag": {
+      "emoji": "🇮🇳",
+      "imageUrl": "https://flagcdn.com/in.svg"
+    },
+    "geography": {
+      "continent": "Asia",
+      "region": "Southern Asia",
+      "coordinates": {
+        "latitude": 20.0,
+        "longitude": 77.0
+      },
+      "borders": [
+        "BGD",
+        "BTN",
+        "MMR",
+        "CHN",
+        "NPL",
+        "PAK"
+      ],
+      "timezones": [
+        "UTC+05:30"
+      ]
+    },
+    "info": {
+      "population": 1380004385,
+      "languages": [
+        "Hindi",
+        "English"
+      ],
+      "currency": {
+        "code": "INR",
+        "symbol": "₹"
+      },
+      "callingCode": "91",
+      "tld": ".in"
+    }
+  },
+  "IDN": {
+    "name": {
+      "common": "Indonesia",
+      "official": "Republic of Indonesia"
+    },
+    "codes": {
+      "iso2": "ID",
+      "iso3": "IDN"
+    },
+    "capital": "Jakarta",
+    "flag": {
+      "emoji": "🇮🇩",
+      "imageUrl": "https://flagcdn.com/id.svg"
+    },
+    "geography": {
+      "continent": "Asia",
+      "region": "South-Eastern Asia",
+      "coordinates": {
+        "latitude": -5.0,
+        "longitude": 120.0
+      },
+      "borders": [
+        "TLS",
+        "MYS",
+        "PNG"
+      ],
+      "timezones": [
+        "UTC+07:00",
+        "UTC+08:00",
+        "UTC+09:00"
+      ]
+    },
+    "info": {
+      "population": 273523615,
+      "languages": [
+        "Indonesian"
+      ],
+      "currency": {
+        "code": "IDR",
+        "symbol": "Rp"
+      },
+      "callingCode": "62",
+      "tld": ".id"
+    }
+  },
+  "IRN": {
+    "name": {
+      "common": "Iran",
+      "official": "Islamic Republic of Iran"
+    },
+    "codes": {
+      "iso2": "IR",
+      "iso3": "IRN"
+    },
+    "capital": "Tehran",
+    "flag": {
+      "emoji": "🇮🇷",
+      "imageUrl": "https://flagcdn.com/ir.svg"
+    },
+    "geography": {
+      "continent": "Asia",
+      "region": "Southern Asia",
+      "coordinates": {
+        "latitude": 32.0,
+        "longitude": 53.0
+      },
+      "borders": [
+        "AFG",
+        "ARM",
+        "AZE",
+        "IRQ",
+        "PAK",
+        "TUR",
+        "TKM"
+      ],
+      "timezones": [
+        "UTC+03:30"
+      ]
+    },
+    "info": {
+      "population": 83992949,
+      "languages": [
+        "Persian"
+      ],
+      "currency": {
+        "code": "IRR",
+        "symbol": "﷼"
+      },
+      "callingCode": "98",
+      "tld": ".ir"
+    }
+  },
+  "IRQ": {
+    "name": {
+      "common": "Iraq",
+      "official": "Republic of Iraq"
+    },
+    "codes": {
+      "iso2": "IQ",
+      "iso3": "IRQ"
+    },
+    "capital": "Baghdad",
+    "flag": {
+      "emoji": "🇮🇶",
+      "imageUrl": "https://flagcdn.com/iq.svg"
+    },
+    "geography": {
+      "continent": "Asia",
+      "region": "Western Asia",
+      "coordinates": {
+        "latitude": 33.0,
+        "longitude": 44.0
+      },
+      "borders": [
+        "IRN",
+        "JOR",
+        "KWT",
+        "SAU",
+        "SYR",
+        "TUR"
+      ],
+      "timezones": [
+        "UTC+03:00"
+      ]
+    },
+    "info": {
+      "population": 40462701,
+      "languages": [
+        "Arabic",
+        "Kurdish"
+      ],
+      "currency": {
+        "code": "IQD",
+        "symbol": "ع.د"
+      },
+      "callingCode": "964",
+      "tld": ".iq"
+    }
+  },
+  "IRL": {
+    "name": {
+      "common": "Ireland",
+      "official": "Republic of Ireland"
+    },
+    "codes": {
+      "iso2": "IE",
+      "iso3": "IRL"
+    },
+    "capital": "Dublin",
+    "flag": {
+      "emoji": "🇮🇪",
+      "imageUrl": "https://flagcdn.com/ie.svg"
+    },
+    "geography": {
+      "continent": "Europe",
+      "region": "Northern Europe",
+      "coordinates": {
+        "latitude": 53.0,
+        "longitude": -8.0
+      },
+      "borders": [
+        "GBR"
+      ],
+      "timezones": [
+        "UTC+00:00"
+      ]
+    },
+    "info": {
+      "population": 4994724,
+      "languages": [
+        "English",
+        "Irish"
+      ],
+      "currency": {
+        "code": "EUR",
+        "symbol": "€"
+      },
+      "callingCode": "353",
+      "tld": ".ie"
+    }
+  },
+  "ISR": {
+    "name": {
+      "common": "Israel",
+      "official": "State of Israel"
+    },
+    "codes": {
+      "iso2": "IL",
+      "iso3": "ISR"
+    },
+    "capital": "Jerusalem",
+    "flag": {
+      "emoji": "🇮🇱",
+      "imageUrl": "https://flagcdn.com/il.svg"
+    },
+    "geography": {
+      "continent": "Asia",
+      "region": "Western Asia",
+      "coordinates": {
+        "latitude": 31.5,
+        "longitude": 34.75
+      },
+      "borders": [
+        "EGY",
+        "JOR",
+        "LBN",
+        "PSE",
+        "SYR"
+      ],
+      "timezones": [
+        "UTC+02:00"
+      ]
+    },
+    "info": {
+      "population": 9216900,
+      "languages": [
+        "Hebrew",
+        "Arabic"
+      ],
+      "currency": {
+        "code": "ILS",
+        "symbol": "₪"
+      },
+      "callingCode": "972",
+      "tld": ".il"
+    }
+  },
+  "ITA": {
+    "name": {
+      "common": "Italy",
+      "official": "Italian Republic"
+    },
+    "codes": {
+      "iso2": "IT",
+      "iso3": "ITA"
+    },
+    "capital": "Rome",
+    "flag": {
+      "emoji": "🇮🇹",
+      "imageUrl": "https://flagcdn.com/it.svg"
+    },
+    "geography": {
+      "continent": "Europe",
+      "region": "Southern Europe",
+      "coordinates": {
+        "latitude": 42.83333333,
+        "longitude": 12.83333333
+      },
+      "borders": [
+        "AUT",
+        "FRA",
+        "SMR",
+        "SVN",
+        "CHE",
+        "VAT"
+      ],
+      "timezones": [
+        "UTC+01:00"
+      ]
+    },
+    "info": {
+      "population": 59554023,
+      "languages": [
+        "Italian"
+      ],
+      "currency": {
+        "code": "EUR",
+        "symbol": "€"
+      },
+      "callingCode": "39",
+      "tld": ".it"
+    }
+  },
+  "JAM": {
+    "name": {
+      "common": "Jamaica",
+      "official": "Jamaica"
+    },
+    "codes": {
+      "iso2": "JM",
+      "iso3": "JAM"
+    },
+    "capital": "Kingston",
+    "flag": {
+      "emoji": "🇯🇲",
+      "imageUrl": "https://flagcdn.com/jm.svg"
+    },
+    "geography": {
+      "continent": "North America",
+      "region": "Caribbean",
+      "coordinates": {
+        "latitude": 18.25,
+        "longitude": -77.5
+      },
+      "borders": [],
+      "timezones": [
+        "UTC-05:00"
+      ]
+    },
+    "info": {
+      "population": 2961161,
+      "languages": [
+        "English",
+        "Jamaican Patois"
+      ],
+      "currency": {
+        "code": "JMD",
+        "symbol": "$"
+      },
+      "callingCode": "1876",
+      "tld": ".jm"
+    }
+  },
+  "JPN": {
+    "name": {
+      "common": "Japan",
+      "official": "Japan"
+    },
+    "codes": {
+      "iso2": "JP",
+      "iso3": "JPN"
+    },
+    "capital": "Tokyo",
+    "flag": {
+      "emoji": "🇯🇵",
+      "imageUrl": "https://flagcdn.com/jp.svg"
+    },
+    "geography": {
+      "continent": "Asia",
+      "region": "Eastern Asia",
+      "coordinates": {
+        "latitude": 36.0,
+        "longitude": 138.0
+      },
+      "borders": [],
+      "timezones": [
+        "UTC+09:00"
+      ]
+    },
+    "info": {
+      "population": 125836021,
+      "languages": [
+        "Japanese"
+      ],
+      "currency": {
+        "code": "JPY",
+        "symbol": "¥"
+      },
+      "callingCode": "81",
+      "tld": ".jp"
+    }
+  },
+  "JOR": {
+    "name": {
+      "common": "Jordan",
+      "official": "Hashemite Kingdom of Jordan"
+    },
+    "codes": {
+      "iso2": "JO",
+      "iso3": "JOR"
+    },
+    "capital": "Amman",
+    "flag": {
+      "emoji": "🇯🇴",
+      "imageUrl": "https://flagcdn.com/jo.svg"
+    },
+    "geography": {
+      "continent": "Asia",
+      "region": "Western Asia",
+      "coordinates": {
+        "latitude": 31.0,
+        "longitude": 36.0
+      },
+      "borders": [
+        "IRQ",
+        "ISR",
+        "PSE",
+        "SAU",
+        "SYR"
+      ],
+      "timezones": [
+        "UTC+03:00"
+      ]
+    },
+    "info": {
+      "population": 10203134,
+      "languages": [
+        "Arabic"
+      ],
+      "currency": {
+        "code": "JOD",
+        "symbol": "د.ا"
+      },
+      "callingCode": "962",
+      "tld": ".jo"
+    }
+  },
+  "KAZ": {
+    "name": {
+      "common": "Kazakhstan",
+      "official": "Republic of Kazakhstan"
+    },
+    "codes": {
+      "iso2": "KZ",
+      "iso3": "KAZ"
+    },
+    "capital": "Nur-Sultan",
+    "flag": {
+      "emoji": "🇰🇿",
+      "imageUrl": "https://flagcdn.com/kz.svg"
+    },
+    "geography": {
+      "continent": "Asia",
+      "region": "Central Asia",
+      "coordinates": {
+        "latitude": 48.0,
+        "longitude": 68.0
+      },
+      "borders": [
+        "CHN",
+        "KGZ",
+        "RUS",
+        "TKM",
+        "UZB"
+      ],
+      "timezones": [
+        "UTC+05:00",
+        "UTC+06:00"
+      ]
+    },
+    "info": {
+      "population": 18754440,
+      "languages": [
+        "Kazakh",
+        "Russian"
+      ],
+      "currency": {
+        "code": "KZT",
+        "symbol": "₸"
+      },
+      "callingCode": "7",
+      "tld": ".kz"
+    }
+  },
+  "KEN": {
+    "name": {
+      "common": "Kenya",
+      "official": "Republic of Kenya"
+    },
+    "codes": {
+      "iso2": "KE",
+      "iso3": "KEN"
+    },
+    "capital": "Nairobi",
+    "flag": {
+      "emoji": "🇰🇪",
+      "imageUrl": "https://flagcdn.com/ke.svg"
+    },
+    "geography": {
+      "continent": "Africa",
+      "region": "Eastern Africa",
+      "coordinates": {
+        "latitude": 1.0,
+        "longitude": 38.0
+      },
+      "borders": [
+        "ETH",
+        "SOM",
+        "SSD",
+        "TZA",
+        "UGA"
+      ],
+      "timezones": [
+        "UTC+03:00"
+      ]
+    },
+    "info": {
+      "population": 54985698,
+      "languages": [
+        "English",
+        "Swahili"
+      ],
+      "currency": {
+        "code": "KES",
+        "symbol": "Sh"
+      },
+      "callingCode": "254",
+      "tld": ".ke"
+    }
+  },
+  "KIR": {
+    "name": {
+      "common": "Kiribati",
+      "official": "Independent and Sovereign Republic of Kiribati"
+    },
+    "codes": {
+      "iso2": "KI",
+      "iso3": "KIR"
+    },
+    "capital": "South Tarawa",
+    "flag": {
+      "emoji": "🇰🇮",
+      "imageUrl": "https://flagcdn.com/ki.svg"
+    },
+    "geography": {
+      "continent": "Oceania",
+      "region": "Micronesia",
+      "coordinates": {
+        "latitude": 1.41666666,
+        "longitude": 173.0
+      },
+      "borders": [],
+      "timezones": [
+        "UTC+12:00",
+        "UTC+13:00",
+        "UTC+14:00"
+      ]
+    },
+    "info": {
+      "population": 119446,
+      "languages": [
+        "English",
+        "Gilbertese"
+      ],
+      "currency": {
+        "code": "AUD",
+        "symbol": "$"
+      },
+      "callingCode": "686",
+      "tld": ".ki"
+    }
+  },
+  "PRK": {
+    "name": {
+      "common": "North Korea",
+      "official": "Democratic People's Republic of Korea"
+    },
+    "codes": {
+      "iso2": "KP",
+      "iso3": "PRK"
+    },
+    "capital": "Pyongyang",
+    "flag": {
+      "emoji": "🇰🇵",
+      "imageUrl": "https://flagcdn.com/kp.svg"
+    },
+    "geography": {
+      "continent": "Asia",
+      "region": "Eastern Asia",
+      "coordinates": {
+        "latitude": 40.0,
+        "longitude": 127.0
+      },
+      "borders": [
+        "CHN",
+        "KOR",
+        "RUS"
+      ],
+      "timezones": [
+        "UTC+09:00"
+      ]
+    },
+    "info": {
+      "population": 25778815,
+      "languages": [
+        "Korean"
+      ],
+      "currency": {
+        "code": "KPW",
+        "symbol": "₩"
+      },
+      "callingCode": "850",
+      "tld": ".kp"
+    }
+  },
+  "KOR": {
+    "name": {
+      "common": "South Korea",
+      "official": "Republic of Korea"
+    },
+    "codes": {
+      "iso2": "KR",
+      "iso3": "KOR"
+    },
+    "capital": "Seoul",
+    "flag": {
+      "emoji": "🇰🇷",
+      "imageUrl": "https://flagcdn.com/kr.svg"
+    },
+    "geography": {
+      "continent": "Asia",
+      "region": "Eastern Asia",
+      "coordinates": {
+        "latitude": 37.0,
+        "longitude": 127.5
+      },
+      "borders": [
+        "PRK"
+      ],
+      "timezones": [
+        "UTC+09:00"
+      ]
+    },
+    "info": {
+      "population": 51780579,
+      "languages": [
+        "Korean"
+      ],
+      "currency": {
+        "code": "KRW",
+        "symbol": "₩"
+      },
+      "callingCode": "82",
+      "tld": ".kr"
+    }
+  },
+  "KWT": {
+    "name": {
+      "common": "Kuwait",
+      "official": "State of Kuwait"
+    },
+    "codes": {
+      "iso2": "KW",
+      "iso3": "KWT"
+    },
+    "capital": "Kuwait City",
+    "flag": {
+      "emoji": "🇰🇼",
+      "imageUrl": "https://flagcdn.com/kw.svg"
+    },
+    "geography": {
+      "continent": "Asia",
+      "region": "Western Asia",
+      "coordinates": {
+        "latitude": 29.5,
+        "longitude": 45.75
+      },
+      "borders": [
+        "IRQ",
+        "SAU"
+      ],
+      "timezones": [
+        "UTC+03:00"
+      ]
+    },
+    "info": {
+      "population": 4270563,
+      "languages": [
+        "Arabic"
+      ],
+      "currency": {
+        "code": "KWD",
+        "symbol": "د.ك"
+      },
+      "callingCode": "965",
+      "tld": ".kw"
+    }
+  },
+  "KGZ": {
+    "name": {
+      "common": "Kyrgyzstan",
+      "official": "Kyrgyz Republic"
+    },
+    "codes": {
+      "iso2": "KG",
+      "iso3": "KGZ"
+    },
+    "capital": "Bishkek",
+    "flag": {
+      "emoji": "🇰🇬",
+      "imageUrl": "https://flagcdn.com/kg.svg"
+    },
+    "geography": {
+      "continent": "Asia",
+      "region": "Central Asia",
+      "coordinates": {
+        "latitude": 41.0,
+        "longitude": 75.0
+      },
+      "borders": [
+        "CHN",
+        "KAZ",
+        "TJK",
+        "UZB"
+      ],
+      "timezones": [
+        "UTC+06:00"
+      ]
+    },
+    "info": {
+      "population": 6591600,
+      "languages": [
+        "Kyrgyz",
+        "Russian"
+      ],
+      "currency": {
+        "code": "KGS",
+        "symbol": "с"
+      },
+      "callingCode": "996",
+      "tld": ".kg"
+    }
+  },
+  "LAO": {
+    "name": {
+      "common": "Laos",
+      "official": "Lao People's Democratic Republic"
+    },
+    "codes": {
+      "iso2": "LA",
+      "iso3": "LAO"
+    },
+    "capital": "Vientiane",
+    "flag": {
+      "emoji": "🇱🇦",
+      "imageUrl": "https://flagcdn.com/la.svg"
+    },
+    "geography": {
+      "continent": "Asia",
+      "region": "South-Eastern Asia",
+      "coordinates": {
+        "latitude": 18.0,
+        "longitude": 105.0
+      },
+      "borders": [
+        "KHM",
+        "CHN",
+        "MMR",
+        "THA",
+        "VNM"
+      ],
+      "timezones": [
+        "UTC+07:00"
+      ]
+    },
+    "info": {
+      "population": 7275556,
+      "languages": [
+        "Lao"
+      ],
+      "currency": {
+        "code": "LAK",
+        "symbol": "₭"
+      },
+      "callingCode": "856",
+      "tld": ".la"
+    }
+  },
+  "LVA": {
+    "name": {
+      "common": "Latvia",
+      "official": "Republic of Latvia"
+    },
+    "codes": {
+      "iso2": "LV",
+      "iso3": "LVA"
+    },
+    "capital": "Riga",
+    "flag": {
+      "emoji": "🇱🇻",
+      "imageUrl": "https://flagcdn.com/lv.svg"
+    },
+    "geography": {
+      "continent": "Europe",
+      "region": "Northern Europe",
+      "coordinates": {
+        "latitude": 57.0,
+        "longitude": 25.0
+      },
+      "borders": [
+        "BLR",
+        "EST",
+        "LTU",
+        "RUS"
+      ],
+      "timezones": [
+        "UTC+02:00"
+      ]
+    },
+    "info": {
+      "population": 1901548,
+      "languages": [
+        "Latvian"
+      ],
+      "currency": {
+        "code": "EUR",
+        "symbol": "€"
+      },
+      "callingCode": "371",
+      "tld": ".lv"
+    }
+  },
+  "LBN": {
+    "name": {
+      "common": "Lebanon",
+      "official": "Lebanese Republic"
+    },
+    "codes": {
+      "iso2": "LB",
+      "iso3": "LBN"
+    },
+    "capital": "Beirut",
+    "flag": {
+      "emoji": "🇱🇧",
+      "imageUrl": "https://flagcdn.com/lb.svg"
+    },
+    "geography": {
+      "continent": "Asia",
+      "region": "Western Asia",
+      "coordinates": {
+        "latitude": 33.83333333,
+        "longitude": 35.83333333
+      },
+      "borders": [
+        "ISR",
+        "SYR"
+      ],
+      "timezones": [
+        "UTC+02:00"
+      ]
+    },
+    "info": {
+      "population": 6825442,
+      "languages": [
+        "Arabic",
+        "French"
+      ],
+      "currency": {
+        "code": "LBP",
+        "symbol": "ل.ل"
+      },
+      "callingCode": "961",
+      "tld": ".lb"
+    }
+  },
+  "LSO": {
+    "name": {
+      "common": "Lesotho",
+      "official": "Kingdom of Lesotho"
+    },
+    "codes": {
+      "iso2": "LS",
+      "iso3": "LSO"
+    },
+    "capital": "Maseru",
+    "flag": {
+      "emoji": "🇱🇸",
+      "imageUrl": "https://flagcdn.com/ls.svg"
+    },
+    "geography": {
+      "continent": "Africa",
+      "region": "Southern Africa",
+      "coordinates": {
+        "latitude": -29.5,
+        "longitude": 28.5
+      },
+      "borders": [
+        "ZAF"
+      ],
+      "timezones": [
+        "UTC+02:00"
+      ]
+    },
+    "info": {
+      "population": 2142252,
+      "languages": [
+        "English",
+        "Sotho"
+      ],
+      "currency": {
+        "code": "LSL",
+        "symbol": "L"
+      },
+      "callingCode": "266",
+      "tld": ".ls"
+    }
+  },
+  "LBR": {
+    "name": {
+      "common": "Liberia",
+      "official": "Republic of Liberia"
+    },
+    "codes": {
+      "iso2": "LR",
+      "iso3": "LBR"
+    },
+    "capital": "Monrovia",
+    "flag": {
+      "emoji": "🇱🇷",
+      "imageUrl": "https://flagcdn.com/lr.svg"
+    },
+    "geography": {
+      "continent": "Africa",
+      "region": "Western Africa",
+      "coordinates": {
+        "latitude": 6.5,
+        "longitude": -9.5
+      },
+      "borders": [
+        "GIN",
+        "CIV",
+        "SLE"
+      ],
+      "timezones": [
+        "UTC+00:00"
+      ]
+    },
+    "info": {
+      "population": 5057681,
+      "languages": [
+        "English"
+      ],
+      "currency": {
+        "code": "LRD",
+        "symbol": "$"
+      },
+      "callingCode": "231",
+      "tld": ".lr"
+    }
+  },
+  "LBY": {
+    "name": {
+      "common": "Libya",
+      "official": "State of Libya"
+    },
+    "codes": {
+      "iso2": "LY",
+      "iso3": "LBY"
+    },
+    "capital": "Tripoli",
+    "flag": {
+      "emoji": "🇱🇾",
+      "imageUrl": "https://flagcdn.com/ly.svg"
+    },
+    "geography": {
+      "continent": "Africa",
+      "region": "Northern Africa",
+      "coordinates": {
+        "latitude": 25.0,
+        "longitude": 17.0
+      },
+      "borders": [
+        "DZA",
+        "TCD",
+        "EGY",
+        "NER",
+        "SDN",
+        "TUN"
+      ],
+      "timezones": [
+        "UTC+02:00"
+      ]
+    },
+    "info": {
+      "population": 6871292,
+      "languages": [
+        "Arabic"
+      ],
+      "currency": {
+        "code": "LYD",
+        "symbol": "ل.د"
+      },
+      "callingCode": "218",
+      "tld": ".ly"
+    }
+  },
+  "LIE": {
+    "name": {
+      "common": "Liechtenstein",
+      "official": "Principality of Liechtenstein"
+    },
+    "codes": {
+      "iso2": "LI",
+      "iso3": "LIE"
+    },
+    "capital": "Vaduz",
+    "flag": {
+      "emoji": "🇱🇮",
+      "imageUrl": "https://flagcdn.com/li.svg"
+    },
+    "geography": {
+      "continent": "Europe",
+      "region": "Western Europe",
+      "coordinates": {
+        "latitude": 47.26666666,
+        "longitude": 9.53333333
+      },
+      "borders": [
+        "AUT",
+        "CHE"
+      ],
+      "timezones": [
+        "UTC+01:00"
+      ]
+    },
+    "info": {
+      "population": 38137,
+      "languages": [
+        "German"
+      ],
+      "currency": {
+        "code": "CHF",
+        "symbol": "Fr"
+      },
+      "callingCode": "423",
+      "tld": ".li"
+    }
+  },
+  "LTU": {
+    "name": {
+      "common": "Lithuania",
+      "official": "Republic of Lithuania"
+    },
+    "codes": {
+      "iso2": "LT",
+      "iso3": "LTU"
+    },
+    "capital": "Vilnius",
+    "flag": {
+      "emoji": "🇱🇹",
+      "imageUrl": "https://flagcdn.com/lt.svg"
+    },
+    "geography": {
+      "continent": "Europe",
+      "region": "Northern Europe",
+      "coordinates": {
+        "latitude": 56.0,
+        "longitude": 24.0
+      },
+      "borders": [
+        "BLR",
+        "LVA",
+        "POL",
+        "RUS"
+      ],
+      "timezones": [
+        "UTC+02:00"
+      ]
+    },
+    "info": {
+      "population": 2794700,
+      "languages": [
+        "Lithuanian"
+      ],
+      "currency": {
+        "code": "EUR",
+        "symbol": "€"
+      },
+      "callingCode": "370",
+      "tld": ".lt"
+    }
+  },
+  "LUX": {
+    "name": {
+      "common": "Luxembourg",
+      "official": "Grand Duchy of Luxembourg"
+    },
+    "codes": {
+      "iso2": "LU",
+      "iso3": "LUX"
+    },
+    "capital": "Luxembourg",
+    "flag": {
+      "emoji": "🇱🇺",
+      "imageUrl": "https://flagcdn.com/lu.svg"
+    },
+    "geography": {
+      "continent": "Europe",
+      "region": "Western Europe",
+      "coordinates": {
+        "latitude": 49.75,
+        "longitude": 6.16666666
+      },
+      "borders": [
+        "BEL",
+        "FRA",
+        "DEU"
+      ],
+      "timezones": [
+        "UTC+01:00"
+      ]
+    },
+    "info": {
+      "population": 632275,
+      "languages": [
+        "French",
+        "German",
+        "Luxembourgish"
+      ],
+      "currency": {
+        "code": "EUR",
+        "symbol": "€"
+      },
+      "callingCode": "352",
+      "tld": ".lu"
+    }
+  },
+  "MDG": {
+    "name": {
+      "common": "Madagascar",
+      "official": "Republic of Madagascar"
+    },
+    "codes": {
+      "iso2": "MG",
+      "iso3": "MDG"
+    },
+    "capital": "Antananarivo",
+    "flag": {
+      "emoji": "🇲🇬",
+      "imageUrl": "https://flagcdn.com/mg.svg"
+    },
+    "geography": {
+      "continent": "Africa",
+      "region": "Eastern Africa",
+      "coordinates": {
+        "latitude": -20.0,
+        "longitude": 47.0
+      },
+      "borders": [],
+      "timezones": [
+        "UTC+03:00"
+      ]
+    },
+    "info": {
+      "population": 27691019,
+      "languages": [
+        "French",
+        "Malagasy"
+      ],
+      "currency": {
+        "code": "MGA",
+        "symbol": "Ar"
+      },
+      "callingCode": "261",
+      "tld": ".mg"
+    }
+  },
+  "MWI": {
+    "name": {
+      "common": "Malawi",
+      "official": "Republic of Malawi"
+    },
+    "codes": {
+      "iso2": "MW",
+      "iso3": "MWI"
+    },
+    "capital": "Lilongwe",
+    "flag": {
+      "emoji": "🇲🇼",
+      "imageUrl": "https://flagcdn.com/mw.svg"
+    },
+    "geography": {
+      "continent": "Africa",
+      "region": "Eastern Africa",
+      "coordinates": {
+        "latitude": -13.5,
+        "longitude": 34.0
+      },
+      "borders": [
+        "MOZ",
+        "TZA",
+        "ZMB"
+      ],
+      "timezones": [
+        "UTC+02:00"
+      ]
+    },
+    "info": {
+      "population": 19129952,
+      "languages": [
+        "English",
+        "Chewa"
+      ],
+      "currency": {
+        "code": "MWK",
+        "symbol": "MK"
+      },
+      "callingCode": "265",
+      "tld": ".mw"
+    }
+  },
+  "MYS": {
+    "name": {
+      "common": "Malaysia",
+      "official": "Malaysia"
+    },
+    "codes": {
+      "iso2": "MY",
+      "iso3": "MYS"
+    },
+    "capital": "Kuala Lumpur",
+    "flag": {
+      "emoji": "🇲🇾",
+      "imageUrl": "https://flagcdn.com/my.svg"
+    },
+    "geography": {
+      "continent": "Asia",
+      "region": "South-Eastern Asia",
+      "coordinates": {
+        "latitude": 2.5,
+        "longitude": 112.5
+      },
+      "borders": [
+        "BRN",
+        "IDN",
+        "THA"
+      ],
+      "timezones": [
+        "UTC+08:00"
+      ]
+    },
+    "info": {
+      "population": 32365999,
+      "languages": [
+        "Malay"
+      ],
+      "currency": {
+        "code": "MYR",
+        "symbol": "RM"
+      },
+      "callingCode": "60",
+      "tld": ".my"
+    }
+  },
+  "MDV": {
+    "name": {
+      "common": "Maldives",
+      "official": "Republic of the Maldives"
+    },
+    "codes": {
+      "iso2": "MV",
+      "iso3": "MDV"
+    },
+    "capital": "Malé",
+    "flag": {
+      "emoji": "🇲🇻",
+      "imageUrl": "https://flagcdn.com/mv.svg"
+    },
+    "geography": {
+      "continent": "Asia",
+      "region": "Southern Asia",
+      "coordinates": {
+        "latitude": 3.25,
+        "longitude": 73.0
+      },
+      "borders": [],
+      "timezones": [
+        "UTC+05:00"
+      ]
+    },
+    "info": {
+      "population": 540544,
+      "languages": [
+        "Divehi"
+      ],
+      "currency": {
+        "code": "MVR",
+        "symbol": ".ރ"
+      },
+      "callingCode": "960",
+      "tld": ".mv"
+    }
+  },
+  "MLI": {
+    "name": {
+      "common": "Mali",
+      "official": "Republic of Mali"
+    },
+    "codes": {
+      "iso2": "ML",
+      "iso3": "MLI"
+    },
+    "capital": "Bamako",
+    "flag": {
+      "emoji": "🇲🇱",
+      "imageUrl": "https://flagcdn.com/ml.svg"
+    },
+    "geography": {
+      "continent": "Africa",
+      "region": "Western Africa",
+      "coordinates": {
+        "latitude": 17.0,
+        "longitude": -4.0
+      },
+      "borders": [
+        "DZA",
+        "BFA",
+        "GIN",
+        "CIV",
+        "MRT",
+        "NER",
+        "SEN"
+      ],
+      "timezones": [
+        "UTC+00:00"
+      ]
+    },
+    "info": {
+      "population": 20250833,
+      "languages": [
+        "French"
+      ],
+      "currency": {
+        "code": "XOF",
+        "symbol": "Fr"
+      },
+      "callingCode": "223",
+      "tld": ".ml"
+    }
+  },
+  "MLT": {
+    "name": {
+      "common": "Malta",
+      "official": "Republic of Malta"
+    },
+    "codes": {
+      "iso2": "MT",
+      "iso3": "MLT"
+    },
+    "capital": "Valletta",
+    "flag": {
+      "emoji": "🇲🇹",
+      "imageUrl": "https://flagcdn.com/mt.svg"
+    },
+    "geography": {
+      "continent": "Europe",
+      "region": "Southern Europe",
+      "coordinates": {
+        "latitude": 35.83333333,
+        "longitude": 14.58333333
+      },
+      "borders": [],
+      "timezones": [
+        "UTC+01:00"
+      ]
+    },
+    "info": {
+      "population": 514000,
+      "languages": [
+        "Maltese",
+        "English"
+      ],
+      "currency": {
+        "code": "EUR",
+        "symbol": "€"
+      },
+      "callingCode": "356",
+      "tld": ".mt"
+    }
+  },
+  "MHL": {
+    "name": {
+      "common": "Marshall Islands",
+      "official": "Republic of the Marshall Islands"
+    },
+    "codes": {
+      "iso2": "MH",
+      "iso3": "MHL"
+    },
+    "capital": "Majuro",
+    "flag": {
+      "emoji": "🇲🇭",
+      "imageUrl": "https://flagcdn.com/mh.svg"
+    },
+    "geography": {
+      "continent": "Oceania",
+      "region": "Micronesia",
+      "coordinates": {
+        "latitude": 9.0,
+        "longitude": 168.0
+      },
+      "borders": [],
+      "timezones": [
+        "UTC+12:00"
+      ]
+    },
+    "info": {
+      "population": 59190,
+      "languages": [
+        "English",
+        "Marshallese"
+      ],
+      "currency": {
+        "code": "USD",
+        "symbol": "$"
+      },
+      "callingCode": "692",
+      "tld": ".mh"
+    }
+  },
+  "MRT": {
+    "name": {
+      "common": "Mauritania",
+      "official": "Islamic Republic of Mauritania"
+    },
+    "codes": {
+      "iso2": "MR",
+      "iso3": "MRT"
+    },
+    "capital": "Nouakchott",
+    "flag": {
+      "emoji": "🇲🇷",
+      "imageUrl": "https://flagcdn.com/mr.svg"
+    },
+    "geography": {
+      "continent": "Africa",
+      "region": "Western Africa",
+      "coordinates": {
+        "latitude": 20.0,
+        "longitude": -12.0
+      },
+      "borders": [
+        "DZA",
+        "MLI",
+        "SEN",
+        "ESH"
+      ],
+      "timezones": [
+        "UTC+00:00"
+      ]
+    },
+    "info": {
+      "population": 4649658,
+      "languages": [
+        "Arabic"
+      ],
+      "currency": {
+        "code": "MRU",
+        "symbol": "UM"
+      },
+      "callingCode": "222",
+      "tld": ".mr"
+    }
+  },
+  "MUS": {
+    "name": {
+      "common": "Mauritius",
+      "official": "Republic of Mauritius"
+    },
+    "codes": {
+      "iso2": "MU",
+      "iso3": "MUS"
+    },
+    "capital": "Port Louis",
+    "flag": {
+      "emoji": "🇲🇺",
+      "imageUrl": "https://flagcdn.com/mu.svg"
+    },
+    "geography": {
+      "continent": "Africa",
+      "region": "Eastern Africa",
+      "coordinates": {
+        "latitude": -20.28333333,
+        "longitude": 57.55
+      },
+      "borders": [],
+      "timezones": [
+        "UTC+04:00"
+      ]
+    },
+    "info": {
+      "population": 1265985,
+      "languages": [
+        "English",
+        "French",
+        "Mauritian Creole"
+      ],
+      "currency": {
+        "code": "MUR",
+        "symbol": "₨"
+      },
+      "callingCode": "230",
+      "tld": ".mu"
+    }
+  },
+  "MEX": {
+    "name": {
+      "common": "Mexico",
+      "official": "United Mexican States"
+    },
+    "codes": {
+      "iso2": "MX",
+      "iso3": "MEX"
+    },
+    "capital": "Mexico City",
+    "flag": {
+      "emoji": "🇲🇽",
+      "imageUrl": "https://flagcdn.com/mx.svg"
+    },
+    "geography": {
+      "continent": "North America",
+      "region": "North America",
+      "coordinates": {
+        "latitude": 23.0,
+        "longitude": -102.0
+      },
+      "borders": [
+        "BLZ",
+        "GTM",
+        "USA"
+      ],
+      "timezones": [
+        "UTC-08:00",
+        "UTC-07:00",
+        "UTC-06:00"
+      ]
+    },
+    "info": {
+      "population": 128932753,
+      "languages": [
+        "Spanish"
+      ],
+      "currency": {
+        "code": "MXN",
+        "symbol": "$"
+      },
+      "callingCode": "52",
+      "tld": ".mx"
+    }
+  },
+  "FSM": {
+    "name": {
+      "common": "Micronesia",
+      "official": "Federated States of Micronesia"
+    },
+    "codes": {
+      "iso2": "FM",
+      "iso3": "FSM"
+    },
+    "capital": "Palikir",
+    "flag": {
+      "emoji": "🇫🇲",
+      "imageUrl": "https://flagcdn.com/fm.svg"
+    },
+    "geography": {
+      "continent": "Oceania",
+      "region": "Micronesia",
+      "coordinates": {
+        "latitude": 6.91666666,
+        "longitude": 158.25
+      },
+      "borders": [],
+      "timezones": [
+        "UTC+10:00",
+        "UTC+11:00"
+      ]
+    },
+    "info": {
+      "population": 115021,
+      "languages": [
+        "English"
+      ],
+      "currency": {
+        "code": "USD",
+        "symbol": "$"
+      },
+      "callingCode": "691",
+      "tld": ".fm"
+    }
+  },
+  "MDA": {
+    "name": {
+      "common": "Moldova",
+      "official": "Republic of Moldova"
+    },
+    "codes": {
+      "iso2": "MD",
+      "iso3": "MDA"
+    },
+    "capital": "Chișinău",
+    "flag": {
+      "emoji": "🇲🇩",
+      "imageUrl": "https://flagcdn.com/md.svg"
+    },
+    "geography": {
+      "continent": "Europe",
+      "region": "Eastern Europe",
+      "coordinates": {
+        "latitude": 47.0,
+        "longitude": 29.0
+      },
+      "borders": [
+        "ROU",
+        "UKR"
+      ],
+      "timezones": [
+        "UTC+02:00"
+      ]
+    },
+    "info": {
+      "population": 2617820,
+      "languages": [
+        "Romanian"
+      ],
+      "currency": {
+        "code": "MDL",
+        "symbol": "L"
+      },
+      "callingCode": "373",
+      "tld": ".md"
+    }
+  },
+  "MCO": {
+    "name": {
+      "common": "Monaco",
+      "official": "Principality of Monaco"
+    },
+    "codes": {
+      "iso2": "MC",
+      "iso3": "MCO"
+    },
+    "capital": "Monaco",
+    "flag": {
+      "emoji": "🇲🇨",
+      "imageUrl": "https://flagcdn.com/mc.svg"
+    },
+    "geography": {
+      "continent": "Europe",
+      "region": "Western Europe",
+      "coordinates": {
+        "latitude": 43.73333333,
+        "longitude": 7.4
+      },
+      "borders": [
+        "FRA"
+      ],
+      "timezones": [
+        "UTC+01:00"
+      ]
+    },
+    "info": {
+      "population": 39244,
+      "languages": [
+        "French"
+      ],
+      "currency": {
+        "code": "EUR",
+        "symbol": "€"
+      },
+      "callingCode": "377",
+      "tld": ".mc"
+    }
+  },
+  "MNG": {
+    "name": {
+      "common": "Mongolia",
+      "official": "Mongolia"
+    },
+    "codes": {
+      "iso2": "MN",
+      "iso3": "MNG"
+    },
+    "capital": "Ulaanbaatar",
+    "flag": {
+      "emoji": "🇲🇳",
+      "imageUrl": "https://flagcdn.com/mn.svg"
+    },
+    "geography": {
+      "continent": "Asia",
+      "region": "Eastern Asia",
+      "coordinates": {
+        "latitude": 46.0,
+        "longitude": 105.0
+      },
+      "borders": [
+        "CHN",
+        "RUS"
+      ],
+      "timezones": [
+        "UTC+07:00",
+        "UTC+08:00"
+      ]
+    },
+    "info": {
+      "population": 3278290,
+      "languages": [
+        "Mongolian"
+      ],
+      "currency": {
+        "code": "MNT",
+        "symbol": "₮"
+      },
+      "callingCode": "976",
+      "tld": ".mn"
+    }
+  },
+  "MNE": {
+    "name": {
+      "common": "Montenegro",
+      "official": "Montenegro"
+    },
+    "codes": {
+      "iso2": "ME",
+      "iso3": "MNE"
+    },
+    "capital": "Podgorica",
+    "flag": {
+      "emoji": "🇲🇪",
+      "imageUrl": "https://flagcdn.com/me.svg"
+    },
+    "geography": {
+      "continent": "Europe",
+      "region": "Southern Europe",
+      "coordinates": {
+        "latitude": 42.5,
+        "longitude": 19.3
+      },
+      "borders": [
+        "ALB",
+        "BIH",
+        "HRV",
+        "UNK",
+        "SRB"
+      ],
+      "timezones": [
+        "UTC+01:00"
+      ]
+    },
+    "info": {
+      "population": 621718,
+      "languages": [
+        "Montenegrin"
+      ],
+      "currency": {
+        "code": "EUR",
+        "symbol": "€"
+      },
+      "callingCode": "382",
+      "tld": ".me"
+    }
+  },
+  "MAR": {
+    "name": {
+      "common": "Morocco",
+      "official": "Kingdom of Morocco"
+    },
+    "codes": {
+      "iso2": "MA",
+      "iso3": "MAR"
+    },
+    "capital": "Rabat",
+    "flag": {
+      "emoji": "🇲🇦",
+      "imageUrl": "https://flagcdn.com/ma.svg"
+    },
+    "geography": {
+      "continent": "Africa",
+      "region": "Northern Africa",
+      "coordinates": {
+        "latitude": 32.0,
+        "longitude": -5.0
+      },
+      "borders": [
+        "DZA",
+        "ESH",
+        "ESP"
+      ],
+      "timezones": [
+        "UTC+01:00"
+      ]
+    },
+    "info": {
+      "population": 36910558,
+      "languages": [
+        "Arabic",
+        "Berber"
+      ],
+      "currency": {
+        "code": "MAD",
+        "symbol": "د.م."
+      },
+      "callingCode": "212",
+      "tld": ".ma"
+    }
+  },
+  "MOZ": {
+    "name": {
+      "common": "Mozambique",
+      "official": "Republic of Mozambique"
+    },
+    "codes": {
+      "iso2": "MZ",
+      "iso3": "MOZ"
+    },
+    "capital": "Maputo",
+    "flag": {
+      "emoji": "🇲🇿",
+      "imageUrl": "https://flagcdn.com/mz.svg"
+    },
+    "geography": {
+      "continent": "Africa",
+      "region": "Eastern Africa",
+      "coordinates": {
+        "latitude": -18.25,
+        "longitude": 35.0
+      },
+      "borders": [
+        "MWI",
+        "ZAF",
+        "SWZ",
+        "TZA",
+        "ZMB",
+        "ZWE"
+      ],
+      "timezones": [
+        "UTC+02:00"
+      ]
+    },
+    "info": {
+      "population": 31255435,
+      "languages": [
+        "Portuguese"
+      ],
+      "currency": {
+        "code": "MZN",
+        "symbol": "MT"
+      },
+      "callingCode": "258",
+      "tld": ".mz"
+    }
+  },
+  "MMR": {
+    "name": {
+      "common": "Myanmar",
+      "official": "Republic of the Union of Myanmar"
+    },
+    "codes": {
+      "iso2": "MM",
+      "iso3": "MMR"
+    },
+    "capital": "Naypyidaw",
+    "flag": {
+      "emoji": "🇲🇲",
+      "imageUrl": "https://flagcdn.com/mm.svg"
+    },
+    "geography": {
+      "continent": "Asia",
+      "region": "Southeast Asia",
+      "coordinates": {
+        "latitude": 22.0,
+        "longitude": 98.0
+      },
+      "borders": [
+        "BGD",
+        "CHN",
+        "IND",
+        "LAO",
+        "THA"
+      ],
+      "timezones": [
+        "UTC+06:30"
+      ]
+    },
+    "info": {
+      "population": 54409794,
+      "languages": [
+        "Burmese"
+      ],
+      "currency": {
+        "code": "MMK",
+        "symbol": "Ks"
+      },
+      "callingCode": "95",
+      "tld": ".mm"
+    }
+  },
+  "NAM": {
+    "name": {
+      "common": "Namibia",
+      "official": "Republic of Namibia"
+    },
+    "codes": {
+      "iso2": "NA",
+      "iso3": "NAM"
+    },
+    "capital": "Windhoek",
+    "flag": {
+      "emoji": "🇳🇦",
+      "imageUrl": "https://flagcdn.com/na.svg"
+    },
+    "geography": {
+      "continent": "Africa",
+      "region": "Southern Africa",
+      "coordinates": {
+        "latitude": -22.0,
+        "longitude": 17.0
+      },
+      "borders": [
+        "AGO",
+        "BWA",
+        "ZAF",
+        "ZMB"
+      ],
+      "timezones": [
+        "UTC+02:00"
+      ]
+    },
+    "info": {
+      "population": 2540916,
+      "languages": [
+        "English",
+        "Afrikaans",
+        "German"
+      ],
+      "currency": {
+        "code": "NAD",
+        "symbol": "$"
+      },
+      "callingCode": "264",
+      "tld": ".na"
+    }
+  },
+  "NRU": {
+    "name": {
+      "common": "Nauru",
+      "official": "Republic of Nauru"
+    },
+    "codes": {
+      "iso2": "NR",
+      "iso3": "NRU"
+    },
+    "capital": "Yaren",
+    "flag": {
+      "emoji": "🇳🇷",
+      "imageUrl": "https://flagcdn.com/nr.svg"
+    },
+    "geography": {
+      "continent": "Oceania",
+      "region": "Micronesia",
+      "coordinates": {
+        "latitude": -0.53333333,
+        "longitude": 166.91666666
+      },
+      "borders": [],
+      "timezones": [
+        "UTC+12:00"
+      ]
+    },
+    "info": {
+      "population": 10084,
+      "languages": [
+        "English",
+        "Nauruan"
+      ],
+      "currency": {
+        "code": "AUD",
+        "symbol": "$"
+      },
+      "callingCode": "674",
+      "tld": ".nr"
+    }
+  },
+  "NPL": {
+    "name": {
+      "common": "Nepal",
+      "official": "Federal Democratic Republic of Nepal"
+    },
+    "codes": {
+      "iso2": "NP",
+      "iso3": "NPL"
+    },
+    "capital": "Kathmandu",
+    "flag": {
+      "emoji": "🇳🇵",
+      "imageUrl": "https://flagcdn.com/np.svg"
+    },
+    "geography": {
+      "continent": "Asia",
+      "region": "Southern Asia",
+      "coordinates": {
+        "latitude": 28.0,
+        "longitude": 84.0
+      },
+      "borders": [
+        "CHN",
+        "IND"
+      ],
+      "timezones": [
+        "UTC+05:45"
+      ]
+    },
+    "info": {
+      "population": 29136808,
+      "languages": [
+        "Nepali"
+      ],
+      "currency": {
+        "code": "NPR",
+        "symbol": "₨"
+      },
+      "callingCode": "977",
+      "tld": ".np"
+    }
+  },
+  "NLD": {
+    "name": {
+      "common": "Netherlands",
+      "official": "Kingdom of the Netherlands"
+    },
+    "codes": {
+      "iso2": "NL",
+      "iso3": "NLD"
+    },
+    "capital": "Amsterdam",
+    "flag": {
+      "emoji": "🇳🇱",
+      "imageUrl": "https://flagcdn.com/nl.svg"
+    },
+    "geography": {
+      "continent": "Europe",
+      "region": "Western Europe",
+      "coordinates": {
+        "latitude": 52.5,
+        "longitude": 5.75
+      },
+      "borders": [
+        "BEL",
+        "DEU"
+      ],
+      "timezones": [
+        "UTC+01:00"
+      ]
+    },
+    "info": {
+      "population": 17441139,
+      "languages": [
+        "Dutch"
+      ],
+      "currency": {
+        "code": "EUR",
+        "symbol": "€"
+      },
+      "callingCode": "31",
+      "tld": ".nl"
+    }
+  },
+  "NZL": {
+    "name": {
+      "common": "New Zealand",
+      "official": "New Zealand"
+    },
+    "codes": {
+      "iso2": "NZ",
+      "iso3": "NZL"
+    },
+    "capital": "Wellington",
+    "flag": {
+      "emoji": "🇳🇿",
+      "imageUrl": "https://flagcdn.com/nz.svg"
+    },
+    "geography": {
+      "continent": "Oceania",
+      "region": "Australia and New Zealand",
+      "coordinates": {
+        "latitude": -41.0,
+        "longitude": 174.0
+      },
+      "borders": [],
+      "timezones": [
+        "UTC+12:00",
+        "UTC+12:45",
+        "UTC+13:00"
+      ]
+    },
+    "info": {
+      "population": 5084300,
+      "languages": [
+        "English",
+        "Māori"
+      ],
+      "currency": {
+        "code": "NZD",
+        "symbol": "$"
+      },
+      "callingCode": "64",
+      "tld": ".nz"
+    }
+  },
+  "NIC": {
+    "name": {
+      "common": "Nicaragua",
+      "official": "Republic of Nicaragua"
+    },
+    "codes": {
+      "iso2": "NI",
+      "iso3": "NIC"
+    },
+    "capital": "Managua",
+    "flag": {
+      "emoji": "🇳🇮",
+      "imageUrl": "https://flagcdn.com/ni.svg"
+    },
+    "geography": {
+      "continent": "North America",
+      "region": "Central America",
+      "coordinates": {
+        "latitude": 13.0,
+        "longitude": -85.0
+      },
+      "borders": [
+        "CRI",
+        "HND"
+      ],
+      "timezones": [
+        "UTC-06:00"
+      ]
+    },
+    "info": {
+      "population": 6624554,
+      "languages": [
+        "Spanish"
+      ],
+      "currency": {
+        "code": "NIO",
+        "symbol": "C$"
+      },
+      "callingCode": "505",
+      "tld": ".ni"
+    }
+  },
+  "NER": {
+    "name": {
+      "common": "Niger",
+      "official": "Republic of Niger"
+    },
+    "codes": {
+      "iso2": "NE",
+      "iso3": "NER"
+    },
+    "capital": "Niamey",
+    "flag": {
+      "emoji": "🇳🇪",
+      "imageUrl": "https://flagcdn.com/ne.svg"
+    },
+    "geography": {
+      "continent": "Africa",
+      "region": "Western Africa",
+      "coordinates": {
+        "latitude": 16.0,
+        "longitude": 8.0
+      },
+      "borders": [
+        "DZA",
+        "BEN",
+        "BFA",
+        "TCD",
+        "LBY",
+        "MLI",
+        "NGA"
+      ],
+      "timezones": [
+        "UTC+01:00"
+      ]
+    },
+    "info": {
+      "population": 24206636,
+      "languages": [
+        "French"
+      ],
+      "currency": {
+        "code": "XOF",
+        "symbol": "Fr"
+      },
+      "callingCode": "227",
+      "tld": ".ne"
+    }
+  },
+  "NGA": {
+    "name": {
+      "common": "Nigeria",
+      "official": "Federal Republic of Nigeria"
+    },
+    "codes": {
+      "iso2": "NG",
+      "iso3": "NGA"
+    },
+    "capital": "Abuja",
+    "flag": {
+      "emoji": "🇳🇬",
+      "imageUrl": "https://flagcdn.com/ng.svg"
+    },
+    "geography": {
+      "continent": "Africa",
+      "region": "Western Africa",
+      "coordinates": {
+        "latitude": 10.0,
+        "longitude": 8.0
+      },
+      "borders": [
+        "BEN",
+        "CMR",
+        "TCD",
+        "NER"
+      ],
+      "timezones": [
+        "UTC+01:00"
+      ]
+    },
+    "info": {
+      "population": 206139587,
+      "languages": [
+        "English"
+      ],
+      "currency": {
+        "code": "NGN",
+        "symbol": "₦"
+      },
+      "callingCode": "234",
+      "tld": ".ng"
+    }
+  },
+  "NOR": {
+    "name": {
+      "common": "Norway",
+      "official": "Kingdom of Norway"
+    },
+    "codes": {
+      "iso2": "NO",
+      "iso3": "NOR"
+    },
+    "capital": "Oslo",
+    "flag": {
+      "emoji": "🇳🇴",
+      "imageUrl": "https://flagcdn.com/no.svg"
+    },
+    "geography": {
+      "continent": "Europe",
+      "region": "Northern Europe",
+      "coordinates": {
+        "latitude": 62.0,
+        "longitude": 10.0
+      },
+      "borders": [
+        "FIN",
+        "SWE",
+        "RUS"
+      ],
+      "timezones": [
+        "UTC+01:00"
+      ]
+    },
+    "info": {
+      "population": 5379475,
+      "languages": [
+        "Norwegian"
+      ],
+      "currency": {
+        "code": "NOK",
+        "symbol": "kr"
+      },
+      "callingCode": "47",
+      "tld": ".no"
+    }
+  },
+  "OMN": {
+    "name": {
+      "common": "Oman",
+      "official": "Sultanate of Oman"
+    },
+    "codes": {
+      "iso2": "OM",
+      "iso3": "OMN"
+    },
+    "capital": "Muscat",
+    "flag": {
+      "emoji": "🇴🇲",
+      "imageUrl": "https://flagcdn.com/om.svg"
+    },
+    "geography": {
+      "continent": "Asia",
+      "region": "Western Asia",
+      "coordinates": {
+        "latitude": 21.0,
+        "longitude": 57.0
+      },
+      "borders": [
+        "SAU",
+        "ARE",
+        "YEM"
+      ],
+      "timezones": [
+        "UTC+04:00"
+      ]
+    },
+    "info": {
+      "population": 5106622,
+      "languages": [
+        "Arabic"
+      ],
+      "currency": {
+        "code": "OMR",
+        "symbol": "ر.ع."
+      },
+      "callingCode": "968",
+      "tld": ".om"
+    }
+  },
+  "PAK": {
+    "name": {
+      "common": "Pakistan",
+      "official": "Islamic Republic of Pakistan"
+    },
+    "codes": {
+      "iso2": "PK",
+      "iso3": "PAK"
+    },
+    "capital": "Islamabad",
+    "flag": {
+      "emoji": "🇵🇰",
+      "imageUrl": "https://flagcdn.com/pk.svg"
+    },
+    "geography": {
+      "continent": "Asia",
+      "region": "Southern Asia",
+      "coordinates": {
+        "latitude": 30.0,
+        "longitude": 70.0
+      },
+      "borders": [
+        "AFG",
+        "CHN",
+        "IND",
+        "IRN"
+      ],
+      "timezones": [
+        "UTC+05:00"
+      ]
+    },
+    "info": {
+      "population": 220892340,
+      "languages": [
+        "English",
+        "Urdu"
+      ],
+      "currency": {
+        "code": "PKR",
+        "symbol": "₨"
+      },
+      "callingCode": "92",
+      "tld": ".pk"
+    }
+  },
+  "PLW": {
+    "name": {
+      "common": "Palau",
+      "official": "Republic of Palau"
+    },
+    "codes": {
+      "iso2": "PW",
+      "iso3": "PLW"
+    },
+    "capital": "Ngerulmud",
+    "flag": {
+      "emoji": "🇵🇼",
+      "imageUrl": "https://flagcdn.com/pw.svg"
+    },
+    "geography": {
+      "continent": "Oceania",
+      "region": "Micronesia",
+      "coordinates": {
+        "latitude": 7.5,
+        "longitude": 134.5
+      },
+      "borders": [],
+      "timezones": [
+        "UTC+09:00"
+      ]
+    },
+    "info": {
+      "population": 18092,
+      "languages": [
+        "English",
+        "Palauan"
+      ],
+      "currency": {
+        "code": "USD",
+        "symbol": "$"
+      },
+      "callingCode": "680",
+      "tld": ".pw"
+    }
+  },
+  "PSE": {
+    "name": {
+      "common": "Palestine",
+      "official": "State of Palestine"
+    },
+    "codes": {
+      "iso2": "PS",
+      "iso3": "PSE"
+    },
+    "capital": "Ramallah",
+    "flag": {
+      "emoji": "🇵🇸",
+      "imageUrl": "https://flagcdn.com/ps.svg"
+    },
+    "geography": {
+      "continent": "Asia",
+      "region": "Western Asia",
+      "coordinates": {
+        "latitude": 31.9,
+        "longitude": 35.2
+      },
+      "borders": [
+        "ISR",
+        "EGY",
+        "JOR"
+      ],
+      "timezones": [
+        "UTC+02:00"
+      ]
+    },
+    "info": {
+      "population": 4803269,
+      "languages": [
+        "Arabic"
+      ],
+      "currency": {
+        "code": "ILS",
+        "symbol": "₪"
+      },
+      "callingCode": "970",
+      "tld": ".ps"
+    }
+  },
+  "PAN": {
+    "name": {
+      "common": "Panama",
+      "official": "Republic of Panama"
+    },
+    "codes": {
+      "iso2": "PA",
+      "iso3": "PAN"
+    },
+    "capital": "Panama City",
+    "flag": {
+      "emoji": "🇵🇦",
+      "imageUrl": "https://flagcdn.com/pa.svg"
+    },
+    "geography": {
+      "continent": "North America",
+      "region": "Central America",
+      "coordinates": {
+        "latitude": 9.0,
+        "longitude": -80.0
+      },
+      "borders": [
+        "COL",
+        "CRI"
+      ],
+      "timezones": [
+        "UTC-05:00"
+      ]
+    },
+    "info": {
+      "population": 4314767,
+      "languages": [
+        "Spanish"
+      ],
+      "currency": {
+        "code": "PAB",
+        "symbol": "B/."
+      },
+      "callingCode": "507",
+      "tld": ".pa"
+    }
+  },
+  "PNG": {
+    "name": {
+      "common": "Papua New Guinea",
+      "official": "Independent State of Papua New Guinea"
+    },
+    "codes": {
+      "iso2": "PG",
+      "iso3": "PNG"
+    },
+    "capital": "Port Moresby",
+    "flag": {
+      "emoji": "🇵🇬",
+      "imageUrl": "https://flagcdn.com/pg.svg"
+    },
+    "geography": {
+      "continent": "Oceania",
+      "region": "Melanesia",
+      "coordinates": {
+        "latitude": -6.0,
+        "longitude": 147.0
+      },
+      "borders": [
+        "IDN"
+      ],
+      "timezones": [
+        "UTC+10:00"
+      ]
+    },
+    "info": {
+      "population": 8947024,
+      "languages": [
+        "English",
+        "Hiri Motu",
+        "Tok Pisin"
+      ],
+      "currency": {
+        "code": "PGK",
+        "symbol": "K"
+      },
+      "callingCode": "675",
+      "tld": ".pg"
+    }
+  },
+  "PRY": {
+    "name": {
+      "common": "Paraguay",
+      "official": "Republic of Paraguay"
+    },
+    "codes": {
+      "iso2": "PY",
+      "iso3": "PRY"
+    },
+    "capital": "Asunción",
+    "flag": {
+      "emoji": "🇵🇾",
+      "imageUrl": "https://flagcdn.com/py.svg"
+    },
+    "geography": {
+      "continent": "South America",
+      "region": "South America",
+      "coordinates": {
+        "latitude": -23.0,
+        "longitude": -58.0
+      },
+      "borders": [
+        "ARG",
+        "BOL",
+        "BRA"
+      ],
+      "timezones": [
+        "UTC-04:00"
+      ]
+    },
+    "info": {
+      "population": 7132538,
+      "languages": [
+        "Guaraní",
+        "Spanish"
+      ],
+      "currency": {
+        "code": "PYG",
+        "symbol": "₲"
+      },
+      "callingCode": "595",
+      "tld": ".py"
+    }
+  },
+  "PER": {
+    "name": {
+      "common": "Peru",
+      "official": "Republic of Peru"
+    },
+    "codes": {
+      "iso2": "PE",
+      "iso3": "PER"
+    },
+    "capital": "Lima",
+    "flag": {
+      "emoji": "🇵🇪",
+      "imageUrl": "https://flagcdn.com/pe.svg"
+    },
+    "geography": {
+      "continent": "South America",
+      "region": "South America",
+      "coordinates": {
+        "latitude": -10.0,
+        "longitude": -76.0
+      },
+      "borders": [
+        "BOL",
+        "BRA",
+        "CHL",
+        "COL",
+        "ECU"
+      ],
+      "timezones": [
+        "UTC-05:00"
+      ]
+    },
+    "info": {
+      "population": 32971846,
+      "languages": [
+        "Aymara",
+        "Quechua",
+        "Spanish"
+      ],
+      "currency": {
+        "code": "PEN",
+        "symbol": "S/."
+      },
+      "callingCode": "51",
+      "tld": ".pe"
+    }
+  },
+  "PHL": {
+    "name": {
+      "common": "Philippines",
+      "official": "Republic of the Philippines"
+    },
+    "codes": {
+      "iso2": "PH",
+      "iso3": "PHL"
+    },
+    "capital": "Manila",
+    "flag": {
+      "emoji": "🇵🇭",
+      "imageUrl": "https://flagcdn.com/ph.svg"
+    },
+    "geography": {
+      "continent": "Asia",
+      "region": "Southeast Asia",
+      "coordinates": {
+        "latitude": 13.0,
+        "longitude": 122.0
+      },
+      "borders": [],
+      "timezones": [
+        "UTC+08:00"
+      ]
+    },
+    "info": {
+      "population": 109581078,
+      "languages": [
+        "English",
+        "Filipino"
+      ],
+      "currency": {
+        "code": "PHP",
+        "symbol": "₱"
+      },
+      "callingCode": "63",
+      "tld": ".ph"
+    }
+  },
+  "POL": {
+    "name": {
+      "common": "Poland",
+      "official": "Republic of Poland"
+    },
+    "codes": {
+      "iso2": "PL",
+      "iso3": "POL"
+    },
+    "capital": "Warsaw",
+    "flag": {
+      "emoji": "🇵🇱",
+      "imageUrl": "https://flagcdn.com/pl.svg"
+    },
+    "geography": {
+      "continent": "Europe",
+      "region": "Central Europe",
+      "coordinates": {
+        "latitude": 52.0,
+        "longitude": 20.0
+      },
+      "borders": [
+        "BLR",
+        "CZE",
+        "DEU",
+        "LTU",
+        "RUS",
+        "SVK",
+        "UKR"
+      ],
+      "timezones": [
+        "UTC+01:00"
+      ]
+    },
+    "info": {
+      "population": 37846611,
+      "languages": [
+        "Polish"
+      ],
+      "currency": {
+        "code": "PLN",
+        "symbol": "zł"
+      },
+      "callingCode": "48",
+      "tld": ".pl"
+    }
+  },
+  "PRT": {
+    "name": {
+      "common": "Portugal",
+      "official": "Portuguese Republic"
+    },
+    "codes": {
+      "iso2": "PT",
+      "iso3": "PRT"
+    },
+    "capital": "Lisbon",
+    "flag": {
+      "emoji": "🇵🇹",
+      "imageUrl": "https://flagcdn.com/pt.svg"
+    },
+    "geography": {
+      "continent": "Europe",
+      "region": "Southern Europe",
+      "coordinates": {
+        "latitude": 39.5,
+        "longitude": -8.0
+      },
+      "borders": [
+        "ESP"
+      ],
+      "timezones": [
+        "UTC-01:00",
+        "UTC+00:00"
+      ]
+    },
+    "info": {
+      "population": 10196709,
+      "languages": [
+        "Portuguese"
+      ],
+      "currency": {
+        "code": "EUR",
+        "symbol": "€"
+      },
+      "callingCode": "351",
+      "tld": ".pt"
+    }
+  },
+  "QAT": {
+    "name": {
+      "common": "Qatar",
+      "official": "State of Qatar"
+    },
+    "codes": {
+      "iso2": "QA",
+      "iso3": "QAT"
+    },
+    "capital": "Doha",
+    "flag": {
+      "emoji": "🇶🇦",
+      "imageUrl": "https://flagcdn.com/qa.svg"
+    },
+    "geography": {
+      "continent": "Asia",
+      "region": "Western Asia",
+      "coordinates": {
+        "latitude": 25.5,
+        "longitude": 51.25
+      },
+      "borders": [
+        "SAU"
+      ],
+      "timezones": [
+        "UTC+03:00"
+      ]
+    },
+    "info": {
+      "population": 2881053,
+      "languages": [
+        "Arabic"
+      ],
+      "currency": {
+        "code": "QAR",
+        "symbol": "ر.ق"
+      },
+      "callingCode": "974",
+      "tld": ".qa"
+    }
+  },
+  "ROU": {
+    "name": {
+      "common": "Romania",
+      "official": "Romania"
+    },
+    "codes": {
+      "iso2": "RO",
+      "iso3": "ROU"
+    },
+    "capital": "Bucharest",
+    "flag": {
+      "emoji": "🇷🇴",
+      "imageUrl": "https://flagcdn.com/ro.svg"
+    },
+    "geography": {
+      "continent": "Europe",
+      "region": "Eastern Europe",
+      "coordinates": {
+        "latitude": 46.0,
+        "longitude": 25.0
+      },
+      "borders": [
+        "BGR",
+        "HUN",
+        "MDA",
+        "SRB",
+        "UKR"
+      ],
+      "timezones": [
+        "UTC+02:00"
+      ]
+    },
+    "info": {
+      "population": 19237691,
+      "languages": [
+        "Romanian"
+      ],
+      "currency": {
+        "code": "RON",
+        "symbol": "lei"
+      },
+      "callingCode": "40",
+      "tld": ".ro"
+    }
+  },
+  "RUS": {
+    "name": {
+      "common": "Russia",
+      "official": "Russian Federation"
+    },
+    "codes": {
+      "iso2": "RU",
+      "iso3": "RUS"
+    },
+    "capital": "Moscow",
+    "flag": {
+      "emoji": "🇷🇺",
+      "imageUrl": "https://flagcdn.com/ru.svg"
+    },
+    "geography": {
+      "continent": "Europe",
+      "region": "Eastern Europe",
+      "coordinates": {
+        "latitude": 60.0,
+        "longitude": 100.0
+      },
+      "borders": [
+        "AZE",
+        "BLR",
+        "CHN",
+        "EST",
+        "FIN",
+        "GEO",
+        "KAZ",
+        "PRK",
+        "LVA",
+        "LTU",
+        "MNG",
+        "NOR",
+        "POL",
+        "UKR"
+      ],
+      "timezones": [
+        "UTC+03:00",
+        "UTC+04:00",
+        "UTC+06:00",
+        "UTC+07:00",
+        "UTC+08:00",
+        "UTC+09:00",
+        "UTC+10:00",
+        "UTC+11:00",
+        "UTC+12:00"
+      ]
+    },
+    "info": {
+      "population": 144104080,
+      "languages": [
+        "Russian"
+      ],
+      "currency": {
+        "code": "RUB",
+        "symbol": "₽"
+      },
+      "callingCode": "7",
+      "tld": ".ru"
+    }
+  },
+  "RWA": {
+    "name": {
+      "common": "Rwanda",
+      "official": "Republic of Rwanda"
+    },
+    "codes": {
+      "iso2": "RW",
+      "iso3": "RWA"
+    },
+    "capital": "Kigali",
+    "flag": {
+      "emoji": "🇷🇼",
+      "imageUrl": "https://flagcdn.com/rw.svg"
+    },
+    "geography": {
+      "continent": "Africa",
+      "region": "Eastern Africa",
+      "coordinates": {
+        "latitude": -2.0,
+        "longitude": 30.0
+      },
+      "borders": [
+        "BDI",
+        "COD",
+        "TZA",
+        "UGA"
+      ],
+      "timezones": [
+        "UTC+02:00"
+      ]
+    },
+    "info": {
+      "population": 12952218,
+      "languages": [
+        "English",
+        "French",
+        "Kinyarwanda"
+      ],
+      "currency": {
+        "code": "RWF",
+        "symbol": "Fr"
+      },
+      "callingCode": "250",
+      "tld": ".rw"
+    }
+  },
+  "KNA": {
+    "name": {
+      "common": "Saint Kitts and Nevis",
+      "official": "Federation of Saint Kitts and Nevis"
+    },
+    "codes": {
+      "iso2": "KN",
+      "iso3": "KNA"
+    },
+    "capital": "Basseterre",
+    "flag": {
+      "emoji": "🇰🇳",
+      "imageUrl": "https://flagcdn.com/kn.svg"
+    },
+    "geography": {
+      "continent": "North America",
+      "region": "Caribbean",
+      "coordinates": {
+        "latitude": 17.33333333,
+        "longitude": -62.75
+      },
+      "borders": [],
+      "timezones": [
+        "UTC-04:00"
+      ]
+    },
+    "info": {
+      "population": 53192,
+      "languages": [
+        "English"
+      ],
+      "currency": {
+        "code": "XCD",
+        "symbol": "$"
+      },
+      "callingCode": "1869",
+      "tld": ".kn"
+    }
+  },
+  "LCA": {
+    "name": {
+      "common": "Saint Lucia",
+      "official": "Saint Lucia"
+    },
+    "codes": {
+      "iso2": "LC",
+      "iso3": "LCA"
+    },
+    "capital": "Castries",
+    "flag": {
+      "emoji": "🇱🇨",
+      "imageUrl": "https://flagcdn.com/lc.svg"
+    },
+    "geography": {
+      "continent": "North America",
+      "region": "Caribbean",
+      "coordinates": {
+        "latitude": 13.88333333,
+        "longitude": -60.96666666
+      },
+      "borders": [],
+      "timezones": [
+        "UTC-04:00"
+      ]
+    },
+    "info": {
+      "population": 183629,
+      "languages": [
+        "English"
+      ],
+      "currency": {
+        "code": "XCD",
+        "symbol": "$"
+      },
+      "callingCode": "1758",
+      "tld": ".lc"
+    }
+  },
+  "VCT": {
+    "name": {
+      "common": "Saint Vincent and the Grenadines",
+      "official": "Saint Vincent and the Grenadines"
+    },
+    "codes": {
+      "iso2": "VC",
+      "iso3": "VCT"
+    },
+    "capital": "Kingstown",
+    "flag": {
+      "emoji": "🇻🇨",
+      "imageUrl": "https://flagcdn.com/vc.svg"
+    },
+    "geography": {
+      "continent": "North America",
+      "region": "Caribbean",
+      "coordinates": {
+        "latitude": 13.25,
+        "longitude": -61.2
+      },
+      "borders": [],
+      "timezones": [
+        "UTC-04:00"
+      ]
+    },
+    "info": {
+      "population": 110947,
+      "languages": [
+        "English"
+      ],
+      "currency": {
+        "code": "XCD",
+        "symbol": "$"
+      },
+      "callingCode": "1784",
+      "tld": ".vc"
+    }
+  },
+  "WSM": {
+    "name": {
+      "common": "Samoa",
+      "official": "Independent State of Samoa"
+    },
+    "codes": {
+      "iso2": "WS",
+      "iso3": "WSM"
+    },
+    "capital": "Apia",
+    "flag": {
+      "emoji": "🇼🇸",
+      "imageUrl": "https://flagcdn.com/ws.svg"
+    },
+    "geography": {
+      "continent": "Oceania",
+      "region": "Polynesia",
+      "coordinates": {
+        "latitude": -13.58333333,
+        "longitude": -172.33333333
+      },
+      "borders": [],
+      "timezones": [
+        "UTC+13:00"
+      ]
+    },
+    "info": {
+      "population": 198410,
+      "languages": [
+        "English",
+        "Samoan"
+      ],
+      "currency": {
+        "code": "WST",
+        "symbol": "T"
+      },
+      "callingCode": "685",
+      "tld": ".ws"
+    }
+  },
+  "SMR": {
+    "name": {
+      "common": "San Marino",
+      "official": "Republic of San Marino"
+    },
+    "codes": {
+      "iso2": "SM",
+      "iso3": "SMR"
+    },
+    "capital": "City of San Marino",
+    "flag": {
+      "emoji": "🇸🇲",
+      "imageUrl": "https://flagcdn.com/sm.svg"
+    },
+    "geography": {
+      "continent": "Europe",
+      "region": "Southern Europe",
+      "coordinates": {
+        "latitude": 43.76666666,
+        "longitude": 12.41666666
+      },
+      "borders": [
+        "ITA"
+      ],
+      "timezones": [
+        "UTC+01:00"
+      ]
+    },
+    "info": {
+      "population": 33938,
+      "languages": [
+        "Italian"
+      ],
+      "currency": {
+        "code": "EUR",
+        "symbol": "€"
+      },
+      "callingCode": "378",
+      "tld": ".sm"
+    }
+  },
+  "STP": {
+    "name": {
+      "common": "Sao Tome and Principe",
+      "official": "Democratic Republic of São Tomé and Príncipe"
+    },
+    "codes": {
+      "iso2": "ST",
+      "iso3": "STP"
+    },
+    "capital": "São Tomé",
+    "flag": {
+      "emoji": "🇸🇹",
+      "imageUrl": "https://flagcdn.com/st.svg"
+    },
+    "geography": {
+      "continent": "Africa",
+      "region": "Central Africa",
+      "coordinates": {
+        "latitude": 1.0,
+        "longitude": 7.0
+      },
+      "borders": [],
+      "timezones": [
+        "UTC"
+      ]
+    },
+    "info": {
+      "population": 219159,
+      "languages": [
+        "Portuguese"
+      ],
+      "currency": {
+        "code": "STN",
+        "symbol": "Db"
+      },
+      "callingCode": "239",
+      "tld": ".st"
+    }
+  },
+  "SAU": {
+    "name": {
+      "common": "Saudi Arabia",
+      "official": "Kingdom of Saudi Arabia"
+    },
+    "codes": {
+      "iso2": "SA",
+      "iso3": "SAU"
+    },
+    "capital": "Riyadh",
+    "flag": {
+      "emoji": "🇸🇦",
+      "imageUrl": "https://flagcdn.com/sa.svg"
+    },
+    "geography": {
+      "continent": "Asia",
+      "region": "Western Asia",
+      "coordinates": {
+        "latitude": 25.0,
+        "longitude": 45.0
+      },
+      "borders": [
+        "IRQ",
+        "JOR",
+        "KWT",
+        "OMN",
+        "QAT",
+        "ARE",
+        "YEM"
+      ],
+      "timezones": [
+        "UTC+03:00"
+      ]
+    },
+    "info": {
+      "population": 35340683,
+      "languages": [
+        "Arabic"
+      ],
+      "currency": {
+        "code": "SAR",
+        "symbol": "ر.س"
+      },
+      "callingCode": "966",
+      "tld": ".sa"
+    }
+  },
+  "SEN": {
+    "name": {
+      "common": "Senegal",
+      "official": "Republic of Senegal"
+    },
+    "codes": {
+      "iso2": "SN",
+      "iso3": "SEN"
+    },
+    "capital": "Dakar",
+    "flag": {
+      "emoji": "🇸🇳",
+      "imageUrl": "https://flagcdn.com/sn.svg"
+    },
+    "geography": {
+      "continent": "Africa",
+      "region": "Western Africa",
+      "coordinates": {
+        "latitude": 14.0,
+        "longitude": -14.0
+      },
+      "borders": [
+        "GMB",
+        "GIN",
+        "GNB",
+        "MLI",
+        "MRT"
+      ],
+      "timezones": [
+        "UTC+00:00"
+      ]
+    },
+    "info": {
+      "population": 16743930,
+      "languages": [
+        "French"
+      ],
+      "currency": {
+        "code": "XOF",
+        "symbol": "Fr"
+      },
+      "callingCode": "221",
+      "tld": ".sn"
+    }
+  },
+  "SRB": {
+    "name": {
+      "common": "Serbia",
+      "official": "Republic of Serbia"
+    },
+    "codes": {
+      "iso2": "RS",
+      "iso3": "SRB"
+    },
+    "capital": "Belgrade",
+    "flag": {
+      "emoji": "🇷🇸",
+      "imageUrl": "https://flagcdn.com/rs.svg"
+    },
+    "geography": {
+      "continent": "Europe",
+      "region": "Southern Europe",
+      "coordinates": {
+        "latitude": 44.0,
+        "longitude": 21.0
+      },
+      "borders": [
+        "BIH",
+        "BGR",
+        "HUN",
+        "UNK",
+        "MKD",
+        "MNE",
+        "ROU"
+      ],
+      "timezones": [
+        "UTC+01:00"
+      ]
+    },
+    "info": {
+      "population": 6908224,
+      "languages": [
+        "Serbian"
+      ],
+      "currency": {
+        "code": "RSD",
+        "symbol": "дин."
+      },
+      "callingCode": "381",
+      "tld": ".rs"
+    }
+  },
+  "SYC": {
+    "name": {
+      "common": "Seychelles",
+      "official": "Republic of Seychelles"
+    },
+    "codes": {
+      "iso2": "SC",
+      "iso3": "SYC"
+    },
+    "capital": "Victoria",
+    "flag": {
+      "emoji": "🇸🇨",
+      "imageUrl": "https://flagcdn.com/sc.svg"
+    },
+    "geography": {
+      "continent": "Africa",
+      "region": "Eastern Africa",
+      "coordinates": {
+        "latitude": -4.58333333,
+        "longitude": 55.66666666
+      },
+      "borders": [],
+      "timezones": [
+        "UTC+04:00"
+      ]
+    },
+    "info": {
+      "population": 98462,
+      "languages": [
+        "English",
+        "French",
+        "Seychellois Creole"
+      ],
+      "currency": {
+        "code": "SCR",
+        "symbol": "₨"
+      },
+      "callingCode": "248",
+      "tld": ".sc"
+    }
+  },
+  "SLE": {
+    "name": {
+      "common": "Sierra Leone",
+      "official": "Republic of Sierra Leone"
+    },
+    "codes": {
+      "iso2": "SL",
+      "iso3": "SLE"
+    },
+    "capital": "Freetown",
+    "flag": {
+      "emoji": "🇸🇱",
+      "imageUrl": "https://flagcdn.com/sl.svg"
+    },
+    "geography": {
+      "continent": "Africa",
+      "region": "Western Africa",
+      "coordinates": {
+        "latitude": 8.5,
+        "longitude": -11.5
+      },
+      "borders": [
+        "GIN",
+        "LBR"
+      ],
+      "timezones": [
+        "UTC+00:00"
+      ]
+    },
+    "info": {
+      "population": 7976985,
+      "languages": [
+        "English"
+      ],
+      "currency": {
+        "code": "SLL",
+        "symbol": "Le"
+      },
+      "callingCode": "232",
+      "tld": ".sl"
+    }
+  },
+  "SGP": {
+    "name": {
+      "common": "Singapore",
+      "official": "Republic of Singapore"
+    },
+    "codes": {
+      "iso2": "SG",
+      "iso3": "SGP"
+    },
+    "capital": "Singapore",
+    "flag": {
+      "emoji": "🇸🇬",
+      "imageUrl": "https://flagcdn.com/sg.svg"
+    },
+    "geography": {
+      "continent": "Asia",
+      "region": "Southeast Asia",
+      "coordinates": {
+        "latitude": 1.36666666,
+        "longitude": 103.8
+      },
+      "borders": [],
+      "timezones": [
+        "UTC+08:00"
+      ]
+    },
+    "info": {
+      "population": 5685807,
+      "languages": [
+        "English",
+        "Malay",
+        "Mandarin",
+        "Tamil"
+      ],
+      "currency": {
+        "code": "SGD",
+        "symbol": "$"
+      },
+      "callingCode": "65",
+      "tld": ".sg"
+    }
+  },
+  "SVK": {
+    "name": {
+      "common": "Slovakia",
+      "official": "Slovak Republic"
+    },
+    "codes": {
+      "iso2": "SK",
+      "iso3": "SVK"
+    },
+    "capital": "Bratislava",
+    "flag": {
+      "emoji": "🇸🇰",
+      "imageUrl": "https://flagcdn.com/sk.svg"
+    },
+    "geography": {
+      "continent": "Europe",
+      "region": "Central Europe",
+      "coordinates": {
+        "latitude": 48.66666666,
+        "longitude": 19.5
+      },
+      "borders": [
+        "AUT",
+        "CZE",
+        "HUN",
+        "POL",
+        "UKR"
+      ],
+      "timezones": [
+        "UTC+01:00"
+      ]
+    },
+    "info": {
+      "population": 5458827,
+      "languages": [
+        "Slovak"
+      ],
+      "currency": {
+        "code": "EUR",
+        "symbol": "€"
+      },
+      "callingCode": "421",
+      "tld": ".sk"
+    }
+  },
+  "SVN": {
+    "name": {
+      "common": "Slovenia",
+      "official": "Republic of Slovenia"
+    },
+    "codes": {
+      "iso2": "SI",
+      "iso3": "SVN"
+    },
+    "capital": "Ljubljana",
+    "flag": {
+      "emoji": "🇸🇮",
+      "imageUrl": "https://flagcdn.com/si.svg"
+    },
+    "geography": {
+      "continent": "Europe",
+      "region": "Southern Europe",
+      "coordinates": {
+        "latitude": 46.11666666,
+        "longitude": 14.81666666
+      },
+      "borders": [
+        "AUT",
+        "HRV",
+        "ITA",
+        "HUN"
+      ],
+      "timezones": [
+        "UTC+01:00"
+      ]
+    },
+    "info": {
+      "population": 2100126,
+      "languages": [
+        "Slovene"
+      ],
+      "currency": {
+        "code": "EUR",
+        "symbol": "€"
+      },
+      "callingCode": "386",
+      "tld": ".si"
+    }
+  },
+  "SLB": {
+    "name": {
+      "common": "Solomon Islands",
+      "official": "Solomon Islands"
+    },
+    "codes": {
+      "iso2": "SB",
+      "iso3": "SLB"
+    },
+    "capital": "Honiara",
+    "flag": {
+      "emoji": "🇸🇧",
+      "imageUrl": "https://flagcdn.com/sb.svg"
+    },
+    "geography": {
+      "continent": "Oceania",
+      "region": "Melanesia",
+      "coordinates": {
+        "latitude": -8.0,
+        "longitude": 159.0
+      },
+      "borders": [],
+      "timezones": [
+        "UTC+11:00"
+      ]
+    },
+    "info": {
+      "population": 686878,
+      "languages": [
+        "English"
+      ],
+      "currency": {
+        "code": "SBD",
+        "symbol": "$"
+      },
+      "callingCode": "677",
+      "tld": ".sb"
+    }
+  },
+  "SOM": {
+    "name": {
+      "common": "Somalia",
+      "official": "Federal Republic of Somalia"
+    },
+    "codes": {
+      "iso2": "SO",
+      "iso3": "SOM"
+    },
+    "capital": "Mogadishu",
+    "flag": {
+      "emoji": "🇸🇴",
+      "imageUrl": "https://flagcdn.com/so.svg"
+    },
+    "geography": {
+      "continent": "Africa",
+      "region": "Eastern Africa",
+      "coordinates": {
+        "latitude": 10.0,
+        "longitude": 49.0
+      },
+      "borders": [
+        "DJI",
+        "ETH",
+        "KEN"
+      ],
+      "timezones": [
+        "UTC+03:00"
+      ]
+    },
+    "info": {
+      "population": 15893219,
+      "languages": [
+        "Arabic",
+        "Somali"
+      ],
+      "currency": {
+        "code": "SOS",
+        "symbol": "Sh"
+      },
+      "callingCode": "252",
+      "tld": ".so"
+    }
+  },
+  "ZAF": {
+    "name": {
+      "common": "South Africa",
+      "official": "Republic of South Africa"
+    },
+    "codes": {
+      "iso2": "ZA",
+      "iso3": "ZAF"
+    },
+    "capital": "Pretoria",
+    "flag": {
+      "emoji": "🇿🇦",
+      "imageUrl": "https://flagcdn.com/za.svg"
+    },
+    "geography": {
+      "continent": "Africa",
+      "region": "Southern Africa",
+      "coordinates": {
+        "latitude": -29.0,
+        "longitude": 24.0
+      },
+      "borders": [
+        "BWA",
+        "LSO",
+        "MOZ",
+        "NAM",
+        "SWZ",
+        "ZWE"
+      ],
+      "timezones": [
+        "UTC+02:00"
+      ]
+    },
+    "info": {
+      "population": 59308690,
+      "languages": [
+        "Afrikaans",
+        "English",
+        "Southern Ndebele",
+        "Northern Sotho",
+        "Southern Sotho",
+        "Swazi",
+        "Tsonga",
+        "Tswana",
+        "Venda",
+        "Xhosa",
+        "Zulu"
+      ],
+      "currency": {
+        "code": "ZAR",
+        "symbol": "R"
+      },
+      "callingCode": "27",
+      "tld": ".za"
+    }
+  },
+  "SSD": {
+    "name": {
+      "common": "South Sudan",
+      "official": "Republic of South Sudan"
+    },
+    "codes": {
+      "iso2": "SS",
+      "iso3": "SSD"
+    },
+    "capital": "Juba",
+    "flag": {
+      "emoji": "🇸🇸",
+      "imageUrl": "https://flagcdn.com/ss.svg"
+    },
+    "geography": {
+      "continent": "Africa",
+      "region": "Middle Africa",
+      "coordinates": {
+        "latitude": 7.0,
+        "longitude": 30.0
+      },
+      "borders": [
+        "CAF",
+        "COD",
+        "ETH",
+        "KEN",
+        "SDN",
+        "UGA"
+      ],
+      "timezones": [
+        "UTC+03:00"
+      ]
+    },
+    "info": {
+      "population": 11193725,
+      "languages": [
+        "English"
+      ],
+      "currency": {
+        "code": "SSP",
+        "symbol": "£"
+      },
+      "callingCode": "211",
+      "tld": ".ss"
+    }
+  },
+  "ESP": {
+    "name": {
+      "common": "Spain",
+      "official": "Kingdom of Spain"
+    },
+    "codes": {
+      "iso2": "ES",
+      "iso3": "ESP"
+    },
+    "capital": "Madrid",
+    "flag": {
+      "emoji": "🇪🇸",
+      "imageUrl": "https://flagcdn.com/es.svg"
+    },
+    "geography": {
+      "continent": "Europe",
+      "region": "Southern Europe",
+      "coordinates": {
+        "latitude": 40.0,
+        "longitude": -4.0
+      },
+      "borders": [
+        "AND",
+        "FRA",
+        "GIB",
+        "PRT",
+        "MAR"
+      ],
+      "timezones": [
+        "UTC",
+        "UTC+01:00"
+      ]
+    },
+    "info": {
+      "population": 47351567,
+      "languages": [
+        "Spanish"
+      ],
+      "currency": {
+        "code": "EUR",
+        "symbol": "€"
+      },
+      "callingCode": "34",
+      "tld": ".es"
+    }
+  },
+  "LKA": {
+    "name": {
+      "common": "Sri Lanka",
+      "official": "Democratic Socialist Republic of Sri Lanka"
+    },
+    "codes": {
+      "iso2": "LK",
+      "iso3": "LKA"
+    },
+    "capital": "Sri Jayawardenepura Kotte",
+    "flag": {
+      "emoji": "🇱🇰",
+      "imageUrl": "https://flagcdn.com/lk.svg"
+    },
+    "geography": {
+      "continent": "Asia",
+      "region": "Southern Asia",
+      "coordinates": {
+        "latitude": 7.0,
+        "longitude": 81.0
+      },
+      "borders": [],
+      "timezones": [
+        "UTC+05:30"
+      ]
+    },
+    "info": {
+      "population": 21919000,
+      "languages": [
+        "Sinhala",
+        "Tamil"
+      ],
+      "currency": {
+        "code": "LKR",
+        "symbol": "Rs"
+      },
+      "callingCode": "94",
+      "tld": ".lk"
+    }
+  },
+  "SDN": {
+    "name": {
+      "common": "Sudan",
+      "official": "Republic of the Sudan"
+    },
+    "codes": {
+      "iso2": "SD",
+      "iso3": "SDN"
+    },
+    "capital": "Khartoum",
+    "flag": {
+      "emoji": "🇸🇩",
+      "imageUrl": "https://flagcdn.com/sd.svg"
+    },
+    "geography": {
+      "continent": "Africa",
+      "region": "Northern Africa",
+      "coordinates": {
+        "latitude": 15.0,
+        "longitude": 30.0
+      },
+      "borders": [
+        "CAF",
+        "TCD",
+        "EGY",
+        "ERI",
+        "ETH",
+        "LBY",
+        "SSD"
+      ],
+      "timezones": [
+        "UTC+03:00"
+      ]
+    },
+    "info": {
+      "population": 43849269,
+      "languages": [
+        "Arabic",
+        "English"
+      ],
+      "currency": {
+        "code": "SDG",
+        "symbol": "ج.س."
+      },
+      "callingCode": "249",
+      "tld": ".sd"
+    }
+  },
+  "SUR": {
+    "name": {
+      "common": "Suriname",
+      "official": "Republic of Suriname"
+    },
+    "codes": {
+      "iso2": "SR",
+      "iso3": "SUR"
+    },
+    "capital": "Paramaribo",
+    "flag": {
+      "emoji": "🇸🇷",
+      "imageUrl": "https://flagcdn.com/sr.svg"
+    },
+    "geography": {
+      "continent": "South America",
+      "region": "South America",
+      "coordinates": {
+        "latitude": 4.0,
+        "longitude": -56.0
+      },
+      "borders": [
+        "BRA",
+        "GUF",
+        "GUY"
+      ],
+      "timezones": [
+        "UTC-03:00"
+      ]
+    },
+    "info": {
+      "population": 586634,
+      "languages": [
+        "Dutch"
+      ],
+      "currency": {
+        "code": "SRD",
+        "symbol": "$"
+      },
+      "callingCode": "597",
+      "tld": ".sr"
+    }
+  },
+  "SWE": {
+    "name": {
+      "common": "Sweden",
+      "official": "Kingdom of Sweden"
+    },
+    "codes": {
+      "iso2": "SE",
+      "iso3": "SWE"
+    },
+    "capital": "Stockholm",
+    "flag": {
+      "emoji": "🇸🇪",
+      "imageUrl": "https://flagcdn.com/se.svg"
+    },
+    "geography": {
+      "continent": "Europe",
+      "region": "Northern Europe",
+      "coordinates": {
+        "latitude": 62.0,
+        "longitude": 15.0
+      },
+      "borders": [
+        "FIN",
+        "NOR"
+      ],
+      "timezones": [
+        "UTC+01:00"
+      ]
+    },
+    "info": {
+      "population": 10353442,
+      "languages": [
+        "Swedish"
+      ],
+      "currency": {
+        "code": "SEK",
+        "symbol": "kr"
+      },
+      "callingCode": "46",
+      "tld": ".se"
+    }
+  },
+  "CHE": {
+    "name": {
+      "common": "Switzerland",
+      "official": "Swiss Confederation"
+    },
+    "codes": {
+      "iso2": "CH",
+      "iso3": "CHE"
+    },
+    "capital": "Bern",
+    "flag": {
+      "emoji": "🇨🇭",
+      "imageUrl": "https://flagcdn.com/ch.svg"
+    },
+    "geography": {
+      "continent": "Europe",
+      "region": "Western Europe",
+      "coordinates": {
+        "latitude": 47.0,
+        "longitude": 8.0
+      },
+      "borders": [
+        "AUT",
+        "FRA",
+        "ITA",
+        "LIE",
+        "DEU"
+      ],
+      "timezones": [
+        "UTC+01:00"
+      ]
+    },
+    "info": {
+      "population": 8654622,
+      "languages": [
+        "French",
+        "German",
+        "Italian",
+        "Romansh"
+      ],
+      "currency": {
+        "code": "CHF",
+        "symbol": "Fr."
+      },
+      "callingCode": "41",
+      "tld": ".ch"
+    }
+  },
+  "SYR": {
+    "name": {
+      "common": "Syria",
+      "official": "Syrian Arab Republic"
+    },
+    "codes": {
+      "iso2": "SY",
+      "iso3": "SYR"
+    },
+    "capital": "Damascus",
+    "flag": {
+      "emoji": "🇸🇾",
+      "imageUrl": "https://flagcdn.com/sy.svg"
+    },
+    "geography": {
+      "continent": "Asia",
+      "region": "Western Asia",
+      "coordinates": {
+        "latitude": 35.0,
+        "longitude": 38.0
+      },
+      "borders": [
+        "IRQ",
+        "ISR",
+        "JOR",
+        "LBN",
+        "TUR"
+      ],
+      "timezones": [
+        "UTC+02:00"
+      ]
+    },
+    "info": {
+      "population": 17500657,
+      "languages": [
+        "Arabic"
+      ],
+      "currency": {
+        "code": "SYP",
+        "symbol": "£"
+      },
+      "callingCode": "963",
+      "tld": ".sy"
+    }
+  },
+  "TWN": {
+    "name": {
+      "common": "Taiwan",
+      "official": "Republic of China (Taiwan)"
+    },
+    "codes": {
+      "iso2": "TW",
+      "iso3": "TWN"
+    },
+    "capital": "Taipei",
+    "flag": {
+      "emoji": "🇹🇼",
+      "imageUrl": "https://flagcdn.com/tw.svg"
+    },
+    "geography": {
+      "continent": "Asia",
+      "region": "Eastern Asia",
+      "coordinates": {
+        "latitude": 23.5,
+        "longitude": 121.0
+      },
+      "borders": [],
+      "timezones": [
+        "UTC+08:00"
+      ]
+    },
+    "info": {
+      "population": 23503349,
+      "languages": [
+        "Mandarin Chinese"
+      ],
+      "currency": {
+        "code": "TWD",
+        "symbol": "$"
+      },
+      "callingCode": "886",
+      "tld": ".tw"
+    }
+  },
+  "TJK": {
+    "name": {
+      "common": "Tajikistan",
+      "official": "Republic of Tajikistan"
+    },
+    "codes": {
+      "iso2": "TJ",
+      "iso3": "TJK"
+    },
+    "capital": "Dushanbe",
+    "flag": {
+      "emoji": "🇹🇯",
+      "imageUrl": "https://flagcdn.com/tj.svg"
+    },
+    "geography": {
+      "continent": "Asia",
+      "region": "Central Asia",
+      "coordinates": {
+        "latitude": 39.0,
+        "longitude": 71.0
+      },
+      "borders": [
+        "AFG",
+        "CHN",
+        "KGZ",
+        "UZB"
+      ],
+      "timezones": [
+        "UTC+05:00"
+      ]
+    },
+    "info": {
+      "population": 9537642,
+      "languages": [
+        "Russian",
+        "Tajik"
+      ],
+      "currency": {
+        "code": "TJS",
+        "symbol": "ЅМ"
+      },
+      "callingCode": "992",
+      "tld": ".tj"
+    }
+  },
+  "THA": {
+    "name": {
+      "common": "Thailand",
+      "official": "Kingdom of Thailand"
+    },
+    "codes": {
+      "iso2": "TH",
+      "iso3": "THA"
+    },
+    "capital": "Bangkok",
+    "flag": {
+      "emoji": "🇹🇭",
+      "imageUrl": "https://flagcdn.com/th.svg"
+    },
+    "geography": {
+      "continent": "Asia",
+      "region": "South-Eastern Asia",
+      "coordinates": {
+        "latitude": 15.0,
+        "longitude": 100.0
+      },
+      "borders": [
+        "MMR",
+        "KHM",
+        "LAO"
+      ],
+      "timezones": [
+        "UTC+07:00"
+      ]
+    },
+    "info": {
+      "population": 69799978,
+      "languages": [
+        "Thai"
+      ],
+      "currency": {
+        "code": "THB",
+        "symbol": "฿"
+      },
+      "callingCode": "66",
+      "tld": ".th"
+    }
+  },
+  "TTO": {
+    "name": {
+      "common": "Trinidad and Tobago",
+      "official": "Republic of Trinidad and Tobago"
+    },
+    "codes": {
+      "iso2": "TT",
+      "iso3": "TTO"
+    },
+    "capital": "Port of Spain",
+    "flag": {
+      "emoji": "🇹🇹",
+      "imageUrl": "https://flagcdn.com/tt.svg"
+    },
+    "geography": {
+      "continent": "North America",
+      "region": "Caribbean",
+      "coordinates": {
+        "latitude": 11.0,
+        "longitude": -61.0
+      },
+      "borders": [],
+      "timezones": [
+        "UTC-04:00"
+      ]
+    },
+    "info": {
+      "population": 1399491,
+      "languages": [
+        "English"
+      ],
+      "currency": {
+        "code": "TTD",
+        "symbol": "$"
+      },
+      "callingCode": "1868",
+      "tld": ".tt"
+    }
+  },
+  "TLS": {
+    "name": {
+      "common": "East Timor",
+      "official": "Democratic Republic of Timor-Leste"
+    },
+    "codes": {
+      "iso2": "TL",
+      "iso3": "TLS"
+    },
+    "capital": "Dili",
+    "flag": {
+      "emoji": "🇹🇱",
+      "imageUrl": "https://flagcdn.com/tl.svg"
+    },
+    "geography": {
+      "continent": "Asia",
+      "region": "Southeast Asia",
+      "coordinates": {
+        "latitude": -8.83,
+        "longitude": 125.92
+      },
+      "borders": [
+        "IDN"
+      ],
+      "timezones": [
+        "UTC+09:00"
+      ]
+    },
+    "info": {
+      "population": 1318445,
+      "languages": [
+        "Portuguese",
+        "Tetum"
+      ],
+      "currency": {
+        "code": "USD",
+        "symbol": "$"
+      },
+      "callingCode": "670",
+      "tld": ".tl"
+    }
+  },
+  "CIV": {
+    "name": {
+      "common": "Ivory Coast",
+      "official": "Republic of Côte d'Ivoire"
+    },
+    "codes": {
+      "iso2": "CI",
+      "iso3": "CIV"
+    },
+    "capital": "Yamoussoukro",
+    "flag": {
+      "emoji": "🇨🇮",
+      "imageUrl": "https://flagcdn.com/ci.svg"
+    },
+    "geography": {
+      "continent": "Africa",
+      "region": "Western Africa",
+      "coordinates": {
+        "latitude": 8.0,
+        "longitude": -5.0
+      },
+      "borders": [
+        "BFA",
+        "GHA",
+        "GIN",
+        "LBR",
+        "MLI"
+      ],
+      "timezones": [
+        "UTC+00:00"
+      ]
+    },
+    "info": {
+      "population": 26378274,
+      "languages": [
+        "French"
+      ],
+      "currency": {
+        "code": "XOF",
+        "symbol": "Fr"
+      },
+      "callingCode": "225",
+      "tld": ".ci"
+    }
+  },
+  "MKD": {
+    "name": {
+      "common": "North Macedonia",
+      "official": "Republic of North Macedonia"
+    },
+    "codes": {
+      "iso2": "MK",
+      "iso3": "MKD"
+    },
+    "capital": "Skopje",
+    "flag": {
+      "emoji": "🇲🇰",
+      "imageUrl": "https://flagcdn.com/mk.svg"
+    },
+    "geography": {
+      "continent": "Europe",
+      "region": "Southeast Europe",
+      "coordinates": {
+        "latitude": 41.83,
+        "longitude": 22.0
+      },
+      "borders": [
+        "ALB",
+        "BGR",
+        "GRC",
+        "UNK",
+        "SRB"
+      ],
+      "timezones": [
+        "UTC+01:00"
+      ]
+    },
+    "info": {
+      "population": 2083374,
+      "languages": [
+        "Macedonian"
+      ],
+      "currency": {
+        "code": "MKD",
+        "symbol": "den"
+      },
+      "callingCode": "389",
+      "tld": ".mk"
+    }
+  },
+  "TZA": {
+    "name": {
+      "common": "Tanzania",
+      "official": "United Republic of Tanzania"
+    },
+    "codes": {
+      "iso2": "TZ",
+      "iso3": "TZA"
+    },
+    "capital": "Dodoma",
+    "flag": {
+      "emoji": "🇹🇿",
+      "imageUrl": "https://flagcdn.com/tz.svg"
+    },
+    "geography": {
+      "continent": "Africa",
+      "region": "Eastern Africa",
+      "coordinates": {
+        "latitude": -6.0,
+        "longitude": 35.0
+      },
+      "borders": [
+        "BDI",
+        "COD",
+        "KEN",
+        "MWI",
+        "MOZ",
+        "RWA",
+        "UGA",
+        "ZMB"
+      ],
+      "timezones": [
+        "UTC+03:00"
+      ]
+    },
+    "info": {
+      "population": 59734218,
+      "languages": [
+        "Swahili",
+        "English"
+      ],
+      "currency": {
+        "code": "TZS",
+        "symbol": "TSh"
+      },
+      "callingCode": "255",
+      "tld": ".tz"
+    }
+  },
+  "TGO": {
+    "name": {
+      "common": "Togo",
+      "official": "Togolese Republic"
+    },
+    "codes": {
+      "iso2": "TG",
+      "iso3": "TGO"
+    },
+    "capital": "Lomé",
+    "flag": {
+      "emoji": "🇹🇬",
+      "imageUrl": "https://flagcdn.com/tg.svg"
+    },
+    "geography": {
+      "continent": "Africa",
+      "region": "Western Africa",
+      "coordinates": {
+        "latitude": 8.0,
+        "longitude": 1.17
+      },
+      "borders": [
+        "BEN",
+        "BFA",
+        "GHA"
+      ],
+      "timezones": [
+        "UTC"
+      ]
+    },
+    "info": {
+      "population": 8278724,
+      "languages": [
+        "French"
+      ],
+      "currency": {
+        "code": "XOF",
+        "symbol": "Fr"
+      },
+      "callingCode": "228",
+      "tld": ".tg"
+    }
+  },
+  "TON": {
+    "name": {
+      "common": "Tonga",
+      "official": "Kingdom of Tonga"
+    },
+    "codes": {
+      "iso2": "TO",
+      "iso3": "TON"
+    },
+    "capital": "Nuku'alofa",
+    "flag": {
+      "emoji": "🇹🇴",
+      "imageUrl": "https://flagcdn.com/to.svg"
+    },
+    "geography": {
+      "continent": "Oceania",
+      "region": "Polynesia",
+      "coordinates": {
+        "latitude": -20.0,
+        "longitude": -175.0
+      },
+      "borders": [],
+      "timezones": [
+        "UTC+13:00"
+      ]
+    },
+    "info": {
+      "population": 105695,
+      "languages": [
+        "English",
+        "Tongan"
+      ],
+      "currency": {
+        "code": "TOP",
+        "symbol": "T$"
+      },
+      "callingCode": "676",
+      "tld": ".to"
+    }
+  },
+  "TUN": {
+    "name": {
+      "common": "Tunisia",
+      "official": "Republic of Tunisia"
+    },
+    "codes": {
+      "iso2": "TN",
+      "iso3": "TUN"
+    },
+    "capital": "Tunis",
+    "flag": {
+      "emoji": "🇹🇳",
+      "imageUrl": "https://flagcdn.com/tn.svg"
+    },
+    "geography": {
+      "continent": "Africa",
+      "region": "Northern Africa",
+      "coordinates": {
+        "latitude": 34.0,
+        "longitude": 9.0
+      },
+      "borders": [
+        "DZA",
+        "LBY"
+      ],
+      "timezones": [
+        "UTC+01:00"
+      ]
+    },
+    "info": {
+      "population": 11818619,
+      "languages": [
+        "Arabic"
+      ],
+      "currency": {
+        "code": "TND",
+        "symbol": "DT"
+      },
+      "callingCode": "216",
+      "tld": ".tn"
+    }
+  },
+  "TUR": {
+    "name": {
+      "common": "Turkey",
+      "official": "Republic of Turkey"
+    },
+    "codes": {
+      "iso2": "TR",
+      "iso3": "TUR"
+    },
+    "capital": "Ankara",
+    "flag": {
+      "emoji": "🇹🇷",
+      "imageUrl": "https://flagcdn.com/tr.svg"
+    },
+    "geography": {
+      "continent": "Asia",
+      "region": "Western Asia",
+      "coordinates": {
+        "latitude": 39.0,
+        "longitude": 35.0
+      },
+      "borders": [
+        "ARM",
+        "AZE",
+        "BGR",
+        "GEO",
+        "GRC",
+        "IRN",
+        "IRQ",
+        "SYR"
+      ],
+      "timezones": [
+        "UTC+03:00"
+      ]
+    },
+    "info": {
+      "population": 84339067,
+      "languages": [
+        "Turkish"
+      ],
+      "currency": {
+        "code": "TRY",
+        "symbol": "₺"
+      },
+      "callingCode": "90",
+      "tld": ".tr"
+    }
+  },
+  "TKM": {
+    "name": {
+      "common": "Turkmenistan",
+      "official": "Turkmenistan"
+    },
+    "codes": {
+      "iso2": "TM",
+      "iso3": "TKM"
+    },
+    "capital": "Ashgabat",
+    "flag": {
+      "emoji": "🇹🇲",
+      "imageUrl": "https://flagcdn.com/tm.svg"
+    },
+    "geography": {
+      "continent": "Asia",
+      "region": "Central Asia",
+      "coordinates": {
+        "latitude": 40.0,
+        "longitude": 60.0
+      },
+      "borders": [
+        "AFG",
+        "IRN",
+        "KAZ",
+        "UZB"
+      ],
+      "timezones": [
+        "UTC+05:00"
+      ]
+    },
+    "info": {
+      "population": 6031200,
+      "languages": [
+        "Turkmen",
+        "Russian"
+      ],
+      "currency": {
+        "code": "TMT",
+        "symbol": "m"
+      },
+      "callingCode": "993",
+      "tld": ".tm"
+    }
+  },
+  "TUV": {
+    "name": {
+      "common": "Tuvalu",
+      "official": "Tuvalu"
+    },
+    "codes": {
+      "iso2": "TV",
+      "iso3": "TUV"
+    },
+    "capital": "Funafuti",
+    "flag": {
+      "emoji": "🇹🇻",
+      "imageUrl": "https://flagcdn.com/tv.svg"
+    },
+    "geography": {
+      "continent": "Oceania",
+      "region": "Polynesia",
+      "coordinates": {
+        "latitude": -8.0,
+        "longitude": 178.0
+      },
+      "borders": [],
+      "timezones": [
+        "UTC+12:00"
+      ]
+    },
+    "info": {
+      "population": 11792,
+      "languages": [
+        "English",
+        "Tuvaluan"
+      ],
+      "currency": {
+        "code": "AUD",
+        "symbol": "$"
+      },
+      "callingCode": "688",
+      "tld": ".tv"
+    }
+  },
+  "UGA": {
+    "name": {
+      "common": "Uganda",
+      "official": "Republic of Uganda"
+    },
+    "codes": {
+      "iso2": "UG",
+      "iso3": "UGA"
+    },
+    "capital": "Kampala",
+    "flag": {
+      "emoji": "🇺🇬",
+      "imageUrl": "https://flagcdn.com/ug.svg"
+    },
+    "geography": {
+      "continent": "Africa",
+      "region": "Eastern Africa",
+      "coordinates": {
+        "latitude": 1.0,
+        "longitude": 32.0
+      },
+      "borders": [
+        "COD",
+        "KEN",
+        "RWA",
+        "SSD",
+        "TZA"
+      ],
+      "timezones": [
+        "UTC+03:00"
+      ]
+    },
+    "info": {
+      "population": 45741007,
+      "languages": [
+        "English",
+        "Swahili"
+      ],
+      "currency": {
+        "code": "UGX",
+        "symbol": "Sh"
+      },
+      "callingCode": "256",
+      "tld": ".ug"
+    }
+  },
+  "UKR": {
+    "name": {
+      "common": "Ukraine",
+      "official": "Ukraine"
+    },
+    "codes": {
+      "iso2": "UA",
+      "iso3": "UKR"
+    },
+    "capital": "Kyiv",
+    "flag": {
+      "emoji": "🇺🇦",
+      "imageUrl": "https://flagcdn.com/ua.svg"
+    },
+    "geography": {
+      "continent": "Europe",
+      "region": "Eastern Europe",
+      "coordinates": {
+        "latitude": 49.0,
+        "longitude": 32.0
+      },
+      "borders": [
+        "BLR",
+        "HUN",
+        "MDA",
+        "POL",
+        "ROU",
+        "RUS",
+        "SVK"
+      ],
+      "timezones": [
+        "UTC+02:00"
+      ]
+    },
+    "info": {
+      "population": 44134693,
+      "languages": [
+        "Ukrainian"
+      ],
+      "currency": {
+        "code": "UAH",
+        "symbol": "₴"
+      },
+      "callingCode": "380",
+      "tld": ".ua"
+    }
+  },
+  "ARE": {
+    "name": {
+      "common": "United Arab Emirates",
+      "official": "United Arab Emirates"
+    },
+    "codes": {
+      "iso2": "AE",
+      "iso3": "ARE"
+    },
+    "capital": "Abu Dhabi",
+    "flag": {
+      "emoji": "🇦🇪",
+      "imageUrl": "https://flagcdn.com/ae.svg"
+    },
+    "geography": {
+      "continent": "Asia",
+      "region": "Western Asia",
+      "coordinates": {
+        "latitude": 24.0,
+        "longitude": 54.0
+      },
+      "borders": [
+        "OMN",
+        "SAU"
+      ],
+      "timezones": [
+        "UTC+04:00"
+      ]
+    },
+    "info": {
+      "population": 9890402,
+      "languages": [
+        "Arabic"
+      ],
+      "currency": {
+        "code": "AED",
+        "symbol": "د.إ"
+      },
+      "callingCode": "971",
+      "tld": ".ae"
+    }
+  },
+  "URY": {
+    "name": {
+      "common": "Uruguay",
+      "official": "Oriental Republic of Uruguay"
+    },
+    "codes": {
+      "iso2": "UY",
+      "iso3": "URY"
+    },
+    "capital": "Montevideo",
+    "flag": {
+      "emoji": "🇺🇾",
+      "imageUrl": "https://flagcdn.com/uy.svg"
+    },
+    "geography": {
+      "continent": "South America",
+      "region": "South America",
+      "coordinates": {
+        "latitude": -33.0,
+        "longitude": -56.0
+      },
+      "borders": [
+        "ARG",
+        "BRA"
+      ],
+      "timezones": [
+        "UTC-03:00"
+      ]
+    },
+    "info": {
+      "population": 3473730,
+      "languages": [
+        "Spanish"
+      ],
+      "currency": {
+        "code": "UYU",
+        "symbol": "$"
+      },
+      "callingCode": "598",
+      "tld": ".uy"
+    }
+  },
+  "UZB": {
+    "name": {
+      "common": "Uzbekistan",
+      "official": "Republic of Uzbekistan"
+    },
+    "codes": {
+      "iso2": "UZ",
+      "iso3": "UZB"
+    },
+    "capital": "Tashkent",
+    "flag": {
+      "emoji": "🇺🇿",
+      "imageUrl": "https://flagcdn.com/uz.svg"
+    },
+    "geography": {
+      "continent": "Asia",
+      "region": "Central Asia",
+      "coordinates": {
+        "latitude": 41.0,
+        "longitude": 64.0
+      },
+      "borders": [
+        "AFG",
+        "KAZ",
+        "KGZ",
+        "TJK",
+        "TKM"
+      ],
+      "timezones": [
+        "UTC+05:00"
+      ]
+    },
+    "info": {
+      "population": 34232050,
+      "languages": [
+        "Uzbek",
+        "Russian"
+      ],
+      "currency": {
+        "code": "UZS",
+        "symbol": "so'm"
+      },
+      "callingCode": "998",
+      "tld": ".uz"
+    }
+  },
+  "VUT": {
+    "name": {
+      "common": "Vanuatu",
+      "official": "Republic of Vanuatu"
+    },
+    "codes": {
+      "iso2": "VU",
+      "iso3": "VUT"
+    },
+    "capital": "Port Vila",
+    "flag": {
+      "emoji": "🇻🇺",
+      "imageUrl": "https://flagcdn.com/vu.svg"
+    },
+    "geography": {
+      "continent": "Oceania",
+      "region": "Melanesia",
+      "coordinates": {
+        "latitude": -16.0,
+        "longitude": 167.0
+      },
+      "borders": [],
+      "timezones": [
+        "UTC+11:00"
+      ]
+    },
+    "info": {
+      "population": 307145,
+      "languages": [
+        "Bislama",
+        "English",
+        "French"
+      ],
+      "currency": {
+        "code": "VUV",
+        "symbol": "Vt"
+      },
+      "callingCode": "678",
+      "tld": ".vu"
+    }
+  },
+  "VEN": {
+    "name": {
+      "common": "Venezuela",
+      "official": "Bolivarian Republic of Venezuela"
+    },
+    "codes": {
+      "iso2": "VE",
+      "iso3": "VEN"
+    },
+    "capital": "Caracas",
+    "flag": {
+      "emoji": "🇻🇪",
+      "imageUrl": "https://flagcdn.com/ve.svg"
+    },
+    "geography": {
+      "continent": "South America",
+      "region": "South America",
+      "coordinates": {
+        "latitude": 8.0,
+        "longitude": -66.0
+      },
+      "borders": [
+        "BRA",
+        "COL",
+        "GUY"
+      ],
+      "timezones": [
+        "UTC-04:00"
+      ]
+    },
+    "info": {
+      "population": 28435943,
+      "languages": [
+        "Spanish"
+      ],
+      "currency": {
+        "code": "VES",
+        "symbol": "Bs.S"
+      },
+      "callingCode": "58",
+      "tld": ".ve"
+    }
+  },
+  "VNM": {
+    "name": {
+      "common": "Vietnam",
+      "official": "Socialist Republic of Vietnam"
+    },
+    "codes": {
+      "iso2": "VN",
+      "iso3": "VNM"
+    },
+    "capital": "Hanoi",
+    "flag": {
+      "emoji": "🇻🇳",
+      "imageUrl": "https://flagcdn.com/vn.svg"
+    },
+    "geography": {
+      "continent": "Asia",
+      "region": "Southeast Asia",
+      "coordinates": {
+        "latitude": 16.17,
+        "longitude": 107.83
+      },
+      "borders": [
+        "KHM",
+        "CHN",
+        "LAO"
+      ],
+      "timezones": [
+        "UTC+07:00"
+      ]
+    },
+    "info": {
+      "population": 97338579,
+      "languages": [
+        "Vietnamese"
+      ],
+      "currency": {
+        "code": "VND",
+        "symbol": "₫"
+      },
+      "callingCode": "84",
+      "tld": ".vn"
+    }
+  },
+  "YEM": {
+    "name": {
+      "common": "Yemen",
+      "official": "Republic of Yemen"
+    },
+    "codes": {
+      "iso2": "YE",
+      "iso3": "YEM"
+    },
+    "capital": "Sana'a",
+    "flag": {
+      "emoji": "🇾🇪",
+      "imageUrl": "https://flagcdn.com/ye.svg"
+    },
+    "geography": {
+      "continent": "Asia",
+      "region": "Western Asia",
+      "coordinates": {
+        "latitude": 15.0,
+        "longitude": 48.0
+      },
+      "borders": [
+        "OMN",
+        "SAU"
+      ],
+      "timezones": [
+        "UTC+03:00"
+      ]
+    },
+    "info": {
+      "population": 29825964,
+      "languages": [
+        "Arabic"
+      ],
+      "currency": {
+        "code": "YER",
+        "symbol": "﷼"
+      },
+      "callingCode": "967",
+      "tld": ".ye"
+    }
+  },
+  "ZMB": {
+    "name": {
+      "common": "Zambia",
+      "official": "Republic of Zambia"
+    },
+    "codes": {
+      "iso2": "ZM",
+      "iso3": "ZMB"
+    },
+    "capital": "Lusaka",
+    "flag": {
+      "emoji": "🇿🇲",
+      "imageUrl": "https://flagcdn.com/zm.svg"
+    },
+    "geography": {
+      "continent": "Africa",
+      "region": "Eastern Africa",
+      "coordinates": {
+        "latitude": -15.0,
+        "longitude": 30.0
+      },
+      "borders": [
+        "AGO",
+        "BWA",
+        "COD",
+        "MWI",
+        "MOZ",
+        "NAM",
+        "TZA",
+        "ZWE"
+      ],
+      "timezones": [
+        "UTC+02:00"
+      ]
+    },
+    "info": {
+      "population": 18383955,
+      "languages": [
+        "English"
+      ],
+      "currency": {
+        "code": "ZMW",
+        "symbol": "ZK"
+      },
+      "callingCode": "260",
+      "tld": ".zm"
+    }
+  },
+  "ZWE": {
+    "name": {
+      "common": "Zimbabwe",
+      "official": "Republic of Zimbabwe"
+    },
+    "codes": {
+      "iso2": "ZW",
+      "iso3": "ZWE"
+    },
+    "capital": "Harare",
+    "flag": {
+      "emoji": "🇿🇼",
+      "imageUrl": "https://flagcdn.com/zw.svg"
+    },
+    "geography": {
+      "continent": "Africa",
+      "region": "Eastern Africa",
+      "coordinates": {
+        "latitude": -20.0,
+        "longitude": 30.0
+      },
+      "borders": [
+        "BWA",
+        "MOZ",
+        "ZAF",
+        "ZMB"
+      ],
+      "timezones": [
+        "UTC+02:00"
+      ]
+    },
+    "info": {
+      "population": 14862924,
+      "languages": [
+        "English",
+        "Shona",
+        "Ndebele"
+      ],
+      "currency": {
+        "code": "ZWL",
+        "symbol": "$"
+      },
+      "callingCode": "263",
+      "tld": ".zw"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+MANIFEST.in
+README.md
+countries.json
+setup.py
+countries_info/__init__.py
+countries_info_mg.egg-info/PKG-INFO
+countries_info_mg.egg-info/SOURCES.txt
+countries_info_mg.egg-info/dependency_links.txt
+countries_info_mg.egg-info/top_level.txt
