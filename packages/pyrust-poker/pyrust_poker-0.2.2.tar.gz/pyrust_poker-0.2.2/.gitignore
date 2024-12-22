@@ -1,0 +1,9 @@
+/target
+*.a
+*.o
+
+# dont close data files
+*.dat
+
+*.so
+*.pyc
