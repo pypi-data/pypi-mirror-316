@@ -1,0 +1,17 @@
+docs/source/conf.py,sha256=KSxukjQFUOIsNuRpOee3GzcZJjFY3j6txcttpYcraWE,1553
+examples/advanced.py,sha256=Kas35jJZ8wQCjQbVLcMLT50aoZ3EnnaP7BqQQhfF5fc,638
+examples/simple.py,sha256=_8UZYkZDkV_X7p6OtZElJgcJyc71spHIZqlsMTFBje0,272
+faspellchecker/__init__.py,sha256=31XjRbUEQFJpnngOXb3FB87zEicyKZvQnzWEqfQW6RU,579
+faspellchecker/exceptions.py,sha256=mKVnsxB7O9S2dhgBiUe5hfDMuX5_4hc118qVoWm14FI,294
+faspellchecker/fa-vocabulary.json.gz,sha256=SBHs5SOkWigQR3EKEBQWyU5w0kKkZ-dlnFIUuTyVFO8,679275
+faspellchecker/spellchecker.py,sha256=CeMfTiewEyZNiCuFtDGj5ZkAAXWv5-JHjMQA581xzps,4335
+faspellchecker/utils.py,sha256=jK-JPT_2HaUH1Mg7l91DaeJ9LhH_b-32eXy5TBRtD2Q,350
+faspellchecker/vocabulary.py,sha256=fCBiM_kVTtHw-LDeessUxjjYHumCHOrV0LDpbjaILkw,6916
+scripts/build_vocabulary.py,sha256=yVNNFpgls396ihEoIT5WboWkLP0TQsWciv1YQMeFzp4,1394
+tests/spellchecker_test.py,sha256=SwTSlqFz7_WeAgWnkuSpBI-hcXpeGojhK6voEjNganc,1421
+tests/vocabulary_test.py,sha256=yCwuemfFzzntsh_sGw8F2TBzeEGW1I5RybORlW-gycQ,1864
+fa_spellchecker-0.1.2.dist-info/LICENSE,sha256=UEFvIZlJ3lk92MaILnYj2q-3lhxUfKUhMEqqmFQfEdc,1060
+fa_spellchecker-0.1.2.dist-info/METADATA,sha256=oN03KpdUpm5pZ3RETspI6bNNFPseYLYvtZQeZdRR-qg,6976
+fa_spellchecker-0.1.2.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+fa_spellchecker-0.1.2.dist-info/top_level.txt,sha256=Q_WoveUgm_qWBA3w_1JdpPeTtCkejQzz3qS9ytdsc7A,43
+fa_spellchecker-0.1.2.dist-info/RECORD,,
