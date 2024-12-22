@@ -1,0 +1,15 @@
+tree_sitter_puppet/__init__.py,sha256=DG0n64T45H-DliNHTpcT86-1TAU5rxWzFAiHOlPOeYI,952
+tree_sitter_puppet/_binding.abi3.so,sha256=ZCKvq7fsTVqYE3EKd0dptUcDhFYU48N8wdNNwNuFPn0,172392
+tree_sitter_puppet/binding.c,sha256=SOzbtOPYBnSBbeYGU1TGTq4chL_oMct9GV5M6jUcyfk,683
+tree_sitter_puppet/__init__.pyi,sha256=ZUTB0OuqWsQXukEQPu6O2lLI_Iccu_-ICy1HVeyhJ-Y,140
+tree_sitter_puppet/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tree_sitter_puppet/queries/folds.scm,sha256=xPYNABpkqW9C58R32zIL1XnUh0_340GZUbdz1BdP9YY,178
+tree_sitter_puppet/queries/highlights.scm,sha256=2FQAGKY28FPXXMnYIRnZViAGLH5-0UtnWc1ldlm9JCs,2608
+tree_sitter_puppet/queries/indents.scm,sha256=q7ADPUzz_2D6drk8ofWCGETpw5NRiH6EtRtEMYJZYg0,345
+tree_sitter_puppet/queries/injections.scm,sha256=UUSkwqKyM5EKhKdU5gaSgjS19FjSS2l1yp287ZM1scw,46
+tree_sitter_puppet/queries/locals.scm,sha256=srYIXyC77hqH0QmkUhgnTeWGHcgBckF03IClL_7DsXg,850
+tree_sitter_puppet-1.3.0.dist-info/top_level.txt,sha256=WYhmQ1TR8nvS_VRa0eJo5VYhVgxfnVgeYh1NcIvQ08Q,28
+tree_sitter_puppet-1.3.0.dist-info/RECORD,,
+tree_sitter_puppet-1.3.0.dist-info/LICENSE,sha256=CZxEJI-M81MSMhExhoDpNGVYfABaSzcwzoy1M03gQ9Y,1101
+tree_sitter_puppet-1.3.0.dist-info/METADATA,sha256=LCdJ9EmWDCjZXdKa1Md0N3JiJ_dEU1llOV-gPHacpks,1094
+tree_sitter_puppet-1.3.0.dist-info/WHEEL,sha256=c7u_ubEXkR2uBFfNbwAs9GTEmnTB6mcIqGOWaG7Qc-c,216
