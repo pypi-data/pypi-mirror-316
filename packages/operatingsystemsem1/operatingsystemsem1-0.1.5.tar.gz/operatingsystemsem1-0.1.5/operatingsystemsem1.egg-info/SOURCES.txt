@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+operatingsystemsem1/__init__.py
+operatingsystemsem1/module.py
+operatingsystemsem1.egg-info/PKG-INFO
+operatingsystemsem1.egg-info/SOURCES.txt
+operatingsystemsem1.egg-info/dependency_links.txt
+operatingsystemsem1.egg-info/top_level.txt
