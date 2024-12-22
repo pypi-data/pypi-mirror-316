@@ -1,0 +1,26 @@
+{% include '__wechat_share_js__.html' %}
+    <script>
+        fetch("{{ ajax_url }}")
+            .then(resp => resp.json())
+            .then(data => {
+                wx.config({
+                    debug: {{ debug|tojson }},
+                    appId: data.appid,
+                    timestamp: data.timestamp,
+                    nonceStr: data.nonce_str,
+                    signature: data.signature,
+                    jsApiList: {{ js_api_list|tojson }}
+                });
+                wx.ready(function () {
+                    let shareData = {
+                        title: "{{ title }}",
+                        desc: "{{ desc }}",
+                        link: "{{ link }}",
+                        imgUrl: "{{ img }}"
+                    };
+                    {%- for api_name in js_api_list %}
+                        wx.{{ api_name }}(shareData)
+                    {%- endfor %}
+                })
+            })
+    </script>
