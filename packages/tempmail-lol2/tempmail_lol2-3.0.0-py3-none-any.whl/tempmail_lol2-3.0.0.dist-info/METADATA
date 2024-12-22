@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: tempmail-lol2
+Version: 3.0.0
+Summary: A Python API for TempMail with rate limit bypassing
+Home-page: https://github.com/sexfrance/tempmail-lol
+Author: Alexander Epolite, Alex Torres, Sexfrance
+Author-email: contact@bananacrumbs.us
+Maintainer: Sexfrance
+Maintainer-email: bwuuuuu@gmail.com
+Keywords: tempmail,api,lol,tempmail-lol,tempmail.lol,email,free,tempmail-lol-bypass,rate-limit-bypass
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Dist: requests
