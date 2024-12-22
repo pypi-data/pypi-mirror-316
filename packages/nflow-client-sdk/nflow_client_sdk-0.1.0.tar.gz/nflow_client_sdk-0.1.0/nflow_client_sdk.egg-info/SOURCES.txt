@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+nflow/__init__.py
+nflow/job.py
+nflow/nflow_operator.py
+nflow/pipeline.py
+nflow/resource.py
+nflow/trigger.py
+nflow/utils.py
+nflow_client_sdk.egg-info/PKG-INFO
+nflow_client_sdk.egg-info/SOURCES.txt
+nflow_client_sdk.egg-info/dependency_links.txt
+nflow_client_sdk.egg-info/requires.txt
+nflow_client_sdk.egg-info/top_level.txt
