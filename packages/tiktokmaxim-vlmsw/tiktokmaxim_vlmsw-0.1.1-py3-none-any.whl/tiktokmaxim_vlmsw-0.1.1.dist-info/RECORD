@@ -1,0 +1,15 @@
+tests/__init__.py,sha256=HPKNluUlV-QQ4i4hs35yqEQA2hvLJnaMnHu7zgMXzuA,159
+tests/conftest.py,sha256=vElL4OcBcdmTfAs-LBW605x0NRu1KiGFX2s0s0YhscA,2738
+tests/test_push_pull.py,sha256=hiU5DZAsdB0WpXCo0yUdPJMckyuf53rpQw66RYwkWyw,9976
+vlmsw/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vlmsw/common.py,sha256=r_Yzyptm4VdbZu-IPI89jlE3Z7chLpADn4vOSqcPQhc,2329
+vlmsw/exceptions.py,sha256=Mo9_57ugR16gf5oY6Nb-mox4KLQWxXyuC3gema83EJ0,212
+vlmsw/pull.py,sha256=0GgCjjw4VjuW4Qkcndcvq0XQ5-wJHDyZ09oMqpSarYc,4784
+vlmsw/push.py,sha256=A5Z3K13rU5izgz6o-ZWr_eOGuIi-uRbTGgOUPPe7_mw,6011
+vlmsw/push_converted_weights.py,sha256=OzQQQsivEvaSOpVYWsAfzAFWrUNqr-Mz5xn1WkeDx8I,3568
+vlmsw/settings/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vlmsw/settings/settings.py,sha256=rFzKpk-Q1w1WtxIo0j9k-4VxpdT4eATAL3OcZungMrU,477
+tiktokmaxim_vlmsw-0.1.1.dist-info/METADATA,sha256=p_fFDiHaEVYtAPWri0z06GKVNx20Es4WGQW-y1YFzsw,456
+tiktokmaxim_vlmsw-0.1.1.dist-info/WHEEL,sha256=ixB2d4u7mugx_bCBycvM9OzZ5yD7NmPXFRtKlORZS2Y,91
+tiktokmaxim_vlmsw-0.1.1.dist-info/top_level.txt,sha256=s3kolP2oA0fI0-FTxcObi_dl3mmstKEfARgKGjZLewQ,12
+tiktokmaxim_vlmsw-0.1.1.dist-info/RECORD,,
