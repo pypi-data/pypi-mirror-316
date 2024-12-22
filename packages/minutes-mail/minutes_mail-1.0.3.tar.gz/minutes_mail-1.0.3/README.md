@@ -1,0 +1,79 @@
+# Minutes Mail - Temporary Email Manager
+
+This is a Python library that provides a convenient way to create and manage temporary email addresses using two different services: `1secmail.com` and `rapidapi.com`.
+
+## Features
+
+- Create temporary email addresses
+- Retrieve a list of available domains for email creation
+- Read emails received in the temporary inbox and extract activation codes
+- Delete temporary email addresses (only supported for `1secmail`)
+
+## Installation
+
+1. Clone the repository or download the source code.
+2. Install the required dependencies:
+
+```bash
+pip install minutes-mail
+```
+
+## Usage
+
+1. Import the `MinutesMail` class:
+
+```python
+from minutes_mail import MinutesMail
+```
+
+2. Create an instance of the `MinutesMail` class, specifying the `email_type`, `rapid_api_key`, and `proxy_url` as needed:
+
+```python
+# With Rapid API Key
+mail = MinutesMail.create_instance(
+    email_type="rapid_api",
+    rapid_api_key="your_rapid_api_key",
+    proxy_url="http://your_proxy_url"
+)
+
+# Without Rapid API Key (1SecMail)
+mail = MinutesMail.create_instance(
+    email_type="1secmail",
+    proxy_url="http://your_proxy_url"
+)
+```
+
+The `create_instance` method will automatically create an instance of either `RapidMail` or `OnesecMail` based on the provided `email_type` and whether a `rapid_api_key` is supplied.
+
+3. Use the available methods to manage the temporary email:
+
+```python
+# Create a new email address
+email = mail.create_mail()
+
+# Get available domains
+domains = mail.get_domains()
+
+# Read emails and extract activation code
+code = mail.get_activation_code(max_wait_minutes=3)
+
+# Delete the email (only supported for 1SecMail)
+mail.delete_email(email=email)
+```
+
+## Code Structure
+
+- **`base_class.py`**: Contains the `BaseClass`, defining common interfaces and properties for email services.
+- **`inboxes_mail.py`**: Implements the `OnesecMail` class to interact with the `1secmail.com` API.
+- **`rapid_mail.py`**: Implements the `RapidMail` class to interact with the `privatix-temp-mail-v1.p.rapidapi.com` API.
+- **`mail.py`**: Provides the factory method `create_instance` to create an instance of `RapidMail` or `OnesecMail`.
+
+## Dependencies
+
+- `loguru`: For logging.
+- `httpx`: For making HTTP requests.
+
+## Contributing
+
+Contributions are welcome! Please open an issue or submit a pull request if you have any improvements or bug fixes.
+
