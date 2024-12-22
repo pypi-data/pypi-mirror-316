@@ -1,0 +1,11 @@
+LICENSE.md
+README.md
+pyproject.toml
+src/pstui/__init__.py
+src/pstui/main.py
+src/pstui.egg-info/PKG-INFO
+src/pstui.egg-info/SOURCES.txt
+src/pstui.egg-info/dependency_links.txt
+src/pstui.egg-info/entry_points.txt
+src/pstui.egg-info/requires.txt
+src/pstui.egg-info/top_level.txt

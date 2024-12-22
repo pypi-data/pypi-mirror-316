@@ -1,0 +1,72 @@
+Metadata-Version: 2.1
+Name: pstui
+Version: 0.1.0
+Summary: A terminal UI for managing processes
+Author-email: tcsenpai <tcsenpai@discus.sh>
+Project-URL: Homepage, https://github.com/tcsenpai/pstui
+Project-URL: Repository, https://github.com/tcsenpai/pstui.git
+Keywords: process,tui,system,monitor
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+Requires-Dist: textual>=0.52.1
+Requires-Dist: psutil>=5.9.0
+
+# psTUI - A terminal UI for managing processes
+
+![psTUI](./assets/image.png)
+
+## Features
+
+- Search processes by name
+- Sort processes by CPU or memory usage
+- Kill processes
+- Toggle auto-refresh
+- Lightweight and fast
+
+## Install with pip
+
+```bash
+pip install pstui
+```
+
+### Run
+
+```bash
+pstui
+```
+
+## Run from source
+
+### Installation
+
+```bash
+pip install -r requirements.txt
+```
+
+### Usage
+
+```bash
+python src/pstui/main.py
+```
+
+## Controls
+
+- Q: Quit
+- F: Find process
+- R: Refresh
+- K: Kill selected process
+- S: Toggle sort (CPU/Memory)
+- A: Toggle auto-refresh
+- ↑/↓: Navigate
+
+## License
+
+Licensed under the [MIT License](LICENSE.md).
+See [LICENSE.md](LICENSE.md) for more information.

@@ -1,0 +1,2 @@
+[console_scripts]
+pstui = pstui.main:main
