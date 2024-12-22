@@ -1,0 +1,10 @@
+mcp_jetbrains_proxy/__init__.py,sha256=fcbHDLjZzAI-VolbZfJ4j79xes79sxUKtvzHVqwJOQE,228
+mcp_jetbrains_proxy/__main__.py,sha256=WO3Cs1qUjDCxIKGK3XEVRVyf48T1pnRKxzsbzZcmN2M,108
+mcp_jetbrains_proxy/_version.py,sha256=EvM14m4qSSEDJ8guDm29LjILZGFK6YE7EyixtW5YFBQ,426
+mcp_jetbrains_proxy/endpoint.py,sha256=XkMyDw1Yv1xjM-MLixw5mOFbriaeF-wy4tNLtW_KvNI,7151
+mcp_jetbrains_proxy/server.py,sha256=1rOYxMgDEX2PLtdesch6BWQvzR6ciL1fl-TgR9atvxA,9006
+mcp_jetbrains_proxy-0.1.1.dev22.dist-info/METADATA,sha256=d5ADXCA0aUfpAprODq_sNxJQfuaeaeUMa_6TtVy2OVE,2243
+mcp_jetbrains_proxy-0.1.1.dev22.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+mcp_jetbrains_proxy-0.1.1.dev22.dist-info/entry_points.txt,sha256=JNyP6hQvijLYUzhTnfMMBclL8GRwhhcO6jO10IWcETQ,72
+mcp_jetbrains_proxy-0.1.1.dev22.dist-info/licenses/LICENSE,sha256=Px1Cu5elJFye-ixuqnCb6pAmXXUBeMBzYb8XLlNz8Xs,1071
+mcp_jetbrains_proxy-0.1.1.dev22.dist-info/RECORD,,
