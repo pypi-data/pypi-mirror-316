@@ -1,0 +1,2 @@
+[console_scripts]
+calculate-mirror-size = calculate_mirror_size:main
