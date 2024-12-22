@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: robot_core
+Version: 0.1.0
+Summary: robot core tools
+Author: 
+Author-email: 
+Requires-Python: >=3.13
+Requires-Dist: pydantic
+Requires-Dist: debugpy
