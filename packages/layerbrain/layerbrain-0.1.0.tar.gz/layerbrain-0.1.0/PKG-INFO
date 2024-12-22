@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: layerbrain
+Version: 0.1.0
+Summary: Python library for interacting with the Layerbrain API.
+Home-page: https://github.com/layerbrain/layerbrain-python
+Author: Layerbrain
+Author-email: support@layerbrain.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Layerbrain Python Library
+
+The Layerbrain Python library offers seamless integration with the Layerbrain API for Python applications. It includes
+pre-defined classes for API resources that dynamically initialize from API responses, ensuring compatibility with
+multiple versions of the Layerbrain API.
+
+## Installation
+
+```bash
+pip install layerbrain
+```

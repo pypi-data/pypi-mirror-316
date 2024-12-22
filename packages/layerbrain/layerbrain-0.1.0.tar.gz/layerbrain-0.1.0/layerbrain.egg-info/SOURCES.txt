@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+layerbrain/__init__.py
+layerbrain.egg-info/PKG-INFO
+layerbrain.egg-info/SOURCES.txt
+layerbrain.egg-info/dependency_links.txt
+layerbrain.egg-info/top_level.txt
