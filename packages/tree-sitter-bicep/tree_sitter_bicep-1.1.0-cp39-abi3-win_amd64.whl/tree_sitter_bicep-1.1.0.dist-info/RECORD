@@ -1,0 +1,15 @@
+tree_sitter_bicep/__init__.py,sha256=YtkR2VyJSjzhKY1X43wRd9qbPGt4BgFdyimNQHRFZLQ,951
+tree_sitter_bicep/__init__.pyi,sha256=ZUTB0OuqWsQXukEQPu6O2lLI_Iccu_-ICy1HVeyhJ-Y,140
+tree_sitter_bicep/_binding.pyd,sha256=IEMleKasZ9Ne5BEjEgiqwsL9tRH-Orsg8gv8zdVxuZk,148992
+tree_sitter_bicep/binding.c,sha256=HhenTDk0Kb_ZCbzHlFxEgKK7RuuBEp_3nQoLSPcora0,681
+tree_sitter_bicep/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tree_sitter_bicep/queries/folds.scm,sha256=JEmiq10cNKJN2vQWmnK7cGKsXCGjxYBf9xO3owdnUHs,349
+tree_sitter_bicep/queries/highlights.scm,sha256=NRDAztTZ8GjshyZ0rZmYtIpvy7EEhMd5_U5pBBh0xYE,3063
+tree_sitter_bicep/queries/indents.scm,sha256=7qKWQ9Hod2-Xzd5iI0PloaT2jbkY4Ti9GTtdGBEVHrA,215
+tree_sitter_bicep/queries/injections.scm,sha256=BF8770DMlZxyfRuBnx7lBYkNiJqJ7E5dVSoJ7y7gsuI,99
+tree_sitter_bicep/queries/locals.scm,sha256=kJmuNe04yXeHwWJx7FCUdBBuUW_67YVrFiOPu54e64E,1268
+tree_sitter_bicep-1.1.0.dist-info/LICENSE,sha256=CZxEJI-M81MSMhExhoDpNGVYfABaSzcwzoy1M03gQ9Y,1101
+tree_sitter_bicep-1.1.0.dist-info/METADATA,sha256=mpL4AhmVFWntnp-vyWf860rklL4r0WYHg0aHc93FvEg,1140
+tree_sitter_bicep-1.1.0.dist-info/WHEEL,sha256=7S5JW2gN0o7K9D5M4xMLXtFCRFfxaKVbq6uoKW3XVN0,99
+tree_sitter_bicep-1.1.0.dist-info/top_level.txt,sha256=xusyijzflCAvdmesTHkLlyFe9LvxQ0JoQpUVm32emYE,27
+tree_sitter_bicep-1.1.0.dist-info/RECORD,,
