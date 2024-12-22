@@ -1,0 +1,4 @@
+[external]
+build-requires = [
+  "pkg:generic/poppler-utils",
+]
