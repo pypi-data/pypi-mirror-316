@@ -1,0 +1,2 @@
+from mapafiscal.contexto.factory.contexto_registry import registrar_contexto
+from mapafiscal.contexto.factory.contexto_factory import ContextoFiscalFactory
