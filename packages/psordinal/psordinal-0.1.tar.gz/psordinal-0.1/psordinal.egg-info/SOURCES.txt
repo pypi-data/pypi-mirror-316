@@ -1,0 +1,10 @@
+README.md
+setup.py
+psordinal/__init__.py
+psordinal/main.py
+psordinal/module.py
+psordinal.egg-info/PKG-INFO
+psordinal.egg-info/SOURCES.txt
+psordinal.egg-info/dependency_links.txt
+psordinal.egg-info/entry_points.txt
+psordinal.egg-info/top_level.txt
