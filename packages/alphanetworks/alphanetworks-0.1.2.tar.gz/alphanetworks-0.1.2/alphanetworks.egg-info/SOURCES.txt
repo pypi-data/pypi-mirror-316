@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+alphanetworks.egg-info/PKG-INFO
+alphanetworks.egg-info/SOURCES.txt
+alphanetworks.egg-info/dependency_links.txt
+alphanetworks.egg-info/entry_points.txt
+alphanetworks.egg-info/requires.txt
+alphanetworks.egg-info/top_level.txt
+scripts/__init__.py
+scripts/train_model.py
