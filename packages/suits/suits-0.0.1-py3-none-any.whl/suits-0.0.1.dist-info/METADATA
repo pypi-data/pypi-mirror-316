@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: suits
+Version: 0.0.1
+Summary: Ask Donna to do things for you, instead of worrying about pesky syntactical issues. NOT intended for production purposes.
+Author: Ishan Sandeep Kshirsagar
+Author-email: ishank20062002@gmail.com
+Requires-Dist: google-generativeai
+
