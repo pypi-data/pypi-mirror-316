@@ -1,0 +1,11 @@
+build
+twine
+chardet
+markdown
+pyyaml
+
+[dev]
+check-manifest
+
+[test]
+coverage
