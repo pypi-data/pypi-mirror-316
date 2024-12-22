@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+setup.py
+src/my_python_package/__init__.py
+src/my_python_package/phenome_gen.py
+src/my_python_package/test.py
+src/telugu_phenome_gen.egg-info/PKG-INFO
+src/telugu_phenome_gen.egg-info/SOURCES.txt
+src/telugu_phenome_gen.egg-info/dependency_links.txt
+src/telugu_phenome_gen.egg-info/top_level.txt
