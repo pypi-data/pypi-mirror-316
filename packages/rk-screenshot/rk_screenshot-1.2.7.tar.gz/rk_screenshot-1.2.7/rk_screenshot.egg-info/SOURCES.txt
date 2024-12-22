@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+shutter.mp3
+project_Screenshot/__init__.py
+project_Screenshot/data.py
+project_Screenshot/r_screenshot.py
+project_Screenshot/shutter.mp3
+project_Screenshot/ss_taker.py
+rk_screenshot.egg-info/PKG-INFO
+rk_screenshot.egg-info/SOURCES.txt
+rk_screenshot.egg-info/dependency_links.txt
+rk_screenshot.egg-info/requires.txt
+rk_screenshot.egg-info/top_level.txt
