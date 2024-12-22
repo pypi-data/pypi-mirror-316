@@ -1,0 +1,9 @@
+prune files*
+
+graft ./inkBoard/files
+
+prune ./inkBoard/platforms/*/
+prune ./inkBoard/integrations/*/
+
+global-exclude */__pycache__/*
+global-exclude *.pyc
