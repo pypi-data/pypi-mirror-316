@@ -1,0 +1,166 @@
+# **CarQuery**
+
+CarQuery is a Python library that enables you to effortlessly gather comprehensive car model data from the Car Query API and export it into a CSV format. With robust filtering capabilities, you can refine your search based on manufacturer, model, variant, production year, and more. Dive into the world of automotive data with ease and flexibility!
+
+---
+
+## **Features**
+
+- **Comprehensive Data**: Fetch detailed car model information from the Car Query API.
+- **Flexible Filtering**: Refine your search by specifying:
+  - Manufacturer
+  - Model
+  - Variant
+  - Production year range
+  - Whether the car is sold in the US
+- **Exclusion Words**: Exclude specific words from variant names to tailor your results.
+- **Export to CSV**: Save filtered data to a CSV file for further analysis and visualization.
+
+---
+
+## **Installation**
+
+You can install CarQuery directly from PyPI:
+
+```bash
+pip install carquery
+```
+
+---
+
+## **Usage**
+
+Here’s how you can use the library in your Python projects.
+
+### **Import the Library**
+
+```python
+from carquery import fetch_models, fetch_car_data, write_to_csv, print_table
+```
+
+### **Fetching Models**
+
+To fetch all models for a specific manufacturer:
+
+```python
+make = "Honda"
+models = fetch_models(make)
+print("Available Models:")
+print_table(models)
+```
+
+---
+
+### **Fetching Car Data**
+
+You can fetch detailed car data using various filters:
+
+```python
+make = "Honda"
+model = "Civic"  # Leave empty for all models
+variant = ""  # Leave empty for all variants
+from_year = 2010
+to_year = 2022
+sold_in_us = True  # Set to True, False, or None for all
+
+car_data = fetch_car_data(make=make, model=model, variant=variant, from_year=from_year, to_year=to_year, sold_in_us=sold_in_us)
+print(f"Fetched {len(car_data)} car entries.")
+```
+
+---
+
+### **Exporting to CSV**
+
+You can export the fetched data to a CSV file for further analysis:
+
+```python
+filename = f"{make}_{model}_car_data.csv"
+write_to_csv(filename, car_data)
+print(f"Data has been saved to {filename}")
+```
+
+---
+
+### **Excluding Specific Words from Variants**
+
+You can filter out variants containing specific words by processing the `car_data` list before exporting:
+
+```python
+exclusion_words = ["Touring", "Sport"]
+
+filtered_car_data = [
+    entry for entry in car_data
+    if not any(word.lower() in entry['vehicle_variant'].lower() for word in exclusion_words)
+]
+
+filename = f"{make}_{model}_filtered_car_data.csv"
+write_to_csv(filename, filtered_car_data)
+print(f"Filtered data has been saved to {filename}")
+```
+
+---
+
+## **Example: Full Workflow**
+
+Here’s a complete example that uses all features:
+
+```python
+from carquery import fetch_models, fetch_car_data, write_to_csv, print_table
+
+# Fetch models for a manufacturer
+make = "Honda"
+models = fetch_models(make)
+print("Available Models:")
+print_table(models)
+
+# Fetch detailed car data
+model = "Civic"
+car_data = fetch_car_data(make=make, model=model, from_year=2010, to_year=2022, sold_in_us=True)
+print(f"Fetched {len(car_data)} car entries.")
+
+# Exclude specific words from variants
+exclusion_words = ["Touring", "Sport"]
+filtered_car_data = [
+    entry for entry in car_data
+    if not any(word.lower() in entry['vehicle_variant'].lower() for word in exclusion_words)
+]
+
+# Save to CSV
+filename = f"{make}_{model}_filtered_car_data.csv"
+write_to_csv(filename, filtered_car_data)
+print(f"Filtered data has been saved to {filename}")
+```
+
+---
+
+## **Dependencies**
+
+This library requires the following Python packages:
+
+- `requests`
+- `prettytable`
+- `tqdm`
+
+These will be automatically installed when you install the library via `pip`.
+
+---
+
+## **Contributing**
+
+Contributions are welcome! Please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Submit a pull request explaining your changes.
+
+---
+
+## **License**
+
+This library is distributed under the MIT License. See the `LICENSE` file for more details.
+
+---
+
+## **Support**
+
+If you encounter any issues or have questions, feel free to open an issue on the [GitHub repository](https://github.com/Salman0x01/Car-Model-Data-Scraper/tree/main).
