@@ -1,0 +1,2 @@
+[console_scripts]
+md-ref-checker = md_ref_checker.cli:main
