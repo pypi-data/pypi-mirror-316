@@ -1,0 +1,15 @@
+postalservice/__init__.py,sha256=fF_v-ledQR4jJ-E5nxMsQ1r8zJHS6vcOoEQFhY2GEEA,114
+postalservice/baseservice.py,sha256=nqGCJVzzxXF653TPouM5kqPzPormgodkTwBpP4-x-tw,1131
+postalservice/frilservice.py,sha256=lr-uumdfbras2lmFwAMEWs9lsbjYMtCAFAmPrADPy4o,5477
+postalservice/mercariservice.py,sha256=pYZZ9VvBJM70CaDnQ6UQuLGRWWlcLigqClBkZNGeKz0,6799
+postalservice/yjpservice.py,sha256=W7Y6gD1bizuqWZoa0qlS5CApfhrAxTpv1q_H3jgYEP8,6731
+postalservice/utils/__init__.py,sha256=9h5cHC6so0YjZh7kaE4NMeCLMgkZ_vD2Hpgu06KuABg,53
+postalservice/utils/network_utils.py,sha256=BsSt-FAaUTvZJGtdT8IL4AR_Q3O3boaokC-y9V9EP_g,1387
+postalservice/utils/search_utils.py,sha256=UJ9bQsl_xiu1TcYj3zbXzt0uJ3G2-VEVTSPq-8fjG-M,3893
+tests/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+tests/test_services.py,sha256=olT7S9AswkzUkO53pQGne5c_hp6J1L_vfevnW9zNZOs,13300
+postalservice-0.1.6.dist-info/LICENSE,sha256=0Lv0Re8z4EmDvnDQB9pIRorfWz6BORqUsyQvZ_VS-88,1062
+postalservice-0.1.6.dist-info/METADATA,sha256=49dY7TvEnfVG1Qzy26Dzum_FplN2PhWGySNtnGxg3-I,2396
+postalservice-0.1.6.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+postalservice-0.1.6.dist-info/top_level.txt,sha256=O0Q7lUH3Up9Pi4NillaTiGUSP_fCzxHci_CMKRFmRRc,20
+postalservice-0.1.6.dist-info/RECORD,,
