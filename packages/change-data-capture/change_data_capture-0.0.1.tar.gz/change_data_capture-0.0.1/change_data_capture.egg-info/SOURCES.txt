@@ -1,0 +1,8 @@
+README.md
+setup.py
+change_data_capture/__init__.py
+change_data_capture/main.py
+change_data_capture.egg-info/PKG-INFO
+change_data_capture.egg-info/SOURCES.txt
+change_data_capture.egg-info/dependency_links.txt
+change_data_capture.egg-info/top_level.txt
