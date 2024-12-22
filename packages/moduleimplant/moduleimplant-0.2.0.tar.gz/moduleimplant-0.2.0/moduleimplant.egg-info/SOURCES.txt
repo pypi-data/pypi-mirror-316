@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+moduleimplant/__init__.py
+moduleimplant/modify.py
+moduleimplant/moduleimplant.py
+moduleimplant.egg-info/PKG-INFO
+moduleimplant.egg-info/SOURCES.txt
+moduleimplant.egg-info/dependency_links.txt
+moduleimplant.egg-info/entry_points.txt
+moduleimplant.egg-info/requires.txt
+moduleimplant.egg-info/top_level.txt
