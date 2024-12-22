@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: sintaxis
+Version: 0.0.1
+Summary: Codigo CLI es un comando line interface (CLI) que permite crear y ejecutar proyectos de codigo. El objetivo es facilitar la creación de proyectos de codigo y la ejecución de tareas de verificación de código.
+Home-page: https://github.com/12aptor
+Author: Paolo Soncco
+Author-email: paolosonccodev@gmail.com
+License: Apache License 2.0
+Description-Content-Type: text/markdown
+Requires-Dist: colorama
+Requires-Dist: python-socketio[asyncio_client]
+
+# Codigo CLI
+
+Codigo CLI es un comando line interface (CLI) que permite crear y ejecutar proyectos de codigo. El objetivo es facilitar la creaciÃ³n de proyectos de codigo y la ejecuciÃ³n de tareas de verificaciÃ³n de cÃ³digo.

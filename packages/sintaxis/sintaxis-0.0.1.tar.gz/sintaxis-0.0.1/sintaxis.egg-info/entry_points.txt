@@ -1,0 +1,2 @@
+[console_scripts]
+codigo = app.main:main
