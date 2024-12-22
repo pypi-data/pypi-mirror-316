@@ -1,0 +1,2 @@
+[console_scripts]
+moduleimplant = moduleimplant.modify:main
