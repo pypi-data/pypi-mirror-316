@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: operatingsystemsem1
+Version: 0.1.1
+Summary: A simple greeting library
+Home-page: 
+Author: Your Name
+Author-email: your.email@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# My Library
+
+This is a simple Python library that contains a function to calculate the nth Fibonacci number.
+
+## Installation
+
+To install this library, run:
+
+```bash
+pip install os-sem1
