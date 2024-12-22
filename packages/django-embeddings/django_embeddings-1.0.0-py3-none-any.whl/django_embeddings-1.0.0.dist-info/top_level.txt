@@ -1,0 +1,2 @@
+django_embeddings
+sample_app

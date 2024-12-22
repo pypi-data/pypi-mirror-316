@@ -1,0 +1,96 @@
+Metadata-Version: 2.1
+Name: django_embeddings
+Version: 1.0.0
+Summary: A Django application for embeddings
+License: MIT License
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 3.2
+Classifier: Framework :: Django :: 4.0
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: Django
+Requires-Dist: django-extensions
+Requires-Dist: psycopg2
+Requires-Dist: pgvector
+Requires-Dist: django-simple-history
+Requires-Dist: sentence-transformers
+Requires-Dist: trafilatura
+Requires-Dist: lxml_html_clean
+Requires-Dist: beautifulsoup4
+Requires-Dist: requests
+Requires-Dist: django-environ
+Requires-Dist: django-tasks
+Requires-Dist: djangorestframework
+
+# Django Embeddings
+
+## Installation
+
+```bash
+pip install django-embeddings
+```
+
+## Usage
+
+Add `django_embeddings` to your `INSTALLED_APPS` in `settings.py`:
+
+```python
+INSTALLED_APPS = [
+    # ...existing apps...
+    'django_embeddings',
+]
+```
+
+## Settings
+
+Configure any necessary settings in `settings.py`:
+
+```python
+DJANGO_EMBEDDINGS_SETTING = 'value'
+```
+
+## Examples
+
+```python
+# Example usage of the app
+```
+
+## Using the Similar Pages API
+
+To use the similar-pages API, follow these steps:
+
+1. Start the Django server:
+    ```sh
+    docker-compose up
+    ```
+
+2. Open your browser and navigate to `http://localhost:8000/similar-pages/`.
+
+3. Enter a URL in the input field and click the "Search" button to find similar pages.
+
+The API endpoint for similar pages is available at:
+```
+GET /api/v1/similar-pages/?url=<URL>
+```
+
+Example:
+```
+GET http://localhost:8000/api/v1/similar-pages/?url=https://www.example.com/
+```
+
+This will return a JSON response with a list of similar pages and their details.
+
+## Running Tests
+
+Run the tests using Django's test framework:
+```sh
+python manage.py test django_embeddings
+```
+````
