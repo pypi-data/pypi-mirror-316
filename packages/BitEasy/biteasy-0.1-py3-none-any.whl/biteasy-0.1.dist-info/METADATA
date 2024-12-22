@@ -1,0 +1,14 @@
+Metadata-Version: 2.4
+Name: BitEasy
+Version: 0.1
+Summary: A Python Module to help in writing and reading bits in binary files.
+Author-email: TheDoubleMix <xboxj2012@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+
+# BitEasy
+A Python Module to help in writing and reading bits in binary files.
