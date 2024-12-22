@@ -1,0 +1,10 @@
+live_calc/__init__.py,sha256=ndTTpFm-kms2Sd0TyIp5_1ApNOBQm802daJPAaugKcM,138
+live_calc/__main__.py,sha256=i4aLlelpgkCa3rX1WxypGj3UzadzzWsw0Y-aMe21AjQ,1556
+live_calc/calc_parser.py,sha256=16ZBvMbjcEyj_dFEpb-Swz5f-f5MeA6KvZvx5CFMWDk,4533
+live_calc/web/app.html,sha256=4CdkWrJ4JE1zlfnE7KmCu0fUNDuDhgdzhXAxi0w1Z7Q,1722
+live_calc/web/script.js,sha256=BwS1a_VlEiEcg-EQ_sUZRcdDD9qcF3hM7hpa4Z88n7c,8063
+live_calc/web/style.css,sha256=BpFbgGUGTXhQY66p_rnnDagBAgukzkd2vFX1tPsOTiA,4276
+live_calc-0.0.1.dist-info/METADATA,sha256=blB-LiCeZwcLD8XgTnTkqN3ObHswxFD7wt7gf9QntVw,769
+live_calc-0.0.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+live_calc-0.0.1.dist-info/licenses/LICENSE,sha256=KX66TBggqZ1T2ocDOAFarqaWe_nu-Fh4nYB-F4bS2hQ,1070
+live_calc-0.0.1.dist-info/RECORD,,
