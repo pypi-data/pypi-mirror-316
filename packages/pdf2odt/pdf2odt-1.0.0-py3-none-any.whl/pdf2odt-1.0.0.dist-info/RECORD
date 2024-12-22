@@ -1,0 +1,13 @@
+pdf2odt/__init__.py,sha256=4ziRPVklg3oMvXFHShiASZ1YP2ePgsSYPAEG0jmxkPw,86
+pdf2odt/core.py,sha256=vT-oA8Vh_ODLOwl9h_LEXcWiaYt151rIbV11l12dR_w,7260
+pdf2odt/locale/es/LC_MESSAGES/pdf2odt.mo,sha256=Uyq05K_vRwd4zpFVy2D1z-xdrSE8TG32qHpZOcKErmw,2049
+pdf2odt/locale/es.po,sha256=cdQ3ou1Zhzm_W-iiKw84uI9oEgDVKWotLzNJdCo5LY0,2987
+pdf2odt/locale/fr/LC_MESSAGES/pdf2odt.mo,sha256=IPPnqVqc9yCZXBzDlk95_mghldvwYMinIU_Wxzt8ouA,366
+pdf2odt/locale/fr.po,sha256=aQToDPpuXJXjeaWzCEnvA7H2MzI67sAeHRwNTwWwe8U,2947
+pdf2odt/locale/pdf2odt.pot,sha256=nBbeKoTfl60WUfYH7WG0CZTRixdckLPEpilQcBuxsAs,1580
+pdf2odt/poethepoet.py,sha256=04taLJMSPhYhUjS3qyFRyi39jIefB1I9k-snAFziIS0,1912
+pdf2odt-1.0.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+pdf2odt-1.0.0.dist-info/METADATA,sha256=34_0p61qH8jkeVjtxolPVravcrhxud7wI352-LGTxy4,3866
+pdf2odt-1.0.0.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+pdf2odt-1.0.0.dist-info/entry_points.txt,sha256=OTnj--I-dy5joz-TZ_1lABkJPhaeaVQd3oVR8Jm1AgE,45
+pdf2odt-1.0.0.dist-info/RECORD,,
