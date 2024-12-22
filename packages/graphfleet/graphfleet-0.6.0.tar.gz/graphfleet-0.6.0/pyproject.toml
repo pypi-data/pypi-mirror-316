@@ -1,0 +1,66 @@
+[project]
+name = "graphfleet"
+version = "0.6.0"
+description = "A Python library for building and querying knowledge graphs using GraphRAG"
+readme = "README.md"
+requires-python = ">=3.11,<3.13"
+authors = [
+    { name = "Zachary BENSALEM", email = "zachary@qredence.ai" },
+]
+dependencies = [
+    "graphrag>=1.0.1",
+    "pandas>=2.0.0",
+    "python-dotenv>=1.0.0",
+    "fastapi>=0.100.0",
+    "uvicorn>=0.23.0",
+    "pydantic>=2.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=6.0",
+    "black>=21.0",
+    "isort>=5.0",
+    "mypy>=0.910",
+    "jupyter>=1.0.0",
+]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "graphfleet"
+version = "0.6.0"
+description = "A Python library for building and querying knowledge graphs using GraphRAG"
+authors = ["Qredence"]
+readme = "README.md"
+packages = [{include = "graphfleet"}]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12"
+]
+
+[tool.poetry.dependencies]
+python = ">=3.11,<3.13"
+graphrag = ">=1.0.1"
+pandas = "^2.0.0"
+python-dotenv = "^1.0.0"
+fastapi = "^0.100.0"
+uvicorn = "^0.23.0"
+pydantic = "^2.0.0"
+
+[tool.poetry.urls]
+repository = "https://github.com/Qredence/graphfleet"
+
+[tool.black]
+line-length = 88
+target-version = ['py311']
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
