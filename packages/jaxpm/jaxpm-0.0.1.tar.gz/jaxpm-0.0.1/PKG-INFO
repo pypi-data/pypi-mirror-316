@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: JaxPM
+Version: 0.0.1
+Summary: A dead simple FastPM implementation in JAX
+Home-page: https://github.com/DifferentiableUniverseInitiative/JaxPM
+Author: JaxPM developers
+License-File: LICENSE
+Requires-Dist: jax
+Requires-Dist: jax_cosmo
