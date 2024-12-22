@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+src/realerikrani/base64token/__init__.py
+src/realerikrani/base64token/token.py
+src/realerikrani_base64token.egg-info/PKG-INFO
+src/realerikrani_base64token.egg-info/SOURCES.txt
+src/realerikrani_base64token.egg-info/dependency_links.txt
+src/realerikrani_base64token.egg-info/top_level.txt
