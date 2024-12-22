@@ -1,0 +1,17 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+[project]
+name = "BitEasy"
+version = "0.1.0"
+authors = [
+  { name="TheDoubleMix", email="xboxj2012@gmail.com" },
+]
+description = "A Python Module to help in writing and reading bits in binary files."
+readme = "README.md"
+requires-python = ">=3.12"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
