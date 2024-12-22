@@ -1,0 +1,10 @@
+OpenImageIO/OpenImageIO.cp38-win_amd64.pyd,sha256=lZ2ZJSlPz5J3iBbLZotRyeAJBj1dQ5ojPtEa--Na4kM,20690432
+OpenImageIO/__init__.py,sha256=Nqa-qsClC7u-J1aZRWO33CzxAXZ1aAe3NDWwTLs4WmQ,345
+OpenImageIO/tbb12.dll,sha256=wMwQa5dS3Z6VinjMYkLjR8Vrgci5EMu6Kkk5ZWCYqS8,309248
+PyOpenColorIO/PyOpenColorIO.pyd,sha256=mOtJ54UvUcbbdKqtI2mnBrAQRSJM10gkHubfdNMjRw0,6760448
+PyOpenColorIO/__init__.py,sha256=-gbAtQyKKAQlVYBCxbjKEZXS5QaqmbB9pML0ebT_jiU,222
+oiio_static_python-2.5.12.0.1.dist-info/LICENSE,sha256=WtjCEwlcVzkh1ziO35P2qfVEkLjr87Flro7xlHz3CEY,11556
+oiio_static_python-2.5.12.0.1.dist-info/METADATA,sha256=W-oNARz8kIBtmCGytb77zgepRY5omnKc68Roq3oNFJc,7230
+oiio_static_python-2.5.12.0.1.dist-info/WHEEL,sha256=rTcqimtzpX3smAWAhGmiRSWAxTY4PqYPNE-p4kscHDQ,99
+oiio_static_python-2.5.12.0.1.dist-info/top_level.txt,sha256=pEDBC0g_Gz_PX6dbpFg8O1nhi6gwBvyvgfq7fKdj3LQ,26
+oiio_static_python-2.5.12.0.1.dist-info/RECORD,,
