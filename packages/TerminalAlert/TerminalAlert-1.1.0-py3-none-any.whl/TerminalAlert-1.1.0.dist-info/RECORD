@@ -1,0 +1,13 @@
+TerminalAlert/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+TerminalAlert/main.py,sha256=W-INITCNAGZSYfsDf_nt0PzNo3JPogAKH9kNr68vJ2w,2606
+TerminalAlert/utils.py,sha256=HvGFHaXb8SWZqVuRExWobyZBsL6KTxBmKe17fLK9o2w,831
+TerminalAlert/icons/failure.png,sha256=VVYvrI4lOMSvIIXXRcpQArNjsT17iIP-WVtaMbjTXxE,5644
+TerminalAlert/icons/favicon.ico,sha256=4FeQkk-mr_a_4MnoMkBDgVZ7FISyQpPrh3hYe8sNtck,34494
+TerminalAlert/icons/logo.png,sha256=8_3FkTWr6xFC4A82SB9u__Q2usO3FCn9lVc7uGaYlhg,351850
+TerminalAlert/icons/success.png,sha256=IothYE272iCqgZAa_cVPCFL98I93O8FGWj47w_t4VQw,5512
+TerminalAlert-1.1.0.dist-info/LICENSE,sha256=7ne4LPvv5jDms1ACrv8LvRfkRz8shezyGdP5MIvhq8E,1094
+TerminalAlert-1.1.0.dist-info/METADATA,sha256=umdwQlw_lhIijDh19qVe6vlVSQyoCAGBWwBk5ZzHnNI,8393
+TerminalAlert-1.1.0.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+TerminalAlert-1.1.0.dist-info/entry_points.txt,sha256=7A1LacorWwznxucK3ONNQySrCjIJzJ1MoylM0OE_juA,58
+TerminalAlert-1.1.0.dist-info/top_level.txt,sha256=krVtHNIWQdKm_nPh_Slg1tzJL6vdJinlLxA8oZGjp1Q,14
+TerminalAlert-1.1.0.dist-info/RECORD,,
