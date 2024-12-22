@@ -1,0 +1,2 @@
+[console_scripts]
+conn2combat = conn2combat.firstlevelparser:main
