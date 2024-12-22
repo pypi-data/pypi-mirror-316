@@ -1,0 +1,101 @@
+Metadata-Version: 2.1
+Name: movie_metadata
+Version: 0.1.0
+Summary: A Python wrapper for The Movie Database (TMDB) API
+Home-page: https://github.com/AhmedOsamaMath/movie-metadata
+Author: Ahmed Osama
+Author-email: Ahmed Osama <ahmedosamamath@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2024 Ahmed Osama
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Homepage, https://github.com/AhmedOsamaMath/movie-metadata
+Project-URL: Documentation, https://github.com/AhmedOsamaMath/movie-metadata/wiki
+Project-URL: Repository, https://github.com/AhmedOsamaMath/movie-metadata.git
+Project-URL: Bug Tracker, https://github.com/AhmedOsamaMath/movie-metadata/issues
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.7.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests>=2.25.0
+Requires-Dist: typing-extensions>=4.0.0; python_version < "3.8"
+Provides-Extra: dev
+Requires-Dist: pytest>=6.0; extra == "dev"
+Requires-Dist: pytest-cov>=2.0; extra == "dev"
+Requires-Dist: mypy>=0.910; extra == "dev"
+Requires-Dist: black>=21.0; extra == "dev"
+Requires-Dist: isort>=5.0; extra == "dev"
+Requires-Dist: flake8>=3.9; extra == "dev"
+Provides-Extra: docs
+Requires-Dist: sphinx>=4.0; extra == "docs"
+Requires-Dist: sphinx-rtd-theme>=0.5; extra == "docs"
+Requires-Dist: myst-parser>=0.15; extra == "docs"
+
+# Movie Metadata
+
+A Python wrapper for The Movie Database (TMDB) API that provides easy access to movie, TV show, and person information.
+
+## Installation
+
+```bash
+pip install movie-metadata
+```
+
+## Usage
+
+```python
+from movie_metadata import TMDB
+
+# Initialize the client
+tmdb = TMDB("your_api_key_here")
+
+# Search for movies
+results = tmdb.search_movies("The Matrix")
+
+# Get movie details
+movie_details = tmdb.get_movie_details(603)
+
+# Get popular movies
+popular_movies = tmdb.get_popular_movies()
+```
+
+## Features
+
+- Search movies and TV shows
+- Get detailed information about movies, TV shows, and people
+- Discover movies based on various criteria
+- Get movie recommendations
+- Get cast and crew information
+- Error handling and logging
+- Type hints for better IDE support
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
