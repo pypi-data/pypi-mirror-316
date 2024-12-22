@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: ws2811-mqtt
+Version: 0.2.1
+Summary: This package makes it possible to control the ws2811 type lights with a homeassistant mqtt instance
+License: Apache-2.0
+Author: Guillaume Richard
+Author-email: lord0gnome@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: adafruit-blinka (>=8.50.0,<9.0.0)
+Requires-Dist: adafruit-circuitpython-neopixel (>=6.3.12,<7.0.0)
+Requires-Dist: paho-mqtt (>=2.1.0,<3.0.0)
+Requires-Dist: python-dotenv (>=1.0.1,<2.0.0)
+Requires-Dist: pyyaml (>=6.0.2,<7.0.0)
+Requires-Dist: rpi-ws281x (>=5.0.0,<6.0.0)
+Description-Content-Type: text/markdown
+
+
