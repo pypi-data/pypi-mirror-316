@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: book-records-app
+Version: 1.0.0
+Summary: A simple GUI application to manage book records using SQLite.
+Author: Charlito C. Casalta
+Author-email: charlito320@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# Book Records Application
+
+A simple GUI application to manage book records using SQLite and Tkinter.
+
+## Features
+
+- Add, update, and delete book records.
+- View records in a table format.
+- Simple, lightweight, and user-friendly interface.
+
+## Installation
+
+Install the package using pip:
+
+```bash
+pip install book-records-app

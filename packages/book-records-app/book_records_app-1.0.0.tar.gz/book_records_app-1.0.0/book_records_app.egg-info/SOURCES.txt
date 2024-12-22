@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+setup.py
+book_records/__init__.py
+book_records/main.py
+book_records_app.egg-info/PKG-INFO
+book_records_app.egg-info/SOURCES.txt
+book_records_app.egg-info/dependency_links.txt
+book_records_app.egg-info/entry_points.txt
+book_records_app.egg-info/top_level.txt
