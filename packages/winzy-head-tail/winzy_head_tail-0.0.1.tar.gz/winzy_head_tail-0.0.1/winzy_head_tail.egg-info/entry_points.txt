@@ -1,0 +1,3 @@
+[winzy.plugins]
+head = winzy_head_tail:head_plugin
+tail = winzy_head_tail:tail_plugin

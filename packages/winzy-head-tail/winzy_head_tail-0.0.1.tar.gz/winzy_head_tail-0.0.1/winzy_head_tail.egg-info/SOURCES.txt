@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+tests/test_winzy_head_tail.py
+winzy_head_tail/__init__.py
+winzy_head_tail/head.py
+winzy_head_tail/tail.py
+winzy_head_tail.egg-info/PKG-INFO
+winzy_head_tail.egg-info/SOURCES.txt
+winzy_head_tail.egg-info/dependency_links.txt
+winzy_head_tail.egg-info/entry_points.txt
+winzy_head_tail.egg-info/requires.txt
+winzy_head_tail.egg-info/top_level.txt
