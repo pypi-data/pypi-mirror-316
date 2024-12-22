@@ -1,0 +1,120 @@
+Metadata-Version: 2.1
+Name: stock_historic_data
+Version: 0.1.1
+Summary: A project to fetch and store historic and live stock data using the Yahoo Finance API.
+Home-page: https://github.com/yourusername/your-repo
+Author: Abhinav Priyadarshi
+Author-email: Abhinav Priyadarshi <abhinavpriyadarshi2020@gmail.com>
+Project-URL: homepage, https://github.com/abhiwer/stock_historic_data
+Project-URL: repository, https://github.com/abhiwer/stock_historic_data
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: appdirs==1.4.4
+Requires-Dist: beautifulsoup4==4.12.3
+Requires-Dist: blinker==1.7.0
+Requires-Dist: certifi==2024.2.2
+Requires-Dist: charset-normalizer==3.3.2
+Requires-Dist: click==8.1.7
+Requires-Dist: colorama==0.4.6
+Requires-Dist: Flask==3.0.2
+Requires-Dist: frozendict==2.4.0
+Requires-Dist: greenlet==3.0.3
+Requires-Dist: html5lib==1.1
+Requires-Dist: idna==3.6
+Requires-Dist: itsdangerous==2.1.2
+Requires-Dist: Jinja2==3.1.3
+Requires-Dist: lxml==5.1.0
+Requires-Dist: MarkupSafe==2.1.5
+Requires-Dist: multitasking==0.0.11
+Requires-Dist: numpy==1.26.4
+Requires-Dist: pandas==2.2.1
+Requires-Dist: peewee==3.17.1
+Requires-Dist: python-dateutil==2.9.0.post0
+Requires-Dist: pytz==2024.1
+Requires-Dist: pytest==7.4.0
+Requires-Dist: requests==2.31.0
+Requires-Dist: six==1.16.0
+Requires-Dist: soupsieve==2.5
+Requires-Dist: SQLAlchemy==2.0.27
+Requires-Dist: typing_extensions==4.10.0
+Requires-Dist: tzdata==2024.1
+Requires-Dist: urllib3==2.2.1
+Requires-Dist: webencodings==0.5.1
+Requires-Dist: Werkzeug==3.0.1
+Requires-Dist: yfinance==0.2.37
+
+# Stock Historic Data
+
+This project is designed to fetch and store historic and live stock data using the Yahoo Finance API. The data is stored in SQLite databases and can be accessed via a Flask web application.
+
+## Functionality
+
+For a detailed walkthrough of the project's functionality, you can watch the following YouTube video:
+
+[![Stock Historic Data Functionality](https://img.youtube.com/vi/4hRqNl2Iyz8/0.jpg)](https://www.youtube.com/watch?v=4hRqNl2Iyz8)
+
+### Route: /
+- Stock Historic Data Visualization Chart
+- Data from Historic Database
+
+![Historic Data Chart](https://github.com/abhiwer/stock_historic_data/blob/main/src/images/HistoricDataChart.png?raw=true)
+
+### Route: /live
+- Stock Live Data Visualization and sending data to live_database
+
+![Live Data Chart](https://github.com/abhiwer/stock_historic_data/blob/main/src/images/LiveDataChart.png?raw=true)
+
+### Route: /onlylive
+- Only Tick per second Data for Data Visualization 
+
+![Only Live Data Chart](https://github.com/abhiwer/stock_historic_data/blob/main/src/images/OnlyDataLive.png?raw=true)
+
+## Installation
+
+1. Clone the repository:
+    ```sh
+    git clone https://github.com/abhiwer/stock_historic_data.git
+    cd stock_historic_data
+    ```
+
+2. Create and activate a virtual environment:
+    ```sh
+    python -m venv env
+    source env/bin/activate  # On Windows use `env\Scripts\activate`
+    ```
+
+3. Install the dependencies:
+    ```sh
+    pip install -r requirements.txt
+    ```
+
+## Usage
+
+1. Run the application:
+    ```sh
+    flask run
+    ```
+
+2. Open your browser and navigate to:
+    - `http://127.0.0.1:5000/` for Stock Historic Data Visualization Chart
+    - `http://127.0.0.1:5000/live` for Stock Live Data Visualization
+    - `http://127.0.0.1:5000/onlylive` for Only Tick per second Data Visualization
+
+## Endpoints
+
+- `/`: Main page to view historic data.
+- `/live`: Page to view live data.
+- `/onlylive`: Page to view only live data.
+- `/get_dates`: API to get a range of dates.
+- `/get_currencies`: API to get the list of supported currencies.
+- `/get_updatetheliveDB`: API to update the live database.
+- `/get_updatethehistoricDB`: API to update the historic database.
+
+## License
+
+This project is licensed under the MIT License.
+
+![Alt text](https://github.com/abhiwer/stock_historic_data/blob/main/src/images/OnlyDataLive.png?raw=true)
