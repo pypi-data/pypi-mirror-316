@@ -1,0 +1,9 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+src/perfait.egg-info/PKG-INFO
+src/perfait.egg-info/SOURCES.txt
+src/perfait.egg-info/dependency_links.txt
+src/perfait.egg-info/top_level.txt
