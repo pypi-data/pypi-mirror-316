@@ -1,0 +1,17 @@
+[theme]
+inherit = "basic"
+stylesheets = ["style.css"]
+sidebars = [
+    "sidebar/searchbox.html",
+    "sidebar/localtoc.html",
+    "sidebar/relations.html",
+    "sidebar/sourcelink.html",
+]
+
+[options]
+bulma_version = "1.0.2"
+bulmaswatch = ""
+color_mode = ""
+sidebar_position = "left"
+navbar_icons = []
+show_theme_credit = true
