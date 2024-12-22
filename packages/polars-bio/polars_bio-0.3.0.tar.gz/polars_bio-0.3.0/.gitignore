@@ -1,0 +1,13 @@
+*.so
+*.pyc
+target
+venv
+.venv
+*.so
+*.dll
+*.pyd
+
+.idea
+sandbox/
+.DS_Store
+site/
