@@ -1,0 +1,111 @@
+# Data Tools Package
+
+A comprehensive library for data preprocessing in AI development, focusing on scalability, usability, and modular design.
+
+## Features
+
+## Features
+
+- **Data Loading**: Efficiently load datasets in various formats.
+- **Data Cleaning**: Handle missing values, outliers, and duplicates.
+- **Feature Engineering**: Create new features using advanced techniques.
+- **Categorical Processing**: One-hot and label encoding for categorical variables.
+- **Scaling**: Normalize and standardize numerical features.
+- **Outlier Handling**: Detect and remove outliers using IQR.
+- **Text Processing**: Clean, tokenize, and vectorize text data.
+- **Time Series Processing**: Create time-based features and resample data.
+- **Image Processing**: Load, resize, normalize, and convert images.
+- **Image Augmentation**: Apply transformations to increase the diversity of your training dataset.
+
+## usage
+
+```py
+from dataprocessor import DataLoader, DataCleaner, FeatureEngineer, ImageProcessor, ImageAugmenter
+
+# Example usage of the package
+loader = DataLoader()
+data = loader.load_csv("data.csv")
+
+cleaner = DataCleaner()
+cleaned_data = cleaner.clean(data)
+
+# Image processing example
+image = ImageProcessor.load_image("path/to/image.jpg")
+resized_image = ImageProcessor.resize_image(image, (224, 224))
+normalized_image = ImageProcessor.normalize_image(resized_image)
+
+# Image augmentation example
+augmented_image = ImageAugmenter.augment_image(normalized_image)
+
+```
+
+## testing
+```bash
+poetry run pytest
+```
+
+# TODO: restructure
+
+```md
+package/
+├── .github/
+│   ├── workflows/
+│   │   ├── ci.yml
+│   │   ├── cd.yml
+├── src/
+│   └── dataprocessor/
+│       ├── __init__.py
+│       ├── loaders/                   # Data loading modules
+│       │   └── data_loader.py         # Load various data formats (CSV, JSON, etc.)
+│       ├── cleaners/                  # Data cleaning modules
+│       │   ├── data_cleaner.py        # Clean and preprocess data
+│       │   ├── outlier_handler.py      # Outlier detection and handling
+│       │   ├── scaling.py             # Scaling/normalization techniques
+│       │   └── categorical_processor.py # Handling categorical data
+│       ├── transformers/               # Data transformation modules
+│       │   ├── feature_engineer.py      # Feature engineering tools
+│       │   ├── text_processor.py         # Text data processing (tokenization, cleaning)
+│       │   ├── time_series_processor.py  # Time series specific tools (windowing, etc.)
+│       │   ├── image_processor.py        # Image preprocessing (resizing, normalization)
+│       │   └── image_augmenter.py        # Data augmentation techniques for images
+│       ├── evaluators/                  # Evaluation modules
+│       │   └── evaluator.py             # Evaluation metrics and tools
+│       ├── visualizers/                 # Visualization modules
+│       │   └── visualizer.py            # Visualization tools (plots, charts)
+│       ├── pipelines/                   # Pipeline modules
+│       │   ├── pipeline.py               # Pipelines for chaining transformations
+│       │   └── config.py                 # Configuration management for reproducibility
+│       └── utils.py                     # Utility functions (logging, file handling)
+├── tests/
+│   ├── test_loaders/
+│   │   └── test_data_loader.py
+│   ├── test_cleaners/
+│   │   ├── test_data_cleaner.py
+│   │   ├── test_outlier_handler.py
+│   │   └── test_scaling.py
+│   │   └── test_categorical_processor.py
+│   ├── test_transformers/
+│   │   ├── test_feature_engineer.py
+│   │   ├── test_text_processor.py
+│   │   ├── test_time_series_processor.py
+│   │   ├── test_image_processor.py
+│   │   └── test_image_augmenter.py
+│   ├── test_evaluators/
+│   │   └── test_evaluator.py
+│   ├── test_visualizers/
+│   │   └── test_visualizer.py
+│   ├── test_pipelines/
+│   │   └── test_pipeline.py
+│   └── test_audio_processor.py
+│   └── test_tabular_processor.py
+├── README.md
+├── CONTRIBUTING.md                  # Guidelines for contributing to the package
+├── CHANGELOG.md                     # Changelog for tracking updates and changes
+├── examples/                        # Directory for example notebooks or scripts
+│   ├── example_data_loading.py
+│   ├── example_feature_engineering.py
+│   └── example_visualization.py
+├── requirements.txt                 # List of dependencies for the package
+└── pyproject.toml
+
+```
