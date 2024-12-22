@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: genreq
+Version: 0.1.0
+Summary: A Python tool that automatically detects python packages used in a project and generate a requirements.txt file
+Author-email: Ziad Elshahawy <zelshahawy@uchicago.edu>
+Maintainer-email: Ziad Elshahawy <zelshahawy@uchicago.edu>
+License: BSD license
+Project-URL: bugs, https://github.com/zelshahawy/genreqs/issues
+Project-URL: changelog, https://github.com/zelshahawy/genreqs/blob/master/changelog.md
+Project-URL: homepage, https://github.com/zelshahawy/genreqs
+Description-Content-Type: text/markdown
+License-File: LICENSE
+License-File: AUTHORS.rst
+Requires-Dist: typer
+Provides-Extra: dev
+Requires-Dist: coverage; extra == "dev"
+Requires-Dist: mypy; extra == "dev"
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: ruff; extra == "dev"
+
+=======
+genreqs
+=======
+
+
+.. image:: https://img.shields.io/pypi/v/genreqs.svg
+        :target: https://pypi.python.org/pypi/genreqs
+
+.. image:: https://img.shields.io/travis/zelshahawy/genreqs.svg
+        :target: https://travis-ci.com/zelshahawy/genreqs
+
+.. image:: https://readthedocs.org/projects/genreqs/badge/?version=latest
+        :target: https://genreqs.readthedocs.io/en/latest/?version=latest
+        :alt: Documentation Status
+
+
+
+
+A Python tool that automatically detects python packages used in a project and generate a requirements.txt file
+
+
+* Free software: BSD license
+* Documentation: https://genreqs.readthedocs.io.
+
+-------
