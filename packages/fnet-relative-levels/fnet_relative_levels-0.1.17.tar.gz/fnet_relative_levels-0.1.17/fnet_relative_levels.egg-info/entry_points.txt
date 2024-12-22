@@ -1,0 +1,2 @@
+[console_scripts]
+fnet_relative_levels = fnet_relative_levels.cli:main
