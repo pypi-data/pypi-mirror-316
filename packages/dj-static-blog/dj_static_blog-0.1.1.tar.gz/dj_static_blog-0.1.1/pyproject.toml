@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "dj-static-blog"
+version = "0.1.1"
+description = "A django app to build blog based on local files like markdown"
+authors = ["Suraj Singh Bisht <surajsinghbisht054@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [
+    {include = "dj_static_blog"},
+]
+
+
+[tool.poetry.dependencies]
+markdown = ">=3.5"
+pyyaml = "^6.0.2"
+
+[tool.poetry.group.dev.dependencies]
+django = "^5.1.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
