@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: oracle-sh
+Version: 0.1.0
+Summary: A pairwise comparer to discover your truth
+Author-email: Mike Moran <mike@mkmrn.dev>
+Project-URL: GitLab, https://gitlab.com/mmoran0032/oracle-sh
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: typer~=0.13
+Provides-Extra: dev
+Requires-Dist: black; extra == "dev"
+Requires-Dist: build; extra == "dev"
+Requires-Dist: isort; extra == "dev"
+Requires-Dist: mypy; extra == "dev"
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: pytest-cov>=4.0.0; extra == "dev"
+Requires-Dist: pytest-mock; extra == "dev"
+Requires-Dist: pip-tools>=6.0.0; extra == "dev"
+Requires-Dist: twine; extra == "dev"
+
+# oracle-sh
+
+A pairwise comparer to discover your truth

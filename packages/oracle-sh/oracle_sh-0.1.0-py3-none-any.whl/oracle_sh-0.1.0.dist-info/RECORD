@@ -1,0 +1,9 @@
+oracle/__init__.py,sha256=kUR5RAFc7HCeiqdlX36dZOHkUI5wI6V_43RpEcD8b-0,22
+oracle/cli.py,sha256=yWMbUdXoF5mre5UAXOm1JOQ8cTMBtydEyp0ms3f3aTU,198
+oracle/controller.py,sha256=O4AXx2cG_aEtF8bsqZMB3AX4YsXB_q9b9jq6yiH4JYw,212
+oracle/display.py,sha256=yEXA-kCVeGW4-B1ELEOUgVz5AhM8hHNj7bdtgUm4e6U,168
+oracle/model.py,sha256=NsSbhQpznK0b1ml0x0coqeop1ZAosvdg51qi-cGsAMM,422
+oracle_sh-0.1.0.dist-info/METADATA,sha256=HefEkVAq8cEX1MBWZUcGHTjmv8cWJzpgWfQvoLX7Ap0,737
+oracle_sh-0.1.0.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+oracle_sh-0.1.0.dist-info/top_level.txt,sha256=O1SF3QkJ2zaSLs2FePGNoRlUgQ5jWC8wLBCIGsXEdTQ,7
+oracle_sh-0.1.0.dist-info/RECORD,,
