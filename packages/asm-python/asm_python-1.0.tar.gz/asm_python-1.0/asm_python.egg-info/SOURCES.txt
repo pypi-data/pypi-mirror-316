@@ -1,0 +1,7 @@
+README.md
+main.c
+setup.py
+asm_python.egg-info/PKG-INFO
+asm_python.egg-info/SOURCES.txt
+asm_python.egg-info/dependency_links.txt
+asm_python.egg-info/top_level.txt
