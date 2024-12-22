@@ -1,0 +1,3 @@
+[console_scripts]
+Kivy_Calculator_package = Kivy_Calculator_package.main:main
+
