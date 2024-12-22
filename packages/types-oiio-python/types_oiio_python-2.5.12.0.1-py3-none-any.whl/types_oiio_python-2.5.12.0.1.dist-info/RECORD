@@ -1,0 +1,9 @@
+OpenImageIO/__init__.pyi,sha256=fXsKI8HAiP274lk--gDmlAVMpo9zmD1ouGrIFJOSuRs,76762
+OpenImageIO/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+PyOpenColorIO/__init__.pyi,sha256=Oj3B8xpRVAOx_KIYtbmjI8yCgo4EALmmTdweC9jSDeQ,122395
+PyOpenColorIO/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+types_oiio_python-2.5.12.0.1.dist-info/LICENSE,sha256=WtjCEwlcVzkh1ziO35P2qfVEkLjr87Flro7xlHz3CEY,11556
+types_oiio_python-2.5.12.0.1.dist-info/METADATA,sha256=AQNttDqLbkichdCG11BWYSHIThkcZj2v82XYuw4VD2Y,3074
+types_oiio_python-2.5.12.0.1.dist-info/WHEEL,sha256=P9jw-gEje8ByB7_hXoICnHtVCrEwMQh-630tKvQWehc,91
+types_oiio_python-2.5.12.0.1.dist-info/top_level.txt,sha256=pEDBC0g_Gz_PX6dbpFg8O1nhi6gwBvyvgfq7fKdj3LQ,26
+types_oiio_python-2.5.12.0.1.dist-info/RECORD,,
