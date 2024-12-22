@@ -1,0 +1,9 @@
+retry-stubs/METADATA.toml,sha256=BkHnmmeFc8C0e31yMBSQ-CA_WTFpoO3dbtquttSQ5JM,72
+retry-stubs/__init__.pyi,sha256=oURuYy9CoiIEbeBziwmNwAexn1hXNQlhL1_lH15UZZw,32
+retry-stubs/api.pyi,sha256=Z36Tlp7kBp9Wcm_5eOw3iJztoCR8nOoPOktjblYC3hM,866
+retry-stubs/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+types_retry-0.9.9.20241221.dist-info/LICENSE,sha256=KV-FOMlK5cMEMwHPfP8chS2ranhqjd7kceBhtA1eyr4,12657
+types_retry-0.9.9.20241221.dist-info/METADATA,sha256=0LYA3qx3eAVi6TBRw8PYimKfW8ZvhJ_y7J-pQAOgG-4,1802
+types_retry-0.9.9.20241221.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+types_retry-0.9.9.20241221.dist-info/top_level.txt,sha256=ZVjKtuxqBK8LIKWUD_Qa2ZmVCjuXpPv4tLr0q9dwl6w,12
+types_retry-0.9.9.20241221.dist-info/RECORD,,
