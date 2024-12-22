@@ -1,0 +1,154 @@
+<MainGrid>
+    cols: 1
+    size_hint: 1, 1
+    sizeOfGrid: 15
+    snakeGrid: []
+    time: 0
+    snakeDirection: 'up'
+    snake: []
+    numberOfFood: 1
+    food: []
+    score: 1
+    timeClockEvent: None
+    gameMoveEvent: None
+    collectedFood: False
+    settingsOpen: False
+    speed: 2
+    Label:
+        text: 'Snake Game'
+        font_size: 35
+        size_hint_y: None
+        size_hint: 1, 0.1
+    GridLayout:
+        cols: 2
+        size_hint_y: None
+        size_hint: 1, 0.1
+        Label:
+            id: timeLabel
+            text: 'Time: 00:00'
+            font_size: 20
+        Label:
+            id: scoreLabel
+            text: 'Score: 0'
+            font_size: 20
+    GridLayout:
+        size_hint_y: None
+        size_hint: (1,0.7)
+        padding: (30,0)
+        id: snakeGrid
+        on_kv_post: root.resetGame()
+    GridLayout:
+        cols: 2
+        size_hint_y: None
+        size_hint: 1, 0.1
+        padding: 10
+        Button:
+            text: 'Settings'
+            on_press: root.openSettings()
+        Button:
+            id: startQuitButton
+            text: 'Start'
+            background_color: 0, 1, 0, 1
+            on_press: root.startGame()
+
+<Tile>
+    poss: None
+    size_hint: 1, 1
+    on_press: root.click()
+
+<SettingsPopup>
+    title: 'Settings'
+    size_hint: (0.7, 0.7)
+    BoxLayout:
+        orientation: 'vertical'
+        padding: 10
+        GridLayout:
+            cols: 2
+            size_hint_y: None
+            size_hint: 1, 0.8
+            padding: 10
+            spacing: 10
+            Label:
+                text: 'Size of Grid'
+                font_size: 15
+            BoxLayout:
+                orientation: 'vertical'
+                size_hint: 1, 1
+                Label:
+                    id: sizeSetting
+                    font_size: 15
+                Slider:
+                    id: sizeSlider
+                    min: 10
+                    max: 20
+                    step: 1
+                    on_value: sizeSetting.text = str(int(self.value))
+            Label:
+                text: 'Speed'
+                font_size: 15
+            BoxLayout:
+                orientation: 'vertical'
+                size_hint: 1, 1
+                Label:
+                    id: speedSetting
+                    font_size: 15
+                Slider:
+                    id: speedSlider
+                    min: 1
+                    max: 10
+                    step: 1
+                    value: 1
+                    on_value: speedSetting.text = str(int(self.value))
+            Label:
+                text: 'Number of Food in the Grid at Once'
+                font_size: 15
+            BoxLayout:
+                orientation: 'vertical'
+                size_hint: 1, 1
+                Label:
+                    id: foodSetting
+                    font_size: 15
+                Slider:
+                    id: foodSlider
+                    min: 1
+                    max: 10
+                    step: 1
+                    value: 1
+                    on_value: foodSetting.text = str(int(self.value))
+        GridLayout:
+            cols: 2
+            size_hint_y: None
+            size_hint: 1, 0.2
+            padding: 10
+            Button:
+                text: 'Cancel'
+                on_press: root.dismissPopup()
+            Button:
+                text: 'Apply'
+                on_press: root.applySettings()
+
+<ResultsPopup>
+    title: 'Results'
+    size_hint: (0.7, 0.7)
+    caller: None
+    BoxLayout:
+        orientation: 'vertical'
+        padding: 10
+        GridLayout:
+            cols: 1
+            size_hint_y: None
+            size_hint: 1, 0.8
+            Label:
+                id: scoreLabel
+                font_size: 20
+            Label:
+                id: timeLabel
+                font_size: 20
+            Label:
+                id: speedLabel
+                font_size: 20
+        Button:
+            text: 'Close'
+            size_hint_y: None
+            size_hint: 1, 0.2
+            on_press: root.dismiss()
