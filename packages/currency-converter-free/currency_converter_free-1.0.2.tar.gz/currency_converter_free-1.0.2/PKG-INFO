@@ -1,0 +1,125 @@
+Metadata-Version: 2.1
+Name: currency-converter-free
+Version: 1.0.2
+Summary: A robust and free currency converter module for Python, supporting multiple sources like ECB and CBR.
+Home-page: https://github.com/unrealos/currency-converter-free
+Author: Unrealos Team
+Author-email: m@unrealos.com
+Project-URL: Documentation, https://github.com/unrealos/currency-converter-free#readme
+Project-URL: Bug Tracker, https://github.com/unrealos/currency-converter-free/issues
+Project-URL: Source Code, https://github.com/unrealos/currency-converter-free
+Project-URL: Changelog, https://github.com/unrealos/currency-converter-free/releases
+Keywords: currency converter,python currency API,free currency rates,CBR,ECB,foreign exchange,money conversion
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Office/Business :: Financial :: Accounting
+Classifier: Topic :: Utilities
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests>=2.25
+Requires-Dist: diskcache>=5.4
+Requires-Dist: cachetools>=5.0
+Provides-Extra: dev
+Requires-Dist: pytest>=7.0; extra == "dev"
+Requires-Dist: unittest; extra == "dev"
+Requires-Dist: flake8; extra == "dev"
+Requires-Dist: black; extra == "dev"
+Requires-Dist: isort; extra == "dev"
+Requires-Dist: mypy; extra == "dev"
+
+# Currency Converter Free
+
+Currency Converter Free is a Python library designed to fetch and combine exchange rates from two trusted sources: the Central Bank of Russia (CBR) and the European Central Bank (ECB). The library provides an easy-to-use interface for currency conversion and supports caching mechanisms for optimal performance.
+
+## Key Features
+
+- **Multiple Data Sources**: Fetch exchange rates from both the CBR and ECB, ensuring comprehensive coverage of currencies.
+- **Caching**: Supports both in-memory and persistent disk caching for efficient performance.
+- **Automatic Base Currency Handling**: Handles base currency differences between CBR (RUB) and ECB (EUR) transparently.
+- **Easy Conversion**: Convert between any two supported currencies with a single function call.
+- **Extensible**: Easily adaptable for additional data sources or custom fetchers.
+
+## Installation
+
+Install the library using pip:
+
+```bash
+pip install currency-converter-free
+```
+
+## Usage
+
+### Basic Example
+
+```python
+from currency_converter_free import CurrencyConverter
+
+# Initialize the converter
+converter = CurrencyConverter(persistent=True)
+
+# Convert 100 USD to EUR
+amount_in_eur = converter.convert(100, 'USD', 'EUR')
+print(f"100 USD = {amount_in_eur:.2f} EUR")
+
+# Convert 100 RUB to USD
+amount_in_usd = converter.convert(100, 'RUB', 'USD')
+print(f"100 RUB = {amount_in_usd:.2f} USD")
+
+# List all available currencies
+available_currencies = converter.available_currencies()
+print("Available currencies:", available_currencies)
+```
+
+### Advanced Options
+
+#### Persistent Caching
+
+Enable disk-based caching to retain exchange rates between sessions:
+
+```python
+converter = CurrencyConverter(persistent=True)
+```
+
+#### In-Memory Caching
+
+Use in-memory caching for fast temporary storage:
+
+```python
+converter = CurrencyConverter()
+```
+
+## Supported Sources
+
+- **Central Bank of Russia (CBR)**: Provides exchange rates with the Russian Ruble (RUB) as the base currency.
+- **European Central Bank (ECB)**: Offers exchange rates with the Euro (EUR) as the base currency.
+
+The library intelligently combines rates from both sources, prioritizing CBR for RUB-based conversions and ECB for EUR-based conversions.
+
+## Requirements
+
+- Python 3.7+
+- Requests
+- CacheTools
+- DiskCache
+
+## Contributing
+
+We welcome contributions to improve this library. Please submit issues or pull requests via our [GitHub repository](https://github.com/unrealos/currency-converter-free).
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## About Unrealos.com
+
+Currency Converter Free is developed and maintained by [Unrealos.com](https://unrealos.com), a company specializing in SaaS, PaaS, and web-service solutions. For inquiries, please contact us at [m@unrealos.com](mailto:m@unrealos.com).
+
