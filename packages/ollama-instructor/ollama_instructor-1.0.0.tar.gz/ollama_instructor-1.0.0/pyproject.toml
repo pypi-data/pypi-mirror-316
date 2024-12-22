@@ -1,0 +1,45 @@
+[project]
+name = "ollama-instructor"
+version = "1.0.0"
+description = "Validate structured outputs from LLMs with Ollama and automatic retries."
+readme = "README.md"
+authors = [
+    { name = "Lennart Pollvogt", email = "lennartpollvogt@protonmail.com" },
+]
+requires-python = ">=3.10"
+dependencies = ["ollama>=0.4.4", "pydantic>=2.10.4", "stamina>=24.3.0"]
+keywords = [
+    "ollama",
+    "pydantic",
+    "validation",
+    "json-schema",
+    "json",
+    "instructor",
+    "prompting",
+    "local-llm",
+    "llm",
+]
+classifiers = [
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = [
+    "pytest>=8.3.4",
+    "pytest-asyncio>=0.25.0",
+    "rich>=13.9.4",
+    "ruff>=0.8.4",
+]
+
+[tool.pytest.ini_options]
+markers = [
+    "integration: marks tests as integration tests requiring Ollama server",
+    "asyncio: mark test as async",
+]
+asyncio_mode = "auto"
