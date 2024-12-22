@@ -1,0 +1,11 @@
+README.md
+setup.py
+mynewlib1/__init__.py
+mynewlib1/operations.py
+mynewlib1/operations.s.py
+mynewlib1/test_math_operations.py
+mynewlib1/test_string_operations.py
+mynewlib1.egg-info/PKG-INFO
+mynewlib1.egg-info/SOURCES.txt
+mynewlib1.egg-info/dependency_links.txt
+mynewlib1.egg-info/top_level.txt
