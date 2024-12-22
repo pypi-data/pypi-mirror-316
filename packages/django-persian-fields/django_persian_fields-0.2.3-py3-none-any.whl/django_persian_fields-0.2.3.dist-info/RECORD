@@ -1,0 +1,13 @@
+django_persian_fields/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_persian_fields/drf_fields/iran_mobile_field.py,sha256=_VetPeThX15B14YFrx6TlSIqymhrG1aBMY1JA7oByVg,398
+django_persian_fields/model_fields/__init__.py,sha256=dTTRSbfM7h4TrXe7rmxjcEvvJjuyQjSZ8haaAFmcfac,161
+django_persian_fields/model_fields/iran_mobile_field.py,sha256=wt_pJVQ0jswCLcTHUa9obcWVN5eVaRr5bO_tDEss2wI,731
+django_persian_fields/model_fields/iran_postal_code.py,sha256=HrJDtB-0rNnDfVItQlWk_H_EGK8i-pLbdnaLUlaTzGY,419
+django_persian_fields/model_fields/lower_case_char_field.py,sha256=Px6DNFJ-IGLIFksg8kPYuL47ABLWRVEwB27DkQqbmK4,185
+django_persian_fields/model_fields/national_id_field.py,sha256=EI1MkJKBc-CZoFhLTQ-G1HEO-vxB8jjAZDUeJU7qGaI,419
+django_persian_fields/model_fields/only_digit_field.py,sha256=UNLkXZR-gkIMIJAWIJRi7b_KDqth7garrnHHKPKq00s,1618
+django_persian_fields-0.2.3.dist-info/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+django_persian_fields-0.2.3.dist-info/METADATA,sha256=gl2uzq0XFrr07woJb7jkoOHuRYEi9HAN-1dTTEl7Qnc,714
+django_persian_fields-0.2.3.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+django_persian_fields-0.2.3.dist-info/top_level.txt,sha256=gMheWUvExfCvnf10j1Qcfgsy0YHQqZXylXwdOYu1PtI,22
+django_persian_fields-0.2.3.dist-info/RECORD,,
