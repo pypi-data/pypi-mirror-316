@@ -1,0 +1,13 @@
+simplesitesystem/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+simplesitesystem/build.py,sha256=4_9f_YHSUJs1LCbbTfYLTv4fSs7n9hiKKcdDpbXRJBo,7054
+simplesitesystem/commands.py,sha256=x-hMIiGo6v5EOC5VWVQ6PwckzZoxZBFboacE2YCN3pk,2303
+simplesitesystem/dev_server.py,sha256=cUTGNtsHO_5EMwxcpI1yQGtnTF6Xxzv9ZslAKSciQ1w,2972
+simplesitesystem/extensions.py,sha256=v0nwt3I3i5ztcEeFORX-1oy5P_8lK9lRNmX1SQbRYyE,808
+simplesitesystem/main.py,sha256=LJQjXbc_TnJ75CRoMVK_bhMo_f_MB-kCjCOY2qnVEgg,406
+simplesitesystem/template_functions.py,sha256=mrnbfRAOd-Lr9N5hFDOpG5Hn9ErMljA0HVxmzxLmV7M,2043
+simplesitesystem/tools.py,sha256=VPAMxQ2S3UT_irY6gkJxsCa7iBeueySqh9keRl7VLR8,317
+simplesitesystem-0.0.3.dist-info/METADATA,sha256=I2Wjj2lmVlZtMgkiloFoDvEin3eLYKR56QFgvbMfH5I,382
+simplesitesystem-0.0.3.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+simplesitesystem-0.0.3.dist-info/entry_points.txt,sha256=vNZIRD4jq_cefznRC7LHX8OfOxSwhB5cM9XBswtwxcQ,66
+simplesitesystem-0.0.3.dist-info/licenses/LICENSE,sha256=NctHNIweh1pBZmKCMDgAMmkH2xQVIi0TWodBTdqI9Xk,108
+simplesitesystem-0.0.3.dist-info/RECORD,,
