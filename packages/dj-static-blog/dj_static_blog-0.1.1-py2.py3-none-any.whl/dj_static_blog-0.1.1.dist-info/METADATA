@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: dj-static-blog
+Version: 0.1.1
+Summary: A django app to build blog based on local files like markdown
+License: MIT
+Author: Suraj Singh Bisht
+Author-email: surajsinghbisht054@gmail.com
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: markdown (>=3.5)
+Requires-Dist: pyyaml (>=6.0.2,<7.0.0)
+Description-Content-Type: text/markdown
+
+# dj_static_blog
+A django app to build a blog based on local files (Markdown.. etc)
+
+```
+pip install dj-static-blog
+```
+
+```
+settings.py
+# VARIABLES FOR DJANGO_STATIC_BLOG
+DJ_STATIC_BLOG_SRC_PATH = BASE_DIR / "blog_posts"
+DJ_STATIC_DETAILVIEW_REVERSE = "test_blog:post_get"
+
+```
+
