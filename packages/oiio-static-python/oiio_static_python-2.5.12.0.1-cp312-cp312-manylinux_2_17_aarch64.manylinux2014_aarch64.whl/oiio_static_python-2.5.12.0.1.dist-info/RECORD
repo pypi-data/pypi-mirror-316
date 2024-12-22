@@ -1,0 +1,10 @@
+PyOpenColorIO/PyOpenColorIO.so,sha256=BZO7i_TErIn3oD8HGtZaaxRoI1P177jZtggdLb19Nnw,20886128
+PyOpenColorIO/__init__.py,sha256=jNe_vLo-QnLYLEc-4Pl4i1atIcP6f6l3qznzpCwON2g,68
+oiio_static_python-2.5.12.0.1.dist-info/LICENSE,sha256=QwcOLU5TJoTeUhuIXzhdCEEDDvorGiC6-3YTOl4TecE,11356
+oiio_static_python-2.5.12.0.1.dist-info/RECORD,,
+oiio_static_python-2.5.12.0.1.dist-info/METADATA,sha256=Jkk27Kq7bCPqfi41lNwnTRw3HZWa0OPTZCCUhTyxeAE,7029
+oiio_static_python-2.5.12.0.1.dist-info/top_level.txt,sha256=pEDBC0g_Gz_PX6dbpFg8O1nhi6gwBvyvgfq7fKdj3LQ,26
+oiio_static_python-2.5.12.0.1.dist-info/WHEEL,sha256=sLizzaCm5RO_U5e_F5zOShQNJ3TeuZ7GEwyo10nwIfE,153
+OpenImageIO/OpenImageIO.cpython-312-aarch64-linux-gnu.so,sha256=LC4M_LX8ZR_F0i1Wlm4801iHCTHDdJwDW3L_FZgRSag,29582617
+OpenImageIO/__init__.py,sha256=N4a5hYhJmTQGWFa0h3kKQxPBL6PldbTeB3-QrBaBsu8,64
+oiio_static_python.libs/libtbb-20a753e9.so.12.10,sha256=7txr1tsRw5c2FAj7S69QIb9qRiTvtjBQLGgKegK6ZdM,403449
