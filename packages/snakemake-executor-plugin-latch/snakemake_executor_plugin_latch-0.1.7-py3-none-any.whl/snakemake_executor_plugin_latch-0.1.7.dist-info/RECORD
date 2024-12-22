@@ -1,0 +1,5 @@
+snakemake_executor_plugin_latch/__init__.py,sha256=y9G5pKdlm9zJlze4oooutu3UZ424edR_0L3MbUWgRvc,10557
+snakemake_executor_plugin_latch/resource_utils.py,sha256=DERGUkMwqhqthVgiFP8nxcZE29Uyggu1iwZDrAf9bAk,6017
+snakemake_executor_plugin_latch-0.1.7.dist-info/METADATA,sha256=Sw7oJLWyZHdb198AoYd0XBeD52w_dgeELezqz2V42Es,647
+snakemake_executor_plugin_latch-0.1.7.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+snakemake_executor_plugin_latch-0.1.7.dist-info/RECORD,,
