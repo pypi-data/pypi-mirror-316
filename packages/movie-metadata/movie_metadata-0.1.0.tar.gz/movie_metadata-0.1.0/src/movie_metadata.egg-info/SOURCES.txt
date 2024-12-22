@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/movie_metadata/__init__.py
+src/movie_metadata/client.py
+src/movie_metadata/constants.py
+src/movie_metadata/exceptions.py
+src/movie_metadata.egg-info/PKG-INFO
+src/movie_metadata.egg-info/SOURCES.txt
+src/movie_metadata.egg-info/dependency_links.txt
+src/movie_metadata.egg-info/not-zip-safe
+src/movie_metadata.egg-info/requires.txt
+src/movie_metadata.egg-info/top_level.txt
