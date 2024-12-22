@@ -1,0 +1,110 @@
+Metadata-Version: 2.4
+Name: uv-secure
+Version: 0.1.0
+Summary: Scan your uv.lock file for dependencies with known vulnerabilities
+Project-URL: Repository, https://github.com/owenlamont/uv-secure
+Project-URL: Releases, https://github.com/owenlamont/uv-secure/releases
+Author-email: Owen Lamont <owenrlamont@gmail.com>
+License-File: LICENSE
+Keywords: uv,uv.lock,vulnerabilities
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Quality Assurance
+Classifier: Topic :: Software Development :: Testing
+Requires-Python: >=3.9
+Requires-Dist: httpx>=0.28.1
+Requires-Dist: inflect>=7.4.0
+Requires-Dist: pydantic>=2.10.3
+Requires-Dist: rich>=13.9.4
+Requires-Dist: tomli; python_version < '3.11'
+Requires-Dist: typer>=0.15.1
+Provides-Extra: jupyter
+Requires-Dist: ipywidgets>=8.1.5; extra == 'jupyter'
+Requires-Dist: jupyterlab-code-formatter>=3.0.2; extra == 'jupyter'
+Requires-Dist: jupyterlab>=4.2.5; extra == 'jupyter'
+Requires-Dist: lckr-jupyterlab-variableinspector>=3.2.4; extra == 'jupyter'
+Requires-Dist: nbdime>=4.0.2; extra == 'jupyter'
+Requires-Dist: nbstripout>=0.7.1; extra == 'jupyter'
+Requires-Dist: notebook>=7.2.2; extra == 'jupyter'
+Requires-Dist: ruff>=0.6.4; extra == 'jupyter'
+Requires-Dist: tqdm>=4.66.6; extra == 'jupyter'
+Description-Content-Type: text/markdown
+
+# uv-secure
+
+Scan your uv.lock file for dependencies with known vulnerabilities
+
+## Usage
+
+After installation you can run uv-secure --help to see the options.
+
+```text
+>> uv-secure --help
+
+ Usage: uv-secure [OPTIONS]
+
+ Parse a uv.lock file, check vulnerabilities, and display summary.
+
+╭─ Options ────────────────────────────────────────────────────────────────────────────╮
+│ --uv-lock-path        -p      PATH  Path to the uv.lock file [default: uv.lock]      │
+│ --ignore              -i      TEXT  Comma-separated list of vulnerability IDs to     │
+│                                     ignore, e.g. VULN-123,VULN-456                   │
+│ --version                           Show the application's version                   │
+│ --install-completion                Install completion for the current shell.        │
+│ --show-completion                   Show completion for the current shell, to copy   │
+│                                     it or customize the installation.                │
+│ --help                              Show this message and exit.                      │
+╰──────────────────────────────────────────────────────────────────────────────────────╯
+```
+
+By default if run with no options uv-secure will look for a uv.lock file in the current
+working directory and scan that for known vulnerabilities. E.g.
+
+```text
+>> uv-secure
+Checking dependencies for vulnerabilities...
+╭──────────────────────────────────╮
+│ No vulnerabilities detected!     │
+│ Checked: 160 dependencies        │
+│ All dependencies appear safe! 🎉 │
+╰──────────────────────────────────╯
+```
+
+## Related Work and Motivation
+
+I created this package as I wanted a dependency vulnerability scanner but I wasn't
+completely happy with the options that seemed available. I use
+[uv](https://docs.astral.sh/uv/) and wanted something that works with uv.lock files but
+neither of the main package options I found fitted my requirements:
+
+- [pip-audit](https://pypi.org/project/pip-audit/) only works with requirements.txt
+  files but even if you convert a uv.lock file to a requirements.txt file, pip-audit
+  wants to create a whole virtual environment to check all transitive dependencies (but
+  that should be completely unnecessary when the lock file already contains the full
+  dependencies).
+- [safety](https://pypi.org/project/safety/) also doesn't work with uv.lock file out of
+  the box, it does apparently work statically without needing to build a virtual
+  environment but it does require you to create an account on the
+  [safety site](https://platform.safetycli.com/). They have some limited free account
+  but require a paid account to use seriously. If you already have a safety account
+  though there is a [uv-audit](https://pypi.org/project/uv-audit/) package that wraps
+  safety to support scanning uv.lock files.
+- [Python Security PyCharm Plugin](https://plugins.jetbrains.com/plugin/13609-python-security)
+  Lastly I was inspired by Anthony Shaw's Python Security plugin - which does CVE
+  dependency scanning within PyCharm.
+
+I build uv-secure because I wanted a CLI tool I could run with pre-commit. Statically
+analyse the uv.lock file without needing to create a virtual environment, and finally
+doesn't require you to create (and pay for) an account with any service.
