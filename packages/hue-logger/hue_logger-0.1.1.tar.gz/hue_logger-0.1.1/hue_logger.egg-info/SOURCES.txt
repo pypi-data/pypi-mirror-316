@@ -1,0 +1,9 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+hue_logger.egg-info/PKG-INFO
+hue_logger.egg-info/SOURCES.txt
+hue_logger.egg-info/dependency_links.txt
+hue_logger.egg-info/requires.txt
+hue_logger.egg-info/top_level.txt
