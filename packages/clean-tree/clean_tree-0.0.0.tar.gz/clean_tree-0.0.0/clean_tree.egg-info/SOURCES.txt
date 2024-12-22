@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+clean_tree/__init__.py
+clean_tree.egg-info/PKG-INFO
+clean_tree.egg-info/SOURCES.txt
+clean_tree.egg-info/dependency_links.txt
+clean_tree.egg-info/requires.txt
+clean_tree.egg-info/top_level.txt
+tests/test_hello.py

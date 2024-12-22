@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: clean-tree
+Version: 0.0.0
+Summary: Commitment is hard :)
+Author: Carter Fendley
+Provides-Extra: dev
+Requires-Dist: tox; extra == "dev"
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: pytest-cov; extra == "dev"
