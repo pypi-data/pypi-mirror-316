@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: robot_image
+Version: 0.1.0
+Summary: robot image tools
+Author: 
+Author-email: 
+Requires-Python: >=3.13
+Requires-Dist: pyautogui
+Requires-Dist: pillow
+Requires-Dist: opencv-python
+Requires-Dist: numpy

@@ -1,0 +1,10 @@
+robot_image/__init__.py,sha256=40tlSlDiAUDG_NUGEFeXMvITClHyBfngCkuGYLTH7tY,20
+robot_image/highlight_image.pyd,sha256=cNg6I91-QdNCyeXa7p5sFtREU_gfo5Bg151SLl5D-W4,52224
+robot_image/highlight_image_main.py,sha256=ubSuqXmwvAW_EbQCGHubEMIqATnBSlmt7f_HHp-f730,560
+robot_image/index.pyd,sha256=ZeRMM1SP7EOlmQkw7ezj-6N4glUDCNfVf-OYPl-Pfiw,116736
+robot_image/screen_shot.pyd,sha256=eQ73aWT9W7TEdsSpq3WN9tQazKU8kaJ2RdGTxfPcBCk,117248
+robot_image/screen_shot_main.py,sha256=Ktl9SQ7yfkhnzjaVL5I5TYlpjnqYrIqofbyG5P7wQ6I,109
+robot_image-0.1.0.dist-info/METADATA,sha256=AZ1YmGnqQUvKgMPTepQ-0pB3bqpkYWWRiMwAhTh5c9s,238
+robot_image-0.1.0.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+robot_image-0.1.0.dist-info/top_level.txt,sha256=x8IjIJlavIaAoGAKm9A2k8NV1G6ejw39eTFVYGoYHig,12
+robot_image-0.1.0.dist-info/RECORD,,
