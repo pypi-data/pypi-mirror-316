@@ -1,0 +1,3 @@
+jax_cosmo
+jax>=0.4.30
+jaxdecomp>=0.2.2
