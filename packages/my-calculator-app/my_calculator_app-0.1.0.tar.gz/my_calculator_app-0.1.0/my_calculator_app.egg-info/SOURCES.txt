@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+calculator/__main__.py
+calculator/calculator.py
+my_calculator_app.egg-info/PKG-INFO
+my_calculator_app.egg-info/SOURCES.txt
+my_calculator_app.egg-info/dependency_links.txt
+my_calculator_app.egg-info/requires.txt
+my_calculator_app.egg-info/top_level.txt
+tests/test_calculator.py
