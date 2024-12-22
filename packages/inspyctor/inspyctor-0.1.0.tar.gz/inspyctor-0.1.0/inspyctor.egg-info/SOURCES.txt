@@ -1,0 +1,8 @@
+README.md
+setup.py
+Inspyctor/__init__.py
+inspyctor.egg-info/PKG-INFO
+inspyctor.egg-info/SOURCES.txt
+inspyctor.egg-info/dependency_links.txt
+inspyctor.egg-info/requires.txt
+inspyctor.egg-info/top_level.txt
