@@ -1,0 +1,10 @@
+Metadata-Version: 2.4
+Name: tjutil
+Version: 0.0.1
+Summary: utilities for python by qiuzhanghua
+Author-email: qiuzhanghua <qiuzhanghua@icloud.com>
+Requires-Python: >=3.8
+Requires-Dist: torch
+Description-Content-Type: text/markdown
+
+### Utilities for python(from qiuzhanghua)
