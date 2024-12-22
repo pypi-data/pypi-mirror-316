@@ -1,0 +1,3 @@
+[console_scripts]
+smart_log_rotation = smart_log_rotation.__main__:main
+
