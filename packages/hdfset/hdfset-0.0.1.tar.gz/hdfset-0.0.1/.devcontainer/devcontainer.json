@@ -1,0 +1,21 @@
+{
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "features": {
+    "ghcr.io/devcontainers-contrib/features/starship:1": {}
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "charliermarsh.ruff",
+        "fill-labs.dependi",
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+        "tamasfe.even-better-toml",
+        "rust-lang.rust-analyzer"
+      ]
+    }
+  },
+  "postCreateCommand": ".devcontainer/postCreate.sh"
+}
