@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: maintain
+Version: 0.4.0
+Summary: maintain
+Home-page: https://github.com/kylef/maintain
+Author: Kyle Fuller
+Author-email: kyle@fuller.li
+License: BSD
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: BSD License
+License-File: LICENSE
+Requires-Dist: click
+Requires-Dist: semantic_version
+Requires-Dist: pyyaml
+Requires-Dist: commonmark==0.9.1
+Requires-Dist: gitpython
+Requires-Dist: jsonschema
