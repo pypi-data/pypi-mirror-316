@@ -1,0 +1,8 @@
+apres/__init__.py,sha256=bX2-yvFsw2szUu6lUnXsZwwjkaK-V5uOo8JSobIBVcI,60286
+apres/libapres_manylinux2014_armv7l.so,sha256=Eh0hG3Gfi92iEc57CcIdcOwj60Y5dvSdnbvLBWrj6eE,4034084
+apres/libapres_manylinux2014_x86_64.so,sha256=Qqgyz8I9ZwoWvPcCqFKDonsW9_6x3oeHx9laCTp3y8c,4365632
+apres-0.3.23.dist-info/LICENSE,sha256=2ylvL381vKOhdO-w6zkrOxe9lLNBhRQpo9_0EbHC_HM,18046
+apres-0.3.23.dist-info/METADATA,sha256=bSQTlUN5JJEKQcr4U5_P0llvoVoqSMOi-p2GeAc3EAw,1720
+apres-0.3.23.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+apres-0.3.23.dist-info/top_level.txt,sha256=2kAtcn01DnXMIZGRrCSBRcXKyi_IBu6UlMznNBGzNUw,6
+apres-0.3.23.dist-info/RECORD,,
