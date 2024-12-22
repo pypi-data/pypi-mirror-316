@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: nonebot-plugin-prometheus
+Version: 0.1.0
+Summary: nonebot-plugin-prometheus
+Requires-Python: <4.0,>=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: prometheus-client>=0.21.1
+
+# nonebot-plugin-prometheus
+
+## How to start
+
+1. generate project using `nb create` .
+2. create your plugin using `nb plugin create` .
+3. writing your plugins under `nonebot_plugin_prometheus/plugins` folder.
+4. run your bot using `nb run --reload` .
+
+## Documentation
+
+See [Docs](https://nonebot.dev/)
