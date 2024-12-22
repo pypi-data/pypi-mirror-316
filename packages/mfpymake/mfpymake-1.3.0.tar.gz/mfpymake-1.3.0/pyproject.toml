@@ -1,0 +1,113 @@
+[build-system]
+# Minimum requirements for the build system to execute
+requires = [
+    "setuptools>=61",
+    "wheel",
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mfpymake"
+description = "pymake is a Python package to compile MODFLOW-based models."
+authors = [
+    { name = "mfpymake Team", email = "modflow@usgs.gov" },
+]
+maintainers = [
+    { name = "Joseph D. Hughes", email = "jdhughes@usgs.gov" },
+]
+keywords = ["MODFLOW", "groundwater", "hydrogeology"]
+license = { text = "CC0" }
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Science/Research",
+    "License :: CC0 1.0 Universal (CC0 1.0) Public Domain Dedication",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Hydrology",
+]
+requires-python = ">=3.8"
+dependencies = [
+    "numpy",
+    "requests",
+    "networkx",
+    "meson",
+    "ninja",
+    "pydotplus",
+]
+dynamic = ["version", "readme"]
+[project.optional-dependencies]
+lint = [
+    "cffconvert",
+    "ruff",
+]
+test = [
+    "mfpymake[lint]",
+    "coverage",
+    "flaky",
+    "filelock",
+    "pytest!=8.1.0",
+    "pytest-benchmark",
+    "pytest-cov",
+    "pytest-dependency",
+    "pytest-dotenv",
+    "pytest-xdist",
+    "appdirs",
+    "matplotlib",
+    "modflow-devtools",
+    "flopy",
+]
+[project.scripts]
+mfpymake = "pymake.cmds.mfpymakecli:main"
+make-program = "pymake.cmds.build:main"
+make-code-json = "pymake.cmds.createjson:main"
+
+
+[project.urls]
+Documentation = "https://mfpymake.readthedocs.io"
+"Release Notes" = "https://github.com/modflowpy/flopy/blob/develop/docs/version_changes.md"
+"Bug Tracker" = "https://github.com/modflowpy/pymake/issues"
+"Source Code" = "https://github.com/modflowpy/pymake"
+
+
+[tool.setuptools]
+include-package-data = true
+zip-safe = false
+
+[tool.setuptools.dynamic]
+version = { attr = "pymake.config.__version__" }
+readme = { file = ["README.md"], content-type = "text/markdown" }
+
+[tool.setuptools.packages.find]
+include = ["pymake", "pymake.*"]
+
+[tool.setuptools.package-data]
+"pymake.utils" = ["usgsprograms.txt"]
+
+[tool.setuptools_scm]
+fallback_version = "999"
+
+[tool.ruff]
+line-length = 88
+
+[tool.ruff.lint]
+select = [
+    "D409", # pydocstyle - section-underline-matches-section-length
+    "E",    # pycodestyle error
+    "F",    # Pyflakes
+    "I001", # isort - unsorted-imports
+    "RUF",  # Ruff-specific rules
+    "UP",   # Pyupgrade
+]
+ignore = [
+    "E722", # do not use bare `except`
+    "E741", # ambiguous variable name
+    "F401", # unused import
+    "F841", # local variable assigned but never used
+    "RUF005", # collection literal concatenation
+    "RUF022", # Apply an isort-style sorting to `__all__`
+    "UP015", # redundant open modes
+]
