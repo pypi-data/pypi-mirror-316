@@ -1,0 +1,3 @@
+include hpp2pxd/requirements.txt
+include hpp2pxd/thirdparty.json
+include hpp2pxd/README.MD

@@ -1,0 +1,14 @@
+LICENSE.rst
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+hpp2pxd/README.MD
+hpp2pxd/__init__.py
+hpp2pxd/requirements.txt
+hpp2pxd/thirdparty.json
+hpp2pxd.egg-info/PKG-INFO
+hpp2pxd.egg-info/SOURCES.txt
+hpp2pxd.egg-info/dependency_links.txt
+hpp2pxd.egg-info/requires.txt
+hpp2pxd.egg-info/top_level.txt
