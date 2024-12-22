@@ -1,0 +1,10 @@
+django_ultra_rbac/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_ultra_rbac/admin.py,sha256=2vYBc1-u3Zi4k0JHh9k1mAkxKA2tjAeafjX9TjKbAm8,1351
+django_ultra_rbac/decorators.py,sha256=ufIVXvM0fCl5g_hyxdu6m4kS7dfQPYFJdgbDlA3Lzzg,490
+django_ultra_rbac/middleware.py,sha256=0Fbsod-eAmybpzzVKTyYTNX24HntyhexnB1YWpVj_jQ,684
+django_ultra_rbac/models.py,sha256=siZEjq9DPJOwGQ4YZf7tpS9VEWRMrLX-gDCEjjilDwE,2766
+django_ultra_rbac-0.1.1.dist-info/LICENSE,sha256=Ss3Xc1kPAoqlaVTWIwBUtlyIxcBvpZp7aAKqLt-Onds,1087
+django_ultra_rbac-0.1.1.dist-info/METADATA,sha256=UUG8rUGjoVKXrYm2XH3PquJwgDB1LeJRzzmdMpOxH9s,5692
+django_ultra_rbac-0.1.1.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+django_ultra_rbac-0.1.1.dist-info/top_level.txt,sha256=Aieg5N_faeDFayrtwgHSXo26p30nb40nf0HQon4CB9I,18
+django_ultra_rbac-0.1.1.dist-info/RECORD,,
