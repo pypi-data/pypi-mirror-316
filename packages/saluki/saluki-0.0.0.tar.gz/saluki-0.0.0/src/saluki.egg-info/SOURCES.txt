@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+src/saluki/__init__.py
+src/saluki/main.py
+src/saluki.egg-info/PKG-INFO
+src/saluki.egg-info/SOURCES.txt
+src/saluki.egg-info/dependency_links.txt
+src/saluki.egg-info/entry_points.txt
+src/saluki.egg-info/requires.txt
+src/saluki.egg-info/top_level.txt
+tests/test_deserialiser.py
