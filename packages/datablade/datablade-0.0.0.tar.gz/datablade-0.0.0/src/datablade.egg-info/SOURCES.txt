@@ -1,0 +1,16 @@
+LICENSE
+pyproject.toml
+setup.py
+src/datablade/__init__.py
+src/datablade.egg-info/PKG-INFO
+src/datablade.egg-info/SOURCES.txt
+src/datablade.egg-info/dependency_links.txt
+src/datablade.egg-info/requires.txt
+src/datablade.egg-info/top_level.txt
+src/datablade/core/__init__.py
+src/datablade/core/frames.py
+src/datablade/core/json.py
+src/datablade/core/lists.py
+src/datablade/core/messages.py
+src/datablade/core/strings.py
+src/datablade/core/zip.py
