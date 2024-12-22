@@ -1,0 +1,3 @@
+"""
+Kobo Ereader class.
+"""
