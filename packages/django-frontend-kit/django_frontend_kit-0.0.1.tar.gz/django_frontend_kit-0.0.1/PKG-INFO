@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: django-frontend-kit
+Version: 0.0.1
+Summary: Opinionated Django frontend scaffolder using ViteJS
+Home-page: https://github.com/devwaseem/django-frontend
+License: MIT
+Keywords: django,vitejs,django-frontend,django-vitejs
+Author: Waseem Akram
+Author-email: waseem07799@gmail.com
+Requires-Python: >=3.9
+Classifier: Development Status :: 4 - Beta
+Classifier: Framework :: Django :: 3.0
+Classifier: Framework :: Django :: 4
+Classifier: Framework :: Django :: 4.0
+Classifier: Framework :: Django :: 4.1
+Classifier: Framework :: Django :: 4.2
+Classifier: Framework :: Django :: 5.0
+Classifier: Framework :: Django :: 5.1
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: Django (>=3.2)
+Requires-Dist: orjson (>=3.10,<4.0)
+Requires-Dist: tenacity (>=9.0.0,<10.0.0)
+Project-URL: Repository, https://github.com/devwaseem/django-frontend
+Description-Content-Type: text/markdown
+
+
