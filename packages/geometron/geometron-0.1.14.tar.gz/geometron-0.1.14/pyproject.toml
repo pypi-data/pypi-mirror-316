@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=64", "setuptools_scm>=8"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "geometron"
+authors = [{name="O. Kaufmann", email="olivier.kaufmann@umons.ac.be"}]
+maintainers = [{name = "All the contributors"},]
+description = "Tools for operations on geometrical objects"
+requires-python = ">=3.8"
+readme = "README.md"
+license = {text = "GPLv3.0"}
+classifiers = ["Programming Language :: Python :: 3", "Operating System :: OS Independent",]
+dynamic = ["version"]
+dependencies=['matplotlib > 2.2.0',
+              'numpy >= 1.26.1, < 2.0.0',
+              'pandas',
+              'geopandas',
+              'scipy',
+              'shapely',
+              'pyvista',
+              'descartes',
+              'pillow',
+              'requests',
+              'pyparsing<3',
+              'rasterio',
+              'svgpath2mpl',
+              'svgpathtools',
+              'rasterio',
+              'svgpath2mpl',
+]
+
+[tool.setuptools]
+packages = ["geometron"]
+
+[tool.setuptools_scm]
+
+
+[tool.sphinx-pyproject]
+project = "geometron"

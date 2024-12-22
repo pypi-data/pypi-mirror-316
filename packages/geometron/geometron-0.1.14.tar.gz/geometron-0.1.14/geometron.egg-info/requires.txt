@@ -1,0 +1,16 @@
+matplotlib>2.2.0
+numpy<2.0.0,>=1.26.1
+pandas
+geopandas
+scipy
+shapely
+pyvista
+descartes
+pillow
+requests
+pyparsing<3
+rasterio
+svgpath2mpl
+svgpathtools
+rasterio
+svgpath2mpl
