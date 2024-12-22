@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.poetry]
+name = "your-package-name"
+version = "0.3.1"
+description = "Description of your package"
+authors = ["Your Name <your.email@example.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+py-crave-sync = "*"
+py-crave-gui = "*"  # This line ensures py-crave-gui is installed as a dependency
