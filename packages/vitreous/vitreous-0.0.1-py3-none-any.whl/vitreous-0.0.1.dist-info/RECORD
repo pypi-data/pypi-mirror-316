@@ -1,0 +1,8 @@
+retina/__init__.py,sha256=TTbumXOzBUSMtBtjxOa2U0rAnUkhxM7TRIdwbOnxjCw,49
+retina/core.py,sha256=WOHsqOZ5e6gohLoksFxL81u6m-2-bdxHy6Kc7NO6TrY,31
+retina/optic/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+retina/optic/cortex.py,sha256=ngsaGGBsw_ebB64XdnCSk8juzxNYmFdQLHjj93HIWXE,187
+vitreous-0.0.1.dist-info/METADATA,sha256=2Sjcni8E70DDqYddHU6SOf2GGZa6pmBL_CLMFiTj9j8,117
+vitreous-0.0.1.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+vitreous-0.0.1.dist-info/top_level.txt,sha256=PiaIJ0V3Dav990fISXcU-esf96t4T8b8aDhOh7eBjNg,7
+vitreous-0.0.1.dist-info/RECORD,,
