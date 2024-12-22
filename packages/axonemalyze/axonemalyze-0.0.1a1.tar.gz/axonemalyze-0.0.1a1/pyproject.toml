@@ -1,0 +1,56 @@
+
+[build-system]
+requires = ["hatchling", "hatch-vcs"]
+build-backend = "hatchling.build"
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.version]
+source = "vcs"
+
+[project]
+name = "axonemalyze"
+version = "0.0.1a1"
+description = "Calculate the circularity of axoneme picks from cryo-ET images."
+license = { text = "MIT License" }
+authors = [
+  { name="Ammaar Saeed", email="ammaar_saeed@g.harvard.edu" },
+]
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Natural Language :: English",
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Typing :: Typed",
+]
+dependencies = [
+    "numpy",
+    "scipy",
+    "pandas",
+]
+
+# extras
+[project.optional-dependencies]
+test = [
+    "pytest>=6.0",
+    "pytest-cov",
+    "numpy",
+    "scipy",
+]
+dev = [
+    "black",
+    "pandas",
+    "pytest",
+    "pytest-cov",
+]
+
+[project.urls]
+repository = "https://github.com/ammsa23/axonemalyze"
+
+[project.scripts]
+estimate_circularity = "axonemalyze.estimate_circularity:estimate_circularity"
+segment_axonemes = "axonemalyze.segment_axonemes:segment_axonemes"
