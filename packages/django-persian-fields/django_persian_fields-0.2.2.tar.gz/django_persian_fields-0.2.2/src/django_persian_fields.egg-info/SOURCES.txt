@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+src/django_persian_fields/__init__.py
+src/django_persian_fields.egg-info/PKG-INFO
+src/django_persian_fields.egg-info/SOURCES.txt
+src/django_persian_fields.egg-info/dependency_links.txt
+src/django_persian_fields.egg-info/requires.txt
+src/django_persian_fields.egg-info/top_level.txt
+src/django_persian_fields/drf_fields/iran_mobile_field.py
+src/django_persian_fields/model_fields/iran_mobile_field.py
+src/django_persian_fields/model_fields/iran_postal_code.py
+src/django_persian_fields/model_fields/lower_case_char_field.py
+src/django_persian_fields/model_fields/national_id_field.py
+src/django_persian_fields/model_fields/only_digit_field.py
