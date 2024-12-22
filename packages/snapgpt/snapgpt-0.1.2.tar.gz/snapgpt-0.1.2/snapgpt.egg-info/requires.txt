@@ -1,0 +1,2 @@
+pathlib
+termcolor>=2.3.0
