@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: clockwise
+Version: 1.0.4
+Summary: A simple timing library for Python
+Author-email: Simon Schaefer <simon.k.schaefer@gmail.com>
+Maintainer-email: Simon Schaefer <simon.k.schaefer@gmail.com>
+Keywords: profiling
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# clockwise 🕰️
+Simple but expressive timing package in Python
+
+## Installation
+```
+pip install clockwise
+```
+
+## Minimal Example
+```
+import clockwise
+
+@clockwise.timing("time-as-decorator")
+def foo(a: int): 
+   return a + 4
+
+def main():
+    for i in range(10):
+        foo(i)
+
+    with clockwise.timing_context("time-as-context"):
+        foo(1)
+
+    clockwise.print_timings() 
+
+if __name__ == '__main__':
+    main()
+```
+
+## Debug Mode
+The profiling is skipped when running in optimized mode using the `-O` or `-OO` tags. 
