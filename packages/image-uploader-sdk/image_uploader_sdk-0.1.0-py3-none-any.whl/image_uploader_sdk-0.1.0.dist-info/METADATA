@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: image-uploader-sdk
+Version: 0.1.0
+Summary: Python SDK for uploading images using the Image Uploader API.
+Author: IP Softech Solutions
+Author-email: ipsoftechsolutions@gmail.com
+Classifier: Programming Language :: Python
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: requests
+
+A simple SDK for uploading images with API key authentication.
