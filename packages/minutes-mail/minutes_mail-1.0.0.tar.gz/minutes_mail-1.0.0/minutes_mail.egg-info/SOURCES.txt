@@ -1,0 +1,7 @@
+README.md
+setup.py
+minutes_mail.egg-info/PKG-INFO
+minutes_mail.egg-info/SOURCES.txt
+minutes_mail.egg-info/dependency_links.txt
+minutes_mail.egg-info/requires.txt
+minutes_mail.egg-info/top_level.txt

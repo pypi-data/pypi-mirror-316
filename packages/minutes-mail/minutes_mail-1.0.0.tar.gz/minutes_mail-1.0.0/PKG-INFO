@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: minutes_mail
+Version: 1.0.0
+Summary: Get temp mails and verification codes.
+Author: Sina
+Author-email: sinaorojlo53@gmail.com
+License: MIT
+Requires-Python: >=3.6.0
+Requires-Dist: beautifulsoup4
+Requires-Dist: httpx
+Requires-Dist: loguru
+Requires-Dist: wonderwords
