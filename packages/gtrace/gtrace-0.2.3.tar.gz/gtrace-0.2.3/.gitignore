@@ -1,0 +1,11 @@
+.vscode/
+*.pyc
+dist/
+build/
+gtrace.egg-info/
+gtrace-*/
+/Manuals/references/
+/docs/_build/
+/docs/autoapi/
+
+Manuals/Tutorial/.ipynb_checkpoints/gtrace-tutorial-checkpoint.ipynb
