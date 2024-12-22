@@ -1,0 +1,3 @@
+[console_scripts]
+arpakitlib=arpakitlib._cli:cli
+
