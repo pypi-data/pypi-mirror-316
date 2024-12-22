@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: realerikrani-base64token
+Version: 1.0.1
+Summary: Encode list of tuples into a string. Decode that string into a dictionary.
+License: Apache-2.0
+Project-URL: Repository, https://github.com/realerikrani/base64token
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# base64token
+
+Encode list of tuples into a string. Decode that string into a dictionary.
+
+```py
+encoded = encode([("key1", "value1"), ("key2", 2)]) # "W1sia2V5MSIsICJ2YWx1ZTEiXSwgWyJrZXkyIiwgMl1d"
+decoded = decode(encoded)  # {"key1": "value1", "key2": 2}
+```
