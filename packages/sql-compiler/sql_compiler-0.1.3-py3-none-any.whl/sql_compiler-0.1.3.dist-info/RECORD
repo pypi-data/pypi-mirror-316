@@ -1,0 +1,12 @@
+test/__init__.py,sha256=C1UvJdDEHMB_MtMBGw-6xlugJc7k1Xl03M58Tmm9fQI,67
+test/compiler.py,sha256=ApzZOV2atOim_bjam1ZA40P3ZPmsPFNyvzykz8FAtoE,6295
+test/first_follow.py,sha256=ywAkca_SCK0Pgf5mgTtcdh186mxrFkJDT87B65O5Elk,12892
+test/lang.py,sha256=n-AYC0Zn1w9GXGUxTcm62iHTd78sURRBTkfHjGtVQyM,3798
+test/main.py,sha256=G0oN93tFw0RumYBKBxcWXmryxDB0sm94KOSl6smeNRo,94089
+test/solution.py,sha256=whbDnlkw_THQ3RChFRixVbukCvH3KXL41RBuMQzu2HA,261
+test/x.py,sha256=ApzZOV2atOim_bjam1ZA40P3ZPmsPFNyvzykz8FAtoE,6295
+test/xy.py,sha256=pamNE0Kwhv2u_KCmINGyXfWvLoXui73C6jhCd6yH7S4,955
+sql_compiler-0.1.3.dist-info/METADATA,sha256=BE35YcyxlWV0m8zWsciEpkSSUVmwkJKPC3FhycGdWZc,450
+sql_compiler-0.1.3.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+sql_compiler-0.1.3.dist-info/top_level.txt,sha256=8sobtsfpB9Btr-Roflefznazfk6Tt2BQItpS5szCb9I,5
+sql_compiler-0.1.3.dist-info/RECORD,,
