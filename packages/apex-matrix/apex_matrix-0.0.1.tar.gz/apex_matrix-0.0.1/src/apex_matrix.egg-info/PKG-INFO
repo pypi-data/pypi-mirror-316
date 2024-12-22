@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: apex_matrix
+Version: 0.0.1
+Summary: A simple matrix class that handles basic matrix operations
+Author-email: Byron Farrell <byronfarrell22@gmail.com>
+Project-URL: Homepage, https://github.com/Byron-Farrell/Matrix
+Project-URL: Issues, https://github.com/Byron-Farrell/Matrix/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
