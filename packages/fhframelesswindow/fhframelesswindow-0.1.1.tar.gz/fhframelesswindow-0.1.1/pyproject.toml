@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "fhframelesswindow"
+version = "0.1.1"
+description = ""
+authors = ["wsd <wsd@fhit.cn>"]
+readme = "README.md"
+packages = [{include = "**/*", from = "fhframelesswindow", to = "framelesswindow"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
