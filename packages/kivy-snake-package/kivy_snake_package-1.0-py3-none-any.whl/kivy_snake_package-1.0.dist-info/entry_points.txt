@@ -1,0 +1,3 @@
+[console_scripts]
+kivy_snake = kivy_snake.__main__:main
+
