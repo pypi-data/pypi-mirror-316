@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: magic-toolkit
+Version: 1.3.0
+Summary: remote-ssh toolkit
+Platform: linux
+Requires-Python: >=3.6
+License-File: LICENSE
+Requires-Dist: paramiko
+Requires-Dist: pyyaml
+

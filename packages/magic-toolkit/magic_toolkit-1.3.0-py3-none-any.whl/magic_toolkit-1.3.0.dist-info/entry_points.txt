@@ -1,0 +1,2 @@
+[console_scripts]
+magic = magic.__main__:main
