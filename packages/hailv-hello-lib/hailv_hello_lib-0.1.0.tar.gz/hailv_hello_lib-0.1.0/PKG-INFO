@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: hailv-hello-lib
+Version: 0.1.0
+Summary: A simple package that prints hello.
+Author: yangfan_hailv
+Author-email: one.gongjiang@gmail.com
+Requires-Python: >=3.12,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Description-Content-Type: text/markdown
+
+# hello_package
+
+A simple Python package that prints "hello".
+
+## Usage
+
+```python
+from hello_package import print_hello
+
+print_hello()
+
