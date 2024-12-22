@@ -1,0 +1,54 @@
+name: Publisher
+
+on:
+  release:
+    types: [created]
+
+jobs:
+  pypi-publish:
+    name: Publish on PyPI
+
+    runs-on: ubuntu-latest
+    environment:
+      name: pypi
+      url: https://pypi.org/p/versionhq
+    permissions:
+      id-token: write 
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Install uv
+      uses: astral-sh/setup-uv@v4
+      with:
+        version: "0.5.11"
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: "3.13.1"
+
+    - name: Set up vertual environment
+      run: uv venv --python=python3.13.1
+      run: source .venv/bin/activate
+
+    - name: Install pip, twine, black
+      run: uv pip install --upgrade pip twine black
+
+    - name: Install dependencies
+      run: uv pip install -r requirements.txt
+
+    - name: Run black
+      run: uv run black .
+
+    - name: Build a binary wheel and a source tarball
+      run: uv build --sdist --wheel
+
+    - name: Publish distribution 📦 to PyPI
+      uses: pypa/gh-action-pypi-publish@release/v1
+      with:
+        repositories: https://upload.pypi.org/legacy/
+      with:
+        verbose: true
+      with:
+        user: __token__
+        password: ${{ secrets.PYPI_API_TOKEN }}
