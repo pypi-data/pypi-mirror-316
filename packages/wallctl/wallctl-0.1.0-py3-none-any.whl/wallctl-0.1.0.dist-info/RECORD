@@ -1,0 +1,11 @@
+wallctl/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wallctl/__main__.py,sha256=plLYSh2Ktf_7czG1bZpufMrgbcu-54vepPpKyVmpWKg,130
+wallctl/base.py,sha256=tQWVQoiKbXOpjSS54VLkI06NoTZxZlvW5jUdDYKWCio,2871
+wallctl/cli.py,sha256=zPxZi87m47Ew2LlgBU3OxWZQIkFgAIsRqxET5pqRtfA,259
+wallctl/parser.py,sha256=oUjTbcfxsKV_cI7VubNYNjt9zcV58stg3rrhSjGi-UA,287
+wallctl-0.1.0.dist-info/LICENSE,sha256=gXf5dRMhNSbfLPYYTY_5hsZ1r7UU1OaKQEAQUhuIBkM,18092
+wallctl-0.1.0.dist-info/METADATA,sha256=Ky8zrJ78PFLUTD1QBZnsU1oYKsCjZw8R7MTHxrqxkWg,1660
+wallctl-0.1.0.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+wallctl-0.1.0.dist-info/entry_points.txt,sha256=7krQjCgQ3nJU54bicE6C6u9HpG6VRHfvB2ml20-fgjQ,50
+wallctl-0.1.0.dist-info/top_level.txt,sha256=F_Q59bMHM2tkmCmzJb_Vj53juFz_JyPtlUI6N3_tDPs,8
+wallctl-0.1.0.dist-info/RECORD,,
