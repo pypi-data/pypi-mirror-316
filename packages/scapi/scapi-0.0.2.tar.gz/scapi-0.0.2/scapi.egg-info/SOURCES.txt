@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+scapi/__init__.py
+scapi.egg-info/PKG-INFO
+scapi.egg-info/SOURCES.txt
+scapi.egg-info/dependency_links.txt
+scapi.egg-info/requires.txt
+scapi.egg-info/top_level.txt
