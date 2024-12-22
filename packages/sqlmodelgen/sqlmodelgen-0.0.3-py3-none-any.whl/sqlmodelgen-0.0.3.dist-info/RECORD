@@ -1,0 +1,10 @@
+sqlmodelgen/__init__.py,sha256=784xAOnZjisUiO54BzaLr2nAueDQj75cRJ6qtL_skME,42
+sqlmodelgen/sqlmodelgen.py,sha256=BYpS9u6PUXdYQKyp3GjzsFr_1ZadKEkWEwkQD2_-x3Q,164
+sqlmodelgen/codegen/codegen.py,sha256=Dk2cXHrN6vj48oxjS6cfvzHjogCEjHDy3l2Ad2ySddg,2829
+sqlmodelgen/ir/ir.py,sha256=rvLO46OPFVTnfZ9pUIjb4ljRT2zFcHhL10cwGPJfUNQ,955
+sqlmodelgen/ir/parse/ir_parse.py,sha256=ZWor0aK827Fb5BjO1NxDgFSHeJxy3uL0o3WBRUFCKPg,2626
+sqlmodelgen/ir/parse/org_parse.py,sha256=WbxzmkN6QwTGSNkdjwUxsjfcnJM6ZSGtHZpsC4Zybcc,3182
+sqlmodelgen-0.0.3.dist-info/METADATA,sha256=j7yg0CPXuDue8uIQ6aAZr0OBbDumnhIznWL5evgXL_A,1582
+sqlmodelgen-0.0.3.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+sqlmodelgen-0.0.3.dist-info/licenses/LICENSE,sha256=SQcuaeMStbRZZLflqQH-ACYSCArfJ8tn5SLWXWf5fBQ,1062
+sqlmodelgen-0.0.3.dist-info/RECORD,,
