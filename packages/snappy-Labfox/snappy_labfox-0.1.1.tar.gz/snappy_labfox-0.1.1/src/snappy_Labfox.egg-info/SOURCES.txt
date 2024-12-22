@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+src/snappy/__init__.py
+src/snappy/datapacks.py
+src/snappy/htmlMagic.py
+src/snappy/main.py
+src/snappy_Labfox.egg-info/PKG-INFO
+src/snappy_Labfox.egg-info/SOURCES.txt
+src/snappy_Labfox.egg-info/dependency_links.txt
+src/snappy_Labfox.egg-info/requires.txt
+src/snappy_Labfox.egg-info/top_level.txt
