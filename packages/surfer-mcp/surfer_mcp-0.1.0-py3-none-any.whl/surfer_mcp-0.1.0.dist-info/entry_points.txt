@@ -1,0 +1,2 @@
+[console_scripts]
+surfer-mcp = surfer_mcp:main
