@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: robot_net
+Version: 0.1.0
+Summary: robot network tools
+Author: 
+Author-email: 
+Requires-Python: >=3.13
+Requires-Dist: requests
+Requires-Dist: requests_toolbelt
