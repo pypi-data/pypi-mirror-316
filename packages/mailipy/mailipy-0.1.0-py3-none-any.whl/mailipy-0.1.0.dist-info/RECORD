@@ -1,0 +1,10 @@
+mailipy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mailipy/gen.py,sha256=LMiaH5DN7Wi5952FoDvztx3oltN0cIav8RXdJpP_Fsg,7703
+mailipy/gen_test.py,sha256=Yok5oUMWVrGZzUNIXD5ZCj42N5xDtPpSd4XT2uaK43g,2080
+mailipy/send.py,sha256=jmVSmfMrvFXsNRjc426ONiqC1Bj4U3UCbQrE-C4aI9Y,4752
+mailipy/send_test.py,sha256=vnSA3GympTIY2aLvk4Ohbc4JL7aU0K6sjkIMcAoTEqw,1275
+mailipy-0.1.0.dist-info/LICENSE,sha256=k6DsujlJBJV4dKwwY8zRKDFmjzu1fQeqt36WuYO4nCg,1060
+mailipy-0.1.0.dist-info/METADATA,sha256=9NQj2VvXzgNpqhxzzsKa535EWn4Le3OzJKLoPN0Xwn0,2937
+mailipy-0.1.0.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+mailipy-0.1.0.dist-info/entry_points.txt,sha256=aAXZA9Ha0bB69oK10aAK3vOI__f_C6-uoUF5f8_DADo,79
+mailipy-0.1.0.dist-info/RECORD,,
