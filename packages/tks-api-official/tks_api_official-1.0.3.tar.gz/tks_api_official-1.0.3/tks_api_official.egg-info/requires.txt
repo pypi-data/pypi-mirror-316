@@ -1,0 +1,11 @@
+requests
+pyyaml
+tabulate
+currency-converter-free
+
+[dev]
+pytest
+unittest
+black
+flake8
+isort
