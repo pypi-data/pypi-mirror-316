@@ -1,0 +1,2 @@
+[console_scripts]
+secret-updater = secret_updater.main:main
