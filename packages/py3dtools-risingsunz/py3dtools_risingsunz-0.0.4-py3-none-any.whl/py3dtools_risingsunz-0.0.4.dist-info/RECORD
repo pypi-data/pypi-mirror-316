@@ -1,0 +1,15 @@
+doc/conf.py,sha256=AVcsJhysnLNgHRvEn_54RDDiU1g310nnn4xSprqQCDg,5262
+py3dtools/__init__.py,sha256=VUj-5rNXkuCoUH_dAg9_atni1h_MjUeMLUJXRNPWKmo,297
+py3dtools/mirrorobj/__init__.py,sha256=uMxoUvFTndZ7opE3ma0kH2w2wXPspBOfjg0_oxzm1To,61
+py3dtools/mirrorobj/mirrorobj.py,sha256=79-5ghiilAJSGcQ2tDU59poq3V_41Jtwgxu1IIxEy9Y,4013
+py3dtools/stl2obj/__init__.py,sha256=d-GJUaV360u_iBhjw2Sp7VfNOJe6CSAOiWik15qqeUI,94
+py3dtools/stl2obj/stl2obj.py,sha256=ZQIb6GQ8LvGLYjUmsbf3dwIcBm88m35pKML2s3xwN-k,3849
+py3dtools/vtp2stl/__init__.py,sha256=dPvsIGi1I16WIM8lCd7SEPJ3u_WpfZhBeU8EQwFL-7c,61
+py3dtools/vtp2stl/vtp2stl.py,sha256=RmYuLofDFaY7TMhC59peUqbOfNcgnbFTNpJ8STwWc9s,2324
+test/test.py,sha256=mk5cDRlk0Jb-jRI_qWJxhEZWu2hWvmGiiTRtcsAbRlA,168
+py3dtools_risingsunz-0.0.4.dist-info/LICENSE,sha256=PcOo9TMueGo5BbWImUUGwAybY8GftGfalPd-WKmdweI,1079
+py3dtools_risingsunz-0.0.4.dist-info/METADATA,sha256=DA6IPVcbeR0JLewi3XHH-Konodr1pL4SHl6K-y5hCHc,816
+py3dtools_risingsunz-0.0.4.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+py3dtools_risingsunz-0.0.4.dist-info/entry_points.txt,sha256=1h5koUETrbOH8TWBHLd5SP00NBPr7W2RGX07srKT_Hg,121
+py3dtools_risingsunz-0.0.4.dist-info/top_level.txt,sha256=5l57ZWttjxnCo9mfa8EjrfC3MaOUtiVeM4_0Kp-GB9c,19
+py3dtools_risingsunz-0.0.4.dist-info/RECORD,,
