@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.py
+sqliteorm_py/__init__.py
+sqliteorm_py/basemodel.py
+sqliteorm_py/cli.py
+sqliteorm_py/connect_to_db.py
+sqliteorm_py/fields.py
+sqliteorm_py/makemigrations.py
+sqliteorm_py.egg-info/PKG-INFO
+sqliteorm_py.egg-info/SOURCES.txt
+sqliteorm_py.egg-info/dependency_links.txt
+sqliteorm_py.egg-info/entry_points.txt
+sqliteorm_py.egg-info/top_level.txt
+sqliteorm_py/templates/manage.py
+sqliteorm_py/templates/models.py
+sqliteorm_py/templates/settings.py
