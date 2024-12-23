@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: jrpyprogramming
+Version: 0.2.2
+Summary: Jumping Rivers: Programming with Python
+Author: Jumping Rivers
+Author-email: info@jumpingrivers.com
+Requires-Python: >=3.9
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: jrpyintroduction (>=0.2.2)
+Requires-Dist: matplotlib (>=3.5,<4.0)
+Requires-Dist: numpy (>=1.26,<2.0)
+Requires-Dist: pandas (>=1.5,<2.0)
