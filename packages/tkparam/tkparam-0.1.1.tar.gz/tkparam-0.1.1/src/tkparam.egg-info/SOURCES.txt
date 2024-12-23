@@ -1,0 +1,13 @@
+.gitignore
+LICENSE
+README.md
+pyproject.toml
+src/tkparam/__init__.py
+src/tkparam/tk_param.py
+src/tkparam/tk_param_window.py
+src/tkparam.egg-info/PKG-INFO
+src/tkparam.egg-info/SOURCES.txt
+src/tkparam.egg-info/dependency_links.txt
+src/tkparam.egg-info/requires.txt
+src/tkparam.egg-info/top_level.txt
+tests/test.py

@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tkparam"
+dynamic = ["version"]
+authors = [
+  { name="bitCirno", email="1637131272@qq.com" },
+]
+#maintainers = [
+#  {name = "bitCirno", email = "1637131272@qq.com"}
+#]
+description = "tkparam provides a simple way to dynamically adjust parameters in a tkinter GUI panel, which is useful in looping programs"
+readme = {file = "README.md", content-type = "text/markdown"}
+#requires-python = ">=3.8"
+keywords = ["tkinter", "dynamic parameter"]
+license = {text = "LICENSE"}
+
+# https://pypi.org/classifiers/
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies  = [
+    "ttkbootstrap>=1.10.1",
+]
+
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["tkparam"]
+
+[tool.setuptools.dynamic]
+version = {attr = "tkparam.__version__"}
+
+[project.urls]
+Repository = "https://github.com/Rostave/tkparam"
+Issues = "https://github.com/Rostave/tkparam/issues"
