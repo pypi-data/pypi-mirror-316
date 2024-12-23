@@ -1,0 +1,10 @@
+# MANIFEST.in
+include FLASK/requirements.txt
+include FLASK/run.bat
+include FLASK/app.log
+recursive-include FLASK/static *
+recursive-include FLASK/templates *
+recursive-include FLASK/uploads *
+recursive-include FLASK/archive *
+recursive-include FLASK/logs *
+recursive-include FLASK/files *
