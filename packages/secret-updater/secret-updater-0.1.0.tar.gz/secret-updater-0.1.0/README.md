@@ -1,0 +1,50 @@
+# GitHub Secret Updater
+
+## Background
+Managing secrets in GitHub repositories is crucial for maintaining security in CI/CD pipelines. This script automates the process of updating secrets in GitHub repositories using GitHub API.
+
+## What is the Script?
+This script allows you to update GitHub secrets either by specifying individual secret names and values or by reading from an environment file (`.env`). It fetches the public key for the repository, encrypts the secret using the public key, and then updates the secret in the repository.
+
+## Usage
+
+### Prerequisites
+- Python installed on your machine
+- Required Python packages: `argparse`, `requests`, `pynacl`
+- GitHub personal access token with appropriate permissions
+
+### Installation
+1. Install the required Python packages:
+    ```sh
+    pip install requests pynacl
+    ```
+
+2. Save the script to a file, for example, `update_github_secrets.py`.
+
+### Command Line Arguments
+- `--secret`: Name of the secret to update
+- `--value`: Value of the secret to update
+- `--repo`: Name of the repository (in the format `owner/repo`)
+- `--token`: GitHub token (can also be set as an environment variable `GH_TOKEN`)
+- `--env-file`: Path to the environment file containing secrets (recommended filename: `.env`)
+
+### Examples
+
+#### Update a Single Secret
+To update a single secret:
+```sh
+python update_github_secrets.py --secret SECRET_NAME --value SECRET_VALUE --repo owner/repo --token YOUR_GITHUB_TOKEN
+```
+
+To update a set of secrets from an environment file:
+```sh
+python update_github_secrets.py --env-file .env --repo owner/repo --token YOUR_GITHUB_TOKEN
+```
+
+The env file should contain the secrets in the formats
+
+`SECRET_NAME=SECRET_VALUE`
+
+or 
+
+`export SECRET_NAME="SECRET_VALUE"`
