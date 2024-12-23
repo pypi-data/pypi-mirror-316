@@ -1,0 +1,10 @@
+selfhelperscripts/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+selfhelperscripts/src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+selfhelperscripts/src/cmd_helper/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+selfhelperscripts/src/cmd_helper/cmd_helper.py,sha256=6ZNViNKiN_OP06kHAOyiEnCSeCwV8gUKaiEGcf0QaUc,3397
+selfhelperscripts/src/constants/__init__.py,sha256=5UAzwsGWkA0cb1WaohaU_FEdM4OHJxSxvsp1L5WTOwY,222
+selfhelperscripts-0.1.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+selfhelperscripts-0.1.0.dist-info/METADATA,sha256=mWtXBWer0DYG9EoSkTcbVpEmZnXYC4AUuXdtTAgKtOc,533
+selfhelperscripts-0.1.0.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+selfhelperscripts-0.1.0.dist-info/top_level.txt,sha256=5A6SlCm6i3GukaYF_XW3wPiFfq1dSj5bAiJ9ybICSMg,18
+selfhelperscripts-0.1.0.dist-info/RECORD,,
