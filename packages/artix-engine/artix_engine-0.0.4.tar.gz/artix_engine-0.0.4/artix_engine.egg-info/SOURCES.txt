@@ -1,0 +1,9 @@
+setup.py
+artix_engine/__init__.py
+artix_engine/main.py
+artix_engine/types.py
+artix_engine.egg-info/PKG-INFO
+artix_engine.egg-info/SOURCES.txt
+artix_engine.egg-info/dependency_links.txt
+artix_engine.egg-info/requires.txt
+artix_engine.egg-info/top_level.txt

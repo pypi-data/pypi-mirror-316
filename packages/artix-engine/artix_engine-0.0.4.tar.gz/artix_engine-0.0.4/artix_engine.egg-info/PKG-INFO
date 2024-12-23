@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: artix_engine
+Version: 0.0.4
+Summary: Do you want to try your hand at creating a Discord bot? Let's do it with Artix!
+Home-page: https://github.com/harttman/artix_engine
+Author: harttman
+Author-email: dakiv.work.vitaliy@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: websockets
+
+0.0.1 ALPHA;
+
+```py
+NOT FOUND CASR
+```
+# LIB USE LOGGINS DEFAULT.
