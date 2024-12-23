@@ -1,0 +1,12 @@
+dbbrankingparser/__init__.py,sha256=Cu81AaFFU-A3SsQdPehALbzmnfQpE5KRAn_JqYsNZ38,507
+dbbrankingparser/cli.py,sha256=fJhJZ42axVbZpyC2qrLadyw0jveR01rCBV3lnS9eT4U,2344
+dbbrankingparser/conversion.py,sha256=XEkNs9Hyba-eWlH1HDLNcI1apCq_Y2y1Pymi_R8k4VA,1102
+dbbrankingparser/document.py,sha256=ZBlU9f2EBFckRqM0RLZhVDI2eucMcS_-Zt981vCmDHg,1824
+dbbrankingparser/httpclient.py,sha256=UWbY0RiUKqfpM7884RmpM3X-9aYwgsvtLtpVmOpQjOQ,1006
+dbbrankingparser/httpserver.py,sha256=HL7xl-8qOcTmR5WrxBWtEJt5oKTCzEWO-irpMrFklkc,1575
+dbbrankingparser/main.py,sha256=AFy_ErFLXXZa526_dNTAE4mDThcTLbzb-cvolHxnTKQ,692
+dbb_ranking_parser-0.5.0.dist-info/METADATA,sha256=V4a2CWi0f0RerWNFn77CmlYilfDyZTejk2X6-ZMhfSA,6185
+dbb_ranking_parser-0.5.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+dbb_ranking_parser-0.5.0.dist-info/entry_points.txt,sha256=WI9O4w9bfPpMZ4oIQ0BSWNxBF5U106TZGQPSL5qlZh8,65
+dbb_ranking_parser-0.5.0.dist-info/licenses/LICENSE,sha256=b7zpgh1guU9nrCsfk2lJWosX96-OoNA4n9VAjlJRIqQ,1069
+dbb_ranking_parser-0.5.0.dist-info/RECORD,,
