@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: luma-docs
+Version: 0.0.1
+Summary: 
+License: AGPL-3.0-only
+Author: Your Name
+Author-email: you@example.com
+Requires-Python: >=3.12,<4.0
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: docstring-parser (>=0.16,<0.17)
+Requires-Dist: keyring (>=25.5.0,<26.0.0)
+Requires-Dist: pathspec (>=0.12.1,<0.13.0)
+Requires-Dist: pydantic (>=2.10.3,<3.0.0)
+Requires-Dist: requests (>=2.32.3,<3.0.0)
+Requires-Dist: rich (>=13.9.4,<14.0.0)
+Requires-Dist: typer (>=0.13.1,<0.14.0)
+Requires-Dist: watchdog (>=6.0.0,<7.0.0)
+Description-Content-Type: text/markdown
+
+
