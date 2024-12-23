@@ -1,0 +1,65 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "tethys_utils"
+dynamic = ["version"]
+description = "tethys utilities"
+readme = "README.md"
+license = "Apache-2.0"
+authors = [
+    { name = "Mike Kittridge", email = "mullenkamp1@gmail.com" },
+]
+keywords = [
+    "tethys",
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 2",
+    "Programming Language :: Python :: 2.7",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.4",
+    "Programming Language :: Python :: 3.5",
+    "Programming Language :: Python :: 3.6",
+    "Topic :: Software Development :: Build Tools",
+]
+requires-python = ">=3.10"
+dependencies = [
+    "dask",
+    "dill",
+    "geojson",
+    "hydrointerp",
+    "numcodecs",
+    "numexpr",
+    "requests",
+    "rioxarray",
+    "tethys-data-models>=0.4.10",
+    "tethysts>=0.4.27",
+]
+
+[dependency-groups]
+dev = [
+  "spyder-kernels==2.5",
+  "black",
+  "mypy",
+  "ruff",
+  "pytest",
+  "pytest-cov",
+]
+
+[project.urls]
+Homepage = "https://github.com/tethys-ts/tethys-utils"
+
+[tool.hatch.version]
+path = "tethys_utils/__init__.py"
+
+[tool.hatch.build.targets.sdist]
+include = [
+    "/tethys_utils",
+]
+exclude = [
+  "/tethys_utils/tests/*",
+]
