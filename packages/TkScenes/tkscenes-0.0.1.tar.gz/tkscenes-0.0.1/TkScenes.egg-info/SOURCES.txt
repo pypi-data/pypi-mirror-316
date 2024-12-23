@@ -1,0 +1,4 @@
+TkScenes.egg-info/PKG-INFO
+TkScenes.egg-info/SOURCES.txt
+TkScenes.egg-info/dependency_links.txt
+TkScenes.egg-info/top_level.txt
