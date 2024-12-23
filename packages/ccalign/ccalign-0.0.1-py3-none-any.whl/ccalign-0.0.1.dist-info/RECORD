@@ -1,0 +1,9 @@
+ccalign/__init__.py,sha256=uOdnk9OMwbVWPm7MXWgqw-bj1n3egIq72PPOBUPuhbQ,143
+ccalign/alignment.py,sha256=richfJd4OeFUH-evJ-Sy199hSU6Ay03NzMY2pRtUFhI,48278
+ccalign/audio_transcription.py,sha256=84bg_xR628vTzitZMLfdEcNpqQ8_8T3-thPNPmXrIV4,3777
+ccalign/utils.py,sha256=2A1Xqh1XQSQ5glrAZjfHWQ2oXsueD-dnAVf-JGEQEYI,6770
+ccalign-0.0.1.dist-info/LICENSE,sha256=6PhGWxFjYAyi6-xV7ktA5rL9-Xv30AcFDCRmgpErXe8,1068
+ccalign-0.0.1.dist-info/METADATA,sha256=uixOax03kj_6Mfu97xMor9YVq7buFs-y0DUnzD1UgSA,7088
+ccalign-0.0.1.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+ccalign-0.0.1.dist-info/top_level.txt,sha256=OA9FLQudK1DGn29QgLtS5sCCZ5PitJ8n1t28SYuW9J8,8
+ccalign-0.0.1.dist-info/RECORD,,
