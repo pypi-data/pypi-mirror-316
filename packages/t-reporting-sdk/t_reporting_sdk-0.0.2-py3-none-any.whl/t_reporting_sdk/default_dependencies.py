@@ -1,0 +1,7 @@
+from t_reporting_sdk.repositories.agent_runs.repository import AgentRunsRepository
+from t_reporting_sdk.repositories.api_clients.fabric.client import FabricClient
+from t_reporting_sdk.repositories.eva_records.repository import EVARecordsRepository
+
+fabric_client = FabricClient()
+default_agent_runs_repository = AgentRunsRepository(client=fabric_client)
+default_eva_records_repository = EVARecordsRepository(client=fabric_client)
