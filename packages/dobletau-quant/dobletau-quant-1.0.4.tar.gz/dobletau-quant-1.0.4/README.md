@@ -1,0 +1,120 @@
+# DobleTau Quant
+
+**DobleTau Quant** es una API educativa diseñada para estudiantes que desean participar en una competencia de bots de trading en mercados financieros simulados. La API permite gestionar bots, registrar operaciones y consultar resultados de manera sencilla y eficiente.
+
+---
+
+## Instalación
+
+Para instalar la librería, ejecuta el siguiente comando en tu terminal:
+
+```bash
+pip install dobletau-quant
+```
+
+---
+
+## Uso Básico
+
+### Inicialización
+
+Antes de usar las funciones, debes inicializar la clase `CerebroClient` con el **token único** que identifica a tu bot. Este token es proporcionado al registrarte en la plataforma.
+
+```python
+from dobletau_quant import CerebroClient
+
+# Inicializa el cliente con tu token único
+client = CerebroClient(token="TU_TOKEN")
+```
+
+---
+
+## Funciones Disponibles
+
+### 1. Registrar una Operación (`save_operation`)
+
+Registra una operación de compra o venta de un activo. El token del bot se incluye automáticamente durante la inicialización del cliente.
+
+#### Parámetros:
+- **activo**: Símbolo del activo (ticker) como `AAPL`, `TSLA`.
+- **cantidad**: Número entero (positivo para compras, negativo para ventas).
+
+#### Ejemplo:
+```python
+client.save_operation(activo="AAPL", cantidad=10)
+```
+
+#### Resultado esperado (éxito):
+```
+Operación guardada exitosamente.
+```
+
+#### Posibles errores:
+- `"La cantidad debe ser un número entero distinto de cero."`
+- `"El activo 'AAPL' no existe en la tabla 'Activos'."`
+- `"Error al guardar la operación: [detalle del error]"`
+
+---
+
+### 2. Consultar el Historial de Operaciones (`get_operations`)
+
+Devuelve un historial detallado de todas las operaciones realizadas por tu bot. El token del bot se incluye automáticamente.
+
+#### Ejemplo:
+```python
+operaciones = client.get_operations()
+print(operaciones)
+```
+
+#### Resultado esperado:
+Un `DataFrame` con el historial, con columnas como:
+- `bot`: Nombre del bot.
+- `ticker`: Activo financiero operado.
+- `cantidad`: Cantidad comprada o vendida.
+- `precio`: Precio al momento de la operación.
+- `hora`: Fecha y hora de la operación.
+
+Ejemplo de salida:
+```
+        bot   ticker  cantidad  precio                hora
+0     BotX     AAPL        10  150.25  2024-12-22 10:30:00
+1     BotX     TSLA       -15  400.50  2024-12-21 12:00:00
+```
+
+#### Posibles errores:
+- `"Error al obtener operaciones: [detalle del error]"`
+
+---
+
+## Flujo de Trabajo Sugerido
+
+1. **Configura tu cliente**: Inicializa el cliente con el token único de tu bot.
+2. **Registra operaciones**: Usa `save_operation` para registrar operaciones de compra y venta simuladas.
+3. **Analiza resultados**: Utiliza `get_operations` para evaluar el rendimiento de tu bot en la competencia.
+
+---
+
+## Validaciones Automáticas
+
+La API incluye validaciones para:
+1. **Cantidad**:
+   - Debe ser un número entero distinto de cero.
+   - Ejemplo válido: `10` o `-5`.
+   - Ejemplo inválido: `0` o `5.5`.
+2. **Activos**:
+   - Solo se permiten activos registrados en la tabla `Activos`.
+3. **Bots**:
+   - Cada operación está vinculada al bot identificado por el token proporcionado durante la inicialización.
+
+---
+
+## Licencia
+
+Este proyecto está licenciado bajo la Licencia MIT. Consulta el archivo `LICENSE` para más detalles.
+
+---
+
+## Contacto
+
+¿Tienes preguntas o sugerencias?  
+Escríbenos a **percy.guerra1@unmsm.edu.pe**.
