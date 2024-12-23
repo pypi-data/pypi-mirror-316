@@ -1,0 +1,2 @@
+[console_scripts]
+raj_hello = raj_pakage1:hello
