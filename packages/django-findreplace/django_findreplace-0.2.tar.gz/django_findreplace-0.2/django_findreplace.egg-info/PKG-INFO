@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: django-findreplace
+Version: 0.2
+Summary: Django Find Replace
+Maintainer-email: The Developer Society <studio@dev.ngo>
+Project-URL: Homepage, https://github.com/developersociety/django-findreplace
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 3.2
+Classifier: Framework :: Django :: 4.2
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: Django>=3.2
+
+# Django Find Replace
+
+A [Django](https://www.djangoproject.com/) management command which will replace all instances of
+a string throughout a database with another - useful for bulk content changes.
+
+## Installation
+
+Using [pip](https://pip.pypa.io/):
+
+```console
+$ pip install django-findreplace
+```
+
+Edit your Django project's settings module, and add the application to ``INSTALLED_APPS``:
+
+```python
+INSTALLED_APPS = [
+    # ...
+    "findreplace",
+    # ...
+]
+```
+
+## Usage
+
+To replace all instances of *foo* with *bar*:
+
+```console
+$ ./manage.py findreplace foo bar
+```
+
+To use this command without being asked for confirmation:
+
+```console
+$ ./manage.py findreplace --noinput foo bar
+```
