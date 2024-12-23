@@ -1,0 +1,121 @@
+Metadata-Version: 2.1
+Name: maya-attribs
+Version: 0.1.0
+Summary: A Python library for creating Maya Attributes
+Author: Thibaud Gambier
+License: MIT License
+        
+        Copyright (c) 2024 Thibaud Gambier
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Keywords: maya,openmaya
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: typing-extensions; python_version < "3.11"
+
+# attribs
+
+An experimental Python library for creating Maya Attributes.
+
+## Installation
+
+Install attribs with pip:
+
+```bash
+pip install maya-attribs
+```
+
+## Quickstart
+
+Use `attribs.add_attribute` to create an new attributes
+on an `OpenMaya.MFnDependencyNode`.
+This function also returns the newly created `OpenMaya.MPlug`.
+
+```python
+from maya import cmds
+from maya.api import OpenMaya
+import attribs
+
+def create_node(node_type: str) -> OpenMaya.MObject:
+    name = cmds.createNode(node_type)
+    return OpenMaya.MSelectionList().add(name).getDependNode(0)
+
+node = OpenMaya.MFnDependencyNode(create_node("transform"))
+modifier = OpenMaya.MDGModifier()
+
+attribute = attribs.Bool("foo", default=False)
+
+plug = attribs.add_attribute(node, attribute, modifier=modifier)
+```
+
+Set attribute flags either as keyword argument or later as properties.
+
+```python
+from maya import cmds
+from maya.api import OpenMaya
+import attribs
+
+def create_node(node_type: str) -> OpenMaya.MObject:
+    name = cmds.createNode(node_type)
+    return OpenMaya.MSelectionList().add(name).getDependNode(0)
+
+node = OpenMaya.MFnDependencyNode(create_node("transform"))
+modifier = OpenMaya.MDGModifier()
+
+attribute = attribs.Double3(
+    "MyDouble", 
+    default=(1.0, 2.0, 3.0), 
+    channel_box=True,
+)
+attribute.keyable = True
+
+plug = attribs.add_attribute(node, attribute, modifier=modifier)
+```
+
+Compounds are also supported.
+
+```python
+from maya import cmds
+from maya.api import OpenMaya
+import attribs
+
+def create_node(node_type: str) -> OpenMaya.MObject:
+    name = cmds.createNode(node_type)
+    return OpenMaya.MSelectionList().add(name).getDependNode(0)
+
+node = OpenMaya.MFnDependencyNode(create_node("transform"))
+modifier = OpenMaya.MDGModifier()
+
+attribute = attribs.Compound("foo")
+attribute.append(attribs.Bool("bar"))
+attribute.append(attribs.String("baz"))
+
+plug = attribs.add_attribute(node, attribute, modifier=modifier)
+```
