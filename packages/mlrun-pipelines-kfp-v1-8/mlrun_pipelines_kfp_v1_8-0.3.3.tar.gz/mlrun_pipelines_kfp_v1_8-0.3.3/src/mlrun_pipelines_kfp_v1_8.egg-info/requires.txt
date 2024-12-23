@@ -1,0 +1,6 @@
+inflection>=0.5.1
+kfp_server_api~=1.8
+mlrun_pipelines_kfp_common~=0.3.2
+
+[kfp]
+kfp~=1.8.22
