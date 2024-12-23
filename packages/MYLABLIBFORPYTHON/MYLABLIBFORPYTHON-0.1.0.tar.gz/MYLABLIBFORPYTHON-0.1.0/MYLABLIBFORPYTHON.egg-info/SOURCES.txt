@@ -1,0 +1,9 @@
+README.md
+setup.py
+MYLABLIBFORPYTHON.egg-info/PKG-INFO
+MYLABLIBFORPYTHON.egg-info/SOURCES.txt
+MYLABLIBFORPYTHON.egg-info/dependency_links.txt
+MYLABLIBFORPYTHON.egg-info/top_level.txt
+MYLAVLIBFORPYTHON/__init__.py
+MYLAVLIBFORPYTHON/module1.py
+MYLAVLIBFORPYTHON/module2.py

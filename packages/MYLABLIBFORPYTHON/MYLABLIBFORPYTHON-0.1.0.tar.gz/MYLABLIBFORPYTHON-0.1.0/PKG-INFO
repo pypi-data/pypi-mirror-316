@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: MYLABLIBFORPYTHON
+Version: 0.1.0
+Summary: Пример библиотеки с базовыми арифметическими операциями
+Home-page: UNKNOWN
+Author: moonbruh
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# My Library
+
+Это пример библиотеки на Python, которая включает базовые арифметические операции.
+
+## Установка
+
+Чтобы установить библиотеку, используйте pip:
+
+```bash
+pip install my-library
+
+
