@@ -1,0 +1,60 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "syswatcher"
+version = "0.1.4"
+description = "A comprehensive system monitoring CLI tool for CPU, Memory, Disk, and Network statistics with rich ui"
+readme = "README.md"
+authors = [
+    { name = "Mrinaal Arora", email = "aroramrinaal@gmail.com" }
+]
+license = { text = "MIT" }
+requires-python = ">=3.9"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Intended Audience :: System Administrators",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: System :: Monitoring",
+    "Topic :: System :: Systems Administration",
+    "Topic :: Utilities"
+]
+keywords = [
+    "system-monitoring",
+    "cli",
+    "cpu",
+    "memory",
+    "disk",
+    "network",
+    "performance",
+    "system-info"
+]
+dependencies = [
+    "typer>=0.9.0",
+    "psutil>=5.9.0",
+    "rich>=13.0.0",
+    "pyfiglet>=1.0.0"
+]
+
+[project.urls]
+Homepage = "https://github.com/aroramrinaal/syswatcher"
+Repository = "https://github.com/aroramrinaal/syswatcher"
+Documentation = "https://github.com/aroramrinaal/syswatcher#readme"
+"Bug Tracker" = "https://github.com/aroramrinaal/syswatcher/issues"
+
+[project.scripts]
+syswatcher = "src.main:app"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src"]
+
+[tool.hatch.metadata]
+allow-direct-references = true 
