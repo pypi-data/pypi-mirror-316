@@ -1,0 +1,3 @@
+[console_scripts]
+extract-hdl64e-calibration = velodyne_decoder.hdl64e:cli
+
