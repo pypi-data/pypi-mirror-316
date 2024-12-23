@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: br4wlst4rs
+Version: 0.1
+Summary: Brawl Stars more open source for ios
+Home-page: https://github.com/slayy2357/br4wlst4rs
+Author: slayy2357
+Author-email: slayy2357pro@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Environment :: Console
+Classifier: Development Status :: 4 - Beta
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Games/Entertainment
+Classifier: Topic :: Security
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
+Requires-Dist: frida
+Requires-Dist: pynput
+Requires-Dist: requests
