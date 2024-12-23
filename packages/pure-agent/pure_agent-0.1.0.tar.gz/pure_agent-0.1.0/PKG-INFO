@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: pure_agent
+Version: 0.1.0
+Summary: A brief description of the package.
+Home-page: https://github.com/yourusername/pbot
+Author: Your Name
+Author-email: your.email@example.com
+License: MIT
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+## Quickstart
+
+First install the packages:
+
+```bash
+
+pip install -e .
+```
+
+The following code uses OpenAI's GPT-4o model and you need to provide your
+API key to run.
+To use Azure OpenAI models, follow the instruction
+[here](https://microsoft.github.io/autogen/dev/user-guide/core-user-guide/cookbook/azure-openai-with-aad-auth.html).
+
+```python
