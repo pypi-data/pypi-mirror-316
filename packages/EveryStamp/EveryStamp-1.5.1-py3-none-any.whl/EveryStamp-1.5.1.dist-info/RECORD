@@ -1,0 +1,12 @@
+everystamp/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+everystamp/cutters.py,sha256=_aUhp1H7QrII79mM2qaV6_Z8KU_lHVJq05Ybw_Q1kwo,2325
+everystamp/downloaders.py,sha256=diopuUnaNm0pRuPWZqmGAtpLOcmMPXoffU88l4QDrI0,31741
+everystamp/everystamp.py,sha256=Q9cYYNCFFEfvtrskZyE97WkVlM4Ny3IsTqObd71B9sA,38191
+everystamp/plotters.py,sha256=Wv4RF8dN5ijvumIqIaMAFk2MAEtI3ii1n1Av8SsMToo,9882
+everystamp/tonemapping/__init__.py,sha256=KmAjCz4SKCA49AMXMziHmuEi6ew5Bui-MBQkfYnUGA8,1434
+everystamp/tonemapping/lhdr.py,sha256=1N6NBIOz_LZ7YeLGY9ZjdE_EsiUavxcTelfJiGGJ6RQ,19901
+EveryStamp-1.5.1.dist-info/METADATA,sha256=PqT-ubwKCAximrlL8WDQ6xvTilO2TLQxHzp8hnXENKY,916
+EveryStamp-1.5.1.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+EveryStamp-1.5.1.dist-info/entry_points.txt,sha256=aV4_foFFtdCDw3CHILUqmcVoeGsSlgrtHBxfmF8OzBc,58
+EveryStamp-1.5.1.dist-info/top_level.txt,sha256=9V2lxHUGlq_dw9HjucxyS4j4cfQytyX64uAukcAQonU,11
+EveryStamp-1.5.1.dist-info/RECORD,,
