@@ -1,0 +1,4 @@
+aiohttp
+pyserial-asyncio
+python-dateutil
+pytz
