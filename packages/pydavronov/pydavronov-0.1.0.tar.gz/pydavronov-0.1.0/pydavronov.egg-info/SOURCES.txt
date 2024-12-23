@@ -1,0 +1,6 @@
+setup.py
+pydavronov.egg-info/PKG-INFO
+pydavronov.egg-info/SOURCES.txt
+pydavronov.egg-info/dependency_links.txt
+pydavronov.egg-info/requires.txt
+pydavronov.egg-info/top_level.txt
