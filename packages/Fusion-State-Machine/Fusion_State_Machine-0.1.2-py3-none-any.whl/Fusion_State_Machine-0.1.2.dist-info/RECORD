@@ -1,0 +1,10 @@
+state_machine/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+state_machine/errors.py,sha256=QIaGFFLlII0LSpA2CsT5jlKW01zsO4mmy6ow6ityj58,278
+state_machine/machine.py,sha256=mKVXKkDCcxpW_OEjmTeppN25CsDncRyF8icxWaG-95w,2325
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_state_machine.py,sha256=vELrVpTRcob7-bIqJblAgdNqtRvpgMfrlsT-sMv7hsg,5842
+Fusion_State_Machine-0.1.2.dist-info/LICENSE,sha256=9VwRHYSRtViQWus0sRDCo8I_vMCHcvRG2YMVYT2H9LU,1063
+Fusion_State_Machine-0.1.2.dist-info/METADATA,sha256=DCDSWBdwBi6X-ZuUiqFQY1lm_6p3mwrO5PvHHGjTHhE,420
+Fusion_State_Machine-0.1.2.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+Fusion_State_Machine-0.1.2.dist-info/top_level.txt,sha256=hRSjox-rcbCZWGCZP9DPkPC-UnCMGuet0ipELZ_2Ock,20
+Fusion_State_Machine-0.1.2.dist-info/RECORD,,
