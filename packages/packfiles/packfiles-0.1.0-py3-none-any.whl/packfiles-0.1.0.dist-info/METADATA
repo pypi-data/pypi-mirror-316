@@ -1,0 +1,25 @@
+Metadata-Version: 2.4
+Name: packfiles
+Version: 0.1.0
+Summary: packfiles allows merging multiple files into a single Markdown file.
+Project-URL: Repository, https://github.com/EcmaXp/packfiles
+Author-email: ecmaxp <ecmaxp@ecmaxp.kr>
+License-File: LICENSE
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Topic :: System :: Archiving
+Classifier: Topic :: Text Processing :: Markup :: Markdown
+Classifier: Topic :: Utilities
+Requires-Python: >=3.10
+Requires-Dist: ignorelib>=0.3.0
+Requires-Dist: python-magic>=0.4.27
