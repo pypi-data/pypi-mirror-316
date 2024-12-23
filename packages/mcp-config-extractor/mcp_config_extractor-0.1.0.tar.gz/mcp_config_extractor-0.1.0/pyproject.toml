@@ -1,0 +1,36 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "mcp-config-extractor"
+version = "0.1.0"
+authors = [
+  { name = "liuyoshio", email = "liujiawei@weight-wave.com" },
+]
+description = "Extract MCP server config from GitHub repository README"
+readme = "README.md"
+requires-python = ">=3.7"
+dependencies = [
+    "requests>=2.31.0",
+    "openai>=1.6.1",
+    "python-dotenv>=1.0.0",
+]
+
+[project.scripts]
+mcp-extract = "main:main_cli"
+
+[tool.hatch.build.targets.wheel]
+packages = ["github_scraper", "llm_client", "config_extractor", "."]
+
+[tool.uvx]
+name = "mcp-config-extractor"
+description = "Extract MCP server config from GitHub repository README"
+command = "mcp-extract"
+args = ["-s"]
+env = ["OPENROUTER_BASE_URL", "OPENROUTER_API_KEY"]
+flags = [
+    { name = "-s", description = "GitHub repository URL", required = true },
+    { name = "-u", description = "OpenRouter base URL (overrides environment variable)" },
+    { name = "-k", description = "OpenRouter API key (overrides environment variable)" }
+]
