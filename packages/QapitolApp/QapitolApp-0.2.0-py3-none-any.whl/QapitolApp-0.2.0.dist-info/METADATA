@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: QapitolApp
+Version: 0.2.0
+Summary: For internal use only
+Author: Abinash Sahoo
+Author-email: abinash.sahoo@qapitol.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Requires-Dist: Flask==2.2.2
+Requires-Dist: Werkzeug==2.2.2
+
