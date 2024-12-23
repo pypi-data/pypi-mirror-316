@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+pamela/__init__.py
+pamela/app.py
+pamela_lib.egg-info/PKG-INFO
+pamela_lib.egg-info/SOURCES.txt
+pamela_lib.egg-info/dependency_links.txt
+pamela_lib.egg-info/top_level.txt
