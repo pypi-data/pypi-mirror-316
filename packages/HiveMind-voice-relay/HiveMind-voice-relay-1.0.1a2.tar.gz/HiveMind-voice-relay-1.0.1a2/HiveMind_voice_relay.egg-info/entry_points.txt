@@ -1,0 +1,3 @@
+[console_scripts]
+hivemind-voice-relay = hivemind_voice_relay.__main__:connect
+
