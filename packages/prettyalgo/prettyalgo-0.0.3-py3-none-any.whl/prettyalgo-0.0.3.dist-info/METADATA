@@ -1,0 +1,61 @@
+Metadata-Version: 2.4
+Name: prettyalgo
+Version: 0.0.3
+Summary: prettyalgo - pretty print for programming puzzles.
+Project-URL: Homepage, https://github.com/adamhadani/prettyalgo
+Project-URL: Issues, https://github.com/adamhadani/prettyalgo/issues
+Author-email: Adam Ever-Hadani <adamhadani@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Requires-Dist: termcolor>=2.5.0
+Provides-Extra: test
+Requires-Dist: coverage; extra == 'test'
+Requires-Dist: pytest; extra == 'test'
+Requires-Dist: pytest-coverage; extra == 'test'
+Description-Content-Type: text/markdown
+
+[![CircleCI](https://dl.circleci.com/status-badge/img/gh/adamhadani/prettyalgo/tree/main.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/adamhadani/prettyalgo/tree/main)
+
+# :sparkles: prettyalgo
+
+Pretty print for programming puzzles.
+
+Highlights:
+
+* Pretty print data structures and algorithms, especially sequence-oriented ones involving arrays such as lists, tuples and strs, and iterations, in the vein of leetcode and similar programming puzzles.
+* Extensive configurability for various display styles and usage modes, such as console-interactive, animated, and more.
+* Extensive use of [pre-commit](https://https://pre-commit.com/) hooks and unit-tests coverage to ensure correct functionality. Programming puzzles are hard enough to solve and debug, we shouldn't make it more error-prone by trying to use this library!
+
+
+## Getting Started
+
+To install from PyPI, use pip:
+
+    pip install prettyalgo
+
+
+See the [examples](./examples) sub-directory for examples showing the usage of the library.
+
+Typical output when using on the terminal in interactive mode would like:
+
+```
+Remove Duplicates From Sorted Array 2
+-------------------------------------
+len(lst):          9
+i                  6
+j                  4
+count              4
+
++-----------------------------------------------------------------------------------------+
+|         |         |         |         |         |         |         |         |         |
+|    0    |    0    |    1    |    1    |    1    |    1    |    2    |    3    |    3    |
+|         |         |         |         |         |         |         |         |         |
++-----------------------------------------------------------------------------------------+
+                                                                 ^ i=6
+                                             ^ j=4
+
+Press Enter to continue...
+```
