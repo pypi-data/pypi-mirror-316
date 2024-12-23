@@ -1,0 +1,13 @@
+HAbench/VideoTextConsistency.py,sha256=7iXALbLx_PgdfDHBzPRCnBUwmGVL-eTCeweq2WOt_YE,16753
+HAbench/__init__.py,sha256=bfjFqEdxJHIRMEtc0f_qN_QSbdo4WySZLDdyzoWS3zA,4525
+HAbench/dynamicquality.py,sha256=U2ytzDCQ-xm8kdS-NMxFZW7JjHixapB8qYh_fuX-sdE,4316
+HAbench/prompt_dict.py,sha256=iWeZ3lS0rx4XSlBiFphLJrwn-Wwj6z0N0d1Vz2LoGVQ,817
+HAbench/staticquality.py,sha256=x_TwBy6sZBBh5v-MMn2C-yZX7x0qozxnpPGsDvf1EXI,3440
+HAbench/utils.py,sha256=8CikHp4WsgWq8q2rd15KUI5zJZyHKYxt3aEwV0dWpUs,4947
+HAbench/cli/__init__.py,sha256=4qUjMhvPRc7jur6ijW0we5uqIECfFE488nmfvp4VKpc,49
+HAbench/cli/evaluate.py,sha256=X6ihLf483GvPx2fzXzPMdkwUhEpY6TDQQqFoFaKqrJY,2546
+HAbench-0.1.0.dist-info/METADATA,sha256=kmoIDyDQ69bgUPBZF2tN_3qACGc15GOfIwmNbG5j_40,4194
+HAbench-0.1.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+HAbench-0.1.0.dist-info/entry_points.txt,sha256=Ld6PonAEi-fyRQoD0ypjKcWMg4DCWNfh6ihmz5YG4zg,54
+HAbench-0.1.0.dist-info/top_level.txt,sha256=MLxhhwciy0GgsNxf5_OOcucRKfSQfdCgmvXcSRwWsqg,8
+HAbench-0.1.0.dist-info/RECORD,,
