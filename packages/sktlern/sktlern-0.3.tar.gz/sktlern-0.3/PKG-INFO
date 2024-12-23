@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: sktlern
+Version: 0.3
+Summary: sktlern
+Author-email: gotkayasielkashy@gmail.com
+Requires-Dist: g4f
