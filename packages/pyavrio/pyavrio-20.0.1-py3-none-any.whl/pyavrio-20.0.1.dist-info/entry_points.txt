@@ -1,0 +1,3 @@
+[sqlalchemy.dialects]
+pyavrio = pyavrio.sqlalchemy.dialect:TrinoDialect
+
