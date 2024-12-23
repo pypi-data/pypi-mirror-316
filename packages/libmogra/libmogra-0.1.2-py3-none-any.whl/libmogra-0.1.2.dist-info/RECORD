@@ -1,0 +1,14 @@
+LICENSE,sha256=KlCsvbceJLZK0SmCzzEnsftd3NYZ4gVOnzlmmy6CKRk,1074
+libmogra/__init__.py,sha256=Do85qq0tMmMYywPI0Rpjs0xV8KHb7NMgyba-X_P-8-8,25
+libmogra/datatypes.py,sha256=gPGMuyNbCKcYJafhgmIAVmW7QyVpbQlMG9Zhj7mvU2M,3012
+libmogra/raagfinder/main.py,sha256=qt5S9dHvim5kFo1pndxsUb2grlVmwvcasbdCKhts9WM,1495
+libmogra/raagfinder/parse.py,sha256=GdZhoSyE6u9bRF2pQ6KLoAa2Leb1ZfM_Pg_gd2OQEcY,1746
+libmogra/raagfinder/parse_tanaranga_backup.py,sha256=gq8yG7t7746EonWgRnkYhz-RwCFwP316lP8gbug-DxY,5737
+libmogra/raagfinder/raags.bkp.pkl,sha256=f2YHqU2P8baaQs30FFOrUak5iwrYlhy_YtGrd78OjBM,142306
+libmogra/raagfinder/raags.pkl,sha256=KMf-HglQxTXY6Z1T_rwy7Ybg9-136kJuwMbf2aY7pDk,36624
+libmogra/raagfinder/temp.ipynb,sha256=q0Cx1e2_WvPhVa_haUCdkyBxfpXM2CsskgBM1LtxxUk,2098
+libmogra-0.1.2.dist-info/LICENSE,sha256=KlCsvbceJLZK0SmCzzEnsftd3NYZ4gVOnzlmmy6CKRk,1074
+libmogra-0.1.2.dist-info/METADATA,sha256=UxPglXvheCrimN5MEFkDD_zwFUw9t_ZXfjCHyUQrmpY,1761
+libmogra-0.1.2.dist-info/WHEEL,sha256=d2fvjOD7sXsVzChCqf0Ty0JbHKBaLYwDbGQDwQTnJ50,88
+libmogra-0.1.2.dist-info/entry_points.txt,sha256=fdc8kxQyciaGyZ9HuNmDsnai01qumJpiu32Lu81m8jw,55
+libmogra-0.1.2.dist-info/RECORD,,
