@@ -1,0 +1,11 @@
+lgdash/__init__.py,sha256=F2SYcJClE--bQCdsO2UqdHP3CvkjoPtVLC6P1wlbwqg,101
+lgdash/cli.py,sha256=gnQgXuMSibqJzAE1JKTAti_gyfJVK5sRsnU8AymuxYU,2707
+lgdash/client.py,sha256=xObLWkIzaD1-16Oh1KQshXLyk89S_Ms9b2yWxUkoUSE,9807
+lgdash/config.py,sha256=nyPo6rDwadFiDC7G1qMGesZN6VYzVJnkF852N6EgvGo,84
+lgdash/display.py,sha256=mh3o3oz2amgTqc2enprHoT1adFAuIeVSxPii3jAYVss,7686
+lgdash/leagues.py,sha256=Ipal0yMJ5NWbBDdtN_uYL_H_3Ic5NGDFgjEl4wiF6Zs,612
+lgdash-0.1.0.dist-info/LICENSE,sha256=cROtAfBdOemYApWeywG1GZmjKunh6WYcWFv2_olV__s,1068
+lgdash-0.1.0.dist-info/METADATA,sha256=OTH7jLOLuoljXLcaemjCjFXB5gRsOpyhXct8K1bX54Y,1858
+lgdash-0.1.0.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+lgdash-0.1.0.dist-info/entry_points.txt,sha256=GAgMhHTj4JDADkgxNcz95WIlpVUs39ArjyOdi92gPUU,41
+lgdash-0.1.0.dist-info/RECORD,,
