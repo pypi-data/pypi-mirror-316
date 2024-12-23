@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+macro_photo/__init__.py
+macro_photo/image_generator.py
+macro_photo.egg-info/PKG-INFO
+macro_photo.egg-info/SOURCES.txt
+macro_photo.egg-info/dependency_links.txt
+macro_photo.egg-info/requires.txt
+macro_photo.egg-info/top_level.txt
+mistral_image_gen/__init__.py
+mistral_image_gen/image_generator.py
