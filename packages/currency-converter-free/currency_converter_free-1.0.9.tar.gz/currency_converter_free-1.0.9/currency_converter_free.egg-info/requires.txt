@@ -1,0 +1,11 @@
+requests>=2.25
+diskcache>=5.4
+cachetools>=5.0
+
+[dev]
+pytest>=7.0
+unittest
+flake8
+black
+isort
+mypy
