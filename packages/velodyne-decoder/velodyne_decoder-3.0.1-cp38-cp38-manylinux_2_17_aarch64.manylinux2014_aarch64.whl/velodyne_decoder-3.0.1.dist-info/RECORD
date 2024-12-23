@@ -1,0 +1,23 @@
+velodyne_decoder/pcap.py,sha256=jjbbdozFeoQTZykW0I_rTbmB7LoK8LpCpyxtOEmHsXM,2306
+velodyne_decoder/velodyne_decoder_pylib.cpython-38-aarch64-linux-gnu.so,sha256=fgMT17BpFhBczlR4yI8QdXjYWhBiey8v5nOuZo1X_kk,1056800
+velodyne_decoder/__init__.py,sha256=ttqaLPDTg1-rfWtj__FJnLPkS9CzmtwCsZI0grHrUsw,816
+velodyne_decoder/hdl64e.py,sha256=m-7GbRM4AXtmNKhr08ZyOBcigoEvGEtg4HVXIVaos0k,11315
+velodyne_decoder/util.py,sha256=b4O5YAb5r9eEExFdhlsOD7EC_wRM0akwn7o5fM4HlJY,2908
+velodyne_decoder/bag.py,sha256=YxItARC9IBIY1yqw91hY2GvftWB8NfH4UMIv5oMWEXU,1883
+velodyne_decoder/calibrations/HDL-32E.yml,sha256=qMczzMnST_-HdBvHHow97n2kkExUuiHqX5haDA_ze18,2503
+velodyne_decoder/calibrations/HDL-64E_S3-VeloView.yml,sha256=Gd6sSYjpl01KhgEd-kHr5u5QOHr9mVPDHg5jvs7qi3g,21386
+velodyne_decoder/calibrations/VLP-32B.yml,sha256=X4fY3nmVIcoQr3nC1fNrlevYV5PNSvJcD7ijgprBpoo,2820
+velodyne_decoder/calibrations/HDL-64E_S1-utexas.yml,sha256=L2orvvY3CiWvjcfPOjj6LOlS_U6gRVxatMBUMf4gzlI,19365
+velodyne_decoder/calibrations/__init__.py,sha256=whr9L9glzdnXhdlSs2qDfpm7AErAvO1re3Y2JMvFZO4,631
+velodyne_decoder/calibrations/HDL-64E_S2.1-sztaki.yml,sha256=NO1Mpt0QdrSWfK7-wVQpTMVXDlbi7-06jtO7szzJ0yE,22778
+velodyne_decoder/calibrations/Puck Hi-Res.yml,sha256=rsfOpLLj3SjQKA6ExW_fTcgopFhUPlYYmvg41mu1dGc,1376
+velodyne_decoder/calibrations/VLP-16.yml,sha256=9usy3o1J_OBW8PuVNUNv5XLnsiq_eKZBMlGTio9cMl4,1390
+velodyne_decoder/calibrations/Alpha Prime.yml,sha256=MVDmMoBllXCA2P8e7rJ2DnFdZv8GxvsvtdUSMuWWje8,10596
+velodyne_decoder/calibrations/VLP-32C.yml,sha256=X4fY3nmVIcoQr3nC1fNrlevYV5PNSvJcD7ijgprBpoo,2820
+velodyne_decoder/calibrations/VLP-32A.yml,sha256=iwitQzzmFhGv-Lg6H7R5MB-PgR-XOYWylcF901vFUhY,2820
+velodyne_decoder/calibrations/HDL-64E_S3-xiesc.yml,sha256=ZP1M-ww7dhGqlaLJ7SQ2_aVF7Fn2_QkpaAJSRsNGF_4,22073
+velodyne_decoder-3.0.1.dist-info/METADATA,sha256=PH0Sb1QMbaJTw_wbT5ZlQa-s7IwTSbynMMwkFQLpp7c,6430
+velodyne_decoder-3.0.1.dist-info/RECORD,,
+velodyne_decoder-3.0.1.dist-info/WHEEL,sha256=c518qYhS0-ma021el7QJX9fQJP1L8irPKSkDhD_AhSA,154
+velodyne_decoder-3.0.1.dist-info/entry_points.txt,sha256=vhVBPDCEKTDb4WI5devk1uSDLSRxYwAv8mNXrmspPUk,76
+velodyne_decoder-3.0.1.dist-info/licenses/LICENSE,sha256=nB6JY2B4YpNLw8fUxUpwJQnB2PXuvqblW7dlAMFL_sg,1581
