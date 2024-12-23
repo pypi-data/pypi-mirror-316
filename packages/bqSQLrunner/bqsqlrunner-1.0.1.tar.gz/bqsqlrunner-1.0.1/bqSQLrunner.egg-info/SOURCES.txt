@@ -1,0 +1,10 @@
+setup.py
+bqSQLrunner.egg-info/PKG-INFO
+bqSQLrunner.egg-info/SOURCES.txt
+bqSQLrunner.egg-info/dependency_links.txt
+bqSQLrunner.egg-info/requires.txt
+bqSQLrunner.egg-info/top_level.txt
+framework/__init__.py
+framework/bqSQLrunner.py
+framework/cli.py
+framework/mainBqSQLrunner.py
