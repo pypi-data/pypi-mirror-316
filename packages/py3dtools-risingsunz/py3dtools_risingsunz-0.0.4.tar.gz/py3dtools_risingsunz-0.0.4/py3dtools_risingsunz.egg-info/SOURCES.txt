@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+doc/conf.py
+py3dtools/__init__.py
+py3dtools/mirrorobj/__init__.py
+py3dtools/mirrorobj/mirrorobj.py
+py3dtools/stl2obj/__init__.py
+py3dtools/stl2obj/stl2obj.py
+py3dtools/vtp2stl/__init__.py
+py3dtools/vtp2stl/vtp2stl.py
+py3dtools_risingsunz.egg-info/PKG-INFO
+py3dtools_risingsunz.egg-info/SOURCES.txt
+py3dtools_risingsunz.egg-info/dependency_links.txt
+py3dtools_risingsunz.egg-info/entry_points.txt
+py3dtools_risingsunz.egg-info/top_level.txt
+test/test.py

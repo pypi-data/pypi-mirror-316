@@ -1,0 +1,49 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+
+[project]
+name = "py3dtools_risingsunz"
+version = "0.0.4"
+authors = [
+  { name="Aravind Sundararajan", email="aravind.sundararajan@protonmail.com" },
+]
+description = "py3dtools has methods for converting from OpenSim VTP file format to STL and OBJ. it also has some convenience methods for manipulating OBJ files."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[tool.setuptools]
+py-modules = ['py3dtools']
+
+[tool.setuptools.packages.find]
+where = ["."]
+
+[project.scripts]
+vtp2stl = "py3dtools.vtp2stl:main"
+stl2obj = "py3dtools.stl2obj:main"
+mirrorobj = "py3dtools.mirrorobj:main"
+
+[tool.setuptools.package-data]
+# Include additional non-Python files in your package
+"py3dtools" = ["data/*.json", "data/*.txt"]
+
+[project.urls]
+Homepage = "https://github.com/Aravind-Sundararajan/3dtools"
+Issues = "https://github.com/Aravind-Sundararajan/3dtools/issues"
+
+[tool.black]
+# Optional: Configure Black formatter
+line-length = 88
+target-version = ["py38", "py39", "py310"]
+include = '\.pyi?$'
+
+[tool.mypy]
+# Optional: Configure mypy type checker
+files = "src/"
+ignore_missing_imports = true

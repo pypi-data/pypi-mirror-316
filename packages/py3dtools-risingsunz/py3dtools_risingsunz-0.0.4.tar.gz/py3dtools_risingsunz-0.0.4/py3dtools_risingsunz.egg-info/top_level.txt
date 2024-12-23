@@ -1,0 +1,4 @@
+dist
+doc
+py3dtools
+test

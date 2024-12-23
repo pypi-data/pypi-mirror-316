@@ -1,0 +1,4 @@
+[console_scripts]
+mirrorobj = py3dtools.mirrorobj:main
+stl2obj = py3dtools.stl2obj:main
+vtp2stl = py3dtools.vtp2stl:main
