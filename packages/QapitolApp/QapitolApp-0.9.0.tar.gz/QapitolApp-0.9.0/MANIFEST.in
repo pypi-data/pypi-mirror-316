@@ -1,0 +1,10 @@
+# MANIFEST.in
+include utilityapp/requirements.txt
+include utilityapp/run.bat
+include utilityapp/app.log
+recursive-include utilityapp/static *
+recursive-include utilityapp/templates *
+recursive-include utilityapp/uploads *
+recursive-include utilityapp/archive *
+recursive-include utilityapp/logs *
+recursive-include utilityapp/files *

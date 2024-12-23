@@ -1,0 +1,2 @@
+[console_scripts]
+flask_app = utilityapp.app:main
