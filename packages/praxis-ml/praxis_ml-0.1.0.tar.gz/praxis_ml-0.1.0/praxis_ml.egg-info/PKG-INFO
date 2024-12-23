@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: praxis-ml
+Version: 0.1.0
+Summary: A PySpark-based library for transparent and interpretable machine learning
+Author: Your Name
+Author-email: Your Name <your_email@example.com>
+License: MIT
+Project-URL: homepage, https://github.com/marcosvm13/praxis
+Project-URL: repository, https://github.com/marcosvm13/praxis
+Project-URL: documentation, https://github.com/marcosvm13/praxis/docs
+License-File: LICENSE
+Requires-Dist: pyspark>=3.0.0

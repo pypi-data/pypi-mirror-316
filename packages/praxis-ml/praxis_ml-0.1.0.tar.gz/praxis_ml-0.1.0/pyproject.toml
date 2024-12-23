@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=42", "wheel", "cibuildwheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "praxis-ml"
+version = "0.1.0"
+description = "A PySpark-based library for transparent and interpretable machine learning"
+authors = [
+    {name = "Your Name", email = "your_email@example.com"}
+]
+license = {text = "MIT"}
+dependencies = [
+    "pyspark>=3.0.0"
+]
+
+[project.urls]
+homepage = "https://github.com/marcosvm13/praxis"
+repository = "https://github.com/marcosvm13/praxis"
+documentation = "https://github.com/marcosvm13/praxis/docs"
