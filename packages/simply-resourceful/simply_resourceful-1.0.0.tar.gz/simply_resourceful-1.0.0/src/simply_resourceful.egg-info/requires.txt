@@ -1,0 +1,6 @@
+
+[pygame]
+pygame_ce>=2.5.2
+
+[test]
+pyfakefs>=5.7.3
