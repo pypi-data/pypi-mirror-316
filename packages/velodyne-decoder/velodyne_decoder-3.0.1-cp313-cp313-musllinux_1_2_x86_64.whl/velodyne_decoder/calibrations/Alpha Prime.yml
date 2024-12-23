@@ -1,0 +1,390 @@
+# aka VLS-128
+# converted from https://gitlab.kitware.com/LidarView/velodyneplugin/-/tree/0cddc1f92e69b7b26ffc5619aceb1c00854442e6/CalibrationsFiles
+# using https://wiki.ros.org/velodyne_pointcloud#gen_calibration.py
+distance_resolution: 0.004
+lasers:
+  - laser_id: 0
+    rot_correction: -0.1108982
+    vert_correction: -0.2049366
+  - laser_id: 1
+    rot_correction: -0.07937758
+    vert_correction: -0.03473205
+  - laser_id: 2
+    rot_correction: -0.04768239
+    vert_correction: 0.0593412
+  - laser_id: 3
+    rot_correction: -0.01589995
+    vert_correction: -0.09232792
+  - laser_id: 4
+    rot_correction: 0.01589995
+    vert_correction: -0.01361357
+  - laser_id: 5
+    rot_correction: 0.04768239
+    vert_correction: 0.08045968
+  - laser_id: 6
+    rot_correction: 0.07937758
+    vert_correction: -0.07120943
+  - laser_id: 7
+    rot_correction: 0.1108982
+    vert_correction: 0.02286381
+  - laser_id: 8
+    rot_correction: -0.1108982
+    vert_correction: -0.1134464
+  - laser_id: 9
+    rot_correction: -0.07937758
+    vert_correction: -0.01937315
+  - laser_id: 10
+    rot_correction: -0.04768239
+    vert_correction: 0.07470009
+  - laser_id: 11
+    rot_correction: -0.01589995
+    vert_correction: -0.07696902
+  - laser_id: 12
+    rot_correction: 0.01589995
+    vert_correction: 0.001745329
+  - laser_id: 13
+    rot_correction: 0.04768239
+    vert_correction: 0.1130973
+  - laser_id: 14
+    rot_correction: 0.07937758
+    vert_correction: -0.05585054
+  - laser_id: 15
+    rot_correction: 0.1108982
+    vert_correction: 0.03822271
+  - laser_id: 16
+    rot_correction: -0.1108982
+    vert_correction: -0.06736971
+  - laser_id: 17
+    rot_correction: -0.07937758
+    vert_correction: 0.02670354
+  - laser_id: 18
+    rot_correction: -0.04768239
+    vert_correction: -0.1613382
+  - laser_id: 19
+    rot_correction: -0.01589995
+    vert_correction: -0.03089233
+  - laser_id: 20
+    rot_correction: 0.01589995
+    vert_correction: 0.04782202
+  - laser_id: 21
+    rot_correction: 0.04768239
+    vert_correction: -0.1038471
+  - laser_id: 22
+    rot_correction: 0.07937758
+    vert_correction: -0.009773844
+  - laser_id: 23
+    rot_correction: 0.1108982
+    vert_correction: 0.0842994
+  - laser_id: 24
+    rot_correction: -0.1108982
+    vert_correction: -0.05201081
+  - laser_id: 25
+    rot_correction: -0.07937758
+    vert_correction: 0.04206244
+  - laser_id: 26
+    rot_correction: -0.04768239
+    vert_correction: -0.1096067
+  - laser_id: 27
+    rot_correction: -0.01589995
+    vert_correction: -0.01553343
+  - laser_id: 28
+    rot_correction: 0.01589995
+    vert_correction: 0.06318092
+  - laser_id: 29
+    rot_correction: 0.04768239
+    vert_correction: -0.08848819
+  - laser_id: 30
+    rot_correction: 0.07937758
+    vert_correction: 0.005585053
+  - laser_id: 31
+    rot_correction: 0.1108982
+    vert_correction: 0.132296
+  - laser_id: 32
+    rot_correction: -0.1108982
+    vert_correction: -0.005934119
+  - laser_id: 33
+    rot_correction: -0.07937758
+    vert_correction: 0.09040806
+  - laser_id: 34
+    rot_correction: -0.04768239
+    vert_correction: -0.06352998
+  - laser_id: 35
+    rot_correction: -0.01589995
+    vert_correction: 0.03054326
+  - laser_id: 36
+    rot_correction: 0.01589995
+    vert_correction: -0.4363323
+  - laser_id: 37
+    rot_correction: 0.04768239
+    vert_correction: -0.0424115
+  - laser_id: 38
+    rot_correction: 0.07937758
+    vert_correction: 0.05166174
+  - laser_id: 39
+    rot_correction: 0.1108982
+    vert_correction: -0.1000074
+  - laser_id: 40
+    rot_correction: -0.1108982
+    vert_correction: 0.009424778
+  - laser_id: 41
+    rot_correction: -0.07937758
+    vert_correction: 0.1692969
+  - laser_id: 42
+    rot_correction: -0.04768239
+    vert_correction: -0.04817109
+  - laser_id: 43
+    rot_correction: -0.01589995
+    vert_correction: 0.04590216
+  - laser_id: 44
+    rot_correction: 0.01589995
+    vert_correction: -0.1335177
+  - laser_id: 45
+    rot_correction: 0.04768239
+    vert_correction: -0.0270526
+  - laser_id: 46
+    rot_correction: 0.07937758
+    vert_correction: 0.06702064
+  - laser_id: 47
+    rot_correction: 0.1108982
+    vert_correction: -0.08464847
+  - laser_id: 48
+    rot_correction: -0.1108982
+    vert_correction: 0.05550147
+  - laser_id: 49
+    rot_correction: -0.07937758
+    vert_correction: -0.09616764
+  - laser_id: 50
+    rot_correction: -0.04768239
+    vert_correction: -0.002094395
+  - laser_id: 51
+    rot_correction: -0.01589995
+    vert_correction: 0.1000074
+  - laser_id: 52
+    rot_correction: 0.01589995
+    vert_correction: -0.07504915
+  - laser_id: 53
+    rot_correction: 0.04768239
+    vert_correction: 0.01902409
+  - laser_id: 54
+    rot_correction: 0.07937758
+    vert_correction: -0.2799857
+  - laser_id: 55
+    rot_correction: 0.1108982
+    vert_correction: -0.03857177
+  - laser_id: 56
+    rot_correction: -0.1108982
+    vert_correction: 0.07086037
+  - laser_id: 57
+    rot_correction: -0.07937758
+    vert_correction: -0.08080874
+  - laser_id: 58
+    rot_correction: -0.04768239
+    vert_correction: 0.0132645
+  - laser_id: 59
+    rot_correction: -0.01589995
+    vert_correction: 0.2617994
+  - laser_id: 60
+    rot_correction: 0.01589995
+    vert_correction: -0.05969026
+  - laser_id: 61
+    rot_correction: 0.04768239
+    vert_correction: 0.03438299
+  - laser_id: 62
+    rot_correction: 0.07937758
+    vert_correction: -0.1195551
+  - laser_id: 63
+    rot_correction: 0.1108982
+    vert_correction: -0.02321288
+  - laser_id: 64
+    rot_correction: -0.1108982
+    vert_correction: -0.0980875
+  - laser_id: 65
+    rot_correction: -0.07937758
+    vert_correction: -0.004014257
+  - laser_id: 66
+    rot_correction: -0.04768239
+    vert_correction: 0.09477138
+  - laser_id: 67
+    rot_correction: -0.01589995
+    vert_correction: -0.06161012
+  - laser_id: 68
+    rot_correction: 0.01589995
+    vert_correction: 0.01710423
+  - laser_id: 69
+    rot_correction: 0.04768239
+    vert_correction: -0.3417704
+  - laser_id: 70
+    rot_correction: 0.07937758
+    vert_correction: -0.04049164
+  - laser_id: 71
+    rot_correction: 0.1108982
+    vert_correction: 0.05358161
+  - laser_id: 72
+    rot_correction: -0.1108982
+    vert_correction: -0.08272861
+  - laser_id: 73
+    rot_correction: -0.07937758
+    vert_correction: 0.01134464
+  - laser_id: 74
+    rot_correction: -0.04768239
+    vert_correction: 0.2050762
+  - laser_id: 75
+    rot_correction: -0.01589995
+    vert_correction: -0.04625123
+  - laser_id: 76
+    rot_correction: 0.01589995
+    vert_correction: 0.03246313
+  - laser_id: 77
+    rot_correction: 0.04768239
+    vert_correction: -0.124791
+  - laser_id: 78
+    rot_correction: 0.07937758
+    vert_correction: -0.02513274
+  - laser_id: 79
+    rot_correction: 0.1108982
+    vert_correction: 0.06894051
+  - laser_id: 80
+    rot_correction: -0.1108982
+    vert_correction: -0.03665191
+  - laser_id: 81
+    rot_correction: -0.07937758
+    vert_correction: 0.05742133
+  - laser_id: 82
+    rot_correction: -0.04768239
+    vert_correction: -0.09424778
+  - laser_id: 83
+    rot_correction: -0.01589995
+    vert_correction: -0.0001745329
+  - laser_id: 84
+    rot_correction: 0.01589995
+    vert_correction: 0.07853982
+  - laser_id: 85
+    rot_correction: 0.04768239
+    vert_correction: -0.0731293
+  - laser_id: 86
+    rot_correction: 0.07937758
+    vert_correction: 0.02094395
+  - laser_id: 87
+    rot_correction: 0.1108982
+    vert_correction: -0.2367539
+  - laser_id: 88
+    rot_correction: -0.1108982
+    vert_correction: -0.02129302
+  - laser_id: 89
+    rot_correction: -0.07937758
+    vert_correction: 0.07278023
+  - laser_id: 90
+    rot_correction: -0.04768239
+    vert_correction: -0.07888889
+  - laser_id: 91
+    rot_correction: -0.01589995
+    vert_correction: 0.01518436
+  - laser_id: 92
+    rot_correction: 0.01589995
+    vert_correction: 0.106116
+  - laser_id: 93
+    rot_correction: 0.04768239
+    vert_correction: -0.0577704
+  - laser_id: 94
+    rot_correction: 0.07937758
+    vert_correction: 0.03630285
+  - laser_id: 95
+    rot_correction: 0.1108982
+    vert_correction: -0.1160644
+  - laser_id: 96
+    rot_correction: -0.1108982
+    vert_correction: 0.02478367
+  - laser_id: 97
+    rot_correction: -0.07937758
+    vert_correction: -0.1805718
+  - laser_id: 98
+    rot_correction: -0.04768239
+    vert_correction: -0.03281219
+  - laser_id: 99
+    rot_correction: -0.01589995
+    vert_correction: 0.06126106
+  - laser_id: 100
+    rot_correction: 0.01589995
+    vert_correction: -0.105767
+  - laser_id: 101
+    rot_correction: 0.04768239
+    vert_correction: -0.01169371
+  - laser_id: 102
+    rot_correction: 0.07937758
+    vert_correction: 0.08237954
+  - laser_id: 103
+    rot_correction: 0.1108982
+    vert_correction: -0.06928957
+  - laser_id: 104
+    rot_correction: -0.1108982
+    vert_correction: 0.04014257
+  - laser_id: 105
+    rot_correction: -0.07937758
+    vert_correction: -0.1115265
+  - laser_id: 106
+    rot_correction: -0.04768239
+    vert_correction: -0.01745329
+  - laser_id: 107
+    rot_correction: -0.01589995
+    vert_correction: 0.07661995
+  - laser_id: 108
+    rot_correction: 0.01589995
+    vert_correction: -0.09040806
+  - laser_id: 109
+    rot_correction: 0.04768239
+    vert_correction: 0.003665191
+  - laser_id: 110
+    rot_correction: 0.07937758
+    vert_correction: 0.121824
+  - laser_id: 111
+    rot_correction: 0.1108982
+    vert_correction: -0.05393067
+  - laser_id: 112
+    rot_correction: -0.1108982
+    vert_correction: 0.0869174
+  - laser_id: 113
+    rot_correction: -0.07937758
+    vert_correction: -0.06544985
+  - laser_id: 114
+    rot_correction: -0.04768239
+    vert_correction: 0.0286234
+  - laser_id: 115
+    rot_correction: -0.01589995
+    vert_correction: -0.1457699
+  - laser_id: 116
+    rot_correction: 0.01589995
+    vert_correction: -0.04433136
+  - laser_id: 117
+    rot_correction: 0.04768239
+    vert_correction: 0.04974188
+  - laser_id: 118
+    rot_correction: 0.07937758
+    vert_correction: -0.1019272
+  - laser_id: 119
+    rot_correction: 0.1108982
+    vert_correction: -0.007853982
+  - laser_id: 120
+    rot_correction: -0.1108982
+    vert_correction: 0.1471312
+  - laser_id: 121
+    rot_correction: -0.07937758
+    vert_correction: -0.05009095
+  - laser_id: 122
+    rot_correction: -0.04768239
+    vert_correction: 0.0439823
+  - laser_id: 123
+    rot_correction: -0.01589995
+    vert_correction: -0.1076868
+  - laser_id: 124
+    rot_correction: 0.01589995
+    vert_correction: -0.02897247
+  - laser_id: 125
+    rot_correction: 0.04768239
+    vert_correction: 0.06510078
+  - laser_id: 126
+    rot_correction: 0.07937758
+    vert_correction: -0.08656833
+  - laser_id: 127
+    rot_correction: 0.1108982
+    vert_correction: 0.007504916
+num_lasers: 128
