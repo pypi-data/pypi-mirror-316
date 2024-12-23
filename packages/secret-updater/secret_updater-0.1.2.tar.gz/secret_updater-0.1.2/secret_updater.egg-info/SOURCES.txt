@@ -1,0 +1,13 @@
+LICENCE
+README.md
+pyproject.toml
+setup.py
+secret_updater/__init__.py
+secret_updater/main.py
+secret_updater/secret-updater.py
+secret_updater.egg-info/PKG-INFO
+secret_updater.egg-info/SOURCES.txt
+secret_updater.egg-info/dependency_links.txt
+secret_updater.egg-info/entry_points.txt
+secret_updater.egg-info/requires.txt
+secret_updater.egg-info/top_level.txt
