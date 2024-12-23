@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+src/jokes/__init__.py
+src/jokes/jokes.py
+src/python_template_zuppif.egg-info/PKG-INFO
+src/python_template_zuppif.egg-info/SOURCES.txt
+src/python_template_zuppif.egg-info/dependency_links.txt
+src/python_template_zuppif.egg-info/entry_points.txt
+src/python_template_zuppif.egg-info/requires.txt
+src/python_template_zuppif.egg-info/top_level.txt
+tests/test_jokes.py
