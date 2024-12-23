@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: dobletau-quant
+Version: 1.0.1
+Summary: Una API educativa y competitiva para simular estrategias cuantitativas en mercados financieros.
+Home-page: UNKNOWN
+Author: Percy Guerra
+Author-email: percy.guerra1@unmsm.edu.pe
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests >=2.20.0
+Requires-Dist: pandas >=1.0.0
+
+# DobleTau Quant
+
+dobletau-quant es una API diseÃ±ada para estudiantes universitarios que desean participar en una competencia de bots de trading en un entorno simulado. La herramienta permite desarrollar estrategias cuantitativas, simular operaciones en mercados financieros y competir con otros estudiantes mientras se aprende sobre anÃ¡lisis algorÃ­tmico, modelado financiero y automatizaciÃ³n.
+
+## InstalaciÃ³n
+
+```bash
+pip install dobletau-quant
+
+
