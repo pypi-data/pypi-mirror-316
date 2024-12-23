@@ -1,0 +1,3 @@
+[console_scripts]
+as_op_doubleweave = as_op_doubleweave.entry_points:run_as_op_doubleweave
+filter_patterns = as_op_doubleweave.entry_points:run_filter_pattern

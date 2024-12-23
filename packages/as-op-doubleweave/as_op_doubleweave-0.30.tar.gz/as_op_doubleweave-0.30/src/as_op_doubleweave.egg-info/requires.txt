@@ -1,0 +1,5 @@
+dtx_to_wif>=3.0
+
+[dev]
+pre-commit>=3.8
+pytest>=8.3
