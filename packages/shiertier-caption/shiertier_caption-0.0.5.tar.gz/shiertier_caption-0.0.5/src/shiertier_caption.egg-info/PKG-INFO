@@ -1,0 +1,100 @@
+Metadata-Version: 2.1
+Name: shiertier_caption
+Version: 0.0.5
+Summary: 一个使用智谱AI GLM4V-Flash模型进行图片描述的Python包
+Author-email: shiertier <junjietext@gmail.com>
+Project-URL: Homepage, https://github.com/shiertier_utils/shiertier_caption
+Project-URL: Documentation, https://github.com/shiertier_utils/shiertier_caption#readme
+Project-URL: Repository, https://github.com/shiertier_utils/shiertier_caption.git
+Project-URL: Issues, https://github.com/shiertier_utils/shiertier_caption/issues
+Keywords: zhipuai,glm4v,shiertier_caption,image,ai
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: zhipuai>=1.0.0
+Provides-Extra: dev
+Requires-Dist: pytest>=6.0; extra == "dev"
+Requires-Dist: pytest-cov>=2.0; extra == "dev"
+Requires-Dist: black>=22.0; extra == "dev"
+Requires-Dist: isort>=5.0; extra == "dev"
+Requires-Dist: mypy>=0.900; extra == "dev"
+Requires-Dist: build>=0.7.0; extra == "dev"
+Requires-Dist: twine>=3.4.0; extra == "dev"
+
+# shiertier_caption
+
+一个使用智谱AI GLM4V-Flash模型进行图片描述的Python包。
+
+## 安装
+
+```bash
+pip install shiertier_caption
+```
+
+## 使用方法
+
+```python
+from shiertier_caption import GLM4VFlash
+
+# 初始化客户端
+client = GLM4VFlash(api_key="your_api_key")
+
+# 使用本地图片
+response = client.prompt(
+    image_path_or_url="path/to/your/image.jpg",
+    prompt="描述这张图片"
+)
+print(response)
+
+# 使用URL图片
+response = client.prompt(
+    image_path_or_url="https://example.com/image.jpg",
+    prompt="描述这张图片",
+    is_url=True
+)
+print(response)
+```
+
+## 功能特点
+
+- 支持本地图片和URL图片
+- 简单易用的API接口
+- 自动处理base64编码
+- 完整的错误处理
+
+## API文档
+
+### GLM4VFlash类
+
+```python
+GLM4VFlash(api_key: str)
+```
+
+参数:
+- `api_key`: 智谱AI的API密钥
+
+### prompt方法
+
+```python
+prompt(image_path_or_url: str, prompt: str, is_url: bool = False) -> str
+```
+
+参数:
+- `image_path_or_url`: 图片的本地路径或URL
+- `prompt`: 关于图片的提问
+- `is_url`: 是否为URL链接，默认为False（即本地文件）
+
+返回值:
+- 返回模型的文本回答
+- 如果发生错误，返回错误信息字符串
+
+## 许可证
+
+MIT License 
