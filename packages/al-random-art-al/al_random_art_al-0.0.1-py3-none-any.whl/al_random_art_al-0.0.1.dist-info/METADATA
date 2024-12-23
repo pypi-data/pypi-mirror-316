@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: al-random-art-al
+Version: 0.0.1
+Summary: Инструменты для генерации случайных художественных элементов.
+Home-page: https://github.com/your-repo/text-game-engine
+Author: Alina&Alyona
+Author-email: alinasusenko3@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# Random Art Generator
+
+`random-art` — библиотека для генерации случайного цифрового искусства.
+
+## Возможности
+
+- Создание слоёв с элементами (шум, круги и др.).
+- Сохранение/загрузка изображений.
+- Обработка изображений с помощью тензоров.
+
+## Установка
+
+```bash
+pip install -r requirements.txt
