@@ -1,0 +1,8 @@
+yamodb/__init__.py,sha256=0vnOaUOdWS5Wu09GXLrhP0rFAybPdfgEV89T9GvKKyU,96
+yamodb/yamodb.py,sha256=P7rFO5fulq1awSnVRlAHu44Gg7FsEbuXSlWulJv_mHk,33844
+yamodb/placeholder_database/first-names.json,sha256=2zG-bHNdLlpTGT8LA_7T4_7bwSuc23924LGdOS6RhtM,54939
+yamodb/placeholder_database/middle-names.json,sha256=6x1o04jN59NqWPe-KgOotHhXRY-FZkTQyxS16liEBmI,42200
+yamodb-0.0.2.dist-info/METADATA,sha256=h9ljOhJGMpAzhCMMEvY4B8gqdORXFZj2gJBRYp72ZGQ,4253
+yamodb-0.0.2.dist-info/WHEEL,sha256=cVxcB9AmuTcXqmwrtPhNK88dr7IR_b6qagTj0UvIEbY,91
+yamodb-0.0.2.dist-info/top_level.txt,sha256=j4wWqaMj0vtCQkjDLlzRjC48EBUbsK-YUMWy4U6KYBI,7
+yamodb-0.0.2.dist-info/RECORD,,
