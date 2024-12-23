@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: impressify
+Version: 0.5
+Summary: ⏰ impressify
+Author: Andrew A Levin
+Author-email: your.email@example.com
+Requires-Python: >=3.9
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: pillow (>=11.0.0,<12.0.0)
+Description-Content-Type: text/markdown
+
+# impressify
+
+🦜 impressify
+
+
+
