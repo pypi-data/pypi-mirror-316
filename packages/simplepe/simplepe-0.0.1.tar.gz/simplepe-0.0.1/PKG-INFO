@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: simplepe
+Version: 0.0.1
+Summary: A simple simplepe for positional encoding
+Home-page: https://github.com/donglinkang2021/simplepe
+Author: Dong Linkang
+Author-email: donglinkang2021@163.com
+License: UNKNOWN
+Keywords: artificial intelligence,deep learning,positional embedding
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# SimplePE
+
+Simple implementation of some Positional Encoding methods in PyTorch.
+
+- [x] Sinusoidal Positional Encoding
+- [x] Rotary Positional Encoding
+
+## Installation
+
+```bash
+git clone https://github.com/donglinkang2021/simplepe.git
+cd simplepe
+pip install .
+```
+
+## Usage
+
+```python
+python example.py # Run the example
+```
+
+You can see the following results:
+
+| Method | Sinusoidal | Rotary |
+| ------------ | ---------- | ------ |
+| Dimension-Time_Step Heatmap | ![Sinusoidal](./images/Sinusoidal_Positional_Encoding_Heatmap.png) | ![Rotary](./images/Rotary_Positional_Encoding_Heatmap.png) |
+| Value-Time_Step Line_Plot | ![Sinusoidal](./images/Sinusoidal_Positional_Encoding_LinePlot.png) | ![Rotary](./images/Rotary_Positional_Encoding_LinePlot.png) |
+| Multi-Head Dimension-Time_Step Heatmap | ![Sinusoidal](./images/Multi-Head_Sinusoidal_Positional_Encoding_Heatmap.png) | ![Rotary](./images/Multi-Head_Rotary_Positional_Encoding_Heatmap.png) |
+| Multi-Head Value-Time_Step Line_Plot | ![Sinusoidal](./images/Multi-Head_Sinusoidal_Positional_Encoding_LinePlot.png) | ![Rotary](./images/Multi-Head_Rotary_Positional_Encoding_LinePlot.png) |
+
+
