@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.py
+blob_your_face/__init__.py
+blob_your_face/main.py
+blob_your_face.egg-info/PKG-INFO
+blob_your_face.egg-info/SOURCES.txt
+blob_your_face.egg-info/dependency_links.txt
+blob_your_face.egg-info/entry_points.txt
+blob_your_face.egg-info/requires.txt
+blob_your_face.egg-info/top_level.txt
