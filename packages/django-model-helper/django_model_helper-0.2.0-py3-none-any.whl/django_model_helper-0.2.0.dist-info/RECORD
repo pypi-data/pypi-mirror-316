@@ -1,0 +1,16 @@
+django_model_helper/__init__.py,sha256=cqLY38mY61FQi9A0y3ZxbOJWav9Znw3kuAoBHi3_2wA,45
+django_model_helper/actions.py,sha256=tKjLlCrGyqgdsp8BQbeGIbtNb9n22WuCkWF9ubXG7us,5522
+django_model_helper/admin.py,sha256=VBnoYmJ8zJ-Jb8oCdvwJlq9AFkFjgu8YznZF1ZLKwQA,2972
+django_model_helper/apps.py,sha256=WD4YSjedA4MqXl10V2mKz4cJwF0102NUzMfg5oGlkyk,168
+django_model_helper/models.py,sha256=Tok95XxnrO8WwDkEenCSmwFhLPLERkK0RS-j-8HH8lA,34338
+django_model_helper/schemas.py,sha256=DNOI848BhGjxSTaqCERs_8jtSOa1sx3u8SwQevpCUAI,2059
+django_model_helper/settings.py,sha256=HDgauvojaNXoHha-xX3KGOjvs6TRerso4sWDrj_qdj4,202
+django_model_helper/tests.py,sha256=mrbGGRNg5jwbTJtWWa7zSKdDyeB4vmgZCRc2nk6VY-g,60
+django_model_helper/version.py,sha256=w9Iw7QVvd8lme2wKwEbCo5IgetVjSfFBOOYAcA_Q0Ns,18
+django_model_helper/views.py,sha256=xc1IQHrsij7j33TUbo-_oewy3vs03pw_etpBWaMYJl0,63
+django_model_helper/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_model_helper-0.2.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+django_model_helper-0.2.0.dist-info/METADATA,sha256=FdsL-M-t2XpzWFdE_IsglX0o9T1QxjBoQVNbZsdRYk0,3767
+django_model_helper-0.2.0.dist-info/WHEEL,sha256=tZoeGjtWxWRfdplE7E3d45VPlLNQnvbKiYnx7gwAy8A,92
+django_model_helper-0.2.0.dist-info/top_level.txt,sha256=C_mTdHqihThq4lVkI3rHKvxuqyULAlt1vhudsNQk-CM,20
+django_model_helper-0.2.0.dist-info/RECORD,,
