@@ -1,0 +1,32 @@
+Metadata-Version: 2.4
+Name: syswatcher
+Version: 0.1.3
+Summary: A comprehensive system monitoring CLI tool for CPU, Memory, Disk, and Network statistics with rich ui
+Project-URL: Homepage, https://github.com/aroramrinaal/syswatcher
+Project-URL: Repository, https://github.com/aroramrinaal/syswatcher
+Project-URL: Documentation, https://github.com/aroramrinaal/syswatcher#readme
+Project-URL: Bug Tracker, https://github.com/aroramrinaal/syswatcher/issues
+Author-email: Mrinaal Arora <aroramrinaal@gmail.com>
+License: MIT
+License-File: LICENSE
+Keywords: cli,cpu,disk,memory,network,performance,system-info,system-monitoring
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: System :: Monitoring
+Classifier: Topic :: System :: Systems Administration
+Classifier: Topic :: Utilities
+Requires-Python: >=3.9
+Requires-Dist: psutil>=5.9.0
+Requires-Dist: rich>=13.0.0
+Requires-Dist: typer>=0.9.0
+Description-Content-Type: text/markdown
+
+hi

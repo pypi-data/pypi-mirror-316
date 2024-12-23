@@ -1,0 +1,4 @@
+typer
+psutil
+rich
+pytest
