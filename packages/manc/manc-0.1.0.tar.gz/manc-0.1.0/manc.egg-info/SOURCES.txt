@@ -1,0 +1,14 @@
+README.md
+setup.py
+manc/__init__.py
+manc/plugins.py
+manc/request.py
+manc/response.py
+manc/spider.py
+manc/tools.py
+manc.egg-info/PKG-INFO
+manc.egg-info/SOURCES.txt
+manc.egg-info/dependency_links.txt
+manc.egg-info/not-zip-safe
+manc.egg-info/requires.txt
+manc.egg-info/top_level.txt
