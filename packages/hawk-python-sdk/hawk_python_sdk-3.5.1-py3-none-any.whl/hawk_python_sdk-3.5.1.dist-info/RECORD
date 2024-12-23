@@ -1,0 +1,14 @@
+hawk_python_sdk/__init__.py,sha256=HdJfW_4i8gw_YRunBL63EttegLGWyh9gsZQa9Fo0whg,220
+hawk_python_sdk/core.py,sha256=RTRz890FvrOlZnlMU2A7kP_D8bFnnDuS5j7TOj9is0c,8169
+hawk_python_sdk/errors.py,sha256=vUekun6fXOknOD0S1B3hl4lfPPQtUoGdfml_YR-tDAk,83
+hawk_python_sdk/types.py,sha256=lIH3fRdcKUIeKOEUcTxLlv8bVh8FcPHJL1bpspQ0RCo,1130
+hawk_python_sdk/modules/fastapi/__init__.py,sha256=1fZ9VCvfiC2tXztBtKc_wME8pDoFsDOrhocdZ_1Sf7k,248
+hawk_python_sdk/modules/fastapi/fastapi.py,sha256=XtUGqZR5YNX3Qim3eVC-aLvFVlAOELkqotM0q5mVwXE,3355
+hawk_python_sdk/modules/fastapi/types.py,sha256=qYumylnsUin_Snvrd-YFpV52WWqBizR5NNUHi_H9gCs,621
+hawk_python_sdk/modules/flask/__init__.py,sha256=tZ9ZBYcwmRpIuWq3GjQpylvR4rYa2WjCnaUQQe5m44k,241
+hawk_python_sdk/modules/flask/flask.py,sha256=HxJg6ioHItiTE96kY5WGPmWuYWfv_85nXcTQAHfJSBo,2363
+hawk_python_sdk/modules/flask/types.py,sha256=bFClN7nKqmeRKIyOB31_0vavI4nPlf_lFEIwHW3EX38,576
+hawk_python_sdk-3.5.1.dist-info/METADATA,sha256=FRLLXRUwSjlYclVXOE52hqLFzMudNKqnhCqJ8eih5Ts,3905
+hawk_python_sdk-3.5.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+hawk_python_sdk-3.5.1.dist-info/licenses/LICENSE,sha256=mfBAWSvwQ_5xP8f85hEyy3TLfGz8gb4Myy1b6TKCoJg,1062
+hawk_python_sdk-3.5.1.dist-info/RECORD,,
