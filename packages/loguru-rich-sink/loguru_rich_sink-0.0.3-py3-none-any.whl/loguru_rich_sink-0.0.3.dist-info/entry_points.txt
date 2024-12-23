@@ -1,0 +1,2 @@
+[console_scripts]
+loguru-rich-sink = loguru_rich_sink:main
