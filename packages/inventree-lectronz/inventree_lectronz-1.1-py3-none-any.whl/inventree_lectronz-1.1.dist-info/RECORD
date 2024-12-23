@@ -1,0 +1,12 @@
+inventree_lectronz/__init__.py,sha256=lbaA_fwXz_jFsHSf9G-2ILsdXfpXhs1mmdj-URusbDE,97
+inventree_lectronz/create_sales_order.py,sha256=-_Sbd5asGDPBdNRgHndhKQKN-zJZF9vznIwx5ifOEVE,7231
+inventree_lectronz/lectronz_v1.py,sha256=TRHG39BppxqHHkUYV0AGHvRD_1M_YwMdr5x8D8KiLs0,9166
+inventree_lectronz/plugin.py,sha256=69rrO2jQBTbUi-zPjhl7h5sozL13dOoCguWqHyHlhdM,10158
+inventree_lectronz/templatetags.py,sha256=WAZHzRyKzyfrA5bJ9ekkXh2R9zaCHemKuoCvnzRcAs0,482
+inventree_lectronz/templates/lectronz_order.html,sha256=_DHApPx62TIQKMtJIaMNsHxkrWhT0jP9Kgpchr2m2ls,5748
+inventree_lectronz/templates/lectronz_product.html,sha256=V6qGlfRTwJDCcTih4hGHgsLrwtmLcZrnL2XM_A2YvI8,9138
+inventree_lectronz-1.1.dist-info/METADATA,sha256=HfECpM6zwIvBdnTq5LGVUSpwFq6xG8DMMOwEgOkT5G4,3574
+inventree_lectronz-1.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+inventree_lectronz-1.1.dist-info/entry_points.txt,sha256=mfVyWfZDL-r98VFJH3re1EoFtoPEPo5ZQQ5f38FqRv4,82
+inventree_lectronz-1.1.dist-info/licenses/LICENSE,sha256=4T-5gu3VYBepKoj1Mb6hpgZ4UZZlh-JdMLQudhiEfLI,1060
+inventree_lectronz-1.1.dist-info/RECORD,,
