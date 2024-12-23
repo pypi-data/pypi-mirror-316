@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: basicnumeriq
+Version: 0.0.2
+Summary: A simple math operations library.
+Home-page: https://github.com/furkankarakuz/basicnumeriq
+Author: furkankarakuz
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# basicnumeriq Library
+
+A simple Python library for basic math operations.
+
+## Installation
+
+You can install the library using `pip`:
+
+```bash
+pip install basicnumeriq
+```
+
+## Example Usage
+
+### Add Operation
+
+```python
+from basicnumeriq import add
+
+result = add(10, 5)
+print(result)  # Output: 15
+```
+
+### Subtract Operation
+
+```python
+from basicnumeriq import subtract
+
+result = subtract(10, 5)
+print(result)  # Output: 5
+```
+
+### Multiply Operation
+
+```python
+from basicnumeriq import multiply
+
+result = multiply(10, 5)
+print(result)  # Output: 50
+```
+
+### Divide Operation
+
+```python
+from basicnumeriq import divide
+
+result = divide(10, 5)
+print(result)  # Output: 2.0
+```
