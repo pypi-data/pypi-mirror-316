@@ -1,0 +1,2 @@
+[console_scripts]
+word-alchemist = word_alchemist.main:main
