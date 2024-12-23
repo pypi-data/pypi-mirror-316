@@ -1,0 +1,12 @@
+pycbs/ClangBuild.py,sha256=YZKHQ_CuY4utdCudWeXCRezXGKStI1U5oKziPtgEoh4,4187
+pycbs/LangSTD.py,sha256=RfkGAD9V0fg7lNVMdgTEMzQQsPD5jARvu6OYNfK-EeA,163
+pycbs/OCM.py,sha256=9ylCDGpacaMn6b1eBaFGNeZ-kJOCA02Trtm3KL127uM,759
+pycbs/Target.py,sha256=Abex9nXqCKbWzWN6BLP0G5tHmRYu2wd6mrfUMxWL3Ng,1293
+pycbs/Windows.py,sha256=aUYX6fgJSE-iy2u_m2J93-aUxrH_MTAr_-TVRoY9ONw,316
+pycbs/__init__.py,sha256=LmDaIsyWvkYVwLd4zNHbEICz4dGSYjAt-vUprkrG0u8,636
+pycbs/__main__.py,sha256=DwjBopf85X1Cv_H0qkx5Ja-zkGIAMWhkypY54Vdd3Os,1851
+pycbs-0.1.0.dist-info/LICENSE,sha256=Qv2ilebwoUtMJnRsZwRy729xS5JZQzLauJ0tQzkAkTA,1088
+pycbs-0.1.0.dist-info/METADATA,sha256=oJ2KEebiHpbUjcGqrJp-cIOVHxhFrFgofBKhfRYqwns,841
+pycbs-0.1.0.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+pycbs-0.1.0.dist-info/top_level.txt,sha256=bQnU0Y2iejrflmLmsAdoKzDMZiCx2LGAJ-I17c3eSzs,6
+pycbs-0.1.0.dist-info/RECORD,,
