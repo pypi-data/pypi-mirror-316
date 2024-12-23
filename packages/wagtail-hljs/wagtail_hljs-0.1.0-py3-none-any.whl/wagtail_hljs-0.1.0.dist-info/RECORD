@@ -1,0 +1,16 @@
+wagtail_hljs/__init__.py,sha256=kUR5RAFc7HCeiqdlX36dZOHkUI5wI6V_43RpEcD8b-0,22
+wagtail_hljs/blocks.py,sha256=RV5NaQizcdtqtcpLtYqjE69pAxniT1kReYUuDgmFnc4,2972
+wagtail_hljs/settings.py,sha256=zJfz4DIN2cN9_16fYbF_f5OM6rht1kt_TP044XVUSoU,1151
+wagtail_hljs/static/wagtail_hljs/css/wagtail-hljs-block.css,sha256=pBtxOjqjrwaMBqqJKGIbyCrGr5Zu9KHT-Lvt2bvTJxo,289
+wagtail_hljs/static/wagtail_hljs/css/wagtail-hljs-block.min.css,sha256=wro_jQWLOwybTg_wwR8DhJP8Iend9txdKp0RiDLaxdk,190
+wagtail_hljs/static/wagtail_hljs/js/wagtailhljsblock.js,sha256=n6Oc8XK1i124lWcBLZftwS3JMMhoa_I5N9uI-4RdtrU,2584
+wagtail_hljs/templates/wagtail_hljs/code_block.html,sha256=8sSJcY4HgCVAUI86bbKHaJvhKBiLXqoprJy0g9wZuU8,2392
+wagtail_hljs/templates/wagtail_hljs/code_block_form.html,sha256=NswDHlwhqWbzEBVFPWJMxVGICqq8gdDR4VMJ-S7Bhkw,1323
+wagtail_hljs/templates/wagtail_hljs/raw_code.html,sha256=YJr9kEUllGenoitpBlV0HrJRSg9RkVtS7ghi_fOm9R8,166
+wagtail_hljs/templatetags/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wagtail_hljs/templatetags/wagtail_hljs_tags.py,sha256=oczicRe9_BfEpmnnZaXLrMtW-wY9D42d1n2vBHRUWNw,806
+wagtail_hljs/wagtail_hooks.py,sha256=n3ZL4g47MUZoYxyGCaLUm59gPjKFCTfXosCICEc2UB0,992
+wagtail_hljs-0.1.0.dist-info/LICENSE,sha256=c4l6MNWVxiBH-eTbKkKO0BekXqCPq5A0t34NEWrAk8Q,1582
+wagtail_hljs-0.1.0.dist-info/METADATA,sha256=dMGnpIS3Rs4Gx_9BUB9V0zhKPF__SyGZhS1hlqudcxs,10960
+wagtail_hljs-0.1.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+wagtail_hljs-0.1.0.dist-info/RECORD,,
