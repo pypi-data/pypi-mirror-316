@@ -1,0 +1,12 @@
+readstore_cli/__init__.py,sha256=GEEXQgjECct9eCB3IExy5Xzcnth2WbspEdvcNxZEtH0,42
+readstore_cli/__version__.py,sha256=kdpe4xwe9p8FBf7xEVVeTX8CwQzS_TpX_YgKTw4s_Ng,68
+readstore_cli/readstore.py,sha256=QsGkZOiUMTGD4TILwmZtZAVdLK8Q7Hjn4BKqrpR594s,64759
+readstore_cli/rsclient.py,sha256=3vAL9GqMiLNneFJ0jQD_pH4uXE5mfMlaCNLCQP2ke5k,41168
+readstore_cli/rsconfig.py,sha256=qwNzB8qWN2LRniQqNVk9kaHPZ6sXnb8_o0DMB-4xtQQ,5871
+readstore_cli/rsexceptions.py,sha256=PFA6lKwERvLpXUfgYR5WCeUQRziJDx8NOlFMb7wSNNQ,843
+readstore_cli-1.2.0.dist-info/LICENSE,sha256=cZYV8WRrf6hTPism_ask1Hxwbbtx2JvizekRbRFRoOc,22529
+readstore_cli-1.2.0.dist-info/METADATA,sha256=Um4qG6Rpo1ymRLlDrku_nlOYpFoB8fdLV6HFqk-D9U4,25005
+readstore_cli-1.2.0.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+readstore_cli-1.2.0.dist-info/entry_points.txt,sha256=VWdkeP_5xqvD-hhlBkAjzQ1G91aw2MySda_nrIQBYUU,59
+readstore_cli-1.2.0.dist-info/top_level.txt,sha256=5OPkCHKinZIiOQxXIHYpniPNozntUjJUq8FIc1SkHpI,14
+readstore_cli-1.2.0.dist-info/RECORD,,
