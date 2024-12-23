@@ -1,0 +1,30 @@
+# pandashare
+
+Sharing data focused on financial AI.
+
+## Installation
+
+You can install this package via pip:
+
+pip install pandashare
+
+pip install pandashare --upgrade
+
+
+## Usage
+
+```python
+from pandashare import greet
+
+print(greet('World'))
+
+import pandashare as ps
+print(ps.__version__)
+ps.set_token('your token here')
+pro = ps.pro_api()
+
+pro = ps.pro_api('your token')
+df = ps.pro_bar(ps_code='000001.SZ',freq='5min', start_date='2023-01-04 09:00:00', end_date='2024-02-05 17:00:00',limit=5000)
+print(df)
+
+
