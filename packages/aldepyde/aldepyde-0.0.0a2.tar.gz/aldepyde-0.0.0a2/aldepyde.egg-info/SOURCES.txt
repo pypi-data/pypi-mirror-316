@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+aldepyde/__init__.py
+aldepyde/_config.py
+aldepyde.egg-info/PKG-INFO
+aldepyde.egg-info/SOURCES.txt
+aldepyde.egg-info/dependency_links.txt
+aldepyde.egg-info/top_level.txt
