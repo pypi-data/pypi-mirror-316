@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+jokes/__init__.py
+jokes/jokes.py
+python_library_template.egg-info/PKG-INFO
+python_library_template.egg-info/SOURCES.txt
+python_library_template.egg-info/dependency_links.txt
+python_library_template.egg-info/requires.txt
+python_library_template.egg-info/top_level.txt
+tests/test_jokes.py

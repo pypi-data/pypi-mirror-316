@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: python-library-template
+Version: 0.1.0
+Summary: Add your description here
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+Requires-Dist: requests>=2.32.3
+
+
+## Getting started
+
+### Installation
+
+To set it up and run
+
+```bash
+uv venv
+uv sync
+```
+Then
+
+```bash
+python main.py
+```
+
+Will output a random joke
+
+```
+Why did the cow in the pasture get promoted at work? ...  Because he is OUT-STANDING in his field!
+```
+
+### Linting
+
+```
+ruff check
+```
+
+
+### Formatting
+
+```
+ruff format
+```
