@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+setup.py
+exorcism/__init__.py
+exorcism/main.py
+exorcism.egg-info/PKG-INFO
+exorcism.egg-info/SOURCES.txt
+exorcism.egg-info/dependency_links.txt
+exorcism.egg-info/top_level.txt
