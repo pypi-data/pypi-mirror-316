@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: django-app-metadata
+Version: 0.1.0
+Summary: Django数据字典管理应用。
+Author: rRR0VrFP
+Maintainer: rRR0VrFP
+License: Apache License, Version 2.0
+Keywords: django-app-metadata,django
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# django-app-metadata
+
+Django数据字典管理应用。
+
+## 安装
+
+```shell
+pip install django-app-metadata
+```
+
+## 使用
+
+*app/views.py*
+
+```python
+from django_app_metadata.models import Config
+
+def get_config(request):
+    key = reqeust.GET.get("key")
+    value = Config.get(key, default=None, default_published=True, frontend_flag=True)
+    return value
+```
+
+## 版本记录
+
+### v0.1.0
+
+- 版本首发。
+- 数据字典管理。
+- 数据字典获取支持缓存。
