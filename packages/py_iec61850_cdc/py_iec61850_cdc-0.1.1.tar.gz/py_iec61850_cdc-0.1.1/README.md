@@ -1,0 +1,158 @@
+# py-iec61850-cdc
+
+This library provides IEC 61850 common data classes conforming to the requirements
+of IEC 61850-7-3 Ed. 2.1 2020-02 as Python objects for use in Python code.  It also
+provides serialization to JSON for the objects.
+
+IEC 61850-7-2 object / type support is limited to only those types required to support
+IEC 61850-7-3 objects.  This may be extended in the future.
+
+The intended purpose is to extend PNNL's Volttron (https://volttron.org/) platform
+to allow IEC 61850-style data on the message bus, historians, etc.  Many utility-class
+SCADA platforms already do this inherently (and also support 61850 protocols). This
+is an attempt to align with that level of SCADA quality.
+
+## Usage
+
+The intended usage is to invoke objects in Pythonic servers, such as:
+- Modbus (https://github.com/pymodbus-dev/pymodbus),
+- Modbus TK (https://github.com/ljean/modbus-tk),
+- DNP3 (https://github.com/ChargePoint/pydnp3), or
+- IEC 61850 (https://github.com/arthurzas/py61850).
+
+Following polling, objects can be created in the IEC types and distributed using JSON over
+a message bus, via an API, etc., while still retaining their IEC member structure.
+
+This can also be used to provide commands via RPC.  Upon receipt of a py_iec61850_cdc type,
+a service (e.g. Volttron Agent), can determine if that point exists and then modify it.
+
+This makes for a much easier approach to constructing and sending point commands.  The server
+is the only party that really needs to understand the internal implementation of the point name
+and the callers don't care about the server-specific implementation.  They need only "change this
+point" by sending one of the command points to the server.
+
+The library will also provide a factory function to take JSON and properly deliver back an
+appropriate type from the library.  This allows servers to receive a message and act very simply.
+
+```
+from py_iec61850_cdc import INS
+```
+
+## Searching for Objects / Attributes
+
+Objects are sorted within the library based on logical usage, and annotated with IEC standard
+and clause numbers, to allow them to be found by users.
+
+For platforms with grep:
+```
+grep <IEC clause #> src/py_iec61850_cdc/*
+grep '6.2.4.2' src/py_iec61850_cdc/*
+```
+```
+grep <IEC class name> src/py_iec61850_cdc/*
+grep 'APC' src/py_iec61850_cdc/*
+```
+
+Caution should be used by users to go and read the object definition before using objects.
+This library replaces CamelCase attribute names with underscored_naming as per PEP8.
+
+Some attribute names had to be changed due to conflict with Python internal naming, such as 'maximum' to 'maximum_value'.
+
+'range' is changed to 'range_v' wherever it is used.
+```
+# Can't do this.  'range' is a protected name in Python.
+MV.range
+# Use this instead:
+MV.range_v
+```
+
+'min' and 'max' are changed to 'minimum' and 'maximum' wherever they are used.
+```
+# Can't do this:
+SV.min
+SV.max
+# Use this instead:
+SV.minimum
+SV.maximum
+```
+
+## Usage of Pydantic
+
+Pydantic forms a foundation for this library, as IEC 61850-7-3 is a typed dataset.  Python is great
+because there is no typing.  However, it's also awful because there is no typing.  There is risk of
+interaction with implementations where these datatypes get misused without obeying the constraints
+expressed in the IEC standards.  As a result, py_iec61850_cdc enforces the typing, sizes, etc. using
+Pydantic.
+
+Catching validation errors in Python code using this library should follow Pydantic rules, such as:
+```
+try:
+    some_code()
+except ValidationError as exc:
+    print(repr(exc.errors()[0]['type']))
+```
+
+Some behaviors to be implemented later using Pydantic "after" model validation, include:
+- appropriately updating point quality in response to exceeding configured ranges,
+- appropriately updating timestamps, or
+- appropriately updating mag based on instmag and db.
+
+For model export, aliases are defined using the CamelCase approach of IEC 61850, to allow it to interact
+with conformant services that are expecting the naming contained in IEC 61850.
+
+Optional fields are utilized to address the optional versus mandatory behavior in the IEC standards.
+Use the ```exclude_none=True``` parameter when dumping json for transport to lower network content.
+
+Example of dumping an object to JSON:
+```
+import json
+from py_iec61850_cdc import HMV
+
+my_HMV_object = HMV()
+
+json_message = my_HMV_object.model_dump_json(exclude_none=True)
+json_loaded = json.loads(json_message)
+print(json.dumps(json_loaded, indent=4))
+```
+
+Example of loading an object from JSON:
+```
+import json
+from py_iec61850_cdc import factory, HMV
+
+json_message = '''
+    {
+        "cdcName" : "HMV"
+    }
+'''
+
+my_HMV_object = factory.factory_json(json_message)
+
+print(my_HMV_object)
+```
+
+## cdcName / dataNS - Not Really Optional
+For the best function of this library, the cdcName and dataNS have not been made optional (which
+does not strictly comply with the standard).  The reason is simple: when objects are serialized
+to a text-based format, cdcName gives a method of addressing which object is being inspected.  This
+is useful for APIs, which is a big part of the intent of this library.
+
+Because the intent is to allow Volttron's VIP message bus (or any other API) to exchange these
+objects as JSON, a way to de-serialize is necessary - cdcName is thus critical.  dataNS is provided
+because it is essentially the basis of the standard already (i.e. the library is based on a specific
+version of IEC 61850).
+
+## To Do List
+
+Project progress is tracked here: [To Do](TODO.md)
+
+## Developers
+This library is set up to use the Hatch build tool.  It also uses the ruff linter (preferred by
+Hatch) and pytest.
+```
+hatch fmt        # runs ruff linter
+hatch test --all # runs all the version tests
+```
+
+Add a git pre-commit hook that runs ```hatch test --all```
+

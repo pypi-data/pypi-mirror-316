@@ -1,0 +1,68 @@
+[project]
+name = "py_iec61850_cdc"
+version = "0.1.1"
+authors = [
+  {name = "Kyle Hawkings", email = "kyle.hawkings@gmail.com"},
+]
+description = "A package for Pythonic IEC 61850-7-3 common data classes."
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+  "Topic :: Scientific/Engineering",
+  "Topic :: Software Development :: Libraries :: Python Modules",
+  "Programming Language :: Python :: 3 :: Only",
+  "License :: OSI Approved :: Apache Software License",
+  "Framework :: Pydantic :: 2"
+]
+dependencies = [
+  "pydantic>=2.0"
+]
+
+[project.urls]
+Homepage = "https://codeberg.org/khawkings/py_iec61850_cdc"
+Issues = "https://codeberg.org/khawkings/py_iec61850_cdc/issues"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.sdist]
+exclude = [
+  "/docs"
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/py_iec61850_cdc"]
+
+[tool.hatch.envs.test]
+dependencies = [
+  "pytest"
+]
+
+[[tool.hatch.envs.test.matrix]]
+python = ["3.9", "3.10", "3.11"]
+version = ["0.1.1"]
+
+[tool.ruff]
+extend-exclude = ["tests"]
+ignore = ["UP007", "TCH001", "N801"]
+# Ignore UP007 and TCH001 because Pydantic uses type annotations to do real work.
+# Ignore N801 because certain IEC types use all caps for object names.
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = [
+  "-ra -q",
+  "--import-mode=importlib",
+  "--ignore=bin/",
+  "--ignore=lib/",
+  "--ignore=lib64/",
+  "--ignore=include/"
+]
+pythonpath = [
+  "src"
+]
+testpaths = [
+  "tests"
+]
+
