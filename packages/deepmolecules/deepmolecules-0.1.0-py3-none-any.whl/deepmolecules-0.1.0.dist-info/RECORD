@@ -1,0 +1,14 @@
+deepmolecules/__init__.py,sha256=b8LBP6b2V2w6lH4ZUOoqvPmWljU0pxZt96Bq7bW-vX0,434
+deepmolecules/_chem.py,sha256=OOzz-_t6LavkhfRaqbkGrC4u6z_oVhZzks1glkJQibE,1592
+deepmolecules/_download.py,sha256=sNKSH_iN0nKZI51AGW015harNKQSBRhUH-XbgS9Xpng,2196
+deepmolecules/_shared_paths.py,sha256=1acHoUkACr0mRpxabZW_kR1CmOY_wRSHictv0D-2TzA,690
+deepmolecules/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+deepmolecules/kcat/__init__.py,sha256=sIZaoXhyN6elmT17yZ26cLlT3coIvgut8SBzVwXOeFs,8137
+deepmolecules/kcat/_paths.py,sha256=_nA_JlU7D9Yq-8TUJK_4qUNDEoKmaNnin9e8a2qriMc,2291
+deepmolecules/km/__init__.py,sha256=gnc1vPARtoPEHFwG_6kew-9LG_nk5KR_YSTWLr5zrJk,18795
+deepmolecules/km/_constants.py,sha256=6vng0GwzusQbosa43gQoaHS4Xk6_EVXmFivwS6RA3Yc,6693
+deepmolecules/km/_paths.py,sha256=sAgWxUi2v3_jS1jgrBfFr1kbRtUvlC1WkVXZEPRhNsg,2161
+deepmolecules-0.1.0.dist-info/METADATA,sha256=PMKb2BZdC2Jko_UUD-Eac2VpHxEER1fD0pGxBd9wfkk,44086
+deepmolecules-0.1.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+deepmolecules-0.1.0.dist-info/licenses/LICENSE,sha256=-nvPRjs3yKK6FFz9NRm0hIMMqpTKk16GCG6Usm6LFTs,34973
+deepmolecules-0.1.0.dist-info/RECORD,,
