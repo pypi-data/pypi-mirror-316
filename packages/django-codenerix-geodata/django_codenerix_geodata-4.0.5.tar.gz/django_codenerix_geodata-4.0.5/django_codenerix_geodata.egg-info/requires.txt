@@ -1,0 +1,2 @@
+django_codenerix
+django_codenerix_extensions
