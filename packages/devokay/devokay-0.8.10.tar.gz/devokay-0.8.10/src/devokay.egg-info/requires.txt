@@ -1,0 +1,10 @@
+requests
+oss2
+tabulate
+cachetools
+diskcache
+paramiko
+chardet
+flask
+pycryptodome
+ply
