@@ -1,0 +1,8 @@
+completescraper/__init__.py,sha256=AuaFB6_V60MRGdpoHZ5uHy3507IANZ2RdlXUGF-6oFw,77
+completescraper/http_session/__init__.py,sha256=9LSJOO03O4Ftn6jvpRUhrJ6cdSIRmEg59DsGixMK5mU,64
+completescraper/http_session/enums.py,sha256=2tvuDwtbjbZF5l015n0rPi7G_R5CgVV2i7k0UDckjLo,1215
+completescraper/http_session/http_session.py,sha256=dG7csXAQYLWeUjBAK7mgm7OxQkQdD014du1buasIuzA,2791
+completescraper-0.1.0.dist-info/METADATA,sha256=nabgHpvKsGQB3oyPVaid0gjQwI7lCyzX8CnJks3W33c,640
+completescraper-0.1.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+completescraper-0.1.0.dist-info/licenses/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+completescraper-0.1.0.dist-info/RECORD,,
