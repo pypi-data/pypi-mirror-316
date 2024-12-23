@@ -1,0 +1,55 @@
+[tool.poetry]
+name = "nhl-calendar"
+version = "0.0.0"
+description = "Simple program to display the current week's games and generate iCal files to add a team's schedule to your calendar"
+authors = ["Dave Brown <dave.brown@exit107.com>"]
+readme = "README.md"
+packages = [{include = "nhl_calendar"}]
+
+[tool.black]
+line-length = 80
+
+[tool.poetry.dependencies]
+python = "^3.10"
+requests = "^2.32.3"
+flask = "^3.1.0"
+types-requests = "^2.32.0.20241016"
+pytz = "^2024.2"
+datetype = "^2024.2.28"
+python-dateutil = "^2.9.0.post0"
+types-python-dateutil = "^2.9.0.20241206"
+types-pytz = "^2024.2.0.20241003"
+ical = "^8.2.0"
+gunicorn = "^23.0.0"
+
+
+[tool.poetry.group.dev.dependencies]
+ipython = "^8.30.0"
+ipdb = "^0.13.13"
+black = "^24.10.0"
+
+
+[tool.poetry-dynamic-versioning]
+enable = true
+vcs = "git"
+style = "semver"
+bump = false
+
+[build-system]
+requires = ["poetry-core>=1.0.0", "poetry-dynamic-versioning>=1.0.0,<2.0.0"]
+build-backend = "poetry_dynamic_versioning.backend"
+
+# TODO: Spend some more time thinking about how to integrate this into the appVersion in the helm chart
+# For now, let's just update it when we're ready to tag and release
+# This is to update the appVersion in the helm chart. 
+# I kind of want this idea to bake a bit before I commit to this approach.
+#[tool.poetry-dynamic-versioning.files."deploy/helm/nhl-calendar/Chart.yaml"]
+#persistent-substitution = true
+#
+#[tool.poetry-dynamic-versioning.substitution]
+#files = ["*.py", "*/__init__.py", "*/__version__.py", "*/_version.py", "deploy/helm/nhl-calendar/Chart.yaml"]
+#patterns = [
+#    '''(^__version__\s*(?::.*?)?=\s*['"])[^'"]*(['"])''',
+#    { value = '''(^__version_tuple__\s*(?::.*?)?=\s*\()[^)]*(\))''', mode = "tuple" },
+#    '''(^appVersion\s*(?::.*?)?\s*['"])[^'"]*(['"])''',
+#]
