@@ -1,0 +1,2 @@
+[console_scripts]
+unicontract = __main__:main
