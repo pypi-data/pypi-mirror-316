@@ -1,0 +1,6 @@
+postgreconnection/__init__.py,sha256=M1HPoNrZnhd3zOIQyYO1YXGBeA22ZXmi6BeSccg5774,6
+postgreconnection/databaseop.py,sha256=UF4BTZiyyjox2q219a3woa3LSuaWbnVpvUAUx7-5n1s,1698
+my_database_package-0.1.dist-info/METADATA,sha256=D97DqhdhvpemsvN0miRq_DScFgY3PoPWdnE712YV03E,370
+my_database_package-0.1.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+my_database_package-0.1.dist-info/top_level.txt,sha256=1877FYcyHnEciziBT67lb5G9uvXEas4l3X3iOHi24HQ,18
+my_database_package-0.1.dist-info/RECORD,,
