@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+dau_interface.egg-info/PKG-INFO
+dau_interface.egg-info/SOURCES.txt
+dau_interface.egg-info/dependency_links.txt
+dau_interface.egg-info/top_level.txt
