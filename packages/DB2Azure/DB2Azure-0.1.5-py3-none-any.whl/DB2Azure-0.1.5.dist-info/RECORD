@@ -1,0 +1,10 @@
+db2azure/__init__.py,sha256=WBBvF4-QYlp42mKT_xhjJ-bFCKE760TNLOTg2cWxnyo,101
+db2azure/postgre_loader/__init__.py,sha256=hiqyW2My1ntE3bwFmJpThGS8euwEPs_dddhqAlVM6fU,41
+db2azure/postgre_loader/postgre_loader.py,sha256=6ol-npdAWlkmtrq0tDOGTM9F0gJXlFVV_CfdYvmUDPs,3400
+db2azure/sql_loader/__init__.py,sha256=jsBCEng4jj-qHvq0UVNXt3Iyi7YdIze97rJZqOVZYR4,33
+db2azure/sql_loader/sql_loader.py,sha256=cWsYxb7EbvGsxnf883GtKUQ8C9ZcibG45L9T9jZ3TVE,3353
+DB2Azure-0.1.5.dist-info/LICENSE,sha256=zzZXdRzt5Wo7YVRmQbG8n9uH4muHJXd6vH01A9RrqOo,1064
+DB2Azure-0.1.5.dist-info/METADATA,sha256=WMt2MkQNltF9aa2fsGCVBIn6VLe7MEQWEoKALl1vkC0,7732
+DB2Azure-0.1.5.dist-info/WHEEL,sha256=tZoeGjtWxWRfdplE7E3d45VPlLNQnvbKiYnx7gwAy8A,92
+DB2Azure-0.1.5.dist-info/top_level.txt,sha256=LIMuPapJhlduZZ2AxmXtYRDyjPFPhkO0ykBCMdnq5Wc,9
+DB2Azure-0.1.5.dist-info/RECORD,,
