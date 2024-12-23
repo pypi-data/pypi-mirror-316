@@ -1,0 +1,67 @@
+Metadata-Version: 2.1
+Name: hi-gcp-utils
+Version: 1.0.0
+Summary: GCP Utilities for BigQuery
+Home-page: https://github.com/jinwenliu/gcp-utils
+Author: JJ L
+Author-email: jliu5277@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: google-cloud-bigquery
+Requires-Dist: google-cloud-storage
+Requires-Dist: pandas
+Requires-Dist: pandas-gbq
+Requires-Dist: pyarrow
+
+# GCP Utils
+
+A Python package for interacting with Google BigQuery, providing easy-to-use utilities for data operations.
+
+## Installation
+
+```bash
+pip install hi-gcp-utils
+```
+
+## Usage
+
+```python
+from gcp_utils import BigQueryClient
+
+# Initialize the client
+client = BigQueryClient(
+    project_id="your-project-id",
+    dataset_id="your-dataset-id"
+)
+
+# Set your credentials
+client.set_key_file("path/to/your/credentials.json")
+
+# Example: Query data
+df = client.sql2df("SELECT * FROM your_table LIMIT 10")
+```
+
+## Features
+
+- Easy BigQuery table operations
+- DataFrame integration with pandas
+- Secure credential management
+- Table schema modifications
+- Data transfer utilities
+
+## Requirements
+
+- Python >= 3.6
+- google-cloud-bigquery
+- google-cloud-storage
+- pandas
+- pandas-gbq
+- pyarrow
+
+## License
+
+This project is licensed under the MIT License.
