@@ -1,0 +1,2 @@
+recursive-include ipregion ip2region.xdb
+exclude ipregion/ip.db3
