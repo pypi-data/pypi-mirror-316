@@ -1,0 +1,126 @@
+source:
+  system_version: 4
+  public_url: https://b2.tethys-ts.xyz/file
+  output_path: /home/mike/cache/test
+  # output_path: /output
+  # results_version:
+  #   version_date: '2022-05-01'
+  stn_data:
+    Flow:
+      public_url: https://b2.tethys-ts.xyz/file
+      bucket: ecan-env-monitoring
+      dataset_id: '8d4afa6c8e82d91b81879c12'
+      version: 4
+    Water Level:
+      public_url: https://b2.tethys-ts.xyz/file
+      bucket: ecan-env-monitoring
+      dataset_id: '4297b060aa49016530779246'
+      version: 4
+    Rainfall:
+      public_url: https://b2.tethys-ts.xyz/file
+      bucket: ecan-env-monitoring
+      dataset_id: 'c3a09c8a5da175897916e8e8'
+      version: 4
+  # sites:
+  #   Flow: ['66401']
+  #   Water Level: ['66402']
+  #   Rainfall: ['219510', '219910', '320010']
+  #   Rainfall: ['219910']
+
+  data_url:
+    Rainfall: http://data.ecan.govt.nz/data/78/Rainfall/Rainfall%20for%20individual%20site/CSV?SiteNo={ref}&Period={period}&zip=1
+    Water Level: http://data.ecan.govt.nz/data/79/Water/River%20stage%20flow%20data%20for%20individual%20site/CSV?SiteNo={ref}&Period={period}&StageFlow=River%20Stage&zip=1
+    Flow: http://data.ecan.govt.nz/data/79/Water/River%20stage%20flow%20data%20for%20individual%20site/CSV?SiteNo={ref}&Period={period}&StageFlow=River%20Flow&zip=1
+
+  # period: 1_Week
+  # period: 2_Days
+
+  datasets:
+    # Flow:
+    #   - feature: waterway
+    #     parameter: streamflow
+    #     method: sensor_recording
+    #     product_code: raw_data
+    #     owner: Environment Canterbury
+    #     aggregation_statistic: mean
+    #     frequency_interval: '1H'
+    #     utc_offset: '0H'
+    #     units: m^3/s
+    #     license: https://creativecommons.org/licenses/by/4.0/
+    #     result_type: time_series
+    #     cf_standard_name: water_volume_transport_in_river_channel
+    #     precision: 0.0001
+    #     attribution: Data licenced by Environment Canterbury
+    #     chunk_parameters:
+    #       block_length: 0
+    #       time_interval: 7300
+    #     properties:
+    #       encoding:
+    #         streamflow:
+    #           scale_factor: 0.0001
+    #           dtype: int32
+    #           _FillValue: -9999
+
+    Rainfall:
+      - feature: atmosphere
+        parameter: precipitation
+        method: sensor_recording
+        product_code: raw_data
+        owner: Environment Canterbury
+        aggregation_statistic: cumulative
+        frequency_interval: '1H'
+        utc_offset: '0H'
+        units: mm
+        license: https://creativecommons.org/licenses/by/4.0/
+        result_type: time_series
+        cf_standard_name: precipitation_amount
+        precision: 0.1
+        attribution: Data licenced by Environment Canterbury
+        chunk_parameters:
+          block_length: 0
+          time_interval: 7300
+        properties:
+          encoding:
+            precipitation:
+              scale_factor: 0.1
+              dtype: int16
+              _FillValue: -99
+
+    # Water Level:
+    #   - feature: waterway
+    #     parameter: gage_height
+    #     method: sensor_recording
+    #     product_code: raw_data
+    #     owner: Environment Canterbury
+    #     aggregation_statistic: mean
+    #     frequency_interval: '1H'
+    #     utc_offset: '0H'
+    #     units: m
+    #     license: https://creativecommons.org/licenses/by/4.0/
+    #     result_type: time_series
+    #     cf_standard_name: water_surface_height_above_reference_datum
+    #     precision: 0.001
+    #     attribution: Data licenced by Environment Canterbury
+    #     chunk_parameters:
+    #       block_length: 0
+    #       time_interval: 7300
+    #     properties:
+    #       encoding:
+    #         gage_height:
+    #           scale_factor: 0.001
+    #           dtype: int16
+    #           _FillValue: -9999
+
+remote:
+  email:
+    sender_address: noreply@tethys-ts.xyz
+    sender_password: tethys-bot
+    receiver_address: mullenkamp1@gmail.com
+    smtp_server: mail.tethys-ts.xyz
+  s3:
+    connection_config:
+      service_name: 's3'
+      endpoint_url: https://s3.us-west-002.backblazeb2.com
+      aws_access_key_id: 00203ccd53f4ded0000000027
+      aws_secret_access_key: K002ZPROthp6CWl/ttvgNxI1Q+WKSnQ
+    bucket: typhon
