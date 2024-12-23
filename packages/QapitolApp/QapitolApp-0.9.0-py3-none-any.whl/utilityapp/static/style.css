@@ -1,0 +1,207 @@
+/* Import Poppins font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* Reset some basic styles */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Poppins', sans-serif; /* Changed font to Poppins */
+    font-size: 18px;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header styling */
+header {
+    background-color: #007BFF; /* Changed color to blue */
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header nav {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Container styling */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 100px); /* Adjust for header and footer */
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    border-radius: 10px;
+}
+
+/* Logo styling */
+.logo {
+    margin-bottom: 20px;
+}
+
+.logo-img {
+    width: 300px;  /* Increased size to 100% more */
+    height: auto;
+}
+
+/* Form styling */
+form {
+    margin: 20px 0;
+}
+
+input[type="file"] {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+select {
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+/* Upload button styling */
+.upload-btn {
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Changed color to green */
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.upload-btn:hover {
+    background-color: #45a049; /* Darker green for hover */
+}
+
+/* Error message styling */
+.error-message {
+    color: red;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: #333;
+}
+
+/* Styling the current file section */
+.current-file {
+    margin-top: 20px;
+}
+
+.delete-btn {
+    padding: 10px 20px;
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.delete-btn:hover {
+    background-color: darkred;
+}
+
+/* Styling the DONE button */
+.done-btn {
+    padding: 10px 20px;
+    background-color: #007BFF; /* Changed color to blue */
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.done-btn:hover {
+    background-color: #0056b3; /* Darker blue for hover */
+}
+
+/* Back link styling */
+.back-link {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007BFF; /* Changed color to blue */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.back-link:hover {
+    background-color: #0056b3; /* Darker blue for hover */
+}
+
+/* Footer styling */
+footer {
+    background-color: #007BFF; /* Changed color to blue */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Popup styling */
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.popup-content button {
+    padding: 10px 20px;
+    background-color: #007BFF; /* Changed color to blue */
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.popup-content button:hover {
+    background-color: #0056b3; /* Darker blue for hover */
+}

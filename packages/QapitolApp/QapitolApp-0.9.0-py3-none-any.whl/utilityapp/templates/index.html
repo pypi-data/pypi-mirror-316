@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Upload</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script>
+        function showPopup() {
+            // Show the popup
+            document.getElementById('popup').style.display = 'block';
+        }
+
+        function closePopup() {
+            // Hide the popup and refresh the page
+            document.getElementById('popup').style.display = 'none';
+            window.location.href = "{{ url_for('index') }}";
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('index') }}">Home</a></li>
+                <li><a href="{{ url_for('index') }}">Done</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="logo">
+            <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo" class="logo-img">
+        </div>
+        <h2>Dashboard Utility</h2>
+        <p>Please upload in correct format or download from <a href="https://www.google.com/">here</a>.</p>
+
+        {% if error_message %}
+            <div class="error-message">
+                <p>{{ error_message }}</p>
+            </div>
+        {% endif %}
+
+        <form action="{{ url_for('index') }}" method="POST" enctype="multipart/form-data">
+            <input type="file" name="file" required class="file-input">
+            
+            <!-- Dropdown menu with label -->
+            <label for="qapitol-clients">Qapitol-Clients:</label>
+            <select name="Qapitol-Clients" id="qapitol-clients" class="dropdown">
+                <option value="Grey-Orange">Grey-Orange</option>
+                <option value="HDFC">HDFC</option>
+                <option value="JSW">JSW</option>
+                <option value="abc">abc</option>
+                <option value="def">def</option>
+                <option value="ghi">ghi</option>
+            </select>
+            
+            <button type="submit" class="upload-btn">Upload</button>
+        </form>
+
+        {% if filename %}
+            <div class="current-file">
+                <h3>Current File: {{ filename }}</h3>
+                <form action="{{ url_for('delete_file', filename=filename) }}" method="POST">
+                    <button type="submit" class="delete-btn">Delete File</button>
+                </form>
+
+                <button class="done-btn" onclick="showPopup()">Process</button>
+            </div>
+        {% endif %}
+    </div>
+    <footer>
+        <p>&copy; 2023 Qapitol QA. All rights reserved.</p>
+    </footer>
+
+    <!-- Popup -->
+    <div id="popup" class="popup" style="display: none;">
+        <div class="popup-content">
+            <p>Upload process successful!</p>
+            <button onclick="closePopup()">OK</button>
+        </div>
+    </div>
+</body>
+</html>
