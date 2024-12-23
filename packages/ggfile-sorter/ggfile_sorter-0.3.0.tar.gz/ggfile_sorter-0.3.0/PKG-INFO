@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: ggfile-sorter
+Version: 0.3.0
+Summary: A library for sorting files based on their extensions, size, or date.
+Author: Nikita
+Author-email: firi8228@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+
+This library allows you to sort files in a directory by their type (e.g., images, documents, audio files) or by their size or modification date.
