@@ -1,0 +1,2 @@
+[console_scripts]
+blob_your_face = blob_your_face.main:main
