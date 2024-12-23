@@ -1,0 +1,40 @@
+2024-12-20 13:43:44,350 - Loan Extractor - WARNING - Aucun tableau d'ammortissement n'a pu etre trouve avec l'entete similaire a :
+TERME;INTERETS;ASSURANCES;COMMISSIONS;AMORTISSEMENTS;MONTANT ECHEANCE;CAPITAL RESTANT DU;ELEMENTS CAPITALISES;SOMMES TOTALES RESTANT DUES
+2024-12-20 14:42:31,075 - Loan Extractor - WARNING - Aucun tableau d'ammortissement n'a pu etre trouve avec l'entete similaire a :
+TERME;INTERETS;ASSURANCES;COMMISSIONS;AMORTISSEMENTS;MONTANT ECHEANCE;CAPITAL RESTANT DU;ELEMENTS CAPITALISES;SOMMES TOTALES RESTANT DUES
+2024-12-20 16:52:52,586 - Loan Extractor - WARNING - Aucun tableau d'ammortissement n'a pu etre trouve avec l'entete similaire a :
+TERME;INTERETS;ASSURANCES;COMMISSIONS;AMORTISSEMENTS;MONTANT ECHEANCE;CAPITAL RESTANT DU;ELEMENTS CAPITALISES;SOMMES TOTALES RESTANT DUES
+2024-12-22 11:51:57,308 - Loan Extractor - WARNING - Aucun tableau d'ammortissement n'a pu etre trouve avec l'entete similaire a :
+TERME;INTERETS;ASSURANCES;COMMISSIONS;AMORTISSEMENTS;MONTANT ECHEANCE;CAPITAL RESTANT DU;ELEMENTS CAPITALISES;SOMMES TOTALES RESTANT DUES
+2024-12-22 11:57:17,194 - Loan Extractor - WARNING - Aucun tableau d'ammortissement n'a pu etre trouve avec l'entete similaire a :
+TERME;INTERETS;ASSURANCES;COMMISSIONS;AMORTISSEMENTS;MONTANT ECHEANCE;CAPITAL RESTANT DU;ELEMENTS CAPITALISES;SOMMES TOTALES RESTANT DUES
+2024-12-22 12:02:49,562 - Loan Extractor - WARNING - Aucun tableau d'ammortissement n'a pu etre trouve avec l'entete similaire a :
+TERME;INTERETS;ASSURANCES;COMMISSIONS;AMORTISSEMENTS;MONTANT ECHEANCE;CAPITAL RESTANT DU;ELEMENTS CAPITALISES;SOMMES TOTALES RESTANT DUES
+2024-12-22 12:52:23,041 - Loan Extractor - WARNING - Aucun tableau d'ammortissement n'a pu etre trouve avec l'entete similaire a :
+TERME;INTERETS;ASSURANCES;COMMISSIONS;AMORTISSEMENTS;MONTANT ECHEANCE;CAPITAL RESTANT DU;ELEMENTS CAPITALISES;SOMMES TOTALES RESTANT DUES
+2024-12-22 13:12:31,233 - Loan Extractor - ERROR - Exception occured in <function measure_time_async.<locals>.inner at 0x71115a1ada80> : get_text_and_tables_from_pdf() missing 2 required positional arguments: 'extract_tables' and 'max_pages' 
+Traceback (most recent call last):
+  File "/home/jacques/works/RevolutionAI/Core/Libs-python/src/lxf/services/try_safe.py", line 5, in try_safe_execute_async
+    result= await func(**kargs)
+            ^^^^^^^^^^^^^^^^^^^
+  File "/home/jacques/works/RevolutionAI/Core/Libs-python/src/lxf/services/measure_time.py", line 26, in inner
+    result = await func(*arg,**kwargs)
+                   ^^^^^^^^^^^^^^^^^^^
+TypeError: get_text_and_tables_from_pdf() missing 2 required positional arguments: 'extract_tables' and 'max_pages'
+2024-12-22 13:12:32,887 - Loan Extractor - ERROR - Exception occured in <function measure_time_async.<locals>.inner at 0x71115a1ada80> : get_text_and_tables_from_pdf() missing 2 required positional arguments: 'extract_tables' and 'max_pages' 
+Traceback (most recent call last):
+  File "/home/jacques/works/RevolutionAI/Core/Libs-python/src/lxf/services/try_safe.py", line 5, in try_safe_execute_async
+    result= await func(**kargs)
+            ^^^^^^^^^^^^^^^^^^^
+  File "/home/jacques/works/RevolutionAI/Core/Libs-python/src/lxf/services/measure_time.py", line 26, in inner
+    result = await func(*arg,**kwargs)
+                   ^^^^^^^^^^^^^^^^^^^
+TypeError: get_text_and_tables_from_pdf() missing 2 required positional arguments: 'extract_tables' and 'max_pages'
+2024-12-22 13:15:43,278 - Loan Extractor - WARNING - Aucun tableau d'ammortissement n'a pu etre trouve avec l'entete similaire a :
+TERME;INTERETS;ASSURANCES;COMMISSIONS;AMORTISSEMENTS;MONTANT ECHEANCE;CAPITAL RESTANT DU;ELEMENTS CAPITALISES;SOMMES TOTALES RESTANT DUES
+2024-12-22 13:48:42,933 - Loan Extractor - WARNING - Aucun tableau d'ammortissement n'a pu etre trouve avec l'entete similaire a :
+TERME;INTERETS;ASSURANCES;COMMISSIONS;AMORTISSEMENTS;MONTANT ECHEANCE;CAPITAL RESTANT DU;ELEMENTS CAPITALISES;SOMMES TOTALES RESTANT DUES
+2024-12-23 11:03:14,369 - Loan Extractor - WARNING - Aucun tableau d'ammortissement n'a pu etre trouve avec l'entete similaire a :
+TERME;INTERETS;ASSURANCES;COMMISSIONS;AMORTISSEMENTS;MONTANT ECHEANCE;CAPITAL RESTANT DU;ELEMENTS CAPITALISES;SOMMES TOTALES RESTANT DUES
+2024-12-23 11:31:46,714 - Loan Extractor - WARNING - Aucun tableau d'ammortissement n'a pu etre trouve avec l'entete similaire a :
+TERME;INTERETS;ASSURANCES;COMMISSIONS;AMORTISSEMENTS;MONTANT ECHEANCE;CAPITAL RESTANT DU;ELEMENTS CAPITALISES;SOMMES TOTALES RESTANT DUES

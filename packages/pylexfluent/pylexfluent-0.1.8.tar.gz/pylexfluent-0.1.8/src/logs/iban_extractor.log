@@ -1,0 +1,72 @@
+2024-12-22 10:29:01,639 - iban extractor - ERROR - Exception occured in <bound method IbanAnalyzer.do_analyze of <lxf.extractors.finance.ibans.iban_analyzer.IbanAnalyzer object at 0x71c8a5d2bf80>> : 'coroutine' object has no attribute 'get' 
+Traceback (most recent call last):
+  File "/home/jacques/works/RevolutionAI/Core/Libs-python/src/lxf/services/try_safe.py", line 5, in try_safe_execute_async
+    result= await func(**kargs)
+            ^^^^^^^^^^^^^^^^^^^
+  File "/home/jacques/works/RevolutionAI/Core/Libs-python/src/lxf/extractors/finance/ibans/iban_analyzer.py", line 104, in check_ibans
+    validation, error_msg = self.check_validations_helper(res_json)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jacques/works/RevolutionAI/Core/Libs-python/src/lxf/extractors/finance/ibans/iban_analyzer.py", line 74, in check_validations_helper
+    return result.get("validation"), result.get("error_msg")
+           ^^^^^^^^^^
+AttributeError: 'coroutine' object has no attribute 'get'
+2024-12-22 10:30:12,709 - iban extractor - ERROR - Exception occured in <bound method IbanAnalyzer.do_analyze of <lxf.extractors.finance.ibans.iban_analyzer.IbanAnalyzer object at 0x786951751970>> : 'coroutine' object has no attribute 'get' 
+Traceback (most recent call last):
+  File "/home/jacques/works/RevolutionAI/Core/Libs-python/src/lxf/services/try_safe.py", line 5, in try_safe_execute_async
+    result= await func(**kargs)
+            ^^^^^^^^^^^^^^^^^^^
+  File "/home/jacques/works/RevolutionAI/Core/Libs-python/src/lxf/extractors/finance/ibans/iban_analyzer.py", line 104, in check_ibans
+    validation, error_msg = self.check_validations_helper(res_json)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jacques/works/RevolutionAI/Core/Libs-python/src/lxf/extractors/finance/ibans/iban_analyzer.py", line 74, in check_validations_helper
+    return result.get("validation"), result.get("error_msg")
+           ^^^^^^^^^^
+AttributeError: 'coroutine' object has no attribute 'get'
+2024-12-22 10:32:54,643 - iban extractor - ERROR - Exception occured in <bound method IbanAnalyzer.do_analyze of <lxf.extractors.finance.ibans.iban_analyzer.IbanAnalyzer object at 0x7935a94b20c0>> : 'coroutine' object has no attribute 'get' 
+Traceback (most recent call last):
+  File "/home/jacques/works/RevolutionAI/Core/Libs-python/src/lxf/services/try_safe.py", line 5, in try_safe_execute_async
+    result= await func(**kargs)
+            ^^^^^^^^^^^^^^^^^^^
+  File "/home/jacques/works/RevolutionAI/Core/Libs-python/src/lxf/extractors/finance/ibans/iban_analyzer.py", line 105, in check_ibans
+    validation, error_msg = self.check_validations_helper(res_json)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jacques/works/RevolutionAI/Core/Libs-python/src/lxf/extractors/finance/ibans/iban_analyzer.py", line 75, in check_validations_helper
+    return result.get("validation"), result.get("error_msg")
+           ^^^^^^^^^^
+AttributeError: 'coroutine' object has no attribute 'get'
+2024-12-22 10:51:52,478 - iban extractor - ERROR - Exception occured in <bound method IbanAnalyzer.do_analyze of <lxf.extractors.finance.ibans.iban_analyzer.IbanAnalyzer object at 0x798487f1eb70>> : 'coroutine' object has no attribute 'get' 
+Traceback (most recent call last):
+  File "/home/jacques/works/RevolutionAI/Core/Libs-python/src/lxf/services/try_safe.py", line 5, in try_safe_execute_async
+    result= await func(**kargs)
+            ^^^^^^^^^^^^^^^^^^^
+  File "/home/jacques/works/RevolutionAI/Core/Libs-python/src/lxf/extractors/finance/ibans/iban_analyzer.py", line 105, in check_ibans
+    validation, error_msg = self.check_validations_helper(res_json)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jacques/works/RevolutionAI/Core/Libs-python/src/lxf/extractors/finance/ibans/iban_analyzer.py", line 74, in check_validations_helper
+    return result.get("validation"), result.get("error_msg")
+           ^^^^^^^^^^
+AttributeError: 'coroutine' object has no attribute 'get'
+2024-12-22 10:54:03,972 - iban extractor - ERROR - Exception occured in <bound method IbanAnalyzer.do_analyze of <lxf.extractors.finance.ibans.iban_analyzer.IbanAnalyzer object at 0x717adbca0110>> : 'coroutine' object has no attribute 'get' 
+Traceback (most recent call last):
+  File "/home/jacques/works/RevolutionAI/Core/Libs-python/src/lxf/services/try_safe.py", line 5, in try_safe_execute_async
+    result= await func(**kargs)
+            ^^^^^^^^^^^^^^^^^^^
+  File "/home/jacques/works/RevolutionAI/Core/Libs-python/src/lxf/extractors/finance/ibans/iban_analyzer.py", line 106, in check_ibans
+    validation, error_msg = self.check_validations_helper(res_json)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jacques/works/RevolutionAI/Core/Libs-python/src/lxf/extractors/finance/ibans/iban_analyzer.py", line 75, in check_validations_helper
+    return result.get("validation"), result.get("error_msg")
+           ^^^^^^^^^^
+AttributeError: 'coroutine' object has no attribute 'get'
+2024-12-22 10:58:21,212 - iban extractor - ERROR - Exception occured in <bound method IbanAnalyzer.do_analyze of <lxf.extractors.finance.ibans.iban_analyzer.IbanAnalyzer object at 0x793bf870b050>> : Queue.get() takes 1 positional argument but 2 were given 
+Traceback (most recent call last):
+  File "/home/jacques/works/RevolutionAI/Core/Libs-python/src/lxf/services/try_safe.py", line 5, in try_safe_execute_async
+    result= await func(**kargs)
+            ^^^^^^^^^^^^^^^^^^^
+  File "/home/jacques/works/RevolutionAI/Core/Libs-python/src/lxf/extractors/finance/ibans/iban_analyzer.py", line 106, in check_ibans
+    validation, error_msg = self.check_validations_helper(res_json)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jacques/works/RevolutionAI/Core/Libs-python/src/lxf/extractors/finance/ibans/iban_analyzer.py", line 73, in check_validations_helper
+    result:dict[bool,str]= queue.get(True)
+                           ^^^^^^^^^^^^^^^
+TypeError: Queue.get() takes 1 positional argument but 2 were given

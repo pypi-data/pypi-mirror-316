@@ -1,0 +1,100 @@
+2024-12-20 11:24:52,634 - MulticlassClassificationJupiterModel - DEBUG - No GPU found
+2024-12-20 11:24:55,108 - MulticlassClassificationJupiterModel - DEBUG - prediction = b'Finance_Banque_BPOP-PRET' with an accuracy of 89.07 %
+2024-12-20 11:24:55,108 - MulticlassClassificationJupiterModel - DEBUG - prediction = b'Finance_Facture_Fournisseur' with an accuracy of 0.00 %
+2024-12-20 11:24:55,108 - MulticlassClassificationJupiterModel - DEBUG - prediction = b'Finance_Banque_Mandat-Creancier' with an accuracy of 0.00 %
+2024-12-20 11:24:55,108 - MulticlassClassificationJupiterModel - DEBUG - prediction = b'Finance_Banque_Releve' with an accuracy of 0.04 %
+2024-12-20 11:24:55,108 - MulticlassClassificationJupiterModel - DEBUG - prediction = b'Finance_Facture_Honoraire' with an accuracy of 0.02 %
+2024-12-20 11:24:55,108 - MulticlassClassificationJupiterModel - DEBUG - prediction = b'Finance_Facture_Client' with an accuracy of 0.02 %
+2024-12-20 11:24:55,108 - MulticlassClassificationJupiterModel - DEBUG - prediction = b'Finance_Facture_Banque' with an accuracy of 0.00 %
+2024-12-20 11:24:55,108 - MulticlassClassificationJupiterModel - DEBUG - prediction = b'Finance_Banque_Mandat-Pr\xc3\xa9l\xc3\xa8vement' with an accuracy of 0.00 %
+2024-12-20 11:24:55,108 - MulticlassClassificationJupiterModel - DEBUG - prediction = b'Juridique_Acte_Vente' with an accuracy of 2.67 %
+2024-12-20 11:24:55,109 - MulticlassClassificationJupiterModel - DEBUG - prediction = b'Juridique_Acte_Certificat-Urbanisme' with an accuracy of 0.00 %
+2024-12-20 11:24:55,109 - MulticlassClassificationJupiterModel - DEBUG - prediction = b'Finance_Banque_PRET' with an accuracy of 8.13 %
+2024-12-20 11:24:55,109 - MulticlassClassificationJupiterModel - DEBUG - prediction = b'Administratif_Ursaff_D\xc3\xa9claration-Sociale-Nominative' with an accuracy of 0.01 %
+2024-12-20 11:24:55,109 - MulticlassClassificationJupiterModel - DEBUG - prediction = b'Courrier_LRAR_Accuse' with an accuracy of 0.00 %
+2024-12-20 11:24:55,109 - MulticlassClassificationJupiterModel - DEBUG - prediction = b'Finance_Banque_IBAN-RIB' with an accuracy of 0.00 %
+2024-12-20 11:24:55,109 - MulticlassClassificationJupiterModel - DEBUG - prediction = b'Juridique_Acte_Procuration' with an accuracy of 0.02 %
+2024-12-20 11:24:55,109 - MulticlassClassificationJupiterModel - DEBUG - prediction = b'Familles_Administratif_EHF' with an accuracy of 0.00 %
+2024-12-20 11:24:55,109 - MulticlassClassificationJupiterModel - DEBUG - prediction = b'Administratif_Etat-Civil_Actes' with an accuracy of 0.00 %
+2024-12-20 11:24:55,109 - MulticlassClassificationJupiterModel - DEBUG - prediction = b'Finance_Banque_Appel-de-Fond' with an accuracy of 0.00 %
+2024-12-20 11:24:55,109 - MulticlassClassificationJupiterModel - DEBUG - prediction = b'Juridique_Contrat_Accord-Confidentialit\xc3\xa9' with an accuracy of 0.00 %
+2024-12-20 11:24:55,109 - MulticlassClassificationJupiterModel - DEBUG - prediction = b'Technique_Expertise_Diagnostique' with an accuracy of 0.00 %
+2024-12-20 11:24:55,109 - MulticlassClassificationJupiterModel - DEBUG - prediction = b'Juridique_Statut_KBis' with an accuracy of 0.00 %
+2024-12-20 11:24:55,109 - MulticlassClassificationJupiterModel - DEBUG - prediction = b'Administratif_Etat-Civil_CNI' with an accuracy of 0.00 %
+2024-12-20 11:24:55,109 - MulticlassClassificationJupiterModel - DEBUG - prediction = b'Finance_Banque_AOP' with an accuracy of 0.00 %
+2024-12-20 11:24:55,109 - MulticlassClassificationJupiterModel - DEBUG - prediction = b'Juridique_Statut_Soci\xc3\xa9t\xc3\xa9' with an accuracy of 0.01 %
+2024-12-20 11:24:55,109 - MulticlassClassificationJupiterModel - DEBUG - prediction = b'Juridique_Convention_Honoraire' with an accuracy of 0.01 %
+2024-12-20 11:24:55,109 - MulticlassClassificationJupiterModel - DEBUG - prediction = b'Juridique_Acte_Certificat Urbanisme' with an accuracy of 0.00 %
+2024-12-20 11:24:55,110 - MulticlassClassificationJupiterModel - DEBUG - Best prediction  = b'Finance_Banque_BPOP-PRET' with an accuracy of 89.07 %
+2024-12-20 13:40:24,488 - MulticlassClassificationJupiterModel - DEBUG - No GPU found
+2024-12-20 13:40:26,928 - MulticlassClassificationJupiterModel - DEBUG - Best prediction  = b'Finance_Banque_BPOP-PRET' with an accuracy of 96.41 %
+2024-12-20 13:43:37,511 - MulticlassClassificationJupiterModel - DEBUG - No GPU found
+2024-12-20 13:43:39,974 - MulticlassClassificationJupiterModel - DEBUG - Best prediction  = b'Finance_Banque_BPOP-PRET' with an accuracy of 96.41 %
+2024-12-20 14:42:24,239 - MulticlassClassificationJupiterModel - DEBUG - No GPU found
+2024-12-20 14:42:26,699 - MulticlassClassificationJupiterModel - DEBUG - Best prediction  = b'Finance_Banque_BPOP-PRET' with an accuracy of 96.41 %
+2024-12-20 16:52:45,811 - MulticlassClassificationJupiterModel - DEBUG - No GPU found
+2024-12-20 16:52:48,210 - MulticlassClassificationJupiterModel - DEBUG - Best prediction  = b'Finance_Banque_BPOP-PRET' with an accuracy of 96.41 %
+2024-12-22 09:29:38,117 - MulticlassClassificationJupiterModel - DEBUG - No GPU found
+2024-12-22 09:29:41,234 - MulticlassClassificationJupiterModel - DEBUG - Best prediction  = Finance_Banque_IBAN-RIB with an accuracy of 99.62 %
+2024-12-22 09:33:05,632 - MulticlassClassificationJupiterModel - DEBUG - No GPU found
+2024-12-22 09:33:08,733 - MulticlassClassificationJupiterModel - DEBUG - Best prediction  = Finance_Banque_IBAN-RIB with an accuracy of 99.62 %
+2024-12-22 10:28:38,512 - MulticlassClassificationJupiterModel - DEBUG - No GPU found
+2024-12-22 10:28:41,599 - MulticlassClassificationJupiterModel - DEBUG - Best prediction  = Finance_Banque_IBAN-RIB with an accuracy of 99.62 %
+2024-12-22 10:29:52,392 - MulticlassClassificationJupiterModel - DEBUG - No GPU found
+2024-12-22 10:29:55,471 - MulticlassClassificationJupiterModel - DEBUG - Best prediction  = Finance_Banque_IBAN-RIB with an accuracy of 99.62 %
+2024-12-22 10:32:24,051 - MulticlassClassificationJupiterModel - DEBUG - No GPU found
+2024-12-22 10:32:27,090 - MulticlassClassificationJupiterModel - DEBUG - Best prediction  = Finance_Banque_IBAN-RIB with an accuracy of 99.62 %
+2024-12-22 10:35:20,200 - MulticlassClassificationJupiterModel - DEBUG - No GPU found
+2024-12-22 10:35:23,327 - MulticlassClassificationJupiterModel - DEBUG - Best prediction  = Finance_Banque_IBAN-RIB with an accuracy of 99.62 %
+2024-12-22 10:39:47,483 - MulticlassClassificationJupiterModel - DEBUG - No GPU found
+2024-12-22 10:39:50,573 - MulticlassClassificationJupiterModel - DEBUG - Best prediction  = Finance_Banque_IBAN-RIB with an accuracy of 99.62 %
+2024-12-22 10:45:05,929 - MulticlassClassificationJupiterModel - DEBUG - No GPU found
+2024-12-22 10:45:08,990 - MulticlassClassificationJupiterModel - DEBUG - Best prediction  = Finance_Banque_IBAN-RIB with an accuracy of 99.62 %
+2024-12-22 10:51:36,151 - MulticlassClassificationJupiterModel - DEBUG - No GPU found
+2024-12-22 10:51:39,200 - MulticlassClassificationJupiterModel - DEBUG - Best prediction  = Finance_Banque_IBAN-RIB with an accuracy of 99.62 %
+2024-12-22 10:53:08,983 - MulticlassClassificationJupiterModel - DEBUG - No GPU found
+2024-12-22 10:53:12,027 - MulticlassClassificationJupiterModel - DEBUG - Best prediction  = Finance_Banque_IBAN-RIB with an accuracy of 99.62 %
+2024-12-22 10:57:38,597 - MulticlassClassificationJupiterModel - DEBUG - No GPU found
+2024-12-22 10:57:41,647 - MulticlassClassificationJupiterModel - DEBUG - Best prediction  = Finance_Banque_IBAN-RIB with an accuracy of 99.62 %
+2024-12-22 10:59:41,399 - MulticlassClassificationJupiterModel - DEBUG - No GPU found
+2024-12-22 10:59:44,496 - MulticlassClassificationJupiterModel - DEBUG - Best prediction  = Finance_Banque_IBAN-RIB with an accuracy of 99.62 %
+2024-12-22 11:46:51,407 - MulticlassClassificationJupiterModel - DEBUG - No GPU found
+2024-12-22 11:46:54,522 - MulticlassClassificationJupiterModel - DEBUG - Best prediction  = Finance_Banque_IBAN-RIB with an accuracy of 99.62 %
+2024-12-22 11:47:53,710 - MulticlassClassificationJupiterModel - DEBUG - No GPU found
+2024-12-22 11:47:56,874 - MulticlassClassificationJupiterModel - DEBUG - Best prediction  = Finance_Banque_IBAN-RIB with an accuracy of 99.62 %
+2024-12-22 11:51:37,579 - MulticlassClassificationJupiterModel - DEBUG - No GPU found
+2024-12-22 11:51:40,713 - MulticlassClassificationJupiterModel - DEBUG - Best prediction  = Finance_Banque_IBAN-RIB with an accuracy of 99.62 %
+2024-12-22 11:51:52,334 - MulticlassClassificationJupiterModel - DEBUG - No GPU found
+2024-12-22 11:51:52,678 - MulticlassClassificationJupiterModel - DEBUG - Best prediction  = Finance_Banque_BPOP-PRET with an accuracy of 96.41 %
+2024-12-22 11:56:57,654 - MulticlassClassificationJupiterModel - DEBUG - No GPU found
+2024-12-22 11:57:00,737 - MulticlassClassificationJupiterModel - DEBUG - Best prediction  = Finance_Banque_IBAN-RIB with an accuracy of 99.62 %
+2024-12-22 11:57:12,228 - MulticlassClassificationJupiterModel - DEBUG - No GPU found
+2024-12-22 11:57:12,574 - MulticlassClassificationJupiterModel - DEBUG - Best prediction  = Finance_Banque_BPOP-PRET with an accuracy of 96.41 %
+2024-12-22 12:02:29,254 - MulticlassClassificationJupiterModel - DEBUG - No GPU found
+2024-12-22 12:02:32,494 - MulticlassClassificationJupiterModel - DEBUG - Best prediction  = Finance_Banque_IBAN-RIB with an accuracy of 99.62 %
+2024-12-22 12:02:44,531 - MulticlassClassificationJupiterModel - DEBUG - No GPU found
+2024-12-22 12:02:44,883 - MulticlassClassificationJupiterModel - DEBUG - Best prediction  = Finance_Banque_BPOP-PRET with an accuracy of 96.41 %
+2024-12-22 12:52:02,374 - MulticlassClassificationJupiterModel - DEBUG - No GPU found
+2024-12-22 12:52:05,537 - MulticlassClassificationJupiterModel - DEBUG - Best prediction  = Finance_Banque_IBAN-RIB with an accuracy of 99.62 %
+2024-12-22 12:52:17,551 - MulticlassClassificationJupiterModel - DEBUG - No GPU found
+2024-12-22 12:52:17,914 - MulticlassClassificationJupiterModel - DEBUG - Best prediction  = Finance_Banque_BPOP-PRET with an accuracy of 96.41 %
+2024-12-22 13:12:16,638 - MulticlassClassificationJupiterModel - DEBUG - No GPU found
+2024-12-22 13:12:19,826 - MulticlassClassificationJupiterModel - DEBUG - Best prediction  = Finance_Banque_IBAN-RIB with an accuracy of 99.62 %
+2024-12-22 13:12:30,887 - MulticlassClassificationJupiterModel - DEBUG - No GPU found
+2024-12-22 13:12:31,228 - MulticlassClassificationJupiterModel - DEBUG - Best prediction  = Finance_Banque_BPOP-PRET with an accuracy of 96.41 %
+2024-12-22 13:15:23,415 - MulticlassClassificationJupiterModel - DEBUG - No GPU found
+2024-12-22 13:15:26,578 - MulticlassClassificationJupiterModel - DEBUG - Best prediction  = Finance_Banque_IBAN-RIB with an accuracy of 99.62 %
+2024-12-22 13:15:38,162 - MulticlassClassificationJupiterModel - DEBUG - No GPU found
+2024-12-22 13:15:38,504 - MulticlassClassificationJupiterModel - DEBUG - Best prediction  = Finance_Banque_BPOP-PRET with an accuracy of 96.41 %
+2024-12-22 13:48:22,743 - MulticlassClassificationJupiterModel - DEBUG - No GPU found
+2024-12-22 13:48:26,107 - MulticlassClassificationJupiterModel - DEBUG - Best prediction  = Finance_Banque_IBAN-RIB with an accuracy of 99.62 %
+2024-12-22 13:48:37,516 - MulticlassClassificationJupiterModel - DEBUG - No GPU found
+2024-12-22 13:48:37,889 - MulticlassClassificationJupiterModel - DEBUG - Best prediction  = Finance_Banque_BPOP-PRET with an accuracy of 96.41 %
+2024-12-23 11:02:56,024 - MulticlassClassificationJupiterModel - DEBUG - No GPU found
+2024-12-23 11:02:58,778 - MulticlassClassificationJupiterModel - DEBUG - Best prediction  = Finance_Banque_IBAN-RIB with an accuracy of 99.62 %
+2024-12-23 11:03:09,541 - MulticlassClassificationJupiterModel - DEBUG - No GPU found
+2024-12-23 11:03:09,869 - MulticlassClassificationJupiterModel - DEBUG - Best prediction  = Finance_Banque_BPOP-PRET with an accuracy of 96.41 %
+2024-12-23 11:31:28,470 - MulticlassClassificationJupiterModel - DEBUG - No GPU found
+2024-12-23 11:31:31,172 - MulticlassClassificationJupiterModel - DEBUG - Best prediction  = Finance_Banque_IBAN-RIB with an accuracy of 99.62 %
+2024-12-23 11:31:41,906 - MulticlassClassificationJupiterModel - DEBUG - No GPU found
+2024-12-23 11:31:42,231 - MulticlassClassificationJupiterModel - DEBUG - Best prediction  = Finance_Banque_BPOP-PRET with an accuracy of 96.41 %

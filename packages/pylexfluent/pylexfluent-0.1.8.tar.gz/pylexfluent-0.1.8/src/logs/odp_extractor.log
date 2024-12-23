@@ -1,0 +1,41 @@
+2024-12-22 11:51:52,683 - odp_extractor - DEBUG - Demande extraction de donnees pour data/ODP_Hortensias.pdf
+2024-12-22 11:51:57,309 - odp_extractor - DEBUG - Extraction de donnees different de None ? True
+2024-12-22 11:57:12,579 - odp_extractor - DEBUG - Demande extraction de donnees pour data/ODP_Hortensias.pdf
+2024-12-22 11:57:17,194 - odp_extractor - DEBUG - Extraction de donnees different de None ? True
+2024-12-22 12:02:44,888 - odp_extractor - DEBUG - Demande extraction de donnees pour data/ODP_Hortensias.pdf
+2024-12-22 12:02:49,562 - odp_extractor - DEBUG - Extraction de donnees different de None ? True
+2024-12-22 12:52:17,920 - odp_extractor - DEBUG - Demande extraction de donnees pour data/ODP_Hortensias.pdf
+2024-12-22 12:52:23,041 - odp_extractor - DEBUG - Extraction de donnees different de None ? True
+2024-12-22 13:12:31,233 - odp_extractor - DEBUG - Demande extraction de donnees pour data/ODP_Hortensias.pdf
+2024-12-22 13:12:31,234 - odp_extractor - ERROR - Exception occured in <bound method measure_time_async.<locals>.inner of <lxf.extractors.finance.loans.loan_extractor.LoanDataExtractor object at 0x711236bf7ec0>> : cannot unpack non-iterable NoneType object 
+Traceback (most recent call last):
+  File "/home/jacques/works/RevolutionAI/Core/Libs-python/src/lxf/services/try_safe.py", line 5, in try_safe_execute_async
+    result= await func(**kargs)
+            ^^^^^^^^^^^^^^^^^^^
+  File "/home/jacques/works/RevolutionAI/Core/Libs-python/src/lxf/services/measure_time.py", line 26, in inner
+    result = await func(*arg,**kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jacques/works/RevolutionAI/Core/Libs-python/src/lxf/extractors/finance/loans/loan_extractor.py", line 2371, in extract_data
+    text,found_tables = await try_safe_execute_async(logger,get_text_and_tables_from_pdf,filename=self.filename)
+    ^^^^^^^^^^^^^^^^^
+TypeError: cannot unpack non-iterable NoneType object
+2024-12-22 13:12:32,887 - odp_extractor - ERROR - Exception occured in <bound method measure_time_async.<locals>.inner of <lxf.extractors.finance.loans.loan_extractor.LoanDataExtractor object at 0x711236ab9b20>> : cannot unpack non-iterable NoneType object 
+Traceback (most recent call last):
+  File "/home/jacques/works/RevolutionAI/Core/Libs-python/src/lxf/services/try_safe.py", line 5, in try_safe_execute_async
+    result= await func(**kargs)
+            ^^^^^^^^^^^^^^^^^^^
+  File "/home/jacques/works/RevolutionAI/Core/Libs-python/src/lxf/services/measure_time.py", line 26, in inner
+    result = await func(*arg,**kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jacques/works/RevolutionAI/Core/Libs-python/src/lxf/extractors/finance/loans/loan_extractor.py", line 2371, in extract_data
+    text,found_tables = await try_safe_execute_async(logger,get_text_and_tables_from_pdf,filename=self.filename)
+    ^^^^^^^^^^^^^^^^^
+TypeError: cannot unpack non-iterable NoneType object
+2024-12-22 13:15:38,509 - odp_extractor - DEBUG - Demande extraction de donnees pour data/ODP_Hortensias.pdf
+2024-12-22 13:15:43,279 - odp_extractor - DEBUG - Extraction de donnees different de None ? True
+2024-12-22 13:48:37,896 - odp_extractor - DEBUG - Demande extraction de donnees pour data/ODP_Hortensias.pdf
+2024-12-22 13:48:42,934 - odp_extractor - DEBUG - Extraction de donnees different de None ? True
+2024-12-23 11:03:09,874 - odp_extractor - DEBUG - Demande extraction de donnees pour data/ODP_Hortensias.pdf
+2024-12-23 11:03:14,370 - odp_extractor - DEBUG - Extraction de donnees different de None ? True
+2024-12-23 11:31:42,236 - odp_extractor - DEBUG - Demande extraction de donnees pour data/ODP_Hortensias.pdf
+2024-12-23 11:31:46,715 - odp_extractor - DEBUG - Extraction de donnees different de None ? True

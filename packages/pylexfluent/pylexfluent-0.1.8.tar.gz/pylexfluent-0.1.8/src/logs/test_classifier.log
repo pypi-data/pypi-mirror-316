@@ -1,0 +1,33 @@
+2024-12-22 09:03:52,982 - test classifier - ERROR - Exception occured in <function measure_time_async.<locals>.inner at 0x7a8392ff5080> : [Errno 2] No such file or directory: 'data/RIB maman.pdf' 
+Traceback (most recent call last):
+  File "/home/jacques/works/RevolutionAI/Core/Libs-python/src/lxf/services/try_safe.py", line 5, in try_safe_execute_async
+    result= await func(**kargs)
+            ^^^^^^^^^^^^^^^^^^^
+  File "/home/jacques/works/RevolutionAI/Core/Libs-python/src/lxf/services/measure_time.py", line 26, in inner
+    result = await func(*arg,**kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jacques/works/RevolutionAI/Core/Libs-python/src/lxf/services/pdf.py", line 109, in get_text_and_tables_from_pdf
+    with pdfplumber.open(filename) as pdf:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jacques/.local/share/virtualenvs/src-Q-3AUKoU/lib/python3.12/site-packages/pdfplumber/pdf.py", line 92, in open
+    stream = open(path_or_fp, "rb")
+             ^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'data/RIB maman.pdf'
+2024-12-22 09:05:11,045 - test classifier - ERROR - Exception occured in <function measure_time_async.<locals>.inner at 0x758350be9080> : [Errno 2] No such file or directory: 'data/RIB mamam.pdf' 
+Traceback (most recent call last):
+  File "/home/jacques/works/RevolutionAI/Core/Libs-python/src/lxf/services/try_safe.py", line 5, in try_safe_execute_async
+    result= await func(**kargs)
+            ^^^^^^^^^^^^^^^^^^^
+  File "/home/jacques/works/RevolutionAI/Core/Libs-python/src/lxf/services/measure_time.py", line 26, in inner
+    result = await func(*arg,**kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jacques/works/RevolutionAI/Core/Libs-python/src/lxf/services/pdf.py", line 109, in get_text_and_tables_from_pdf
+    with pdfplumber.open(filename) as pdf:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jacques/.local/share/virtualenvs/src-Q-3AUKoU/lib/python3.12/site-packages/pdfplumber/pdf.py", line 92, in open
+    stream = open(path_or_fp, "rb")
+             ^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'data/RIB mamam.pdf'
+2024-12-22 09:10:04,721 - test classifier - WARNING - Aucune prediction trouvee
+2024-12-22 09:18:10,439 - test classifier - WARNING - Aucune prediction trouvee
+2024-12-22 09:20:56,501 - test classifier - WARNING - Aucune prediction trouvee
