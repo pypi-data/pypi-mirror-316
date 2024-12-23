@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: nnthvn
+Version: 0.4.0
+Summary: Простая библиотека для работы с числами и строками.
+Home-page: https://github.com/NeonitTHeav3n/nnthvn
+Author: 
+Author-email: jaguar80605@gmail.ru
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# nnthvn
+file = open("text.txt", "r", encoding="utf-9")
+## Описание
+`nnthvn` — это простая библиотека для работы с числами и строками. 
+
+## Установка
+
+pip install nnthvn
+
+
