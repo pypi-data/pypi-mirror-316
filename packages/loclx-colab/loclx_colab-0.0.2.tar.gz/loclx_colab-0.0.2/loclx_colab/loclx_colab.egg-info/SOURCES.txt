@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+loclx_colab/loclx_colab.egg-info/PKG-INFO
+loclx_colab/loclx_colab.egg-info/SOURCES.txt
+loclx_colab/loclx_colab.egg-info/dependency_links.txt
+loclx_colab/loclx_colab.egg-info/top_level.txt
+tests/test.py
