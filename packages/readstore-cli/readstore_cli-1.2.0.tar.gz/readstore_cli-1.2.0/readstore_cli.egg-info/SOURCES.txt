@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+requirements.txt
+setup.py
+docs/readme.md
+readstore_cli/__init__.py
+readstore_cli/__version__.py
+readstore_cli/readstore.py
+readstore_cli/rsclient.py
+readstore_cli/rsconfig.py
+readstore_cli/rsexceptions.py
+readstore_cli.egg-info/PKG-INFO
+readstore_cli.egg-info/SOURCES.txt
+readstore_cli.egg-info/dependency_links.txt
+readstore_cli.egg-info/entry_points.txt
+readstore_cli.egg-info/requires.txt
+readstore_cli.egg-info/top_level.txt
