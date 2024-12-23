@@ -1,0 +1,2 @@
+[console_scripts]
+valtdb-cli = valtdb.cli:main
