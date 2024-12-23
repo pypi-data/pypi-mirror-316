@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: my_database_package
+Version: 0.1
+Summary: A package to query data from a PostgreSQL database
+Home-page: https://github.com/yourusername/my_database_package
+Author: Your Name
+Author-email: your_email@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: pg8000
