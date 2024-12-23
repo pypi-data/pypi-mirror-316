@@ -1,0 +1,11 @@
+weeklyresearchdigest/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+weeklyresearchdigest/config.env,sha256=Z87AwwIDORyv3skUdPBNEpuW9ro2himRtY0WXqFKFTg,209
+weeklyresearchdigest/config.py,sha256=MJSt4iUKyAHM13oZONkSGgS2DIqktkky797--E0f5Ic,505
+weeklyresearchdigest/digest_logic.py,sha256=qwOmzr7vHurlfY3P4hQJAfMRbmh2MI7AxexLPjTHosg,7151
+weeklyresearchdigest/scheduler.py,sha256=RlnMP1e-SgUG-W6r2kqvavO0hBD4VhiROmRrp05BQHQ,4447
+weeklyresearchdigest/weekly_digest.py,sha256=582wmG4LHmWWy4RHdrgfFlMoUupthqBTKkMvoyKysf4,2887
+weeklyresearchdigest-0.1.2.dist-info/entry_points.txt,sha256=0oVzi1V1RfyoujVU_vrposjMaCGAigEp9wuFzNHwDtg,143
+weeklyresearchdigest-0.1.2.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+weeklyresearchdigest-0.1.2.dist-info/METADATA,sha256=wX-PJboZ97ca8xdAk8Z8VYhPsTLpplj7Rj5qXh6PLtw,766
+weeklyresearchdigest-0.1.2.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+weeklyresearchdigest-0.1.2.dist-info/RECORD,,

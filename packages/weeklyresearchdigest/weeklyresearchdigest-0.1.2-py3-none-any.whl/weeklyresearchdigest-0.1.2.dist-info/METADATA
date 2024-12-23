@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: weeklyresearchdigest
+Version: 0.1.2
+Summary: 
+Author: drgzkr
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: openai (>=1.58.1,<2.0.0)
+Requires-Dist: python-dotenv (>=1.0.1,<2.0.0)
+Requires-Dist: requests (>=2.13.0,<3.0.0)
+Description-Content-Type: text/markdown
+
+# WeeklyResearchDigest
+
+A Python package for automating the retrieval, summarization, and emailing of weekly research updates.
+

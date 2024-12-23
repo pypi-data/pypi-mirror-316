@@ -1,0 +1,4 @@
+[console_scripts]
+schedule-digest=weeklyresearchdigest.scheduler:schedule_digest
+weeklyresearchdigest=weeklyresearchdigest.weekly_digest:main
+
