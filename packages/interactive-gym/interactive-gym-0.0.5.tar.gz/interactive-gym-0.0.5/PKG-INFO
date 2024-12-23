@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: interactive-gym
+Version: 0.0.5
+Summary: A platform for running interactive experiments in the browser with standard simulation environments.
+Author: Chase McDonald
+Author-email: chasemcd@andrew.cmu.edu
+License-File: LICENSE
+Requires-Dist: gymnasium
+Requires-Dist: numpy
