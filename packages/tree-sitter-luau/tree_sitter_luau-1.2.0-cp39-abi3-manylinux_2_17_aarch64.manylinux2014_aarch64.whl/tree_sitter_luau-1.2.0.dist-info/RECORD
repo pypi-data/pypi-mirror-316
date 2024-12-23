@@ -1,0 +1,15 @@
+tree_sitter_luau/__init__.py,sha256=1rmkcZZNaM-Vx7JenShf4cWYEfnCGq5dL_8r84M9Dqw,950
+tree_sitter_luau/_binding.abi3.so,sha256=vmkeqF7oYNLTc5WDMDeciPN9pfMQpW6Uy-UidDmHtkQ,205776
+tree_sitter_luau/binding.c,sha256=svPrpRXzGtvTtiXG_vo_LWQ-snTCXUX1lUEtYMXC0_4,679
+tree_sitter_luau/__init__.pyi,sha256=ZUTB0OuqWsQXukEQPu6O2lLI_Iccu_-ICy1HVeyhJ-Y,140
+tree_sitter_luau/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tree_sitter_luau/queries/folds.scm,sha256=lPAdHSYSGm7OYriZclvdkiy2LpzkrWHRxJtQFUESKmE,36
+tree_sitter_luau/queries/highlights.scm,sha256=2qsrbhi2gl9Zg1EPwa7NQNSmROBI2lh7R3cUXmWPSpw,4744
+tree_sitter_luau/queries/indents.scm,sha256=UeyXMFhfUPAxXWhz8arTDW--80lTBefU-OqUBVlz8NM,44
+tree_sitter_luau/queries/injections.scm,sha256=YZBowv_rSiNug1iohdjtFOg8Iq-DVqg2SWO0h2jY0f0,1121
+tree_sitter_luau/queries/locals.scm,sha256=57JpO1RItRqvIPqzkvnFs5kdn9H1MM33AF6Jmv_Dk0k,1188
+tree_sitter_luau-1.2.0.dist-info/top_level.txt,sha256=Ek8Goz32JrlM7agqKktUi1Yp3pRJqvq1wM4JGLJhj_s,26
+tree_sitter_luau-1.2.0.dist-info/RECORD,,
+tree_sitter_luau-1.2.0.dist-info/LICENSE,sha256=CZxEJI-M81MSMhExhoDpNGVYfABaSzcwzoy1M03gQ9Y,1101
+tree_sitter_luau-1.2.0.dist-info/METADATA,sha256=KGE4SFTR-RZ0f-YnkG5DGFAOvY_j28wZ0JHmUTmVosw,1056
+tree_sitter_luau-1.2.0.dist-info/WHEEL,sha256=fsvi7HulmpbM-R1_vSI4Z1cXLNImSSVkTfYpjAILabs,149
