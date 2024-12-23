@@ -1,0 +1,3 @@
+[mkdocs.plugins]
+ezlinks=mkdocs_obsidian_links.plugin:LinksPlugin
+
