@@ -1,0 +1,2 @@
+[console_scripts]
+my_socket_cli = my_socket_library.cli:main

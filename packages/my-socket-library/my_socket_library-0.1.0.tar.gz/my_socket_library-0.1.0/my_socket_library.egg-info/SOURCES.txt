@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+my_socket_library/__init__.py
+my_socket_library/cli.py
+my_socket_library/client.py
+my_socket_library/server.py
+my_socket_library.egg-info/PKG-INFO
+my_socket_library.egg-info/SOURCES.txt
+my_socket_library.egg-info/dependency_links.txt
+my_socket_library.egg-info/entry_points.txt
+my_socket_library.egg-info/top_level.txt
