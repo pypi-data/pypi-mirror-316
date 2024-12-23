@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: gamerl
+Version: 0.1.0
+Summary: Collection of RL algorithms in the gamerl namespace.
+Home-page: https://github.com/game-rl/gamerl
+Author: pi-tau
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+License-File: LICENSE
+
+UNKNOWN
+

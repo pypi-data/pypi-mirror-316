@@ -1,0 +1,7 @@
+LICENSE
+pyproject.toml
+setup.py
+gamerl.egg-info/PKG-INFO
+gamerl.egg-info/SOURCES.txt
+gamerl.egg-info/dependency_links.txt
+gamerl.egg-info/top_level.txt
