@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+setup.cfg
+src/hfpics/__init__.py
+src/hfpics/core.py
+src/hfpics.egg-info/PKG-INFO
+src/hfpics.egg-info/SOURCES.txt
+src/hfpics.egg-info/dependency_links.txt
+src/hfpics.egg-info/requires.txt
+src/hfpics.egg-info/top_level.txt
+tests/test_hfpics.py
