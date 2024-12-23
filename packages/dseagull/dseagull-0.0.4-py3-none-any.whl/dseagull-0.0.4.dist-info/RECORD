@@ -1,0 +1,10 @@
+dseagull/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dseagull/apps.py,sha256=RMt_-lIfIfYiiCYdXk_QYXxp6g_S2iP1FVjvmUmpM7I,396
+dseagull/fields.py,sha256=qRwHa4FOltXtOkVErEmgq2vmQwSyT9-npQo5_sh_QpA,4210
+dseagull/pagination.py,sha256=SQHKUzUeuTQCVMdEw8yA7zpmVjMPNnycL0NDZqOl-P8,812
+dseagull/serializers.py,sha256=EaXyjrDQk1DoyTmZkwgNwi7XX_6VIYjQ__uW_Ah5Ljw,1453
+dseagull-0.0.4.dist-info/LICENSE,sha256=fcPErtygtFcDsEDKMdANIvKdow9Yfgq41zElN83nCVQ,1062
+dseagull-0.0.4.dist-info/METADATA,sha256=JhG0bJbo4AFPacpGsreVYQ2fI0YI6quIIHVni030JR4,1666
+dseagull-0.0.4.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+dseagull-0.0.4.dist-info/top_level.txt,sha256=TuJLODo3tyDvv7IUy9xdcMQHXVIAlYD3WVwoHb_L9zk,9
+dseagull-0.0.4.dist-info/RECORD,,
