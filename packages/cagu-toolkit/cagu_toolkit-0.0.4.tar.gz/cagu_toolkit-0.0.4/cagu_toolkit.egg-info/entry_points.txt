@@ -1,0 +1,2 @@
+[console_scripts]
+cagu-toolkit = cli:main
