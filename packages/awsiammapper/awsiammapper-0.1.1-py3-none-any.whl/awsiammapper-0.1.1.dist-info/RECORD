@@ -1,0 +1,11 @@
+awsiammapper/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+awsiammapper/__main__.py,sha256=PbB0VP2tHaDhRt3qexus6g8SQ-0pHMCXZodve-iukNU,71
+awsiammapper/client.py,sha256=7WRWYXjY5aQfGqSbobdMiHHD3WroJS3cViHOVm5FHy4,2073
+awsiammapper/config.py,sha256=5GZaq1oxkum_vPxlQc3xCA5c8zUIthTTheYSVCUBO2c,1171
+awsiammapper/mapper.py,sha256=tHJoT8l9H7zoVl8ASYZOOLciPtD3wD-lOLJZSHX_SRY,781
+awsiammapper/policy.py,sha256=brYvcczcbNzKZvvpnJL4z0MchATuoP9kJ0avUoETBVE,2103
+awsiammapper/writer.py,sha256=k4m60Lo-hG-c7dx10UCKG-Q_nSXzIKHXEhVLjnJz0lg,629
+awsiammapper-0.1.1.dist-info/LICENSE,sha256=zqwconLXyclpo5c7B1n9C14gawPiwvd2VjdV7gJwLg8,1088
+awsiammapper-0.1.1.dist-info/METADATA,sha256=gigUbEvp0EuwvOrMaaYH7cJyRU-0y8uaFtlY2LGPuXw,4643
+awsiammapper-0.1.1.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+awsiammapper-0.1.1.dist-info/RECORD,,
