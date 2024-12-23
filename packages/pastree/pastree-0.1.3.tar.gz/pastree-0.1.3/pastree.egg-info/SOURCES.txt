@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+pastree/__init__.py
+pastree/cli.py
+pastree.egg-info/PKG-INFO
+pastree.egg-info/SOURCES.txt
+pastree.egg-info/dependency_links.txt
+pastree.egg-info/entry_points.txt
+pastree.egg-info/top_level.txt
+tests/__init__.py
+tests/test_pastree.py
