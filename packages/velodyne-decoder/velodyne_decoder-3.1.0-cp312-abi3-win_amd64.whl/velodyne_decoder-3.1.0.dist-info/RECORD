@@ -1,0 +1,23 @@
+velodyne_decoder/__init__.py,sha256=yh2oKiX5Ylf2gNOb0jubBfLg_cq-blW3eMq-nlpeXnY,857
+velodyne_decoder/bag.py,sha256=YNySSYQjjCVgp128xNP5g1qSQJ220SuJLptwt3e1pxQ,1938
+velodyne_decoder/calibrations/__init__.py,sha256=awSOkSHG7AdrID9Sspyn8FVB4CNZwZhMto8L4EUtz6Y,652
+velodyne_decoder/calibrations/Alpha Prime.yml,sha256=qRf-Fx6vkJXpX8TiamlySMj6ebic0Rl_g8oBRhnx_qU,10985
+velodyne_decoder/calibrations/HDL-32E.yml,sha256=CDPcJE9agsU0SPvUcsqhDHApq_OP2L89H4oh1f9Y_Pc,2603
+velodyne_decoder/calibrations/HDL-64E_S1-utexas.yml,sha256=dSUzjorh_pJbLeknYxJ4nRWqBt0IGYc1MG2YNWclyY8,20074
+velodyne_decoder/calibrations/HDL-64E_S2.1-sztaki.yml,sha256=Vin9OZKwmHTLdGNiyXBpBgGjENEuN2QrfU4LS2P5npw,23469
+velodyne_decoder/calibrations/HDL-64E_S3-VeloView.yml,sha256=xWzumOw9PtoytFcfx5tqSQssXwgUSM7XtlkytoFW854,22031
+velodyne_decoder/calibrations/HDL-64E_S3-xiesc.yml,sha256=hcMkfrt-XqFCK_4N0uY0YaFmVEoFc9Mv37jBQJqf-Pc,22735
+velodyne_decoder/calibrations/Puck Hi-Res.yml,sha256=9nQqrzLb8as9MfMofh3Ft-UOLU5DsS3R7w7lNUss3I4,1428
+velodyne_decoder/calibrations/VLP-16.yml,sha256=NZin-F_WTzxfJjHhqDsphl-lYqbKe1d7Kj8bRq7OfLM,1443
+velodyne_decoder/calibrations/VLP-32A.yml,sha256=DeBS0Ccv8BOturNq2UFpBIMD5EdwSEJYU2m0ZmwehLw,2920
+velodyne_decoder/calibrations/VLP-32B.yml,sha256=xWNib0Mg04c-7znQ09y9-qGLtAkEpFPuyS4WHDsNiO8,2920
+velodyne_decoder/calibrations/VLP-32C.yml,sha256=xWNib0Mg04c-7znQ09y9-qGLtAkEpFPuyS4WHDsNiO8,2920
+velodyne_decoder/hdl64e.py,sha256=A5hX24wGymGwNenq2GYS5pEv3KUAdFT8TfvXMQ-tms4,11621
+velodyne_decoder/pcap.py,sha256=iwq-qbTbFNaXupisYUcRCLl4lbCBIfiDFZExF3YrIrQ,2376
+velodyne_decoder/util.py,sha256=qp0xQc0lxTlKhCnxM6pAKee5Z1S2z8jnFnKqgF7BjNI,2997
+velodyne_decoder/velodyne_decoder_pylib.pyd,sha256=6thZv_0MN_1Tg_4S1MBFsgssuhpZiCgyOL8SydkXzZQ,464896
+velodyne_decoder-3.1.0.dist-info/METADATA,sha256=Uhpo0DRjjoFvG1HVeW0mZDFxyZExTZPaX_d46Dl_hMc,6430
+velodyne_decoder-3.1.0.dist-info/WHEEL,sha256=vEC2vgcau_KDUVRc0oMmm7glP6seg7dDCI6B0KGHsOk,105
+velodyne_decoder-3.1.0.dist-info/entry_points.txt,sha256=vhVBPDCEKTDb4WI5devk1uSDLSRxYwAv8mNXrmspPUk,76
+velodyne_decoder-3.1.0.dist-info/licenses/LICENSE,sha256=p6EMi63R0E-Lezxxjf77qG8VoawjN_DoShdj396P7Dw,1611
+velodyne_decoder-3.1.0.dist-info/RECORD,,
