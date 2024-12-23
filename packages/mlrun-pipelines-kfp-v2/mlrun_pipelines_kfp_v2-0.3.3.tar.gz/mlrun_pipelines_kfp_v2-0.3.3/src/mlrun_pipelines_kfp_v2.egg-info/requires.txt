@@ -1,0 +1,5 @@
+kfp_server_api>=2.3.0
+mlrun_pipelines_kfp_common>=0.3.2
+
+[kfp]
+kfp[kubernetes]>=2.11.0
