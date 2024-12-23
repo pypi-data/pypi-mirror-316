@@ -1,0 +1,5 @@
+ipython
+
+[ollamaUI]
+
+[ollamaUI_Vision]
