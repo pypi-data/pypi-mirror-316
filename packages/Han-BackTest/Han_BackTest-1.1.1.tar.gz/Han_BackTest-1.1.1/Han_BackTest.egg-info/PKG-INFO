@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: Han-BackTest
+Version: 1.1.1
+Summary: A naive backtest framework for stock trading in Chinese market
+Home-page: https://www.linkedin.com/in/jiaheng-han-005464291
+Author: Jiaheng Han
+Author-email: hanjiaheng@stu.pku.edu.cn
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
