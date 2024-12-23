@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+src/shiertier_caption/__init__.py
+src/shiertier_caption/glm4v.py
+src/shiertier_caption.egg-info/PKG-INFO
+src/shiertier_caption.egg-info/SOURCES.txt
+src/shiertier_caption.egg-info/dependency_links.txt
+src/shiertier_caption.egg-info/requires.txt
+src/shiertier_caption.egg-info/top_level.txt
