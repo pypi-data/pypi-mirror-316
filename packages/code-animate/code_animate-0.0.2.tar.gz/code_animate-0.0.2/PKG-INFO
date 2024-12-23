@@ -1,0 +1,30 @@
+Metadata-Version: 2.4
+Name: code_animate
+Version: 0.0.2
+Summary: SOME DESCRIPTION
+Project-URL: Homepage, https://github.com/zlliu246/code_animate
+Project-URL: Issues, https://github.com/zlliu246/code_animate/issues
+Author-email: Liu Zuo Lin <zlliu246@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Requires-Dist: colorama
+Requires-Dist: default-deepcopy
+Requires-Dist: unprint
+Description-Content-Type: text/markdown
+
+
+# code_animate
+Short description of project
+
+# Installation
+```
+pip install code_animate
+```
+
+# Quickstart
+```python
+# some code
+```
