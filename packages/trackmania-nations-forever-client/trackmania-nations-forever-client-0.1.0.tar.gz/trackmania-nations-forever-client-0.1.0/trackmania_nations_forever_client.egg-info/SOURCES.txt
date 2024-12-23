@@ -1,0 +1,9 @@
+README.md
+setup.py
+trackmania/__init__.py
+trackmania/gbx_remote_client.py
+trackmania/trackmania_client.py
+trackmania_nations_forever_client.egg-info/PKG-INFO
+trackmania_nations_forever_client.egg-info/SOURCES.txt
+trackmania_nations_forever_client.egg-info/dependency_links.txt
+trackmania_nations_forever_client.egg-info/top_level.txt
