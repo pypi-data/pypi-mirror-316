@@ -1,0 +1,11 @@
+machbaseAPI/__init__.py,sha256=zrUy9Q53GZSmgI-XXBiVwTaKsFnI71-w1W9P1TcpIkE,97
+machbaseAPI/machbaseAPI.py,sha256=ePf6r8Mp79vEjs1fr2mK4MPETI-0s-TRwzHTeaoWxcM,17980
+machbaseAPI/lib/libmachbaseAPI_arm64.dylib,sha256=ShmGZ1EMwMDEAF7B7BKCUt-gfxdnjnrwOgIpC884ViY,1240504
+machbaseAPI/lib/libmachbaseAPI_x64.so,sha256=floPONstzo-xsqVJ__Uz3Ebuinwr68scKSHWx5MuRwo,1663204
+machbaseAPI/lib/libmachbaseAPI_x64_centos6.so,sha256=floPONstzo-xsqVJ__Uz3Ebuinwr68scKSHWx5MuRwo,1663204
+machbaseAPI/lib/libmachbaseAPI_x64_ubuntu.so,sha256=5oObFySS2LMD8fjIFVpKeSwsSDrdaWExcfCKkiyL0EQ,4688032
+machbaseAPI/lib/machbaseAPI_x64.dll,sha256=2V2lMhLl4yuRY8c0S9l9Ar1YRa8v4eiD_64Ot1T1gYg,123392
+machbaseAPI-1.4.dist-info/METADATA,sha256=kaIFIA7Pzvc4TS2Pgp89rX05caIR9iYFeHemltCqqfU,368
+machbaseAPI-1.4.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+machbaseAPI-1.4.dist-info/top_level.txt,sha256=-9HwUvafn-uTM9ckDWa2sxP4AZE7YNdhjVWRgOAhhH0,12
+machbaseAPI-1.4.dist-info/RECORD,,
