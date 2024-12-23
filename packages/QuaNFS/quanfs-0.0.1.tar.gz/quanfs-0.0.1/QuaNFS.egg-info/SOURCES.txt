@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+setup.py
+QuaNFS/QuantumGA.py
+QuaNFS/__init__.py
+QuaNFS.egg-info/PKG-INFO
+QuaNFS.egg-info/SOURCES.txt
+QuaNFS.egg-info/dependency_links.txt
+QuaNFS.egg-info/top_level.txt
