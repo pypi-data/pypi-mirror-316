@@ -1,0 +1,12 @@
+lipsync/.gitignore,sha256=fzUzM7qXN3tXmycD_h44ozbljegHT7QL3lIlngFM6MA,140
+lipsync/__init__.py,sha256=QVvuExuPgSPE2_PauiAPudHKAtf9uycd86f2hrw0yzU,67
+lipsync/audio.py,sha256=9stvr_QiAcRjqrZfAerIQ9wQiBo-6LDpsRhNqoOEzP4,4069
+lipsync/helpers.py,sha256=uqq5LYqn1JArhqID1L_bbp1xeuf8Q7GqhiBmJ_pFvDI,2578
+lipsync/hparams.py,sha256=npBd6pEd9tRVpT-QiCTR-uZhiqRgETPe0FbK1_lKo7M,1930
+lipsync/lipsync.py,sha256=Djxsqc5E0_q1hJAYuaRsVLVf8uINk9gSM4ZiDpTTS10,13276
+lipsync/models/__init__.py,sha256=qdxcsCoSP7SmgxMO4MzYN03QE9oKjyR6HSt_kOAOg34,1804
+lipsync/models/conv.py,sha256=XdcBqhiUHbO39gm1Xya1agjQlU2FPZ-JU5CnFDPkRRA,2456
+lipsync/models/wav2lip.py,sha256=UcCO3sG6ELiNkXxR-7RX-vjI0eqljR6DGBwj9Mhgl7w,7669
+lipsync-0.1.0.dist-info/METADATA,sha256=iqW6YWN2lI8v4IUWfP54-U-rXWwD4Z_R77OpOz7b6-4,4542
+lipsync-0.1.0.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+lipsync-0.1.0.dist-info/RECORD,,
