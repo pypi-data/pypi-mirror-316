@@ -1,0 +1,33 @@
+Metadata-Version: 2.4
+Name: tutcatalog5
+Version: 0.1.0
+Summary: A simple viewer and editor for info.tc files that contains tutorial information
+Project-URL: Repository, https://gitlab.com/iborco-software/tutcatalog/tutcatalog5
+Project-URL: Issues, https://gitlab.com/iborco-software/tutcatalog/tutcatalog5/-/issues
+License: MIT License
+License-File: LICENSE.md
+Keywords: pyside6,python
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.12
+Requires-Dist: pyside6!=6.8.1.1,>=6.8.1; platform_system == 'Windows'
+Requires-Dist: pyside6>=6.8.1; platform_system != 'Windows'
+Description-Content-Type: text/markdown
+
+# TutCatalog5
+
+A simple viewer and editor for `info.tc` files that contains tutorial information.
+
+## History
+
+| Program | Programming Language | Development |
+|---|---|---|
+| tutcatalog5 | C++ / Python |  2024 |
+| tutcatalog4 | C++ / Python |  2022 |
+| tutcatalogpy3 | Python | 2022 |
+| tutcatalogpy2 | Python | 2021 |
+| tutcatalogpy | Python | 2020 |
+| tucatalog3 | C++ / Python | 2017 |
+| tutcatalog | C++ / Python | 2016 |
