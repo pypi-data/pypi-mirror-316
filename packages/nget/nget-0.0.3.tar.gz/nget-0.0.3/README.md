@@ -1,0 +1,109 @@
+# NGET (Nested Get)
+
+**Simple Python package for safely retrieving nested values from data structures using sequences of keys or indexes.**
+
+## Installation
+
+```python
+pip install nget
+```
+
+## Usage
+
+Import the `nget` function from the package and use it to safely retrieve nested values from dictionaries or lists.
+
+```python
+from nget import nget
+
+data = {"a": {"b": {"c": "value", "d": [1, 2, 3]}}}
+
+nget(data, ["a", "b", "c"])  # Output: "value"
+nget(data, ["a", "b", "d", 1])  # Output: 2
+nget(data, ["a", "b", "e"], "default")  # Output: "default"
+nget(data, ["a", "b", "e"])  # Raises KeyError: 'e'
+```
+
+## Examples
+
+Retrieve a nested dictionary value
+
+```python
+data = {"a": {"b": {"c": "value"}}}
+nget(data, ["a", "b", "c"])  # Output: "value"
+```
+
+Retrieve a nested list value
+
+```python
+data = [[["value"]]]
+nget(data, [0, 0, 0])  # Output: "value"
+```
+
+Provide a default value if the key is not found
+
+```python
+data = {"a": {"b": {}}}
+nget(data, ["a", "b", "c"], "default")  # Output: "default"
+```
+
+## Motivation
+
+When working with services that interact with third-party, undocumented APIs, we often encounter complex data structures containing nested dictionaries and lists. Extracting the required information from these structures can be challenging, especially when keys or indexes might be missing or their values could be None.
+
+### Common Problems
+
+#### Direct Access
+
+The standard way to retrieve nested values is using multiple square brackets:
+
+```python
+data = {"a": {"b": {"c": "value"}}}
+data["a"]["b"]["c"]  # Output: "value"
+```
+
+However, if any key is missing, this results in a KeyError.
+
+#### Using get()
+
+```python
+data = {"a": {"b2": {"c2": "value2"}}}
+data.get("a", {}).get("b", {}).get("c", None)  # Output: None (default value)
+```
+
+But this approach fails if the intermediate value is None:
+
+```python
+data = {"a": {"b": None}}
+data.get("a", {}).get("b", {}).get("c", None)
+
+# AttributeError: 'NoneType' object has no attribute 'get'
+```
+
+#### Using Try-Except
+
+Another common solution is wrapping the access in a try-except block:
+
+```python
+try:
+    x = data["a"]["b"]["c"]
+except KeyError:
+    x = None  # Default value
+```
+
+#### Checking Keys Step-by-Step
+
+Alternatively, you can manually check the existence of each key or index:
+
+```python
+x = None
+if "a" in data and "b" in data["a"] and "c" in data["a"]["b"]:
+    x = data["a"]["b"]["c"]
+```
+
+This is not very convenient, especially when we need to retrieve many nested values.
+
+To address these issues, I created this simple package to safely handle nested data retrieval.
+
+## License
+
+This project is licensed under the [MIT License](https://github.com/alcortazzo/nget/blob/main/LICENSE).

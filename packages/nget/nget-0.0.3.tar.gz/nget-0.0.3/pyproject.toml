@@ -1,0 +1,30 @@
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[project]
+name = "nget"
+version = "0.0.3"
+requires-python = ">=3.9"
+authors = [
+    { name = "alcortazzo", email = "ipodarock@gmail.com" },
+]
+description = "A simple package for safely retrieving nested values from data structures using a sequence of keys or indexes."
+readme = "README.md"
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+]
+
+[project.license]
+text = "MIT"
+
+[project.urls]
+Repository = "https://github.com/alcortazzo/nget.git"
+Issues = "https://github.com/alcortazzo/nget/issues"
+
+[tool.pdm]
+distribution = true
