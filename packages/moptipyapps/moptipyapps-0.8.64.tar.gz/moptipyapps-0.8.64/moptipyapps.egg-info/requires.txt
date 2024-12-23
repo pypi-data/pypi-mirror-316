@@ -1,0 +1,9 @@
+certifi>=2024.12.14
+defusedxml>=0.7.1
+moptipy>=0.9.138
+numpy<2
+numba>=0.60.0
+matplotlib>=3.10.0
+pycommons>=0.8.59
+scipy>=1.14.1
+urllib3>=2.2.3
