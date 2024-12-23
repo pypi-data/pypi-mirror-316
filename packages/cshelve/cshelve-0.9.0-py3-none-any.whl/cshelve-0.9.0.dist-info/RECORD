@@ -1,0 +1,16 @@
+cshelve/__init__.py,sha256=4PNhABlncQF69JI1-UYcNU1TYoYVMlVcUrE-SUXeIC8,4197
+cshelve/_azure_blob_storage.py,sha256=CG4nZRavIeU2u-dkbQAE3z8fx35EOfQCdaF0ROA8fas,11593
+cshelve/_compression.py,sha256=s5oP-AE99YDY8OixhgrYpsZAzjjFa3H4LAY8FRfkr0M,1591
+cshelve/_data_processing.py,sha256=_gIxMwA2ryM8VMU20RPjAJyBI170f0Hr0BFmfnU5hyc,2946
+cshelve/_database.py,sha256=9rFv1LkWUMItxcMUQEKpIv7v0vc2Xz5rkpL0sV-ytDQ,3623
+cshelve/_encryption.py,sha256=cdlFKIm9OLgRuUwTYRxWBc-oDgG2zfL5_nWa3GhEHmI,5247
+cshelve/_factory.py,sha256=agj_HMFqDfN9yEKJgy5iPqXS6fEUJ1SRGjTkyzWcgII,925
+cshelve/_flag.py,sha256=VCO8FDsYoc8PDcP79QxLsauTeiHpor3-u1t0IQ8B_PY,1244
+cshelve/_in_memory.py,sha256=ZgxK4t5if1jFI6ZN0qz7xnyFx2WL__iaK_7VzrxOElM,4567
+cshelve/_parser.py,sha256=dU4SpW8YjBVCc1aQE7K0EPRKsyl8ICryErHNkIdoRw8,2230
+cshelve/exceptions.py,sha256=w2OKJ_QiW8N8IsBmfDrV-YnSpuLq_HCIbgmEmjHDV8M,2348
+cshelve/provider_interface.py,sha256=e2PGvVshXoXX30iJUH9sHZwREsWlfMCO8DlLrjfuhAI,2769
+cshelve-0.9.0.dist-info/METADATA,sha256=5_uiMcXU4A75M-wC4Ku20Wek7o7hu1uJJOWiTsXzH2w,11827
+cshelve-0.9.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+cshelve-0.9.0.dist-info/licenses/LICENSE,sha256=eNcvoKCrr2Pb0CVEvWX3CKp5NbahO3vs9_-iRmjJ-bw,1071
+cshelve-0.9.0.dist-info/RECORD,,
