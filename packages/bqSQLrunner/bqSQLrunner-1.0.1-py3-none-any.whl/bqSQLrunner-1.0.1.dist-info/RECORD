@@ -1,0 +1,8 @@
+framework/__init__.py,sha256=euweZJIXQoU62FRlD94cs27JaTflgH0M06TA1Eaqq4k,625
+framework/bqSQLrunner.py,sha256=OiApTh_Y2Pte08zZdZn08-bl3QYpgFPrU3FCzpkrtR0,14035
+framework/cli.py,sha256=4x0Vg3xfKUMm9VKQ5me2icelFl8itucBFqGMtVuRmCg,2961
+framework/mainBqSQLrunner.py,sha256=KxEzX7WkX8JusY_6FM6k0O_aEJCHBN6yE7xhe8ah3xM,1217
+bqSQLrunner-1.0.1.dist-info/METADATA,sha256=0_O3nLz0kPlzd2UFOQNIA6fuTgnZu2D6XDFF48iGX2c,361
+bqSQLrunner-1.0.1.dist-info/WHEEL,sha256=OVMc5UfuAQiSplgO0_WdW7vXVGAt9Hdd6qtN4HotdyA,91
+bqSQLrunner-1.0.1.dist-info/top_level.txt,sha256=hzpv2xEeSkKTVweFn8I8XnG5zJJOIOTB38-_zgJJSUw,10
+bqSQLrunner-1.0.1.dist-info/RECORD,,
