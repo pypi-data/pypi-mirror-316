@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: sqliteorm_py
+Version: 0.0.5
+Summary: A lightweight SQLite ORM framework.
+Home-page: https://github.com/jaliliB21/sqlorm/
+Author: Behzad Jalili
+Author-email: jalilibhzad21@gmail.com
+License: GPL-3.0
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Your Framework
+
+A powerful and intuitive ORM framework for Python that simplifies database interactions.
+
+## Installation
+
+You can install the package via pip:
+
+```bash
+pip install sqliteorm_py

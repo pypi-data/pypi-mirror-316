@@ -1,0 +1,15 @@
+sqliteorm_py/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sqliteorm_py/basemodel.py,sha256=GE-0ZgRe5UKm3Tj_YkRxfW2F43xRJhMt7R00dLc1D1Y,28167
+sqliteorm_py/cli.py,sha256=ldQfa28DH9KgiM1iKIpFXGWGqzdbIkqaDECxgkUzRo0,2120
+sqliteorm_py/connect_to_db.py,sha256=CfxKpJJFe0lKCkQaQxYnma_LRGXyM91wdiPhuftrqd8,1226
+sqliteorm_py/fields.py,sha256=i7nDOj2TDO9DeoEKKM-gpmWTAGfWeJvCSvY4Vj5_rmc,2269
+sqliteorm_py/makemigrations.py,sha256=B1wPMAC10WIgvXCJXOpY7U9OIVEnI1v8FfqJmtJ2goU,4285
+sqliteorm_py/templates/manage.py,sha256=MFxmhK1Cc8k5-OIHXOQuCWZF0QG2ZbUM0CvUKP8aYB8,851
+sqliteorm_py/templates/models.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sqliteorm_py/templates/settings.py,sha256=j0woPxT8Gdj80MqH3wPcpReioFW5xYQv-ZYBb1QIOMk,34
+sqliteorm_py-0.0.5.dist-info/LICENSE,sha256=9Y5uwiE-J_ziJzIHLLImWXq2I613Sp9YwnWmFYkxw-8,714
+sqliteorm_py-0.0.5.dist-info/METADATA,sha256=_7heb4qdkkz90SFUARm_Bed5tFmp60gxQ8wldZE-fmI,705
+sqliteorm_py-0.0.5.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+sqliteorm_py-0.0.5.dist-info/entry_points.txt,sha256=sYuhijuIEbw7w24N47lop2NSUstpDCp11pt7yQCfkUE,58
+sqliteorm_py-0.0.5.dist-info/top_level.txt,sha256=n9VkKLYSQcSaNvx-bIp1LEz-CuabpWtuXeVK7Q3phpc,13
+sqliteorm_py-0.0.5.dist-info/RECORD,,
