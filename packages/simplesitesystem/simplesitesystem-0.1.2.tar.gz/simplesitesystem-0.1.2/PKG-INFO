@@ -1,0 +1,13 @@
+Metadata-Version: 2.4
+Name: simplesitesystem
+Version: 0.1.2
+License: All source and text files in this repository are Copyright (c) 2024, Nathaniel Taulbut. All rights reserved.
+License-File: LICENSE
+Requires-Python: >=3.13
+Requires-Dist: aiohttp
+Requires-Dist: click
+Requires-Dist: jinja2
+Requires-Dist: pygments
+Requires-Dist: pyquery
+Requires-Dist: tomli
+Requires-Dist: watchdog

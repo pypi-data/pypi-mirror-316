@@ -1,0 +1,22 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+
+[project]
+name = "simplesitesystem"
+license = { file = "LICENSE" }
+version = "0.1.2"
+requires-python = ">=3.13"
+dependencies = [
+    "click",
+    "aiohttp",
+    "tomli",
+    "jinja2",
+    "pyquery",
+    "pygments",
+    "watchdog",
+]
+
+[project.scripts]
+simple = "simplesitesystem.main:simplesitesystem"
