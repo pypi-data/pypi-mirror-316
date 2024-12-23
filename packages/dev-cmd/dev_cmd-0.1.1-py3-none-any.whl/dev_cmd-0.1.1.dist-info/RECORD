@@ -1,0 +1,13 @@
+dev_cmd/__init__.py,sha256=stGgs-9unY_UXn0nlGmDku18enb4oip7tGnfSK5DY0U,117
+dev_cmd/__main__.py,sha256=WDOpYSIdc6KTz5c3UcUOKLCf0yv-3KmywJEiZViajis,185
+dev_cmd/errors.py,sha256=Lx28FjvbsAgGTK1qZ7YfV_2TlOjRd763ZNVJo43gu_Q,502
+dev_cmd/model.py,sha256=_Qxi1GbBSWt2NJNZ-4cD6ENTHZ-yR6udaui7POfLN4Q,1621
+dev_cmd/parse.py,sha256=VfyPkXJQBChro-qxrQjndUH9zmPrFD-Eg8Wz9CIjpqw,7159
+dev_cmd/project.py,sha256=vYFCnCuMTGndawxqNOv5hPMiMmBezzqTxxbwntRIKZM,1994
+dev_cmd/run.py,sha256=A4WD0mfSZGMLCtOgadv9vsfdIggzmex6z-oTsCm2nkE,3945
+dev_cmd-0.1.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+dev_cmd-0.1.1.dist-info/METADATA,sha256=C_Bs_qjkysNZcCxOyb18kaT1rVWDM2TNx1oJlk_X0hA,15590
+dev_cmd-0.1.1.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+dev_cmd-0.1.1.dist-info/entry_points.txt,sha256=5YUQyx6gg5r-eazlTK8_5sAvV8IoJ5J8QLX8IWs08yE,45
+dev_cmd-0.1.1.dist-info/top_level.txt,sha256=lIBEVDny7VkIs-Iqovomp_0t2twN0PjT5HkC-_DqbIU,8
+dev_cmd-0.1.1.dist-info/RECORD,,
