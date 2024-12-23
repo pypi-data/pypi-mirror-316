@@ -1,0 +1,8 @@
+libname/__init__.py,sha256=jUmd6VnVFC-e3rx92vHHcV_RHv8FLQNONYBr1jBV3q4,32
+libname/hello.py,sha256=c4XonpfjlWZaZexpQESS50I8J0MqjoPQ7o6W8UMtks0,47
+libname/models/CudaSift-Pascal.zip,sha256=FO2PhOa46bfek1c2MdKS2HMaprbuivAKXnhS-8AlEbE,6900959
+libname/models/opencv_contrib-4.10.0.zip,sha256=FbHez6TS6vOzkUjv9PMRc5_bMvDczljn7bPpWlYMy9M,57689255
+SIFTY_3.1.0-3.1.0.dist-info/METADATA,sha256=xsn6vlk-zkCoh_l9zIQ0jPRVEnpzzTenzGCRbS0nTzY,382
+SIFTY_3.1.0-3.1.0.dist-info/WHEEL,sha256=cVxcB9AmuTcXqmwrtPhNK88dr7IR_b6qagTj0UvIEbY,91
+SIFTY_3.1.0-3.1.0.dist-info/top_level.txt,sha256=F8SAi3S3n6gD3xYqzHD5I-0D7fExfrC5ppvjVK5G_Ks,8
+SIFTY_3.1.0-3.1.0.dist-info/RECORD,,
