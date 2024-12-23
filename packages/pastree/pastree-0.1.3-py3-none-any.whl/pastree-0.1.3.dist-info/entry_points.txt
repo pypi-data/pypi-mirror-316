@@ -1,0 +1,2 @@
+[console_scripts]
+pastree = pastree.cli:main
