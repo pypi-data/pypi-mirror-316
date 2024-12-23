@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: easylatex
+Version: 0.1.0
+Summary: Simplify writing LaTeX documents with Python.
+Home-page: 
+Author: Sagar Paul
+Author-email: sagarpaul.dev@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# EasyLaTex
+
+EasyLaTex is a Python library that simplifies the process of writing LaTeX documents.
+
+## Features
+- Create LaTeX documents using Python.
+- Add sections, paragraphs, and more.
+- Export to `.tex` files.
+
+## Installation
+```bash
+pip install easylatex
