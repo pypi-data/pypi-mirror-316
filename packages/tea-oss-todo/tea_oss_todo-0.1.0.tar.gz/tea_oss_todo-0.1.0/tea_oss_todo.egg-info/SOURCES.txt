@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+tea_oss_todo.egg-info/PKG-INFO
+tea_oss_todo.egg-info/SOURCES.txt
+tea_oss_todo.egg-info/dependency_links.txt
+tea_oss_todo.egg-info/requires.txt
+tea_oss_todo.egg-info/top_level.txt
