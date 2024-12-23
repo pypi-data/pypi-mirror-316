@@ -1,0 +1,12 @@
+typing_extensions>=4.6.1
+
+[bs4]
+beautifulsoup4
+soupsieve
+
+[lxml]
+lxml
+cssselect
+
+[selenium]
+selenium
