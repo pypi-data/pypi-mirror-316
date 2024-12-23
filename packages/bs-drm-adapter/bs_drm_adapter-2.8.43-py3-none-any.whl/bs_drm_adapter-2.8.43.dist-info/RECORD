@@ -1,0 +1,7 @@
+bs_drm_adapter/__init__.py,sha256=4c8RPpAaFgxMrOrz9g-EbDHTeIDHedrJSHvy9Fc9kog,437
+bs_drm_adapter/adapters.py,sha256=-IBwDQ54j7Ppz_1rA_qLS7SYG28ZjZWPpJg2rzRZU7s,10087
+bs_drm_adapter/app.py,sha256=AhkjTynldxrRNErSMnH3gTG58tKLgwvAKvbtAi2q7ik,6154
+bs_drm_adapter-2.8.43.dist-info/METADATA,sha256=NKJDOH7Ebi6n1iNAOjdksAaGEdNdKSYuzjdmd27RIMs,14905
+bs_drm_adapter-2.8.43.dist-info/WHEEL,sha256=rWxmBtp7hEUqVLOnTaDOPpR-cZpCDkzhhcBce-Zyd5k,91
+bs_drm_adapter-2.8.43.dist-info/top_level.txt,sha256=N46DQuw1NwcUGYWVGdDjh0SZ_bTr-sMLffadT5GpeII,15
+bs_drm_adapter-2.8.43.dist-info/RECORD,,
