@@ -1,0 +1,242 @@
+click>=7.0
+filelock
+jsonschema
+msgpack<2.0.0,>=1.0.0
+packaging
+protobuf!=3.19.5,>=3.15.3
+pyyaml
+aiosignal
+frozenlist
+requests
+
+[adag]
+
+[adag:sys_platform != "darwin"]
+cupy-cuda12x
+
+[air]
+numpy>=1.20
+fastapi
+aiohttp>=3.7
+pandas
+prometheus_client>=0.7.1
+watchfiles
+uvicorn[standard]
+pydantic!=2.0.*,!=2.1.*,!=2.2.*,!=2.3.*,!=2.4.*,<3
+tensorboardX>=1.9
+pandas>=1.3
+smart_open
+fsspec
+starlette
+requests
+virtualenv!=20.21.1,>=20.0.24
+pyarrow>=9.0.0
+colorful
+aiohttp_cors
+opencensus
+
+[air:python_version < "3.10"]
+grpcio>=1.32.0
+
+[air:python_version < "3.12"]
+py-spy>=0.2.0
+
+[air:python_version >= "3.10"]
+grpcio>=1.42.0
+
+[air:python_version >= "3.12"]
+py-spy>=0.4.0
+
+[air:sys_platform == "darwin" and platform_machine == "x86_64"]
+pyarrow<18
+
+[all]
+opentelemetry-sdk
+dm_tree
+numpy>=1.20
+pyyaml
+lz4
+fastapi
+aiohttp>=3.7
+grpcio
+pandas
+prometheus_client>=0.7.1
+watchfiles
+uvicorn[standard]
+pyOpenSSL
+pydantic!=2.0.*,!=2.1.*,!=2.2.*,!=2.3.*,!=2.4.*,<3
+opentelemetry-exporter-otlp
+typer
+tensorboardX>=1.9
+gymnasium==1.0.0
+pandas>=1.3
+smart_open
+fsspec
+starlette
+requests
+opentelemetry-api
+scipy
+virtualenv!=20.21.1,>=20.0.24
+pyarrow>=9.0.0
+colorful
+aiohttp_cors
+scikit-image
+rich
+opencensus
+
+[all:python_version < "3.10"]
+grpcio>=1.32.0
+
+[all:python_version < "3.12"]
+py-spy>=0.2.0
+
+[all:python_version >= "3.10"]
+grpcio>=1.42.0
+
+[all:python_version >= "3.12"]
+py-spy>=0.4.0
+
+[all:sys_platform != "darwin"]
+cupy-cuda12x
+
+[all:sys_platform != "win32"]
+memray
+
+[all:sys_platform == "darwin" and platform_machine == "x86_64"]
+pyarrow<18
+
+[client]
+grpcio
+
+[data]
+numpy>=1.20
+pandas>=1.3
+pyarrow>=9.0.0
+fsspec
+
+[data:sys_platform == "darwin" and platform_machine == "x86_64"]
+pyarrow<18
+
+[default]
+aiohttp>=3.7
+aiohttp_cors
+colorful
+requests
+opencensus
+pydantic!=2.0.*,!=2.1.*,!=2.2.*,!=2.3.*,!=2.4.*,<3
+prometheus_client>=0.7.1
+smart_open
+virtualenv!=20.21.1,>=20.0.24
+
+[default:python_version < "3.10"]
+grpcio>=1.32.0
+
+[default:python_version < "3.12"]
+py-spy>=0.2.0
+
+[default:python_version >= "3.10"]
+grpcio>=1.42.0
+
+[default:python_version >= "3.12"]
+py-spy>=0.4.0
+
+[observability]
+opentelemetry-api
+opentelemetry-sdk
+opentelemetry-exporter-otlp
+
+[observability:sys_platform != "win32"]
+memray
+
+[rllib]
+pandas
+tensorboardX>=1.9
+requests
+pyarrow>=9.0.0
+fsspec
+dm_tree
+gymnasium==1.0.0
+lz4
+scikit-image
+pyyaml
+scipy
+typer
+rich
+
+[rllib:sys_platform == "darwin" and platform_machine == "x86_64"]
+pyarrow<18
+
+[serve]
+watchfiles
+uvicorn[standard]
+starlette
+pydantic!=2.0.*,!=2.1.*,!=2.2.*,!=2.3.*,!=2.4.*,<3
+colorful
+requests
+fastapi
+aiohttp>=3.7
+aiohttp_cors
+smart_open
+virtualenv!=20.21.1,>=20.0.24
+prometheus_client>=0.7.1
+opencensus
+
+[serve-grpc]
+watchfiles
+uvicorn[standard]
+pyOpenSSL
+starlette
+pydantic!=2.0.*,!=2.1.*,!=2.2.*,!=2.3.*,!=2.4.*,<3
+smart_open
+colorful
+requests
+fastapi
+aiohttp>=3.7
+aiohttp_cors
+virtualenv!=20.21.1,>=20.0.24
+prometheus_client>=0.7.1
+opencensus
+
+[serve-grpc:python_version < "3.10"]
+grpcio>=1.32.0
+
+[serve-grpc:python_version < "3.12"]
+py-spy>=0.2.0
+
+[serve-grpc:python_version >= "3.10"]
+grpcio>=1.42.0
+
+[serve-grpc:python_version >= "3.12"]
+py-spy>=0.4.0
+
+[serve:python_version < "3.10"]
+grpcio>=1.32.0
+
+[serve:python_version < "3.12"]
+py-spy>=0.2.0
+
+[serve:python_version >= "3.10"]
+grpcio>=1.42.0
+
+[serve:python_version >= "3.12"]
+py-spy>=0.4.0
+
+[train]
+pandas
+tensorboardX>=1.9
+requests
+pyarrow>=9.0.0
+fsspec
+
+[train:sys_platform == "darwin" and platform_machine == "x86_64"]
+pyarrow<18
+
+[tune]
+pandas
+tensorboardX>=1.9
+requests
+pyarrow>=9.0.0
+fsspec
+
+[tune:sys_platform == "darwin" and platform_machine == "x86_64"]
+pyarrow<18
