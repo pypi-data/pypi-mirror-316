@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+LocateIP/__init__.py
+LocateIP/db.py
+LocateIP/ip.db3
+LocateIP/ip2region.xdb
+LocateIP/xdbSearcher.py
+LocateIP.egg-info/PKG-INFO
+LocateIP.egg-info/SOURCES.txt
+LocateIP.egg-info/dependency_links.txt
+LocateIP.egg-info/requires.txt
+LocateIP.egg-info/top_level.txt
