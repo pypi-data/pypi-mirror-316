@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: mvneureval
+Version: 1.1.1
+Summary: Multiview stability-based relative clustering validation algorithm for multimodal data
+Home-page: https://github.com/fede-colombo/Multiview_NeuReval
+Author: Federica Colombo
+Author-email: fcolombo.italia@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/fede-colombo/Multiview_NeuReval/releases/tag/v1.1.1
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# Multiview_NeuReval
+Extension of stability-based relative clustering validation method implementing multiview clustering to determine the best number of clusters based on multimodal data.
+
+
