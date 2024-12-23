@@ -1,0 +1,17 @@
+pymongo
+pymongo[srv]
+dnspython
+pandas
+numpy
+ensure 
+
+-e .
+
+# dev requirements -
+
+pytest==7.1.3   
+tox==3.28.0    # can create testing environment
+tox-gh-actions==2.11.0
+black==22.8.0   # lintin tool
+flake8==5.0.4   # lintin tool
+mypy==0.971
