@@ -1,0 +1,10 @@
+jax_fcpe/__init__.py,sha256=lndFHjkKJN6PJsfRGPX6hpkMfkImaYPRccbjFSeak_Q,77
+jax_fcpe/convert.py,sha256=UKiheJMFbPaB8J2443NAvo7dDN8ey7X468rH0PhH9lg,2237
+jax_fcpe/infer.py,sha256=096IB6D4eNXngVhOQG4Gfmexq7WLAiA33cIIhsPzNDc,1210
+jax_fcpe/model_conformer_naive.py,sha256=LJosmADkTSlCFqBM3VO3BTF4g7vGs7NLqOwzRCUM7PM,16345
+jax_fcpe/models.py,sha256=u28PPOpI0E45uZPoo83iX5sx1hxWtWgt8wX-gG_sm8I,12153
+jax_fcpe/utils.py,sha256=Ro9a0F0SBXA9TYYElgsFh-13rXHM0J9A-FEg3_6M3Jc,2355
+jax_fcpe-0.0.5.dist-info/METADATA,sha256=grIn_VTh0D3UjnvwLuHgNb_7AYv6zy1JwzpxC6Oee6E,2297
+jax_fcpe-0.0.5.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+jax_fcpe-0.0.5.dist-info/top_level.txt,sha256=PtDB-YEHAJyGuoy_HLhYPJpAQ0NDnSCD3gnHc-enpJs,9
+jax_fcpe-0.0.5.dist-info/RECORD,,
