@@ -1,0 +1,10 @@
+shaperenderer/__init__.py,sha256=VVhAGjShPvhGhKTnye8KNMvYhoh_EL2m_xovVUuj4vA,89
+shaperenderer/__main__.py,sha256=D0R9QKIVWSHjfiazEC_ETuLMrl-qpWEWxklRCAS86Zk,76
+shaperenderer/geometry.py,sha256=0liFyJkI8qhUyRhtH7vHFO67hGYXW67vJSgfBvdTS4A,18211
+shaperenderer/renderer.py,sha256=Im2eAg4Qd5FvelhpqNn4ikNBKDI1URbAPqfoB58rEK8,14631
+shaperenderer/utils.py,sha256=Vo-MvIpBSA-NFonHjksSCpeRDejNVMXPuVY8QBjqzl8,11317
+shepard_metzler_shape_renderer-2.0.0.dist-info/LICENSE,sha256=A5fCLJsJX4miwQVmFvBUNJth-aBBtWgkVgQRvTGHmYU,1082
+shepard_metzler_shape_renderer-2.0.0.dist-info/METADATA,sha256=Yff3NtFyQh_q0HivkNQ2GTnmgT5YtNK2g7WiwZR00-0,4104
+shepard_metzler_shape_renderer-2.0.0.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+shepard_metzler_shape_renderer-2.0.0.dist-info/top_level.txt,sha256=qKfA9wi9ASFdlBXLWQs_KFbsAPf4EO77kaIS3VJcrBw,14
+shepard_metzler_shape_renderer-2.0.0.dist-info/RECORD,,

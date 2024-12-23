@@ -1,0 +1,125 @@
+Metadata-Version: 2.1
+Name: shepard-metzler-shape-renderer
+Version: 2.0.0
+Summary: A custom-developed image renderer for generating Shepard & Metzler 3D shapes.
+Author-email: Aleksandr Krylov <aleksasha.krylov@gmail.com>
+License: The MIT License (MIT)
+        
+        Copyright (c) 2024 Aleksandr Krylov
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+Project-URL: Homepage, https://github.com/aleksandr-krylov/shepard-metzler-shape-renderer
+Keywords: renderer,3D shape,mental rotation
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy>=1.26.4
+Requires-Dist: matplotlib>=3.8.4
+Provides-Extra: dev
+Requires-Dist: black; extra == "dev"
+Requires-Dist: bumpver; extra == "dev"
+Requires-Dist: isort; extra == "dev"
+Requires-Dist: pip-tools; extra == "dev"
+Requires-Dist: pytest; extra == "dev"
+
+# Shepard and Metzler 3D Shape Renderer
+
+The Shepard and Metzler 3D Shape Renderer is a custom-developed image rendering tool for generating perspective pictures of three-dimensional abstract objects from the study on mental rotation done by [Shepard R.N. & Metzler J.(1971)](https://www.science.org/doi/10.1126/science.171.3972.701).
+
+<div align="center">
+  <img src="./media/thumbnail.png">
+</div>
+
+## Installation
+
+You can install the Shepard and Metzler 3D Shape Renderer from [PyPI](https://pypi.org/project/shepard-metzler-shape-renderer/):
+
+```console
+$ python -m pip install shepard-metzler-shape-renderer
+```
+
+The package is supported on Python 3.12 and above.
+
+## How to use
+
+The Shepard and Metzler 3D Shape Renderer is flexible in use. The first thing to be done is to configure the renderer. An example of acceptable configuration format is provided in [config.yaml](./how-to-use/config.yaml).
+```
+camera:
+    distance: 25.
+    elevation: -35.
+    rotation: 20.
+
+
+renderer:
+    image_size: 256
+    background: white
+    dpi: 100
+    format: png
+
+
+object:
+  facecolor: white
+  edgecolor: black
+  edgewidth: 0.8
+```
+
+The following code snippet contains the necessary steps for rendering an image of 3D shape in perspective and saving it in a file. 
+```python 
+from shaperenderer.geometry import (
+    ShapeGenerator,
+    MetzlerShape
+)
+from shaperenderer.renderer import (
+    Camera,
+    Renderer,
+    Object3D
+)
+
+generator = ShapeGenerator(random_state=12345)
+shape = MetzlerShape(generator.generate())
+object_params = {
+    "facecolor": facecolor,
+    "edgecolor": edgecolor,
+    "edgewidth": edgewidth
+}
+
+object3d = Object3D(
+    shape=shape,
+    **object_params
+)
+
+camera = Camera()
+camera.setSphericalPosition(
+    r=camera_distance,
+    theta=camera_elevation,
+    phi=camera_rotation
+)
+
+renderer = Renderer(
+    imgsize=(width, height),
+    dpi=dpi,
+    bgcolor=background,
+    format=saveformat
+)
+renderer.render(object3d, camera)
+renderer.save_figure_to_file(filename)
+```
