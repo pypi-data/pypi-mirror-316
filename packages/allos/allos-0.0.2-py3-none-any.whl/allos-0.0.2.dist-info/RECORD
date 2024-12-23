@@ -1,0 +1,11 @@
+allos/__init__.py,sha256=QvlVh4JTl3JL7jQAja76yKtT-IvF4631ASjWY1wS6AQ,22
+allos/_modidx.py,sha256=VInizguBhZjCXBRJ0yzdqZ70LBTXEnZUXaXW9ufma-k,9690
+allos/core.py,sha256=_2l8s6miNLKDe1L3RcjVYEDb5JY07pJzXa0aZeHX0dQ,6422
+allos/gene_report.py,sha256=8c_8EBjjFSj13TaybFw7pqn4jucsRgzUrsUOZxPOcPo,38598
+allos/plot_transcripts.py,sha256=psINUwN1OVOlvJd4znXyK0J05s-f-nK0XcdHqy4t5gg,13089
+allos-0.0.2.dist-info/LICENSE,sha256=xV8xoN4VOL0uw9X8RSs2IMuD_Ss_a9yAbtGNeBWZwnw,11337
+allos-0.0.2.dist-info/METADATA,sha256=jY4BxYbJb2cgKTvJLgm-z9cKj3MW-uQUOuVVDyn4X7g,6010
+allos-0.0.2.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+allos-0.0.2.dist-info/entry_points.txt,sha256=MrMD0ZG2vpqD33v1t85w7M95KwBYDGE-4qh-yhBk1-8,32
+allos-0.0.2.dist-info/top_level.txt,sha256=mU-IC2Jjyjax_Zx51vyb6LfiMXKuJtawOKXo4_Yanxs,6
+allos-0.0.2.dist-info/RECORD,,
