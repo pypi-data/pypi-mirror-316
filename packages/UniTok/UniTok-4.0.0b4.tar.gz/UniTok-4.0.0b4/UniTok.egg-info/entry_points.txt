@@ -1,0 +1,5 @@
+[console_scripts]
+unidep-upgrade-v4 = UniTok.__main__:upgrade
+unitok = UniTok.__main__:main
+unitokbeta = unitokbeta.__main__:main
+
