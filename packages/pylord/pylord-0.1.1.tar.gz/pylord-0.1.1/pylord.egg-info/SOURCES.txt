@@ -1,0 +1,7 @@
+README.md
+setup.py
+pylord.egg-info/PKG-INFO
+pylord.egg-info/SOURCES.txt
+pylord.egg-info/dependency_links.txt
+pylord.egg-info/requires.txt
+pylord.egg-info/top_level.txt
