@@ -1,0 +1,75 @@
+Metadata-Version: 2.1
+Name: blob-your-face
+Version: 0.1.0
+Summary: A tool to detect faces in images and apply a blob effect
+Home-page: https://github.com/crapthings/py-blob-your-face
+Author: crapthings
+Author-email: crapthings@gmail.com
+Keywords: face detection,image processing,blob effect
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: opencv-python
+Requires-Dist: numpy
+Requires-Dist: ultralytics
+
+# Blob Your Face
+
+A command-line tool to detect faces in images and apply a blob effect to them.
+
+## Installation
+
+```
+pip install blob-your-face
+```
+
+## Usage
+
+```
+blob_your_face /path/to/input/folder [--color COLOR] [--shape SHAPE] [--pad PAD]
+```
+
+### Options:
+- `--color`: Blob color in BGR format (e.g., '255,0,0' for blue). Default is white.
+- `--shape`: Shape of the blob (circle, ellipse, rectangle, square). Default is circle.
+- `--pad`: Padding size for the blob. Default is 0.
+
+### Example:
+```
+blob_your_face ./inputs --color 255,0,0 --shape ellipse --pad 10
+```
+
+## Features
+
+- Detects faces in images using YOLO v8.
+- Applies a customizable blob effect to detected faces.
+- Supports various blob shapes: circle, ellipse, rectangle, and square.
+- Processes all supported image formats in the input directory.
+- Creates a new output directory with a random suffix at the same level as the input directory.
+- Preserves original filenames for processed images.
+
+## Supported Image Formats
+
+- JPEG (.jpg, .jpeg)
+- PNG (.png)
+- BMP (.bmp)
+
+## Requirements
+
+- Python 3.6+
+- OpenCV
+- NumPy
+- Ultralytics YOLO
+- Pillow
+
+## Note
+
+This tool requires the `yolov8n-face.pt` model file to be present in the working directory or specified path.
