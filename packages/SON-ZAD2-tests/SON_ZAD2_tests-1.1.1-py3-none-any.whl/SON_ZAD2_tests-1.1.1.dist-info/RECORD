@@ -1,0 +1,16 @@
+git_project/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+git_project/lists/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+git_project/methods/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+git_project/methods/add_student.py,sha256=XqDPvcQgIdPKAWgzZ_38QMQVs9LjLaYuMtsZkBTqfDg,2530
+git_project/methods/attendance.py,sha256=3wBtaEOcaUYAOdjLWKOI2IUu_Png0pcKCFkYZqwa0JQ,3821
+git_project/methods/export_students.py,sha256=ayKRB0zQCKSiOyBV6c4Dh1xMReDDIPORyV5pSSQT1Yo,1346
+git_project/methods/import_students.py,sha256=ySjuD5wfk8Q-K-1mH54r3DqvF8YHuYlyjnK0oFA_f8o,1149
+git_project/methods/main.py,sha256=L41vS1sngqZhTUdBeRqxclHwRCl3JZ31f1ysyXZZP_Y,994
+unit_tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+unit_tests/test_add_export_student.py,sha256=06NlQx_pwsyoDLaHoHS5u056jbCxhN9WLgqzY4GR_X4,2283
+unit_tests/test_attendance.py,sha256=FgqMQTjduCJVedlZRhV8c1p7P-lJSJpKVYC_iwvGmvg,2519
+unit_tests/test_import.py,sha256=hVORurcTF0QIKuclOSC4tBfhdUITk42LGkxPznMXIbU,1410
+SON_ZAD2_tests-1.1.1.dist-info/METADATA,sha256=RlMRwVk8RICMEWoOfUl-nRWr9X1rybkIrpw88O_ps2M,2208
+SON_ZAD2_tests-1.1.1.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+SON_ZAD2_tests-1.1.1.dist-info/top_level.txt,sha256=zG21pIF4M0zi14vu_D0oV9NfEEa90vmBQoFFz0dPFbk,23
+SON_ZAD2_tests-1.1.1.dist-info/RECORD,,
