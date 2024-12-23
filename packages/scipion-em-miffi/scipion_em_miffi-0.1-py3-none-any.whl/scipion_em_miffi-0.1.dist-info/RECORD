@@ -1,0 +1,17 @@
+miffi/__init__.py,sha256=brnxAaX19xJ6EeU-CQVXXtjRnSigIAhgz8Ax2G4E-G0,4842
+miffi/bibtex.py,sha256=Bz8KUS-oliDG72p0O5amyXh7JD97CRs016D8xc9UIXo,1414
+miffi/constants.py,sha256=ZtEzGK5NsJbdbVvygOaLshXsEbtai2TWVVIsQiR0nro,1485
+miffi/icon.png,sha256=NV5mzFDcRFv7Ll-ACQ64ypN_y-__BRkyFM4tfZhUUaw,1402
+miffi/protocols.conf,sha256=ydEnBqwqQVYOZi_AhkcekKsR7rc1NHoe6fEDjl7dwTQ,292
+miffi/protocols/__init__.py,sha256=p3GfJNKv5BoLCArSKrLObqpDpyaXCFUYHLw_N80zFDY,329
+miffi/protocols/protocol_miffi.py,sha256=VoallkOQKMsi2TrlUdRWnkxey07fasN36bpS7oARG60,15679
+miffi/tests/__init__.py,sha256=2T-9P0lgofelsFwFVL4_mdHMKk6GxlRl94tQdY1j6W4,348
+miffi/viewers/__init__.py,sha256=9TWh3YypNED4KmBBnLXm9yppieugSrd9xnEtre7dOUw,340
+miffi/wizards/__init__.py,sha256=rph4dp1-rM9gmit-qQaq6f8LRIjRR9MxouAkVK5FANc,381
+miffi/wizards/wizard_miffi.py,sha256=46dC8CBA0j6mvxusURrtOdWyI08Gw7u9xZ8pxI0NBPw,224
+scipion_em_miffi-0.1.dist-info/LICENSE,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+scipion_em_miffi-0.1.dist-info/METADATA,sha256=8ZNZeL1ddrKhnbxWVwBVcU8_LrOa4t2HStW5hEzMB1Y,3005
+scipion_em_miffi-0.1.dist-info/WHEEL,sha256=tZoeGjtWxWRfdplE7E3d45VPlLNQnvbKiYnx7gwAy8A,92
+scipion_em_miffi-0.1.dist-info/entry_points.txt,sha256=IHnmXiZSbQ-CoBj8LjEif7M5fwgJkfX6woIuafhCf4k,35
+scipion_em_miffi-0.1.dist-info/top_level.txt,sha256=nwOxY0ebuSBFapvFmPDLmqYmmIFmRRNusdZxQlByP7E,6
+scipion_em_miffi-0.1.dist-info/RECORD,,
