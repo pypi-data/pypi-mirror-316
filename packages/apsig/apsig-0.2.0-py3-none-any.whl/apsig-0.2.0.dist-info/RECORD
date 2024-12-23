@@ -1,0 +1,13 @@
+apsig-0.2.0.dist-info/METADATA,sha256=dsiQ0wtgrUfBOIJGfYqCPoPtv4n3UL7iOzLl1VnhEu4,1537
+apsig-0.2.0.dist-info/WHEEL,sha256=thaaA2w1JzcGC48WYufAs8nrYZjJm8LqNfnXFOFyCC4,90
+apsig-0.2.0.dist-info/entry_points.txt,sha256=6OYgBcLyFCUgeqLgnvMyOJxPCWzgy7se4rLPKtNonMs,34
+apsig-0.2.0.dist-info/licenses/LICENSE,sha256=hTmkZO4bYax5zXpJoz5PnwLRQbM0DYktW1SJnYRIwMo,1082
+apsig/__init__.py,sha256=RhaUdeoi_I4cZyv-DH2sXoUl7unV_34YqZ0genFJVx8,317
+apsig/__polyfill/datetime.py,sha256=WNHatYb09CTrCAPvZuNgngvYzWTc4_TqRvuL18hyl0g,362
+apsig/draft/sign.py,sha256=_fVRGGdGg4Vf7n3s0s9MJY_S_IWc_gZ6Po1pIXNzi7Q,1561
+apsig/draft/verify.py,sha256=qXfASfkZ5vQ6p9TRbYumkTgQsymTWVDRXOdxWp6hwpE,2770
+apsig/exceptions.py,sha256=tMDuCYZijVTKpw-ODv89IcrmaqVs3xQXEGTUG2gMMzk,44
+apsig/ld_signature.py,sha256=eiFgvM74q9z-rqG4A7PT9TfZnNlga80sIcjwqrOtTaM,2965
+apsig/object_integrity_proofs/sign.py,sha256=VHv-PhzAGaGocZCGkx3dWRsPp07DlIwwVFLj3kEo_7Q,1261
+apsig/object_integrity_proofs/verify.py,sha256=vxDmefS2YIXj-ApxpjPlFGMvpZEKNxHLX8-NGfeRBRk,2897
+apsig-0.2.0.dist-info/RECORD,,
