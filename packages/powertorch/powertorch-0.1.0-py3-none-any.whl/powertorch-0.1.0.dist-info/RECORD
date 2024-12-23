@@ -1,0 +1,12 @@
+powertorch/__init__.py,sha256=uAi0jYZ_axkppk2Sjl3yYU8Cd40uKNWbBbYOFSuLUL4,42
+powertorch/helper/__init__.py,sha256=eDGkFu4LO00m4Ey0Ql0LyJC8izqTEh7ntFH_m5A8Kdw,42
+powertorch/helper/data.py,sha256=vi-r1spAz7bhGMt_JmPFYqKOzYsjOEfgAx-WCMLP4H4,823
+powertorch/helper/helper.py,sha256=c7WcWq9BSIV3QJSwpqktLegvbA5XbQhqVyH0ewjxSmE,1758
+powertorch/models/__init__.py,sha256=6K-JiRFLVyvgMcgTK8U91TsXwGqUYy3ZBFxQWVFDzag,73
+powertorch/models/lenet5.py,sha256=rdG0rYobRfCgVV4s1cQZ43CtHxUE3WfZ3RiLIo59k4A,1545
+powertorch/models/perceptron.py,sha256=9P2mKy4kfgt1e1C43TmF7Xy_bXve9Ky_EsUIA9UIVVA,1701
+powertorch/models/quantized.py,sha256=y-Tu7MS6T1DyYt1oV03mynErgRa_IYdkYV-LV8iURRo,1139
+powertorch-0.1.0.dist-info/LICENSE,sha256=8bMZizq9Y2aySuZxHTpJ3YxlOd8shC3ebjpBMARdrSs,1078
+powertorch-0.1.0.dist-info/WHEEL,sha256=CpUCUxeHQbRN5UGRQHYRJorO5Af-Qy_fHMctcQ8DSGI,82
+powertorch-0.1.0.dist-info/METADATA,sha256=AMLSaXxiKz7m4KafPxdR1YImNjqRpPMdqGNq08PE2AE,2307
+powertorch-0.1.0.dist-info/RECORD,,
