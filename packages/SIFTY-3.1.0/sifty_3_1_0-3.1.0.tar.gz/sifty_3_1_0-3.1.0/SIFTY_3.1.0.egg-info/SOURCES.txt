@@ -1,0 +1,10 @@
+README.md
+setup.py
+SIFTY_3.1.0.egg-info/PKG-INFO
+SIFTY_3.1.0.egg-info/SOURCES.txt
+SIFTY_3.1.0.egg-info/dependency_links.txt
+SIFTY_3.1.0.egg-info/requires.txt
+SIFTY_3.1.0.egg-info/top_level.txt
+libname/__init__.py
+libname/hello.py
+libname/models/CudaSift-Pascal.zip
