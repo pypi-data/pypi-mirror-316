@@ -1,0 +1,6 @@
+django_aioredis/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_aioredis/cache.py,sha256=2k7SDzg1C55le3pSbIlZWXZrYfen7iSvhIhSX5Vmwqg,1238
+django_aioredis-0.0.1.dist-info/METADATA,sha256=jwSU2kWxBJK2274jZ1gNLG1MTBxrpVjcHp2tz-xO8Rg,2455
+django_aioredis-0.0.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+django_aioredis-0.0.1.dist-info/licenses/LICENSE,sha256=qhSA3CQ1XLrtW-0s2FiBeWJLFJtET-KfLpxKZ-VqMMM,1098
+django_aioredis-0.0.1.dist-info/RECORD,,
