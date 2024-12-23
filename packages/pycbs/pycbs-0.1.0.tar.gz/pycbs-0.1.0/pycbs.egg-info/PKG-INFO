@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: pycbs
+Version: 0.1.0
+Summary: CLI Project Compilation Tool
+Author: Markada
+Author-email: markada.py@gmail.com
+Classifier: Programming Language :: Python :: 3.13
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.13
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+PyCBS - СЌС‚Рѕ CLI РёРЅСЃС‚СЂСѓРјРµРЅС‚ РґР»СЏ СЃР±РѕСЂРєРё РїСЂРѕРµРєС‚РѕРІ
+
+РЎРєР°С‡РёРІР°РЅРёРµ:
+1. РЎРєР°С‡Р°С‚СЊ Р±РёР±Р»РёРѕС‚РµРєСѓ: `pip install pycbs`
+1. Р§С‚РѕР±С‹ РЅР°С‡Р°С‚СЊ, РІРІРµРґРёС‚Рµ `py -m pycbs` РґР»СЏ РїСЂРѕРІРµСЂРєРё СЂР°Р±РѕС‚РѕСЃРїРѕСЃРѕР±РЅРѕСЃС‚Рё
