@@ -1,0 +1,10 @@
+my_socket_library/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+my_socket_library/cli.py,sha256=jbRlWbPZlN3GI3h0oog4fu-7Q1RoUjxmYIEQtR_nsrs,660
+my_socket_library/client.py,sha256=9pNQUAdYEnvScBdITr4gyPokmIe3Rr7Ri-BvOveE3k4,493
+my_socket_library/server.py,sha256=HyxC0LtPReP2AKMlBoAzTM2SSCvzUxfVKsbHC6vzdEI,727
+my_socket_library-0.1.0.dist-info/LICENSE,sha256=msRUrf3FqeSnrX8yxZmWIiXPAPoz-CWeSCKVhEQrfs4,769
+my_socket_library-0.1.0.dist-info/METADATA,sha256=sF9r6NXUx7llauAlPYPhD2ssGESOq2na1l64R4yOquY,779
+my_socket_library-0.1.0.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+my_socket_library-0.1.0.dist-info/entry_points.txt,sha256=XITl9ICc-cYQ63e42q_gmUuVwUidBoS8gz5bA4HHRcE,61
+my_socket_library-0.1.0.dist-info/top_level.txt,sha256=I6n-HriuATmwkKTwH8fAo2iXCxuQN5LUlVwgS050A0M,18
+my_socket_library-0.1.0.dist-info/RECORD,,
