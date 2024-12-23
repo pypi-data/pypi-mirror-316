@@ -1,0 +1,17 @@
+./.gitignore,sha256=ONSWUFjbroY0pT19JsLkG8Ne1-bUpHuUrxEQIKpkyJs,526
+./PKG-INFO,sha256=4mjY3luxp4JIi7eXF9e35kq-sZ6o6n3Pgo69HBK-Xmc,1079
+./README.md,sha256=UUENT_T_hXVyfiU51QywMupi_V-BqT4pEAlMwrlA_Gk,737
+./main.py,sha256=qtKwSRsQfd5xAKIuYM67ylctMHVSyiasnKaGvCUjo7M,1907
+./pyproject.toml,sha256=Pp0v-cLM2TfOWPgxmunLbWOYAJprd0FZwQsWjxbYUic,1046
+./test.ipynb,sha256=erAKKnGdOxH1MolSrKXJ2N4jRf_0Df2vtUdUxEvEiVQ,1582
+./utils.py,sha256=jJjXmGC4f7EF3jmGIOvjQhyQFFXTyYnmkApWRI8sDDY,470
+./src/config_extractor/__init__.py,sha256=MgixbT4Ciu1Q9nf31c7aRgv7_tCg_5_A613WcwpIaCQ,60
+./src/config_extractor/extractor.py,sha256=ogbvmmPIvlJwDVby1IgSrPbDPEqXde_4l5ngJwSvvkg,3661
+./src/github_scraper/__init__.py,sha256=-wupf7QyxmnTd8W_vpbiYGVztHN8Zlr3kBWvxKVb6p0,77
+./src/github_scraper/readme_fetcher.py,sha256=Yb87yLXZ2cfvBPZNAcd6HrNKqzIkXQnhKSMjINaf74Q,2602
+./src/llm_client/__init__.py,sha256=nBjCwRBcFSk-8aXF4dFlxlFCoVvIkZCXlbHDIUWzOg8,55
+./src/llm_client/client.py,sha256=NSo3414mWFbwhSbqwHYbL69JjE2qj4dVDtqn90klHMU,2646
+mcp_config_extractor-0.1.0.dist-info/METADATA,sha256=4mjY3luxp4JIi7eXF9e35kq-sZ6o6n3Pgo69HBK-Xmc,1079
+mcp_config_extractor-0.1.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+mcp_config_extractor-0.1.0.dist-info/entry_points.txt,sha256=iD5h0R5hu6kwNB4UIqDC-vuqBmrpe12uUUpKBSn6eoc,46
+mcp_config_extractor-0.1.0.dist-info/RECORD,,
