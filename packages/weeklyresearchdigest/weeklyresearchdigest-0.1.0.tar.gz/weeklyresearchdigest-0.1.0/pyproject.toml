@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "weeklyresearchdigest"
+version = "0.1.0"
+description = "An automated research digest summarizer"
+authors = ["Dora Gozukara <drgzkr@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+keywords = ["research", "digest", "automation", "bioRxiv", "OpenAI"]
+homepage = "https://github.com/drgzkr/weeklyresearchdigest"
+repository = "https://github.com/drgzkr/weeklyresearchdigest"
+classifiers = [
+    "Programming Language :: Python :: 3.11",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+openai = "^1.58.1"
+requests = "^2.13.0"
+python-dotenv = "^1.0.1"
+
+[tool.poetry.scripts]
+weeklyresearchdigest = "weeklyresearchdigest.weekly_digest:main"
+schedule-digest = "weeklyresearchdigest.scheduler:schedule_digest"
