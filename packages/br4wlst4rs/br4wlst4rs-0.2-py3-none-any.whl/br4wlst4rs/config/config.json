@@ -1,0 +1,19 @@
+{
+    "lib": {
+        "version": 0.2
+    },
+    "frida-config": {
+        "mode": "remote",
+        "ip": "127.0.0.1",
+        "port": 27042
+    },
+    "application": {
+        "app_name": "com.supercell.laser",
+        "main_module": "laser",
+        "version": 59.197
+    },
+    "offsets": {
+        "sendto": "0xe01730",
+        "rec_post": "0x11f9c"
+    }
+}
