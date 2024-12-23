@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: uncurl-pk
+Version: 0.0.3
+Summary: A library to convert curl requests to python-requests. Forked version of spulec/uncurl 
+Home-page: https://github.com/pnkjkpvt/uncurl/tree/master
+Author: Pankaj Kumar
+Author-email: pnkjpvt@gmail.com
+License-File: LICENSE
+Requires-Dist: pyperclip
+Requires-Dist: six
