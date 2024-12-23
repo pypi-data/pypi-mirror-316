@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+pycbs/ClangBuild.py
+pycbs/LangSTD.py
+pycbs/OCM.py
+pycbs/Target.py
+pycbs/Windows.py
+pycbs/__init__.py
+pycbs/__main__.py
+pycbs.egg-info/PKG-INFO
+pycbs.egg-info/SOURCES.txt
+pycbs.egg-info/dependency_links.txt
+pycbs.egg-info/requires.txt
+pycbs.egg-info/top_level.txt
