@@ -1,0 +1,64 @@
+Metadata-Version: 2.1
+Name: macro-photo
+Version: 0.1.4
+Summary: A Python library for generating images using advanced AI technology
+Home-page: https://github.com/macro-photo/macro-photo
+Author: MacroPhoto
+Author-email: bidifeb142@owube.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Natural Language :: Arabic
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests>=2.31.0
+Requires-Dist: colorama>=0.4.6
+
+# Macro Photo Generator
+
+مكتبة Python لتوليد الصور باستخدام تقنية الذكاء الاصطناعي المتقدمة.
+
+## التثبيت
+
+```bash
+pip install macro-photo
+```
+
+## الاستخدام الأساسي
+
+```python
+from macro_photo import MacroImageGenerator
+
+# إنشاء نسخة من المولد
+generator = MacroImageGenerator()
+
+# توليد صورة واحدة
+image_path = generator.generate_image("سيارة رياضية حمراء جميلة")
+print(f"تم حفظ الصورة في: {image_path}")
+
+# توليد عدة صور دفعة واحدة
+prompts = [
+    "قطة صغيرة تلعب بكرة",
+    "غروب الشمس على الشاطئ",
+    "حديقة مليئة بالزهور"
+]
+image_paths = generator.batch_generate(prompts, prefix="my_images_")
+print(f"تم إنشاء {len(image_paths)} صور")
+```
+
+## المميزات
+
+- توليد صور من وصف نصي
+- دعم توليد صور متعددة دفعة واحدة
+- إمكانية تخصيص مجلد حفظ الصور
+- معالجة الأخطاء وإعادة المحاولة تلقائياً
+- تنسيق أسماء الملفات تلقائياً
+
+## المساهمة
+
+نرحب بمساهماتكم! يرجى إرسال pull requests أو فتح issues على GitHub.
+
+## الترخيص
+
+هذا المشروع مرخص تحت MIT License.
