@@ -1,0 +1,106 @@
+from typing import Any, TypeVar, Union, cast
+from uuid import UUID
+
+from attrs import define as _attrs_define
+from attrs import field as _attrs_field
+
+from ..types import UNSET, Unset
+
+T = TypeVar("T", bound="ChatCreate")
+
+
+@_attrs_define
+class ChatCreate:
+    """Schema for creating a new chat.
+
+    Example:
+        {'description': 'General support discussion', 'integration_uuid': '123e4567-e89b-12d3-a456-426614174000',
+            'title': 'Support Chat'}
+
+    Attributes:
+        integration_uuid (UUID): Integration UUID
+        title (Union[None, Unset, str]): Chat title
+        description (Union[None, Unset, str]): Chat description
+    """
+
+    integration_uuid: UUID
+    title: Union[None, Unset, str] = UNSET
+    description: Union[None, Unset, str] = UNSET
+    additional_properties: dict[str, Any] = _attrs_field(init=False, factory=dict)
+
+    def to_dict(self) -> dict[str, Any]:
+        integration_uuid = str(self.integration_uuid)
+
+        title: Union[None, Unset, str]
+        if isinstance(self.title, Unset):
+            title = UNSET
+        else:
+            title = self.title
+
+        description: Union[None, Unset, str]
+        if isinstance(self.description, Unset):
+            description = UNSET
+        else:
+            description = self.description
+
+        field_dict: dict[str, Any] = {}
+        field_dict.update(self.additional_properties)
+        field_dict.update(
+            {
+                "integration_uuid": integration_uuid,
+            }
+        )
+        if title is not UNSET:
+            field_dict["title"] = title
+        if description is not UNSET:
+            field_dict["description"] = description
+
+        return field_dict
+
+    @classmethod
+    def from_dict(cls: type[T], src_dict: dict[str, Any]) -> T:
+        d = src_dict.copy()
+        integration_uuid = UUID(d.pop("integration_uuid"))
+
+        def _parse_title(data: object) -> Union[None, Unset, str]:
+            if data is None:
+                return data
+            if isinstance(data, Unset):
+                return data
+            return cast(Union[None, Unset, str], data)
+
+        title = _parse_title(d.pop("title", UNSET))
+
+        def _parse_description(data: object) -> Union[None, Unset, str]:
+            if data is None:
+                return data
+            if isinstance(data, Unset):
+                return data
+            return cast(Union[None, Unset, str], data)
+
+        description = _parse_description(d.pop("description", UNSET))
+
+        chat_create = cls(
+            integration_uuid=integration_uuid,
+            title=title,
+            description=description,
+        )
+
+        chat_create.additional_properties = d
+        return chat_create
+
+    @property
+    def additional_keys(self) -> list[str]:
+        return list(self.additional_properties.keys())
+
+    def __getitem__(self, key: str) -> Any:
+        return self.additional_properties[key]
+
+    def __setitem__(self, key: str, value: Any) -> None:
+        self.additional_properties[key] = value
+
+    def __delitem__(self, key: str) -> None:
+        del self.additional_properties[key]
+
+    def __contains__(self, key: str) -> bool:
+        return key in self.additional_properties
