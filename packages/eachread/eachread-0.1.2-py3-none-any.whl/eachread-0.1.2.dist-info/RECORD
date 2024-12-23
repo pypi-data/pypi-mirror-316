@@ -1,0 +1,13 @@
+eachread/__init__.py,sha256=D-2PmkKviigm-32afGk90DZzqgU9Y0c6nidhAnN_dFo,625
+eachread/cli.py,sha256=K7RPa-d9l0ymdZ6pRnxuPyu4-39k7e_UzmsIE2bBJTA,1380
+eachread/wordnet/__init__.py,sha256=D4_m_Xp0ihkdSsgSrq8sqwOyLCW1N4USVo9q-x5TtXE,99
+eachread/wordnet/adjanimal.py,sha256=50r5IANhqW-0Xsd-xm3FrQuqpIfQjFWmHyJuuMWEi_Q,2031
+eachread/wordnet/adjectives.py,sha256=SMW2wAWfYDxtW7R1l7_jUIQ7bSGb4qqA3jqgdO6uMv4,645
+eachread/wordnet/commands.py,sha256=NsTZsyVPoEtU1xgt9zJv2MA8ufgdOyCZkJE3NB0bnVw,766
+eachread/wordnet/data.py,sha256=9kMvQPXvRZ9M5u4MEZvvxxEVolKId6o0OJD-rw9GJFE,375
+eachread/wordnet/display.py,sha256=wBGTdvlPxsELpF_UHYicAnJBDb0Gom2qRe2fnpzJi1M,1597
+eachread/wordnet/utils.py,sha256=u9C1HVeYSUAabm5f-1jzBG50gJlq3n-KNi2ZuTwmDzw,1309
+eachread-0.1.2.dist-info/METADATA,sha256=-qpm2i-7RWxnEgjeJN3sVefV8HxZQXDa_4WtL09mJMM,3177
+eachread-0.1.2.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+eachread-0.1.2.dist-info/entry_points.txt,sha256=2BE-blRK33JcbXGtPAptNiQU0QSm7hZ8SCfQKMwKtDQ,43
+eachread-0.1.2.dist-info/RECORD,,
