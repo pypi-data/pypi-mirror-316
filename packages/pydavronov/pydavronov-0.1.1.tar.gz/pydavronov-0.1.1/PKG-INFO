@@ -1,0 +1,63 @@
+Metadata-Version: 2.1
+Name: pydavronov
+Version: 0.1.1
+Summary: Python  Web framework built .
+Home-page: https://github.com/me/myproject
+Author: Davronov G'
+Author-email: davronovtatu@gmail.com
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.9.0
+Description-Content-Type: text/markdown
+
+
+# pydavronov
+
+**pydavronov** is a minimalist Python framework designed for creating WSGI applications. It leverages:
+- **WebOb** for convenient request and response objects,
+- **WhiteNoise** for serving static files,
+- **Jinja2** for template rendering,
+- **parse** for parsing route parameters,
+- **Middleware** for extendable request/response processing.
+
+---
+
+## Main Features
+
+1. **Routing**  
+   - Easily add routes using the `@app.route(...)` decorator or by calling `add_route(...)` directly.  
+   - Supports parameterized routes (e.g., `@app.route("/user/{id}")`).
+
+2. **Static Files**  
+   - Uses **WhiteNoise** to serve static files from the `static/` folder by default.  
+   - Any request starting with `/static` will be automatically handled by WhiteNoise.
+
+3. **Templating**  
+   - Utilizes **Jinja2** for rendering HTML templates from the `templates/` directory.  
+   - The `app.template(template_name, context)` method returns rendered HTML content.
+
+4. **Exception Handling**  
+   - You can assign a custom exception handler with `app.add_exception_handler(...)`.  
+   - If an exception occurs and the handler is set, the framework will invoke that handler.
+
+5. **Middleware**  
+   - Built-in support for middleware to perform custom logic before and after request handling.  
+   - `app.add_middleware(...)` allows you to attach any class derived from `Middleware`.
+
+6. **Testing**  
+   - A built-in `test_session()` method integrates your app with `requests.Session()` and `wsgiadapter.WSGIAdapter`.  
+   - This makes it easy to write tests that send real HTTP requests to your application in memory.
+
+---
+
+## Installation
+
+1. Clone this repository or copy the source files into your project.
+2. Install the required dependencies (Python 3.7+ recommended):
+   ```bash
+   pip install webob parse requests jinja2 whitenoise
