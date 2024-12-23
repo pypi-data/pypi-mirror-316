@@ -1,0 +1,12 @@
+pandas
+numpy
+matplotlib
+astropy
+astroquery
+scipy
+fastparquet
+pyarrow
+GitPython
+scikit-sparse
+pulp==2.7
+snakemake
