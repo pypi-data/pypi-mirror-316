@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+EmailListener/EmailListener.py
+EmailListener/__init__.py
+EmailListener/errors.py
+EmailListener/types.py
+IMAP_EmailListener.egg-info/PKG-INFO
+IMAP_EmailListener.egg-info/SOURCES.txt
+IMAP_EmailListener.egg-info/dependency_links.txt
+IMAP_EmailListener.egg-info/requires.txt
+IMAP_EmailListener.egg-info/top_level.txt
