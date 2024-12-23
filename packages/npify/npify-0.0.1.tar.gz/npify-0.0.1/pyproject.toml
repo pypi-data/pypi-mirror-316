@@ -1,0 +1,61 @@
+[project]
+name = "npify"
+dynamic = ["version"]
+description = ""
+authors = [
+  {name = "Stephan Gocht", email = "stephan@drgocht.com"},
+]
+maintainers = [
+  {name = "Stephan Gocht", email = "stephan@drgocht.com"},
+]
+
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+classifiers = [
+    "Development Status :: 1 - Planning",
+    "License :: OSI Approved :: MIT License",
+]
+[project.urls]
+"Homepage" = "https://www.npify.com"
+"Bug Reports" = "https://github.com/NPify/npify/issues"
+"Source" = "https://github.com/NPify/npify"
+
+[tool.hatch.version]
+path = "src/npify/__about__.py"
+
+[tool.hatch]
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.envs.test]
+dependencies = [
+  "pytest"
+]
+
+[tool.hatch.envs.lint]
+template = "test"
+path = ".venvs/lint"
+extra-dependencies = [
+  "flake8",
+  "mypy",
+  "ruff"
+]
+[tool.hatch.envs.lint.scripts]
+run = [
+  "flake8 src tests",
+  "ruff check src tests --fix",
+  "mypy src tests --check-untyped-defs"
+]
+
+
+[tool.hatch.envs.hatch-test]
+template="test"
+path = ".venvs/hatch-test"
+extra-dependencies = [
+
+]
+
+[tool.ruff]
+extend="ruff.toml"
