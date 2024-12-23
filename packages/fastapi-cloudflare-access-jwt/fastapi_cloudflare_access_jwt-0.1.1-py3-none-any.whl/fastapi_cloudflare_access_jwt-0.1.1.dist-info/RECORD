@@ -1,0 +1,7 @@
+cloudflare_access_jwt/__init__.py,sha256=gO4TVvRG8yG-YL_VTR_py0XhENcN_Dr1nR3mKhvtg0Q,154
+cloudflare_access_jwt/cloudflare_access_jwt.py,sha256=2oFMQB7qeGmHtCxF9FQAZytNyMrySnAFhVCMmz1U1o0,2519
+cloudflare_access_jwt/cloudflare_access_jwt_test.py,sha256=aodXDexVg596v1wAYaeoV6UQiTzPXkmvynsY2pYlnSQ,2473
+fastapi_cloudflare_access_jwt-0.1.1.dist-info/METADATA,sha256=uvMituO41_g71nPgXOYF7RCvrQ4mAjgCLa-0tJp8xl8,3334
+fastapi_cloudflare_access_jwt-0.1.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+fastapi_cloudflare_access_jwt-0.1.1.dist-info/licenses/LICENSE,sha256=kNSC2Z5GvxE5Uf8och1YlUhkjQf-IB6b3yyuYxnoWlA,1074
+fastapi_cloudflare_access_jwt-0.1.1.dist-info/RECORD,,
