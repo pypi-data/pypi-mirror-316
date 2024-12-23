@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: fm-font-rename
+Version: 0.2.0
+Summary: Renames fonts to their internal name and unpacks .ttc/.otc files.
+Home-page: https://github.com/futuremotiondev/fm-font-rename/
+License: MIT
+Keywords: font,rename,typeface,unpack,ttf,otf,ttc,otc
+Author: Jay Soren
+Author-email: futuremotiondev@gmail.com
+Maintainer: Jay Soren
+Maintainer-email: futuremotiondev@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: faust-cchardet (>=2.1.19,<3.0.0)
+Requires-Dist: fonttools (>=4.55.3,<5.0.0)
+Project-URL: Repository, https://github.com/futuremotiondev/fm-font-rename/
+Description-Content-Type: text/markdown
+
+# fm-font-rename
+
+Renames fonts to their internal name and unpacks .ttc/.otc files.Updated to use [faust-cchardet](https://pypi.org/project/faust-cchardet/) instead of the obsolete [cchardet](https://pypi.org/project/cchardet/).
+
+```bash
+pip install fm-font-rename
+font-rename insert/directory/file/path/here
+```
+
+## Changelog
+
+### v0.2.0
+
+- Initial Release
