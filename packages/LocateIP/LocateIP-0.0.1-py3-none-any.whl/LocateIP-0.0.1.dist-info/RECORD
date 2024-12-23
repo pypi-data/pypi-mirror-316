@@ -1,0 +1,10 @@
+pyip2region/__init__.py,sha256=XuZL9ZjTeFbMsNPdB3IF4qLJK039mAO8cOj9lpgxqvs,5446
+pyip2region/db.py,sha256=ZFpxtzfemAGYFf2M9a6cJSA1u-d20cpELDOjyOd2qBo,677
+pyip2region/ip.db3,sha256=RF1jGInFfxxXsIwtRw0bzEj_56sMeRy9CM8wRXDK2kc,16384
+pyip2region/ip2region.xdb,sha256=hnthm1Z_Ubud08OEpMv3wz5xoXiqWPEyAUmara8s944,11070083
+pyip2region/xdbSearcher.py,sha256=NPdiaeA88S1JJ9M-bvwm_RWA1jSPiWTS8SMR-xcAnGg,5865
+LocateIP-0.0.1.dist-info/LICENSE,sha256=Ul9dvPi6XPvs3OMuoCQqpG8mL36sbbkeC8YfVeN_kYE,11342
+LocateIP-0.0.1.dist-info/METADATA,sha256=giPhyZx-E7DMalnEiaZlBY-UuVT3en6kKVirFnfK-uA,2949
+LocateIP-0.0.1.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+LocateIP-0.0.1.dist-info/top_level.txt,sha256=7EN88Vr1eryzfmpug4Mvk5A4_THN7xUvUOGVC_AFr4Y,12
+LocateIP-0.0.1.dist-info/RECORD,,
