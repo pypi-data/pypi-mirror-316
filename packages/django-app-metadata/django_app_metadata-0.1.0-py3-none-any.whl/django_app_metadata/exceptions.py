@@ -1,0 +1,2 @@
+class AccessToUnpublishedConfigIsForbidden(RuntimeError):
+    pass
