@@ -1,0 +1,8 @@
+setup.py
+PyQt6In/__init__.py
+PyQt6In/core.py
+PyQt6In.egg-info/PKG-INFO
+PyQt6In.egg-info/SOURCES.txt
+PyQt6In.egg-info/dependency_links.txt
+PyQt6In.egg-info/top_level.txt
+tests/test_core.py
