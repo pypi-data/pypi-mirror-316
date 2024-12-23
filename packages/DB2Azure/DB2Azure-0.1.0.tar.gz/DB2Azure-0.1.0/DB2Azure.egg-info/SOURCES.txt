@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+DB2Azure.egg-info/PKG-INFO
+DB2Azure.egg-info/SOURCES.txt
+DB2Azure.egg-info/dependency_links.txt
+DB2Azure.egg-info/requires.txt
+DB2Azure.egg-info/top_level.txt
+db2azure/__init__.py
