@@ -1,0 +1,9 @@
+README.md
+setup.py
+paquete889/__init__.py
+paquete889/modulo.py
+paquete889/time.py
+paquete889.egg-info/PKG-INFO
+paquete889.egg-info/SOURCES.txt
+paquete889.egg-info/dependency_links.txt
+paquete889.egg-info/top_level.txt
