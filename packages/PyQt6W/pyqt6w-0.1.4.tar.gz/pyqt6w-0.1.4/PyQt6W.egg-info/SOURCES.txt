@@ -1,0 +1,49 @@
+setup.py
+PyQt6W/__init__.py
+PyQt6W/core.py
+PyQt6W.egg-info/PKG-INFO
+PyQt6W.egg-info/SOURCES.txt
+PyQt6W.egg-info/dependency_links.txt
+PyQt6W.egg-info/top_level.txt
+PyQt6W/10Канцелярия/__init__.py
+PyQt6W/10Канцелярия/Канелярия.py
+PyQt6W/12ConstrSpec/ConSpec.py
+PyQt6W/12ConstrSpec/__init__.py
+PyQt6W/13Междугородная Телефония/__init__.py
+PyQt6W/13Междугородная Телефония/main.py
+PyQt6W/14Обменный пункт (продажа валюты)14 вариант/14.py
+PyQt6W/14Обменный пункт (продажа валюты)14 вариант/__init__.py
+PyQt6W/16_Sklad/__init__.py
+PyQt6W/16_Sklad/sklad.py
+PyQt6W/17_Spravoshnik_filatelista/__init__.py
+PyQt6W/17_Spravoshnik_filatelista/db.py
+PyQt6W/17_Spravoshnik_filatelista/main.py
+PyQt6W/17_Spravoshnik_filatelista/utils.py
+PyQt6W/18_tourists_club/__init__.py
+PyQt6W/18_tourists_club/main.py
+PyQt6W/19Управляющая компания жилищно комунального хозяйста/19.py
+PyQt6W/19Управляющая компания жилищно комунального хозяйста/__init__.py
+PyQt6W/1Автовокзал/__init__.py
+PyQt6W/1Автовокзал/1/__init__.py
+PyQt6W/1Автовокзал/1/db.py
+PyQt6W/1Автовокзал/1/main.py
+PyQt6W/1Автовокзал/1/utils.py
+PyQt6W/20Частная Клиника/__init__.py
+PyQt6W/20Частная Клиника/main.py
+PyQt6W/3-Библиотека/__init__.py
+PyQt6W/3-Библиотека/db.py
+PyQt6W/3-Библиотека/main.py
+PyQt6W/4-Мастерская бытовой техники/4-Мастерская.py
+PyQt6W/4-Мастерская бытовой техники/__init__.py
+PyQt6W/5Отель/__init__.py
+PyQt6W/5Отель/Отель.py
+PyQt6W/6dispetcher_perevozok/__init__.py
+PyQt6W/6dispetcher_perevozok/main.py
+PyQt6W/8variant8-OOP-main/__init__.py
+PyQt6W/8variant8-OOP-main/main.py
+PyQt6W/9Кадровое агенство/__init__.py
+PyQt6W/9Кадровое агенство/db.py
+PyQt6W/9Кадровое агенство/main.py
+PyQt6W/Не заходить/__init__.py
+PyQt6W/Не заходить/main.py
+tests/test_core.py
