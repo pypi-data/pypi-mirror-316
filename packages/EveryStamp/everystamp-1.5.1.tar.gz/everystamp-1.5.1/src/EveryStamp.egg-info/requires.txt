@@ -1,0 +1,14 @@
+astropy
+aplpy
+astroquery
+matplotlib
+markupsafe
+numpy<2
+panstamps
+Pillow
+python-casacore
+opencv-python-headless
+pyvo
+requests
+scikit-image
+tqdm
