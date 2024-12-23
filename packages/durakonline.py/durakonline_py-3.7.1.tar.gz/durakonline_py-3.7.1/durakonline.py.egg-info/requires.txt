@@ -1,0 +1,5 @@
+setuptools
+requests
+loguru
+SocksiPy_branch
+msgspec
