@@ -1,0 +1,24 @@
+[project]
+name = "litemodel-cli"
+version = "0.1.4"
+description = "CLI for managing litemodel-starlette apps"
+readme = "README.md"
+authors = [
+    { name = "Joe Pasquantonio", email = "joe.pasquantonio@gmail.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "typer>=0.15.1",
+]
+
+[project.scripts]
+lite = "litemodel_cli:app"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+# [tool.hatch.build]
+# include = [
+#   "/src/litemodel_cli/artifacts",
+# ]

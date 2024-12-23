@@ -1,0 +1,24 @@
+Metadata-Version: 2.4
+Name: litemodel-cli
+Version: 0.1.4
+Summary: CLI for managing litemodel-starlette apps
+Author-email: Joe Pasquantonio <joe.pasquantonio@gmail.com>
+Requires-Python: >=3.11
+Requires-Dist: typer>=0.15.1
+Description-Content-Type: text/markdown
+
+# Litemodel-cli
+CLI for creating and managing litemodel-starlette applications
+
+## Usage
+
+lite --help
+
+### New project
+
+Run this command when you already have setup your project with uv
+
+lite new <name>
+
+This will generate project directory structure / folders / files etc.
+
