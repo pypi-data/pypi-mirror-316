@@ -1,0 +1,21 @@
+Metadata-Version: 2.4
+Name: npify
+Version: 0.0.1
+Project-URL: Homepage, https://www.npify.com
+Project-URL: Bug Reports, https://github.com/NPify/npify/issues
+Project-URL: Source, https://github.com/NPify/npify
+Author-email: Stephan Gocht <stephan@drgocht.com>
+Maintainer-email: Stephan Gocht <stephan@drgocht.com>
+License-Expression: MIT
+License-File: LICENSE
+Classifier: Development Status :: 1 - Planning
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+
+NPify
+=====
+
+NPify is a python lirbray for easy and efficient encoding of your problem to SAT, CP and MIP.
+
+This project is still in it's early stages. Bookmark and come back in a few month!
