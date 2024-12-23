@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: masterpiece_pahomqtt
+Version: 0.0.2
+Summary: Paho MQTT broker plugin for `masterpiece` applications
+Author-email: J Meskanen <juham.api@gmail.com>
+Maintainer-email: "J. Meskanen" <juham.api@gmail.com>
+Project-URL: Homepage, https://gitlab.com/juham/masterpiece_pahomqtt
+Project-URL: Bug Reports, https://gitlab.com/juham/masterpiece
+Project-URL: Source, https://gitlab.com/juham/masterpiece_pahomqtt
+Project-URL: Say Thanks!, http://meskanen.com
+Keywords: MQTT,paho,broker,IOT,masterpiece
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.rst
+Requires-Dist: masterpiece>=0.1.6
+Requires-Dist: pytz>=2024.1
+Requires-Dist: importlib-metadata
+Requires-Dist: paho-mqtt>=1
+Provides-Extra: dev
+Requires-Dist: check-manifest; extra == "dev"
