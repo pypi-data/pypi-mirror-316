@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+interstice/__init__.py
+interstice/demon.py
+interstice/main.py
+interstice/soldier.py
+interstice.egg-info/PKG-INFO
+interstice.egg-info/SOURCES.txt
+interstice.egg-info/dependency_links.txt
+interstice.egg-info/top_level.txt
