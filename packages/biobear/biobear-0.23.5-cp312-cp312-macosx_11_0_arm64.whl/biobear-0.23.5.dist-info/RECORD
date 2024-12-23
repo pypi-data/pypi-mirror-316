@@ -1,0 +1,10 @@
+biobear-0.23.5.dist-info/METADATA,sha256=synH57UvEPYtSFbgYPazxwht5gXnkAJ0hZtD2WSusRk,7783
+biobear-0.23.5.dist-info/WHEEL,sha256=SYMExoGVir0jDPn9LQbD9tQXhCV6461e0GBdAxP1b78,104
+biobear-0.23.5.dist-info/licenses/LICENSE,sha256=n5cfcFY_iif8hyuSwEM2NpdKsh0v8dN7sGmJ3axhwds,1055
+biobear/biobear.pyi,sha256=phjSLXevJ94gcdvwcn4N2HQkPCQMl44mjaO7G9Z_gtM,8838
+biobear/compression.py,sha256=Qw5U8Pdavp6u5WSr5TMGt6OTnZl-QZSFhVD10U1qr-k,1406
+biobear/__init__.py,sha256=zCUBcpCJ4wZuGKPNdDgLd5c0lOSbA3QtvkE2swDdWtU,2042
+biobear/reader.py,sha256=ic6b6JDskTkZUQT0jQBU0ntW7FYInF3D3S-cOjDVhVo,2910
+biobear/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+biobear/biobear.cpython-312-darwin.so,sha256=jz4naX9fAEgHLdw24HajMEjcBtzjdwOy00DdgHHoiwA,57438208
+biobear-0.23.5.dist-info/RECORD,,
