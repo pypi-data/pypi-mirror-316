@@ -1,0 +1,25 @@
+## 0.0.6 (2024-12-23)
+
+### fixed (2 changes)
+
+- [Fix tests/tox.](lucid/borgstats@ecb4d13c5553f654ade2df3a0d927606d472a730)
+- [Don't need borg or borgmatic, expect the user to already have that installed.](lucid/borgstats@b0adb54b0663485a727983590f06c9b33ebc5f35)
+
+## 0.0.5 (2024-12-23)
+
+### fixed (2 changes)
+
+- [Implement tox for CI tests, ruff format tests.](lucid/borgstats@afed7ac5cf9d153eedeac7f6ae762eca7db61830)
+- [Take out database stuff for now, implement some tests and catch subprocess errors.](lucid/borgstats@6109fb8e851725f8c1137d23d1b83e72ac71fb4c)
+
+## 0.0.4 (2024-12-23)
+
+No changes.
+
+## 0.0.3 (2024-12-22)
+
+No changes.
+
+## 0.0.2 (2024-12-22)
+
+No changes.
