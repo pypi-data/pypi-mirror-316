@@ -1,0 +1,9 @@
+secret_updater/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+secret_updater/main.py,sha256=qpIg_Rwc6dCoghEG3IUwOfFJaUrbeeRc9xEcX9ME0Ac,4042
+secret_updater/secret-updater.py,sha256=OT1JMVKVmj8lRk-iCdoeQTb7cDXZ9cDcrPMZ7Qr0iUk,3473
+secret_updater-0.1.0.dist-info/LICENCE,sha256=lQGE4cueNdnqaKMIFjFKAFksika55t2HrYnl7mR-efM,19
+secret_updater-0.1.0.dist-info/METADATA,sha256=vKdxU3E5niBgBbU1JSOJSiRUjpHvkGfVtnzT1MWHBOk,2256
+secret_updater-0.1.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+secret_updater-0.1.0.dist-info/entry_points.txt,sha256=aWCmRCJS4FrtogJmYHnTJ42EkdLXDnddhABa2aGO2S4,60
+secret_updater-0.1.0.dist-info/top_level.txt,sha256=r5fx_5rli-NWnj3pFnvaDt6IgV_lyVYWQNnbTCXc2sA,15
+secret_updater-0.1.0.dist-info/RECORD,,
