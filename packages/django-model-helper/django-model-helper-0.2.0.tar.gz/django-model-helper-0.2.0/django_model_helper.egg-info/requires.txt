@@ -1,0 +1,7 @@
+zenutils
+bizerror
+PyYAML
+django
+django-environment-settings
+django-safe-fields
+django-redis
