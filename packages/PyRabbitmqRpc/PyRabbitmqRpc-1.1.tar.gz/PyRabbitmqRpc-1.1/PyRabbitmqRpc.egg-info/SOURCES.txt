@@ -1,0 +1,13 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+PyRabbitmqRpc/__init__.py
+PyRabbitmqRpc/client.py
+PyRabbitmqRpc/conf.py
+PyRabbitmqRpc/manager.py
+PyRabbitmqRpc.egg-info/PKG-INFO
+PyRabbitmqRpc.egg-info/SOURCES.txt
+PyRabbitmqRpc.egg-info/dependency_links.txt
+PyRabbitmqRpc.egg-info/requires.txt
+PyRabbitmqRpc.egg-info/top_level.txt
