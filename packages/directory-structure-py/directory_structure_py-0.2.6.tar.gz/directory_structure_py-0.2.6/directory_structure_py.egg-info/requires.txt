@@ -1,0 +1,12 @@
+rocrate
+
+[dev]
+line_profiler
+pyinstaller
+pytest
+pylint
+autopep8
+flake8
+jupyter
+jupyterlab
+twine
