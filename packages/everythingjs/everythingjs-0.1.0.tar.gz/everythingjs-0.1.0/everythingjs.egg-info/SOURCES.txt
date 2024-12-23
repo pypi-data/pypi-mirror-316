@@ -1,0 +1,7 @@
+setup.py
+everythingjs.egg-info/PKG-INFO
+everythingjs.egg-info/SOURCES.txt
+everythingjs.egg-info/dependency_links.txt
+everythingjs.egg-info/entry_points.txt
+everythingjs.egg-info/requires.txt
+everythingjs.egg-info/top_level.txt
