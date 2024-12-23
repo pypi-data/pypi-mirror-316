@@ -1,0 +1,12 @@
+# ignored folders
+__pycache__/
+.*_cache/
+.venv/
+*.egg-info/
+build/
+dist/
+
+# ignored files
+*.pyc
+CMakeLists.txt.user
+CMakeUserPresets.json
