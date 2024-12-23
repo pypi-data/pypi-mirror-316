@@ -1,0 +1,35 @@
+name: Docs2Pages
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build-docs:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Install uv and set the python version
+      uses: astral-sh/setup-uv@v4
+
+    - name: Install the project
+      run: uv sync --dev
+
+    - name: Build documentation
+      run: |
+        mkdir gh-pages
+        touch gh-pages/.nojekyll
+        cd docs/
+        uv run sphinx-build -b html source _build
+        cp -r _build/* ../gh-pages/
+
+    - name: Deploy documentation
+      if: ${{ github.event_name == 'push' }}
+      uses: JamesIves/github-pages-deploy-action@4.1.4
+      with:
+        branch: gh-pages
+        folder: gh-pages
