@@ -1,0 +1,2 @@
+[console_scripts]
+stc = streamlit_colab.core:cli
