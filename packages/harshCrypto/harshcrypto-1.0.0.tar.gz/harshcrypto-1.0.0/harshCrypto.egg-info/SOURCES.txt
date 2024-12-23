@@ -1,0 +1,12 @@
+LICENCE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+harshCrypto/__init__.py
+harshCrypto/harshCrypto.py
+harshCrypto.egg-info/PKG-INFO
+harshCrypto.egg-info/SOURCES.txt
+harshCrypto.egg-info/dependency_links.txt
+harshCrypto.egg-info/requires.txt
+harshCrypto.egg-info/top_level.txt
