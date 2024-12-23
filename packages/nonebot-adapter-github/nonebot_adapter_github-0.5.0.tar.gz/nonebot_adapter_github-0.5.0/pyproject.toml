@@ -1,0 +1,98 @@
+[tool.poetry]
+name = "nonebot-adapter-github"
+version = "0.5.0"
+description = "GitHub adapter for nonebot2"
+authors = ["yanyongyu <yyy@nonebot.dev>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/nonebot/adapter-github"
+repository = "https://github.com/nonebot/adapter-github"
+documentation = "https://github.com/nonebot/adapter-github"
+keywords = ["bot", "github", "webhook"]
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Framework :: Robot Framework",
+  "Framework :: Robot Framework :: Library",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+]
+packages = [{ include = "nonebot" }]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+nonebot2 = "^2.2.0"
+pydantic = ">=1.10.0,<3.0.0,!=2.5.0,!=2.5.1"
+githubkit = { version = ">=0.12.2,<0.13.0", extras = ["auth-app"] }
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.8.2"
+Jinja2 = "^3.1.2"
+nonemoji = "^0.1.2"
+pre-commit = "^3.1.0"
+
+[tool.ruff]
+line-length = 88
+target-version = "py39"
+
+[tool.ruff.format]
+line-ending = "lf"
+
+[tool.ruff.lint]
+select = [
+  "F",     # Pyflakes
+  "W",     # pycodestyle warnings
+  "E",     # pycodestyle errors
+  "I",     # isort
+  "UP",    # pyupgrade
+  "ASYNC", # flake8-async
+  "C4",    # flake8-comprehensions
+  "T10",   # flake8-debugger
+  "T20",   # flake8-print
+  "PYI",   # flake8-pyi
+  "PT",    # flake8-pytest-style
+  "Q",     # flake8-quotes
+  "TID",   # flake8-tidy-imports
+  "RUF",   # Ruff-specific rules
+]
+ignore = [
+  "E402",   # module-import-not-at-top-of-file
+  "UP037",  # quoted-annotation
+  "RUF001", # ambiguous-unicode-character-string
+  "RUF002", # ambiguous-unicode-character-docstring
+  "RUF003", # ambiguous-unicode-character-comment
+  "TID252", # pyright reports this as an error
+]
+
+[tool.ruff.lint.extend-per-file-ignores]
+"nonebot/adapters/github/event/*" = ["E501"]
+
+[tool.ruff.lint.isort]
+force-sort-within-sections = true
+known-first-party = ["nonebot", "tests/*"]
+extra-standard-library = ["typing_extensions"]
+
+[tool.ruff.lint.flake8-pytest-style]
+fixture-parentheses = false
+mark-parentheses = false
+
+[tool.ruff.lint.pyupgrade]
+keep-runtime-typing = true
+
+[tool.pyright]
+pythonPlatform = "All"
+executionEnvironments = [
+  { root = "./codegen", pythonVersion = "3.10", extraPaths = [
+    "./",
+  ] },
+  { root = "./", pythonVersion = "3.9" },
+]
+defineConstant = { PYDANTIC_V2 = true }
+
+typeCheckingMode = "standard"
+reportShadowedImports = false
+reportIncompatibleVariableOverride = false
+disableBytesTypePromotions = true
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
