@@ -1,0 +1,22 @@
+filelist:
+  # - /Users/mtm/pdev/taylormonacelli/eachread/.nearwait.txtar
+  # - /Users/mtm/pdev/taylormonacelli/eachread/.pre-commit-config.yaml
+  # - /Users/mtm/pdev/taylormonacelli/eachread/.prettierignore
+  # - /Users/mtm/pdev/taylormonacelli/eachread/.prettierrc.json
+  # - /Users/mtm/pdev/taylormonacelli/eachread/.project_rsync.sh
+  # - /Users/mtm/pdev/taylormonacelli/eachread/.project_watchexec.sh
+  - /Users/mtm/pdev/taylormonacelli/eachread/.python-version
+  # - /Users/mtm/pdev/taylormonacelli/eachread/.renovaterc.json
+  # - /Users/mtm/pdev/taylormonacelli/eachread/README.md
+  # - /Users/mtm/pdev/taylormonacelli/eachread/eachread.code-workspace
+  - /Users/mtm/pdev/taylormonacelli/eachread/justfile
+  - /Users/mtm/pdev/taylormonacelli/eachread/pyproject.toml
+  - /Users/mtm/pdev/taylormonacelli/eachread/src/eachread/__init__.py
+  - /Users/mtm/pdev/taylormonacelli/eachread/src/eachread/cli.py
+  - /Users/mtm/pdev/taylormonacelli/eachread/src/eachread/wordnet/__init__.py
+  - /Users/mtm/pdev/taylormonacelli/eachread/src/eachread/wordnet/adjanimal.py
+  - /Users/mtm/pdev/taylormonacelli/eachread/src/eachread/wordnet/adjectives.py
+  - /Users/mtm/pdev/taylormonacelli/eachread/src/eachread/wordnet/commands.py
+  - /Users/mtm/pdev/taylormonacelli/eachread/src/eachread/wordnet/data.py
+  - /Users/mtm/pdev/taylormonacelli/eachread/src/eachread/wordnet/display.py
+  - /Users/mtm/pdev/taylormonacelli/eachread/src/eachread/wordnet/utils.py

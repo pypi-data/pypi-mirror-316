@@ -1,0 +1,354 @@
+-- .python-version --
+3.12.0
+-- justfile --
+set shell := ["bash", "-uec"]
+
+shell_files := `find . \( -name .git -o -name node_modules -o -name .venv -o -name .ruff_cache \) -prune -o -name "*.sh" -print | tr '\n' ' ' `
+py_files := `find . \( -name .git -o -name node_modules -o -name .venv -o -name .ruff_cache \) -prune -o -name "*.py" -print | tr '\n' ' ' `
+
+[group('maint')]
+default:
+    @just --list
+
+[group('maint')]
+pre-commit:
+    pre-commit sample-config >.pre-commit-config.yaml
+    pre-commit install --config .pre-commit-config.yaml
+    git add .pre-commit-config.yaml
+    pre-commit run --all-files
+
+[group('maint')]
+fmt:
+    test -z "{{ py_files }}" || { ruff format .; ruff check --fix; }
+    test -z "{{ shell_files }}" || shfmt -w -s -i 4 {{ shell_files }}
+    terraform fmt -recursive .
+    prettier --ignore-path=.prettierignore --config=.prettierrc.json --write .
+    just --unstable --fmt
+
+[group('lint')]
+lint:
+    test -z "{{ shell_files }}" || shellcheck {{ shell_files }}
+-- pyproject.toml --
+[project]
+name = "eachread"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+   { name = "Taylor Monacelli", email = "taylormonacelli@gmail.com" }
+]
+requires-python = "==3.12.0"
+dependencies = ["nltk"]
+
+[project.scripts]
+eachread = "eachread:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.ruff.lint]
+extend-select = ["I"]
+-- src/eachread/__init__.py --
+import eachread.cli
+import eachread.wordnet.commands
+import eachread.wordnet.data
+
+
+def main() -> None:
+    eachread.wordnet.data.ensure_nltk_data()
+    args = eachread.cli.parse_args()
+
+    if args.command == "wordnet":
+        eachread.wordnet.commands.cmd_wordnet(args.limit)
+    elif args.command == "wordnet-deep":
+        eachread.wordnet.commands.cmd_wordnet_deep(args.limit)
+    elif args.command == "adjectives":
+        eachread.wordnet.commands.cmd_adjectives(args.limit)
+    elif args.command == "adj-animal":
+        eachread.wordnet.commands.cmd_adjanimal(args.limit)
+    else:
+        eachread.cli.show_help()
+-- src/eachread/cli.py --
+import argparse
+
+
+def init_argparse() -> argparse.ArgumentParser:
+    parser = argparse.ArgumentParser()
+    subparsers = parser.add_subparsers(dest="command")
+
+    wordnet_parser = subparsers.add_parser(
+        "wordnet", help="Analyze direct animal and physical adjective synsets"
+    )
+    wordnet_parser.add_argument(
+        "--limit", type=int, default=5, help="Number of examples to show (0 for all)"
+    )
+
+    deep_parser = subparsers.add_parser(
+        "wordnet-deep",
+        help="Recursively analyze all animal and physical adjective synsets",
+    )
+    deep_parser.add_argument(
+        "--limit", type=int, default=5, help="Number of examples to show (0 for all)"
+    )
+
+    adj_parser = subparsers.add_parser(
+        "adjectives",
+        help="Analyze adjective synsets",
+    )
+    adj_parser.add_argument(
+        "--limit", type=int, default=5, help="Number of examples to show (0 for all)"
+    )
+
+    adjanimal_parser = subparsers.add_parser(
+        "adj-animal",
+        help="Generate random adjective-animal combinations",
+    )
+    adjanimal_parser.add_argument(
+        "--limit", type=int, default=5, help="Number of combinations to generate"
+    )
+
+    return parser
+
+
+def parse_args() -> argparse.Namespace:
+    parser = init_argparse()
+    return parser.parse_args()
+
+
+def show_help() -> None:
+    parser = init_argparse()
+    parser.print_help()
+-- src/eachread/wordnet/__init__.py --
+from .commands import cmd_wordnet, cmd_wordnet_deep
+
+__all__ = ["cmd_wordnet", "cmd_wordnet_deep"]
+-- src/eachread/wordnet/adjanimal.py --
+import random
+import signal
+import sys
+import typing
+
+from . import utils
+from .data import wordnet
+
+
+def signal_handler(sig, frame):
+    print("\nStopped by user")
+    sys.exit(0)
+
+
+def get_random_combinations(limit: int) -> typing.List[typing.Tuple[str, str]]:
+    adjectives = list(wordnet.all_synsets(pos=wordnet.ADJ))
+    animals = utils.get_all_animal_synsets()
+
+    if limit <= 0:
+        total_possible = len(adjectives) * len(animals)
+        return (adjectives, animals), total_possible
+
+    combinations = []
+    seen = set()
+    while len(combinations) < limit:
+        adj = random.choice(adjectives)
+        animal = random.choice(animals)
+        adj_name = adj.name().split(".")[0].replace("_", " ")
+        animal_name = animal.name().split(".")[0].replace("_", " ")
+
+        combo = f"{adj_name} {animal_name}"
+        if combo not in seen:
+            seen.add(combo)
+            combinations.append((adj_name, animal_name))
+    return combinations, len(combinations)
+
+
+def display_combinations(
+    combinations: typing.Union[typing.List[typing.Tuple[str, str]], typing.Tuple],
+    total_count: int,
+) -> None:
+    signal.signal(signal.SIGINT, signal_handler)
+
+    print(f"\nGenerating {total_count} adjective-animal combinations:")
+
+    if isinstance(combinations, list):
+        for adj, animal in combinations:
+            print(f"- {adj} {animal}")
+        return
+
+    adjectives, animals = combinations
+    batch_size = 100
+    seen = set()
+
+    try:
+        while True:
+            for _ in range(batch_size):
+                adj = random.choice(adjectives)
+                animal = random.choice(animals)
+                adj_name = adj.name().split(".")[0].replace("_", " ")
+                animal_name = animal.name().split(".")[0].replace("_", " ")
+
+                combo = f"{adj_name} {animal_name}"
+                if combo not in seen:
+                    seen.add(combo)
+                    print(f"- {combo}")
+
+    except KeyboardInterrupt:
+        print("\nStopped by user")
+        sys.exit(0)
+-- src/eachread/wordnet/adjectives.py --
+import random
+import typing
+
+from .data import wordnet
+
+
+def get_all_adjectives() -> typing.List[wordnet.synset]:
+    adjectives = wordnet.all_synsets(pos=wordnet.ADJ)
+    return list(adjectives)
+
+
+def display_adjectives(adjectives: typing.List, limit: int) -> None:
+    print(f"Found {len(adjectives)} total adjective synsets")
+
+    if adjectives:
+        print("\nExample adjectives:")
+        sample_size = len(adjectives) if limit <= 0 else min(limit, len(adjectives))
+        for adj in random.sample(adjectives, sample_size):
+            name = adj.name().split(".")[0]
+            print(f"- {name.replace('_', ' ')}: {adj.definition()}")
+-- src/eachread/wordnet/commands.py --
+from . import adjanimal, adjectives, display, utils
+
+
+def cmd_wordnet(limit: int) -> None:
+    animals = utils.get_animal_synsets()
+    adjectives = utils.get_physical_adjectives_direct()
+    display.print_results(animals, adjectives, limit)
+
+
+def cmd_wordnet_deep(limit: int) -> None:
+    animals = utils.get_all_animal_synsets()
+    adjectives = utils.get_all_physical_adjectives()
+    display.print_results(animals, adjectives, limit)
+
+
+def cmd_adjectives(limit: int) -> None:
+    all_adjectives = adjectives.get_all_adjectives()
+    adjectives.display_adjectives(all_adjectives, limit)
+
+
+def cmd_adjanimal(limit: int) -> None:
+    combinations, total_count = adjanimal.get_random_combinations(limit)
+    adjanimal.display_combinations(combinations, total_count)
+-- src/eachread/wordnet/data.py --
+def ensure_nltk_data() -> None:
+    try:
+        import nltk.data
+
+        nltk.data.find("corpora/wordnet")
+    except LookupError:
+        nltk.download("wordnet", quiet=True)
+
+
+def get_wordnet():
+    from nltk.corpus import wordnet
+
+    return wordnet
+
+
+# Download immediately when this module is imported
+ensure_nltk_data()
+wordnet = get_wordnet()
+
+__all__ = ["wordnet"]
+-- src/eachread/wordnet/display.py --
+import random
+import typing
+
+
+def print_results(animals: typing.List, adjectives: typing.List, limit: int) -> None:
+    if animals:
+        print(f"Found {len(animals)} total animal synsets")
+        print("\nExample animals:")
+        sample_size = len(animals) if limit <= 0 else min(limit, len(animals))
+
+        print("\nWords with underscores:")
+        underscored = [a for a in animals if "_" in a.name()]
+        if len(underscored) > 0:
+            print(
+                f"Found {len(underscored)} compound words ({len(underscored)/len(animals)*100:.1f}%)"
+            )
+            for animal in random.sample(underscored, min(5, len(underscored))):
+                name = animal.name().split(".")[0]
+                print(f"- {name} ({name.replace('_', ' ')}): {animal.definition()}")
+
+        print("\nSingle word animals:")
+        single_words = [a for a in animals if "_" not in a.name()]
+        if len(single_words) > 0:
+            print(
+                f"Found {len(single_words)} single words ({len(single_words)/len(animals)*100:.1f}%)"
+            )
+            for animal in random.sample(single_words, min(5, len(single_words))):
+                print(f"- {animal.name().split('.')[0]}: {animal.definition()}")
+
+    if adjectives:
+        print(f"\nFound {len(adjectives)} total physical adjective synsets")
+        print("\nExample physical adjectives:")
+        sample_size = len(adjectives) if limit <= 0 else min(limit, len(adjectives))
+        for adj in random.sample(adjectives, sample_size):
+            print(f"- {adj.name().split('.')[0]}: {adj.definition()}")
+-- src/eachread/wordnet/utils.py --
+import typing
+
+from .data import wordnet
+
+
+def get_all_hyponyms(synset) -> set:
+    result = set()
+
+    def recurse(current_synset):
+        for hyponym in current_synset.hyponyms():
+            result.add(hyponym)
+            recurse(hyponym)
+
+    recurse(synset)
+    return result
+
+
+def get_all_animal_synsets() -> typing.List[wordnet.synset]:
+    animals = wordnet.synsets("animal", pos=wordnet.NOUN)
+    all_animals = set()
+
+    for synset in animals:
+        all_animals.update(get_all_hyponyms(synset))
+
+    return list(all_animals)
+
+
+def get_all_physical_adjectives() -> typing.List[wordnet.synset]:
+    physical_adj = wordnet.synsets("physical", pos=wordnet.ADJ)
+    all_adj = set()
+
+    for synset in physical_adj:
+        all_adj.update(get_all_hyponyms(synset))
+
+    return list(all_adj)
+
+
+def get_animal_synsets() -> typing.List[wordnet.synset]:
+    animals = wordnet.synsets("animal", pos=wordnet.NOUN)
+    animal_hyponyms = []
+
+    for synset in animals:
+        animal_hyponyms.extend(synset.hyponyms())
+
+    return animal_hyponyms
+
+
+def get_physical_adjectives_direct() -> typing.List[wordnet.synset]:
+    physical_adj = wordnet.synsets("physical", pos=wordnet.ADJ)
+    adj_hyponyms = []
+
+    for synset in physical_adj:
+        adj_hyponyms.extend(synset.hyponyms())
+
+    return adj_hyponyms
