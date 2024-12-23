@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+tests/test_build.py
+tests/test_emitter_dotnet.py
+tests/test_emitter_json.py
+tests/test_linter_semantic_checker.py
+unicontract/Engine.py
+unicontract/__init__.py
+unicontract.egg-info/PKG-INFO
+unicontract.egg-info/SOURCES.txt
+unicontract.egg-info/dependency_links.txt
+unicontract.egg-info/entry_points.txt
+unicontract.egg-info/requires.txt
+unicontract.egg-info/top_level.txt
