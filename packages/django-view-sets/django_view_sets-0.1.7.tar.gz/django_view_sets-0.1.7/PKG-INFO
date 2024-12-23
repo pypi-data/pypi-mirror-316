@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: django-view-sets
+Version: 0.1.7
+Summary: Yet another app for making CRUD.
+Home-page: https://github.com/kindlycat/django-view-sets/
+Author: Grigory Mishchenko
+Author-email: grishkokot@gmail.com
+Keywords: django,views,viewset,crud
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Framework :: Django :: 4.0
+Classifier: License :: OSI Approved :: BSD License
+License-File: LICENSE
+Requires-Dist: Django>=4.0
+Requires-Dist: django-filter>=2.1.0
+
+Django-view-sets
+================
+
+Installation
+------------
+Install using pip:
+
+.. code-block:: sh
+
+    $ pip install django-view-sets
+
+Add to installed apps:
+
+.. code-block:: python
+
+    INSTALLED_APPS = (
+        ...
+        'viewsets',
+        ...
+    )
