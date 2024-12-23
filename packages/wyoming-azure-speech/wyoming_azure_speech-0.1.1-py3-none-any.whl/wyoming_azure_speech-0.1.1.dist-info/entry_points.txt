@@ -1,0 +1,2 @@
+[console_scripts]
+wyoming-azure-speech = wyoming_azure_speech.__main__:run

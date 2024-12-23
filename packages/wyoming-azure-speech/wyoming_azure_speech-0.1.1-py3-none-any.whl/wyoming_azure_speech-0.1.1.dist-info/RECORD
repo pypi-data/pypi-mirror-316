@@ -1,0 +1,12 @@
+wyoming_azure_speech/__init__.py,sha256=sB5GZ4_wWXL-rDXRwGI6sbSgedCQWnKL-iQ9VZiEfbA,42
+wyoming_azure_speech/__main__.py,sha256=nLIDQYGqsmqOHbve2wvN3lucLOAHyLUlPmmWJCByfMw,7003
+wyoming_azure_speech/handler.py,sha256=sYPQ0B0qaumrwmSU0tdsGnNZSDf4gYOwqZUkGIbluk8,4144
+wyoming_azure_speech/speech_service.py,sha256=tOZB1t-21RxLE0RvHZd_qRwTBltPRMspoMAOWqgS0Mw,3109
+wyoming_azure_speech/synthesizer.py,sha256=d6MIbByGyAI4hRuXnjlre9E6VMrWp5RAJ9glQEGaXco,3805
+wyoming_azure_speech/transcriber.py,sha256=a9AlSq4pX0ILGLB-gVW-CDktXXhn3nkgcKifBDpZqKo,2869
+wyoming_azure_speech-0.1.1.dist-info/LICENSE,sha256=2jMDq8nCRta2me7LbOUtahtHlz2Z_VpRne8eSf88bik,1078
+wyoming_azure_speech-0.1.1.dist-info/METADATA,sha256=Kvc6RHrFdwfXJ5NZ8K_a81iY_3EiDBsHGecwTaQCbjw,4244
+wyoming_azure_speech-0.1.1.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+wyoming_azure_speech-0.1.1.dist-info/entry_points.txt,sha256=awr5nPr9iBMu74VenGkOKlI-Ae5LDEzNQMGp4qnRcCw,75
+wyoming_azure_speech-0.1.1.dist-info/top_level.txt,sha256=EkQAbWrHxfcWpMnpqBnVAjLsNG1SZC19x16q8XpRWjo,21
+wyoming_azure_speech-0.1.1.dist-info/RECORD,,
