@@ -1,0 +1,9 @@
+machbaseAPI/__init__.py,sha256=zrUy9Q53GZSmgI-XXBiVwTaKsFnI71-w1W9P1TcpIkE,97
+machbaseAPI/machbaseAPI.py,sha256=DwYIFxqf2sWIc4kFV_3eXAq47i_EmeM4QsGNEbrIGNo,18068
+machbaseAPI/lib/libmachbaseAPI_arm64.dylib,sha256=ShmGZ1EMwMDEAF7B7BKCUt-gfxdnjnrwOgIpC884ViY,1240504
+machbaseAPI/lib/libmachbaseAPI_x64.so,sha256=0AgeVujBBVoWzLqa5KWt7nvjZrbA7JWNM7G9guilKW4,1663204
+machbaseAPI/lib/machbaseAPI_x64.dll,sha256=2V2lMhLl4yuRY8c0S9l9Ar1YRa8v4eiD_64Ot1T1gYg,123392
+machbaseAPI-1.5.dist-info/METADATA,sha256=VXnqXnabuQvheWGc3RY3MgyhyNM3e1G1_fj5eDeUMB8,368
+machbaseAPI-1.5.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+machbaseAPI-1.5.dist-info/top_level.txt,sha256=-9HwUvafn-uTM9ckDWa2sxP4AZE7YNdhjVWRgOAhhH0,12
+machbaseAPI-1.5.dist-info/RECORD,,
