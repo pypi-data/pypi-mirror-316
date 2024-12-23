@@ -1,0 +1,9 @@
+tests/__init__.py,sha256=jSsblu6CtF28_y2qdhGhnFor89y1AQQVK3S_i4K7dac,69
+tests/test_calc.py,sha256=XZi2hvsrrSc05mupoX7nXMEIPgc-wc0R-0aF3eoDY80,4170
+tks_api_official/__init__.py,sha256=kF72lvyQdf6erlw0aF-RmJinfsLRR5WN1t1EvUF_hHE,69
+tks_api_official/calc.py,sha256=SsqT1Chlzbnk96IR4JO-R-Y0M30cl0gBd98dar6gMuA,8338
+tks_api_official-1.0.3.dist-info/LICENSE,sha256=1Ajrgk0YVL7GVXAJTadwe7IH2r6Wok8obrTMr3hZ_Rw,1069
+tks_api_official-1.0.3.dist-info/METADATA,sha256=NLOQL6g94RQf-nsBF7e7CpvR2m-F6twaP2V2KTNPyEQ,8461
+tks_api_official-1.0.3.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+tks_api_official-1.0.3.dist-info/top_level.txt,sha256=10lheIZ4Cc1OAkR5S6zcdUJ70ATN3SxXDXLvYOv3Seg,23
+tks_api_official-1.0.3.dist-info/RECORD,,
