@@ -1,0 +1,8 @@
+setup.cfg
+setup.py
+stskr_3/stskr_3.py
+stskr_3.egg-info/PKG-INFO
+stskr_3.egg-info/SOURCES.txt
+stskr_3.egg-info/dependency_links.txt
+stskr_3.egg-info/not-zip-safe
+stskr_3.egg-info/top_level.txt
