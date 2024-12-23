@@ -1,0 +1,66 @@
+[project]
+name = "velodyne-decoder"
+version = "3.0.1"
+description = "Decoder for raw Velodyne packet data"
+readme = "README.md"
+requires-python = ">= 3.8"
+authors = [{name = "Martin Valgur", email = "martin.valgur@gmail.com"}]
+urls."Homepage" = "https://github.com/valgur/velodyne_decoder"
+urls."Bug Reports" = "https://github.com/valgur/velodyne_decoder/issues"
+urls."Source" = "https://github.com/valgur/velodyne_decoder"
+keywords = [
+    "Velodyne",
+    "pointcloud",
+    "PCL",
+]
+license = {text = "BSD-3-Clause"}
+classifiers = [
+    "License :: OSI Approved :: BSD License",
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "numpy",
+    "importlib_resources",
+    "dpkt",
+    "pyyaml",
+]
+
+[project.scripts]
+extract-hdl64e-calibration = "velodyne_decoder.hdl64e:cli"
+
+[tool.setuptools]
+zip-safe = false
+include-package-data = true
+
+[build-system]
+requires = [
+    "scikit-build-core >=0.4.3",
+    "conan >=2.0.5",
+    "pybind11"
+]
+build-backend = "scikit_build_core.build"
+
+[tool.scikit-build]
+cmake.minimum-version = "3.15"
+cmake.targets = ["python_bindings"]
+install.components = ["python"]
+wheel.license-files = ["LICENSE"]
+build-dir = "build/{wheel_tag}"
+
+[tool.scikit-build.cmake.define]
+BUILD_PYTHON = true
+BUILD_SHARED_LIBS = false
+
+[tool.cibuildwheel]
+build = "*"
+# Disable building of PyPy wheels on all platforms
+skip = "pp*"
+before-test = "pip install -r {project}/requirements-dev.txt"
+test-command = "pytest {project}/test --color=yes -v"
+build-verbosity = 1
+archs = "auto64"
+
+# Needed for full C++17 support
+[tool.cibuildwheel.macos.environment]
+MACOSX_DEPLOYMENT_TARGET = "10.15"
