@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.py
+SoftwareAI.egg-info/PKG-INFO
+SoftwareAI.egg-info/SOURCES.txt
+SoftwareAI.egg-info/dependency_links.txt
+SoftwareAI.egg-info/requires.txt
+SoftwareAI.egg-info/top_level.txt
