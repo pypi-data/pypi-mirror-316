@@ -1,0 +1,2 @@
+[console_scripts]
+litemodel-cli = litemodel_cli.cli:app
