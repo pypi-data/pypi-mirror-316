@@ -1,0 +1,10 @@
+dataLib/__init__.py,sha256=WtDmeZgGZWmqGojhetX5SsgAxj5hl0UQt64JMSDd7AY,50
+dataLib/core.py,sha256=rrCNf6_SBi4nwpy2P7T6_5LJRdmJAmq3ycc9kFkKYcg,5313
+dataLibFarah/__init__.py,sha256=WtDmeZgGZWmqGojhetX5SsgAxj5hl0UQt64JMSDd7AY,50
+dataLibFarah/core.py,sha256=rrCNf6_SBi4nwpy2P7T6_5LJRdmJAmq3ycc9kFkKYcg,5313
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/test_datalib.py,sha256=i2FVZVd0_XkUuWKqg4Kfe85DmbMBaQQq_h7TZORl3fo,3436
+dataLibFarah-0.0.1.dist-info/METADATA,sha256=ivyhvScrs_7S8i2ef6XxvtM-d-6UwZlf1JyC7MAPHoQ,2739
+dataLibFarah-0.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+dataLibFarah-0.0.1.dist-info/top_level.txt,sha256=Ie0VH1TiPrIVd2ebbx7ZOxLy7fI7TpZecIyswvB0Q9I,18
+dataLibFarah-0.0.1.dist-info/RECORD,,
