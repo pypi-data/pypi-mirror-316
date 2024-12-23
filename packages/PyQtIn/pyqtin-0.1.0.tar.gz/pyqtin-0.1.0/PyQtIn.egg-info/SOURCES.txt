@@ -1,0 +1,8 @@
+setup.py
+PYQTIN/__init__.py
+PYQTIN/core.py
+PyQtIn.egg-info/PKG-INFO
+PyQtIn.egg-info/SOURCES.txt
+PyQtIn.egg-info/dependency_links.txt
+PyQtIn.egg-info/top_level.txt
+tests/test_core.py
