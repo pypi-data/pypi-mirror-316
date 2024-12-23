@@ -1,0 +1,13 @@
+as_op_doubleweave/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+as_op_doubleweave/as_op_doubleweave.py,sha256=0VmFwWA-4seIKKbYzucg0moGRERB9zrkiHBwghjZGSQ,5410
+as_op_doubleweave/entry_points.py,sha256=Cu58nS7x5W4uOC9_4QCOHnaGrvnhnx50p3r-WZtOKNY,3019
+as_op_doubleweave/expected_error.py,sha256=sANfQcZhD1Moa5SK2Fi9i90ek6P0fNKVPeEfQBLXl8g,74
+as_op_doubleweave/filter_pattern.py,sha256=UyR7u0G_ZEXHoeX6fH3tJT1kYfUEuy0KDC1wMsE3zDA,6674
+as_op_doubleweave/read_pattern.py,sha256=uUe-1KRMNCn8n4vMDCPbIBzakVCMUrqLuS6fijcfEoE,664
+as_op_doubleweave/version.py,sha256=8epuNPGKaSeNEnGpger9OZ4EBbeyJ8j4VDZp6WyHxh4,77
+as_op_doubleweave-0.30.dist-info/LICENSE.txt,sha256=WYC5uPw5Ygf8ajOqm8rvtkVeQ8qw9BvSYqwUpicb-ZA,1060
+as_op_doubleweave-0.30.dist-info/METADATA,sha256=ElBtBKkOM-hP7E9oHTrU33DZti_k4v2EX0O6M0Ff4xo,4464
+as_op_doubleweave-0.30.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+as_op_doubleweave-0.30.dist-info/entry_points.txt,sha256=8EhZJrtWEcodnMnzzIkTM32B3n4Vjnc5LnqncIHKBtg,159
+as_op_doubleweave-0.30.dist-info/top_level.txt,sha256=UIcXtRXc9hW4EegTYM6d8YqS-u4PoB0qEUy15JIZ3J4,18
+as_op_doubleweave-0.30.dist-info/RECORD,,
