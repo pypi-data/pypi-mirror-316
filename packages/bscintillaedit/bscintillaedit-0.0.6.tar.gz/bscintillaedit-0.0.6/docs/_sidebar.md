@@ -1,0 +1,9 @@
+- [Home](/)
+- For developers
+  - [Cloning](cloning.md)
+  - [Code organization](code_organization.md)
+  - [Requirements](requirements.md)
+  - [Environment](environment.md)
+  - [Using QtCreator](qtcreator.md)
+  - [Using CMake](cmake.md)
+  - [Publishing to PyPI](publish.md)
