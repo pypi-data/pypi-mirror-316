@@ -1,0 +1,28 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "powertorch"
+version = "0.1.0"
+description = "A collection of PyTorch utilities designed to streamline the deep learning workflows"
+author = {name = "Yu-Ting Shi", email = "the.yutings@gmail.com"}
+readme = "README.md"
+license = {file = "LICENSE"}
+requires-python = ">=3.10"
+dependencies = [
+    "torch",
+    "torchvision",
+]
+
+[project.urls]
+homepage = "https://github.com/yutingshih/powertorch"
+
+[tool.black]
+line-length = 80
+skip-string-normalization = true
+
+[tool.isort]
+profile = "black"
+line_length = 80
+
