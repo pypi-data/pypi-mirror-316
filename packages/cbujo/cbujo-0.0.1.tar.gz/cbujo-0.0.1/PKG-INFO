@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: cbujo
+Version: 0.0.1
+Summary: Bullet Journal for the CLI
+License: GPL-3.0
+Author: Joe McCarthy
+Author-email: 179146301+joe-mccarthy@users.noreply.github.com
+Requires-Python: >=3.12,<4.0
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Description-Content-Type: text/markdown
+
+# cbujo
+Bullet Journal for the CLI
+
