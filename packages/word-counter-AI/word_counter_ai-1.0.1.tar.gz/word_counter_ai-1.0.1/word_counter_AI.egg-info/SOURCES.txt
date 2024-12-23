@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+word_counter_AI/__init__.py
+word_counter_AI/count_words.py
+word_counter_AI.egg-info/PKG-INFO
+word_counter_AI.egg-info/SOURCES.txt
+word_counter_AI.egg-info/dependency_links.txt
+word_counter_AI.egg-info/requires.txt
+word_counter_AI.egg-info/top_level.txt
