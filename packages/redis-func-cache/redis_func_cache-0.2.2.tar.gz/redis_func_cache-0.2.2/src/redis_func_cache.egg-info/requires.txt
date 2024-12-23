@@ -1,0 +1,13 @@
+redis
+
+[:python_version < "3.12"]
+typing-extensions
+
+[:python_version < "3.9"]
+importlib-resources
+
+[hiredis]
+redis[hiredis]
+
+[types]
+types-redis
