@@ -1,0 +1,10 @@
+README.md
+setup.py
+hivemind_mic_sat/__init__.py
+hivemind_mic_sat/version.py
+hivemind_mic_satellite.egg-info/PKG-INFO
+hivemind_mic_satellite.egg-info/SOURCES.txt
+hivemind_mic_satellite.egg-info/dependency_links.txt
+hivemind_mic_satellite.egg-info/entry_points.txt
+hivemind_mic_satellite.egg-info/requires.txt
+hivemind_mic_satellite.egg-info/top_level.txt
