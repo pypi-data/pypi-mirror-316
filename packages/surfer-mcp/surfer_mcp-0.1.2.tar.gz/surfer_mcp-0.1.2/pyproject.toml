@@ -1,0 +1,20 @@
+[project]
+name = "surfer-mcp"
+version = "0.1.2"
+description = "This is the official MCP server for Surfer"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+ "chromadb>=0.5.23",
+ "mcp>=1.1.2",
+]
+[[project.authors]]
+name = "Sahil Lalani"
+email = "99920148+sahil-lalani@users.noreply.github.com"
+
+[build-system]
+requires = [ "hatchling",]
+build-backend = "hatchling.build"
+
+[project.scripts]
+surfer-mcp = "surfer_mcp:main"
