@@ -1,0 +1,14 @@
+.gitignore
+LICENSE
+README.md
+pyproject.toml
+test.py
+src/wsbridge/#todo.py
+src/wsbridge/__init__.py
+src/wsbridge/baseclient.py
+src/wsbridge/simpleservice.py
+src/wsbridge.egg-info/PKG-INFO
+src/wsbridge.egg-info/SOURCES.txt
+src/wsbridge.egg-info/dependency_links.txt
+src/wsbridge.egg-info/requires.txt
+src/wsbridge.egg-info/top_level.txt
