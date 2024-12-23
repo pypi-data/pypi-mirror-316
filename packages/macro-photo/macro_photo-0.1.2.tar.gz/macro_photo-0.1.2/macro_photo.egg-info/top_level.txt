@@ -1,0 +1,2 @@
+macro_photo
+mistral_image_gen
