@@ -1,0 +1,122 @@
+Metadata-Version: 2.1
+Name: SmileyDB3
+Version: 0.3.7
+Summary: SmileyDB3 is a library built on sqlite3 to make working with databases easier
+Home-page: https://github.com/amr2018/SmileyDB3
+Author: Free Python Code
+Author-email: amr.ee@yahoo.com
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.1.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: bcrypt
+
+
+# SmileyDB3
+
+SmileyDB3 simplifies database interactions by providing an intuitive and feature-rich interface for SQLite3. Whether you're working with single records, multiple records, or advanced filtering, SmileyDB3 makes your database operations effortless.
+
+
+Support My Work 💖
+If you find SmileyDB3 helpful, consider supporting my work on Ko-fi. Your support helps me maintain and improve this project. Thank you! 🙌
+
+
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/O4O1TUHOK)
+
+
+
+## Features
+
+- **Dynamic Schema Creation:** Automatically generates table schema based on provided data types.
+- **Record Management:** Insert single or multiple records, update, fetch, and delete with ease.
+- **Filtering Capabilities:** Apply advanced filters such as `greater_than`, `less_than`, `between`, and more.
+- **Export Data:** Export table data to a JSON file for external use.
+- **Indexing:** Add indexes to columns for optimized query performance.
+- **Security:** Built-in sanitization to protect against SQL injection and XSS attacks.
+
+## Installation
+
+Install SmileyDB3 using pip:
+
+```bash
+pip install SmileyDB3
+```
+
+## Quick Start Guide
+
+### 1. Create and Initialize a Table
+```python
+import sqlite3
+from smileydb3 import Table
+
+# Connect to SQLite database
+db = sqlite3.connect('my_database.db')
+cursor = db.cursor()
+
+# Initialize a table
+users = Table('users', db, cursor)
+
+# Define and insert data
+data = {'name': 'Alice', 'age': 25, 'email': 'alice@example.com'}
+users.Insert(data)
+```
+
+### 2. Insert Multiple Records
+```python
+data_list = [
+    {'name': 'Bob', 'age': 30, 'email': 'bob@example.com'},
+    {'name': 'Charlie', 'age': 28, 'email': 'charlie@example.com'}
+]
+users.InsertMany(data_list)
+```
+
+### 3. Fetch All Records
+```python
+all_users = users.GetALL()
+print(all_users)
+```
+
+### 4. Filter Records
+```python
+filters = {'age': {'greater_equal': 25, 'less_than': 30}}
+filtered_users = users.Filter(filters)
+print(filtered_users)
+```
+
+### 5. Export to JSON
+```python
+users.ExportToJSON('users_data.json')
+```
+
+### 6. Update a Record
+```python
+uuid = 'some-uuid'
+updated_data = {'name': 'Alice Smith'}
+users.Update(uuid, updated_data)
+```
+
+### 7. Delete a Record
+```python
+users.Delete(uuid)
+```
+
+## Additional Features
+
+- **Dynamic UUID and Timestamp:** Automatically adds `uuid` and `created_at` fields to each record.
+- **Pandas Integration:** Seamlessly use Pandas for data analysis by converting fetched data into DataFrames (easily extendable).
+- **Logging:** Comprehensive logging for debugging and monitoring.
+
+## Contributing
+
+We welcome contributions! If you have ideas, suggestions, or bug reports, feel free to open an issue or create a pull request on [GitHub](https://github.com/amr2018/SmileyDB3).
+
+## License
+
+This project is licensed under the MIT License.
+
