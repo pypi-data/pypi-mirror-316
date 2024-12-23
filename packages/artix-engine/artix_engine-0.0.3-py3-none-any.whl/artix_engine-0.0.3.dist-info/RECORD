@@ -1,0 +1,7 @@
+artix_engine/__init__.py,sha256=XJprEX9t1Np1X17m7pMF1FXMGe7D5WsvUvqE4n0h8OY,52
+artix_engine/main.py,sha256=5bieD8AOflkRnPtrY8TEA-9-b4kzQU8kv7HGH7twCVA,2760
+artix_engine/types.py,sha256=inkEzpJcVYb94ow0ULxMYe2zXg-RNd6Rpln6dOrLAcc,745
+artix_engine-0.0.3.dist-info/METADATA,sha256=NOSRBWhRDBN9MA31PIClUBRbM5-qbR90KRsDRleiQbc,581
+artix_engine-0.0.3.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+artix_engine-0.0.3.dist-info/top_level.txt,sha256=3uHeKf7q0w5ftco7U-KnnmL6BWL32_z-8P_c-PSRipg,13
+artix_engine-0.0.3.dist-info/RECORD,,
