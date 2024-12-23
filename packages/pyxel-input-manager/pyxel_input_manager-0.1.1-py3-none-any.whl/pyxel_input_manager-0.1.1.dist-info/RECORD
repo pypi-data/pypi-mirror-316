@@ -1,0 +1,14 @@
+pyxel_input_manager/__init__.py,sha256=Zdwu0lfQnRQZsEyt6fAAo_g_MIMbpsY-9tRRYtdYsHg,253
+pyxel_input_manager/__main__.py,sha256=nejbLEVqYDmUCWebwm4W0aq9_2A7ewIrzfrTMg7x5BU,624
+pyxel_input_manager/demo.py,sha256=KNd5nGza2IqwrrdfjVSNZU1Tve7lmGp6q0ps2wTZmyU,4555
+pyxel_input_manager/demo_analog.py,sha256=6s_JM9rrYZZWvHoFjr7G7sASCYame_Q_rsbjc6cnpUw,5148
+pyxel_input_manager/input_bindings.py,sha256=bjb8rPJDECVNtGZndyTBcQyC_Q0bbeHrIc-DC2micHs,4446
+pyxel_input_manager/input_event.py,sha256=VGsKn9Ts4GnlrYKDrQPZnmSUBbpH37qacRZkJimWnWk,4451
+pyxel_input_manager/input_map.py,sha256=PB0Jwbscww6Do295NSN0RrOLI2OtkAcl3souRipe8nk,5072
+pyxel_input_manager/input_types.py,sha256=3FkceVyhec7guNGUYYS06tPrj4-kx1i-uF3_V7QTvq8,133
+pyxel_input_manager-0.1.1.dist-info/LICENSE,sha256=uOE3VsJyTYSfr-67zzMxA2jobJVMVi-5G8bg_QJTzPY,1095
+pyxel_input_manager-0.1.1.dist-info/METADATA,sha256=r3lhTl8_KFP3vWOIWgumshnIu5Zg6eWlEda4LyW5DPU,4453
+pyxel_input_manager-0.1.1.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+pyxel_input_manager-0.1.1.dist-info/entry_points.txt,sha256=YLYwlyyDQMidAPgaTDzjz75oi0tZIzJDiXCF0FwFNww,74
+pyxel_input_manager-0.1.1.dist-info/top_level.txt,sha256=kgyJbA0usJIoySNd_7NI4eipNvcKL5wxVn7ZUsjThfw,20
+pyxel_input_manager-0.1.1.dist-info/RECORD,,
