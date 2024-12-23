@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+setup.py
+agentctl/__init__.py
+agentctl/main.py
+agentctl.egg-info/PKG-INFO
+agentctl.egg-info/SOURCES.txt
+agentctl.egg-info/dependency_links.txt
+agentctl.egg-info/top_level.txt

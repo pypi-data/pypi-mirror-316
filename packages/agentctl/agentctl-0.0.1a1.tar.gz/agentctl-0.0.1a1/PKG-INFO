@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: agentctl
+Version: 0.0.1a1
+Summary: A minimal Python package for agent control
+Home-page: https://github.com/agentctl/agentctl
+Author: Andrii Tsok
+Author-email: andrii@tsok.org
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# agentctl
+
+A minimal Python package for agent control.
+
+## Installation
+
+```bash
+pip install agentctl
+```
+
+# Usage
+
+```python
+from agentctl.main import run
+
+print(run("AI"))
+```
+
