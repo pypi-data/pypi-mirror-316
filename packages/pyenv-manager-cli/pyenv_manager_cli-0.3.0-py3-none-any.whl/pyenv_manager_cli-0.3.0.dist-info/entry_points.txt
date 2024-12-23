@@ -1,0 +1,2 @@
+[console_scripts]
+pyenv-manager = pyenv_manager_cli.cli:main
