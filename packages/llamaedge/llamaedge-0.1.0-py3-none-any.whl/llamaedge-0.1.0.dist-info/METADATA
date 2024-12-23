@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: llamaedge
+Version: 0.1.0
+Summary: Python library for LlamaEdge
+Home-page: https://github.com/apepkuss/PyLlamaEdge
+Author: Liu Xin
+Author-email: xin.sam.liu@hotmail.com
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Requires-Dist: requests==2.32.3
+
+# PyLlamaEdge
+
+This is a Python library for LlamaEdge.

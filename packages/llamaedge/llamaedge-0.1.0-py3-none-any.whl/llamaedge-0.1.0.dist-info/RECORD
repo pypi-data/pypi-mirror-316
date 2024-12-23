@@ -1,0 +1,7 @@
+llamaedge/__init__.py,sha256=x1ygsqCagOCuz9NzPTN010p5PinnVM0Onyg1fV1yrrc,46
+llamaedge/client.py,sha256=C0uJL5EjQ8MmVP9QrJBxqfP-dSNxoKdexF6sSpMdmrA,3287
+llamaedge/whisper.py,sha256=tlt3505THJwwJUayYE3wqkzq69yJCFzOMP2Lkfxd4FI,2434
+llamaedge-0.1.0.dist-info/METADATA,sha256=Oq4PWwPF7iVS33as943T3hlLQm_w1qoNWyIuX606Zg8,741
+llamaedge-0.1.0.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+llamaedge-0.1.0.dist-info/top_level.txt,sha256=Lts2M_pSaoO4rMOPk8XETkxpyCsOrwqInIe3ak7ZpJQ,10
+llamaedge-0.1.0.dist-info/RECORD,,
